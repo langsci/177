@@ -1,0 +1,33 @@
+\backmatter
+\bookmarksetup{startatroot}
+
+% for PoD with two volumes
+%\ifoot{}\ofoot{}
+
+% authorindex needs bib-file
+\bibliography{gt}
+%\input grammatical-theory-bib-final
+\clearpage
+
+\small
+   
+
+\phantomsection%this allows hyperlink in ToC to work
+\addcontentsline{toc}{chapter}{Index} 
+\addcontentsline{toc}{section}{Name index}
+\ohead{Name index}
+%with biblatex
+%\printindex
+%without it 
+\sloppy
+\printindex 
+  
+\phantomsection%this allows hyperlink in ToC to work
+\addcontentsline{toc}{section}{Language index}
+\ohead{Language index} 
+\printindex[lan] 
+  
+\phantomsection%this allows hyperlink in ToC to work
+\addcontentsline{toc}{section}{Subject index}
+\ohead{Subject index}
+\printindex[sbj]

@@ -1,0 +1,43 @@
+%% -*- coding:utf-8 -*-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%   $RCSfile: grammatiktheorie.tex,v $
+%%  $Revision: 1.3 $
+%%      $Date: 2010/01/18 14:55:27 $
+%%     Author: Stefan Mueller (CL Uni-Bremen)
+%%    Purpose: 
+%%   Language: LaTeX
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\documentclass[output=short    % long|short|inprep              
+	        %,blackandwhite
+	        ,smallfont
+%	        ,draftmode
+                ,bibtex
+                ,newtxmath
+                %,showindex
+		  ]{langsci/langscibook}                          
+
+
+
+\usepackage{ifthen}
+\provideboolean{draft}
+\setboolean{draft}{false}
+%\setboolean{draft}{true}
+
+\usepackage{etoolbox}
+\newtoggle{draft}\togglefalse{draft}
+
+
+
+
+
+\newcommand{\NOTE}[1]{}
+%\newcommand{\NOTE}[1]{\marginpar{#1}}
+
+\newcommand{\LATER}[1]{}
+
+
+
+\input grammatical-theory-include
