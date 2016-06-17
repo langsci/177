@@ -586,10 +586,10 @@ sn edges, for tree={l+=\baselineskip}
 		[er;he]]
 	[V{[\type{fin}, \subcat \sliste{ \ibox{1} }]}, name=fin2
 		[\ibox{2} NP{[\textit{dat}]}
-			[dem Mann;the man,triangle]]
+			[dem Mann;the man,roof]]
 		[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2} }]}, name=fin3
 			[\ibox{3} NP{[\textit{acc}]}
-				[das Buch;the book,triangle]]
+				[das Buch;the book,roof]]
 			[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2}, \ibox{3} }]}, name=fin4
 				[gibt;gives]]]]]	
 tikz={\draw[<->] ($(fin1.south west)+(\offsetup,0)$) to ($(fin2.north west)+(\offset,0)$);
@@ -637,13 +637,13 @@ sn edges
              subcat & \sliste{ \ibox{2} }
              }
 		[\ibox{3} NP{[\textit{dat}]}
-			[dem Mann;the man, triangle]]
+			[dem Mann;the man, roof]]
 		[\ms{
                                                                                    head & \ibox{1}\\
                                                                                    subcat & \sliste{ \ibox{2}, \ibox{3} }
                                                                                     }
 			[\ibox{4} NP{[\textit{acc}]}
-				[das Buch;the book, triangle]]
+				[das Buch;the book, roof]]
 			[\ms{
                                                                                    head & \ibox{1} \ms[verb]{
                                                                                                   vform & fin
@@ -1394,7 +1394,7 @@ sn edges
 	[VP//V, name=vp
 	   [NP [jeder;everyone]]
 	   [V$'$//V, name=vbar
-	     [NP [diesen Mann;this man, triangle]]
+	     [NP [diesen Mann;this man, roof]]
 		[V//V,name=vtrace [ \trace$_k$]]]]]
 %\draw[<->] (vone) to (vtwo);
 %%\draw (-2,-5) to[grid with coordinates] (4,0.5);
@@ -1456,7 +1456,7 @@ sn edges
 			[jeder;everyone]]
 		[V{[\subcat \sliste{ \ibox{3} }]}
 			[\ibox{4} NP{[\textit{acc}]}
-				[diesen Mann;this man, triangle]]
+				[diesen Mann;this man, roof]]
 			[{[V[\subcat \sliste{ \ibox{3}, \ibox{4} }]}
 				[\trace]]]]]]
 \end{forest}
@@ -1626,7 +1626,7 @@ sn edges
                       \textsc{dsl$|$cat$|$subcat} \ibox{2},\\
                       \textsc{subcat} \sliste{ \ibox{3} } }}
 			[\ibox{4} NP{[\textit{acc}]}
-				[diesen Mann;this man,triangle]]
+				[diesen Mann;this man,roof]]
 			[V{\feattab{
                               \textsc{dsl$|$cat$|$subcat} \ibox{2},\\
                               \textsc{subcat} \ibox{2} \sliste{ \ibox{3}, \ibox{4} } }}
@@ -1710,7 +1710,7 @@ sn edges
 		[jeder;everybody]]
 	[V{[\subcat \sliste{ \ibox{1} }]}
 		[\ibox{2} NP{[\type{acc}]}
-			[diesen Mann;this man, triangle]]
+			[diesen Mann;this man, roof]]
 		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} }]}
 			[kennt;knows]]]]
 \end{forest}
@@ -1725,7 +1725,7 @@ The analysis of the marked order is shown in Figure~\vref{Abbildung-Konstituente
 sn edges
 [V{[\subcat \sliste{}]}
 	[\ibox{2} NP{[\type{acc}]}
-		[diesen Mann;this man, triangle]]
+		[diesen Mann;this man, roof]]
 	[V{[\subcat \sliste{ \ibox{2} }]}
         	[\ibox{1} NP{[\type{nom}]}
 	        	[jeder;everybody]]
@@ -1817,7 +1817,7 @@ the analysis of (\mex{1}).
 sn edges
 [VP
 	[NP,name=np
-		[diesen Mann$_i$;this man,triangle]]
+		[diesen Mann$_i$;this man,roof]]
 	[VP/NP,name=vpnp2
 		[V
 			[V
@@ -2022,9 +2022,9 @@ variant of the analysis of fronting to the prefield.
 sn edges
 [V\feattab{\textsc{subcat} \eliste,\\ 
            \textsc{inher$|$slash} \eliste},s sep+=1em % increase the distance because otherwise we
-                                % are in the triangle
+                                % are in the roof
 	[NP{[\loc \ibox{1} \textit{acc}]}
-		[diesen Mann;this man,triangle]]
+		[diesen Mann;this man,roof]]
 	[V\feattab{\textsc{subcat} \sliste{},\\
                    \textsc{inher$|$slash} \sliste{ \ibox{1} },\\
                    \textsc{to-bind$|$slash} \sliste{ \ibox{1} } }
@@ -2149,9 +2149,9 @@ sn edges
                                    \subcat \sliste{ \ibox{2}, \ibox{3} } }
 				[Zerstörung;destruction]]
 			[\ibox{3} NP{[\type{gen}]}
-				[der Stadt; of the city,triangle]]]
+				[der Stadt; of the city,roof]]]
 		[\ibox{2} PP{[\type{durch}]}
-			[durch die Soldaten; by the soldiers,triangle]]]]
+			[durch die Soldaten; by the soldiers,roof]]]]
 \end{forest}}
 \caption{NP analysis with valence features \spr}\label{Abbildung-die-Zerstorung} 
 \end{figure}%

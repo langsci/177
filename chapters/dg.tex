@@ -2221,16 +2221,14 @@ branching structures with discontinuous constituents.
 \begin{forest}
 sn edges
 [{V[\dom \phonliste{ der Frau, ein Mann, das Buch, gibt }]}
-  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man,triangle]]
+  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man,roof]]
   [{V[\dom \phonliste{ der Frau, das Buch, gibt }]}
-   [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]} [der Frau;the woman,triangle] ]
+   [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]} [der Frau;the woman,roof] ]
    [{V[\dom \phonliste{ das Buch, gibt }]}
-    [{~~~NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;the book,triangle] ]
+    [{~~~NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;the book,roof] ]
     [{V[\dom \phonliste{ gibt }]} [gibt;gives] ] ] ] ]
 \end{forest}
-}
-\caption{\label{fig-the-child-reads-the-book-reape-binary}Analysis of \emph{dass der Frau ein Mann das Buch
-    gibt} `that a man gives the woman the book' with binary branching structures and discontinuous constituents}
+roof\caption{\label{fig-the-child-reads-the-book-reape-binary}Analysis of \emph{dass der Frau ein Mann das Buch gibt} `that a man gives the woman the book' with binary branching structures and discontinuous constituents}}
 \end{figure}%%
 Words or word sequences that are separated by commas stand for separate domain objects, that is,
 \phonliste{ das, Buch } contains the two objects \emph{das} and \emph{Buch} and \phonliste{ das
@@ -2243,36 +2241,27 @@ operator allows for discontinuous constituents. The node for \emph{der Frau das 
 woman the book gives' is discontinuous: \emph{ein Mann} `a man' is inserted into the domain between
 \emph{der Frau} `the woman' and \emph{das Buch} `the book'.  This is more obvious in Figure~\vref{fig-the-child-reads-the-book-reape-binary-discont}, which has a serialization of NPs that
 corresponds to their order.
-\begin{figure}
-\centerfit{%
-\begin{forest}
-sn edges
-[{V[\dom \phonliste{ der Frau, ein Mann, das Buch, gibt }]}
-  [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]~~~~~~}, no edge, name=np-dat,tier=dat-tier, [der Frau;the woman,triangle] ]
-  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man, triangle]]
-  [{V[\dom \phonliste{ der Frau, das Buch, gibt }]}, name=v
-   [NP, phantom, tier=dat-tier ]
-   [{V[\dom \phonliste{ das Buch, gibt }]}
-    [{NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;the book,triangle] ]
-    [{V[\dom \phonliste{ gibt }]} [gibt;gives] ] ] ] ]
-\draw (v.south) -- (np-dat.north);
-\end{forest}
-}
-\caption{\label{fig-the-child-reads-the-book-reape-binary-discont}Analysis of \emph{dass der Frau ein Mann das Buch
-    gibt} `that a man gives the woman the book' with binary branching structures and discontinuous
-  constituents showing the discontinuity}
-\end{figure}% 
-
-Such binary branching structures were assumed for the analysis of German by \citet{Kathol95a,Kathol2000a} and
-\citet{Mueller95c,Babel,Mueller99a,Mueller2002b}, but as we have seen throughout this chapter, Dependency
-Grammar assumes flat representations (but see Footnote~\ref{fn-dg-binary-branching} on page~\pageref{fn-dg-binary-branching}). Schema~\ref{schema-flat-prel} licenses structures in which all arguments of a
-head are realized in one go.\footnote{%
-I assume here that all arguments are contained in the \subcatl of a
+%\begin{figure}
+%\centerfit{%
+%\begin{forest}
+%sn edges
+%[{V[\dom \phonliste{ der Frau, ein Mann, das Buch, gibt }]}
+ % [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]~~~~~~}, no edge, name=np-dat,tier=dat-tier, [der %Frau;the woman,roof] ]
+  %[{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man, roof]]
+  %[{V[\dom \phonliste{ der Frau, das Buch, gibt }]}, name=v
+   %[NP, phantom, tier=dat-tier ]
+   %[{V[\dom \phonliste{ das Buch, gibt }]}
+    %[{NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;the book,roof] ]
+    %[{V[\dom \phonliste{ gibt }]} [gibt;gives] ] ] ] ]
+%\draw (v.south) -- (np-dat.north);
+%\end{forest}
+%}
+%\caption{\label{fig-the-child-reads-the-book-reape-binary-discont}Analysis of \emph{dass der Frau %ein Mann das Buch gibt} `that a man gives the woman the book' with binary branching structures %and discontinuous constituents showing the discontinuity}
+%\end{figure}% 
+%
+Such binary branching structures were assumed for the analysis of German by \citet{Kathol95a,Kathol2000a} and \citet{Mueller95c,Babel,Mueller99a,Mueller2002b}, but as we have seen throughout this chapter, Dependency Grammar assumes flat representations (but see Footnote~\ref{fn-dg-binary-branching} on page~\pageref{fn-dg-binary-branching}). Schema~\ref{schema-flat-prel} licenses structures in which all arguments of a head are realized in one go.\footnote{I assume here that all arguments are contained in the \subcatl of a
 lexical head, but nothing hinges on that. One could also assume several valence features and
-nevertheless get a flat structure. For instance, \citet[\page 339]{Borsley89} suggests a schema for auxiliary inversion in
-English\il{English} and verb-initial sentences in Welsh\il{Welsh} that refers to both the valence feature for subjects and for complements and realizes all
-elements in a flat structure.%
-}
+nevertheless get a flat structure. For instance, \citet[\page 339]{Borsley89} suggests a schema for auxiliary inversion in English\il{English} and verb-initial sentences in Welsh\il{Welsh} that refers to both the valence feature for subjects and for complements and realizes all elements in a flat structure.}
 \begin{schema}[Head-Argument Schema (flat structure)]
 \label{schema-flat-prel}
 \type{head-argument-phrase}\istype{head"=argument"=phrase} \impl\\
@@ -2317,31 +2306,28 @@ projectivity.
 %\todostefan{S: ok but nobody in DG does that.
 %There are plenty of works about how to relax the projectivity without suppressing it.}
 With such a grammar we could analyze the non-projecting structure of Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg} and much more. The analysis in terms of domain union is shown in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-domains}. 
-\begin{figure}
-\centerline{%
-\begin{forest}
-sn edges
-[{V[\dom \phonliste{ die, Frauen, Türen, öffnen }]}
-  [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;the] ]
-  [{NP[\dom \phonliste{ Frauen }]}
-     [Frauen;women] ]
-  [{NP[\dom \phonliste{ die, Türen }]},name=Türen
-    [Det, phantom ]
-    [{N[\dom \phonliste{ Türen }]}, tier=det-n 
-     [Türen;doors] ] ]
-  [{V[\dom \phonliste{ öffnen }]} 
-    [öffnen;open] ]
-]
-\draw (Türen.south)--(die.north);
-\end{forest}
-}
-\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}Unwanted analysis of \emph{dass die Frauen Türen
-    öffnen} `that the women open doors' using Reape-style constituent order domains}
-\end{figure}%
-It is clear that such discontinuity is unwanted and hence one has to have restrictions that enforce continuity. One
-possible restriction is to require projectivity and hence equivalence to phrase structure grammars in the sense that was
-discussed above.
-
+%\begin{figure}
+%\centerline{%
+%\begin{forest}
+%sn edges
+%[{V[\dom \phonliste{ die, Frauen, Türen, öffnen }]}
+  %[{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;the] ]
+  %[{NP[\dom \phonliste{ Frauen }]}
+     %[Frauen;women] ]
+  %[{NP[\dom \phonliste{ die, Türen }]},name=Türen
+    %[Det, phantom ]
+    %[{N[\dom \phonliste{ Türen }]}, tier=det-n 
+     %[Türen;doors] ] ]
+  %[{V[\dom \phonliste{ öffnen }]} 
+    %[öffnen;open] ]
+%]
+%\draw (Türen.south)--(die.north);
+%\end{forest}
+%}
+%\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}Unwanted analysis of \emph{dass die %Frauen Türen öffnen} `that the women open doors' using Reape-style constituent order domains}
+%\end{figure}%
+%It is clear that such discontinuity is unwanted and hence one has to have restrictions that enforce %continuity. One possible restriction is to require projectivity and hence equivalence to phrase %structure grammars in the sense that was discussed above.
+%
 There is some dispute going on about the question of whether constituency/""dependency is
 primary/necessary to analyze natural language: while %\citet[\page 83]{Korhonen77a}, 
 \citet{Hudson80a} and \citet{Engel96a} claim that dependency is
@@ -2397,44 +2383,39 @@ restrictions regarding adjacency, linear order and continuity, we cannot assign 
 unambiguously. For instance, the graph in Figure~\vref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is perfectly compatible with the
 meaning of this sentence: \emph{dass} dominates \emph{kommt} and \emph{kommt} dominates
 \emph{Peter}, while \emph{ob} dominates \emph{kommt} and \emph{kommt} dominates \emph{Klaus}. 
-\begin{figure}
-\centerline{%
-\begin{forest}
-dg edges
-[V, l sep+=6pt
-  [Subjunction,name=subj1
-    [dass;that]
-    [V,name=v1,no edge
-      [N,name=n1, no edge [Peter;Peter]]
-      [kommt;comes]]]
-  [klärt;resolves]
-  [Adv, dg adjunct [nicht;not]]
-  [Subjunction,name=subj2
-    [ob;whether]
-    [V,name=v2,no edge
-      [N,name=n2, no edge [Klaus;Klaus]]
-      [kommt;comes]]]]
-\draw (subj1.south)--(v2.north);
-\draw (subj2.south)--(v1.north);
-\draw (v1.south)--(n2.north);
-\draw (v2.south)--(n1.north);
-\end{forest}
-}
-\caption{\label{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}The dependency graph of
-  \emph{Dass Peter kommt, klärt nicht, ob Klaus kommt.} `That Peter comes does not resolve the
-  question of whether Klaus comes.' is not unambiguously determined by semantics.}
-\end{figure}%
-I used the wrong \emph{kommt} in the dependency chains, but this is an issue of linearization and is
-independent of dependency. As soon as one takes linearization information into account, the dependency graph
-in Figure~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is ruled out since \emph{ob} `whether'
-does not precede its verbal dependent \emph{kommt} `comes'. But this explanation does not work for
-the example in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}. Here, all dependents are
-linearized correctly; it is just the discontinuity of \emph{die} and \emph{Türen} that is
-inappropriate. If it is required that \emph{die} and \emph{Türen} are continuous, we have basically let
-constituents back in (see Footnote~\ref{fn-projective-dg-vs-constituents} on page~\pageref{fn-projective-dg-vs-constituents}). 
-
-Similarly, non"=projective analyses without any constraints regarding continuity would permit the
-word salad in (\mex{1}b):
+%\begin{figure}
+%\centerline{%
+%\begin{forest}
+%dg edges
+%[V, l sep+=6pt
+  %[Subjunction,name=subj1
+    %[dass;that]
+    %[V,name=v1,no edge
+      %[N,name=n1, no edge [Peter;Peter]]
+      %[kommt;comes]]]
+  %[klärt;resolves]
+  %[Adv, dg adjunct [nicht;not]]
+  %[Subjunction,name=subj2
+    %[ob;whether]
+    %[V,name=v2,no edge
+      %[N,name=n2, no edge [Klaus;Klaus]]
+      %[kommt;comes]]]]
+%\draw (subj1.south)--(v2.north);
+%\draw (subj2.south)--(v1.north);
+%\draw (v1.south)--(n2.north);
+%\draw (v2.south)--(n1.north);
+%\end{forest}
+%}
+%\caption{\label{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}The dependency graph of
+  %\emph{Dass Peter kommt, klärt nicht, ob Klaus kommt.} `That Peter comes does not resolve the
+  %question of whether Klaus comes.' is not unambiguously determined by semantics.}
+%\end{figure}%
+%I used the wrong \emph{kommt} in the dependency chains, but this is an issue of linearization and is
+%independent of dependency. As soon as one takes linearization information into account, the %dependency graph in Figure~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is ruled out %since \emph{ob} `whether' does not precede its verbal dependent \emph{kommt} `comes'. But this %explanation does not work for the example in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-%dg}. Here, all dependents are linearized correctly; it is just the discontinuity of \emph{die} and 
+%\emph{Türen} that is inappropriate. If it is required that \emph{die} and \emph{Türen} are %continuous, we have basically let constituents back in (see Footnote~\ref{fn-projective-dg-vs-%constituents} on page~\pageref{fn-projective-dg-vs-constituents}). 
+%
+%Similarly, non"=projective analyses without any constraints regarding continuity would permit the
+%word salad in (\mex{1}b):
 \eal
 \ex[]{
 \gll Deshalb klärt, dass Peter kommt, ob Klaus spielt.\\
@@ -2458,74 +2439,71 @@ word salad in (\mex{1}b):
 (\mex{0}b) is a variant of (\mex{0}a) in which the elements of the two clausal arguments are in
 correct order with respect to each other, but both clauses are discontinuous in such a way that the
 elements of each clause alternate. The dependency graph is shown in Figure~\vref{fig-dass-ob-peter-klaus-kommt-spielt}.
-\begin{figure}
-\centerline{%
-\begin{forest}
-dg edges
-[V, l sep+=6pt
-    [Adv, dg adjunct [deshalb;therefore] ]
-    [klärt;resolves]
-    [Subjunction, name=s1
-        [dass;that]]
-    [Subjunction, name=s2
-        [ob;whether]]
-    [hidden, phantom
-        [hidden, phantom
-            [N, name=n1
-                [Peter;Peter]]]
-        [hidden, phantom
-            [N, name=n2[Klaus;Klaus]]]
-        [V, name=v1
-            [kommt;\strut comes]]]
-    [hidden, phantom
-        [V, name=v2
-            [spielt;plays]]]
-]
-\draw (s1.south)--(v1.north);
-\draw (s2.south)--(v2.north);
-\draw (v1.south)--(n1.north);
-\draw (v2.south)--(n2.north);
-\end{forest}
-}
-\caption{\label{fig-dass-ob-peter-klaus-kommt-spielt}The dependency graph of the word salad
-  \emph{Deshalb klärt dass ob Peter Klaus kommt spielt.} `Therefore resolves that whether Peter
-  Klaus comes plays' which is admitted by non-projective Dependency Grammars that do not restrict discontinuity}
-\end{figure}%
-As was explained in Section~\ref{sec-fcg-nld} on the analysis of nonlocal dependencies in Fluid
-Construction Grammar\indexfcg, a grammar of languages like English and German has to constrain the clauses in such a way that they are
-continuous with the exception of extractions to the left. A similar statement can be found in
-\citew[\page 192]{Hudson80a}. Hudson also states that an item can be fronted in English\il{English},
-provided all of its dependents are fronted with it (p.\,184). This ``item with all its dependents'' is the
-constituent in constituent"=based grammars. The difference is that this object is not given an
-explicit name and is not assumed to be a separate entity containing the head and its dependents in
-most Dependency Grammars.\footnote{
-See however \citet{Hellwig2003a} for an explicit proposal that assumes that there is a linguistic
-object that represents the whole constituent rather than just the lexical head.
-}
-
-Summing up what has been covered in this section so far, I have shown what a phrase structure
-grammar that corresponds to a certain Dependency Grammar looks like. I have also shown how discontinuous
-constituents can be allowed for. However, there are issues that remained unaddressed so far: not all
-properties that a certain phrase has are identical to its lexical head and the differences have to
-be represented somewhere. I will discuss this in the following subsection.
-\is{projectivity|)} 
-
+%\begin{figure}
+%\centerline{%
+%\begin{forest}
+%dg edges
+%[V, l sep+=6pt
+   % [Adv, dg adjunct [deshalb;therefore] ]
+    %[klärt;resolves]
+    %[Subjunction, name=s1
+       % [dass;that]]
+    %[Subjunction, name=s2
+       % [ob;whether]]
+    %[hidden, phantom
+       % [hidden, phantom
+          %  [N, name=n1
+             %   [Peter;Peter]]]
+        %[hidden, phantom
+           % [N, name=n2[Klaus;Klaus]]]
+        %[V, name=v1
+           % [kommt;\strut comes]]]
+    %[hidden, phantom
+       % [V, name=v2
+          %  [spielt;plays]]]
+%]
+%\draw (s1.south)--(v1.north);
+%\draw (s2.south)--(v2.north);
+%\draw (v1.south)--(n1.north);
+%\draw (v2.south)--(n2.north);
+%\end{forest}
+%}
+%\caption{\label{fig-dass-ob-peter-klaus-kommt-spielt}The dependency graph of the word salad
+  %\emph{Deshalb klärt dass ob Peter Klaus kommt spielt.} `Therefore resolves that whether Peter
+  %Klaus comes plays' which is admitted by non-projective Dependency Grammars that do not %restrict discontinuity}
+%\end{figure}%
+%As was explained in Section~\ref{sec-fcg-nld} on the analysis of nonlocal dependencies in Fluid
+%Construction Grammar\indexfcg, a grammar of languages like English and German has to %constrain the clauses in such a way that they are
+%continuous with the exception of extractions to the left. A similar statement can be found in
+%\citew[\page 192]{Hudson80a}. Hudson also states that an item can be fronted in English
+%\il{English},
+%provided all of its dependents are fronted with it (p.\,184). This ``item with all its dependents'' is the
+%constituent in constituent"=based grammars. The difference is that this object is not given an
+%explicit name and is not assumed to be a separate entity containing the head and its dependents %in
+%most Dependency Grammars.\footnote{
+%See however \citet{Hellwig2003a} for an explicit proposal that assumes that there is a linguistic
+%object that represents the whole constituent rather than just the lexical head.
+%}
+%
+%Summing up what has been covered in this section so far, I have shown what a phrase structure
+%grammar that corresponds to a certain Dependency Grammar looks like. I have also shown how %discontinuous
+%constituents can be allowed for. However, there are issues that remained unaddressed so far: not %all
+%properties that a certain phrase has are identical to its lexical head and the differences have to
+%be represented somewhere. I will discuss this in the following subsection.
+%\is{projectivity|)} 
+%
 \subsubsection{Features that are not identical between heads and projections}
 \label{sec-dg-daughters-mothers}
 \label{sec-dg-is-simpler}
-
+%
 %\addlines
-As \citet{Oliva2003a} points out, the equivalence of Dependency Grammar and HPSG only holds up as far
-as \headvs are concerned.
-%\todostefan{S: many DG have several level of representations. You cannot compare HSG wioth only one
-%level of MTT. MTT has 7 level of representations.} 
+As \citet{Oliva2003a} points out, the equivalence of Dependency Grammar and HPSG only holds up as far as \headvs are concerned.
+%\todostefan{S: many DG have several level of representations. You cannot compare HSG wioth %only one level of MTT. MTT has 7 level of representations.} 
 That is, the node labels in dependency graphs correspond to the \headvs in
 an HPSG. There are, however, additional features like \cont for the semantics and \slasch for
 nonlocal dependencies. These values usually differ between a lexical head and its phrasal
 projections. For illustration, let us have a look at the phrase \emph{a book}. The semantics of the
-lexical material and the complete phrase is given in (\mex{1}):\footnote{
-  For lambda expressions see Section~\ref{sec-PSG-Semantik}.
-}
+lexical material and the complete phrase is given in (\mex{1}):\footnote{ For lambda expressions see Section~\ref{sec-PSG-Semantik}.}
 \eal
 \ex \emph{a}: $\lambda P \lambda Q \exists x (P(x) \wedge Q(x))$
 \ex \emph{book}: $\lambda y\;(\relation{book}(y))$
@@ -2533,21 +2511,7 @@ lexical material and the complete phrase is given in (\mex{1}):\footnote{
 \zl
 Now, the problem for the Dependency Grammar notation is that there is no NP node that could be
 associated with the semantics of \emph{a book} (see Figure~\ref{fig-a-book-psg-dg} on page~\pageref{fig-a-book-psg-dg}), the only thing present in the tree is a node for the
-lexical N: the node for \emph{book}.\footnote{
-  \citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the dependents modify the head
-    word's meaning, so the latter carries the meaning of the whole phrase. For example, in
-    \emph{long books about linguistics}, the word \emph{books} means `long books about linguistics'
-    thanks to the modifying effect of the dependents.'' For a concrete implementation of this idea
-    see Figure~\vref{fig-wg-small-children-are-playing-outside}.
-
-   An alternative is to assume different representational levels as in \mtt \citep{Melcuk81a}. In fact the \contv in
-   HPSG is also a different representational level. However, this representational level is in sync
-   with the other structure that is build.
-} This is not a big problem, however: the lexical
-properties can be represented as part of the highest node as the value of a separate feature. The N
-node in a dependency graph would then have a \contv that corresponds to the semantic contribution of
-the complete phrase and a \textsc{lex-cont} value that corresponds to the contribution of the lexical
-head of the phrase. So for \emph{a book} we would get the following representation:
+lexical N: the node for \emph{book}.\footnote{\citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the dependents modify the head word's meaning, so the latter carries the meaning of the whole phrase. For example, in  \emph{long books about linguistics}, the word \emph{books} means `long books about linguistics' thanks to the modifying effect of the dependents.'' For a concrete implementation of this idea see Figure~\vref{fig-wg-small-children-are-playing-outside}.An alternative is to assume different representational levels as in \mtt \citep{Melcuk81a}. In fact the \contv in HPSG is also a different representational level. However, this representational level is in sync  with the other structure that is build.} This is not a big problem, however: the lexical properties can be represented as part of the highest node as the value of a separate feature. The N node in a dependency graph would then have a \contv that corresponds to the semantic contribution of the complete phrase and a \textsc{lex-cont} value that corresponds to the contribution of the lexical head of the phrase. So for \emph{a book} we would get the following representation:
 \ea
 \ms{
 cont & $\lambda Q \exists x (\relation{book}(x) \wedge Q(x))$\\
@@ -2556,7 +2520,7 @@ lexical-cont & $\lambda y\;(\relation{book}(y))$
 \z
 With this kind of representation one could maintain analyses in which the semantic contribution of a
 head together with its dependents is a function of the semantic contribution of the parts. 
-
+%
 %% 07.03.2015
 %%
 %% This could be done with a list with +/- REALIZED flags. The head could require everything to be
@@ -2609,13 +2573,9 @@ head together with its dependents is a function of the semantic contribution of 
 %% realized. So \emph{Hafen} would select for a determiner and the N node in the left figure would mark
 %% the determiner requirement as satisfied and the N node in the right figure would still have an
 %% unsatisfied determiner requirement. Let us assume that such a feature 
-
+%
 Now, there are probably further features in which lexical heads differ from their projections. 
-One such feature
-would be \slasch, which is used for nonlocal dependencies in HPSG and could be used to establish the
-relation between the risen element and the head in an approach à la \citet{GO2009a}. Of course we can apply the same trick again. We
-would then have a feature \textsc{lexical-slash}. But this could be improved and the features of the
-lexical item could be grouped under one path. The general skeleton would then be (\mex{1}):
+One such feature would be \slasch, which is used for nonlocal dependencies in HPSG and could be used to establish the relation between the risen element and the head in an approach à la \citet{GO2009a}. Of course we can apply the same trick again. We would then have a feature \textsc{lexical-slash}. But this could be improved and the features of the lexical item could be grouped under one path. The general skeleton would then be (\mex{1}):
 \ea
 \ms{
 cont & \\
@@ -2626,66 +2586,65 @@ lexical & \ms{ cont & \\
 \z
 But if we rename \textsc{lexical} to \textsc{head-dtr}, we basically get the HPSG
 representation. 
-
+%
 \citet[\page 602]{Hellwig2003a} states that his special version of Dependency Grammar,
 which he calls Dependency Unification Grammar\is{Dependency Unification Grammar (DUG)}, assumes that
 governing heads select complete nodes with all their daughters. These nodes may differ in their
 properties from their head (p.\,604). They are in fact constituents. So this very explicit and
 formalized variant of Dependency Grammar is very close to HPSG, as Hellwig states himself (p.\,603).
-
+%
 Hudson's Word Grammar \citeyearpar{Hudson2015a} is also explicitly worked out and, as will be shown,
 it is rather similar to HPSG. The representation in
 Figure~\vref{fig-wg-small-children-are-playing-outside} is a detailed description of what the 
 abbreviated version in Figure~\vref{fig-wg-small-children-are-playing-outside-abbreviated} stands for.
-\begin{figure}
-\begin{forest}
-  wg
-  [were
-    [children
-      [
-        [small]
-        []
-      ]
-    ]
-    [
-      []
-    ]
-    [playing
-      [
-        []
-        [outside]
-      ]
-    ]
-  ]
-  \draw[deparrow] (were'') to[out=west, in=north] (children'');
-  \draw[deparrow] (children') to[out=west, in=north] (small);
-  \draw[deparrow] (were') to[out=60, in=120] (playing'');
-  \draw[deparrow] (playing'') to[out=220, in=east] (children');
-  \draw[deparrow] (playing') to[out=east, in=north] (outside);
-\end{forest}
-\caption{\label{fig-wg-small-children-are-playing-outside}Analysis of \emph{Small children were
-    playing outside.} according to \citet{Hudson2015a}}
-\end{figure}%
-\begin{figure}
-\begin{forest}
-  wg
-  [,phantom
-   [small]
-   [children]
-   [were]
-   [playing]
-   [outside]
-  ]
-%  \draw[deparrow] (were.north) [bend.left] to ([xshift=-10pt]children.north);
-  \draw[deparrow] ([xshift=-3pt]were.north) to[out=north, in=north] ([xshift=5pt]children.north);
-  \draw[deparrow] ([xshift=-3pt]children.north) to[out=north, in=north] (small);
-  \draw[deparrow] ([xshift=3pt]were.north) to[out=north, in=north] ([xshift=-5pt]playing.north);
-  \draw[deparrow] (playing.north) to[out=north, in=north] (children);
-  \draw[deparrow] ([xshift=3pt]playing.north) to[out=north, in=north] (outside);
-\end{forest}
-\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of \emph{Small children were
-    playing outside.} according to \citet{Hudson2015a}}
-\end{figure}%
+%\begin{figure}
+%\begin{forest}
+ % wg
+  %[were
+    %[children
+      %[
+        %[small]
+        %[]
+      %]
+    %]
+    %[
+      %[]
+    %]
+    %[playing
+      %[
+        %[]
+        %[outside]
+      %]
+    %]
+  %]
+  %\draw[deparrow] (were'') to[out=west, in=north] (children'');
+  %\draw[deparrow] (children') to[out=west, in=north] (small);
+  %\draw[deparrow] (were') to[out=60, in=120] (playing'');
+  %\draw[deparrow] (playing'') to[out=220, in=east] (children');
+  %\draw[deparrow] (playing') to[out=east, in=north] (outside);
+%\end{forest}
+%\caption{\label{fig-wg-small-children-are-playing-outside}Analysis of \emph{Small children were
+   % playing outside.} according to \citet{Hudson2015a}}
+%\end{figure}%
+%\begin{figure}
+%\begin{forest}
+ % wg
+  %[,phantom
+   %[small]
+   %[children]
+   %[were]
+   %[playing]
+   %[outside]
+  %]
+%  \draw[deparrow] (were.north) [bend.left] to ([xshift=-10pt]children.north);(% attemtion)
+  %\draw[deparrow] ([xshift=-3pt]were.north) to[out=north, in=north] ([xshift=5pt]children.north);
+  %\draw[deparrow] ([xshift=-3pt]children.north) to[out=north, in=north] (small);
+  %\draw[deparrow] ([xshift=3pt]were.north) to[out=north, in=north] ([xshift=-5pt]playing.north);
+  %\draw[deparrow] (playing.north) to[out=north, in=north] (children);
+  %\draw[deparrow] ([xshift=3pt]playing.north) to[out=north, in=north] (outside);
+%\end{forest}
+%\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of %\emph{Small children were  playing outside.} according to \citet{Hudson2015a}}
+%\end{figure}%
 What is shown in the first diagram is that a combination of two nodes results in a new node. For
 instance, the combination of \emph{playing} and \emph{outside} yields \emph{playing}$'$, the
 combination of \emph{small} and \emph{children} yields \emph{children}$'$, and the combination of
@@ -2693,7 +2652,7 @@ combination of \emph{small} and \emph{children} yields \emph{children}$'$, and t
 and \emph{playing}$''$ results in \emph{were}$'$ and the combination of \emph{children}$''$ and
 \emph{were}$'$ yields \emph{were}$''$. The only thing left to explain is why there is a node for
 \emph{children} that is not the result of the combination of two nodes, namely
-\emph{children}$''$. The line with the triangle at the bottom stands for default inheritance\is{inheritance!default}. That
+\emph{children}$''$. The line with the roof at the bottom stands for default inheritance\is{inheritance!default}. That
 is, the upper node inherits all properties from the lower node by default. Defaults can be
 overridden, that is, information at the upper node may differ from information at the dominated
 node. This makes it possible to handle semantics compositionally: nodes that are the result of the
@@ -2701,30 +2660,30 @@ combination of two nodes have a semantics that is the combination of the meaning
 nodes. Turning to \emph{children} again, \emph{children}$'$ has the property that it must be adjacent to \emph{playing}, but since the
 structure is a raising structure in which \emph{children} is raised to the subject of \emph{were},
 this property is overwritten in a new instance of \emph{children}, namely \emph{children}$''$.
-
+%
 The interesting point now is that we get almost a normal phrase structure tree if we replace the words in the diagram in
 Figure~\ref{fig-wg-small-children-are-playing-outside} by syntactic categories. The result of the
 replacement is shown in Figure~\vref{fig-small-children-are-playing-outside}.
-\begin{figure}
-\begin{forest}
-  sn edges
-  [V{[\emph{fin}]}$''$
-    [N$''$
-      [N$'$, tier=nbar, name=nbar, edge=dashed
-        [Adj [small]]
-        [N   [children]] ] ]
-    [V{[\emph{fin}]}$'$
-      [V{[\emph{fin}]} [were]]
-      [V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
-        [V{[\emph{ing}]}$'$, tier=nbar
-          [V{[\emph{ing}]} [playing]]
-          [Adv [outside]] ] ] ]
-  ]
-  \draw[dashed] (ving.south)--(nbar.north);
-\end{forest}
-\caption{\label{fig-small-children-are-playing-outside}Analysis of \emph{Small children are
-    playing outside.} with category symbols}
-\end{figure}%
+%\begin{figure}
+%\begin{forest}
+  %sn edges
+  %[V{[\emph{fin}]}$''$
+    %[N$''$
+      %[N$'$, tier=nbar, name=nbar, edge=dashed
+        %[Adj [small]]
+        %[N   [children]] ] ]
+    %[V{[\emph{fin}]}$'$
+      %[V{[\emph{fin}]} [were]]
+      %[V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
+        %[V{[\emph{ing}]}$'$, tier=nbar
+          %[V{[\emph{ing}]} [playing]]
+          %[Adv [outside]] ] ] ]
+  %]
+  %\draw[dashed] (ving.south)--(nbar.north);
+%\end{forest}
+%\caption{\label{fig-small-children-are-playing-outside}Analysis of \emph{Small children are
+ %   playing outside.} with category symbols}
+%\end{figure}%
 The only thing unusual in this graph (marked by dashed lines) is that N$'$ is combined with V{[\emph{ing}]}$'$ and the mother
 of N$'$, namely N$''$, is combined with V{[\emph{fin}]}$'$. As explained
 above, this is due to the analysis of raising in Word Grammar,
@@ -2733,30 +2692,19 @@ which involves multiple dependencies between a raised item and its heads. There 
 \emph{children} in Figure~\ref{fig-wg-small-children-are-playing-outside}. 
 Apart from this, the
 structure corresponds to what an HPSG grammar would license. The nodes in Hudson's diagram which are connected
-with lines with triangles at the bottom are related to their children using default
+with lines with roofs at the bottom are related to their children using default
 inheritance. This too is rather similar to those versions of HPSG that use default inheritance. For
 instance, \citet[\page 33]{GSag2000a-u} use a Generalized Head Feature
 Principle\is{principle!Generalized Head Feature} that projects all properties of
 the head daughter to the mother by default.
-
-The conclusion of this section is that the only principled difference between phrase structure grammars and
-Dependency Grammar is the question of how much intermediate structure is assumed: is there a VP
-without the subject? Are there intermediate nodes for adjunct attachment? It is difficult to decide
-these questions in the absence of fully worked out proposals that include semantic
-representations. Those proposals that are worked out -- like Hudson's and Hellwig's -- assume
-intermediate representations, which makes these approaches rather similar to phrase structure-based
-approaches. If one compares the structures of these fully worked out variants of Dependency Grammar
-with phrase structure grammars, it becomes clear that the claim that Dependency Grammars are simpler
-is unwarranted. This claim holds for compacted schematic representations like
-Figure~\ref{fig-wg-small-children-are-playing-outside-abbreviated} but it does not hold for fully
-worked out analyses.
+%
+The conclusion of this section is that the only principled difference between phrase structure grammars and Dependency Grammar is the question of how much intermediate structure is assumed: is there a VP without the subject? Are there intermediate nodes for adjunct attachment? It is difficult to decide these questions in the absence of fully worked out proposals that include semantic representations. Those proposals that are worked out -- like Hudson's and Hellwig's -- assume intermediate representations, which makes these approaches rather similar to phrase structure-based approaches. If one compares the structures of these fully worked out variants of Dependency Grammar with phrase structure grammars, it becomes clear that the claim that Dependency Grammars are simpler is unwarranted. This claim holds for compacted schematic representations like Figure~\ref{fig-wg-small-children-are-playing-outside-abbreviated} but it does not hold for fully worked out analyses.
 %% \subsection{Extraction and coordination}
 %% \label{sec-dg-coordination}
-
-
+%
 \subsubsection{Non-headed constructions}
 \label{sec-headless-constructions-dg}
-
+%
 \citet[Section~4.E]{Hudson80a} discusses headless constructions like those in (\mex{1}):
 \eal
 \ex the rich
@@ -2765,36 +2713,11 @@ worked out analyses.
 \ex (with) his hat over his eyes
 \zl
 He argues that the terms \emph{adjective} and \emph{noun} should be accompanied by the term
-\emph{substantive}, which subsumes both terms. Then he suggests that \emph{if a rule needs to cover
-  the constructions traditionally referred to as noun-phrases, with or without heads, it just
-  refers to `nouns', and this will automatically allow the constructions to have either
-substantives or adjectives as heads.} (p.\,195) The question that has to be asked here, however, is
-what the internal dependency structure of substantive phrases like \emph{the rich} would be. The
-only way to connect the items seems to be to assume that the determiner is dependent on the
-adjective. But this would allow for two structures of phrases like \emph{the rich man}: one in which
-the determiner depends on the adjective and one in which it depends on the noun. So
-underspecification of part of speech does not seem to solve the problem. Of course all problems with
-non-headed constructions can be solved by assuming empty elements.\footnote{%
- See Section~\ref{sec-psg-np} for the assumption of an empty head in a phrase structure grammar for
- noun phrases.}
-This has been done in \hpsg in
-the analysis of relative clauses \citep[Chapter~5]{ps2}. English and German relative clauses consist of a
-phrase that contains a relative word and a sentence in which the relative phrase is missing. Pollard
-\& Sag assume an empty relativizer that selects for the relative phrase and the clause with a
-gap \citep[\page 216--217]{ps2}. Similar analyses can be found in Dependency Grammar (\citealp[\page
-  291]{Eroms2000a}).\footnote{
-  The Dependency Grammar representations usually have a \stem{d} element as the head of the relative
-  clause. However, since the relative pronoun is also present in the clause and since the \stem{d}
-  is not pronounced twice, assuming an additional \stem{d} head is basically assuming an empty
-  head. 
-
+\emph{substantive}, which subsumes both terms. Then he suggests that \emph{if a rule needs to cover the constructions traditionally referred to as noun-phrases, with or without heads, it just refers to `nouns', and this will automatically allow the constructions to have either substantives or adjectives as heads.} (p.\,195) The question that has to be asked here, however, is what the internal dependency structure of substantive phrases like \emph{the rich} would be. The only way to connect the items seems to be to assume that the determiner is dependent on the adjective. But this would allow for two structures of phrases like \emph{the rich man}: one in which the determiner depends on the adjective and one in which it depends on the noun. So underspecification of part of speech does not seem to solve the problem. Of course all problems with non-headed constructions can be solved by assuming empty elements.\footnote{See Section~\ref{sec-psg-np} for the assumption of an empty head in a phrase structure grammar for noun phrases.}
+This has been done in \hpsg in the analysis of relative clauses \citep[Chapter~5]{ps2}. English and German relative clauses consist of a phrase that contains a relative word and a sentence in which the relative phrase is missing. Pollard\& Sag assume an empty relativizer that selects for the relative phrase and the clause with a gap \citep[\page 216--217]{ps2}. Similar analyses can be found in Dependency Grammar (\citealp[\page  291]{Eroms2000a}).\footnote{ The Dependency Grammar representations usually have a \stem{d} element as the head of the relative  clause. However, since the relative pronoun is also present in the clause and since the \stem{d}  is not pronounced twice, assuming an additional \stem{d} head is basically assuming an empty  head. 
+%
   Another option is to assume that words may have multiple functions: so, a relative pronoun may be
-  both a head and a dependent simultaneously (\citealp[Chapter 246, §8--11]{Tesniere2015a-not-crossreferenced}; \citealp[\page xlvi]{OK2015a}; \citealp[\page
-    129--130]{Kahane2009a}). At least the analysis of Kahane is an instance of the Categorial
-  Grammar analysis that was discussed in Section~\ref{Abschnitt-Relativsaetze-CG} and it suffers from the same problems: if the
-  relative pronoun is a head that selects for a clause that is missing the relative pronoun, it is not easy to see how
-  this analysis extends to cases of pied-piping\is{pied-piping} like (i) in which the extracted element is a complete phrase
-  containing the relative pronoun rather than just the pronoun itself.
+  both a head and a dependent simultaneously (\citealp[Chapter 246, §8--11]{Tesniere2015a-not-crossreferenced}; \citealp[\page xlvi]{OK2015a}; \citealp[\page  129--130]{Kahane2009a}). At least the analysis of Kahane is an instance of the Categorial  Grammar analysis that was discussed in Section~\ref{Abschnitt-Relativsaetze-CG} and it suffers from the same problems: if the  relative pronoun is a head that selects for a clause that is missing the relative pronoun, it is not easy to see how  this analysis extends to cases of pied-piping\is{pied-piping} like (i) in which the extracted element is a complete phrase containing the relative pronoun rather than just the pronoun itself.
 \ea
 \gll die Frau, von deren Schwester ich ein Bild gesehen habe\\
      the woman of whose sister I a picture seen have\\
@@ -2808,9 +2731,7 @@ Subsection~\ref{Abschnitt-Relativ-Interrogativsaetze} on relative clauses in par
 English suggested a phrasal analysis of relative clauses in which the relative phrase and the clause
 from which it is extracted form a new phrase. A similar analysis was assumed by
 \citet{Babel} and is documented in \citew[Chapter~10]{Mueller99a}. As was discussed in Section~\ref{Abschnitt-Relativsaetze-CG} it is
-neither plausible to assume the relative pronoun or some other element in the relative phrase to be the
-head of the entire relative clause, nor is it plausible to assume the verb to be the head of the entire
-relative clause (pace Sag), since relative clauses modify \nbar{}s, something that projections
+neither plausible to assume the relative pronoun or some other element in the relative phrase to be the head of the entire relative clause, nor is it plausible to assume the verb to be the head of the entire relative clause (pace Sag), since relative clauses modify \nbar{}s, something that projections
 of (finite) verbs usually do not do. 
 %% Vielleicht ist das mit MRS kein Problem mehr. 27.11.2015
 %% Furthermore, the semantics of verbal projections is verbal and
@@ -2819,10 +2740,9 @@ of (finite) verbs usually do not do.
 %%   \citet[\page 474]{Sag97a} solves this problem by assuming a special Head-Adjunct Schema for
 %%   relative clauses that modify nouns.%
 %% }
-So assuming an empty head or a phrasal schema seems to be the
-only option.
+So assuming an empty head or a phrasal schema seems to be the only option.
 %\todostefan{S: There is a third very interesting option considered by Tesnière 1959 (see our intro) and before by Sicard 1801 and maybe before and exploited in all my formalizations of extraction including the HPSG's one in Kahane 2009: the wh-word has a double position, it is both a complementizer and a pronoun.}
-
+%
 Chapter~\ref{Abschnitt-Phrasal-Lexikalisch} is devoted to the discussion of whether
 certain phenomena should be analyzed as involving phrase structural configurations or whether
 lexical analyses are better suited in general or for modeling some phenomena. I argue there that all
@@ -2833,8 +2753,7 @@ phenomena.
 %As the marker of the construction is the prep, we'll have a separate entry for each prep that
 %allows this construction.} 
 There always has to be some element on which others depend. It has been argued by
-\citet{Jackendoff2008a}\is{construction!N-P-N|(} that it does not make sense to assume that one of the
-elements in N-P-N constructions like those in (\mex{1}) is the head.
+\citet{Jackendoff2008a}\is{construction!N-P-N|(} that it does not make sense to assume that one of the elements in N-P-N constructions like those in (\mex{1}) is the head.
 \addlines
 \eal
 \ex day by day, paragraph by paragraph, country by country
@@ -2843,58 +2762,49 @@ elements in N-P-N constructions like those in (\mex{1}) is the head.
 \ex term paper after term paper, picture after picture
 \ex book upon book, argument upon argument
 \zl
-Of course there is a way to model all the phenomena that would be modeled by a phrasal construction
-in frameworks like GPSG, CxG, HPSG, or Simpler Syntax: an empty head. Figure~\vref{fig-n-p-n} shows
-the analysis of \emph{student after student}.
-\begin{figure}
-\begin{forest}
-dg edges
-[N
-  [\trace]
-  [N [student]]
-  [P [after]]
-  [N [student]]]
-\end{forest}
-\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty head}
-\end{figure}%
+Of course there is a way to model all the phenomena that would be modeled by a phrasal construction in frameworks like GPSG, CxG, HPSG, or Simpler Syntax: an empty head. Figure~\vref{fig-n-p-n} shows the analysis of \emph{student after student}.
+%\begin{figure}
+%\begin{forest}
+%dg edges
+%[N
+  %[\trace]
+ % [N [student]]
+  %[P [after]]
+  %[N [student]]]
+%\end{forest}
+%\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty %head}
+%\end{figure}%
 The lexical item for the empty N would be very special, since there are no similar non-empty lexical
 nouns, that is, there is no noun that selects for two bare Ns and a P.
 %% Note that the N-P-N construction is special in that Ns are combined rather than NPs. This means that
 %% it must be possible that the selecting head selects for incomplete Ns. Hence, we have another
 %% property that differs between words and full phrases. Again this seems to make it necessary to
 %% distinguish between lexical and phrasal nodes (see Section~\ref{sec-dg-daughters-mothers}).
-
-\citet{Bragmann2015a} pointed out an additional aspect of the N-P-N construction, which makes things
-more complicated. The pattern is not restricted to two nouns. There can be arbitrarily many of them:
+%
+\citet{Bragmann2015a} pointed out an additional aspect of the N-P-N construction, which makes things more complicated. The pattern is not restricted to two nouns. There can be arbitrarily many of them:
 \ea
 Day after day after day went by, but I never found the courage to talk to her.
 \z
-So rather than an N-P-N pattern Bragmann suggests the pattern in (\mex{1}), where `+'\is{$+$} stands for at
-least one repetition of a sequence.
+So rather than an N-P-N pattern Bragmann suggests the pattern in (\mex{1}), where `+'\is{$+$} stands for at least one repetition of a sequence.
 \ea
 \label{n-p-n-plus-cx}
 N (P N)+
 \z
 Now, such patterns would be really difficult to model in selection"=based approaches, since one
 would have to assume that an empty head or a noun selects for an arbitrary number of pairs of the
-same preposition and noun or nominal phrase. Of course one could assume that P and N form some sort
-of constituent, but still one would have to make sure that the right preposition is used and that the
-noun or nominal projection has the right phonology. Another possibility would be to assume that the
-second N in N-P-N can be an N-P-N and thereby allow recursion in the pattern. But if one follows
-this approach it is getting really difficult to check the constraint that the involved Ns should
+same preposition and noun or nominal phrase. Of course one could assume that P and N form some sort of constituent, but still one would have to make sure that the right preposition is used and that the noun or nominal projection has the right phonology. Another possibility would be to assume that the second N in N-P-N can be an N-P-N and thereby allow recursion in the pattern. But if one follows this approach it is getting really difficult to check the constraint that the involved Ns should
 have the same or at least similar phonologies.
-
+%
 One way out of these problems would of course be to assume that there are special combinatorial
 mechanisms that assign a new category to one or several elements. This would basically be an
 unheaded phrase structure rule and this is what \tes suggested: transfer rules (see
 Section~\ref{sec-transfer-dg}). But this is of course an extension of pure Dependency Grammar
 towards a mixed model.\is{construction!N-P-N|)}
-
-See Section~\ref{sec-why-phrasal} for the discussion of further cases which are probably problematic
-for purely selection"=based grammars.
-
+%
+See Section~\ref{sec-why-phrasal} for the discussion of further cases which are probably problematic for purely selection"=based grammars.
+%
 \section*{Exercises}
-
+%
 Provide the dependency graphs for the following three sentences:
 \eal
 \ex 
@@ -2910,96 +2820,61 @@ Provide the dependency graphs for the following three sentences:
      that he tomorrow come will pleases us\\
 \glt `That he will come tomorrow pleases us.'
 \zl
-You may use non-projective dependencies. For the analysis of relative clauses authors usually propose
-an abstract entity that functions as a dependent of the modified noun and as a head of the verb in
-the relative clause.
-
+You may use non-projective dependencies. For the analysis of relative clauses authors usually propose an abstract entity that functions as a dependent of the modified noun and as a head of the verb in the relative clause.
+%
 \section*{Further reading}
-
+%
 In the section on further reading in Chapter~\ref{chap-GB}, I referred to the book called
-\emph{Syntaktische Analyseperspektiven} `Syntactic perspectives on analyses'. The chapters in this book have been written by proponents of various theories
-and all analyze the same newspaper article. The book also contains a chapter by \citet{Engel2014a},
-assuming his version of Dependency Grammar, namely \emph{Dependent Verb Grammar}.
-
+\emph{Syntaktische Analyseperspektiven} `Syntactic perspectives on analyses'. The chapters in this book have been written by proponents of various theories and all analyze the same newspaper article. The book also contains a chapter by \citet{Engel2014a}, assuming his version of Dependency Grammar, namely \emph{Dependent Verb Grammar}.
+%
 \citet*{AEEHHL2003a-ed-not-crossreferenced,AEEHHL2006a-ed-not-crossreferenced} published a handbook on dependency and valence that discusses
-all aspects related to Dependency Grammar in any imaginable way. Many of the papers have been cited
-in this chapter. Papers comparing Dependency Grammar with other theories are especially relevant
-in the context of this book: \citet{Lobin2003a} compares Dependency Grammar and
+all aspects related to Dependency Grammar in any imaginable way. Many of the papers have been cited in this chapter. Papers comparing Dependency Grammar with other theories are especially relevant in the context of this book: \citet{Lobin2003a} compares Dependency Grammar and
 Categorial Grammar, \citet{Oliva2003a} deals with the representation of valence and dependency in
 HPSG, and \citet*{BJR2003a-u} describe how valence and dependency are covered in
-TAG. \citet{Hellwig2006a} compares rule"=based grammars with Dependency Grammars with special
-consideration given to parsing by computer programs.
-
+TAG. \citet{Hellwig2006a} compares rule"=based grammars with Dependency Grammars with special consideration given to parsing by computer programs.
+%
 \citet{OG2012a-u} compare Dependency Grammar with Construction Grammar and \citet*{OPG2011a} argue
 that certain variants of Minimalism are in fact reinventions of dependency"=based analyses.
-
-The original work on Dependency Grammar by \citet{Tesniere59a-u} is also available in parts in German
-\citep{Tesniere80a-u} and in full in English \citep{Tesniere2015a-not-crossreferenced}.
-
+%
+The original work on Dependency Grammar by \citet{Tesniere59a-u} is also available in parts in German \citep{Tesniere80a-u} and in full in English \citep{Tesniere2015a-not-crossreferenced}.
+%
 \if0
-
+%
 % todo: Kahane2003a-u,  BJR2003a-u
-
 % Starosta2003a Dependency Grammar and Lexicalism -> Fernabhängigkeiten und Scrambling, Vergleich
 % Minimalism & Passiv
-
 % Hudson2003a-u bei Vererbung zitieren
-
-
 % Limits: Gross2003a-u
-
 % formal foundations: Diskontinuität, Semantics Broeker2003a-u
-
 % Hoberg2006 63: Wortstellung
-
 % Askedal2006 65 Infinitive
-
-
 % Gross2003a: 341 Locality of Selection
-
-
 % Colliander2003a:266 zur DP/NP-Diskussion Tesniere -> NP
 % zitiert Lobin95a für vollständige Diskussion
 %
-
-
 % Lobin2003a:329  Zitiert Hudson und Pickering & Barry mit Konzepten, die mir der Catenae zu
 % entsprechen scheinen
-
-
 % Baumgärtner 1965, 1970
-
 % Vennemann 77
-
 % Vater 73
-
 % Werner 73
-
-
 % Leere Elemente für Relativsätze: Engel 1994, Eroms 2000
-
-
-
 % S. Kahane:
-
+%
 The necessary separation between the syntactic dependencies and the linear order is extensively
 discussed in the beginning of Tesniere's book.
-
-
+%
 Thomas Gross
 Some Observations on the Hebrew Desiderative Construction – A Dependency-Based Account in Terms of Catenae
-
+%
 In the section 2.2 in the attached paper, I discuss the reasons why DG never succeeded in developing its own morphology. Section 2.3 gives a rough overview of my (and Tim's) notion of a dependency-based morphology.
-
+%
 While I believe that the catena makes a compelling contribution to the understanding of displacement, ellipsis, idioms, predicate-argument-structure, and all kinds of construction, its attraction is also in its flexibility. It allows a gradient approach to phenomena ranging from syntax to morphology. In a 2013 paper in ZfS, Tim and I make that case explicitly.
-
-
-
-
+%
 Liu Haitao:
-
+%
 Some possible references:
-
+%
 Baum, R. (1976) Dependenzgrammatik: Tesnières Modell der Sprachbeschreibung in wissenschaftsgeschichtlicher und kritischer Sicht. (Zeitschrift für romanische Philologie, Beiheft 151.) Tübingen: Max Niemeyer.
 Groß, T. M. (1999). Theoretical Foundations of Dependency Syntax. München: iudicium.
 Hudson. R. A. (2007) Language Networks: The New Word Grammar. Oxford University Press.
@@ -3009,22 +2884,15 @@ Melcuk, I. A. (1988) Dependency syntax: theory and practice. Albany: State Unive
 Schubert, K. (1987) Metataxis: contrastive dependency syntax for machine translation. Dordrecht: Foris.
 Starosta, S. (1988) The case for lexicase. London: Pinter.
 Weber, H.J. (1997) Dependenzgrammatik. Ein interaktives Arbeitsbuch, Tübingen: Gunter Narr.
-
-
-
+%
 Within 60 years of the original French publication, there have been translations into German (1980), Russian (1988), Spanish (1994), Japanese (2007) and Italian (2008), referenced below.
-
+%
 Tesnière, Lucien. 1980. Grundzüge der strukturalen Syntax. Tr. Ulrich Engel. Stuttgart: Klett-Cotta. [German translation of Tesnière 1959]
 Теньер, Люсьен. 1988. Основы структурного синтаксиса. Tr.  В. Г. Гака. Москва: Прогресс. [Russian translation of Tesnière 1959]
 Tesnière, Lucien. 1994. Elementos de sintaxis estructural. Tr. Esther Diamante. Madrid: Editorial Gredos. [Spanish translation of Tesnière 1959]
 ルシアン・テニエール. 2007. 構造統語論要説. Tr. 小泉保. 東京: 研究社. [Japanese translation of Tesnière 1959]
 Tesnière, Lucien. 2008. Elementi di sintassi strutturale. Tr. Germano Proverbio & Anna Trocini Cerrina. Torino: Rosenberg & Sellier. [Italian translation of Tesnière 1959]
-
-
+%
 \fi
-
-
-
+%
 %      <!-- Local IspellDict: en_US-w_accents -->
-
-
