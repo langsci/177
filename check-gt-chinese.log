@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  17 JUN 2016 14:14
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  18 JUN 2016 16:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**grammatical-theory－chapter1.tex
-(./grammatical-theory－chapter1.tex
+**check-gt-chinese.tex
+(./check-gt-chinese.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
 (./langsci/langscibook.cls
@@ -1820,9 +1820,8 @@ Package: epigraph 2009/09/02 v1.5c typesetting epigraphs
 \epigraphwidth=\skip99
 \epigraphrule=\skip100
 )
-(./langsci/styles/langsci-basic.sty))
-(./grammatical-theory-include-chapter1.tex (./localmetadata.tex)
-(./localpackages.tex
+(./langsci/styles/langsci-basic.sty)) (./grammatical-theory-include.tex
+(./localmetadata.tex) (./localpackages.tex
 (/usr/local/texlive/2016/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box68
@@ -2902,13 +2901,9 @@ File: pst-tree.tex 2011/02/28 1.12 `pst-tree' (tvz,hv)
 )
 (/usr/local/texlive/texmf-local/tex/latex/local/trees.sty
 \@input{pst-tree.aux}
-\openout2 = `pst-tree.aux'.
-
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pst-tree/pst-tree.tex)
 \c@anglea=\count423
 \c@angleb=\count424
-)
-(/usr/local/texlive/texmf-local/tex/latex/local/dalrymple.sty
+) (/usr/local/texlive/texmf-local/tex/latex/local/dalrymple.sty
 \lexentrydimen=\dimen429
 \lexcategorydimen=\dimen430
 \mothernodedimen=\dimen431
@@ -2997,9 +2992,18 @@ Library (tcolorbox): 'tcbskins.code.tex' version '3.91'
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.91'
-))) (./grammatical-theory－chapter1.aux (./chapters/preface.aux)
-(./chapters/1-begriffe.aux) (./langsci/graphics/didyoulikethisbook.aux))
-\openout1 = `grammatical-theory－chapter1.aux'.
+))) (./check-gt-chinese.aux (./chapters/preface.aux) (./chapters/1-begriffe.aux
+) (./chapters/2-psg.aux) (./chapters/3-gb.aux) (./chapters/3-minimalism.aux)
+(./chapters/4-gpsg.aux) (./chapters/5-merkmalstrukturen.aux)
+(./chapters/6-lfg.aux) (./chapters/7-cg.aux) (./chapters/8-hpsg.aux)
+(./chapters/9-cxg.aux) (./chapters/dg.aux) (./chapters/tag.aux)
+(./chapters/ot.aux) (./chapters/innateness.aux) (./chapters/mts.aux)
+(./chapters/competence.aux) (./chapters/acquisition.aux)
+(./chapters/complexity.aux) (./chapters/branching-locality-recursion.aux)
+(./chapters/empty.aux) (./chapters/movement.aux) (./chapters/phrasal.aux)
+(./chapters/coregram.aux) (./chapters/conclusions.aux)
+(./chapters/loesungen.aux) (./langsci/graphics/didyoulikethisbook.aux))
+\openout1 = `check-gt-chinese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
@@ -3105,38 +3109,32 @@ Package: fr-subfig 2007/12/24 v0.1g (beta) floatrow: additions for subfig
 )
 \idxtitle@default=\toks78
 \tf@default=\write9
-\openout9 = `grammatical-theory－chapter1.idx'.
+\openout9 = `check-gt-chinese.idx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.idx on input
- line 4.
+Package index Info: Writing index file check-gt-chinese.idx on input line 4.
 \idxtitle@lan=\toks79
 \tf@lan=\write10
-\openout10 = `grammatical-theory－chapter1.ldx'.
+\openout10 = `check-gt-chinese.ldx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.ldx on input
- line 4.
+Package index Info: Writing index file check-gt-chinese.ldx on input line 4.
 \idxtitle@sbj=\toks80
 \tf@sbj=\write11
-\openout11 = `grammatical-theory－chapter1.sdx'.
+\openout11 = `check-gt-chinese.sdx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.sdx on input
- line 4.
-\openout9 = `grammatical-theory－chapter1.adx'.
+Package index Info: Writing index file check-gt-chinese.sdx on input line 4.
+\openout9 = `check-gt-chinese.adx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.adx on input
- line 4.
+Package index Info: Writing index file check-gt-chinese.adx on input line 4.
 \idxtitle@wrd=\toks81
 \tf@wrd=\write12
-\openout12 = `grammatical-theory－chapter1.wdx'.
+\openout12 = `check-gt-chinese.wdx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.wdx on input
- line 4.
+Package index Info: Writing index file check-gt-chinese.wdx on input line 4.
 \idxtitle@rwrd=\toks82
 \tf@rwrd=\write13
-\openout13 = `grammatical-theory－chapter1.rdx'.
+\openout13 = `check-gt-chinese.rdx'.
 
-Package index Info: Writing index file grammatical-theory－chapter1.rdx on input
- line 4.
+Package index Info: Writing index file check-gt-chinese.rdx on input line 4.
 \AtBeginShipoutBox=\box157
 Package hyperref Info: Link coloring OFF on input line 4.
 
@@ -3280,7 +3278,6 @@ File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 
 
-
 ] (./langsci/seriesinfo/tbls-info.tex
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
 (Font)              scaled to size 9.78955pt on input line 2.
@@ -3329,7 +3326,7 @@ File: ./langsci/graphics/FULogo_sw_CMYK.pdf Graphic file (type QTm)
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
 
-(./grammatical-theory－chapter1.toc
+(./check-gt-chinese.toc
 
 LaTeX Font Warning: Font shape `EU1/SimSun(0)/bx/n' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 1.
@@ -3338,22 +3335,29 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `SimSun' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-)
+[7
+
+
+] [8] [9] [10] [11] [12] [13])
 \tf@toc=\write14
-\openout14 = `grammatical-theory－chapter1.toc'.
+\openout14 = `check-gt-chinese.toc'.
 
- [7
-
-
-]
-\openout2 = `chapters/preface.aux'.
-
- (./chapters/preface.tex [8
-
+ [14]
+part I.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 18.
+[1
 
 
-]
-chapter without number
+
+
+
+] [2]
+\openout2 = `chapters/1-begriffe.aux'.
+
+ (./chapters/1-begriffe.tex
+chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3370,58 +3374,17 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
-Package natbib Warning: Citation `MuellerGTBuch2' on page ix undefined on input
- line 4.
+Package natbib Warning: Citation `Saussure16a' on page 3 undefined on input lin
+e 30.
 
 
-LaTeX Warning: Reference `sec-PSG-Semantik' on page ix undefined on input line 
-25.
+Package natbib Warning: Citation `Saussure16a-Fr' undefined on input line 30.
+
+[3
 
 
-Package natbib Warning: Citation `Robins97a-u' on page ix undefined on input li
-ne 38.
 
-
-Package natbib Warning: Citation `JL2006a-u' on page ix undefined on input line
- 38.
-
-
-Package natbib Warning: Citation `Lieb83a-u' on page ix undefined on input line
- 40.
-
-
-Package natbib Warning: Citation `Eisenberg2004a' on page ix undefined on input
- line 40.
-
-
-Package natbib Warning: Citation `Nolda2007a-u' on page ix undefined on input l
-ine 40.
-
-
-Package natbib Warning: Citation `PS93a-u' on page ix undefined on input line 4
-0.
-
-
-Package natbib Warning: Citation `Grimshaw97a-u' on page ix undefined on input 
-line 41.
-
-
-Package natbib Warning: Citation `GMueller2000a-u' on page ix undefined on inpu
-t line 41.
-
-
-Package natbib Warning: Citation `vanValin93a-ed' on page ix undefined on input
- line 42.
-
-
-Package natbib Warning: Citation `Perlmutter83a-ed' on page ix undefined on inp
-ut line 43.
-
-
-Package natbib Warning: Citation `Perlmutter84b-ed' on page ix undefined on inp
-ut line 43.
-
-[9] (./chapters/versions.tex
+]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3481,87 +3444,6 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 .................................................
 
 
-LaTeX Warning: Reference `part-discussion' on page x undefined on input line 11
-.
-
-) (./chapters/acknowledgments.tex
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 75.
-
-[10]
-
-Package natbib Warning: Citation `SR2012a' on page xi undefined on input line 7
-8.
-
-[11]
-
-LaTeX Warning: Reference `Abschnitt-T-Modell' on page xii undefined on input li
-ne 149.
-
-
-LaTeX Warning: Reference `Abschnitt-GB-Passiv' on page xii undefined on input l
-ine 149.
-
-*************************************************
-* xeCJK warning: "CJKfamily-Unknown"
-* 
-* Unknown CJK family `\CJKttdefault' is being ignored.
-* 
-* Try to use `\setCJKmonofont[...]{...}' to define it.
-*************************************************
-LaTeX Font Info:    Font shape `EU1/DejaVuSansMono.ttf(0)/m/n' will be
-(Font)              scaled to size 7.88116pt on input line 153.
-Package microtype Info: Loading generic settings for font family
-(microtype)             `DejaVuSansMono.ttf' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) (./chapters/ontheway.tex [12]) (./chapters/langsci.tex
-
-Package natbib Warning: Citation `MH2013a' on page xiii undefined on input line
- 8.
-
-
-Package natbib Warning: Citation `MuellerOA' on page xiii undefined on input li
-ne 16.
-
-
-Package natbib Warning: Citation `MH2013a' on page xiii undefined on input line
- 16.
-
-
-Package natbib Warning: Citation `Pullum84a' on page xiii undefined on input li
-ne 18.
-
-[13])) [14]
-part I.
-Package scrkbase Info: You've told me to use the font selection of the element
-(scrkbase)             `partprefix' that is an alias of element `partnumber'
-(scrkbase)              on input line 18.
-[1
-
-
-
-
-
-] [2]
-\openout2 = `chapters/1-begriffe.aux'.
-
- (./chapters/1-begriffe.tex
-chapter 1.
-
-Package natbib Warning: Citation `Saussure16a' on page 3 undefined on input lin
-e 30.
-
-
-Package natbib Warning: Citation `Saussure16a-Fr' undefined on input line 30.
-
-[3
-
-
-
-]
-
 Package natbib Warning: Citation `NKN2001a' on page 4 undefined on input line 7
 7.
 
@@ -3586,10 +3468,6 @@ Package natbib Warning: Citation `PS2010a' on page 4 undefined on input line 77
 .
 
 
-LaTeX Warning: Reference `Abschnitt-Rekursion' on page 4 undefined on input lin
-e 77.
-
-
 Package natbib Warning: Citation `Harris57a' on page 4 undefined on input line 
 86.
 
@@ -3600,6 +3478,10 @@ Package natbib Warning: Citation `Chomsky57a' on page 4 undefined on input line
 
 Package natbib Warning: Citation `Pulvermueller2010a' on page 4 undefined on in
 put line 86.
+
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 135.
 
 [4]
 
@@ -3621,10 +3503,6 @@ Package natbib Warning: Citation `Mueller99a' on page 5 undefined on input line
 
 Package natbib Warning: Citation `Bender2008c' on page 5 undefined on input lin
 e 189.
-
-
-LaTeX Warning: Reference `sec-formalization-gb' on page 5 undefined on input li
-ne 189.
 
 [5] [6] [7] [8] [9] [10]
 
@@ -3687,12 +3565,7 @@ Package natbib Warning: Citation `BC2010a' on page 15 undefined on input line 7
 Package natbib Warning: Citation `Crysmann2003c' on page 16 undefined on input 
 line 822.
 
-[16] [17] [18] [19]
-
-LaTeX Warning: Reference `Seite-Adverbien-PP' on page 20 undefined on input lin
-e 1126.
-
-[20]
+[16] [17] [18] [19] [20]
 
 Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
 put line 1160.
@@ -3821,16 +3694,7 @@ Package natbib Warning: Citation `Tesniere80a-u' undefined on input line 1586.
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
-[28]
-
-LaTeX Warning: Reference `Beispiel-Iteration-Adjektive' on page 29 undefined on
- input line 1672.
-
-
-LaTeX Warning: Reference `Beispiel-Iteration-Adjektive' on page 29 undefined on
- input line 1672.
-
-[29]
+[28] [29]
 
 Package natbib Warning: Citation `Eisenberg94a' on page 30 undefined on input l
 ine 1719.
@@ -3851,10 +3715,6 @@ ine 1854.
 
 Package natbib Warning: Citation `MuellerLehrbuch1' on page 31 undefined on inp
 ut line 1854.
-
-
-LaTeX Warning: Reference `Kapitel-LFG' on page 31 undefined on input line 1868.
-
 
 
 Package natbib Warning: Citation `Keenan76b-u' on page 31 undefined on input li
@@ -3896,10 +3756,6 @@ Package natbib Warning: Citation `Eisenberg2004a' on page 34 undefined on input
  line 2008.
 
 
-LaTeX Warning: Reference `Kapitel-LFG' on page 34 undefined on input line 2078.
-
-
-
 Package natbib Warning: Citation `DL2000a-u' on page 34 undefined on input line
  2078.
 
@@ -3921,16 +3777,8 @@ ine 2078.
 
 [34]
 
-LaTeX Warning: Reference `Kapitel-LFG' on page 35 undefined on input line 2129.
-
-
-
 Package natbib Warning: Citation `Cook2006a-u' on page 35 undefined on input li
 ne 2129.
-
-
-LaTeX Warning: Reference `Kapitel-LFG' on page 35 undefined on input line 2130.
-
 
 
 Package natbib Warning: Citation `Cook2006a-u' on page 35 undefined on input li
@@ -4007,61 +3855,1218 @@ Package natbib Warning: Citation `Reis80a' on page 46 undefined on input line 2
 Package natbib Warning: Citation `Hoehle86' on page 46 undefined on input line 
 2928.
 
-[46]) [47] (./backmatter.tex [48
+[46]) [47]
+part II.
+Package scrkbase Info: You've told me to use the font selection of the element
+(scrkbase)             `partprefix' that is an alias of element `partnumber'
+(scrkbase)              on input line 36.
+[429
 
 
 
-]
-No file grammatical-theory－chapter1.bbl.
-No file grammatical-theory－chapter1.and.
-No file grammatical-theory－chapter1.lnd.
+
+
+
+
+
+
+
+
+
+
+
+
+] [430] (./backmatter.tex (./check-gt-chinese.bbl
+chapter without number
+
+Package natbib Warning: Citation `coling88' on page 693 undefined on input line
+ 21.
+
+
+Package natbib Warning: Citation `eacl89' on page 693 undefined on input line 4
+7.
+
+[693
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [694]
+
+Package natbib Warning: Citation `BK2005a-ed' on page 695 undefined on input li
+ne 220.
+
+
+Package natbib Warning: Citation `Mueller2015a-ed' on page 695 undefined on inp
+ut line 270.
+
+
+Package natbib Warning: Citation `BK2009a-ed' on page 695 undefined on input li
+ne 287.
+
+
+Package natbib Warning: Citation `Mueller2015a-ed' on page 695 undefined on inp
+ut line 293.
+
+
+Package natbib Warning: Citation `BK2008a-ed' on page 695 undefined on input li
+ne 318.
+
+[695]
+
+Package natbib Warning: Citation `BK2014a-ed' on page 696 undefined on input li
+ne 329.
+
+
+Package natbib Warning: Citation `geaf2007' on page 696 undefined on input line
+ 399.
+
+
+Package natbib Warning: Citation `acl2002' on page 696 undefined on input line 
+405.
+
+[696]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 697 undefined on inpu
+t line 443.
+
+
+Package natbib Warning: Citation `FF90' on page 697 undefined on input line 503
+.
+
+[697]
+
+Package natbib Warning: Citation `Mueller2004a-ed' on page 698 undefined on inp
+ut line 531.
+
+
+Package natbib Warning: Citation `Mueller2004a-ed' on page 698 undefined on inp
+ut line 552.
+
+
+Package natbib Warning: Citation `WKK99a-ed' on page 698 undefined on input lin
+e 589.
+
+
+Package natbib Warning: Citation `acl2008:hlt' on page 698 undefined on input l
+ine 601.
+
+
+Package natbib Warning: Citation `Mueller2008a-ed' on page 698 undefined on inp
+ut line 616.
+
+[698]
+
+Package natbib Warning: Citation `IJCNLP2004' on page 699 undefined on input li
+ne 647.
+
+
+Package natbib Warning: Citation `BF96a-u' on page 699 undefined on input line 
+660.
+
+
+Package natbib Warning: Citation `BK99a-ed' on page 699 undefined on input line
+ 665.
+
+[699]
+
+Package natbib Warning: Citation `BHMT2009a-ed' on page 700 undefined on input 
+line 748.
+
+
+Package natbib Warning: Citation `CSS2014a-ed' on page 700 undefined on input l
+ine 822.
+
+[700]
+
+Package natbib Warning: Citation `eacl93' on page 701 undefined on input line 8
+58.
+
+
+Package natbib Warning: Citation `coling86' on page 701 undefined on input line
+ 873.
+
+
+Package natbib Warning: Citation `BK2008a-ed' on page 701 undefined on input li
+ne 923.
+
+
+Underfull \hbox (badness 2080) in paragraph at lines 936--942
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Bolc, Leonard, Krzysztof Czuba, Anna Kupś
+ć, Małgorzata Marciniak, Agnieszka
+ []
+
+[701]
+
+Package natbib Warning: Citation `DJMU2002a-ed' on page 702 undefined on input 
+line 947.
+
+[702] [703]
+
+Package natbib Warning: Citation `Bresnan82a-ed' on page 704 undefined on input
+ line 1165.
+
+
+Package natbib Warning: Citation `Bresnan82a-ed' on page 704 undefined on input
+ line 1186.
+
+
+Package natbib Warning: Citation `eacl95' on page 704 undefined on input line 1
+203.
+
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 704 undefined on inpu
+t line 1226.
+
+[704]
+
+Package natbib Warning: Citation `BK99a-ed' on page 705 undefined on input line
+ 1320.
+
+[705]
+
+Package natbib Warning: Citation `coling88' on page 706 undefined on input line
+ 1393.
+
+
+Package natbib Warning: Citation `coling96' on page 706 undefined on input line
+ 1413.
+
+[706]
+
+Package natbib Warning: Citation `coling-acl2006' on page 707 undefined on inpu
+t line 1487.
+
+
+Package natbib Warning: Citation `Mueller2009a-ed' on page 707 undefined on inp
+ut line 1499.
+
+
+Package natbib Warning: Citation `KF64a-ed' on page 707 undefined on input line
+ 1531.
+
+
+Package natbib Warning: Citation `Chomsky68b-u' on page 707 undefined on input 
+line 1566.
+
+[707]
+
+Package natbib Warning: Citation `Chomsky95a-u' on page 708 undefined on input 
+line 1634.
+
+
+Package natbib Warning: Citation `HK93a-ed' on page 708 undefined on input line
+ 1639.
+
+
+Package natbib Warning: Citation `SG2007a-ed' on page 708 undefined on input li
+ne 1690.
+
+[708]
+
+Package natbib Warning: Citation `coling-acl2006' on page 709 undefined on inpu
+t line 1725.
+
+
+Package natbib Warning: Citation `acl2002' on page 709 undefined on input line 
+1792.
+
+[709]
+
+Package natbib Warning: Citation `acl87' on page 710 undefined on input line 18
+92.
+
+[710]
+
+Package natbib Warning: Citation `DKZ85a-ed' on page 711 undefined on input lin
+e 1927.
+
+
+Package natbib Warning: Citation `acl2009:geaf' on page 711 undefined on input 
+line 1937.
+
+
+Package natbib Warning: Citation `Mueller2004a-ed' on page 711 undefined on inp
+ut line 1989.
+
+[711]
+
+Package natbib Warning: Citation `FG2003' on page 712 undefined on input line 2
+018.
+
+
+Package natbib Warning: Citation `acl2009:geaf' on page 712 undefined on input 
+line 2023.
+
+
+Package natbib Warning: Citation `wals' on page 712 undefined on input line 207
+9.
+
+
+Package natbib Warning: Citation `wals' on page 712 undefined on input line 208
+5.
+
+[712]
+
+Package natbib Warning: Citation `Brown2006a-ed' on page 713 undefined on input
+ line 2119.
+
+
+Package natbib Warning: Citation `eacl93' on page 713 undefined on input line 2
+139.
+
+
+Package natbib Warning: Citation `MK2001a-ed' on page 713 undefined on input li
+ne 2181.
+
+
+Package natbib Warning: Citation `Mueller2003a-ed' on page 713 undefined on inp
+ut line 2204.
+
+
+Package natbib Warning: Citation `Mueller2003a-ed' on page 713 undefined on inp
+ut line 2211.
+
+[713]
+
+Package natbib Warning: Citation `Abraham85a-ed' on page 714 undefined on input
+ line 2264.
+
+
+Package natbib Warning: Citation `BK2014a-ed' on page 714 undefined on input li
+ne 2304.
+
+[714]
+
+Package natbib Warning: Citation `AR2000a-ed' on page 715 undefined on input li
+ne 2331.
+
+
+Package natbib Warning: Citation `HR91a-ed' on page 715 undefined on input line
+ 2341.
+
+
+Package natbib Warning: Citation `OBW88a-ed' on page 715 undefined on input lin
+e 2366.
+
+
+Package natbib Warning: Citation `LMFH2003a-ed' on page 715 undefined on input 
+line 2384.
+
+
+Package natbib Warning: Citation `wals' on page 715 undefined on input line 243
+0.
+
+[715]
+
+Package natbib Warning: Citation `wals' on page 716 undefined on input line 243
+6.
+
+
+Package natbib Warning: Citation `wals' on page 716 undefined on input line 244
+2.
+
+
+Underfull \hbox (badness 1226) in paragraph at lines 2452--2456
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Dürscheid, Christa. 1989.  \EU1/LinLibert
+ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
+ []
+
+
+Package natbib Warning: Citation `coling86' on page 716 undefined on input line
+ 2471.
+
+
+Package natbib Warning: Citation `Suchsland92a-ed' on page 716 undefined on inp
+ut line 2476.
+
+
+Package natbib Warning: Citation `coling96' on page 716 undefined on input line
+ 2532.
+
+[716]
+
+Package natbib Warning: Citation `HS2014a-ed' on page 717 undefined on input li
+ne 2567.
+
+
+Package natbib Warning: Citation `eacl95' on page 717 undefined on input line 2
+578.
+
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 717 undefined on inpu
+t line 2605.
+
+[717]
+
+Package natbib Warning: Citation `geaf2007' on page 718 undefined on input line
+ 2696.
+
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Package natbib Warning: Citation `GS90a-ed' on page 718 undefined on input line
+ 2720.
+
+
+Package natbib Warning: Citation `Suchsland92a-ed' on page 718 undefined on inp
+ut line 2732.
+
+[718] [719]
+
+Package natbib Warning: Citation `WKK99a-ed' on page 720 undefined on input lin
+e 2869.
+
+
+Package natbib Warning: Citation `BS2012a-ed' on page 720 undefined on input li
+ne 2880.
+
+
+Package natbib Warning: Citation `coling96' on page 720 undefined on input line
+ 2885.
+
+
+Package natbib Warning: Citation `Mueller2008a-ed' on page 720 undefined on inp
+ut line 2939.
+
+
+Package natbib Warning: Citation `BFFS2003a-ed' on page 720 undefined on input 
+line 2946.
+
+
+Package natbib Warning: Citation `Wahlster2000a-ed' on page 720 undefined on in
+put line 2951.
+
+[720]
+
+Package natbib Warning: Citation `Mueller2009a-ed' on page 721 undefined on inp
+ut line 2998.
+
+
+Package natbib Warning: Citation `BK2009a-ed' on page 721 undefined on input li
+ne 3038.
+
+[721]
+
+Package natbib Warning: Citation `BF96a-u' on page 722 undefined on input line 
+3089.
+
+
+Package natbib Warning: Citation `eacl95' on page 722 undefined on input line 3
+101.
+
+
+Package natbib Warning: Citation `FZ2004a-u' on page 722 undefined on input lin
+e 3109.
+
+
+Package natbib Warning: Citation `DKZ85a-ed' on page 722 undefined on input lin
+e 3125.
+
+[722]
+
+Package natbib Warning: Citation `FG2002' on page 723 undefined on input line 3
+209.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3212--3216
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
+ Functional Grammar und
+ []
+
+
+Underfull \hbox (badness 5954) in paragraph at lines 3212--3216
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 Diskursrepräsentationstheorie als Grundlage
+n eines sprachverarbeitenden Sys-
+ []
+
+
+Package natbib Warning: Citation `HandbookCxG' on page 723 undefined on input l
+ine 3230.
+
+
+Package natbib Warning: Citation `KA2015a-ed' on page 723 undefined on input li
+ne 3235.
+
+[723]
+
+Package natbib Warning: Citation `SG2007a-ed' on page 724 undefined on input li
+ne 3288.
+
+[724]
+
+Package natbib Warning: Citation `FM2003a-ed' on page 725 undefined on input li
+ne 3400.
+
+
+Package natbib Warning: Citation `BB2011a' on page 725 undefined on input line 
+3471.
+
+
+Package natbib Warning: Citation `Abraham85a-ed' on page 725 undefined on input
+ line 3484.
+
+[725]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 726 undefined on inpu
+t line 3570.
+
+[726]
+
+Package natbib Warning: Citation `Mueller2011a-ed' on page 727 undefined on inp
+ut line 3675.
+
+[727]
+
+Package natbib Warning: Citation `Toman85a-ed' on page 728 undefined on input l
+ine 3691.
+
+
+Package natbib Warning: Citation `Abraham85a-ed' on page 728 undefined on input
+ line 3697.
+
+
+Package natbib Warning: Citation `FF90' on page 728 undefined on input line 371
+2.
+
+
+Package natbib Warning: Citation `GS90a-ed' on page 728 undefined on input line
+ 3717.
+
+[728]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 729 undefined on inpu
+t line 3798.
+
+
+Package natbib Warning: Citation `HK93a-ed' on page 729 undefined on input line
+ 3816.
+
+
+Package natbib Warning: Citation `Peeters2000a-ed' on page 729 undefined on inp
+ut line 3847.
+
+
+Package natbib Warning: Citation `Mueller2007a-ed' on page 729 undefined on inp
+ut line 3893.
+
+[729]
+
+Package natbib Warning: Citation `acl98' on page 730 undefined on input line 39
+57.
+
+
+Package natbib Warning: Citation `NNP94' on page 730 undefined on input line 39
+63.
+
+
+Package natbib Warning: Citation `geaf2007' on page 730 undefined on input line
+ 3993.
+
+[730]
+
+Package natbib Warning: Citation `BFFS2003a-ed' on page 731 undefined on input 
+line 4007.
+
+
+Package natbib Warning: Citation `coling86' on page 731 undefined on input line
+ 4018.
+
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 731 undefined on inpu
+t line 4023.
+
+
+Package natbib Warning: Citation `HN89a-ed' on page 731 undefined on input line
+ 4073.
+
+
+Package natbib Warning: Citation `HN89a-ed' on page 731 undefined on input line
+ 4078.
+
+
+Package natbib Warning: Citation `NNP94' on page 731 undefined on input line 40
+83.
+
+[731]
+
+Package natbib Warning: Citation `Abraham82a-ed' on page 732 undefined on input
+ line 4130.
+
+
+Package natbib Warning: Citation `Hoehle2015Explikation' on page 732 undefined 
+on input line 4131.
+
+
+Package natbib Warning: Citation `HoehleTopo' on page 732 undefined on input li
+ne 4136.
+
+
+Package natbib Warning: Citation `HoehleMittelfeld' on page 732 undefined on in
+put line 4148.
+
+
+Package natbib Warning: Citation `HoehleVerum' on page 732 undefined on input l
+ine 4155.
+
+
+Package natbib Warning: Citation `HN91a-ed' on page 732 undefined on input line
+ 4160.
+
+
+Package natbib Warning: Citation `HoehleReconstruction' on page 732 undefined o
+n input line 4161.
+
+
+Package natbib Warning: Citation `Hoehle2015Projektionsstufen' on page 732 unde
+fined on input line 4166.
+
+
+Package natbib Warning: Citation `HoehleSpuren' on page 732 undefined on input 
+line 4172.
+
+
+Package natbib Warning: Citation `HoehleKomplementierer' on page 732 undefined 
+on input line 4181.
+
+
+Package natbib Warning: Citation `HoehlePhonology' on page 732 undefined on inp
+ut line 4189.
+
+[732]
+
+Package natbib Warning: Citation `FM2003a-ed' on page 733 undefined on input li
+ne 4249.
+
+[733]
+
+Package natbib Warning: Citation `coling92' on page 734 undefined on input line
+ 4331.
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 4349--4354
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Islam, Md. Asfaqul, K. M. Azharul Hasan &
+ Md. Mizanur Rahman. 2012.  Ba-
+ []
+
+
+Underfull \hbox (badness 4279) in paragraph at lines 4349--4354
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 sic HPSG structure for Bangla grammar.  In 
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 15th International Conference
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 4349--4354
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 on Computer and Information Technology (IC
+CIT)\EU1/LinLibertine_R_B.otf(0)/m/n/10 , 185–189. Curran Associates.
+ []
+
+[734]
+
+Package natbib Warning: Citation `HO87a-ed' on page 735 undefined on input line
+ 4437.
+
+
+Package natbib Warning: Citation `LMFH2003a-ed' on page 735 undefined on input 
+line 4453.
+
+
+Package natbib Warning: Citation `coling86' on page 735 undefined on input line
+ 4468.
+
+[735]
+
+Package natbib Warning: Citation `AR2000a-ed' on page 736 undefined on input li
+ne 4545.
+
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 736 undefined on inpu
+t line 4586.
+
+
+Package natbib Warning: Citation `acl98' on page 736 undefined on input line 46
+00.
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 4597--4603
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Kahane, Sylvain, Alexis Nasr & Owen Rambo
+w. 1998.  Pseudo-projectivity: A
+ []
+
+
+Underfull \hbox (badness 1721) in paragraph at lines 4597--4603
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 polynomially parsable non-projective Depend
+ency Grammar.  In \EU1/LinLibertine_R_B.otf(0)/bx/n/10 ?[] \EU1/LinLibertine_R_
+B.otf(0)/m/n/10 646–652.
+ []
+
+
+Package natbib Warning: Citation `EISS2012a' on page 736 undefined on input lin
+e 4631.
+
+[736]
+
+Package natbib Warning: Citation `DKMZ95a-ed' on page 737 undefined on input li
+ne 4654.
+
+
+Package natbib Warning: Citation `Bresnan82a-ed' on page 737 undefined on input
+ line 4660.
+
+
+Package natbib Warning: Citation `DKMZ95a-ed' on page 737 undefined on input li
+ne 4661.
+
+
+Package natbib Warning: Citation `BK89a-ed' on page 737 undefined on input line
+ 4682.
+
+
+Package natbib Warning: Citation `coling90' on page 737 undefined on input line
+ 4709.
+
+
+Package natbib Warning: Citation `BK89a-ed' on page 737 undefined on input line
+ 4733.
+
+
+Package natbib Warning: Citation `NNP94' on page 737 undefined on input line 47
+38.
+
+
+Package natbib Warning: Citation `acl95' on page 737 undefined on input line 47
+43.
+
+[737]
+
+Package natbib Warning: Citation `acl95' on page 738 undefined on input line 47
+63.
+
+
+Package natbib Warning: Citation `Mueller2007a-ed' on page 738 undefined on inp
+ut line 4779.
+
+
+Package natbib Warning: Citation `acl2008:hlt' on page 738 undefined on input l
+ine 4786.
+
+[738]
+
+Package natbib Warning: Citation `eacl95' on page 739 undefined on input line 4
+863.
+
+
+Package natbib Warning: Citation `Karlsson86a-ed' on page 739 undefined on inpu
+t line 4868.
+
+
+Package natbib Warning: Citation `Wahlster2000a-ed' on page 739 undefined on in
+put line 4873.
+
+[739]
+
+Package natbib Warning: Citation `geaf2007' on page 740 undefined on input line
+ 4971.
+
+
+Package natbib Warning: Citation `HR91a-ed' on page 740 undefined on input line
+ 5018.
+
+
+Package natbib Warning: Citation `MK2001a-ed' on page 740 undefined on input li
+ne 5042.
+
+
+Package natbib Warning: Citation `HR91a-ed' on page 740 undefined on input line
+ 5058.
+
+
+Underfull \hbox (badness 7685) in paragraph at lines 5066--5070
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Klein, Wolfgang. 1971.  \EU1/LinLibertine
+_R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
+ []
+
+[740]
+
+Package natbib Warning: Citation `EISS2012a' on page 741 undefined on input lin
+e 5133.
+
+
+Package natbib Warning: Citation `coling92' on page 741 undefined on input line
+ 5138.
+
+
+Package natbib Warning: Citation `HN91a-ed' on page 741 undefined on input line
+ 5173.
+
+[741]
+
+Package natbib Warning: Citation `IJCNLP2004' on page 742 undefined on input li
+ne 5215.
+
+[742]
+
+Package natbib Warning: Citation `HO87a-ed' on page 743 undefined on input line
+ 5287.
+
+
+Package natbib Warning: Citation `Mueller2007a-ed' on page 743 undefined on inp
+ut line 5294.
+
+
+Package natbib Warning: Citation `coling96' on page 743 undefined on input line
+ 5320.
+
+[743] [744]
+
+Package natbib Warning: Citation `Karlsson86a-ed' on page 745 undefined on inpu
+t line 5492.
+
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 745 undefined on inpu
+t line 5497.
+
+
+Package natbib Warning: Citation `KF64a-ed' on page 745 undefined on input line
+ 5521.
+
+
+Package natbib Warning: Citation `Brown2006a-ed' on page 745 undefined on input
+ line 5568.
+
+[745]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 746 undefined on inpu
+t line 5659.
+
+
+Package natbib Warning: Citation `HS2014a-ed' on page 746 undefined on input li
+ne 5684.
+
+[746]
+
+Package natbib Warning: Citation `Mueller2004a-ed' on page 747 undefined on inp
+ut line 5797.
+
+[747]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 748 undefined on inpu
+t line 5862.
+
+[748]
+
+Package natbib Warning: Citation `WKK99a-ed' on page 749 undefined on input lin
+e 5920.
+
+
+Package natbib Warning: Citation `BFFS2003a-ed' on page 749 undefined on input 
+line 5953.
+
+
+Package natbib Warning: Citation `LK2009a-ed' on page 749 undefined on input li
+ne 5966.
+
+
+Package natbib Warning: Citation `Brown2006a-ed' on page 749 undefined on input
+ line 5994.
+
+
+Package natbib Warning: Citation `BK2005a-ed' on page 749 undefined on input li
+ne 6010.
+
+
+Package natbib Warning: Citation `IJCNLP2004' on page 749 undefined on input li
+ne 6017.
+
+[749]
+
+Package natbib Warning: Citation `eacl89' on page 750 undefined on input line 6
+027.
+
+
+Package natbib Warning: Citation `vBtM2011a-ed' on page 750 undefined on input 
+line 6050.
+
+
+Package natbib Warning: Citation `EHP2011a-ed' on page 750 undefined on input l
+ine 6119.
+
+[750]
+Underfull \hbox (badness 2735) in paragraph at lines 6129--6133
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
+panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
+ []
+
+
+Package natbib Warning: Citation `FG2002' on page 751 undefined on input line 6
+199.
+
+
+Package natbib Warning: Citation `DJMU2002a-ed' on page 751 undefined on input 
+line 6204.
+
+[751]
+
+Package natbib Warning: Citation `geaf2007' on page 752 undefined on input line
+ 6296.
+
+[752] [753] [754]
+
+Package natbib Warning: Citation `eacl85' on page 755 undefined on input line 6
+564.
+
+[755]
+
+Package natbib Warning: Citation `acl:coling84' on page 756 undefined on input 
+line 6638.
+
+
+LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
+(Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
+(Font)              for symbol `grqq' on input line 6684.
+
+
+Package natbib Warning: Citation `NNP94' on page 756 undefined on input line 66
+96.
+
+[756]
+
+Package natbib Warning: Citation `iwpt03' on page 757 undefined on input line 6
+765.
+
+
+Package natbib Warning: Citation `coling94' on page 757 undefined on input line
+ 6788.
+
+
+Package natbib Warning: Citation `coling86' on page 757 undefined on input line
+ 6810.
+
+
+Package natbib Warning: Citation `acl87' on page 757 undefined on input line 68
+15.
+
+[757]
+
+Package natbib Warning: Citation `AEEHHL2003a-ed' on page 758 undefined on inpu
+t line 6884.
+
+
+Package natbib Warning: Citation `CSS2014a-ed' on page 758 undefined on input l
+ine 6916.
+
+[758]
+
+Package natbib Warning: Citation `HSW2011a-ed' on page 759 undefined on input l
+ine 6958.
+
+
+Package natbib Warning: Citation `Mueller2009a-ed' on page 759 undefined on inp
+ut line 6987.
+
+[759] [760]
+
+Package natbib Warning: Citation `OBW88a-ed' on page 761 undefined on input lin
+e 7216.
+
+
+Package natbib Warning: Citation `NNP94' on page 761 undefined on input line 72
+21.
+
+
+Package natbib Warning: Citation `WKK99a-ed' on page 761 undefined on input lin
+e 7241.
+
+[761]
+
+Package natbib Warning: Citation `WKK99a-ed' on page 762 undefined on input lin
+e 7324.
+
+[762]
+
+Package natbib Warning: Citation `RK2007a-ed' on page 763 undefined on input li
+ne 7414.
+
+
+Package natbib Warning: Citation `vdHulst2010a-ed' on page 763 undefined on inp
+ut line 7443.
+
+
+Package natbib Warning: Citation `eacl85' on page 763 undefined on input line 7
+448.
+
+[763]
+
+Package natbib Warning: Citation `HandbookCxG' on page 764 undefined on input l
+ine 7467.
+
+
+Package natbib Warning: Citation `BK2014a-ed' on page 764 undefined on input li
+ne 7472.
+
+
+Package natbib Warning: Citation `LRZ83a-ed' on page 764 undefined on input lin
+e 7518.
+
+
+Package natbib Warning: Citation `NNP94' on page 764 undefined on input line 75
+39.
+
+
+Package natbib Warning: Citation `Abraham82a-ed' on page 764 undefined on input
+ line 7569.
+
+[764]
+
+Package natbib Warning: Citation `coling92' on page 765 undefined on input line
+ 7583.
+
+
+Package natbib Warning: Citation `KA2015a-ed' on page 765 undefined on input li
+ne 7594.
+
+
+Underfull \hbox (badness 1675) in paragraph at lines 7597--7603
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
+Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
+ []
+
+
+Package natbib Warning: Citation `RK2007a-ed' on page 765 undefined on input li
+ne 7607.
+
+
+Package natbib Warning: Citation `Kordoni99a-ed' on page 765 undefined on input
+ line 7612.
+
+
+Package natbib Warning: Citation `Kordoni99a-ed' on page 765 undefined on input
+ line 7617.
+
+
+Package natbib Warning: Citation `Mueller2009a-ed' on page 765 undefined on inp
+ut line 7629.
+
+
+Package natbib Warning: Citation `acl2002' on page 765 undefined on input line 
+7656.
+
+[765]
+
+Package natbib Warning: Citation `Ross86a-u' on page 766 undefined on input lin
+e 7748.
+
+[766]
+
+Package natbib Warning: Citation `Mueller2007a-ed' on page 767 undefined on inp
+ut line 7796.
+
+
+Package natbib Warning: Citation `BS2012a-ed' on page 767 undefined on input li
+ne 7807.
+
+
+Package natbib Warning: Citation `BS2012a-ed' on page 767 undefined on input li
+ne 7812.
+
+
+Package natbib Warning: Citation `BB2011a' on page 767 undefined on input line 
+7830.
+
+
+Package natbib Warning: Citation `coling96' on page 767 undefined on input line
+ 7870.
+
+[767]
+
+Package natbib Warning: Citation `coling96' on page 768 undefined on input line
+ 7934.
+
+[768]
+
+Package natbib Warning: Citation `Wahlster2000a-ed' on page 769 undefined on in
+put line 8027.
+
+
+Package natbib Warning: Citation `LRZ83a-ed' on page 769 undefined on input lin
+e 8045.
+
+
+Package natbib Warning: Citation `Simpson2005a' on page 769 undefined on input 
+line 8046.
+
+
+Package natbib Warning: Citation `Peeters2000a-ed' on page 769 undefined on inp
+ut line 8071.
+
+
+Package natbib Warning: Citation `FG2003' on page 769 undefined on input line 8
+088.
+
+[769]
+
+Package natbib Warning: Citation `vBtM2011a-ed' on page 770 undefined on input 
+line 8158.
+
+
+Package natbib Warning: Citation `coling86' on page 770 undefined on input line
+ 8175.
+
+[770]
+
+Package natbib Warning: Citation `BK89a-ed' on page 771 undefined on input line
+ 8209.
+
+
+Underfull \hbox (badness 1348) in paragraph at lines 8228--8235
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
+(0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
+][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
+ []
+
+
+Package natbib Warning: Citation `Brown2006a-ed' on page 771 undefined on input
+ line 8239.
+
+
+Package natbib Warning: Citation `HandbookCxG' on page 771 undefined on input l
+ine 8267.
+
+
+Package natbib Warning: Citation `SteelsFluid-ed' on page 771 undefined on inpu
+t line 8285.
+
+
+Package natbib Warning: Citation `LK2009a-ed' on page 771 undefined on input li
+ne 8301.
+
+
+Package natbib Warning: Citation `Toman85a-ed' on page 771 undefined on input l
+ine 8312.
+
+[771]
+
+Package natbib Warning: Citation `Borsley91a' on page 772 undefined on input li
+ne 8366.
+
+
+Package natbib Warning: Citation `BK2009a-ed' on page 772 undefined on input li
+ne 8371.
+
+[772]
+
+Package natbib Warning: Citation `BHMT2009a-ed' on page 773 undefined on input 
+line 8523.
+
+[773]
+
+Package natbib Warning: Citation `BFFS2003a-ed' on page 774 undefined on input 
+line 8536.
+
+
+Package natbib Warning: Citation `Mueller2007a-ed' on page 774 undefined on inp
+ut line 8543.
+
+
+Package natbib Warning: Citation `coling86' on page 774 undefined on input line
+ 8563.
+
+
+Package natbib Warning: Citation `coling94' on page 774 undefined on input line
+ 8602.
+
+[774]
+
+Package natbib Warning: Citation `SteelsFluid-ed' on page 775 undefined on inpu
+t line 8645.
+
+
+Package natbib Warning: Citation `HSW2011a-ed' on page 775 undefined on input l
+ine 8676.
+
+
+Package natbib Warning: Citation `Brown2006a-ed' on page 775 undefined on input
+ line 8695.
+
+
+Package natbib Warning: Citation `vdHulst2010a-ed' on page 775 undefined on inp
+ut line 8725.
+
+[775]
+
+Package natbib Warning: Citation `coling88' on page 776 undefined on input line
+ 8742.
+
+
+Package natbib Warning: Citation `coling86' on page 776 undefined on input line
+ 8780.
+
+
+Package natbib Warning: Citation `GS90a-ed' on page 776 undefined on input line
+ 8809.
+
+
+Package natbib Warning: Citation `EHP2011a-ed' on page 776 undefined on input l
+ine 8823.
+
+[776]
+
+Package natbib Warning: Citation `Mueller2008a-ed' on page 777 undefined on inp
+ut line 8872.
+
+
+Package natbib Warning: Citation `coling92' on page 777 undefined on input line
+ 8908.
+
+
+Package natbib Warning: Citation `Mueller2011a-ed' on page 777 undefined on inp
+ut line 8943.
+
+[777] [778]
+
+Package natbib Warning: Citation `iwpt03' on page 779 undefined on input line 9
+091.
+
+
+Package natbib Warning: Citation `coling90' on page 779 undefined on input line
+ 9104.
+
+
+Package natbib Warning: Citation `acl:coling84' on page 779 undefined on input 
+line 9115.
+
+
+Package natbib Warning: Citation `DKMZ95a-ed' on page 779 undefined on input li
+ne 9134.
+
+) [779]
+No file check-gt-chinese.and.
+No file check-gt-chinese.lnd.
 )
-No file grammatical-theory－chapter1.snd.
+No file check-gt-chinese.snd.
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[49
+[780
 
 
-]
-\openout2 = `langsci/graphics/didyoulikethisbook.aux'.
-
- (./langsci/graphics/didyoulikethisbook.tex
-\pgf@layerbox@lspadvert_bg=\box158
-\pgf@layerboxsaved@lspadvert_bg=\box159
-LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
-(Font)              scaled to size 42.42139pt on input line 9.
-.................................................
-. fontspec info: "set-scale"
-. 
-. Arimo_B.ttf scale = 0.8120073448386179.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Arimo_B.ttf scale = 0.956411735000273.
-.................................................
-LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
-(Font)              scaled to size 20.3949pt on input line 11.
-.................................................
-. fontspec info: "set-scale"
-. 
-. Arimo_B.ttf scale = 0.8120078558225505.
-.................................................
-.................................................
-. fontspec info: "set-scale"
-. 
-. Arimo_B.ttf scale = 0.9564114620298085.
-.................................................
-File: ./langsci/graphics/langsci_logo_nocolor.pdf Graphic file (type QTm)
-
-<use  "./langsci/graphics/langsci_logo_nocolor.pdf" >
-LaTeX Font Info:    Calculating math sizes for size <17> on input line 15.
-) [50
-
-] [51
+] [784
 
 ]
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
@@ -4083,11 +5088,25 @@ Overfull \hbox (20.88588pt too wide) in paragraph at lines 53--53
 [][][][][][][] 
  []
 
-[52]
+[785]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 53.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 53.
- (./grammatical-theory－chapter1.aux (./chapters/preface.aux)
-(./chapters/1-begriffe.aux) (./langsci/graphics/didyoulikethisbook.aux))
+ (./check-gt-chinese.aux (./chapters/preface.aux)
+(./chapters/1-begriffe.aux) (./chapters/2-psg.aux) (./chapters/3-gb.aux)
+(./chapters/3-minimalism.aux) (./chapters/4-gpsg.aux)
+(./chapters/5-merkmalstrukturen.aux) (./chapters/6-lfg.aux)
+(./chapters/7-cg.aux) (./chapters/8-hpsg.aux) (./chapters/9-cxg.aux)
+(./chapters/dg.aux) (./chapters/tag.aux) (./chapters/ot.aux)
+(./chapters/innateness.aux) (./chapters/mts.aux) (./chapters/competence.aux)
+(./chapters/acquisition.aux) (./chapters/complexity.aux)
+(./chapters/branching-locality-recursion.aux) (./chapters/empty.aux)
+(./chapters/movement.aux) (./chapters/phrasal.aux) (./chapters/coregram.aux)
+(./chapters/conclusions.aux) (./chapters/loesungen.aux)
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+(./langsci/graphics/didyoulikethisbook.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 53.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 53.
 
@@ -4099,16 +5118,16 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 63930 strings out of 493591
- 1341008 string characters out of 6143546
- 1559336 words of memory out of 5000000
- 66062 multiletter control sequences out of 15000+600000
- 30074 words of font info for 162 fonts, out of 8000000 for 9000
+ 69588 strings out of 493591
+ 1443700 string characters out of 6143546
+ 1661040 words of memory out of 5000000
+ 71631 multiletter control sequences out of 15000+600000
+ 20765 words of font info for 125 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 118i,29n,148p,10467b,2281s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 118i,29n,148p,10456b,5449s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on grammatical-theory－chapter1.pdf (66 pages).
+Output written on check-gt-chinese.pdf (153 pages).
