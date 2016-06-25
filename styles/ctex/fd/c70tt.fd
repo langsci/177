@@ -1,0 +1,49 @@
+%%
+%% This is file `c70tt.fd',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% ctex.dtx  (with options: `tt,c70')
+%% 
+%%     Copyright (C) 2003--2016
+%%     CTEX.ORG and any individual authors listed in the documentation.
+%% ------------------------------------------------------------------------------
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. This version of this license is in
+%%        http://www.latex-project.org/lppl/lppl-1-3c.txt
+%%     and the latest version of this license is in
+%%        http://www.latex-project.org/lppl.txt
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+%%     This work has the LPPL maintenance status `maintained'.
+%% 
+%%     The Current Maintainers of this work are Leo Liu, Qing Lee and Liam Huang.
+%% 
+%% ------------------------------------------------------------------------------
+%% 
+\ProvidesFile{c70tt.fd}%
+  [2016/05/16 v2.4.2 Chinese font definition (CTEX)]
+%%
+%% Chinese characters
+%%
+%% character set: Unicode
+%% font encoding: Unicode
+%%
+\DeclareFontFamily{C70}{tt}{\hyphenchar\font\m@ne}
+\DeclareFontShape{C70}{tt}{m}{n}{<-> CJK * unifs}{\CJKnormal}
+\DeclareFontShape{C70}{tt}{b}{n}{<-> CJKb * unifs}{\CJKbold}
+\DeclareFontShape{C70}{tt}{bx}{n}{<-> CJKb * unifs}{\CJKbold}
+\DeclareFontShape{C70}{tt}{m}{sl}{<-> CJK * unifssl}{\CJKnormal}
+\DeclareFontShape{C70}{tt}{b}{sl}{<-> CJKb * unifssl}{\CJKbold}
+\DeclareFontShape{C70}{tt}{bx}{sl}{<-> CJKb * unifssl}{\CJKbold}
+\DeclareFontShape{C70}{tt}{m}{it}{<-> CJK * unifs}{\CJKnormal}
+\DeclareFontShape{C70}{tt}{b}{it}{<-> CJKb * unifs}{\CJKbold}
+\DeclareFontShape{C70}{tt}{bx}{it}{<-> CJKb * unifs}{\CJKbold}
+%% 
+%%
+%% End of file `c70tt.fd'.

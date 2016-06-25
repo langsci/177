@@ -1,0 +1,86 @@
+%%
+%% This is file `ctex-fontset-ubuntu.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% ctex.dtx  (with options: `fontset,ubuntu')
+%% 
+%%     Copyright (C) 2003--2016
+%%     CTEX.ORG and any individual authors listed in the documentation.
+%% ------------------------------------------------------------------------------
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. This version of this license is in
+%%        http://www.latex-project.org/lppl/lppl-1-3c.txt
+%%     and the latest version of this license is in
+%%        http://www.latex-project.org/lppl.txt
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+%%     This work has the LPPL maintenance status `maintained'.
+%% 
+%%     The Current Maintainers of this work are Leo Liu, Qing Lee and Liam Huang.
+%% 
+%% ------------------------------------------------------------------------------
+%% 
+\GetIdInfo$Id: ctex.dtx f12457f 2016-05-16 00:55:34 +0800 Qing Lee <sobenlee@gmail.com> $
+  {Ubuntu fonts definition (CTEX)}
+\ProvidesExplFile{ctex-fontset-ubuntu.def}
+  {\ExplFileDate}{2.4.2}{\ExplFileDescription}
+\sys_if_engine_pdftex:TF
+  {
+    \ctex_zhmap_case:nnn
+      {
+        \setCJKmainfont
+          [ BoldFont = wqy-zenhei.ttc , ItalicFont = ukai.ttc ] { uming.ttc }
+        \setCJKsansfont { wqy-zenhei.ttc }
+        \setCJKmonofont { uming.ttc }
+        \setCJKfamilyfont { zhsong } { uming.ttc }
+        \setCJKfamilyfont { zhhei }  { wqy-zenhei.ttc }
+        \setCJKfamilyfont { zhkai }  { ukai.ttc }
+        \ctex_punct_set:n { ubuntu }
+        \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
+        \ctex_punct_map_family:nn { \CJKsfdefault } { zhhei }
+        \ctex_punct_map_family:nn { \CJKttdefault } { zhsong }
+        \ctex_punct_map_itshape:nn { \CJKrmdefault } { zhkai }
+        \ctex_punct_map_bfseries:nn { \CJKrmdefault } { zhhei }
+      }
+      {
+        \ctex_load_zhmap:nnnn { rm } { zhhei } { zhsong } { zhubuntufonts }
+        \ctex_punct_set:n { ubuntu }
+        \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
+        \ctex_punct_map_bfseries:nn { \CJKrmdefault } { zhhei }
+        \ctex_punct_map_itshape:nn { \CJKrmdefault } { zhkai }
+      }
+      { \ctex_fontset_error:n { ubuntu } }
+  }
+  {
+    \sys_if_engine_uptex:TF
+      {
+        \ctex_set_upfonts:nnnnnn
+          { uming.ttc } { wqy-zenhei.ttc } { ukai.ttc }
+          { wqy-zenhei.ttc } { wqy-zenhei.ttc }
+          { uming.ttc }
+        \ctex_set_upfamily:nnn { zhsong } { upzhserif } {}
+        \ctex_set_upfamily:nnn { zhhei } { upzhsans } {}
+        \ctex_set_upfamily:nnn { zhkai } { upzhserifit } {}
+      }
+      {
+        \setCJKmainfont
+          [ BoldFont = WenQuanYi~Zen~Hei , ItalicFont = AR~PL~UKai~CN ] { AR~PL~UMing~CN }
+        \setCJKsansfont { WenQuanYi~Zen~Hei }
+        \setCJKmonofont { AR~PL~UMing~CN }
+        \setCJKfamilyfont { zhsong } { AR~PL~UMing~CN }
+        \setCJKfamilyfont { zhhei }  { WenQuanYi~Zen~Hei }
+        \setCJKfamilyfont { zhkai }  { AR~PL~UKai~CN }
+      }
+  }
+\NewDocumentCommand \songti   { } { \CJKfamily { zhsong } }
+\NewDocumentCommand \heiti    { } { \CJKfamily { zhhei } }
+\NewDocumentCommand \kaishu   { } { \CJKfamily { zhkai } }
+%% 
+%%
+%% End of file `ctex-fontset-ubuntu.def'.

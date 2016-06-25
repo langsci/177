@@ -1,0 +1,29 @@
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  20 JUN 2016 13:21
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**grammatical-theory-include.tex
+(./grammatical-theory-include.tex
+LaTeX2e <2016/03/31>
+Babel <3.9r> and hyphenation patterns for 83 language(s) loaded.
+(./localmetadata.tex
+./localmetadata.tex:3: Undefined control sequence.
+l.3 \subtitle
+             {From transformational grammar to constraint-based approaches}
+? 
+./localmetadata.tex:3: Emergency stop.
+l.3 \subtitle
+             {From transformational grammar to constraint-based approaches}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 7 strings out of 493591
+ 167 string characters out of 6143546
+ 53754 words of memory out of 5000000
+ 3513 multiletter control sequences out of 15000+600000
+ 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 1347 hyphenation exceptions out of 8191
+ 5i,0n,3p,130b,8s stack positions out of 5000i,500n,10000p,200000b,80000s
+No pages of output.
