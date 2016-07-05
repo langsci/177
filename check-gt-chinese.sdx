@@ -163,16 +163,14 @@
 \indexentry {Generative Grammar|hyperpage}{50}
 \indexentry {node|hyperpage}{50}
 \indexentry {dominance|hyperpage}{50}
-\indexentry {dominance!immediate|hyperpage}{51}
-\indexentry {node!mother|hyperpage}{51}
-\indexentry {node!sister|hyperpage}{51}
-\indexentry {node!daughter|hyperpage}{51}
-\indexentry {binary|hyperpage}{51}
-\indexentry {branching|hyperpage}{51}
-\indexentry {branching!binary|hyperpage}{51}
-\indexentry {unary|hyperpage}{51}
-\indexentry {branching!unary|hyperpage}{51}
-\indexentry {adjacency|hyperpage}{51}
+\indexentry {dominance!immediate|hyperpage}{50}
+\indexentry {node!mother|hyperpage}{50}
+\indexentry {node!sister|hyperpage}{50}
+\indexentry {node!daughter|hyperpage}{50}
+\indexentry {binary|hyperpage}{50}
+\indexentry {branching!binary|hyperpage}{50}
+\indexentry {branching!unary|hyperpage}{50}
+\indexentry {adjacency|hyperpage}{50}
 \indexentry {agreement|(hyperpage}{52}
 \indexentry {person|hyperpage}{52}
 \indexentry {number|hyperpage}{52}
@@ -181,47 +179,36 @@
 \indexentry {gender|hyperpage}{54}
 \indexentry {number|hyperpage}{54}
 \indexentry {case|hyperpage}{54}
-\indexentry {inflectional class|hyperpage}{54}
-\indexentry {agreement|)}{55}
-\indexentry {phrase structure grammar|)}{56}
-\indexentry {syntax"=semantics interface|hyperpage}{56}
+\indexentry {屈折类型|hyperpage}{54}
+\indexentry {phrase structure grammar|)}{55}
+\indexentry {syntax"=semantics interface|hyperpage}{55}
 \indexentry {$\lambda $"=calculus|hyperpage}{56}
 \indexentry {lambda"=abstraction@$\lambda $"=abstraction|hyperpage}{57}
 \indexentry {beta"=reduction@$\beta $"=reduction|hyperpage}{57}
 \indexentry {lambda"=conversion@$\lambda $"=conversion|hyperpage}{57}
-\indexentry {rule"=to"=rule hypothesis|hyperpage}{59}
+\indexentry {rule"=to"=rule hypothesis|hyperpage}{58}
 \indexentry {adjunct|(hyperpage}{59}
-\indexentry {*|hyperpage}{60}
-\indexentry {recursion|hyperpage}{62}
-\indexentry {adjunct|)}{62}
-\indexentry {coordination|hyperpage}{62}
-\indexentry {noun!relational|hyperpage}{63}
-\indexentry {noun|hyperpage}{64}
-\indexentry {epsilon production|hyperpage}{64}
-\indexentry {empty element|hyperpage}{64}
-\indexentry {plural|hyperpage}{65}
-\indexentry {noun!mass|hyperpage}{65}
-\indexentry {ambiguity!spurious|hyperpage}{68}
-\indexentry {preposition|)}{70}
-\indexentry {X theory@\xbar theory|hyperpage}{70}
-\indexentry {X theory@\xbar theory|(hyperpage}{70}
-\indexentry {X theory@\xbar theory|hyperpage}{71}
-\indexentry {Government and Binding (GB)|hyperpage}{71}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{71}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{71}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{71}
-\indexentry {complement|hyperpage}{72}
-\indexentry {*|hyperpage}{72}
-\indexentry {adjunct|hyperpage}{72}
-\indexentry {XP|hyperpage}{72}
-\indexentry {specifier|hyperpage}{72}
-\indexentry {adjunct!head|hyperpage}{73}
-\indexentry {ambiguity!spurious|hyperpage}{74}
-\indexentry {projection!maximal|hyperpage}{74}
-\indexentry {X theory@\xbar theory|)}{74}
-\indexentry {coordination|hyperpage}{75}
-\indexentry {X theory@\xbar theory|hyperpage}{76}
-\indexentry {Definite Clause Grammar (DCG)|hyperpage}{77}
+\indexentry {*|hyperpage}{59}
+\indexentry {recursion|hyperpage}{60}
+\indexentry {adjunct|)}{60}
+\indexentry {coordination|hyperpage}{60}
+\indexentry {noun!relational|hyperpage}{62}
+\indexentry {noun|hyperpage}{63}
+\indexentry {epsilon production|hyperpage}{63}
+\indexentry {empty element|hyperpage}{63}
+\indexentry {plural|hyperpage}{63}
+\indexentry {noun!mass|hyperpage}{64}
+\indexentry {ambiguity!spurious|hyperpage}{66}
+\indexentry {preposition|)}{69}
+\indexentry {X theory@\xbar theory|(hyperpage}{69}
+\indexentry {X theory@\xbar theory|hyperpage}{69}
+\indexentry {complement|hyperpage}{70}
+\indexentry {*|hyperpage}{70}
+\indexentry {adjunct|hyperpage}{70}
+\indexentry {specifier|hyperpage}{70}
+\indexentry {X theory@\xbar theory|)}{72}
+\indexentry {coordination|hyperpage}{73}
+\indexentry {Definite Clause Grammar (DCG)|hyperpage}{75}
 \indexentry {Transformational Grammar|(hyperpage}{79}
 \indexentry {model"=theoretic grammar|hyperpage}{79}
 \indexentry {Mainstream Generative Grammar|hyperpage}{79}

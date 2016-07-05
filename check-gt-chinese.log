@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  25 JUN 2016 17:34
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 JUL 2016 12:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3110,16 +3110,47 @@ Library (tcolorbox): 'tcbskins.code.tex' version '3.91'
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.91'
 ))) (./check-gt-chinese.aux (./chapters/preface.aux) (./chapters/1-begriffe.aux
-) (./chapters/2-psg.aux) (./chapters/3-gb.aux) (./chapters/3-minimalism.aux)
-(./chapters/4-gpsg.aux) (./chapters/5-merkmalstrukturen.aux)
-(./chapters/6-lfg.aux) (./chapters/7-cg.aux) (./chapters/8-hpsg.aux)
-(./chapters/9-cxg.aux) (./chapters/dg.aux) (./chapters/tag.aux)
-(./chapters/ot.aux) (./chapters/innateness.aux) (./chapters/mts.aux)
-(./chapters/competence.aux) (./chapters/acquisition.aux)
-(./chapters/complexity.aux) (./chapters/branching-locality-recursion.aux)
-(./chapters/empty.aux) (./chapters/movement.aux) (./chapters/phrasal.aux)
-(./chapters/coregram.aux) (./chapters/conclusions.aux)
-(./chapters/loesungen.aux) (./langsci/graphics/didyoulikethisbook.aux))
+) (./chapters/2-psg.aux
+
+LaTeX Warning: Label `1@xvr' multiply defined.
+
+
+LaTeX Warning: Label `1@vr' multiply defined.
+
+
+LaTeX Warning: Label `2@xvr' multiply defined.
+
+
+LaTeX Warning: Label `2@vr' multiply defined.
+
+
+LaTeX Warning: Label `3@xvr' multiply defined.
+
+
+LaTeX Warning: Label `3@vr' multiply defined.
+
+
+LaTeX Warning: Label `4@xvr' multiply defined.
+
+
+LaTeX Warning: Label `4@vr' multiply defined.
+
+
+LaTeX Warning: Label `5@xvr' multiply defined.
+
+
+LaTeX Warning: Label `5@vr' multiply defined.
+
+) (./chapters/3-gb.aux) (./chapters/3-minimalism.aux) (./chapters/4-gpsg.aux)
+(./chapters/5-merkmalstrukturen.aux) (./chapters/6-lfg.aux)
+(./chapters/7-cg.aux) (./chapters/8-hpsg.aux) (./chapters/9-cxg.aux)
+(./chapters/dg.aux) (./chapters/tag.aux) (./chapters/ot.aux)
+(./chapters/innateness.aux) (./chapters/mts.aux) (./chapters/competence.aux)
+(./chapters/acquisition.aux) (./chapters/complexity.aux)
+(./chapters/branching-locality-recursion.aux) (./chapters/empty.aux)
+(./chapters/movement.aux) (./chapters/phrasal.aux) (./chapters/coregram.aux)
+(./chapters/conclusions.aux) (./chapters/loesungen.aux)
+(./langsci/graphics/didyoulikethisbook.aux))
 \openout1 = `check-gt-chinese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 4.
@@ -3458,12 +3489,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 12
 LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
 
-[8] [9] [10]
-Overfull \hbox (2.13997pt too wide) detected at line 236
- []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 429
- []
-
-[11] [12] [13])
+[8] [9] [10] [11] [12] [13])
 \tf@toc=\write14
 \openout14 = `check-gt-chinese.toc'.
 
@@ -3474,10 +3500,15 @@ Overfull \hbox (2.13997pt too wide) detected at line 236
 
 
 ] [2]
-\openout2 = `chapters/1-begriffe.aux'.
+\openout2 = `chapters/2-psg.aux'.
 
- (./chapters/1-begriffe.tex
-chapter 1.
+ (./chapters/2-psg.tex [48
+
+
+
+
+]
+chapter 2.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3493,11 +3524,6 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-[3
-
-
-
-]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3555,40 +3581,189 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
- [4] [5] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (28.35555pt too wide) in paragraph at lines 655--656
-[]  [] [] [] [] [] [] [] []
- []
-
-
-Overfull \hbox (13.15056pt too wide) in paragraph at lines 675--676
-[]  [] [] [] [] [] [] [] [] []
- []
-
-[13] [14] [15] [16] [17] [18] [19] [20] [21] [22]
-Overfull \hbox (5.84555pt too wide) in paragraph at lines 1263--1264
+[49]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+ [50]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+ [51] [52] [53] [54] [55] [56] [57] [58] [59]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+ [60] [61]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+ [62]
+Overfull \hbox (2.24553pt too wide) in paragraph at lines 1111--1112
 []  [] [] [] [] [] [] [] [] [] [] []
  []
 
-[23]
-Overfull \hbox (11.45557pt too wide) in paragraph at lines 1324--1325
-[]  [] [] [] [] [] [] [] [] []
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+[63] [64]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+ [65] [66]
+Overfull \hbox (3.45554pt too wide) in paragraph at lines 1446--1447
+[]  [] [] [] [] [] [] [] [] [] []
  []
 
-[24] [25]
-
-Package natbib Warning: Citation `Brame81a' on page 26 undefined on input line 
-1447.
-
-
-Package natbib Warning: Citation `Brame82a' on page 26 undefined on input line 
-1447.
-
-
-Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
- 1447.
-
-[26] [27]
+[67]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+ [68]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+ [69]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -3597,23 +3772,43 @@ Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [28] [29] [30]
-
-Package natbib Warning: Citation `Keenan76b-u' on page 31 undefined on input li
-ne 1883.
-
-[31] [32] [33] [34] [35] [36] [37] [38] [39] [40] [41]
-Overfull \hbox (5.45555pt too wide) in paragraph at lines 2552--2556
-[] [] [] [] [] [] [] [] []
- []
-
-
-Overfull \hbox (5.23553pt too wide) in paragraph at lines 2571--2573
-[]  [] [] [] [] [] [] [] [] []
- []
-
-[42] [43] [44] [45] [46]) [47] [429
-
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+ [70]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+\forest@temp@box=\box32748 (local)
+\forest@temp@box=\box32747 (local)
+\forest@temp@box=\box32746 (local)
+ [71] [72] [73] [74]) [75] [429
 
 
 
@@ -3654,13 +3849,9 @@ Underfull \hbox (badness 2080) in paragraph at lines 936--942
 ć, Małgorzata Marciniak, Agnieszka
  []
 
-[702] [703] [704] [705] [706] [707]
-
-Package natbib Warning: Citation `Chomsky68b-u' on page 708 undefined on input 
-line 1566.
-
-[708] [709] [710] [711] [712] [713] [714] [715]
-Underfull \hbox (badness 1226) in paragraph at lines 2452--2456
+[702] [703] [704] [705] [706] [707] [708] [709] [710] [711] [712] [713]
+[714] [715]
+Underfull \hbox (badness 1226) in paragraph at lines 2463--2467
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Dürscheid, Christa. 1989.  \EU1/LinLibert
 ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
  []
@@ -3670,140 +3861,90 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [719] [720] [721] [722]
-
-Package natbib Warning: Citation `FZ2004a-u' on page 723 undefined on input lin
-e 3109.
-
-[723]
-Underfull \hbox (badness 10000) in paragraph at lines 3212--3216
+ [719] [720] [721] [722] [723]
+Underfull \hbox (badness 10000) in paragraph at lines 3229--3233
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
  Functional Grammar und
  []
 
 
-Underfull \hbox (badness 5954) in paragraph at lines 3212--3216
+Underfull \hbox (badness 5954) in paragraph at lines 3229--3233
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 Diskursrepräsentationstheorie als Grundlage
 n eines sprachverarbeitenden Sys-
  []
 
 [724] [725] [726] [727] [728] [729] [730]
-Underfull \hbox (badness 5203) in paragraph at lines 3954--3959
+Underfull \hbox (badness 5203) in paragraph at lines 3971--3976
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Heinecke, Johannes, Jürgen Kunze, Wolfgan
 g Menzel & Ingo Schröder. 1998.
  []
 
 
-Underfull \hbox (badness 7012) in paragraph at lines 3954--3959
+Underfull \hbox (badness 7012) in paragraph at lines 3971--3976
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 Eliminative parsing with graded constraints
 .  In []Isabelle[] ([]1998[])[] 526–530.
  []
 
-[731]
+[731] [732]
+Underfull \hbox (badness 1286) in paragraph at lines 4266--4271
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Höhle, Tilman N. 2016j.  Vorangestellte V
+erben und Komplementierer sind eine
+ []
 
-Package natbib Warning: Citation `Hoehle2015Explikation' on page 732 undefined 
-on input line 4131.
-
-[732]
-
-Package natbib Warning: Citation `HoehleTopo' on page 733 undefined on input li
-ne 4136.
-
-
-Package natbib Warning: Citation `HoehleMittelfeld' on page 733 undefined on in
-put line 4148.
-
-
-Package natbib Warning: Citation `HoehleVerum' on page 733 undefined on input l
-ine 4155.
-
-
-Package natbib Warning: Citation `HoehleReconstruction' on page 733 undefined o
-n input line 4161.
-
-
-Package natbib Warning: Citation `Hoehle2015Projektionsstufen' on page 733 unde
-fined on input line 4166.
-
-
-Package natbib Warning: Citation `HoehleSpuren' on page 733 undefined on input 
-line 4172.
-
-
-Package natbib Warning: Citation `HoehleKomplementierer' on page 733 undefined 
-on input line 4181.
-
-
-Package natbib Warning: Citation `HoehlePhonology' on page 733 undefined on inp
-ut line 4189.
-
-[733]
-Underfull \hbox (badness 1616) in paragraph at lines 4349--4354
+[733] [734]
+Underfull \hbox (badness 1616) in paragraph at lines 4430--4435
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Islam, Md. Asfaqul, K. M. Azharul Hasan &
  Md. Mizanur Rahman. 2012.  Ba-
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 4349--4354
+Underfull \hbox (badness 4279) in paragraph at lines 4430--4435
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 sic HPSG structure for Bangla grammar.  In 
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 15th International Conference
  []
 
 
-Underfull \hbox (badness 2762) in paragraph at lines 4349--4354
+Underfull \hbox (badness 2762) in paragraph at lines 4430--4435
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 on Computer and Information Technology (IC
 CIT)\EU1/LinLibertine_R_B.otf(0)/m/n/10 , 185–189. Curran Associates.
  []
 
-[734] [735] [736] [737] [738] [739] [740]
-Underfull \hbox (badness 7685) in paragraph at lines 5066--5070
+[735] [736] [737] [738] [739] [740] [741]
+Underfull \hbox (badness 7685) in paragraph at lines 5147--5151
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Klein, Wolfgang. 1971.  \EU1/LinLibertine
 _R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
  []
 
-[741] [742] [743] [744] [745] [746] [747] [748] [749] [750]
-Underfull \hbox (badness 2735) in paragraph at lines 6129--6133
+[742] [743] [744] [745] [746] [747] [748] [749] [750] [751]
+Underfull \hbox (badness 2735) in paragraph at lines 6210--6214
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
 panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
  []
 
-[751] [752] [753] [754] [755] [756]
+[752] [753] [754] [755] [756] [757]
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
 (Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
-(Font)              for symbol `grqq' on input line 6684.
+(Font)              for symbol `grqq' on input line 6765.
 
-[757] [758] [759] [760] [761] [762] [763] [764] [765]
-Underfull \hbox (badness 1675) in paragraph at lines 7597--7603
+[758] [759] [760] [761] [762] [763] [764] [765]
+Underfull \hbox (badness 1675) in paragraph at lines 7678--7684
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
 Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
  []
 
-[766] [767] [768] [769]
-
-Package natbib Warning: Citation `Simpson2005a' on page 770 undefined on input 
-line 8046.
-
-[770] [771]
-Underfull \hbox (badness 1348) in paragraph at lines 8228--8235
+[766] [767] [768] [769] [770] [771]
+Underfull \hbox (badness 1348) in paragraph at lines 8315--8322
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
 (0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
  []
 
-[772]
-
-Package natbib Warning: Citation `Borsley91a' on page 773 undefined on input li
-ne 8366.
-
-[773] [774] [775] [776] [777] [778] [779] [780]) [781]
+[772] [773] [774] [775] [776] [777] [778] [779] [780]) [781]
 No file check-gt-chinese.and.
 No file check-gt-chinese.lnd.
 )
 No file check-gt-chinese.snd.
-
-Package natbib Warning: There were undefined citations.
-
 
 AED: lastpage setting LastPage
 [782
@@ -3856,14 +3997,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 70600 strings out of 493591
- 1461507 string characters out of 6143546
- 1727252 words of memory out of 5000000
- 72628 multiletter control sequences out of 15000+600000
- 20798 words of font info for 122 fonts, out of 8000000 for 9000
+ 79038 strings out of 493591
+ 1777471 string characters out of 6143546
+ 1777466 words of memory out of 5000000
+ 81062 multiletter control sequences out of 15000+600000
+ 29920 words of font info for 153 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 118i,29n,148p,10456b,3531s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 188i,17n,197p,10456b,4568s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on check-gt-chinese.pdf (155 pages).
+Output written on check-gt-chinese.pdf (138 pages).

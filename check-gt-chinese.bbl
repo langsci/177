@@ -1,6 +1,6 @@
 \providecommand{\noopsort}[1]{} \providecommand*{\donothing}[1]{}
   \providecommand*{\printsecond}[2]{#2}
-\begin{thebibliography}{1491}
+\begin{thebibliography}{1505}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\urlprefix}{}
@@ -1000,6 +1000,11 @@ Borsley, Robert~D. 1989.
   structure.
 \newblock \emph{Linguistics} 27(5). 843--863.
 
+\bibitem[{Borsley(1991)}]{Borsley91a}
+Borsley, Robert~D. 1991.
+\newblock \emph{Syntactic theory: {A} unified approach}.
+\newblock London: Edward Arnold.
+
 \bibitem[{Borsley(1999)}]{Borsley99a-u}
 Borsley, Robert~D. 1999.
 \newblock \emph{Syntactic theory: {A} unified approach}.
@@ -1534,6 +1539,12 @@ Chomsky, Noam. 1964{\natexlab{b}}.
 Chomsky, Noam. 1965.
 \newblock \emph{Aspects of the theory of syntax}.
 \newblock Cambridge, MA: MIT Press.
+
+\bibitem[{Chomsky(1968)}]{Chomsky68b-u}
+Chomsky, Noam. 1968.
+\newblock Language and the mind.
+\newblock \emph{Psychology Today} 1(9). 48--68.
+\newblock \reprintas \citew{Chomsky76b-u}.
 
 \bibitem[{Chomsky(1970)}]{Chomsky70a}
 Chomsky, Noam. 1970.
@@ -3108,6 +3119,12 @@ Frank, Anette \& Annie Zaenen. 2002.
   17--52. T{\"u}bingen: Max Niemeyer Verlag.
 \newblock \reprintas \citew{FZ2004a-u}.
 
+\bibitem[{Frank \& Zaenen(2004)}]{FZ2004a-u}
+Frank, Anette \& Annie Zaenen. 2004.
+\newblock Tense in {LFG}: {Syntax} and morphology.
+\newblock In Louisa Sadler \& Andrew Spencer (eds.), \emph{Projecting
+  morphology}, 23--66. Stanford, CA: CSLI Publications.
+
 \bibitem[{Frank(2002)}]{Frank2002a-u}
 Frank, Robert. 2002.
 \newblock \emph{Phrase structure composition and syntactic dependencies}
@@ -4187,6 +4204,70 @@ H{\"o}hle, Tilman~N. 1999.
   in {Head-Driven Phrase Structure Grammar}}, 61--90. Stanford, CA: CSLI
   Publications.
 \newblock Republished as \citew{HoehlePhonology}.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{a}})}]{HoehlePhonology}
+H{\"o}hle, Tilman~N. 2016{\natexlab{a}}.
+\newblock An architecture for phonology.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock Originally published as \citew{Hoehle99a-u}.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{b}})}]{MRR2015a-ed}
+H{\"o}hle, Tilman~N. 2016{\natexlab{b}}.
+\newblock \emph{{Beitr{\"a}ge zur Grammatik des Deutschen}}  (Classics in
+  Linguistics).
+\newblock Berlin: Language Science Press.
+\newblock \inPreparation.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{c}})}]{HoehleMittelfeld}
+H{\"o}hle, Tilman~N. 2016{\natexlab{c}}.
+\newblock {Der Begriff "`Mittelfeld"', Anmerkungen {\"u}ber die Theorie der
+  topologischen Felder}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock First published as \citew{Hoehle86}.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{d}})}]{Hoehle2015Explikation}
+H{\"o}hle, Tilman~N. 2016{\natexlab{d}}.
+\newblock {Explikationen f{\"u}r "`normale Betonung"' und "`normale
+  Wortstellung"'}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock \inPreparation.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{e}})}]{HoehleReconstruction}
+H{\"o}hle, Tilman~N. 2016{\natexlab{e}}.
+\newblock On reconstruction and coordination.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock \inPreparation.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{f}})}]{Hoehle2015Projektionsstufen}
+H{\"o}hle, Tilman~N. 2016{\natexlab{f}}.
+\newblock {Projektionsstufen bei V-Projektionen: Bemerkungen zu F/T}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock First circulated in 1991.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{g}})}]{HoehleSpuren}
+H{\"o}hle, Tilman~N. 2016{\natexlab{g}}.
+\newblock {Spuren in HPSG}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock Vortrag auf der GGS-Tagung in T{\"u}bingen am 14. Mai 1994.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{h}})}]{HoehleTopo}
+H{\"o}hle, Tilman~N. 2016{\natexlab{h}}.
+\newblock {Topologische Felder}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock First circulated as draft in 1983.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{i}})}]{HoehleVerum}
+H{\"o}hle, Tilman~N. 2016{\natexlab{i}}.
+\newblock {Verum-Fokus}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock Originally published as \citew{Hoehle88a}.
+
+\bibitem[{H{\"o}hle(2016{\natexlab{j}})}]{HoehleKomplementierer}
+H{\"o}hle, Tilman~N. 2016{\natexlab{j}}.
+\newblock {Vorangestellte Verben und Komplementierer sind eine nat{\"u}rliche
+  Klasse}.
+\newblock In  \cite{MRR2015a-ed}.
+\newblock First published as \citew{Hoehle97a}.
 
 \bibitem[{Holler(2005)}]{Holler2005a-u}
 Holler, Anke. 2005.
@@ -8045,12 +8126,18 @@ Simpson, Jane. 1983.
 \newblock In  \cite{LRZ83a-ed} 143--157.
 \newblock \reprint \citew{Simpson2005a}.
 
-\bibitem[{Simpson(2005)}]{Simpson2003a}
-Simpson, Jane. 2005.
+\bibitem[{Simpson(2005{\natexlab{a}})}]{Simpson2003a}
+Simpson, Jane. 2005{\natexlab{a}}.
 \newblock Depictives in {English} and {Warlpiri}.
 \newblock In Nikolaus~P. Himmelmann \& Eva Schultze-Berndt (eds.),
   \emph{Secondary predication and adverbial modification: {The} typology of
   depictives}, 69--106. Oxford: Oxford University Press.
+
+\bibitem[{Simpson(2005{\natexlab{b}})}]{Simpson2005a}
+Simpson, Jane. 2005{\natexlab{b}}.
+\newblock Resultatives.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Lexical semantics
+  in {LFG}}, 149--161. Stanford, CA: CSLI Publications.
 
 \bibitem[{Singleton \& Newport(2004)}]{SN2004a}
 Singleton, Jenny~L. \& Elissa~L. Newport. 2004.

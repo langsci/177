@@ -1,95 +1,95 @@
 \contentsline {chapter}{\nonumberline 前言}{xv}{chapter*.2}
-\contentsline {part}{\numberline {I}Background and specific theories}{1}{part.1}
+\contentsline {part}{II\hspace {1em}研究背景与语法理论}{1}{part.2}
 \contentsline {chapter}{\numberline {1}导言和术语}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}为什么要研究句法？}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}为什么要形式化？}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}构成成分}{6}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}构成成分测试}{6}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.3}组成成分}{6}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}组成成分测试}{7}{subsection.1.3.1}
 \contentsline {subsubsection}{\numberline {1.3.1.1}替换}{7}{subsubsection.1.3.1.1}
-\contentsline {subsubsection}{\numberline {1.3.1.2}代词化（代名化）}{7}{subsubsection.1.3.1.2}
+\contentsline {subsubsection}{\numberline {1.3.1.2}代词化}{7}{subsubsection.1.3.1.2}
 \contentsline {subsubsection}{\numberline {1.3.1.3}疑问结构}{8}{subsubsection.1.3.1.3}
 \contentsline {subsubsection}{\numberline {1.3.1.4}变换测试}{8}{subsubsection.1.3.1.4}
 \contentsline {subsubsection}{\numberline {1.3.1.5}前置}{9}{subsubsection.1.3.1.5}
-\contentsline {subsubsection}{\numberline {1.3.1.6}并列}{9}{subsubsection.1.3.1.6}
+\contentsline {subsubsection}{\numberline {1.3.1.6}并列}{10}{subsubsection.1.3.1.6}
 \contentsline {subsection}{\numberline {1.3.2}关于成分测试法的一些看法}{10}{subsection.1.3.2}
 \contentsline {subsubsection}{\numberline {1.3.2.1}虚位成分}{10}{subsubsection.1.3.2.1}
-\contentsline {subsubsection}{\numberline {1.3.2.2}移位}{11}{subsubsection.1.3.2.2}
+\contentsline {subsubsection}{\numberline {1.3.2.2}移位}{12}{subsubsection.1.3.2.2}
 \contentsline {subsubsection}{\numberline {1.3.2.3}前置}{12}{subsubsection.1.3.2.3}
 \contentsline {subsubsection}{\numberline {1.3.2.4}并列}{15}{subsubsection.1.3.2.4}
 \contentsline {section}{\numberline {1.4}词类}{16}{section.1.4}
 \contentsline {section}{\numberline {1.5}中心语}{26}{section.1.5}
-\contentsline {section}{\numberline {1.6}论元成分与附加成分}{28}{section.1.6}
+\contentsline {section}{\numberline {1.6}论元成分与说明语}{28}{section.1.6}
 \contentsline {section}{\numberline {1.7}语法功能}{31}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}主语}{32}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}状语}{36}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}谓语}{37}{subsection.1.7.3}
-\contentsline {subsection}{\numberline {1.7.4}配价类型}{39}{subsection.1.7.4}
+\contentsline {subsection}{\numberline {1.7.4}配价类型}{38}{subsection.1.7.4}
 \contentsline {section}{\numberline {1.8}德语小句的空间位置模型}{39}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}动词的位置}{40}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.1}动词的位置}{39}{subsection.1.8.1}
 \contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{40}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{40}{subsection.1.8.3}
 \contentsline {subsection}{\numberline {1.8.4}递归}{45}{subsection.1.8.4}
-\contentsline {chapter}{\numberline {2}Phrase structure grammar}{49}{chapter.2}
-\contentsline {section}{\numberline {2.1}Symbols and rewrite rules}{49}{section.2.1}
-\contentsline {section}{\numberline {2.2}Expanding PSG with features}{55}{section.2.2}
-\contentsline {section}{\numberline {2.3}Semantics}{56}{section.2.3}
-\contentsline {section}{\numberline {2.4}Phrase structure rules for some aspects of German syntax}{59}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Noun phrases}{59}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Prepositional phrases}{68}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{70}{section.2.5}
-\contentsline {chapter}{\numberline {3}Transformational Grammar -- Government \& Binding}{79}{chapter.3}
-\contentsline {section}{\numberline {3.1}General remarks on the representational format}{80}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Transformations}{80}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}The hypothesis regarding language acquisition: Principles \& Parameters}{82}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}The T model}{83}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}D-structure and S-structure}{83}{subsubsection.3.1.3.1}
-\contentsline {subsubsection}{\numberline {3.1.3.2}Phonetic Form}{86}{subsubsection.3.1.3.2}
-\contentsline {subsubsection}{\numberline {3.1.3.3}Logical Form}{86}{subsubsection.3.1.3.3}
-\contentsline {subsubsection}{\numberline {3.1.3.4}The lexicon}{87}{subsubsection.3.1.3.4}
-\contentsline {subsection}{\numberline {3.1.4}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{89}{subsection.3.1.4}
-\contentsline {subsubsection}{\numberline {3.1.4.1}Syntactic categories}{89}{subsubsection.3.1.4.1}
-\contentsline {subsubsection}{\numberline {3.1.4.2}Assumptions and rules}{92}{subsubsection.3.1.4.2}
-\contentsline {subsection}{\numberline {3.1.5}CP and IP in English}{92}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}The structure of the German clause}{95}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Verb position}{96}{section.3.2}
-\contentsline {section}{\numberline {3.3}Long\active@dq \dq@prtct {=}distance dependencies}{101}{section.3.3}
-\contentsline {section}{\numberline {3.4}Passive}{103}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Structural and lexical case}{104}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Case assignment and the Case Filter}{105}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Local reordering}{109}{section.3.5}
-\contentsline {section}{\numberline {3.6}Summary and classification}{111}{section.3.6}
-\contentsline {subsection}{\numberline {3.6.1}Explaining language acquisition}{112}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}Formalization}{113}{subsection.3.6.2}
-\contentsline {chapter}{\numberline {4}Transformational Grammar -- Minimalism}{121}{chapter.4}
-\contentsline {section}{\numberline {4.1}General remarks on the representational format}{121}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Basic architecture}{122}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Valence, feature checking, and agreement}{123}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Phrase structure and \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{125}{subsection.4.1.3}
-\contentsline {subsection}{\numberline {4.1.4}Little \textit {v}}{125}{subsection.4.1.4}
-\contentsline {subsection}{\numberline {4.1.5}CP, TP, \textit {v}P\xspace , VP}{127}{subsection.4.1.5}
-\contentsline {subsubsection}{\numberline {4.1.5.1}Features as triggers for movement: The EPP feature on T}{128}{subsubsection.4.1.5.1}
-\contentsline {subsubsection}{\numberline {4.1.5.2}Case assignment}{130}{subsubsection.4.1.5.2}
-\contentsline {subsection}{\numberline {4.1.6}Adjuncts}{132}{subsection.4.1.6}
-\contentsline {section}{\numberline {4.2}Verb position}{132}{section.4.2}
-\contentsline {section}{\numberline {4.3}Long\active@dq \dq@prtct {=}distance dependencies}{132}{section.4.3}
-\contentsline {section}{\numberline {4.4}Passive}{133}{section.4.4}
-\contentsline {section}{\numberline {4.5}Local reordering}{136}{section.4.5}
-\contentsline {section}{\numberline {4.6}New developments and theoretical variants}{137}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Move, Merge, feature\active@dq \dq@prtct {=}driven movement and functional projections}{137}{subsection.4.6.1}
-\contentsline {subsubsection}{\numberline {4.6.1.1}Functional projections and modularization of linguistic knowledge}{138}{subsubsection.4.6.1.1}
-\contentsline {subsubsection}{\numberline {4.6.1.2}Feature checking in specifier positions}{143}{subsubsection.4.6.1.2}
-\contentsline {subsubsection}{\numberline {4.6.1.3}Locality of selection and functional projections}{145}{subsubsection.4.6.1.3}
-\contentsline {subsubsection}{\numberline {4.6.1.4}Feature-driven movement}{146}{subsubsection.4.6.1.4}
-\contentsline {subsection}{\numberline {4.6.2}Labeling}{147}{subsection.4.6.2}
-\contentsline {subsection}{\numberline {4.6.3}Specifiers, complements, and the remains of \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{153}{subsection.4.6.3}
-\contentsline {subsection}{\numberline {4.6.4}Minimalism, Categorial Grammar, and HPSG}{157}{subsection.4.6.4}
-\contentsline {subsubsection}{\numberline {4.6.4.1}Directional Minimalist Grammars and Categorial Grammar}{160}{subsubsection.4.6.4.1}
-\contentsline {subsubsection}{\numberline {4.6.4.2}Minimalist Grammars and Head-Driven Phrase Structure Grammar}{161}{subsubsection.4.6.4.2}
-\contentsline {subsection}{\numberline {4.6.5}Selection of atomic features vs.\ selection of complex categories}{165}{subsection.4.6.5}
-\contentsline {subsection}{\numberline {4.6.6}Summary}{167}{subsection.4.6.6}
-\contentsline {section}{\numberline {4.7}Summary and classification}{167}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Explaining language acquisition}{167}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Formalization}{168}{subsection.4.7.2}
+\contentsline {chapter}{\numberline {2}短语结构语法}{49}{chapter.2}
+\contentsline {section}{\numberline {2.1}符号和重写规则}{49}{section.2.1}
+\contentsline {section}{\numberline {2.2}短语结构语法中特征的运用}{54}{section.2.2}
+\contentsline {section}{\numberline {2.3}语义}{55}{section.2.3}
+\contentsline {section}{\numberline {2.4}有关德语句法中某些方面的短语结构规则}{58}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}名词短语}{58}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}介词短语}{67}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace 理论}{69}{section.2.5}
+\contentsline {chapter}{\numberline {3}Transformational Grammar -- Government \& Binding}{77}{chapter.3}
+\contentsline {section}{\numberline {3.1}General remarks on the representational format}{78}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Transformations}{78}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}The hypothesis regarding language acquisition: Principles \& Parameters}{80}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}The T model}{81}{subsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.3.1}D-structure and S-structure}{82}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.2}Phonetic Form}{84}{subsubsection.3.1.3.2}
+\contentsline {subsubsection}{\numberline {3.1.3.3}Logical Form}{84}{subsubsection.3.1.3.3}
+\contentsline {subsubsection}{\numberline {3.1.3.4}The lexicon}{85}{subsubsection.3.1.3.4}
+\contentsline {subsection}{\numberline {3.1.4}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{87}{subsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.4.1}Syntactic categories}{88}{subsubsection.3.1.4.1}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Assumptions and rules}{90}{subsubsection.3.1.4.2}
+\contentsline {subsection}{\numberline {3.1.5}CP and IP in English}{90}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}The structure of the German clause}{93}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Verb position}{95}{section.3.2}
+\contentsline {section}{\numberline {3.3}Long\active@dq \dq@prtct {=}distance dependencies}{100}{section.3.3}
+\contentsline {section}{\numberline {3.4}Passive}{102}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Structural and lexical case}{103}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Case assignment and the Case Filter}{104}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Local reordering}{108}{section.3.5}
+\contentsline {section}{\numberline {3.6}Summary and classification}{110}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Explaining language acquisition}{111}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}Formalization}{112}{subsection.3.6.2}
+\contentsline {chapter}{\numberline {4}Transformational Grammar -- Minimalism}{119}{chapter.4}
+\contentsline {section}{\numberline {4.1}General remarks on the representational format}{119}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Basic architecture}{120}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Valence, feature checking, and agreement}{121}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Phrase structure and \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{122}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Little \textit {v}}{124}{subsection.4.1.4}
+\contentsline {subsection}{\numberline {4.1.5}CP, TP, \textit {v}P\xspace , VP}{126}{subsection.4.1.5}
+\contentsline {subsubsection}{\numberline {4.1.5.1}Features as triggers for movement: The EPP feature on T}{126}{subsubsection.4.1.5.1}
+\contentsline {subsubsection}{\numberline {4.1.5.2}Case assignment}{127}{subsubsection.4.1.5.2}
+\contentsline {subsection}{\numberline {4.1.6}Adjuncts}{130}{subsection.4.1.6}
+\contentsline {section}{\numberline {4.2}Verb position}{130}{section.4.2}
+\contentsline {section}{\numberline {4.3}Long\active@dq \dq@prtct {=}distance dependencies}{131}{section.4.3}
+\contentsline {section}{\numberline {4.4}Passive}{131}{section.4.4}
+\contentsline {section}{\numberline {4.5}Local reordering}{134}{section.4.5}
+\contentsline {section}{\numberline {4.6}New developments and theoretical variants}{135}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Move, Merge, feature\active@dq \dq@prtct {=}driven movement and functional projections}{136}{subsection.4.6.1}
+\contentsline {subsubsection}{\numberline {4.6.1.1}Functional projections and modularization of linguistic knowledge}{137}{subsubsection.4.6.1.1}
+\contentsline {subsubsection}{\numberline {4.6.1.2}Feature checking in specifier positions}{142}{subsubsection.4.6.1.2}
+\contentsline {subsubsection}{\numberline {4.6.1.3}Locality of selection and functional projections}{144}{subsubsection.4.6.1.3}
+\contentsline {subsubsection}{\numberline {4.6.1.4}Feature-driven movement}{145}{subsubsection.4.6.1.4}
+\contentsline {subsection}{\numberline {4.6.2}Labeling}{146}{subsection.4.6.2}
+\contentsline {subsection}{\numberline {4.6.3}Specifiers, complements, and the remains of \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{152}{subsection.4.6.3}
+\contentsline {subsection}{\numberline {4.6.4}Minimalism, Categorial Grammar, and HPSG}{156}{subsection.4.6.4}
+\contentsline {subsubsection}{\numberline {4.6.4.1}Directional Minimalist Grammars and Categorial Grammar}{159}{subsubsection.4.6.4.1}
+\contentsline {subsubsection}{\numberline {4.6.4.2}Minimalist Grammars and Head-Driven Phrase Structure Grammar}{160}{subsubsection.4.6.4.2}
+\contentsline {subsection}{\numberline {4.6.5}Selection of atomic features vs.\ selection of complex categories}{164}{subsection.4.6.5}
+\contentsline {subsection}{\numberline {4.6.6}Summary}{166}{subsection.4.6.6}
+\contentsline {section}{\numberline {4.7}Summary and classification}{166}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Explaining language acquisition}{166}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Formalization}{167}{subsection.4.7.2}
 \contentsline {chapter}{\numberline {5}Generalized Phrase Structure Grammar}{173}{chapter.5}
 \contentsline {section}{\numberline {5.1}General remarks on the representational format}{173}{section.5.1}
 \contentsline {subsection}{\numberline {5.1.1}Complex categories, the Head Feature Convention, and \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace rules}{174}{subsection.5.1.1}
@@ -109,22 +109,22 @@
 \contentsline {section}{\numberline {6.2}Types}{198}{section.6.2}
 \contentsline {section}{\numberline {6.3}Disjunction}{201}{section.6.3}
 \contentsline {section}{\numberline {6.4}Structure sharing}{201}{section.6.4}
-\contentsline {section}{\numberline {6.5}Cyclic structures}{202}{section.6.5}
+\contentsline {section}{\numberline {6.5}Cyclic structures}{203}{section.6.5}
 \contentsline {section}{\numberline {6.6}Unification}{204}{section.6.6}
 \contentsline {section}{\numberline {6.7}Phenomena, models and formal theories}{205}{section.6.7}
 \contentsline {chapter}{\numberline {7}Lexical Functional Grammar}{211}{chapter.7}
-\contentsline {section}{\numberline {7.1}General remarks on the representational format}{213}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Functional structure}{213}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Completeness}{216}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Coherence}{216}{subsection.7.1.3}
-\contentsline {subsection}{\numberline {7.1.4}Restrictions on the c-structure/f-structure relation}{217}{subsection.7.1.4}
-\contentsline {subsection}{\numberline {7.1.5}Semantics}{218}{subsection.7.1.5}
-\contentsline {subsection}{\numberline {7.1.6}Adjuncts}{220}{subsection.7.1.6}
-\contentsline {section}{\numberline {7.2}Passive}{221}{section.7.2}
-\contentsline {section}{\numberline {7.3}Verb position}{224}{section.7.3}
-\contentsline {section}{\numberline {7.4}Local reordering}{225}{section.7.4}
+\contentsline {section}{\numberline {7.1}General remarks on the representational format}{214}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Functional structure}{214}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Completeness}{217}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Coherence}{217}{subsection.7.1.3}
+\contentsline {subsection}{\numberline {7.1.4}Restrictions on the c-structure/f-structure relation}{218}{subsection.7.1.4}
+\contentsline {subsection}{\numberline {7.1.5}Semantics}{219}{subsection.7.1.5}
+\contentsline {subsection}{\numberline {7.1.6}Adjuncts}{221}{subsection.7.1.6}
+\contentsline {section}{\numberline {7.2}Passive}{222}{section.7.2}
+\contentsline {section}{\numberline {7.3}Verb position}{225}{section.7.3}
+\contentsline {section}{\numberline {7.4}Local reordering}{226}{section.7.4}
 \contentsline {section}{\numberline {7.5}Long\active@dq \dq@prtct {=}distance dependencies and functional uncertainty}{228}{section.7.5}
-\contentsline {section}{\numberline {7.6}Summary and classification}{231}{section.7.6}
+\contentsline {section}{\numberline {7.6}Summary and classification}{232}{section.7.6}
 \contentsline {chapter}{\numberline {8}Categorial Grammar}{235}{chapter.8}
 \contentsline {section}{\numberline {8.1}General remarks on the representational format}{236}{section.8.1}
 \contentsline {subsection}{\numberline {8.1.1}Representation of valence information}{236}{subsection.8.1.1}
@@ -158,7 +158,7 @@
 \contentsline {section}{\numberline {9.7}Summary and classification}{296}{section.9.7}
 \contentsline {chapter}{\numberline {10}Construction Grammar}{301}{chapter.10}
 \contentsline {section}{\numberline {10.1}General remarks on the representational format}{303}{section.10.1}
-\contentsline {subsection}{\numberline {10.1.1}The head\active@dq \dq@prtct {=}complement construction}{303}{subsection.10.1.1}
+\contentsline {subsection}{\numberline {10.1.1}The head\active@dq \dq@prtct {=}complement construction}{304}{subsection.10.1.1}
 \contentsline {subsection}{\numberline {10.1.2}Representation of valence information}{305}{subsection.10.1.2}
 \contentsline {subsection}{\numberline {10.1.3}Semantics}{305}{subsection.10.1.3}
 \contentsline {subsection}{\numberline {10.1.4}Adjuncts}{305}{subsection.10.1.4}
@@ -196,44 +196,44 @@
 \contentsline {paragraph}{\numberline {10.6.8.1.6}A note on engineering}{352}{paragraph.10.6.8.1.6}
 \contentsline {section}{\numberline {10.7}Summary and classification}{353}{section.10.7}
 \contentsline {chapter}{\numberline {11}Dependency Grammar}{355}{chapter.11}
-\contentsline {section}{\numberline {11.1}General remarks on the representational format}{358}{section.11.1}
-\contentsline {subsection}{\numberline {11.1.1}Valence information, nucleus and satellites}{358}{subsection.11.1.1}
-\contentsline {subsection}{\numberline {11.1.2}Adjuncts}{361}{subsection.11.1.2}
-\contentsline {subsection}{\numberline {11.1.3}Linearization}{361}{subsection.11.1.3}
-\contentsline {subsection}{\numberline {11.1.4}Semantics}{363}{subsection.11.1.4}
-\contentsline {section}{\numberline {11.2}Passive}{364}{section.11.2}
+\contentsline {section}{\numberline {11.1}General remarks on the representational format}{359}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}Valence information, nucleus and satellites}{359}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}Adjuncts}{362}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}Linearization}{362}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}Semantics}{364}{subsection.11.1.4}
+\contentsline {section}{\numberline {11.2}Passive}{365}{section.11.2}
 \contentsline {section}{\numberline {11.3}Verb position}{366}{section.11.3}
-\contentsline {section}{\numberline {11.4}Local reordering}{367}{section.11.4}
-\contentsline {section}{\numberline {11.5}Long\active@dq \dq@prtct {=}distance dependencies}{368}{section.11.5}
-\contentsline {section}{\numberline {11.6}New developments and theoretical variants}{374}{section.11.6}
-\contentsline {subsection}{\numberline {11.6.1}Tesnière\xspace 's part of speech classification}{374}{subsection.11.6.1}
-\contentsline {subsection}{\numberline {11.6.2}Connection, junction, and transfer}{375}{subsection.11.6.2}
-\contentsline {subsubsection}{\numberline {11.6.2.1}Junction}{375}{subsubsection.11.6.2.1}
-\contentsline {subsubsection}{\numberline {11.6.2.2}Transfer}{379}{subsubsection.11.6.2.2}
-\contentsline {subsection}{\numberline {11.6.3}Scope}{381}{subsection.11.6.3}
-\contentsline {section}{\numberline {11.7}Summary and classification}{381}{section.11.7}
-\contentsline {subsection}{\numberline {11.7.1}Linearization}{382}{subsection.11.7.1}
-\contentsline {subsection}{\numberline {11.7.2}Dependency Grammar vs.\ phrase structure grammar}{390}{subsection.11.7.2}
-\contentsline {subsubsection}{\numberline {11.7.2.1}Translating projective Dependency Grammars into phrase structure grammars}{390}{subsubsection.11.7.2.1}
-\contentsline {subsubsection}{\numberline {11.7.2.2}Non-projective Dependency Grammars and phrase structure grammars with discontinuous constituents}{392}{subsubsection.11.7.2.2}
-\contentsline {subsubsection}{\numberline {11.7.2.3}Features that are not identical between heads and projections}{396}{subsubsection.11.7.2.3}
-\contentsline {subsubsection}{\numberline {11.7.2.4}Non-headed constructions}{398}{subsubsection.11.7.2.4}
+\contentsline {section}{\numberline {11.4}Local reordering}{368}{section.11.4}
+\contentsline {section}{\numberline {11.5}Long\active@dq \dq@prtct {=}distance dependencies}{369}{section.11.5}
+\contentsline {section}{\numberline {11.6}New developments and theoretical variants}{375}{section.11.6}
+\contentsline {subsection}{\numberline {11.6.1}Tesnière\xspace 's part of speech classification}{375}{subsection.11.6.1}
+\contentsline {subsection}{\numberline {11.6.2}Connection, junction, and transfer}{376}{subsection.11.6.2}
+\contentsline {subsubsection}{\numberline {11.6.2.1}Junction}{376}{subsubsection.11.6.2.1}
+\contentsline {subsubsection}{\numberline {11.6.2.2}Transfer}{380}{subsubsection.11.6.2.2}
+\contentsline {subsection}{\numberline {11.6.3}Scope}{382}{subsection.11.6.3}
+\contentsline {section}{\numberline {11.7}Summary and classification}{382}{section.11.7}
+\contentsline {subsection}{\numberline {11.7.1}Linearization}{383}{subsection.11.7.1}
+\contentsline {subsection}{\numberline {11.7.2}Dependency Grammar vs.\ phrase structure grammar}{391}{subsection.11.7.2}
+\contentsline {subsubsection}{\numberline {11.7.2.1}Translating projective Dependency Grammars into phrase structure grammars}{391}{subsubsection.11.7.2.1}
+\contentsline {subsubsection}{\numberline {11.7.2.2}Non-projective Dependency Grammars and phrase structure grammars with discontinuous constituents}{393}{subsubsection.11.7.2.2}
+\contentsline {subsubsection}{\numberline {11.7.2.3}Features that are not identical between heads and projections}{397}{subsubsection.11.7.2.3}
+\contentsline {subsubsection}{\numberline {11.7.2.4}Non-headed constructions}{399}{subsubsection.11.7.2.4}
 \contentsline {chapter}{\numberline {12}Tree Adjoining Grammar}{403}{chapter.12}
 \contentsline {section}{\numberline {12.1}General remarks on representational format}{404}{section.12.1}
 \contentsline {subsection}{\numberline {12.1.1}Representation of valence information}{404}{subsection.12.1.1}
 \contentsline {subsection}{\numberline {12.1.2}Substitution}{404}{subsection.12.1.2}
-\contentsline {subsection}{\numberline {12.1.3}Adjunction}{404}{subsection.12.1.3}
+\contentsline {subsection}{\numberline {12.1.3}Adjunction}{405}{subsection.12.1.3}
 \contentsline {subsection}{\numberline {12.1.4}Semantics}{406}{subsection.12.1.4}
 \contentsline {section}{\numberline {12.2}Local reordering}{408}{section.12.2}
 \contentsline {section}{\numberline {12.3}Verb position}{411}{section.12.3}
-\contentsline {section}{\numberline {12.4}Passive}{411}{section.12.4}
+\contentsline {section}{\numberline {12.4}Passive}{413}{section.12.4}
 \contentsline {section}{\numberline {12.5}Long\active@dq \dq@prtct {=}distance dependencies}{414}{section.12.5}
-\contentsline {section}{\numberline {12.6}New developments and theoretical variants}{415}{section.12.6}
+\contentsline {section}{\numberline {12.6}New developments and theoretical variants}{414}{section.12.6}
 \contentsline {subsection}{\numberline {12.6.1}FTAG}{415}{subsection.12.6.1}
 \contentsline {subsection}{\numberline {12.6.2}V\active@dq \dq@prtct {=}TAG}{418}{subsection.12.6.2}
 \contentsline {subsection}{\numberline {12.6.3}The competence\active@dq \dq@prtct {=}performance distinction and the generative capacity of tree\active@dq \dq@prtct {=}local MC\active@dq \dq@prtct {=}LTAG}{420}{subsection.12.6.3}
 \contentsline {section}{\numberline {12.7}Summary and classification}{426}{section.12.7}
-\contentsline {part}{\numberline {II}General discussion}{429}{part.2}
+\contentsline {part}{III\hspace {1em}讨论}{429}{part.3}
 \contentsline {chapter}{\numberline {13}The innateness of linguistic knowledge}{431}{chapter.13}
 \contentsline {section}{\numberline {13.1}Syntactic universals}{433}{section.13.1}
 \contentsline {subsection}{\numberline {13.1.1}Head Directionality Parameter}{434}{subsection.13.1.1}
@@ -242,7 +242,7 @@
 \contentsline {subsection}{\numberline {13.1.4}Binding principles}{440}{subsection.13.1.4}
 \contentsline {subsection}{\numberline {13.1.5}Properties of long\active@dq \dq@prtct {=}distance dependencies}{442}{subsection.13.1.5}
 \contentsline {subsubsection}{\numberline {13.1.5.1}Extraposition}{443}{subsubsection.13.1.5.1}
-\contentsline {subsubsection}{\numberline {13.1.5.2}Extraction}{447}{subsubsection.13.1.5.2}
+\contentsline {subsubsection}{\numberline {13.1.5.2}Extraction}{446}{subsubsection.13.1.5.2}
 \contentsline {subsection}{\numberline {13.1.6}Grammatical morphemes for tense, mood and aspect}{450}{subsection.13.1.6}
 \contentsline {subsection}{\numberline {13.1.7}Parts of speech}{450}{subsection.13.1.7}
 \contentsline {subsection}{\numberline {13.1.8}Recursion and infinitude}{451}{subsection.13.1.8}
@@ -251,9 +251,9 @@
 \contentsline {subsubsection}{\numberline {13.1.8.3}Recursion in other areas of cognition}{456}{subsubsection.13.1.8.3}
 \contentsline {subsection}{\numberline {13.1.9}Summary}{457}{subsection.13.1.9}
 \contentsline {section}{\numberline {13.2}Speed of language acquisition}{458}{section.13.2}
-\contentsline {section}{\numberline {13.3}Critical period for acquisition}{459}{section.13.3}
+\contentsline {section}{\numberline {13.3}Critical period for acquisition}{458}{section.13.3}
 \contentsline {section}{\numberline {13.4}Lack of acquisition among non\active@dq \dq@prtct {=}human primates}{460}{section.13.4}
-\contentsline {section}{\numberline {13.5}Creole and sign languages}{461}{section.13.5}
+\contentsline {section}{\numberline {13.5}Creole and sign languages}{460}{section.13.5}
 \contentsline {section}{\numberline {13.6}Localization in special parts of the brain}{462}{section.13.6}
 \contentsline {section}{\numberline {13.7}Differences between language and general cognition}{463}{section.13.7}
 \contentsline {subsection}{\numberline {13.7.1}Williams Syndrome}{463}{subsection.13.7.1}
@@ -267,7 +267,7 @@
 \contentsline {subsubsection}{\numberline {13.8.2.4}Position of auxiliaries in polar questions}{471}{subsubsection.13.8.2.4}
 \contentsline {subsubsection}{\numberline {13.8.2.5}Summary}{478}{subsubsection.13.8.2.5}
 \contentsline {subsection}{\numberline {13.8.3}Unsupervised Data-Oriented Parsing (U-DOP)}{479}{subsection.13.8.3}
-\contentsline {subsection}{\numberline {13.8.4}Negative evidence}{486}{subsection.13.8.4}
+\contentsline {subsection}{\numberline {13.8.4}Negative evidence}{485}{subsection.13.8.4}
 \contentsline {section}{\numberline {13.9}Summary}{487}{section.13.9}
 \contentsline {chapter}{\numberline {14}Generative\active@dq \dq@prtct {=}enumerative vs.\ model-theoretic approaches}{489}{chapter.14}
 \contentsline {section}{\numberline {14.1}Graded acceptability}{491}{section.14.1}
@@ -340,18 +340,18 @@
 \contentsline {chapter}{\numberline {23}Conclusion}{669}{chapter.23}
 \contentsline {chapter}{\numberline {24}Solutions to the exercises}{673}{chapter.24}
 \contentsline {section}{\numberline {24.1}Introduction and basic terms}{673}{section.24.1}
-\contentsline {section}{\numberline {24.2}Phrase structure grammars}{673}{section.24.2}
+\contentsline {section}{\numberline {24.2}Phrase structure grammars}{674}{section.24.2}
 \contentsline {section}{\numberline {24.3}Transformational Grammar -- Government \& Binding}{678}{section.24.3}
 \contentsline {section}{\numberline {24.4}Generalized Phrase Structure Grammar}{680}{section.24.4}
 \contentsline {section}{\numberline {24.5}Feature descriptions}{683}{section.24.5}
-\contentsline {section}{\numberline {24.6}Lexical Functional Grammar}{685}{section.24.6}
+\contentsline {section}{\numberline {24.6}Lexical Functional Grammar}{684}{section.24.6}
 \contentsline {section}{\numberline {24.7}Categorial Grammar}{686}{section.24.7}
 \contentsline {section}{\numberline {24.8}Head-Driven Phrase Structure Grammar}{687}{section.24.8}
 \contentsline {section}{\numberline {24.9}Construction Grammar}{688}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{689}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{690}{section.24.11}
-\contentsline {chapter}{\nonumberline Bibliography}{693}{chapter*.294}
-\contentsline {chapter}{Index}{782}{section*.295}
-\contentsline {section}{Name index}{782}{section*.295}
-\contentsline {section}{Language index}{782}{section*.296}
-\contentsline {section}{Subject index}{782}{section*.297}
+\contentsline {chapter}{\nonumberline 参考文献}{693}{chapter*.255}
+\contentsline {chapter}{Index}{782}{section*.256}
+\contentsline {section}{Name index}{782}{section*.256}
+\contentsline {section}{Language index}{782}{section*.257}
+\contentsline {section}{Subject index}{782}{section*.258}

@@ -29,14 +29,14 @@
 \contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{40}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{40}{subsection.1.8.3}
 \contentsline {subsection}{\numberline {1.8.4}递归}{45}{subsection.1.8.4}
-\contentsline {chapter}{\numberline {2}Phrase structure grammar}{49}{chapter.2}
-\contentsline {section}{\numberline {2.1}Symbols and rewrite rules}{49}{section.2.1}
-\contentsline {section}{\numberline {2.2}Expanding PSG with features}{55}{section.2.2}
-\contentsline {section}{\numberline {2.3}Semantics}{56}{section.2.3}
-\contentsline {section}{\numberline {2.4}Phrase structure rules for some aspects of German syntax}{59}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Noun phrases}{59}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Prepositional phrases}{68}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory\p@index [sbj]{X theory@\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace theory}\xspace }{70}{section.2.5}
+\contentsline {chapter}{\numberline {2}短语结构语法}{49}{chapter.2}
+\contentsline {section}{\numberline {2.1}符号和重写规则}{49}{section.2.1}
+\contentsline {section}{\numberline {2.2}短语结构语法中特征的运用}{54}{section.2.2}
+\contentsline {section}{\numberline {2.3}语义}{55}{section.2.3}
+\contentsline {section}{\numberline {2.4}有关德语句法中某些方面的短语结构规则}{58}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}名词短语}{58}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}介词短语}{67}{subsection.2.4.2}
+\contentsline {section}{\numberline {2.5}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace 理论}{69}{section.2.5}
 \contentsline {chapter}{\numberline {3}Transformational Grammar -- Government \& Binding}{79}{chapter.3}
 \contentsline {section}{\numberline {3.1}General remarks on the representational format}{80}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Transformations}{80}{subsection.3.1.1}
@@ -350,8 +350,8 @@
 \contentsline {section}{\numberline {24.9}Construction Grammar}{688}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{689}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{690}{section.24.11}
-\contentsline {chapter}{\nonumberline 参考文献}{693}{chapter*.8}
-\contentsline {chapter}{Index}{782}{section*.9}
-\contentsline {section}{Name index}{782}{section*.9}
-\contentsline {section}{Language index}{782}{section*.10}
-\contentsline {section}{Subject index}{782}{section*.11}
+\contentsline {chapter}{\nonumberline 参考文献}{693}{chapter*.12}
+\contentsline {chapter}{Index}{782}{section*.13}
+\contentsline {section}{Name index}{782}{section*.13}
+\contentsline {section}{Language index}{782}{section*.14}
+\contentsline {section}{Subject index}{782}{section*.15}

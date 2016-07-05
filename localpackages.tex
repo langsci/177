@@ -179,7 +179,10 @@ styles/eng-date,styles/my-theorems}
 
 \usepackage{titlesec}  
 % for Chinese style of titles of chapters and sections.
-\renewcommand{\partname}{第\zhnumber{\thepart}章}  
+\renewcommand{\partname}{第\zhnumber{\thepart}部分}  
+%\setcounter{partname}{1} 
+%\setcounter{thepart}{1} 
+\setcounter{part}{1} 
 \renewcommand{\chaptername}{第\zhnumber{\thechapter}章}  
 %re\newcommand{\sectionname}{节}  
 \renewcommand{\figurename}{图}  
