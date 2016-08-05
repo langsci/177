@@ -21,13 +21,13 @@
 \contentsline {section}{\numberline {1.6}论元成分与说明语}{28}{section.1.6}
 \contentsline {section}{\numberline {1.7}语法功能}{32}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}主语}{32}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}状语}{36}{subsection.1.7.2}
-\contentsline {subsection}{\numberline {1.7.3}谓语}{37}{subsection.1.7.3}
-\contentsline {subsection}{\numberline {1.7.4}配价类型}{38}{subsection.1.7.4}
-\contentsline {section}{\numberline {1.8}德语小句的空间位置模型}{39}{section.1.8}
+\contentsline {subsection}{\numberline {1.7.2}状语}{37}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.3}谓语}{38}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.4}配价类型}{39}{subsection.1.7.4}
+\contentsline {section}{\numberline {1.8}德语小句的空间位置模型}{40}{section.1.8}
 \contentsline {subsection}{\numberline {1.8.1}动词的位置}{40}{subsection.1.8.1}
-\contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{40}{subsection.1.8.2}
-\contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{40}{subsection.1.8.3}
+\contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{41}{subsection.1.8.2}
+\contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{41}{subsection.1.8.3}
 \contentsline {subsection}{\numberline {1.8.4}递归}{45}{subsection.1.8.4}
 \contentsline {chapter}{\numberline {2}短语结构语法}{49}{chapter.2}
 \contentsline {section}{\numberline {2.1}符号和重写规则}{49}{section.2.1}
@@ -319,18 +319,18 @@
 \contentsline {section}{\numberline {21.5}Further problems for phrasal approaches}{617}{section.21.5}
 \contentsline {subsection}{\numberline {21.5.1}Particle verbs and commitment to phrase structure configurations}{617}{subsection.21.5.1}
 \contentsline {section}{\numberline {21.6}Arguments from language acquisition}{618}{section.21.6}
-\contentsline {subsection}{\numberline {21.6.1}Recognizability of constructions}{618}{subsection.21.6.1}
+\contentsline {subsection}{\numberline {21.6.1}Recognizability of constructions}{619}{subsection.21.6.1}
 \contentsline {subsection}{\numberline {21.6.2}Coordination and discontinuousness}{620}{subsection.21.6.2}
 \contentsline {section}{\numberline {21.7}Arguments from psycho- and neurolinguistics}{625}{section.21.7}
 \contentsline {subsection}{\numberline {21.7.1}Lexical rules vs.\ phrasal constructions}{625}{subsection.21.7.1}
 \contentsline {subsection}{\numberline {21.7.2}Light verbs}{627}{subsection.21.7.2}
 \contentsline {subsection}{\numberline {21.7.3}Arguments from neurolinguistics}{628}{subsection.21.7.3}
 \contentsline {section}{\numberline {21.8}Arguments from statistical distribution}{632}{section.21.8}
-\contentsline {subsection}{\numberline {21.8.1}Unsupervised Data-Oriented Parsing}{632}{subsection.21.8.1}
+\contentsline {subsection}{\numberline {21.8.1}Unsupervised Data-Oriented Parsing}{633}{subsection.21.8.1}
 \contentsline {subsection}{\numberline {21.8.2}Collostructions}{635}{subsection.21.8.2}
-\contentsline {section}{\numberline {21.9}Conclusion}{635}{section.21.9}
+\contentsline {section}{\numberline {21.9}Conclusion}{636}{section.21.9}
 \contentsline {section}{\numberline {21.10}Why (phrasal) constructions?}{636}{section.21.10}
-\contentsline {subsection}{\numberline {21.10.1}Verbless directives}{636}{subsection.21.10.1}
+\contentsline {subsection}{\numberline {21.10.1}Verbless directives}{637}{subsection.21.10.1}
 \contentsline {subsection}{\numberline {21.10.2}Serial verbs}{643}{subsection.21.10.2}
 \contentsline {subsection}{\numberline {21.10.3}Relative and interrogative clauses}{644}{subsection.21.10.3}
 \contentsline {subsection}{\numberline {21.10.4}The N-P-N construction}{647}{subsection.21.10.4}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 AUG 2016 14:53
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 AUG 2016 18:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3464,8 +3464,8 @@ LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
 
 [8] [9] [10]
-Overfull \hbox (1.98396pt too wide) detected at line 236
- []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 425|
+Overfull \hbox (1.40797pt too wide) detected at line 236
+ []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 427|
  []
 
 [11] [12] [13])
@@ -3589,13 +3589,29 @@ Overfull \hbox (38.23055pt too wide) in paragraph at lines 664--665
 []  [] [] [] [] [] [] [] [] [] [] [] |
  []
 
-[13] [14] [15] [16] [17] [18] [19] [20] [21]
+[13] [14] [15] [16] [17] [18] [19] [20]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+ [21] [22]
 Overfull \hbox (0.88153pt too wide) in paragraph at lines 1262--1266
 [] [] [] [] [] [] [] []|
  []
 
-[22]
-Overfull \hbox (10.54553pt too wide) in paragraph at lines 1269--1270
+
+Overfull \hbox (11.74553pt too wide) in paragraph at lines 1269--1270
 []  [] [] [] [] [] [] [] [] [] [] []|
  []
 
@@ -3604,20 +3620,20 @@ Overfull \hbox (13.69556pt too wide) in paragraph at lines 1330--1331
 []  [] [] [] [] [] [] [] [] []|
  []
 
-[24] [25]
+[24] [25] [26]
 
-Package natbib Warning: Citation `Brame81a' on page 26 undefined on input line 
+Package natbib Warning: Citation `Brame81a' on page 27 undefined on input line 
 1453.
 
 
-Package natbib Warning: Citation `Brame82a' on page 26 undefined on input line 
+Package natbib Warning: Citation `Brame82a' on page 27 undefined on input line 
 1453.
 
 
-Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
+Package natbib Warning: Citation `Hudson84a' on page 27 undefined on input line
  1453.
 
-[26] [27]
+[27]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -3631,32 +3647,32 @@ Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
 LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 1666.
 
-[29]
+[29] [30]
 Overfull \hbox (0.17554pt too wide) in paragraph at lines 1772--1773
 []  [] [] [] [] [] [] [] [] [] [] [] []|
  []
 
-[30] [31]
+[31]
 
 Package natbib Warning: Citation `Keenan76b-u' on page 32 undefined on input li
 ne 1897.
 
-[32] [33] [34] [35] [36] [37] [38] [39] [40] [41]
+[32] [33] [34] [35] [36] [37] [38] [39] [40]
 Overfull \hbox (4.53554pt too wide) in paragraph at lines 2570--2574
 []  [] [] [] [] [] [] [] [] []|
  []
 
-[42] [43] [44] [45] [46]) [47]
+[41] [42] [43] [44] [45] [46]) [47] [48]
 \openout2 = `chapters/2-psg.aux'.
 
- (./chapters/2-psg.tex [48
+ (./chapters/2-psg.tex
+chapter 2.
+[49
 
 
 
 
 ]
-chapter 2.
-[49]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7237,6 +7253,7 @@ gehen-die-maenner-mit-den-veraenderten-anspruechen-der-[]
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
+ [622]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7250,7 +7267,7 @@ gehen-die-maenner-mit-den-veraenderten-anspruechen-der-[]
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [622] [623]
+ [623]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7357,7 +7374,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
-[632] [633]
+[632]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7376,7 +7393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [634] [635] [636] [637]
+ [633] [634] [635] [636] [637] [638]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7397,7 +7414,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
- [638] [639] [640] [641]
+ [639] [640] [641]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -8015,10 +8032,10 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 167064 strings out of 493591
- 5658537 string characters out of 6143546
- 1985639 words of memory out of 5000000
- 168958 multiletter control sequences out of 15000+600000
+ 167197 strings out of 493591
+ 5663487 string characters out of 6143546
+ 1985641 words of memory out of 5000000
+ 169091 multiletter control sequences out of 15000+600000
  57429 words of font info for 267 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7527s stack positions out of 5000i,500n,10000p,200000b,80000s

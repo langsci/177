@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 AUG 2016 14:52
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 AUG 2016 17:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3651,6 +3651,21 @@ line 832.
 Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
 put line 1174.
 
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
 
 Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
 put line 1196.
@@ -3659,9 +3674,9 @@ put line 1196.
 Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
 put line 1196.
 
-[21]
+[21] [22]
 
-Package natbib Warning: Citation `Duden84-Authors' on page 22 undefined on inpu
+Package natbib Warning: Citation `Duden84-Authors' on page 23 undefined on inpu
 t line 1258.
 
 
@@ -3669,7 +3684,7 @@ Overfull \hbox (0.88153pt too wide) in paragraph at lines 1262--1266
 [] [] [] [] [] [] [] []
  []
 
-[22]
+
 Overfull \hbox (10.54553pt too wide) in paragraph at lines 1269--1270
 []  [] [] [] [] [] [] [] [] [] [] []
  []
@@ -3691,11 +3706,11 @@ Overfull \hbox (13.69556pt too wide) in paragraph at lines 1330--1331
 []  [] [] [] [] [] [] [] [] []
  []
 
+[24]
 
-Package natbib Warning: Citation `SWB2003a' on page 24 undefined on input line 
+Package natbib Warning: Citation `SWB2003a' on page 25 undefined on input line 
 1351.
 
-[24]
 
 Package natbib Warning: Citation `Eisenberg2004a' on page 25 undefined on input
  line 1396.
@@ -3779,12 +3794,11 @@ LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
 Package natbib Warning: Citation `Eisenberg94a' on page 30 undefined on input l
 ine 1742.
 
-
+[30]
 Overfull \hbox (0.17554pt too wide) in paragraph at lines 1772--1773
 []  [] [] [] [] [] [] [] [] [] [] [] []
  []
 
-[30]
 
 Package natbib Warning: Citation `Gross2003a' on page 31 undefined on input lin
 e 1877.
@@ -3797,15 +3811,15 @@ Package natbib Warning: Citation `Pollard90a-Eng' on page 31 undefined on input
 Package natbib Warning: Citation `Eisenberg94b' on page 31 undefined on input l
 ine 1877.
 
+[31]
 
-Package natbib Warning: Citation `Keenan76b-u' on page 31 undefined on input li
+Package natbib Warning: Citation `Keenan76b-u' on page 32 undefined on input li
 ne 1897.
 
 
-Package natbib Warning: Citation `Reis82' on page 31 undefined on input line 18
+Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 18
 97.
 
-[31]
 
 Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
 12.
@@ -3819,11 +3833,11 @@ Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
 Package natbib Warning: Citation `Reis82' on page 33 undefined on input line 19
 77.
 
+[33]
 
-Package natbib Warning: Citation `ZMT85a' on page 33 undefined on input line 20
+Package natbib Warning: Citation `ZMT85a' on page 34 undefined on input line 20
 17.
 
-[33]
 
 Package natbib Warning: Citation `Eisenberg2004a' on page 34 undefined on input
  line 2032.
@@ -3853,16 +3867,15 @@ ine 2102.
 Package natbib Warning: Citation `Cook2006a-u' on page 35 undefined on input li
 ne 2154.
 
-[35] [36]
+[35] [36] [37]
 
-Package natbib Warning: Citation `Duden95-Authors' on page 37 undefined on inpu
+Package natbib Warning: Citation `Duden95-Authors' on page 38 undefined on inpu
 t line 2320.
 
 
-Package natbib Warning: Citation `Duden66-Authors' on page 37 undefined on inpu
+Package natbib Warning: Citation `Duden66-Authors' on page 38 undefined on inpu
 t line 2320.
 
-[37]
 
 Package natbib Warning: Citation `Duden2005-Authors' on page 38 undefined on in
 put line 2374.
@@ -3898,12 +3911,12 @@ Package natbib Warning: Citation `Paul1919a' on page 42 undefined on input line
 Package natbib Warning: Citation `Duden2005-Authors' on page 44 undefined on in
 put line 2761.
 
-[44] [45]
+[44] [45] [46]
 
-Package natbib Warning: Citation `Hoehle86' on page 46 undefined on input line 
+Package natbib Warning: Citation `Hoehle86' on page 47 undefined on input line 
 2957.
 
-[46]) [47] [425
+) [47] [425
 
 
 
@@ -4042,14 +4055,17 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 66846 strings out of 493591
- 1392396 string characters out of 6143546
- 1676431 words of memory out of 5000000
- 68873 multiletter control sequences out of 15000+600000
+ 67887 strings out of 493591
+ 1423841 string characters out of 6143546
+ 1686746 words of memory out of 5000000
+ 69914 multiletter control sequences out of 15000+600000
  20806 words of font info for 123 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 118i,29n,148p,10456b,2279s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 158i,29n,176p,10456b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on check-gt-chinese.pdf (79 pages).

@@ -19,13 +19,13 @@
 \contentsline {section}{\numberline {1.4}词类}{16}{section.1.4}
 \contentsline {section}{\numberline {1.5}中心语}{26}{section.1.5}
 \contentsline {section}{\numberline {1.6}论元成分与说明语}{27}{section.1.6}
-\contentsline {section}{\numberline {1.7}语法功能}{31}{section.1.7}
+\contentsline {section}{\numberline {1.7}语法功能}{32}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}主语}{32}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}状语}{36}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}谓语}{37}{subsection.1.7.3}
 \contentsline {subsection}{\numberline {1.7.4}配价类型}{38}{subsection.1.7.4}
 \contentsline {section}{\numberline {1.8}德语小句的空间位置模型}{39}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}动词的位置}{39}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.1}动词的位置}{40}{subsection.1.8.1}
 \contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{40}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{40}{subsection.1.8.3}
 \contentsline {subsection}{\numberline {1.8.4}递归}{45}{subsection.1.8.4}
