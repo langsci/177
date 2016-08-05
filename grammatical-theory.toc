@@ -1,9 +1,9 @@
 \contentsline {chapter}{\nonumberline 前言}{xv}{chapter*.2}
 \contentsline {part}{II\hspace {1em}研究背景与语法理论}{1}{part.2}
-\contentsline {chapter}{\numberline {1}导言和术语}{3}{chapter.1}
+\contentsline {chapter}{\numberline {1}导言与术语}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}为什么要研究句法？}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}为什么要形式化？}{5}{section.1.2}
-\contentsline {section}{\numberline {1.3}组成成分}{6}{section.1.3}
+\contentsline {section}{\numberline {1.3}构成成分}{6}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}组成成分测试}{7}{subsection.1.3.1}
 \contentsline {subsubsection}{\numberline {1.3.1.1}替换}{7}{subsubsection.1.3.1.1}
 \contentsline {subsubsection}{\numberline {1.3.1.2}代词化}{7}{subsubsection.1.3.1.2}
@@ -19,13 +19,13 @@
 \contentsline {section}{\numberline {1.4}词类}{16}{section.1.4}
 \contentsline {section}{\numberline {1.5}中心语}{26}{section.1.5}
 \contentsline {section}{\numberline {1.6}论元成分与说明语}{28}{section.1.6}
-\contentsline {section}{\numberline {1.7}语法功能}{31}{section.1.7}
+\contentsline {section}{\numberline {1.7}语法功能}{32}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}主语}{32}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}状语}{36}{subsection.1.7.2}
 \contentsline {subsection}{\numberline {1.7.3}谓语}{37}{subsection.1.7.3}
 \contentsline {subsection}{\numberline {1.7.4}配价类型}{38}{subsection.1.7.4}
 \contentsline {section}{\numberline {1.8}德语小句的空间位置模型}{39}{section.1.8}
-\contentsline {subsection}{\numberline {1.8.1}动词的位置}{39}{subsection.1.8.1}
+\contentsline {subsection}{\numberline {1.8.1}动词的位置}{40}{subsection.1.8.1}
 \contentsline {subsection}{\numberline {1.8.2}句子的框架结构、前场、中场及后场}{40}{subsection.1.8.2}
 \contentsline {subsection}{\numberline {1.8.3}场内元素的排列}{40}{subsection.1.8.3}
 \contentsline {subsection}{\numberline {1.8.4}递归}{45}{subsection.1.8.4}

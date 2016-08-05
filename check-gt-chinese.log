@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  3 AUG 2016 16:45
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  5 AUG 2016 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3450,30 +3450,34 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
-(./check-gt-chinese.toc)
+(./check-gt-chinese.toc [7
+
+
+]
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
+
+[8] [9] [10]
+Overfull \hbox (1.98396pt too wide) detected at line 236
+ []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 425
+ []
+
+[11] [12] [13])
 \tf@toc=\write14
 \openout14 = `check-gt-chinese.toc'.
 
- [7
-
-
-] [1
+ [14] [1
 
 
 
 
 
 ] [2]
-\openout2 = `chapters/3-gb.aux'.
+\openout2 = `chapters/1-begriffe.aux'.
 
- (./chapters/3-gb.tex [76
-
-
-
-
-
-]
-chapter 3.
+ (./chapters/1-begriffe.tex
+chapter 1.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3489,6 +3493,18 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
+
+Package natbib Warning: Citation `Saussure16a' on page 3 undefined on input lin
+e 30.
+
+
+Package natbib Warning: Citation `Saussure16a-Fr' undefined on input line 30.
+
+[3
+
+
+
+]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3546,381 +3562,350 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
-[77]
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 139.
-
-[78]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
- [79] [80]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
- [81] [82] [83] [84] [85] [86] [87] [88]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
- [89]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
- [90]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32748 (local)
-\forest@temp@box=\box32747 (local)
- [91]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
- [92]
-[93] [94] [95]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
- [96] [97]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
- [98]
-Package microtype Info: Loading generic settings for font family
-(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 
 
-LaTeX Warning: Reference `page-Kasuskongruenz' on page 99 undefined on input li
-ne 1786.
+Package natbib Warning: Citation `NKN2001a' on page 4 undefined on input line 8
+3.
 
-[99] [100]
+
+Package natbib Warning: Citation `OW2012a' on page 4 undefined on input line 83
+.
+
+
+Package natbib Warning: Citation `Leiss2003a' on page 4 undefined on input line
+ 83.
+
+
+Package natbib Warning: Citation `PS2010a' on page 4 undefined on input line 83
+.
+
+
+Package natbib Warning: Citation `Harris57a' on page 4 undefined on input line 
+92.
+
+
+Package natbib Warning: Citation `Pulvermueller2010a' on page 4 undefined on in
+put line 92.
+
+[4]
+
+Package natbib Warning: Citation `Dowty79a' on page 5 undefined on input line 1
+93.
+
+[5] [6] [7] [8] [9] [10]
+
+Package natbib Warning: Citation `Abraham95a-u' on page 11 undefined on input l
+ine 584.
+
+
+Package natbib Warning: Citation `GS97a' on page 11 undefined on input line 584
+.
+
+[11]
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 12 undefined on in
+put line 620.
+
+
+Package natbib Warning: Citation `Bussmann83a' on page 12 undefined on input li
+ne 620.
+
+
+Package natbib Warning: Citation `Bussmann90a' on page 12 undefined on input li
+ne 620.
+
+
+Package natbib Warning: Citation `Bussmann83a' on page 12 undefined on input li
+ne 630.
+
+[12]
+Overfull \hbox (38.23055pt too wide) in paragraph at lines 664--665
+[]  [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[13]
+
+Package natbib Warning: Citation `Mueller2003b' on page 14 undefined on input l
+ine 735.
+
+
+Package natbib Warning: Citation `Mueller2005d' on page 14 undefined on input l
+ine 739.
+
+[14]
+
+Package natbib Warning: Citation `dKM2003a' on page 15 undefined on input line 
+802.
+
+
+Package natbib Warning: Citation `BC2010a' on page 15 undefined on input line 8
+02.
+
+[15]
+
+Package natbib Warning: Citation `Crysmann2003c' on page 16 undefined on input 
+line 832.
+
+[16] [17] [18] [19] [20]
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
+put line 1174.
+
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
+put line 1196.
+
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
+put line 1196.
+
+[21]
+
+Package natbib Warning: Citation `Duden84-Authors' on page 22 undefined on inpu
+t line 1258.
+
+
+Overfull \hbox (0.88153pt too wide) in paragraph at lines 1262--1266
+[] [] [] [] [] [] [] []
+ []
+
+[22]
+Overfull \hbox (10.54553pt too wide) in paragraph at lines 1269--1270
+[]  [] [] [] [] [] [] [] [] [] [] []
+ []
+
+
+Package natbib Warning: Citation `Eisenberg2004a' on page 23 undefined on input
+ line 1277.
+
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 23 undefined on in
+put line 1277.
+
+
+Package natbib Warning: Citation `Eisenberg2004a' on page 23 undefined on input
+ line 1291.
+
+[23]
+Overfull \hbox (13.69556pt too wide) in paragraph at lines 1330--1331
+[]  [] [] [] [] [] [] [] [] []
+ []
+
+
+Package natbib Warning: Citation `SWB2003a' on page 24 undefined on input line 
+1351.
+
+[24]
+
+Package natbib Warning: Citation `Eisenberg2004a' on page 25 undefined on input
+ line 1396.
+
+[25]
+
+Package natbib Warning: Citation `Brame81a' on page 26 undefined on input line 
+1453.
+
+
+Package natbib Warning: Citation `Brame82a' on page 26 undefined on input line 
+1453.
+
+
+Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
+ 1453.
+
+
+Package natbib Warning: Citation `VH77a-u' on page 26 undefined on input line 1
+453.
+
+
+Package natbib Warning: Citation `Hellan86a' on page 26 undefined on input line
+ 1453.
+
+
+Package natbib Warning: Citation `Abney87a' on page 26 undefined on input line 
+1453.
+
+
+Package natbib Warning: Citation `Netter94' on page 26 undefined on input line 
+1453.
+
+
+Package natbib Warning: Citation `Netter98a' on page 26 undefined on input line
+ 1453.
+
+
+Package natbib Warning: Citation `vanLangendonck94a' on page 26 undefined on in
+put line 1453.
+
+
+Package natbib Warning: Citation `ps2' on page 26 undefined on input line 1453.
+
+
+
+Package natbib Warning: Citation `Demske2001a' on page 26 undefined on input li
+ne 1453.
+
+
+Package natbib Warning: Citation `Hudson2004a' on page 26 undefined on input li
+ne 1454.
+
+
+Package natbib Warning: Citation `Bruening2009a' on page 26 undefined on input 
+line 1454.
+
+[26] [27]
+
+Package natbib Warning: Citation `Tesniere59a-u' on page 28 undefined on input 
+line 1602.
+
+
+Package natbib Warning: Citation `Tesniere80a-u' undefined on input line 1602.
+
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
- [101] [102] [103]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
- [104] [105] [106] [107] [108] [109] [110] [111]
-[112]) [113] [425
+[28]
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 1666.
+
+[29]
+
+Package natbib Warning: Citation `Eisenberg94a' on page 30 undefined on input l
+ine 1742.
+
+
+Overfull \hbox (0.17554pt too wide) in paragraph at lines 1772--1773
+[]  [] [] [] [] [] [] [] [] [] [] [] []
+ []
+
+[30]
+
+Package natbib Warning: Citation `Gross2003a' on page 31 undefined on input lin
+e 1877.
+
+
+Package natbib Warning: Citation `Pollard90a-Eng' on page 31 undefined on input
+ line 1877.
+
+
+Package natbib Warning: Citation `Eisenberg94b' on page 31 undefined on input l
+ine 1877.
+
+
+Package natbib Warning: Citation `Keenan76b-u' on page 31 undefined on input li
+ne 1897.
+
+
+Package natbib Warning: Citation `Reis82' on page 31 undefined on input line 18
+97.
+
+[31]
+
+Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
+12.
+
+
+Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
+40.
+
+[32]
+
+Package natbib Warning: Citation `Reis82' on page 33 undefined on input line 19
+77.
+
+
+Package natbib Warning: Citation `ZMT85a' on page 33 undefined on input line 20
+17.
+
+[33]
+
+Package natbib Warning: Citation `Eisenberg2004a' on page 34 undefined on input
+ line 2032.
+
+
+Package natbib Warning: Citation `DL2000a-u' on page 34 undefined on input line
+ 2102.
+
+
+Package natbib Warning: Citation `Berman2003a-u' on page 34 undefined on input 
+line 2102.
+
+
+Package natbib Warning: Citation `Berman2007a-u' on page 34 undefined on input 
+line 2102.
+
+
+Package natbib Warning: Citation `AMM2005a-u' on page 34 undefined on input lin
+e 2102.
+
+
+Package natbib Warning: Citation `Forst2006a-u' on page 34 undefined on input l
+ine 2102.
+
+[34]
+
+Package natbib Warning: Citation `Cook2006a-u' on page 35 undefined on input li
+ne 2154.
+
+[35] [36]
+
+Package natbib Warning: Citation `Duden95-Authors' on page 37 undefined on inpu
+t line 2320.
+
+
+Package natbib Warning: Citation `Duden66-Authors' on page 37 undefined on inpu
+t line 2320.
+
+[37]
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 38 undefined on in
+put line 2374.
+
+
+Package natbib Warning: Citation `Mueller2008a' on page 38 undefined on input l
+ine 2374.
+
+[38]
+
+Package natbib Warning: Citation `Hoehle86' on page 39 undefined on input line 
+2453.
+
+
+Package natbib Warning: Citation `Askedal86' on page 39 undefined on input line
+ 2453.
+
+
+Package natbib Warning: Citation `Woellstein2010a-u' on page 39 undefined on in
+put line 2453.
+
+[39] [40] [41]
+Overfull \hbox (4.53554pt too wide) in paragraph at lines 2570--2574
+[]  [] [] [] [] [] [] [] [] []
+ []
+
+
+Package natbib Warning: Citation `Paul1919a' on page 42 undefined on input line
+ 2598.
+
+[42] [43]
+
+Package natbib Warning: Citation `Duden2005-Authors' on page 44 undefined on in
+put line 2761.
+
+[44] [45]
+
+Package natbib Warning: Citation `Hoehle86' on page 46 undefined on input line 
+2957.
+
+[46]) [47] [425
+
+
 
 
 
@@ -3959,7 +3944,12 @@ Underfull \hbox (badness 1226) in paragraph at lines 289--293
 ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
  []
 
-[691] [692] [693] [694]
+[691]
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [692] [693] [694]
 
 Package natbib Warning: Citation `Hoehle2015Explikation' on page 695 undefined 
 on input line 711.
@@ -4052,20 +4042,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) ) 
 Here is how much of TeX's memory you used:
- 80152 strings out of 493591
- 1940446 string characters out of 6143546
- 1749131 words of memory out of 5000000
- 82177 multiletter control sequences out of 15000+600000
- 29912 words of font info for 152 fonts, out of 8000000 for 9000
+ 66846 strings out of 493591
+ 1392396 string characters out of 6143546
+ 1676431 words of memory out of 5000000
+ 68873 multiletter control sequences out of 15000+600000
+ 20806 words of font info for 123 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 194i,19n,234p,10456b,4025s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 118i,29n,148p,10456b,2279s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on check-gt-chinese.pdf (65 pages).
+Output written on check-gt-chinese.pdf (79 pages).

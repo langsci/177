@@ -76,14 +76,14 @@
 \indexentry {interjection|hyperpage}{20}
 \indexentry {particle|hyperpage}{20}
 \indexentry {postposition|hyperpage}{20}
-\indexentry {adposition|hyperpage}{21}
-\indexentry {adverb|hyperpage}{21}
+\indexentry {adposition|hyperpage}{20}
+\indexentry {adverb|hyperpage}{20}
 \indexentry {conjunction|hyperpage}{21}
 \indexentry {interjection|hyperpage}{21}
-\indexentry {tense|hyperpage}{22}
-\indexentry {verb|hyperpage}{22}
-\indexentry {noun|hyperpage}{22}
-\indexentry {comparative|hyperpage}{22}
+\indexentry {tense|hyperpage}{21}
+\indexentry {verb|hyperpage}{21}
+\indexentry {noun|hyperpage}{21}
+\indexentry {comparative|hyperpage}{21}
 \indexentry {adjective|hyperpage}{22}
 \indexentry {determiner|hyperpage}{22}
 \indexentry {pronoun|(hyperpage}{22}
@@ -102,9 +102,9 @@
 \indexentry {head feature|hyperpage}{27}
 \indexentry {projection!of features|hyperpage}{27}
 \indexentry {head|)}{27}
-\indexentry {argument|(hyperpage}{28}
-\indexentry {adjunct|(hyperpage}{28}
-\indexentry {predicate logic|hyperpage}{28}
+\indexentry {argument|(hyperpage}{27}
+\indexentry {adjunct|(hyperpage}{27}
+\indexentry {predicate logic|hyperpage}{27}
 \indexentry {semantic role|hyperpage}{28}
 \indexentry {agent|hyperpage}{28}
 \indexentry {patient|hyperpage}{28}
@@ -1192,7 +1192,7 @@
 \indexentry {agreement|hyperpage}{373}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{375}
 \indexentry {extraction|hyperpage}{375}
-\indexentry {polygraph|(hyperpage}{377}
+\indexentry {polygraph|(hyperpage}{378}
 \indexentry {polygraph|)}{378}
 \indexentry {Minimalist Program (MP)|hyperpage}{380}
 \indexentry {category!functional!Neg|hyperpage}{380}
