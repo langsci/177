@@ -218,14 +218,14 @@
 \indexentry {Principles \& Parameters|(hyperpage}{80}
 \indexentry {parameter!head position|hyperpage}{80}
 \indexentry {parameter|hyperpage}{80}
-\indexentry {Principles \& Parameters|)}{80}
+\indexentry {Principles \& Parameters|)}{81}
 \indexentry {T model|(hyperpage}{81}
 \indexentry {Deep Structure|hyperindexformat{\see {D"=Structure}}}{81}
 \indexentry {D"=structure|hyperpage}{81}
 \indexentry {Surface Structure|hyperindexformat{\see {S"=structure}}}{81}
 \indexentry {S"=structure|hyperpage}{81}
 \indexentry {Phonetic Form (PF)|hyperpage}{81}
-\indexentry {Logical Form (LF)|hyperpage}{81}
+\indexentry {Logical Form (LF)|hyperpage}{82}
 \indexentry {valence!classes|hyperpage}{82}
 \indexentry {morphology|hyperpage}{82}
 \indexentry {inflection|hyperpage}{82}
@@ -245,15 +245,15 @@
 \indexentry {Control Theory|hyperpage}{84}
 \indexentry {Logical Form (LF)|)}{84}
 \indexentry {subcategorization|hyperpage}{84}
-\indexentry {predicate|hyperpage}{84}
-\indexentry {argument|hyperpage}{84}
-\indexentry {argument structure|hyperpage}{84}
-\indexentry {valence frame|hyperpage}{84}
-\indexentry {subcategorization frame|hyperpage}{84}
-\indexentry {thematic grid|hyperpage}{84}
-\indexentry {theta-grid@$\theta $-grid|hyperpage}{84}
-\indexentry {adjunct|hyperpage}{84}
-\indexentry {modifier|hyperpage}{84}
+\indexentry {predicate|hyperpage}{85}
+\indexentry {argument|hyperpage}{85}
+\indexentry {argument structure|hyperpage}{85}
+\indexentry {valence frame|hyperpage}{85}
+\indexentry {subcategorization frame|hyperpage}{85}
+\indexentry {thematic grid|hyperpage}{85}
+\indexentry {theta-grid@$\theta $-grid|hyperpage}{85}
+\indexentry {adjunct|hyperpage}{85}
+\indexentry {modifier|hyperpage}{85}
 \indexentry {argument!position|hyperpage}{85}
 \indexentry {theta-criterion@Theta"=Criterion|hyperpage}{85}
 \indexentry {semantic role|hyperpage}{85}
@@ -294,10 +294,10 @@
 \indexentry {X theory@\xbar theory|)}{89}
 \indexentry {auxiliary inversion|hyperpage}{90}
 \indexentry {auxiliary inversion|hyperpage}{90}
-\indexentry {category!functional!I|)}{91}
 \indexentry {field!pre-|hyperpage}{92}
 \indexentry {field!middle-|hyperpage}{92}
 \indexentry {sentence bracket|hyperpage}{92}
+\indexentry {category!functional!I|)}{92}
 \indexentry {argument!external|hyperpage}{92}
 \indexentry {adjunct|(hyperpage}{92}
 \indexentry {adjunct|)}{92}
@@ -307,7 +307,7 @@
 \indexentry {scope|hyperpage}{96}
 \indexentry {verb"=final language|hyperpage}{96}
 \indexentry {complementizer|hyperpage}{96}
-\indexentry {verb position|hyperpage}{97}
+\indexentry {verb position|hyperpage}{96}
 \indexentry {long"=distance dependency|(hyperpage}{97}
 \indexentry {verb position!-second-|hyperpage}{97}
 \indexentry {verb"=second language|hyperpage}{98}
@@ -331,31 +331,29 @@
 \indexentry {case!filter|hyperpage}{101}
 \indexentry {empty element|hyperpage}{102}
 \indexentry {pronoun!expletive|hyperpage}{102}
-\indexentry {Burzio's Generalization|hyperpage}{103}
+\indexentry {Burzio's Generalization|hyperpage}{104}
 \indexentry {passive|)}{104}
-\indexentry {neutral order|hyperpage}{104}
-\indexentry {order!unmarked|hyperpage}{104}
-\indexentry {scope|(hyperpage}{104}
+\indexentry {neutral order|hyperpage}{105}
+\indexentry {order!unmarked|hyperpage}{105}
+\indexentry {scope|(hyperpage}{105}
 \indexentry {scope|)}{106}
 \indexentry {base generation|hyperpage}{106}
 \indexentry {constituent order|)}{106}
-\indexentry {Construction Grammar (CxG)|hyperpage}{106}
-\indexentry {Dependency Grammar (DG)|hyperpage}{106}
-\indexentry {verb!unaccusative|hyperpage}{106}
+\indexentry {Construction Grammar (CxG)|hyperpage}{107}
+\indexentry {Dependency Grammar (DG)|hyperpage}{107}
+\indexentry {verb!unaccusative|hyperpage}{107}
 \indexentry {X theory@\xbar theory|hyperpage}{107}
-\indexentry {language acquisition|)}{107}
+\indexentry {language acquisition|)}{108}
 \indexentry {verbal complex|hyperpage}{108}
-\indexentry {computer science|hyperpage}{108}
-\indexentry {language!formal|hyperpage}{108}
+\indexentry {computer science|hyperpage}{109}
+\indexentry {language!formal|hyperpage}{109}
 \indexentry {government|hyperpage}{109}
-\indexentry {auxiliary inversion|hyperpage}{109}
-\indexentry {coordination|hyperpage}{110}
-\indexentry {X theory@\xbar theory|hyperpage}{111}
+\indexentry {auxiliary inversion|hyperpage}{110}
+\indexentry {coordination|hyperpage}{111}
 \indexentry {theta-theory@$\theta $-Theory|hyperpage}{111}
-\indexentry {Government and Binding (GB)|hyperpage}{111}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{111}
-\indexentry {representational model|hyperpage}{111}
-\indexentry {derivation|hyperpage}{111}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{112}
+\indexentry {representational model|hyperpage}{112}
+\indexentry {derivation|hyperpage}{112}
 \indexentry {Minimalist Program (MP)|(hyperpage}{115}
 \indexentry {X theory@\xbar theory|hyperpage}{115}
 \indexentry {feature!strong|hyperpage}{116}

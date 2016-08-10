@@ -33,7 +33,7 @@
 \contentsline {section}{\numberline {2.1}符号和重写规则}{49}{section.2.1}
 \contentsline {section}{\numberline {2.2}短语结构语法中特征的运用}{54}{section.2.2}
 \contentsline {section}{\numberline {2.3}语义}{55}{section.2.3}
-\contentsline {section}{\numberline {2.4}有关德语句法中某些方面的短语结构规则}{58}{section.2.4}
+\contentsline {section}{\numberline {2.4}部分德语句法的短语结构规则}{58}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}名词短语}{58}{subsection.2.4.1}
 \contentsline {subsection}{\numberline {2.4.2}介词短语}{67}{subsection.2.4.2}
 \contentsline {section}{\numberline {2.5}\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace 理论}{69}{section.2.5}
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.1.1}转换}{78}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}有关语言习得的假说：原则与参数理论}{80}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}T模型}{81}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}深层结构和表层结构}{81}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.1}深层结构与表层结构}{81}{subsubsection.3.1.3.1}
 \contentsline {subsubsection}{\numberline {3.1.3.2}语音形式}{83}{subsubsection.3.1.3.2}
 \contentsline {subsubsection}{\numberline {3.1.3.3}逻辑形式}{83}{subsubsection.3.1.3.3}
 \contentsline {subsubsection}{\numberline {3.1.3.4}词库}{84}{subsubsection.3.1.3.4}
@@ -57,9 +57,9 @@
 \contentsline {subsection}{\numberline {3.4.1}结构格与词汇格}{99}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}格指派与格过滤}{101}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}域内重新排序}{104}{section.3.5}
-\contentsline {section}{\numberline {3.6}小结与分类}{106}{section.3.6}
+\contentsline {section}{\numberline {3.6}小结}{107}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}有关语言习得的解释}{107}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}形式化}{107}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}形式化}{108}{subsection.3.6.2}
 \contentsline {chapter}{\numberline {4}Transformational Grammar -- Minimalism}{115}{chapter.4}
 \contentsline {section}{\numberline {4.1}General remarks on the representational format}{115}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Basic architecture}{116}{subsection.4.1.1}
@@ -319,18 +319,18 @@
 \contentsline {section}{\numberline {21.5}Further problems for phrasal approaches}{617}{section.21.5}
 \contentsline {subsection}{\numberline {21.5.1}Particle verbs and commitment to phrase structure configurations}{617}{subsection.21.5.1}
 \contentsline {section}{\numberline {21.6}Arguments from language acquisition}{618}{section.21.6}
-\contentsline {subsection}{\numberline {21.6.1}Recognizability of constructions}{619}{subsection.21.6.1}
+\contentsline {subsection}{\numberline {21.6.1}Recognizability of constructions}{618}{subsection.21.6.1}
 \contentsline {subsection}{\numberline {21.6.2}Coordination and discontinuousness}{620}{subsection.21.6.2}
 \contentsline {section}{\numberline {21.7}Arguments from psycho- and neurolinguistics}{625}{section.21.7}
 \contentsline {subsection}{\numberline {21.7.1}Lexical rules vs.\ phrasal constructions}{625}{subsection.21.7.1}
 \contentsline {subsection}{\numberline {21.7.2}Light verbs}{627}{subsection.21.7.2}
 \contentsline {subsection}{\numberline {21.7.3}Arguments from neurolinguistics}{628}{subsection.21.7.3}
 \contentsline {section}{\numberline {21.8}Arguments from statistical distribution}{632}{section.21.8}
-\contentsline {subsection}{\numberline {21.8.1}Unsupervised Data-Oriented Parsing}{633}{subsection.21.8.1}
+\contentsline {subsection}{\numberline {21.8.1}Unsupervised Data-Oriented Parsing}{632}{subsection.21.8.1}
 \contentsline {subsection}{\numberline {21.8.2}Collostructions}{635}{subsection.21.8.2}
-\contentsline {section}{\numberline {21.9}Conclusion}{636}{section.21.9}
+\contentsline {section}{\numberline {21.9}Conclusion}{635}{section.21.9}
 \contentsline {section}{\numberline {21.10}Why (phrasal) constructions?}{636}{section.21.10}
-\contentsline {subsection}{\numberline {21.10.1}Verbless directives}{637}{subsection.21.10.1}
+\contentsline {subsection}{\numberline {21.10.1}Verbless directives}{636}{subsection.21.10.1}
 \contentsline {subsection}{\numberline {21.10.2}Serial verbs}{643}{subsection.21.10.2}
 \contentsline {subsection}{\numberline {21.10.3}Relative and interrogative clauses}{644}{subsection.21.10.3}
 \contentsline {subsection}{\numberline {21.10.4}The N-P-N construction}{647}{subsection.21.10.4}

@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {3.1.1}转换}{78}{subsection.3.1.1}
 \contentsline {subsection}{\numberline {3.1.2}有关语言习得的假说：原则与参数理论}{80}{subsection.3.1.2}
 \contentsline {subsection}{\numberline {3.1.3}T模型}{81}{subsection.3.1.3}
-\contentsline {subsubsection}{\numberline {3.1.3.1}深层结构和表层结构}{81}{subsubsection.3.1.3.1}
+\contentsline {subsubsection}{\numberline {3.1.3.1}深层结构与表层结构}{81}{subsubsection.3.1.3.1}
 \contentsline {subsubsection}{\numberline {3.1.3.2}语音形式}{83}{subsubsection.3.1.3.2}
 \contentsline {subsubsection}{\numberline {3.1.3.3}逻辑形式}{83}{subsubsection.3.1.3.3}
 \contentsline {subsubsection}{\numberline {3.1.3.4}词库}{84}{subsubsection.3.1.3.4}
@@ -57,9 +57,9 @@
 \contentsline {subsection}{\numberline {3.4.1}结构格与词汇格}{99}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}格指派与格过滤}{101}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}域内重新排序}{104}{section.3.5}
-\contentsline {section}{\numberline {3.6}小结与分类}{106}{section.3.6}
+\contentsline {section}{\numberline {3.6}小结}{107}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}有关语言习得的解释}{107}{subsection.3.6.1}
-\contentsline {subsection}{\numberline {3.6.2}形式化}{107}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.2}形式化}{108}{subsection.3.6.2}
 \contentsline {chapter}{\numberline {4}Transformational Grammar -- Minimalism}{115}{chapter.4}
 \contentsline {section}{\numberline {4.1}General remarks on the representational format}{115}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Basic architecture}{116}{subsection.4.1.1}
@@ -350,8 +350,8 @@
 \contentsline {section}{\numberline {24.9}Construction Grammar}{684}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{685}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{686}{section.24.11}
-\contentsline {chapter}{\nonumberline 参考文献}{689}{chapter*.12}
-\contentsline {chapter}{Index}{702}{section*.13}
-\contentsline {section}{Name index}{702}{section*.13}
-\contentsline {section}{Language index}{702}{section*.14}
-\contentsline {section}{Subject index}{702}{section*.15}
+\contentsline {chapter}{\nonumberline 参考文献}{689}{chapter*.17}
+\contentsline {chapter}{Index}{702}{section*.18}
+\contentsline {section}{Name index}{702}{section*.18}
+\contentsline {section}{Language index}{702}{section*.19}
+\contentsline {section}{Subject index}{702}{section*.20}
