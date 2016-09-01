@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 SEP 2016 14:39
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 SEP 2016 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3464,8 +3464,8 @@ LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
 
 [8] [9] [10]
-Overfull \hbox (1.98396pt too wide) detected at line 236
- []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 425|
+Overfull \hbox (0.36397pt too wide) detected at line 236
+ []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 417|
  []
 
 [11] [12] [13])
@@ -8031,15 +8031,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) ) 
 Here is how much of TeX's memory you used:
- 167281 strings out of 493591
- 5668671 string characters out of 6143546
- 1983290 words of memory out of 5000000
- 169175 multiletter control sequences out of 15000+600000
+ 167273 strings out of 493591
+ 5668203 string characters out of 6143546
+ 1983130 words of memory out of 5000000
+ 169167 multiletter control sequences out of 15000+600000
  57429 words of font info for 267 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7525s stack positions out of 5000i,500n,10000p,200000b,80000s

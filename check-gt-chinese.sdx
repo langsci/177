@@ -76,18 +76,18 @@
 \indexentry {interjection|hyperpage}{20}
 \indexentry {particle|hyperpage}{20}
 \indexentry {postposition|hyperpage}{20}
-\indexentry {adposition|hyperpage}{21}
-\indexentry {adverb|hyperpage}{21}
+\indexentry {adposition|hyperpage}{20}
+\indexentry {adverb|hyperpage}{20}
 \indexentry {conjunction|hyperpage}{21}
 \indexentry {interjection|hyperpage}{21}
-\indexentry {tense|hyperpage}{22}
-\indexentry {verb|hyperpage}{22}
-\indexentry {noun|hyperpage}{22}
-\indexentry {comparative|hyperpage}{22}
-\indexentry {adjective|hyperpage}{22}
+\indexentry {tense|hyperpage}{21}
+\indexentry {verb|hyperpage}{21}
+\indexentry {noun|hyperpage}{21}
+\indexentry {comparative|hyperpage}{21}
+\indexentry {adjective|hyperpage}{21}
 \indexentry {determiner|hyperpage}{22}
 \indexentry {pronoun|(hyperpage}{22}
-\indexentry {adverb!pronominal-|hyperpage}{23}
+\indexentry {adverb!pronominal-|hyperpage}{22}
 \indexentry {adverb!relative|hyperpage}{23}
 \indexentry {pronoun!expletive|hyperpage}{24}
 \indexentry {inflection|hyperpage}{24}
@@ -98,12 +98,12 @@
 \indexentry {category!lexical|hyperpage}{25}
 \indexentry {category!syntactic|hyperpage}{25}
 \indexentry {head|(hyperpage}{26}
-\indexentry {projection|hyperpage}{27}
-\indexentry {head feature|hyperpage}{28}
-\indexentry {projection!of features|hyperpage}{28}
-\indexentry {head|)}{28}
-\indexentry {argument|(hyperpage}{28}
-\indexentry {adjunct|(hyperpage}{28}
+\indexentry {projection|hyperpage}{26}
+\indexentry {head feature|hyperpage}{27}
+\indexentry {projection!of features|hyperpage}{27}
+\indexentry {head|)}{27}
+\indexentry {argument|(hyperpage}{27}
+\indexentry {adjunct|(hyperpage}{27}
 \indexentry {predicate logic|hyperpage}{28}
 \indexentry {semantic role|hyperpage}{28}
 \indexentry {agent|hyperpage}{28}
@@ -112,13 +112,14 @@
 \indexentry {actant|hyperpage}{28}
 \indexentry {selection|hyperpage}{28}
 \indexentry {valence|(hyperpage}{28}
-\indexentry {pronoun!expletive|hyperpage}{29}
-\indexentry {verb!inherent reflexives|hyperpage}{29}
-\indexentry {adjunct|hyperpage}{30}
+\indexentry {pronoun!expletive|hyperpage}{28}
+\indexentry {verb!inherent reflexives|hyperpage}{28}
+\indexentry {adjunct|hyperpage}{29}
 \indexentry {case|hyperpage}{30}
-\indexentry {government|hyperpage}{31}
-\indexentry {case|hyperpage}{31}
-\indexentry {optionality|hyperpage}{32}
+\indexentry {government|hyperpage}{30}
+\indexentry {case|hyperpage}{30}
+\indexentry {optionality|hyperpage}{31}
+\indexentry {adverbial|hyperindexformat{\infn {14}}}{31}
 \indexentry {subject|hyperpage}{32}
 \indexentry {complement|hyperpage}{32}
 \indexentry {argument|)}{32}
@@ -129,25 +130,24 @@
 \indexentry {case!nominative|hyperpage}{32}
 \indexentry {control|hyperpage}{32}
 \indexentry {imperative|hyperpage}{32}
-\indexentry {adverbial|hyperindexformat{\infn {14}}}{32}
-\indexentry {subject|)}{35}
+\indexentry {subject|)}{34}
 \indexentry {object!direct|hyperpage}{36}
 \indexentry {object!indirect|hyperpage}{36}
-\indexentry {adverbial|)}{38}
-\indexentry {predicative|)}{39}
-\indexentry {verb!transitive|hyperpage}{39}
-\indexentry {verb!bivalent|hyperpage}{40}
-\indexentry {topology|(hyperpage}{40}
+\indexentry {adverbial|)}{37}
+\indexentry {predicative|)}{38}
+\indexentry {verb!transitive|hyperpage}{38}
+\indexentry {verb!bivalent|hyperpage}{39}
+\indexentry {topology|(hyperpage}{39}
 \indexentry {verb!-first|hyperpage}{40}
 \indexentry {verb!-second|hyperpage}{40}
 \indexentry {verb!-final|hyperpage}{40}
-\indexentry {prefield|hyperindexformat{\see {field}}}{41}
-\indexentry {field!pre-|hyperpage}{41}
-\indexentry {middle field|hyperindexformat{\see {field}}}{41}
-\indexentry {field!middle-|hyperpage}{41}
-\indexentry {postfield|hyperindexformat{\see {field}}}{41}
-\indexentry {field!post-|hyperpage}{41}
-\indexentry {copula|hyperpage}{41}
+\indexentry {prefield|hyperindexformat{\see {field}}}{40}
+\indexentry {field!pre-|hyperpage}{40}
+\indexentry {middle field|hyperindexformat{\see {field}}}{40}
+\indexentry {field!middle-|hyperpage}{40}
+\indexentry {postfield|hyperindexformat{\see {field}}}{40}
+\indexentry {field!post-|hyperpage}{40}
+\indexentry {copula|hyperpage}{40}
 \indexentry {interrogative clause|(hyperpage}{44}
 \indexentry {relative clause|(hyperpage}{44}
 \indexentry {coordination|hyperindexformat{\infn {22}}}{44}
@@ -534,1455 +534,1455 @@
 \indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {38}}}{158}
 \indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{159}
 \indexentry {Lexical Functional Grammar (LFG)|hyperpage}{159}
-\indexentry {valence|hyperpage}{170}
-\indexentry {subcategorization|hyperpage}{170}
-\indexentry {Head Feature Convention (HFC)|hyperpage}{170}
-\indexentry {dominance!immediate|hyperpage}{173}
-\indexentry {linear precedence|hyperpage}{173}
-\indexentry {ID/LP grammar|hyperpage}{173}
-\indexentry {Linear Precedence Rule|hyperpage}{174}
-\indexentry {LP"=rule|hyperpage}{174}
-\indexentry {constituent order|hyperpage}{174}
-\indexentry {metarule|(hyperpage}{174}
-\indexentry {metarule|)}{176}
-\indexentry {entity|hyperpage}{176}
-\indexentry {truth value|hyperpage}{176}
-\indexentry {functional application|hyperpage}{176}
-\indexentry {quantifier!universal|hyperpage}{177}
-\indexentry {rule"=to"=rule hypothesis|hyperpage}{177}
-\indexentry {adjunct|(hyperpage}{178}
-\indexentry {capacity!generative|hyperpage}{178}
-\indexentry {Kleene star|hyperpage}{178}
-\indexentry {*|hyperpage}{178}
-\indexentry {adjunct|)}{179}
-\indexentry {passive|(hyperpage}{179}
-\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {2}}}{179}
-\indexentry {f"=structure|hyperindexformat{\infn {2}}}{179}
-\indexentry {c"=structure|hyperindexformat{\infn {2}}}{179}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {2}}}{179}
-\indexentry {Government and Binding (GB)|hyperpage}{180}
-\indexentry {Minimalist Program (MP)|hyperpage}{180}
-\indexentry {metarule|(hyperpage}{181}
-\indexentry {lexical rule|hyperpage}{181}
-\indexentry {passive!impersonal|hyperpage}{181}
-\indexentry {metarule|)}{182}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{182}
+\indexentry {valence|hyperpage}{162}
+\indexentry {subcategorization|hyperpage}{162}
+\indexentry {Head Feature Convention (HFC)|hyperpage}{162}
+\indexentry {dominance!immediate|hyperpage}{165}
+\indexentry {linear precedence|hyperpage}{165}
+\indexentry {ID/LP grammar|hyperpage}{165}
+\indexentry {Linear Precedence Rule|hyperpage}{166}
+\indexentry {LP"=rule|hyperpage}{166}
+\indexentry {constituent order|hyperpage}{166}
+\indexentry {metarule|(hyperpage}{166}
+\indexentry {metarule|)}{168}
+\indexentry {entity|hyperpage}{168}
+\indexentry {truth value|hyperpage}{168}
+\indexentry {functional application|hyperpage}{168}
+\indexentry {quantifier!universal|hyperpage}{169}
+\indexentry {rule"=to"=rule hypothesis|hyperpage}{169}
+\indexentry {adjunct|(hyperpage}{170}
+\indexentry {capacity!generative|hyperpage}{170}
+\indexentry {Kleene star|hyperpage}{170}
+\indexentry {*|hyperpage}{170}
+\indexentry {adjunct|)}{171}
+\indexentry {passive|(hyperpage}{171}
+\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {2}}}{171}
+\indexentry {f"=structure|hyperindexformat{\infn {2}}}{171}
+\indexentry {c"=structure|hyperindexformat{\infn {2}}}{171}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {2}}}{171}
+\indexentry {Government and Binding (GB)|hyperpage}{172}
+\indexentry {Minimalist Program (MP)|hyperpage}{172}
+\indexentry {metarule|(hyperpage}{173}
+\indexentry {lexical rule|hyperpage}{173}
+\indexentry {passive!impersonal|hyperpage}{173}
+\indexentry {metarule|)}{174}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{174}
+\indexentry {Categorial Grammar (CG)|hyperpage}{174}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{174}
+\indexentry {Construction Grammar (CxG)|hyperpage}{174}
+\indexentry {Dependency Grammar (DG)|hyperpage}{174}
+\indexentry {passive!impersonal|)}{174}
+\indexentry {passive|)}{174}
+\indexentry {Verb position|(hyperpage}{174}
+\indexentry {Government and Binding (GB)|hyperindexformat{\infn {5}}}{174}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {5}}}{174}
+\indexentry {verb position|)}{175}
+\indexentry {long"=distance dependency|(hyperpage}{175}
+\indexentry {/|hyperpage}{175}
+\indexentry {filler|hyperpage}{176}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {14}}}{177}
+\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {14}}}{177}
+\indexentry {Foot Feature Principle|hyperpage}{178}
+\indexentry {long"=distance dependency|)}{178}
+\indexentry {scope|hyperindexformat{\infn {14}}}{178}
+\indexentry {coordination|hyperindexformat{\infn {14}}}{178}
+\indexentry {apparent multiple fronting|hyperindexformat{\infn {14}}}{178}
+\indexentry {Across the Board Extraction|hyperpage}{179}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{180}
+\indexentry {Construction Grammar (CxG)|hyperpage}{180}
+\indexentry {partial verb phrase fronting|(hyperpage}{180}
+\indexentry {Categorial Grammar (CG)|hyperpage}{181}
+\indexentry {partial verb phrase fronting|)}{181}
+\indexentry {context"=free grammar|hyperpage}{181}
+\indexentry {capacity!generative|hyperpage}{181}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{181}
+\indexentry {Construction Grammar (CxG)|hyperpage}{181}
 \indexentry {Categorial Grammar (CG)|hyperpage}{182}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{182}
-\indexentry {Construction Grammar (CxG)|hyperpage}{182}
-\indexentry {Dependency Grammar (DG)|hyperpage}{182}
-\indexentry {passive!impersonal|)}{182}
-\indexentry {passive|)}{182}
-\indexentry {Verb position|(hyperpage}{182}
-\indexentry {Government and Binding (GB)|hyperindexformat{\infn {5}}}{182}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {5}}}{182}
-\indexentry {verb position|)}{183}
-\indexentry {long"=distance dependency|(hyperpage}{183}
-\indexentry {/|hyperpage}{183}
-\indexentry {filler|hyperpage}{184}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {14}}}{185}
-\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {14}}}{185}
-\indexentry {Foot Feature Principle|hyperpage}{186}
-\indexentry {long"=distance dependency|)}{186}
-\indexentry {scope|hyperindexformat{\infn {14}}}{186}
-\indexentry {coordination|hyperindexformat{\infn {14}}}{186}
-\indexentry {apparent multiple fronting|hyperindexformat{\infn {14}}}{186}
-\indexentry {Across the Board Extraction|hyperpage}{187}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{188}
-\indexentry {Construction Grammar (CxG)|hyperpage}{188}
-\indexentry {partial verb phrase fronting|(hyperpage}{188}
-\indexentry {Categorial Grammar (CG)|hyperpage}{189}
-\indexentry {partial verb phrase fronting|)}{189}
-\indexentry {context"=free grammar|hyperpage}{189}
-\indexentry {capacity!generative|hyperpage}{189}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{189}
-\indexentry {Construction Grammar (CxG)|hyperpage}{189}
-\indexentry {Categorial Grammar (CG)|hyperpage}{190}
-\indexentry {feature"=value structure|hyperpage}{191}
-\indexentry {attribute"=value structure|hyperpage}{191}
-\indexentry {attribute"=value matrix (AVM)|hyperpage}{191}
-\indexentry {feature description|(hyperpage}{191}
-\indexentry {path|hyperpage}{192}
-\indexentry {list|hyperpage}{193}
-\indexentry {set|hyperpage}{194}
-\indexentry {type|(hyperpage}{194}
-\indexentry {type!atomic|hyperpage}{195}
-\indexentry {type hierarchy|(hyperpage}{195}
-\indexentry {inheritance!multiple|hyperpage}{196}
-\indexentry {type|)}{197}
-\indexentry {type hierarchy|)}{197}
-\indexentry {disjunction|(hyperpage}{197}
-\indexentry {$\vee $|hyperpage}{197}
-\indexentry {type|hyperpage}{197}
-\indexentry {disjunction|)}{197}
-\indexentry {structure sharing|(hyperpage}{197}
-\indexentry {agreement|hyperpage}{197}
-\indexentry {structure sharing|)}{198}
-\indexentry {cycle!in feature description|(hyperpage}{199}
-\indexentry {cycle!in feature description|)}{200}
-\indexentry {unification|(hyperpage}{200}
-\indexentry {unification|)}{201}
-\indexentry {model|(hyperpage}{201}
-\indexentry {theory|(hyperpage}{201}
-\indexentry {phenomenon|(hyperpage}{201}
-\indexentry {feature structure|(hyperpage}{201}
-\indexentry {signature|hyperpage}{202}
-\indexentry {model|)}{204}
-\indexentry {theory|)}{204}
-\indexentry {Phenomenon|)}{204}
-\indexentry {feature description|)}{204}
-\indexentry {feature structure|)}{204}
-\indexentry {relation!\emph {append}|hyperpage}{204}
-\indexentry {Definite Clause Grammar (DCG)|hyperpage}{205}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{205}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{205}
-\indexentry {PATR-II|hyperpage}{205}
-\indexentry {statistics|hyperpage}{209}
-\indexentry {c"=structure|hyperpage}{210}
-\indexentry {f"=structure|hyperpage}{210}
-\indexentry {grammatical function!governable|hyperpage}{210}
-\indexentry {theta-grid@$\theta $-grid|hyperpage}{210}
-\indexentry {Government and Binding (GB)|hyperpage}{210}
-\indexentry {valence|hyperpage}{210}
-\indexentry {topic|(hyperpage}{210}
-\indexentry {focus|(hyperpage}{210}
-\indexentry {information structure|hyperpage}{210}
-\indexentry {control|hyperpage}{211}
-\indexentry {topic|)}{211}
-\indexentry {focus|)}{211}
-\indexentry {Government and Binding (GB)|hyperpage}{212}
-\indexentry {theta-criterion@Theta"=Criterion|hyperpage}{213}
+\indexentry {feature"=value structure|hyperpage}{183}
+\indexentry {attribute"=value structure|hyperpage}{183}
+\indexentry {attribute"=value matrix (AVM)|hyperpage}{183}
+\indexentry {feature description|(hyperpage}{183}
+\indexentry {path|hyperpage}{184}
+\indexentry {list|hyperpage}{185}
+\indexentry {set|hyperpage}{186}
+\indexentry {type|(hyperpage}{186}
+\indexentry {type!atomic|hyperpage}{187}
+\indexentry {type hierarchy|(hyperpage}{187}
+\indexentry {inheritance!multiple|hyperpage}{188}
+\indexentry {type|)}{189}
+\indexentry {type hierarchy|)}{189}
+\indexentry {disjunction|(hyperpage}{189}
+\indexentry {$\vee $|hyperpage}{189}
+\indexentry {type|hyperpage}{189}
+\indexentry {disjunction|)}{189}
+\indexentry {structure sharing|(hyperpage}{189}
+\indexentry {agreement|hyperpage}{189}
+\indexentry {structure sharing|)}{190}
+\indexentry {cycle!in feature description|(hyperpage}{191}
+\indexentry {cycle!in feature description|)}{192}
+\indexentry {unification|(hyperpage}{192}
+\indexentry {unification|)}{193}
+\indexentry {model|(hyperpage}{193}
+\indexentry {theory|(hyperpage}{193}
+\indexentry {phenomenon|(hyperpage}{193}
+\indexentry {feature structure|(hyperpage}{193}
+\indexentry {signature|hyperpage}{194}
+\indexentry {model|)}{196}
+\indexentry {theory|)}{196}
+\indexentry {Phenomenon|)}{196}
+\indexentry {feature description|)}{196}
+\indexentry {feature structure|)}{196}
+\indexentry {relation!\emph {append}|hyperpage}{196}
+\indexentry {Definite Clause Grammar (DCG)|hyperpage}{197}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{197}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{197}
+\indexentry {PATR-II|hyperpage}{197}
+\indexentry {statistics|hyperpage}{201}
+\indexentry {c"=structure|hyperpage}{202}
+\indexentry {f"=structure|hyperpage}{202}
+\indexentry {grammatical function!governable|hyperpage}{202}
+\indexentry {theta-grid@$\theta $-grid|hyperpage}{202}
+\indexentry {Government and Binding (GB)|hyperpage}{202}
+\indexentry {valence|hyperpage}{202}
+\indexentry {topic|(hyperpage}{202}
+\indexentry {focus|(hyperpage}{202}
+\indexentry {information structure|hyperpage}{202}
+\indexentry {control|hyperpage}{203}
+\indexentry {topic|)}{203}
+\indexentry {focus|)}{203}
+\indexentry {Government and Binding (GB)|hyperpage}{204}
+\indexentry {theta-criterion@Theta"=Criterion|hyperpage}{205}
+\indexentry {Government and Binding (GB)|hyperpage}{205}
+\indexentry {c"=structure|(hyperpage}{206}
+\indexentry {$\uparrow $|hyperpage}{206}
+\indexentry {$\downarrow $|hyperpage}{206}
+\indexentry {head|hyperpage}{206}
+\indexentry {f"=structure|)}{206}
+\indexentry {c"=structure|)}{206}
+\indexentry {glue semantics|(hyperpage}{207}
+\indexentry {Government and Binding (GB)|hyperpage}{207}
+\indexentry {linear logic|hyperpage}{207}
+\indexentry {glue language|hyperpage}{207}
+\indexentry {meaning constructor|hyperpage}{208}
+\indexentry {\linimp |hyperpage}{208}
+\indexentry {modus ponens|hyperpage}{209}
+\indexentry {quantification|hyperpage}{209}
+\indexentry {glue semantics|)}{209}
+\indexentry {adjuncts|(hyperpage}{209}
+\indexentry {scope|hyperpage}{210}
+\indexentry {linearization rule|hyperpage}{210}
+\indexentry {adjunct|)}{210}
+\indexentry {passive|(hyperpage}{210}
+\indexentry {morphology|(hyperpage}{210}
+\indexentry {lexical integrity|hyperpage}{210}
+\indexentry {category!functional!Neg|hyperpage}{211}
+\indexentry {category!functional!T|hyperpage}{211}
+\indexentry {category!functional!Agr|hyperpage}{211}
+\indexentry {morphology|hyperpage}{211}
+\indexentry {grammatical function|hyperpage}{211}
+\indexentry {Lexical Mapping Theory (LMT)|(hyperpage}{212}
+\indexentry {linking|(hyperpage}{212}
+\indexentry {semantic role|(hyperpage}{212}
+\indexentry {agent|hyperpage}{212}
+\indexentry {beneficiary|hyperpage}{212}
+\indexentry {experiencer|hyperpage}{212}
+\indexentry {goal|hyperpage}{212}
+\indexentry {instrument|hyperpage}{212}
+\indexentry {patient|hyperpage}{212}
+\indexentry {theme|hyperpage}{212}
+\indexentry {a"=structure|hyperpage}{212}
+\indexentry {principle!Subject"=Mapping|hyperpage}{212}
+\indexentry {case!lexical|hyperpage}{213}
+\indexentry {beneficiary|hyperpage}{213}
+\indexentry {beneficiary|hyperpage}{213}
+\indexentry {verb!unaccusative|hyperpage}{213}
+\indexentry {Lexical Mapping Theory (LMT)|)}{213}
+\indexentry {linking|)}{213}
+\indexentry {passive|)}{213}
+\indexentry {semantic role|)}{213}
+\indexentry {verb position|hyperpage}{213}
 \indexentry {Government and Binding (GB)|hyperpage}{213}
-\indexentry {c"=structure|(hyperpage}{214}
-\indexentry {$\uparrow $|hyperpage}{214}
-\indexentry {$\downarrow $|hyperpage}{214}
-\indexentry {head|hyperpage}{214}
-\indexentry {f"=structure|)}{214}
-\indexentry {c"=structure|)}{214}
-\indexentry {glue semantics|(hyperpage}{215}
+\indexentry {completeness|hyperpage}{214}
+\indexentry {coherence|hyperpage}{214}
+\indexentry {head domain!extended|)}{214}
+\indexentry {verb"=final language|hyperpage}{214}
+\indexentry {constituent order|hyperpage}{214}
+\indexentry {ID/LP grammar|hyperindexformat{\infn {8}}}{214}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {8}}}{214}
 \indexentry {Government and Binding (GB)|hyperpage}{215}
-\indexentry {linear logic|hyperpage}{215}
-\indexentry {glue language|hyperpage}{215}
-\indexentry {meaning constructor|hyperpage}{216}
-\indexentry {\linimp |hyperpage}{216}
-\indexentry {modus ponens|hyperpage}{217}
-\indexentry {quantification|hyperpage}{217}
-\indexentry {glue semantics|)}{217}
-\indexentry {adjuncts|(hyperpage}{217}
-\indexentry {scope|hyperpage}{218}
-\indexentry {linearization rule|hyperpage}{218}
-\indexentry {adjunct|)}{218}
-\indexentry {passive|(hyperpage}{218}
-\indexentry {morphology|(hyperpage}{218}
-\indexentry {lexical integrity|hyperpage}{218}
-\indexentry {category!functional!Neg|hyperpage}{219}
-\indexentry {category!functional!T|hyperpage}{219}
-\indexentry {category!functional!Agr|hyperpage}{219}
-\indexentry {morphology|hyperpage}{219}
-\indexentry {grammatical function|hyperpage}{219}
-\indexentry {Lexical Mapping Theory (LMT)|(hyperpage}{220}
-\indexentry {linking|(hyperpage}{220}
-\indexentry {semantic role|(hyperpage}{220}
-\indexentry {agent|hyperpage}{220}
-\indexentry {beneficiary|hyperpage}{220}
-\indexentry {experiencer|hyperpage}{220}
-\indexentry {goal|hyperpage}{220}
-\indexentry {instrument|hyperpage}{220}
-\indexentry {patient|hyperpage}{220}
-\indexentry {theme|hyperpage}{220}
-\indexentry {a"=structure|hyperpage}{220}
-\indexentry {principle!Subject"=Mapping|hyperpage}{220}
-\indexentry {case!lexical|hyperpage}{221}
-\indexentry {beneficiary|hyperpage}{221}
-\indexentry {beneficiary|hyperpage}{221}
-\indexentry {verb!unaccusative|hyperpage}{221}
-\indexentry {Lexical Mapping Theory (LMT)|)}{221}
-\indexentry {linking|)}{221}
-\indexentry {passive|)}{221}
-\indexentry {semantic role|)}{221}
-\indexentry {verb position|hyperpage}{221}
-\indexentry {Government and Binding (GB)|hyperpage}{221}
-\indexentry {completeness|hyperpage}{222}
-\indexentry {coherence|hyperpage}{222}
-\indexentry {head domain!extended|)}{222}
-\indexentry {verb"=final language|hyperpage}{222}
-\indexentry {constituent order|hyperpage}{222}
-\indexentry {ID/LP grammar|hyperindexformat{\infn {8}}}{222}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {8}}}{222}
-\indexentry {Government and Binding (GB)|hyperpage}{223}
-\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {10}}}{223}
+\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {10}}}{215}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{216}
+\indexentry {$\vert $|hyperpage}{216}
+\indexentry {disjunction|hyperpage}{216}
+\indexentry {constituent order|)}{216}
+\indexentry {long"=distance dependency|(hyperpage}{216}
+\indexentry {topic|hyperpage}{218}
+\indexentry {focus|hyperpage}{218}
+\indexentry {completeness|hyperpage}{218}
+\indexentry {coherence|hyperpage}{218}
+\indexentry {*|hyperpage}{219}
+\indexentry {functional uncertainty|hyperpage}{219}
+\indexentry {long"=distance dependency|)}{220}
+\indexentry {coherence|hyperpage}{220}
+\indexentry {completeness|hyperpage}{220}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{221}
+\indexentry {Construction Grammar (CxG)|hyperpage}{221}
+\indexentry {inheritance|hyperpage}{221}
+\indexentry {macro|hyperpage}{221}
+\indexentry {theta-theory@$\theta $-Theory|hyperpage}{221}
+\indexentry {theta-criterion@Theta"=Criterion|hyperpage}{221}
+\indexentry {case|hyperpage}{221}
+\indexentry {Case Theory|hyperpage}{221}
+\indexentry {argument!external|hyperpage}{221}
+\indexentry {argument!internal|hyperpage}{221}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{221}
+\indexentry {Construction Grammar (CxG)|hyperpage}{221}
+\indexentry {argument!designated|hyperpage}{221}
+\indexentry {Categorial Grammar (CG)|(hyperpage}{223}
+\indexentry {statistics|hyperpage}{224}
+\indexentry {Universal Grammar (UG)|hyperpage}{224}
+\indexentry {language acquisition|hyperpage}{224}
+\indexentry {valence|(hyperpage}{224}
 \indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{224}
-\indexentry {$\vert $|hyperpage}{224}
-\indexentry {disjunction|hyperpage}{224}
-\indexentry {constituent order|)}{224}
-\indexentry {long"=distance dependency|(hyperpage}{224}
-\indexentry {topic|hyperpage}{226}
-\indexentry {focus|hyperpage}{226}
-\indexentry {completeness|hyperpage}{226}
-\indexentry {coherence|hyperpage}{226}
-\indexentry {*|hyperpage}{227}
-\indexentry {functional uncertainty|hyperpage}{227}
-\indexentry {long"=distance dependency|)}{228}
-\indexentry {coherence|hyperpage}{228}
-\indexentry {completeness|hyperpage}{228}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{229}
-\indexentry {Construction Grammar (CxG)|hyperpage}{229}
-\indexentry {inheritance|hyperpage}{229}
-\indexentry {macro|hyperpage}{229}
-\indexentry {theta-theory@$\theta $-Theory|hyperpage}{229}
-\indexentry {theta-criterion@Theta"=Criterion|hyperpage}{229}
-\indexentry {case|hyperpage}{229}
-\indexentry {Case Theory|hyperpage}{229}
-\indexentry {argument!external|hyperpage}{229}
-\indexentry {argument!internal|hyperpage}{229}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{229}
-\indexentry {Construction Grammar (CxG)|hyperpage}{229}
-\indexentry {argument!designated|hyperpage}{229}
-\indexentry {Categorial Grammar (CG)|(hyperpage}{231}
-\indexentry {statistics|hyperpage}{232}
-\indexentry {Universal Grammar (UG)|hyperpage}{232}
-\indexentry {language acquisition|hyperpage}{232}
-\indexentry {valence|(hyperpage}{232}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{232}
-\indexentry {phrase structure grammar|hyperpage}{232}
-\indexentry {/|(hyperpage}{232}
-\indexentry {forward application|hyperpage}{232}
-\indexentry {functor|hyperpage}{232}
-\indexentry {argument|hyperpage}{232}
+\indexentry {phrase structure grammar|hyperpage}{224}
+\indexentry {/|(hyperpage}{224}
+\indexentry {forward application|hyperpage}{224}
+\indexentry {functor|hyperpage}{224}
+\indexentry {argument|hyperpage}{224}
+\indexentry {Government and Binding (GB)|hyperpage}{224}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{224}
+\indexentry {left associativity|hyperpage}{225}
+\indexentry {/|)}{225}
+\indexentry {$\backslash $|(hyperpage}{225}
+\indexentry {valence|)}{225}
+\indexentry {backward application|hyperpage}{225}
+\indexentry {$\backslash $|)}{225}
+\indexentry {unification|hyperpage}{226}
+\indexentry {beta"=reduction@$\beta $"=reduction|hyperpage}{226}
+\indexentry {adjunct|(hyperpage}{227}
+\indexentry {X theory@\xbar theory|hyperindexformat{\infn {3}}}{227}
+\indexentry {Government and Binding (GB)|hyperpage}{228}
+\indexentry {adjunct|)}{228}
+\indexentry {passive|(hyperpage}{228}
+\indexentry {passive|)}{229}
+\indexentry {verb position|(hyperpage}{229}
+\indexentry {lexical rule|hyperpage}{229}
+\indexentry {Government and Binding (GB)|hyperpage}{229}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {6}}}{230}
+\indexentry {complementizer|hyperpage}{231}
+\indexentry {verb position|)}{231}
+\indexentry {constituent order|(hyperpage}{231}
+\indexentry {constituent order!free|hyperpage}{232}
+\indexentry {constituent order!fixed|hyperpage}{232}
+\indexentry {$\vert $|hyperpage}{232}
+\indexentry {$\backslash $|hyperpage}{232}
+\indexentry {/|hyperpage}{232}
 \indexentry {Government and Binding (GB)|hyperpage}{232}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{232}
-\indexentry {left associativity|hyperpage}{233}
-\indexentry {/|)}{233}
-\indexentry {$\backslash $|(hyperpage}{233}
-\indexentry {valence|)}{233}
-\indexentry {backward application|hyperpage}{233}
-\indexentry {$\backslash $|)}{233}
-\indexentry {unification|hyperpage}{234}
-\indexentry {beta"=reduction@$\beta $"=reduction|hyperpage}{234}
-\indexentry {adjunct|(hyperpage}{235}
-\indexentry {X theory@\xbar theory|hyperindexformat{\infn {3}}}{235}
-\indexentry {Government and Binding (GB)|hyperpage}{236}
-\indexentry {adjunct|)}{236}
-\indexentry {passive|(hyperpage}{236}
-\indexentry {passive|)}{237}
-\indexentry {verb position|(hyperpage}{237}
-\indexentry {lexical rule|hyperpage}{237}
-\indexentry {Government and Binding (GB)|hyperpage}{237}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {6}}}{238}
-\indexentry {complementizer|hyperpage}{239}
-\indexentry {verb position|)}{239}
-\indexentry {constituent order|(hyperpage}{239}
-\indexentry {constituent order!free|hyperpage}{240}
-\indexentry {constituent order!fixed|hyperpage}{240}
-\indexentry {$\vert $|hyperpage}{240}
-\indexentry {$\backslash $|hyperpage}{240}
-\indexentry {/|hyperpage}{240}
-\indexentry {Government and Binding (GB)|hyperpage}{240}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{240}
-\indexentry {constituent order|hyperpage}{240}
-\indexentry {long"=Distance dependency|(hyperpage}{240}
-\indexentry {type raising|hyperpage}{240}
-\indexentry {composition!forward|hyperpage}{240}
-\indexentry {composition!backward|hyperpage}{240}
-\indexentry {type raising|hyperpage}{240}
-\indexentry {type raising|)}{241}
-\indexentry {composition|(hyperpage}{241}
-\indexentry {composition!forward|hyperpage}{241}
-\indexentry {composition!backward|hyperpage}{241}
-\indexentry {composition|)}{241}
-\indexentry {topicalization|hyperpage}{242}
-\indexentry {$\uparrow $|hyperpage}{242}
-\indexentry {topicalization|hyperpage}{243}
-\indexentry {$\uparrow \uparrow $|hyperpage}{243}
-\indexentry {long"=distance dependency|)}{243}
-\indexentry {coordination|hyperpage}{244}
-\indexentry {prosody|hyperpage}{244}
-\indexentry {pied-piping|hyperpage}{245}
-\indexentry {$\uparrow $|hyperpage}{247}
-\indexentry {$\downarrow $|hyperpage}{247}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{247}
-\indexentry {Government and Binding (GB)|hyperpage}{247}
-\indexentry {Categorial Grammar (CG)|)}{247}
-\indexentry {Dependency Categorial Grammar|hyperpage}{248}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|(hyperpage}{249}
-\indexentry {Linguistic Knowledge Builder (LKB)|hyperpage}{249}
-\indexentry {DELPH-IN|hyperpage}{249}
-\indexentry {TRALE|hyperpage}{249}
-\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{251}
-\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{251}
-\indexentry {CoGETI|hyperpage}{251}
-\indexentry {Grammar Matrix|hyperpage}{251}
-\indexentry {CoreGram|hyperpage}{251}
-\indexentry {metrical grid|hyperpage}{252}
-\indexentry {accent|hyperpage}{252}
-\indexentry {phonology|hyperpage}{252}
-\indexentry {function composition|hyperpage}{253}
-\indexentry {Categorial Grammar (CG)|hyperpage}{253}
-\indexentry {dominance!immediate|hyperpage}{253}
-\indexentry {linear precedence|hyperpage}{253}
-\indexentry {ID/LP grammar|hyperpage}{253}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{232}
+\indexentry {constituent order|hyperpage}{232}
+\indexentry {long"=Distance dependency|(hyperpage}{232}
+\indexentry {type raising|hyperpage}{232}
+\indexentry {composition!forward|hyperpage}{232}
+\indexentry {composition!backward|hyperpage}{232}
+\indexentry {type raising|hyperpage}{232}
+\indexentry {type raising|)}{233}
+\indexentry {composition|(hyperpage}{233}
+\indexentry {composition!forward|hyperpage}{233}
+\indexentry {composition!backward|hyperpage}{233}
+\indexentry {composition|)}{233}
+\indexentry {topicalization|hyperpage}{234}
+\indexentry {$\uparrow $|hyperpage}{234}
+\indexentry {topicalization|hyperpage}{235}
+\indexentry {$\uparrow \uparrow $|hyperpage}{235}
+\indexentry {long"=distance dependency|)}{235}
+\indexentry {coordination|hyperpage}{236}
+\indexentry {prosody|hyperpage}{236}
+\indexentry {pied-piping|hyperpage}{237}
+\indexentry {$\uparrow $|hyperpage}{239}
+\indexentry {$\downarrow $|hyperpage}{239}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{239}
+\indexentry {Government and Binding (GB)|hyperpage}{239}
+\indexentry {Categorial Grammar (CG)|)}{239}
+\indexentry {Dependency Categorial Grammar|hyperpage}{240}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|(hyperpage}{241}
+\indexentry {Linguistic Knowledge Builder (LKB)|hyperpage}{241}
+\indexentry {DELPH-IN|hyperpage}{241}
+\indexentry {TRALE|hyperpage}{241}
+\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{243}
+\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{243}
+\indexentry {CoGETI|hyperpage}{243}
+\indexentry {Grammar Matrix|hyperpage}{243}
+\indexentry {CoreGram|hyperpage}{243}
+\indexentry {metrical grid|hyperpage}{244}
+\indexentry {accent|hyperpage}{244}
+\indexentry {phonology|hyperpage}{244}
+\indexentry {function composition|hyperpage}{245}
+\indexentry {Categorial Grammar (CG)|hyperpage}{245}
+\indexentry {dominance!immediate|hyperpage}{245}
+\indexentry {linear precedence|hyperpage}{245}
+\indexentry {ID/LP grammar|hyperpage}{245}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{245}
+\indexentry {Government and Binding (GB)|hyperpage}{245}
+\indexentry {valence|(hyperpage}{245}
+\indexentry {phrase structure grammar|hyperpage}{245}
+\indexentry {subcategorization|hyperpage}{246}
+\indexentry {valence|)}{246}
+\indexentry {structure sharing|hyperpage}{246}
+\indexentry {phrase structure grammar|hyperpage}{247}
+\indexentry {locality|hyperpage}{248}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{249}
+\indexentry {relative clause|hyperpage}{249}
+\indexentry {interrogative clause|hyperpage}{249}
+\indexentry {coordination|)}{250}
+\indexentry {coordination|)}{250}
+\indexentry {schema!head"=argument|hyperpage}{250}
+\indexentry {\impl |hyperpage}{250}
+\indexentry {implication|hyperpage}{250}
+\indexentry {$\oplus $|hyperpage}{251}
+\indexentry {relation!\emph {append}|hyperpage}{251}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{251}
+\indexentry {head|hyperpage}{251}
+\indexentry {argument|hyperpage}{251}
+\indexentry {adjunct|hyperpage}{251}
 \indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{253}
-\indexentry {Government and Binding (GB)|hyperpage}{253}
-\indexentry {valence|(hyperpage}{253}
-\indexentry {phrase structure grammar|hyperpage}{253}
-\indexentry {subcategorization|hyperpage}{254}
-\indexentry {valence|)}{254}
-\indexentry {structure sharing|hyperpage}{254}
-\indexentry {phrase structure grammar|hyperpage}{255}
-\indexentry {locality|hyperpage}{256}
+\indexentry {Head Feature Convention (HFC)|hyperpage}{253}
+\indexentry {principle!Head Feature|hyperpage}{253}
+\indexentry {\impl |hyperpage}{255}
+\indexentry {implication|hyperpage}{255}
+\indexentry {morphology|hyperpage}{255}
+\indexentry {sentence symbol|hyperpage}{256}
+\indexentry {Construction Grammar (CxG)|hyperpage}{256}
+\indexentry {lexicon|hyperpage}{256}
 \indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{257}
-\indexentry {relative clause|hyperpage}{257}
-\indexentry {interrogative clause|hyperpage}{257}
-\indexentry {coordination|)}{258}
-\indexentry {coordination|)}{258}
-\indexentry {schema!head"=argument|hyperpage}{258}
-\indexentry {\impl |hyperpage}{258}
-\indexentry {implication|hyperpage}{258}
-\indexentry {$\oplus $|hyperpage}{259}
-\indexentry {relation!\emph {append}|hyperpage}{259}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{259}
-\indexentry {head|hyperpage}{259}
-\indexentry {argument|hyperpage}{259}
-\indexentry {adjunct|hyperpage}{259}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{261}
-\indexentry {Head Feature Convention (HFC)|hyperpage}{261}
-\indexentry {principle!Head Feature|hyperpage}{261}
-\indexentry {\impl |hyperpage}{263}
-\indexentry {implication|hyperpage}{263}
-\indexentry {morphology|hyperpage}{263}
-\indexentry {sentence symbol|hyperpage}{264}
-\indexentry {Construction Grammar (CxG)|hyperpage}{264}
-\indexentry {lexicon|hyperpage}{264}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{265}
-\indexentry {Person|hyperpage}{265}
-\indexentry {case|hyperpage}{265}
-\indexentry {gender|hyperpage}{265}
-\indexentry {number|hyperpage}{265}
-\indexentry {coindexation|hyperpage}{265}
-\indexentry {pronoun!reflexive|hyperpage}{265}
-\indexentry {Situation Semantics|hyperindexformat{\infn {9}}}{265}
-\indexentry {Lexical Resource Semantics (LRS)|hyperindexformat{\infn {9}}}{265}
-\indexentry {Binding Theory|hyperpage}{266}
-\indexentry {event|hyperpage}{266}
-\indexentry {linking|(hyperpage}{266}
-\indexentry {valence|hyperpage}{266}
-\indexentry {semantic role|hyperpage}{266}
-\indexentry {argument|hyperpage}{266}
-\indexentry {type hierarchy|hyperpage}{266}
-\indexentry {inheritance|hyperpage}{266}
-\indexentry {linking|)}{267}
-\indexentry {principle!Semantics|hyperpage}{267}
-\indexentry {compositionality|hyperpage}{267}
-\indexentry {Construction Grammar (CxG)|hyperpage}{267}
-\indexentry {semantics|)}{267}
-\indexentry {adjunct|(hyperpage}{267}
-\indexentry {X theory@\xbar theory|hyperpage}{267}
-\indexentry {adjective|hyperpage}{268}
-\indexentry {schema!head"=adjunct|hyperpage}{269}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperindexformat{\infn {10}}}{269}
-\indexentry {adjunct|)}{270}
-\indexentry {passive|(hyperpage}{270}
-\indexentry {lexical rule|(hyperpage}{270}
-\indexentry {argument!designated|hyperpage}{270}
-\indexentry {grammatical function|hyperpage}{270}
-\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {11}}}{270}
-\indexentry {verb!unaccusative|hyperindexformat{\infn {12}}}{270}
-\indexentry {verb!unergative|hyperindexformat{\infn {12}}}{270}
-\indexentry {verb!transitive|hyperindexformat{\infn {12}}}{270}
-\indexentry {ellipsis|hyperindexformat{\infn {14}}}{271}
-\indexentry {prefield!ellipsis|hyperindexformat{\infn {14}}}{271}
-\indexentry {Topic Drop|hyperindexformat{\infn {14}}}{271}
-\indexentry {relative clause!free|hyperindexformat{\infn {14}}}{271}
-\indexentry {depictive predicate|hyperindexformat{\infn {14}}}{271}
-\indexentry {Binding Theory|hyperindexformat{\infn {14}}}{271}
-\indexentry {obliqueness|hyperindexformat{\infn {14}}}{271}
-\indexentry {lexical rule|(hyperpage}{273}
-\indexentry {principle!Case|(hyperpage}{273}
-\indexentry {case!genitive|hyperpage}{273}
-\indexentry {raising|hyperindexformat{\infn {15}}}{273}
-\indexentry {Icelandic|hyperindexformat{\infn {15}}}{273}
-\indexentry {passive!impersonal|hyperpage}{274}
-\indexentry {principle!Case|)}{275}
-\indexentry {Government and Binding (GB)|hyperpage}{275}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{275}
-\indexentry {Categorial Grammar (CG)|hyperpage}{275}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{275}
-\indexentry {Lexical Mapping Theory (LMT)|hyperpage}{275}
-\indexentry {passive|(hyperpage}{275}
-\indexentry {verb position|(hyperpage}{275}
-\indexentry {structure sharing|hyperpage}{275}
-\indexentry {complementizer|hyperpage}{276}
-\indexentry {trace!verb|)}{278}
-\indexentry {lexical rule!verb"=initial position|(hyperpage}{278}
-\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {16}}}{278}
-\indexentry {auxiliary inversion|hyperindexformat{\infn {16}}}{278}
-\indexentry {long"=distance dependency|hyperindexformat{\infn {16}}}{278}
-\indexentry {cycle!in feature description|hyperpage}{280}
-\indexentry {trace!verb|hyperpage}{280}
-\indexentry {empty element|hyperpage}{280}
-\indexentry {lexical rule!verb"=initial position|)}{280}
-\indexentry {verb position|(hyperpage}{280}
-\indexentry {constituent position|(hyperpage}{280}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{280}
-\indexentry {relation!\emph {append}|hyperpage}{282}
-\indexentry {constituent order!fixed|hyperpage}{282}
-\indexentry {constituent order!free|hyperpage}{282}
-\indexentry {constituent order|)}{282}
-\indexentry {c"=command|hyperindexformat{\infn {20}}}{282}
-\indexentry {o"=command|hyperindexformat{\infn {20}}}{282}
-\indexentry {Obliqueness|hyperindexformat{\infn {20}}}{282}
-\indexentry {long"=distance dependency|(hyperpage}{283}
-\indexentry {trace!extraction trace|(hyperpage}{285}
-\indexentry {trace!extraction trace|)}{286}
-\indexentry {principle!nonloc-@\textsc {nonloc}-|hyperpage}{286}
-\indexentry {schema!Filler"=Head|hyperpage}{287}
-\indexentry {trace!extraction trace|(hyperpage}{288}
-\indexentry {trace!extraction trace|)}{288}
-\indexentry {extraction path marking|hyperpage}{288}
-\indexentry {long"=distance dependency|)}{288}
-\indexentry {Schema!Specifier"=Head"=|hyperpage}{289}
-\indexentry {Deep Structure|hyperpage}{291}
-\indexentry {Government and Binding (GB)|hyperpage}{291}
-\indexentry {transformation|hyperpage}{291}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{292}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{292}
-\indexentry {Categorial Grammar (CG)|hyperpage}{292}
-\indexentry {long"=distance dependency|hyperpage}{292}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{293}
-\indexentry {empty element|hyperpage}{293}
-\indexentry {Construction Grammar (CxG)|hyperpage}{293}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{293}
+\indexentry {Person|hyperpage}{257}
+\indexentry {case|hyperpage}{257}
+\indexentry {gender|hyperpage}{257}
+\indexentry {number|hyperpage}{257}
+\indexentry {coindexation|hyperpage}{257}
+\indexentry {pronoun!reflexive|hyperpage}{257}
+\indexentry {Situation Semantics|hyperindexformat{\infn {9}}}{257}
+\indexentry {Lexical Resource Semantics (LRS)|hyperindexformat{\infn {9}}}{257}
+\indexentry {Binding Theory|hyperpage}{258}
+\indexentry {event|hyperpage}{258}
+\indexentry {linking|(hyperpage}{258}
+\indexentry {valence|hyperpage}{258}
+\indexentry {semantic role|hyperpage}{258}
+\indexentry {argument|hyperpage}{258}
+\indexentry {type hierarchy|hyperpage}{258}
+\indexentry {inheritance|hyperpage}{258}
+\indexentry {linking|)}{259}
+\indexentry {principle!Semantics|hyperpage}{259}
+\indexentry {compositionality|hyperpage}{259}
+\indexentry {Construction Grammar (CxG)|hyperpage}{259}
+\indexentry {semantics|)}{259}
+\indexentry {adjunct|(hyperpage}{259}
+\indexentry {X theory@\xbar theory|hyperpage}{259}
+\indexentry {adjective|hyperpage}{260}
+\indexentry {schema!head"=adjunct|hyperpage}{261}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperindexformat{\infn {10}}}{261}
+\indexentry {adjunct|)}{262}
+\indexentry {passive|(hyperpage}{262}
+\indexentry {lexical rule|(hyperpage}{262}
+\indexentry {argument!designated|hyperpage}{262}
+\indexentry {grammatical function|hyperpage}{262}
+\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {11}}}{262}
+\indexentry {verb!unaccusative|hyperindexformat{\infn {12}}}{262}
+\indexentry {verb!unergative|hyperindexformat{\infn {12}}}{262}
+\indexentry {verb!transitive|hyperindexformat{\infn {12}}}{262}
+\indexentry {ellipsis|hyperindexformat{\infn {14}}}{263}
+\indexentry {prefield!ellipsis|hyperindexformat{\infn {14}}}{263}
+\indexentry {Topic Drop|hyperindexformat{\infn {14}}}{263}
+\indexentry {relative clause!free|hyperindexformat{\infn {14}}}{263}
+\indexentry {depictive predicate|hyperindexformat{\infn {14}}}{263}
+\indexentry {Binding Theory|hyperindexformat{\infn {14}}}{263}
+\indexentry {obliqueness|hyperindexformat{\infn {14}}}{263}
+\indexentry {lexical rule|(hyperpage}{265}
+\indexentry {principle!Case|(hyperpage}{265}
+\indexentry {case!genitive|hyperpage}{265}
+\indexentry {raising|hyperindexformat{\infn {15}}}{265}
+\indexentry {Icelandic|hyperindexformat{\infn {15}}}{265}
+\indexentry {passive!impersonal|hyperpage}{266}
+\indexentry {principle!Case|)}{267}
+\indexentry {Government and Binding (GB)|hyperpage}{267}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{267}
+\indexentry {Categorial Grammar (CG)|hyperpage}{267}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{267}
+\indexentry {Lexical Mapping Theory (LMT)|hyperpage}{267}
+\indexentry {passive|(hyperpage}{267}
+\indexentry {verb position|(hyperpage}{267}
+\indexentry {structure sharing|hyperpage}{267}
+\indexentry {complementizer|hyperpage}{268}
+\indexentry {trace!verb|)}{270}
+\indexentry {lexical rule!verb"=initial position|(hyperpage}{270}
+\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {16}}}{270}
+\indexentry {auxiliary inversion|hyperindexformat{\infn {16}}}{270}
+\indexentry {long"=distance dependency|hyperindexformat{\infn {16}}}{270}
+\indexentry {cycle!in feature description|hyperpage}{272}
+\indexentry {trace!verb|hyperpage}{272}
+\indexentry {empty element|hyperpage}{272}
+\indexentry {lexical rule!verb"=initial position|)}{272}
+\indexentry {verb position|(hyperpage}{272}
+\indexentry {constituent position|(hyperpage}{272}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{272}
+\indexentry {relation!\emph {append}|hyperpage}{274}
+\indexentry {constituent order!fixed|hyperpage}{274}
+\indexentry {constituent order!free|hyperpage}{274}
+\indexentry {constituent order|)}{274}
+\indexentry {c"=command|hyperindexformat{\infn {20}}}{274}
+\indexentry {o"=command|hyperindexformat{\infn {20}}}{274}
+\indexentry {Obliqueness|hyperindexformat{\infn {20}}}{274}
+\indexentry {long"=distance dependency|(hyperpage}{275}
+\indexentry {trace!extraction trace|(hyperpage}{277}
+\indexentry {trace!extraction trace|)}{278}
+\indexentry {principle!nonloc-@\textsc {nonloc}-|hyperpage}{278}
+\indexentry {schema!Filler"=Head|hyperpage}{279}
+\indexentry {trace!extraction trace|(hyperpage}{280}
+\indexentry {trace!extraction trace|)}{280}
+\indexentry {extraction path marking|hyperpage}{280}
+\indexentry {long"=distance dependency|)}{280}
+\indexentry {Schema!Specifier"=Head"=|hyperpage}{281}
+\indexentry {Deep Structure|hyperpage}{283}
+\indexentry {Government and Binding (GB)|hyperpage}{283}
+\indexentry {transformation|hyperpage}{283}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{284}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{284}
+\indexentry {Categorial Grammar (CG)|hyperpage}{284}
+\indexentry {long"=distance dependency|hyperpage}{284}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{285}
+\indexentry {empty element|hyperpage}{285}
+\indexentry {Construction Grammar (CxG)|hyperpage}{285}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{285}
+\indexentry {Categorial Grammar (CG)|hyperpage}{285}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{285}
+\indexentry {macro|hyperpage}{285}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{286}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{286}
+\indexentry {Government and Binding (GB)|hyperpage}{286}
+\indexentry {D"=structure|hyperpage}{286}
+\indexentry {S"=structure|hyperpage}{286}
+\indexentry {Logical Form (LF)|hyperpage}{286}
+\indexentry {Government and Binding (GB)|hyperpage}{286}
+\indexentry {subject|hyperpage}{286}
+\indexentry {object|hyperpage}{286}
+\indexentry {Deep Structure|hyperpage}{286}
+\indexentry {passive!long|hyperindexformat{\infn {25}}}{286}
+\indexentry {case|hyperpage}{287}
+\indexentry {number|hyperpage}{287}
+\indexentry {gender|hyperpage}{287}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{287}
+\indexentry {head domain!extended|hyperpage}{287}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{287}
+\indexentry {function composition|hyperpage}{287}
+\indexentry {Categorial Grammar (CG)|hyperpage}{287}
+\indexentry {Minimalist Grammar (MG)|hyperpage}{287}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|)}{287}
+\indexentry {depictive predicate|hyperindexformat{\infn {26}}}{287}
+\indexentry {passive!long|hyperpage}{288}
+\indexentry {Construction Grammar (CxG)|(hyperpage}{289}
+\indexentry {core grammar|hyperpage}{289}
+\indexentry {periphery|hyperpage}{289}
+\indexentry {Cognitive Grammar|hyperpage}{289}
+\indexentry {construction!resultative|hyperpage}{290}
+\indexentry {Government and Binding (GB)|hyperpage}{290}
+\indexentry {Categorial Grammar (CG)|hyperpage}{290}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{290}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{290}
+\indexentry {Lexical Decomposition Grammar|hyperpage}{290}
+\indexentry {transformation|hyperpage}{290}
+\indexentry {empty element|hyperpage}{290}
+\indexentry {lexical integrity|hyperpage}{290}
+\indexentry {construction!resultative|hyperpage}{290}
+\indexentry {formalization|hyperpage}{290}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{290}
+\indexentry {language evolution|hyperpage}{291}
+\indexentry {language acquisition|hyperpage}{291}
+\indexentry {statistics|hyperpage}{291}
+\indexentry {performance|hyperpage}{291}
+\indexentry {context"=free grammar!probabilistic (PCFG)|hyperpage}{291}
+\indexentry {filler|hyperpage}{292}
+\indexentry {construction!verb phrase|hyperpage}{292}
+\indexentry {grammatical function|hyperpage}{292}
+\indexentry {subject|hyperpage}{292}
+\indexentry {inheritance|hyperpage}{292}
 \indexentry {Categorial Grammar (CG)|hyperpage}{293}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{293}
-\indexentry {macro|hyperpage}{293}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{294}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{294}
-\indexentry {Government and Binding (GB)|hyperpage}{294}
-\indexentry {D"=structure|hyperpage}{294}
-\indexentry {S"=structure|hyperpage}{294}
-\indexentry {Logical Form (LF)|hyperpage}{294}
-\indexentry {Government and Binding (GB)|hyperpage}{294}
-\indexentry {subject|hyperpage}{294}
-\indexentry {object|hyperpage}{294}
-\indexentry {Deep Structure|hyperpage}{294}
-\indexentry {passive!long|hyperindexformat{\infn {25}}}{294}
-\indexentry {case|hyperpage}{295}
-\indexentry {number|hyperpage}{295}
-\indexentry {gender|hyperpage}{295}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{295}
-\indexentry {head domain!extended|hyperpage}{295}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{295}
-\indexentry {function composition|hyperpage}{295}
-\indexentry {Categorial Grammar (CG)|hyperpage}{295}
-\indexentry {Minimalist Grammar (MG)|hyperpage}{295}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|)}{295}
-\indexentry {depictive predicate|hyperindexformat{\infn {26}}}{295}
-\indexentry {passive!long|hyperpage}{296}
-\indexentry {Construction Grammar (CxG)|(hyperpage}{297}
-\indexentry {core grammar|hyperpage}{297}
-\indexentry {periphery|hyperpage}{297}
-\indexentry {Cognitive Grammar|hyperpage}{297}
-\indexentry {construction!resultative|hyperpage}{298}
-\indexentry {Government and Binding (GB)|hyperpage}{298}
-\indexentry {Categorial Grammar (CG)|hyperpage}{298}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{298}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{298}
-\indexentry {Lexical Decomposition Grammar|hyperpage}{298}
-\indexentry {transformation|hyperpage}{298}
-\indexentry {empty element|hyperpage}{298}
-\indexentry {lexical integrity|hyperpage}{298}
-\indexentry {construction!resultative|hyperpage}{298}
-\indexentry {formalization|hyperpage}{298}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{298}
-\indexentry {language evolution|hyperpage}{299}
-\indexentry {language acquisition|hyperpage}{299}
-\indexentry {statistics|hyperpage}{299}
-\indexentry {performance|hyperpage}{299}
-\indexentry {context"=free grammar!probabilistic (PCFG)|hyperpage}{299}
-\indexentry {filler|hyperpage}{300}
-\indexentry {construction!verb phrase|hyperpage}{300}
-\indexentry {grammatical function|hyperpage}{300}
-\indexentry {subject|hyperpage}{300}
-\indexentry {inheritance|hyperpage}{300}
-\indexentry {Categorial Grammar (CG)|hyperpage}{301}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{301}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{301}
-\indexentry {adjunct|(hyperpage}{301}
-\indexentry {adjunct|)}{301}
-\indexentry {passive|hyperpage}{301}
-\indexentry {construction!linking|hyperpage}{301}
-\indexentry {inheritance|hyperpage}{301}
-\indexentry {semantic role|hyperpage}{301}
-\indexentry {linking|(hyperpage}{301}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{302}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{302}
-\indexentry {linking|hyperpage}{302}
-\indexentry {construction!transitive|hyperpage}{302}
-\indexentry {construction!subject|hyperpage}{302}
-\indexentry {construction!passive|hyperpage}{302}
-\indexentry {argument!designated|hyperindexformat{\infn {5}}}{302}
-\indexentry {Middle Construction|(hyperpage}{304}
-\indexentry {Middle Construction|)}{304}
-\indexentry {causative construction|hyperpage}{306}
-\indexentry {derivation|hyperpage}{306}
-\indexentry {Middle Construction|hyperpage}{306}
-\indexentry {inheritance|)}{306}
-\indexentry {linking|)}{306}
-\indexentry {passive|)}{306}
-\indexentry {verb position|(hyperpage}{306}
-\indexentry {Construction Grammar (CxG)!Fluid|hyperpage}{306}
-\indexentry {dominance!immediate|hyperpage}{307}
-\indexentry {linear precedence|hyperpage}{307}
-\indexentry {constituent!discontinuous|(hyperpage}{308}
-\indexentry {scope|hyperpage}{308}
-\indexentry {constituent!discontinuous|)}{308}
-\indexentry {verb position|)}{308}
-\indexentry {constituent order|(hyperpage}{308}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{308}
-\indexentry {Heavy"=NP"=Shift|hyperpage}{308}
-\indexentry {constituent order|)}{308}
-\indexentry {long"=distance dependency|(hyperpage}{309}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{309}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{309}
-\indexentry {empty element|hyperpage}{309}
-\indexentry {functional uncertainty|hyperpage}{309}
-\indexentry {long"=distance dependency|)}{309}
-\indexentry {set|(hyperpage}{309}
-\indexentry {unification|hyperpage}{311}
-\indexentry {subsumption|hyperpage}{311}
-\indexentry {verb!subjectless|hyperpage}{311}
-\indexentry {passive|(hyperpage}{312}
-\indexentry {set|)}{312}
-\indexentry {passive|)}{312}
-\indexentry {long"=distance dependency|hyperpage}{313}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{313}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{313}
-\indexentry {locality|(hyperpage}{313}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{314}
-\indexentry {principle!Sign|hyperindexformat{\infn {15}}}{314}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)!Constructional|hyperpage}{320}
-\indexentry {locality|)}{320}
-\indexentry {empty element|hyperpage}{320}
-\indexentry {partial verb phrase fronting|hyperpage}{321}
-\indexentry {structure sharing|hyperpage}{322}
-\indexentry {Construction Grammar (CxG)!Sign-Based|hyperpage}{325}
-\indexentry {locality|)}{325}
-\indexentry {idiom|)}{325}
-\indexentry {PATR-II|hyperpage}{325}
-\indexentry {noun!common|hyperpage}{325}
-\indexentry {structure sharing|hyperpage}{325}
-\indexentry {path equation|hyperpage}{325}
-\indexentry {construction!Determiner Noun|hyperpage}{326}
-\indexentry {constituent!discontinuous|hyperpage}{326}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{326}
-\indexentry {coordination|hyperindexformat{\infn {26}}}{326}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {26}}}{326}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{327}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{327}
-\indexentry {linearization rule|hyperpage}{327}
-\indexentry {construction!Active Ditransitive|hyperpage}{327}
-\indexentry {evokes operator|(hyperpage}{328}
-\indexentry {hypotenuse|hyperpage}{328}
-\indexentry {cycle!in feature description|hyperpage}{328}
-\indexentry {evokes operator|)}{329}
-\indexentry {construction!Caused"=Motion|hyperpage}{333}
-\indexentry {construction!Caused"=Motion|hyperpage}{334}
-\indexentry {information structure|hyperpage}{335}
-\indexentry {extraction path marking|hyperpage}{337}
-\indexentry {Across the Board Extraction|hyperpage}{337}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|(hyperpage}{341}
-\indexentry {Construction Grammar (CxG)!Sign-Based|(hyperpage}{341}
-\indexentry {competence|(hyperpage}{341}
-\indexentry {performance|(hyperpage}{341}
-\indexentry {Minimalist Program (MP)|hyperpage}{342}
-\indexentry {Biolinguistics|hyperpage}{342}
-\indexentry {phase|hyperpage}{342}
-\indexentry {interface|hyperpage}{342}
-\indexentry {No Tampering Condition (NTC)|hyperindexformat{\infn {34}}}{342}
-\indexentry {competence|)}{343}
-\indexentry {performance|)}{343}
-\indexentry {TRALE|hyperpage}{343}
-\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperindexformat{\infn {37}}}{346}
-\indexentry {bit vector|hyperpage}{348}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|)}{349}
-\indexentry {Construction Grammar (CxG)!Sign-Based|)}{349}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{349}
-\indexentry {Construction Grammar (CxG)|)}{350}
-\indexentry {Categorial Grammar (CG)|hyperpage}{351}
-\indexentry {New Prague School|hyperpage}{351}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{351}
-\indexentry {Word Grammar (WG)|hyperpage}{353}
-\indexentry {Link Grammar|hyperpage}{353}
-\indexentry {corpus annotation|hyperpage}{353}
-\indexentry {machine translation|hyperpage}{353}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {2}}}{353}
-\indexentry {nucleus|hyperpage}{355}
-\indexentry {satellite|hyperpage}{355}
-\indexentry {Word Grammar (WG)|hyperpage}{355}
-\indexentry {Word Grammar (WG)|hyperpage}{356}
-\indexentry {actant|hyperpage}{358}
-\indexentry {projectivity|hyperpage}{360}
-\indexentry {linking|hyperpage}{360}
-\indexentry {semantic role|hyperpage}{360}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{360}
-\indexentry {glue semantics|hyperpage}{361}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{361}
-\indexentry {passive|(hyperpage}{361}
-\indexentry {agreement|hyperpage}{361}
-\indexentry {remote passive|hyperindexformat{\infn {11}}}{361}
-\indexentry {Categorial Grammar (CG)|hyperpage}{362}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{293}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{293}
+\indexentry {adjunct|(hyperpage}{293}
+\indexentry {adjunct|)}{293}
+\indexentry {passive|hyperpage}{293}
+\indexentry {construction!linking|hyperpage}{293}
+\indexentry {inheritance|hyperpage}{293}
+\indexentry {semantic role|hyperpage}{293}
+\indexentry {linking|(hyperpage}{293}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{294}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{294}
+\indexentry {linking|hyperpage}{294}
+\indexentry {construction!transitive|hyperpage}{294}
+\indexentry {construction!subject|hyperpage}{294}
+\indexentry {construction!passive|hyperpage}{294}
+\indexentry {argument!designated|hyperindexformat{\infn {5}}}{294}
+\indexentry {Middle Construction|(hyperpage}{296}
+\indexentry {Middle Construction|)}{296}
+\indexentry {causative construction|hyperpage}{298}
+\indexentry {derivation|hyperpage}{298}
+\indexentry {Middle Construction|hyperpage}{298}
+\indexentry {inheritance|)}{298}
+\indexentry {linking|)}{298}
+\indexentry {passive|)}{298}
+\indexentry {verb position|(hyperpage}{298}
+\indexentry {Construction Grammar (CxG)!Fluid|hyperpage}{298}
+\indexentry {dominance!immediate|hyperpage}{299}
+\indexentry {linear precedence|hyperpage}{299}
+\indexentry {constituent!discontinuous|(hyperpage}{300}
+\indexentry {scope|hyperpage}{300}
+\indexentry {constituent!discontinuous|)}{300}
+\indexentry {verb position|)}{300}
+\indexentry {constituent order|(hyperpage}{300}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{300}
+\indexentry {Heavy"=NP"=Shift|hyperpage}{300}
+\indexentry {constituent order|)}{300}
+\indexentry {long"=distance dependency|(hyperpage}{301}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{301}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{301}
+\indexentry {empty element|hyperpage}{301}
+\indexentry {functional uncertainty|hyperpage}{301}
+\indexentry {long"=distance dependency|)}{301}
+\indexentry {set|(hyperpage}{301}
+\indexentry {unification|hyperpage}{303}
+\indexentry {subsumption|hyperpage}{303}
+\indexentry {verb!subjectless|hyperpage}{303}
+\indexentry {passive|(hyperpage}{304}
+\indexentry {set|)}{304}
+\indexentry {passive|)}{304}
+\indexentry {long"=distance dependency|hyperpage}{305}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{305}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{305}
+\indexentry {locality|(hyperpage}{305}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{306}
+\indexentry {principle!Sign|hyperindexformat{\infn {15}}}{306}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)!Constructional|hyperpage}{312}
+\indexentry {locality|)}{312}
+\indexentry {empty element|hyperpage}{312}
+\indexentry {partial verb phrase fronting|hyperpage}{313}
+\indexentry {structure sharing|hyperpage}{314}
+\indexentry {Construction Grammar (CxG)!Sign-Based|hyperpage}{317}
+\indexentry {locality|)}{317}
+\indexentry {idiom|)}{317}
+\indexentry {PATR-II|hyperpage}{317}
+\indexentry {noun!common|hyperpage}{317}
+\indexentry {structure sharing|hyperpage}{317}
+\indexentry {path equation|hyperpage}{317}
+\indexentry {construction!Determiner Noun|hyperpage}{318}
+\indexentry {constituent!discontinuous|hyperpage}{318}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{318}
+\indexentry {coordination|hyperindexformat{\infn {26}}}{318}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {26}}}{318}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{319}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{319}
+\indexentry {linearization rule|hyperpage}{319}
+\indexentry {construction!Active Ditransitive|hyperpage}{319}
+\indexentry {evokes operator|(hyperpage}{320}
+\indexentry {hypotenuse|hyperpage}{320}
+\indexentry {cycle!in feature description|hyperpage}{320}
+\indexentry {evokes operator|)}{321}
+\indexentry {construction!Caused"=Motion|hyperpage}{325}
+\indexentry {construction!Caused"=Motion|hyperpage}{326}
+\indexentry {information structure|hyperpage}{327}
+\indexentry {extraction path marking|hyperpage}{329}
+\indexentry {Across the Board Extraction|hyperpage}{329}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|(hyperpage}{333}
+\indexentry {Construction Grammar (CxG)!Sign-Based|(hyperpage}{333}
+\indexentry {competence|(hyperpage}{333}
+\indexentry {performance|(hyperpage}{333}
+\indexentry {Minimalist Program (MP)|hyperpage}{334}
+\indexentry {Biolinguistics|hyperpage}{334}
+\indexentry {phase|hyperpage}{334}
+\indexentry {interface|hyperpage}{334}
+\indexentry {No Tampering Condition (NTC)|hyperindexformat{\infn {34}}}{334}
+\indexentry {competence|)}{335}
+\indexentry {performance|)}{335}
+\indexentry {TRALE|hyperpage}{335}
+\indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperindexformat{\infn {37}}}{338}
+\indexentry {bit vector|hyperpage}{340}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|)}{341}
+\indexentry {Construction Grammar (CxG)!Sign-Based|)}{341}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{341}
+\indexentry {Construction Grammar (CxG)|)}{342}
+\indexentry {Categorial Grammar (CG)|hyperpage}{343}
+\indexentry {New Prague School|hyperpage}{343}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{343}
+\indexentry {Word Grammar (WG)|hyperpage}{345}
+\indexentry {Link Grammar|hyperpage}{345}
+\indexentry {corpus annotation|hyperpage}{345}
+\indexentry {machine translation|hyperpage}{345}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {2}}}{345}
+\indexentry {nucleus|hyperpage}{347}
+\indexentry {satellite|hyperpage}{347}
+\indexentry {Word Grammar (WG)|hyperpage}{347}
+\indexentry {Word Grammar (WG)|hyperpage}{348}
+\indexentry {actant|hyperpage}{350}
+\indexentry {projectivity|hyperpage}{352}
+\indexentry {linking|hyperpage}{352}
+\indexentry {semantic role|hyperpage}{352}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{352}
+\indexentry {glue semantics|hyperpage}{353}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{353}
+\indexentry {passive|(hyperpage}{353}
+\indexentry {agreement|hyperpage}{353}
+\indexentry {remote passive|hyperindexformat{\infn {11}}}{353}
+\indexentry {Categorial Grammar (CG)|hyperpage}{354}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{354}
+\indexentry {passive|)}{354}
+\indexentry {Word Grammar (WG)|hyperindexformat{\infn {11}}}{354}
+\indexentry {Word Grammar (WG)|hyperindexformat{\infn {12}}}{356}
+\indexentry {long"=Distance dependency|(hyperpage}{357}
+\indexentry {projectivity|hyperpage}{358}
+\indexentry {rising|hyperpage}{360}
+\indexentry {Word Grammar (WG)|hyperpage}{361}
+\indexentry {Word Grammar (WG)|hyperpage}{361}
+\indexentry {structure sharing|hyperpage}{361}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{361}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{361}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{361}
+\indexentry {extraction path marking|hyperpage}{361}
+\indexentry {Word Grammar (WG)|hyperpage}{361}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{362}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{362}
-\indexentry {passive|)}{362}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {11}}}{362}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {12}}}{364}
-\indexentry {long"=Distance dependency|(hyperpage}{365}
-\indexentry {projectivity|hyperpage}{366}
-\indexentry {rising|hyperpage}{368}
-\indexentry {Word Grammar (WG)|hyperpage}{369}
-\indexentry {Word Grammar (WG)|hyperpage}{369}
-\indexentry {structure sharing|hyperpage}{369}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{369}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{369}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{369}
-\indexentry {extraction path marking|hyperpage}{369}
-\indexentry {Word Grammar (WG)|hyperpage}{369}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{370}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{370}
-\indexentry {long"=Distance dependency|)}{371}
-\indexentry {agreement|hyperpage}{373}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{375}
-\indexentry {extraction|hyperpage}{375}
-\indexentry {polygraph|(hyperpage}{378}
-\indexentry {polygraph|)}{378}
-\indexentry {Minimalist Program (MP)|hyperpage}{380}
-\indexentry {category!functional!Neg|hyperpage}{380}
-\indexentry {projectivity|hyperpage}{380}
-\indexentry {fronting!apparent multiple|hyperpage}{384}
-\indexentry {Government and Binding (GB)|hyperpage}{384}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{384}
-\indexentry {fronting!apparent multiple|hyperpage}{385}
-\indexentry {extraposition|hyperpage}{386}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{386}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {29}}}{388}
-\indexentry {projectivity|(hyperpage}{389}
-\indexentry {$\bigcirc $|hyperpage}{389}
-\indexentry {relation!$\bigcirc $|hyperpage}{389}
-\indexentry {cycle!in feature description|hyperpage}{390}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {34}}}{393}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {34}}}{393}
-\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{394}
-\indexentry {inheritance!default|hyperpage}{394}
-\indexentry {principle!Generalized Head Feature|hyperpage}{395}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{395}
-\indexentry {construction!N-P-N|(hyperpage}{396}
-\indexentry {pied-piping|hyperindexformat{\infn {36}}}{396}
-\indexentry {$+$|hyperpage}{397}
-\indexentry {construction!N-P-N|)}{397}
-\indexentry {Tree Adjoining Grammar (TAG)|(hyperpage}{399}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{399}
-\indexentry {context"=free grammar|hyperpage}{399}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{399}
-\indexentry {Construction Grammar (CxG)|hyperpage}{399}
-\indexentry {complexity class|hyperpage}{399}
-\indexentry {context"=free grammar|hyperpage}{399}
-\indexentry {context"=sensitive grammar|hyperpage}{399}
-\indexentry {mildly context"=sensitive grammar|hyperpage}{399}
-\indexentry {construction!N-P-N|hyperindexformat{\infn {2}}}{399}
-\indexentry {statistics|hyperpage}{400}
-\indexentry {valence|(hyperpage}{400}
-\indexentry {elementary tree|hyperpage}{400}
-\indexentry {$\downarrow $|hyperpage}{400}
-\indexentry {adjunct|hyperpage}{400}
-\indexentry {*|hyperpage}{400}
-\indexentry {valence|)}{400}
-\indexentry {substitution|(hyperpage}{400}
-\indexentry {substitution|)}{401}
-\indexentry {adjunction|(hyperpage}{401}
-\indexentry {adjunct|(hyperpage}{401}
-\indexentry {adjunction|)}{401}
-\indexentry {adjunct|)}{401}
-\indexentry {Government and Binding (GB)|hyperpage}{401}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{401}
-\indexentry {locality|hyperpage}{402}
-\indexentry {derivation tree|hyperpage}{402}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{403}
-\indexentry {Multi-Component TAG|hyperpage}{404}
-\indexentry {scope|hyperpage}{404}
-\indexentry {constituent order|(hyperpage}{404}
-\indexentry {lexical rule|hyperpage}{404}
-\indexentry {ID/LP grammar|hyperpage}{404}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{405}
-\indexentry {TAG!Free Order (FO"=TAG)|hyperpage}{405}
-\indexentry {projectivity|hyperpage}{405}
-\indexentry {Multi-Component TAG|hyperpage}{405}
-\indexentry {Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|(hyperpage}{405}
-\indexentry {Government and Binding (GB)|hyperpage}{406}
-\indexentry {PRO|hyperpage}{406}
-\indexentry {empty element!PRO|hyperindexformat{\see {PRO}}}{406}
-\indexentry {empty element|hyperpage}{406}
-\indexentry {Multi-Component TAG|hyperpage}{407}
-\indexentry {Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|)}{407}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{407}
-\indexentry {Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)|hyperpage}{407}
-\indexentry {constituent order|)}{407}
-\indexentry {verb position|(hyperpage}{407}
-\indexentry {verb position|)}{409}
-\indexentry {passive|(hyperpage}{409}
-\indexentry {raising|hyperpage}{409}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{410}
-\indexentry {inheritance!multiple|(hyperpage}{410}
-\indexentry {inheritance!multiple|)}{410}
-\indexentry {passive|)}{410}
-\indexentry {long"=distance dependency|(hyperpage}{410}
-\indexentry {adjunction!obligatory|hyperpage}{410}
-\indexentry {long"=distance dependency|)}{410}
-\indexentry {Tree Adjoining Grammar (TAG)!\emph {Feature Structure"=Based} (FTAG)|hyperpage}{410}
-\indexentry {Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|(hyperpage}{411}
-\indexentry {foot node|hyperpage}{413}
-\indexentry {adjunction!obligatory|(hyperpage}{413}
-\indexentry {adjunction!obligatory|)}{414}
-\indexentry {Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}{414}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|(hyperpage}{414}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{416}
-\indexentry {empty element|hyperpage}{416}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|)}{416}
-\indexentry {competence|(hyperpage}{416}
-\indexentry {performance|(hyperpage}{416}
-\indexentry {cooperativeness|hyperpage}{417}
-\indexentry {extraposition|hyperpage}{417}
-\indexentry {ambiguity|hyperpage}{417}
-\indexentry {Categorial Grammar (CG)|hyperpage}{418}
-\indexentry {Government and Binding (GB)|hyperpage}{418}
-\indexentry {case|hyperpage}{418}
-\indexentry {selection!restriction|hyperpage}{418}
-\indexentry {ambiguity|hyperpage}{419}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{421}
-\indexentry {Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)|hyperpage}{421}
-\indexentry {competence|)}{421}
-\indexentry {performance|)}{421}
-\indexentry {recursion|hyperpage}{422}
-\indexentry {lexical rule|hyperpage}{422}
-\indexentry {transformation|hyperpage}{422}
-\indexentry {empty element|hyperpage}{422}
-\indexentry {locality|hyperpage}{422}
-\indexentry {capacity!generative|hyperpage}{422}
-\indexentry {mildly context"=sensitive grammar|hyperpage}{422}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{423}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{423}
-\indexentry {Categorial Grammar (CG)|hyperpage}{423}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{423}
-\indexentry {Dependency Grammar (DG)|hyperpage}{423}
-\indexentry {Tree Adjoining Grammar (TAG)!\emph {Synchronous} (STAG)|hyperpage}{423}
-\indexentry {Logical Form (LF)|hyperpage}{423}
-\indexentry {S"=Structure|hyperpage}{423}
-\indexentry {transformation|hyperpage}{423}
-\indexentry {Tree Adjoining Grammar (TAG)|)}{423}
-\indexentry {observational adequacy|hyperpage}{427}
-\indexentry {descriptive adequacy|hyperpage}{427}
-\indexentry {explanatory adequacy|hyperpage}{427}
-\indexentry {language acquisition|hyperpage}{427}
-\indexentry {nativism|hyperpage}{428}
-\indexentry {Universal Grammar (UG)|hyperpage}{428}
-\indexentry {Construction Grammar (CxG)|hyperpage}{428}
-\indexentry {Cognitive Grammar|hyperpage}{428}
-\indexentry {universal|(hyperpage}{429}
-\indexentry {universal!implicational|hyperindexformat{\infn {4}}}{429}
-\indexentry {parameter!head direction|(hyperpage}{430}
-\indexentry {Mandarin Chinese|hyperpage}{431}
-\indexentry {coverb|hyperpage}{431}
-\indexentry {parameter!head direction|)}{431}
-\indexentry {X theory@\xbar theory|(hyperpage}{431}
-\indexentry {empty element|hyperpage}{432}
-\indexentry {Minimalist Program (MP)|hyperpage}{432}
-\indexentry {X theory@\xbar theory|hyperpage}{432}
-\indexentry {X theory@\xbar theory|hyperpage}{433}
-\indexentry {hydra clause|hyperpage}{433}
-\indexentry {Categorial Grammar (CG)|hyperpage}{433}
-\indexentry {Merge|hyperpage}{433}
-\indexentry {Minimalist Program (MP)|hyperpage}{433}
-\indexentry {X theory@\xbar theory|)}{434}
-\indexentry {subject|(hyperpage}{434}
-\indexentry {object|(hyperpage}{434}
-\indexentry {grammatical function|(hyperpage}{434}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{434}
-\indexentry {Categorial Grammar (CG)|hyperpage}{434}
-\indexentry {category!functional!AgrS|hyperpage}{434}
-\indexentry {category!functional!AgrO|hyperpage}{434}
-\indexentry {category!functional!AgrIO|hyperpage}{434}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{434}
-\indexentry {obliqueness|hyperpage}{434}
-\indexentry {case!structural|hyperpage}{434}
-\indexentry {Government and Binding (GB)|hyperpage}{434}
-\indexentry {Extended Projection Principle (EPP)|hyperpage}{434}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{434}
-\indexentry {Subject Condition|hyperpage}{434}
-\indexentry {empty element|hyperpage}{436}
-\indexentry {pronoun!expletive|hyperpage}{436}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{436}
-\indexentry {empty element|hyperpage}{436}
-\indexentry {uniformity|hyperpage}{436}
-\indexentry {subject|)}{436}
-\indexentry {object|)}{436}
-\indexentry {grammatical function|)}{436}
-\indexentry {Binding Theory|(hyperpage}{436}
-\indexentry {Government and Binding (GB)|hyperpage}{436}
-\indexentry {c"=command|hyperpage}{436}
-\indexentry {Poverty of the Stimulus|hyperpage}{437}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{438}
-\indexentry {Binding Theory|)}{438}
-\indexentry {subjacency|(hyperpage}{438}
-\indexentry {Complex NP Constraint|hyperpage}{438}
-\indexentry {Right Roof Constraint|hyperpage}{438}
-\indexentry {bounding node|hyperpage}{438}
-\indexentry {extraction|hyperpage}{438}
-\indexentry {extraposition|hyperpage}{438}
-\indexentry {Poverty of the Stimulus|hyperindexformat{\infn {11}}}{438}
-\indexentry {language acquisition|hyperindexformat{\infn {11}}}{438}
-\indexentry {Extraposition|(hyperpage}{439}
-\indexentry {escape hatch|hyperpage}{440}
-\indexentry {Tiger corpus|hyperpage}{441}
-\indexentry {extraposition|)}{442}
-\indexentry {extraction|(hyperpage}{442}
-\indexentry {extraction!island|hyperpage}{442}
-\indexentry {Complex NP Constraint|hyperpage}{442}
-\indexentry {performance|hyperpage}{443}
-\indexentry {cycle!transformational|hyperpage}{443}
-\indexentry {argument|hyperpage}{444}
-\indexentry {adjunct|hyperpage}{444}
-\indexentry {transformation!fact-Deletion@\emph {fact}"=Deletion|hyperpage}{444}
-\indexentry {focus|hyperpage}{444}
-\indexentry {presupposition|hyperpage}{444}
-\indexentry {information structure|hyperpage}{445}
-\indexentry {relative clause|hyperpage}{445}
-\indexentry {parameter!subjacency|hyperpage}{445}
-\indexentry {performance|hyperpage}{445}
-\indexentry {Universal Grammar (UG)!falsifiability|hyperindexformat{\infn {19}}}{445}
-\indexentry {extraction|)}{446}
-\indexentry {subjacency|)}{446}
-\indexentry {cartography|hyperpage}{446}
-\indexentry {category!functional|hyperpage}{446}
-\indexentry {category!functional!I|hyperpage}{446}
-\indexentry {category!functional!C|hyperpage}{446}
-\indexentry {category!lexical|hyperpage}{446}
-\indexentry {verb|hyperpage}{446}
-\indexentry {noun|hyperpage}{446}
-\indexentry {adjective|hyperpage}{446}
-\indexentry {adposition|hyperpage}{446}
-\indexentry {ideophone|hyperpage}{447}
-\indexentry {positional|hyperpage}{447}
-\indexentry {coverb|hyperpage}{447}
-\indexentry {classifier|hyperpage}{447}
-\indexentry {Universal Grammar (UG)!as a toolkit|hyperpage}{447}
-\indexentry {Universal Grammar (UG)!falsifiability|hyperpage}{447}
-\indexentry {Merge|hyperindexformat{\infn {23}}}{447}
-\indexentry {self"=embedding|hyperindexformat{\infn {25}}}{448}
-\indexentry {competence|hyperpage}{449}
-\indexentry {performance|hyperpage}{449}
-\indexentry {Generative Grammar|hyperpage}{450}
-\indexentry {constraint"=based grammar|hyperpage}{450}
-\indexentry {model"=theoretic grammar|hyperpage}{450}
-\indexentry {Arc Pair Grammar|hyperpage}{450}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{450}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{450}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{450}
-\indexentry {coordination|hyperpage}{451}
-\indexentry {Categorial Grammar (CG)|hyperpage}{451}
-\indexentry {Minimalist Program (MP)|hyperpage}{451}
-\indexentry {text|hyperindexformat{\infn {26}}}{451}
-\indexentry {Merge|hyperindexformat{\infn {27}}}{451}
-\indexentry {branching!binary|hyperindexformat{\infn {27}}}{451}
-\indexentry {Universal Grammar (UG)!falsifiability|hyperpage}{452}
-\indexentry {visual perception|hyperpage}{453}
-\indexentry {music|hyperpage}{453}
-\indexentry {Faculty of Language! in the Broad Sense (FLB)|hyperpage}{453}
-\indexentry {Faculty of Language! in the Narrow Sense (FLN)|hyperpage}{453}
-\indexentry {predicate"=argument structure|hyperpage}{453}
-\indexentry {dependency|hyperpage}{453}
-\indexentry {compositionality|hyperpage}{453}
-\indexentry {universal|)}{453}
-\indexentry {acquisition!speed|(hyperpage}{454}
-\indexentry {Tamagotchi|hyperpage}{454}
-\indexentry {acquisition!second language|hyperpage}{454}
-\indexentry {acquisition!speed|)}{454}
-\indexentry {critical period|(hyperpage}{454}
-\indexentry {acquisition|(hyperpage}{454}
-\indexentry {acquisition|hyperpage}{455}
-\indexentry {feral child|hyperpage}{455}
-\indexentry {critical period|)}{456}
-\indexentry {acquisition|)}{456}
-\indexentry {chimpanzee|hyperpage}{456}
-\indexentry {macaque|hyperpage}{456}
-\indexentry {Merge|hyperpage}{456}
-\indexentry {creole language|(hyperpage}{456}
-\indexentry {pidgin language|hyperpage}{456}
-\indexentry {parameters|hyperpage}{457}
-\indexentry {Poverty of the Stimulus|hyperpage}{457}
-\indexentry {Probability Matching|hyperpage}{457}
-\indexentry {sign language|hyperpage}{457}
-\indexentry {sign language!American (ASL)|hyperpage}{457}
-\indexentry {creole language|)}{458}
-\indexentry {Broca's area|hyperpage}{458}
-\indexentry {Wernicke's area|hyperpage}{458}
-\indexentry {organ|hyperpage}{458}
-\indexentry {music|hyperpage}{458}
-\indexentry {Williams Syndrome|(hyperpage}{459}
-\indexentry {IQ|hyperpage}{459}
-\indexentry {Williams Syndrome|)}{459}
-\indexentry {FoxP2|(hyperpage}{459}
-\indexentry {gene|(hyperpage}{459}
-\indexentry {morphology|hyperpage}{459}
-\indexentry {FoxP2|)}{460}
-\indexentry {gene|)}{460}
-\indexentry {Poverty of the Stimulus|(hyperpage}{460}
-\indexentry {acquisition|(hyperpage}{460}
-\indexentry {language!formal|hyperpage}{461}
-\indexentry {rewrite grammar|hyperpage}{461}
-\indexentry {context"=free grammar|hyperpage}{461}
-\indexentry {symbol!non-terminal|hyperpage}{461}
-\indexentry {symbol!terminal|hyperpage}{461}
-\indexentry {identification in the limit|(hyperpage}{461}
-\indexentry {regular language|hyperpage}{462}
-\indexentry {context"=free grammar|hyperpage}{462}
-\indexentry {context"=sensitive grammar|hyperpage}{462}
-\indexentry {negative evidence|hyperpage}{462}
-\indexentry {negative evidence|hyperpage}{462}
-\indexentry {recursively enumerable language|hyperpage}{463}
-\indexentry {context"=sensitive grammar|hyperpage}{463}
-\indexentry {learnability|hyperpage}{463}
-\indexentry {identification in the limit|)}{464}
-\indexentry {Mandarin Chinese|hyperpage}{464}
-\indexentry {composition|hyperpage}{465}
-\indexentry {verb!modal|hyperpage}{465}
-\indexentry {verb!auxiliary|hyperpage}{465}
-\indexentry {negative evidence|hyperpage}{466}
-\indexentry {CHILDES|hyperpage}{467}
+\indexentry {long"=Distance dependency|)}{363}
+\indexentry {agreement|hyperpage}{365}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{367}
+\indexentry {extraction|hyperpage}{367}
+\indexentry {polygraph|(hyperpage}{370}
+\indexentry {polygraph|)}{370}
+\indexentry {Minimalist Program (MP)|hyperpage}{372}
+\indexentry {category!functional!Neg|hyperpage}{372}
+\indexentry {projectivity|hyperpage}{373}
+\indexentry {fronting!apparent multiple|hyperpage}{376}
+\indexentry {Government and Binding (GB)|hyperpage}{376}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{376}
+\indexentry {fronting!apparent multiple|hyperpage}{378}
+\indexentry {extraposition|hyperpage}{378}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{378}
+\indexentry {projectivity|(hyperpage}{381}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {29}}}{381}
+\indexentry {$\bigcirc $|hyperpage}{382}
+\indexentry {relation!$\bigcirc $|hyperpage}{382}
+\indexentry {cycle!in feature description|hyperpage}{382}
+\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{386}
+\indexentry {Word Grammar (WG)|hyperindexformat{\infn {34}}}{386}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {34}}}{386}
+\indexentry {inheritance!default|hyperpage}{387}
+\indexentry {principle!Generalized Head Feature|hyperpage}{387}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{388}
+\indexentry {pied-piping|hyperindexformat{\infn {36}}}{388}
+\indexentry {construction!N-P-N|(hyperpage}{389}
+\indexentry {$+$|hyperpage}{389}
+\indexentry {construction!N-P-N|)}{389}
+\indexentry {Tree Adjoining Grammar (TAG)|(hyperpage}{391}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{391}
+\indexentry {context"=free grammar|hyperpage}{391}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{391}
+\indexentry {Construction Grammar (CxG)|hyperpage}{391}
+\indexentry {complexity class|hyperpage}{391}
+\indexentry {context"=free grammar|hyperpage}{391}
+\indexentry {context"=sensitive grammar|hyperpage}{391}
+\indexentry {mildly context"=sensitive grammar|hyperpage}{391}
+\indexentry {construction!N-P-N|hyperindexformat{\infn {2}}}{391}
+\indexentry {statistics|hyperpage}{392}
+\indexentry {valence|(hyperpage}{392}
+\indexentry {elementary tree|hyperpage}{392}
+\indexentry {$\downarrow $|hyperpage}{392}
+\indexentry {adjunct|hyperpage}{392}
+\indexentry {*|hyperpage}{392}
+\indexentry {valence|)}{392}
+\indexentry {substitution|(hyperpage}{392}
+\indexentry {substitution|)}{392}
+\indexentry {adjunction|(hyperpage}{393}
+\indexentry {adjunct|(hyperpage}{393}
+\indexentry {adjunction|)}{393}
+\indexentry {adjunct|)}{393}
+\indexentry {Government and Binding (GB)|hyperpage}{393}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{393}
+\indexentry {locality|hyperpage}{394}
+\indexentry {derivation tree|hyperpage}{394}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{396}
+\indexentry {Multi-Component TAG|hyperpage}{396}
+\indexentry {scope|hyperpage}{396}
+\indexentry {constituent order|(hyperpage}{396}
+\indexentry {lexical rule|hyperpage}{396}
+\indexentry {ID/LP grammar|hyperpage}{396}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{397}
+\indexentry {TAG!Free Order (FO"=TAG)|hyperpage}{397}
+\indexentry {projectivity|hyperpage}{397}
+\indexentry {Multi-Component TAG|hyperpage}{397}
+\indexentry {Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|(hyperpage}{397}
+\indexentry {Government and Binding (GB)|hyperpage}{398}
+\indexentry {PRO|hyperpage}{398}
+\indexentry {empty element!PRO|hyperindexformat{\see {PRO}}}{398}
+\indexentry {empty element|hyperpage}{398}
+\indexentry {Multi-Component TAG|hyperpage}{399}
+\indexentry {Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|)}{399}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{399}
+\indexentry {Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)|hyperpage}{399}
+\indexentry {constituent order|)}{399}
+\indexentry {verb position|(hyperpage}{399}
+\indexentry {verb position|)}{401}
+\indexentry {passive|(hyperpage}{401}
+\indexentry {raising|hyperpage}{401}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{402}
+\indexentry {inheritance!multiple|(hyperpage}{402}
+\indexentry {inheritance!multiple|)}{402}
+\indexentry {passive|)}{402}
+\indexentry {long"=distance dependency|(hyperpage}{402}
+\indexentry {adjunction!obligatory|hyperpage}{402}
+\indexentry {long"=distance dependency|)}{402}
+\indexentry {Tree Adjoining Grammar (TAG)!\emph {Feature Structure"=Based} (FTAG)|hyperpage}{402}
+\indexentry {Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|(hyperpage}{403}
+\indexentry {foot node|hyperpage}{405}
+\indexentry {adjunction!obligatory|(hyperpage}{405}
+\indexentry {adjunction!obligatory|)}{406}
+\indexentry {Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}{406}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|(hyperpage}{406}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{408}
+\indexentry {empty element|hyperpage}{408}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|)}{408}
+\indexentry {competence|(hyperpage}{408}
+\indexentry {performance|(hyperpage}{408}
+\indexentry {cooperativeness|hyperpage}{409}
+\indexentry {extraposition|hyperpage}{409}
+\indexentry {ambiguity|hyperpage}{409}
+\indexentry {Categorial Grammar (CG)|hyperpage}{410}
+\indexentry {Government and Binding (GB)|hyperpage}{410}
+\indexentry {case|hyperpage}{410}
+\indexentry {selection!restriction|hyperpage}{410}
+\indexentry {ambiguity|hyperpage}{411}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{413}
+\indexentry {Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)|hyperpage}{413}
+\indexentry {competence|)}{413}
+\indexentry {performance|)}{413}
+\indexentry {recursion|hyperpage}{414}
+\indexentry {lexical rule|hyperpage}{414}
+\indexentry {transformation|hyperpage}{414}
+\indexentry {empty element|hyperpage}{414}
+\indexentry {locality|hyperpage}{414}
+\indexentry {capacity!generative|hyperpage}{414}
+\indexentry {mildly context"=sensitive grammar|hyperpage}{414}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{415}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{415}
+\indexentry {Categorial Grammar (CG)|hyperpage}{415}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{415}
+\indexentry {Dependency Grammar (DG)|hyperpage}{415}
+\indexentry {Tree Adjoining Grammar (TAG)!\emph {Synchronous} (STAG)|hyperpage}{415}
+\indexentry {Logical Form (LF)|hyperpage}{415}
+\indexentry {S"=Structure|hyperpage}{415}
+\indexentry {transformation|hyperpage}{415}
+\indexentry {Tree Adjoining Grammar (TAG)|)}{415}
+\indexentry {observational adequacy|hyperpage}{419}
+\indexentry {descriptive adequacy|hyperpage}{419}
+\indexentry {explanatory adequacy|hyperpage}{419}
+\indexentry {language acquisition|hyperpage}{419}
+\indexentry {nativism|hyperpage}{420}
+\indexentry {Universal Grammar (UG)|hyperpage}{420}
+\indexentry {Construction Grammar (CxG)|hyperpage}{420}
+\indexentry {Cognitive Grammar|hyperpage}{420}
+\indexentry {universal|(hyperpage}{421}
+\indexentry {universal!implicational|hyperindexformat{\infn {4}}}{421}
+\indexentry {parameter!head direction|(hyperpage}{422}
+\indexentry {Mandarin Chinese|hyperpage}{423}
+\indexentry {coverb|hyperpage}{423}
+\indexentry {parameter!head direction|)}{423}
+\indexentry {X theory@\xbar theory|(hyperpage}{423}
+\indexentry {empty element|hyperpage}{424}
+\indexentry {Minimalist Program (MP)|hyperpage}{424}
+\indexentry {X theory@\xbar theory|hyperpage}{424}
+\indexentry {X theory@\xbar theory|hyperpage}{425}
+\indexentry {hydra clause|hyperpage}{425}
+\indexentry {Categorial Grammar (CG)|hyperpage}{425}
+\indexentry {Merge|hyperpage}{425}
+\indexentry {Minimalist Program (MP)|hyperpage}{425}
+\indexentry {X theory@\xbar theory|)}{426}
+\indexentry {subject|(hyperpage}{426}
+\indexentry {object|(hyperpage}{426}
+\indexentry {grammatical function|(hyperpage}{426}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{426}
+\indexentry {Categorial Grammar (CG)|hyperpage}{426}
+\indexentry {category!functional!AgrS|hyperpage}{426}
+\indexentry {category!functional!AgrO|hyperpage}{426}
+\indexentry {category!functional!AgrIO|hyperpage}{426}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{426}
+\indexentry {obliqueness|hyperpage}{426}
+\indexentry {case!structural|hyperpage}{426}
+\indexentry {Government and Binding (GB)|hyperpage}{426}
+\indexentry {Extended Projection Principle (EPP)|hyperpage}{426}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{426}
+\indexentry {Subject Condition|hyperpage}{426}
+\indexentry {empty element|hyperpage}{428}
+\indexentry {pronoun!expletive|hyperpage}{428}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{428}
+\indexentry {empty element|hyperpage}{428}
+\indexentry {uniformity|hyperpage}{428}
+\indexentry {subject|)}{428}
+\indexentry {object|)}{428}
+\indexentry {grammatical function|)}{428}
+\indexentry {Binding Theory|(hyperpage}{428}
+\indexentry {Government and Binding (GB)|hyperpage}{428}
+\indexentry {c"=command|hyperpage}{428}
+\indexentry {Poverty of the Stimulus|hyperpage}{429}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{430}
+\indexentry {Binding Theory|)}{430}
+\indexentry {subjacency|(hyperpage}{430}
+\indexentry {Complex NP Constraint|hyperpage}{430}
+\indexentry {Right Roof Constraint|hyperpage}{430}
+\indexentry {bounding node|hyperpage}{430}
+\indexentry {extraction|hyperpage}{430}
+\indexentry {extraposition|hyperpage}{430}
+\indexentry {Poverty of the Stimulus|hyperindexformat{\infn {11}}}{430}
+\indexentry {language acquisition|hyperindexformat{\infn {11}}}{430}
+\indexentry {Extraposition|(hyperpage}{431}
+\indexentry {escape hatch|hyperpage}{432}
+\indexentry {Tiger corpus|hyperpage}{433}
+\indexentry {extraposition|)}{434}
+\indexentry {extraction|(hyperpage}{434}
+\indexentry {extraction!island|hyperpage}{434}
+\indexentry {Complex NP Constraint|hyperpage}{434}
+\indexentry {performance|hyperpage}{435}
+\indexentry {cycle!transformational|hyperpage}{435}
+\indexentry {argument|hyperpage}{436}
+\indexentry {adjunct|hyperpage}{436}
+\indexentry {transformation!fact-Deletion@\emph {fact}"=Deletion|hyperpage}{436}
+\indexentry {focus|hyperpage}{436}
+\indexentry {presupposition|hyperpage}{436}
+\indexentry {information structure|hyperpage}{437}
+\indexentry {relative clause|hyperpage}{437}
+\indexentry {parameter!subjacency|hyperpage}{437}
+\indexentry {performance|hyperpage}{437}
+\indexentry {Universal Grammar (UG)!falsifiability|hyperindexformat{\infn {19}}}{437}
+\indexentry {extraction|)}{438}
+\indexentry {subjacency|)}{438}
+\indexentry {cartography|hyperpage}{438}
+\indexentry {category!functional|hyperpage}{438}
+\indexentry {category!functional!I|hyperpage}{438}
+\indexentry {category!functional!C|hyperpage}{438}
+\indexentry {category!lexical|hyperpage}{438}
+\indexentry {verb|hyperpage}{438}
+\indexentry {noun|hyperpage}{438}
+\indexentry {adjective|hyperpage}{438}
+\indexentry {adposition|hyperpage}{438}
+\indexentry {ideophone|hyperpage}{439}
+\indexentry {positional|hyperpage}{439}
+\indexentry {coverb|hyperpage}{439}
+\indexentry {classifier|hyperpage}{439}
+\indexentry {Universal Grammar (UG)!as a toolkit|hyperpage}{439}
+\indexentry {Universal Grammar (UG)!falsifiability|hyperpage}{439}
+\indexentry {Merge|hyperindexformat{\infn {23}}}{439}
+\indexentry {self"=embedding|hyperindexformat{\infn {25}}}{440}
+\indexentry {competence|hyperpage}{441}
+\indexentry {performance|hyperpage}{441}
+\indexentry {Generative Grammar|hyperpage}{442}
+\indexentry {constraint"=based grammar|hyperpage}{442}
+\indexentry {model"=theoretic grammar|hyperpage}{442}
+\indexentry {Arc Pair Grammar|hyperpage}{442}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{442}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{442}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{442}
+\indexentry {coordination|hyperpage}{443}
+\indexentry {Categorial Grammar (CG)|hyperpage}{443}
+\indexentry {Minimalist Program (MP)|hyperpage}{443}
+\indexentry {text|hyperindexformat{\infn {26}}}{443}
+\indexentry {Merge|hyperindexformat{\infn {27}}}{443}
+\indexentry {branching!binary|hyperindexformat{\infn {27}}}{443}
+\indexentry {Universal Grammar (UG)!falsifiability|hyperpage}{444}
+\indexentry {visual perception|hyperpage}{445}
+\indexentry {music|hyperpage}{445}
+\indexentry {Faculty of Language! in the Broad Sense (FLB)|hyperpage}{445}
+\indexentry {Faculty of Language! in the Narrow Sense (FLN)|hyperpage}{445}
+\indexentry {predicate"=argument structure|hyperpage}{445}
+\indexentry {dependency|hyperpage}{445}
+\indexentry {compositionality|hyperpage}{445}
+\indexentry {universal|)}{445}
+\indexentry {acquisition!speed|(hyperpage}{446}
+\indexentry {Tamagotchi|hyperpage}{446}
+\indexentry {acquisition!second language|hyperpage}{446}
+\indexentry {acquisition!speed|)}{446}
+\indexentry {critical period|(hyperpage}{446}
+\indexentry {acquisition|(hyperpage}{446}
+\indexentry {acquisition|hyperpage}{447}
+\indexentry {feral child|hyperpage}{447}
+\indexentry {critical period|)}{448}
+\indexentry {acquisition|)}{448}
+\indexentry {chimpanzee|hyperpage}{448}
+\indexentry {macaque|hyperpage}{448}
+\indexentry {Merge|hyperpage}{448}
+\indexentry {creole language|(hyperpage}{448}
+\indexentry {pidgin language|hyperpage}{448}
+\indexentry {parameters|hyperpage}{449}
+\indexentry {Poverty of the Stimulus|hyperpage}{449}
+\indexentry {Probability Matching|hyperpage}{449}
+\indexentry {sign language|hyperpage}{449}
+\indexentry {sign language!American (ASL)|hyperpage}{449}
+\indexentry {creole language|)}{450}
+\indexentry {Broca's area|hyperpage}{450}
+\indexentry {Wernicke's area|hyperpage}{450}
+\indexentry {organ|hyperpage}{450}
+\indexentry {music|hyperpage}{450}
+\indexentry {Williams Syndrome|(hyperpage}{451}
+\indexentry {IQ|hyperpage}{451}
+\indexentry {Williams Syndrome|)}{451}
+\indexentry {FoxP2|(hyperpage}{451}
+\indexentry {gene|(hyperpage}{451}
+\indexentry {morphology|hyperpage}{451}
+\indexentry {FoxP2|)}{452}
+\indexentry {gene|)}{452}
+\indexentry {Poverty of the Stimulus|(hyperpage}{452}
+\indexentry {acquisition|(hyperpage}{452}
+\indexentry {language!formal|hyperpage}{453}
+\indexentry {rewrite grammar|hyperpage}{453}
+\indexentry {context"=free grammar|hyperpage}{453}
+\indexentry {symbol!non-terminal|hyperpage}{453}
+\indexentry {symbol!terminal|hyperpage}{453}
+\indexentry {identification in the limit|(hyperpage}{453}
+\indexentry {regular language|hyperpage}{454}
+\indexentry {context"=free grammar|hyperpage}{454}
+\indexentry {context"=sensitive grammar|hyperpage}{454}
+\indexentry {negative evidence|hyperpage}{454}
+\indexentry {negative evidence|hyperpage}{454}
+\indexentry {recursively enumerable language|hyperpage}{455}
+\indexentry {context"=sensitive grammar|hyperpage}{455}
+\indexentry {learnability|hyperpage}{455}
+\indexentry {identification in the limit|)}{456}
+\indexentry {Mandarin Chinese|hyperpage}{456}
+\indexentry {composition|hyperpage}{457}
+\indexentry {verb!modal|hyperpage}{457}
+\indexentry {verb!auxiliary|hyperpage}{457}
+\indexentry {negative evidence|hyperpage}{458}
+\indexentry {CHILDES|hyperpage}{459}
+\indexentry {auxiliary inversion|(hyperpage}{459}
+\indexentry {Government and Binding (GB)|hyperpage}{459}
+\indexentry {CHILDES|hyperpage}{460}
+\indexentry {CHILDES|hyperpage}{460}
+\indexentry {CHILDES|hyperindexformat{\infn {35}}}{460}
+\indexentry {negative evidence|hyperpage}{461}
+\indexentry {parameter!pro"=drop|hyperpage}{462}
+\indexentry {pronoun!expletive|hyperpage}{462}
+\indexentry {CHILDES|hyperpage}{462}
+\indexentry {CHILDES|hyperpage}{462}
+\indexentry {parameter!pro"=drop|)}{463}
+\indexentry {transformation|hyperpage}{463}
+\indexentry {Categorial Grammar (CG)|hyperpage}{463}
+\indexentry {Construction Grammar (CxG)|hyperpage}{463}
+\indexentry {Cognitive Grammar|hyperpage}{463}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{463}
+\indexentry {neural network|(hyperpage}{464}
+\indexentry {statistics|hyperpage}{464}
+\indexentry {neural network|)}{464}
+\indexentry {context|hyperpage}{464}
+\indexentry {right to left elaboration|hyperpage}{465}
+\indexentry {auxiliary inversion|)}{466}
+\indexentry {formal language|hyperpage}{466}
+\indexentry {learning theory|hyperpage}{467}
 \indexentry {auxiliary inversion|(hyperpage}{467}
-\indexentry {Government and Binding (GB)|hyperpage}{467}
-\indexentry {CHILDES|hyperpage}{468}
-\indexentry {CHILDES|hyperpage}{468}
-\indexentry {CHILDES|hyperindexformat{\infn {35}}}{468}
-\indexentry {negative evidence|hyperpage}{469}
-\indexentry {parameter!pro"=drop|hyperpage}{470}
-\indexentry {pronoun!expletive|hyperpage}{470}
-\indexentry {CHILDES|hyperpage}{470}
-\indexentry {CHILDES|hyperpage}{470}
-\indexentry {parameter!pro"=drop|)}{471}
-\indexentry {transformation|hyperpage}{471}
-\indexentry {Categorial Grammar (CG)|hyperpage}{471}
-\indexentry {Construction Grammar (CxG)|hyperpage}{471}
-\indexentry {Cognitive Grammar|hyperpage}{471}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{471}
-\indexentry {neural network|(hyperpage}{472}
-\indexentry {statistics|hyperpage}{472}
-\indexentry {neural network|)}{472}
-\indexentry {context|hyperpage}{472}
-\indexentry {right to left elaboration|hyperpage}{473}
-\indexentry {auxiliary inversion|)}{474}
-\indexentry {formal language|hyperpage}{474}
-\indexentry {learning theory|hyperpage}{475}
-\indexentry {auxiliary inversion|(hyperpage}{475}
-\indexentry {statistics|(hyperpage}{475}
-\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|(hyperpage}{475}
-\indexentry {branching!binary|hyperpage}{475}
-\indexentry {acquisition|hyperpage}{476}
-\indexentry {CHILDES|hyperpage}{480}
-\indexentry {analogy|hyperpage}{480}
-\indexentry {acquisition|hyperpage}{480}
-\indexentry {branching!binary|hyperpage}{480}
-\indexentry {recursion|hyperpage}{481}
-\indexentry {statistics|hyperpage}{481}
-\indexentry {auxiliary inversion|)}{481}
-\indexentry {Markov model|hyperpage}{481}
-\indexentry {automaton!finite|hyperpage}{481}
-\indexentry {complexity class|hyperpage}{481}
-\indexentry {statistics|)}{481}
-\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|)}{481}
-\indexentry {negative evidence|(hyperpage}{481}
-\indexentry {auxiliary inversion|hyperpage}{481}
-\indexentry {evidence!negative!indirect|hyperpage}{482}
-\indexentry {blocking|hyperpage}{482}
-\indexentry {nominalization|hyperpage}{482}
-\indexentry {statistics|(hyperpage}{482}
-\indexentry {corpus linguistics|hyperpage}{482}
-\indexentry {statistics|)}{483}
-\indexentry {negative evidence|)}{483}
-\indexentry {Poverty of the Stimulus|)}{483}
-\indexentry {acquisition|)}{483}
-\indexentry {model"=theoretic grammar|(hyperpage}{485}
-\indexentry {Generative Grammar|hyperpage}{485}
-\indexentry {phrase structure grammar|hyperpage}{485}
-\indexentry {Transformational Grammar|hyperpage}{485}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{485}
-\indexentry {Categorial Grammar (CG)|hyperpage}{485}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{485}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{485}
-\indexentry {Transformational Grammar|hyperpage}{486}
-\indexentry {Relational Grammar|hyperpage}{487}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{487}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{487}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{487}
-\indexentry {Categorial Grammar (CG)|hyperpage}{487}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{487}
-\indexentry {Minimalist Program (MP)|hyperpage}{487}
-\indexentry {gradability|(hyperpage}{487}
-\indexentry {gradability|)}{488}
+\indexentry {statistics|(hyperpage}{467}
+\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|(hyperpage}{467}
+\indexentry {branching!binary|hyperpage}{467}
+\indexentry {acquisition|hyperpage}{468}
+\indexentry {CHILDES|hyperpage}{472}
+\indexentry {analogy|hyperpage}{472}
+\indexentry {acquisition|hyperpage}{472}
+\indexentry {branching!binary|hyperpage}{472}
+\indexentry {recursion|hyperpage}{473}
+\indexentry {statistics|hyperpage}{473}
+\indexentry {auxiliary inversion|)}{473}
+\indexentry {Markov model|hyperpage}{473}
+\indexentry {automaton!finite|hyperpage}{473}
+\indexentry {complexity class|hyperpage}{473}
+\indexentry {statistics|)}{473}
+\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|)}{473}
+\indexentry {negative evidence|(hyperpage}{473}
+\indexentry {auxiliary inversion|hyperpage}{473}
+\indexentry {evidence!negative!indirect|hyperpage}{474}
+\indexentry {blocking|hyperpage}{474}
+\indexentry {nominalization|hyperpage}{474}
+\indexentry {statistics|(hyperpage}{474}
+\indexentry {corpus linguistics|hyperpage}{474}
+\indexentry {statistics|)}{475}
+\indexentry {negative evidence|)}{475}
+\indexentry {Poverty of the Stimulus|)}{475}
+\indexentry {acquisition|)}{475}
+\indexentry {model"=theoretic grammar|(hyperpage}{477}
+\indexentry {Generative Grammar|hyperpage}{477}
+\indexentry {phrase structure grammar|hyperpage}{477}
+\indexentry {Transformational Grammar|hyperpage}{477}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{477}
+\indexentry {Categorial Grammar (CG)|hyperpage}{477}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{477}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{477}
+\indexentry {Transformational Grammar|hyperpage}{478}
+\indexentry {Relational Grammar|hyperpage}{479}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{479}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{479}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{479}
+\indexentry {Categorial Grammar (CG)|hyperpage}{479}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{479}
+\indexentry {Minimalist Program (MP)|hyperpage}{479}
+\indexentry {gradability|(hyperpage}{479}
+\indexentry {gradability|)}{480}
+\indexentry {Categorial Grammar (CG)|hyperpage}{481}
+\indexentry {prosody|hyperpage}{481}
+\indexentry {Minimalist Program (MP)|hyperpage}{481}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{482}
+\indexentry {gender|(hyperpage}{482}
+\indexentry {sexus|hyperpage}{483}
+\indexentry {gender|)}{484}
+\indexentry {ambiguity!spurious|hyperpage}{485}
+\indexentry {model"=theoretic grammar|)}{485}
+\indexentry {competence|(hyperpage}{487}
+\indexentry {performance|(hyperpage}{487}
+\indexentry {self"=embedding|hyperpage}{487}
+\indexentry {recursion|hyperpage}{487}
+\indexentry {relative clause|hyperpage}{487}
+\indexentry {Missing VP effect|hyperpage}{488}
+\indexentry {recursion|hyperindexformat{\infn {1}}}{488}
+\indexentry {Transformational Grammar|hyperindexformat{\infn {1}}}{488}
+\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {1}}}{488}
 \indexentry {Categorial Grammar (CG)|hyperpage}{489}
-\indexentry {prosody|hyperpage}{489}
-\indexentry {Minimalist Program (MP)|hyperpage}{489}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{490}
-\indexentry {gender|(hyperpage}{490}
-\indexentry {sexus|hyperpage}{491}
-\indexentry {gender|)}{492}
-\indexentry {ambiguity!spurious|hyperpage}{493}
-\indexentry {model"=theoretic grammar|)}{493}
-\indexentry {competence|(hyperpage}{495}
-\indexentry {performance|(hyperpage}{495}
-\indexentry {self"=embedding|hyperpage}{495}
-\indexentry {recursion|hyperpage}{495}
-\indexentry {relative clause|hyperpage}{495}
-\indexentry {Missing VP effect|hyperpage}{496}
-\indexentry {recursion|hyperindexformat{\infn {1}}}{496}
-\indexentry {Transformational Grammar|hyperindexformat{\infn {1}}}{496}
-\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {1}}}{496}
-\indexentry {Categorial Grammar (CG)|hyperpage}{497}
-\indexentry {Government and Binding (GB)|hyperpage}{497}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{497}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{497}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{497}
-\indexentry {Derivational Theory of Complexity (DTC)|(hyperpage}{497}
-\indexentry {transformation|(hyperpage}{497}
-\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {3}}}{497}
-\indexentry {Optimality Theory (OT)|hyperindexformat{\infn {3}}}{497}
-\indexentry {Government and Binding (GB)|hyperindexformat{\infn {3}}}{497}
-\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {3}}}{497}
-\indexentry {Derivational Theory of Complexity (DTC)|hyperindexformat{\infn {3}}}{497}
-\indexentry {ellipsis|hyperpage}{498}
-\indexentry {deletion|hyperpage}{498}
-\indexentry {verb!particle|hyperpage}{498}
-\indexentry {passive|hyperpage}{498}
-\indexentry {memory|hyperindexformat{\infn {4}}}{498}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{499}
-\indexentry {cycle!transformational|hyperpage}{499}
-\indexentry {Government and Binding (GB)|hyperpage}{499}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{499}
-\indexentry {structure sharing|hyperpage}{499}
-\indexentry {transformation|)}{500}
-\indexentry {Derivational Theory of Complexity (DTC)|)}{500}
-\indexentry {Minimalist Program (MP)|hyperpage}{500}
-\indexentry {phase|hyperpage}{500}
-\indexentry {Minimalist Program (MP)|hyperpage}{500}
-\indexentry {Categorial Grammar (CG)|hyperpage}{501}
-\indexentry {contrast|hyperpage}{501}
-\indexentry {prosody|hyperpage}{501}
-\indexentry {modularity|hyperpage}{501}
-\indexentry {Categorial Grammar (CG)|hyperpage}{503}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{503}
-\indexentry {Categorial Grammar (CG)|hyperpage}{503}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{503}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{503}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{503}
-\indexentry {Construction Grammar (CxG)|hyperpage}{503}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{503}
-\indexentry {transformation|hyperpage}{503}
-\indexentry {ellipsis|hyperindexformat{\infn {11}}}{503}
-\indexentry {coordination|hyperindexformat{\infn {11}}}{503}
-\indexentry {Structure Preservation|hyperindexformat{\infn {11}}}{503}
-\indexentry {No Tampering Condition (NTC)|hyperindexformat{\infn {11}}}{503}
-\indexentry {X theory@\xbar theory|hyperpage}{504}
-\indexentry {theta-theory@$\theta $-Theory|hyperpage}{504}
-\indexentry {acquisition|hyperpage}{505}
-\indexentry {module|hyperpage}{505}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{506}
+\indexentry {Government and Binding (GB)|hyperpage}{489}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{489}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{489}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{489}
+\indexentry {Derivational Theory of Complexity (DTC)|(hyperpage}{489}
+\indexentry {transformation|(hyperpage}{489}
+\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {3}}}{489}
+\indexentry {Optimality Theory (OT)|hyperindexformat{\infn {3}}}{489}
+\indexentry {Government and Binding (GB)|hyperindexformat{\infn {3}}}{489}
+\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {3}}}{489}
+\indexentry {Derivational Theory of Complexity (DTC)|hyperindexformat{\infn {3}}}{489}
+\indexentry {ellipsis|hyperpage}{490}
+\indexentry {deletion|hyperpage}{490}
+\indexentry {verb!particle|hyperpage}{490}
+\indexentry {passive|hyperpage}{490}
+\indexentry {memory|hyperindexformat{\infn {4}}}{490}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{491}
+\indexentry {cycle!transformational|hyperpage}{491}
+\indexentry {Government and Binding (GB)|hyperpage}{491}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{491}
+\indexentry {structure sharing|hyperpage}{491}
+\indexentry {transformation|)}{492}
+\indexentry {Derivational Theory of Complexity (DTC)|)}{492}
+\indexentry {Minimalist Program (MP)|hyperpage}{492}
+\indexentry {phase|hyperpage}{492}
+\indexentry {Minimalist Program (MP)|hyperpage}{492}
+\indexentry {Categorial Grammar (CG)|hyperpage}{493}
+\indexentry {contrast|hyperpage}{493}
+\indexentry {prosody|hyperpage}{493}
+\indexentry {modularity|hyperpage}{493}
+\indexentry {Categorial Grammar (CG)|hyperpage}{495}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{495}
+\indexentry {Categorial Grammar (CG)|hyperpage}{495}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{495}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{495}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{495}
+\indexentry {Construction Grammar (CxG)|hyperpage}{495}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{495}
+\indexentry {transformation|hyperpage}{495}
+\indexentry {ellipsis|hyperindexformat{\infn {11}}}{495}
+\indexentry {coordination|hyperindexformat{\infn {11}}}{495}
+\indexentry {Structure Preservation|hyperindexformat{\infn {11}}}{495}
+\indexentry {No Tampering Condition (NTC)|hyperindexformat{\infn {11}}}{495}
+\indexentry {X theory@\xbar theory|hyperpage}{496}
+\indexentry {theta-theory@$\theta $-Theory|hyperpage}{496}
+\indexentry {acquisition|hyperpage}{497}
+\indexentry {module|hyperpage}{497}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{498}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{498}
+\indexentry {competence|)}{498}
+\indexentry {performance|)}{498}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {13}}}{498}
+\indexentry {acquisition|(hyperpage}{499}
+\indexentry {parameter|(hyperpage}{499}
+\indexentry {Principles \& Parameters|(hyperpage}{499}
+\indexentry {core grammar|hyperpage}{499}
+\indexentry {parameter!pro"=drop|hyperpage}{499}
+\indexentry {extraction!subject|hyperpage}{499}
+\indexentry {that-t|hyperpage}{499}
+\indexentry {parameter!subjacency|hyperpage}{499}
+\indexentry {subjacency|hyperpage}{500}
+\indexentry {resultative construction|hyperpage}{500}
+\indexentry {verb!particle|hyperpage}{500}
+\indexentry {verb!ditransitive|hyperpage}{500}
+\indexentry {parameter!SV|hyperpage}{500}
+\indexentry {parameter!V2|hyperpage}{500}
+\indexentry {parameter!V2|hyperpage}{500}
+\indexentry {SVO|hyperpage}{501}
+\indexentry {parameter!default value|hyperpage}{501}
+\indexentry {Greediness Constraint|hyperpage}{502}
+\indexentry {Single Value Constraint|hyperpage}{502}
+\indexentry {maturation|hyperpage}{502}
+\indexentry {local maximum|hyperpage}{502}
+\indexentry {parameter!V2|hyperpage}{502}
+\indexentry {parameter!default value|hyperpage}{502}
+\indexentry {Greediness Constraint|hyperpage}{502}
+\indexentry {Single Value Constraint|hyperpage}{502}
+\indexentry {Random Step|hyperpage}{502}
+\indexentry {local maximum|hyperpage}{502}
+\indexentry {Greediness Constraint|hyperindexformat{\infn {2}}}{502}
+\indexentry {parameter!pro"=drop|(hyperpage}{503}
+\indexentry {parameter!topic drop|hyperpage}{503}
+\indexentry {competence|hyperpage}{503}
+\indexentry {performance|hyperpage}{503}
+\indexentry {parameter!subject article drop|hyperpage}{503}
+\indexentry {iambus|hyperpage}{503}
+\indexentry {trochee|hyperpage}{503}
+\indexentry {metrics|hyperpage}{503}
+\indexentry {pronoun!expletive|hyperpage}{504}
+\indexentry {Nirvana|hyperpage}{504}
+\indexentry {Extended Projection Principle (EPP)|hyperpage}{505}
+\indexentry {parameter!pro"=drop|)}{505}
+\indexentry {parameter!default value|hyperpage}{505}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{506}
-\indexentry {competence|)}{506}
-\indexentry {performance|)}{506}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {13}}}{506}
-\indexentry {acquisition|(hyperpage}{507}
-\indexentry {parameter|(hyperpage}{507}
-\indexentry {Principles \& Parameters|(hyperpage}{507}
-\indexentry {core grammar|hyperpage}{507}
-\indexentry {parameter!pro"=drop|hyperpage}{507}
-\indexentry {extraction!subject|hyperpage}{507}
-\indexentry {that-t|hyperpage}{507}
-\indexentry {parameter!subjacency|hyperpage}{507}
-\indexentry {subjacency|hyperpage}{508}
-\indexentry {resultative construction|hyperpage}{508}
-\indexentry {verb!particle|hyperpage}{508}
-\indexentry {verb!ditransitive|hyperpage}{508}
-\indexentry {parameter!SV|hyperpage}{508}
-\indexentry {parameter!V2|hyperpage}{508}
-\indexentry {parameter!V2|hyperpage}{508}
-\indexentry {SVO|hyperpage}{509}
-\indexentry {parameter!default value|hyperpage}{509}
-\indexentry {Greediness Constraint|hyperpage}{510}
-\indexentry {Single Value Constraint|hyperpage}{510}
-\indexentry {maturation|hyperpage}{510}
-\indexentry {local maximum|hyperpage}{510}
-\indexentry {parameter!V2|hyperpage}{510}
-\indexentry {parameter!default value|hyperpage}{510}
-\indexentry {Greediness Constraint|hyperpage}{510}
-\indexentry {Single Value Constraint|hyperpage}{510}
-\indexentry {Random Step|hyperpage}{510}
-\indexentry {local maximum|hyperpage}{510}
-\indexentry {Greediness Constraint|hyperindexformat{\infn {2}}}{510}
-\indexentry {parameter!pro"=drop|(hyperpage}{511}
-\indexentry {parameter!topic drop|hyperpage}{511}
-\indexentry {competence|hyperpage}{511}
-\indexentry {performance|hyperpage}{511}
-\indexentry {parameter!subject article drop|hyperpage}{511}
-\indexentry {iambus|hyperpage}{511}
-\indexentry {trochee|hyperpage}{511}
-\indexentry {metrics|hyperpage}{511}
-\indexentry {pronoun!expletive|hyperpage}{512}
-\indexentry {Nirvana|hyperpage}{512}
-\indexentry {Extended Projection Principle (EPP)|hyperpage}{513}
-\indexentry {parameter!pro"=drop|)}{513}
-\indexentry {parameter!default value|hyperpage}{513}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{514}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{514}
-\indexentry {trigger|hyperpage}{515}
-\indexentry {parameter|)}{515}
-\indexentry {Principles \& Parameters|)}{515}
-\indexentry {core grammar|hyperpage}{516}
-\indexentry {periphery|hyperpage}{516}
-\indexentry {idiom|hyperpage}{516}
-\indexentry {auxiliary inversion|hyperpage}{517}
-\indexentry {root Infinitive|hyperpage}{517}
-\indexentry {optional infinitive|hyperpage}{517}
-\indexentry {bias|hyperpage}{517}
-\indexentry {segmentation|hyperpage}{518}
-\indexentry {future|hyperpage}{518}
-\indexentry {clitic|hyperpage}{518}
-\indexentry {progressive|hyperpage}{519}
-\indexentry {do"=Support@\emph {do}"=Support|hyperpage}{519}
-\indexentry {verb!modal|hyperpage}{519}
-\indexentry {Construction Grammar (CxG)|(hyperpage}{519}
-\indexentry {Cognitive Grammar|hyperpage}{519}
-\indexentry {pivot schema|hyperpage}{519}
-\indexentry {formalization|hyperpage}{520}
-\indexentry {coordination|hyperpage}{521}
-\indexentry {competence|hyperpage}{522}
-\indexentry {performance|hyperpage}{522}
-\indexentry {Construction Grammar (CxG)|)}{522}
-\indexentry {functor|hyperpage}{522}
-\indexentry {acquisition|)}{523}
-\indexentry {capacity!generative|(hyperpage}{525}
-\indexentry {complexity class|(hyperpage}{525}
-\indexentry {regular language|hyperpage}{525}
-\indexentry {context"=free grammar|hyperpage}{525}
-\indexentry {context"=sensitive grammar|hyperpage}{525}
-\indexentry {unrestricted grammars|hyperpage}{525}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{525}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{525}
-\indexentry {Minimalist Grammar (MG)|hyperpage}{525}
-\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{525}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{506}
+\indexentry {trigger|hyperpage}{507}
+\indexentry {parameter|)}{507}
+\indexentry {Principles \& Parameters|)}{507}
+\indexentry {core grammar|hyperpage}{508}
+\indexentry {periphery|hyperpage}{508}
+\indexentry {idiom|hyperpage}{508}
+\indexentry {auxiliary inversion|hyperpage}{509}
+\indexentry {root Infinitive|hyperpage}{509}
+\indexentry {optional infinitive|hyperpage}{509}
+\indexentry {bias|hyperpage}{509}
+\indexentry {segmentation|hyperpage}{510}
+\indexentry {future|hyperpage}{510}
+\indexentry {clitic|hyperpage}{510}
+\indexentry {progressive|hyperpage}{511}
+\indexentry {do"=Support@\emph {do}"=Support|hyperpage}{511}
+\indexentry {verb!modal|hyperpage}{511}
+\indexentry {Construction Grammar (CxG)|(hyperpage}{511}
+\indexentry {Cognitive Grammar|hyperpage}{511}
+\indexentry {pivot schema|hyperpage}{511}
+\indexentry {formalization|hyperpage}{512}
+\indexentry {coordination|hyperpage}{513}
+\indexentry {competence|hyperpage}{514}
+\indexentry {performance|hyperpage}{514}
+\indexentry {Construction Grammar (CxG)|)}{514}
+\indexentry {functor|hyperpage}{514}
+\indexentry {acquisition|)}{515}
+\indexentry {capacity!generative|(hyperpage}{517}
+\indexentry {complexity class|(hyperpage}{517}
+\indexentry {regular language|hyperpage}{517}
+\indexentry {context"=free grammar|hyperpage}{517}
+\indexentry {context"=sensitive grammar|hyperpage}{517}
+\indexentry {unrestricted grammars|hyperpage}{517}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{517}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{517}
+\indexentry {Minimalist Grammar (MG)|hyperpage}{517}
+\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{517}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{517}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{517}
+\indexentry {Off-Line Parsability|hyperpage}{518}
+\indexentry {parser|hyperpage}{518}
+\indexentry {Minimalist Grammar (MG)|hyperpage}{518}
+\indexentry {extraction!from adjuncts|hyperpage}{518}
+\indexentry {Shortest Move Constraint (SMC)|hyperpage}{518}
+\indexentry {specifier|hyperpage}{518}
+\indexentry {extraction!from specifier|hyperpage}{518}
+\indexentry {capacity!generative|)}{521}
+\indexentry {complexity class|)}{521}
+\indexentry {branching!binary|(hyperpage}{523}
+\indexentry {X theory@\xbar theory|hyperpage}{523}
+\indexentry {language acquisition|hyperpage}{523}
+\indexentry {ellipsis|hyperpage}{524}
+\indexentry {X theory@\xbar theory|hyperpage}{524}
+\indexentry {X theory@\xbar theory|hyperpage}{524}
+\indexentry {X theory@\xbar theory|hyperpage}{524}
+\indexentry {empty element|hyperpage}{524}
+\indexentry {Binding Theory|hyperpage}{524}
+\indexentry {Government and Binding (GB)|hyperpage}{524}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{524}
+\indexentry {f"=structure|hyperpage}{524}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{524}
+\indexentry {Construction Grammar (CxG)|hyperpage}{524}
+\indexentry {Categorial Grammar (CG)|hyperpage}{524}
+\indexentry {Binding Theory|hyperpage}{525}
+\indexentry {pronoun!reflexive|hyperpage}{525}
 \indexentry {Lexical Functional Grammar (LFG)|hyperpage}{525}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{525}
-\indexentry {Off-Line Parsability|hyperpage}{526}
-\indexentry {parser|hyperpage}{526}
-\indexentry {Minimalist Grammar (MG)|hyperpage}{526}
-\indexentry {extraction!from adjuncts|hyperpage}{526}
-\indexentry {Shortest Move Constraint (SMC)|hyperpage}{526}
-\indexentry {specifier|hyperpage}{526}
-\indexentry {extraction!from specifier|hyperpage}{526}
-\indexentry {capacity!generative|)}{529}
-\indexentry {complexity class|)}{529}
-\indexentry {branching!binary|(hyperpage}{531}
-\indexentry {X theory@\xbar theory|hyperpage}{531}
-\indexentry {language acquisition|hyperpage}{531}
-\indexentry {ellipsis|hyperpage}{532}
-\indexentry {X theory@\xbar theory|hyperpage}{532}
-\indexentry {X theory@\xbar theory|hyperpage}{532}
-\indexentry {X theory@\xbar theory|hyperpage}{532}
-\indexentry {empty element|hyperpage}{532}
-\indexentry {Binding Theory|hyperpage}{532}
-\indexentry {Government and Binding (GB)|hyperpage}{532}
+\indexentry {adjunct|hyperpage}{525}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{525}
+\indexentry {metarule|hyperpage}{526}
+\indexentry {relation|hyperpage}{526}
+\indexentry {branching!binary|)}{526}
+\indexentry {locality|(hyperpage}{526}
+\indexentry {gender|hyperpage}{527}
+\indexentry {Gesetz der wachsenden Glieder|hyperpage}{527}
+\indexentry {X theory@\xbar theory|hyperpage}{527}
+\indexentry {f"=structure|hyperpage}{527}
+\indexentry {Government and Binding (GB)|hyperpage}{527}
+\indexentry {cycle!transformational|hyperpage}{527}
+\indexentry {Government and Binding (GB)|hyperpage}{527}
+\indexentry {Government and Binding (GB)|hyperpage}{527}
+\indexentry {Exceptional Case Marking (ECM)|hyperpage}{528}
+\indexentry {category!functional!Voice|hyperpage}{528}
+\indexentry {Agree|hyperpage}{528}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{529}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{529}
+\indexentry {raising|hyperpage}{530}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{530}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{530}
+\indexentry {question tag|hyperpage}{530}
+\indexentry {subject|hyperpage}{530}
+\indexentry {Government and Binding (GB)|hyperpage}{530}
+\indexentry {idiom|(hyperpage}{530}
+\indexentry {Polish|hyperpage}{530}
+\indexentry {passive|hyperpage}{531}
+\indexentry {adjunction!ban|hyperpage}{532}
+\indexentry {functional uncertainty|hyperpage}{532}
+\indexentry {Construction Grammar (CxG)|hyperpage}{532}
 \indexentry {Lexical Functional Grammar (LFG)|hyperpage}{532}
 \indexentry {f"=structure|hyperpage}{532}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{532}
-\indexentry {Construction Grammar (CxG)|hyperpage}{532}
-\indexentry {Categorial Grammar (CG)|hyperpage}{532}
-\indexentry {Binding Theory|hyperpage}{533}
-\indexentry {pronoun!reflexive|hyperpage}{533}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{533}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{533}
-\indexentry {adjunct|hyperpage}{533}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{533}
-\indexentry {metarule|hyperpage}{534}
-\indexentry {relation|hyperpage}{534}
-\indexentry {branching!binary|)}{534}
-\indexentry {locality|(hyperpage}{534}
-\indexentry {gender|hyperpage}{535}
-\indexentry {Gesetz der wachsenden Glieder|hyperpage}{535}
-\indexentry {X theory@\xbar theory|hyperpage}{535}
-\indexentry {f"=structure|hyperpage}{535}
-\indexentry {Government and Binding (GB)|hyperpage}{535}
-\indexentry {cycle!transformational|hyperpage}{535}
-\indexentry {Government and Binding (GB)|hyperpage}{535}
-\indexentry {Government and Binding (GB)|hyperpage}{535}
-\indexentry {Exceptional Case Marking (ECM)|hyperpage}{536}
-\indexentry {category!functional!Voice|hyperpage}{536}
-\indexentry {Agree|hyperpage}{536}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{537}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{537}
-\indexentry {raising|hyperpage}{538}
+\indexentry {depictive predicate|(hyperpage}{533}
+\indexentry {Government and Binding (GB)|hyperpage}{534}
+\indexentry {depictive predicate|)}{535}
+\indexentry {locality|)}{535}
+\indexentry {idiom|)}{535}
+\indexentry {recursion|(hyperpage}{535}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{535}
+\indexentry {Construction Grammar (CxG)|hyperpage}{535}
+\indexentry {self"=embedding|hyperpage}{536}
+\indexentry {genitive|hyperpage}{536}
+\indexentry {context"=free grammar!probabilistic (PCFG)|hyperpage}{536}
+\indexentry {self"=embedding|hyperpage}{536}
+\indexentry {construction!resultative|hyperpage}{536}
+\indexentry {recursion|)}{536}
+\indexentry {empty element|(hyperpage}{537}
+\indexentry {phrase structure grammar|hyperpage}{537}
+\indexentry {Government and Binding (GB)|hyperpage}{537}
+\indexentry {ellipsis|hyperpage}{537}
+\indexentry {uniformity|hyperpage}{537}
+\indexentry {Binding Theory|hyperpage}{537}
+\indexentry {scope|hyperpage}{537}
+\indexentry {pronoun!expletive|hyperpage}{537}
+\indexentry {inversion|hyperpage}{537}
+\indexentry {passive!impersonal|hyperpage}{537}
+\indexentry {Categorial Grammar (CG)|hyperpage}{538}
+\indexentry {type raising|hyperpage}{538}
+\indexentry {pronoun!relative|hyperpage}{538}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{538}
+\indexentry {extraction|hyperpage}{538}
 \indexentry {Lexical Functional Grammar (LFG)|hyperpage}{538}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{538}
-\indexentry {question tag|hyperpage}{538}
-\indexentry {subject|hyperpage}{538}
-\indexentry {Government and Binding (GB)|hyperpage}{538}
-\indexentry {idiom|(hyperpage}{538}
-\indexentry {Polish|hyperpage}{538}
-\indexentry {passive|hyperpage}{539}
-\indexentry {adjunction!ban|hyperpage}{540}
-\indexentry {functional uncertainty|hyperpage}{540}
-\indexentry {Construction Grammar (CxG)|hyperpage}{540}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{540}
-\indexentry {f"=structure|hyperpage}{540}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{541}
-\indexentry {depictive predicate|(hyperpage}{541}
-\indexentry {Government and Binding (GB)|hyperpage}{542}
-\indexentry {depictive predicate|)}{543}
-\indexentry {locality|)}{543}
-\indexentry {idiom|)}{543}
-\indexentry {recursion|(hyperpage}{543}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{543}
-\indexentry {Construction Grammar (CxG)|hyperpage}{543}
-\indexentry {self"=embedding|hyperpage}{544}
-\indexentry {genitive|hyperpage}{544}
-\indexentry {context"=free grammar!probabilistic (PCFG)|hyperpage}{544}
-\indexentry {self"=embedding|hyperpage}{544}
-\indexentry {construction!resultative|hyperpage}{544}
-\indexentry {recursion|)}{544}
-\indexentry {empty element|(hyperpage}{545}
-\indexentry {phrase structure grammar|hyperpage}{545}
+\indexentry {copula|hyperpage}{538}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{538}
+\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{538}
+\indexentry {Construction Grammar (CxG)|hyperpage}{539}
+\indexentry {Cognitive Grammar|hyperpage}{539}
+\indexentry {epsilon|hyperpage}{539}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{540}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{542}
+\indexentry {Lexical Functional Grammar (LFG)|(hyperpage}{544}
+\indexentry {Lexical Functional Grammar (LFG)|)}{544}
+\indexentry {repetitive|hyperpage}{545}
+\indexentry {restitutive|hyperpage}{545}
+\indexentry {CAUSE|hyperpage}{545}
+\indexentry {category!functional!AgrS|hyperpage}{545}
+\indexentry {category!functional!AgrO|hyperpage}{545}
+\indexentry {agreement!object|hyperpage}{545}
+\indexentry {category!functional!Voice|hyperpage}{545}
+\indexentry {category!functional!T|hyperpage}{545}
 \indexentry {Government and Binding (GB)|hyperpage}{545}
-\indexentry {ellipsis|hyperpage}{545}
-\indexentry {uniformity|hyperpage}{545}
-\indexentry {Binding Theory|hyperpage}{545}
-\indexentry {scope|hyperpage}{545}
-\indexentry {pronoun!expletive|hyperpage}{545}
-\indexentry {inversion|hyperpage}{545}
-\indexentry {passive!impersonal|hyperpage}{545}
+\indexentry {Constraint Language for Lambda"=Structures (CLLS)|hyperpage}{546}
+\indexentry {underspecification|hyperpage}{546}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{546}
+\indexentry {Underspecified Discourse Representation Theory (UDRT)|hyperpage}{546}
+\indexentry {Hole Semantics|hyperpage}{546}
 \indexentry {Categorial Grammar (CG)|hyperpage}{546}
-\indexentry {type raising|hyperpage}{546}
-\indexentry {pronoun!relative|hyperpage}{546}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{546}
-\indexentry {extraction|hyperpage}{546}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{546}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{546}
-\indexentry {copula|hyperpage}{546}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{546}
-\indexentry {Tree Adjoining Grammar (TAG)!Vector (V-TAG)|hyperpage}{546}
-\indexentry {Construction Grammar (CxG)|hyperpage}{547}
-\indexentry {Cognitive Grammar|hyperpage}{547}
-\indexentry {epsilon|hyperpage}{547}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{548}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{550}
-\indexentry {Lexical Functional Grammar (LFG)|(hyperpage}{552}
-\indexentry {Lexical Functional Grammar (LFG)|)}{552}
-\indexentry {repetitive|hyperpage}{553}
-\indexentry {restitutive|hyperpage}{553}
-\indexentry {CAUSE|hyperpage}{553}
-\indexentry {category!functional!AgrS|hyperpage}{553}
-\indexentry {category!functional!AgrO|hyperpage}{553}
-\indexentry {agreement!object|hyperpage}{553}
-\indexentry {category!functional!Voice|hyperpage}{553}
-\indexentry {category!functional!T|hyperpage}{553}
-\indexentry {Government and Binding (GB)|hyperpage}{553}
-\indexentry {Constraint Language for Lambda"=Structures (CLLS)|hyperpage}{554}
-\indexentry {underspecification|hyperpage}{554}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{554}
-\indexentry {Underspecified Discourse Representation Theory (UDRT)|hyperpage}{554}
-\indexentry {Hole Semantics|hyperpage}{554}
-\indexentry {Categorial Grammar (CG)|hyperpage}{554}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{554}
-\indexentry {agreement!object|hyperpage}{559}
-\indexentry {category!functional!AgrO|hyperpage}{559}
-\indexentry {empty element|)}{559}
-\indexentry {empty element|(hyperpage}{559}
-\indexentry {lexical rule|(hyperpage}{559}
-\indexentry {transformation|(hyperpage}{559}
-\indexentry {passive|hyperpage}{559}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{559}
-\indexentry {Categorial Grammar (CG)|hyperpage}{559}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{560}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{560}
-\indexentry {resultative construction|hyperpage}{561}
-\indexentry {construction!resultative|(hyperpage}{561}
-\indexentry {empty element|)}{562}
-\indexentry {lexical rule|)}{562}
-\indexentry {transformation|)}{562}
-\indexentry {construction!resultative|)}{562}
-\indexentry {type raising|hyperindexformat{\infn {5}}}{562}
-\indexentry {Minimalist Program (MP)|hyperindexformat{\infn {5}}}{562}
-\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {5}}}{562}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {5}}}{562}
-\indexentry {category!functional!PassP|hyperpage}{565}
-\indexentry {category!functional!v@\textit {v}|hyperpage}{565}
-\indexentry {Construction Grammar (CxG)|hyperpage}{567}
-\indexentry {category!functional!Perf|hyperpage}{567}
-\indexentry {category!functional!Pass|hyperpage}{567}
-\indexentry {Universal Grammar (UG)|hyperpage}{569}
-\indexentry {Agree|hyperindexformat{\infn {1}}}{569}
-\indexentry {passive!remote|hyperpage}{570}
-\indexentry {rising|hyperpage}{571}
-\indexentry {projectivity|hyperpage}{572}
-\indexentry {Construction Grammar (CxG)|hyperpage}{576}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{580}
-\indexentry {aspect|hyperpage}{580}
-\indexentry {activity|hyperpage}{580}
-\indexentry {accomplishment|hyperpage}{580}
-\indexentry {change of state|hyperpage}{580}
-\indexentry {construction!Caused"=Motion|hyperpage}{582}
-\indexentry {construction!Caused"=Motion|hyperpage}{588}
-\indexentry {construction!resultative|(hyperpage}{589}
-\indexentry {inheritance|hyperpage}{590}
-\indexentry {benefactive|(hyperpage}{591}
-\indexentry {passive|hyperindexformat{\infn {21}}}{591}
-\indexentry {information structure|hyperindexformat{\infn {21}}}{591}
-\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {22}}}{591}
-\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {22}}}{591}
-\indexentry {passive|(hyperpage}{592}
-\indexentry {passive|)}{592}
-\indexentry {construction!Caused"=Motion|hyperpage}{592}
-\indexentry {ambiguity!spurious|hyperpage}{593}
-\indexentry {benefactive|)}{594}
-\indexentry {category!functional!v@\textit {v}|(hyperpage}{595}
-\indexentry {category!functional!v@\textit {v}|)}{598}
-\indexentry {verb!unaccusative|hyperpage}{599}
-\indexentry {semantic role|hyperpage}{604}
-\indexentry {branching!binary|hyperpage}{605}
-\indexentry {Neo-Davidsonian semantics|hyperpage}{606}
-\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{607}
-\indexentry {raising|(hyperpage}{607}
-\indexentry {construction!resultative|(hyperpage}{607}
-\indexentry {raising|)}{607}
-\indexentry {construction!resultative|)}{607}
-\indexentry {performance|hyperpage}{608}
-\indexentry {verbal complex|hyperpage}{608}
-\indexentry {functional uncertainty|hyperpage}{608}
-\indexentry {Construction Grammar(CxG)|(hyperpage}{612}
-\indexentry {inheritance|(hyperpage}{612}
-\indexentry {idiom|hyperpage}{612}
-\indexentry {inheritance!default|hyperpage}{613}
-\indexentry {inheritance|)}{614}
-\indexentry {Construction Grammar (CxG)|hyperpage}{617}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{617}
-\indexentry {fronting!apparent multiple|hyperindexformat{\infn {39}}}{618}
-\indexentry {Government and Binding (GB)|hyperindexformat{\infn {44}}}{620}
-\indexentry {Minimalist Program (MP)|hyperindexformat{\infn {44}}}{620}
-\indexentry {type raising!backward|hyperpage}{621}
-\indexentry {composition!backward|hyperpage}{621}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{622}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{622}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{623}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{623}
-\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {45}}}{623}
-\indexentry {constituent!discontinuous|hyperpage}{624}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{624}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{624}
-\indexentry {locative alternation|hyperpage}{626}
-\indexentry {construction!Caused"=Motion|hyperpage}{628}
-\indexentry {construction!Caused"=Motion|hyperpage}{629}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {49}}}{630}
-\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {49}}}{630}
-\indexentry {scope|hyperindexformat{\infn {49}}}{630}
-\indexentry {Across the Board Extraction|hyperindexformat{\infn {49}}}{630}
-\indexentry {fronting!apparent multiple|hyperindexformat{\infn {49}}}{630}
-\indexentry {statistics|(hyperpage}{632}
-\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|(hyperpage}{632}
-\indexentry {empty element|hyperpage}{633}
-\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|)}{634}
-\indexentry {directive|hyperpage}{636}
-\indexentry {empty head|hyperpage}{637}
-\indexentry {ellipsis|hyperpage}{638}
-\indexentry {antipassive|(hyperpage}{638}
-\indexentry {Government and Binding (GB)|hyperpage}{639}
-\indexentry {Burzio's Generalization|hyperpage}{639}
-\indexentry {Distributed Morphology|hyperpage}{639}
-\indexentry {verb position|hyperpage}{639}
-\indexentry {Universal Grammar (UG)|hyperpage}{640}
-\indexentry {verb position|hyperpage}{641}
-\indexentry {antipassive|)}{642}
-\indexentry {verb!serial|(hyperpage}{643}
-\indexentry {verb!serial|)}{644}
-\indexentry {relative clause|(hyperpage}{644}
-\indexentry {interrogative clause|(hyperpage}{644}
-\indexentry {empty element|hyperpage}{645}
-\indexentry {Government and Binding (GB)|hyperpage}{645}
-\indexentry {valence!change|hyperpage}{646}
-\indexentry {morphology|hyperpage}{646}
-\indexentry {Government and Binding (GB)|hyperpage}{646}
-\indexentry {Minimalist Program (MP)|hyperpage}{646}
-\indexentry {wh-exclamative@\emph {wh}"=exclamative|hyperpage}{646}
-\indexentry {topicalization|hyperpage}{646}
-\indexentry {relative clause|hyperpage}{646}
-\indexentry {the-clause@\emph {the}-clause|hyperpage}{646}
-\indexentry {inheritance|hyperpage}{647}
-\indexentry {empty head|hyperpage}{647}
-\indexentry {relative clause|)}{647}
-\indexentry {interrogative clause|)}{647}
-\indexentry {construction!N-P-N|(hyperpage}{647}
-\indexentry {X theory@\xbar theory|hyperpage}{647}
-\indexentry {$+$|hyperpage}{648}
-\indexentry {construction!N-P-N|)}{649}
-\indexentry {Construction Grammar (CxG)|)}{649}
-\indexentry {morphology|hyperpage}{652}
-\indexentry {passive|hyperpage}{652}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{652}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{652}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{652}
-\indexentry {verb|hyperpage}{653}
-\indexentry {parameter|hyperpage}{653}
-\indexentry {acquisition|(hyperpage}{653}
-\indexentry {acquisition|)}{653}
-\indexentry {root|hyperpage}{653}
-\indexentry {verb!unaccusative|hyperpage}{653}
-\indexentry {verb!unergative|hyperpage}{653}
-\indexentry {stem|hyperpage}{654}
-\indexentry {word|hyperpage}{654}
-\indexentry {pronoun|hyperpage}{654}
-\indexentry {inflection|hyperpage}{654}
-\indexentry {derivation|hyperpage}{654}
-\indexentry {principle!Semantics|hyperpage}{654}
-\indexentry {principle!case|hyperpage}{654}
-\indexentry {case!nominative|hyperpage}{654}
-\indexentry {case!accusative|hyperpage}{654}
-\indexentry {case!ergative|hyperpage}{654}
-\indexentry {case!absolutive|hyperpage}{654}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{656}
-\indexentry {Merge!External|hyperpage}{658}
-\indexentry {branching!binary|hyperpage}{658}
-\indexentry {partial verb phrase fronting|hyperpage}{660}
-\indexentry {third construction|hyperpage}{660}
-\indexentry {performance|hyperpage}{661}
-\indexentry {gene|hyperpage}{662}
-\indexentry {universal!implicative|hyperpage}{662}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{665}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{665}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{665}
-\indexentry {Construction Grammar (CxG)|hyperpage}{665}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{665}
-\indexentry {Minimalist Program (MP)|hyperpage}{665}
-\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{665}
-\indexentry {argument!designated|hyperpage}{665}
-\indexentry {Universal Base Hypothesis|hyperpage}{665}
-\indexentry {grammatical function|hyperpage}{666}
-\indexentry {inheritance|hyperpage}{666}
-\indexentry {Categorial Grammar (CG)|hyperpage}{667}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{667}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{667}
-\indexentry {Construction Grammar (CxG)|hyperpage}{667}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{667}
-\indexentry {Government and Binding (GB)|hyperpage}{667}
-\indexentry {Minimalist Program (MP)|hyperpage}{667}
-\indexentry {introspection|hyperpage}{667}
-\indexentry {corpus linguistics|hyperpage}{667}
-\indexentry {list|hyperpage}{679}
-\indexentry {list!difference|hyperpage}{679}
+\indexentry {agreement!object|hyperpage}{551}
+\indexentry {category!functional!AgrO|hyperpage}{551}
+\indexentry {empty element|)}{551}
+\indexentry {empty element|(hyperpage}{551}
+\indexentry {lexical rule|(hyperpage}{551}
+\indexentry {transformation|(hyperpage}{551}
+\indexentry {passive|hyperpage}{551}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{551}
+\indexentry {Categorial Grammar (CG)|hyperpage}{551}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{552}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{552}
+\indexentry {resultative construction|hyperpage}{553}
+\indexentry {construction!resultative|(hyperpage}{553}
+\indexentry {empty element|)}{554}
+\indexentry {lexical rule|)}{554}
+\indexentry {transformation|)}{554}
+\indexentry {construction!resultative|)}{554}
+\indexentry {type raising|hyperindexformat{\infn {5}}}{554}
+\indexentry {Minimalist Program (MP)|hyperindexformat{\infn {5}}}{554}
+\indexentry {Categorial Grammar (CG)|hyperindexformat{\infn {5}}}{554}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {5}}}{554}
+\indexentry {category!functional!PassP|hyperpage}{557}
+\indexentry {category!functional!v@\textit {v}|hyperpage}{557}
+\indexentry {Construction Grammar (CxG)|hyperpage}{559}
+\indexentry {category!functional!Perf|hyperpage}{559}
+\indexentry {category!functional!Pass|hyperpage}{559}
+\indexentry {Universal Grammar (UG)|hyperpage}{561}
+\indexentry {Agree|hyperindexformat{\infn {1}}}{561}
+\indexentry {passive!remote|hyperpage}{562}
+\indexentry {rising|hyperpage}{563}
+\indexentry {projectivity|hyperpage}{564}
+\indexentry {Construction Grammar (CxG)|hyperpage}{568}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{572}
+\indexentry {aspect|hyperpage}{572}
+\indexentry {activity|hyperpage}{572}
+\indexentry {accomplishment|hyperpage}{572}
+\indexentry {change of state|hyperpage}{572}
+\indexentry {construction!Caused"=Motion|hyperpage}{574}
+\indexentry {construction!Caused"=Motion|hyperpage}{580}
+\indexentry {construction!resultative|(hyperpage}{581}
+\indexentry {inheritance|hyperpage}{582}
+\indexentry {benefactive|(hyperpage}{583}
+\indexentry {passive|hyperindexformat{\infn {21}}}{583}
+\indexentry {information structure|hyperindexformat{\infn {21}}}{583}
+\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {22}}}{583}
+\indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {22}}}{583}
+\indexentry {passive|(hyperpage}{584}
+\indexentry {passive|)}{584}
+\indexentry {construction!Caused"=Motion|hyperpage}{584}
+\indexentry {ambiguity!spurious|hyperpage}{585}
+\indexentry {benefactive|)}{586}
+\indexentry {category!functional!v@\textit {v}|(hyperpage}{587}
+\indexentry {category!functional!v@\textit {v}|)}{590}
+\indexentry {verb!unaccusative|hyperpage}{591}
+\indexentry {semantic role|hyperpage}{596}
+\indexentry {branching!binary|hyperpage}{597}
+\indexentry {Neo-Davidsonian semantics|hyperpage}{598}
+\indexentry {Minimal Recursion Semantics (MRS)|hyperpage}{599}
+\indexentry {raising|(hyperpage}{599}
+\indexentry {construction!resultative|(hyperpage}{599}
+\indexentry {raising|)}{599}
+\indexentry {construction!resultative|)}{599}
+\indexentry {performance|hyperpage}{600}
+\indexentry {verbal complex|hyperpage}{600}
+\indexentry {functional uncertainty|hyperpage}{600}
+\indexentry {Construction Grammar(CxG)|(hyperpage}{604}
+\indexentry {inheritance|(hyperpage}{604}
+\indexentry {idiom|hyperpage}{604}
+\indexentry {inheritance!default|hyperpage}{605}
+\indexentry {inheritance|)}{606}
+\indexentry {Construction Grammar (CxG)|hyperpage}{609}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{609}
+\indexentry {fronting!apparent multiple|hyperindexformat{\infn {39}}}{610}
+\indexentry {Government and Binding (GB)|hyperindexformat{\infn {44}}}{612}
+\indexentry {Minimalist Program (MP)|hyperindexformat{\infn {44}}}{612}
+\indexentry {type raising!backward|hyperpage}{613}
+\indexentry {composition!backward|hyperpage}{613}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{614}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{614}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{615}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{615}
+\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {45}}}{615}
+\indexentry {constituent!discontinuous|hyperpage}{616}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{616}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{616}
+\indexentry {locative alternation|hyperpage}{618}
+\indexentry {construction!Caused"=Motion|hyperpage}{620}
+\indexentry {construction!Caused"=Motion|hyperpage}{621}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {49}}}{622}
+\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {49}}}{622}
+\indexentry {scope|hyperindexformat{\infn {49}}}{622}
+\indexentry {Across the Board Extraction|hyperindexformat{\infn {49}}}{622}
+\indexentry {fronting!apparent multiple|hyperindexformat{\infn {49}}}{622}
+\indexentry {statistics|(hyperpage}{624}
+\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|(hyperpage}{624}
+\indexentry {empty element|hyperpage}{625}
+\indexentry {Unsupervised Data-Oriented Parsing (U-DOP)|)}{626}
+\indexentry {directive|hyperpage}{628}
+\indexentry {empty head|hyperpage}{629}
+\indexentry {ellipsis|hyperpage}{630}
+\indexentry {antipassive|(hyperpage}{630}
+\indexentry {Government and Binding (GB)|hyperpage}{631}
+\indexentry {Burzio's Generalization|hyperpage}{631}
+\indexentry {Distributed Morphology|hyperpage}{631}
+\indexentry {verb position|hyperpage}{631}
+\indexentry {Universal Grammar (UG)|hyperpage}{632}
+\indexentry {verb position|hyperpage}{633}
+\indexentry {antipassive|)}{634}
+\indexentry {verb!serial|(hyperpage}{635}
+\indexentry {verb!serial|)}{636}
+\indexentry {relative clause|(hyperpage}{636}
+\indexentry {interrogative clause|(hyperpage}{636}
+\indexentry {empty element|hyperpage}{637}
+\indexentry {Government and Binding (GB)|hyperpage}{637}
+\indexentry {valence!change|hyperpage}{638}
+\indexentry {morphology|hyperpage}{638}
+\indexentry {Government and Binding (GB)|hyperpage}{638}
+\indexentry {Minimalist Program (MP)|hyperpage}{638}
+\indexentry {wh-exclamative@\emph {wh}"=exclamative|hyperpage}{638}
+\indexentry {topicalization|hyperpage}{638}
+\indexentry {relative clause|hyperpage}{638}
+\indexentry {the-clause@\emph {the}-clause|hyperpage}{638}
+\indexentry {inheritance|hyperpage}{639}
+\indexentry {empty head|hyperpage}{639}
+\indexentry {relative clause|)}{639}
+\indexentry {interrogative clause|)}{639}
+\indexentry {construction!N-P-N|(hyperpage}{639}
+\indexentry {X theory@\xbar theory|hyperpage}{639}
+\indexentry {$+$|hyperpage}{640}
+\indexentry {construction!N-P-N|)}{641}
+\indexentry {Construction Grammar (CxG)|)}{641}
+\indexentry {morphology|hyperpage}{644}
+\indexentry {passive|hyperpage}{644}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{644}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{644}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{644}
+\indexentry {verb|hyperpage}{645}
+\indexentry {parameter|hyperpage}{645}
+\indexentry {acquisition|(hyperpage}{645}
+\indexentry {acquisition|)}{645}
+\indexentry {root|hyperpage}{645}
+\indexentry {verb!unaccusative|hyperpage}{645}
+\indexentry {verb!unergative|hyperpage}{645}
+\indexentry {stem|hyperpage}{646}
+\indexentry {word|hyperpage}{646}
+\indexentry {pronoun|hyperpage}{646}
+\indexentry {inflection|hyperpage}{646}
+\indexentry {derivation|hyperpage}{646}
+\indexentry {principle!Semantics|hyperpage}{646}
+\indexentry {principle!case|hyperpage}{646}
+\indexentry {case!nominative|hyperpage}{646}
+\indexentry {case!accusative|hyperpage}{646}
+\indexentry {case!ergative|hyperpage}{646}
+\indexentry {case!absolutive|hyperpage}{646}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{648}
+\indexentry {Merge!External|hyperpage}{650}
+\indexentry {branching!binary|hyperpage}{650}
+\indexentry {partial verb phrase fronting|hyperpage}{652}
+\indexentry {third construction|hyperpage}{652}
+\indexentry {performance|hyperpage}{653}
+\indexentry {gene|hyperpage}{654}
+\indexentry {universal!implicative|hyperpage}{654}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{657}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{657}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{657}
+\indexentry {Construction Grammar (CxG)|hyperpage}{657}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{657}
+\indexentry {Minimalist Program (MP)|hyperpage}{657}
+\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{657}
+\indexentry {argument!designated|hyperpage}{657}
+\indexentry {Universal Base Hypothesis|hyperpage}{657}
+\indexentry {grammatical function|hyperpage}{658}
+\indexentry {inheritance|hyperpage}{658}
+\indexentry {Categorial Grammar (CG)|hyperpage}{659}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{659}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{659}
+\indexentry {Construction Grammar (CxG)|hyperpage}{659}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{659}
+\indexentry {Government and Binding (GB)|hyperpage}{659}
+\indexentry {Minimalist Program (MP)|hyperpage}{659}
+\indexentry {introspection|hyperpage}{659}
+\indexentry {corpus linguistics|hyperpage}{659}
+\indexentry {list|hyperpage}{671}
+\indexentry {list!difference|hyperpage}{671}
