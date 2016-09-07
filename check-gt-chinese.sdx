@@ -540,64 +540,60 @@
 \indexentry {dominance!immediate|hyperpage}{165}
 \indexentry {linear precedence|hyperpage}{165}
 \indexentry {ID/LP grammar|hyperpage}{165}
-\indexentry {Linear Precedence Rule|hyperpage}{166}
-\indexentry {LP"=rule|hyperpage}{166}
+\indexentry {Linear Precedence Rule|hyperpage}{165}
+\indexentry {LP"=rule|hyperpage}{165}
 \indexentry {constituent order|hyperpage}{166}
 \indexentry {metarule|(hyperpage}{166}
-\indexentry {metarule|)}{168}
-\indexentry {entity|hyperpage}{168}
-\indexentry {truth value|hyperpage}{168}
-\indexentry {functional application|hyperpage}{168}
-\indexentry {quantifier!universal|hyperpage}{169}
-\indexentry {rule"=to"=rule hypothesis|hyperpage}{169}
-\indexentry {adjunct|(hyperpage}{170}
-\indexentry {capacity!generative|hyperpage}{170}
-\indexentry {Kleene star|hyperpage}{170}
-\indexentry {*|hyperpage}{170}
-\indexentry {adjunct|)}{171}
-\indexentry {passive|(hyperpage}{171}
-\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {2}}}{171}
-\indexentry {f"=structure|hyperindexformat{\infn {2}}}{171}
-\indexentry {c"=structure|hyperindexformat{\infn {2}}}{171}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {2}}}{171}
-\indexentry {Government and Binding (GB)|hyperpage}{172}
-\indexentry {Minimalist Program (MP)|hyperpage}{172}
-\indexentry {metarule|(hyperpage}{173}
-\indexentry {lexical rule|hyperpage}{173}
-\indexentry {passive!impersonal|hyperpage}{173}
-\indexentry {metarule|)}{174}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{174}
-\indexentry {Categorial Grammar (CG)|hyperpage}{174}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{174}
-\indexentry {Construction Grammar (CxG)|hyperpage}{174}
-\indexentry {Dependency Grammar (DG)|hyperpage}{174}
-\indexentry {passive!impersonal|)}{174}
-\indexentry {passive|)}{174}
-\indexentry {Verb position|(hyperpage}{174}
-\indexentry {Government and Binding (GB)|hyperindexformat{\infn {5}}}{174}
-\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {5}}}{174}
-\indexentry {verb position|)}{175}
-\indexentry {long"=distance dependency|(hyperpage}{175}
-\indexentry {/|hyperpage}{175}
-\indexentry {filler|hyperpage}{176}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {14}}}{177}
-\indexentry {Dependency Grammar (DG)|hyperindexformat{\infn {14}}}{177}
-\indexentry {Foot Feature Principle|hyperpage}{178}
-\indexentry {long"=distance dependency|)}{178}
-\indexentry {scope|hyperindexformat{\infn {14}}}{178}
-\indexentry {coordination|hyperindexformat{\infn {14}}}{178}
-\indexentry {apparent multiple fronting|hyperindexformat{\infn {14}}}{178}
-\indexentry {Across the Board Extraction|hyperpage}{179}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{180}
-\indexentry {Construction Grammar (CxG)|hyperpage}{180}
-\indexentry {partial verb phrase fronting|(hyperpage}{180}
-\indexentry {Categorial Grammar (CG)|hyperpage}{181}
-\indexentry {partial verb phrase fronting|)}{181}
-\indexentry {context"=free grammar|hyperpage}{181}
-\indexentry {capacity!generative|hyperpage}{181}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{181}
-\indexentry {Construction Grammar (CxG)|hyperpage}{181}
-\indexentry {Categorial Grammar (CG)|hyperpage}{182}
+\indexentry {metarule|)}{167}
+\indexentry {entity|hyperpage}{167}
+\indexentry {truth value|hyperpage}{167}
+\indexentry {functional application|hyperpage}{167}
+\indexentry {quantifier!universal|hyperpage}{168}
+\indexentry {rule"=to"=rule hypothesis|hyperpage}{168}
+\indexentry {adjunct|(hyperpage}{169}
+\indexentry {capacity!generative|hyperpage}{169}
+\indexentry {Kleene star|hyperpage}{169}
+\indexentry {*|hyperpage}{169}
+\indexentry {adjunct|)}{170}
+\indexentry {Lexical Functional Grammar (LFG)|hyperindexformat{\infn {2}}}{170}
+\indexentry {f"=structure|hyperindexformat{\infn {2}}}{170}
+\indexentry {c"=structure|hyperindexformat{\infn {2}}}{170}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {2}}}{170}
+\indexentry {Government and Binding (GB)|hyperpage}{171}
+\indexentry {Minimalist Program (MP)|hyperpage}{171}
+\indexentry {metarule|(hyperpage}{171}
+\indexentry {lexical rule|hyperpage}{172}
+\indexentry {passive!impersonal|hyperpage}{172}
+\indexentry {metarule|)}{172}
+\indexentry {Government and Binding (GB)|hyperindexformat{\infn {5}}}{172}
+\indexentry {Tree Adjoining Grammar (TAG)|hyperindexformat{\infn {5}}}{172}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{173}
+\indexentry {Categorial Grammar (CG)|hyperpage}{173}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{173}
+\indexentry {Construction Grammar (CxG)|hyperpage}{173}
+\indexentry {Dependency Grammar (DG)|hyperpage}{173}
+\indexentry {passive|)}{173}
+\indexentry {Verb position|(hyperpage}{173}
+\indexentry {verb position|)}{173}
+\indexentry {filler|hyperpage}{174}
+\indexentry {filler|hyperpage}{174}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperindexformat{\infn {14}}}{175}
+\indexentry {scope|hyperindexformat{\infn {14}}}{175}
+\indexentry {coordination|hyperindexformat{\infn {14}}}{175}
+\indexentry {apparent multiple fronting|hyperindexformat{\infn {14}}}{175}
+\indexentry {Foot Feature Principle|hyperpage}{176}
+\indexentry {long"=distance dependency|)}{176}
+\indexentry {Across the Board Extraction|hyperpage}{176}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{177}
+\indexentry {Construction Grammar (CxG)|hyperpage}{177}
+\indexentry {partial verb phrase fronting|(hyperpage}{177}
+\indexentry {Categorial Grammar (CG)|hyperpage}{178}
+\indexentry {partial verb phrase fronting|)}{178}
+\indexentry {context"=free grammar|hyperpage}{178}
+\indexentry {capacity!generative|hyperpage}{178}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{179}
+\indexentry {Construction Grammar (CxG)|hyperpage}{179}
+\indexentry {Categorial Grammar (CG)|hyperpage}{179}
 \indexentry {feature"=value structure|hyperpage}{183}
 \indexentry {attribute"=value structure|hyperpage}{183}
 \indexentry {attribute"=value matrix (AVM)|hyperpage}{183}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 SEP 2016 17:32
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  7 SEP 2016 10:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3109,7 +3109,48 @@ Library (tcolorbox): 'tcbskins.code.tex' version '3.91'
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
 Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '3.91'
-))) (./check-gt-chinese.aux)
+))) (./check-gt-chinese.aux (./chapters/preface.aux) (./chapters/1-begriffe.aux
+) (./chapters/2-psg.aux) (./chapters/3-gb.aux) (./chapters/3-minimalism.aux)
+(./chapters/4-gpsg.aux
+
+LaTeX Warning: Label `1@xvr' multiply defined.
+
+
+LaTeX Warning: Label `1@vr' multiply defined.
+
+
+LaTeX Warning: Label `2@xvr' multiply defined.
+
+
+LaTeX Warning: Label `2@vr' multiply defined.
+
+
+LaTeX Warning: Label `3@xvr' multiply defined.
+
+
+LaTeX Warning: Label `3@vr' multiply defined.
+
+
+LaTeX Warning: Label `4@xvr' multiply defined.
+
+
+LaTeX Warning: Label `4@vr' multiply defined.
+
+
+LaTeX Warning: Label `5@xvr' multiply defined.
+
+
+LaTeX Warning: Label `5@vr' multiply defined.
+
+) (./chapters/5-merkmalstrukturen.aux) (./chapters/6-lfg.aux)
+(./chapters/7-cg.aux) (./chapters/8-hpsg.aux) (./chapters/9-cxg.aux)
+(./chapters/dg.aux) (./chapters/tag.aux) (./chapters/ot.aux)
+(./chapters/innateness.aux) (./chapters/mts.aux) (./chapters/competence.aux)
+(./chapters/acquisition.aux) (./chapters/complexity.aux)
+(./chapters/branching-locality-recursion.aux) (./chapters/empty.aux)
+(./chapters/movement.aux) (./chapters/phrasal.aux) (./chapters/coregram.aux)
+(./chapters/conclusions.aux) (./chapters/loesungen.aux)
+(./langsci/graphics/didyoulikethisbook.aux))
 \openout1 = `check-gt-chinese.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/nxlmi/m/it on input line 4.
@@ -3258,10 +3299,6 @@ LaTeX Info: Redefining \ref on input line 4.
 LaTeX Info: Redefining \pageref on input line 4.
 LaTeX Info: Redefining \nameref on input line 4.
 LaTeX Info: Redefining \Ref on input line 4.
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
 Package lastpage Info: Please have a look at the pageslts package at
@@ -3269,6 +3306,7 @@ Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             ! on input line 4.
 Package ogonek Info: T1 is known on input line 4.
 Package ogonek Info: Defining ogonek for OT1 on input line 4.
+
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
 * 
@@ -3443,27 +3481,29 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             See the microtype manual for details.
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
+(./check-gt-chinese.toc [7
 
-Package hyperref Warning: old toc file detected, not used; run LaTeX again.
 
+]
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
+
+[8] [9] [10] [11] [12] [13])
 \tf@toc=\write14
 \openout14 = `check-gt-chinese.toc'.
 
-[7
-
-
-] [8
+ [14] [1
 
 
 
-] [1
 
 
 ] [2]
-\openout2 = `chapters/1-begriffe.aux'.
+\openout2 = `chapters/4-gpsg.aux'.
 
- (./chapters/1-begriffe.tex
-chapter 1.
+ (./chapters/4-gpsg.tex
+chapter 5.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3479,50 +3519,11 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-
-LaTeX Warning: Reference `sec-wozu-syntax' on page 3 undefined on input line 6.
-
+[161
 
 
-LaTeX Warning: Reference `sec-formal' on page 3 undefined on input line 6.
 
 
-LaTeX Warning: Reference `konstituententests' on page 3 undefined on input line
- 6.
-
-
-LaTeX Warning: Reference `sec-topo' on page 3 undefined on input line 6.
-
-
-LaTeX Warning: Reference `konstituententests' on page 3 undefined on input line
- 6.
-
-
-LaTeX Warning: Reference `Abschnitt-Wortarten' on page 3 undefined on input lin
-e 6.
-
-
-LaTeX Warning: Reference `Abschnitt-Kopf' on page 3 undefined on input line 6.
-
-
-LaTeX Warning: Reference `Abschnitt-Argument-Adjunkt' on page 3 undefined on in
-put line 6.
-
-
-LaTeX Warning: Reference `Abschnitt-GF' on page 3 undefined on input line 6.
-
-
-LaTeX Warning: Reference `Abschnitt-Toplogie' on page 3 undefined on input line
- 6.
-
-
-Package natbib Warning: Citation `Saussure16a' on page 3 undefined on input lin
-e 30.
-
-
-Package natbib Warning: Citation `Saussure16a-Fr' undefined on input line 30.
-
-[3
 
 
 
@@ -3584,246 +3585,55 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
-
-
-Package natbib Warning: Citation `NKN2001a' on page 4 undefined on input line 8
-3.
-
-
-Package natbib Warning: Citation `KS2008a-u' on page 4 undefined on input line 
-83.
-
-
-Package natbib Warning: Citation `OW2012a' on page 4 undefined on input line 83
-.
-
-
-Package natbib Warning: Citation `Leiss2003a' on page 4 undefined on input line
- 83.
-
-
-Package natbib Warning: Citation `Chomsky57a' on page 4 undefined on input line
- 83.
-
-
-Package natbib Warning: Citation `PS2010a' on page 4 undefined on input line 83
-.
-
-
-LaTeX Warning: Reference `Abschnitt-Rekursion' on page 4 undefined on input lin
-e 83.
-
-
-Package natbib Warning: Citation `Harris57a' on page 4 undefined on input line 
-92.
-
-
-Package natbib Warning: Citation `Chomsky57a' on page 4 undefined on input line
- 92.
-
-
-Package natbib Warning: Citation `Pulvermueller2010a' on page 4 undefined on in
-put line 92.
-
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 127.
-
-[4]
-
-Package natbib Warning: Citation `Chomsky57a' on page 5 undefined on input line
- 185.
-
-
-Package natbib Warning: Citation `Dowty79a' on page 5 undefined on input line 1
-93.
-
-
-Package natbib Warning: Citation `Bierwisch63' on page 5 undefined on input lin
-e 196.
-
-
-Package natbib Warning: Citation `Mueller99a' on page 5 undefined on input line
- 196.
-
-
-Package natbib Warning: Citation `Bender2008c' on page 5 undefined on input lin
-e 196.
-
-
-LaTeX Warning: Reference `sec-formalization-gb' on page 5 undefined on input li
-ne 196.
-
-[5]
-
-LaTeX Warning: Reference `Beispiel-Alle-Studenten-lesen' on page 6 undefined on
- input line 206.
-
-
-LaTeX Warning: Reference `einbettung-dass-Saetze' on page 6 undefined on input 
-line 220.
-
-
-LaTeX Warning: Hyper reference `Abbildung-Schachteln' on page 6 undefined on in
-put line 220.
-
-
-LaTeX Warning: Reference `Abbildung-Schachteln' on page 6 undefined on input li
-ne 220.
-
-
-LaTeX Warning: Reference `Abbildung-Schachteln' on page 6 undefined on input li
-ne 247.
-
-[6]
-
-LaTeX Warning: Reference `sec-status-der-ktests' on page 7 undefined on input l
-ine 273.
-
-[7]
-
-LaTeX Warning: Reference `ex-das-buch-zu-lesen' on page 8 undefined on input li
-ne 369.
-
-[8]
-
-LaTeX Warning: Reference `ex-das-buch-zu-lesen' on page 9 undefined on input li
-ne 417.
-
-[9] [10]
-
-LaTeX Warning: Reference `bsp-dass-es-jetzt-regnet' on page 11 undefined on inp
-ut line 584.
-
-
-LaTeX Warning: Reference `bsp-er-sah-es-regnen' on page 11 undefined on input l
-ine 584.
-
-
-Package natbib Warning: Citation `Abraham95a-u' on page 11 undefined on input l
-ine 584.
-
-
-LaTeX Warning: Reference `bsp-dass-jetzt-es-regnet' on page 11 undefined on inp
-ut line 584.
-
-
-LaTeX Warning: Reference `bsp-es-sah-er-regnen' on page 11 undefined on input l
-ine 584.
-
-
-Package natbib Warning: Citation `Lenerz94a' on page 11 undefined on input line
- 584.
-
-
-Package natbib Warning: Citation `GS97a' on page 11 undefined on input line 584
-.
-
-[11]
-
-LaTeX Warning: Reference `bsp-v2' on page 12 undefined on input line 620.
-
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 12 undefined on in
-put line 620.
-
-
-Package natbib Warning: Citation `Bussmann83a' on page 12 undefined on input li
-ne 620.
-
-
-Package natbib Warning: Citation `Bussmann90a' on page 12 undefined on input li
-ne 620.
-
-
-Package natbib Warning: Citation `Bussmann83a' on page 12 undefined on input li
-ne 630.
-
-[12]
-Overfull \hbox (38.23055pt too wide) in paragraph at lines 664--665
-[]  [] [] [] [] [] [] [] [] [] [] [] 
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+ [162] [163] [164]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+ [165]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+ [166]
+Overfull \hbox (13.95311pt too wide) in paragraph at lines 449--459
+[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Gazdar, Klein, Pullum & Sag[] ([]1985[]
+: Chapter 9–10)[]\EU1/SimSun(0)/m/n/10 所 谓 的 语 义 学 源 于 \EU1/LinLibertine_R_B.ot
+f(0)/m/n/10 Richard[]Montague[]
  []
 
-[13]
-
-Package natbib Warning: Citation `deKuthy2002a' on page 14 undefined on input l
-ine 687.
-
-
-LaTeX Warning: Reference `bsp-mehr-vf' on page 14 undefined on input line 735.
-
-
-Package natbib Warning: Citation `Mueller2003b' on page 14 undefined on input l
-ine 735.
-
-
-Package natbib Warning: Citation `Mueller2005d' on page 14 undefined on input l
-ine 739.
-
-
-Package natbib Warning: Citation `MuellerGS' on page 14 undefined on input line
- 739.
-
-[14]
-
-LaTeX Warning: Reference `bsp-er-sah-es-regnen' on page 15 undefined on input l
-ine 756.
-
-
-LaTeX Warning: Reference `Abschnitt-Toplogie' on page 15 undefined on input lin
-e 802.
-
-
-LaTeX Warning: Reference `bsp-mehr-vf' on page 15 undefined on input line 802.
-
-
-LaTeX Warning: Reference `bsp-mehr-vf' on page 15 undefined on input line 802.
-
-
-Package natbib Warning: Citation `dKM2003a' on page 15 undefined on input line 
-802.
-
-
-Package natbib Warning: Citation `BC2010a' on page 15 undefined on input line 8
-02.
-
-[15]
-
-LaTeX Warning: Reference `ex-gapping' on page 16 undefined on input line 832.
-
-
-LaTeX Warning: Reference `ex-gapping' on page 16 undefined on input line 832.
-
-
-Package natbib Warning: Citation `Crysmann2003c' on page 16 undefined on input 
-line 832.
-
-
-LaTeX Warning: Reference `ex-gapping' on page 16 undefined on input line 832.
-
-[16]
-
-LaTeX Warning: Reference `sec-tesniere-pos' on page 17 undefined on input line 
-884.
-
-[17] [18] [19]
-
-LaTeX Warning: Reference `Seite-Adverbien-PP' on page 20 undefined on input lin
-e 1140.
-
-[20]
-
-LaTeX Warning: Hyper reference `Abbildung-Wortarten' on page 21 undefined on in
-put line 1174.
-
-
-LaTeX Warning: Reference `Abbildung-Wortarten' on page 21 undefined on input li
-ne 1174.
-
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
-put line 1174.
-
+[167] [168] [169] [170] [171] [172] [173]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+ [174]
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -3839,424 +3649,143 @@ put line 1174.
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
-put line 1196.
-
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 21 undefined on in
-put line 1196.
-
-[21]
-
-LaTeX Warning: Reference `Abbildung-Wortarten' on page 22 undefined on input li
-ne 1217.
-
-[22]
-
-Package natbib Warning: Citation `Duden84-Authors' on page 23 undefined on inpu
-t line 1258.
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+ [175] [176] [177] [178])
+[179] [417
 
 
-Overfull \hbox (0.88153pt too wide) in paragraph at lines 1262--1266
-[] [] [] [] [] [] [] []
+
+
+
+
+
+
+
+
+
+] [418] (./backmatter.tex (./check-gt-chinese.bbl
+chapter without number
+[681
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+] [682] [683] [684] [685] [686] [687] [688] [689]
+Underfull \hbox (badness 2080) in paragraph at lines 930--936
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Bolc, Leonard, Krzysztof Czuba, Anna Kupś
+ć, Małgorzata Marciniak, Agnieszka
+ []
+
+[690] [691] [692] [693] [694] [695] [696] [697] [698] [699] [700] [701]
+[702] [703]
+Underfull \hbox (badness 1226) in paragraph at lines 2457--2461
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Dürscheid, Christa. 1989.  \EU1/LinLibert
+ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
+ []
+
+[704] [705] [706] [707] [708] [709] [710] [711]
+Underfull \hbox (badness 10000) in paragraph at lines 3218--3222
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
+ Functional Grammar und
  []
 
 
-Overfull \hbox (11.74553pt too wide) in paragraph at lines 1269--1270
-[]  [] [] [] [] [] [] [] [] [] [] []
+Underfull \hbox (badness 5954) in paragraph at lines 3218--3222
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 Diskursrepräsentationstheorie als Grundlage
+n eines sprachverarbeitenden Sys-
+ []
+
+[712] [713] [714] [715] [716] [717] [718]
+Underfull \hbox (badness 5203) in paragraph at lines 3954--3959
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Heinecke, Johannes, Jürgen Kunze, Wolfgan
+g Menzel & Ingo Schröder. 1998.
  []
 
 
-Package natbib Warning: Citation `Eisenberg2004a' on page 23 undefined on input
- line 1277.
-
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 23 undefined on in
-put line 1277.
-
-
-Package natbib Warning: Citation `Eisenberg2004a' on page 23 undefined on input
- line 1291.
-
-[23]
-
-LaTeX Warning: Reference `Abbildung-Wortarten' on page 24 undefined on input li
-ne 1299.
-
-
-Overfull \hbox (13.69556pt too wide) in paragraph at lines 1330--1331
-[]  [] [] [] [] [] [] [] [] []
+Underfull \hbox (badness 7012) in paragraph at lines 3954--3959
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 Eliminative parsing with graded constraints
+.  In []Isabelle[] ([]1998[])[] 526–530.
  []
 
-[24]
-
-Package natbib Warning: Citation `SWB2003a' on page 25 undefined on input line 
-1351.
-
-
-LaTeX Warning: Reference `Wortart-adverbiales-Adjektiv' on page 25 undefined on
- input line 1388.
-
-
-Package natbib Warning: Citation `Eisenberg2004a' on page 25 undefined on input
- line 1396.
-
-[25]
-
-Package natbib Warning: Citation `Brame81a' on page 26 undefined on input line 
-1453.
-
-
-Package natbib Warning: Citation `Brame82a' on page 26 undefined on input line 
-1453.
-
-
-Package natbib Warning: Citation `Hudson84a' on page 26 undefined on input line
- 1453.
-
-
-Package natbib Warning: Citation `VH77a-u' on page 26 undefined on input line 1
-453.
-
-
-Package natbib Warning: Citation `Hellan86a' on page 26 undefined on input line
- 1453.
-
-
-Package natbib Warning: Citation `Abney87a' on page 26 undefined on input line 
-1453.
-
-
-Package natbib Warning: Citation `Netter94' on page 26 undefined on input line 
-1453.
-
-
-Package natbib Warning: Citation `Netter98a' on page 26 undefined on input line
- 1453.
-
-
-Package natbib Warning: Citation `vanLangendonck94a' on page 26 undefined on in
-put line 1453.
-
-
-Package natbib Warning: Citation `ps2' on page 26 undefined on input line 1453.
-
-
-
-Package natbib Warning: Citation `Demske2001a' on page 26 undefined on input li
-ne 1453.
-
-
-Package natbib Warning: Citation `MuellerLehrbuch1' on page 26 undefined on inp
-ut line 1454.
-
-
-Package natbib Warning: Citation `Hudson2004a' on page 26 undefined on input li
-ne 1454.
-
-
-Package natbib Warning: Citation `Bruening2009a' on page 26 undefined on input 
-line 1454.
-
-
-LaTeX Warning: Hyper reference `Abbildung-beschriftete-Schachteln' on page 26 u
-ndefined on input line 1466.
-
-
-LaTeX Warning: Reference `Abbildung-beschriftete-Schachteln' on page 26 undefin
-ed on input line 1466.
-
-[26]
-
-LaTeX Warning: Reference `Abbildung-Schachteln' on page 27 undefined on input l
-ine 1473.
-
-[27]
-
-Package natbib Warning: Citation `Tesniere59a-u' on page 28 undefined on input 
-line 1602.
-
-
-Package natbib Warning: Citation `Tesniere80a-u' undefined on input line 1602.
-
-
-LaTeX Warning: Hyper reference `abb-chemie-valenz' on page 28 undefined on inpu
-t line 1602.
-
-
-LaTeX Warning: Reference `abb-chemie-valenz' on page 28 undefined on input line
- 1602.
-
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-[28]
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 1666.
-
-
-LaTeX Warning: Reference `bsp-eine-schoene-frau' on page 29 undefined on input 
-line 1686.
-
-
-LaTeX Warning: Reference `Beispiel-Iteration-Adjektive' on page 29 undefined on
- input line 1692.
-
-
-LaTeX Warning: Reference `Beispiel-Iteration-Adjektive' on page 29 undefined on
- input line 1692.
-
-[29]
-
-LaTeX Warning: Reference `adj-kriterien' on page 30 undefined on input line 170
-6.
-
-
-LaTeX Warning: Reference `Beispiel-es-regnet' on page 30 undefined on input lin
-e 1706.
-
-
-LaTeX Warning: Reference `Beispiel-erholt-sich' on page 30 undefined on input l
-ine 1706.
-
-
-Package natbib Warning: Citation `Eisenberg94a' on page 30 undefined on input l
-ine 1742.
-
-[30]
-Overfull \hbox (0.17554pt too wide) in paragraph at lines 1772--1773
-[]  [] [] [] [] [] [] [] [] [] [] [] []
+[719] [720]
+Underfull \hbox (badness 1286) in paragraph at lines 4249--4254
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Höhle, Tilman N. 2016j.  Vorangestellte V
+erben und Komplementierer sind eine
+ []
+
+[721] [722]
+Underfull \hbox (badness 1616) in paragraph at lines 4413--4418
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Islam, Md. Asfaqul, K. M. Azharul Hasan &
+ Md. Mizanur Rahman. 2012.  Ba-
  []
 
 
-LaTeX Warning: Reference `sec-Adverbiale' on page 31 undefined on input line 18
-67.
-
-
-Package natbib Warning: Citation `Gross2003a' on page 31 undefined on input lin
-e 1877.
-
-
-Package natbib Warning: Citation `Pollard90a-Eng' on page 31 undefined on input
- line 1877.
-
-
-Package natbib Warning: Citation `Eisenberg94b' on page 31 undefined on input l
-ine 1877.
-
-
-Package natbib Warning: Citation `MuellerLehrbuch1' on page 31 undefined on inp
-ut line 1877.
-
-
-LaTeX Warning: Reference `Kapitel-LFG' on page 31 undefined on input line 1891.
-
-
-[31]
-
-Package natbib Warning: Citation `Keenan76b-u' on page 32 undefined on input li
-ne 1897.
-
-
-Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 18
-97.
-
-
-LaTeX Warning: Reference `Beispiel-mit-Kongruenz' on page 32 undefined on input
- line 1912.
-
-
-Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
-12.
-
-
-Package natbib Warning: Citation `Reis82' on page 32 undefined on input line 19
-40.
-
-[32]
-
-LaTeX Warning: Reference `bsp-den-maennern-wurde-geholfen' on page 33 undefined
- on input line 1967.
-
-
-Package natbib Warning: Citation `Reis82' on page 33 undefined on input line 19
-77.
-
-[33]
-
-Package natbib Warning: Citation `ZMT85a' on page 34 undefined on input line 20
-17.
-
-
-Package natbib Warning: Citation `Eisenberg2004a' on page 34 undefined on input
- line 2032.
-
-
-LaTeX Warning: Reference `Kapitel-LFG' on page 34 undefined on input line 2102.
-
-
-
-Package natbib Warning: Citation `DL2000a-u' on page 34 undefined on input line
- 2102.
-
-
-Package natbib Warning: Citation `Berman2003a-u' on page 34 undefined on input 
-line 2102.
-
-
-Package natbib Warning: Citation `Berman2007a-u' on page 34 undefined on input 
-line 2102.
-
-
-Package natbib Warning: Citation `AMM2005a-u' on page 34 undefined on input lin
-e 2102.
-
-
-Package natbib Warning: Citation `Forst2006a-u' on page 34 undefined on input l
-ine 2102.
-
-[34]
-
-LaTeX Warning: Reference `Kapitel-LFG' on page 35 undefined on input line 2154.
-
-
-
-Package natbib Warning: Citation `Cook2006a-u' on page 35 undefined on input li
-ne 2154.
-
-[35] [36] [37]
-
-Package natbib Warning: Citation `Duden95-Authors' on page 38 undefined on inpu
-t line 2320.
-
-
-Package natbib Warning: Citation `Duden66-Authors' on page 38 undefined on inpu
-t line 2320.
-
-
-Package natbib Warning: Citation `Duden2005-Authors' on page 38 undefined on in
-put line 2374.
-
-
-Package natbib Warning: Citation `Mueller2002b' on page 38 undefined on input l
-ine 2374.
-
-
-Package natbib Warning: Citation `Mueller2008a' on page 38 undefined on input l
-ine 2374.
-
-[38]
-
-Package natbib Warning: Citation `CJ2005a' on page 39 undefined on input line 2
-398.
-
-
-Package natbib Warning: Citation `Reis80a' on page 39 undefined on input line 2
-453.
-
-
-Package natbib Warning: Citation `Hoehle86' on page 39 undefined on input line 
-2453.
-
-
-Package natbib Warning: Citation `Askedal86' on page 39 undefined on input line
- 2453.
-
-
-Package natbib Warning: Citation `Woellstein2010a-u' on page 39 undefined on in
-put line 2453.
-
-[39]
-
-LaTeX Warning: Hyper reference `bsp-topo' on page 40 undefined on input line 24
-94.
-
-
-LaTeX Warning: Reference `bsp-topo' on page 40 undefined on input line 2494.
-
-[40] [41]
-Overfull \hbox (4.53554pt too wide) in paragraph at lines 2570--2574
-[]  [] [] [] [] [] [] [] [] []
+Underfull \hbox (badness 4279) in paragraph at lines 4413--4418
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 sic HPSG structure for Bangla grammar.  In 
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 15th International Conference
  []
 
 
-Package natbib Warning: Citation `Paul1919a' on page 42 undefined on input line
- 2598.
+Underfull \hbox (badness 2762) in paragraph at lines 4413--4418
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 on Computer and Information Technology (IC
+CIT)\EU1/LinLibertine_R_B.otf(0)/m/n/10 , 185–189. Curran Associates.
+ []
 
-[42] [43]
+[723] [724] [725] [726] [727] [728] [729]
+Underfull \hbox (badness 7685) in paragraph at lines 5122--5126
+[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Klein, Wolfgang. 1971.  \EU1/LinLibertine
+_R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
+ []
 
-Package natbib Warning: Citation `Duden2005-Authors' on page 44 undefined on in
-put line 2761.
+[730] [731] [732] [733] [734] [735] [736] [737] [738] [739]
+Underfull \hbox (badness 2735) in paragraph at lines 6185--6189
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
+panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
+ []
 
-[44]
+[740] [741] [742] [743] [744] [745]
 
-Package natbib Warning: Citation `Reis80a' on page 45 undefined on input line 2
-788.
+LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
+(Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
+(Font)              for symbol `grqq' on input line 6740.
 
-[45] [46]
+[746] [747] [748] [749] [750] [751] [752] [753]
+Underfull \hbox (badness 1675) in paragraph at lines 7653--7659
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
+Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
+ []
 
-Package natbib Warning: Citation `Reis80a' on page 47 undefined on input line 2
-955.
+[754] [755] [756] [757] [758] [759]
+Underfull \hbox (badness 1348) in paragraph at lines 8290--8297
+\EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
+(0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
+][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
+ []
 
-
-Package natbib Warning: Citation `Hoehle86' on page 47 undefined on input line 
-2957.
-
-) [47] [48
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [49] [50] (./backmatter.tex
-No file check-gt-chinese.bbl.
+[760] [761] [762] [763] [764] [765] [766] [767] [768]) [769]
 No file check-gt-chinese.and.
 No file check-gt-chinese.lnd.
 )
 No file check-gt-chinese.snd.
 
-Package natbib Warning: There were undefined citations.
-
-
-Package lastpage Warning: Rerun to get the references right on input line 56.
-
-
 AED: lastpage setting LastPage
-[51
+[770
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [52
+] [772
 
 ]
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
@@ -4278,7 +3807,7 @@ Overfull \hbox (30.88588pt too wide) in paragraph at lines 56--56
 [][][][][][][] 
  []
 
-[53]
+[773]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./check-gt-chinese.aux (./chapters/preface.aux)
@@ -4304,19 +3833,16 @@ LaTeX Font Warning: Size substitutions with differences
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 67151 strings out of 493591
- 1409896 string characters out of 6143546
- 1566382 words of memory out of 5000000
- 69236 multiletter control sequences out of 15000+600000
- 20806 words of font info for 123 fonts, out of 8000000 for 9000
+ 74109 strings out of 493591
+ 1576256 string characters out of 6143546
+ 1748761 words of memory out of 5000000
+ 76134 multiletter control sequences out of 15000+600000
+ 29969 words of font info for 152 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 158i,29n,176p,10456b,2280s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 186i,14n,228p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on check-gt-chinese.pdf (61 pages).
+Output written on check-gt-chinese.pdf (129 pages).

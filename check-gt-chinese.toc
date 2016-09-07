@@ -90,20 +90,20 @@
 \contentsline {section}{\numberline {4.7}总结}{157}{section.4.7}
 \contentsline {subsection}{\numberline {4.7.1}关于语言习得的解释}{157}{subsection.4.7.1}
 \contentsline {subsection}{\numberline {4.7.2}形式化}{158}{subsection.4.7.2}
-\contentsline {chapter}{\numberline {5}Generalized Phrase Structure Grammar}{161}{chapter.5}
-\contentsline {section}{\numberline {5.1}General remarks on the representational format}{161}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Complex categories, the Head Feature Convention, and \unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace rules}{162}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Local reordering}{164}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}Metarules}{166}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Semantics}{168}{subsection.5.1.4}
-\contentsline {subsection}{\numberline {5.1.5}Adjuncts}{170}{subsection.5.1.5}
-\contentsline {section}{\numberline {5.2}Passive as a metarule}{171}{section.5.2}
-\contentsline {section}{\numberline {5.3}Verb position}{174}{section.5.3}
-\contentsline {section}{\numberline {5.4}Long\active@dq \dq@prtct {=}distance dependencies as the result of local dependencies}{175}{section.5.4}
-\contentsline {section}{\numberline {5.5}Summary and classification}{178}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Valence and morphology}{179}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Valence and partial verb phrase fronting}{180}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Generative capacity}{181}{subsection.5.5.3}
+\contentsline {chapter}{\numberline {5}广义短语结构语法}{161}{chapter.5}
+\contentsline {section}{\numberline {5.1}表示形式概说}{161}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}复杂范畴、中心语特征规定，以及\unhbox \voidb@x \hbox {$\overline {\unhbox \voidb@x \hbox {X}}$}\xspace 规则}{161}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}域内重新排序}{164}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}元规则}{166}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}语义}{167}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}状语}{169}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}作为元规则的被动}{170}{section.5.2}
+\contentsline {section}{\numberline {5.3}动词位置}{173}{section.5.3}
+\contentsline {section}{\numberline {5.4}作为定域依存结果的长距离依存}{173}{section.5.4}
+\contentsline {section}{\numberline {5.5}总结}{176}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}配价与形态}{177}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}配价与部分动词短语前置}{177}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}普遍能力}{178}{subsection.5.5.3}
 \contentsline {chapter}{\numberline {6}Feature descriptions}{183}{chapter.6}
 \contentsline {section}{\numberline {6.1}Feature descriptions}{183}{section.6.1}
 \contentsline {section}{\numberline {6.2}Types}{186}{section.6.2}
@@ -233,7 +233,7 @@
 \contentsline {subsection}{\numberline {12.6.2}V\active@dq \dq@prtct {=}TAG}{406}{subsection.12.6.2}
 \contentsline {subsection}{\numberline {12.6.3}The competence\active@dq \dq@prtct {=}performance distinction and the generative capacity of tree\active@dq \dq@prtct {=}local MC\active@dq \dq@prtct {=}LTAG}{408}{subsection.12.6.3}
 \contentsline {section}{\numberline {12.7}Summary and classification}{414}{section.12.7}
-\contentsline {part}{III\hspace {1em}讨论}{49}{part.3}
+\contentsline {part}{III\hspace {1em}讨论}{417}{part.3}
 \contentsline {chapter}{\numberline {13}The innateness of linguistic knowledge}{419}{chapter.13}
 \contentsline {section}{\numberline {13.1}Syntactic universals}{421}{section.13.1}
 \contentsline {subsection}{\numberline {13.1.1}Head Directionality Parameter}{422}{subsection.13.1.1}
@@ -350,7 +350,8 @@
 \contentsline {section}{\numberline {24.9}Construction Grammar}{676}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{677}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{678}{section.24.11}
-\contentsline {chapter}{Index}{51}{section*.8}
-\contentsline {section}{Name index}{51}{section*.8}
-\contentsline {section}{Language index}{51}{section*.9}
-\contentsline {section}{Subject index}{51}{section*.10}
+\contentsline {chapter}{\nonumberline 参考文献}{681}{chapter*.7}
+\contentsline {chapter}{Index}{770}{section*.8}
+\contentsline {section}{Name index}{770}{section*.8}
+\contentsline {section}{Language index}{770}{section*.9}
+\contentsline {section}{Subject index}{770}{section*.10}

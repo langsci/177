@@ -1,6 +1,6 @@
 \providecommand{\noopsort}[1]{} \providecommand*{\donothing}[1]{}
   \providecommand*{\printsecond}[2]{#2}
-\begin{thebibliography}{1504}
+\begin{thebibliography}{1501}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\urlprefix}{}
@@ -98,12 +98,6 @@ Abraham, Werner. 2003.
 \newblock The syntactic link between thema and rhema: {The} syntax-discourse
   interface.
 \newblock \emph{Folia Linguistica} 37(1--2). 13--34.
-
-\bibitem[{Abraham(2005)}]{Abraham2005a}
-Abraham, Werner. 2005.
-\newblock \emph{{Deutsche Syntax im Sprachenvergleich: Grundlegung einer
-  typologischen Syntax des Deutschen}} (Studien zur deutschen Grammatik~41).
-\newblock T{\"u}bingen: Stauffenburg Verlag 2nd edn.
 
 \bibitem[{Abzianidze(2011)}]{Abzianidze2011a-u}
 Abzianidze, Lasha. 2011.
@@ -2799,13 +2793,8 @@ Fanselow, Gisbert. 2004{\natexlab{a}}.
   \emph{Interdisciplinary studies on information structure} (Working Papers of
   the SFB 632~1), 1--42. Potsdam: Universit{\"a}tsverlag.
 
-\bibitem[{Fanselow(2004{\natexlab{b}})}]{Fanselow2004b}
+\bibitem[{Fanselow(2004{\natexlab{b}})}]{Fanselow2004c}
 Fanselow, Gisbert. 2004{\natexlab{b}}.
-\newblock {Fakten, Fakten, Fakten}!
-\newblock \emph{Linguistische Berichte} 200. 481--493.
-
-\bibitem[{Fanselow(2004{\natexlab{c}})}]{Fanselow2004c}
-Fanselow, Gisbert. 2004{\natexlab{c}}.
 \newblock M{\"u}nchhausen-style head movement and the analysis of verb second.
 \newblock In Ralf Vogel (ed.), \emph{Three papers on {German} verb movement}
   (Linguistics in Potsdam~22), 9--49. Uni\-ver\-si\-t{\"a}t Potsdam.
@@ -4913,14 +4902,6 @@ Kay, Paul, Ivan~A. Sag \& Daniel~P. Flickinger. 2015.
 Kayne, Richard~S. 1994.
 \newblock \emph{The antisymmetry of syntax} (Linguistic Inquiry Monographs~25).
 \newblock Cambridge, MA: MIT Press.
-
-\bibitem[{Kayne(2011)}]{Kayne2011a}
-Kayne, Richard~S. 2011.
-\newblock Why are there no directionality parameters?
-\newblock In Mary~Byram Washburn, Katherine McKinney-Bock, Erika Varis, Ann
-  Sawyer \& Barbara Tomaszewicz (eds.), \emph{Proceedings of the {28th West
-  Coast Conference on Formal Linguistics}}, 1--23. Somerville, MA: Cascadilla
-  Press.
 
 \bibitem[{Keenan \& Comrie(1977)}]{KC77a}
 Keenan, Edward~L. \& Bernard Comrie. 1977.
