@@ -360,14 +360,15 @@
 \indexentry {Agree|(hyperpage}{118}
 \indexentry {Agree|)}{118}
 \indexentry {category!functional!v@\textit {v}|(hyperpage}{119}
-\indexentry {language acquisition|hyperpage}{121}
-\indexentry {category!functional!v@\textit {v}|)}{121}
-\indexentry {category!functional!Tense|hyperpage}{121}
+\indexentry {language acquisition|hyperpage}{120}
+\indexentry {category!functional!v@\textit {v}|)}{120}
+\indexentry {category!functional!Tense|hyperpage}{122}
 \indexentry {*|hyperpage}{122}
-\indexentry {locality!of matching|hyperpage}{124}
+\indexentry {locality!of matching|hyperpage}{125}
 \indexentry {intervention|hyperpage}{125}
 \indexentry {passive|(hyperpage}{127}
 \indexentry {verb!unaccusative|hyperpage}{127}
+\indexentry {participle!adjectival|hyperpage}{127}
 \indexentry {category!functional!Passive|hyperpage}{128}
 \indexentry {passive|)}{129}
 \indexentry {Case Theory|hyperpage}{130}
@@ -474,6 +475,7 @@
 \indexentry {label|(hyperpage}{139}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{140}
 \indexentry {Construction Grammar (CxG)|hyperpage}{140}
+\indexentry {Role and Reference Grammar|hyperpage}{140}
 \indexentry {Copy Theory of Movement|hyperindexformat{\infn {13}}}{140}
 \indexentry {conjunction|hyperindexformat{\infn {14}}}{140}
 \indexentry {Copy Theory of Movement|hyperpage}{141}
@@ -496,7 +498,7 @@
 \indexentry {complement|hyperpage}{149}
 \indexentry {specifier|hyperpage}{149}
 \indexentry {verb!monovalent|(hyperpage}{149}
-\indexentry {empty element|hyperpage}{149}
+\indexentry {empty element|hyperpage}{150}
 \indexentry {verb!monovalent|)}{150}
 \indexentry {coordination|(hyperpage}{150}
 \indexentry {Tree Adjoining Grammar (TAG)|hyperpage}{151}
@@ -529,9 +531,9 @@
 \indexentry {agreement|hyperpage}{158}
 \indexentry {semantics|hyperpage}{158}
 \indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{158}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{158}
-\indexentry {Categorial Grammar (CG)|hyperpage}{158}
 \indexentry {Construction Grammar (CxG)|hyperindexformat{\infn {38}}}{158}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{159}
+\indexentry {Categorial Grammar (CG)|hyperpage}{159}
 \indexentry {Verbmobil@{\sffamily Verb}{\sffamily \slshape mobil}|hyperpage}{159}
 \indexentry {Lexical Functional Grammar (LFG)|hyperpage}{159}
 \indexentry {valence|hyperpage}{162}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  13 SEP 2016 12:10
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  15 SEP 2016 23:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4359,7 +4359,6 @@ chapter 4.
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
- [120]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4375,7 +4374,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [121]
+ [120] [121]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4391,6 +4390,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
+ [122]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4408,7 +4408,6 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
- [122]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4467,6 +4466,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
 \forest@temp@box=\box32747 (local)
+ [126]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4489,7 +4489,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32748 (local)
 \forest@temp@box=\box32747 (local)
 \forest@temp@box=\box32746 (local)
- [126]
+
 [127]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
@@ -4605,7 +4605,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32719 (local)
 \forest@temp@box=\box32718 (local)
  [133]
-Underfull \hbox (badness 10000) in paragraph at lines 1424--1472
+Underfull \hbox (badness 10000) in paragraph at lines 1428--1476
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 rimi-Doostan[] []2005[]: 1745[]\EU1/SimSun(
 0)/m/n/10 ）|  和 \EU1/LinLibertine_R_B.otf(0)/m/n/10 TopP[]  |\EU1/SimSun(0)/m/n
 /10 （话 题 短 语） ，| \EU1/LinLibertine_R_B.otf(0)/m/n/10 DistP[]
@@ -4633,16 +4633,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1424--1472
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
 \forest@temp@box=\box32747 (local)
- [136] [137] [138]
-Overfull \hbox (1.20276pt too wide) in paragraph at lines 1728--1751
-[]\EU1/SimSun(0)/m/n/10 基 于 此，|  他 取 消 了[] 理 论 中 的 投 射 层、|  语 迹、| \EU1/LinLiber
-tine_R_B.otf(0)/m/n/10 index \EU1/SimSun(0)/m/n/10 和 \EU1/LinLibertine_R_B.otf(
-0)/m/n/10 “\EU1/SimSun(0)/m/n/10 相 似 的 描 述 技 术\EU1/LinLibertine_R_B.otf(0)/m/n/
-10 ”([]Chomsky[]|
- []
-
-[139]
-Overfull \hbox (4.95305pt too wide) in paragraph at lines 1864--1880
+ [136] [137] [138] [139]
+Overfull \hbox (4.95305pt too wide) in paragraph at lines 1868--1884
 []\EU1/SimSun(0)/m/n/10 两 个 非 词 汇 项 外 部 合 并 的 情 况  |（如 一 个 名 词 短 语 和 动 词 短 语）| 
  并 没 有 在[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Chomsky[]|
  []
@@ -4708,9 +4700,9 @@ Overfull \hbox (4.95305pt too wide) in paragraph at lines 1864--1880
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/sl' in size <10> not avail
 able
 (Font)              Font shape `EU1/Arimo_B.ttf(0)/m/it' tried instead on input
- line 3370.
+ line 3374.
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/it' will be
-(Font)              scaled to size 8.15796pt on input line 3370.
+(Font)              scaled to size 8.15796pt on input line 3374.
  [158] [159]) [160]
 \openout2 = `chapters/4-gpsg.aux'.
 
@@ -8058,12 +8050,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 167327 strings out of 493591
- 5671778 string characters out of 6143546
- 1982216 words of memory out of 5000000
- 169221 multiletter control sequences out of 15000+600000
+ 167323 strings out of 493591
+ 5671540 string characters out of 6143546
+ 1982128 words of memory out of 5000000
+ 169217 multiletter control sequences out of 15000+600000
  57429 words of font info for 267 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7525s stack positions out of 5000i,500n,10000p,200000b,80000s
