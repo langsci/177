@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  15 SEP 2016 23:49
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 11:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8050,14 +8050,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) ) 
 Here is how much of TeX's memory you used:
  167323 strings out of 493591
  5671540 string characters out of 6143546
- 1982128 words of memory out of 5000000
+ 1982136 words of memory out of 5000000
  169217 multiletter control sequences out of 15000+600000
  57429 words of font info for 267 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
