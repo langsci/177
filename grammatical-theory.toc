@@ -109,7 +109,7 @@
 \contentsline {section}{\numberline {6.2}类型}{183}{section.6.2}
 \contentsline {section}{\numberline {6.3}析取}{186}{section.6.3}
 \contentsline {section}{\numberline {6.4}结构共享}{187}{section.6.4}
-\contentsline {section}{\numberline {6.5}循环结构}{188}{section.6.5}
+\contentsline {section}{\numberline {6.5}循环结构}{189}{section.6.5}
 \contentsline {section}{\numberline {6.6}合一}{189}{section.6.6}
 \contentsline {section}{\numberline {6.7}现象、模型和形式化理论}{191}{section.6.7}
 \contentsline {chapter}{\numberline {7}Lexical Functional Grammar}{195}{chapter.7}

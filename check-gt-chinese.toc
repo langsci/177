@@ -56,7 +56,7 @@
 \contentsline {section}{\numberline {3.4}被动}{99}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}结构格与词汇格}{99}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}格指派与格过滤}{101}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}域内重新排序}{104}{section.3.5}
+\contentsline {section}{\numberline {3.5}局部重新排序}{104}{section.3.5}
 \contentsline {section}{\numberline {3.6}总结}{107}{section.3.6}
 \contentsline {subsection}{\numberline {3.6.1}有关语言习得的解释}{107}{subsection.3.6.1}
 \contentsline {subsection}{\numberline {3.6.2}形式化}{108}{subsection.3.6.2}
@@ -109,7 +109,7 @@
 \contentsline {section}{\numberline {6.2}类型}{183}{section.6.2}
 \contentsline {section}{\numberline {6.3}析取}{186}{section.6.3}
 \contentsline {section}{\numberline {6.4}结构共享}{187}{section.6.4}
-\contentsline {section}{\numberline {6.5}循环结构}{188}{section.6.5}
+\contentsline {section}{\numberline {6.5}循环结构}{189}{section.6.5}
 \contentsline {section}{\numberline {6.6}合一}{189}{section.6.6}
 \contentsline {section}{\numberline {6.7}现象、模型和形式化理论}{191}{section.6.7}
 \contentsline {chapter}{\numberline {7}Lexical Functional Grammar}{195}{chapter.7}
@@ -350,8 +350,8 @@
 \contentsline {section}{\numberline {24.9}Construction Grammar}{672}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{673}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{674}{section.24.11}
-\contentsline {chapter}{\nonumberline 参考文献}{677}{chapter*.7}
-\contentsline {chapter}{Index}{766}{section*.8}
-\contentsline {section}{Name index}{766}{section*.8}
-\contentsline {section}{Language index}{766}{section*.9}
-\contentsline {section}{Subject index}{766}{section*.10}
+\contentsline {chapter}{\nonumberline 参考文献}{677}{chapter*.9}
+\contentsline {chapter}{Index}{766}{section*.10}
+\contentsline {section}{Name index}{766}{section*.10}
+\contentsline {section}{Language index}{766}{section*.11}
+\contentsline {section}{Subject index}{766}{section*.12}

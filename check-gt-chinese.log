@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 11:05
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 15:00
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3474,10 +3474,19 @@ Overfull \hbox (0.96397pt too wide) detected at line 236
 
 
 ] [2]
-\openout2 = `chapters/4-gpsg.aux'.
+\openout2 = `chapters/5-merkmalstrukturen.aux'.
 
- (./chapters/4-gpsg.tex
-chapter 5.
+ (./chapters/5-merkmalstrukturen.tex [180
+
+
+
+
+
+
+
+
+]
+chapter 6.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3494,21 +3503,14 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              deprecated \float@addtolist interface .
 
 
-Overfull \hbox (1.05577pt too wide) in paragraph at lines 38--44
-[]\EU1/SimSun(0)/m/n/10 本 节 分 为 五 个 部 分。|  第 []\EU1/LinLibertine_R_B.otf(0)/m/n
-/10 5.1.1[]\EU1/SimSun(0)/m/n/10 节 说 明 有 关 特 征 和 复 杂 范 畴 的 表 示 的 假 说。|  第 []\EU
-1/LinLibertine_R_B.otf(0)/m/n/10 5.1.2[]\EU1/SimSun(0)/m/n/10 节
- []
-
-[161
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 41.
 
 
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sc' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 72.
 
-
-
-
-
-]
+[181] [182]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3566,74 +3568,16 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
- [162] [163] [164]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
- [165]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
- [166]
-Overfull \hbox (13.95311pt too wide) in paragraph at lines 449--459
-[][]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Gazdar, Klein, Pullum & Sag[] ([]1985[]
-: Chapter 9–10)[]\EU1/SimSun(0)/m/n/10 所 谓 的 语 义 学 源 于 \EU1/LinLibertine_R_B.ot
-f(0)/m/n/10 Richard[]Montague[]
- []
+ [183] [184] [185] [186] [187] [188] [189] [190] [191]
+File: Figures/frau-model-theoretic-cropped.pdf Graphic file (type QTm)
 
-[167] [168] [169] [170] [171] [172] [173]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
- [174]
-Package microtype Info: Loading generic settings for font family
-(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
- [175] [176] [177] [178])
-[179] [413
+<use  "Figures/frau-model-theoretic-cropped.pdf" >
+File: Figures/mann-model-theoretic-crop.pdf Graphic file (type QTm)
+
+<use  "Figures/mann-model-theoretic-crop.pdf" >
+File: Figures/model-theory-phenomenon-crop.pdf Graphic file (type QTm)
+
+<use  "Figures/model-theory-phenomenon-crop.pdf" > [192] [193]) [194] [413
 
 
 
@@ -3644,8 +3588,8 @@ Package microtype Info: Loading generic settings for font family
 
 
 
-
-] [414] (./backmatter.tex (./check-gt-chinese.bbl
+]
+[414] (./backmatter.tex (./check-gt-chinese.bbl
 chapter without number
 [677
 
@@ -3677,7 +3621,12 @@ Underfull \hbox (badness 1226) in paragraph at lines 2457--2461
 ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
  []
 
-[700] [701] [702] [703] [704] [705] [706] [707]
+[700] [701] [702]
+Package microtype Info: Loading generic settings for font family
+(microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [703] [704] [705] [706] [707]
 Underfull \hbox (badness 10000) in paragraph at lines 3218--3222
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
  Functional Grammar und
@@ -3813,17 +3762,14 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) ) 
 Here is how much of TeX's memory you used:
- 74140 strings out of 493591
- 1578157 string characters out of 6143546
- 1749297 words of memory out of 5000000
- 76165 multiletter control sequences out of 15000+600000
- 29969 words of font info for 152 fonts, out of 8000000 for 9000
+ 70032 strings out of 493591
+ 1440747 string characters out of 6143546
+ 1724013 words of memory out of 5000000
+ 72055 multiletter control sequences out of 15000+600000
+ 20806 words of font info for 123 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 186i,14n,228p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,40n,107p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on check-gt-chinese.pdf (129 pages).
+Output written on check-gt-chinese.pdf (125 pages).
