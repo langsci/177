@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 15:03
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 18:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3379,6 +3379,10 @@ LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(1)/m/n' will be
 (Font)              scaled to size 9.56406pt on input line 7.
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(1)/m/n' will be
 (Font)              scaled to size 49.7331pt on input line 7.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `SimSun' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -3441,6 +3445,10 @@ File: ./langsci/graphics/langsci_logo_nocolor.pdf Graphic file (type QTm)
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 7.
 
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 7.
+
 File: ./langsci/graphics/FULogo_sw_CMYK.pdf Graphic file (type QTm)
 <use  "./langsci/graphics/FULogo_sw_CMYK.pdf" > [2] [3] [4
 
@@ -3449,10 +3457,6 @@ File: ./langsci/graphics/FULogo_sw_CMYK.pdf Graphic file (type QTm)
 LaTeX Font Warning: Font shape `EU1/SimSun(0)/bx/n' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 12.
 
-Package microtype Info: Loading generic settings for font family
-(microtype)             `SimSun' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
 (./grammatical-theory.toc [7
@@ -3492,11 +3496,11 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-[15
+(./chapters/versions.tex [15
 
 
 
-] (./chapters/versions.tex
+]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3554,7 +3558,7 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
-) (./chapters/acknowledgments.tex [16] [17]
+) (./chapters/acknowledgments.tex [16]
 *************************************************
 * xeCJK warning: "CJKfamily-Unknown"
 * 
@@ -3563,19 +3567,20 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 * Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
 LaTeX Font Info:    Font shape `EU1/DejaVuSansMono.ttf(0)/m/n' will be
-(Font)              scaled to size 7.88116pt on input line 155.
+(Font)              scaled to size 7.88116pt on input line 180.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `DejaVuSansMono.ttf' (encoding: EU1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) (./chapters/ontheway.tex [18]) (./chapters/langsci.tex [19])) [20] [1
-
-
+[17]) (./chapters/ontheway.tex) (./chapters/langsci.tex [18])) [19] [20
 
 
 
 ]
-[2]
+[1
+
+
+] [2]
 \openout2 = `chapters/1-begriffe.aux'.
 
  (./chapters/1-begriffe.tex
@@ -3642,12 +3647,7 @@ Package natbib Warning: Citation `Hudson84a' on page 27 undefined on input line
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [28]
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 1666.
-
-[29] [30]
+ [28] [29] [30]
 Overfull \hbox (0.17554pt too wide) in paragraph at lines 1772--1773
 []  [] [] [] [] [] [] [] [] [] [] [] []|
  []
@@ -4607,8 +4607,8 @@ Missing character: There is no ] in font nullfont!
  [133]
 Underfull \hbox (badness 10000) in paragraph at lines 1428--1476
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 rimi-Doostan[] []2005[]: 1745[]\EU1/SimSun(
-0)/m/n/10 ）|  和 \EU1/LinLibertine_R_B.otf(0)/m/n/10 TopP[]  |\EU1/SimSun(0)/m/n
-/10 （话 题 短 语） ，| \EU1/LinLibertine_R_B.otf(0)/m/n/10 DistP[]
+0)/bx/n/10 ）|  和 \EU1/LinLibertine_R_B.otf(0)/m/n/10 TopP[]  |\EU1/SimSun(0)/bx
+/n/10 （话 题 短 语） ，| \EU1/LinLibertine_R_B.otf(0)/m/n/10 DistP[]
  []
 
 [134] [135]
@@ -4635,8 +4635,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1428--1476
 \forest@temp@box=\box32747 (local)
  [136] [137] [138] [139]
 Overfull \hbox (4.95305pt too wide) in paragraph at lines 1868--1884
-[]\EU1/SimSun(0)/m/n/10 两 个 非 词 汇 项 外 部 合 并 的 情 况  |（如 一 个 名 词 短 语 和 动 词 短 语）| 
- 并 没 有 在[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Chomsky[]|
+[]\EU1/SimSun(0)/bx/n/10 两 个 非 词 汇 项 外 部 合 并 的 情 况  |（如 一 个 名 词 短 语 和 动 词 短 语）|
+  并 没 有 在[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Chomsky[]|
  []
 
 [140] [141] [142] [143] [144] [145] [146] [147]
@@ -4710,9 +4710,9 @@ LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/it' will be
 chapter 5.
 
 Overfull \hbox (1.05577pt too wide) in paragraph at lines 38--44
-[]\EU1/SimSun(0)/m/n/10 本 节 分 为 五 个 部 分。|  第 []\EU1/LinLibertine_R_B.otf(0)/m/n
-/10 5.1.1[]\EU1/SimSun(0)/m/n/10 节 说 明 有 关 特 征 和 复 杂 范 畴 的 表 示 的 假 说。|  第 []\EU
-1/LinLibertine_R_B.otf(0)/m/n/10 5.1.2[]\EU1/SimSun(0)/m/n/10 节|
+[]\EU1/SimSun(0)/bx/n/10 本 节 分 为 五 个 部 分。|  第 []\EU1/LinLibertine_R_B.otf(0)/m/
+n/10 5.1.1[]\EU1/SimSun(0)/bx/n/10 节 说 明 有 关 特 征 和 复 杂 范 畴 的 表 示 的 假 说。|  第 []\
+EU1/LinLibertine_R_B.otf(0)/m/n/10 5.1.2[]\EU1/SimSun(0)/bx/n/10 节|
  []
 
 [161
@@ -4749,8 +4749,8 @@ Overfull \hbox (1.05577pt too wide) in paragraph at lines 38--44
  [166]
 Overfull \hbox (13.95311pt too wide) in paragraph at lines 449--459
 [][]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Gazdar, Klein, Pullum & Sag[] ([]1985[]
-: Chapter 9–10)[]\EU1/SimSun(0)/m/n/10 所 谓 的 语 义 学 源 于 \EU1/LinLibertine_R_B.ot
-f(0)/m/n/10 Richard[]Montague[]|
+: Chapter 9–10)[]\EU1/SimSun(0)/bx/n/10 所 谓 的 语 义 学 源 于 \EU1/LinLibertine_R_B.o
+tf(0)/m/n/10 Richard[]Montague[]|
  []
 
 [167] [168] [169] [170] [171] [172] [173]
@@ -5934,15 +5934,16 @@ nt' on page 378 undefined on input line 2242.
 LaTeX Warning: Reference `fig-the-child-reads-the-book-reape-binary-discont' on
  page 378 undefined on input line 2242.
 
-[378] [379]
+[378]
 
 LaTeX Warning: Hyper reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on 
-page 380 undefined on input line 2308.
+page 379 undefined on input line 2308.
 
 
 LaTeX Warning: Reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on page 3
-80 undefined on input line 2308.
+79 undefined on input line 2308.
 
+[379]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5969,6 +5970,7 @@ LaTeX Warning: Reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on page 3
 \forest@temp@box=\box32744 (local)
 \forest@temp@box=\box32743 (local)
 
+
 LaTeX Warning: Hyper reference `fig-dass-peter-kommt-klaert-nicht-ob-non-projec
 tive' on page 380 undefined on input line 2383.
 
@@ -5985,15 +5987,15 @@ LaTeX Warning: Hyper reference `fig-dass-ob-peter-klaus-kommt-spielt' on page 3
 LaTeX Warning: Reference `fig-dass-ob-peter-klaus-kommt-spielt' on page 381 und
 efined on input line 2441.
 
-[381]
 
 LaTeX Warning: Hyper reference `fig-wg-small-children-are-playing-outside' on p
-age 382 undefined on input line 2514.
+age 381 undefined on input line 2514.
 
 
 LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
-2 undefined on input line 2514.
+1 undefined on input line 2514.
 
+[381]
 
 LaTeX Warning: Hyper reference `fig-wg-small-children-are-playing-outside' on p
 age 382 undefined on input line 2598.
@@ -6034,15 +6036,15 @@ LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
 LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside-abbreviated
 ' on page 382 undefined on input line 2701.
 
-[382] [383] [384]
+[382] [383]
 
-LaTeX Warning: Hyper reference `fig-n-p-n' on page 385 undefined on input line 
+LaTeX Warning: Hyper reference `fig-n-p-n' on page 384 undefined on input line 
 2765.
 
 
-LaTeX Warning: Reference `fig-n-p-n' on page 385 undefined on input line 2765.
+LaTeX Warning: Reference `fig-n-p-n' on page 384 undefined on input line 2765.
 
-[385]) [386]
+[384]) [385] [386]
 \openout2 = `chapters/tag.aux'.
 
  (./chapters/tag.tex
@@ -7005,10 +7007,21 @@ pe QTm)
 
 LaTeX Warning: Float too large for page by 40.80766pt on input line 843.
 
-) [550] [551] [552]
+
+Overfull \hbox (0.35706pt too wide) in paragraph at lines 818--863
+\EU1/LinLibertine_R_B.otf(0)/m/n/10 The empty head requires the intransitive ve
+rb and additionally an adjective, an accusative|
+ []
+
+) [550] [551]
 \openout2 = `chapters/movement.aux'.
 
- (./chapters/movement.tex
+ (./chapters/movement.tex [552
+
+
+
+
+]
 chapter 20.
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
@@ -7027,12 +7040,7 @@ chapter 20.
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
 Missing character: There is no ] in font nullfont!
-[553
-
-
-
-
-]
+[553]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7926,20 +7934,20 @@ Underfull \hbox (badness 2735) in paragraph at lines 6185--6189
 panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
  []
 
-[736] [737] [738] [739] [740] [741]
+[736] [737] [738] [739] [740]
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
 (Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
-(Font)              for symbol `grqq' on input line 6740.
+(Font)              for symbol `grqq' on input line 6735.
 
-[742] [743] [744] [745] [746] [747] [748] [749]
-Underfull \hbox (badness 1675) in paragraph at lines 7653--7659
+[741] [742] [743] [744] [745] [746] [747] [748] [749]
+Underfull \hbox (badness 1675) in paragraph at lines 7648--7654
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
 Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
  []
 
 [750] [751] [752] [753] [754] [755]
-Underfull \hbox (badness 1348) in paragraph at lines 8290--8297
+Underfull \hbox (badness 1348) in paragraph at lines 8285--8292
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
 (0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
@@ -8050,13 +8058,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 167323 strings out of 493591
- 5671540 string characters out of 6143546
- 1982136 words of memory out of 5000000
- 169217 multiletter control sequences out of 15000+600000
- 57429 words of font info for 267 fonts, out of 8000000 for 9000
+ 167332 strings out of 493591
+ 5671796 string characters out of 6143546
+ 1981643 words of memory out of 5000000
+ 169223 multiletter control sequences out of 15000+600000
+ 57336 words of font info for 269 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7525s stack positions out of 5000i,500n,10000p,200000b,80000s
 
