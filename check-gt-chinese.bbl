@@ -1,6 +1,6 @@
 \providecommand{\noopsort}[1]{} \providecommand*{\donothing}[1]{}
   \providecommand*{\printsecond}[2]{#2}
-\begin{thebibliography}{1501}
+\begin{thebibliography}{1497}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\urlprefix}{}
@@ -5847,12 +5847,6 @@ Marimon, Montserrat. 2013.
 \newblock \emph{Language Resources and Evaluation} 47(2). 371--397.
 \newblock \doi{10.1007/s10579-012-9199-7}.
 
-\bibitem[{Marshall \& S{\'a}f{\'a}r(2004)}]{MS2004a-u}
-Marshall, Ian \& {\'E}va S{\'a}f{\'a}r. 2004.
-\newblock Sign {Language} generation in an {ALE HPSG}.
-\newblock In  \cite{Mueller2004a-ed} 189--201.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2004/}.
-
 \bibitem[{Marslen-Wilson(1975)}]{Marslen-Wilson75a}
 Marslen-Wilson, William. 1975.
 \newblock Sentence perception as an interactive parallel process.
@@ -6433,15 +6427,10 @@ M{\"u}ller, Stefan (ed.). 2011{\natexlab{b}}.
   CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2011/}.
 
-\bibitem[{M{\"u}ller(2012{\natexlab{a}})}]{MuellerCopula}
-M{\"u}ller, Stefan. 2012{\natexlab{a}}.
+\bibitem[{M{\"u}ller(2012)}]{MuellerCopula}
+M{\"u}ller, Stefan. 2012.
 \newblock On the copula, specificational constructions and type shifting.
 \newblock Ms. Freie Universit{\"a}t Berlin.
-
-\bibitem[{M{\"u}ller(2012{\natexlab{b}})}]{MuellerOA}
-M{\"u}ller, Stefan. 2012{\natexlab{b}}.
-\newblock A personal note on open access in linguistics.
-\newblock \emph{Journal of Language Modelling} 0(1). 9--39.
 
 \bibitem[{M{\"u}ller(2013{\natexlab{a}})}]{MuellerCoreGramBrief}
 M{\"u}ller, Stefan. 2013{\natexlab{a}}.
@@ -7819,21 +7808,6 @@ Sabel, Joachim. 1999.
 \newblock {Das Passiv im Deutschen: Derivationale {\"O}konomie vs.\ optionale
   Bewegung}.
 \newblock \emph{Linguistische Berichte} 177. 87--112.
-
-\bibitem[{S{\'a}f{\'a}r \& Glauert(2010)}]{SG2010a-u}
-S{\'a}f{\'a}r, {\'E}va \& John Glauert. 2010.
-\newblock {Sign Language} {HPSG}.
-\newblock In \emph{Proceedings of the {4th Workshop on the Representation and
-  Processing of Sign Languages: Corpora and Sign Language Technologies, LREC
-  2010, 22--23 May 2010, Malta}}, 204--207.
-
-\bibitem[{S{\'a}f{\'a}r \& Marshall(2002)}]{SM2002a-u}
-S{\'a}f{\'a}r, {\'E}va \& Ian Marshall. 2002.
-\newblock Sign language translation via {DRT} and {HPSG}.
-\newblock In Alexander Gelbukh (ed.), \emph{Computational linguistics and
-  intelligent text processing: {Third International Conference, CICLing 2002
-  Mexico City, Mexico, February 17--23, 2002 Proceedings}} (Lecture Notes in
-  Computer Science 2276), 58--68. Berlin: Springer Verlag.
 
 \bibitem[{Sag(1997)}]{Sag97a}
 Sag, Ivan~A. 1997.

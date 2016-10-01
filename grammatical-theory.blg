@@ -37,7 +37,7 @@ Reallocated type_list (elt_size=4) to 2250 items from 1500.
 Reallocated entry_exists (elt_size=4) to 2250 items from 1500.
 Reallocated cite_info (elt_size=4) to 2250 items from 1500.
 A level-1 auxiliary file: langsci/graphics/didyoulikethisbook.aux
-Reallocated field_info (elt_size=4) to 44156 items from 5000.
+Reallocated field_info (elt_size=4) to 44078 items from 5000.
 Database file #1: gt.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
@@ -50,45 +50,45 @@ Warning--I didn't find a database entry for "Crysmann2016a"
 Warning--I didn't find a database entry for "MBS2016a-u"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both author and editor fields in MRR2015a-ed
-You've used 1500 entries,
+You've used 1497 entries,
             3179 wiz_defined-function locations,
-            9256 strings with 229153 characters,
-and the built_in function-call counts, 868292 in all, are:
-= -- 74804
-> -- 26367
-< -- 1862
-+ -- 9770
-- -- 7656
-* -- 53185
-:= -- 133180
-add.period$ -- 6468
-call.type$ -- 1500
-change.case$ -- 11488
-chr.to.int$ -- 1669
-cite$ -- 1501
-duplicate$ -- 70230
-empty$ -- 71043
-format.name$ -- 11027
-if$ -- 179151
+            9238 strings with 228516 characters,
+and the built_in function-call counts, 866137 in all, are:
+= -- 74601
+> -- 26303
+< -- 1858
++ -- 9748
+- -- 7637
+* -- 53045
+:= -- 132871
+add.period$ -- 6454
+call.type$ -- 1497
+change.case$ -- 11459
+chr.to.int$ -- 1666
+cite$ -- 1498
+duplicate$ -- 70063
+empty$ -- 70879
+format.name$ -- 10993
+if$ -- 178690
 int.to.chr$ -- 127
 int.to.str$ -- 1
-missing$ -- 13993
-newline$ -- 7657
-num.names$ -- 6640
-pop$ -- 27748
+missing$ -- 13963
+newline$ -- 7641
+num.names$ -- 6626
+pop$ -- 27683
 preamble$ -- 2
-purify$ -- 8356
+purify$ -- 8338
 quote$ -- 0
-skip$ -- 27065
+skip$ -- 26990
 stack$ -- 0
-substring$ -- 42529
-swap$ -- 33000
-text.length$ -- 308
+substring$ -- 42408
+swap$ -- 32913
+text.length$ -- 307
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12582
+type$ -- 12555
 warning$ -- 1
-while$ -- 7207
+while$ -- 7188
 width$ -- 0
-write$ -- 20175
+write$ -- 20132
 (There were 7 warnings)

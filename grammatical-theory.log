@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 18:18
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 OCT 2016 17:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3468,8 +3468,8 @@ LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
 
 [8] [9] [10]
-Overfull \hbox (0.96397pt too wide) detected at line 236
- []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 413|
+Overfull \hbox (2.37997pt too wide) detected at line 236
+ []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 409|
  []
 
 [11] [12] [13])
@@ -4896,19 +4896,27 @@ chapter 9.
 ]
 
 Package natbib Warning: Citation `Crysmann2016a' on page 238 undefined on input
- line 73.
+ line 81.
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 74--75
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 Hebrew[] ([]Melnik[] []2007[]; []Haugerei
-d, Melnik & Wintner[] []2013[]; []Arad Greshler,
+Underfull \hbox (badness 2753) in paragraph at lines 82--83
+[]\EU1/SimSun(0)/bx/n/10 希 伯 来 语  |（\EU1/LinLibertine_R_B.otf(0)/m/n/10 Hebrew\
+EU1/SimSun(0)/bx/n/10 ）| []\EU1/LinLibertine_R_B.otf(0)/m/n/10 ([]Melnik[] []20
+07[]; []Haugereid, Melnik & Wintner[] []2013[];
  []
 
 
 Package natbib Warning: Citation `MBS2016a-u' on page 238 undefined on input li
-ne 75.
+ne 83.
 
-[238] [239] [240] [241]
+
+Overfull \hbox (18.91623pt too wide) in paragraph at lines 95--96
+[]\EU1/SimSun(0)/bx/n/10 波 兰 语  |（\EU1/LinLibertine_R_B.otf(0)/m/n/10 Polish\EU
+1/SimSun(0)/bx/n/10 ）| []\EU1/LinLibertine_R_B.otf(0)/m/n/10 ([]Przepiórkowski,
+ Kupść, Marciniak & Mykowiecka[] []2002[]; []Mykowiecka,|
+ []
+
+[238] [239] [240]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4924,13 +4932,14 @@ ne 75.
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
+ [241]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [242] [243] [244] [245] [246] [247]
+ [242] [243] [244] [245] [246]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4948,7 +4957,7 @@ Missing character: There is no i in font nullfont!
 Missing character: There is no k in font nullfont!
 Missing character: There is no z in font nullfont!
 Missing character: There is no = in font nullfont!
- [248]
+ [247]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4961,8 +4970,7 @@ Missing character: There is no = in font nullfont!
 \forest@temp@box=\box32758 (local)
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
- [249]
-[250]
+ [248]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4970,19 +4978,20 @@ Missing character: There is no = in font nullfont!
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
- [251] [252] [253] [254] [255] [256]
+ [249]
+[250] [251] [252] [253]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [257]
-Underfull \hbox (badness 10000) in paragraph at lines 1090--1097
+ [254] [255]
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1294
 
  []
 
-[258] [259] [260] [261] [262]
+[256] [257] [258] [259]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -4996,7 +5005,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1090--1097
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [263]
+ [260]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5010,7 +5019,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1090--1097
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 Missing character: There is no ] in font nullfont!
- [264] [265] [266]
+ [261] [262] [263]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5024,7 +5033,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [267] [268]
+ [264]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5043,25 +5052,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [269]
-[270]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
- [271] [272] [273]
+ [265] [266]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5078,7 +5069,8 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
- [274] [275] [276]
+ [267]
+[268] [269]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5091,18 +5083,35 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32758 (local)
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
- [277] [278] [279] [280] [281]
-[282] [283]) [284]
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+ [270] [271] [272]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+ [273] [274] [275] [276] [277] [278]) [279]
 \openout2 = `chapters/9-cxg.aux'.
 
- (./chapters/9-cxg.tex
+
+(./chapters/9-cxg.tex [280
+
+
+
+
+]
 chapter 10.
-[285
-
-
-
-
-] [286] [287] [288]
+[281] [282] [283] [284]
 Overfull \hbox (3.19708pt too wide) in paragraph at lines 274--279
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 For[] the combination of heads and modifi
 ers, Kay and Fillmore assume further phrasal|
@@ -5118,8 +5127,8 @@ ers, Kay and Fillmore assume further phrasal|
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
-[289] [290] [291] [292] [293] [294] [295] [296] [297] [298] [299] [300]
-[301] [302] [303] [304] [305]
+[285] [286] [287] [288] [289] [290] [291] [292] [293] [294] [295] [296]
+[297] [298] [299] [300] [301]
 Underfull \hbox (badness 10000) in paragraph at lines 1162--1162
 [][][]$[][][][] [] [] [] [][][] [] [][][][] [] [][] [] [][][][][][][][][][] [] 
 [][][][][][][][][][][][][][][][] [] [][][] [][] [][][][][][][][][] [][] [][][][
@@ -5127,12 +5136,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1162--1162
 ]\EU1/LinLibertine_R_B.otf(1)/m/n/8 ,
  []
 
-[306] [307] [308] [309] [310] [311] [312] [313] [314]
+[302] [303] [304] [305] [306] [307] [308] [309] [310]
 Underfull \hbox (badness 10000) in paragraph at lines 1660--1679
 
  []
 
-[315]
+[311]
 Underfull \hbox (badness 10000) in paragraph at lines 1702--1715
 
  []
@@ -5148,12 +5157,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1724--1734
 
  []
 
-[316] [317]
+[312] [313]
 File: Figures/production-parsing-fcg.pdf Graphic file (type QTm)
- <use  "Figures/production-parsing-fcg.pdf" > [318]
+ <use  "Figures/production-parsing-fcg.pdf" > [314]
 File: Figures/2011-van-Trijp.pdf Graphic file (type QTm)
 
-<use  "Figures/2011-van-Trijp.pdf" > [319] [320] [321] [322]
+<use  "Figures/2011-van-Trijp.pdf" > [315] [316] [317] [318]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5169,8 +5178,8 @@ File: Figures/2011-van-Trijp.pdf Graphic file (type QTm)
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
- [323] [324]
-[325] [326] [327] [328] [329] [330] [331]
+ [319] [320]
+[321] [322] [323] [324] [325] [326] [327]
 *************************************************
 * xeCJK warning: "scale-factor"
 * 
@@ -5205,10 +5214,10 @@ File: Figures/2011-van-Trijp.pdf Graphic file (type QTm)
 . <->s*[0.9489715576171875]"SimSun/OT:script=hani;language=DFLT;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
-[332]
+[328]
 LaTeX Font Info:    Font shape `EU1/DejaVuSansMono.ttf(0)/m/n' will be
 (Font)              scaled to size 6.30493pt on input line 2575.
- [333]
+ [329]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 2643.
@@ -5231,23 +5240,23 @@ Overfull \hbox (2.08282pt too wide) in paragraph at lines 2650--2665
 s about language evolution/ll-anguage change/ll-|
  []
 
-[334] [335] [336] [337]
+[330] [331] [332] [333]
 Overfull \hbox (5.1206pt too wide) in paragraph at lines 2816--2822
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Tomasello’s publications on language acqu
 isition ([]Tomasello[] []2000[], []2003[], []2005[], []2006c[])[][][][]|
  []
 
-) [338]
+) [334]
 \openout2 = `chapters/dg.aux'.
 
  (./chapters/dg.tex
 chapter 11.
-[339
+[335
 
 
 
 
-] [340] [341] [342]
+] [336] [337] [338]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5270,7 +5279,7 @@ chapter 11.
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [343] [344] [345]
+ [339] [340] [341]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5293,7 +5302,7 @@ chapter 11.
 \forest@temp@box=\box32748 (local)
 \forest@temp@box=\box32747 (local)
 \forest@temp@box=\box32746 (local)
- [346]
+ [342]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5312,35 +5321,7 @@ chapter 11.
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [347] [348]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
- [349] [350]
-[351]
+ [343] [344]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5367,6 +5348,133 @@ chapter 11.
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
+ [345] [346]
+[347]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+ [348]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+ [349]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+\forest@temp@box=\box32748 (local)
+\forest@temp@box=\box32747 (local)
+\forest@temp@box=\box32746 (local)
+\forest@temp@box=\box32745 (local)
+\forest@temp@box=\box32744 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+\forest@temp@box=\box32748 (local)
+\forest@temp@box=\box32747 (local)
+\forest@temp@box=\box32746 (local)
+\forest@temp@box=\box32745 (local)
+\forest@temp@box=\box32744 (local)
+ [350] [351]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+\forest@temp@box=\box32748 (local)
+\forest@temp@box=\box32747 (local)
+\forest@temp@box=\box32746 (local)
  [352]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
@@ -5377,113 +5485,14 @@ chapter 11.
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
- [353]
+ [353] [354]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32748 (local)
-\forest@temp@box=\box32747 (local)
-\forest@temp@box=\box32746 (local)
-\forest@temp@box=\box32745 (local)
-\forest@temp@box=\box32744 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32748 (local)
-\forest@temp@box=\box32747 (local)
-\forest@temp@box=\box32746 (local)
-\forest@temp@box=\box32745 (local)
-\forest@temp@box=\box32744 (local)
- [354] [355]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32748 (local)
-\forest@temp@box=\box32747 (local)
-\forest@temp@box=\box32746 (local)
- [356]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
- [357] [358]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
- [359]
+ [355]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5542,7 +5551,7 @@ chapter 11.
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
- [360] [361]
+ [356] [357]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5606,8 +5615,8 @@ chapter 11.
 \forest@temp@box=\box32739 (local)
 \forest@temp@box=\box32738 (local)
 \forest@temp@box=\box32737 (local)
- [362]
-[363]
+ [358]
+[359]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5640,7 +5649,7 @@ chapter 11.
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
- [364] [365]
+ [360] [361]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5653,10 +5662,10 @@ chapter 11.
 \forest@temp@box=\box32762 (local)
 
 
-LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 366 u
+LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 362 u
 ndefined on input line 1550.
 
-[366]
+[362]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5676,7 +5685,7 @@ ndefined on input line 1550.
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
- [367]
+ [363]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5697,24 +5706,7 @@ ndefined on input line 1550.
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
- [368]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
- [369]
+ [364]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5731,9 +5723,7 @@ ndefined on input line 1550.
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
+ [365]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5771,6 +5761,7 @@ ndefined on input line 1550.
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5789,7 +5780,25 @@ ndefined on input line 1550.
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
- [370] [371]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+ [366] [367]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5837,7 +5846,7 @@ ndefined on input line 1550.
 \forest@temp@box=\box32745 (local)
 \forest@temp@box=\box32744 (local)
 \forest@temp@box=\box32743 (local)
- [372] [373]
+ [368] [369]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5872,7 +5881,7 @@ Overfull \hbox (3.22514pt too wide) in paragraph at lines 2004--2011
 on []11.7.2.1[]). I will then deal with non-projective|
  []
 
-[374]
+[370]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5900,19 +5909,13 @@ on []11.7.2.1[]). I will then deal with non-projective|
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
-
-Overfull \hbox (0.14314pt too wide) in paragraph at lines 2044--2068
-[]\EU1/LinLibertine_R_B.otf(0)/m/n/10 In what follows, I want to show how the d
-ependency graph in Figure []11.1[][] on page 343[][][]|
- []
-
-[375] [376]
+ [371] [372]
 Overfull \hbox (0.23372pt too wide) in paragraph at lines 2152--2158
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 The equivalent to non-projective[] depend
 ency graphs are discontinuous constituents|
  []
 
-[377]
+[373]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5928,22 +5931,22 @@ ency graphs are discontinuous constituents|
 
 
 LaTeX Warning: Hyper reference `fig-the-child-reads-the-book-reape-binary-disco
-nt' on page 378 undefined on input line 2242.
+nt' on page 374 undefined on input line 2242.
 
 
 LaTeX Warning: Reference `fig-the-child-reads-the-book-reape-binary-discont' on
- page 378 undefined on input line 2242.
+ page 374 undefined on input line 2242.
 
-[378]
+[374]
 
 LaTeX Warning: Hyper reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on 
-page 379 undefined on input line 2308.
+page 375 undefined on input line 2308.
 
 
 LaTeX Warning: Reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on page 3
-79 undefined on input line 2308.
+75 undefined on input line 2308.
 
-[379]
+[375]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -5972,84 +5975,84 @@ LaTeX Warning: Reference `fig-dass-die-Frauen-Tueren-oeffnen-domains' on page 3
 
 
 LaTeX Warning: Hyper reference `fig-dass-peter-kommt-klaert-nicht-ob-non-projec
-tive' on page 380 undefined on input line 2383.
+tive' on page 376 undefined on input line 2383.
 
 
 LaTeX Warning: Reference `fig-dass-peter-kommt-klaert-nicht-ob-non-projective' 
-on page 380 undefined on input line 2383.
+on page 376 undefined on input line 2383.
 
-[380]
+[376]
 
 LaTeX Warning: Hyper reference `fig-dass-ob-peter-klaus-kommt-spielt' on page 3
-81 undefined on input line 2441.
+77 undefined on input line 2441.
 
 
-LaTeX Warning: Reference `fig-dass-ob-peter-klaus-kommt-spielt' on page 381 und
+LaTeX Warning: Reference `fig-dass-ob-peter-klaus-kommt-spielt' on page 377 und
 efined on input line 2441.
 
 
 LaTeX Warning: Hyper reference `fig-wg-small-children-are-playing-outside' on p
-age 381 undefined on input line 2514.
+age 377 undefined on input line 2514.
 
 
-LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
-1 undefined on input line 2514.
+LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 37
+7 undefined on input line 2514.
 
-[381]
+[377]
 
 LaTeX Warning: Hyper reference `fig-wg-small-children-are-playing-outside' on p
-age 382 undefined on input line 2598.
+age 378 undefined on input line 2598.
 
 
-LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
-2 undefined on input line 2598.
+LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 37
+8 undefined on input line 2598.
 
 
 LaTeX Warning: Hyper reference `fig-wg-small-children-are-playing-outside-abbre
-viated' on page 382 undefined on input line 2599.
+viated' on page 378 undefined on input line 2599.
 
 
 LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside-abbreviated
-' on page 382 undefined on input line 2599.
+' on page 378 undefined on input line 2599.
 
 
-LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
-2 undefined on input line 2665.
+LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 37
+8 undefined on input line 2665.
 
 
 LaTeX Warning: Hyper reference `fig-small-children-are-playing-outside' on page
- 382 undefined on input line 2666.
+ 378 undefined on input line 2666.
 
 
-LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 382 u
+LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 378 u
 ndefined on input line 2666.
 
 
-LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 382 u
+LaTeX Warning: Reference `fig-small-children-are-playing-outside' on page 378 u
 ndefined on input line 2691.
 
 
-LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 38
-2 undefined on input line 2692.
+LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside' on page 37
+8 undefined on input line 2692.
 
 
 LaTeX Warning: Reference `fig-wg-small-children-are-playing-outside-abbreviated
-' on page 382 undefined on input line 2701.
+' on page 378 undefined on input line 2701.
 
-[382] [383]
+[378] [379]
 
-LaTeX Warning: Hyper reference `fig-n-p-n' on page 384 undefined on input line 
+LaTeX Warning: Hyper reference `fig-n-p-n' on page 380 undefined on input line 
 2765.
 
 
-LaTeX Warning: Reference `fig-n-p-n' on page 384 undefined on input line 2765.
+LaTeX Warning: Reference `fig-n-p-n' on page 380 undefined on input line 2765.
 
-[384]) [385] [386]
+[380]) [381] [382]
 \openout2 = `chapters/tag.aux'.
 
  (./chapters/tag.tex
 chapter 12.
-[387
+[383
 
 
 
@@ -6122,7 +6125,7 @@ chapter 12.
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [388] [389]
+ [384] [385]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6163,7 +6166,7 @@ chapter 12.
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [390] [391]
+ [386] [387]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6173,7 +6176,7 @@ chapter 12.
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [392] [393]
+ [388] [389]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6304,7 +6307,7 @@ File: Figures/tag-versprach-lsp-crop.pdf Graphic file (type QTm)
 \forest@temp@box=\box32736 (local)
 \forest@temp@box=\box32735 (local)
 \forest@temp@box=\box32734 (local)
- [394] [395] [396] [397]
+ [390] [391] [392] [393]
 File: Figures/tag-long-distance-dependencies-crop.pdf Graphic file (type QTm)
 
 <use  "Figures/tag-long-distance-dependencies-crop.pdf" >
@@ -6327,7 +6330,7 @@ File: Figures/tag-long-distance-dependencies-crop.pdf Graphic file (type QTm)
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [398] [399] [400]
+ [394] [395] [396]
 File: Figures/tag-obl-adj-ftag-cropped.pdf Graphic file (type QTm)
 
 <use  "Figures/tag-obl-adj-ftag-cropped.pdf" >
@@ -6340,7 +6343,7 @@ File: Figures/tag-obl-adj-ftag-cropped.pdf Graphic file (type QTm)
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [401]
+ [397]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6378,24 +6381,24 @@ File: Figures/tag-obl-adj-ftag-cropped.pdf Graphic file (type QTm)
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
 \forest@temp@box=\box32747 (local)
- [402] [403] [404] [405]
-[406] [407] [408] [409] [410]) [411] [412]
+ [398] [399] [400] [401]
+[402] [403] [404] [405] [406]) [407] [408]
 \openout2 = `chapters/ot.aux'.
 
 
 No file chapters/ot.tex.
-[413
+[409
 
 
 
 
 
-] [414]
+] [410]
 \openout2 = `chapters/innateness.aux'.
 
  (./chapters/innateness.tex
 chapter 13.
-[415
+[411
 
 
 
@@ -6405,8 +6408,8 @@ Overfull \hbox (2.54395pt too wide) in paragraph at lines 54--60
 of Construction Grammar[], Cognitive Gram-|
  []
 
-[416] [417] [418] [419] [420] [421] [422] [423] [424] [425] [426] [427]
-[428] [429]
+[412] [413] [414] [415] [416] [417] [418] [419] [420] [421] [422] [423]
+[424] [425]
 Overfull \hbox (1.30728pt too wide) in paragraph at lines 741--745
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 The preceding discussion has shown that s
 ubjacency constraints on rightward move-|
@@ -6418,19 +6421,19 @@ Overfull \hbox (7.81375pt too wide) in paragraph at lines 749--753
 ment is not possible from certain constituents|
  []
 
-[430] [431] [432] [433] [434] [435] [436] [437] [438]
+[426] [427] [428] [429] [430] [431] [432] [433] [434]
 Overfull \hbox (5.12598pt too wide) in paragraph at lines 1170--1176
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 sally. It is possible to use these rules to
  combine a functor with its arguments ([]).|
  []
 
-[439] [440] [441] [442] [443] [444] [445] [446] [447] [448] [449] [450]
-[451] [452] [453] [454]
+[435] [436] [437] [438] [439] [440] [441] [442] [443] [444] [445] [446]
+[447] [448] [449] [450]
 Overfull \hbox (0.58086pt too wide) in paragraph at lines 1794--1800
 [][] |
  []
 
-[455] [456] [457] [458] [459] [460]
+[451] [452] [453] [454] [455] [456]
 Overfull \hbox (0.16928pt too wide) in paragraph at lines 2104--2108
 \EU1/LinLibertine_R_B.otf(0)/m/sc/10 frag \EU1/LinLibertine_R_B.otf(0)/m/n/10 (
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 fragmentary\EU1/LinLibertine_R_B.otf(0)/m/
@@ -6441,7 +6444,7 @@ ibertine_R_B.otf(0)/m/n/10 (\EU1/LinLibertine_R_B.otf(0)/m/it/10 auxiliary inve
 rsion\EU1/LinLibertine_R_B.otf(0)/m/n/10 ). (59) shows|
  []
 
-[461] [462]
+[457] [458]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6568,7 +6571,7 @@ rsion\EU1/LinLibertine_R_B.otf(0)/m/n/10 ). (59) shows|
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [463]
+ [459]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6577,7 +6580,7 @@ rsion\EU1/LinLibertine_R_B.otf(0)/m/n/10 ). (59) shows|
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
- [464] [465] [466]
+ [460] [461] [462]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6662,41 +6665,41 @@ rsion\EU1/LinLibertine_R_B.otf(0)/m/n/10 ). (59) shows|
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [467] [468] [469] [470] [471]) [472]
+ [463] [464] [465] [466] [467]) [468]
 \openout2 = `chapters/mts.aux'.
 
 
 (./chapters/mts.tex
 chapter 14.
-[473
+[469
 
 
 
 
-] [474]
+] [470]
 Overfull \hbox (0.19707pt too wide) in paragraph at lines 123--127
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Generative-enumerative[] approaches diffe
 r from model-theoretic approaches in how|
  []
 
-[475] [476] [477] [478] [479]
+[471] [472] [473] [474] [475]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [480]) [481]
+ [476]) [477]
 \openout2 = `chapters/competence.aux'.
 
- (./chapters/competence.tex [482
+ (./chapters/competence.tex [478
 
 
 
 
 ]
 chapter 15.
-[483] [484] [485] [486]
+[479] [480] [481] [482]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6718,28 +6721,28 @@ chapter 15.
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [487] [488] [489] [490] [491] [492] [493]) [494]
+ [483] [484] [485] [486] [487] [488] [489]) [490]
 \openout2 = `chapters/acquisition.aux'.
 
 
 (./chapters/acquisition.tex
 chapter 16.
-[495
+[491
 
 
 
 
-] [496] [497] [498] [499]
+] [492] [493] [494] [495]
 Underfull \hbox (badness 10000) in paragraph at lines 245--246
 
  []
 
-[500] [501] [502] [503] [504] [505] [506] [507]
+[496] [497] [498] [499] [500] [501] [502] [503]
 
-LaTeX Warning: Reference `Seite-Typhierarchie' on page 508 undefined on input l
+LaTeX Warning: Reference `Seite-Typhierarchie' on page 504 undefined on input l
 ine 602.
 
-[508] [509] [510] [511]) [512]
+[504] [505] [506] [507]) [508]
 \openout2 = `chapters/complexity.aux'.
 
  (./chapters/complexity.tex
@@ -6749,32 +6752,32 @@ Overfull \hbox (5.83286pt too wide) in paragraph at lines 37--37
 []|
  []
 
-[513
+[509
 
 
 
 
-] [514]
+] [510]
 Underfull \hbox (badness 3260) in paragraph at lines 129--133
 []  [] [] [] [] [] [] [] [] []
  []
 
-[515]
+[511]
 Underfull \hbox (badness 2165) in paragraph at lines 144--148
 []  [] [] [] [] [] []
  []
 
-[516]) [517]
+[512]) [513]
 \openout2 = `chapters/branching-locality-recursion.aux'.
 
- (./chapters/branching-locality-recursion.tex [518
+ (./chapters/branching-locality-recursion.tex [514
 
 
 
 
 ]
 chapter 18.
-(./chapters/branching.tex [519]
+(./chapters/branching.tex [515]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6800,7 +6803,7 @@ chapter 18.
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [520] [521]) (./chapters/locality.tex [522]
+ [516] [517]) (./chapters/locality.tex [518]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6825,7 +6828,7 @@ chapter 18.
 \forest@temp@box=\box32746 (local)
 \forest@temp@box=\box32745 (local)
 
-[523]
+[519]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6839,7 +6842,7 @@ chapter 18.
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [524] [525] [526]
+ [520] [521] [522]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6873,28 +6876,28 @@ chapter 18.
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
- [527] [528]
+ [523] [524]
 File: Figures/depictives-lsp-cropped.pdf Graphic file (type QTm)
 
-<use  "Figures/depictives-lsp-cropped.pdf" > [529] [530])
-(./chapters/recursion.tex [531])) [532]
+<use  "Figures/depictives-lsp-cropped.pdf" > [525] [526])
+(./chapters/recursion.tex [527])) [528]
 \openout2 = `chapters/empty.aux'.
 
  (./chapters/empty.tex
 chapter 19.
-[533
+[529
 
 
 
 
-] [534] [535]
+] [530] [531]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [536]
+ [532]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6909,7 +6912,7 @@ chapter 19.
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [537] [538] [539] [540]
+ [533] [534] [535] [536]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6945,7 +6948,7 @@ chapter 19.
 \forest@temp@box=\box32735 (local)
 \forest@temp@box=\box32734 (local)
 \forest@temp@box=\box32733 (local)
- [541] [542]
+ [537] [538]
 File: Figures/max-alle-fenster-oeffnete-mrs-cropped.pdf Graphic file (type QTm)
 
 
@@ -6955,7 +6958,7 @@ File: Figures/solution-mrs-all-cause-open-cropped.pdf Graphic file (type QTm)
 <use  "Figures/solution-mrs-all-cause-open-cropped.pdf" >
 File: Figures/solution-mrs-cause-all-open-cropped.pdf Graphic file (type QTm)
 
-<use  "Figures/solution-mrs-cause-all-open-cropped.pdf" > [543] [544]
+<use  "Figures/solution-mrs-cause-all-open-cropped.pdf" > [539] [540]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6968,12 +6971,12 @@ File: Figures/solution-mrs-cause-all-open-cropped.pdf Graphic file (type QTm)
 File: Figures/mrs-max-wieder-alle-fenster-oeffnete-cropped.pdf Graphic file (ty
 pe QTm)
 
-<use  "Figures/mrs-max-wieder-alle-fenster-oeffnete-cropped.pdf" > [545]
+<use  "Figures/mrs-max-wieder-alle-fenster-oeffnete-cropped.pdf" > [541]
 File: Figures/mrs-max-alle-fenster-wieder-oeffnete-cropped.pdf Graphic file (ty
 pe QTm)
 
-<use  "Figures/mrs-max-alle-fenster-wieder-oeffnete-cropped.pdf" > [546]
-[547] [548]
+<use  "Figures/mrs-max-alle-fenster-wieder-oeffnete-cropped.pdf" > [542]
+[543] [544]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -6987,7 +6990,7 @@ pe QTm)
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [549]
+ [545]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7013,10 +7016,10 @@ Overfull \hbox (0.35706pt too wide) in paragraph at lines 818--863
 rb and additionally an adjective, an accusative|
  []
 
-) [550] [551]
+) [546] [547]
 \openout2 = `chapters/movement.aux'.
 
- (./chapters/movement.tex [552
+ (./chapters/movement.tex [548
 
 
 
@@ -7040,7 +7043,7 @@ chapter 20.
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
 Missing character: There is no ] in font nullfont!
-[553]
+[549]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7051,28 +7054,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
- [554]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
- [555] [556] [557] [558]
+ [550]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7081,14 +7063,19 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+ [551] [552] [553] [554]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7105,9 +7092,6 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7127,13 +7111,32 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
- [559] [560] [561]) [562]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+ [555] [556] [557]) [558]
 \openout2 = `chapters/phrasal.aux'.
 
 
 (./chapters/phrasal.tex
 chapter 21.
-[563
+[559
 
 
 
@@ -7144,20 +7147,20 @@ Overfull \hbox (0.53041pt too wide) in paragraph at lines 93--101
 ammar, their approach to syntax is deeply|
  []
 
-[564] [565]
+[560] [561]
 Underfull \hbox (badness 10000) in paragraph at lines 213--213
 [][][]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][] [] [][] [] [][]
 [][][][][][] [] [][][] [] [][][] [] [][][][][][] [] [][][][][][][][] [] [][][][
 ][] [] [][][][][][] [] [][][][][][][] [] [][][][] []
  []
 
-[566] [567] [568] [569] [570] [571] [572]
+[562] [563] [564] [565] [566] [567] [568]
 Overfull \hbox (5.04958pt too wide) in paragraph at lines 556--562
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 A reviewer of Theoretical Linguistics cor
 rectly observes that a version of the (phrasal)|
  []
 
-[573] [574] [575] [576] [577]
+[569] [570] [571] [572] [573]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7183,7 +7186,7 @@ Overfull \hbox (13.16759pt too wide) in paragraph at lines 887--900
 d have to be assumed, are connected via metarules.[]$[]$[] |
  []
 
-[578]
+[574]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7196,14 +7199,14 @@ d have to be assumed, are connected via metarules.[]$[]$[] |
 \forest@temp@box=\box32758 (local)
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
- [579] [580] [581]
+ [575] [576] [577]
 Overfull \hbox (3.94948pt too wide) in paragraph at lines 1094--1106
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Exoskeletal approaches usually assume som
 e version of Neo-Davidsonianism. []David-|
  []
 
-[582] [583] [584] [585] [586] [587] [588] [589] [590] [591] [592] [593]
-[594] [595] [596] [597]
+[578] [579] [580] [581] [582] [583] [584] [585] [586] [587] [588] [589]
+[590] [591] [592] [593]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7214,7 +7217,7 @@ e version of Neo-Davidsonianism. []David-|
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
- [598] [599]
+ [594] [595]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7225,30 +7228,30 @@ e version of Neo-Davidsonianism. []David-|
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
- [600]
+ [596]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
 \forest@temp@box=\box32764 (local)
- [601] [602]
+ [597] [598]
 Overfull \hbox (2.3404pt too wide) in paragraph at lines 2273--2285
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Although Culicover and Jackendoff emphasi
 ze the similarity between their approach|
  []
 
-[603] [604]
+[599] [600]
 Overfull \hbox (1.75623pt too wide) in paragraph at lines 2360--2367
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 A general problem of approaches that assu
 me phrase structure configurations paired|
  []
 
-[605] [606]
+[601] [602]
 Underfull \hbox (badness 10000) in paragraph at lines 2465--2465
 [][][]\EU1/LinLibertine_R_B.otf(1)/m/n/8 https://www.elitepartner.de/forum/wie-
 gehen-die-maenner-mit-den-veraenderten-anspruechen-der-[]
  []
 
-[607] [608] [609]
+[603] [604] [605]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7298,7 +7301,7 @@ gehen-die-maenner-mit-den-veraenderten-anspruechen-der-[]
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
- [610] [611]
+ [606] [607]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7319,8 +7322,8 @@ gehen-die-maenner-mit-den-veraenderten-anspruechen-der-[]
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
- [612] [613] [614] [615] [616] [617] [618]
-[619]
+ [608] [609] [610] [611] [612] [613] [614]
+[615]
 Overfull \hbox (2.26599pt too wide) in paragraph at lines 3170--3175
 \EU1/LinLibertine_R_B.otf(0)/m/n/10 ([]Lüdeling[] []2001[]: Section 3.4.3[]; []
 Müller[] []2002a[]: 324–327, 372–377[]; []Müller[] []2003d[]: Section 2.2.1,|
@@ -7405,7 +7408,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32755 (local)
 \forest@temp@box=\box32754 (local)
 \forest@temp@box=\box32753 (local)
-[620] [621]
+[616] [617]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7424,6 +7427,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
+ [618] [619] [620] [621]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+\forest@temp@box=\box32748 (local)
  [622] [623] [624] [625]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
@@ -7438,29 +7462,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
 \forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
-\forest@temp@box=\box32748 (local)
- [626] [627] [628] [629]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
- [630] [631]
-[632]
+ [626] [627]
+[628]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7476,17 +7479,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 3286--3286
 \forest@temp@box=\box32764 (local)
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
- [633] [634] [635] [636]) [637]
+ [629] [630] [631] [632]) [633]
 \openout2 = `chapters/coregram.aux'.
 
- (./chapters/coregram.tex [638
+ (./chapters/coregram.tex [634
 
 
 
 
 ]
 chapter 22.
-[639] [640]
+[635] [636]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7506,7 +7509,7 @@ chapter 22.
 \forest@temp@box=\box32751 (local)
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
- [641] [642] [643]
+ [637] [638] [639]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7527,28 +7530,28 @@ chapter 22.
 \forest@temp@box=\box32750 (local)
 \forest@temp@box=\box32749 (local)
 \forest@temp@box=\box32748 (local)
- [644] [645] [646] [647] [648] [649] [650])
-[651]
+ [640] [641] [642] [643] [644] [645] [646])
+[647]
 \openout2 = `chapters/conclusions.aux'.
 
- (./chapters/conclusions.tex [652
+ (./chapters/conclusions.tex [648
 
 
 
 
 ]
 chapter 23.
-[653] [654]) [655]
+[649] [650]) [651]
 \openout2 = `chapters/loesungen.aux'.
 
- (./chapters/loesungen.tex [656
+ (./chapters/loesungen.tex [652
 
 
 
 
 ]
 chapter 24.
-[657]
+[653]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7556,24 +7559,7 @@ chapter 24.
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
 \forest@temp@box=\box32761 (local)
- [658] [659] [660]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
+ [654] [655] [656]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7591,7 +7577,24 @@ chapter 24.
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
- [661]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+ [657]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7628,6 +7631,36 @@ chapter 24.
 \forest@temp@box=\box32753 (local)
 \forest@temp@box=\box32752 (local)
 \forest@temp@box=\box32751 (local)
+ [658]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+\forest@temp@box=\box32751 (local)
+\forest@temp@box=\box32750 (local)
+\forest@temp@box=\box32749 (local)
+ [659] [660] [661]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
  [662]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
@@ -7639,42 +7672,12 @@ chapter 24.
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
 \forest@temp@box=\box32758 (local)
-\forest@temp@box=\box32757 (local)
-\forest@temp@box=\box32756 (local)
-\forest@temp@box=\box32755 (local)
-\forest@temp@box=\box32754 (local)
-\forest@temp@box=\box32753 (local)
-\forest@temp@box=\box32752 (local)
-\forest@temp@box=\box32751 (local)
-\forest@temp@box=\box32750 (local)
-\forest@temp@box=\box32749 (local)
- [663] [664] [665]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
- [666]
-\forest@temp@box=\box32767 (local)
-\forest@temp@box=\box32766 (local)
-\forest@temp@box=\box32765 (local)
-\forest@temp@box=\box32764 (local)
-\forest@temp@box=\box32763 (local)
-\forest@temp@box=\box32762 (local)
-\forest@temp@box=\box32761 (local)
-\forest@temp@box=\box32760 (local)
-\forest@temp@box=\box32759 (local)
-\forest@temp@box=\box32758 (local)
- [667] [668]
+ [663] [664]
 File: Figures/den-apfel-verschlingt-david-lfg-lsp-crop.pdf Graphic file (type Q
 Tm)
 
-<use  "Figures/den-apfel-verschlingt-david-lfg-lsp-crop.pdf" > [669] [670]
-[671]
+<use  "Figures/den-apfel-verschlingt-david-lfg-lsp-crop.pdf" > [665] [666]
+[667]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7706,7 +7709,7 @@ Tm)
 \forest@temp@box=\box32739 (local)
 \forest@temp@box=\box32738 (local)
 \forest@temp@box=\box32737 (local)
- [672]
+ [668]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7766,7 +7769,7 @@ Tm)
 \forest@temp@box=\box32733 (local)
 \forest@temp@box=\box32732 (local)
 \forest@temp@box=\box32731 (local)
- [673]
+ [669]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7828,7 +7831,7 @@ Tm)
 \forest@temp@box=\box32761 (local)
 \forest@temp@box=\box32760 (local)
 \forest@temp@box=\box32759 (local)
- [674]
+ [670]
 \forest@temp@box=\box32767 (local)
 \forest@temp@box=\box32766 (local)
 \forest@temp@box=\box32765 (local)
@@ -7852,29 +7855,29 @@ Tm)
 \forest@temp@box=\box32747 (local)
 \forest@temp@box=\box32746 (local)
 \forest@temp@box=\box32745 (local)
-) [675] [676] (./backmatter.tex
+) [671] [672] (./backmatter.tex
 (./grammatical-theory.bbl
 chapter without number
-[677
+[673
 
 
 
 
 
-] [678] [679] [680] [681] [682] [683] [684] [685]
+] [674] [675] [676] [677] [678] [679] [680] [681]
 Underfull \hbox (badness 2080) in paragraph at lines 930--936
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Bolc, Leonard, Krzysztof Czuba, Anna Kupś
 ć, Małgorzata Marciniak, Agnieszka
  []
 
-[686] [687] [688] [689] [690] [691] [692] [693] [694] [695] [696] [697]
-[698] [699]
+[682] [683] [684] [685] [686] [687] [688] [689] [690] [691] [692] [693]
+[694] [695]
 Underfull \hbox (badness 1226) in paragraph at lines 2457--2461
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Dürscheid, Christa. 1989.  \EU1/LinLibert
 ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
  []
 
-[700] [701] [702] [703] [704] [705] [706] [707]
+[696] [697] [698] [699] [700] [701] [702] [703]
 Underfull \hbox (badness 10000) in paragraph at lines 3218--3222
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
  Functional Grammar und
@@ -7886,7 +7889,7 @@ Underfull \hbox (badness 5954) in paragraph at lines 3218--3222
 n eines sprachverarbeitenden Sys-
  []
 
-[708] [709] [710] [711] [712] [713] [714]
+[704] [705] [706] [707] [708] [709] [710]
 Underfull \hbox (badness 5203) in paragraph at lines 3954--3959
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Heinecke, Johannes, Jürgen Kunze, Wolfgan
 g Menzel & Ingo Schröder. 1998.
@@ -7898,13 +7901,13 @@ Underfull \hbox (badness 7012) in paragraph at lines 3954--3959
 .  In []Isabelle[] ([]1998[])[] 526–530.
  []
 
-[715] [716]
+[711] [712]
 Underfull \hbox (badness 1286) in paragraph at lines 4249--4254
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Höhle, Tilman N. 2016j.  Vorangestellte V
 erben und Komplementierer sind eine
  []
 
-[717] [718]
+[713] [714]
 Underfull \hbox (badness 1616) in paragraph at lines 4413--4418
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Islam, Md. Asfaqul, K. M. Azharul Hasan &
  Md. Mizanur Rahman. 2012.  Ba-
@@ -7922,38 +7925,38 @@ Underfull \hbox (badness 2762) in paragraph at lines 4413--4418
 CIT)\EU1/LinLibertine_R_B.otf(0)/m/n/10 , 185–189. Curran Associates.
  []
 
-[719] [720] [721] [722] [723] [724] [725]
+[715] [716] [717] [718] [719] [720] [721]
 Underfull \hbox (badness 7685) in paragraph at lines 5122--5126
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Klein, Wolfgang. 1971.  \EU1/LinLibertine
 _R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
  []
 
-[726] [727] [728] [729] [730] [731] [732] [733] [734] [735]
-Underfull \hbox (badness 2735) in paragraph at lines 6185--6189
+[722] [723] [724] [725] [726] [727] [728] [729] [730] [731]
+Underfull \hbox (badness 2735) in paragraph at lines 6179--6183
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
 panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
  []
 
-[736] [737] [738] [739] [740]
+[732] [733] [734] [735] [736]
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
 (Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
-(Font)              for symbol `grqq' on input line 6735.
+(Font)              for symbol `grqq' on input line 6729.
 
-[741] [742] [743] [744] [745] [746] [747] [748] [749]
-Underfull \hbox (badness 1675) in paragraph at lines 7648--7654
+[737] [738] [739] [740] [741] [742] [743] [744] [745]
+Underfull \hbox (badness 1675) in paragraph at lines 7642--7648
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
 Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
  []
 
-[750] [751] [752] [753] [754] [755]
-Underfull \hbox (badness 1348) in paragraph at lines 8285--8292
+[746] [747] [748] [749] [750] [751]
+Underfull \hbox (badness 1348) in paragraph at lines 8264--8271
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
 (0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
  []
 
-[756] [757] [758] [759] [760] [761] [762] [763] [764]) [765]
+[752] [753] [754] [755] [756] [757] [758] [759] [760]) [761]
 No file grammatical-theory.and.
 No file grammatical-theory.lnd.
 )
@@ -7963,7 +7966,7 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[766
+[762
 
 
 ]
@@ -8006,9 +8009,9 @@ LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <12.40993> not available
 
 (Font)              size <12> substituted on input line 15.
 
-) [767
+) [763
 
-] [768
+] [764
 
 ]
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
@@ -8030,7 +8033,7 @@ Overfull \hbox (31.68587pt too wide) in paragraph at lines 56--56
 [][][][][][][] |
  []
 
-[769]
+[765]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./grammatical-theory.aux (./chapters/preface.aux)
@@ -8058,17 +8061,14 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) ) 
 Here is how much of TeX's memory you used:
- 167332 strings out of 493591
- 5671796 string characters out of 6143546
- 1981643 words of memory out of 5000000
- 169223 multiletter control sequences out of 15000+600000
+ 167353 strings out of 493591
+ 5673488 string characters out of 6143546
+ 1979687 words of memory out of 5000000
+ 169244 multiletter control sequences out of 15000+600000
  57336 words of font info for 269 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7525s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on grammatical-theory.pdf (789 pages).
+Output written on grammatical-theory.pdf (785 pages).

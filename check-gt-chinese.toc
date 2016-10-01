@@ -138,24 +138,24 @@
 \contentsline {subsection}{\numberline {8.5.2}Forward and backward composition}{229}{subsection.8.5.2}
 \contentsline {subsection}{\numberline {8.5.3}Analysis of long\active@dq \dq@prtct {=}distance dependencies}{229}{subsection.8.5.3}
 \contentsline {section}{\numberline {8.6}Summary and classification}{231}{section.8.6}
-\contentsline {chapter}{\numberline {9}Head-Driven Phrase Structure Grammar}{237}{chapter.9}
-\contentsline {section}{\numberline {9.1}General remarks on the representational format}{240}{section.9.1}
-\contentsline {subsection}{\numberline {9.1.1}Representation of valence information}{241}{subsection.9.1.1}
-\contentsline {subsection}{\numberline {9.1.2}Representation of constituent structure}{243}{subsection.9.1.2}
-\contentsline {subsection}{\numberline {9.1.3}Linearization rules}{247}{subsection.9.1.3}
-\contentsline {subsection}{\numberline {9.1.4}Projection of head properties}{248}{subsection.9.1.4}
-\contentsline {subsection}{\numberline {9.1.5}Inheritance hierarchies and generalizations}{250}{subsection.9.1.5}
-\contentsline {subsection}{\numberline {9.1.6}Semantics}{252}{subsection.9.1.6}
-\contentsline {subsection}{\numberline {9.1.7}Adjuncts}{255}{subsection.9.1.7}
-\contentsline {section}{\numberline {9.2}Passive}{258}{section.9.2}
-\contentsline {subsection}{\numberline {9.2.1}Valence information and the Case Principle}{261}{subsection.9.2.1}
-\contentsline {section}{\numberline {9.3}Verb position}{263}{section.9.3}
-\contentsline {section}{\numberline {9.4}Local reordering}{268}{section.9.4}
-\contentsline {section}{\numberline {9.5}Long\active@dq \dq@prtct {=}distance dependencies}{271}{section.9.5}
-\contentsline {section}{\numberline {9.6}New developments and theoretical variants}{276}{section.9.6}
-\contentsline {subsection}{\numberline {9.6.1}Specifier, complements and argument structure}{276}{subsection.9.6.1}
-\contentsline {subsection}{\numberline {9.6.2}Linearization\active@dq \dq@prtct {=}based HPSG}{279}{subsection.9.6.2}
-\contentsline {section}{\numberline {9.7}Summary and classification}{280}{section.9.7}
+\contentsline {chapter}{\numberline {9}中心语驱动的短语结构语法}{237}{chapter.9}
+\contentsline {section}{\numberline {9.1}有关表示形式的一般说明}{240}{section.9.1}
+\contentsline {subsection}{\numberline {9.1.1}配价信息的表示}{240}{subsection.9.1.1}
+\contentsline {subsection}{\numberline {9.1.2}组成成分结构的表示}{242}{subsection.9.1.2}
+\contentsline {subsection}{\numberline {9.1.3}线性顺序规则}{246}{subsection.9.1.3}
+\contentsline {subsection}{\numberline {9.1.4}中心语属性的投射}{247}{subsection.9.1.4}
+\contentsline {subsection}{\numberline {9.1.5}承继层级体系与概说}{249}{subsection.9.1.5}
+\contentsline {subsection}{\numberline {9.1.6}语义}{251}{subsection.9.1.6}
+\contentsline {subsection}{\numberline {9.1.7}说明语}{253}{subsection.9.1.7}
+\contentsline {section}{\numberline {9.2}被动}{256}{section.9.2}
+\contentsline {subsection}{\numberline {9.2.1}配价信息与格原则}{259}{subsection.9.2.1}
+\contentsline {section}{\numberline {9.3}动词位置}{260}{section.9.3}
+\contentsline {section}{\numberline {9.4}局部重新排序}{265}{section.9.4}
+\contentsline {section}{\numberline {9.5}长距离依存}{267}{section.9.5}
+\contentsline {section}{\numberline {9.6}新的进展与理论变体}{272}{section.9.6}
+\contentsline {subsection}{\numberline {9.6.1}限定语、补足语与论元结构}{272}{subsection.9.6.1}
+\contentsline {subsection}{\numberline {9.6.2}基于线性顺序的HPSG理论}{275}{subsection.9.6.2}
+\contentsline {section}{\numberline {9.7}总结}{275}{section.9.7}
 \contentsline {chapter}{\numberline {10}Construction Grammar}{285}{chapter.10}
 \contentsline {section}{\numberline {10.1}General remarks on the representational format}{287}{section.10.1}
 \contentsline {subsection}{\numberline {10.1.1}The head\active@dq \dq@prtct {=}complement construction}{288}{subsection.10.1.1}
@@ -350,8 +350,8 @@
 \contentsline {section}{\numberline {24.9}Construction Grammar}{672}{section.24.9}
 \contentsline {section}{\numberline {24.10}Dependency Grammar}{673}{section.24.10}
 \contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{674}{section.24.11}
-\contentsline {chapter}{\nonumberline 参考文献}{677}{chapter*.9}
-\contentsline {chapter}{Index}{766}{section*.10}
-\contentsline {section}{Name index}{766}{section*.10}
-\contentsline {section}{Language index}{766}{section*.11}
-\contentsline {section}{Subject index}{766}{section*.12}
+\contentsline {chapter}{\nonumberline 参考文献}{677}{chapter*.19}
+\contentsline {chapter}{Index}{766}{section*.20}
+\contentsline {section}{Name index}{766}{section*.20}
+\contentsline {section}{Language index}{766}{section*.21}
+\contentsline {section}{Subject index}{766}{section*.22}

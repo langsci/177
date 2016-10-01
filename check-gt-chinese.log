@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  16 SEP 2016 15:00
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 OCT 2016 17:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3368,6 +3368,10 @@ LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(1)/m/n' will be
 (Font)              scaled to size 9.56406pt on input line 7.
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(1)/m/n' will be
 (Font)              scaled to size 49.7331pt on input line 7.
+Package microtype Info: Loading generic settings for font family
+(microtype)             `SimSun' (encoding: EU1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
 .................................................
 . fontspec info: "set-scale"
 . 
@@ -3429,6 +3433,10 @@ File: ./langsci/graphics/langsci_logo_nocolor.pdf Graphic file (type QTm)
 Package hyperref Warning: Option `colorlinks' has already been used,
 (hyperref)                setting the option has no effect on input line 7.
 
+
+LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
+(Font)              using `EU1/SimSun(0)/m/n' instead on input line 7.
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -3444,10 +3452,6 @@ File: ./langsci/graphics/FULogo_sw_CMYK.pdf Graphic file (type QTm)
 LaTeX Font Warning: Font shape `EU1/SimSun(0)/bx/n' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 12.
 
-Package microtype Info: Loading generic settings for font family
-(microtype)             `SimSun' (encoding: EU1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 Package tocbasic Info: character protrusion at toc deactivated on input line 12
 .
 (./check-gt-chinese.toc [7
@@ -3467,26 +3471,18 @@ Overfull \hbox (0.96397pt too wide) detected at line 236
 \tf@toc=\write14
 \openout14 = `check-gt-chinese.toc'.
 
- [14] [1
+ [14] [20
 
 
 
+] [1
 
 
 ] [2]
-\openout2 = `chapters/5-merkmalstrukturen.aux'.
+\openout2 = `chapters/8-hpsg.aux'.
 
- (./chapters/5-merkmalstrukturen.tex [180
-
-
-
-
-
-
-
-
-]
-chapter 6.
+ (./chapters/8-hpsg.tex
+chapter 9.
 
 Class scrbook Warning: \float@addtolists detected!
 (scrbook)              Implementation of \float@addtolist became
@@ -3502,15 +3498,6 @@ Class scrbook Warning: \float@addtolists detected!
 (scrbook)              a package that still implements the
 (scrbook)              deprecated \float@addtolist interface .
 
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/it' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 41.
-
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sc' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 72.
-
-[181] [182]
 .................................................
 . fontspec info: "defining-font"
 . 
@@ -3568,16 +3555,8 @@ tex-text;mapping=tex-text;+liga;+pnum;+lnum;slant=0.25;+smcp;slant=0;"
 . and font adjustment code:
 . \fontdimen 7\font =0\fontdimen 7\font 
 .................................................
- [183] [184] [185] [186] [187] [188] [189] [190] [191]
-File: Figures/frau-model-theoretic-cropped.pdf Graphic file (type QTm)
+[237
 
-<use  "Figures/frau-model-theoretic-cropped.pdf" >
-File: Figures/mann-model-theoretic-crop.pdf Graphic file (type QTm)
-
-<use  "Figures/mann-model-theoretic-crop.pdf" >
-File: Figures/model-theory-phenomenon-crop.pdf Graphic file (type QTm)
-
-<use  "Figures/model-theory-phenomenon-crop.pdf" > [192] [193]) [194] [413
 
 
 
@@ -3589,7 +3568,229 @@ File: Figures/model-theory-phenomenon-crop.pdf Graphic file (type QTm)
 
 
 ]
-[414] (./backmatter.tex (./check-gt-chinese.bbl
+
+Package natbib Warning: Citation `Crysmann2016a' on page 238 undefined on input
+ line 81.
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 82--83
+[]\EU1/SimSun(0)/bx/n/10 希 伯 来 语  |（\EU1/LinLibertine_R_B.otf(0)/m/n/10 Hebrew\
+EU1/SimSun(0)/bx/n/10 ）| []\EU1/LinLibertine_R_B.otf(0)/m/n/10 ([]Melnik[] []20
+07[]; []Haugereid, Melnik & Wintner[] []2013[];
+ []
+
+
+Package natbib Warning: Citation `MBS2016a-u' on page 238 undefined on input li
+ne 83.
+
+
+Overfull \hbox (18.91623pt too wide) in paragraph at lines 95--96
+[]\EU1/SimSun(0)/bx/n/10 波 兰 语  |（\EU1/LinLibertine_R_B.otf(0)/m/n/10 Polish\EU
+1/SimSun(0)/bx/n/10 ）| []\EU1/LinLibertine_R_B.otf(0)/m/n/10 ([]Przepiórkowski,
+ Kupść, Marciniak & Mykowiecka[] []2002[]; []Mykowiecka,
+ []
+
+[238]
+LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/sl' in size <10> not avail
+able
+(Font)              Font shape `EU1/Arimo_B.ttf(0)/m/it' tried instead on input
+ line 109.
+LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/it' will be
+(Font)              scaled to size 8.15796pt on input line 109.
+ [239] [240]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+ [241]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+ [242] [243] [244] [245] [246]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no = in font nullfont!
+ [247]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+ [248]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+ [249]
+[250] [251] [252] [253]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+ [254] [255]
+Underfull \hbox (badness 10000) in paragraph at lines 1286--1294
+
+ []
+
+[256] [257] [258] [259]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+ [260]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+Missing character: There is no ] in font nullfont!
+ [261] [262] [263]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+ [264]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+ [265] [266]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+ [267]
+[268] [269]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+\forest@temp@box=\box32755 (local)
+\forest@temp@box=\box32754 (local)
+\forest@temp@box=\box32753 (local)
+\forest@temp@box=\box32752 (local)
+ [270] [271] [272]
+\forest@temp@box=\box32767 (local)
+\forest@temp@box=\box32766 (local)
+\forest@temp@box=\box32765 (local)
+\forest@temp@box=\box32764 (local)
+\forest@temp@box=\box32763 (local)
+\forest@temp@box=\box32762 (local)
+\forest@temp@box=\box32761 (local)
+\forest@temp@box=\box32760 (local)
+\forest@temp@box=\box32759 (local)
+\forest@temp@box=\box32758 (local)
+\forest@temp@box=\box32757 (local)
+\forest@temp@box=\box32756 (local)
+ [273] [274] [275] [276] [277] [278]) [279]
+[413
+
+
+
+
+
+
+
+] [414] (./backmatter.tex (./check-gt-chinese.bbl
 chapter without number
 [677
 
@@ -3681,25 +3882,25 @@ _R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
  []
 
 [726] [727] [728] [729] [730] [731] [732] [733] [734] [735]
-Underfull \hbox (badness 2735) in paragraph at lines 6185--6189
+Underfull \hbox (badness 2735) in paragraph at lines 6179--6183
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
 panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
  []
 
-[736] [737] [738] [739] [740] [741]
+[736] [737] [738] [739] [740]
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
 (Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
-(Font)              for symbol `grqq' on input line 6740.
+(Font)              for symbol `grqq' on input line 6729.
 
-[742] [743] [744] [745] [746] [747] [748] [749]
-Underfull \hbox (badness 1675) in paragraph at lines 7653--7659
+[741] [742] [743] [744] [745] [746] [747] [748] [749]
+Underfull \hbox (badness 1675) in paragraph at lines 7642--7648
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
 Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
  []
 
 [750] [751] [752] [753] [754] [755]
-Underfull \hbox (badness 1348) in paragraph at lines 8290--8297
+Underfull \hbox (badness 1348) in paragraph at lines 8264--8271
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
 (0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
@@ -3710,6 +3911,9 @@ No file check-gt-chinese.and.
 No file check-gt-chinese.lnd.
 )
 No file check-gt-chinese.snd.
+
+Package natbib Warning: There were undefined citations.
+
 
 AED: lastpage setting LastPage
 [766
@@ -3764,12 +3968,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 70032 strings out of 493591
- 1440747 string characters out of 6143546
- 1724013 words of memory out of 5000000
- 72055 multiletter control sequences out of 15000+600000
- 20806 words of font info for 123 fonts, out of 8000000 for 9000
+ 78532 strings out of 493591
+ 1777828 string characters out of 6143546
+ 1761123 words of memory out of 5000000
+ 80553 multiletter control sequences out of 15000+600000
+ 20960 words of font info for 128 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
- 71i,40n,107p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 161i,69n,187p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on check-gt-chinese.pdf (125 pages).
+Output written on check-gt-chinese.pdf (154 pages).
