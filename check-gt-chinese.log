@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 OCT 2016 17:18
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  6 OCT 2016 01:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -3463,8 +3463,8 @@ LaTeX Font Warning: Font shape `EU1/SimSun(0)/m/sl' undefined
 (Font)              using `EU1/SimSun(0)/m/n' instead on input line 96.
 
 [8] [9] [10]
-Overfull \hbox (0.96397pt too wide) detected at line 236
- []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 413
+Overfull \hbox (2.37997pt too wide) detected at line 236
+ []\EU1/LinLibertine_R_B.otf(0)/bx/n/12 409
  []
 
 [11] [12] [13])
@@ -3668,7 +3668,7 @@ Missing character: There is no = in font nullfont!
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
  [254] [255]
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1294
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1305
 
  []
 
@@ -3782,7 +3782,7 @@ Missing character: There is no ] in font nullfont!
 \forest@temp@box=\box32757 (local)
 \forest@temp@box=\box32756 (local)
  [273] [274] [275] [276] [277] [278]) [279]
-[413
+[409
 
 
 
@@ -3790,9 +3790,9 @@ Missing character: There is no ] in font nullfont!
 
 
 
-] [414] (./backmatter.tex (./check-gt-chinese.bbl
+] [410] (./backmatter.tex (./check-gt-chinese.bbl
 chapter without number
-[677
+[673
 
 
 
@@ -3809,25 +3809,25 @@ chapter without number
 
 
 
-] [678] [679] [680] [681] [682] [683] [684] [685]
+] [674] [675] [676] [677] [678] [679] [680] [681]
 Underfull \hbox (badness 2080) in paragraph at lines 930--936
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Bolc, Leonard, Krzysztof Czuba, Anna Kupś
 ć, Małgorzata Marciniak, Agnieszka
  []
 
-[686] [687] [688] [689] [690] [691] [692] [693] [694] [695] [696] [697]
-[698] [699]
+[682] [683] [684] [685] [686] [687] [688] [689] [690] [691] [692] [693]
+[694] [695]
 Underfull \hbox (badness 1226) in paragraph at lines 2457--2461
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Dürscheid, Christa. 1989.  \EU1/LinLibert
 ine_R_B.otf(0)/m/it/10 Zur Vorfeldbesetzung in deutschen Verbzweit-Strukturen
  []
 
-[700] [701] [702]
+[696] [697] [698]
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LinLibertine_R_B.otf' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [703] [704] [705] [706] [707]
+ [699] [700] [701] [702] [703]
 Underfull \hbox (badness 10000) in paragraph at lines 3218--3222
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Frey, Werner & Uwe Reyle. 1983a.  Lexical
  Functional Grammar und
@@ -3839,7 +3839,7 @@ Underfull \hbox (badness 5954) in paragraph at lines 3218--3222
 n eines sprachverarbeitenden Sys-
  []
 
-[708] [709] [710] [711] [712] [713] [714]
+[704] [705] [706] [707] [708] [709] [710]
 Underfull \hbox (badness 5203) in paragraph at lines 3954--3959
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Heinecke, Johannes, Jürgen Kunze, Wolfgan
 g Menzel & Ingo Schröder. 1998.
@@ -3851,13 +3851,13 @@ Underfull \hbox (badness 7012) in paragraph at lines 3954--3959
 .  In []Isabelle[] ([]1998[])[] 526–530.
  []
 
-[715] [716]
+[711] [712]
 Underfull \hbox (badness 1286) in paragraph at lines 4249--4254
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Höhle, Tilman N. 2016j.  Vorangestellte V
 erben und Komplementierer sind eine
  []
 
-[717] [718]
+[713] [714]
 Underfull \hbox (badness 1616) in paragraph at lines 4413--4418
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Islam, Md. Asfaqul, K. M. Azharul Hasan &
  Md. Mizanur Rahman. 2012.  Ba-
@@ -3875,38 +3875,38 @@ Underfull \hbox (badness 2762) in paragraph at lines 4413--4418
 CIT)\EU1/LinLibertine_R_B.otf(0)/m/n/10 , 185–189. Curran Associates.
  []
 
-[719] [720] [721] [722] [723] [724] [725]
+[715] [716] [717] [718] [719] [720] [721]
 Underfull \hbox (badness 7685) in paragraph at lines 5122--5126
 []\EU1/LinLibertine_R_B.otf(0)/m/n/10 Klein, Wolfgang. 1971.  \EU1/LinLibertine
 _R_B.otf(0)/m/it/10 Parsing: Studien zur maschinellen Satzanalyse mit
  []
 
-[726] [727] [728] [729] [730] [731] [732] [733] [734] [735]
+[722] [723] [724] [725] [726] [727] [728] [729] [730] [731]
 Underfull \hbox (badness 2735) in paragraph at lines 6179--6183
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 Französisch, Italienisch, Portugiesisch, S
 panisch \EU1/LinLibertine_R_B.otf(0)/m/n/10 (Stauffenburg Einführungen 17).
  []
 
-[736] [737] [738] [739] [740]
+[732] [733] [734] [735] [736]
 
 LaTeX Font Warning: Font shape `OT1/LinLibertine_R_B.otf(0)/m/it' undefined
 (Font)              using `OT1/LinLibertine_R_B.otf(0)/m/n' instead
 (Font)              for symbol `grqq' on input line 6729.
 
-[741] [742] [743] [744] [745] [746] [747] [748] [749]
+[737] [738] [739] [740] [741] [742] [743] [744] [745]
 Underfull \hbox (badness 1675) in paragraph at lines 7642--7648
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 plication in Head-Driven Phrase Structure 
 Grammar\EU1/LinLibertine_R_B.otf(0)/m/n/10 : Eberhard-Karls-Universität
  []
 
-[750] [751] [752] [753] [754] [755]
+[746] [747] [748] [749] [750] [751]
 Underfull \hbox (badness 1348) in paragraph at lines 8264--8271
 \EU1/LinLibertine_R_B.otf(0)/m/it/10 guage Technology \EU1/LinLibertine_R_B.otf
 (0)/m/n/10 6(11). 1–20.  []$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][
 ][][][][][][][][][][] [] [][][] [] [][][][][][][][][] [] [][][][] []
  []
 
-[756] [757] [758] [759] [760] [761] [762] [763] [764]) [765]
+[752] [753] [754] [755] [756] [757] [758] [759] [760]) [761]
 No file check-gt-chinese.and.
 No file check-gt-chinese.lnd.
 )
@@ -3916,10 +3916,10 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[766
+[762
 
 
-] [768
+] [764
 
 ]
 LaTeX Font Info:    Font shape `EU1/Arimo_B.ttf(0)/m/n' will be
@@ -3941,7 +3941,7 @@ Overfull \hbox (30.88588pt too wide) in paragraph at lines 56--56
 [][][][][][][] 
  []
 
-[769]
+[765]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 56.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 56.
  (./check-gt-chinese.aux (./chapters/preface.aux)
@@ -3966,12 +3966,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 78532 strings out of 493591
- 1777828 string characters out of 6143546
- 1761123 words of memory out of 5000000
- 80553 multiletter control sequences out of 15000+600000
+ 78535 strings out of 493591
+ 1777826 string characters out of 6143546
+ 1760863 words of memory out of 5000000
+ 80556 multiletter control sequences out of 15000+600000
  20960 words of font info for 128 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  161i,69n,187p,10456b,3541s stack positions out of 5000i,500n,10000p,200000b,80000s

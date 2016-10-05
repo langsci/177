@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  1 OCT 2016 17:36
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016) (preloaded format=xelatex 2016.6.11)  6 OCT 2016 01:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4987,7 +4987,7 @@ Missing character: There is no = in font nullfont!
 \forest@temp@box=\box32763 (local)
 \forest@temp@box=\box32762 (local)
  [254] [255]
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1294
+Underfull \hbox (badness 10000) in paragraph at lines 1297--1305
 
  []
 
@@ -8061,12 +8061,15 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) ) 
 Here is how much of TeX's memory you used:
- 167353 strings out of 493591
- 5673488 string characters out of 6143546
- 1979687 words of memory out of 5000000
- 169244 multiletter control sequences out of 15000+600000
+ 167560 strings out of 493591
+ 5683193 string characters out of 6143546
+ 1979573 words of memory out of 5000000
+ 169451 multiletter control sequences out of 15000+600000
  57336 words of font info for 269 fonts, out of 8000000 for 9000
  1504 hyphenation exceptions out of 8191
  250i,80n,256p,10458b,7525s stack positions out of 5000i,500n,10000p,200000b,80000s
