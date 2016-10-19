@@ -1,9 +1,9 @@
 %% -*- coding:utf-8 -*-
-\chapter{Solutions to the exercises}
+\chapter{练习题答案}
+%\chapter{Solutions to the exercises}
 
-
-\section{Introduction and basic terms}
-
+\section{导言与术语}
+%\section{Introduction and basic terms}
 
 \eal
 \ex \field{Karl}{VF} \field{isst}{LS}.
@@ -14,14 +14,15 @@
 \ex \field{\field{Dass}{LS} \field{Peter nicht}{MF} \field{kommt}{RS}}{VF}, \field{ärgert}{LS} \field{Klaus}{MF}.
 \ex \field{\field{Einen Mann}{MF} \field{küssen}{RS}, \field{\field{der}{VF} \field{ihr nicht}{MF} \field{gefällt}{RS}}{NF}}{VF}, \field{würde}{LS} \field{sie nie}{MF}.
 \zl
-On (\mex{0}c): theoretically, this could also be a case of extraposition of the relative clause to
-the postfield. Since \emph{eine Frau, die Peter kennt} is a constituent, however, it is assumed that
-no reordering of the relative clause has taken place. Instead, we have a simpler structure with
-\emph{eine Frau, die Peter kennt} as a complete NP in the middle field.
+对于（\mex{0}c）而言：理论上，这也可以是关系小句外置到后场的一个例子。因为\emph{eine Frau, die Peter kennt} （Peter认识的一个女人）是一个组成成分，不过，一般认为这个关系小句并没有重新排序。相反，我们有一个更简单的结构，它把\emph{eine Frau, die Peter kennt}作为一个完整的NP放在中场的位置上。
+%On (\mex{0}c): theoretically, this could also be a case of extraposition of the relative clause to
+%the postfield. Since \emph{eine Frau, die Peter kennt} is a constituent, however, it is assumed that
+%no reordering of the relative clause has taken place. Instead, we have a simpler structure with
+%\emph{eine Frau, die Peter kennt} as a complete NP in the middle field.
 
 
-\section{Phrase structure grammars}
-
+\section{短语结构语法}
+%\section{Phrase structure grammars}
 
 
 \begin{enumerate}
@@ -63,7 +64,8 @@ be able to analyze sequences of words such as (\mex{1}), where the subject of \e
 by an empty NP:
 \ea[*]{
 \gll Ich glaube, dass schläft.\\
-     I believe that sleeps\\
+     我 认为 CONJ 睡觉\\
+%     I believe that sleeps\\
 }
 \z
 This problem can be solved using a feature that determines whether the left periphery of the \nbar is empty.
@@ -76,12 +78,14 @@ If \emph{Bücher} `books' were an NP in the lexicon, then adjectives such as \em
 NPs in order for phrases such as (\mex{1}) to be analyzed.
 \ea
 \gll interessante Bücher\\
-     interesting books\\
+     有趣的 书\\
+%     interesting books\\
 \z
 If adjectives are combined with NPs, however, it still has to be explained why (\mex{1}) is ungrammatical.
 \ea[*]{
 \gll interessante die Bücher\\
-     interesting the books\\
+     有趣的 DET 书\\
+%     interesting the books\\
 }
 \z
 
@@ -200,8 +204,8 @@ In order to rule out the last two sentences, the grammar has to contain informat
 
 
 
-\section{Transformational Grammar -- Government \& Binding}
-
+\section{转换语法－管辖与约束理论}
+%\section{Transformational Grammar -- Government \& Binding}
 
 % \ex dass die Frau den Mann liebt
 % \ex dass der Mann geliebt wird
@@ -216,15 +220,19 @@ In order to rule out the last two sentences, the grammar has to contain informat
 sn edges
 [CP
 [C$'$
-	[C$^0$[dass;that]]
+	[C$^0$[dass;CONJ]]
+%	[C$^0$[dass;that]]
 	[IP
-		[NP [die Frau;the woman,roof]]
+		[NP [die Frau;这个女人,roof]]
+%		[NP [die Frau;the woman,roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[den Mann;the man, roof]]
+					[NP[den Mann;这个男人, roof]]
+%					[NP[den Mann;the man, roof]]
 					[V$^0$[\trace$_j$]]]]
-			[I$^0$[lieb-$_j$ -t;love- -s]]]]]]
+			[I$^0$[lieb-$_j$ -t;爱- -s]]]]]]
+%			[I$^0$[lieb-$_j$ -t;love- -s]]]]]]
 \end{forest}
 }
 %\end{figure}%
@@ -236,14 +244,17 @@ sn edges
 sn edges
 [CP
 [C$'$
-	[C$^0$[dass;that]]
+	[C$^0$[dass;CONJ]]
+%	[C$^0$[dass;that]]
         [IP
-        [NP, [der Mann$_i$;the man ,roof]]
+           [NP, [der Mann$_i$;这个男人 ,roof]]
+%        [NP, [der Mann$_i$;the man ,roof]]
         [I$'$
 	   [VP
 		[V$'$
 	           [NP,   [\_$_i$]]
-		   [V$^0$,[geliebt \trace$_j$;loved, roof]]]]
+		   [V$^0$,[geliebt \trace$_j$;被爱, roof]]]]
+%		   [V$^0$,[geliebt \trace$_j$;loved, roof]]]]
 	   [I$^0$ ,name=Infl [wir-$_j$ -d;is]]]]]]
 \end{forest}
 }
@@ -256,16 +267,19 @@ sn edges
 \begin{forest}
 sn edges
 [CP
-   [NP, [der Mann$_i$;the man ,roof]]
+   [NP, [der Mann$_i$;这个男人 ,roof]]
+%    [NP, [der Mann$_i$;the man ,roof]]
    [C$'$
-	[C$^0$[ (wir-$_j$ -d)$_k$;is]]
+	[C$^0$[ (wir-$_j$ -d)$_k$;AUX]]
+%	[C$^0$[ (wir-$_j$ -d)$_k$;is]]
         [IP
         [NP, [\trace$_i$]]
         [I$'$
 	   [VP
 		[V$'$
 	           [NP,   [\_$_i$]]
-		   [V$^0$,[geliebt \trace$_j$;loved, roof]]]]
+		   [V$^0$,[geliebt \trace$_j$;被爱, roof]]]]
+%		   [V$^0$,[geliebt \trace$_j$;loved, roof]]]]
 	   [I$^0$ ,name=Infl [\trace$_k$]]]]]]
 \end{forest}
 }
@@ -279,15 +293,19 @@ sn edges
 sn edges
 [CP
 [C$'$
-	[C$^0$[dass;that]]
+	[C$^0$[dass;CONJ]]
+%	[C$^0$[dass;that]]
 	[IP
-		[NP [der Mann;the man, roof]]
+		[NP [der Mann;这个男人, roof]]
+%		[NP [der Mann;the man, roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[der Frau;the woman, roof]]
+					[NP[der Frau;这个女人, roof]]
+%					[NP[der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
-			[I$^0$[hilf-$_j$ -t;help- -s]]]]]]
+			[I$^0$[hilf-$_j$ -t;帮助- -s]]]]]]
+%			[I$^0$[hilf-$_j$ -t;help- -s]]]]]]
 \end{forest}
 }
 \end{figure}%
@@ -298,15 +316,18 @@ sn edges
 \begin{forest}
 sn edges
 [CP
-[NP [der Mann$_i$;the man, roof]]
+[NP [der Mann$_i$;这个男人, roof]]
+%[NP [der Mann$_i$;the man, roof]]
 [C$'$
-	[C$^0$ [(hilf-$_j$ -t)$_k$;help- -s]]
+	[C$^0$ [(hilf-$_j$ -t)$_k$;帮助- -s]]
+%	[C$^0$ [(hilf-$_j$ -t)$_k$;help- -s]]
 	[IP
 		[NP [\trace$_i$]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP [der Frau;the woman, roof]]
+					[NP [der Frau;这个女人, roof]]
+%					[NP [der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$ [\trace$_k$]]]]]]
 \end{forest}
@@ -314,7 +335,8 @@ sn edges
 
 %\clearpage
 
-\section{Generalized Phrase Structure Grammar}
+\section{广义短语结构语法}
+%\section{Generalized Phrase Structure Grammar}
 
 In order to analyze the sentences in (\mex{1}), one requires a rule for transitive verbs and a metarule for the extraction of an element.
 Furthermore, rules for the combination of elements in the noun phrase are required.
@@ -369,7 +391,7 @@ The fact that the determiner precedes the noun is ensured by the following LP"=r
 \ea
 {}Det $<$ X
 \z
-\pagebreak
+%\pagebreak
 The Extraction Metarule in (\mex{1}) is required in order to analyze (\ref{Aufgabe-GPSG-Grammatik-extraction}):
 \ea
 V3  $\to$ W, X $\mapsto$\\
@@ -423,7 +445,7 @@ Det     & X\\
 {}[+\textsc{top}] & X\\
 \end{tabular}
 \z
-\pagebreak
+%\pagebreak
 \item Metarules:
 \ea
 V3  $\to$ W, X $\mapsto$\\
@@ -441,7 +463,8 @@ V3/X  $\to$ W
 
 \end{enumerate}
 
-\section{Feature descriptions}
+\section{特征描写}
+%\section{Feature descriptions}
 
 \begin{enumerate}
 %% \item Geben Sie eine Typhierarchie für Wortarten (\type{det}, \type{comp}, \type{noun}, \type{verb},
@@ -540,7 +563,8 @@ difference lists.
 
 
 
-\section{Lexical Functional Grammar}
+\section{词汇功能语法}
+%\section{Lexical Functional Grammar}
 
 \begin{enumerate}
 \item \emph{kannte} `knew' is a transitive verb:
@@ -600,7 +624,8 @@ shows the analysis with a topicalized constituent in the prefield.\todostefan{Dr
 \end{enumerate}
 
 \pagebreak
-\section{Categorial Grammar}
+\section{范畴语法}
+%\section{Categorial Grammar}
 
 \largerpage
 \begin{enumerate}
@@ -655,11 +680,15 @@ np/n  & n/pp    & pp/np      & np\\
 \end{figure}%
 \end{enumerate}
 
-\section{Head-Driven Phrase Structure Grammar}
+\pagebreak
+
+\section{中心语驱动的短语结构语法}
+%\section{Head-Driven Phrase Structure Grammar}
 
 \largerpage
 \begin{enumerate}
-\item The solution is:\\[1mm]
+\item 答案是：\\[1mm]
+%\item The solution is:\\[1mm]
 %\vpageref{avm-max-lacht}.
 %\begin{figure}
 \oneline{%
@@ -705,22 +734,27 @@ np/n  & n/pp    & pp/np      & np\\
 }}
 \label{avm-max-lacht}
 %\end{figure}%
-\item An analysis of the difference in (\mex{1}) has to capture the fact that the case of the adjective has to agree with that of the noun. In (\mex{1}a),
-the genitive form of \emph{interessant} `interesting' is used, whereas (\mex{1}b) contains a form that is incompatible with the genitive singular.
+\item 对于（\mex{1}）中的差别的分析需要捕捉到这样的事实，形容词的格需要与名词的格保持一致。在（\mex{1}a）中，我们使用了\emph{interessant}（有趣的）的属格形式，而（\mex{1}b）包含的形式是与属格的单数不相容的形式。
+%\item An analysis of the difference in (\mex{1}) has to capture the fact that the case of the adjective has to %agree with that of the noun. In (\mex{1}a),
+%the genitive form of \emph{interessant} `interesting' is used, whereas (\mex{1}b) contains a form that is %incompatible with the genitive singular.
 \eal
 \ex[]{
 \gll eines interessanten Mannes\\ 
-     one.\gen{} interesting.\gen{} man.\gen{}\\
+     一.\gen{} 有趣的.\gen{} 男人.\gen{}\\
+%     one.\gen{} interesting.\gen{} man.\gen{}\\
 }
 \ex[*]{ 
 \gll eines interessanter Mannes\\
-     one.\gen{} interesting.\nom{} man.\gen{}\\
+     一.\gen{} 有趣的.\nom{} 男人.\gen{}\\
+%     one.\gen{} interesting.\nom{} man.\gen{}\\
 }
 \zl
-(\mex{1}) shows the \catv of \emph{interessanten}.
+（\mex{1})）说明了\emph{interessanten}的\catv 。 
+%(\mex{1}) shows the \catv of \emph{interessanten}.
 
 \eas
-\catv of \emph{interessanten} `interesting' with case information:\\
+带有格信息的\emph{interessanten}（有趣的）的\catv ：\\
+%\catv of \emph{interessanten} `interesting' with case information:\\
 \ms{ head & \ms[adj]{ %prd & $-$ \\
                       mod  & {\upshape \nbar[\textsc{case} \ibox{1}]}\\
                       case & \ibox{1} gen\\
@@ -728,24 +762,32 @@ the genitive form of \emph{interessant} `interesting' is used, whereas (\mex{1}b
               subcat & \liste{} \\
 }
 \zs
-The structure sharing of the case value of the adjective with the case value of the \nbar under \textsc{mod}
-identifies the case values of the noun and the adjective. \emph{interessanten} can therefore be combined with 
-\emph{Mannes}, but not with \emph{Mann}. Similarly, \emph{interessanter}
-can only be combined with the nominative \emph{Mann}, but not with the genitive \emph{Mannes}. 
+在\textsc{mod}下的形容词的格的值与\nbar 的格的值的结构共享决定了名词和形容词的格的值。由此，\emph{interessanten}可以跟\emph{Mannes}相组合，但是不能是\emph{Mann}。类似地，\emph{interessanter}只能与主格的\emph{Mann}相组合，而不能与属格的\emph{Mannes}组合。
+%The structure sharing of the case value of the adjective with the case value of the \nbar under \textsc{mod}
+%identifies the case values of the noun and the adjective. \emph{interessanten} can therefore be combined with 
+%\emph{Mannes}, but not with \emph{Mann}. Similarly, \emph{interessanter}
+%can only be combined with the nominative \emph{Mann}, but not with the genitive \emph{Mannes}. 
 
-For a refinement of the analysis of agreement inside the noun phrase, see \citew[Abschnitt~13.2]{MuellerLehrbuch1}.
+对于名词短语内部的一致关系的改进，请参考\citew[Abschnitt~13.2]{MuellerLehrbuch1}。
+%For a refinement of the analysis of agreement inside the noun phrase, see \citew[Abschnitt~13.2]
+%{MuellerLehrbuch1}.
 \end{enumerate}
 
 
-\section{Construction Grammar}
+\section{构式语法}
+%\section{Construction Grammar}
 
-Idioms can be found by reading the newspaper carefully. The less exciting method is to look them up a dictionary of
-idioms such as the Free Dictionary of Idioms and Phrases\footnote{
-\url{http://idioms.thefreedictionary.com/}, 04.03.2015.
-}.
+熟语可以通过仔细阅读报纸来获得。稍微枯燥的方法是查找熟语词典，如“熟语与短语免费辞典”\footnote{
+\url{http://idioms.thefreedictionary.com/}, \zhdate{2015/03/04}.
+}。
+%Idioms can be found by reading the newspaper carefully. The less exciting method is to look them up a %dictionary of
+%idioms such as the Free Dictionary of Idioms and Phrases\footnote{
+%\url{http://idioms.thefreedictionary.com/}, 04.03.2015.
+%}.
 
 
-\section{Dependency Grammar}
+\section{依存语法}
+%\section{Dependency Grammar}
 
 \begin{figure}[H]
 \centering
@@ -819,7 +861,8 @@ dg edges
 
 
 
-\section{Tree Adjoining Grammar}
+\section{树邻接语法}
+%\section{Tree Adjoining Grammar}
 
 %\addlines[2]
 The elementary trees in Figure~\vref{TAG-Elementarbaeume-dem-Koenig-treue} are needed for the analysis of (\mex{1}).

@@ -195,29 +195,29 @@
 \contentsline {paragraph}{\numberline {10.6.8.1.5}Permissiveness of the theories}{332}{paragraph.10.6.8.1.5}
 \contentsline {paragraph}{\numberline {10.6.8.1.6}A note on engineering}{332}{paragraph.10.6.8.1.6}
 \contentsline {section}{\numberline {10.7}Summary and classification}{333}{section.10.7}
-\contentsline {chapter}{\numberline {11}Dependency Grammar}{335}{chapter.11}
-\contentsline {section}{\numberline {11.1}General remarks on the representational format}{339}{section.11.1}
-\contentsline {subsection}{\numberline {11.1.1}Valence information, nucleus and satellites}{339}{subsection.11.1.1}
-\contentsline {subsection}{\numberline {11.1.2}Adjuncts}{342}{subsection.11.1.2}
-\contentsline {subsection}{\numberline {11.1.3}Linearization}{342}{subsection.11.1.3}
-\contentsline {subsection}{\numberline {11.1.4}Semantics}{344}{subsection.11.1.4}
-\contentsline {section}{\numberline {11.2}Passive}{345}{section.11.2}
-\contentsline {section}{\numberline {11.3}Verb position}{346}{section.11.3}
-\contentsline {section}{\numberline {11.4}Local reordering}{348}{section.11.4}
-\contentsline {section}{\numberline {11.5}Long\active@dq \dq@prtct {=}distance dependencies}{349}{section.11.5}
-\contentsline {section}{\numberline {11.6}New developments and theoretical variants}{355}{section.11.6}
-\contentsline {subsection}{\numberline {11.6.1}Tesnière\xspace 's part of speech classification}{355}{subsection.11.6.1}
-\contentsline {subsection}{\numberline {11.6.2}Connection, junction, and transfer}{356}{subsection.11.6.2}
-\contentsline {subsubsection}{\numberline {11.6.2.1}Junction}{356}{subsubsection.11.6.2.1}
-\contentsline {subsubsection}{\numberline {11.6.2.2}Transfer}{360}{subsubsection.11.6.2.2}
-\contentsline {subsection}{\numberline {11.6.3}Scope}{362}{subsection.11.6.3}
-\contentsline {section}{\numberline {11.7}Summary and classification}{362}{section.11.7}
-\contentsline {subsection}{\numberline {11.7.1}Linearization}{363}{subsection.11.7.1}
-\contentsline {subsection}{\numberline {11.7.2}Dependency Grammar vs.\ phrase structure grammar}{371}{subsection.11.7.2}
-\contentsline {subsubsection}{\numberline {11.7.2.1}Translating projective Dependency Grammars into phrase structure grammars}{371}{subsubsection.11.7.2.1}
-\contentsline {subsubsection}{\numberline {11.7.2.2}Non-projective Dependency Grammars and phrase structure grammars with discontinuous constituents}{373}{subsubsection.11.7.2.2}
-\contentsline {subsubsection}{\numberline {11.7.2.3}Features that are not identical between heads and projections}{377}{subsubsection.11.7.2.3}
-\contentsline {subsubsection}{\numberline {11.7.2.4}Non-headed constructions}{379}{subsubsection.11.7.2.4}
+\contentsline {chapter}{\numberline {11}依存语法}{335}{chapter.11}
+\contentsline {section}{\numberline {11.1}表示形式概述}{337}{section.11.1}
+\contentsline {subsection}{\numberline {11.1.1}价、结与卫星结构}{337}{subsection.11.1.1}
+\contentsline {subsection}{\numberline {11.1.2}说明语}{339}{subsection.11.1.2}
+\contentsline {subsection}{\numberline {11.1.3}线性}{340}{subsection.11.1.3}
+\contentsline {subsection}{\numberline {11.1.4}语义}{341}{subsection.11.1.4}
+\contentsline {section}{\numberline {11.2}被动}{342}{section.11.2}
+\contentsline {section}{\numberline {11.3}动词位置}{343}{section.11.3}
+\contentsline {section}{\numberline {11.4}局部重新排序}{344}{section.11.4}
+\contentsline {section}{\numberline {11.5}长距离依存}{346}{section.11.5}
+\contentsline {section}{\numberline {11.6}新的发展与理论变体}{350}{section.11.6}
+\contentsline {subsection}{\numberline {11.6.1}Tesnière\xspace 的词类划分}{351}{subsection.11.6.1}
+\contentsline {subsection}{\numberline {11.6.2}联系、并列与转用}{352}{subsection.11.6.2}
+\contentsline {subsubsection}{\numberline {11.6.2.1}并列}{352}{subsubsection.11.6.2.1}
+\contentsline {subsubsection}{\numberline {11.6.2.2}转用}{355}{subsubsection.11.6.2.2}
+\contentsline {subsection}{\numberline {11.6.3}辖域}{357}{subsection.11.6.3}
+\contentsline {section}{\numberline {11.7}总结}{357}{section.11.7}
+\contentsline {subsection}{\numberline {11.7.1}线性化}{358}{subsection.11.7.1}
+\contentsline {subsection}{\numberline {11.7.2}依存语法与短语结构语法}{364}{subsection.11.7.2}
+\contentsline {subsubsection}{\numberline {11.7.2.1}投射依存语法译为短语结构语法}{365}{subsubsection.11.7.2.1}
+\contentsline {subsubsection}{\numberline {11.7.2.2}非投射依存语法与带有非连续成分的短语结构语法}{367}{subsubsection.11.7.2.2}
+\contentsline {subsubsection}{\numberline {11.7.2.3}在中心语和投射之间没有保持一致的特征}{371}{subsubsection.11.7.2.3}
+\contentsline {subsubsection}{\numberline {11.7.2.4}非中心语构式}{372}{subsubsection.11.7.2.4}
 \contentsline {chapter}{\numberline {12}Tree Adjoining Grammar}{383}{chapter.12}
 \contentsline {section}{\numberline {12.1}General remarks on representational format}{384}{section.12.1}
 \contentsline {subsection}{\numberline {12.1.1}Representation of valence information}{384}{subsection.12.1.1}
@@ -338,20 +338,20 @@
 \contentsline {section}{\numberline {22.1}Formal tools for capturing generalizations}{635}{section.22.1}
 \contentsline {section}{\numberline {22.2}How to develop linguistic theories that capture cross\active@dq \dq@prtct {=}linguistic generalizations}{639}{section.22.2}
 \contentsline {chapter}{\numberline {23}Conclusion}{649}{chapter.23}
-\contentsline {chapter}{\numberline {24}Solutions to the exercises}{653}{chapter.24}
-\contentsline {section}{\numberline {24.1}Introduction and basic terms}{653}{section.24.1}
-\contentsline {section}{\numberline {24.2}Phrase structure grammars}{654}{section.24.2}
-\contentsline {section}{\numberline {24.3}Transformational Grammar -- Government \& Binding}{658}{section.24.3}
-\contentsline {section}{\numberline {24.4}Generalized Phrase Structure Grammar}{660}{section.24.4}
-\contentsline {section}{\numberline {24.5}Feature descriptions}{663}{section.24.5}
-\contentsline {section}{\numberline {24.6}Lexical Functional Grammar}{664}{section.24.6}
-\contentsline {section}{\numberline {24.7}Categorial Grammar}{666}{section.24.7}
-\contentsline {section}{\numberline {24.8}Head-Driven Phrase Structure Grammar}{667}{section.24.8}
-\contentsline {section}{\numberline {24.9}Construction Grammar}{668}{section.24.9}
-\contentsline {section}{\numberline {24.10}Dependency Grammar}{669}{section.24.10}
-\contentsline {section}{\numberline {24.11}Tree Adjoining Grammar}{670}{section.24.11}
-\contentsline {chapter}{\nonumberline 参考文献}{673}{chapter*.19}
-\contentsline {chapter}{Index}{762}{section*.20}
-\contentsline {section}{Name index}{762}{section*.20}
-\contentsline {section}{Language index}{762}{section*.21}
-\contentsline {section}{Subject index}{762}{section*.22}
+\contentsline {chapter}{\numberline {24}练习题答案}{653}{chapter.24}
+\contentsline {section}{\numberline {24.1}导言与术语}{653}{section.24.1}
+\contentsline {section}{\numberline {24.2}短语结构语法}{654}{section.24.2}
+\contentsline {section}{\numberline {24.3}转换语法－管辖与约束理论}{658}{section.24.3}
+\contentsline {section}{\numberline {24.4}广义短语结构语法}{660}{section.24.4}
+\contentsline {section}{\numberline {24.5}特征描写}{662}{section.24.5}
+\contentsline {section}{\numberline {24.6}词汇功能语法}{664}{section.24.6}
+\contentsline {section}{\numberline {24.7}范畴语法}{666}{section.24.7}
+\contentsline {section}{\numberline {24.8}中心语驱动的短语结构语法}{667}{section.24.8}
+\contentsline {section}{\numberline {24.9}构式语法}{668}{section.24.9}
+\contentsline {section}{\numberline {24.10}依存语法}{669}{section.24.10}
+\contentsline {section}{\numberline {24.11}树邻接语法}{670}{section.24.11}
+\contentsline {chapter}{\nonumberline 参考文献}{673}{chapter*.42}
+\contentsline {chapter}{Index}{762}{section*.43}
+\contentsline {section}{Name index}{762}{section*.43}
+\contentsline {section}{Language index}{762}{section*.44}
+\contentsline {section}{Subject index}{762}{section*.45}

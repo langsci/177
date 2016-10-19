@@ -1078,76 +1078,58 @@
 \indexentry {Construction Grammar (CxG)!Sign-Based|)}{333}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{333}
 \indexentry {Construction Grammar (CxG)|)}{334}
-\indexentry {Categorial Grammar (CG)|hyperpage}{335}
 \indexentry {New Prague School|hyperpage}{335}
 \indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{335}
-\indexentry {Word Grammar (WG)|hyperpage}{337}
-\indexentry {Link Grammar|hyperpage}{337}
-\indexentry {corpus annotation|hyperpage}{337}
-\indexentry {machine translation|hyperpage}{337}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {2}}}{337}
-\indexentry {nucleus|hyperpage}{339}
-\indexentry {satellite|hyperpage}{339}
-\indexentry {Word Grammar (WG)|hyperpage}{339}
-\indexentry {Word Grammar (WG)|hyperpage}{340}
-\indexentry {actant|hyperpage}{342}
-\indexentry {projectivity|hyperpage}{344}
-\indexentry {linking|hyperpage}{344}
-\indexentry {semantic role|hyperpage}{344}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{344}
-\indexentry {glue semantics|hyperpage}{345}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{345}
-\indexentry {passive|(hyperpage}{345}
-\indexentry {agreement|hyperpage}{345}
-\indexentry {remote passive|hyperindexformat{\infn {11}}}{345}
-\indexentry {Categorial Grammar (CG)|hyperpage}{346}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{346}
-\indexentry {passive|)}{346}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {11}}}{346}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {12}}}{348}
-\indexentry {long"=Distance dependency|(hyperpage}{349}
-\indexentry {projectivity|hyperpage}{350}
-\indexentry {rising|hyperpage}{352}
-\indexentry {Word Grammar (WG)|hyperpage}{353}
-\indexentry {Word Grammar (WG)|hyperpage}{353}
-\indexentry {structure sharing|hyperpage}{353}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{353}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{353}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{353}
-\indexentry {extraction path marking|hyperpage}{353}
-\indexentry {Word Grammar (WG)|hyperpage}{353}
-\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{354}
+\indexentry {Word Grammar (WG)|hyperpage}{336}
+\indexentry {Link Grammar|hyperpage}{336}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {2}}}{336}
+\indexentry {Word Grammar (WG)|hyperpage}{338}
+\indexentry {Word Grammar (WG)|hyperpage}{338}
+\indexentry {projectivity|hyperpage}{341}
+\indexentry {linking|hyperpage}{341}
+\indexentry {semantic role|hyperpage}{341}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{342}
+\indexentry {glue semantics|hyperpage}{342}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperpage}{342}
+\indexentry {passive|(hyperpage}{342}
+\indexentry {remote passive|hyperindexformat{\infn {11}}}{342}
+\indexentry {passive|)}{343}
+\indexentry {projectivity|hyperpage}{346}
+\indexentry {Word Grammar (WG)|hyperpage}{349}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{349}
+\indexentry {structure sharing|hyperpage}{349}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{349}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{349}
+\indexentry {extraction path marking|hyperpage}{349}
+\indexentry {Lexical Functional Grammar (LFG)|hyperpage}{350}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{350}
+\indexentry {long"=Distance dependency|)}{350}
+\indexentry {agreement|hyperpage}{353}
 \indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{354}
-\indexentry {long"=Distance dependency|)}{355}
-\indexentry {agreement|hyperpage}{357}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{359}
-\indexentry {extraction|hyperpage}{359}
-\indexentry {polygraph|(hyperpage}{362}
-\indexentry {polygraph|)}{362}
-\indexentry {Minimalist Program (MP)|hyperpage}{364}
-\indexentry {category!functional!Neg|hyperpage}{364}
-\indexentry {projectivity|hyperpage}{364}
-\indexentry {fronting!apparent multiple|hyperpage}{368}
-\indexentry {Government and Binding (GB)|hyperpage}{368}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{368}
-\indexentry {fronting!apparent multiple|hyperpage}{369}
-\indexentry {extraposition|hyperpage}{370}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{370}
-\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {29}}}{372}
-\indexentry {projectivity|(hyperpage}{373}
-\indexentry {$\bigcirc $|hyperpage}{373}
-\indexentry {relation!$\bigcirc $|hyperpage}{373}
-\indexentry {cycle!in feature description|hyperpage}{374}
-\indexentry {Word Grammar (WG)|hyperindexformat{\infn {34}}}{377}
-\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {34}}}{377}
-\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{378}
-\indexentry {inheritance!default|hyperpage}{378}
-\indexentry {principle!Generalized Head Feature|hyperpage}{379}
-\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{379}
-\indexentry {construction!N-P-N|(hyperpage}{380}
-\indexentry {pied-piping|hyperindexformat{\infn {36}}}{380}
-\indexentry {$+$|hyperpage}{381}
-\indexentry {construction!N-P-N|)}{381}
+\indexentry {polygraph|)}{357}
+\indexentry {Minimalist Program (MP)|hyperpage}{359}
+\indexentry {category!functional!Neg|hyperpage}{359}
+\indexentry {projectivity|hyperpage}{359}
+\indexentry {fronting!apparent multiple|hyperpage}{361}
+\indexentry {Government and Binding (GB)|hyperpage}{361}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{363}
+\indexentry {fronting!apparent multiple|hyperpage}{364}
+\indexentry {extraposition|hyperpage}{364}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{364}
+\indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperindexformat{\infn {29}}}{366}
+\indexentry {$\bigcirc $|hyperpage}{367}
+\indexentry {relation!$\bigcirc $|hyperpage}{367}
+\indexentry {cycle!in feature description|hyperpage}{368}
+\indexentry {Dependency Unification Grammar (DUG)|hyperpage}{371}
+\indexentry {Word Grammar (WG)|hyperindexformat{\infn {34}}}{371}
+\indexentry {Mean\-ing--Text Theory (MTT)|hyperindexformat{\infn {34}}}{371}
+\indexentry {inheritance!default|hyperpage}{372}
+\indexentry {principle!Generalized Head Feature|hyperpage}{372}
+\indexentry {Head-Driven Phrase Structure Grammar (HPSG)|hyperpage}{373}
+\indexentry {construction!N-P-N|(hyperpage}{373}
+\indexentry {pied-piping|hyperindexformat{\infn {36}}}{373}
+\indexentry {$+$|hyperpage}{374}
+\indexentry {construction!N-P-N|)}{374}
 \indexentry {Tree Adjoining Grammar (TAG)|(hyperpage}{383}
 \indexentry {Generalized Phrase Structure Grammar (GPSG)|hyperpage}{383}
 \indexentry {context"=free grammar|hyperpage}{383}
