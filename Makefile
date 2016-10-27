@@ -20,7 +20,7 @@ all: grammatical-theory.pdf
 testtime:
 	latex grammatical-theory-eng.tex; latex grammatical-theory-eng.tex; latex grammatical-theory-eng.tex; dvips grammatical-theory-eng.dvi; ps2pdf grammatical-theory-eng.ps
 
-SOURCE=/Users/stefan/Documents/Dienstlich/Bibliographien/biblio.bib \
+SOURCE=gt.bib \
 	grammatical-theory.tex           \
 	grammatical-theory-include.tex   \
 	localmetadata.tex \
