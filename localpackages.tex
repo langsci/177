@@ -92,7 +92,7 @@ styles/eng-date,styles/my-theorems}
 % still needed
 \usepackage{tikz-qtree}
 
-\usepackage{langsci/styles/langsci-gb4e}
+\usepackage{langsci/styles/langsci-gb4e-chinese}
 
 
 \usepackage{subfig}
@@ -179,9 +179,17 @@ styles/eng-date,styles/my-theorems}
 
 \usepackage{titlesec}  
 % for Chinese style of titles of chapters and sections.
-\renewcommand{\partname}{第\zhnumber{\thepart}部分}  
+\renewcommand{\partname}{第\thepart{}部分}  
+\def\thepart{\zhdig{part}}
 %\pagenumbering {zhnum}
-\renewcommand{\chaptername}{第\zhnumber{\thechapter}章}  
+\renewcommand{\chaptername}{第\zhnum{chapter}章}  
+
+% The following would also change the chapter and section number in the heading. We do not want
+% this. 27.10.2016
+%\def\thechapter{\zhnum{chapter}}
+%\def\thesection{\zhnum{section}}
+
+
 %re\newcommand{\sectionname}{节}  
 \renewcommand{\figurename}{图}  
 \renewcommand{\tablename}{表}  
@@ -217,4 +225,7 @@ styles/eng-date,styles/my-theorems}
 
 
 
+
+%\usepackage{newunicodechar}
+%\newunicodechar{(}{（}
 

@@ -159,9 +159,10 @@ frbox/.style={
 \makeatother
 
 
+
 % http://tex.stackexchange.com/questions/298031/is-it-possible-to-add-a-command-at-the-beginning-of-a-chapter?noredirect=1#
 \pretocmd{\chapter}{% <--- IMPORTANT
-    \exewidth{(34)}% <--- IMPORTANT
+    \exewidth{（34）}% <--- IMPORTANT
 }{}{}
 
 
@@ -206,3 +207,16 @@ frbox/.style={
 \makeatletter
 \newcommand*\ignoreme{\pgf@relevantforpicturesizefalse}
 \makeatother
+
+
+
+% We do not want italics in the numbers in the headings. St. Mü.
+\renewcommand{\headfont}{\upshape}
+
+
+% gb4e has to use Chinese brackets. They are different and add more space.
+%\exewidth{（34）}
+
+% set initial sizes of example number and judgement sizes
+%\exewidth{\exnrfont （34）}
+
