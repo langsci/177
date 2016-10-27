@@ -75,8 +75,7 @@ SOURCE=gt.bib \
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
 	xelatex -no-pdf -interaction=nonstopmode $* 
 	xelatex -no-pdf -interaction=nonstopmode $*
-	correct-toappear
-	correct-index
+	bin/correct-toappear
 	\rm $*.adx
 	authorindex -i -p $*.aux > $*.adx
 	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
@@ -84,6 +83,10 @@ SOURCE=gt.bib \
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
+
+
+# removed this. It was about Umlaute	bin/correct-index
+
 
 # %.pdf: %.tex $(SOURCE)
 # 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
