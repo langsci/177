@@ -2,23 +2,6 @@ LSP-STYLES=~/Documents/Dienstlich/Projekte/OALI/Git-HUB/latex/langsci/
 
 all: grammatical-theory.pdf
 
-# Barbaras MacBook Pro (second generation) mit VM Ware 1.0 und Suse 10.2 32bit
-# 1:14.09
-
-# Dell Inspiron 8600 mit Suse 10.3 beta 1: 
-# 1:31.98, 1:49.75, 1:55.48
-
-# Stefans MacBook Pro (third generation) mit VM Ware 1.0 und Suse 10.2 64bit
-# 7200er Platte 
-# 1:17.79, 1:15.88
-
-# Stefans MacBook Pro (third generation) mit VM Ware 1.0 und Suse 10.2 64bit
-# 4200er Platte
-#
-# 1:24, 0:50
-
-testtime:
-	latex grammatical-theory-eng.tex; latex grammatical-theory-eng.tex; latex grammatical-theory-eng.tex; dvips grammatical-theory-eng.dvi; ps2pdf grammatical-theory-eng.ps
 
 SOURCE=gt.bib \
 	grammatical-theory.tex           \
