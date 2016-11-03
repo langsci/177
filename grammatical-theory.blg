@@ -32,14 +32,15 @@ A level-1 auxiliary file: chapters/phrasal.aux
 A level-1 auxiliary file: chapters/coregram.aux
 A level-1 auxiliary file: chapters/conclusions.aux
 A level-1 auxiliary file: chapters/loesungen.aux
+A level-1 auxiliary file: langsci/graphics/didyoulikethisbook.aux
+Reallocated field_info (elt_size=4) to 41478 items from 5000.
+Database file #1: gt.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated cite_list (elt_size=4) to 2250 items from 1500.
 Reallocated type_list (elt_size=4) to 2250 items from 1500.
 Reallocated entry_exists (elt_size=4) to 2250 items from 1500.
 Reallocated cite_info (elt_size=4) to 2250 items from 1500.
-A level-1 auxiliary file: langsci/graphics/didyoulikethisbook.aux
-Reallocated field_info (elt_size=4) to 44052 items from 5000.
-Database file #1: gt.bib
-Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated field_info (elt_size=4) to 46496 items from 41478.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated str_pool (elt_size=1) to 260000 items from 195000.
 Warning--I didn't find a database entry for "Brame81a"
@@ -49,46 +50,45 @@ Warning--I didn't find a database entry for "Keenan76b-u"
 Warning--I didn't find a database entry for "Crysmann2016a"
 Warning--I didn't find a database entry for "MBS2016a-u"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
-Warning--can't use both author and editor fields in MRR2015a-ed
-You've used 1496 entries,
+You've used 1397 entries,
             3179 wiz_defined-function locations,
-            9234 strings with 228460 characters,
-and the built_in function-call counts, 865741 in all, are:
-= -- 74564
-> -- 26292
-< -- 1857
-+ -- 9744
-- -- 7634
-* -- 53027
-:= -- 132801
-add.period$ -- 6449
-call.type$ -- 1496
-change.case$ -- 11452
-chr.to.int$ -- 1665
-cite$ -- 1497
-duplicate$ -- 70031
-empty$ -- 70851
-format.name$ -- 10989
-if$ -- 178613
-int.to.chr$ -- 127
+            9187 strings with 227501 characters,
+and the built_in function-call counts, 857720 in all, are:
+= -- 72838
+> -- 25999
+< -- 1803
++ -- 9520
+- -- 7553
+* -- 52754
+:= -- 129557
+add.period$ -- 6241
+call.type$ -- 1397
+change.case$ -- 10982
+chr.to.int$ -- 1573
+cite$ -- 1397
+duplicate$ -- 70916
+empty$ -- 71656
+format.name$ -- 10769
+if$ -- 178076
+int.to.chr$ -- 101
 int.to.str$ -- 1
-missing$ -- 13957
-newline$ -- 7635
-num.names$ -- 6622
-pop$ -- 27670
+missing$ -- 14537
+newline$ -- 7151
+num.names$ -- 6593
+pop$ -- 28133
 preamble$ -- 2
-purify$ -- 8333
+purify$ -- 7754
 quote$ -- 0
-skip$ -- 26977
+skip$ -- 25787
 stack$ -- 0
-substring$ -- 42395
-swap$ -- 32903
-text.length$ -- 307
+substring$ -- 41166
+swap$ -- 34965
+text.length$ -- 363
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12546
-warning$ -- 1
-while$ -- 7185
+type$ -- 11799
+warning$ -- 0
+while$ -- 7111
 width$ -- 0
-write$ -- 20118
-(There were 7 warnings)
+write$ -- 19226
+(There were 6 warnings)

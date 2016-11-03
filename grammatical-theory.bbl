@@ -1,6 +1,6 @@
 \providecommand{\noopsort}[1]{} \providecommand*{\donothing}[1]{}
   \providecommand*{\printsecond}[2]{#2}
-\begin{thebibliography}{1496}
+\begin{thebibliography}{1397}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{#1}
 \providecommand{\urlprefix}{}
@@ -18,7 +18,8 @@ Abbott, Barbara. 1976.
 Abeill{\'e}, Anne. 1988.
 \newblock Parsing {French} with {Tree Adjoining Grammar}: {Some} linguistic
   accounts.
-\newblock In  \cite{coling88} 7--12.
+\newblock In D{\'e}nes Vargha (ed.), \emph{Proceedings of {COLING} 88}, 7--12.
+  University of Budapest: Association for Computational Linguistics.
 \newblock \urlprefix\url{http://www.aclweb.org/anthology/C/C88/C88-1002.pdf}.
 
 \bibitem[{Abeill{\'e}(2006)}]{Abeille2006a}
@@ -28,15 +29,8 @@ Abeill{\'e}, Anne. 2006.
   issues in formal syntax and semantics}, vol.~6, 7--36. Paris: CNRS.
 \newblock \urlprefix\url{http://www.cssp.cnrs.fr/eiss6/}.
 
-\bibitem[{Abeill{\'e} \&
-  Rambow(2000{\natexlab{a}})}]{AR2000a-ed-not-crossreferenced}
-Abeill{\'e}, Anne \& Owen Rambow (eds.). 2000{\natexlab{a}}.
-\newblock \emph{{Tree Adjoining Grammars}: Formalisms, linguistic analysis and
-  processing} (CSLI Lecture Notes 156).
-\newblock Stanford, CA: CSLI Publications.
-
-\bibitem[{Abeill{\'e} \& Rambow(2000{\natexlab{b}})}]{AR2000a-ed}
-Abeill{\'e}, Anne \& Owen Rambow (eds.). 2000{\natexlab{b}}.
+\bibitem[{Abeill{\'e} \& Rambow(2000)}]{AR2000a-ed-not-crossreferenced}
+Abeill{\'e}, Anne \& Owen Rambow (eds.). 2000.
 \newblock \emph{{Tree Adjoining Grammars}: Formalisms, linguistic analysis and
   processing} (CSLI Lecture Notes 156).
 \newblock Stanford, CA: CSLI Publications.
@@ -44,7 +38,10 @@ Abeill{\'e}, Anne \& Owen Rambow (eds.). 2000{\natexlab{b}}.
 \bibitem[{Abeill{\'e} \& Schabes(1989)}]{AS89a}
 Abeill{\'e}, Anne \& Yves Schabes. 1989.
 \newblock Parsing idioms in {Lexicalized TAG}.
-\newblock In  \cite{eacl89} 1--9.
+\newblock In Harold Somers \& Mary~McGee Wood (eds.), \emph{Proceedings of the
+  {Fourth Conference of the European Chapter of the Association for
+  Computational Linguistics}}, 1--9. Manchester, England: Association for
+  Computational Linguistics.
 
 \bibitem[{Abney(1987)}]{Abney87a}
 Abney, Steven~P. 1987.
@@ -65,27 +62,6 @@ Abney, Steven~P. \& Jennifer Cole. 1986.
 \newblock A {Government-Binding} parser.
 \newblock In S.~Berman, J-W. Choe \& J.~McDonough (eds.), \emph{Proceedings of
   {NELS 16}}, 1--17. University of Massachusetts, Amherst: GLSA.
-
-\bibitem[{Abney \& Hinrichs(1995)}]{eacl95}
-Abney, Steven~P. \& Erhard~W. Hinrichs (eds.). 1995.
-\newblock \emph{Proceedings of the {Seventh Conference of the European Chapter
-  of the Association for Computational Linguistics}}. Dublin: Association for
-  Computational Linguistics.
-
-\bibitem[{Abraham(1982)}]{Abraham82a-ed}
-Abraham, Werner (ed.). 1982.
-\newblock \emph{{Satzglieder im Deutschen -- Vorschl{\"a}ge zur syntaktischen,
-  semantischen und pragmatischen Fundierung}} (Studien zur deutschen
-  Grammatik~15).
-\newblock T{\"u}bingen: \original Gunter Narr Verlag \jetzt Stauffenburg
-  Verlag.
-
-\bibitem[{Abraham(1985)}]{Abraham85a-ed}
-Abraham, Werner (ed.). 1985.
-\newblock \emph{{Erkl{\"a}rende Syntax des Deutschen}} (Studien zur deutschen
-  Grammatik~25).
-\newblock T{\"u}bingen: \original Gunter Narr Verlag \jetzt Stauffenburg
-  Verlag.
 
 \bibitem[{Abraham(1995)}]{Abraham95a-u}
 Abraham, Werner. 1995.
@@ -143,20 +119,10 @@ Adger, David. 2013.
 \newblock \emph{Valenztheorie}  (Narr Studienb{\"u}cher).
 \newblock T{\"u}bingen: Gunter Narr Verlag.
 
-\bibitem[{{\'A}gel et~al.(2003{\natexlab{a}}){\'A}gel, Eichinger, Eroms,
-  Hellwig, Heringer \& Lobin}]{AEEHHL2003a-ed-not-crossreferenced}
+\bibitem[{{\'A}gel et~al.(2003){\'A}gel, Eichinger, Eroms, Hellwig, Heringer \&
+  Lobin}]{AEEHHL2003a-ed-not-crossreferenced}
 {\'A}gel, Vilmos, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter Hellwig,
-  Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.). 2003{\natexlab{a}}.
-\newblock \emph{{Dependenz und Valenz} / {Dependency} and valency: {Ein
-  internationales Handbuch der zeitgen{\"o}ssischen Forschung} / {An}
-  international handbook of contemporary research}, vol. 25.1
-  (Hand\-b{\"u}\-cher zur Sprach- und Kommunikationswissenschaft).
-\newblock Berlin: Walter de Gruyter.
-
-\bibitem[{{\'A}gel et~al.(2003{\natexlab{b}}){\'A}gel, Eichinger, Eroms,
-  Hellwig, Heringer \& Lobin}]{AEEHHL2003a-ed}
-{\'A}gel, Vilmos, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter Hellwig,
-  Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.). 2003{\natexlab{b}}.
+  Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.). 2003.
 \newblock \emph{{Dependenz und Valenz} / {Dependency} and valency: {Ein
   internationales Handbuch der zeitgen{\"o}ssischen Forschung} / {An}
   international handbook of contemporary research}, vol. 25.1
@@ -211,7 +177,8 @@ Alsina, Alex. 1996.
 \bibitem[{Alsina et~al.(2005)Alsina, Mohanan \& Mohanan}]{AMM2005a-u}
 Alsina, Alex, KP~Mohanan \& Tara Mohanan. 2005.
 \newblock How to get rid of the {COMP}.
-\newblock In  \cite{BK2005a-ed}.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2005} conference}, Stanford, CA: CSLI Publications.
 \newblock
   \urlprefix\url{http://csli-publications.stanford.edu/LFG/10/lfg05amm.pdf}.
 
@@ -261,7 +228,10 @@ Arad~Greshler, Tali, Livnat Herzig~Sheinfux, Nurit Melnik \& Shuly Wintner.
   2015.
 \newblock {Development} of maximally reusable grammars: {Parallel} development
   of {Hebrew} and {Arabic} grammars.
-\newblock In  \cite{Mueller2015a-ed} 27--40.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {22nd
+  International Conference on Head-Driven Phrase Structure Grammar, Nanyang
+  Technological University (NTU), Singapore}}, 27--40. Stanford, CA: CSLI
+  Publications.
 \newblock
   \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2015/ahmw.pdf}.
 
@@ -278,13 +248,17 @@ Arka, I~Wayan, Avery Andrews, Mary Dalrymple, Meladel Mistica \& Jane Simpson.
   2009.
 \newblock A linguistic and computational morphosyntactic analysis for the
   applicative \emph{-i} in {Indonesian}.
-\newblock In  \cite{BK2009a-ed} 85--105.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2009} conference}, 85--105. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/14/}.
 
 \bibitem[{Arnold \& Spencer(2015)}]{AS2015a}
 Arnold, Doug \& Andrew Spencer. 2015.
 \newblock A constructional analysis for the skeptical.
-\newblock In  \cite{Mueller2015a-ed} 41--60.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {22nd
+  International Conference on Head-Driven Phrase Structure Grammar, Nanyang
+  Technological University (NTU), Singapore}}, 41--60. Stanford, CA: CSLI
+  Publications.
 \newblock
   \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2015/arnold-spencer.pdf}.
 
@@ -309,7 +283,8 @@ Asudeh, Ash. 2004.
 Asudeh, Ash, Mary Dalrymple \& Ida Toivonen. 2008.
 \newblock Constructions with lexical integrity: {Templates} as the
   lexicon-syntax interface.
-\newblock In  \cite{BK2008a-ed}.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2008} conference}, Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/13/}.
 
 \bibitem[{Asudeh et~al.(2013)Asudeh, Dalrymple \& Toivonen}]{ADT2013a}
@@ -320,7 +295,8 @@ Asudeh, Ash, Mary Dalrymple \& Ida Toivonen. 2013.
 \bibitem[{Asudeh et~al.(2014)Asudeh, Giorgolo \& Toivonen}]{AGT2014a}
 Asudeh, Ash, Gianluca Giorgolo \& Ida Toivonen. 2014.
 \newblock Meaning and valency.
-\newblock In  \cite{BK2014a-ed} 68--88.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2014} conference}, 68--88. Stanford, CA: CSLI Publications.
 
 \bibitem[{Asudeh \& Toivonen(2014)}]{AT2014a}
 Asudeh, Ash \& Ida Toivonen. 2014.
@@ -390,13 +366,18 @@ Baldridge, Jason. 2002.
 Baldridge, Jason, Sudipta Chatterjee, Alexis Palmer \& Ben Wing. 2007.
 \newblock {DotCCG} and {VisCCG}: {Wiki} and programming paradigms for improved
   grammar engineering with {OpenCCG}.
-\newblock In  \cite{geaf2007} 5--25.
+\newblock In Tracy~Holloway King \& Emily~M. Bender (eds.), \emph{{Grammar
+  Engineering across Frameworks 2007}}  (Studies in Computational Linguistics
+  ONLINE), 5--25. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
 
 \bibitem[{Baldridge \& Kruijff(2002)}]{BK2002a-u}
 Baldridge, Jason \& Geert-Jan~M. Kruijff. 2002.
 \newblock Coupling {CCG} and {Hybrid Logic Dependency Semantics}.
-\newblock In  \cite{acl2002} 319--326.
+\newblock In Pierre Isabelle (ed.), \emph{{40th Annual Meeting of the
+  Association for Computational Linguistics}: {Proceedings} of the conference},
+  319--326. University of Pennsylvania, Philadelphia: Association for
+  Computational Linguistics.
 \newblock \urlprefix\url{http://aclanthology.info/events/acl-2002}.
 
 \bibitem[{Ballweg(1997)}]{Ballweg97a}
@@ -426,15 +407,15 @@ Baltin, Mark. 2006.
   Hollebrandse (eds.), \emph{The {Blackwell} companion to syntax}  (Blackwell
   Handbooks in Linguistics), 237--271. Oxford: Blackwell Publishing Ltd.
 
-\bibitem[{Baltin \& Kroch(1989)}]{BK89a-ed}
-Baltin, Mark~R. \& Anthony~S. Kroch (eds.). 1989.
-\newblock \emph{Alternative conceptions of phrase structure}.
-\newblock Chicago/London: The University of Chicago Press.
-
 \bibitem[{Bangalore et~al.(2003)Bangalore, Joshi \& Rambow}]{BJR2003a-u}
 Bangalore, Srinivas, Aravind~K. Joshi \& Owen Rambow. 2003.
 \newblock Dependency and valency in other theories: {Tree Adjoining Grammar}.
-\newblock In  \cite{AEEHHL2003a-ed} 669--678.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 669--678. Berlin: Walter de Gruyter.
 
 \bibitem[{Bannard et~al.(2009)Bannard, Lieven \& Tomasello}]{BLT2009a}
 Bannard, Colin, Elena Lieven \& Michael Tomasello. 2009.
@@ -494,7 +475,10 @@ Baumg{\"a}rtner, Klaus. 1970.
 \bibitem[{Bausewein(1990)}]{Bausewein90}
 Bausewein, Karin. 1990.
 \newblock {Haben kopflose Relativs{\"a}tze tats{\"a}chlich keine K{\"o}pfe?}
-\newblock In  \cite{FF90} 144--158.
+\newblock In Gisbert Fanselow \& Sascha~W. Felix (eds.), \emph{{Strukturen und
+  Merkmale syntaktischer Kategorien}} (Studien zur deutschen Grammatik~39),
+  144--158. T{\"u}bingen: \original Gunter Narr Verlag \jetzt Stauffenburg
+  Verlag.
 
 \bibitem[{Bayer \& Kornfilt(1989)}]{BK89a}
 Bayer, Josef \& Jaklin Kornfilt. 1989.
@@ -522,7 +506,10 @@ Beavers, John, Elias Ponvert \& Stephen~Mark Wechsler. 2008.
 \bibitem[{Beavers \& Sag(2004)}]{BS2004a}
 Beavers, John \& Ivan~A. Sag. 2004.
 \newblock Coordinate ellipsis and apparent non-constituent coordination.
-\newblock In  \cite{Mueller2004a-ed} 48--69.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {11th
+  International Conference on Head-Driven Phrase Structure Grammar, Center for
+  Computational Linguistics, Katholieke Universiteit Leuven}}, 48--69.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2004/}.
 
 \bibitem[{Bech(1955)}]{Bech55a}
@@ -543,7 +530,10 @@ Becker, Tilman, Aravind~K. Joshi \& Owen Rambow. 1991.
 \bibitem[{Beermann \& Hellan(2004)}]{BH2004a-u}
 Beermann, Dorothee \& Lars Hellan. 2004.
 \newblock A treatment of directionals in two implemented {HPSG} grammars.
-\newblock In  \cite{Mueller2004a-ed} 357--377.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {11th
+  International Conference on Head-Driven Phrase Structure Grammar, Center for
+  Computational Linguistics, Katholieke Universiteit Leuven}}, 357--377.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2004/}.
 
 \bibitem[{Beghelli \& Stowell(1997)}]{BS97a-u}
@@ -580,7 +570,10 @@ Bellugi, Ursula, Liz Lichtenberger, Wendy Jones, Zona Lai \& Marie~St. George.
 Bender, Emily \& Daniel~P. Flickinger. 1999.
 \newblock Peripheral constructions and core phenomena: {Agreement} in tag
   questions.
-\newblock In  \cite{WKK99a-ed} 199--214.
+\newblock In Gert Webelhuth, Jean-Pierre Koenig \& Andreas Kathol (eds.),
+  \emph{Lexical and {Constructional} aspects of linguistic explanation}
+  (Studies in Constraint"=Based Lexicalism~1), 199--214. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Bender(2000)}]{Bender2000a}
 Bender, Emily~M. 2000.
@@ -592,7 +585,10 @@ Bender, Emily~M. 2000.
 Bender, Emily~M. 2008{\natexlab{a}}.
 \newblock Evaluating a crosslinguistic grammar resource: {A} case study of
   {Wambaya}.
-\newblock In  \cite{acl2008:hlt} 977--985.
+\newblock In Johanna~D. Moore, Simone Teufel, James Allan \& Sadaoki Furui
+  (eds.), \emph{Proceedings of the {46th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies}}, 977--985. Columbus,
+  Ohio: Association for Computational Linguistics.
 \newblock \urlprefix\url{http://aclweb.org/anthology-new/P/P08/P08-1111.pdf}.
 
 \bibitem[{Bender(2008{\natexlab{b}})}]{Bender2008c}
@@ -607,7 +603,9 @@ Bender, Emily~M. 2008{\natexlab{b}}.
 Bender, Emily~M. 2008{\natexlab{c}}.
 \newblock Radical non-configurationality without shuffle operators: {An}
   analysis of {Wambaya}.
-\newblock In  \cite{Mueller2008a-ed} 6--24.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {15th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 6--24.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2008/}.
 
 \bibitem[{Bender(2010)}]{Bender2010a-u}
@@ -617,13 +615,6 @@ Bender, Emily~M. 2010.
 \newblock \emph{Linguistic Issues in Language Technology -- LiLT} 3(3). 1--34.
 \newblock
   \urlprefix\url{http://journals.linguisticsociety.org/elanguage/lilt/article/view/662/523.html}.
-
-\bibitem[{Bender et~al.(2003)Bender, Flickinger, Fouvry \&
-  Siegel}]{BFFS2003a-ed}
-Bender, Emily~M., Daniel~P. Flickinger, Frederik Fouvry \& Melanie Siegel
-  (eds.). 2003.
-\newblock \emph{Proceedings of the {ESSLLI 2003 Workshop ``Ideas and Strategies
-  for Multilingual Grammar Development''}}. Vienna, Austria.
 
 \bibitem[{Bender et~al.(2002)Bender, Flickinger \& Oepen}]{BFO2002a-u}
 Bender, Emily~M., Daniel~P. Flickinger \& Stephan Oepen. 2002.
@@ -638,7 +629,9 @@ Bender, Emily~M., Daniel~P. Flickinger \& Stephan Oepen. 2002.
 \bibitem[{Bender \& Siegel(2005)}]{BS2005a}
 Bender, Emily~M. \& Melanie Siegel. 2005.
 \newblock Implementing the syntax of {Japanese} numeral classifiers.
-\newblock In  \cite{IJCNLP2004} 626--635.
+\newblock In Keh-Yih Su, Oi~Yee Kwong, Jn'ichi Tsujii \& Jong-Hyeok Lee (eds.),
+  \emph{Natural language processing {IJCNLP 2004}} (Lecture Notes in Artificial
+  Intelligence 3248), 626--635. Berlin: Springer Verlag.
 
 \bibitem[{Bergen \& Chang(2005)}]{BC2005a}
 Bergen, Benjamin~K. \& Nancy Chang. 2005.
@@ -651,12 +644,16 @@ Bergen, Benjamin~K. \& Nancy Chang. 2005.
 \bibitem[{Berman(1996)}]{Berman96a-u}
 Berman, Judith. 1996.
 \newblock {Eine LFG-Grammatik des Deutschen}.
-\newblock In  \cite{BF96a-u} 11--96.
+\newblock In \emph{{Deutsche und franz{\"o}sische Syntax im Formalismus der
+  LFG}} (Linguistische Arbeiten 344), 11--96. T{\"u}bingen: Max Niemeyer
+  Verlag.
 
 \bibitem[{Berman(1999)}]{Berman99a}
 Berman, Judith. 1999.
 \newblock Does {German} satisfy the {Subject Condition}?
-\newblock In  \cite{BK99a-ed}.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG '99} conference, {University of Manchester}}, Stanford, CA: CSLI
+  Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/4/}.
 
 \bibitem[{Berman(2003{\natexlab{a}})}]{Berman2003a}
@@ -679,12 +676,6 @@ Berman, Judith. 2007.
   Joan Maling \& Chris Manning (eds.), \emph{Architectures, rules, and
   preferences: {Variations} on themes by {Joan W. Bresnan}}, 69--83. Stanford,
   CA: CSLI Publications.
-
-\bibitem[{Berman \& Frank(1996)}]{BF96a-u}
-Berman, Judith \& Anette Frank. 1996.
-\newblock \emph{{Deutsche und franz{\"o}sische Syntax im Formalismus der LFG}}
-  (Linguistische Arbeiten 344).
-\newblock T{\"u}bingen: Max Niemeyer Verlag.
 
 \bibitem[{Berwick(1982)}]{Berwick82a-u}
 Berwick, Robert~C. 1982.
@@ -739,7 +730,11 @@ Bick, Eckhard. 2006.
 \bibitem[{Bick(2009)}]{Bick2009a-u}
 Bick, Eckhard. 2009.
 \newblock A {Dependency Constraint Grammar} for {Esperanto}.
-\newblock In  \cite{BHMT2009a-ed} 8--12.
+\newblock In Eckhard Bick, Kristin Hagen, Kaili M{\"u}{\"u}risep \& Trond
+  Trosterud (eds.), \emph{{Constraint Grammar} and robust parsing: Proceedings
+  of the {NODALIDA 2009} workshop} (NEALT Proceedings Series~8), 8--12.
+  Northern European Association for Language Technologie Tartu: Tartu
+  University Library.
 
 \bibitem[{Bick(2010)}]{Bick2010a-u}
 Bick, Eckhard. 2010.
@@ -749,14 +744,6 @@ Bick, Eckhard. 2010.
   \emph{Proceedings of the {Seventh International Conference on Language
   Resources and Evaluation (LREC'10)}}, 794--798. Valletta, Malta: European
   Language Resources Association (ELRA).
-
-\bibitem[{Bick et~al.(2009)Bick, Hagen, M{\"u}{\"u}risep \&
-  Trosterud}]{BHMT2009a-ed}
-Bick, Eckhard, Kristin Hagen, Kaili M{\"u}{\"u}risep \& Trond Trosterud (eds.).
-  2009.
-\newblock \emph{{Constraint Grammar} and robust parsing: {Proceedings} of the
-  {NODALIDA 2009} workshop} (NEALT Proceedings Series~8) Northern European
-  Association for Language Technologie Tartu: Tartu University Library.
 
 \bibitem[{Bick \& Nygaard(2007)}]{BN2007a-u}
 Bick, Eckhard \& Lars Nygaard. 2007.
@@ -813,7 +800,8 @@ Bildhauer, Felix. 2011.
 \bibitem[{Bildhauer(2014)}]{Bildhauer2014a-u}
 Bildhauer, Felix. 2014.
 \newblock {Head-Driven Phrase Structure Grammar}.
-\newblock In  \cite{CSS2014a-ed} 526--555.
+\newblock In Andrew Carnie, Yosuke Sato \& Dan Siddiqi (eds.), \emph{The
+  {Routledge} handbook of syntax}, 526--555. Oxford: Routledge.
 
 \bibitem[{Bildhauer \& Cook(2010)}]{BC2010a}
 Bildhauer, Felix \& Philippa~Helen Cook. 2010.
@@ -849,7 +837,10 @@ Blackburn, Patrick \& Johan Bos. 2005.
 \bibitem[{Blackburn et~al.(1993)Blackburn, Gardent \& Meyer-Viol}]{BGM93a-u}
 Blackburn, Patrick, Claire Gardent \& Wilfried Meyer-Viol. 1993.
 \newblock Talking about trees.
-\newblock In  \cite{eacl93} 21--29.
+\newblock In Steven Krauwer, Michael Moortgat \& Louis des Tombe (eds.),
+  \emph{{Sixth Conference of the European Chapter of the Association for
+  Computational Linguistics. Proceedings} of the conference}, 21--29. Uetrecht:
+  Association for Computational Linguistics.
 
 \bibitem[{B{\l}aszczak \& G{\"a}rtner(2005)}]{BG2005a}
 B{\l}aszczak, Joanna \& Hans-Martin G{\"a}rtner. 2005.
@@ -864,7 +855,8 @@ Blevins, James~P. 2003.
 \bibitem[{Block \& Hunze(1986)}]{BH86a-u}
 Block, Hans-Ulrich \& Rudolf Hunze. 1986.
 \newblock Incremental construction of c- and f-structure in a {LFG}-parser.
-\newblock In  \cite{coling86} 490--493.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 490--493.
+  University of Bonn: Association for Computational Linguistics.
 
 \bibitem[{Blom(2005)}]{Blom2005a}
 Blom, Corrien. 2005.
@@ -890,11 +882,6 @@ Boas, Hans~C. 2014.
   coin.
 \newblock \emph{Theoretical Linguistics} 40(1--2). 89--112.
 
-\bibitem[{Boas \& Sag(2012)}]{BS2012a-ed}
-Boas, Hans~C. \& Ivan~A. Sag (eds.). 2012.
-\newblock \emph{{Sign-based Construction Grammar}} (CSLI Lecture Notes 193).
-\newblock Stanford, CA: CSLI Publications.
-
 \bibitem[{Bobaljik(1999)}]{Bobaljik99a}
 Bobaljik, Jonathan. 1999.
 \newblock Adverbs: {The} hierarchy paradox.
@@ -914,7 +901,8 @@ Bod, Rens. 2009{\natexlab{b}}.
 \bibitem[{B{\"o}gel et~al.(2008)B{\"o}gel, Butt \& Sulger}]{BBS2008a-u}
 B{\"o}gel, Tina, Miriam Butt \& Sebastian Sulger. 2008.
 \newblock {Urdu} ezafe and the morphology-syntax interface.
-\newblock In  \cite{BK2008a-ed} 129--149.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2008} conference}, 129--149. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/13/}.
 
 \bibitem[{Bohnet(2010)}]{Bohnet2010a-u}
@@ -938,7 +926,9 @@ Bolc, Leonard, Krzysztof Czuba, Anna Kup{\'s}{\'c}, Ma{\l}gorzata Marciniak,
 Booij, Geert~E. 2002.
 \newblock Separable complex verbs in {Dutch}: {A} case of periphrastic word
   formation.
-\newblock In  \cite{DJMU2002a-ed} 21--41.
+\newblock In Nicole Deh{\'e}, Ray~S. Jackendoff, Andrew McIntyre \& Silke Urban
+  (eds.), \emph{Verb-par\-ti\-cle explorations} (Interface Explorations~1),
+  21--41. Berlin: Mouton de Gruyter.
 
 \bibitem[{Booij(2005)}]{Booij2005a}
 Booij, Geert~E. 2005.
@@ -994,11 +984,6 @@ Borsley, Robert~D. 1989.
   structure.
 \newblock \emph{Linguistics} 27(5). 843--863.
 
-\bibitem[{Borsley(1991)}]{Borsley91a}
-Borsley, Robert~D. 1991.
-\newblock \emph{Syntactic theory: {A} unified approach}.
-\newblock London: Edward Arnold.
-
 \bibitem[{Borsley(1999)}]{Borsley99a-u}
 Borsley, Robert~D. 1999.
 \newblock \emph{Syntactic theory: {A} unified approach}.
@@ -1027,12 +1012,6 @@ Borsley, Robert~D. 2012.
 \newblock Don't move!
 \newblock \emph{Iberia: An International Journal of Theoretical Linguistics}
   4(1). 110--139.
-
-\bibitem[{Borsley \& B{\"o}rjars(2011)}]{BB2011a}
-Borsley, Robert~D. \& Kersti B{\"o}rjars (eds.). 2011.
-\newblock \emph{Non-transformational syntax: {Formal} and explicit models of
-  grammar: {A} guide to current models}.
-\newblock Oxford, UK/""Cambridge, MA: Blackwell Publishing Ltd.
 
 \bibitem[{Bos(1996)}]{Bos96a-u}
 Bos, Johan. 1996.
@@ -1152,16 +1131,12 @@ Bresnan, Joan. 1982{\natexlab{a}}.
 \newblock Control and complementation.
 \newblock \emph{Linguistic Inquiry} 13(3). 343--434.
 
-\bibitem[{Bresnan(1982{\natexlab{b}})}]{Bresnan82a-ed}
-Bresnan, Joan (ed.). 1982{\natexlab{b}}.
-\newblock \emph{The mental representation of grammatical relations}  (MIT Press
-  Series on Cognitive Theory and Mental Representation).
-\newblock Cambridge, MA/""London: MIT Press.
-
-\bibitem[{Bresnan(1982{\natexlab{c}})}]{Bresnan82a}
-Bresnan, Joan. 1982{\natexlab{c}}.
+\bibitem[{Bresnan(1982{\natexlab{b}})}]{Bresnan82a}
+Bresnan, Joan. 1982{\natexlab{b}}.
 \newblock The passive in lexical theory.
-\newblock In  \cite{Bresnan82a-ed} 3--86.
+\newblock In Joan Bresnan (ed.), \emph{The mental representation of grammatical
+  relations}  (MIT Press Series on Cognitive Theory and Mental Representation),
+  3--86. Cambridge, MA/""London: MIT Press.
 
 \bibitem[{Bresnan(2001)}]{Bresnan2001a}
 Bresnan, Joan. 2001.
@@ -1182,7 +1157,9 @@ Bresnan, Joan \& Jonni~M. Kanerva. 1989.
 \bibitem[{Bresnan \& Kaplan(1982)}]{BK82a}
 Bresnan, Joan \& Ronald~M. Kaplan. 1982.
 \newblock Introduction: Grammars as mental representations of language.
-\newblock In  \cite{Bresnan82a-ed} xvii--lii.
+\newblock In Joan Bresnan (ed.), \emph{The mental representation of grammatical
+  relations}  (MIT Press Series on Cognitive Theory and Mental Representation),
+  xvii--lii. Cambridge, MA/""London: MIT Press.
 
 \bibitem[{Bresnan \& Mchombo(1995)}]{BM95a}
 Bresnan, Joan \& Sam~A. Mchombo. 1995.
@@ -1199,7 +1176,10 @@ Bresnan, Joan \& Annie Zaenen. 1990.
 \bibitem[{Brew(1995)}]{Brew95a}
 Brew, Chris. 1995.
 \newblock Stochastic {HPSG}.
-\newblock In  \cite{eacl95} 83--89.
+\newblock In Steven~P. Abney \& Erhard~W. Hinrichs (eds.), \emph{Proceedings of
+  the {Seventh Conference of the European Chapter of the Association for
+  Computational Linguistics}}, 83--89. Dublin: Association for Computational
+  Linguistics.
 
 \bibitem[{Briscoe(1997)}]{Briscoe97a}
 Briscoe, Ted~J. 1997.
@@ -1222,18 +1202,18 @@ Briscoe, Ted~J. \& Ann Copestake. 1999.
 \bibitem[{Br{\"o}ker(2003)}]{Broeker2003a-u}
 Br{\"o}ker, Norbert. 2003.
 \newblock Formal foundations of {Dependency Grammar}.
-\newblock In  \cite{AEEHHL2003a-ed} 294--310.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 294--310. Berlin: Walter de Gruyter.
 
 \bibitem[{Brosziewski(2003)}]{Brosziewski2003a-u}
 Brosziewski, Ulf. 2003.
 \newblock \emph{Syntactic derivations: {A} nontransformational view}
   (Linguistische Arbeiten 470).
 \newblock T\"u\-bing\-en: Max Niemeyer Verlag.
-
-\bibitem[{Brown(2006)}]{Brown2006a-ed}
-Brown, Keith (ed.). 2006.
-\newblock \emph{The encyclopedia of language and linguistics}.
-\newblock Oxford: Elsevier Science Publisher B.V. (North-Holland) 2nd edn.
 
 \bibitem[{Brown \& Hanlon(1970)}]{BH70a}
 Brown, Roger \& Camille Hanlon. 1970.
@@ -1316,7 +1296,9 @@ Butt, Miriam, Stefanie Dipper, Anette Frank \& Tracy~Holloway King.
   1999{\natexlab{a}}.
 \newblock Writing large-scale parallel grammars for {English}, {French} and
   {German}.
-\newblock In  \cite{BK99a-ed}.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG '99} conference, {University of Manchester}}, Stanford, CA: CSLI
+  Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/4/}.
 
 \bibitem[{Butt et~al.(2002)Butt, Dyvik, King, Masuichi \& Rohrer}]{BDKMR02a-u}
@@ -1325,35 +1307,6 @@ Butt, Miriam, Helge Dyvik, Tracy~Holloway King, Hiroshi Masuichi \& Christian
 \newblock The {Parallel Grammar Project}.
 \newblock In \emph{Proceedings of {COLING-2002 Workshop on Grammar Engineering
   and Evaluation}}, 1--7.
-
-\bibitem[{Butt \& King(1999)}]{BK99a-ed}
-Butt, Miriam \& Tracy~Holloway King (eds.). 1999.
-\newblock \emph{Proceedings of the {LFG '99} conference, {University of
-  Manchester}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/4/}.
-
-\bibitem[{Butt \& King(2005)}]{BK2005a-ed}
-Butt, Miriam \& Tracy~Holloway King (eds.). 2005.
-\newblock \emph{Proceedings of the {LFG 2005} conference}. Stanford, CA: CSLI
-  Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/10/}.
-
-\bibitem[{Butt \& King(2008)}]{BK2008a-ed}
-Butt, Miriam \& Tracy~Holloway King (eds.). 2008.
-\newblock \emph{Proceedings of the {LFG 2008} conference}. Stanford, CA: CSLI
-  Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/13/}.
-
-\bibitem[{Butt \& King(2009)}]{BK2009a-ed}
-Butt, Miriam \& Tracy~Holloway King (eds.). 2009.
-\newblock \emph{Proceedings of the {LFG 2009} conference}. Stanford, CA: CSLI
-  Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/14/}.
-
-\bibitem[{Butt \& King(2014)}]{BK2014a-ed}
-Butt, Miriam \& Tracy~Holloway King (eds.). 2014.
-\newblock \emph{Proceedings of the {LFG 2014} conference}. Stanford, CA: CSLI
-  Publications.
 
 \bibitem[{Butt et~al.(1999{\natexlab{b}})Butt, King, Ni{\~n}o \&
   Segond}]{BKNS99a-ed}
@@ -1389,7 +1342,8 @@ Cahill, Aoife, Michael Burke, Ruth O'Donovan, Stefan Riezler, Josef van
 Calder, Jonathan, Ewan Klein \& Henk Zeevat. 1988.
 \newblock {Unification Categorial Grammar}: {A} concise, extendable grammar for
   natural language processing.
-\newblock In  \cite{coling88} 83--86.
+\newblock In D{\'e}nes Vargha (ed.), \emph{Proceedings of {COLING} 88}, 83--86.
+  University of Budapest: Association for Computational Linguistics.
 
 \bibitem[{Callmeier(2000)}]{Callmeier00a-u}
 Callmeier, Ulrich. 2000.
@@ -1399,17 +1353,13 @@ Callmeier, Ulrich. 2000.
 \newblock (Special Issue on Efficient Processing with {HPSG}: Methods, Systems,
   Evaluation).
 
-\bibitem[{Calzolari et~al.(2006)Calzolari, Cardie \& Isabelle}]{coling-acl2006}
-Calzolari, Nicoletta, Claire Cardie \& Pierre Isabelle (eds.). 2006.
-\newblock \emph{Proceedings of the {21st International Conference on
-  Computational Linguistics and 44th Annual Meeting of the Association for
-  Computational Linguistics}}.
-\newblock Sydney, Australia: Association for Computational Linguistics.
-
 \bibitem[{Candito(1996)}]{Candito96a}
 Candito, Marie-H{\'e}l{\`e}ne. 1996.
 \newblock A principle-based hierarchical representation of {LTAGs}.
-\newblock In  \cite{coling96} 194--199.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 194--199. Copenhagen, Denmark: Association for
+  Computational Linguistics.
 
 \bibitem[{Candito(1998)}]{Candito98a}
 Candito, Marie-H{\'e}l{\`e}ne. 1998.
@@ -1449,11 +1399,6 @@ Carlson, Gregory~N. \& Michael~K. Tanenhaus. 1988.
 \newblock In Wendy Wilkins (ed.), \emph{Thematic relations} (Syntax and
   Semantics~21), 263--289. San Diego: Academic Press.
 
-\bibitem[{Carnie et~al.(2014)Carnie, Sato \& Siddiqi}]{CSS2014a-ed}
-Carnie, Andrew, Yosuke Sato \& Dan Siddiqi (eds.). 2014.
-\newblock \emph{The {Routledge} handbook of syntax}.
-\newblock Oxford: Routledge.
-
 \bibitem[{Carpenter(1992)}]{Carpenter92a}
 Carpenter, Bob. 1992.
 \newblock \emph{The logic of typed feature structures}  (Tracts in Theoretical
@@ -1483,7 +1428,11 @@ Carpenter, Bob \& Gerald Penn. 1996.
 \bibitem[{{\c C}etino{\u g}lu \& Oflazer(2006)}]{CO2006a-u}
 {\c C}etino{\u g}lu, {\"O}zlem \& Kemal Oflazer. 2006.
 \newblock Morphology-syntax interface for {Turkish} {LFG}.
-\newblock In  \cite{coling-acl2006} 153--160.
+\newblock In Nicoletta Calzolari, Claire Cardie \& Pierre Isabelle (eds.),
+  \emph{Proceedings of the {21st International Conference on Computational
+  Linguistics and 44th Annual Meeting of the Association for Computational
+  Linguistics}}, 153--160. Sydney, Australia: Association for Computational
+  Linguistics.
 
 \bibitem[{Chang(2008)}]{Chang2008a-u}
 Chang, Nancy Chih-Lin. 2008.
@@ -1495,7 +1444,9 @@ Chang, Nancy Chih-Lin. 2008.
 \bibitem[{Chaves(2009)}]{Chaves2009a}
 Chaves, Rui~P. 2009.
 \newblock Construction-based cumulation and adjunct extraction.
-\newblock In  \cite{Mueller2009a-ed} 47--67.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {16th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of G{\"o}ttingen, Germany}}, 47--67. Stanford, CA: CSLI Publications.
 
 \bibitem[{Choi(1999)}]{Choi99a-u}
 Choi, Hye-Won. 1999.
@@ -1527,18 +1478,13 @@ Chomsky, Noam. 1964{\natexlab{a}}.
 \bibitem[{Chomsky(1964{\natexlab{b}})}]{Chomsky64a}
 Chomsky, Noam. 1964{\natexlab{b}}.
 \newblock Degrees of grammaticalness.
-\newblock In  \cite{KF64a-ed} 384--389.
+\newblock In Jerry~A. Fodor \& Jerrold~J. Katz (eds.), \emph{The structure of
+  language}, 384--389. Englewood Cliffs, NJ: Prentice-Hall.
 
 \bibitem[{Chomsky(1965)}]{Chomsky65a}
 Chomsky, Noam. 1965.
 \newblock \emph{Aspects of the theory of syntax}.
 \newblock Cambridge, MA: MIT Press.
-
-\bibitem[{Chomsky(1968)}]{Chomsky68b-u}
-Chomsky, Noam. 1968.
-\newblock Language and the mind.
-\newblock \emph{Psychology Today} 1(9). 48--68.
-\newblock \reprintas \citew{Chomsky76b-u}.
 
 \bibitem[{Chomsky(1970)}]{Chomsky70a}
 Chomsky, Noam. 1970.
@@ -1641,7 +1587,10 @@ Chomsky, Noam. 1991.
 \bibitem[{Chomsky(1993)}]{Chomsky93b-u}
 Chomsky, Noam. 1993.
 \newblock A {Minimalist Program} for linguistic theory.
-\newblock In  \cite{HK93a-ed} 1--52.
+\newblock In Kenneth Hale \& Samuel~Jay Keyser (eds.), \emph{The view from
+  building 20:\ {Essays} in linguistics in honor of {Sylvain Bromberger}}
+  (Current Studies in Linguistics~24), 1--52. Cambridge, MA/""London: MIT
+  Press.
 
 \bibitem[{Chomsky(1995{\natexlab{a}})}]{Chomsky95b-u}
 Chomsky, Noam. 1995{\natexlab{a}}.
@@ -1692,7 +1641,10 @@ Chomsky, Noam. 2005.
 \bibitem[{Chomsky(2007)}]{Chomsky2007a}
 Chomsky, Noam. 2007.
 \newblock Approaching {UG} from below.
-\newblock In  \cite{SG2007a-ed} 1--29.
+\newblock In Uli Sauerland \& Hans-Martin G{\"a}rtner (eds.), \emph{Interfaces
+  + recursion = language? {Chomsky's Minimalism} and the view from
+  syntax-semantics} (Studies in Generative Grammar~89), 1--29. Berlin: Mouton
+  de Gruyter.
 
 \bibitem[{Chomsky(2008)}]{Chomsky2008a}
 Chomsky, Noam. 2008.
@@ -1727,7 +1679,11 @@ Chouinard, Michelle~M. \& Eve~V. Clark. 2003.
 Chrupala, Grzegorz \& Josef van Genabith. 2006.
 \newblock Using machine-learning to assign function labels to parser output for
   {Spanish}.
-\newblock In  \cite{coling-acl2006} 136--143.
+\newblock In Nicoletta Calzolari, Claire Cardie \& Pierre Isabelle (eds.),
+  \emph{Proceedings of the {21st International Conference on Computational
+  Linguistics and 44th Annual Meeting of the Association for Computational
+  Linguistics}}, 136--143. Sydney, Australia: Association for Computational
+  Linguistics.
 
 \bibitem[{Chung \& McCloskey(1983)}]{CMC83a}
 Chung, Sandra \& James McCloskey. 1983.
@@ -1794,7 +1750,10 @@ Clark, Stephen \& James Curran. 2007.
 Clark, Stephen, Julia Hockenmaier \& Mark~J. Steedman. 2002.
 \newblock Building deep dependency structures with a wide-coverage {CCG}
   parser.
-\newblock In  \cite{acl2002} 327--334.
+\newblock In Pierre Isabelle (ed.), \emph{{40th Annual Meeting of the
+  Association for Computational Linguistics}: {Proceedings} of the conference},
+  327--334. University of Pennsylvania, Philadelphia: Association for
+  Computational Linguistics.
 \newblock \urlprefix\url{http://aclanthology.info/events/acl-2002}.
 
 \bibitem[{Cl\'{e}ment(2009)}]{Clement2009a-u}
@@ -1894,7 +1853,9 @@ Copestake, Ann, Daniel~P. Flickinger, Carl~J. Pollard \& Ivan~A. Sag. 2005.
 \bibitem[{Correa(1987)}]{Correra87a}
 Correa, Nelson. 1987.
 \newblock An {Attribute-Grammar} implementation of {Government-Binding Theory}.
-\newblock In  \cite{acl87} 45--51.
+\newblock In Candy Sidner (ed.), \emph{25th {Annual Meeting of the Association
+  for Computational Linguistics}}, 45--51. Stanford, CA: Association for
+  Computational Linguistics.
 
 \bibitem[{Costa \& Branco(2010)}]{CB2010a-u}
 Costa, Francisco \& Ant{\'o}nio Branco. 2010.
@@ -1929,7 +1890,9 @@ Crain, Stephen \& Mineharu Nakayama. 1987.
 Crain, Stephen \& Mark~J. Steedman. 1985.
 \newblock On not being led up the garden path: {The} use of context by the
   psychological syntax processor.
-\newblock In  \cite{DKZ85a-ed} 320--358.
+\newblock In David~R. Dowty, Lauri Karttunen \& Arnold~M. Zwicky (eds.),
+  \emph{Natural language processing}, 320--358. Cambridge, UK: Cambridge
+  University Press.
 
 \bibitem[{Crain et~al.(2009)Crain, Thornton \& Khlentzos}]{CTK2009a}
 Crain, Stephen, Rosalind Thornton \& Drew Khlentzos. 2009.
@@ -1939,7 +1902,10 @@ Crain, Stephen, Rosalind Thornton \& Drew Khlentzos. 2009.
 \bibitem[{Cramer \& Zhang(2009)}]{CZ2009a-u}
 Cramer, Bart \& Yi~Zhang. 2009.
 \newblock Construction of a {German} {HPSG} grammar from a detailed treebank.
-\newblock In  \cite{acl2009:geaf} 37--45.
+\newblock In Tracy~Holloway King \& Marianne Santaholma (eds.),
+  \emph{Proceedings of the 2009 {Workshop on Grammar Engineering Across
+  Frameworks (GEAF 2009)}}, 37--45. Suntec, Singapore: Association for
+  Computational Linguistics.
 \newblock \urlprefix\url{http://www.aclweb.org/anthology/W/W09/#2600}.
 
 \bibitem[{Crocker \& Lewin(1992)}]{CL92a}
@@ -1991,7 +1957,10 @@ Crysmann, Berthold. 2003.
 Crysmann, Berthold. 2004.
 \newblock Underspecification of intersective modifier attachment: {Some}
   arguments from {German}.
-\newblock In  \cite{Mueller2004a-ed} 378--392.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {11th
+  International Conference on Head-Driven Phrase Structure Grammar, Center for
+  Computational Linguistics, Katholieke Universiteit Leuven}}, 378--392.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2004/}.
 
 \bibitem[{Crysmann(2005{\natexlab{a}})}]{Crysmann2005b-u}
@@ -2020,12 +1989,17 @@ Crysmann, Berthold. 2005{\natexlab{c}}.
 Crysmann, Berthold. 2008.
 \newblock An asymmetric theory of peripheral sharing in {HPSG}: Conjunction
   reduction and coordination of unlikes.
-\newblock In  \cite{FG2003} 47--62.
+\newblock In Gerhard J{\"a}ger, Paola Monachesi, Gerald Penn \& Shuly Wintner
+  (eds.), \emph{Proceedings of {Formal Grammar 2003, Vienna, Austria}}, 47--62.
+  Stanford, CA: CSLI Publications.
 
 \bibitem[{Crysmann(2009)}]{Crysmann2009a-u}
 Crysmann, Berthold. 2009.
 \newblock Autosegmental representations in an {HPSG} of {Hausa}.
-\newblock In  \cite{acl2009:geaf} 28--36.
+\newblock In Tracy~Holloway King \& Marianne Santaholma (eds.),
+  \emph{Proceedings of the 2009 {Workshop on Grammar Engineering Across
+  Frameworks (GEAF 2009)}}, 28--36. Suntec, Singapore: Association for
+  Computational Linguistics.
 \newblock \urlprefix\url{http://www.aclweb.org/anthology/W/W09/#2600}.
 
 \bibitem[{Crysmann(2011)}]{Crysmann2011a-u}
@@ -2081,13 +2055,17 @@ D{\k{a}}browska, Ewa. 2004.
 \bibitem[{Dahl \& Velupillai(2013{\natexlab{a}})}]{wals-66}
 Dahl, {\"O}sten \& Viveka Velupillai. 2013{\natexlab{a}}.
 \newblock The past tense.
-\newblock In  \cite{wals}.
+\newblock In Matthew~S. Dryer \& Martin Haspelmath (eds.), \emph{The world
+  atlas of language structures online}, Leipzig: Max Planck Institute for
+  Evolutionary Anthropology.
 \newblock \urlprefix\url{http://wals.info/chapter/66}.
 
 \bibitem[{Dahl \& Velupillai(2013{\natexlab{b}})}]{wals-65}
 Dahl, {\"O}sten \& Viveka Velupillai. 2013{\natexlab{b}}.
 \newblock Perfective/imperfective aspect.
-\newblock In  \cite{wals}.
+\newblock In Matthew~S. Dryer \& Martin Haspelmath (eds.), \emph{The world
+  atlas of language structures online}, Leipzig: Max Planck Institute for
+  Evolutionary Anthropology.
 \newblock \urlprefix\url{http://wals.info/chapter/65}.
 
 \bibitem[{Dahll{\"o}f(2002)}]{Dahlloef2002a-u}
@@ -2121,7 +2099,9 @@ Dalrymple, Mary. 2001.
 \bibitem[{Dalrymple(2006)}]{Dalrymple2006a}
 Dalrymple, Mary. 2006.
 \newblock {Lexical Functional Grammar}.
-\newblock In  \cite{Brown2006a-ed} 82--94.
+\newblock In Keith Brown (ed.), \emph{The encyclopedia of language and
+  linguistics}, 82--94. Oxford: Elsevier Science Publisher B.V. (North-Holland)
+  2nd edn.
 
 \bibitem[{Dalrymple et~al.(2004)Dalrymple, Kaplan \& King}]{DKK2004a}
 Dalrymple, Mary, Ronald~M. Kaplan \& Tracy~Holloway King. 2004.
@@ -2130,18 +2110,13 @@ Dalrymple, Mary, Ronald~M. Kaplan \& Tracy~Holloway King. 2004.
   the {LFG 2004} conference}, 199--208. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/9/}.
 
-\bibitem[{Dalrymple et~al.(1995)Dalrymple, Kaplan, {Maxwell III} \&
-  Zaenen}]{DKMZ95a-ed}
-Dalrymple, Mary, Ronald~M. Kaplan, John~T. {Maxwell III} \& Annie Zaenen
-  (eds.). 1995.
-\newblock \emph{Formal issues in {Lexical-Functional Grammar}} (CSLI Lecture
-  Notes~47).
-\newblock Stanford, CA: CSLI Publications.
-
 \bibitem[{Dalrymple et~al.(1993)Dalrymple, Lamping \& Saraswat}]{DLS93a-u}
 Dalrymple, Mary, John Lamping \& Vijay Saraswat. 1993.
 \newblock {LFG} semantics via constraints.
-\newblock In  \cite{eacl93} 97--105.
+\newblock In Steven Krauwer, Michael Moortgat \& Louis des Tombe (eds.),
+  \emph{{Sixth Conference of the European Chapter of the Association for
+  Computational Linguistics. Proceedings} of the conference}, 97--105.
+  Uetrecht: Association for Computational Linguistics.
 \newblock \doi{10.3115/976744.976757}.
 
 \bibitem[{Dalrymple et~al.(2006)Dalrymple, Liakata \& Mackie}]{DLM2006a-u}
@@ -2183,7 +2158,9 @@ Davis, Anthony~R. \& Jean-Pierre Koenig. 2000.
 \bibitem[{{De Kuthy}(2001)}]{deKuthy2001a}
 {De Kuthy}, Kordula. 2001.
 \newblock Splitting {PPs} from {NPs}.
-\newblock In  \cite{MK2001a-ed} 31--76.
+\newblock In Walt~Detmar Meurers \& Tibor Kiss (eds.), \emph{Constraint"=based
+  approaches to {Germanic} syntax} (Studies in Constraint"=Based Lexicalism~7),
+  31--76. Stanford, CA: CSLI Publications.
 
 \bibitem[{{De Kuthy}(2002)}]{deKuthy2002a}
 {De Kuthy}, Kordula. 2002.
@@ -2206,14 +2183,18 @@ Davis, Anthony~R. \& Jean-Pierre Koenig. 2000.
 {De Kuthy}, Kordula \& Walt~Detmar Meurers. 2003{\natexlab{a}}.
 \newblock Dealing with optional complements in {HPSG}-based grammar
   implementations.
-\newblock In  \cite{Mueller2003a-ed} 88--96.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {10th
+  International Conference on Head-Driven Phrase Structure Grammar, Michigan
+  State University, East Lansing}}, 88--96. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2003/}.
 
 \bibitem[{{De Kuthy} \& Meurers(2003{\natexlab{b}})}]{dKM2003a}
 {De Kuthy}, Kordula \& Walt~Detmar Meurers. 2003{\natexlab{b}}.
 \newblock The secret life of focus exponents, and what it tells us about
   fronted verbal projections.
-\newblock In  \cite{Mueller2003a-ed} 97--110.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {10th
+  International Conference on Head-Driven Phrase Structure Grammar, Michigan
+  State University, East Lansing}}, 97--110. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2003/}.
 
 \bibitem[{{de Saussure}(1916{\natexlab{a}})}]{Saussure16a-Fr}
@@ -2228,13 +2209,6 @@ Davis, Anthony~R. \& Jean-Pierre Koenig. 2000.
 \newblock \emph{{Grundfragen der allgemeinen Sprachwissenschaft}}.
 \newblock Berlin: Walter de Gruyter \& Co.
 \newblock \2nd\Edition 1967.
-
-\bibitem[{Deh{\'e} et~al.(2002)Deh{\'e}, Jackendoff, McIntyre \&
-  Urban}]{DJMU2002a-ed}
-Deh{\'e}, Nicole, Ray~S. Jackendoff, Andrew McIntyre \& Silke Urban (eds.).
-  2002.
-\newblock \emph{Verb-par\-ti\-cle explorations} (Interface Explorations~1).
-\newblock Berlin: Mouton de Gruyter.
 
 \bibitem[{Delmonte(1990)}]{Delmonte90a-u}
 Delmonte, Rodolfo. 1990.
@@ -2266,7 +2240,9 @@ Demske, Ulrike. 2001.
 \bibitem[{{den Besten}(1985)}]{denBesten85b}
 {den Besten}, Hans. 1985.
 \newblock Some remarks on the {Ergative Hypothesis}.
-\newblock In  \cite{Abraham85a-ed} 53--74.
+\newblock In Werner Abraham (ed.), \emph{{Erkl{\"a}rende Syntax des Deutschen}}
+  (Studien zur deutschen Grammatik~25), 53--74. T{\"u}bingen: \original Gunter
+  Narr Verlag \jetzt Stauffenburg Verlag.
 
 \bibitem[{Deppermann(2006)}]{Deppermann2006a}
 Deppermann, Arnulf. 2006.
@@ -2306,7 +2282,8 @@ Dione, Cheikh Mouhamadou~Bamba. 2013.
 \bibitem[{Dione(2014)}]{Dione2012b-u}
 Dione, Cheikh Mouhamadou~Bamba. 2014.
 \newblock An {LFG} approach to {Wolof} cleft constructions.
-\newblock In  \cite{BK2014a-ed} 157--176.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2014} conference}, 157--176. Stanford, CA: CSLI Publications.
 
 \bibitem[{Dipper(2003)}]{Dipper2003a-u}
 Dipper, Stefanie. 2003.
@@ -2333,7 +2310,9 @@ Donohue, Cathryn \& Ivan~A. Sag. 1999.
 Doran, Christine, Beth~Ann Hockey, Anoop Sarkar, Bangalore Srinivas \& Fei Xia.
   2000.
 \newblock Evolution of the {XTAG} system.
-\newblock In  \cite{AR2000a-ed} 371--403.
+\newblock In Anne Abeill{\'e} \& Owen Rambow (eds.), \emph{{Tree Adjoining
+  Grammars}: Formalisms, linguistic analysis and processing} (CSLI Lecture
+  Notes 156), 371--403. Stanford, CA: CSLI Publications.
 
 \bibitem[{D{\"o}rre \& Dorna(1993)}]{DD93a-u}
 D{\"o}rre, Jochen \& Michael Dorna. 1993.
@@ -2343,7 +2322,9 @@ D{\"o}rre, Jochen \& Michael Dorna. 1993.
 \bibitem[{D{\"o}rre \& Seiffert(1991)}]{DS91a}
 D{\"o}rre, Jochen \& Roland Seiffert. 1991.
 \newblock A formalism for natural language --- {STUF}.
-\newblock In  \cite{HR91a-ed} 29--38.
+\newblock In Otthein Herzog \& Claus-Rainer Rollinger (eds.), \emph{Text
+  understanding in {LILOG}} (Lecture Notes in Artificial Intelligence 546),
+  29--38. Berlin: Springer Verlag.
 
 \bibitem[{Dowty(1997)}]{Dowty97a-u}
 Dowty, David. 1997.
@@ -2368,7 +2349,9 @@ Dowty, David~R. 1979.
 Dowty, David~R. 1988.
 \newblock Type raising, functional composition, and nonconstituent
   coordination.
-\newblock In  \cite{OBW88a-ed} 153--198.
+\newblock In Richard Oehrle, Emmon Bach \& Deirdre Wheeler (eds.),
+  \emph{{Categorial Grammars} and natural language structures}, 153--198.
+  Dordrecht: D. Reidel Publishing Company.
 
 \bibitem[{Dowty(1989)}]{Dowty89b-u}
 Dowty, David~R. 1989.
@@ -2386,12 +2369,9 @@ Dowty, David~R. 1991.
 Dowty, David~R. 2003.
 \newblock The dual analysis of adjuncts and complements in {Categorial
   Grammar}.
-\newblock In  \cite{LMFH2003a-ed} 33--66.
-
-\bibitem[{Dowty et~al.(1985)Dowty, Karttunen \& Zwicky}]{DKZ85a-ed}
-Dowty, David~R., Lauri Karttunen \& Arnold~M. Zwicky (eds.). 1985.
-\newblock \emph{Natural language processing}.
-\newblock Cambridge, UK: Cambridge University Press.
+\newblock In Ewald Lang, Claudia Maienborn \& Cathrine Fabricius-Hansen (eds.),
+  \emph{Modifying adjuncts} (Interface Explorations~4), 33--66. Berlin: Mouton
+  de Gruyter.
 
 \bibitem[{Dras et~al.(2012)Dras, Lareau, B{\"o}rschinger, Dale, Motazedi,
   Rambow, Turpin \& Ulinski}]{Dras2012a-u}
@@ -2432,26 +2412,26 @@ Dryer, Matthew~S. 1997.
 \bibitem[{Dryer(2013{\natexlab{a}})}]{wals-85}
 Dryer, Matthew~S. 2013{\natexlab{a}}.
 \newblock Order of adposition and noun phrase.
-\newblock In  \cite{wals}.
+\newblock In Matthew~S. Dryer \& Martin Haspelmath (eds.), \emph{The world
+  atlas of language structures online}, Leipzig: Max Planck Institute for
+  Evolutionary Anthropology.
 \newblock \urlprefix\url{http://wals.info/chapter/85}.
 
 \bibitem[{Dryer(2013{\natexlab{b}})}]{wals-83}
 Dryer, Matthew~S. 2013{\natexlab{b}}.
 \newblock Order of object and verb.
-\newblock In  \cite{wals}.
+\newblock In Matthew~S. Dryer \& Martin Haspelmath (eds.), \emph{The world
+  atlas of language structures online}, Leipzig: Max Planck Institute for
+  Evolutionary Anthropology.
 \newblock \urlprefix\url{http://wals.info/chapter/83}.
 
 \bibitem[{Dryer(2013{\natexlab{c}})}]{wals-81}
 Dryer, Matthew~S. 2013{\natexlab{c}}.
 \newblock Order of subject, object and verb.
-\newblock In  \cite{wals}.
+\newblock In Matthew~S. Dryer \& Martin Haspelmath (eds.), \emph{The world
+  atlas of language structures online}, Leipzig: Max Planck Institute for
+  Evolutionary Anthropology.
 \newblock \urlprefix\url{http://wals.info/chapter/81}.
-
-\bibitem[{Dryer \& Haspelmath(2013)}]{wals}
-Dryer, Matthew~S. \& Martin Haspelmath (eds.). 2013.
-\newblock \emph{The world atlas of language structures online}.
-\newblock Leipzig: Max Planck Institute for Evolutionary Anthropology.
-\newblock \urlprefix\url{http://wals.info/}.
 
 \bibitem[{D{\"u}rscheid(1989)}]{Duerscheid89a}
 D{\"u}rscheid, Christa. 1989.
@@ -2473,12 +2453,15 @@ Egg, Markus. 1999.
 \bibitem[{Eisele \& Dorre(1986)}]{ED86a-u}
 Eisele, Andreas \& Jochen Dorre. 1986.
 \newblock A {Lexical Functional Grammar} system in {Prolog}.
-\newblock In  \cite{coling86} 551--553.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 551--553.
+  University of Bonn: Association for Computational Linguistics.
 
 \bibitem[{Eisenberg(1992)}]{Eisenberg92b}
 Eisenberg, Peter. 1992.
 \newblock {Platos Problem und die Lernbarkeit der Syntax}.
-\newblock In  \cite{Suchsland92a-ed} 371--378.
+\newblock In Peter Suchsland (ed.), \emph{{Biologische und soziale Grundlagen
+  der Sprache}} (Linguistische Arbeiten 280), 371--378. T{\"u}bingen: Max
+  Niemeyer Verlag.
 
 \bibitem[{Eisenberg(1994{\natexlab{a}})}]{Eisenberg94b}
 Eisenberg, Peter. 1994{\natexlab{a}}.
@@ -2534,7 +2517,10 @@ Embick, David. 2004.
 Emirkanian, Louisette, Lyne {Da Sylva} \& Lorne~H. Bouchard. 1996.
 \newblock The implementation of a computational grammar of {French} using the
   {Grammar Development Environment}.
-\newblock In  \cite{coling96} 1024--1027.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 1024--1027. Copenhagen, Denmark: Association
+  for Computational Linguistics.
 
 \bibitem[{Engdahl \& Vallduv{\'\i}(1996)}]{EV96a}
 Engdahl, Elisabet \& Enric Vallduv{\'\i}. 1996.
@@ -2569,18 +2555,17 @@ Engel, Ulrich. 1996.
 \bibitem[{Engel(2014)}]{Engel2014a}
 Engel, Ulrich. 2014.
 \newblock {Die dependenzielle Verbgrammatik (DVG)}.
-\newblock In  \cite{HS2014a-ed} 43--62.
-
-\bibitem[{Engelberg et~al.(2011)Engelberg, Holler \& Proost}]{EHP2011a-ed}
-Engelberg, Stefan, Anke Holler \& Kristel Proost (eds.). 2011.
-\newblock \emph{{Sprachliches Wissen zwischen Lexikon und Grammatik}}
-  (Institut f{\"u}r Deutsche Sprache, Jahrbuch 2010).
-\newblock Berlin: de Gruyter.
+\newblock In J{\"o}rg Hagemann \& Sven Staffeldt (eds.), \emph{{Syntaxtheorien:
+  Analysen im Vergleich}} (Stauffenburg Einf{\"u}hrungen~28), 43--62.
+  T\"u\-bing\-en: Stauffenburg Verlag.
 
 \bibitem[{Erbach(1995)}]{Erbach95a}
 Erbach, Gregor. 1995.
 \newblock {ProFIT}: Prolog with features, inheritance and templates.
-\newblock In  \cite{eacl95} 180--187.
+\newblock In Steven~P. Abney \& Erhard~W. Hinrichs (eds.), \emph{Proceedings of
+  the {Seventh Conference of the European Chapter of the Association for
+  Computational Linguistics}}, 180--187. Dublin: Association for Computational
+  Linguistics.
 
 \bibitem[{Ernst(1992)}]{Ernst92a}
 Ernst, Thomas. 1992.
@@ -2607,7 +2592,12 @@ Eroms, Hans-Werner. 2000.
 \bibitem[{Eroms \& Heringer(2003)}]{EH2003a}
 Eroms, Hans-Werner \& Hans~J{\"u}rgen Heringer. 2003.
 \newblock {Dependenz und lineare Ordnung}.
-\newblock In  \cite{AEEHHL2003a-ed} 247--263.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 247--263. Berlin: Walter de Gruyter.
 
 \bibitem[{Eroms et~al.(1997)Eroms, Stickel \&
   Zifonun}]{IDS97-not-crossreferenced}
@@ -2698,7 +2688,9 @@ Fan, Zhenzhen, Sanghoun Song \& Francis Bond. 2015.
 \bibitem[{Fang \& King(2007)}]{FK2007a-u}
 Fang, Ji \& Tracy~Holloway King. 2007.
 \newblock An {LFG} {Chinese} grammar for machine use.
-\newblock In  \cite{geaf2007} 144--160.
+\newblock In Tracy~Holloway King \& Emily~M. Bender (eds.), \emph{{Grammar
+  Engineering across Frameworks 2007}}  (Studies in Computational Linguistics
+  ONLINE), 144--160. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
 
 \bibitem[{Fanselow(1981)}]{Fanselow81a-u}
@@ -2722,7 +2714,9 @@ Fanselow, Gisbert. 1988.
 \bibitem[{Fanselow(1990)}]{Fanselow90}
 Fanselow, Gisbert. 1990.
 \newblock Scrambling as {NP}-movement.
-\newblock In  \cite{GS90a-ed} 113--140.
+\newblock In G{\"u}nther Grewendorf \& Wolfgang Sternefeld (eds.),
+  \emph{{Scrambling and Barriers}} (Linguistik Aktuell/""Linguistics Today~5),
+  113--140. Amsterdam: John Benjamins Publishing Co.
 
 \bibitem[{Fanselow(1992{\natexlab{a}})}]{Fanselow92}
 Fanselow, Gisbert. 1992{\natexlab{a}}.
@@ -2734,7 +2728,9 @@ Fanselow, Gisbert. 1992{\natexlab{a}}.
 \bibitem[{Fanselow(1992{\natexlab{b}})}]{Fanselow92b}
 Fanselow, Gisbert. 1992{\natexlab{b}}.
 \newblock {Zur biologischen Autonomie der Grammatik}.
-\newblock In  \cite{Suchsland92a-ed} 335--356.
+\newblock In Peter Suchsland (ed.), \emph{{Biologische und soziale Grundlagen
+  der Sprache}} (Linguistische Arbeiten 280), 335--356. T{\"u}bingen: Max
+  Niemeyer Verlag.
 
 \bibitem[{Fanselow(1993)}]{Fanselow93a}
 Fanselow, Gisbert. 1993.
@@ -2817,13 +2813,6 @@ Fanselow, Gisbert \& Sascha~W. Felix. 1987.
   f{\"u}r Wissenschaft: Uni-Taschenb{\"u}cher 1442).
 \newblock T{\"u}bingen: A.\ Francke Verlag GmbH.
 
-\bibitem[{Fanselow \& Felix(1990)}]{FF90}
-Fanselow, Gisbert \& Sascha~W. Felix (eds.). 1990.
-\newblock \emph{{Strukturen und Merkmale syntaktischer Kategorien}} (Studien
-  zur deutschen Grammatik~39).
-\newblock T{\"u}bingen: \original Gunter Narr Verlag \jetzt Stauffenburg
-  Verlag.
-
 \bibitem[{Fanselow et~al.(1999)Fanselow, Schlesewsky, Cavar \&
   Kliegl}]{FSCK99a}
 Fanselow, Gisbert, Matthias Schlesewsky, Damir Cavar \& Reinhold Kliegl. 1999.
@@ -2866,7 +2855,10 @@ Fillmore, Charles~J. 1988.
 \bibitem[{Fillmore(1999)}]{Fillmore99a}
 Fillmore, Charles~J. 1999.
 \newblock Inversion and {Constructional} inheritance.
-\newblock In  \cite{WKK99a-ed} 113--128.
+\newblock In Gert Webelhuth, Jean-Pierre Koenig \& Andreas Kathol (eds.),
+  \emph{Lexical and {Constructional} aspects of linguistic explanation}
+  (Studies in Constraint"=Based Lexicalism~1), 113--128. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Fillmore et~al.(1988)Fillmore, Kay \& O'Connor}]{FKoC88a}
 Fillmore, Charles~J., Paul Kay \& Mary~Catherine O'Connor. 1988.
@@ -2877,12 +2869,17 @@ Fillmore, Charles~J., Paul Kay \& Mary~Catherine O'Connor. 1988.
 \bibitem[{Fillmore et~al.(2012)Fillmore, Lee-Goldmann \& Rhomieux}]{FLGR2012a}
 Fillmore, Charles~J., Russell~R. Lee-Goldmann \& Russell Rhomieux. 2012.
 \newblock The {FrameNet} constructicon.
-\newblock In  \cite{BS2012a-ed} 309--372.
+\newblock In Hans~C. Boas \& Ivan~A. Sag (eds.), \emph{{Sign-based Construction
+  Grammar}} (CSLI Lecture Notes 193), 309--372. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Fischer \& Keil(1996)}]{FK96a}
 Fischer, Ingrid \& Martina Keil. 1996.
 \newblock Parsing decomposable idioms.
-\newblock In  \cite{coling96} 388--393.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 388--393. Copenhagen, Denmark: Association for
+  Computational Linguistics.
 
 \bibitem[{Fischer \& Stefanowitsch(2006)}]{FS2006a-ed-not-crossreferenced}
 Fischer, Kerstin \& Anatol Stefanowitsch (eds.). 2006.
@@ -2936,19 +2933,25 @@ Flickinger, Daniel~P. 2000.
 \bibitem[{Flickinger(2008)}]{Flickinger2008a}
 Flickinger, Daniel~P. 2008.
 \newblock Transparent heads.
-\newblock In  \cite{Mueller2008a-ed} 87--94.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {15th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 87--94.
+  Stanford, CA: CSLI Publications.
 \newblock
   \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2008/abstr-flickinger.shtml}.
 
 \bibitem[{Flickinger \& Bender(2003)}]{FB2003a}
 Flickinger, Daniel~P. \& Emily~M. Bender. 2003.
 \newblock Compositional semantics in a multilingual grammar resource.
-\newblock In  \cite{BFFS2003a-ed} 33--42.
+\newblock In Emily~M. Bender, Daniel~P. Flickinger, Frederik Fouvry \& Melanie
+  Siegel (eds.), \emph{Proceedings of the {ESSLLI 2003 Workshop ``Ideas and
+  Strategies for Multilingual Grammar Development''}}, 33--42. Vienna, Austria.
 
 \bibitem[{Flickinger et~al.(2000)Flickinger, Copestake \& Sag}]{FCS2000a}
 Flickinger, Daniel~P., Ann Copestake \& Ivan~A. Sag. 2000.
 \newblock {HPSG} analysis of {English}.
-\newblock In  \cite{Wahlster2000a-ed} 254--263.
+\newblock In Wolfgang Wahlster (ed.), \emph{Verbmobil: {Foundations} of
+  speech-to-speech translation}  (Artificial Intelligence), 254--263. Berlin:
+  Springer Verlag.
 
 \bibitem[{Flickinger et~al.(1985)Flickinger, Pollard \& Wasow}]{FPW85a}
 Flickinger, Daniel~P., Carl~J. Pollard \& Thomas Wasow. 1985.
@@ -2978,11 +2981,6 @@ Fodor, Jerry~A., Thomas~G. Bever \& Merrill~F. Garrett. 1974.
   psycholinguistics and {Generative Grammar}}.
 \newblock New York: McGraw-Hill Book Co.
 
-\bibitem[{Fodor \& Katz(1964)}]{KF64a-ed}
-Fodor, Jerry~A. \& Jerrold~J. Katz (eds.). 1964.
-\newblock \emph{The structure of language}.
-\newblock Englewood Cliffs, NJ: Prentice-Hall.
-
 \bibitem[{Fokkens(2011)}]{Fokkens2011a}
 Fokkens, Antske. 2011.
 \newblock Metagrammar engineering: {Towards} systematic exploration of
@@ -2995,7 +2993,9 @@ Fokkens, Antske. 2011.
 \bibitem[{Fokkens et~al.(2009)Fokkens, Poulson \& Bender}]{FPB09a-u}
 Fokkens, Antske, Laurie Poulson \& Emily~M. Bender. 2009.
 \newblock Inflectional morphology in {Turkish} {VP} coordination.
-\newblock In  \cite{Mueller2009a-ed} 110--130.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {16th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of G{\"o}ttingen, Germany}}, 110--130. Stanford, CA: CSLI Publications.
 
 \bibitem[{Fong(1991)}]{Fong91a-u}
 Fong, Sandiway. 1991.
@@ -3035,7 +3035,8 @@ Forst, Martin. 2006.
 \bibitem[{Forst \& Rohrer(2009)}]{FR2009a-u}
 Forst, Martin \& Christian Rohrer. 2009.
 \newblock Problems of {German} {VP} coordination.
-\newblock In  \cite{BK2009a-ed} 297--316.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2009} conference}, 297--316. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/14/}.
 
 \bibitem[{Fortmann(1996)}]{Fortmann96a-u}
@@ -3070,12 +3071,6 @@ Fraj, F\'eriel~Ben, Chiraz Zribi \& Mohamed~Ben Ahmed. 2008.
 \newblock In \emph{Proceedings of the {International Arab Conference on
   Information Technology}}, Sfax, Tunisia.
 
-\bibitem[{Francis \& Michaelis(2003)}]{FM2003a-ed}
-Francis, Elaine~J. \& Laura~A. Michaelis (eds.). 2003.
-\newblock \emph{Mismatch: Form-function incongruity and the architecture of
-  grammar} (CSLI Lecture Notes 163).
-\newblock Stanford, CA: CSLI Publications.
-
 \bibitem[{Frank(1994)}]{Frank94}
 Frank, Anette. 1994.
 \newblock Verb second by lexical rule or by underspecification.
@@ -3086,7 +3081,9 @@ Frank, Anette. 1994.
 \bibitem[{Frank(1996)}]{Frank96b-u}
 Frank, Anette. 1996.
 \newblock {Eine LFG-Grammatik des Franz{\"o}sischen}.
-\newblock In  \cite{BF96a-u} 97--244.
+\newblock In \emph{{Deutsche und franz{\"o}sische Syntax im Formalismus der
+  LFG}} (Linguistische Arbeiten 344), 97--244. T{\"u}bingen: Max Niemeyer
+  Verlag.
 
 \bibitem[{Frank(2006)}]{Frank2006a-u}
 Frank, Anette. 2006.
@@ -3098,7 +3095,10 @@ Frank, Anette. 2006.
 \bibitem[{Frank \& Reyle(1995)}]{FR95a-u}
 Frank, Anette \& Uwe Reyle. 1995.
 \newblock Principle based semantics for {HPSG}.
-\newblock In  \cite{eacl95} 9--16.
+\newblock In Steven~P. Abney \& Erhard~W. Hinrichs (eds.), \emph{Proceedings of
+  the {Seventh Conference of the European Chapter of the Association for
+  Computational Linguistics}}, 9--16. Dublin: Association for Computational
+  Linguistics.
 
 \bibitem[{Frank \& Zaenen(2002)}]{FZ2002a-u}
 Frank, Anette \& Annie Zaenen. 2002.
@@ -3107,12 +3107,6 @@ Frank, Anette \& Annie Zaenen. 2002.
   {Contributions} to the theory of temporal reference in natural language},
   17--52. T{\"u}bingen: Max Niemeyer Verlag.
 \newblock \reprintas \citew{FZ2004a-u}.
-
-\bibitem[{Frank \& Zaenen(2004)}]{FZ2004a-u}
-Frank, Anette \& Annie Zaenen. 2004.
-\newblock Tense in {LFG}: {Syntax} and morphology.
-\newblock In Louisa Sadler \& Andrew Spencer (eds.), \emph{Projecting
-  morphology}, 23--66. Stanford, CA: CSLI Publications.
 
 \bibitem[{Frank(2002)}]{Frank2002a-u}
 Frank, Robert. 2002.
@@ -3128,7 +3122,9 @@ Franks, Steven. 1995.
 \bibitem[{Frazier(1985)}]{Frazier85a-u}
 Frazier, Lyn. 1985.
 \newblock Syntactic complexity.
-\newblock In  \cite{DKZ85a-ed} 129--189.
+\newblock In David~R. Dowty, Lauri Karttunen \& Arnold~M. Zwicky (eds.),
+  \emph{Natural language processing}, 129--189. Cambridge, UK: Cambridge
+  University Press.
 
 \bibitem[{Frazier \& Clifton(1996)}]{FC96a-u}
 Frazier, Lyn \& Charles Clifton. 1996.
@@ -3212,7 +3208,8 @@ Frey, Werner. 2005.
 Frey, Werner \& Hans-Martin G{\"a}rtner. 2002.
 \newblock On the treatment of scrambling and adjunction in {Minimalist
   Grammars}.
-\newblock In  \cite{FG2002} 41--52.
+\newblock In Gerhard J{\"a}ger, Paola Monachesi, Gerald Penn \& Shuly Wintner
+  (eds.), \emph{Proceedings of {Formal Grammar 2002}}, 41--52. Trento.
 
 \bibitem[{Frey \& Reyle(1983{\natexlab{a}})}]{FR83b}
 Frey, Werner \& Uwe Reyle. 1983{\natexlab{a}}.
@@ -3233,12 +3230,16 @@ Frey, Werner \& Uwe Reyle. 1983{\natexlab{b}}.
 \bibitem[{Fried(2013)}]{Fried2013a-u}
 Fried, Mirjam. 2013.
 \newblock Principles of constructional change.
-\newblock In  \cite{HandbookCxG} 419--437.
+\newblock In Thomas Hoffmann \& Graeme Trousdale (eds.), \emph{The {Oxford}
+  handbook of {Construction Grammar}}  (Oxford Handbooks), 419--437. Oxford:
+  Oxford University Press.
 
 \bibitem[{Fried(2015)}]{FriedHSK}
 Fried, Mirjam. 2015.
 \newblock {Construction Grammar}.
-\newblock In  \cite{KA2015a-ed} 974--1003.
+\newblock In Tibor Kiss \& Artemis Alexiadou (eds.), \emph{Syntax -- theory and
+  analysis: {An} international handbook}, vol.~42  (Handbooks of Linguistics
+  and Communication Science), 974--1003. Berlin: Mouton de Gruyter 2nd edn.
 
 \bibitem[{Friederici(2009)}]{Friederici2009a}
 Friederici, Angela~D. 2009.
@@ -3285,7 +3286,10 @@ Gardner, R.~Allen. 1957.
 \bibitem[{G{\"a}rtner \& Michaelis(2007)}]{GM2007a}
 G{\"a}rtner, Hans-Martin \& Jens Michaelis. 2007.
 \newblock Some remarks on locality conditions and {Minimalist Grammars}.
-\newblock In  \cite{SG2007a-ed} 161--195.
+\newblock In Uli Sauerland \& Hans-Martin G{\"a}rtner (eds.), \emph{Interfaces
+  + recursion = language? {Chomsky's Minimalism} and the view from
+  syntax-semantics} (Studies in Generative Grammar~89), 161--195. Berlin:
+  Mouton de Gruyter.
 
 \bibitem[{G{\"a}rtner \& Steinbach(1997)}]{GS97a}
 G{\"a}rtner, Hans-Martin \& Markus Steinbach. 1997.
@@ -3397,7 +3401,9 @@ Goldberg, Adele~E. 2003{\natexlab{a}}.
 \bibitem[{Goldberg(2003{\natexlab{b}})}]{Goldberg2003a}
 Goldberg, Adele~E. 2003{\natexlab{b}}.
 \newblock Words by default: {The} {Persian Complex Predicate Construction}.
-\newblock In  \cite{FM2003a-ed} 117--146.
+\newblock In Elaine~J. Francis \& Laura~A. Michaelis (eds.), \emph{Mismatch:
+  Form-function incongruity and the architecture of grammar} (CSLI Lecture
+  Notes 163), 117--146. Stanford, CA: CSLI Publications.
 
 \bibitem[{Goldberg(2006)}]{Goldberg2006a}
 Goldberg, Adele~E. 2006.
@@ -3468,7 +3474,10 @@ Grebe, Paul \& Helmut Gipper. 1966.
 Green, Georgia~M. 2011.
 \newblock Modelling grammar growth: {Universal Grammar} without innate
   principles or parameters.
-\newblock In  \cite{BB2011a} 378--403.
+\newblock In Robert~D. Borsley \& Kersti B{\"o}rjars (eds.),
+  \emph{Non-transformational syntax: {Formal} and explicit models of grammar:
+  {A} guide to current models}, 378--403. Oxford, UK/""Cambridge, MA: Blackwell
+  Publishing Ltd.
 
 \bibitem[{Grewendorf(1983)}]{Grewendorf83a}
 Grewendorf, G{\"u}nther. 1983.
@@ -3481,7 +3490,9 @@ Grewendorf, G{\"u}nther. 1983.
 Grewendorf, G{\"u}nther. 1985.
 \newblock {Anaphern bei Objekt-Koreferenz im Deutschen: Ein Problem f{\"u}r die
   Rektions"=Bindungs"=Theorie}.
-\newblock In  \cite{Abraham85a-ed} 137--171.
+\newblock In Werner Abraham (ed.), \emph{{Erkl{\"a}rende Syntax des Deutschen}}
+  (Studien zur deutschen Grammatik~25), 137--171. T{\"u}bingen: \original
+  Gunter Narr Verlag \jetzt Stauffenburg Verlag.
 
 \bibitem[{Grewendorf(1987)}]{Grewendorf87a}
 Grewendorf, G{\"u}nther. 1987.
@@ -3518,12 +3529,6 @@ Grewendorf, G{\"u}nther. 2002.
 \newblock \emph{{Minimalistische Syntax}} (UTB f{\"u}r Wissenschaft:
   Uni-Taschenb{\"u}cher 2313).
 \newblock T{\"u}bingen, Basel: A. Francke Verlag GmbH.
-
-\bibitem[{Grewendorf \& Sternefeld(1990)}]{GS90a-ed}
-Grewendorf, G{\"u}nther \& Wolfgang Sternefeld (eds.). 1990.
-\newblock \emph{Scrambling and barriers} (Linguistik Aktuell/""Linguistics
-  Today~5).
-\newblock Amsterdam: John Benjamins Publishing Co.
 
 \bibitem[{Grewendorf(2009)}]{Grewendorf2009a}
 Grewendorf, G{\"u}ther. 2009.
@@ -3567,7 +3572,12 @@ Gro{\ss}, Thomas~M. \& Timothy Osborne. 2009.
 \bibitem[{Gro{\ss}(2003)}]{Gross2003a}
 Gro{\ss}, Thomas~Michael. 2003.
 \newblock {Dependency Grammar's} limits -- and ways of extending them.
-\newblock In  \cite{AEEHHL2003a-ed} 331--351.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 331--351. Berlin: Walter de Gruyter.
 
 \bibitem[{Grosu(1973)}]{Grosu73a}
 Grosu, Alexander. 1973.
@@ -3656,12 +3666,6 @@ Haftka, Brigitta. 1996.
    (Institut f{\"u}r deutsche Sprache, Jahrbuch 1995), 121--141. Berlin: Walter
   de Gruyter.
 
-\bibitem[{Hagemann \& Staffeldt(2014)}]{HS2014a-ed}
-Hagemann, J{\"o}rg \& Sven Staffeldt (eds.). 2014.
-\newblock \emph{{Syntaxtheorien: Analysen im Vergleich}} (Stauffenburg
-  Einf{\"u}hrungen~28).
-\newblock T\"u\-bing\-en: Stauffenburg Verlag.
-
 \bibitem[{Hagen et~al.(2000)Hagen, Johannessen \& N{\o}klestad}]{HBN2000a-u}
 Hagen, Kristin, Janne~Bondi Johannessen \& Anders N{\o}klestad. 2000.
 \newblock A constraint-based tagger for {Norwegian}.
@@ -3672,7 +3676,9 @@ Hagen, Kristin, Janne~Bondi Johannessen \& Anders N{\o}klestad. 2000.
 \bibitem[{Hahn(2011)}]{Hahn2011a-u}
 Hahn, Michael. 2011.
 \newblock Null conjuncts and bound pronouns in {Arabic}.
-\newblock In  \cite{Mueller2011a-ed} 60--80.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {18th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of Washington}}, 60--80. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2011/}.
 
 \bibitem[{Haider(1982)}]{Haider82}
@@ -3688,13 +3694,16 @@ Haider, Hubert. 1984.
 \bibitem[{Haider(1985{\natexlab{a}})}]{Haider85b}
 Haider, Hubert. 1985{\natexlab{a}}.
 \newblock The case of {German}.
-\newblock In  \cite{Toman85a-ed} 23--64.
+\newblock In Jind\v{r}ich Toman (ed.), \emph{Studies in {German} grammar}
+  (Studies in Generative Grammar~21), 23--64. Dordrecht: Foris Publications.
 
 \bibitem[{Haider(1985{\natexlab{b}})}]{Haider85}
 Haider, Hubert. 1985{\natexlab{b}}.
 \newblock {{\"U}ber \emph{sein} oder nicht \emph{sein}: Zur Grammatik des
   Pronomens \emph{sich}}.
-\newblock In  \cite{Abraham85a-ed} 223--254.
+\newblock In Werner Abraham (ed.), \emph{{Erkl{\"a}rende Syntax des Deutschen}}
+  (Studien zur deutschen Grammatik~25), 223--254. T{\"u}bingen: \original
+  Gunter Narr Verlag \jetzt Stauffenburg Verlag.
 
 \bibitem[{Haider(1986{\natexlab{a}})}]{Haider86}
 Haider, Hubert. 1986{\natexlab{a}}.
@@ -3709,12 +3718,17 @@ Haider, Hubert. 1986{\natexlab{b}}.
 \bibitem[{Haider(1990{\natexlab{a}})}]{Haider90b}
 Haider, Hubert. 1990{\natexlab{a}}.
 \newblock {Pro-bleme?}
-\newblock In  \cite{FF90} 121--143.
+\newblock In Gisbert Fanselow \& Sascha~W. Felix (eds.), \emph{{Strukturen und
+  Merkmale syntaktischer Kategorien}} (Studien zur deutschen Grammatik~39),
+  121--143. T{\"u}bingen: \original Gunter Narr Verlag \jetzt Stauffenburg
+  Verlag.
 
 \bibitem[{Haider(1990{\natexlab{b}})}]{Haider90a}
 Haider, Hubert. 1990{\natexlab{b}}.
 \newblock Topicalization and other puzzles of {German} syntax.
-\newblock In  \cite{GS90a-ed} 93--112.
+\newblock In G{\"u}nther Grewendorf \& Wolfgang Sternefeld (eds.),
+  \emph{{Scrambling and Barriers}} (Linguistik Aktuell/""Linguistics Today~5),
+  93--112. Amsterdam: John Benjamins Publishing Co.
 
 \bibitem[{Haider(1991)}]{Haider91}
 Haider, Hubert. 1991.
@@ -3786,16 +3800,15 @@ Haider, Hubert. 2014.
 \newblock Ms. Universit{\"a}t Salzburg, Dept. of Linguistics and Centre for
   Cognitive Neuroscience.
 
-\bibitem[{Haider \& Netter(1991)}]{HN91a-ed}
-Haider, Hubert \& Klaus Netter (eds.). 1991.
-\newblock \emph{Representation and derivation in the theory of grammar}
-  (Studies in Natural Language and Linguistic Theory~22).
-\newblock Dordrecht: Kluwer Academic Publishers.
-
 \bibitem[{Haji{\v c}ov{\'a} \& Sgall(2003)}]{HS2003a-u}
 Haji{\v c}ov{\'a}, Eva \& Petr Sgall. 2003.
 \newblock {Dependency Syntax} in {Functional Generative Description}.
-\newblock In  \cite{AEEHHL2003a-ed} 570--592.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 570--592. Berlin: Walter de Gruyter.
 
 \bibitem[{Hakuta et~al.(2003)Hakuta, Bialystok \& Wiley}]{HBW2003a}
 Hakuta, Kenji, Ellen Bialystok \& Edward Wiley. 2003.
@@ -3809,17 +3822,14 @@ Hale, Kenneth. 1976.
 \newblock In R.M.W. Dixon (ed.), \emph{Grammatical catgeories of {Australian}
   languages} (Linguistic Series~22), 78--105. New Jersey: Humanities Press.
 
-\bibitem[{Hale \& Keyser(1993{\natexlab{a}})}]{HK93a-u}
-Hale, Kenneth \& Samuel~Jay Keyser. 1993{\natexlab{a}}.
+\bibitem[{Hale \& Keyser(1993)}]{HK93a-u}
+Hale, Kenneth \& Samuel~Jay Keyser. 1993.
 \newblock On argument structure and the lexical expression of syntactic
   relations.
-\newblock In  \cite{HK93a-ed} 53--109.
-
-\bibitem[{Hale \& Keyser(1993{\natexlab{b}})}]{HK93a-ed}
-Hale, Kenneth \& Samuel~Jay Keyser (eds.). 1993{\natexlab{b}}.
-\newblock \emph{The view from building 20:\ essays in linguistics in honor of
-  {Sylvain Bromberger}} (Current Studies in Linguistics~24).
-\newblock Cambridge, MA/""London: MIT Press.
+\newblock In Kenneth Hale \& Samuel~Jay Keyser (eds.), \emph{The view from
+  building 20:\ {Essays} in linguistics in honor of {Sylvain Bromberger}}
+  (Current Studies in Linguistics~24), 53--109. Cambridge, MA/""London: MIT
+  Press.
 
 \bibitem[{Hale \& Keyser(1997)}]{HK97a-u}
 Hale, Kenneth \& Samuel~Jay Keyser. 1997.
@@ -3844,7 +3854,8 @@ Harbour, Daniel. 2011.
 Harley, Heidi \& Rolf Noyer. 2000.
 \newblock Formal versus encyclopedic properties of vocabulary: {Evidence} from
   nominalizations.
-\newblock In  \cite{Peeters2000a-ed} 349--374.
+\newblock In Bert Peeters (ed.), \emph{The lexicon--encyclopedia interface},
+  349--374. Amsterdam: Elsevier.
 
 \bibitem[{Harman(1963)}]{Harman63a}
 Harman, Gilbert. 1963.
@@ -3890,7 +3901,9 @@ Haspelmath, Martin. 2010{\natexlab{c}}.
 \bibitem[{Haugereid(2007)}]{Haugereid2007a}
 Haugereid, Petter. 2007.
 \newblock Decomposed phrasal constructions.
-\newblock In  \cite{Mueller2007a-ed} 120--129.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {14th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 120--129.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
 
 \bibitem[{Haugereid(2009)}]{Haugereid2009a}
@@ -3941,26 +3954,23 @@ Hays, David~G. \& T.~W. Ziehe. 1960.
   determination.
 \newblock Tech. rep. Rand Corporation.
 
-\bibitem[{Hedeland et~al.(2011)Hedeland, Schmidt \& W{\"o}rner}]{HSW2011a-ed}
-Hedeland, Hanna, Thomas Schmidt \& Kai W{\"o}rner (eds.). 2011.
-\newblock \emph{Multilingual resources and multilingual applications:
-  Proceedings of the {Conference of the German Society for Computational
-  Linguistics and Language Technology (GSCL)} 2011} (Arbeiten zur
-  Mehrsprachigkeit/Working Papers in Multilingualism, Folge B/Series B~96).
-\newblock Hamburg: Universit{\"a}t Hamburg.
-
 \bibitem[{Heinecke et~al.(1998)Heinecke, Kunze, Menzel \&
   Schr{\"o}der}]{HKMS98a-u}
 Heinecke, Johannes, J{\"u}rgen Kunze, Wolfgang Menzel \& Ingo Schr{\"o}der.
   1998.
 \newblock Eliminative parsing with graded constraints.
-\newblock In  \cite{acl98} 526--530.
+\newblock In Pierre Isabelle (ed.), \emph{Proceedings of the 36th {Annual
+  Meeting of the Association for Computational Linguistics and 17th
+  International Conference on Computational Linguistics}}, 526--530. Montreal,
+  Quebec, Canada: Association for Computational Linguistics.
 \newblock \doi{10.3115/980845.980953}.
 
 \bibitem[{Heinz \& Matiasek(1994)}]{HM94a}
 Heinz, Wolfgang \& Johannes Matiasek. 1994.
 \newblock Argument structure and case assignment in {German}.
-\newblock In  \cite{NNP94} 199--236.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 199--236. Stanford, CA: CSLI Publications.
 
 \bibitem[{Helbig \& Buscha(1969)}]{HB69a-u}
 Helbig, Gerhard \& Joachim Buscha. 1969.
@@ -3990,7 +4000,9 @@ Hellan, Lars. 1986.
 Hellan, Lars. 2007.
 \newblock On `deep evaluation' for individual computational grammars and for
   cross-framework comparison.
-\newblock In  \cite{geaf2007} 161--181.
+\newblock In Tracy~Holloway King \& Emily~M. Bender (eds.), \emph{{Grammar
+  Engineering across Frameworks 2007}}  (Studies in Computational Linguistics
+  ONLINE), 161--181. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
 
 \bibitem[{Hellan \& Beermann(2006)}]{HB2006a-u}
@@ -4004,7 +4016,9 @@ Hellan, Lars \& Dorothee Beermann. 2006.
 \bibitem[{Hellan \& Haugereid(2003)}]{HH2004a-u}
 Hellan, Lars \& Petter Haugereid. 2003.
 \newblock Norsource -- {An} excercise in the {Matrix Grammar} building design.
-\newblock In  \cite{BFFS2003a-ed}.
+\newblock In Emily~M. Bender, Daniel~P. Flickinger, Frederik Fouvry \& Melanie
+  Siegel (eds.), \emph{Proceedings of the {ESSLLI 2003 Workshop ``Ideas and
+  Strategies for Multilingual Grammar Development''}}, Vienna, Austria.
 
 \bibitem[{Hellwig(1978)}]{Hellwig78a-u}
 Hellwig, Peter. 1978.
@@ -4015,12 +4029,18 @@ Hellwig, Peter. 1978.
 \bibitem[{Hellwig(1986)}]{Hellwig86a-u}
 Hellwig, Peter. 1986.
 \newblock {Dependency Unification Grammar}.
-\newblock In  \cite{coling86} 195--198.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 195--198.
+  University of Bonn: Association for Computational Linguistics.
 
 \bibitem[{Hellwig(2003)}]{Hellwig2003a}
 Hellwig, Peter. 2003.
 \newblock {Dependency Unification Grammar}.
-\newblock In  \cite{AEEHHL2003a-ed} 593--635.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 593--635. Berlin: Walter de Gruyter.
 
 \bibitem[{Hellwig(2006)}]{Hellwig2006a}
 Hellwig, Peter. 2006.
@@ -4043,12 +4063,6 @@ Heringer, Hans-J{\"u}rgen. 1996.
 \newblock \emph{{Deutsche Syntax dependentiell}}  (Stauffenburg Linguistik).
 \newblock T{\"u}bingen: Stauffenburg Verlag.
 
-\bibitem[{Herzog \& Rollinger(1991)}]{HR91a-ed}
-Herzog, Otthein \& Claus-Rainer Rollinger (eds.). 1991.
-\newblock \emph{Text understanding in {LILOG}} (Lecture Notes in Artificial
-  Intelligence 546).
-\newblock Berlin: Springer Verlag.
-
 \bibitem[{Higginbotham(1985)}]{Higginbotham85a}
 Higginbotham, James. 1985.
 \newblock On semantics.
@@ -4062,25 +4076,24 @@ Hinrichs, Erhard~W., Walt~Detmar Meurers, Frank Richter, Manfred Sailer \&
   95  (Arbeitspapiere des SFB 340).
 \newblock T\"u\-bing\-en: Eberhard-Karls-Uni\-ver\-si\-t{\"a}t T{\"u}bingen.
 
-\bibitem[{Hinrichs \& Nakazawa(1989{\natexlab{a}})}]{HN89a-ed}
+\bibitem[{Hinrichs \& Nakazawa(1989{\natexlab{a}})}]{HN89b}
 Hinrichs, Erhard~W. \& Tsuneko Nakazawa. 1989{\natexlab{a}}.
-\newblock \emph{Aspects of {German} {VP} structure}  (SfS-Report-01-93).
-\newblock T\"u\-bing\-en: Eberhard-Karls-Uni\-ver\-si\-t{\"a}t T{\"u}bingen.
-
-\bibitem[{Hinrichs \& Nakazawa(1989{\natexlab{b}})}]{HN89b}
-Hinrichs, Erhard~W. \& Tsuneko Nakazawa. 1989{\natexlab{b}}.
 \newblock Flipped out: {AUX} in {German}.
-\newblock In  \cite{HN89a-ed}.
+\newblock In \emph{Aspects of {German} {VP} structure}  (SfS-Report-01-93),
+  T\"u\-bing\-en: Eberhard-Karls-Uni\-ver\-si\-t{\"a}t T{\"u}bingen.
 
-\bibitem[{Hinrichs \& Nakazawa(1989{\natexlab{c}})}]{HN89a}
-Hinrichs, Erhard~W. \& Tsuneko Nakazawa. 1989{\natexlab{c}}.
+\bibitem[{Hinrichs \& Nakazawa(1989{\natexlab{b}})}]{HN89a}
+Hinrichs, Erhard~W. \& Tsuneko Nakazawa. 1989{\natexlab{b}}.
 \newblock Subcategorization and {VP} structure in {German}.
-\newblock In  \cite{HN89a-ed}.
+\newblock In \emph{Aspects of {German} {VP} structure}  (SfS-Report-01-93),
+  T\"u\-bing\-en: Eberhard-Karls-Uni\-ver\-si\-t{\"a}t T{\"u}bingen.
 
 \bibitem[{Hinrichs \& Nakazawa(1994)}]{HN94a}
 Hinrichs, Erhard~W. \& Tsuneko Nakazawa. 1994.
 \newblock Linearizing {AUXs} in {German} verbal complexes.
-\newblock In  \cite{NNP94} 11--38.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 11--38. Stanford, CA: CSLI Publications.
 
 \bibitem[{Hinterh{\"o}lzel(2004)}]{Hinterhoelzl2004a}
 Hinterh{\"o}lzel, Roland. 2004.
@@ -4111,12 +4124,6 @@ Hoffman, Beryl~Ann. 1995.
 \newblock \emph{The computational analysis of the syntax and interpretation of
   ``free'' word order in {Turkish}}: University of Pennsylvania dissertation.
 
-\bibitem[{Hoffmann \& Trousdale(2013)}]{HandbookCxG}
-Hoffmann, Thomas \& Graeme Trousdale (eds.). 2013.
-\newblock \emph{The {Oxford} handbook of {Construction Grammar}}  (Oxford
-  Handbooks).
-\newblock Oxford: Oxford University Press.
-
 \bibitem[{H{\"o}hle(1978)}]{Hoehle78a}
 H{\"o}hle, Tilman~N. 1978.
 \newblock \emph{{Lexikalische Syntax: Die Aktiv-Passiv-Relation und andere
@@ -4127,7 +4134,10 @@ H{\"o}hle, Tilman~N. 1978.
 H{\"o}hle, Tilman~N. 1982.
 \newblock {Explikationen f{\"u}r "`normale Betonung"' und "`normale
   Wortstellung"'}.
-\newblock In  \cite{Abraham82a-ed} 75--153.
+\newblock In Werner Abraham (ed.), \emph{{Satzglieder im Deutschen --
+  Vorschl{\"a}ge zur syntaktischen, semantischen und pragmatischen Fundierung}}
+  (Studien zur deutschen Grammatik~15), 75--153. T{\"u}bingen: \original Gunter
+  Narr Verlag \jetzt Stauffenburg Verlag.
 \newblock Republished as \citew{Hoehle2015Explikation}.
 
 \bibitem[{H{\"o}hle(1983)}]{Hoehle83}
@@ -4157,7 +4167,9 @@ H{\"o}hle, Tilman~N. 1988.
 \bibitem[{H{\"o}hle(1991{\natexlab{a}})}]{Hoehle91}
 H{\"o}hle, Tilman~N. 1991{\natexlab{a}}.
 \newblock On reconstruction and coordination.
-\newblock In  \cite{HN91a-ed} 139--197.
+\newblock In Hubert Haider \& Klaus Netter (eds.), \emph{Representation and
+  derivation in the theory of grammar} (Studies in Natural Language and
+  Linguistic Theory~22), 139--197. Dordrecht: Kluwer Academic Publishers.
 \newblock Republished as \citew{HoehleReconstruction}.
 
 \bibitem[{H{\"o}hle(1991{\natexlab{b}})}]{Hoehle91b}
@@ -4188,70 +4200,6 @@ H{\"o}hle, Tilman~N. 1999.
   Publications.
 \newblock Republished as \citew{HoehlePhonology}.
 
-\bibitem[{H{\"o}hle(2016{\natexlab{a}})}]{HoehlePhonology}
-H{\"o}hle, Tilman~N. 2016{\natexlab{a}}.
-\newblock An architecture for phonology.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock Originally published as \citew{Hoehle99a-u}.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{b}})}]{MRR2015a-ed}
-H{\"o}hle, Tilman~N. 2016{\natexlab{b}}.
-\newblock \emph{{Beitr{\"a}ge zur Grammatik des Deutschen}}  (Classics in
-  Linguistics).
-\newblock Berlin: Language Science Press.
-\newblock \inPreparation.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{c}})}]{HoehleMittelfeld}
-H{\"o}hle, Tilman~N. 2016{\natexlab{c}}.
-\newblock {Der Begriff "`Mittelfeld"', Anmerkungen {\"u}ber die Theorie der
-  topologischen Felder}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock First published as \citew{Hoehle86}.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{d}})}]{Hoehle2015Explikation}
-H{\"o}hle, Tilman~N. 2016{\natexlab{d}}.
-\newblock {Explikationen f{\"u}r "`normale Betonung"' und "`normale
-  Wortstellung"'}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock \inPreparation.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{e}})}]{HoehleReconstruction}
-H{\"o}hle, Tilman~N. 2016{\natexlab{e}}.
-\newblock On reconstruction and coordination.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock \inPreparation.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{f}})}]{Hoehle2015Projektionsstufen}
-H{\"o}hle, Tilman~N. 2016{\natexlab{f}}.
-\newblock {Projektionsstufen bei V-Projektionen: Bemerkungen zu F/T}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock First circulated in 1991.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{g}})}]{HoehleSpuren}
-H{\"o}hle, Tilman~N. 2016{\natexlab{g}}.
-\newblock {Spuren in HPSG}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock Vortrag auf der GGS-Tagung in T{\"u}bingen am 14. Mai 1994.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{h}})}]{HoehleTopo}
-H{\"o}hle, Tilman~N. 2016{\natexlab{h}}.
-\newblock {Topologische Felder}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock First circulated as draft in 1983.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{i}})}]{HoehleVerum}
-H{\"o}hle, Tilman~N. 2016{\natexlab{i}}.
-\newblock {Verum-Fokus}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock Originally published as \citew{Hoehle88a}.
-
-\bibitem[{H{\"o}hle(2016{\natexlab{j}})}]{HoehleKomplementierer}
-H{\"o}hle, Tilman~N. 2016{\natexlab{j}}.
-\newblock {Vorangestellte Verben und Komplementierer sind eine nat{\"u}rliche
-  Klasse}.
-\newblock In  \cite{MRR2015a-ed}.
-\newblock First published as \citew{Hoehle97a}.
-
 \bibitem[{Holler(2005)}]{Holler2005a-u}
 Holler, Anke. 2005.
 \newblock \emph{{Weiterf{\"u}hrende Relativs{\"a}tze: Empirische und
@@ -4269,11 +4217,6 @@ Hornstein, Norbert, Jairo Nunes \& Kleantes~K. Grohmann. 2005.
 \newblock \emph{Understanding {Minimalism}}  (Cambridge Textbooks in
   Linguistics).
 \newblock Cambridge, UK: Cambridge University Press.
-
-\bibitem[{Huck \& Ojeda(1987)}]{HO87a-ed}
-Huck, Geoffrey~J. \& Almerindo~E. Ojeda (eds.). 1987.
-\newblock \emph{Discontinuous constituency} (Syntax and Semantics~20).
-\newblock New York: Academic Press.
 
 \bibitem[{Hudson \& Newport(1999)}]{HudsonN99a}
 Hudson, Carla~L. \& Elissa~L. Newport. 1999.
@@ -4310,7 +4253,9 @@ Hudson, Richard. 1991.
 \bibitem[{Hudson(2003)}]{Hudson2003a}
 Hudson, Richard. 2003.
 \newblock Mismatches in default inheritance.
-\newblock In  \cite{FM2003a-ed} 355--402.
+\newblock In Elaine~J. Francis \& Laura~A. Michaelis (eds.), \emph{Mismatch:
+  Form-function incongruity and the architecture of grammar} (CSLI Lecture
+  Notes 163), 355--402. Stanford, CA: CSLI Publications.
 
 \bibitem[{Hudson(2004)}]{Hudson2004a}
 Hudson, Richard. 2004.
@@ -4386,22 +4331,9 @@ Ingram, David \& William Thompson. 1996.
   Polgu\`{e}re}]{IKKLP92a-u}
 Iordanskaja, L., M.~Kim, R.~Kittredge, B.~Lavoie \& A.~Polgu\`{e}re. 1992.
 \newblock Generation of extended bilingual statistical reports.
-\newblock In  \cite{coling92} 1019--1023.
-
-\bibitem[{Isabelle(1998)}]{acl98}
-Isabelle, Pierre (ed.). 1998.
-\newblock \emph{Proceedings of the 36th {Annual Meeting of the Association for
-  Computational Linguistics and 17th International Conference on Computational
-  Linguistics}}. Montreal, Quebec, Canada: Association for Computational
-  Linguistics.
-\newblock \doi{10.3115/980845.980953}.
-
-\bibitem[{Isabelle(2002)}]{acl2002}
-Isabelle, Pierre (ed.). 2002.
-\newblock \emph{{40th Annual Meeting of the Association for Computational
-  Linguistics}: {Proceedings} of the conference}. University of Pennsylvania,
-  Philadelphia: Association for Computational Linguistics.
-\newblock \urlprefix\url{http://aclanthology.info/events/acl-2002}.
+\newblock In Antonio Zampolli (ed.), \emph{{14th International Conference on
+  Computational Linguistics (COLING '92), August 23--28}}, vol.~3, 1019--1023.
+  Nantes, France: Association for Computational Linguistics.
 
 \bibitem[{Islam et~al.(2012)Islam, Hasan \& Rahman}]{IHR2012a-u}
 Islam, Md.~Asfaqul, K.~M.~Azharul Hasan \& Md.~Mizanur Rahman. 2012.
@@ -4492,7 +4424,8 @@ Jacobs, Joachim. 2008.
 Jacobson, Pauline. 1987{\natexlab{a}}.
 \newblock Phrase structure, grammatical relations, and discontinuous
   constituents.
-\newblock In  \cite{HO87a-ed} 27--69.
+\newblock In Geoffrey~J. Huck \& Almerindo~E. Ojeda (eds.), \emph{Discontinuous
+  constituency} (Syntax and Semantics~20), 27--69. New York: Academic Press.
 
 \bibitem[{Jacobson(1987{\natexlab{b}})}]{Jacobson87b}
 Jacobson, Pauline. 1987{\natexlab{b}}.
@@ -4508,22 +4441,16 @@ Jaeggli, Osvaldo~A. 1986.
 J{\"a}ger, Gerhard \& Reinhard Blutner. 2003.
 \newblock Competition and interpretation: {The} {German} adverb \emph{wieder}
   `again'.
-\newblock In  \cite{LMFH2003a-ed} 393--416.
-
-\bibitem[{J{\"a}ger et~al.(2002)J{\"a}ger, Monachesi, Penn \& Wintner}]{FG2002}
-J{\"a}ger, Gerhard, Paola Monachesi, Gerald Penn \& Shuly Wintner (eds.). 2002.
-\newblock \emph{Proceedings of {Formal Grammar 2002}}. Trento.
-
-\bibitem[{J{\"a}ger et~al.(2008)J{\"a}ger, Monachesi, Penn \& Wintner}]{FG2003}
-J{\"a}ger, Gerhard, Paola Monachesi, Gerald Penn \& Shuly Wintner (eds.). 2008.
-\newblock \emph{Proceedings of {Formal Grammar 2003, Vienna, Austria}}.
-  Stanford, CA: CSLI Publications.
+\newblock In Ewald Lang, Claudia Maienborn \& Cathrine Fabricius-Hansen (eds.),
+  \emph{Modifying adjuncts} (Interface Explorations~4), 393--416. Berlin:
+  Mouton de Gruyter.
 
 \bibitem[{J{\"a}ppinen et~al.(1986)J{\"a}ppinen, Lehtola \&
   Valkonen}]{JLV86a-u}
 J{\"a}ppinen, H., A.~Lehtola \& K.~Valkonen. 1986.
 \newblock Functional structures for parsing dependency constraints.
-\newblock In  \cite{coling86} 461--463.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 461--463.
+  University of Bonn: Association for Computational Linguistics.
 \newblock \doi{10.3115/991365.991501}.
 
 \bibitem[{Johnson \& Lappin(1997)}]{JL97a-u-platte}
@@ -4600,7 +4527,9 @@ Joshi, Aravind~K. 1987{\natexlab{b}}.
 Joshi, Aravind~K., Tilman Becker \& Owen Rambow. 2000.
 \newblock Complexity of scrambling: {A} new twist to the competence-performance
   distinction.
-\newblock In  \cite{AR2000a-ed} 167--181.
+\newblock In Anne Abeill{\'e} \& Owen Rambow (eds.), \emph{{Tree Adjoining
+  Grammars}: Formalisms, linguistic analysis and processing} (CSLI Lecture
+  Notes 156), 167--181. Stanford, CA: CSLI Publications.
 
 \bibitem[{Joshi et~al.(1975)Joshi, Levy \& Takahashi}]{JLT75a-u}
 Joshi, Aravind~K., Leon~S. Levy \& Masako Takahashi. 1975.
@@ -4641,7 +4570,12 @@ Kahane, Sylvain. 1997.
 \bibitem[{Kahane(2003)}]{Kahane2003a-u}
 Kahane, Sylvain. 2003.
 \newblock The {Meaning-Text Theory}.
-\newblock In  \cite{AEEHHL2003a-ed} 546--570.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 546--570. Berlin: Walter de Gruyter.
 
 \bibitem[{Kahane(2009)}]{Kahane2009a}
 Kahane, Sylvain. 2009.
@@ -4655,7 +4589,10 @@ Kahane, Sylvain. 2009.
 Kahane, Sylvain, Alexis Nasr \& Owen Rambow. 1998.
 \newblock Pseudo-projectivity: {A} polynomially parsable non-projective
   {Dependency Grammar}.
-\newblock In  \cite{acl98} 646--652.
+\newblock In Pierre Isabelle (ed.), \emph{Proceedings of the 36th {Annual
+  Meeting of the Association for Computational Linguistics and 17th
+  International Conference on Computational Linguistics}}, 646--652. Montreal,
+  Quebec, Canada: Association for Computational Linguistics.
 \newblock \doi{10.3115/980845.980953}.
 \newblock \urlprefix\url{http://www.aclweb.org/anthology/P98-1106}.
 
@@ -4686,7 +4623,8 @@ Kallmeyer, Laura, Timm Lichte, Wolfgang Maier, Yannick Parmentier, Johannes
 Kallmeyer, Laura \& Rainer Osswald. 2012.
 \newblock A frame-based semantics of the dative alternation in {Lexicalized
   Tree Adjoining Grammars}.
-\newblock In  \cite{EISS2012a} 167--184.
+\newblock In Christopher Pi{\~n}{\'o}n (ed.), \emph{Empirical issues in syntax
+  and semantics}, vol.~9, 167--184. Paris: CNRS.
 
 \bibitem[{Kallmeyer \& Romero(2008)}]{KR2008a-u}
 Kallmeyer, Laura \& Maribel Romero. 2008.
@@ -4709,13 +4647,17 @@ Kamp, Hans \& Uwe Reyle. 1993.
 \bibitem[{Kaplan(1995)}]{Kaplan95a}
 Kaplan, Ronald~M. 1995.
 \newblock The formal architecture of {Lexical-Functional Grammar}.
-\newblock In  \cite{DKMZ95a-ed} 7--27.
+\newblock In Mary Dalrymple, Ronald~M. Kaplan, John~T. {Maxwell III} \& Annie
+  Zaenen (eds.), \emph{Formal issues in {Lexical-Functional Grammar}} (CSLI
+  Lecture Notes~47), 7--27. Stanford, CA: CSLI Publications.
 
 \bibitem[{Kaplan \& Bresnan(1982)}]{KB82a-u}
 Kaplan, Ronald~M. \& Joan Bresnan. 1982.
 \newblock {Lexical-Functional Grammar}: {A} formal system for grammatical
   representation.
-\newblock In  \cite{Bresnan82a-ed} 173--281.
+\newblock In Joan Bresnan (ed.), \emph{The mental representation of grammatical
+  relations}  (MIT Press Series on Cognitive Theory and Mental Representation),
+  173--281. Cambridge, MA/""London: MIT Press.
 \newblock \reprintin \citew[\page 29--130]{DKMZ95a-ed}.
 
 \bibitem[{Kaplan \& {Maxwell III}(1996)}]{KM96a-u}
@@ -4737,7 +4679,9 @@ Kaplan, Ronald~M., Stefan Riezler, Tracy~Holloway King, John~T. {Maxwell III},
 Kaplan, Ronald~M. \& Annie Zaenen. 1989.
 \newblock Long-distance dependencies, constituent structure and functional
   uncertainty.
-\newblock In  \cite{BK89a-ed} 17--42.
+\newblock In Mark~R. Baltin \& Anthony~S. Kroch (eds.), \emph{Alternative
+  conceptions of phrase structure}, 17--42. Chicago/London: The University of
+  Chicago Press.
 
 \bibitem[{Karimi(2005)}]{Karimi2005a}
 Karimi, Simin. 2005.
@@ -4750,21 +4694,12 @@ Karimi"=Doostan, Gholamhossein. 2005.
 \newblock Light verbs and structural case.
 \newblock \emph{Lingua} 115(12). 1737--1756.
 
-\bibitem[{Karlgren(1990)}]{coling90}
-Karlgren, Hans (ed.). 1990.
-\newblock \emph{{COLING-90}: {Papers} presented to the {13th International
-  Conference on Computational Linguistics}}. Helsinki: Association for
-  Computational Linguistics.
-
-\bibitem[{Karlsson(1986)}]{Karlsson86a-ed}
-Karlsson, Fred (ed.). 1986.
-\newblock \emph{Papers from the {Fifth Scandinavian Conference of Computational
-  Linguistics}}. Helsinki.
-
 \bibitem[{Karlsson(1990)}]{Karlsson90a-u}
 Karlsson, Fred. 1990.
 \newblock {Constraint Grammar} as a framework for parsing running text.
-\newblock In  \cite{coling90} 168--173.
+\newblock In Hans Karlgren (ed.), \emph{{COLING-90}: {Papers} presented to the
+  {13th International Conference on Computational Linguistics}}, 168--173.
+  Helsinki: Association for Computational Linguistics.
 
 \bibitem[{Karmiloff-Smith(1998)}]{Karmiloff-Smith98a}
 Karmiloff-Smith, Annette. 1998.
@@ -4788,17 +4723,23 @@ Karttunen, Lauri. 1986.
 \bibitem[{Karttunen(1989)}]{Karttunen89a-u}
 Karttunen, Lauri. 1989.
 \newblock Radical lexicalism.
-\newblock In  \cite{BK89a-ed} 43--65.
+\newblock In Mark~R. Baltin \& Anthony~S. Kroch (eds.), \emph{Alternative
+  conceptions of phrase structure}, 43--65. Chicago/London: The University of
+  Chicago Press.
 
 \bibitem[{Kasper(1994)}]{Kasper94a}
 Kasper, Robert~T. 1994.
 \newblock Adjuncts in the {Mittelfeld}.
-\newblock In  \cite{NNP94} 39--70.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 39--70. Stanford, CA: CSLI Publications.
 
 \bibitem[{Kasper et~al.(1995)Kasper, Kiefer, Netter \& Shanker}]{KKNV95a}
 Kasper, Robert~T., Bernd Kiefer, Klaus Netter \& Vijay~K. Shanker. 1995.
 \newblock Compilation of {HPSG} to {TAG}.
-\newblock In  \cite{acl95} 92--99.
+\newblock In Hans Uszkoreit (ed.), \emph{33rd {Annual Meeting of the
+  Association for Computational Linguistics. Proceedings} of the conference},
+  92--99. Cambridge, MA: Association for Computational Linguistics.
 
 \bibitem[{Kathol(1995)}]{Kathol95a}
 Kathol, Andreas. 1995.
@@ -4818,7 +4759,9 @@ Kathol, Andreas. 2001.
 \bibitem[{Kathol \& Pollard(1995)}]{KP95a}
 Kathol, Andreas \& Carl~J. Pollard. 1995.
 \newblock Extraposition via complex domain formation.
-\newblock In  \cite{acl95} 174--180.
+\newblock In Hans Uszkoreit (ed.), \emph{33rd {Annual Meeting of the
+  Association for Computational Linguistics. Proceedings} of the conference},
+  174--180. Cambridge, MA: Association for Computational Linguistics.
 
 \bibitem[{Kaufmann \& Wunderlich(1998)}]{KW98a}
 Kaufmann, Ingrid \& Dieter Wunderlich. 1998.
@@ -4834,14 +4777,19 @@ Kaufmann, Tobias. 2009.
 \bibitem[{Kaufmann \& Pfister(2007)}]{KP2007a}
 Kaufmann, Tobias \& Beat Pfister. 2007.
 \newblock Applying licenser rules to a grammar with continuous constituents.
-\newblock In  \cite{Mueller2007a-ed} 150--162.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {14th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 150--162.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
 
 \bibitem[{Kaufmann \& Pfister(2008)}]{KP2008a-u}
 Kaufmann, Tobias \& Beat Pfister. 2008.
 \newblock Applying a grammar-based language model to a broadcast-news
   transcription task.
-\newblock In  \cite{acl2008:hlt} 106--113.
+\newblock In Johanna~D. Moore, Simone Teufel, James Allan \& Sadaoki Furui
+  (eds.), \emph{Proceedings of the {46th Annual Meeting of the Association for
+  Computational Linguistics: Human Language Technologies}}, 106--113. Columbus,
+  Ohio: Association for Computational Linguistics.
 \newblock \urlprefix\url{http://www.aclweb.org/anthology/P/P08/P08-1013.pdf}.
 
 \bibitem[{Kay(1967)}]{Kay67a}
@@ -4910,17 +4858,23 @@ Keller, Frank. 1994.
 \bibitem[{Keller(1995)}]{Keller95b}
 Keller, Frank. 1995.
 \newblock Towards an account of extraposition in {HPSG}.
-\newblock In  \cite{eacl95}.
+\newblock In Steven~P. Abney \& Erhard~W. Hinrichs (eds.), \emph{Proceedings of
+  the {Seventh Conference of the European Chapter of the Association for
+  Computational Linguistics}}, Dublin: Association for Computational
+  Linguistics.
 
 \bibitem[{Kettunen(1986)}]{Kettunen86a-u}
 Kettunen, Kimmo. 1986.
 \newblock On modelling dependency-oriented parsing.
-\newblock In  \cite{Karlsson86a-ed} 113--120.
+\newblock In Fred Karlsson (ed.), \emph{Papers from the {Fifth Scandinavian
+  Conference of Computational Linguistics}}, 113--120. Helsinki.
 
 \bibitem[{Kiefer et~al.(2000)Kiefer, Krieger \& Nederhof}]{KKN2000a-u}
 Kiefer, Bernd, Hans-Ulrich Krieger \& Mark-Jan Nederhof. 2000.
 \newblock Efficient and robust parsing of word hypotheses graphs.
-\newblock In  \cite{Wahlster2000a-ed} 280--295.
+\newblock In Wolfgang Wahlster (ed.), \emph{Verbmobil: {Foundations} of
+  speech-to-speech translation}  (Artificial Intelligence), 280--295. Berlin:
+  Springer Verlag.
 
 \bibitem[{Kifle(2012)}]{Kifle2012a-u}
 Kifle, Nazareth~Amlesom. 2012.
@@ -4984,13 +4938,6 @@ Kimball, John~P. 1973.
   Linguistics).
 \newblock Englewood Cliffs, NJ: Prentice-Hall.
 
-\bibitem[{King(1985)}]{eacl85}
-King, Maghi (ed.). 1985.
-\newblock \emph{Proceedings of the 2nd {European Meeting of the Association for
-  Computational Linguistics}}. Geneva: Association for Computational
-  Linguistics.
-\newblock \urlprefix\url{http://aclweb.org/anthology/E/E85/}.
-
 \bibitem[{King(1994)}]{King94a}
 King, Paul. 1994.
 \newblock An expanded logical formalism for {{Head-Driven Phrase Structure
@@ -5009,24 +4956,13 @@ King, Paul. 1999.
 \newblock
   \urlprefix\url{http://www.sfs.uni-tuebingen.de/sfb/reports/berichte/132/132abs.html}.
 
-\bibitem[{King \& Bender(2007)}]{geaf2007}
-King, Tracy~Holloway \& Emily~M. Bender (eds.). 2007.
-\newblock \emph{{Grammar Engineering across Frameworks 2007}}.  (Studies in
-  Computational Linguistics ONLINE) Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
-
 \bibitem[{King \& {Maxwell III}(2007)}]{KM2007a-u}
 King, Tracy~Holloway \& John~T. {Maxwell III}. 2007.
 \newblock Overlay mechanisms for multi-level deep processing applications.
-\newblock In  \cite{geaf2007} 182--202.
+\newblock In Tracy~Holloway King \& Emily~M. Bender (eds.), \emph{{Grammar
+  Engineering across Frameworks 2007}}  (Studies in Computational Linguistics
+  ONLINE), 182--202. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
-
-\bibitem[{King \& Santaholma(2009)}]{acl2009:geaf}
-King, Tracy~Holloway \& Marianne Santaholma (eds.). 2009.
-\newblock \emph{Proceedings of the 2009 {Workshop on Grammar Engineering Across
-  Frameworks (GEAF 2009)}}. Suntec, Singapore: Association for Computational
-  Linguistics.
-\newblock \urlprefix\url{http://www.aclweb.org/anthology/W/W09/#2600}.
 
 \bibitem[{Kinyon et~al.(2006)Kinyon, Rambow, Scheffler, Yoon \&
   Joshi}]{KSYJ2006a}
@@ -5065,7 +5001,9 @@ Kiss, Katalin~E. 2003.
 \bibitem[{Kiss(1991)}]{Kiss91a}
 Kiss, Tibor. 1991.
 \newblock The grammars of {LILOG}.
-\newblock In  \cite{HR91a-ed} 183--199.
+\newblock In Otthein Herzog \& Claus-Rainer Rollinger (eds.), \emph{Text
+  understanding in {LILOG}} (Lecture Notes in Artificial Intelligence 546),
+  183--199. Berlin: Springer Verlag.
 
 \bibitem[{Kiss(1992)}]{Kiss92}
 Kiss, Tibor. 1992.
@@ -5089,23 +5027,21 @@ Kiss, Tibor. 1995.
 \bibitem[{Kiss(2001)}]{Kiss2001a}
 Kiss, Tibor. 2001.
 \newblock Configurational and relational scope determination in {German}.
-\newblock In  \cite{MK2001a-ed} 141--175.
+\newblock In Walt~Detmar Meurers \& Tibor Kiss (eds.), \emph{Constraint"=based
+  approaches to {Germanic} syntax} (Studies in Constraint"=Based Lexicalism~7),
+  141--175. Stanford, CA: CSLI Publications.
 
 \bibitem[{Kiss(2005)}]{Kiss2005a}
 Kiss, Tibor. 2005.
 \newblock Semantic constraints on relative clause extraposition.
 \newblock \emph{Natural Language and Linguistic Theory} 23(2). 281--334.
 
-\bibitem[{Kiss \& Alexiadou(2015)}]{KA2015a-ed}
-Kiss, Tibor \& Artemis Alexiadou (eds.). 2015.
-\newblock \emph{Syntax -- theory and analysis: {An} international handbook},
-  vol.~42  (Handbooks of Linguistics and Communication Science).
-\newblock Berlin: Mouton de Gruyter 2nd edn.
-
 \bibitem[{Kiss \& Wesche(1991)}]{KW91a}
 Kiss, Tibor \& Birgit Wesche. 1991.
 \newblock Verb order and head movement.
-\newblock In  \cite{HR91a-ed} 216--242.
+\newblock In Otthein Herzog \& Claus-Rainer Rollinger (eds.), \emph{Text
+  understanding in {LILOG}} (Lecture Notes in Artificial Intelligence 546),
+  216--242. Berlin: Springer Verlag.
 
 \bibitem[{Klann-Delius(2008)}]{KD2008a}
 Klann-Delius, Gisela. 2008.
@@ -5180,12 +5116,15 @@ Koenig, Jean-Pierre \& Karin Michelson. 2010.
 Koenig, Jean-Pierre \& Karin Michelson. 2012.
 \newblock The (non)universality of syntactic selection and functional
   application.
-\newblock In  \cite{EISS2012a} 185--205.
+\newblock In Christopher Pi{\~n}{\'o}n (ed.), \emph{Empirical issues in syntax
+  and semantics}, vol.~9, 185--205. Paris: CNRS.
 
 \bibitem[{Kohl(1992)}]{Kohl92a-u}
 Kohl, Dieter. 1992.
 \newblock Generation from under- and overspecified structures.
-\newblock In  \cite{coling92} 686--692.
+\newblock In Antonio Zampolli (ed.), \emph{{14th International Conference on
+  Computational Linguistics (COLING '92), August 23--28}}, 686--692. Nantes,
+  France: Association for Computational Linguistics.
 
 \bibitem[{Kohl et~al.(1992)Kohl, Gardent, Plainfoss{\'e}, Reape \&
   Momma}]{KGPRM92a-u}
@@ -5220,7 +5159,9 @@ Kolb, Hans-Peter. 1997.
 Kolb, Hans-Peter \& Craig~L. Thiersch. 1991.
 \newblock Levels and empty categories in a {Principles and Parameters} based
   approach to parsing.
-\newblock In  \cite{HN91a-ed} 251--301.
+\newblock In Hubert Haider \& Klaus Netter (eds.), \emph{Representation and
+  derivation in the theory of grammar} (Studies in Natural Language and
+  Linguistic Theory~22), 251--301. Dordrecht: Kluwer Academic Publishers.
 
 \bibitem[{Konieczny(1996)}]{Konieczny96a-u}
 Konieczny, Lars. 1996.
@@ -5238,14 +5179,8 @@ Koopman, Hilda \& Dominique Sportiche. 1991.
 \newblock The position of subjects.
 \newblock \emph{Lingua} 85(2--3). 211--258.
 
-\bibitem[{Kordoni(1999{\natexlab{a}})}]{Kordoni99a-ed-not-crossreferenced}
-Kordoni, Valia (ed.). 1999{\natexlab{a}}.
-\newblock \emph{T{\"u}bingen studies in {Head-Driven Phrase Structure Grammar}}
-   ({Arbeitspapiere des SFB 340, \Nr 132, Volume 1}).
-\newblock T\"u\-bing\-en: Eberhard-Karls-Universit{\"a}t T{\"u}bingen.
-
-\bibitem[{Kordoni(1999{\natexlab{b}})}]{Kordoni99a-ed}
-Kordoni, Valia (ed.). 1999{\natexlab{b}}.
+\bibitem[{Kordoni(1999)}]{Kordoni99a-ed-not-crossreferenced}
+Kordoni, Valia (ed.). 1999.
 \newblock \emph{T{\"u}bingen studies in {Head-Driven Phrase Structure Grammar}}
    ({Arbeitspapiere des SFB 340, \Nr 132, Volume 1}).
 \newblock T\"u\-bing\-en: Eberhard-Karls-Universit{\"a}t T{\"u}bingen.
@@ -5262,7 +5197,9 @@ Kordoni, Valia. 2001.
 \bibitem[{Kordoni \& Neu(2005)}]{KN2005a-u}
 Kordoni, Valia \& Julia Neu. 2005.
 \newblock Deep analysis of {Modern Greek}.
-\newblock In  \cite{IJCNLP2004} 674--683.
+\newblock In Keh-Yih Su, Oi~Yee Kwong, Jn'ichi Tsujii \& Jong-Hyeok Lee (eds.),
+  \emph{Natural language processing {IJCNLP 2004}} (Lecture Notes in Artificial
+  Intelligence 3248), 674--683. Berlin: Springer Verlag.
 
 \bibitem[{Kornai \& Pullum(1990)}]{KP90a}
 Kornai, Andr{\'a}s \& Geoffrey~K. Pullum. 1990.
@@ -5301,12 +5238,6 @@ Kratzer, Angelika. 1996.
 \newblock In Johan Rooryck \& Laurie Zaring (eds.), \emph{Phrase structure and
   the lexicon}, 109--137. Dordrecht: Kluwer Academic Publishers.
 
-\bibitem[{Krauwer et~al.(1993)Krauwer, Moortgat \& des Tombe}]{eacl93}
-Krauwer, Steven, Michael Moortgat \& Louis des Tombe (eds.). 1993.
-\newblock \emph{{Sixth Conference of the European Chapter of the Association
-  for Computational Linguistics. Proceedings} of the conference}. Uetrecht:
-  Association for Computational Linguistics.
-
 \bibitem[{Krieger \& Nerbonne(1993)}]{KN93a}
 Krieger, Hans-Ulrich \& John Nerbonne. 1993.
 \newblock Feature-based inheritance networks for computational lexicons.
@@ -5334,14 +5265,17 @@ Kroch, Anthony~S. \& Aravind~K. Joshi. 1985.
 \bibitem[{Kroch \& Joshi(1987)}]{KrochJoshi87a-u}
 Kroch, Anthony~S. \& Aravind~K. Joshi. 1987.
 \newblock Analyzing extraposition in a {Tree Adjoining Grammar}.
-\newblock In  \cite{HO87a-ed} 107--149.
+\newblock In Geoffrey~J. Huck \& Almerindo~E. Ojeda (eds.), \emph{Discontinuous
+  constituency} (Syntax and Semantics~20), 107--149. New York: Academic Press.
 
 \bibitem[{{Kropp Dakubu} et~al.(2007){Kropp Dakubu}, Hellan \&
   Beermann}]{KDHB2007a}
 {Kropp Dakubu}, Mary~Esther, Lars Hellan \& Dorothee Beermann. 2007.
 \newblock Verb sequencing constraints in {Ga}: {Serial} verb constructions and
   the extended verb complex.
-\newblock In  \cite{Mueller2007a-ed} 99--119.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {14th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 99--119.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
 
 \bibitem[{Kruijff-Korbayov\'{a} \& Steedman(2003)}]{KruijffSteedman2003}
@@ -5367,7 +5301,10 @@ Kuhn, Jonas. 1995.
 \bibitem[{Kuhn(1996)}]{Kuhn96a}
 Kuhn, Jonas. 1996.
 \newblock An underspecified {HPSG} representation for information structure.
-\newblock In  \cite{coling96} 670--675.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 670--675. Copenhagen, Denmark: Association for
+  Computational Linguistics.
 
 \bibitem[{Kuhn(2007)}]{Kuhn2007a}
 Kuhn, Jonas. 2007.
@@ -5454,11 +5391,6 @@ Lakoff, George. 1987.
   about the mind}.
 \newblock Chicago: The University of Chicago Press.
 
-\bibitem[{Lang et~al.(2003)Lang, Maienborn \& Fabricius-Hansen}]{LMFH2003a-ed}
-Lang, Ewald, Claudia Maienborn \& Cathrine Fabricius-Hansen (eds.). 2003.
-\newblock \emph{Modifying adjuncts} (Interface Explorations~4).
-\newblock Berlin: Mouton de Gruyter.
-
 \bibitem[{Langacker(1987)}]{Langacker87a-u}
 Langacker, Ronald~W. 1987.
 \newblock \emph{Foundations of {Cognitive Grammar}}, vol.~1.
@@ -5539,12 +5471,18 @@ Legate, Julie \& Charles~D. Yang. 2002.
 Lehtola, Aarno. 1986.
 \newblock {DPL}: {A} computational method for describing grammars and modelling
   parsers.
-\newblock In  \cite{Karlsson86a-ed} 151--159.
+\newblock In Fred Karlsson (ed.), \emph{Papers from the {Fifth Scandinavian
+  Conference of Computational Linguistics}}, 151--159. Helsinki.
 
 \bibitem[{Leiss(2003)}]{Leiss2003a}
 Leiss, Elisabeth. 2003.
 \newblock {Empirische Argumente f{\"u}r Dependenz}.
-\newblock In  \cite{AEEHHL2003a-ed} 311--324.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 311--324. Berlin: Walter de Gruyter.
 
 \bibitem[{Leiss(2009)}]{Leiss2009a}
 Leiss, Elisabeth. 2009.
@@ -5568,7 +5506,8 @@ Lenerz, J{\"u}rgen. 1994.
 \bibitem[{Lenneberg(1964)}]{Lenneberg64a}
 Lenneberg, Eric~H. 1964.
 \newblock The capacity for language acquisition.
-\newblock In  \cite{KF64a-ed} 579--603.
+\newblock In Jerry~A. Fodor \& Jerrold~J. Katz (eds.), \emph{The structure of
+  language}, 579--603. Englewood Cliffs, NJ: Prentice-Hall.
 
 \bibitem[{Lenneberg(1967)}]{Lenneberg67a-u}
 Lenneberg, Eric~H. 1967.
@@ -5592,11 +5531,6 @@ Levin, Beth \& Malka {Rappaport Hovav}. 2005.
 \newblock \emph{Argument realization}.
 \newblock Cambridge University Press.
 
-\bibitem[{Levin et~al.(1983)Levin, Rappaport \& Zaenen}]{LRZ83a-ed}
-Levin, Lori~S., Malka Rappaport \& Annie Zaenen (eds.). 1983.
-\newblock \emph{Papers in {Lexical Functional Grammar}}.
-\newblock Indiana: Indiana University Linguistics Club.
-
 \bibitem[{Levine(2003)}]{Levine2003a}
 Levine, Robert~D. 2003.
 \newblock Adjunct valents, cumulative scopings and impossible descriptions.
@@ -5615,7 +5549,9 @@ Levine, Robert~D. \& Thomas~E. Hukari. 2006.
 Levine, Robert~D. \& Walt~Detmar Meurers. 2006.
 \newblock {Head-Driven Phrase Structure Grammar}: {Linguistic} approach, formal
   foundations, and computational realization.
-\newblock In  \cite{Brown2006a-ed} 237--252.
+\newblock In Keith Brown (ed.), \emph{The encyclopedia of language and
+  linguistics}, 237--252. Oxford: Elsevier Science Publisher B.V.
+  (North-Holland) 2nd edn.
 
 \bibitem[{Lewis(1967)}]{Lewis67a-u}
 Lewis, Geoffrey~L. 1967.
@@ -5706,7 +5642,12 @@ Lobin, Henning. 1993.
 \bibitem[{Lobin(2003)}]{Lobin2003a}
 Lobin, Henning. 2003.
 \newblock {Dependenzgrammatik und Kategorialgrammatik}.
-\newblock In  \cite{AEEHHL2003a-ed} 325--330.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 325--330. Berlin: Walter de Gruyter.
 
 \bibitem[{L{\"o}bner(1986)}]{Loebner86a}
 L{\"o}bner, Sebastian. 1986.
@@ -5731,7 +5672,9 @@ Lohnstein, Horst. 1993.
 \bibitem[{Lohnstein(2014)}]{Lohnstein2014a}
 Lohnstein, Horst. 2014.
 \newblock {Artenvielfalt in freier Wildbahn: Generative Grammatik}.
-\newblock In  \cite{HS2014a-ed} 165--185.
+\newblock In J{\"o}rg Hagemann \& Sven Staffeldt (eds.), \emph{{Syntaxtheorien:
+  Analysen im Vergleich}} (Stauffenburg Einf{\"u}hrungen~28), 165--185.
+  T\"u\-bing\-en: Stauffenburg Verlag.
 
 \bibitem[{Longobardi \& Roberts(2010)}]{LR2010a}
 Longobardi, Giuseppe \& Ian Roberts. 2010.
@@ -5761,12 +5704,6 @@ L{\"u}deling, Anke. 2001.
 \newblock \emph{On particle verbs and similar constructions in {German}}
   (Dissertations in Linguistics).
 \newblock Stanford, CA: CSLI Publications.
-
-\bibitem[{L{\"u}deling \& Kyt{\"o}(2009)}]{LK2009a-ed}
-L{\"u}deling, Anke \& Merja Kyt{\"o} (eds.). 2009.
-\newblock \emph{Corpus linguistics: {An} international handbook}, vol.~29
-  (Hand\-b{\"u}\-cher zur Sprach- und Kommunikationswissenschaft).
-\newblock Berlin: Mouton de Gruyter.
 
 \bibitem[{Luuk \& Luuk(2011)}]{LL2011a}
 Luuk, Erkki \& Hendrik Luuk. 2011.
@@ -5903,7 +5840,12 @@ Mel'{\v c}uk, Igor~A. 1988.
 \bibitem[{Mel'{\v c}uk(2003)}]{Melcuk2003a-u}
 Mel'{\v c}uk, Igor~A. 2003.
 \newblock Levels of dependency description: {Concepts} and problems.
-\newblock In  \cite{AEEHHL2003a-ed} 188--230.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 188--230. Berlin: Walter de Gruyter.
 
 \bibitem[{Melnik(2007)}]{MelnikHandWritten}
 Melnik, Nurit. 2007.
@@ -5961,7 +5903,10 @@ Meurers, Walt~Detmar. 1994.
 \bibitem[{Meurers(1999{\natexlab{a}})}]{Meurers99a}
 Meurers, Walt~Detmar. 1999{\natexlab{a}}.
 \newblock German partial-{VP} fronting revisited.
-\newblock In  \cite{WKK99a-ed} 129--144.
+\newblock In Gert Webelhuth, Jean-Pierre Koenig \& Andreas Kathol (eds.),
+  \emph{Lexical and {Constructional} aspects of linguistic explanation}
+  (Studies in Constraint"=Based Lexicalism~1), 129--144. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Meurers(1999{\natexlab{b}})}]{Meurers99c}
 Meurers, Walt~Detmar. 1999{\natexlab{b}}.
@@ -5994,20 +5939,19 @@ Meurers, Walt~Detmar. 2001.
 Meurers, Walt~Detmar, Kordula {De Kuthy} \& Vanessa Metcalf. 2003.
 \newblock Modularity of grammatical constraints in {HPSG}-based grammar
   implementations.
-\newblock In  \cite{BFFS2003a-ed} 83--90.
+\newblock In Emily~M. Bender, Daniel~P. Flickinger, Frederik Fouvry \& Melanie
+  Siegel (eds.), \emph{Proceedings of the {ESSLLI 2003 Workshop ``Ideas and
+  Strategies for Multilingual Grammar Development''}}, 83--90. Vienna, Austria.
 \newblock
   \urlprefix\url{http://www.sfs.uni-tuebingen.de/~dm/papers/meurers-dekuthy-metcalf-03.html}.
-
-\bibitem[{Meurers \& Kiss(2001)}]{MK2001a-ed}
-Meurers, Walt~Detmar \& Tibor Kiss (eds.). 2001.
-\newblock \emph{Constraint"=based approaches to {Germanic} syntax} (Studies in
-  Constraint"=Based Lexicalism~7).
-\newblock Stanford, CA: CSLI Publications.
 
 \bibitem[{Meurers \& M{\"u}ller(2009)}]{MM2009a}
 Meurers, Walt~Detmar \& Stefan M{\"u}ller. 2009.
 \newblock Corpora and syntax.
-\newblock In  \cite{LK2009a-ed} chap.~42, 920--933.
+\newblock In Anke L{\"u}deling \& Merja Kyt{\"o} (eds.), \emph{Corpus
+  linguistics: {An} international handbook}, vol.~29  (Hand\-b{\"u}\-cher zur
+  Sprach- und Kommunikationswissenschaft), chap.~42, 920--933. Berlin: Mouton
+  de Gruyter.
 
 \bibitem[{Meurers et~al.(2002)Meurers, Penn \& Richter}]{MPR2002a-u}
 Meurers, Walt~Detmar, Gerald Penn \& Frank Richter. 2002.
@@ -6035,7 +5979,9 @@ Michaelis, Jens. 2001.
 \bibitem[{Michaelis(2006)}]{Michaelis2006a}
 Michaelis, Laura~A. 2006.
 \newblock {Construction Grammar}.
-\newblock In  \cite{Brown2006a-ed} 73--84.
+\newblock In Keith Brown (ed.), \emph{The encyclopedia of language and
+  linguistics}, 73--84. Oxford: Elsevier Science Publisher B.V. (North-Holland)
+  2nd edn.
 
 \bibitem[{Michaelis \& Ruppenhofer(2001)}]{MR2001a}
 Michaelis, Laura~A. \& Josef Ruppenhofer. 2001.
@@ -6051,14 +5997,17 @@ Miller, George~A. \& Kathryn~Ojemann McKean. 1964.
 \bibitem[{Mittendorf \& Sadler(2005)}]{MS2005a-u}
 Mittendorf, Ingo \& Louisa Sadler. 2005.
 \newblock Numerals, nouns and number in {Welsh NPs}.
-\newblock In  \cite{BK2005a-ed} 294--312.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2005} conference}, 294--312. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/10/}.
 
 \bibitem[{Miyao et~al.(2005)Miyao, Ninomiya \& Tsujii}]{MNT2005a-u}
 Miyao, Yusuke, Takashi Ninomiya \& Jun'ichi Tsujii. 2005.
 \newblock Corpus-oriented grammar development for acquiring a {Head-Driven
   Phrase Structure Grammar} from the {Penn Treebank}.
-\newblock In  \cite{IJCNLP2004} 684--693.
+\newblock In Keh-Yih Su, Oi~Yee Kwong, Jn'ichi Tsujii \& Jong-Hyeok Lee (eds.),
+  \emph{Natural language processing {IJCNLP 2004}} (Lecture Notes in Artificial
+  Intelligence 3248), 684--693. Berlin: Springer Verlag.
 
 \bibitem[{Miyao \& Tsujii(2008)}]{MT2008a-u}
 Miyao, Yusuke \& Jun'ichi Tsujii. 2008.
@@ -6068,19 +6017,15 @@ Miyao, Yusuke \& Jun'ichi Tsujii. 2008.
 \bibitem[{Moens et~al.(1989)Moens, Calder, Klein, Reape \& Zeevat}]{MCKRZ89a-u}
 Moens, Marc, Jo~Calder, Ewan Klein, Mike Reape \& Henk Zeevat. 1989.
 \newblock Expressing generalizations in unification-based grammar formalisms.
-\newblock In  \cite{eacl89} 174--181.
+\newblock In Harold Somers \& Mary~McGee Wood (eds.), \emph{Proceedings of the
+  {Fourth Conference of the European Chapter of the Association for
+  Computational Linguistics}}, 174--181. Manchester, England: Association for
+  Computational Linguistics.
 
 \bibitem[{Montague(1974)}]{Montague74a-u}
 Montague, Richard. 1974.
 \newblock \emph{Formal philosophy}.
 \newblock New Haven: Yale University Press.
-
-\bibitem[{Moore et~al.(2008)Moore, Teufel, Allan \& Furui}]{acl2008:hlt}
-Moore, Johanna~D., Simone Teufel, James Allan \& Sadaoki Furui (eds.). 2008.
-\newblock \emph{Proceedings of the {46th Annual Meeting of the Association for
-  Computational Linguistics: Human Language Technologies}}. Columbus, Ohio:
-  Association for Computational Linguistics.
-\newblock \urlprefix\url{http://www.aclweb.org/anthology/P/P08/}.
 
 \bibitem[{Moortgat(1989)}]{Moortgat89a-u}
 Moortgat, Michael. 1989.
@@ -6091,7 +6036,8 @@ Moortgat, Michael. 1989.
 \bibitem[{Moortgat(2011)}]{Moortgat2011a-u}
 Moortgat, Michael. 2011.
 \newblock Categorial type logics.
-\newblock In  \cite{vBtM2011a-ed} 95--179.
+\newblock In Johan F. A.~K. {van Benthem} \& G.~B.~Alice {ter Meulen} (eds.),
+  \emph{Handbook of logic and language}, 95--179. Amsterdam: Elsevier 2nd edn.
 
 \bibitem[{Moot(2002)}]{Moot2002a-u}
 Moot, Richard. 2002.
@@ -6156,11 +6102,13 @@ M{\"u}ller, Gereon. 2009{\natexlab{a}}.
 \newblock {Handout Ringvorlesung: \emph{Algorithmen und Muster: Strukturen in
   der Sprache}. Freie Universit{\"a}t Berlin, 20.\ Mai}.
 
-\bibitem[{M{\"u}ller(2011{\natexlab{a}})}]{GMueller2011a}
-M{\"u}ller, Gereon. 2011{\natexlab{a}}.
+\bibitem[{M{\"u}ller(2011)}]{GMueller2011a}
+M{\"u}ller, Gereon. 2011.
 \newblock {Regeln oder Konstruktionen? Von verblosen Direktiven zur
   sequentiellen Nominalreduplikation}.
-\newblock In  \cite{EHP2011a-ed} 211--249.
+\newblock In Stefan Engelberg, Anke Holler \& Kristel Proost (eds.),
+  \emph{{Sprachliches Wissen zwischen Lexikon und Grammatik}}  (Institut
+  f{\"u}r Deutsche Sprache, Jahrbuch 2010), 211--249. Berlin: de Gruyter.
 
 \bibitem[{M{\"u}ller(2014{\natexlab{a}})}]{GMueller2014a-u}
 M{\"u}ller, Gereon. 2014{\natexlab{a}}.
@@ -6240,12 +6188,15 @@ M{\"u}ller, Stefan. 2002{\natexlab{a}}.
 \bibitem[{M{\"u}ller(2002{\natexlab{b}})}]{Mueller2002c}
 M{\"u}ller, Stefan. 2002{\natexlab{b}}.
 \newblock Multiple frontings in {German}.
-\newblock In  \cite{FG2002} 113--124.
+\newblock In Gerhard J{\"a}ger, Paola Monachesi, Gerald Penn \& Shuly Wintner
+  (eds.), \emph{Proceedings of {Formal Grammar 2002}}, 113--124. Trento.
 
 \bibitem[{M{\"u}ller(2002{\natexlab{c}})}]{Mueller2002d}
 M{\"u}ller, Stefan. 2002{\natexlab{c}}.
 \newblock Syntax or morphology: {German} particle verbs revisited.
-\newblock In  \cite{DJMU2002a-ed} 119--139.
+\newblock In Nicole Deh{\'e}, Ray~S. Jackendoff, Andrew McIntyre \& Silke Urban
+  (eds.), \emph{Verb-par\-ti\-cle explorations} (Interface Explorations~1),
+  119--139. Berlin: Mouton de Gruyter.
 
 \bibitem[{M{\"u}ller(2003{\natexlab{a}})}]{Mueller2003b}
 M{\"u}ller, Stefan. 2003{\natexlab{a}}.
@@ -6260,15 +6211,8 @@ M{\"u}ller, Stefan. 2003{\natexlab{b}}.
   International Conference on Head-Driven Phrase Structure Grammar, Michigan
   State University, East Lansing}}, 278--297. Stanford, CA: CSLI Publications.
 
-\bibitem[{M{\"u}ller(2003{\natexlab{c}})}]{Mueller2003a-ed}
-M{\"u}ller, Stefan (ed.). 2003{\natexlab{c}}.
-\newblock \emph{Proceedings of the {10th International Conference on
-  Head-Driven Phrase Structure Grammar, Michigan State University, East
-  Lansing}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2003/}.
-
-\bibitem[{M{\"u}ller(2003{\natexlab{d}})}]{Mueller2003a}
-M{\"u}ller, Stefan. 2003{\natexlab{d}}.
+\bibitem[{M{\"u}ller(2003{\natexlab{c}})}]{Mueller2003a}
+M{\"u}ller, Stefan. 2003{\natexlab{c}}.
 \newblock Solving the bracketing paradox: {An} analysis of the morphology of
   {German} particle verbs.
 \newblock \emph{Journal of Linguistics} 39(2). 275--325.
@@ -6304,13 +6248,6 @@ M{\"u}ller, Stefan. 2004{\natexlab{d}}.
   (North-Holland).
 \newblock \doi{10.1016/S1571-0661(05)82585-X}.
 
-\bibitem[{M{\"u}ller(2004{\natexlab{e}})}]{Mueller2004a-ed}
-M{\"u}ller, Stefan (ed.). 2004{\natexlab{e}}.
-\newblock \emph{Proceedings of the {11th International Conference on
-  Head-Driven Phrase Structure Grammar, Center for Computational Linguistics,
-  Katholieke Universiteit Leuven}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2004/}.
-
 \bibitem[{M{\"u}ller(2005{\natexlab{a}})}]{Mueller2005a}
 M{\"u}ller, Stefan. 2005{\natexlab{a}}.
 \newblock Resultative {Constructions}: {Syntax}, world knowledge, and
@@ -6337,7 +6274,9 @@ M{\"u}ller, Stefan. 2006.
 M{\"u}ller, Stefan. 2007{\natexlab{a}}.
 \newblock The {Grammix CD Rom}: {A} software collection for developing typed
   feature structure grammars.
-\newblock In  \cite{geaf2007} 259--266.
+\newblock In Tracy~Holloway King \& Emily~M. Bender (eds.), \emph{{Grammar
+  Engineering across Frameworks 2007}}  (Studies in Computational Linguistics
+  ONLINE), 259--266. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/GEAF/2007/}.
 
 \bibitem[{M{\"u}ller(2007{\natexlab{b}})}]{MuellerLehrbuch1}
@@ -6354,32 +6293,20 @@ M{\"u}ller, Stefan. 2007{\natexlab{c}}.
   International Conference on Head-Driven Phrase Structure Grammar}}, 373--393.
   Stanford, CA: CSLI Publications.
 
-\bibitem[{M{\"u}ller(2007{\natexlab{d}})}]{Mueller2007a-ed}
-M{\"u}ller, Stefan (ed.). 2007{\natexlab{d}}.
-\newblock \emph{Proceedings of the {14th International Conference on
-  Head-Driven Phrase Structure Grammar}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
-
-\bibitem[{M{\"u}ller(2007{\natexlab{e}})}]{Mueller2007c}
-M{\"u}ller, Stefan. 2007{\natexlab{e}}.
+\bibitem[{M{\"u}ller(2007{\natexlab{d}})}]{Mueller2007c}
+M{\"u}ller, Stefan. 2007{\natexlab{d}}.
 \newblock {Qualitative Korpusanalyse f{\"u}r die Grammatiktheorie:
   Introspektion vs.\ Korpus}.
 \newblock In Gisela Zifonun \& Werner Kallmeyer (eds.), \emph{{Sprachkorpora --
   Datenmengen und Erkenntnisfortschritt}}  (Institut f{\"u}r Deutsche Sprache
   Jahrbuch 2006), 70--90. Berlin: Walter de Gruyter.
 
-\bibitem[{M{\"u}ller(2008{\natexlab{a}})}]{Mueller2008a}
-M{\"u}ller, Stefan. 2008{\natexlab{a}}.
+\bibitem[{M{\"u}ller(2008)}]{Mueller2008a}
+M{\"u}ller, Stefan. 2008.
 \newblock Depictive secondary predicates in {German} and {English}.
 \newblock In Christoph Schroeder, Gerd Hentschel \& Winfried Boeder (eds.),
   \emph{Secondary predicates in {Eastern European} languages and beyond}
   (Studia Slavica Oldenburgensia~16), 255--273. Oldenburg: BIS-Verlag.
-
-\bibitem[{M{\"u}ller(2008{\natexlab{b}})}]{Mueller2008a-ed}
-M{\"u}ller, Stefan (ed.). 2008{\natexlab{b}}.
-\newblock \emph{Proceedings of the {15th International Conference on
-  Head-Driven Phrase Structure Grammar}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2008/}.
 
 \bibitem[{M{\"u}ller(2009{\natexlab{b}})}]{MuellerMalteseSketch}
 M{\"u}ller, Stefan. 2009{\natexlab{b}}.
@@ -6397,12 +6324,6 @@ M{\"u}ller, Stefan. 2009{\natexlab{c}}.
   International Conference on Head-Driven Phrase Structure Grammar, University
   of G{\"o}ttingen, Germany}}, 213--233. Stanford, CA: CSLI Publications.
 
-\bibitem[{M{\"u}ller(2009{\natexlab{d}})}]{Mueller2009a-ed}
-M{\"u}ller, Stefan (ed.). 2009{\natexlab{d}}.
-\newblock \emph{Proceedings of the {16th International Conference on
-  Head-Driven Phrase Structure Grammar, University of G{\"o}ttingen, Germany}}.
-  Stanford, CA: CSLI Publications.
-
 \bibitem[{M{\"u}ller(2010{\natexlab{a}})}]{MuellerGTBuch1}
 M{\"u}ller, Stefan. 2010{\natexlab{a}}.
 \newblock \emph{{Grammatiktheorie}} (Stauffenburg Einf{\"u}hrungen~20).
@@ -6413,13 +6334,6 @@ M{\"u}ller, Stefan. 2010{\natexlab{b}}.
 \newblock Persian complex predicates and the limits of inheritance-based
   analyses.
 \newblock \emph{Journal of Linguistics} 46(3). 601--655.
-
-\bibitem[{M{\"u}ller(2011{\natexlab{b}})}]{Mueller2011a-ed}
-M{\"u}ller, Stefan (ed.). 2011{\natexlab{b}}.
-\newblock \emph{Proceedings of the {18th International Conference on
-  Head-Driven Phrase Structure Grammar, University of Washington}}. Stanford,
-  CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2011/}.
 
 \bibitem[{M{\"u}ller(2012)}]{MuellerCopula}
 M{\"u}ller, Stefan. 2012.
@@ -6487,13 +6401,6 @@ M{\"u}ller, Stefan. 2015{\natexlab{c}}.
 \newblock In Tibor Kiss \& Artemis Alexiadou (eds.), \emph{Syntax -- {Theory}
   and analysis: {An} international handbook} (Handbooks of Linguistics and
   Communication Science 42.2), 937--973. Berlin: Walter de Gruyter 2nd edn.
-
-\bibitem[{M{\"u}ller(2015{\natexlab{d}})}]{Mueller2015a-ed}
-M{\"u}ller, Stefan (ed.). 2015{\natexlab{d}}.
-\newblock \emph{Proceedings of the {22nd International Conference on
-  Head-Driven Phrase Structure Grammar, Nanyang Technological University (NTU),
-  Singapore}}. Stanford, CA: CSLI Publications.
-\newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2015/}.
 
 \bibitem[{M{\"u}ller(2016{\natexlab{a}})}]{MuellerGermanic}
 M{\"u}ller, Stefan. 2016{\natexlab{a}}.
@@ -6600,7 +6507,9 @@ M{\"u}ller, Stefan \& Stephen~Mark Wechsler. 2014{\natexlab{b}}.
 Muraki, Kazunori, Shunji Ichiyama \& Yasutomo Fukumochi. 1985.
 \newblock {Augmented Dependency Grammar}: {A} simple interface between the
   grammar rule and the knowledge.
-\newblock In  \cite{eacl85} 198--204.
+\newblock In Maghi King (ed.), \emph{Proceedings of the 2nd {European Meeting
+  of the Association for Computational Linguistics}}, 198--204. Geneva:
+  Association for Computational Linguistics.
 \newblock \urlprefix\url{http://aclweb.org/anthology/E/E85/}.
 
 \bibitem[{Musso et~al.(2003)Musso, Moro, Glauche, Rijntjes, Reichenbach,
@@ -6642,16 +6551,6 @@ Mykowiecka, Agnieszka, Ma{\l}gorzata Marciniak, Adam Przepi{\'o}rkowski \& Anna
   Description of Slavic Languages -- FDSL IV} held at {Potsdam University,
   November} 28--30, 2001}, 271--285. Frankfurt am Main: Peter Lang.
 
-\bibitem[{Nagao(1986)}]{coling86}
-Nagao, Makoto (ed.). 1986.
-\newblock \emph{Proceedings of {COLING} 86}. University of Bonn: Association
-  for Computational Linguistics.
-
-\bibitem[{Nagao(1994)}]{coling94}
-Nagao, Makoto (ed.). 1994.
-\newblock \emph{Proceedings of {COLING} 94}. Kyoto, Japan: Association for
-  Computational Linguistics.
-
 \bibitem[{Naumann(1987)}]{Naumann87a-u}
 Naumann, Sven. 1987.
 \newblock {Ein einfacher Parser f{\"u}r generalisierte
@@ -6674,7 +6573,10 @@ Neeleman, Ad. 1994.
 Nelimarkka, Esa, Harri J{\"a}ppinen \& Aarno Lehtola. 1984.
 \newblock Two-way finite automata and {Dependency Grammar}: {A} parsing method
   for inflectional free word order languages.
-\newblock In  \cite{acl:coling84} 389--392.
+\newblock In Yorick Wilks (ed.), \emph{Proceedings of the {10th International
+  Conference on Computational Linguistics and 22nd Annual Meeting of the
+  Association for Computational Linguistics}}, 389--392. Stanford University,
+  California: Association for Computational Linguistics.
 
 \bibitem[{Nerbonne(1986{\natexlab{a}})}]{Nerbonne86a}
 Nerbonne, John. 1986{\natexlab{a}}.
@@ -6695,16 +6597,9 @@ Nerbonne, John. 1993.
   Manaster-Ramer and Wlodek Zadrozsny}, selected from the {2nd Conference on
   Mathematics of Language. Also} published as {DFKI Research Report RR-92-42}.
 
-\bibitem[{Nerbonne et~al.(1994{\natexlab{a}})Nerbonne, Netter \&
+\bibitem[{Nerbonne et~al.(1994)Nerbonne, Netter \&
   Pollard}]{NNP94a-ed-not-crossreferenced}
-Nerbonne, John, Klaus Netter \& Carl~J. Pollard (eds.). 1994{\natexlab{a}}.
-\newblock \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
-  Notes~46).
-\newblock Stanford, CA: CSLI Publications.
-
-\bibitem[{Nerbonne et~al.(1994{\natexlab{b}})Nerbonne, Netter \&
-  Pollard}]{NNP94}
-Nerbonne, John, Klaus Netter \& Carl~J. Pollard (eds.). 1994{\natexlab{b}}.
+Nerbonne, John, Klaus Netter \& Carl~J. Pollard (eds.). 1994.
 \newblock \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
   Notes~46).
 \newblock Stanford, CA: CSLI Publications.
@@ -6732,7 +6627,9 @@ Netter, Klaus. 1993.
 \bibitem[{Netter(1994)}]{Netter94}
 Netter, Klaus. 1994.
 \newblock Towards a theory of functional heads: {German} nominal phrases.
-\newblock In  \cite{NNP94} 297--340.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 297--340. Stanford, CA: CSLI Publications.
 
 \bibitem[{Netter(1996)}]{Netter96a}
 Netter, Klaus. 1996.
@@ -6801,7 +6698,8 @@ Ng, Say~Kiat. 1997.
 \bibitem[{Nivre(2003)}]{Nivre2003a-u}
 Nivre, Joakim. 2003.
 \newblock An efficient algorithm for projective dependency parsing.
-\newblock In  \cite{iwpt03}.
+\newblock In Gertjan van Noord (ed.), \emph{Proceedings of the {8th
+  International Workshop on Parsing Technologies (IWPT 03)}}, Nancy.
 
 \bibitem[{Nolda(2007)}]{Nolda2007a-u}
 Nolda, Andreas. 2007.
@@ -6816,15 +6714,11 @@ Noonan, Michael. 1994.
   function} (Typological Studies in Language~27), 279--311. Amsterdam: John
   Benjamins Publishing Co.
 
-\bibitem[{van Noord(2003)}]{iwpt03}
-van Noord, Gertjan (ed.). 2003.
-\newblock \emph{Proceedings of the {8th International Workshop on Parsing
-  Technologies (IWPT 03)}}. Nancy.
-
 \bibitem[{van Noord \& Bouma(1994)}]{NB94}
 van Noord, Gertjan \& Gosse Bouma. 1994.
 \newblock The scope of adjuncts and the processing of lexical rules.
-\newblock In  \cite{coling94} 250--256.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 94}, 250--256.
+  Kyoto, Japan: Association for Computational Linguistics.
 
 \bibitem[{Nordg{\r{a}}rd(1994)}]{Nordgard94a}
 Nordg{\r{a}}rd, Torbj{\o}rn. 1994.
@@ -6846,12 +6740,15 @@ Nowak, Martin~A., Natalia~L. Komarova \& Partha Niyogi. 2001.
 \bibitem[{Nozohoor-Farshi(1986)}]{NF86a-u}
 Nozohoor-Farshi, R. 1986.
 \newblock On formalizations of {Marcus'} parser.
-\newblock In  \cite{coling86} 533--535.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 533--535.
+  University of Bonn: Association for Computational Linguistics.
 
 \bibitem[{Nozohoor-Farshi(1987)}]{NF87a-u}
 Nozohoor-Farshi, R. 1987.
 \newblock Context-freeness of the language accepted by {Marcus'} parser.
-\newblock In  \cite{acl87} 117--122.
+\newblock In Candy Sidner (ed.), \emph{25th {Annual Meeting of the Association
+  for Computational Linguistics}}, 117--122. Stanford, CA: Association for
+  Computational Linguistics.
 
 \bibitem[{Nunberg(1995)}]{Nunberg95a-u}
 Nunberg, Geoffrey. 1995.
@@ -6890,11 +6787,6 @@ O'Donovan, Ruth, Michael Burke, Aoife Cahill, Josef van Genabith \& Andy Way.
   {Penn-II} and {Penn-III Treebanks}.
 \newblock \emph{Computational Linguistics} 31(3). 328--365.
 
-\bibitem[{Oehrle et~al.(1988)Oehrle, Bach \& Wheeler}]{OBW88a-ed}
-Oehrle, Richard, Emmon Bach \& Deirdre Wheeler (eds.). 1988.
-\newblock \emph{{Categorial Grammars} and natural language structures}.
-\newblock Dordrecht: D. Reidel Publishing Company.
-
 \bibitem[{Oepen \& Flickinger(1998)}]{OF98}
 Oepen, Stephan \& Daniel~P. Flickinger. 1998.
 \newblock Towards systematic grammar profiling: {Test} suite technology ten
@@ -6920,7 +6812,12 @@ Oliva, Karel. 1992.
 \bibitem[{Oliva(2003)}]{Oliva2003a}
 Oliva, Karel. 2003.
 \newblock Dependency, valency and {Head-Driven Phrase-Structure Grammar}.
-\newblock In  \cite{AEEHHL2003a-ed} 660--668.
+\newblock In Vilmos {\'A}gel, Ludwig~M. Eichinger, Hans~Werner Eroms, Peter
+  Hellwig, Hans~J{\"u}rgen Heringer \& Henning Lobin (eds.), \emph{{Dependenz
+  und Valenz} / {Dependency} and valency: {Ein internationales Handbuch der
+  zeitgen{\"o}ssischen Forschung} / {An} international handbook of contemporary
+  research}, vol. 25.1  (Hand\-b{\"u}\-cher zur Sprach- und
+  Kommunikationswissenschaft), 660--668. Berlin: Walter de Gruyter.
 
 \bibitem[{O'Neill \& Wood(2012)}]{OW2012a}
 O'Neill, Michael \& Randall Wood. 2012.
@@ -6952,7 +6849,8 @@ Osborne, Miles \& Ted~J. Briscoe. 1997.
 \bibitem[{Osborne(2014)}]{Osborne2014a-u}
 Osborne, Timothy. 2014.
 \newblock {Dependency Grammar}.
-\newblock In  \cite{CSS2014a-ed} 604--626.
+\newblock In Andrew Carnie, Yosuke Sato \& Dan Siddiqi (eds.), \emph{The
+  {Routledge} handbook of syntax}, 604--626. Oxford: Routledge.
 
 \bibitem[{Osborne(2016)}]{Osborne2016a-u}
 Osborne, Timothy. 2016.
@@ -6994,7 +6892,12 @@ Osenova, Petya. 2010{\natexlab{b}}.
 \bibitem[{Osenova(2011)}]{Osenova2011a-u}
 Osenova, Petya. 2011.
 \newblock Localizing a core {HPSG}-based grammar for {Bulgarian}.
-\newblock In  \cite{HSW2011a-ed} 175--182.
+\newblock In Hanna Hedeland, Thomas Schmidt \& Kai W{\"o}rner (eds.),
+  \emph{Multilingual resources and multilingual applications: {Proceedings} of
+  the {Conference of the German Society for Computational Linguistics and
+  Language Technology (GSCL)} 2011} (Arbeiten zur Mehrsprachigkeit/Working
+  Papers in Multilingualism, Folge B/Series B~96), 175--182. Hamburg:
+  Universitat Hamburg.
 
 \bibitem[{Ott(2011)}]{Ott2011a}
 Ott, Dennis. 2011.
@@ -7023,7 +6926,9 @@ Ott, Dennis. 2011.
 \bibitem[{{\noopsort{Ozzz}}{\O}rsnes(2009{\natexlab{b}})}]{Oersnes2009a}
 {\noopsort{Ozzz}}{\O}rsnes, Bjarne. 2009{\natexlab{b}}.
 \newblock Preposed negation in {Danish}.
-\newblock In  \cite{Mueller2009a-ed} 255--275.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {16th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of G{\"o}ttingen, Germany}}, 255--275. Stanford, CA: CSLI Publications.
 
 \bibitem[{{\noopsort{Ozzz}}{\O}rsnes \& Wedekind(2003)}]{OW2003a-u}
 {\noopsort{Ozzz}}{\O}rsnes, Bjarne \& J{\"u}rgen Wedekind. 2003.
@@ -7095,11 +7000,6 @@ Paul, Soma. 2004.
 \newblock \emph{An {HPSG} account of {Bangla} compound verbs with {LKB}
   implementation}.
 \newblock Hyderabad, India: CALTS, University of Hyderabad, India dissertation.
-
-\bibitem[{Peeters(2000)}]{Peeters2000a-ed}
-Peeters, Bert (ed.). 2000.
-\newblock \emph{The lexicon--encyclopedia interface}.
-\newblock Amsterdam: Elsevier.
 
 \bibitem[{Penn(2004)}]{Penn2004a-u}
 Penn, Gerald. 2004.
@@ -7222,10 +7122,6 @@ Pinker, Steven \& Ray~S. Jackendoff. 2005.
 \newblock The faculty of language: {What's} special about it?
 \newblock \emph{Cognition} 95(2). 201--236.
 
-\bibitem[{Pi{\~n}{\'o}n(2012)}]{EISS2012a}
-Pi{\~n}{\'o}n, Christopher (ed.). 2012.
-\newblock \emph{Empirical issues in syntax and semantics}, vol.~9. Paris: CNRS.
-
 \bibitem[{Pittner(1995)}]{Pittner95b}
 Pittner, Karin. 1995.
 \newblock {Regeln f{\"u}r die Bildung von freien Relativs{\"a}tzen: Eine
@@ -7252,12 +7148,16 @@ Pollard, Carl~J. 1984.
 Pollard, Carl~J. 1988.
 \newblock {Categorial Grammar} and {Phrase Structure Grammar}: {An} excursion
   on the syntax-semantics frontier.
-\newblock In  \cite{OBW88a-ed} 391--415.
+\newblock In Richard Oehrle, Emmon Bach \& Deirdre Wheeler (eds.),
+  \emph{{Categorial Grammars} and natural language structures}, 391--415.
+  Dordrecht: D. Reidel Publishing Company.
 
 \bibitem[{Pollard(1994)}]{Pollard94a}
 Pollard, Carl~J. 1994.
 \newblock Toward a unified account of passive in {German}.
-\newblock In  \cite{NNP94} 273--296.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 273--296. Stanford, CA: CSLI Publications.
 
 \bibitem[{Pollard(1996{\natexlab{a}})}]{Pollard96a}
 Pollard, Carl~J. 1996{\natexlab{a}}.
@@ -7277,7 +7177,10 @@ Pollard, Carl~J. 1996{\natexlab{b}}.
 \bibitem[{Pollard(1999)}]{Pollard99a}
 Pollard, Carl~J. 1999.
 \newblock Strong generative capacity in {HPSG}.
-\newblock In  \cite{WKK99a-ed} 281--298.
+\newblock In Gert Webelhuth, Jean-Pierre Koenig \& Andreas Kathol (eds.),
+  \emph{Lexical and {Constructional} aspects of linguistic explanation}
+  (Studies in Constraint"=Based Lexicalism~1), 281--298. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Pollard \& Moshier(1990)}]{PM90}
 Pollard, Carl~J. \& Andrew~M. Moshier. 1990.
@@ -7360,7 +7263,10 @@ Przepi{\'o}rkowski, Adam. 1999{\natexlab{a}}.
 \bibitem[{Przepi{\'o}rkowski(1999{\natexlab{b}})}]{Prze99}
 Przepi{\'o}rkowski, Adam. 1999{\natexlab{b}}.
 \newblock On case assignment and ``adjuncts as complements''.
-\newblock In  \cite{WKK99a-ed} 231--245.
+\newblock In Gert Webelhuth, Jean-Pierre Koenig \& Andreas Kathol (eds.),
+  \emph{Lexical and {Constructional} aspects of linguistic explanation}
+  (Studies in Constraint"=Based Lexicalism~1), 231--245. Stanford, CA: CSLI
+  Publications.
 
 \bibitem[{Przepi{\'o}rkowski \& Kup{\'s}{\'c}(2006)}]{PK2006a-u}
 Przepi{\'o}rkowski, Adam \& Anna Kup{\'s}{\'c}. 2006.
@@ -7450,7 +7356,9 @@ Pullum, Geoffrey~K. 2003.
 \bibitem[{Pullum(2007)}]{Pullum2007a}
 Pullum, Geoffrey~K. 2007.
 \newblock The evolution of model-theoretic frameworks in linguistics.
-\newblock In  \cite{RK2007a-ed} 1--10.
+\newblock In James Rogers \& Stephan Kepser (eds.), \emph{Model-theoretic
+  syntax at 10 -- {Proceedings} of the {ESSLLI 2007 MTS@10 Workshop, August
+  13--17}}, 1--10. Dublin: Trinity College Dublin.
 
 \bibitem[{Pullum(2009)}]{Pullum2009a}
 Pullum, Geoffrey~K. 2009.
@@ -7479,12 +7387,15 @@ Pullum, Geoffrey~K. \& Barbara~C. Scholz. 2002.
 \bibitem[{Pullum \& Scholz(2010)}]{PS2010a}
 Pullum, Geoffrey~K. \& Barbara~C. Scholz. 2010.
 \newblock Recursion and the infinitude claim.
-\newblock In  \cite{vdHulst2010a-ed} 113--138.
+\newblock In Harry {van der Hulst} (ed.), \emph{Recursion in human language}
+  (Studies in Generative Grammar 104), 113--138. Berlin: Mouton de Gruyter.
 
 \bibitem[{Pulman(1985)}]{Pulman85a}
 Pulman, Stephen~G. 1985.
 \newblock A parser that doesn't.
-\newblock In  \cite{eacl85} 128--135.
+\newblock In Maghi King (ed.), \emph{Proceedings of the 2nd {European Meeting
+  of the Association for Computational Linguistics}}, 128--135. Geneva:
+  Association for Computational Linguistics.
 \newblock \urlprefix\url{http://aclweb.org/anthology/E/E85/}.
 
 \bibitem[{Pulverm{\"u}ller(2003)}]{Pulvermueller2003a}
@@ -7503,12 +7414,15 @@ Pulverm{\"u}ller, Friedemann. 2010.
   Shtyrov}]{PCShandbookCxG}
 Pulverm{\"u}ller, Friedemann, Bert Cappelle \& Yury Shtyrov. 2013.
 \newblock Brain basis of meaning, words, constructions, and grammar.
-\newblock In  \cite{HandbookCxG} 397--416.
+\newblock In Thomas Hoffmann \& Graeme Trousdale (eds.), \emph{The {Oxford}
+  handbook of {Construction Grammar}}  (Oxford Handbooks), 397--416. Oxford:
+  Oxford University Press.
 
 \bibitem[{Quaglia(2014)}]{Quaglia2012a-u}
 Quaglia, Stefano. 2014.
 \newblock On the syntax of some apparent spatial particles in {Italian}.
-\newblock In  \cite{BK2014a-ed} 503--523.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2014} conference}, 503--523. Stanford, CA: CSLI Publications.
 
 \bibitem[{Radford(1990)}]{Radford90a-u}
 Radford, Andrew. 1990.
@@ -7554,7 +7468,9 @@ Raposo, Eduardo \& Juan Uriagereka. 1990.
 \bibitem[{Rappaport(1983)}]{Rappaport83a-u}
 Rappaport, Malka. 1983.
 \newblock On the nature of derived nominals.
-\newblock In  \cite{LRZ83a-ed} 113--42.
+\newblock In Lori~S. Levin, Malka Rappaport \& Annie Zaenen (eds.),
+  \emph{Papers in {Lexical Functional Grammar}}, 113--42. Indiana: Indiana
+  University Linguistics Club.
 
 \bibitem[{Rauh(2013)}]{Rauh2013a}
 Rauh, Gisa. 2013.
@@ -7575,7 +7491,9 @@ Reape, Mike. 1992.
 \bibitem[{Reape(1994)}]{Reape94a}
 Reape, Mike. 1994.
 \newblock Domain union and word order variation in {German}.
-\newblock In  \cite{NNP94} 151--198.
+\newblock In John Nerbonne, Klaus Netter \& Carl~J. Pollard (eds.),
+  \emph{German in {Head-Driven Phrase Structure Grammar}} (CSLI Lecture
+  Notes~46), 151--198. Stanford, CA: CSLI Publications.
 
 \bibitem[{Reape(2000)}]{Reape2000a}
 Reape, Mike. 2000.
@@ -7605,7 +7523,10 @@ Reis, Marga. 1980.
 \bibitem[{Reis(1982)}]{Reis82}
 Reis, Marga. 1982.
 \newblock {Zum Subjektbegriff im Deutschen}.
-\newblock In  \cite{Abraham82a-ed} 171--211.
+\newblock In Werner Abraham (ed.), \emph{{Satzglieder im Deutschen --
+  Vorschl{\"a}ge zur syntaktischen, semantischen und pragmatischen Fundierung}}
+  (Studien zur deutschen Grammatik~15), 171--211. T{\"u}bingen: \original
+  Gunter Narr Verlag \jetzt Stauffenburg Verlag.
 
 \bibitem[{Remberger(2009)}]{Remberger2009a}
 Remberger, Eva-Maria. 2009.
@@ -7619,7 +7540,9 @@ Remberger, Eva-Maria. 2009.
 Resnik, Philip. 1992.
 \newblock Probabilistic {Tree-Adjoining Grammar} as a framework for statistical
   natural language processing.
-\newblock In  \cite{coling92} 418--424.
+\newblock In Antonio Zampolli (ed.), \emph{{14th International Conference on
+  Computational Linguistics (COLING '92), August 23--28}}, 418--424. Nantes,
+  France: Association for Computational Linguistics.
 
 \bibitem[{Reyle(1993)}]{Reyle93b-u}
 Reyle, Uwe. 1993.
@@ -7630,7 +7553,9 @@ Reyle, Uwe. 1993.
 \bibitem[{Richards(2015)}]{Richards2015a}
 Richards, Marc. 2015.
 \newblock Minimalism.
-\newblock In  \cite{KA2015a-ed} 803--839.
+\newblock In Tibor Kiss \& Artemis Alexiadou (eds.), \emph{Syntax -- theory and
+  analysis: {An} international handbook}, vol.~42  (Handbooks of Linguistics
+  and Communication Science), 803--839. Berlin: Mouton de Gruyter 2nd edn.
 
 \bibitem[{Richter(2004)}]{Richter2004a-u}
 Richter, Frank. 2004.
@@ -7643,17 +7568,23 @@ Richter, Frank. 2004.
 \bibitem[{Richter(2007)}]{Richter2007a}
 Richter, Frank. 2007.
 \newblock Closer to the truth: {A} new model theory for {HPSG}.
-\newblock In  \cite{RK2007a-ed} 101--110.
+\newblock In James Rogers \& Stephan Kepser (eds.), \emph{Model-theoretic
+  syntax at 10 -- {Proceedings} of the {ESSLLI 2007 MTS@10 Workshop, August
+  13--17}}, 101--110. Dublin: Trinity College Dublin.
 
 \bibitem[{Richter \& Sailer(1999{\natexlab{a}})}]{RS99b-u}
 Richter, Frank \& Manfred Sailer. 1999{\natexlab{a}}.
 \newblock A lexicalist collocation analysis of sentential negation in {French}.
-\newblock In  \cite{Kordoni99a-ed} 231--300.
+\newblock In Valia Kordoni (ed.), \emph{T{\"u}bingen studies in {Head-Driven
+  Phrase Structure Grammar}}  ({Arbeitspapiere des SFB 340, \Nr 132, Volume
+  1}), 231--300. T\"u\-bing\-en: Eberhard-Karls-Universit{\"a}t T{\"u}bingen.
 
 \bibitem[{Richter \& Sailer(1999{\natexlab{b}})}]{RS99a}
 Richter, Frank \& Manfred Sailer. 1999{\natexlab{b}}.
 \newblock Lexicalizing the left periphery of {German} finite sentences.
-\newblock In  \cite{Kordoni99a-ed} 116--154.
+\newblock In Valia Kordoni (ed.), \emph{T{\"u}bingen studies in {Head-Driven
+  Phrase Structure Grammar}}  ({Arbeitspapiere des SFB 340, \Nr 132, Volume
+  1}), 116--154. T\"u\-bing\-en: Eberhard-Karls-Universit{\"a}t T{\"u}bingen.
 
 \bibitem[{Richter \& Sailer(2004)}]{RS2004a-u}
 Richter, Frank \& Manfred Sailer. 2004.
@@ -7665,7 +7596,9 @@ Richter, Frank \& Manfred Sailer. 2004.
 \bibitem[{Richter \& Sailer(2009)}]{RS2009a}
 Richter, Frank \& Manfred Sailer. 2009.
 \newblock Phraseological clauses as {Constructions} in {HPSG}.
-\newblock In  \cite{Mueller2009a-ed} 297--317.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {16th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of G{\"o}ttingen, Germany}}, 297--317. Stanford, CA: CSLI Publications.
 
 \bibitem[{Riehemann(1993)}]{Riehemann93a}
 Riehemann, Susanne. 1993.
@@ -7692,7 +7625,10 @@ Riezler, Stefan, Tracy~Holloway King, Ronald~M. Kaplan, Richard Crouch, John~T.
   {Maxwell III} \& Mark Johnson. 2002.
 \newblock Parsing the {Wall Street Journal} using a {Lexical-Functional
   Grammar} and discriminative estimation techniques.
-\newblock In  \cite{acl2002} 271--278.
+\newblock In Pierre Isabelle (ed.), \emph{{40th Annual Meeting of the
+  Association for Computational Linguistics}: {Proceedings} of the conference},
+  271--278. University of Pennsylvania, Philadelphia: Association for
+  Computational Linguistics.
 \newblock \urlprefix\url{http://aclanthology.info/events/acl-2002}.
 
 \bibitem[{Rizzi(1982)}]{Rizzi82b}
@@ -7759,11 +7695,6 @@ Rogers, James. 1998.
   (Studies in Logic, Language and Information).
 \newblock Stanford, CA: CSLI Publications.
 
-\bibitem[{Rogers \& Kepser(2007)}]{RK2007a-ed}
-Rogers, James \& Stephan Kepser (eds.). 2007.
-\newblock \emph{Model-theoretic syntax at 10 -- {Proceedings} of the {ESSLLI
-  2007 MTS@10 Workshop, August 13--17}}. Dublin: Trinity College Dublin.
-
 \bibitem[{Rohrer(1996)}]{Rohrer96a}
 Rohrer, Christian. 1996.
 \newblock {Fakultativ koh{\"a}rente Infinitkonstruktionen im Deutschen und
@@ -7817,7 +7748,9 @@ Sag, Ivan~A. 2000.
 \bibitem[{Sag(2007)}]{Sag2007a}
 Sag, Ivan~A. 2007.
 \newblock Remarks on locality.
-\newblock In  \cite{Mueller2007a-ed} 394--414.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {14th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 394--414.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
 
 \bibitem[{Sag(2010)}]{Sag2010b}
@@ -7828,12 +7761,14 @@ Sag, Ivan~A. 2010.
 \bibitem[{Sag(2012)}]{Sag2012a}
 Sag, Ivan~A. 2012.
 \newblock {Sign-Based Construction Grammar}: {An} informal synopsis.
-\newblock In  \cite{BS2012a-ed} 69--202.
+\newblock In Hans~C. Boas \& Ivan~A. Sag (eds.), \emph{{Sign-based Construction
+  Grammar}} (CSLI Lecture Notes 193), 69--202. Stanford, CA: CSLI Publications.
 
 \bibitem[{Sag et~al.(2012)Sag, Boas \& Kay}]{SBK2012a}
 Sag, Ivan~A., Hans~C. Boas \& Paul Kay. 2012.
 \newblock Introducing {Sign-Based Construction Grammar}.
-\newblock In  \cite{BS2012a-ed} 1--29.
+\newblock In Hans~C. Boas \& Ivan~A. Sag (eds.), \emph{{Sign-based Construction
+  Grammar}} (CSLI Lecture Notes 193), 1--29. Stanford, CA: CSLI Publications.
 
 \bibitem[{Sag et~al.(2007)Sag, Hofmeister \& Snider}]{SHS2007a}
 Sag, Ivan~A., Philip Hofmeister \& Neal Snider. 2007.
@@ -7851,7 +7786,10 @@ Sag, Ivan~A. \& Carl~J. Pollard. 1991.
 \bibitem[{Sag \& Wasow(2011)}]{SW2011a}
 Sag, Ivan~A. \& Thomas Wasow. 2011.
 \newblock Performance-compatible competence grammar.
-\newblock In  \cite{BB2011a} 359--377.
+\newblock In Robert~D. Borsley \& Kersti B{\"o}rjars (eds.),
+  \emph{Non-transformational syntax: {Formal} and explicit models of grammar:
+  {A} guide to current models}, 359--377. Oxford, UK/""Cambridge, MA: Blackwell
+  Publishing Ltd.
 
 \bibitem[{Sag et~al.(2003)Sag, Wasow \& Bender}]{SWB2003a}
 Sag, Ivan~A., Thomas Wasow \& Emily~M. Bender. 2003.
@@ -7891,7 +7829,10 @@ Samvelian, Pollet. 2007.
 Sarkar, Anoop \& Aravind~K. Joshi. 1996.
 \newblock Coordination in {Tree Adjoining Grammars}: Formalization and
   implementation.
-\newblock In  \cite{coling96} 610--615.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 610--615. Copenhagen, Denmark: Association for
+  Computational Linguistics.
 
 \bibitem[{Sato(2006)}]{Sato:06cluk}
 Sato, Yo. 2006.
@@ -7909,12 +7850,6 @@ Sato, Yo. 2008.
 Sauerland, Uli \& Paul Elbourne. 2002.
 \newblock Total reconstruction, {PF} movement, and derivational order.
 \newblock \emph{Linguistic Inquiry} 33(2). 283--319.
-
-\bibitem[{Sauerland \& G{\"a}rtner(2007)}]{SG2007a-ed}
-Sauerland, Uli \& Hans-Martin G{\"a}rtner (eds.). 2007.
-\newblock \emph{Interfaces + recursion = language? {Chomsky's Minimalism} and
-  the view from syntax-semantics} (Studies in Generative Grammar~89).
-\newblock Berlin: Mouton de Gruyter.
 
 \bibitem[{Savin \& Perchonock(1965)}]{SP65a}
 Savin, Harris~B. \& Ellen Perchonock. 1965.
@@ -7955,7 +7890,10 @@ Schmidt, Paul, Axel Theofilidis, Sibylle Rieder \& Thierry Declerck.
   1996{\natexlab{b}}.
 \newblock Lean formalisms, linguistic theory, and applications: Grammar
   development in {ALEP}.
-\newblock In  \cite{coling96} 286--291.
+\newblock In {Jun-ichi} Tsuji (ed.), \emph{Proceedings of {COLING-96. 16th
+  International Conference on Computational Linguistics COLING96). Copenhagen,
+  Denmark, August 5--9, 1996}}, 286--291. Copenhagen, Denmark: Association for
+  Computational Linguistics.
 \newblock \doi{10.3115/992628.992679}.
 
 \bibitem[{Scholz \& Pullum(2002)}]{SP2002b}
@@ -8040,15 +7978,12 @@ Shtyrov, Y., E.~Pihko \& F.~Pulverm{\"u}ller. 2005.
   physical or linguistic features of speech?
 \newblock \emph{Neuroimage} 27(1). 37--47.
 
-\bibitem[{Sidner(1987)}]{acl87}
-Sidner, Candy (ed.). 1987.
-\newblock \emph{25th {Annual Meeting of the Association for Computational
-  Linguistics}}. Stanford, CA: Association for Computational Linguistics.
-
 \bibitem[{Siegel(2000)}]{Siegel2000a}
 Siegel, Melanie. 2000.
 \newblock {HPSG} analysis of {Japanese}.
-\newblock In  \cite{Wahlster2000a-ed} 264--279.
+\newblock In Wolfgang Wahlster (ed.), \emph{Verbmobil: {Foundations} of
+  speech-to-speech translation}  (Artificial Intelligence), 264--279. Berlin:
+  Springer Verlag.
 
 \bibitem[{Siegel \& Bender(2002)}]{SB2002a}
 Siegel, Melanie \& Emily~M. Bender. 2002.
@@ -8066,21 +8001,17 @@ Simov, Kiril, Petya Osenova, Alexander Simov \& Milen Kouylekov. 2004.
 \bibitem[{Simpson(1983)}]{Simpson83a}
 Simpson, Jane. 1983.
 \newblock Resultatives.
-\newblock In  \cite{LRZ83a-ed} 143--157.
+\newblock In Lori~S. Levin, Malka Rappaport \& Annie Zaenen (eds.),
+  \emph{Papers in {Lexical Functional Grammar}}, 143--157. Indiana: Indiana
+  University Linguistics Club.
 \newblock \reprint \citew{Simpson2005a}.
 
-\bibitem[{Simpson(2005{\natexlab{a}})}]{Simpson2003a}
-Simpson, Jane. 2005{\natexlab{a}}.
+\bibitem[{Simpson(2005)}]{Simpson2003a}
+Simpson, Jane. 2005.
 \newblock Depictives in {English} and {Warlpiri}.
 \newblock In Nikolaus~P. Himmelmann \& Eva Schultze-Berndt (eds.),
   \emph{Secondary predication and adverbial modification: {The} typology of
   depictives}, 69--106. Oxford: Oxford University Press.
-
-\bibitem[{Simpson(2005{\natexlab{b}})}]{Simpson2005a}
-Simpson, Jane. 2005{\natexlab{b}}.
-\newblock Resultatives.
-\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Lexical semantics
-  in {LFG}}, 149--161. Stanford, CA: CSLI Publications.
 
 \bibitem[{Singleton \& Newport(2004)}]{SN2004a}
 Singleton, Jenny~L. \& Elissa~L. Newport. 2004.
@@ -8098,7 +8029,8 @@ Sleator, Daniel D.~K. \& Davy Temperley. 1991.
 Smith, Carlota~S. 1970.
 \newblock Jespersen's ``move and change'' class and causative verbs in
   {English}.
-\newblock In  \cite{Peeters2000a-ed} 101--109.
+\newblock In Bert Peeters (ed.), \emph{The lexicon--encyclopedia interface},
+  101--109. Amsterdam: Elsevier.
 
 \bibitem[{Smith(1972)}]{Smith72a-u}
 Smith, Carlota~S. 1972.
@@ -8115,15 +8047,11 @@ Snyder, William. 2001.
 Soehn, Jan-Philipp \& Manfred Sailer. 2008.
 \newblock At first blush on tenterhooks: {About} selectional restrictions
   imposed by nonheads.
-\newblock In  \cite{FG2003} 149--161.
+\newblock In Gerhard J{\"a}ger, Paola Monachesi, Gerald Penn \& Shuly Wintner
+  (eds.), \emph{Proceedings of {Formal Grammar 2003, Vienna, Austria}},
+  149--161. Stanford, CA: CSLI Publications.
 \newblock
   \urlprefix\url{http://csli-publications.stanford.edu/FG/2003/soehn.pdf}.
-
-\bibitem[{Somers \& Wood(1989)}]{eacl89}
-Somers, Harold \& Mary~McGee Wood (eds.). 1989.
-\newblock \emph{Proceedings of the {Fourth Conference of the European Chapter
-  of the Association for Computational Linguistics}}. Manchester, England:
-  Association for Computational Linguistics.
 
 \bibitem[{Son(2007)}]{Son2007a}
 Son, Minjeong. 2007.
@@ -8185,7 +8113,8 @@ Stabler, Edward~P. 2001.
 \bibitem[{Stabler(2011{\natexlab{a}})}]{Stabler2010a}
 Stabler, Edward~P. 2011{\natexlab{a}}.
 \newblock After {Governement and Binding Theory}.
-\newblock In  \cite{vBtM2011a-ed} 395--414.
+\newblock In Johan F. A.~K. {van Benthem} \& G.~B.~Alice {ter Meulen} (eds.),
+  \emph{Handbook of logic and language}, 395--414. Amsterdam: Elsevier 2nd edn.
 
 \bibitem[{Stabler(2011{\natexlab{b}})}]{Stabler2010b}
 Stabler, Edward~P. 2011{\natexlab{b}}.
@@ -8202,7 +8131,8 @@ Starosta, Stanley. 1988.
 \bibitem[{Starosta \& Nomura(1986)}]{SN86a}
 Starosta, Stanley \& Hirosato Nomura. 1986.
 \newblock Lexicase parsing: {A} lexicon-driven approach to syntactic analysis.
-\newblock In  \cite{coling86} 127--132.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 127--132.
+  University of Bonn: Association for Computational Linguistics.
 \newblock \doi{10.3115/991365.991400}.
 
 \bibitem[{von Stechow(1979)}]{Stechow79}
@@ -8236,7 +8166,9 @@ Steedman, Mark~J. 1985.
 \bibitem[{Steedman(1989)}]{Steedman89a}
 Steedman, Mark~J. 1989.
 \newblock Constituency and coordination in a {Combinatory Grammar}.
-\newblock In  \cite{BK89a-ed} 201--231.
+\newblock In Mark~R. Baltin \& Anthony~S. Kroch (eds.), \emph{Alternative
+  conceptions of phrase structure}, 201--231. Chicago/London: The University of
+  Chicago Press.
 
 \bibitem[{Steedman(1991)}]{Steedman91a}
 Steedman, Mark~J. 1991.
@@ -8266,21 +8198,16 @@ Steedman, Mark~J. 2011.
 \bibitem[{Steedman \& Baldridge(2006)}]{SB2006a-u}
 Steedman, Mark~J. \& Jason Baldridge. 2006.
 \newblock {Combinatory Categorial Grammar}.
-\newblock In  \cite{Brown2006a-ed} 610--621.
+\newblock In Keith Brown (ed.), \emph{Encyclopedia of language and
+  linguistics}, 610--621. Oxford: Elsevier 2nd edn.
 
 \bibitem[{Steels(2003)}]{Steels2003a}
 Steels, Luc. 2003.
 \newblock Evolving grounded communication for robots.
 \newblock \emph{Trends in Cognitive Science} 7(7). 308--312.
 
-\bibitem[{Steels(2011{\natexlab{a}})}]{SteelsFluid-ed-not-crossreferenced}
-Steels, Luc (ed.). 2011{\natexlab{a}}.
-\newblock \emph{Design patterns in {Fluid Construction Grammar}}
-  (Constructional Approaches to Language~11).
-\newblock Amsterdam: John Benjamins Publishing Co.
-
-\bibitem[{Steels(2011{\natexlab{b}})}]{SteelsFluid-ed}
-Steels, Luc (ed.). 2011{\natexlab{b}}.
+\bibitem[{Steels(2011)}]{SteelsFluid-ed-not-crossreferenced}
+Steels, Luc (ed.). 2011.
 \newblock \emph{Design patterns in {Fluid Construction Grammar}}
   (Constructional Approaches to Language~11).
 \newblock Amsterdam: John Benjamins Publishing Co.
@@ -8294,7 +8221,9 @@ Steels, Luc (ed.). 2012.
 \bibitem[{Steels(2013)}]{Steels2013a}
 Steels, Luc. 2013.
 \newblock {Fluid Construction Grammar}.
-\newblock In  \cite{HandbookCxG} 153--167.
+\newblock In Thomas Hoffmann \& Graeme Trousdale (eds.), \emph{The {Oxford}
+  handbook of {Construction Grammar}}  (Oxford Handbooks), 153--167. Oxford:
+  Oxford University Press.
 
 \bibitem[{Steels(2015)}]{Steels2015a-u}
 Steels, Luc. 2015.
@@ -8312,7 +8241,9 @@ Steels, Luc \& Joachim {De Beule}. 2006.
 \bibitem[{Steels \& {van Trijp}(2011)}]{SvT2011a}
 Steels, Luc \& Remi {van Trijp}. 2011.
 \newblock How to make {Construction Grammars} fluid and robust.
-\newblock In  \cite{SteelsFluid-ed} 301--330.
+\newblock In Luc Steels (ed.), \emph{Design patterns in {Fluid Construction
+  Grammar}} (Constructional Approaches to Language~11), 301--330. Amsterdam:
+  John Benjamins Publishing Co.
 
 \bibitem[{Stefanowitsch(2008)}]{Stefanowitsch2008a}
 Stefanowitsch, Anatol. 2008.
@@ -8328,7 +8259,10 @@ Stefanowitsch, Anatol \& Kerstin Fischer (eds.). 2008.
 \bibitem[{Stefanowitsch \& Gries(2009)}]{SG2009a}
 Stefanowitsch, Anatol \& Stephan~Th. Gries. 2009.
 \newblock Corpora and grammar.
-\newblock In  \cite{LK2009a-ed} chap.~43, 933--952.
+\newblock In Anke L{\"u}deling \& Merja Kyt{\"o} (eds.), \emph{Corpus
+  linguistics: {An} international handbook}, vol.~29  (Hand\-b{\"u}\-cher zur
+  Sprach- und Kommunikationswissenschaft), chap.~43, 933--952. Berlin: Mouton
+  de Gruyter.
 
 \bibitem[{Sternefeld(1985{\natexlab{a}})}]{Sternefeld85a}
 Sternefeld, Wolfgang. 1985{\natexlab{a}}.
@@ -8339,7 +8273,8 @@ Sternefeld, Wolfgang. 1985{\natexlab{a}}.
 \bibitem[{Sternefeld(1985{\natexlab{b}})}]{Sternefeld85b}
 Sternefeld, Wolfgang. 1985{\natexlab{b}}.
 \newblock On case and binding theory.
-\newblock In  \cite{Toman85a-ed} 231--285.
+\newblock In Jind\v{r}ich Toman (ed.), \emph{Studies in {German} grammar}
+  (Studies in Generative Grammar~21), 231--285. Dordrecht: Foris Publications.
 
 \bibitem[{Sternefeld(1995)}]{Sternefeld95a}
 Sternefeld, Wolfgang. 1995.
@@ -8377,17 +8312,6 @@ Strunk, Jan \& Nil Snider. 2013.
   Aktuell/""Linguistics Today 200), 99--143. Amsterdam: John Benjamins
   Publishing Co.
 
-\bibitem[{Su et~al.(2005)Su, Kwong, Tsujii \& Lee}]{IJCNLP2004}
-Su, Keh-Yih, Oi~Yee Kwong, Jn'ichi Tsujii \& Jong-Hyeok Lee (eds.). 2005.
-\newblock \emph{Natural language processing {IJCNLP 2004}} (Lecture Notes in
-  Artificial Intelligence 3248) Berlin: Springer Verlag.
-
-\bibitem[{Suchsland(1992)}]{Suchsland92a-ed}
-Suchsland, Peter (ed.). 1992.
-\newblock \emph{{Biologische und soziale Grundlagen der Sprache}}
-  (Linguistische Arbeiten 280).
-\newblock T{\"u}bingen: Max Niemeyer Verlag.
-
 \bibitem[{Suchsland(1997)}]{Suchsland97a}
 Suchsland, Peter. 1997.
 \newblock \emph{{Syntax-Theorie: Ein zusammengefa{\ss}ter Zugang}} (Konzepte
@@ -8398,7 +8322,8 @@ Suchsland, Peter. 1997.
 \bibitem[{Sulger(2009)}]{Sulger2009a-u}
 Sulger, Sebastian. 2009.
 \newblock Irish clefting and information-structure.
-\newblock In  \cite{BK2009a-ed} 562--582.
+\newblock In Miriam Butt \& Tracy~Holloway King (eds.), \emph{Proceedings of
+  the {LFG 2009} conference}, 562--582. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/LFG/14/}.
 
 \bibitem[{Sulger(2010)}]{Sulger2010a-u}
@@ -8478,12 +8403,6 @@ Timberlake, Alan. 1982.
   \emph{Proceedings of the {Eighth Annual Meeting of the Berkeley Linguistics
   Society}}, 508--524. Berkeley: University of California.
 
-\bibitem[{Toman(1985)}]{Toman85a-ed}
-Toman, Jind\v{r}ich (ed.). 1985.
-\newblock \emph{Studies in {German} grammar} (Studies in Generative
-  Grammar~21).
-\newblock Dordrecht: Foris Publications.
-
 \bibitem[{Tomasello(1995)}]{Tomasello95a}
 Tomasello, Michael. 1995.
 \newblock Language is not an instinct.
@@ -8550,7 +8469,11 @@ Travis, Lisa. 1984.
 \bibitem[{Trosterud(2009)}]{Trosterud2009a-u}
 Trosterud, Trond. 2009.
 \newblock {A Constraint Grammar for Faroese}.
-\newblock In  \cite{BHMT2009a-ed} 1--7.
+\newblock In Eckhard Bick, Kristin Hagen, Kaili M{\"u}{\"u}risep \& Trond
+  Trosterud (eds.), \emph{{Constraint Grammar} and robust parsing: Proceedings
+  of the {NODALIDA 2009} workshop}, vol.~8 (NEALT Proceedings Series~8), 1--7.
+  Northern European Association for Language Technologie Tartu: Tartu
+  University Library.
 
 \bibitem[{Tseng(2000)}]{Tseng2000a-ed}
 Tseng, Jesse (ed.). 2000.
@@ -8563,21 +8486,19 @@ Tseng, Jesse (ed.). 2000.
 \bibitem[{Tseng(2003)}]{Tseng2003b-u}
 Tseng, Jesse~L. 2003.
 \newblock {LKB} grammar implementation: {French} and beyond.
-\newblock In  \cite{BFFS2003a-ed} 91--97.
+\newblock In Emily~M. Bender, Daniel~P. Flickinger, Frederik Fouvry \& Melanie
+  Siegel (eds.), \emph{Proceedings of the {ESSLLI 2003 Workshop ``Ideas and
+  Strategies for Multilingual Grammar Development''}}, 91--97. Vienna, Austria.
 \newblock
   \urlprefix\url{http://w3.erss.univ-tlse2.fr/textes/pagespersos/tseng/Pubs/mgd03.pdf}.
 
 \bibitem[{Tseng(2007)}]{Tseng2007a}
 Tseng, Jesse~L. 2007.
 \newblock English prepositional passive constructions.
-\newblock In  \cite{Mueller2007a-ed} 271--286.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {14th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 271--286.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2007/}.
-
-\bibitem[{Tsuji(1996)}]{coling96}
-Tsuji, {Jun-ichi} (ed.). 1996.
-\newblock \emph{Proceedings of {COLING-96. 16th International Conference on
-  Computational Linguistics (COLING96). Copenhagen, Denmark, August 5--9,
-  1996}}. Copenhagen, Denmark: Association for Computational Linguistics.
 
 \bibitem[{Umemoto(2006)}]{Umemoto2006a-u}
 Umemoto, Hiroshi. 2006.
@@ -8590,7 +8511,8 @@ Umemoto, Hiroshi. 2006.
 \bibitem[{Uszkoreit(1986{\natexlab{a}})}]{Uszkoreit86d}
 Uszkoreit, Hans. 1986{\natexlab{a}}.
 \newblock {Categorial Unification Grammars}.
-\newblock In  \cite{coling86} 187--194.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 187--194.
+  University of Bonn: Association for Computational Linguistics.
 \newblock \urlprefix\url{http://aclweb.org/anthology-new/C/C86/C86-1045.pdf}.
 
 \bibitem[{Uszkoreit(1986{\natexlab{b}})}]{Uszkoreit86b}
@@ -8615,12 +8537,6 @@ Uszkoreit, Hans. 1990.
   {Berlin/GDR, August} 10--15, 1987}}, vol.~3, 2331--2336. Berlin: Akademie
   Verlag.
 
-\bibitem[{Uszkoreit(1995)}]{acl95}
-Uszkoreit, Hans (ed.). 1995.
-\newblock \emph{{33rd Annual Meeting of the Association for Computational
-  Linguistics. Proceedings} of the conference}. Cambridge, MA: Association for
-  Computational Linguistics.
-
 \bibitem[{Uszkoreit et~al.(1994)Uszkoreit, Backofen, Busemann, Diagne,
   Hinkelman, Kasper, Kiefer, Krieger, Netter, Neumann, Oepen \&
   Spackman}]{DISCO94}
@@ -8629,7 +8545,8 @@ Uszkoreit, Hans, Rolf Backofen, Stephan Busemann, Abdel~Kader Diagne,
   Klaus Netter, G{\"u}nter Neumann, Stephan Oepen \& Stephen~P. Spackman. 1994.
 \newblock {DISCO}---{An} {HPSG}-based {NLP} system and its application for
   appointment scheduling.
-\newblock In  \cite{coling94} 436--440.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 94}, 436--440.
+  Kyoto, Japan: Association for Computational Linguistics.
 
 \bibitem[{Uszkoreit et~al.(1996)Uszkoreit, Backofen, Calder, Capstick, Dini,
   D{\"o}rre, Erbach, Estival, Manandhar, Mineur \& Oepen}]{UBCCDDEEMMO-96a}
@@ -8648,17 +8565,6 @@ Valian, Virginia. 1991.
   children.
 \newblock \emph{Cognition} 40(1--2). 21--81.
 
-\bibitem[{{van Benthem} \& {ter Meulen}(2011)}]{vBtM2011a-ed}
-{van Benthem}, Johan F. A.~K. \& G.~B.~Alice {ter Meulen} (eds.). 2011.
-\newblock \emph{Handbook of logic and language}.
-\newblock Amsterdam: Elsevier 2nd edn.
-
-\bibitem[{{van der Hulst}(2010)}]{vdHulst2010a-ed}
-{van der Hulst}, Harry (ed.). 2010.
-\newblock \emph{Recursion in human language} (Studies in Generative Grammar
-  104).
-\newblock Berlin: Mouton de Gruyter.
-
 \bibitem[{Van~Eynde(2015)}]{VanEynde2015a}
 Van~Eynde, Frank. 2015.
 \newblock {Sign-Based Construction Grammar}: {A} guided tour.
@@ -8672,7 +8578,9 @@ Van~Eynde, Frank. 2015.
 \bibitem[{{van Trijp}(2011)}]{vanTrijp2011a}
 {van Trijp}, Remi. 2011.
 \newblock A design pattern for argument structure constructions.
-\newblock In  \cite{SteelsFluid-ed} 115--145.
+\newblock In Luc Steels (ed.), \emph{Design patterns in {Fluid Construction
+  Grammar}} (Constructional Approaches to Language~11), 115--145. Amsterdam:
+  John Benjamins Publishing Co.
 
 \bibitem[{{van Trijp}(2013)}]{vanTrijp2013a}
 {van Trijp}, Remi. 2013.
@@ -8703,12 +8611,12 @@ Van~Eynde, Frank. 2015.
   Stede}]{VTBS2011a}
 Vancoppenolle, Jean, Eric Tabbert, Gerlof Bouma \& Manfred Stede. 2011.
 \newblock A {German} grammar for generation in {Open CCG}.
-\newblock In  \cite{HSW2011a-ed} 145--150.
-
-\bibitem[{Vargha(1988)}]{coling88}
-Vargha, D{\'e}nes (ed.). 1988.
-\newblock \emph{Proceedings of {COLING} 88}. University of Budapest:
-  Association for Computational Linguistics.
+\newblock In Hanna Hedeland, Thomas Schmidt \& Kai W{\"o}rner (eds.),
+  \emph{Multilingual resources and multilingual applications: {Proceedings} of
+  the {Conference of the German Society for Computational Linguistics and
+  Language Technology (GSCL)} 2011} (Arbeiten zur Mehrsprachigkeit/Working
+  Papers in Multilingualism, Folge B/Series B~96), 145--150. Hamburg:
+  Universit{\"a}t Hamburg.
 
 \bibitem[{Vargha-Khadem et~al.(1995)Vargha-Khadem, Watkins, Alcock, Fletcher \&
   Passingham}]{VKWAFP95a}
@@ -8722,7 +8630,9 @@ Vargha-Khadem, Faraneh, Kate~E. Watkins, Katie Alcock, Paul Fletcher \& Richard
 \bibitem[{Vasishth \& Lewis(2006)}]{VL2006a}
 Vasishth, Shravan \& Richard~L. Lewis. 2006.
 \newblock Human language processing: {Symbolic} models.
-\newblock In  \cite{Brown2006a-ed} 410--419.
+\newblock In Keith Brown (ed.), \emph{The encyclopedia of language and
+  linguistics}, vol.~5, 410--419. Oxford: Elsevier Science Publisher B.V.
+  (North-Holland) 2nd edn.
 
 \bibitem[{Vasishth et~al.(2010)Vasishth, Suckow, Lewis \& Kern}]{VSLK2010a}
 Vasishth, Shravan, Katja Suckow, Richard~L. Lewis \& Sabine Kern. 2010.
@@ -8752,7 +8662,8 @@ Vennemann, Theo \& Ray Harlow. 1977.
 Verhagen, Arie. 2010.
 \newblock What do you think is the proper place of recursion? {Conceptual} and
   empirical issues.
-\newblock In  \cite{vdHulst2010a-ed} 93--110.
+\newblock In Harry {van der Hulst} (ed.), \emph{Recursion in human language}
+  (Studies in Generative Grammar 104), 93--110. Berlin: Mouton de Gruyter.
 
 \bibitem[{Verspoor(1997)}]{Verspoor97a}
 Verspoor, Cornelia~Maria. 1997.
@@ -8769,7 +8680,8 @@ Vierhuff, Tilman, Bernd Hildebrandt \& Hans-J{\"u}rgen Eikmeyer. 2003.
 \bibitem[{Vijay-Shanker \& Joshi(1988)}]{VSJ88a}
 Vijay-Shanker, K. \& Aravind~K. Joshi. 1988.
 \newblock Feature structures based {Tree Adjoining Grammars}.
-\newblock In  \cite{coling88} 714--719.
+\newblock In D{\'e}nes Vargha (ed.), \emph{Proceedings of {COLING} 88}, vol.~1,
+  714--719. University of Budapest: Association for Computational Linguistics.
 \newblock
   \urlprefix\url{http://www.aclweb.org/anthology-new/C/C88/C88-2147.pdf}.
 
@@ -8807,16 +8719,11 @@ Voutilainen, Atro, Juha Heikkil{\"a} \& Arto Anttila. 1992.
 \bibitem[{Wada \& Asher(1986)}]{WA86a-u}
 Wada, Hajime \& Nicholas Asher. 1986.
 \newblock {BUILDRS}: {An} implementation of {DR Theory} and {LFG}.
-\newblock In  \cite{coling86} 540--545.
+\newblock In Makoto Nagao (ed.), \emph{Proceedings of {COLING} 86}, 540--545.
+  University of Bonn: Association for Computational Linguistics.
 
-\bibitem[{Wahlster(2000{\natexlab{a}})}]{Wahlster2000a-ed-not-crossreferenced}
-Wahlster, Wolfgang (ed.). 2000{\natexlab{a}}.
-\newblock \emph{Verbmobil: {Foundations} of speech-to-speech translation}
-  (Artificial Intelligence).
-\newblock Berlin: Springer Verlag.
-
-\bibitem[{Wahlster(2000{\natexlab{b}})}]{Wahlster2000a-ed}
-Wahlster, Wolfgang (ed.). 2000{\natexlab{b}}.
+\bibitem[{Wahlster(2000)}]{Wahlster2000a-ed-not-crossreferenced}
+Wahlster, Wolfgang (ed.). 2000.
 \newblock \emph{Verbmobil: {Foundations} of speech-to-speech translation}
   (Artificial Intelligence).
 \newblock Berlin: Springer Verlag.
@@ -8836,7 +8743,9 @@ Webelhuth, Gert. 1985.
 \bibitem[{Webelhuth(1990)}]{Webelhuth90}
 Webelhuth, Gert. 1990.
 \newblock Diagnostics for structure.
-\newblock In  \cite{GS90a-ed} 41--75.
+\newblock In G{\"u}nther Grewendorf \& Wolfgang Sternefeld (eds.),
+  \emph{{Scrambling and Barriers}} (Linguistik Aktuell/""Linguistics Today~5),
+  41--75. Amsterdam: John Benjamins Publishing Co.
 
 \bibitem[{Webelhuth(1995)}]{Webelhuth95a}
 Webelhuth, Gert. 1995.
@@ -8850,13 +8759,9 @@ Webelhuth, Gert. 1995.
 Webelhuth, Gert. 2011.
 \newblock {Paradigmenwechsel r{\"u}ckw{\"a}rts: Die Renaissance der
   grammatischen Konstruktion}.
-\newblock In  \cite{EHP2011a-ed} 149--180.
-
-\bibitem[{Webelhuth et~al.(1999)Webelhuth, Koenig \& Kathol}]{WKK99a-ed}
-Webelhuth, Gert, Jean-Pierre Koenig \& Andreas Kathol (eds.). 1999.
-\newblock \emph{Lexical and {Constructional} aspects of linguistic explanation}
-  (Studies in Constraint"=Based Lexicalism~1).
-\newblock Stanford, CA: CSLI Publications.
+\newblock In Stefan Engelberg, Anke Holler \& Kristel Proost (eds.),
+  \emph{{Sprachliches Wissen zwischen Lexikon und Grammatik}}  (Institut
+  f{\"u}r Deutsche Sprache, Jahrbuch 2010), 149--180. Berlin: de Gruyter.
 
 \bibitem[{Weber(1997)}]{Weber97a}
 Weber, Heinz~J. 1997.
@@ -8899,7 +8804,9 @@ Wechsler, Stephen~Mark. 2008{\natexlab{a}}.
 \bibitem[{Wechsler(2008{\natexlab{b}})}]{Wechsler2008b}
 Wechsler, Stephen~Mark. 2008{\natexlab{b}}.
 \newblock Dualist syntax.
-\newblock In  \cite{Mueller2008a-ed} 294--304.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {15th
+  International Conference on Head-Driven Phrase Structure Grammar}}, 294--304.
+  Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2008/}.
 
 \bibitem[{Wechsler \& Noh(2001)}]{WN2001a}
@@ -8935,7 +8842,9 @@ Weisweber, Wilhelm. 1987.
 \bibitem[{Weisweber \& Preuss(1992)}]{WP92b}
 Weisweber, Wilhelm \& Susanne Preuss. 1992.
 \newblock Direct parsing with metarules.
-\newblock In  \cite{coling92} 1111--1115.
+\newblock In Antonio Zampolli (ed.), \emph{{14th International Conference on
+  Computational Linguistics (COLING '92), August 23--28}}, 1111--1115. Nantes,
+  France: Association for Computational Linguistics.
 
 \bibitem[{Welke(1988)}]{Welke88a-u}
 Welke, Klaus. 1988.
@@ -8970,7 +8879,9 @@ Werner, Edeltraud. 1993.
 \bibitem[{Wetta(2011)}]{Wetta2011a}
 Wetta, Andrew~C. 2011.
 \newblock A {Construction}-based cross-linguistic analysis of {V2} word order.
-\newblock In  \cite{Mueller2011a-ed} 248--268.
+\newblock In Stefan M{\"u}ller (ed.), \emph{Proceedings of the {18th
+  International Conference on Head-Driven Phrase Structure Grammar, University
+  of Washington}}, 248--268. Stanford, CA: CSLI Publications.
 \newblock \urlprefix\url{http://csli-publications.stanford.edu/HPSG/2011/}.
 
 \bibitem[{Wexler(1998)}]{Wexler98a}
@@ -9028,13 +8939,6 @@ Wilder, Chris. 1991.
 \newblock Small clauses and related objects.
 \newblock \emph{Groninger Arbeiten zur Germanistischen Linguistik} 34.
   215--236.
-
-\bibitem[{Wilks(1984)}]{acl:coling84}
-Wilks, Yorick (ed.). 1984.
-\newblock \emph{Proceedings of the {10th International Conference on
-  Computational Linguistics and 22nd Annual Meeting of the Association for
-  Computational Linguistics}}. Stanford University, California: Association for
-  Computational Linguistics.
 
 \bibitem[{Williams(1984)}]{Williams84a}
 Williams, Edwin. 1984.
@@ -9118,7 +9022,8 @@ Wurmbrand, Susanne. 2003{\natexlab{b}}.
 \bibitem[{Yamada \& Matsumoto(2003)}]{YM2003a-u}
 Yamada, Hiroyasu \& Yuji Matsumoto. 2003.
 \newblock Statistical dependency analysis with support vector machines.
-\newblock In  \cite{iwpt03}.
+\newblock In Gertjan van Noord (ed.), \emph{Proceedings of the {8th
+  International Workshop on Parsing Technologies (IWPT 03)}}, Nancy.
 
 \bibitem[{Yamada(1981)}]{Yamada81a}
 Yamada, Jeni. 1981.
@@ -9131,7 +9036,9 @@ Yamada, Jeni. 1981.
 Yampol, Todd \& Lauri Karttunen. 1990.
 \newblock An efficient implementation of {PATR} for {Categorial Unification
   Grammar}.
-\newblock In  \cite{coling90} 419--424.
+\newblock In Hans Karlgren (ed.), \emph{{COLING-90}: {Papers} presented to the
+  {13th International Conference on Computational Linguistics}}, 419--424.
+  Helsinki: Association for Computational Linguistics.
 
 \bibitem[{Yang(2004)}]{Yang2004a}
 Yang, Charles~D. 2004.
@@ -9142,7 +9049,10 @@ Yang, Charles~D. 2004.
 \bibitem[{Yasukawa(1984)}]{Yasukawa1984a-u}
 Yasukawa, Hidekl. 1984.
 \newblock {LFG System in Prolog}.
-\newblock In  \cite{acl:coling84} 358--361.
+\newblock In Yorick Wilks (ed.), \emph{Proceedings of the {10th International
+  Conference on Computational Linguistics and 22nd Annual Meeting of the
+  Association for Computational Linguistics}}, 358--361. Stanford University,
+  California: Association for Computational Linguistics.
 
 \bibitem[{Yip et~al.(1987)Yip, Maling \& Jackendoff}]{YMJ87}
 Yip, Moira, Joan Maling \& Ray~S. Jackendoff. 1987.
@@ -9161,18 +9071,14 @@ Yoshinaga, Naoki, Yusuke Miyao, Kentaro Torisawa \& Jun'ichi Tsujii. 2001.
 Zaenen, Annie \& Ronald~M. Kaplan. 1995.
 \newblock Formal devices for linguistic generalizations: {West Germanic} word
   order in {LFG}.
-\newblock In  \cite{DKMZ95a-ed} 215--239.
+\newblock In Mary Dalrymple, Ronald~M. Kaplan, John~T. {Maxwell III} \& Annie
+  Zaenen (eds.), \emph{Formal issues in {Lexical-Functional Grammar}} (CSLI
+  Lecture Notes~47), 215--239. Stanford, CA: CSLI Publications.
 
 \bibitem[{Zaenen et~al.(1985)Zaenen, Maling \& Thr{\'a}insson}]{ZMT85a}
 Zaenen, Annie, Joan Maling \& H{\"o}skuldur Thr{\'a}insson. 1985.
 \newblock Case and grammatical functions: {The} {Icelandic} passive.
 \newblock \emph{Natural Language and Linguistic Theory} 3(4). 441--483.
-
-\bibitem[{Zampolli(1992)}]{coling92}
-Zampolli, Antonio (ed.). 1992.
-\newblock \emph{{14th International Conference on Computational Linguistics
-  (COLING '92), August 23--28}}. Nantes, France: Association for Computational
-  Linguistics.
 
 \bibitem[{Zappa(1986)}]{Zappa86a}
 Zappa, Frank. 1986.
