@@ -42,9 +42,15 @@
 
 \usepackage{multicol}
 
+%\usepackage{langsci/styles/langsci-forest-v105-setup}
 \usepackage{langsci/styles/langsci-forest-setup}
 
-\usepackage{bookmark}
+%\usepackage{forest}
+% for forest version2
+%\useforestlibrary{linguistics}
+%\forestapplylibrarydefaults{linguistics}
+
+
 
 \forestset{
       terminus/.style={tier=word, for children={tier=tabular}, for tree={fit=band}, for descendants={no path, align=left, l sep=0pt}},
@@ -53,7 +59,10 @@
       set me left/.style={calign with current edge, child anchor=north west, for parent={parent anchor=south west}},
 }
 
- 
+
+
+\usepackage{bookmark}
+
 \usepackage{styles/my-ccg-ohne-colortbl}
 
 
@@ -80,7 +89,7 @@ styles/eng-date,styles/my-theorems}
 
 % loaded in macros.2e \usepackage[english]{varioref}
 % do not stop and warn! This will be tested in the final version
-%\vrefwarning
+\vrefwarning
 
 
 \usepackage{ogonek}        % For Ewa Dabrowska
@@ -100,10 +109,6 @@ styles/eng-date,styles/my-theorems}
 %\renewcommand{\xbar}{X̅\xspace}
 
 
-\usepackage{forest}
-\useforestlibrary{linguistics}
-\forestapplylibrarydefaults{linguistics}
-% above are for forest version2
 
 \usepackage{pstricks,pst-node}
 

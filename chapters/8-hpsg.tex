@@ -80,7 +80,7 @@ KP2007a,KP2008a-u,Kaufmann2009a-u,Fokkens2011a},
 % needed for Herzig Shinfux 
 \item 豪萨语（Hausa）\il{Hausa} \citep{Crysmann2005b-u,Crysmann2009a-u,Crysmann2011a-u,Crysmann2012a-u,Crysmann2016a},
 \item 希伯来语（Hebrew）\il{Hebrew} \citep*{MelnikHandWritten,HMW2013a-u,AHMW2015a-u}, 
-\item 印尼语（Indonesian）\il{Indonesian} \citep*{MBS2016a-u}
+\item 印尼语（Indonesian）\il{Indonesian} \citep*{MBS2015a-u}
 \item 日语（Japanese）\il{Japanese} \citep{Siegel2000a,SB2002a,BS2005a}, 
 }
 \item 韩语（Korean）\il{Korean} \citep*{KY2003a-u,KY2004a-u,KY2006a,KY2009a-u,KSY2007a-u,SKBY2010a-u,KYSB2011a-u},
@@ -312,7 +312,7 @@ S $\to$ NP[\type{nom}], NP[\type{acc}], V[\type{nom\_acc}]
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \eliste]}
 	[{\ibox{1} NP[\type{nom}]}
 		[Peter;Peter]]
@@ -343,7 +343,7 @@ sn edges
 \begin{figure}
 \centerline{%
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \eliste]}
 	[{\ibox{1} NP[\type{nom}]}
 		[Peter;Peter]]
@@ -378,7 +378,7 @@ sn edges
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [NP
 	[Det
 		[dem;DET]]
@@ -692,7 +692,7 @@ Argument $<$ Head[\initial --]
 \settowidth{\offsetup}{V[\type{fin}}
 \centerline{
 \begin{forest}
-sn edges, for tree={l+=\baselineskip}
+sm edges, for tree={l+=\baselineskip}
 [V{[\type{fin}, \subcat \eliste]}, name=fin1
 	[\ibox{1} NP{[\type{nom}]}
 		[er;he]]
@@ -745,7 +745,7 @@ GPSG\indexgpsg 的中心语特征规约\is{Head Feature Convention (HFC)}确保�
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [\ms{head & \ibox{1}\\
      subcat & \sliste{ }
      }
@@ -1175,7 +1175,7 @@ AVM被简写为\nbar ：\\*
 \begin{figure}
 \centerline{%
 \begin{forest}
-sn edges
+sm edges
 [\nbar
 	[AP{[\textsc{head$|$mod} \ibox{1}]}
 		[interessantes;有趣的]]
@@ -1652,7 +1652,7 @@ d. & \emph{geschenkt wird}（被给）:        & \subcat \sliste{ NP[\type{ldat}
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [VP
 	[V \sliste{ VP//V }, name=vini
 	   [V,name=vlast [kennt$_k$;认识]]]
@@ -1721,7 +1721,7 @@ synsem$|$loc \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin
 \begin{figure}
 \centerline{%
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \eliste]}
 	[V
 		[kennt;认识]]
@@ -1918,7 +1918,7 @@ synsem$|$loc$|$cat & \ms{ head & \ms[verb]{vform & fin\\
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \eliste]}
 	[V{[\subcat \sliste{ \ibox{1} }]}
 		[V{[\subcat \ibox{2}]}, tier=np,edge label={node[midway,right]{V1-LR}}
@@ -2031,7 +2031,7 @@ synsem$|$loc   \ibox{1} \ms{ cat$|$head$|$dsl   & \ibox{1}\\
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \sliste{}]}
 	[\ibox{1} NP{[\type{nom}]}
 		[jeder;每个人]]
@@ -2054,7 +2054,7 @@ sn edges
 \begin{figure}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [V{[\subcat \sliste{}]}
 	[\ibox{2} NP{[\type{acc}]}
 		[diesen Mann;这个男人, roof]]
@@ -2168,7 +2168,7 @@ sn edges
 \settowidth{\offset}{N}
 \centering
 \begin{forest}
-sn edges
+sm edges
 [VP
 	[NP,name=np
 		[diesen Mann$_i$;这个男人,roof]]
@@ -2422,7 +2422,7 @@ non-head-dtrs  \sliste{ \onems{ synsem \onems{ loc \ibox{1}\\
 \begin{figure}
 \centerfit{
 \begin{forest}
-sn edges
+sm edges
 [V\feattab{\textsc{subcat} \eliste,\\ 
            \textsc{inher$|$slash} \eliste},s sep+=1em % increase the distance because otherwise we
                                 % are in the roof
@@ -2555,7 +2555,7 @@ sn edges
 \begin{figure}
 \centerfit{
 \begin{forest}
-sn edges
+sm edges
 [N\feattab{\spr \sliste{  },\\
            \subcat \sliste{  } }
 	[\ibox{1} Det

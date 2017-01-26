@@ -30,7 +30,7 @@
 \tikzset{deparrow/.style={-Latex}}%,blue}}
 
 
-\usepackage{forest}
+\usepackage{forest-v105}
 % does not work
 %\usepackage[external]{forest}\tikzexternalize\usepackage{morewrites}
 
@@ -77,10 +77,10 @@
 % to do: make this style default and change all other figures explicitely as is described here:
 % http://tex.stackexchange.com/questions/167983/getting-rid-of-a-default-where-specification
 \forestset{
-sn edges/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top},
+sm edges/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top},
                  where n children=0{tier=word,delay=with translation}{} %,delay=with translation
                  },
-sn edges without translation/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top},
+sm edges without translation/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top},
                  where n children=0{tier=word}{}
                  },
 word tier/.style={where n children=0{tier=word}{}
@@ -177,10 +177,17 @@ empty nodes/.style={
 
 
 
-
 % Manual page 52
 \forestset{
 nice empty nodes/.style={
 for tree={calign=fixed edge angles},
 delay={where content={}{shape=coordinate,for parent={for children={anchor=north}}}{}}
 }}
+
+
+% forest 2.0
+%% \forestset{
+%%     empty nodes/.style={
+%%     delay={where content={}{shape=coordinate,for siblings={anchor=north}}{}}
+%%     }
+%% }
