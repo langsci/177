@@ -75,7 +75,6 @@ SOURCE=gt.bib \
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
 	xelatex -no-pdf -interaction=nonstopmode $* 
 	xelatex -no-pdf -interaction=nonstopmode $*
-	bin/correct-toappear
 	\rm $*.adx
 	authorindex -i -p $*.aux > $*.adx
 	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
@@ -110,6 +109,7 @@ SOURCE=gt.bib \
 bbl:
 	xelatex -no-pdf -interaction=nonstopmode grammatical-theory
 	bibtex  -min-crossrefs=200 grammatical-theory
+	bin/correct-toappear
 
 #	xelatex $* -no-pdf |egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
 
