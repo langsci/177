@@ -81,6 +81,7 @@ SOURCE=gt.bib \
 	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
+	makeindex -gs index.format -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
 
 

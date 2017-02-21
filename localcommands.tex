@@ -222,3 +222,20 @@ frbox/.style={
 
 %\catcode`(=\active \catcode`)=\active
 %\protected\def({（} \protected\def){）}
+
+
+% This is done in the langscibook class
+%\newindex{sbc}{scx}{scd}{Subject index Chinese}
+
+\makeatletter
+% Subject index in Chinese
+\newcommand{\isc}[1]{%
+  \if@noftnote%
+    \index[sbc]{#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
+}
+\makeatother

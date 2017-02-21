@@ -586,11 +586,15 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\lsSubjectIndexTitle}{Subject index}
 \newcommand{\lsNameIndexTitle}{Name index}
 
+\usepackage{morewrites}
+
 \AtBeginDocument{ % why this?
 \makeindex
 \newindex{lan}{ldx}{lnd}{\lsLanguageIndexTitle}
 % \newindex{aut}{adx}{and}{Name index}
 \newindex{sbj}{sdx}{snd}{\lsSubjectIndexTitle}
+% special addition for separate English and Chinese index
+\newindex{sbc}{scx}{scd}{Subject index Chinese}
 \renewindex{default}{adx}{and}{\lsNameIndexTitle} %biblatex can only deal with the default index
 \newindex{wrd}{wdx}{wnd}{Expression index}
 \newindex{rwrd}{rdx}{rnd}{Reverse expression index}
