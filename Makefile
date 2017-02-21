@@ -110,6 +110,8 @@ SOURCE=gt.bib \
 bbl:
 	xelatex -no-pdf -interaction=nonstopmode grammatical-theory
 	bibtex  -min-crossrefs=200 grammatical-theory
+	xelatex -no-pdf -interaction=nonstopmode grammatical-theory
+	bibtex  -min-crossrefs=200 grammatical-theory
 	bin/correct-toappear
 
 #	xelatex $* -no-pdf |egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
