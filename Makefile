@@ -81,7 +81,7 @@ SOURCE=gt.bib \
 	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
-	makeindex -gs index.format -o $*.scd $*.scx
+	zhmakeindex -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
 
 
@@ -137,6 +137,12 @@ index:
 	makeindex -gs index.format -o grammatical-theory.snd grammatical-theory.sdx
 	xelatex grammatical-theory |egrep -v 'math|PDFDocEncod' |egrep 'Warning|label|aux'
 
+
+
+check-index:
+	xelatex check-gt-chinese
+	zhmakeindex -o check-gt-chinese.scd check-gt-chinese.scx
+	xelatex check-gt-chinese
 
 # mit neu langsci.cls
 # %.pdf: %.tex $(SOURCE)
