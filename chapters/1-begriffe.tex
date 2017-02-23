@@ -4,7 +4,7 @@
 \label{Kapitel-Grundbegriffe}
 
 
-\isc{一致关系 testing, remove me}
+%\isc{一致关系 testing, remove me}
 
 本章旨在探讨两个问题：一是为什么要研究句法（第\ref{sec-wozu-syntax}节），二是为什么说形式化的表述是非常重要的（第\ref{sec-formal}节）。我们将在第\ref{konstituententests}节到第\ref{sec-topo}节的内容中介绍基本概念：第\ref{konstituententests}节讲解将语流切分成一个个小单位的准则。第\ref{Abschnitt-Wortarten}节展示了词汇聚类的规律，其中我将重点介绍动词或形容词的分类标准。第\ref{Abschnitt-Kopf}节介绍中心语的概念，而有关论元和说明语的区别将在第\ref{Abschnitt-Argument-Adjunkt}节中展开。第\ref{Abschnitt-GF}节界定了语法功能。第\ref{Abschnitt-Toplogie}节利用空间位置理论来分析德语这类语言中小句的空间位置。
 %The aim of this chapter is to explain why we actually study syntax
@@ -109,8 +109,7 @@ that Max thinks [that Julius knows [that Otto claims [that Karl suspects [that R
 %these rules are violated. Children acquire\is{acquisition} linguistic rules by generalizing from
 %the input available to them. In doing so, they produce some utterances which they could not
 %have ever heard previously: 
-\isc{动词-助词} 
-\is{verb-particle} 
+\isc{动词-助词}\is{verb-particle} 
 \ea
 \settowidth\jamwidth{（Friederike, 2;6）}
 \gll Ich festhalte die. \\
@@ -122,7 +121,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %Friederike, who was learning German, was at the stage of acquiring the rule for the position of the finite
 %verb (namely, second position). What she did here, however, was to place the whole verb, including a
 %separable particle \emph{fest} `tight', in the second position although the particle should be realized at the %end of the clause (\emph{Ich halte die fest.}).
-如果我们并不希望语言仅仅是由一个个形式意义对儿构成的，那么必然需要将话语中小的意义成分构成复杂话语的意义的过程。句法就是用来揭示词汇组合的方式和话语的结构的。比如说，主谓一致\isc{主谓一致}（subject-verb agreement）\is{agreement}的知识有助于我们解释下面的德语句子：
+如果我们并不希望语言仅仅是由一个个形式意义对儿构成的，那么必然需要将话语中小的意义成分构成复杂话语的意义的过程。句法就是用来揭示词汇组合的方式和话语的结构的。比如说，主谓一致\isc{主谓一致}\is{agreement}的知识有助于我们解释下面的德语句子：
 %If we do not wish to assume that language is merely a list of pairings of form and meaning, then
 %there must be some process whereby the meaning of complex utterances can be obtained from the
 %meanings of the smaller components of those utterances. Syntax reveals something about the way in which %the words involved can be combined, something about the structure of an utterance. For instance,
@@ -164,7 +163,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \section{为什么要形式化？}
 \label{sec-formal}
 
-为什么要对语言进行形式化\isc{形式化|(} （formalization）\is{formalization|(} 的描述呢？我们先来看两条经典的论述：
+为什么要对语言进行形式化\isc{形式化|(}\is{formalization|(} 的描述呢？我们先来看两条经典的论述：
 %The\is{formalization|(} two following quotations give a motivation for the necessity of
 %describing language formally:  
 \begin{quote}
@@ -221,7 +220,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %For example, the words \emph{alle} `all' and \emph{Studenten} `students' form a unit which says something %about who is reading. \emph{während} `during', \emph{dieser} `this' and {\emph{Zeit} `time' also form a unit %which refers to a period of time during which the reading takes place, and \emph{Bücher} `books' says %something about what is  being read. The first unit is itself made up of two parts, namely \emph{alle} `all'
 %and \emph{Studenten} `students'. The unit \emph{während dieser Zeit} `during this time' can also be %divided into two subcomponents: \emph{während} `during' and \emph{dieser Zeit} `this time'. \emph{dieser %Zeit} `this time' is also composed of two parts, just like \emph{alle Studenten} `all students' is. 
 
-在前面的例（\ref{einbettung-dass-Saetze}）中，我们用俄罗斯套娃\isc{俄罗斯套娃}（matryoshkas）\is{matryoshka}来比喻语言中的嵌套现象。这里，我们也可以将（\mex{0}）分成更小的单位，从而组成更大的单位。但是，与俄罗斯套娃的隐喻不同的是，我们不能只将小的单位放在大的单位里，而是我们可以将几个单位组成更大的单位。最好的方法就是把它想象成一套盒子系统：一个大盒子装着整个句子。在这个盒子里，还有四个小盒子，每个盒子分别装着“alle Studenten”（所有的学生），“lesen”（读）， “während dieser Zeit”（在这个时候）和“Bücher”（书）。如图~\vref{Abbildung-Schachteln} 所示。
+在前面的例（\ref{einbettung-dass-Saetze}）中，我们用俄罗斯套娃\isc{俄罗斯套娃}（matryoshkas\is{matryoshka}）来比喻语言中的嵌套现象。这里，我们也可以将（\mex{0}）分成更小的单位，从而组成更大的单位。但是，与俄罗斯套娃的隐喻不同的是，我们不能只将小的单位放在大的单位里，而是我们可以将几个单位组成更大的单位。最好的方法就是把它想象成一套盒子系统：一个大盒子装着整个句子。在这个盒子里，还有四个小盒子，每个盒子分别装着“alle Studenten”（所有的学生），“lesen”（读）， “während dieser Zeit”（在这个时候）和“Bücher”（书）。如图~\vref{Abbildung-Schachteln} 所示。
 %Recall that in connection with (\ref{einbettung-dass-Saetze}) above we talked about the sets of Russian %nesting dolls (\emph{matryoshkas})\is{matryoshka}. Here, too, when we break down (\mex{0}) we have %smaller units which are
 %components of bigger units. However, in contrast to the Russian dolls, we do not just have one
 %smaller unit contained in a bigger one but rather, we can have several units which are grouped
@@ -249,7 +248,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \end{figure}%
 
 \noindent
-在下一节，我会介绍几种不同的测验方法来判断出哪些词与其他词相比是“在一起的”。每当我说到一个词语序列的时候，通常是指一个任意的线性词语序列，它并不必须具有句法或语义上的联系，比如说例（\mex{0}）中“students read during”（学生们读在）。而由一组词组成的结构单位通常叫做短语（phrase）\is{phrase}。短语由词构成，如“this time”（这个时候），或者由词与短语组成，如“during this time”（在这个时候）。短语内的部分和短语本身叫做构成成分\isc{构成成分}（constitutnes）\is{constituent}。所以说，在图~\ref{Abbildung-Schachteln}中，盒子中的所有元素都是句子的构成成分。
+在下一节，我会介绍几种不同的测验方法来判断出哪些词与其他词相比是“在一起的”。每当我说到一个词语序列\isc{词语序列}（word sequence\is{word sequence}）的时候，通常是指一个任意的线性词语序列，它并不必须具有句法或语义上的联系，比如说例（\mex{0}）中“students read during”（学生们读在）。而由一组词组成的结构单位通常叫做短语\isc{短语}（phrase\is{phrase}）。短语由词构成，如“this time”（这个时候），或者由词与短语组成，如“during this time”（在这个时候）。短语内的部分和短语本身叫做构成成分\isc{构成成分}（constitutnes\is{constituent}）。所以说，在图~\ref{Abbildung-Schachteln}中，盒子中的所有元素都是句子的构成成分。
 %In the following section, I will introduce various tests which can be used to show how certain
 %words seem to ``belong together'' more than others. When I speak of a \emph{word sequence}\is{word %sequence}, I generally mean an arbitrary linear sequence of words which do not necessarily need to have %any syntactic or semantic relationship, \eg
 %\emph{Studenten lesen während} `students read during' in (\mex{0}). A sequence of words which form a
@@ -314,7 +313,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \glt `他试着把这本书给这位女士。'
 \zl
 %
-这类测验叫做替换测试（substitution test）。\isc{替换测试}\is{substitution test}
+这类测验叫做替换测试\isc{替换测试}（substitution test\is{substitution test}）。
 %This test is referred to as the \emph{substitution test}\is{substitution test}.
 
 \subsubsection{代词化}
@@ -434,8 +433,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \gll Er hat noch nicht versucht, [das Buch zu lesen].\\
      他 AUX \particle{} 不 试图  \spacebr{}DET 书 AUX 读\\
 \zl
-\isc{变换测试|)}\isc{移位测试|)}
-\is{permutation test|)}\is{movement test|)}
+\isc{变换测试|)}\isc{移位测试|)}\is{permutation test|)}\is{movement test|)}
 
 \subsubsection{前置} 
 %\subsubsection{Fronting} 
@@ -491,8 +489,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \glt `他试着读这本书，然后让它悄悄地消失。'
 \z
 %\toaskstefan{What does it mean of 'make it quietly disappear?' To make the book vanish?}
-\isc{并列测试|)}
-\is{coordination!-test|)}
+\isc{并列测试|)}\is{coordination!-test|)}
 %\ea
 %He had hoped [to visit New York] and [to see the Statue of Liberty].
 %\z
@@ -508,8 +505,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 
 \subsubsection{虚位成分}
 %\subsubsection{Expletives}
-\isc{虚位成分|(}
-\is{pronoun!expletive|(}
+\isc{虚位成分|(}\is{pronoun!expletive|(}
 
 在代词中有一类特殊的词，叫做虚位成分（expletives），它们并不指称人或者事物，即它们是无指的\isc{指称}\is{reference}。例（\mex{1}）中的es（它）就是一个例子。
 %There is a particular class of pronouns -- so-called \emph{expletives} -- which do not denote
@@ -693,10 +689,9 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \gll {}[Keine Einigung über den Abbau der Agrarsubventionen] erreichten Schröder und Chirac.\\
      \spacebr{}不 一致 关于 DET 减少 DET 农业.补贴  达成 Schröder 和 Chirac\\
 \z
-在理论文献中，人们普遍认为“keine Einigung über den Abbau der Agrarsubventionen”构成了一个成分，并且它可以在一定的情况下进行“分裂”\isc{NP-分裂}。
+在理论文献中，人们普遍认为“keine Einigung über den Abbau der Agrarsubventionen”构成了一个成分，并且它可以在一定的情况下进行“分裂”\isc{NP-分裂}\is{NP"=split}。
 %In the theoretical literature, it is assumed that \emph{keine Einigung über den Abbau
-  %der Agrarsubventionen} forms a constituent which can be ``split up'' under certain circumstances
-  \is{NP"=split}.
+  %der Agrarsubventionen} forms a constituent which can be ``split up'' under certain circumstances\is{NP"=split}.
 \pagebreak
 
 \noindent
@@ -752,7 +747,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %One may simply wish to treat the examples in (\ref{bsp-mehr-vf}) as exceptions. This approach would,
 %however, not be justified, as I have shown in an extensive empirical study \citep{Mueller2003b}.
 
-如果我们根据是否能通过前置测试而将durch die Stadt（通过这个城市）看作是一个成分，那么我们必须承认例（\mex{1}）中的durch die Stadt（通过这个城市）也是一个成分。这么做的结果是，我们会低估组成成分这个术语，因为组成成分测试的目的就是为了找到词串间的语义与语法联系。\footnote{这些数据可以这样来解释，即假设一个空动词的中心语位于定式动词的前面，继而保证了在定式动词前只有一个成分位于首位的要求。\citep{Mueller2005d,MuellerGS}无论如何，这类数据对于组成成分测试来说都是有问题的，因为这些测试是专门用来区分例（\mex{1}）中的trocken（变干），durch die Stadt（通过这个城市），以及mit Sprachgeschichte（与语言历史）这类字符串是否是组成成分的。}
+如果我们根据是否能通过前置测试而将durch die Stadt（通过这个城市）看作是一个成分，那么我们必须承认例（\mex{1}）中的durch die Stadt（通过这个城市）也是一个成分。这么做的结果是，我们会低估组成成分这个术语，因为组成成分测试的目的就是为了找到词串间的语义与语法联系。\footnote{这些数据可以这样来解释，即假设一个空动词的中心语\isc{空动词}\isc{空成分}\is{trace!verb}\is{empty element}位于定式动词的前面，继而保证了在定式动词前只有一个成分位于首位的要求。\citep{Mueller2005d,MuellerGS}无论如何，这类数据对于组成成分测试来说都是有问题的，因为这些测试是专门用来区分例（\mex{1}）中的trocken（变干），durch die Stadt（通过这个城市），以及mit Sprachgeschichte（与语言历史）这类字符串是否是组成成分的。}
 %If one were to classify \emph{trocken durch die Stadt} as a constituent due to it passing the fronting test, %then one would have to assume that \emph{trocken durch die Stadt} in (\mex{1}) is also a constituent. In %doing so, we would devalue the term \emph{constituent} as the whole point of constituent tests is to find %out which word strings have some semantic or syntactic relationship.\footnote{
  % These data can be explained by assuming a silent verbal head\is{trace!verb}\is{empty element} %preceding the finite verb and thereby ensuring  that there is in fact just one constituent in initial position in %front of the finite verb \citep{Mueller2005d,MuellerGS}. Nevertheless, this kind of data are problematic for %constituent tests since these tests have been specifically designed to tease apart
  % whether strings such as \emph{trocken} and \emph{durch die Stadt} or \emph{wenig} and \emph{mit %Sprachgeschichte} in (\mex{1}) form a constituent.%}
@@ -795,10 +790,9 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
      \refl{} AUX Karl 不 恢复\\
 }
 \zl
-由此可见，前置并不是成分测试的必要条件。这样的话，一个给定词串能否前置对于判断组成成分的性质来说既不是充分也不是必要的条件了。
-%It follows from this that fronting is not a necessary criterion for constituent status. Therefore, the possibility %for a given word string to be fronted is neither a necessary nor sufficient condition for constituent status.
-\isc{前置|)}
-\is{fronting|)}
+由此可见，前置并不是成分测试的必要条件。这样的话，一个给定词串能否前置对于判断组成成分的性质来说既不是充分也不是必要的条件了。\isc{前置|)}\is{fronting|)}
+%It follows from this that fronting is not a necessary criterion for constituent status. Therefore, the possibility %for a given word string to be fronted is neither a necessary nor sufficient condition for constituent status.\is{fronting|)}
+
 
 \subsubsection{并列}
 %\subsubsection{Coordination}
@@ -853,13 +847,11 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \gll Deshalb kaufte der Mann einen Esel und kaufte die Frau ein Pferd.\\
 	所以 买 DET 男人 一 驴子 和 买 DET 女人 一 马\\
 \z
-这就意味着，即使der Mann einen Esel（这个男人一头驴）和die Frau ein Pferd（这个女人一匹马）看上去是并列结构，实际上并列的成分是kauft der Mann einen Esel（买这个男人一头驴）和(kauft) die Frau ein Pferd。（买这个女人一匹马）
+这就意味着，即使der Mann einen Esel（这个男人一头驴）和die Frau ein Pferd（这个女人一匹马）看上去是并列结构，实际上并列的成分是kauft der Mann einen Esel（买这个男人一头驴）和(kauft) die Frau ein Pferd（买）这个女人一匹马。\isc{并列|)}\is{coordination|)}
 %This means that although it seems as though \emph{der Mann einen Esel} `the man a donkey' and
 %\emph{die Frau ein Pferd} `the woman a horse' are coordinated, it is actually
 %\emph{kauft der Mann einen Esel} `buys the man a donkey' and \emph{(kauft) die Frau ein Pferd} `buys
-%the woman a horse' which are conjoined.
-\isc{并列|)}
-\is{coordination|)}
+%the woman a horse' which are conjoined.\is{coordination|)}
 
 通过上面的讨论，我们得到的结论是：即使一个给定的词语序列通过了某种成分测试法，这并不意味着我们能够自动从这个测试中推导出它是一个组成成分，也就是说，上面的测试并不是判断组成成分性质的充分条件。
 %We should take the following from the previous discussion: even when a given word sequence passes %certain constituent tests,
@@ -901,7 +893,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %section, I will discuss various word classes/""parts of speech and in the following sections I will
 %go into further detail about the various properties which characterize a given word class.
 
-词类中最为重要的有动词（verb）、名词（noun）\isc{名词}\is{noun}、形容词（adjective）\isc{形容词}\is{adjective}、介词（preposition）\isc{介词}\is{preposition}和副词（adverb）\isc{副词}\is{adverb}。很多年前，研究德语的学者通常会区分动作类词（action words），描述类词（describing words）和命名类词（naming words）（参看第~\ref{sec-tesniere-pos} 节有关\tes's的范畴系统）。但是这些说法都被证明是有问题的，如下所示：
+词类中最为重要的有动词（verb）、名词\isc{名词}（noun\is{noun}）、形容词\isc{形容词}（adjective\is{adjective}）、介词\isc{介词}（preposition\is{preposition}）和副词\isc{副词}（adverb\is{adverb}）。很多年前，研究德语的学者通常会区分动作类词（action words），描述类词（describing words）和命名类词（naming words）（参看第~\ref{sec-tesniere-pos} 节有关\tes's的范畴系统）。但是这些说法都被证明是有问题的，如下所示：
 %The most important parts of speech are \emph{verbs}, \emph{nouns}\is{noun}, \emph{adjectives}%\is{adjective}, \emph{prepositions}\is{preposition} and
 %\emph{adverbs}\is{adverb}. In earlier decades, it was
 %common among researchers working on German (see also Section~\ref{sec-tesniere-pos} on \tes's %category system) to
@@ -964,11 +956,9 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \gll der lachende Mann\\
 	 DET 笑 男人\\
 \z
-不过，如果我们将属性和行为作为分类的标准，那么lachend（笑）在技术层面上来说应该属于动作类词。
+不过，如果我们将属性和行为作为分类的标准，那么lachend（笑）在技术层面上来说应该属于动作类词。\isc{形容词|)}\is{adjective|)}
 %If, however, we are using properties and actions as our criteria for classification, \emph{lachend}
-%`laughing' should technically be an action word.
-\isc{形容词|)}
-\is{adjective|)}
+%`laughing' should technically be an action word.\is{adjective|)}
 
 与语义标准\isc{屈折变化|(}\is{inflection|(} 不同的是，决定词类的标准通常是形式上的标准。词的不同形式也要纳入考察的范围。所以，举例来说lacht（笑）在例（\mex{1}）中有如下几种形式。
 %Rather than\is{inflection|(} semantic criteria, it is usually formal criteria which are used to determine word %classes. The various forms a word can take
@@ -1122,10 +1112,8 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \zl
 
 \noindent
-上述例子中，lila（紫色）可以归入形容词。这是因为他们与其他形容词处于同样的位置上，并且在屈折变化上与形容词的变化是一致的。
-%In both cases, \emph{lila} is classed an adjective. We can motivate this classification by appealing to the %fact that both words occur at the same positions as other adjectives that clearly behave like adjectives %with regard to inflection.
-\isc{屈折变化|)}
-\is{inflection|)}
+上述例子中，lila（紫色）可以归入形容词。这是因为他们与其他形容词处于同样的位置上，并且在屈折变化上与形容词的变化是一致的。\isc{屈折变化|)}\is{inflection|)}
+%In both cases, \emph{lila} is classed an adjective. We can motivate this classification by appealing to the %fact that both words occur at the same positions as other adjectives that clearly behave like adjectives %with regard to inflection.\is{inflection|)}
 
 迄今我们所讨论的词类与屈折变化属性的概念是不同的。对于那些没有屈折变化的词而言，我们需要用到额外的标准。比如说，我们可以通过他们出现的句法环境来判别词类（正如我们对上面有屈折变化的形容词所做的那样）。我们可以区分出介词\isc{介词}\is{preposition}、副词\isc{副词}\is{adverbs}、连词\isc{连词}\is{conjunction}、感叹词\isc{感叹词}\is{interjection}，有时也可以区分出助词\isc{助词}\is{particle}。介词是指那些与名词共现，并决定这些名词的格属性的一类词：
 %The parts of speech discussed thus far can all be differentiated in terms of their inflectional properties. %For words which do not inflect, we have to use additional criteria. For example, we can classify words by %the syntactic context in which they occur (as we did for the non-inflecting adjectives above). We can %identify prepositions\is{preposition}, adverbs\is{adverbs}, conjunctions\is{conjunction}, interjections
@@ -1221,7 +1209,7 @@ word tier, for tree={fit=rectangle}
 %%Ich komme auf die Übersetzung dieses Baumes zurück!
 
 
-如果一个词会随着时态\isc{时态}\is{tense}发生变化，那么它就是动词\isc{动词}\is{verb}。如果它有不同的变化式，那么就需要看它是否有固定的性。如果是这样的，那么就需要知道我们是不是在分析一个名词\isc{名词}\is{noun}。具有不同性的词需要检查他们是否有比较级\isc{比较级}\is{comparative}。如果是，那它可能是形容词\isc{形容词}\is{adjective}。其他的词就归入剩余的类别中，杜登语法将之称为代词或冠词。对于没有屈折变化的元素来说，这个剩余类别中的元素可以根据他们的句法行为来进一步划分。杜登语法对代词和冠词进行了区分。基于这个分类标准，代词是那些可以替代诸如der Mann（男人）的名词短语的词。而冠词通常与名词相组合。在拉丁语法中，代词包括上面所说的代词和冠词，因为它们带不带名词在形式上是一样的。在过去的几百年间，形式发生了分裂变化，在当代罗曼语族的语言中需要区分那些可以替代名词短语的词与必须与名词短语共现的词。后一种类别的词也叫做限定词（determiner）\isc{限定词}\is{determiner}。
+如果一个词会随着时态\isc{时态}\is{tense}发生变化，那么它就是动词\isc{动词}\is{verb}。如果它有不同的变化式，那么就需要看它是否有固定的性。如果是这样的，那么就需要知道我们是不是在分析一个名词\isc{名词}\is{noun}。具有不同性的词需要检查他们是否有比较级\isc{比较级}\is{comparative}。如果是，那它可能是形容词\isc{形容词}\is{adjective}。其他的词就归入剩余的类别中，杜登语法将之称为代词或冠词。对于没有屈折变化的元素来说，这个剩余类别中的元素可以根据他们的句法行为来进一步划分。杜登语法对代词和冠词进行了区分。基于这个分类标准，代词是那些可以替代诸如der Mann（男人）的名词短语的词。而冠词通常与名词相组合。在拉丁语法中，代词包括上面所说的代词和冠词，因为它们带不带名词在形式上是一样的。在过去的几百年间，形式发生了分裂变化，在当代罗曼语族的语言中需要区分那些可以替代名词短语的词与必须与名词短语共现的词。后一种类别的词也叫做限定词\isc{限定词}（determiner\is{determiner}）。
 %If a word inflects for tense\is{tense}, then it is a verb\is{verb}. If it displays different case
 %forms\is{case}, then one has to check if it has a fixed gender\is{gender}. If this is indeed the
 %case, then we know that we are dealing with a noun\is{noun}. Words with variable gender have to be
@@ -1236,7 +1224,7 @@ word tier, for tree={fit=rectangle}
 %are identical. Over the past centuries, the forms have undergone split development to the point
 %where it is now common in contemporary Romance languages to distinguish between words which %replace a noun phrase and those which must occur with a noun. Elements which belong to the latter class %are also referred to as \emph{determiners}\is{determiner}.
 
-如果我们按照图~\ref{Abbildung-Wortarten}的决策树来分析代词（pronoun）\isc{代词|(}\is{pronoun|(}的话，人称代词ich（我），du（你），er（他），sie（她），es（它），wir（我们），ihr（你们）和sie（他们）都可以跟属格代词mein（我的），dein（你的），sein（他/它的），ihr（她的/他们的）和unser（我们的）归为一类。相应的反身代词mich（我自己），dich（你自己），sich（他/她/它/他们自己），uns（我们自己），euch（你们自己）和交互代词einander（互相）在德语中是特殊的一类，因为他们没有不同的性的格式。交互代词没有格的形态变化。我们用交互代词替代属格、与格和宾格代词，无法看到einander（交互）的格的变化形式，因为他们的格式是一样的：
+如果我们按照图~\ref{Abbildung-Wortarten}的决策树来分析代词\isc{代词|(}（pronoun\is{pronoun|(}）的话，人称代词ich（我），du（你），er（他），sie（她），es（它），wir（我们），ihr（你们）和sie（他们）都可以跟属格代词mein（我的），dein（你的），sein（他/它的），ihr（她的/他们的）和unser（我们的）归为一类。相应的反身代词mich（我自己），dich（你自己），sich（他/她/它/他们自己），uns（我们自己），euch（你们自己）和交互代词einander（互相）在德语中是特殊的一类，因为他们没有不同的性的格式。交互代词没有格的形态变化。我们用交互代词替代属格、与格和宾格代词，无法看到einander（交互）的格的变化形式，因为他们的格式是一样的：
 %If\is{pronoun|(} we follow the decision tree in Figure~\ref{Abbildung-Wortarten}, the personal
 %pronouns \emph{ich} `I', \emph{du} `you', \emph{er} `he', \emph{sie} `her', \emph{es} `it',
 %\emph{wir} `we', \emph{ihr} `you', and \emph{sie} `they', for example, would be grouped together
@@ -1296,7 +1284,7 @@ word tier, for tree={fit=rectangle}
 \glt `我恰好亲眼看见了荒原狼第一次闯进了我们的房子，并在我姑姑那里租了一间房间。'
 \zl
 
-根据上面的决策树，如果他们没有屈折变化，则不能归入代词。\citet[\page 277]{Eisenberg2004a} 指出wo是一种没有屈折变化的关系代词，并且指明这种描述与名词性的用法是不同的，因为名词是有屈折变化的元素。由此，他用关系副词（relative adverb）\isc{关系副词}\is{adverb!relative}来指称他们（参见\citew[\S 856, \S 857]{Duden2005-Authors}）。
+根据上面的决策树，如果他们没有屈折变化，则不能归入代词。\citet[\page 277]{Eisenberg2004a} 指出wo是一种没有屈折变化的关系代词，并且指明这种描述与名词性的用法是不同的，因为名词是有屈折变化的元素。由此，他用关系副词\isc{关系副词}（relative adverb\is{adverb!relative}）来指称他们（参见\citew[\S 856, \S 857]{Duden2005-Authors}）。
 %If they are uninflected, then they cannot belong to the class of pronouns according to the decision tree %above. \citet[\page 277]{Eisenberg2004a} notes that \emph{wo} `where' is a kind of \emph{uninflected %relative pronoun} (he uses quotation marks) and remarks that this term runs contrary to the exclusive use %of the term pronoun for nominal, that is, inflected, elements. He therefore uses the term \emph{relative %adverb}\is{adverb!relative} for them (see also \citew[\S 856, \S 857]{Duden2005-Authors}).
 
 同样也有与名词相联系的关系词dessen（他们）和wessen（他们）的用法。
@@ -1370,7 +1358,7 @@ geliebte （被爱） 和schlafende （睡着的）是lieben（爱）和schlafen
 %of grammar and assume that processes in which a word class is changed result in a new lexeme being %created. Consequently, \emph{schlafende} `sleeping' does not belong to the lexeme
 %\emph{schlafen} `to sleep', but is a form of the lexeme \emph{schlafend}. This lexeme belongs to the %word class `adjective' and inflects accordingly.   
 
-正如我们所看到到，至今仍然难以区分屈折（inflection）与派生（derivation）\isc{派生}\is{derivation} （产生新的词位）。\citet*[\page263--264]{SWB2003a} 认为，英语\il{英语}\il{English}中的现在分词与过去分词属于派生形式，而在法语\il{法语}\il{French}中则随着性数而发生屈折变化。
+正如我们所看到到，至今仍然难以区分屈折（inflection）与派生\isc{派生}（derivation\is{derivation} ）（产生新的词位）。\citet*[\page263--264]{SWB2003a} 认为，英语\il{英语}\il{English}中的现在分词与过去分词属于派生形式，而在法语\il{法语}\il{French}中则随着性数而发生屈折变化。
 %As we have seen, it is still controversial as to where to draw the line between inflection and derivation
 %\is{derivation} (creation of a new lexeme).
 %\citet*[\page263--264]{SWB2003a} view the formation of the present participle (\emph{standing}) and the %past participle (\emph{eaten}) in English\il{English}
@@ -1480,7 +1468,7 @@ geliebte （被爱） 和schlafende （睡着的）是lieben（爱）和schlafen
 %\citealp[Section~6.6.1]{MuellerLehrbuch1}; \citealp{Hudson2004a}; \citealp{Bruening2009a}).
 % Dalrymple textbook
 
-中心语与其他成分的组合叫做中心语的投射（projection）\isc{投射}\is{projection}。保证短语合法性所需的所有要素的投射叫做最大投射。一个句子就是定式动词的最大投射。
+中心语与其他成分的组合叫做中心语的投射\isc{投射}（projection\is{projection}）。保证短语合法性所需的所有要素的投射叫做最大投射。一个句子就是定式动词的最大投射。
 %The combination of a head with another constituent is called a \emph{projection
 %of the head}\is{projection}. A projection which contains all the necessary parts to create a well-formed phrase of that type
 %is a \emph{maximal projection}\is{projection!maximal}. A sentence is the maximal projection of a finite verb.
@@ -1584,10 +1572,9 @@ NP, acc, 3, sg\\[2mm]
 \caption{\label{Abbildung-ausfuehrlich-beschriftete-Schachteln}在有标记盒子中的词与词串}
 \end{figure}%
 
-那些决定中心语能带什么成分的特征叫做中心语特征（head features）\isc{中心语特征}\is{head feature}。这些特征被认为是由中心语投射（projected）\isc{中心语投射}\is{projection!of features} 出来的。
+那些决定中心语能带什么成分的特征叫做中心语特征\isc{中心语特征}（head features\is{head feature}）。这些特征被认为是由中心语投射\isc{中心语投射}（projected\is{projection!of features}） 出来的。\isc{中心语|)}\is{head|)}
 %The features of a head which are relevant for determining in which contexts a phrase can occur are called \emph{head features}
-%\is{head feature}. The features are said to be \emph{projected}\is{projection!of features} by the head. 
-\is{head|)}
+%\is{head feature}. The features are said to be \emph{projected}\is{projection!of features} by the head. \is{head|)}
 
 
 \section{论元成分与说明语}
@@ -1606,13 +1593,13 @@ NP, acc, 3, sg\\[2mm]
 \ex Peter帮助了Maria。
 \ex \relation{help}(\relation{peter}, \relation{maria})
 \zl
-（\mex{0}b）中的逻辑表达式与例（\mex{0}a）所表示的十分相似；但是，它没有语序和屈折变化的信息。Peter和Maria是动词（帮助）的句法论元，而它们各自的意义（\relation{Peter} 和 \relation{Maria}）是由（帮助）所表示的逻辑关系的论元。我们也可以说help（帮助）指派给它的论元的语义角色\isc{语义角色}\is{semantic role}。语义角色包括施事\isc{施事}\is{agent}（发出动作的人），受事\isc{受事}\is{patient}（受到影响的人或物），受益者\isc{受益者}\is{experiencer}（得到东西或经验的人），经事\isc{经事}\is{experiencer}（经历某种心理状态的人）。help（帮助）的主语是事实，直接宾语是受益者。充当语义角色的论元也叫做行动元（actant）\isc{行动元}\is{actant}.。这个术语用来指称无生的物体。
+（\mex{0}b）中的逻辑表达式与例（\mex{0}a）所表示的十分相似；但是，它没有语序和屈折变化的信息。Peter和Maria是动词（帮助）的句法论元，而它们各自的意义（\relation{Peter} 和 \relation{Maria}）是由（帮助）所表示的逻辑关系的论元。我们也可以说help（帮助）指派给它的论元的语义角色\isc{语义角色}\is{semantic role}。语义角色包括施事\isc{施事}\is{agent}（发出动作的人），受事\isc{受事}\is{patient}（受到影响的人或物），受益者\isc{受益者}\is{experiencer}（得到东西或经验的人），经事\isc{经事}\is{experiencer}（经历某种心理状态的人）。help（帮助）的主语是事实，直接宾语是受益者。充当语义角色的论元也叫做行动元\isc{行动元}（actant\is{actant}）。这个术语用来指称无生的物体。
 %The logical representation of (\mex{0}b) resembles what is expressed in (\mex{0}a); however, it abstracts away from
 %constituent order and inflection. \emph{Peter} and \emph{Maria} are syntactic arguments of the verb \emph{help} and their
 %respective meanings (\relation{Peter} and \relation{Maria}) are arguments of the logical relation expressed by \relation{help}.
 %One could also say that \emph{help} assigns semantic roles\is{semantic role} to its arguments. Semantic roles include agent\%is{agent} (the person carrying out an action), patient\is{patient} (the affected person or thing), beneficiary (the person who %receives something) and experiencer\is{experiencer} (the person experiencing a psychological state). The subject of \emph{help} %is an agent and the direct object is  a beneficiary. Arguments which fulfil a semantic role are also called \emph{actants}\is{actant}. %This term is also used for inanimate objects.
 
-中心语和论元的这种关系叫做选择（selection）\isc{选择}\is{selection}和价（valence）\isc{价|(}\is{valence|(}。价这个术语是从化学借来的。原子与原子组合成分子具有不同程度的稳定性。电子层的排列方式对这种稳定性起到了重要的作用。如果一个原子与其他原子相组合，这样它的电子层就被占满了，那么这就样就可以得到一个稳定的连接。价告诉我们要构成一个元素需要多少个氢原子。在构成水（H$_2$O）的时候，氧原子是二价。我们可以把元素按照价进行分类。按照Mendeleev的方法，带有一个特定价的元素被安排在元素周期表的同一个栏中。
+中心语和论元的这种关系叫做选择\isc{选择}（selection\is{selection}）和价\isc{价|(}（valence\is{valence|(}）。价这个术语是从化学借来的。原子与原子组合成分子具有不同程度的稳定性。电子层的排列方式对这种稳定性起到了重要的作用。如果一个原子与其他原子相组合，这样它的电子层就被占满了，那么这就样就可以得到一个稳定的连接。价告诉我们要构成一个元素需要多少个氢原子。在构成水（H$_2$O）的时候，氧原子是二价。我们可以把元素按照价进行分类。按照Mendeleev的方法，带有一个特定价的元素被安排在元素周期表的同一个栏中。
 %This kind of relation between a head and its arguments is covered by the terms
 %\emph{selection}\is{selection} and \emph{valence}\is{valence|(}.  Valence is a term borrowed from
 %chemistry. Atoms can combine with other atoms to form molecules with varying levels of
@@ -1644,7 +1631,7 @@ NP, acc, 3, sg\\[2mm]
 \caption{\label{abb-chemie-valenz}氢原子和氧原子的组合与动词和其论元的组合}
 \end{figure}%
 
-我们用（\mex{0}）来解释逻辑价。不过，逻辑价有时与句法价不同。对于动词rain（下雨）来说，它需要一个虚指代词（expletive pronoun）\isc{虚指代词}\is{pronoun!expletive}作为论元。德语中的自反身动词\isc{自反身代词}\is{verb!inherent reflexives}也是一样的，如sich erholen（复元）。
+我们用（\mex{0}）来解释逻辑价。不过，逻辑价有时与句法价不同。对于动词rain（下雨）来说，它需要一个虚指代词\isc{虚指代词}（expletive pronoun\is{pronoun!expletive}）作为论元。德语中的自反身动词\isc{自反身代词}\is{verb!inherent reflexives}也是一样的，如sich erholen（复元）。
 %We used (\mex{0}) to explain logical valence. Logical valence can, however, sometimes differ from syntactic
 %valence. This is the case with verbs like \emph{rain}, which require an expletive pronoun\is{pronoun!expletive} %as an argument.  Inherently reflexive verbs\is{verb!inherent reflexives} such as \emph{sich erholen} `to recover' %in German are another example. %of this.
 %[Q:Inherently reflexive verbs]
@@ -1693,7 +1680,7 @@ John深深地爱着Mary.
       DET  男人 CONJ Mary  爱\\
 \glt `Mary爱着的那个男人'       
 \zl
-说明语（adjunct）\is{adjunct} 具有如下的句法和语义属性：
+说明语\isc{说明语}\is{adjunct}具有如下的句法和语义属性：
 %Adjuncts\is{adjunct} have the following syntactic/semantic properties:
 \eal
 \label{adj-kriterien}
@@ -1760,7 +1747,7 @@ Tony正在吃（比萨饼）。
 	 他 帮助 DET.\gen{} 受害人.\gen{}\\
 }
 \zl
-动词管辖（governs）\isc{管辖}\is{government}论元的格\isc{格}\is{case}属性。
+动词管辖\isc{管辖}（governs\is{government}）论元的格\isc{格}\is{case}属性。
 %The verb \emph{governs}\is{government} the case\is{case} of its arguments.
  介词短语中的介词和名词短语的格都由动词决定的：\footnote{相关例子参看 \citew[\page 78]{Eisenberg94a}.
 }
@@ -1888,7 +1875,7 @@ Tony正在吃（比萨饼）。
 %% See \citew{GA2001a} for more on modifiers which are obligatory in certain contexts due to pragmatic\is{pragmatics} reasons.%
 %}
 %}
-动词选择表示地点信息的短语，但是并没有对其有任何句法上的限制。这种地点限制很像我们前面讲的说明语通过语义进行限制的方式。如果我只考虑中心语和说明语组合的语义层面，那么我也会将附加语看作是修饰语\footnote{参看第~\ref{sec-Adverbiale} 节中更多有关状语\is{adverbial}的句法功能的内容。状语这个术语通常指与动词相关的成分。而修饰语是一个更为普遍的术语，通常还包括定语。}。
+动词选择表示地点信息的短语，但是并没有对其有任何句法上的限制。这种地点限制很像我们前面讲的说明语通过语义进行限制的方式。如果我只考虑中心语和说明语组合的语义层面，那么我也会将附加语看作是修饰语\isc{修饰语}（modifier\is{modifier}）\footnote{参看第~\ref{sec-Adverbiale} 节中更多有关状语\isc{状语}\is{adverbial}的句法功能的内容。状语这个术语通常指与动词相关的成分。而修饰语是一个更为普遍的术语，通常还包括定语。}。
 %The verb selects a phrase with information about location, but does not place any syntactic restrictions on its %type. This specification of location behaves semantically like the other adjuncts we have seen previously. If I %just consider the semantic aspects of the combination of a head and adjunct, then I also refer to the adjunct as %a \emph{modifier}.\is{modifier}\footnote{  See Section~\ref{sec-Adverbiale} for more on the grammatical %function of adverbials\is{adverbial}. The term adverbial is normally used  in conjunction with verbs. 
 %\emph{modifier} is a more general term, which normally includes attributive adjectives.
 %}
@@ -1898,7 +1885,7 @@ Tony正在吃（比萨饼）。
 综上所述，我们可以说那些需要与中心语共现的句法成分是论元。并且，那些能够充当中心语的语义角色的句法成分也是论元。然而，这两类论元有时是可选的。
 %In conclusion, we can say that constituents that are required to occur with a certain head are arguments of that %head. Furthermore, constituents which fulfil a semantic role with regard to the head are also arguments. These  %kinds of arguments can, however, sometimes be optional.
 
-论元通常可以划分为主语\isc{主语}\is{subject}和补足语\isc{补足语}\is{complement}。\footnote{有些学派认为补足语包括主语，即补足语的概念等同于论元（参看\citealp[\page 342]{Gross2003a}）。有些学者将变位动词的主语看作是补足语（\citealp{Pollard90a-Eng}; \citealp[\page 376]{Eisenberg94b}）} 不是所有的中心语都需要主语（参看see \citealp[Section~3.2]{MuellerLehrbuch1}）。由此，中心语所带论元的数量可以与中心语所带补足语的数量具有相关性。
+论元通常可以划分为主语\isc{主语}\is{subject}和补足语\isc{补足语}\is{complement}。\footnote{有些学派认为补足语包括主语，即补足语的概念等同于论元（参看\citealp[\page 342]{Gross2003a}）。有些学者将变位动词的主语看作是补足语（\citealp{Pollard90a-Eng}; \citealp[\page 376]{Eisenberg94b}）} 不是所有的中心语都需要主语（参看see \citealp[Section~3.2]{MuellerLehrbuch1}）。由此，中心语所带论元的数量可以与中心语所带补足语的数量具有相关性。\isc{论元|)}\isc{说明语|)}\isc{价|)}\is{argument|)}\is{adjunct|)}\is{valence|)}
 %Arguments are normally divided into subjects\is{subject} and complements\is{complement}.\footnote{
   %In some schools the term complement is understood to include the subject, that is, the term
   %complement is equivalent to the term argument (see for instance \citealp[\page
@@ -1906,9 +1893,8 @@ Tony正在吃（比萨饼）。
   %complements (\citealp{Pollard90a-Eng}; \citealp[\page 376]{Eisenberg94b}).
 %} Not all heads
 %require a subject (see \citealp[Section~3.2]{MuellerLehrbuch1}). The number of arguments of a head can %therefore
-%also correspond to the number of complements of a head.
-\isc{论元|)}\isc{说明语|)}\isc{价|)}
-\is{argument|)}\is{adjunct|)}\is{valence|)}
+%also correspond to the number of complements of a head.\is{argument|)}\is{adjunct|)}\is{valence|)}
+
 
 \largerpage
 \section{语法功能}
@@ -1919,7 +1905,7 @@ Tony正在吃（比萨饼）。
 
 \subsection{主语}
 \label{Abschnitt-Subjekt}
-尽管我认为读者对主语（subject）\isc{主语|(}\is{subject|(} 已经有了清晰的认识，但是给主语下一个跨语言的定义绝不是一件小事。对于德语来说，\citet{Reis82} 提出下面的句法属性作为对主语对界定：
+尽管我认为读者对主语\isc{主语|(}\is{subject|(} 已经有了清晰的认识，但是给主语下一个跨语言的定义绝不是一件小事。对于德语来说，\citet{Reis82} 提出下面的句法属性作为对主语对界定：
 %Although\is{subject|(} I assume that the reader has a clear intuition about what a subject is, it is by no means a %trivial matter to arrive at a definition of the word \emph{subject} which can be used cross"=linguistically.
 %\LATER{\citew{Keenan76b-u}} For German, \citet{Reis82} suggested the following syntactic properties as %definitional for subjects:
 \begin{itemize}
@@ -2124,11 +2110,9 @@ Tony正在吃（比萨饼）。
 %% We have seen that, for German, we can equate subjects with non-predicative nominatives. As was shown in the discussion of the Icelandic
 %% data, this is not appropriate for all languages.
 
-需要指出的是，对于小句论元能否做主语这个问题上有不同的看法。最近发表的文献表明，在词汇功能语法中仍有相当多的讨论（参考第~\ref{Kapitel-LFG}章）（ \citep*{DL2000a-u,Berman2003a-u,Berman2007a-u,AMM2005a-u,Forst2006a-u}. ）。
+需要指出的是，对于小句论元能否做主语这个问题上有不同的看法。最近发表的文献表明，在词汇功能语法中仍有相当多的讨论（参考第~\ref{Kapitel-LFG}章）（ \citep*{DL2000a-u,Berman2003a-u,Berman2007a-u,AMM2005a-u,Forst2006a-u}. ）。\isc{主语|)}\is{subject|)}  
 %It should be noted that there are different opinions on the question of whether clausal arguments should be %treated as subjects or not. As recent publications show, there is still some discussion in Lexical Function
-%Grammar\indexlfg (see Chapter~\ref{Kapitel-LFG}) \citep*{DL2000a-u,Berman2003a-u,Berman2007a-%u,AMM2005a-u,Forst2006a-u}. 
-\isc{主语|)}   
-\is{subject|)}   
+%Grammar\indexlfg (see Chapter~\ref{Kapitel-LFG}) \citep*{DL2000a-u,Berman2003a-u,Berman2007a-%u,AMM2005a-u,Forst2006a-u}. \is{subject|)}  
 
 如果我们知道如何界定主语，那么宾语的界定就不再困难了：宾语就是由给定中心语决定其形式的所有其他论元。以小句宾语为例，德语有属格、与格、宾格和介词宾语：
 %If we can be clear about what we want to view as a subject, then the definition of object is no longer difficult: %objects are all other arguments whose form is directly determined by a given head. As well as clausal objects, %German has genitive, dative, accusative and prepositional objects:
@@ -2151,7 +2135,7 @@ Tony正在吃（比萨饼）。
 	 他们 想 PERP DET 人\\
 \glt `他们正想起这个人。'
 \zl
-在对宾语按照格进行分类的同时，更为普遍的做法是区分直接宾语和间接宾语。顾名思义，直接宾语与间接宾语不同，直接宾语的所指直接受到动词指定的动作的影响。带双宾语的动词，如德语的geben（给），宾格宾语就是直接宾语，而与格宾语就是间接宾语。
+在对宾语按照格进行分类的同时，更为普遍的做法是区分直接宾语\isc{直接宾语}（direct objects\is{object!direct}）和间接宾语\isc{间接宾语}（indirect objects\is{object!indirect}）。顾名思义，直接宾语与间接宾语不同，直接宾语的所指直接受到动词指定的动作的影响。带双宾语的动词，如德语的geben（给），宾格宾语就是直接宾语，而与格宾语就是间接宾语。
 %As well as defining objects by their case, it is commonplace to talk of \emph{direct objects}\is{object!direct} and %\emph{indirect objects}\is{object!indirect}. The direct object gets its name from the fact that -- unlike the indirect %object -- the referent of a direct object is directly affected by the action denoted by the verb.
 %\todostefan{Martin: Originally, this referred to a lack of preposition (in French); maybe
 %  nowadays, this new association is found} 
@@ -2161,7 +2145,7 @@ Tony正在吃（比萨饼）。
 	 CONJ 他.\nom{} DEF.\dat{} 人.\dat{} DEF.\acc{} 论文.\acc{} 给\\
 \glt `他给那个人这篇论文'
 \z
-对于三价动词（带有三个论元的动词）来说，我们可以看到动词要么可以带一个属格宾语（\mex{1}a），要么对于带宾格的直接宾语来说，再带一个宾格宾语（\mex{1}b）：
+对于三价动词（带有三个论元的动词）来说，我们可以看到动词要么可以带一个属格宾语\isc{属格}\is{genitive}（\mex{1}a），要么对于带宾格的直接宾语来说，再带一个宾格宾语（\mex{1}b）：
 %For trivalent verbs (verbs taking three arguments), we see that the verb can take either an object in the genitive %case\is{genitive} (\mex{1}a) or, for verbs with a direct object in the accusative, 
 %a second accusative object\is{case!accusative} (\mex{1}b):
 \eal
@@ -2191,7 +2175,7 @@ Tony正在吃（比萨饼）。
 %indirect object is the second object to be combined with the verb. On this view, the dative object of 
 %\emph{helfen} `to help' would have to be viewed as a direct object.
 
-下面，我就只用宾语的格属性来指称，而避免使用直接宾语（direct object）\isc{直接宾语}\is{object!direct}和间接宾语（indirect object）\isc{间接宾语}\is{object!indirect}的术语。
+下面，我就只用宾语的格属性来指称，而避免使用直接宾语\isc{直接宾语}\is{object!direct}和间接宾语\isc{间接宾语}\is{object!indirect}的术语。
 %In the following, I will simply refer to the case of objects and avoid using the terms direct object\is{object!direct} %and indirect object\is{object!indirect}.
 我们对主语也采用相同的策略，有特定格属性的宾语小句能够分别对应于直接宾语或者间接宾语的语法功能。如果在例（\mex{1}b）中，我们认为“dass du sprichst”（你在说话）这个小句是主语，那么从句就必然是直接宾语：
 %In the same way as with subjects, we consider whether there are object clauses which are
@@ -2258,7 +2242,7 @@ Tony正在吃（比萨饼）。
 
 \addlines[2]
 \noindent
-尽管例（\mex{0}d）中的名词短语带有宾格，它并不是宾格宾格。den ganzen Tag（整天）号称是时间宾格。这种情况下宾格的出现与名词短语的句法和语义功能有关，它不是由动词决定的。这类宾格可以跟许多动词共现，甚至是那些通常不需要宾格宾语的动词：
+尽管例（\mex{0}d）中的名词短语带有宾格\isc{宾格}\is{case!accusative}，它并不是宾格宾格。den ganzen Tag（整天）号称是时间宾格。这种情况下宾格的出现与名词短语\isc{语义格}\is{case!semantic}的句法和语义功能有关，它不是由动词决定的。这类宾格可以跟许多动词共现，甚至是那些通常不需要宾格宾语的动词：
 %Although the noun phrase in (\mex{0}d) bears accusative case\is{case!accusative}, it is not an accusative %object. \emph{den ganzen Tag} `the whole day' is a so-called temporal accusative.
 %The occurrence of accusative in this case has to do with the syntactic and semantic function of the noun %phrase\is{case!semantic}, it is not determined by the verb. These kinds of accusatives
 %can occur with a variety of verbs, even with verbs that do not normally require an accusative object: 
@@ -2278,7 +2262,7 @@ Tony正在吃（比萨饼）。
 \glt `他花了一整天给穷人汤喝。'
 \zl
 被动态中状语的格不发生变化：
-The case of adverbials does not change under passivization:
+%The case of adverbials does not change under passivization:
 \exewidth{(135)}
 \eal
 \ex[]{
@@ -2291,8 +2275,7 @@ The case of adverbials does not change under passivization:
 	 因为 DEF.\nom{} whole.\nom{} 天 工作 AUX\\
 }
 \zl
-\isc{状语|)}
-\is{adverbial|)}
+\isc{状语|)}\is{adverbial|)}
 
 \subsection{谓语}
 例（\mex{1}a,b）中的形容词\isc{谓语形容词}\is{adjective!predicative}\isc{描述性形容词}\is{adjective!depictive}与例（\mex{1}c）中的名词短语被看作是谓语\isc{谓语|(}\is{predicative|(}。
@@ -2398,17 +2381,15 @@ The case of adverbials does not change under passivization:
 %`he' in (\mex{0}b) and agrees in case with the noun over which it predicates.
 %This is also referred to as \emph{agreement case}\is{case!agreement}.
 
-其他的谓词性结构可以参看\citew[§~1206]{Duden2005-Authors}、\citew[Chapter~4, Chapter~5]{Mueller2002b}，以及\citew{Mueller2008a}。
+其他的谓词性结构可以参看\citew[§~1206]{Duden2005-Authors}、\citew[Chapter~4, Chapter~5]{Mueller2002b}，以及\citew{Mueller2008a}。\isc{谓语|)}\is{predicative|)}
 %For other predicative constructions see \citew[§~1206]{Duden2005-Authors} and 
-%\citew[Chapter~4, Chapter~5]{Mueller2002b} and \citew{Mueller2008a}.
-\isc{谓语|)}
-\is{predicative|)}
+%\citew[Chapter~4, Chapter~5]{Mueller2002b} and \citew{Mueller2008a}.\is{predicative|)}
 
 
 \subsection{配价类型}
 
 \addlines
-我们可以按照动词所带论元成分的数量与属性来对动词进行分类。一方面，那些可以带宾语且其宾语能变换为被动式的主语多动词叫做及物动词（transitive）\isc{及物动词}\is{verb!transitive}，如love（爱）或beat（击打）这类动词。另一方面，不及物动词不能带宾语，或者其在被动式中不能变成主语，如schlafen（睡觉），helfen（帮忙）或gedenken（纪念）。及物动词还包括双及物动词，如geben（给）和zeigen（展示）。
+我们可以按照动词所带论元成分的数量与属性来对动词进行分类。一方面，那些可以带宾语且其宾语能变换为被动式的主语多动词叫做及物动词\isc{及物动词}（transitive\is{verb!transitive}），如love（爱）或beat（击打）这类动词。另一方面，不及物动词\isc{不及物动词}\is{verb!intransitive}不能带宾语，或者其在被动式中不能变成主语，如schlafen（睡觉），helfen（帮忙）或gedenken（纪念）。及物动词还包括双及物动词\isc{双及物动词}\is{verb!ditransitive}，如geben（给）和zeigen（展示）。
 %It is possible to divide verbs into subclasses depending on how many arguments they require and on the %properties these arguments are required to have. The
 %classic division describes all verbs which have an object which becomes the subject under passivization as 
 %\emph{transitive}\is{verb!transitive}. Examples of this
@@ -2467,7 +2448,7 @@ Culicover和Jackendoff这里说的及物动词是指带两个论元的动词。�
 % sinnvoll, denn im Isländischen können diese Objekte zum Subjekt werden \citep[\page 445]{ZMT85a}. Wird die einzelsprachlich
 % motivierte Terminologie unreflektiert auf andere Sprachen übertragen, so entsteht terminologisches Chaos.
 
-在下面，我会采用及物的前一个概念，即那些能在被动式中将宾语变换为主语的动词。对于helfen（帮助）类动词，它们带一个主格和一个与格论元；而schlagen（击打）类动词带有一个主语和一个宾格论元。我会用二位动词或二价动词（bivalent verb）\isc{二价动词}\is{verb!bivalent}动词来指称它们。
+在下面，我会采用及物的前一个概念，即那些能在被动式中将宾语变换为主语的动词。对于helfen（帮助）类动词，它们带一个主格和一个与格论元；而schlagen（击打）类动词带有一个主语和一个宾格论元。我会用二位动词或二价动词\isc{二价动词}（bivalent verb\is{verb!bivalent}）动词来指称它们。
 %In the following, I will use \emph{transitive} in the former sense, that is for verbs with an object that becomes %the subject when passivized (\eg with
 %\emph{werden} in German). When I talk about the class of verbs that includes \emph{helfen} `to help', which %takes a nominative and dative argument, and \emph{schlagen} `to hit', 
 %which takes a nominative and accusative argument, I will use the term \emph{two"=place} or \emph{bivalent %verb}\is{verb!bivalent}.
@@ -2477,8 +2458,7 @@ Culicover和Jackendoff这里说的及物动词是指带两个论元的动词。�
 \label{sec-topo}
 \label{Abschnitt-Toplogie}
 
-\isc{拓扑|(}
-\is{topology|(}%
+\isc{拓扑|(}\is{topology|(}%
 在这一节，我会介绍所谓的空间位置的概念。这一概念会在后续的章节中被经常用来讨论德语小句中的不同部分。此外，也可以在\citew{Reis80a}，\citew{Hoehle86} and \citew{Askedal86}的文献中找到更多有关空间位置的知识。\citew{Woellstein2010a-u}是一本有关空间位置模型的教科书。
 %In this section, I introduce the concept of so-called \emph{topological fields} (\emph{topologische Felder}). %These will be used frequently in later chapters to discuss different parts of the German clause. One can find %further, more detailed introductions to topology in \citew{Reis80a},
 %\citew{Hoehle86} and \citew{Askedal86}. \citew{Woellstein2010a-u} is a
@@ -2487,8 +2467,7 @@ Culicover和Jackendoff这里说的及物动词是指带两个论元的动词。�
 \subsection{动词的位置}
 
 最常见的是按照变位动词的位置将德语的句子分成三类：
-\is{verb!-first}\is{verb!-second}\is{verb!-final}\isc{missing verb!-first}\isc{missing
-  verb!-second}\isc{missing verb!-final}
+\is{verb!-first}\is{verb!-second}\is{verb!-final}\isc{动词首位}\isc{动词二位}\isc{动词末位}
 %It is common practice to divide German sentences into three types pertaining to the position of the finite verb:
 \begin{itemize}
 \item 动词位于末位的小句
@@ -2521,7 +2500,7 @@ Culicover和Jackendoff这里说的及物动词是指带两个论元的动词。�
 
 \subsection{句子的框架结构、前场、中场及后场}
 
-我们观察到，在例（\mex{0}a）中，变位动词hat只跟它的补足语gegessen（吃完）挨着。在例（\mex{0}b）和例（\mex{0}c）中，动词跟它的补足语是分开的，也就是非连续的。这样，我们可以基于这些区别将德语小句分成不同的小类。在例（\mex{0}b）和例（\mex{0}c）中，动词和祝词构成小句的一个基本框架。基于这个原因，我们称之为框型结构。例（\mex{0}b）和例（\mex{0}c）中的变位动词构成框架的左边界，非变位动词构成右边界。以动词为末位的小句通常由连词引入，如weil（因为）、dass（这个），以及ob（是否）。不管是在动词占首位，还是动词占末尾到小句中，这些连词占据了与变位动词一样的位置。由此，我们认为这些连词也构成了这些句子的左边界。应用句子框架的概念，使得我们有可能将德语小句划分成前场、中场和后场这三个部分。前场指位于左边界之前的成分，中场是指位于左边界与右边界之间的成分，后场指右边界之后的成分。如图~\vref{bsp-topo} 所示：
+我们观察到，在例（\mex{0}a）中，变位动词hat只跟它的补足语gegessen（吃完）挨着。在例（\mex{0}b）和例（\mex{0}c）中，动词跟它的补足语是分开的，也就是非连续的。\isc{非连续成分}\is{constituent!discontinuous}这样，我们可以基于这些区别将德语小句分成不同的小类。在例（\mex{0}b）和例（\mex{0}c）中，动词和助词构成小句的一个基本框架。基于这个原因，我们称之为框型结构\isc{框架结构}（sentence bracket\is{sentence bracket}）。例（\mex{0}b）和例（\mex{0}c）中的变位动词构成框架的左边界，非变位动词构成右边界。以动词为末位的小句通常由连词引入，如weil（因为）、dass（这个），以及ob（是否）。不管是在动词占首位，还是动词占末尾到小句中，这些连词占据了与变位动词一样的位置。由此，我们认为这些连词也构成了这些句子的左边界。应用句子框架的概念，使得我们有可能将德语小句划分成前场、中场和后场这三个部分。前场指位于左边界之前的成分，中场是指位于左边界与右边界之间的成分，后场指右边界之后的成分。如图~\vref{bsp-topo} 所示：
 %We observe that the finite verb \emph{hat} `has' is only adjacent to its complement
 %\emph{gegessen} `eaten' in (\mex{0}a). In (\mex{0}b) and (\mex{0}c), the verb and its complement
 %are separated, that is, discontinuous.\is{constituent!discontinuous} We can then divide the German clause into %various sub-parts on the basis of these distinctions.
@@ -2536,12 +2515,12 @@ Culicover和Jackendoff这里说的及物动词是指带两个论元的动词。�
 %
 %STEFAN: Wie machen wir das hier? Wir können nicht in der Tabelle glossen. Eine Möglichkeit ist zuerst ein Beispiel mit Glossen anzugeben, das unten in der Tabelle vorkommt.
 %\newpage
-\is{prefield|see{field}}%
-\is{field!pre-}%
-\is{middle field|see{field}}%
-\is{field!middle-}%
-\is{postfield|see{field}}%
-\is{field!post-}%
+\isc{前场}\is{prefield|see{field}}%
+\isc{场前}\is{field!pre-}%
+\isc{中场}\is{middle field|see{field}}%
+\isc{场中}\is{field!middle-}%
+\isc{后场}\is{postfield|see{field}}%
+\isc{场后}\is{field!post-}%
 \begin{table}
 \begin{sideways}
 %{\tiny
@@ -2570,12 +2549,12 @@ mit dem &               & du                                     & geredet hast\
 \end{sideways}
 \caption{\label{bsp-topo}空间位置分布例示}
 \end{table}
-右边界可以包括多个动词，通常被看作是动词性复合词或动词词组。下一节，我们将讨论疑问词和关系代词在前场的排列。
+右边界可以包括多个动词，通常被看作是动词性复合词（verbal complex）或动词词组（verb cluster）。下一节，我们将讨论疑问词和关系代词在前场的排列。
 %The right bracket can contain multiple verbs and is often referred to as a \emph{verbal complex} or \emph{verb %cluster}. The assignment of question words and relative pronouns to the prefield will be discussed in the %following section.
 
 \subsection{场内元素的排列}
 
-如图中的例子所示，并不是所有的位置都需要有成分来充当。如果想在例（\mex{1}）中省略系词（copula）\is{copula}的话，即使是左边界，也可以是是空的：
+如图中的例子所示，并不是所有的位置都需要有成分来充当。如果想在例（\mex{1}）中省略系词\isc{系词}（copula\is{copula}）sein的话，即使是左边界，也可以是是空的：
 %As the examples in Table~\ref{bsp-topo} show, it is not required that all fields are always occupied. Even the %left bracket can be empty if one opts to leave out
 %the copula\is{copula} \emph{sein} `to be' such as in the examples in (\mex{1}):
 \eal
@@ -2650,7 +2629,7 @@ mit dem &               & du                                     & geredet hast\
      他.\mas{} 给 DET 女人(\fem) DET 书.(\neu) CONJ.\fem{} 他 认识\\
 \glt `他把书交给了他认识的那个女人。'
 \z 
-我们应该怎么分析诸如“die er kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场还是后场呢？我们可以应用开发到测试法来进行测试：首先，我们把例（\mex{0}）改成完成时。由于非变位动词位于右边界，我们可以清楚地看出中场与后场的边界。例（\mex{1}）中的例子显示了，关系从句不能位于中场，除非它是与中心语Frau（女人）一起构成的一个复杂成分的一部分。
+我们应该怎么分析诸如“die er kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场还是后场呢？我们可以应用\citet[\page72]{Bech55a}开发的等级测试法\isc{等级测试法}（Rangprobe\is{Rangprobe}）来进行测试：首先，我们把例（\mex{0}）改成完成时。由于非变位动词位于右边界，我们可以清楚地看出中场与后场的边界。例（\mex{1}）中的例子显示了，关系从句不能位于中场，除非它是与中心语Frau（女人）一起构成的一个复杂成分的一部分。
 %How should we analyze relative clauses such as
 %\emph{die er kennt} `that he knows'? Do they form part of the middle field or the postfield?
 %This can be tested using a test developed by \citet[\page72]{Bech55a} (\emph{Rangprobe}\is{Rangprobe}):
@@ -2838,8 +2817,7 @@ mit dem &               & du                                     & geredet hast\
 
 \noindent
 正如在前场的成分一样，中场和后场的成分也能有内部的结构，并且可以相应地划分到不同的次级结构中。如例（\mex{0}c）中，daß（这个）是从句daß du kommst（他知道）的左边界，而du（你）占据了中场，kommst（来）是右边界。
-\isc{拓扑|)}\isc{递归|)}
-\is{topology|)}\is{recursion|)}
+\isc{拓扑|)}\isc{递归|)}\is{topology|)}\is{recursion|)}
 
 %Like constituents in the prefield, elements in the middle field and postfield can also have an internal structure %and be divided into subfields accordingly.
 %For example, \emph{daß} `that' is the left bracket of the subordinate clause \emph{daß du kommst} 
