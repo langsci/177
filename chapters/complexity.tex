@@ -1,89 +1,82 @@
 %% -*- coding:utf-8 -*-
 
-\chapter{Generative capacity and grammar formalisms}
+\chapter{生成能力与语言形式描述}
 \label{sec-generative-capacity}
 
 \largerpage[-1]
-In\is{capacity!generative|(}\is{complexity class|(} several of the preceding chapters,
-the complexity hierarchy for formal languages was mentioned. The simplest languages are so"=called regular languages\is{regular language} (Type-3),
-they are followed by those described as context"=free grammars\is{context"=free grammar} (Type-2), then those grammars which are 
-context"=sensitive\is{context"=sensitive grammar} (Type-1) and finally we have unrestricted grammars\is{unrestricted grammars} (Type-0) that
-create recursively enumerable languages, which are the most complicated class. In creating theories, a conscious effort was made to
-use formal means that correspond to what one can actually observe in natural language.
-This led to the abandonment of unrestricted Transformational Grammar since this has generative power of Type-0 (see page~\pageref{page-TG-Typ0}).
-GPSG was deliberately designed in such a way as to be able to analyze just the context"=free
-languages and not more. In the mid-80s, it was shown that natural languages have a higher complexity
-than context"=free languages \citep{Shieber85a,Culy85a}. It is now assumed that so"=called
-\emph{mildly context sensitive} grammars are sufficient for analyzing natural languages. Researchers
-working on TAG\indextag are working on developing variants of TAG\indextag that fall into exactly
-this category. Similarly, it was shown for different variants of Stabler's \emph{Minimalist
-  Grammars}\indexmg (see Section~\ref{Abschnitt-MG} and \citealp{Stabler2001a,Stabler2010b}) that they
-have a mildly context"=sensitive capacity \citep{Michaelis2001a-u}. Peter Hellwig's Dependency
-Unification Grammar\is{Dependency Unification Grammar (DUG)} is also mildly context-sensitive
-\citep[\page 595]{Hellwig2003a}. 
-LFG\indexlfg and HPSG\indexhpsg, as well as Chomsky's theory in \emph{Aspects}, fall into the class of Type-0 languages \citep{Berwick82a-u,Johnson88}.
-The question at this point is whether it is an ideal goal to find a descriptive language that has exactly the same power as the object it describes.
-Carl \citet{Pollard96a} once said that it would be odd to claim that certain theories in physics were not adequate simply because they make use of tools
-from mathematics that are too powerful.\footnote{% 
-If physicists required the formalism to constrain the theory:\\
+前面\is{capacity!generative|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关语法\isc{上下文无关语法}\is{context"=free grammar}（2型），比上下文无关语法更复杂的是上下文有关语法\isc{上下文有关语法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG设计得只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文有关语法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextag （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmg (参见第~\ref{Abschnitt-MG}节和 \citealp{Stabler2001a,Stabler2010b})的不同变体都有弱上下文有关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文有关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致。Carl \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
+如果物理学家要求形式描述限制理论：\\
 \begin{tabular}{@{}l@{~}p{11cm}}
-Editor:   & Professor Einstein, I'm afraid we can't accept this manuscript of yours on general relativity.\\
-Einstein: & Why? Are the equations wrong?\\
-Editor:   & No, but we noticed that your differential equations are
-    expressed in the first-order language of set theory. This is
-    a totally unconstrained formalism! Why, you could have written
-    down ANY set of differential equations! \citep{Pollard96a}
+编辑：     & 爱因斯坦教授，我恐怕不能接收你在广义相对论方面的论文。\\
+爱因斯坦： & 为什么呢？难道方程式是错的？\\
+编辑：     & 不，但是我们注意到你的微分方程式是用集合论中的一阶语言表达的。这是一个完全不受限制的形式描述！为什么这样做呢？你本可以写出任意集合微分方程式的！ \citep{Pollard96a}
 \end{tabular}
 }
-It is not the descriptive language that should constrain the theory but rather the theory contains the restrictions
-that must hold for the objects in question. This is the view that \citet[\page 277, 280]{Chomsky81b} takes. Also, see 
-\citew[Section~4]{Berwick82a-u},
-\citew[Section~8]{KB82a-u} on LFG and \citew[Section~3.5]{Johnson88} on the \emph{Off-Line Parsability Constraint}\is{Off-Line Parsability}
-in LFG and attribute"=value grammars in general.
-
-There is of course a technical reason to look for a grammar with the lowest level of complexity possible:
-we know that it is easier for computers to process grammars with lower complexity than more
-complex grammars. To get an idea about the complexity of a task, the so"=called `worst case' for the
-relevant computations is determined, that is, it is determined how long a program needs for an input
-of a certain length in the least favorable case to get a result for a grammar from a certain class. This begs the question if the worst case is actually relevant. 
-For example, some grammars that allow discontinuous constituents perform less favorably in the worst case than normal phrase structure grammars 
-that only allow for combinations of continuous strings \citep[Section~8]{Reape91}.
-As I have shown in \citew{Mueller2004b}, a parser\is{parser} that builds up larger units starting from words (a bottom-up parser) is far less
-efficient when processing a grammar assuming a verb movement analysis than is the case for a bottom-up parser that allows for discontinuous constituents.
-This has to do with the fact that verb traces do not contribute any phonological material and a parser cannot locate them without further machinery.
-It is therefore assumed that a verb trace exists in every position in the string and in most cases
-these traces do not contribute to an analysis of the complete input.
-Since the verb trace is not specified with regard to its valence information, it can be combined
-with any material in the sentence, which results in an enormous computational load.
-On the other hand, if one allows discontinuous constituents, then one can do without verb traces and the computational load is thereby reduced.
-In the end, the analysis using discontinuous constituents was eventually discarded for linguistic reasons \citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS},
-however, the investigation of the parsing behavior of both grammars is still interesting as it shows that worst case properties are not always
-informative.
-
-I will discuss another example of the fact that language"=specific restrictions can restrict the complexity of a grammar:
-\citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
-Section~\ref{Abschnitt-MG}) with extensions for late adjunction and extraposition are actually more powerful than mildly context"=sensitive.
-If one bans extraction from adjuncts\is{extraction!from adjuncts} (\citealp[\page
-46]{FG2002a}) and also assumes the Shortest Move Constraint\is{Shortest Move Constraint (SMC)} (see footnote~\ref{Fn-SMC} on page~\pageref{Fn-SMC}), then one arrives at a grammar that is mildly"=context sensitive
-\citep[\page 178]{GM2007a}.
-The same is true of grammars with the Shortest Move Constraint and a constraint for extraction from specifiers.
-
-Whether extraction takes place from a specifier or not depends on the organization of the particular grammar in question.
-In some grammars, all arguments are specifiers\is{specifier} (\citealp[\page 120--123]{Kratzer96a}, also see
-Figure~\ref{Abbildung-Kratzer} on page~\pageref{Abbildung-Kratzer}). A ban on extraction\is{extraction!from specifier} from
-specifiers would imply that extraction out of arguments would be impossible. This is, of course, not
-true in general. Normally, subjects are treated as specifiers (also by \citealp[\page 44]{FG2002a}). It is often claimed that subjects
-are islands for extraction (see \citealp[\page 35, \page
-41]{Grewendorf89a}; G.\ Müller %\citeyear{GMueller91a-u}; \citeyear[\page 36]{GMueller94a}; \citeyear[\page ??]{GMueller95a};
-\citeyear[\page 220]{GMueller96b}; \citeyear[\page 32, \page 163]{GMueller98a};
-% Müller hat dann sowas wie anti-freezing, das dann wie Focus-Movement funktioniert
-%
-%für transitive und nicht"=ergative intransitive Verben und
-\citealp[\page 98]{Sabel99a}; \citealp[\page 422]{Fanselow2001a}).
-Several\label{page-extraction-out-of-subjects} authors have noted, however, that extraction from subjects is possible in German (see \citealp[\page 25]{Duerscheid89a}; \citealp*[\page 173]{Haider93a};
-\citealp{Pafel93b-u}; \citealp[\page 27]{Fortmann96a-u}; \citealp[\page 320]{Suchsland97a};
-\citealp[\page 87]{VS98a}; \citealp[\page 2066]{Ballweg97a}; \citealp[\page 100--101]{Mueller99a}; \citealp[\page 7]{deKuthy2002a}).
-The following data are attested examples:%\todoandrew{gloss und translation}
+不应该是描述语言限制理论而应该是理论包含必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b} 所持的观点。也可以参看\citew[Section~4]{Berwick82a-u},\citew[Section~8]{KB82a-u} 对于LFG的论述以及\citew[Section~3.5]{Johnson88}对于LFG中离线句法分析能力限制（Off-Line Parsability Constraint）的论述和对于属性-值语法的总体论述。
+%In\is{capacity!generative|(}\is{complexity class|(} several of the preceding chapters,
+%the complexity hierarchy for formal languages was mentioned. The simplest languages are so"=called regular languages\is{regular language} (Type-3),
+%they are followed by those described as context"=free grammars\is{context"=free grammar} (Type-2), then those grammars which are 
+%context"=sensitive\is{context"=sensitive grammar} (Type-1) and finally we have unrestricted grammars\is{unrestricted grammars} (Type-0) that
+%create recursively enumerable languages, which are the most complicated class. In creating theories, a conscious effort was made to
+%use formal means that correspond to what one can actually observe in natural language.
+%This led to the abandonment of unrestricted Transformational Grammar since this has generative power of Type-0 (see page~\pageref{page-TG-Typ0}).
+%GPSG was deliberately designed in such a way as to be able to analyze just the context"=free
+%languages and not more. In the mid-80s, it was shown that natural languages have a higher complexity
+%than context"=free languages \citep{Shieber85a,Culy85a}. It is now assumed that so"=called
+%\emph{mildly context sensitive} grammars are sufficient for analyzing natural languages. Researchers
+%working on TAG\indextag are working on developing variants of TAG\indextag that fall into exactly
+%this category. Similarly, it was shown for different variants of Stabler's \emph{Minimalist
+%  Grammars}\indexmg (see Section~\ref{Abschnitt-MG} and \citealp{Stabler2001a,Stabler2010b}) that they
+%have a mildly context"=sensitive capacity \citep{Michaelis2001a-u}. Peter Hellwig's Dependency
+%Unification Grammar\is{Dependency Unification Grammar (DUG)} is also mildly context-sensitive
+%\citep[\page 595]{Hellwig2003a}. 
+%LFG\indexlfg and HPSG\indexhpsg, as well as Chomsky's theory in \emph{Aspects}, fall into the class of Type-0 languages \citep{Berwick82a-u,Johnson88}.
+%The question at this point is whether it is an ideal goal to find a descriptive language that has exactly the same power as the object it describes.
+%Carl \citet{Pollard96a} once said that it would be odd to claim that certain theories in physics were not adequate simply because they make use of tools
+%from mathematics that are too powerful.\footnote{% 
+%If physicists required the formalism to constrain the theory:\\
+%\begin{tabular}{@{}l@{~}p{11cm}}
+%Editor:   & Professor Einstein, I'm afraid we can't accept this manuscript of yours on general relativity.\\
+%Einstein: & Why? Are the equations wrong?\\
+%Editor:   & No, but we noticed that your differential equations are
+%    expressed in the first-order language of set theory. This is
+%    a totally unconstrained formalism! Why, you could have written
+%    down ANY set of differential equations! \citep{Pollard96a}
+%\end{tabular}
+%}
+%It is not the descriptive language that should constrain the theory but rather the theory contains the restrictions
+%that must hold for the objects in question. This is the view that \citet[\page 277, 280]{Chomsky81b} takes. Also, see 
+%\citew[Section~4]{Berwick82a-u},
+%\citew[Section~8]{KB82a-u} on LFG and \citew[Section~3.5]{Johnson88} on the \emph{Off-Line Parsability Constraint}\is{Off-Line Parsability}
+%in LFG and attribute"=value grammars in general.
+    当然，在条件允许的情况下选择复杂性最低的语法也有技术方面的原因：我们知道对于计算机来说处理复杂性较低的语法更加容易。要获知一个任务的复杂性，就需要确定相关计算的所谓“最坏情况”，即确定一个程序在最差情况下使用某种语法处理一定长度输入时需要多长时间。但是，我们不禁提出这样一个问题：最差情况对确定任务复杂性是否真的有用。例如，一些允许非连续成分的语法在最差情况下比那些只允许连续字符串组合的常规短语结构语法表现更差\citep[Section~8]{Reape91}。正如我在\citew{Mueller2004b}所指出的那样：从单词出发构建更大单位的句法分析器\isc{句法分析器}\is{parser}（一个自底向上的句法分析器）在处理假设动词移位分析的语法时比处理假设非连续成分的语法更加低效。这与动词语迹没有语音形式有关，由于动词语迹没有语音形式所以句法分析器需要借助另外的手段来定位它们。因此，需要假设动词语迹可以出现在字符串的任意位置，并且在大多数情况下这些语迹对于完整输入的分析不起任何作用。因为动词语迹没有指定其价（valence）信息，所以能与句子中任意成分进行组合，这造成了很大的计算负担。相反，如果允许不连续成分，那么就可以放弃使用动词语迹，计算负担因此降低了。但是，使用非连续成分的分析最终因为语言学原因被放弃了\citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS}。尽管如此，研究两种语法的句法分析行为仍然具有价值。因为这种研究显示最差情况对确定任务复杂性并非总是有效。
+%There is of course a technical reason to look for a grammar with the lowest level of complexity possible:
+%we know that it is easier for computers to process grammars with lower complexity than more
+%complex grammars. To get an idea about the complexity of a task, the so"=called `worst case' for the
+%relevant computations is determined, that is, it is determined how long a program needs for an input
+%of a certain length in the least favorable case to get a result for a grammar from a certain class. This begs the question if the worst case is actually relevant. 
+%For example, some grammars that allow discontinuous constituents perform less favorably in the worst case than normal phrase structure grammars 
+%that only allow for combinations of continuous strings \citep[Section~8]{Reape91}.
+%As I have shown in \citew{Mueller2004b}, a parser\is{parser} that builds up larger units starting from words (a bottom-up parser) is far less
+%efficient when processing a grammar assuming a verb movement analysis than is the case for a bottom-up parser that allows for discontinuous constituents.
+%This has to do with the fact that verb traces do not contribute any phonological material and a parser cannot locate them without further machinery.
+%It is therefore assumed that a verb trace exists in every position in the string and in most cases
+%these traces do not contribute to an analysis of the complete input.
+%Since the verb trace is not specified with regard to its valence information, it can be combined
+%with any material in the sentence, which results in an enormous computational load.
+%On the other hand, if one allows discontinuous constituents, then one can do without verb traces and the computational load is thereby reduced.
+%In the end, the analysis using discontinuous constituents was eventually discarded for linguistic reasons \citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS},
+%however, the investigation of the parsing behavior of both grammars is still interesting as it shows that worst case properties are not always
+%informative.
+    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性：\citet[Section~3.2]{GM2007a}认为Stabler提出的增加了后附接（late adjunction）和外置的最简语法\indexmg (参看第~\ref{Abschnitt-MG}节)比弱上下文有关语法的生成力更强。如果一种语法禁止从附接语位置\is{extraction!from adjuncts}提取成分(\citealp[\page46]{FG2002a})并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文有关语法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文有关语法。
+%I will discuss another example of the fact that language"=specific restrictions can restrict the complexity of a grammar:
+%\citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
+%Section~\ref{Abschnitt-MG}) with extensions for late adjunction and extraposition are actually more powerful than mildly context"=sensitive.
+%If one bans extraction from adjuncts\is{extraction!from adjuncts} (\citealp[\page
+%46]{FG2002a}) and also assumes the Shortest Move Constraint\is{Shortest Move Constraint (SMC)} (see footnote~\ref{Fn-SMC} on page~\pageref{Fn-SMC}), then one arrives at a grammar that is mildly"=context sensitive
+%\citep[\page 178]{GM2007a}.
+%The same is true of grammars with the Shortest Move Constraint and a constraint for extraction from specifiers.
+    是否能从指定语位置提取成分取决于所讨论的语法的组织。在一些语法中，所有论元都充当指定语\isc{指定语}\is{specifier}（\citealp[\page 120--123]{Kratzer96a}，也可以参看第~\pageref{Abbildung-Kratzer}页的图~\ref{Abbildung-Kratzer}）。在这些语法中，禁止从指定语位置提取成分意味着提取论元是不可能的。当然，总体来说这是不对的。通常情况下，主语被当作指定语（\citealp[\page 44]{FG2002a}也这样认为）。主语经常被认为是阻碍提取的岛（参看 \citealp[\page 35, \page 41]{Grewendorf89a}; G.\ Müller \citeyear[\page 220]{GMueller96b}; \citeyear[\page 32, \page 163]{GMueller98a};\citealp[\page 98]{Sabel99a}; \citealp[\page 422]{Fanselow2001a}）。但是，一些\label{page-extraction-out-of-subjects}研究者发现在德语中可以从主语位置提取成分（参看 \citealp[\page 25]{Duerscheid89a}; \citealp*[\page 173]{Haider93a};\citealp{Pafel93b-u}; \citealp[\page 27]{Fortmann96a-u}; \citealp[\page 320]{Suchsland97a};\citealp[\page 87]{VS98a}; \citealp[\page 2066]{Ballweg97a}; \citealp[\page 100--101]{Mueller99a}; \citealp[\page 7]{deKuthy2002a}）。下面是经过验证的例子：%\todoandrew{gloss und translation}
 \begin{sloppypar}
 \eal
 \ex 
@@ -198,13 +191,145 @@ The following data are attested examples:%\todoandrew{gloss und translation}
 \end{sloppypar}
 
 \noindent
-This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
+这意味着禁止从指定语位置提取成分对于德语来说并不适用。因此，对于所有语言来说禁止从指定语位置提取成分也不对。
 
-We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
-the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
-for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on
-extraction from specifiers in the relevant languages -- ensure that the respective language"=specific grammars have a mildly context"=sensitive
-capacity.\is{capacity!generative|)}\is{complexity class|)}
+%Whether extraction takes place from a specifier or not depends on the organization of the particular grammar in question.
+%In some grammars, all arguments are specifiers\is{specifier} (\citealp[\page 120--123]{Kratzer96a}, also see
+%Figure~\ref{Abbildung-Kratzer} on page~\pageref{Abbildung-Kratzer}). A ban on extraction\is{extraction!from specifier} from
+%specifiers would imply that extraction out of arguments would be impossible. This is, of course, not
+%true in general. Normally, subjects are treated as specifiers (also by \citealp[\page 44]{FG2002a}). It is often claimed that subjects
+%are islands for extraction (see \citealp[\page 35, \page
+%41]{Grewendorf89a}; G.\ Müller %\citeyear{GMueller91a-u}; \citeyear[\page 36]{GMueller94a}; \citeyear[\page ??]{GMueller95a};
+%\citeyear[\page 220]{GMueller96b}; \citeyear[\page 32, \page 163]{GMueller98a};
+% Müller hat dann sowas wie anti-freezing, das dann wie Focus-Movement funktioniert
+%
+%für transitive und nicht"=ergative intransitive Verben und
+%\citealp[\page 98]{Sabel99a}; \citealp[\page 422]{Fanselow2001a}).
+%Several\label{page-extraction-out-of-subjects} authors have noted, however, that extraction from subjects is possible in German (see \citealp[\page 25]{Duerscheid89a}; \citealp*[\page 173]{Haider93a};
+%\citealp{Pafel93b-u}; \citealp[\page 27]{Fortmann96a-u}; \citealp[\page 320]{Suchsland97a};
+%\citealp[\page 87]{VS98a}; \citealp[\page 2066]{Ballweg97a}; \citealp[\page 100--101]{Mueller99a}; \citealp[\page 7]{deKuthy2002a}).
+%The following data are attested examples:%\todoandrew{gloss und translation}
+%\begin{sloppypar}
+%\eal
+%\ex 
+%\gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
+%     \spacebr{}of the left.over elements seem \spacebr{}the determinants {} the fewest classification.problems to.throw.up\\
+%\footnotetext{
+%      In the main text of \citew[\page 102]{Engel70a}.
+%}
+%\glt `Of the remaining elements, the determinants seem to pose the fewest problems for classification.'
+%\ex\label{bsp-von-den-gefangenen} 
+%\gll {}[Von den Gefangenen]$_i$ hatte eigentlich [keine \_$_i$] die Nacht der Bomben überleben sollen.\footnotemark\\
+%	 {}\spacebr{}of the prisoners had actually \spacebr{}none {} the night of.the bombs survive should\\
+%\footnotetext{
+%        Bernhard Schlink, \emph{Der Vorleser}, Diogenes Taschenbuch 22953, Zürich: Diogenes Verlag, 1997, p.\,102.
+%    }
+%\glt `None of the prisoners should have actually survived the night of the bombings.'
+%\ex 
+%\gll {}[Von der HVA]$_i$ hielten sich [etwa 120 Leute \_$_i$] dort in ihren Gebäuden auf.\footnotemark\\
+%	 {}\spacebr{}of the HVA held \refl{} \spacebr{}around 120 people {} there in their buildings \prt{}\\
+%\footnotetext{
+%       Spiegel, 3/1999, p.\,42.
+%     }
+%\glt `Around 120 people from the HVA stayed there inside their buildings.'
+%\largerpage
+%\ex 
+%\gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
+%	 {}\spacebr{}from the \hspaceThis{"`}English theater stand \spacebr{}two models {} in the cabinets\\
+%\footnotetext{
+%        Frankfurter Rundschau, quoted from \citew[\page 52]{deKuthy2001a}.
+%      }
+%\glt `Two models from the `English Theater' are in the cabinets.'
+%Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
+%\ex 
+%\gll {}[Aus der Fraktion]$_i$ stimmten ihm [viele \_$_i$] zu darin, dass die Kaufkraft der Bürger gepäppelt werden müsse, nicht die gute Laune der Wirtschaft.\footnotemark\\
+%	 {}\spacebr{}from the faction agreed him \spacebr{}many {} \prt{} there.in that the buying.power of.the citizens boosted become must not the good mood of.the economy\\
+%\footnotetext{
+%        taz, 16.10.2003, p.\,5.%  taz Themen des Tages 282 Zeilen, ULRIKE WINKELMANN S. 5
+%}
+%\glt `Many of the fraction agreed with him that it is the buying power of citizens that needed to be increased, not the good spirits of the economy.'
+%\ex\label{bsp-von-erzbischof-bilder} 
+%\gll {}[Vom Erzbischof Carl Theodor Freiherr von Dalberg]$_i$ gibt es beispielsweise [ein Bild \_$_i$]
+%        im Stadtarchiv.\footnotemark\\
+%	{}\spacebr{}from archbishop Carl Theodor Freiherr from Dalberg gives it for.example \spacebr{}a picture {} in.the city.archives\\
+%\footnotetext{
+%        Frankfurter Rundschau, quoted from \citew[\page 7]{deKuthy2002a}.
+%}
+%\glt `For example, there is a picture of archbishop Carl Theodor Freiherr of Dalberg in the city archives.'
+%\ex 
+%\gll {}[Gegen die wegen Ehebruchs zum Tod durch Steinigen verurteilte Amina Lawal]$_i$ hat gestern in Nigeria
+%    [der zweite Berufungsprozess \_$_i$] begonnen.\footnotemark\\
+%	{}\spacebr{}against the because.of adultery to.the death by stoning sentenced Amina Lawal has yesterday in Nigeria \spacebr{}the second appeal.process {} begun\\
+%\footnotetext{
+%        taz, 28.08.2003, p.\,2.
+%    }
+%\glt `The second appeal process began yesterday against Amina Lawal, who was sentenced to death by stoning for adultery.'
+%\ex 
+%\gll {}[Gegen diese Kahlschlagspolitik]$_i$ finden derzeit bundesweit [Proteste und Streiks \_$_i$ ] statt.\footnotemark\\
+%	 {}\spacebr{}against this clear.cutting.politics happen at.the.moment statewide \spacebr{}protests and strikes {} {} \prt{}\\
+%\footnotetext{
+%        Streikaufruf, Universität Bremen, 03.12.2003, p.\,1.
+%    }
+%\glt `At the moment, there are state-wide protests and strikes against this destructive politics.'
+%\ex 
+%\gll {}[Von den beiden, die hinzugestoßen sind], hat [einer        \_$_i$ ] eine Hacke, der andere einen Handkarren.\footnotemark\\
+%	 {}\spacebr{}of the both that joined are has \spacebr{}one {}    {}  a pickaxe   the other a handcart\\
+%\footnotetext{
+%        Haruki Murakami, \emph{Hard-boiled Wonderland und das Ende der Welt}, suhrkamp taschenbuch, 3197, 2000,
+%        Translation by Annelie Ortmanns and Jürgen Stalph, p.\,414.
+%}
+%\glt `Of the two that joined, one had a pickaxe and the other a handcart.'
+% Funktionsverbgefüge
+% \ex {}"`Gehen Sie nur. [Um mich] brauchen Sie sich keine Sorgen zu machen."'\footnote{
+%         Murakami Haruki, \emph{Hard-boiled Wonderland und das Ende der Welt}, suhrkamp taschenbuch, 3197, 2000,
+%         Übersetzung Annelie Ortmanns und Jürgen Stalph, p.\,377
+% }
+%% Aus der großen Schar der Athleten sind es nur Einzelne, die das Talent mitbringen, das Glück haben
+%% und i, entscheidenden Moment die Nerven, um tatsächlich eine Medaille zu gewinnen.\footnote{
+%%   Dieter Baumann, taz, 26.08.2004, p.\,14
+%}
+%\ex 
+%\gll ein Plan, [gegen den]$_i$ sich nun [ein Proteststurm \_$_i$ ] erhebt\footnotemark\\
+%     a plan \spacebr{}against which \refl{} now \spacebr{}a storm.of.protests {} {} rises\\
+%\footnotetext{
+%  taz, 30.12.2004, p.\,6.
+%}
+%\glt `a plan against which a storm of protests has now risen'
+%\ex 
+%\gll {}Dagegen$_i$ jedoch regt sich jetzt [Widerstand \_$_i$ ]: [\ldots]\footnotemark\\
+%	{}against however rises \refl{} now \spacebr{}resistance {}\\
+%\footnotetext{
+%  taz, 02.09.2005, p.\,18.%
+%}
+%\glt `Resistance to this is now rising, however:'
+%\largerpage[2]
+%\ex
+%\gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
+%	 {}\spacebr{}from the cycling.professional.scene knows him \spacebr{}nobody {} {} anymore\\
+%\footnotetext{
+%  taz, 04.07.2005, p.\,5.
+%}
+% Nobody from the professional cycling scene has heard of him anymore.
+%\glt `Nobody from the professional cycling scene acts like they know him anymore.'\todostefan{check
+%  once taz archive gets online again}
+%\ex 
+%\gll {}[Über das chinesische Programm der Deutschen Welle] tobt dieser Tage [ein heftiger Streit \_$_i$ ].\footnotemark\\
+%     \spacebr{}about the Chinese program of.the Deutsche Welle rages these days \spacebr{}a hefty controversy\\
+%\footnotetext{
+% taz, 21.10.2008, p.\,12.
+%}
+%\glt `Recently, there has been considerable controversy about the Chinese program by the Deutsche Welle.'
+%\zl
+%\end{sloppypar}
+
+%\noindent
+%This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
+    我们的语法与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言的语法的生成能力与弱上下文有关语法相同。\is{capacity!generative|)}\is{complexity class|)}
+%We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
+%the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
+%for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on
+%extraction from specifiers in the relevant languages -- ensure that the respective language"=specific grammars have a mildly context"=sensitive
+%capacity.\is{capacity!generative|)}\is{complexity class|)}
 
 
 
