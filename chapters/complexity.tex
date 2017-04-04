@@ -12,7 +12,7 @@
 编辑：     & 不，但是我们注意到你的微分方程式是用集合论中的一阶语言表达的。这是一个完全不受限制的形式描述！为什么这样做呢？你本可以写出任意集合微分方程式的！ \citep{Pollard96a}
 \end{tabular}
 }
-不应该是描述语言限制理论而应该是理论包含必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b} 所持的观点。也可以参看\citew[Section~4]{Berwick82a-u},\citew[Section~8]{KB82a-u} 对于LFG的论述以及\citew[Section~3.5]{Johnson88}对于LFG中离线句法分析能力限制（Off-Line Parsability Constraint）的论述和对于属性-值语法的总体论述。
+不应该是描述语言限制理论而应该是理论包含必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b} 所持的观点。也可以参看\citew[Section~4]{Berwick82a-u},\citew[Section~8]{KB82a-u} 对于LFG的论述以及\citew[Section~3.5]{Johnson88}对于LFG中离线句法分析能力限制\isc{离线句法分析能力限制}\is{Off-Line Parsability}（Off-Line Parsability Constraint）的论述和对于属性-值语法的总体论述。
 %In\is{capacity!generative|(}\is{complexity class|(} several of the preceding chapters,
 %the complexity hierarchy for formal languages was mentioned. The simplest languages are so"=called regular languages\is{regular language} (Type-3),
 %they are followed by those described as context"=free grammars\is{context"=free grammar} (Type-2), then those grammars which are 
@@ -68,7 +68,7 @@
 %In the end, the analysis using discontinuous constituents was eventually discarded for linguistic reasons \citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS},
 %however, the investigation of the parsing behavior of both grammars is still interesting as it shows that worst case properties are not always
 %informative.
-    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性：\citet[Section~3.2]{GM2007a}认为Stabler提出的增加了后附接（late adjunction）和外置的最简语法\indexmg (参看第~\ref{Abschnitt-MG}节)比弱上下文有关语法的生成力更强。如果一种语法禁止从附接语位置\is{extraction!from adjuncts}提取成分(\citealp[\page46]{FG2002a})并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文有关语法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文有关语法。
+    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性：\citet[Section~3.2]{GM2007a}认为Stabler提出的增加了后附接（late adjunction）和外置的最简语法\indexmg (参看第~\ref{Abschnitt-MG}节)比弱上下文有关语法的生成力更强。如果一种语法禁止从附接语位置提取成分\isc{提取!从附接语位置}\is{extraction!from adjuncts}(\citealp[\page46]{FG2002a})并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文有关语法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文有关语法。
 %I will discuss another example of the fact that language"=specific restrictions can restrict the complexity of a grammar:
 %\citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
 %Section~\ref{Abschnitt-MG}) with extensions for late adjunction and extraposition are actually more powerful than mildly context"=sensitive.
@@ -81,72 +81,72 @@
 \eal
 \ex 
 \gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
-     \spacebr{}of the left.over elements seem \spacebr{}the determinants {} the fewest classification.problems to.throw.up\\
+     \spacebr{}PREP DET 左边.PREP 成分 好像 \spacebr{}DET 决定因素 {} DET 最少 分类.问题 PREP.扔.PREP\\
 \footnotetext{
-      In the main text of \citew[\page 102]{Engel70a}.
+      在\citew[\page 102]{Engel70a}的正文中。
 }
-\glt `Of the remaining elements, the determinants seem to pose the fewest problems for classification.'
+\glt `在剩余成分中，决定因素在分类方面提出的问题最少。'
 \ex\label{bsp-von-den-gefangenen} 
 \gll {}[Von den Gefangenen]$_i$ hatte eigentlich [keine \_$_i$] die Nacht der Bomben überleben sollen.\footnotemark\\
-	 {}\spacebr{}of the prisoners had actually \spacebr{}none {} the night of.the bombs survive should\\
+	 {}\spacebr{}PREP DET 罪犯 AUX ADV \spacebr{}NEG {} DET 夜晚 PREP.DET 爆炸 存活 AUX\\
 \footnotetext{
         Bernhard Schlink, \emph{Der Vorleser}, Diogenes Taschenbuch 22953, Zürich: Diogenes Verlag, 1997, p.\,102.
     }
-\glt `None of the prisoners should have actually survived the night of the bombings.'
+\glt `所有罪犯都不应该从那晚的爆炸中存活下来。'
 \ex 
 \gll {}[Von der HVA]$_i$ hielten sich [etwa 120 Leute \_$_i$] dort in ihren Gebäuden auf.\footnotemark\\
-	 {}\spacebr{}of the HVA held \refl{} \spacebr{}around 120 people {} there in their buildings \prt{}\\
+	 {}\spacebr{}PREP DET HVA 容纳 \refl{} \spacebr{}大约 120 人 {} 那里 PREP 他们的 建筑 \prt{}\\
 \footnotetext{
        Spiegel, 3/1999, p.\,42.
      }
-\glt `Around 120 people from the HVA stayed there inside their buildings.'
+\glt `来自HVA大约120人都留在了他们的房子里。'
 %\largerpage
 \ex 
 \gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
-	 {}\spacebr{}from the \hspaceThis{"`}English theater stand \spacebr{}two models {} in the cabinets\\
+	 {}\spacebr{}PREP DET \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} PREP DET 包厢\\
 \footnotetext{
         Frankfurter Rundschau, quoted from \citew[\page 52]{deKuthy2001a}.
       }
-\glt `Two models from the `English Theater' are in the cabinets.'
+\glt `来自`英语剧场'的两个模特都在包厢里。'
 %Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
 \ex 
 \gll {}[Aus der Fraktion]$_i$ stimmten ihm [viele \_$_i$] zu darin, dass die Kaufkraft der Bürger gepäppelt werden müsse, nicht die gute Laune der Wirtschaft.\footnotemark\\
-	 {}\spacebr{}from the faction agreed him \spacebr{}many {} \prt{} there.in that the buying.power of.the citizens boosted become must not the good mood of.the economy\\
+	 {}\spacebr{}PREP DET 派系 同意 他 \spacebr{}很多 {} \prt{} 那里.PREP REL DET 购买.能力 PREP.DET 市民 增加 变得 AUX NEG DET 好的 氛围 PREP.DET 经济\\
 \footnotetext{
         taz, 16.10.2003, p.\,5.%  taz Themen des Tages 282 Zeilen, ULRIKE WINKELMANN S. 5
 }
-\glt `Many of the fraction agreed with him that it is the buying power of citizens that needed to be increased, not the good spirits of the economy.'
+\glt `很多派系都同意他的观点：是市民的购买能力而非经济氛围需要提升。'
 \ex\label{bsp-von-erzbischof-bilder} 
 \gll {}[Vom Erzbischof Carl Theodor Freiherr von Dalberg]$_i$ gibt es beispielsweise [ein Bild \_$_i$]
         im Stadtarchiv.\footnotemark\\
-	{}\spacebr{}from archbishop Carl Theodor Freiherr from Dalberg gives it for.example \spacebr{}a picture {} in.the city.archives\\
+	{}\spacebr{}PREP 大主教 Carl Theodor Freiherr PREP Dalberg 给 它 PREP.例子 \spacebr{}ART 图画 {} PREP.DET 城市.档案\\
 \footnotetext{
         Frankfurter Rundschau, quoted from \citew[\page 7]{deKuthy2002a}.
 }
-\glt `For example, there is a picture of archbishop Carl Theodor Freiherr of Dalberg in the city archives.'
+\glt `例如，在城市档案馆中，有一幅大主教Carl Theodor Freiherr of Dalberg的画像。'
 \ex 
 \gll {}[Gegen die wegen Ehebruchs zum Tod durch Steinigen verurteilte Amina Lawal]$_i$ hat gestern in Nigeria
     [der zweite Berufungsprozess \_$_i$] begonnen.\footnotemark\\
-	{}\spacebr{}against the because.of adultery to.the death by stoning sentenced Amina Lawal has yesterday in Nigeria \spacebr{}the second appeal.process {} begun\\
+	{}\spacebr{}PREP DET 因为.PREP 私通 PREP.DET 死亡 PREP 石刑 判处 Amina Lawal AUX 昨天 PREP Nigeria \spacebr{}DET 第二 上诉.过程 {} 开始\\
 \footnotetext{
         taz, 28.08.2003, p.\,2.
     }
-\glt `The second appeal process began yesterday against Amina Lawal, who was sentenced to death by stoning for adultery.'
+\glt `控诉 Amina Lawal的第二次上诉过程昨天开始，他因为私通而被判处石刑罚。'
 \ex 
 \gll {}[Gegen diese Kahlschlagspolitik]$_i$ finden derzeit bundesweit [Proteste und Streiks \_$_i$ ] statt.\footnotemark\\
-	 {}\spacebr{}against this clear.cutting.politics happen at.the.moment statewide \spacebr{}protests and strikes {} {} \prt{}\\
+	 {}\spacebr{}PREP DET 清楚.砍 政治 发生 PREP.DET.瞬间 遍及全州 \spacebr{}抗议 和 罢工 {} {} \prt{}\\
 \footnotetext{
         Streikaufruf, Universität Bremen, 03.12.2003, p.\,1.
     }
-\glt `At the moment, there are state-wide protests and strikes against this destructive politics.'
+\glt `此时，有遍及全州的抗议和罢工来反对破坏性政治。'
 \ex 
 \gll {}[Von den beiden, die hinzugestoßen sind], hat [einer        \_$_i$ ] eine Hacke, der andere einen Handkarren.\footnotemark\\
-	 {}\spacebr{}of the both that joined are has \spacebr{}one {}    {}  a pickaxe   the other a handcart\\
+	 {}\spacebr{}PREP DET 两个 REL 参加 COP AUX \spacebr{}一 {}    {}  ART 镐   DET 另外的 DET 手推车\\
 \footnotetext{
         Haruki Murakami, \emph{Hard-boiled Wonderland und das Ende der Welt}, suhrkamp taschenbuch, 3197, 2000,
         Translation by Annelie Ortmanns and Jürgen Stalph, p.\,414.
 }
-\glt `Of the two that joined, one had a pickaxe and the other a handcart.'
+\glt `两个参与者，其中一个有镐一个有手推车。'
 % Funktionsverbgefüge
 % \ex {}"`Gehen Sie nur. [Um mich] brauchen Sie sich keine Sorgen zu machen."'\footnote{
 %         Murakami Haruki, \emph{Hard-boiled Wonderland und das Ende der Welt}, suhrkamp taschenbuch, 3197, 2000,
@@ -158,40 +158,40 @@
 %}
 \ex 
 \gll ein Plan, [gegen den]$_i$ sich nun [ein Proteststurm \_$_i$ ] erhebt\footnotemark\\
-     a plan \spacebr{}against which \refl{} now \spacebr{}a storm.of.protests {} {} rises\\
+     ART 计划 \spacebr{}PREP REL \refl{} 现在 \spacebr{}ART 风暴.PREP.抗议 {} {} 升起\\
 \footnotetext{
   taz, 30.12.2004, p.\,6.
 }
-\glt `a plan against which a storm of protests has now risen'
+\glt `一场抗议风暴所反对的计划出台了。'
 \ex 
 \gll {}Dagegen$_i$ jedoch regt sich jetzt [Widerstand \_$_i$ ]: [\ldots]\footnotemark\\
-	{}against however rises \refl{} now \spacebr{}resistance {}\\
+	{}PREP 但是 出台 \refl{} 现在 \spacebr{}反对 {}\\
 \footnotetext{
   taz, 02.09.2005, p.\,18.%
 }
-\glt `Resistance to this is now rising, however:'
+\glt `但是，对于这件事的反抗正在升级。'
 \largerpage[2]
 \ex
 \gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
-	 {}\spacebr{}from the cycling.professional.scene knows him \spacebr{}nobody {} {} anymore\\
+	 {}\spacebr{}PREP DET 骑车.职业的.场景 知道 他 \spacebr{}没人 {} {} 今后\\
 \footnotetext{
   taz, 04.07.2005, p.\,5.
 }
 % Nobody from the professional cycling scene has heard of him anymore.
-\glt `Nobody from the professional cycling scene acts like they know him anymore.'\todostefan{check
+\glt `来自专业骑车场景的人不再像他们所知道的那样表演了。'\todostefan{check
   once taz archive gets online again}
 \ex 
 \gll {}[Über das chinesische Programm der Deutschen Welle] tobt dieser Tage [ein heftiger Streit \_$_i$ ].\footnotemark\\
-     \spacebr{}about the Chinese program of.the Deutsche Welle rages these days \spacebr{}a hefty controversy\\
+     \spacebr{}PREP DET 中国的 项目 PREP.DET Deutsche Welle 大发脾气 这些 天 \spacebr{}ART 强烈的 争论\\
 \footnotetext{
  taz, 21.10.2008, p.\,12.
 }
-\glt `Recently, there has been considerable controversy about the Chinese program by the Deutsche Welle.'
+\glt `最近，Deutsche Welle提出的中文项目有很多争论。'
 \zl
 \end{sloppypar}
 
 \noindent
-这意味着禁止从指定语位置提取成分对于德语来说并不适用。因此，对于所有语言来说禁止从指定语位置提取成分也不对。
+这意味着禁止从指定语位置提取成分对于德语来说并不适用。因此，对于所有语言来说禁止从指定语\isc{指定语}\is{specifier}位置提取成分\isc{提取!从指定语提取}\is{extraction!from specifier}也不对。
 
 %Whether extraction takes place from a specifier or not depends on the organization of the particular grammar in question.
 %In some grammars, all arguments are specifiers\is{specifier} (\citealp[\page 120--123]{Kratzer96a}, also see
@@ -324,7 +324,7 @@
 
 %\noindent
 %This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
-    我们的语法与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言的语法的生成能力与弱上下文有关语法相同。\is{capacity!generative|)}\is{complexity class|)}
+    我们的语法与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言的语法的生成能力与弱上下文有关语法相同。\isc{能力!生成能力|)}\is{capacity!generative|)}\isc{复杂类型|)}\is{complexity class|)}
 %We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
 %the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
 %for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on
