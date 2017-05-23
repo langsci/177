@@ -1,61 +1,70 @@
 %% -*- coding:utf-8 -*-
-\section{Recursion}
+\section{递归}
+%\section{Recursion}
 \label{sec-recursion}
 
-Every\is{recursion|(} theory in this book can deal with self"=embedding in language as it was
-discussed on page~\pageref{ex-that-max-thinks-that-recursion}. The example
-(\ref{ex-that-max-thinks-that-recursion}) is repeated here as (\mex{1}):
+正如\isc{递归|(}\is{recursion|(}本书第~\pageref{ex-that-max-thinks-that-recursion}页所述，本书中所有的理论都可以解决语言中的自我嵌套问题。例（\ref{ex-that-max-thinks-that-recursion}）在这里重复为例（\mex{1}）：
+%Every\is{recursion|(} theory in this book can deal with self"=embedding in language as it was
+%discussed on page~\pageref{ex-that-max-thinks-that-recursion}. The example
+%(\ref{ex-that-max-thinks-that-recursion}) is repeated here as (\mex{1}):
 \ea
 \label{ex-that-max-thinks-that-recursion-two}
 that Max thinks [that Julia knows [that Otto claims [that Karl
 suspects [that Richard confirms [that Friederike is laughing]]]]]
 \z
-Most theories
-capture this directly with recursive phrase structure rules or dominance schemata. TAG\indextag is
-special with regard to recursion since recursion is factored out of the trees. The corresponding
-effects are created by an adjunction operation that allows any amount of material to be inserted
-into trees.  It is sometimes claimed that Construction Grammar\indexcxg cannot capture the existence
-of recursive structure in natural language (\eg \citealp[\page 269]{Leiss2009a}).  This impression
-is understandable since many analyses are extremely surface"=oriented. For example, one often talks
-of a [Sbj TrVerb Obj] construction. However, the grammars in question also become recursive as soon
-as they contain a sentence embedding or relative clause construction. A sentence embedding
-construction could have the form [Sbj that-Verb that-S], where a that-Verb is one that can take
-a sentential complement and that-S stands for the respective complement. A \emph{that}"=clause can then be inserted
-into the that-S slot. Since this \emph{that}"=clause can also be the result of the application of
-this construction, the grammar is able to produce recursive structures such as those in (\mex{1}):
+大部分理论通过嵌套短语结构规则或者统制图式来看直接描述这一递归性。但是TAG\indextag 在处理递归性方面是特殊的，因为递归性被排除出了句法树。对应的效应是通过附接操作完成的，这种附接操作允许任意数量的成分插入到句法树中。有时会说构式语法\indexcxg 不能描述自然语言中存在的递归性（\eg \citealp[\page 269]{Leiss2009a}）。对构式语法有这样的印象是可以理解的，因为很多分析都是完全基于表面的。例如，有人会经常谈到[Sbj TrVerb Obj]构式。但是，我们正谈论的构式只要包含句子嵌套或关系小句构式就会变得可以描述递归性了。一个句子嵌套构式可以有以下形式[Sbj that-Verb that-S]，其中that-动词可以带句子性补语，that-S代表相应的补语。that-小句就可以插入到that-S槽中。因为这一that小句也可以是使用这一构式的结果，所以语法也可以产生例（\mex{1}）所示的例句：
+%Most theories
+%capture this directly with recursive phrase structure rules or dominance schemata. TAG\indextag is
+%special with regard to recursion since recursion is factored out of the trees. The corresponding
+%effects are created by an adjunction operation that allows any amount of material to be inserted
+%into trees.  It is sometimes claimed that Construction Grammar\indexcxg cannot capture the existence
+%of recursive structure in natural language (\eg \citealp[\page 269]{Leiss2009a}).  This impression
+%is understandable since many analyses are extremely surface"=oriented. For example, one often talks
+%of a [Sbj TrVerb Obj] construction. However, the grammars in question also become recursive as soon
+%as they contain a sentence embedding or relative clause construction. A sentence embedding
+%construction could have the form [Sbj that-Verb that-S], where a that-Verb is one that can take
+%a sentential complement and that-S stands for the respective complement. A \emph{that}"=clause can then be inserted
+%into the that-S slot. Since this \emph{that}"=clause can also be the result of the application of
+%this construction, the grammar is able to produce recursive structures such as those in (\mex{1}):
 
 \ea
 Otto claims [\sub{that-S} that Karl suspects [\sub{that-S} that Richard sleeps]].
 \z
-In (\mex{0}), both \emph{Karl suspects that Richard sleeps} and the entire clause are instances of the [Sbj
-that-Verb that-S] construction. The entire clause therefore contains an embedded subpart that is licensed by
-the same construction as the clause itself. (\mex{0}) also contains a constituent of the category
-\emph{that}-S that is embedded inside of \emph{that}-S. For more on recursion and self"=embedding\is{self"=embedding} in Construction Grammar, see \citew{Verhagen2010a}.
+在（\mex{0}）中，Karl suspects that Richard sleeps和整个句子都是[Sbj that-Verb that-S]构式的实例。整个句子因此包含一个嵌套的次部分，这一次部分也被同样的构式允准。例 （\mex{0}）也包含一个that-S范畴的成分，该成分嵌套在that-S中。关于构式语法中递归和自嵌套\isc{自嵌套}\is{self"=embedding}的更多信息，可以参见\citew{Verhagen2010a}。
+%In (\mex{0}), both \emph{Karl suspects that Richard sleeps} and the entire clause are instances of the [Sbj
+%that-Verb that-S] construction. The entire clause therefore contains an embedded subpart that is licensed by
+%the same construction as the clause itself. (\mex{0}) also contains a constituent of the category
+%\emph{that}-S that is embedded inside of \emph{that}-S. For more on recursion and self"=embedding\is{self"=embedding} in Construction Grammar, see \citew{Verhagen2010a}.
 
-Similarly, every Construction Grammar that allows a noun to combine with a genitive\is{genitive} noun phrase also allows
-for recursive structures. The construction in question could have the form [Det N
-NP[gen] ] or [ N NP[gen] ]. The [Det N NP[gen] ] construction licenses structures such as (\mex{1}):
+与之相似，每一个允许名词语一个属格\isc{属格} \is{genitive}名词短语组合的构式语法也允许递归结构。相关构式可以有[DetNNP[gen]]或[NNP[gen]]形式。[DetNNP[gen]]构式允准例（\mex{1}）所示的例子：
+%Similarly, every Construction Grammar that allows a noun to combine with a genitive\is{genitive} noun phrase also allows
+%for recursive structures. The construction in question could have the form [Det N
+%NP[gen] ] or [ N NP[gen] ]. The [Det N NP[gen] ] construction licenses structures such as (\mex{1}):
 \ea
 \gll [\sub{NP} des Kragens [\sub{NP} des Mantels [\sub{NP} der Vorsitzenden]]]\\
 	{} the collar {} of.the coat {} of.the chairwoman\\
 \glt `the collar of the coat of the chairwoman'
 \z
-\citet{Jurafsky96a} and \citet*{BLT2009a} use probabilistic context"=free grammars\is{context"=free grammar!probabilistic (PCFG)} (PCFG) for a Construction Grammar parser
-with a focus on psycholinguistic plausibility and modeling of acquisition. Context"=free grammars
-have no problems with self"=embedding\is{self"=embedding} structures like those in (\mex{0}) and thus this kind
-of Construction Grammar itself does not encounter any problems with self"=embedding.
+\citet{Jurafsky96a}和\citet*{BLT2009a}使用概率上下文无关文法\isc{上下文无关文法!概率 (PCFG)}\is{context"=free grammar!probabilistic (PCFG)} （PCFG）来构建一个聚焦于心理语言学可行性和习得模拟的构式语法分析器。上下文无关文法处理例（\mex{0}） 所示的自我嵌套\isc{自嵌套}\is{self"=embedding}结构时候没有问题，因此这类构式语法在处理自我嵌套时不会遇到任何问题。
+%\citet{Jurafsky96a} and \citet*{BLT2009a} use probabilistic context"=free grammars\is{context"=free grammar!probabilistic (PCFG)} (PCFG) for a Construction Grammar parser
+%with a focus on psycholinguistic plausibility and modeling of acquisition. Context"=free grammars
+%have no problems with self"=embedding\is{self"=embedding} structures like those in (\mex{0}) and thus this kind
+%of Construction Grammar itself does not encounter any problems with self"=embedding.
 
-\citet[\page 192]{Goldberg95a} assumes that the resultative construction\is{construction!resultative} for English\il{English} has the following
-form:
+Goldberg\citet[\page 192]{Goldberg95a}认为英语的结果构式\isc{构式!结果}\is{construction!resultative}有以下形式：
+%\citet[\page 192]{Goldberg95a} assumes that the resultative construction\is{construction!resultative} for English\il{English} has the following
+%form:
 \ea
 {}[SUBJ [V OBJ OBL]] 
 \z
-This corresponds to a complex structure as assumed for elementary trees in TAG. LTAG differs from Goldberg's approach in that every structure requires a lexical
-anchor, that is, for example (\mex{0}), the verb would have to be fixed in LTAG. But in Goldberg's analysis, verbs can be inserted into independently
-existing constructions (see Section~\ref{Abschnitt-Stoepselei}). In TAG publications, it is often emphasized that elementary trees do not contain any recursion.
-The entire grammar is recursive however, since additional elements can be added to the tree using adjunction and -- as (\mex{-2}) and
-(\mex{-1}) show -- insertion into substitution nodes can also create recursive structures.
-\is{recursion|)}
+这对应着TAG中\textcolor{red}{基础/初级}树的复杂结构。LTAG与Goldberg的方法差异在于每一个结构都需要一个词汇锚位，也就是说，例 （\mex{0}）在LTAG中动词应该是固定的。但是在Goldberg的分析中，动词可以独立插入存在的构式中（见~\ref{Abschnitt-Stoepselei}）。在TAG的相关文献中，经常会强调初级树不包括任何递归。但是整个语法是递归的，因为另外的元素可以通过附接插入到句法树中——正如例（\mex{-2}）和（\mex{-1}） 所示——插入到替换项节点也可以产生递归结构。
+\isc{递归|)}\is{recursion|)}
+%This corresponds to a complex structure as assumed for elementary trees in TAG. LTAG differs from Goldberg's approach in that every structure requires a lexical
+%anchor, that is, for example (\mex{0}), the verb would have to be fixed in LTAG. But in Goldberg's analysis, verbs can be inserted into independently
+%existing constructions (see Section~\ref{Abschnitt-Stoepselei}). In TAG publications, it is often emphasized that elementary trees do not contain any recursion.
+%The entire grammar is recursive however, since additional elements can be added to the tree using adjunction and -- as (\mex{-2}) and
+%(\mex{-1}) show -- insertion into substitution nodes can also create recursive structures.
+%\is{recursion|)}
 
 
 

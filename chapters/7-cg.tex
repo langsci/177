@@ -23,7 +23,7 @@
 %% gibt es computerlinguistische Gruppen, die in diesem theoretischen Rahmen arbeiten
 %% \citep*{Uszkoreit86d,Koenig99a-u,VHE2003a}.
 %% MCGTOOLS: Llore1995a-u
-下述语言已经有了一些经过实现的语法片段：
+下述语言已经有了一些有具体实现的语法片段：
 \begin{itemize}
 \item 德语\citep*{Uszkoreit86d,Koenig99a-u,VHE2003a,VTBS2011a}
 \item 英语\il{English} \citep{Villavicencio2002a,Baldridge2002a-u,Beavers2002a-u,Beavers2004a-u}
@@ -44,14 +44,14 @@
 
 \section{关于表示形式的一般说明}
 
-接下来，我介绍一些范畴语法中的一些基本性假设。在此之后，我讨论一些基于组合范畴语法的特殊分析，这些分析选自\citep{Steedman97a}。
-除了组合范畴语法之外，也有一些范畴语法的其它变种，如类型逻辑范畴语法\citet{Morrill94a-u,Dowty97a-u,Moortgat2011a-u}。
+接下来，我介绍一些范畴语法中的基本假设。在此之后，我讨论一些基于组合范畴语法的特殊\textcolor{red}{具体/特殊}分析，这些分析选自\citep{Steedman97a}。
+除了组合范畴语法之外，也有一些范畴语法的其它变体，如类型逻辑范畴语法\citet{Morrill94a-u,Dowty97a-u,Moortgat2011a-u}。
 在本书中对其它类型的范畴语法不再加以讨论。
 
 \subsection{配价信息的表示}
 \label{sec-forward-backward-application}
 
-在\is{valence|(}范畴语法中，复杂范畴替换了GPSG\indexgpsg中的\subcatf来确保一个中心词只能使用适合的句法规则。
+在\is{valence|(}范畴语法中，复杂范畴替换了GPSG\indexgpsg 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
 一些短语结构语法规则\is{phrase structure grammar}
 可以用复杂范畴来替换：\is{/|(} 
 
@@ -64,20 +64,20 @@ vp $\to$ v(trans) np              & vp/np  \\
 vp $\to$ v(np\_and\_pp) np~pp(to) & (vp/pp)/np  \\
 \end{tabular}
 \z
-vp/np表示当前语言客体需要一个名词短语用以形成一个动词短语。
+vp/np表示当前描写的语言单位需要一个名词短语用以形成一个动词短语。
 
-范畴语法只包含几条非常抽象的规则。其中一条规则为前向应用，有时也成为乘法规则：
+范畴语法只包含几条非常抽象的规则。其中一条规则为前向应用，有时也称为乘法规则：
 \ea
 \label{vorwaertsapplikation}\label{forward-application}
 前向应用\is{forward application}：\\
 X/Y $*$ Y = X
 \z
-这条规则组合两个范畴，其中之一为X/Y，意为向右寻找一个Y已生成X，另一个则为X。
-这个组合的结果是不再需要Y的X。
-称X/Y为\emph{函子}\is{functor}，而Y为函子的\emph{论元}\is{argument}。
+这条规则组合两个范畴，其中之一为X/Y，意为向右寻找一个Y以便生成X，另一个则为X。
+这个组合的结果是一个完整的X，不再需要Y。
+称X/Y为\emph{函子}\is{functor}，而Y为函子的\emph{变元}\is{argument}。
 
-和\gbt一样，范畴语法中配价信息只在词典中出现一次。
-在GPSG\indexgpsg中，配价信息同时体现在句法规则和词典项的\subcatf中。
+和GB理论一样，范畴语法中配价信息只在词典中出现一次。
+在GPSG\indexgpsg 中，配价信息同时体现在句法规则和词典项的\textsc{subcat}特征中。
 
 图\vref{abb-cg-transitives-Verb}展示了一个及物动词的词典项是如何和它的宾语组合的。
 \begin{figure}
@@ -99,7 +99,7 @@ vp/np   & np\\
 CG中的一个推导可以视为一个二叉树。
 一对儿范畴通过一个长箭头表示其通过一个组合规则进行组合的过程。
 箭头的方向表示这个组合的方向。而组合的结果则置于箭头之下。
-图\vref{Abb-CG-als-Baum}是图\ref{abb-cg-transitives-Verb}的相对应的树形。
+图\vref{Abb-CG-als-Baum}是与图\ref{abb-cg-transitives-Verb}相对应的树形。
 \begin{figure}
 \centerline{%
 \begin{forest}
@@ -117,8 +117,8 @@ sn edges
 \noindent
 对于`/'，我们经常假设左向结合律\is{left associativity}，即(vp/pp)/np = vp/pp/np。\is{/|)}
 
-观察\ref{LE-CG})中的词汇项，我们可以清楚看到范畴v是不存在的。
-词典仅仅决定一个一个词汇项与什么样的论元结合以得到什么结果。
+观察（\ref{LE-CG}）中的词汇项，我们可以清楚看到范畴v是不存在的。
+词典仅仅决定一个词汇项与什么样的论元结合以得到什么结果。
 而符号vp也可以删去：一个（英语中的）vp是在左侧为其提供一个名词短语则可以形成一个完整句子的语言成分。
 这\is{$\backslash$|(}通过s$\backslash$np进行表示。
 使用后向应用规则，可以计算得到如图\vref{abb-the-cat-chased-Mary}所示的推导\is{valence|)}
@@ -142,25 +142,25 @@ np/n & n   & (s\bs np)/np   & np\\
 \end{figure}%
 
 \noindent
-范畴语法并不显性地区分短语与词：一个不及物动词和一个包含了一个宾语的动词短语的描写是一样的，同为s$\backslash$np。
+范畴语法并不显性地区分短语与词：针对一个不及物动词和一个包含了一个宾语的动词短语的描写是一样的，同为s$\backslash$np。
 同样道理，专有名词是完整的名词短语，视为np。\is{$\backslash$|)}
 
 \subsection{语义}
 
 我们已经提到了因为句法组合总是可以推出相应的语义组合，所以范畴语法备受语义学家青睐。
 这种组合的平行性不仅仅在语言单位的简单组合中如此，在复杂组合中亦然，我们可以精确地定义相应的语义组合过程，接下来我们将展开讨论。
-我们的讨论基于\citet[Section~2.1.2]{Steedman97a}的分析。
+我们的讨论基于\citet[\S 2.1.2]{Steedman97a}的分析。
 
-针对动词``eats''，Steedman给出了下面的词汇项分析：\footnote{
+针对动词``eats''（吃），Steedman给出了下面的词汇项分析：\footnote{
  我适当变换了分析的符号表示以和本书的表示一致。
 }
 \ea
 eats := (s: \relation{eat}(x, y)\bs np\sub{3S}:x)/np:y
 \z
-在(\mex{0})中，每一个范畴的语义都在分号中表示。因为``eat''的每一个论元的语义我们尚不清楚，因此用变量$x$和$y$表示。
-当动词组合了一个名词短语，这个名词短语的指谓（denotation）会被带入到相应位置以替换相应的变量。
-(\mex{1})为一个例子：\footnote{
-  我们假设``apples''意为\relation{apples}而不是\relation{apples}(z)，这里去掉量词以简化分析。
+在（\mex{0}）中，每一个范畴的语义都在分号中表示。因为``eat''的论元的语义我们尚不清楚，因此用变量$x$和$y$表示。
+当动词组合了一个名词短语，这个名词短语的指谓（denotation）\textcolor{red}{外延/指谓}会被带入到相应位置以替换相应的变量。
+（\mex{1}）为一个例子：\footnote{
+  我们假设``apples''（苹果）意为\relation{apples}而不是\relation{apples}(z)，这里去掉量词以简化分析。
 }
 \ea
 \deriv{2}{
@@ -169,25 +169,25 @@ eats := (s: \relation{eat}(x, y)\bs np\sub{3S}:x)/np:y
 s: eat'(x, apples')\bs np_{3S}:x\\
 }
 \z
-当组合一个函子和一个论元时，必须确保论元符合函子要求，也就是说二者必须可以合一\is{unification} (参见章节\ref{sec-unification}以了解合一运算)。
+当组合一个函子和一个变元时，必须确保变元符合函子要求，也就是说二者必须可以合一\is{unification} (参见\S \ref{sec-unification}以了解合一运算)。
 np:y和np: \relation{apples}的合一结果为np: \relation{apples}，因为\relation{apples}比变量y更细化。
 除了在项np:y中出现，y也出现在动词的描写中(s: \relation{eat}(x, y)\bs np\sub{3S}:x)，因此动词论元的语义也得到了\relation{apples}这一语义解释。
-因此，组合的结果为：\relation{eat}(x, \relation{apples})\bs np$_{3S}$:x，如(\mex{0})所示。
+因此，组合的结果为：\relation{eat}(x, \relation{apples})\bs np$_{3S}$:x，如（\mex{0}）所示。
 
 Steedman注意到这套符号的可读性随着推导的复杂而变得很差，因此使用了$\lambda$"=表示法：
 \ea
 eats := (s\bs np\sub{3S})/np: $\lambda y.\lambda x.\relation{eat}(x, y)$
 \z
-$\lambda$用来获取复杂语义表征的开放性位置(参见章节\ref{sec-PSG-Semantik})。
+$\lambda$用来获取复杂语义表征的开放性位置(参见\S \ref{sec-PSG-Semantik})。
 $\lambda y.\lambda x.\relation{eat}(x, y)$这样的语义表征可以和``{apples}''的表征相组合：去掉第一个$\lambda$，然后将``apples''的指谓带入到所有y变量的位置。
-(参阅章节\ref{sec-PSG-Semantik}以了解更多细节):
+(参阅\S \ref{sec-PSG-Semantik}以了解更多细节):
 \ea
 $\lambda y.\lambda x.eat'(x, y)$ \relation{apples}\\
 $\lambda x.eat'(x, apples')$
 \z
 这种$\lambda$表达式的约归称之为$\beta$"=约归\is{beta"=reduction@$\beta$"=reduction}\label{Seite-beta-Reduktion}。
 
-如果采用(\mex{-1})中的符号，组合规则则可以修整为如下形式：
+如果采用(\mex{-1})中的符号，组合规则则可以修改为如下形式：
 \ea
 \begin{tabular}[t]{@{}l@{ * }l@{ = }c}
 X/Y:f & Y:a & X: f a\\
@@ -195,9 +195,9 @@ Y:a & X\bs Y:f & X: f a\\
 \end{tabular}
 \z
 在这样的规则中，论元的语义（a）写在函子的语义指谓之后。
-函子语义指谓的开发位置用$\lambda$符号进行表示。论元可以和第一个$\lambda$表达式按照$\beta$-约归进行结合。
+函子语义指谓的开放位置用$\lambda$符号进行表示。变元可以和第一个$\lambda$表达式按照$\beta$-约归进行结合。
 
-图\vref{Abb-Semantik-CG}展示了一个含有及物动词的句子的推导。在前向应用和后项应用中，直接使用了$\beta$"=约归。
+图\vref{Abb-Semantik-CG}展示了一个含有及物动词的句子的推导。在前向应用和后向应用中，直接使用了$\beta$"=约归。
 \begin{figure}
 \centerline{%
 \deriv{3}{
@@ -218,29 +218,29 @@ np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'
 \caption{\label{Abb-Semantik-CG}范畴语法中的语义组合}
 \end{figure}%
 
-\subsection{附属语}
+\subsection{附接语}
 
-正如章节\ref{sec-intro-arg-adj}所讨论的\is{adjunct|(}，附属语是可选的。
-在短语结构语法中很容易表示这种可选性，例如在产生式左端出现的元素（比如一个动词短语VP）也同时出现在产生式右端，而产生式右端还有一个额外的附属语。
+正如\S \ref{sec-intro-arg-adj}所讨论的\is{adjunct|(}，附接语是可选的。
+在短语结构语法中很容易表示这种可选性，例如在产生式左端出现的元素（比如一个动词短语VP）也同时出现在产生式右端，而产生式右端还有一个额外的附接语。
 因为产生式左端的符号也在右端出现，这条规则可以被应用任意多次。
-(\mex{1})是这样的一个例子：
+（\mex{1}）是这样的一个例子：
 \eal
 \ex VP $\to$ VP~PP
 \ex Noun $\to$ Noun~PP
 \zl
 我们可以利用上述规则分析动词短语或名词后面带有任意多项介词短语的语法现象。
 
-范畴语法的分析中，附属语的范畴一般为X\bs X或X/X。
+范畴语法的分析中，附接语的范畴一般为X\bs X或X/X。
 形容词是出现在名词前的修饰性成分。它们的范畴为n/n。
 出现在名词后面的修饰性成分（如介词短语或关系从句）的范畴则为n\bs n。\footnote{
-  范畴语法中没有想\xbar一样的\xbart的间接投射范畴符号。
+  范畴语法中没有像\xbar 一样的\xbart 的间接投射范畴符号。
   所以CG使用n/n，而不是\nbar/\nbar。
   参见练习\ref{ue-Xbar-CG}。
 } 
 对于动词短语VP的修饰性成分，X被替换为VP的符号（s\bs np），这样一来会产生相对复杂的表达式(s\bs np)\bs (s\bs np)。
 英语中的副词是VP的修饰性成分，因而具有上述范畴。介词需要一个名词短语才能形成一个完整的介词短语去修饰动词，因此其范畴应为
 ((s\bs np)\bs (s\bs np))/np。
-图\vref{abb-CG-Adjunktion}是一个含有副词(``{quickly}'')和介词(``{round}'')的英语句子的分析。
+图\vref{abb-CG-Adjunktion}是一个含有副词``{quickly}''（快速地）和介词``{round}''（环绕）的英语句子的分析。
 %
 \begin{figure}
 \oneline{%
@@ -264,15 +264,13 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 \caption{\label{abb-CG-Adjunktion}基于CG的附属语分析实例}
 \end{figure}%
 注意到将``round''和``the garden''组合之后，会得到副词的范畴——(s\bs np)\bs (s\bs np)。
-在\gbt中，副词和介词同样被置于单独的类中(参阅第\pageref{Seite-Adverbien-PP}页)。
+在GB理论中，副词和介词同样被置于单独的\textcolor{red}{同一个/单独的}类中(参阅第\pageref{Seite-Adverbien-PP}页)。
 这个包罗万象的类可根据元素的配价信息进一步分为两个子类。\is{adjunct|)}
 
 \section{被动}
 
-在范畴语法中，被动\is{passive|(}的分析采用了词汇规则(\citealp[\page412]{Dowty78a};
-<alert>In Categorial Grammar, the passive
-\citealp[Section~3.4]{Dowty2003a})。
-(\mex{1})是相关规则\citew[\page 49]{Dowty2003a}：
+在范畴语法中，被动\is{passive|(}的分析采用了词汇规则(\citealp[\page412]{Dowty78a}; \citealp[\S 3.4]{Dowty2003a})。
+（\mex{1}）是相关规则\citew[\page 49]{Dowty2003a}：
 \ea
 \label{Lexikonregel-Passiv-CG}
 \begin{tabular}[t]{@{}ll@{~$\to$~}l@{}}
@@ -283,13 +281,13 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 这里的PstP表示过去分词（past participle）而np$_{by}$是形如vp\bs vp或(s\bs np)\bs (s\bs np)的动词短语修饰语的简写。
 这条规则意为：如果一个词的范畴为(s\bs np)/np，则一个带有过去分词标记的词的范畴应为PstP/np$_{by}$。
 
-(\mex{1}a)及物动词``{touch}''的词汇项，而(\mex{1}b)为应用了上述词汇规则之后结果：
+（\mex{1}a）是及物动词``{touch}''（触摸）的词汇项，而（\mex{1}b）为应用了上述词汇规则之后结果：
 \eal
 \ex touch:   (s\bs np)/np
 \ex touched: PstP/np$_{by}$ 
 \zl
 助动词``was''有范畴(s\bs np)/PstP，而介词``by''有范畴np$_{by}$/np，或者是其原始形式((s\bs np)\bs (s\bs np))/np。
-按照这样的分析，(\mex{1})的推导为图\vref{abb-CG-Passiv}所示。
+按照这样的分析，（\mex{1}）的推导为图\vref{abb-CG-Passiv}所示。
 \ea
 John was touched by Mary.
 \z
@@ -313,26 +311,25 @@ np   & (s\bs np)/\mathit{PstP} & \mathit{PstP}/np_{by} & np_{by}/np & np\\
 
 \noindent
 \addlines
-而关于如何平行地分析(\mex{1})中的这对句子，这仍然是没有得到解决的问题。\footnote{
+而关于如何平行地分析（\mex{1}）中的这对句子，这仍然是没有得到解决的问题。\footnote{
   感谢Roland Sch\"{a}fer\aimention{Roland Sch{\"a}fer} (p.\,m., 2009)为我提供上述数据。
 }
 \eal
 \ex He gave the book to Mary.
 \ex The book was given to Mary.
 \zl
-``gave''有范畴((s\bs np)/pp)/np，也就是说这个动词必须先结合一个名词短语NP(``{the book}'')和一个介词短语(``{to Mary}'')，最后再组合一个主语。
+``gave''（给）有范畴((s\bs np)/pp)/np，也就是说这个动词必须先结合一个名词短语NP（``{the book}''（那本书））和一个介词短语（``{to Mary}''（给Mary）），最后再组合一个主语。
 问题在于规则(\ref{Lexikonregel-Passiv-CG})无法应用于带有to-PP论元的``{gave}''，因为在范畴((s\bs np)/pp)/np中，pp夹在两个np中间。
 我们需要扩展(\ref{Lexikonregel-Passiv-CG})的规则，并引入新的技术分析手段\footnote{
   Baldridge\aimention{Jason Baldridge} (p.\,M.\ 2010)建议采用在被动的词汇规则里使用正则表达式。
  }
-或假设新的规则，如(\mex{0}b)。\is{passive|)}\todostefan{NW:
+或假设新的规则，如（\mex{0}b）。\is{passive|)}\todostefan{NW:
     \citew{Dowty97a-u} head wrapping does this.<alert>}
 
 \section{动词位置}
 \label{sec-Verbstellung-CG-Steedman}
 
-\mbox{}\citet[\page 159]{Steedman2000a-u}\is{verb position|(}针对荷兰语\il{Dutch}提出一种变分支分析，具体而言，`at'（吃）有两个词汇项：一个所有论元均在其右侧的前置位置项和一个所有论元都在其左侧的战局后置位置的项。
-an initial one with its arguments to the right, and another occupying final position with its arguments to its left.
+\mbox{}\citet[\page 159]{Steedman2000a-u}\is{verb position|(}针对荷兰语\il{Dutch}提出一种变分支分析，具体而言，`at'（吃）有两个词汇项：一个所有论元均在其右侧的前置位置项和一个所有论元都在其左侧的占据后置位置的项。
 
 \eal
 \ex \emph{at} `吃' 在动词后置位置：(s\sub{+SUB}$\backslash$np)$\backslash$np
@@ -347,7 +344,7 @@ Steedman利用\textsc{sub}特征来区分从句和非从句的句子。这两个
 \ex 动词后置位置：(s\sub{+SUB}$\backslash$np[nom])$\backslash$np[acc]
 \ex 动词前置位置：(s\sub{$-$SUB}/np[acc])/np[nom]
 \zl
-图\ref{Abbildung-CG-der-Mann-der-Frau-das-Buch-gibt}和\ref{Abbildung-CG-gibt-der-Mann-der-Frau-das-Buch}是含有二价动词的德语句子的分析相关分析。
+图\ref{Abbildung-CG-der-Mann-der-Frau-das-Buch-gibt}和图\ref{Abbildung-CG-gibt-der-Mann-der-Frau-das-Buch}是含有二价动词的德语句子的相关分析。
 
 \begin{figure}
 \centerline{%
@@ -378,17 +375,17 @@ isst & er  & ihn \\
 在图\ref{Abbildung-CG-der-Mann-der-Frau-das-Buch-gibt}中，动词首先和一个带有宾格的宾语结合，而在图\ref{Abbildung-CG-gibt-der-Mann-der-Frau-das-Buch}中，
 动词首先和主语结合。针对这种变分支分析也有反对意见，如\citew{Netter92}和\citew{Mueller2005c,MuellerGS}。
 
-\citet{Jacobs91a}提出了一种对应GB\indexgb的动词移位的分析。他假定动词后置，换句话说，针对动词存在一个词汇项允准论元在动词左侧与之相结合。
-一个及物动词应该有如(\mex{1}a)中所示的范畴。
+\citet{Jacobs91a}提出了一种对应GB\indexgb 的动词移位的分析。他假定动词后置，换句话说，针对动词存在一个词汇项允准论元在动词左侧与之相结合。
+一个及物动词应该有如（\mex{1}a）中所示的范畴。
 而允准动词前置结构的是一个语迹，它出现在最后，而动词的论元以及动词本身出现在前置的位置。
-(\mex{1}b)是动词语迹的范畴，它允许一个及物动词出现在前置位置：
+（\mex{1}b）是动词语迹的范畴，它允许一个及物动词出现在前置位置：
 \eal
-\ex Verb in final position:\\
+\ex 动词后置：\\
     (s\bs np[nom])\bs np[acc]
-\ex Verb trace for the analysis of verb-first:\\
+\ex 动词前置中的动词语迹：\\
     ((s\bs ((s\bs np[nom])\bs np[acc]))\bs np[nom])\bs np[acc]
 \zl
-动词语迹的词汇项看起来非常复杂。放到具体的分析中，更清晰明了，参见图\vref{Abbildung-CG-isst-der-junge-den-kuchen-jacobs}。
+动词语迹的词汇项看起来非常复杂。而放到具体的分析中，就变得清晰明了，参见图\vref{Abbildung-CG-isst-der-junge-den-kuchen-jacobs}。
 
 \begin{figure}
 \oneline{%
@@ -408,61 +405,68 @@ isst & er  & ihn & \_\\
 }
 \caption{\label{Abbildung-CG-isst-der-junge-den-kuchen-jacobs}遵循\citet{Jacobs91a}的动词前置句子的分析}
 \end{figure}%
-语迹是整个分析的中心词：它首先和宾格宾语集合，之后和主语结合。在最后一步，它和一个及物动词在句首位置结合。\footnote{在HPSG\indexhpsg中也有类似分析，参见\citew{Netter92}。
+语迹是整个分析的中心词：它首先和宾格宾语结合，之后和主语结合。在最后一步，它和一个及物动词在句首位置结合。\footnote{在HPSG\indexhpsg 中也有类似分析，参见\citew{Netter92}。
 } 
-这种分析存在一个问题：在(\mex{1})种，动词``{isst}''（eat）以及``{er}''（he）和``{ihn}''（him/it）都是动词语迹的论元。
+这种分析存在一个问题：在（\mex{1}）中，动词``{isst}''（吃）以及``{er}''（他）和``{ihn}''（他/它）都是动词语迹的论元。
 \ea
 \gll Morgen [isst [er [ihn \_]]]\\
-	 tomorrow \spacebr{}eats \spacebr{}he \spacebr{}him\\
-\glt `He will eat it/him tomorrow.'
+%	 tomorrow \spacebr{}eats \spacebr{}he \spacebr{}him\\
+     明天 \spacebr{}吃 \spacebr{}他 \spacebr{}他\\
+%\glt `He will eat it/him tomorrow.'
+\glt `他明天将要吃他/它。'
 \z
-在德语中，附属语可以出现在动词论元的前、后以及中间的位置，因此``morgen''可以出现在动词``isst''前，因为此时``isst''只不过是出现在后置位置的动词语迹的一个普通论元。
-因为附属语并不改变其投射的范畴，因此短语``{morgen isst er ihn}''应该能够出现在所有``{isst er ihn}''。然而这并不符合语言事实。
-如果在(\mex{1}a)，将``{isst er ihn}''替换成``{morgen isst er ihn}''，将会得到一个不合语法的句子(\mex{1}b)。
+在德语中，附接语可以出现在动词论元的前、后以及中间的位置，因此``morgen''（明天）可以出现在动词``isst''前，因为此时``isst''只不过是出现在后置位置的动词语迹的一个普通论元。
+因为附接语并不改变其投射的范畴，因此短语``{morgen isst er ihn}''应该能够出现在所有``{isst er ihn}''。然而这并不符合语言事实。
+如果在（\mex{1}a），将``{isst er ihn}''替换成``{morgen isst er ihn}''，将会得到一个不合语法的句子（\mex{1}b）。
 \eal
 \ex[]{
 \gll Deshalb isst er ihn.\\
-     therefore eats he him\\
-\glt `Therefore he eats it/him.'
+%     therefore eats he him\\
+     因此 吃 他 他 \\
+%\glt `Therefore he eats it/him.'
+\glt `因此他吃他/它。'
 }
 \ex[*]{
 \gll Deshalb morgen isst er ihn.\\
-	 therefore tomorrow eats he him\\
+% therefore tomorrow eats he him\\
+     因此 明天 吃 他 他 \\
 }
 \zl
 %Normalerweise geht man davon aus, dass das \vf durch Voranstellung einer Konstituente besetzt wird
 %und nicht durch ein
-\citet{KW91a}提出了一种可以避免这种问题的方法(参见章节\ref{Abschnitt-Verbstellung-HPSG})。
+\citet{KW91a}提出了一种可以避免这种问题的方法（参见\S \ref{Abschnitt-Verbstellung-HPSG}）。
 这里，他们假定存在一个前置动词，这个动词选择语迹的一个投射。
 如果副词只是和动词在后置位置和动词结合，那么``{morgen}''和``{isst er ihn}''会被排除在外。
-如果我我们假定第一个出现的动词是函子，那就有可能捕捉<alert>complementizers\is{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
-和complementizers之间的差别仅仅在于其需要动词语迹的一个投射，而complementizers需要显式动词的投射。
+如果我我们假定第一个出现的动词是函子，那就有可能捕捉补语化标记成分（complementizers）\is{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
+和补语化标记成分之间的差别仅仅在于其需要动词语迹的一个投射，而补语化标记成分需要显式动词的投射。
 \eal
 \ex 
 \gll dass [er ihn isst]\\
-     that \spacebr{}he it eats\\
+%     that \spacebr{}he it eats\\
+     补语化标记 \spacebr{}他 它 吃\\
 \ex 
 \gll Isst [er ihn \_ ]\\
-     eats \spacebr{}he it\\
+%     eats \spacebr{}he it\\
+     吃 \spacebr{}他 它 \\
 \zl
-关于德语动词位置的这种描述反应了章节\ref{Abschnitt-Verbstellung-GB}.\is{verb position|)}中介绍的基于GB的分析。
+关于德语动词位置的这种描述反应了\S \ref{Abschnitt-Verbstellung-GB}\is{verb position|)}中介绍的基于GB的分析。
 
-\section{局部重排序}
+\section{局部语序重列}
 \label{Abschnitt-CG-lokale-Umstellung}
 
-到目前为止，\is{constituent order|(}我们看到了函子与论元的各种组合：论元可以出席在函子左侧也可以出现在右侧。
-而论元的消去总是按照固定的顺序：最右侧的论元最先与函子结合，\eg (s\bs np)/pp首先与PP结合，其结果再与NP结合。 
+到目前为止，\is{constituent order|(}我们看到了函子与变元的各种组合：变元可以出现在函子左侧也可以出现在右侧。
+而变元的消去总是按照固定的顺序：最右侧的变元最先与函子结合，如(s\bs np)/pp首先与PP结合，其结合的结果再与NP结合。 
 
-分析德语中的各种序变化有很多可行的方法：
-\citet{Uszkoreit86b}提出基于词来分析可能的词序；也就是说每一种可行的词序都对应一个词汇项。
-按照这种分析，对于一个<alert>ditransitive动词，可能有至少六种词汇项。
-\citet[\page 257]{Briscoe2000a}和\citet[\page 96--98]{Villavicencio2002a}基于这种分析提出了另外一种分析：论元的序在句法中被修改，如一条句法规则可以将(S/PRT)/NP变为(S/NP)/PRT。
+分析德语中的各种语序变化有很多可行的方法：
+\citet{Uszkoreit86b}提出基于词来分析可能的语序；也就是说每一种可行的语序都对应一个词汇项。
+按照这种分析，对于一个双及物（ditransitive）动词，可能有至少六种词汇项。
+\citet[\page 257]{Briscoe2000a}和\citet[\page 96--98]{Villavicencio2002a}基于这种分析提出了另外一种分析：变元的语序在句法过程中被修改，如一条句法规则可以将(S/PRT)/NP变为(S/NP)/PRT。
 
 
 \citet{SB2006a-u}提出了一种新的分析。他们讨论了在不同语言中排列论元的各种可能。
-这就包含了那些序自由的语言，也包括那些组合方向自由的语言。\is{constituent order!free}\is{constituent order!fixed}
-Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素可以按任意顺序删去
-使用`$|$'\is{$\vert$}而不是`$\backslash$'\is{$\backslash$}以及`/'\is{/}来指示组合方向的任意性。(\mex{1})是一些实例原型：
+这就包含了那些语序自由的语言，也包括那些组合方向自由的语言。\is{constituent order!free}\is{constituent order!fixed}
+Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素可以按任意顺序删去，
+使用`$|$'\is{$\vert$}而不是`$\backslash$'\is{$\backslash$}以及`/'\is{/}来指示组合方向的任意性。（\mex{1}）是一些实例原型：
 
 \ea
 \begin{tabular}[t]{@{}lll@{}}
@@ -472,43 +476,47 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 日语\il{Japanese} & S\{$\backslash$NP[nom], $\backslash$NP[acc] \} & 自由语序，动词后置\\
 \end{tabular}
 \z
-\citet[Section~3.1]{Hoffmann95a-u}针对土耳其语\il{Turkish}提出了一种类似日语的分析，这种分析的思想也可以用于分析德语的动词位置。
-这对应于GB/MP\indexgb的分析\citet{Fanselow2001a}以及HPSG\indexhpsg的分析（参见章节\ref{Abschnitt-HPSG-lokale-Umstellung}）。\is{constituent order|}
+\citet[\S 3.1]{Hoffmann95a-u}针对土耳其语\il{Turkish}提出了一种类似日语的分析，这种分析的思想也可以用于分析德语的动词位置。
+这对应于GB/MP\indexgb 的分析\citet{Fanselow2001a}以及HPSG\indexhpsg 的分析（参见\S \ref{Abschnitt-HPSG-lokale-Umstellung}）。\is{constituent order|}
 
-\section{长距离依赖}
+\section{长距离依存}
 \label{Abschnitt-UDC-KG}\label{sce-nld-cg}
 
 %\addlines
-\mbox{}\citet[Section~1.2.4]{Steedman89a}\is{long"=Distance dependency|(}针对长距离依赖提出了一种新的分析，这种分析并不假借移位或是空语类。
-像(\mex{1})中的例子，他假设``{Harry must have been eating}''和``{Harry devours}''的范畴都是s/np。\todostefan{CUP
+\mbox{}\citet[\S 1.2.4]{Steedman89a}\is{long"=Distance dependency|(}针对长距离依存提出了一种新的分析，这种分析并不假借移位或是空语类。
+像（\mex{1}）中的例子，他假设``{Harry must have been eating}''和``{Harry devours}''的范畴都是s/np。\todostefan{CUP
   reviewer: No explanation of islands}
 \eal
 \ex\label{Bsp-these-apples}
-These apples, Harry must have been eating.
-\ex apples which Harry devours
+\gll These apples, Harry must have been eating. \\
+     这些 苹果 Harry 一定 时体标记 时体标记 吃。\\
+\glt 这些苹果，Harry一定已经吃过了。
+\ex 
+\gll apples which Harry devours \\
+     苹果 关系代词 Harry 吞食 \\
+\glt Harry正在吞食的苹果
 \zl
-在(\mex{0})的分析中，最前面的名词短语``{these apples}''和关系代词``{which}''都是函子，都以s/np为论元。
+在（\mex{0}）的分析中，最前面的名词短语``{these apples}''和关系代词``{which}''都是函子，都以s/np为变元。
 使用之前介绍的机制，我们无法将范畴s/np分配给词串``{Harry must have been eating}''和``{Harry devours}''，尽管直觉上``{Harry devours}''是一个缺少名词短语的句子。
 我们需要在范畴语法的基础上增加两个新的扩展：
-类型提升（type raising）\is{type raising}和前向组合（forward composition)\is{composition!forward}
-以及后向组合（backward composition）\is{composition!backward}。
+类型提升（type raising）\is{type raising}和前向组合（forward composition)\is{composition!forward}/后向组合（backward composition）\is{composition!backward}。
 接下来我们介绍这几个新增加的运算操作。
 
 \subsection{类型提升}
 
 \addlines[-1]
-通过类型提升\is{type raising}规则，范畴np可以变形为范畴(s/(s\bs np))。
-如果我们将这个新范畴与(s\bs p)进行组合，其结果和我们用np与(s\bs np)按照前向应用组合一致(\ref{vorwaertsapplikation})。 
-(\mex{1}a)是将名词短语和动词短语（缺失了做部分名词短语得句子）进行组合的示例。
-经过类型提升的名词短语和动词短语的组合如(\mex{1}b)所示。
+通过类型提升\is{type raising}规则，范畴np可以变形为范畴s/(s\bs np)。
+如果我们将这个新范畴与s\bs np进行组合，其结果和我们用np与s\bs np按照前向应用组合一致（\ref{vorwaertsapplikation}）。 
+（\mex{1}a）是将名词短语和动词短语（缺失了左边名词短语的句子）进行组合的示例。
+经过类型提升的名词短语和动词短语的组合如（\mex{1}b）所示。
 \eal
 \ex np $*$ s\bs np = s 
 \ex s/(s\bs np) $*$ s\bs np = s
 \zl
-在(\mex{0}a)中，一个动词或动词短语在左侧选择一个名词短语。
-在(\mex{0}b)中，一个名词短语经过类型提升之后，在右侧选择一个动词或动词短语，而这个动词或动词短语本身又在左侧选择一个名词短语。
+在（\mex{0}a）中，一个动词或动词短语在左侧选择一个名词短语。
+在（\mex{0}b）中，一个名词短语经过类型提升之后，在右侧选择一个动词或动词短语，而这个动词或动词短语本身又在左侧选择一个名词短语。
 
-类型提升仅仅改变了选择的方向：(\mex{0}a)中的动词短语是一个函子而名词短语是论元，而在(\mex{0}b)中经过类型提升的名词短语是函子而动词短语是论元。
+类型提升仅仅置反了选择的方向：（\mex{0}a）中的动词短语是一个函子而名词短语是变元，而在（\mex{0}b）中经过类型提升的名词短语是函子而动词短语是变元。
 这两种组合的结果是一样的。这种方向的选择乍一看是一个小技巧，但我们将会看到这个小技巧的大用处。
 在展示类型提升的强大分析能力之前，我们先介绍一下前向和后向组合。
 \is{type raising|)}
@@ -516,7 +524,7 @@ These apples, Harry must have been eating.
 \subsection{前向与后向组合}
 \label{Kategorialgrammatik-Komposition}
 
-(\mex{1})\is{composition|(}是前向和后向组合规则。
+（\mex{1}）\is{composition|(}是前向和后向组合规则。
 \eal
 \ex\label{Regel-Vorwaertskomposition}
  前向组合\is{composition!forward} (> B)\\
@@ -525,9 +533,10 @@ These apples, Harry must have been eating.
     Y\bs Z $*$ X\bs Y = X\bs Z
 \zl 
 我们以前向组合为例来解释这些规则。
-(\mex{0}a)可以理解为：X/Y大致可以理解为“如果我找到一个Y，则我就是一个完整的X”。
-在组合规则中，X/Y和Y/Z组合。Y/Z意味着一个尚不完整独缺Z得一个Y。
-而对于Z的这种需求被延迟了：我们假装Y是完整的直接使用它，只不过一直记得它实际上是缺少成分的。
+%（\mex{0}a）可以理解为：
+X/Y大致可以理解为“如果我找到一个Y，则我就是一个完整的X”。
+在组合规则中，X/Y和Y/Z组合。Y/Z意味着一个尚不完整独缺Z的一个Y。
+而对于Z的这种需求被延迟了：我们假装Y是完整的并且直接使用它，只不过一直记得它实际上是缺少成分的。
 因此，当我们组合X/Y和Y/Z时，我们自然得到一个缺少Z的X。
 \is{composition|)} 
 
@@ -553,23 +562,23 @@ np            & s/{(s\bs np)}        & {(s\bs np)}/vp & vp/vp\mathdash en & vp\m
               & \multicolumn{5}{c@{}}{\forwardc}\\
               & \multicolumn{5}{c@{}}{{{s}/np}}\\
 }}
-\caption{\label{abb-CG-Komposition}在动词/动词短语链中分析前向组合}
+\caption{\label{abb-CG-Komposition}在动词短语链中分析前向组合}
 \end{figure}%
 ``{must}''是一个需要无标记不定式作为论元的动词，``{have}''需要一个分词而``{been}''必须和一个动名词结合。
-在上图中，带有`T'的箭头表示类型提升，而带有`B'的箭头标示组合。
+在上图中，带有`T'的箭头表示类型提升，而带有`B'的箭头表示组合。
 组合的方向由箭头的方向表示。
 
-对于(\ref{Bsp-these-apples})的分析，我们仍然需要一个规则能够把句首的名词短语变成需要一个组合s/np的函子。
+对于(\ref{Bsp-these-apples})的分析，我们仍然需要一个规则才能够把句首的名词短语变成一个需要s/np的函子。
 一般的类型提升不能处理这种情况，因为类型提升的结果是s/(s\bs np)。
 
-\citet[\page 217]{Steedman89a}建议使用(\mex{1})中的规则：
+\citet[\page 217]{Steedman89a}建议使用（\mex{1}）中的规则：
 \ea
 \label{Regel-Topikalisierung}
 话题化\is{topicalization} ($\uparrow$\is{$\uparrow$}):\\
 X $\Rightarrow$ st/(s/X)\\
 其中，X $\in$ \{ np, pp, vp, ap, s$'$ \}
 \z
-st标示一类特殊的句子，及含有话题化现象的句子。
+st标示一类特殊的句子，即含有话题化现象的句子。
 $\Rightarrow$表示我们可以对任意的X进行类型提升，得到st/(s/X). 
 
 我们将X替换为np，则我们可以将``{these apples}''变成st/(s/np)，进而可以得到如图\vref{abb-CG-UDC}所示的(\ref{Bsp-these-apples})的完整分析。
@@ -598,9 +607,11 @@ st/(s/np)\;\;     & s/{(s\bs np)}        & {(s\bs np)}/vp & vp/vp\mathdash en & 
 
 \noindent
 上述分析也适用于跨小句的分析。
-图\vref{abb-CG-UDC-lang}是(\mex{1})的相应分析。
+图\vref{abb-CG-UDC-lang}是（\mex{1}）的相应分析。
 \ea
-Apples, I believe that Harry eats.
+\gll Apples, I believe that Harry eats. \\
+     苹果 我 相信 补语化标记 Harry 吃 \\
+\glt `苹果，我相信Harry吃了。
 \z
 \begin{figure}
 \centerline{%
@@ -624,9 +635,11 @@ st/(s/np)\;\;     & s/(s\bs np)  & (s\bs np)/s'    & s'/s & s/(s\bs np) & (s\bs 
 %
 使用上述分析工具，我们只能描写前置成分本应该后置的抽取结构。
 也就是说，我们还不能将双宾动词的中间论元抽取\citep[\page 532]{Steedman85a-u}。
-\citet[\page 406]{Pollard88a}针对(\mex{1})给出了如图\vref{abb-CG-UDC-Ditrans}所示的推导。
+\citet[\page 406]{Pollard88a}针对（\mex{1}）给出了如图\vref{abb-CG-UDC-Ditrans}所示的推导。
 \ea
-Fido we put downstairs.
+\gll Fido we put downstairs. \\
+     Fido 我们 放置 楼下 \\
+\glt `Fido，我们把它放楼下了。
 \z
 \begin{figure}
 \centerline{%
@@ -646,18 +659,18 @@ Fido                 & we            & put        & downstairs\\
 }}
 \caption{\label{abb-CG-UDC-Ditrans}跨小句长距离依赖的分析}
 \end{figure}%
-在这个分析中，我们无法用(\ref{Regel-Vorwaertskomposition})中的规则去组合``we''和``put''，因为我们不能直接获取(s\bs np)在这个分析中：
-拆分((s\bs np)/pp)/np只能得到函子((s\bs np)/pp)和论元np。
+在这个分析中，我们无法用(\ref{Regel-Vorwaertskomposition})中的规则去组合``we''和``put''，因为在这个分析中我们不能直接获取s\bs np：
+拆分((s\bs np)/pp)/np只能得到函子(s\bs np)/pp和变元np。
 为了进一步处理这些情况，我们需要另一种组合规则：
 \ea
 针对n=2的前向组合规则 (> BB)\\
 X/Y $*$ (Y/Z1)/Z2 = (X/Z1)/Z2
 \z
 在这个新规则之上，我们可以组合经过类型提升的``{we}''和``{put}''。而其结果为(s/pp)/np。
-(\ref{Regel-Topikalisierung})中的话题化规则需要st的右侧有一个(s/X)。
+(\ref{Regel-Topikalisierung})中的话题化规则需要st的右侧有一个s/X。
 而这并非图\ref{abb-CG-UDC-Ditrans}所示的情形。
-对于名词短语``{Fido}''，我们需要一个函子类型的范畴以允准一个复杂的论元。
-(\mex{1})给出了能够分析(\mex{-1})的规则。
+对于名词短语``{Fido}''，我们需要一个函子类型的范畴以允准一个复杂的变元。
+（\mex{1}）给出了能够分析（\mex{-1}）的规则。
 
 \ea
 \label{Regel-Topikalisierung-zwei}
@@ -670,25 +683,27 @@ X2 $\Rightarrow$ (st/X1)/((s/X1)/X2)\\
 如果我们假设动词最多可以含有四个论元（例如``buy''：购买者、出售者、商品、价格），
 则我们必须进一步扩展组合以及话题化规则。
 此外，我们还需要一个针对主语提取的话题化规则\citep[\page 405]{Pollard88a}。
-Steedman针对上述讨论的规则提出了一种简介的表示法，当然，当我们考虑这种简介表示具体含义的时候仍然会回归到原始的规则。
+Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，当我们考虑这种简洁表示具体含义的时候仍然会回归到原始的规则。
 \is{long"=distance dependency|)}
 
 \section{总结与分类}
 \label{Abschnitt-Relativsaetze-CG}\label{Abschnitt-Ratte-CG}\label{sec-pied-piping-cg}
 
 组合范畴语法的操作扩展了标准范畴语法的规则系统，增强了规则的灵活性，甚至是一些一般并不被视为组成成分的词串也可以得到范畴分析。
-这对于分析并列结构是一个好处(参见章节\ref{Abschnitt-Koordination})。此外，\citet{Steedman91a}讨论认为语调数据\is{prosody}也支持把这些字符串处理成组成成分。
+这对于分析并列结构是一个好处(参见\S \ref{Abschnitt-Koordination})。此外，\citet{Steedman91a}讨论认为语调数据\is{prosody}也支持把这些字符串处理成组成成分。
 在短语结构规则中，我们可以利用GPSG的机制去把短语中的关系代词的信息在句法树上进行向上传递。
-这些技术并没有被CG采用，这一点导致了大量的服务于话题化的重新子类化的规则，并且导致了对关系从句中的pied-piping构式的描写不够充分。
-我们已经在章节\ref{Abschnitt-UDC-KG}讨论了话题化的问题，因此此处我仅简要解释关系小句的问题。
+这些技术并没有被CG采用，这一点导致了大量的服务于话题化的重新次范畴化的规则，并且导致了对关系从句中的随迁（pied-piping）构式的描写不够充分。
+我们已经在\S \ref{Abschnitt-UDC-KG}讨论了话题化的问题，因此此处我仅简要解释关系小句的问题。
 
-\citet[\page 614]{SB2006a-u}使用下面的关系小句(\mex{1})阐述了长距离依赖的一种分析：
+\citet[\page 614]{SB2006a-u}使用下面的关系小句（\mex{1}）阐述了长距离依赖的一种分析：
 \ea
-the man  that Manny says Anna married
+\gll the man  that Manny says Anna married \\
+     冠词 男人 关系代词 Manny 说 Anna 结婚 \\
+\glt Manny说Anna与之结婚的那个男人
 \z
 这里的关系代词是``married''的宾语，但出现在了从句``Anna married''的外部。
 
-Steedman假设关系代词的词汇信息为(\mex{1})：
+Steedman假设关系代词的词汇信息为（\mex{1}）：
 
 \ea
 \label{le-Relativpronomen-CG}
@@ -697,7 +712,7 @@ Steedman假设关系代词的词汇信息为(\mex{1})：
 这意味着，如果关系代词的右侧有一个句子，这个句子中缺少一个NP，则关系代词可以和这个句子合并成一个名词性修饰语(n$\backslash$n)。
 在这个分析中，关系代词是中心词（函子）。
 
-使用额外的类型提升和组合规则，带有关系小句的例子可以做如图\vref{abb-CG-Relativsatz}所是的分析。
+使用额外的类型提升和组合规则，带有关系小句的例子可以做如图\vref{abb-CG-Relativsatz}所示的分析。
 %
 \begin{figure}
 \centerline{%
@@ -726,126 +741,131 @@ that                                & Manny                                     
 ``Manny''和``{says}''，然后是``{Manny says}''和``{Anna married}''都可以通过前向组合进行合并，其结果是我们可以将``{Manny says Anna married}''分析为s/np。
 这个范畴和关系代词通过前向应用合并之后，我们可以得到n\bs n，而这正是一个后置名词性成分的修饰语的范畴。
 
-但是，当我们进一步尝试分析更复杂的pied-piping\is{pied-piping}现象——如(\mex{1})——时，假设关系代词是中心词是有问题的。
+但是，当我们进一步尝试分析更复杂的pied-piping\is{pied-piping}现象——如（\mex{1}）——时，关系代词是中心词这个假设是有问题的。
 
 \eal
 \ex\label{Beispiel-Minister}
-Here's the minister [[in [the middle [of [whose sermon]]]] the dog barked].\footnote{
-\citew[\page 212]{ps2}.
-}
-\ex Reports [the height of the lettering on the covers of which] the government prescribes should be
-abolished.\label{Ross-reports}\footnote{
-\citew[\page 109]{Ross67}.\nocite{Ross86a-u}
-}
+% TODO: Chinese translation
+Here's the minister [[in [the middle [of [whose sermon]]]] the dog barked].\footnote{\citew[\page 212]{ps2}} \\
+%     这里是 冠词 牧师 介词 冠词 中间 介词 关系代词 布道 冠词 狗 叫 \\
+%\glt `这有一个那条狗在他布道过程中吠叫得牧师'
+\ex 
+Reports [the height of the lettering on the covers of which] the government prescribes should be abolished.\label{Ross-reports}\footnote{ \citew[\page 109]{Ross67}.\nocite{Ross86a-u} } \\
+%     报告 冠词 高度 介词 冠词 印字 介词 冠词 封面 关系代词 冠词 政府 规定 应该 被 废除 \\
+%\glt `那些封面上的印字高度被政府规定的报告应该被废弃'
 \zl
-在(\mex{0})中, 关系代词嵌入了一个短语中，这个短语是从关系小句剩余部分中抽取出来的。
-(\mex{0}a)中的关系代词是限定词``sermon''。根据这个分析，``{whose}''是短语``{whose sermon}''的中心词。
+在（\mex{0}）中, 关系代词嵌入了一个短语中，这个短语是从关系小句剩余部分中抽取出来的。
+（\mex{0}a）中的关系代词是限定词``sermon''。根据这个分析，``{whose}''是短语``{whose sermon}''的中心词。
 而这个名词短语又随``{of}''嵌入了到短语``{of whose sermon}''中，这个大短语依赖于``{middle}''。
 完整的名词短语``{the middle of the sermon}''是介词``{in}''的补足语。
-在(\mex{0}a)中以``{whose}''为关系小句的中心词值得商榷。
-\mex{0}b)中的关系代词嵌入得更深。
+在（\mex{0}a）中以``{whose}''为关系小句的中心词值得商榷。
+（\mex{0}b）中的关系代词嵌入得更深。
 \citet[\page 50]{Steedman97a}针对``{who}''、``{whom}''和``{which}''给了下列词汇项描写：
 \eal
 \label{le-relpron-Steedman}
 \settowidth\jamwidth{(komplexe extrahierte NP-Relativphrase)}
-\ex ((n$\backslash$n)/(s\bs np))\bs (np/np)       \jambox{(complex subject-relative phrase<alert>)}
-\ex ((n$\backslash$n)/(s/pp))$\backslash$(pp/np)  \jambox{(complex extracted PP-relative phrase)}
-\ex ((n$\backslash$n)/(s/np))$\backslash$(np/np)  \jambox{(complex extracted NP-relative phrase)}
+\ex ((n$\backslash$n)/(s\bs np))\bs (np/np)       \jambox{（复杂的主语关系化短语）}
+\ex ((n$\backslash$n)/(s/pp))$\backslash$(pp/np)  \jambox{（带有抽取的PP关系化短语）}
+\ex ((n$\backslash$n)/(s/np))$\backslash$(np/np)  \jambox{（带有抽取的NP关系化短语）}
 \zl
-使用(\mex{0}b)和(\mex{0}c)可以分析(\mex{1}a)和(\mex{1}b)：
+使用（\mex{0}b）和（\mex{0}c）可以分析（\mex{1}a）和（\mex{1}b）：
 \eal
 \ex a report the cover of which Keats (expects that Chapman) will design
 \ex a subject on which Keats (expects that Chapman) will speak
 \zl
-在针对(\mex{0}b)的分析中，``{which}''左侧需要一个介词（pp/np），用以形成范畴(n$\backslash$n)/(s/pp)。
-想要形成一个后置名词性修饰成分(n$\backslash$n)，这个范畴右侧还需要一个缺少PP的句子
-在针对(\mex{0}a)的分析中，``{the cover of}''通过组合规则变成了np/np，而``{which}''的词汇范畴(\mex{-1}c)可以结合左侧的``{the cover of}''。
+在针对（\mex{0}b）的分析中，``{which}''左侧需要一个介词（pp/np），用以形成范畴(n$\backslash$n)/(s/pp)。
+想要形成一个后置名词性修饰成分(n$\backslash$n)，这个范畴右侧还需要一个缺少PP的句子。
+在针对（\mex{0}a）的分析中，``{the cover of}''通过组合规则变成了np/np，而``{which}''的词汇范畴(\mex{-1}c)可以结合左侧的``{the cover of}''。
 组合的结果是范畴(n$\backslash$n)/(s/np)，这个范畴的论元是缺少了一个NP的句子。
 
-Ross'的例子(\ref{Ross-reports})同样可以用(\mex{-1}c)进行分析：
+Ross的例子(\ref{Ross-reports})同样可以用(\mex{-1}c)进行分析：
+%TODO: 书中有的错误，少了一个[
 \ea
-reports [the height of the lettering on the covers of]\sub{np/np}
+~[reports [the height of the lettering on the covers of]\sub{np/np}
 which]\sub{(n$\backslash$n)/(s/np)} the government prescribes
 \z
 复杂表达式``{the height of the lettering on the covers of}''在应用了组合规则之后形成np/np，而剩下的分析同(\mex{-1}a)的分析。
 
-除了(\ref{le-relpron-Steedman})中的词汇项之外，我们还需要一些新的词汇项用以分析如(\mex{1})所示的句子，
+除了(\ref{le-relpron-Steedman})中的词汇项之外，我们还需要一些新的词汇项用以分析如（\mex{1}）所示的句子，
 在这个新问题中，关系短语是从小句的中间进行提取的(参见\citealp[\page 410]{Pollard88a})：
 \ea
-Fido is the dog which we put downstairs.
+\gll Fido is the dog which we put downstairs. \\
+     Fido 是 冠词 狗 关系代词 我们 放置 楼下 \\
+\glt `Fido是那条我们放到楼下的狗。'
 \z
-这里的问题和我们在话题化中遇到的问题是很像：``{we put}''对应的范畴是(s/pp)/np而不是s/np，正因为这个原因我们无法直接将其直接与关系代词进行组合依据(\ref{le-Relativpronomen-CG})进行组合。
+这里的问题和我们在话题化中遇到的问题是很像：``{we put}''对应的范畴是(s/pp)/np而不是s/np，正因为这个原因我们无法直接将其与(\ref{le-Relativpronomen-CG})中的关系代词进行组合。
 \pagebreak
 
-\citet[\page 204]{Morrill95a}为(\mex{1})中的关系代词讨论了(\ref{le-relpron-Steedman}b)的这种分析：
+\citet[\page 204]{Morrill95a}为（\mex{1}）中的关系代词讨论了(\ref{le-relpron-Steedman}b)的这种分析：
 \ea
 \label{Beispiel-about-which}
-about which John talked
+\gll about which John talked \\
+     关于 关系代词 John 谈论 \\
+\glt `John谈论过的'
 \z
 在词汇项(\ref{le-relpron-Steedman}b)中，``{which}''的左面需要一个语言单位，这个语言单位需要一个名词短语以形成一个完整的介词短语。
 也就是说，``{which}''选择一个介词。
-Morrill注意到我们需要假定新的词汇项以解释如(\mex{1})中的现象：关系代词出现在相应短语的中间位置。
+Morrill注意到我们需要假定新的词汇项以解释如（\mex{1}）中的现象：关系代词出现在相应短语的中间位置。
 \ea
-the contract [the loss of which after so much wrangling] John would finally have to pay for
+\gll the contract [the loss of which after so much wrangling] John would finally have to pay for \\
+     冠词 合同 冠词 损失 介词 关系代词 介词 如此 多 争论 John 会 终于 必须 {} 赔偿 {} \\
+\glt 其损失在经过如此多争论之后John终于必须赔偿的那个合同
 \z
 上述现象可以通过增加词汇项描写来解决，另有一些其他现象也可以进行类似的处理。
-Morrill提出了一种不同的分析思路——增加函子和论元组合的方式。Morrill允许函子B \up\is{$\uparrow$} A在封装了论元A之后产生B，或者是函A $\downarrow$\is{$\downarrow$} B封装它的论元后产生B（见第190页）。
-即便是引入了新的操作，他仍然需要两条词汇项，如(\mex{1})所示，来得到pied-piping现象：
+Morrill提出了一种不同的分析思路——增加函子和变元组合的方式。Morrill允许函子B \up\is{$\uparrow$} A在封装了变元A之后产生B，或者是A $\downarrow$\is{$\downarrow$} B封装它的变元后产生B（见第190页）。
+即便是引入了新的操作，他仍然需要两条词汇项，如（\mex{1}）所示，来得到随迁（pied-piping）现象：
 \eal
 \ex (NP \up\ NP) $\downarrow$ (N$\backslash$N)/(S/NP)
 \ex (PP \up\ NP) $\downarrow$ (N$\backslash$N)/(S/PP)
 \zl
 <alert>
-这些词汇项仍然无法完成充分的描写，像(\mex{0}b)包含一个PP，但这个PP对应于一个PP论元， contains a PP but this PP corresponds to an argument PP, which is required
-These lexical items are still not enough, however, as 
-for (\ref{Beispiel-about-which}). To analyze (\ref{Beispiel-Minister}), which involves a PP adjunct, we need to assume the category (s\bs np)/(s\bs np)  for the prepositional
-phrase \emph{in the middle of whose sermon}. We, therefore, also require at least three additional items for relative pronouns.
+这些词汇项仍然无法完成充分的描写，以（\mex{0}b）为例，这里包含一个PP，但这个PP在（\ref{Beispiel-about-which}）中对应于一个PP变元。 
+为了分析（\ref{Beispiel-Minister}）——这个例子中涉及一个PP附接语——我们需要假定介词短语\emph{in the middle of whose sermon}具有范畴(s\bs np)/(s\bs np)。
+因此我们同样需要对关系代词设立三个额外的词汇项。
 
-By introducing new operations, Morrill manages to reduce the number of lexical entries for \emph{which}; however, the fact remains
-that he has to mention the categories which can occur in pied-piping constructions in the lexical entry of the relative pronoun.
+通过引入新的操作，Morrill减少了\emph{which}的词汇项；但是问题仍然存在：他需要为出现在随迁（pied-piping）构式中的关系代词设立范畴。
 
-Furthermore, the observation that relative clauses consist of a phrase with a relative pronoun plus a sentence missing a relative phrase
-is lost. This insight can be kept if one assumes a GPSG"=style\indexgpsg analysis where information about whether there is a relative pronoun
-in the relative phrase can be passed up to the highest node of the relative phrase.
-The relative clause can then be analyzed as the combination of a sentence with a gap and an appropriately marked relative phrase.
-For the discussion of such analyses in the framework of \gbt and HPSG/CxG, see Section~\ref{Abschnitt-Relativ-Interrogativsaetze}.
+此外，关系小句包含一个关系代词以及一个缺少关系短语的句子，这一点被忽视了。
+当我们使用GPSG风格\indexgpsg 的分析是，在关系短语中是否存在一个关系代词的信息会在句法树上向上传递，直到关系短语层。
+关系小句可以分析为这样的一个组合，组合的一个成分是一个存在一个缺口（gap）的句子，而另一个成分则是关系短语。
+相关的基于GB理论和HPSG/CxG理论的讨论，可以参阅\S \ref{Abschnitt-Relativ-Interrogativsaetze}。
 \is{Categorial Grammar (CG)|)}
 
-\section*{Comprehension questions}
+\section*{问题理解}
 
 \begin{enumerate}
-\item Identify the functors and arguments in Figures~\ref{abb-cg-transitives-Verb}
-  and~\ref{abb-the-cat-chased-Mary}.
-\item Which combination operations do you know?
-\item What is composition used for?
+\item 指出图\ref{abb-cg-transitives-Verb}和图\ref{abb-the-cat-chased-Mary}中的函子与变元。
+\item 你知道哪些组合性操作？
+\item 组合是用来做什么的？
 \end{enumerate}
 \pagebreak
 
-\section*{Exercises}
+\section*{练习}
 
 \begin{enumerate}
-\item Analyze the following sentence:
+\item 分析下面的句子：
 \ea
-The children in the room laugh loudly.
+\gll The children in the room laugh loudly. \\
+     冠词 孩子们 介词 冠词 房间 笑 大声。\\
+\glt `那个房间里的孩子们笑得很大声。'
 \z
-\item\label{ue-Xbar-CG} Analyze the noun phrase in (\mex{1}):
+\item\label{ue-Xbar-CG} 分析（\mex{1}）中的名词短语：
 \ea
-the picture of Mary
+\gll the picture of Mary \\
+     冠词 图片 介词 Mary \\
+\glt `Mary的图片'
 \z
-Compare the resulting analysis with the structure given in Figure~\vref{Abbildung-NP-mit-PP-Argument} and think about which
-categories of \xbar syntax the categories in Categorial Grammar correspond to. 
+比较你的分析结果和图\vref{Abbildung-NP-mit-PP-Argument}中的结构，思考\xbar 句法中的范畴在范畴语法中是如何表示的。
 \end{enumerate}
 
-\section*{Further reading}
+\section*{进一步阅读}
 
 \begin{sloppypar}
-Mark Steedman discusses a variant of Categorial Grammar, \emph{Combinatory Categorial Grammar}, in a series of books and articles:
-\citet{Steedman91a,Steedman2000a-u,SB2006a-u}.
+Mark Steedman在一系列的专著和论文中讨论了范畴语法的一种变体——组合范畴语法\citet{Steedman91a,Steedman2000a-u,SB2006a-u}。
 \end{sloppypar}
-\citet{Lobin2003a} compares Categorial Grammar with Dependency Grammar and \citet{PB93a} suggest a
-combination of Dependency Grammar and Categorial Grammar, which they call Dependency Categorial Grammar\is{Dependency Categorial Grammar}.
+\citet{Lobin2003a}比较了范畴语法和依存语法，\citet{PB93a}提出将依存语法与范畴语法相结合，得到了依存范畴语法（Dependency Categorial Grammar）\is{Dependency Categorial Grammar}。 
 
-\citet{Briscoe2000a} and \citet{Villavicencio2002a} discuss UG"=based acquisition models in the framework of Categorial Grammar.
+基于范畴语法的框架，\citet{Briscoe2000a}和\citet{Villavicencio2002a}讨论了基于普遍语法的语言习得模型。
 
 
 
