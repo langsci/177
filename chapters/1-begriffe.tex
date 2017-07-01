@@ -195,7 +195,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \citep[\page322]{Dowty79a}
 \end{quote}
 %
-如果我们将语言的描写形式化，就会易于我们认识某一特定分析所表示的确切含义。我们可以构建起该分析下可预测的内容，并排除其他的分析。另一个优势在于，精确的形式化理论可以用计算机程序能够理解的方式记录下来。这样，一个理论分析就可以作为计算过程中的语法部分来实现，如有不一致的地方就会更快地显现出来。这种语法可以用来分析大规模的数据，也叫做语料库，而且他们可以构建出语法尚无法分析的句子或者组配错误的结果。更多的在语言学中应用计算机实现方面的研究可以参看\citew*[\page 163]{Bierwisch63}, \citew[Chapter~22]{Mueller99a} 和\citew{Bender2008c} 这几篇文献，也可参看\ref{sec-formalization-gb}的内容。\isc{形式化|)}\is{formalization|)}
+如果我们将语言的描写形式化，就会易于我们认识某一特定分析所表示的确切含义。我们可以构建起该分析下可预测的内容，并排除其他的分析。另一个优势在于，精确的形式化理论可以用计算机程序能够理解的方式记录下来。这样，一个理论分析就可以作为计算过程中的语法部分来实现，如有不一致的地方就会更快地显现出来。这种语法可以用来分析大规模的数据，也叫做语料库，而且他们可以构建出语法尚无法分析的句子或者组配错误的结果。更多的在语言学中应用计算机实现方面的研究可以参看\citew*[\page 163]{Bierwisch63}, \citew[\S~22]{Mueller99a} 和\citew{Bender2008c} 这几篇文献，也可参看\ref{sec-formalization-gb}的内容。\isc{形式化|)}\is{formalization|)}
 %If we formalize linguistic descriptions, it is easier to recognize what exactly a particular analysis means. 
 %We can establish what predictions it makes and we can rule out alternative analyses. A further
 %advantage of precisely formulated theories is that they can be written down in such a way
@@ -303,12 +303,12 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \eal
 \ex\label{ex-das-buch-zu-lesen} 
 \gll Er versucht, [das Buch zu lesen].\\
-	他 试图 \spacebr{}DET 书 AUX 读\\
+	他 试图 \spacebr{}DET 书 INF 读\\
 \glt `他试着读这本书。'
-\toaskstefan{Is 'zu' a conjunction or an auxiliary?}
+\toaskstefan{Is 'zu' an INF or an AUX?}
 \ex 
 \gll Er versucht, [der Frau das Buch zu geben].\\
-	 他 试图 \spacebr{}DET 女人 DET 书 AUX 给\\
+	 他 试图 \spacebr{}DET 女人 DET 书 INF 给\\
 \glt `他试着把这本书给这位女士。'
 \zl
 %
@@ -339,7 +339,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \eal
 \ex 
 \gll Peter versucht, [das Buch zu lesen].\\
-	 Peter 试图 \spacebr{}DET 书 AUX 读\\
+	 Peter 试图 \spacebr{}DET 书 INF 读\\
 \glt `Peter试着读这本书。'
 \ex 
 \gll Klaus versucht das auch.\\
@@ -423,14 +423,14 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \eal
 \ex 
 \gll Er hat noch nicht [das Buch zu lesen] versucht.\\
-     他 AUX \particle{} 不 \spacebr{}DET 书 AUX 读 试图\\
+     他 AUX \particle{} 不 \spacebr{}DET 书 INF 读 试图\\
 \glt `他还没有试着读这本书。'
 \ex 
 \gll Er hat [das          Buch zu lesen] noch   nicht versucht.\\
-     他 AUX \spacebr{}DET 书 AUX 读  \particle{} 不 试图\\
+     他 AUX \spacebr{}DET 书 INF 读  \particle{} 不 试图\\
 \ex 
 \gll Er hat noch nicht versucht, [das Buch zu lesen].\\
-     他 AUX \particle{} 不 试图  \spacebr{}DET 书 AUX 读\\
+     他 AUX \particle{} 不 试图  \spacebr{}DET 书 INF 读\\
 \zl
 \isc{变换测试|)}\is{permutation test|)}\isc{移位测试|)}\is{movement test|)}
 
@@ -484,7 +484,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %The example in (\mex{1}) shows that phrases with \emph{to}"=infinitives can be conjoined:
 \ea
 \gll Er hat versucht, [das Buch zu lesen] und [es dann unauffällig verschwinden zu lassen].\\
-     他 AUX 试图 \spacebr{}DET 书 CONJ 读 和 \spacebr{}它 然后 悄悄地 消失 CONJ 让\\
+     他 AUX 试图 \spacebr{}DET 书 INF 读 和 \spacebr{}它 然后 悄悄地 消失 INF 让\\
 \glt `他试着读这本书，然后让它悄悄地消失。'
 \z
 %\toaskstefan{What does it mean of 'make it quietly disappear?' To make the book vanish?}
@@ -711,7 +711,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \glt `搭乘BVG，你就可以在周末确保风雨无阻地穿越这个城市。'
 \ex 
 \gll {}[Wenig] [mit Sprachgeschichte] hat der dritte Beitrag in dieser Rubrik zu tun, [\ldots]\footnotemark\\
-       \spacebr{}少 \spacebr{} PREP 语言.历史 AUX DET 第三 文章 PREP DET 章节 AUX 做\\
+       \spacebr{}少 \spacebr{} PREP 语言.历史 AUX DET 第三 文章 PREP DET 章节 INF 做\\
 \footnotetext{
   Zeitschrift für Dialektologie und Linguistik, LXIX, 3/2002, p.\,339.
 }
@@ -757,13 +757,13 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \glt `搭乘BVG，你就可以在周末确保风雨无阻地穿越这个城市。'
 \ex 
 \gll Der dritte Beitrag in dieser Rubrik hat wenig mit Sprachgeschichte zu tun.\\
-     DET 第三  文章 在 DET 章节  AUX 少 PREP 语言.历史 AUX 做\\
+     DET 第三  文章 在 DET 章节  AUX 少 PREP 语言.历史 INF 做\\
 \glt `这一节中的第三篇文章与语言历史没有太多的关系。'
 \zl
 所以说，一个给定词语序列是否能够前置并不足以用来判断组成成分的性质。
 %The possibility for a given sequence of words to be fronted is therefore not a sufficient diagnostic for %constituent status.
 
-再有，虚位成分也被看作是组成成分，尽管事实上宾格的虚位成分并不能前置（cf. (\ref{bsp-er-sah-es-regnen})）：
+再有，虚位成分也被看作是组成成分，尽管事实上宾格的虚位成分并不能前置（参见（\ref{bsp-er-sah-es-regnen}））：
 %We have also seen that it makes sense to treat expletives as constituents despite the fact that the %accusative expletive cannot be fronted  (cf. (\ref{bsp-er-sah-es-regnen})):
 \eal
 \ex[]{
@@ -877,7 +877,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %Each of the words is subject to certain restrictions when forming sentences. It is common practice to %group words into classes with
 %other words which share certain salient properties. For example, \emph{der} `the' is an article\is{article}, %\emph{Mann} `man' is a noun\is{noun},
 %\emph{lacht} `laugh' is a verb\is{verb} and \emph{jetzt} `now' is an adverb\is{adverb}. As can
-%be seen in (\mex{1}), it is possible to replace all the words
+%be seen in (\mex{1}), it is possible to replace alfl the words
 %in (\mex{0}) with words from the same word class.
 \ea
 \gll Die dünne Frau lächelt immer.\\
@@ -892,7 +892,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 %section, I will discuss various word classes/""parts of speech and in the following sections I will
 %go into further detail about the various properties which characterize a given word class.
 
-词类中最为重要的有动词（verb）、名词\isc{名词}（noun\is{noun}）、形容词\isc{形容词}（adjective\is{adjective}）、介词\isc{介词}（preposition\is{preposition}）和副词\isc{副词}（adverb\is{adverb}）。很多年前，研究德语的学者通常会区分“动作类词”（action words），“描述类词”（describing words）和“命名类词”（naming words）（参看~\ref{sec-tesniere-pos}有关\tes's的范畴系统）。但是这些说法都被证明是有问题的，如下所示：
+词类中最为重要的有动词（verb）、名词\isc{名词}（noun\is{noun}）、形容词\isc{形容词}（adjective\is{adjective}）、介词\isc{介词}（preposition\is{preposition}）和副词\isc{副词}（adverb\is{adverb}）。很多年前，研究德语的学者通常会区分“动作类词”（action words），“描述类词”（describing words）和“命名类词”（naming words）（参看~\ref{sec-tesniere-pos}有关\tes 的范畴系统）。但是这些说法都被证明是有问题的，如下所示：
 %The most important parts of speech are \emph{verbs}, \emph{nouns}\is{noun}, \emph{adjectives}%\is{adjective}, \emph{prepositions}\is{preposition} and
 %\emph{adverbs}\is{adverb}. In earlier decades, it was
 %common among researchers working on German (see also Section~\ref{sec-tesniere-pos} on \tes's %category system) to
@@ -1178,11 +1178,11 @@ wegen（因为）通常被看作是前置词，尽管它也会出现在名词后
 %Interjections\is{interjection} are clause"=like expressions such as \emph{Ja!} `Yes!', \emph{Bitte!} %`Please!' %komisch auf Englisch,  \emph{Hallo!} `Hel\-lo!',  \emph{Hurra!} `Hooray!', \emph{Bravo!} %`Bravo!', \emph{Pst!} `Psst!', \emph{Plumps!} `Clonk!'.
  %Vielleicht sollte man sich nochmal überlegen ob man nicht englische Interjectionen benutzt.
  
-如果副词和介词不能归入某个特定的类别，那么副词就通常被看作是一种没有屈折变化的“剩余”类，其他的介词，连词或者感叹词都不能归入副词。有时需要对这种“剩余”类进行进一步划分：只有那些用作一个成分出现在定式动词前的词可以被看作是副词。那些不能前置的词被称为“小品词”（particle）\isc{小品词}\is{particle}。这些小品词可以根据他们不同的功能而归入不同的类别中，如程度助词和言外助词。由于这些基于功能的分类标准也包括了形容词，但是我不作这种区分，只是将之归为“副词”（adverb）。
+如果副词和介词不能归入某个特定的类别，那么副词就通常被看作是一种没有屈折变化的“剩余”类，其他的介词，连词或者感叹词都不能归入副词。有时需要对这种“剩余”类进行进一步划分：只有那些用作一个成分出现在定式动词前的词可以被看作是副词。那些不能前置的词被称为“小品词”（particle）\isc{小品词}\is{particle}。这些小品词可以根据他们不同的功能而归入不同的类别，如程度助词和言外助词。由于这些基于功能的分类标准也包括了形容词，但是我不作这种区分，只是将之归为“副词”（adverb）。
 %If adverbs and prepositions are not assigned to the same class, then adverbs are normally used as a kind %of ``left over'' category in the sense that all non"=inflecting words which are neither prepositions, %conjunctions nor interjections are classed as adverbs. Sometimes this category for ``left overs'' is %subdivided: only words which can appear in front of the finite verb when used as a constituent are 
 %referred to as adverbs. Those words which cannot be fronted are dubbed \emph{particles}\is{particle}. %Particles themselves can be subdivided into various classes based on their function, \eg degree particles %and illocutionary particles. Since these functionally defined classes also contain adjectives, I will not make %this distinction and simply speak of \emph{adverbs}.
 
-我们已经将一些具有屈折变化的词归入不同的词类中了。如果需要划分词类，我们可以利用图\vref{Abbildung-Wortarten}来判断，该图摘自德语杜登语法\citep[\page 133]{Duden2005-Authors}。\footnote{
+我们已经将一些具有屈折变化的词归入不同的词类了。如果需要划分词类，我们可以利用图\vref{Abbildung-Wortarten}来判断，该图摘自德语杜登语法\citep[\page 133]{Duden2005-Authors}。\footnote{
 《杜登语法》是德语正字法的官方文件。杜登语法虽然没有取得官方的地位，但是它也非常具有影响力，并且较多用于教学之中。在导言这部分内容中，我会经常引用这一重要文献。
 }
 %We have already sorted a considerable number of inflectional words into word classes. When one is %faced with the task of classifying a particular word, one can use the decision diagram in Figure~
@@ -1273,9 +1273,9 @@ Mann（男人）这样的名词短语的词。而冠词通常与名词相组合�
 \glt `在我来自的那个城市里，我亲眼目睹了一个事故。'
 \ex 
 \gll Studien haben gezeigt, daß mehr Unfälle in Städten passieren, \emph{wo} die Zebrastreifen abgebaut werden, weil die Autofahrer unaufmerksam werden.\footnotemark\\
-     研究 AUX 表明 CONJ 更多 事故 在 城市 发生 DET 斑马线 去除 CONJ 因为 DET 司机 疏忽 AUX\\
+     研究 AUX 表明 CONJ 更多 事故 PREP 城市 发生 哪里 DET 斑马线 去除 AUX 因为 DET 司机 疏忽 AUX\\
 \footnotetext{
-        taz berlin, \zhdate{1997/11/03}，第23页。
+        《柏林日报》（taz berlin）, \zhdate{1997/11/03}，第23页。
         }
 \glt `研究表明，城市中事故更多发生在没有斑马线的地方，因为司机们更易疏忽。'
 \ex 
@@ -1370,7 +1370,7 @@ geliebte（被爱） 和schlafende（睡着的）是lieben（爱）和schlafen�
 %of grammar and assume that processes in which a word class is changed result in a new lexeme being %created. Consequently, \emph{schlafende} `sleeping' does not belong to the lexeme
 %\emph{schlafen} `to sleep', but is a form of the lexeme \emph{schlafend}. This lexeme belongs to the %word class `adjective' and inflects accordingly.   
 
-正如我们所看到的，至今仍然难以区分屈折（inflection）与派生\isc{派生}（derivation\is{derivation} ）（产生新的词位）。\citet*[\page263--264]{SWB2003a} 认为，英语\il{英语}\il{English}中的现在分词与过去分词属于派生形式，而在法语\il{法语}\il{French}中则随着性数而发生屈折变化。
+正如我们所看到的，至今仍然难以区分屈折（inflection）与派生\isc{派生}（derivation\is{derivation} ）（产生新的词位）。\citet*[\page263--264]{SWB2003a} 认为，英语\il{英语}\il{English}的现在分词与过去分词属于派生形式，而在法语\il{法语}\il{French}中则随着性数而发生屈折变化。
 %As we have seen, it is still controversial as to where to draw the line between inflection and derivation
 %\is{derivation} (creation of a new lexeme).
 %\citet*[\page263--264]{SWB2003a} view the formation of the present participle (\emph{standing}) and the %past participle (\emph{eaten}) in English\il{English}
@@ -1971,7 +1971,7 @@ Tony COP 吃（比萨饼）\\
 \ex
 \label{bsp-den-maennern-wurde-geholfen}
 \gll Den Männern wurde geholfen.\\
-	 DET.\dat{} 男人.\dat{} COP.3SG 帮助\\
+	 DET.\dat{} 男人.\dat{} AUX.3SG 帮助\\
 \glt `那个男人被人帮助了。'
 \zl
 根据其他标准，与格也不应该被看作是主语（如\citet{Reis82}的观点）。在例（\mex{0}b）中，wurde（想要）是一个第三人称单数的形式，不与den Männern（男人们）搭配。前述指出的第三条标准有关不定式结构，如下例（mex{1}）所示：
@@ -1980,7 +1980,7 @@ Tony COP 吃（比萨饼）\\
 \eal
 \ex[]{
 \gll Klaus behauptet, den Männern zu helfen.\\
-	 Klaus 声称  DET.\dat{} 男人.\dat{} AUX 帮助\\
+	 Klaus 声称  DET.\dat{} 男人.\dat{} INF 帮助\\
 \glt `Klaus声称要帮助那个男人。 '
 }
 \ex[]{
@@ -1990,12 +1990,12 @@ Tony COP 吃（比萨饼）\\
 }
 \ex[*]{
 \gll Die Männer behaupten, geholfen zu werden.\\
-	 DET 男人 声称 帮助 AUX COP\\
+	 DET 男人 声称 帮助 INF AUX\\
 \glt 想说：“那个男生声称得到了帮助。”
 }
 \ex[*]{
 \gll Die Männer behaupten, elegant getanzt zu werden.\\
-	 DET 男人 声称 优雅地 跳舞 AUX COP\\
+	 DET 男人 声称 优雅地 跳舞 INF AUX\\
 \glt 想说：“那个男人声称在优雅地跳舞。”
 }
 \zl
@@ -2607,7 +2607,7 @@ mit dem &               & du                                     & geredet hast\
 \glt ｀不管将要发生什么，北德广播公司早就已经是赢家了。'
 \ex 
 \gll Interessant, zu erwähnen, daß ihre Seele völlig    in Ordnung war.\footnotemark\\
-	 有趣 AUX 提到 CONJ 她的 灵魂 完整地 PREP 顺序 COP\\
+	 有趣 INF 提到 CONJ 她的 灵魂 完整地 PREP 顺序 COP\\
 \footnotetext{
         Michail Bulgakow, \emph{Der Meister und Margarita}. München: Deutscher Taschenbuch Verlag. 1997, p.\,422.
       }
@@ -2629,7 +2629,7 @@ mit dem &               & du                                     & geredet hast\
 \glt `今后将发生什么并不重要 \ldots'
 \ex
 \gll Interessant ist zu erwähnen, dass ihre Seele völlig in Ordnung war.\\
-	 有趣 COP AUX 提到 CONJ 她的 灵魂 完整地 PREP 顺序 COP\\
+	 有趣 COP INF 提到 CONJ 她的 灵魂 完整地 PREP 顺序 COP\\
 \glt `值得注意的是，她的灵魂完好无损。'
 \ex %{\raggedright
 \gll Ein Treppenwitz der Musikgeschichte ist, dass die Kollegen von~~~~~~ Rammstein vor fünf Jahren noch im Vorprogramm von Sandow spielten.\hspace{-5pt}\\
@@ -2794,11 +2794,11 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \eal
 \ex 
 \gll Über dieses Thema habe ich ihn gebeten, einen Vortrag zu halten.\\
-      关于 DET 题目  AUX 我   他 请求    ART     演讲    AUX hold\\
+      关于 DET 题目  AUX 我   他 请求    ART     演讲   INF hold\\
 \glt `我请他做个有关这个题目的演讲。'
 \ex 
 \gll das Thema, über das ich ihn gebeten habe, einen Vortrag zu halten\\
-     DET 题目  关于  我 他 请求  AUX ART 演讲 AUX 作\\
+     DET 题目  关于  我 他 请求  AUX ART 演讲 INF 作\\
 \glt `这是那个我让他做一个演讲的题目'
 \zl
 例（\mex{0}b）的情景是类似的：关系短语über das（关于这个）是Vortag（演讲）的一个与之关系较远的依存成分。所以说，如果关系短语被放在前场，我们可以推断出，远距离的前置总是指向前场。
@@ -2811,7 +2811,7 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \eal
 \ex 
 \gll Kommt drauf an, mit wem dass sie zu tun haben.\\
-     来 PREP \partic{} PREP 谁 CONJ 你 AUX 做 AUX\\
+     来 PREP \partic{} PREP 谁 CONJ 你 INF 做 AUX\\
 \glt `这要取决于是谁在处理。'
 %\ex
 \zl
@@ -2841,11 +2841,11 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \label{Beispiel-topologisch-komplexes-Vorfeld}
 \ex
 \gll Die Möglichkeit, etwas zu verändern, ist damit verschüttet für lange lange Zeit.\\
-	 DET 机会 东西 AUX 变化 COP 在那儿 消失 PREP 长 长 时间\\
+	 DET 机会 东西 INF 变化 COP 在那儿 消失 PREP 长 长 时间\\
 \glt `变革的机会将要消失很长很长时间了。'	  
 \ex 
 \gll {}[Verschüttet für lange lange Zeit] ist damit die Möglichkeit,      etwas zu ver"-ändern.\\
-      \spacebr{}消失 PREP 长 长 时间 COP 在那儿 DET 机会  东西 AUX 变化\\
+      \spacebr{}消失 PREP 长 长 时间 COP 在那儿 DET 机会  东西 INF 变化\\
 \ex 
 \gll Wir haben schon seit langem gewußt, daß du kommst.\\
      我们 AUX \particle{} CONJ 长 知道 CONJ 你 来\\
