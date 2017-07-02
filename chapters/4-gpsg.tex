@@ -4,7 +4,7 @@
 %\chapter{Generalized Phrase Structure Grammar}
 \label{Kapitel-GPSG}
 
-广义短语结构语法（Generalized Phrase Structure Grammar，\textcolor{red}{/简称}GPSG）是在1970年代末从\textcolor{red}{/针对}转换语法的争论中发展而来。\citet*{GKPS85a}所著的这本书是该理论框架下的主要文献。Hans Uszkoreit开发了德语的大型GPSG语法片段\citeyearpar{Uszkoreit87a}。GPSG的分析非常准确，由此我们可以用它们作为计算应用的基础。下表是已经应用了GPSG语法片段开发的一些语言：
+广义短语结构语法（Generalized Phrase Structure Grammar，简称GPSG）是在1970年代末从针对转换语法的争论中发展而来。\citet*{GKPS85a}所著的这本书是该理论框架下的主要文献。Hans Uszkoreit开发了德语的大型GPSG语法片段\citeyearpar{Uszkoreit87a}。GPSG的分析非常准确，由此我们可以用它们作为计算应用的基础。下表是已经应用了GPSG语法片段开发的一些语言：
 %Generalized Phrase Structure Grammar (GPSG) was developed as an answer %alternative 
 %to Transformational Grammar at the end of the 1970s. The book by \citet*{GKPS85a} is the main publication in
 %this framework. Hans Uszkoreit has developed a largish GPSG fragment for German \citeyearpar{Uszkoreit87a}.
@@ -21,7 +21,7 @@
 %\item Persian \citep*{BSM2011a}
 \end{itemize}
 
-正如在第\ref{Abschnitt-Transformationen}节所讨论的，\citet{Chomsky57a}认为简单的短语结构语法已经不能很好地描述语言结构之间的关系了，并提出我们需要转换来解释这些关系。这些观点在之后的二十年间都没有受到挑战（除了\citew{Harman63a}和\citew{Freidin75a}发表的文章），直到其他的理论出现，如LFG和GPSG。这些理论针对Chomsky提出的问题并针对以前只有转换分析或者尚未分析的现象的非转换的解释。论元的\textcolor{red}{重新排序/语序重列}分析、被动以及长距离依存是在该理论框架下讨论的几个最为重要的现象。在介绍完第\ref{sec-Representationsformat}节有关GPSG的表示形式后，我将针对这些现象的GPSG分析进行详细的说明。
+正如在\ref{Abschnitt-Transformationen}所讨论的，\citet{Chomsky57a}认为简单的短语结构语法已经不能很好地描述语言结构之间的关系了，并提出我们需要转换来解释这些关系。这些观点在之后的二十年间都没有受到挑战（除了\citew{Harman63a}和\citew{Freidin75a}发表的文章），直到其他的理论出现，如LFG和GPSG。这些理论回应了Chomsky提出的质疑，并针对以前只有转换分析或者单是完全没有被分析的现象发展出了非转换的解释。论元的语序重列分析、被动以及长距离依存是在该理论框架下讨论的几个最为重要的现象。在介绍完\ref{sec-Representationsformat}有关GPSG的表示形式后，我将针对这些现象的GPSG分析进行详细的说明。
 %As was discussed in Section~\ref{Abschnitt-Transformationen}, \citet{Chomsky57a} argued that simple phrase structure
 %grammars are not well-suited to describe relations between linguistic structures and claimed that one needs transformations to
 %explain them. These assumptions remained unchallenged for two decades (with the exception of publications by \citew{Harman63a}
@@ -35,18 +35,18 @@
 %\section{General remarks on the representational format}
 \label{sec-Representationsformat}
 
-本节分为五个部分。第\ref{sec-complex-categories-gpsg}节说明有关特征和复杂范畴表示的假说。第\ref{GPSG-lokale-Umstellung}节说明短语结构中子结点的线性顺序的假说。第\ref{sec-metarules-gpsg}节介绍元规则。第\ref{Sec-GPSG-Sem}节分析语义，以及第\ref{Abschnitt-Adjunkte-GPSG}节分析状语。
+本节分为五个部分。\ref{sec-complex-categories-gpsg}说明有关特征和复杂范畴表示的假说。\ref{GPSG-lokale-Umstellung}说明短语结构中子结点的线性顺序的假说。\ref{sec-metarules-gpsg}介绍元规则。\ref{Sec-GPSG-Sem}分析语义，以及\ref{Abschnitt-Adjunkte-GPSG}分析状语。
 %This section has three parts. The general assumptions regarding features and the representation of
 %complex categories is explained in Section~\ref{sec-complex-categories-gpsg}, the assumptions
 %regarding the linearization of daughters in a phrase structure rule is explained in
 %Section~\ref{GPSG-lokale-Umstellung}. Section~\ref{sec-metarules-gpsg} introduces metarules, Section~\ref{Sec-GPSG-Sem} deals with
 %semantics, and Section~\ref{Abschnitt-Adjunkte-GPSG} with adjuncts.
 
-\subsection{复杂范畴、中心语特征原则\textcolor{red}{，/}以及\xbar 规则}
+\subsection{复杂范畴、中心语特征原则以及\xbar 规则}
 %\subsection{Complex categories, the Head Feature Convention, and \xbar rules}
 \label{sec-complex-categories-gpsg}
 
-在第\ref{sec-PSG-Merkmale}节，我们在短语结构语法中增加了特征。GPSG更进一步，它将词类范畴描述为特征值偶对的集合。例（\mex{1}a）中的词类范畴可以表示为（\mex{1}b）：
+在\ref{sec-PSG-Merkmale}中，我们在短语结构语法中增加了特征。GPSG更进一步，它将词类范畴描述为特征值偶对的集合。例（\mex{1}a）中的词类范畴可以表示为（\mex{1}b）：
 %In Section~\ref{sec-PSG-Merkmale}, we augmented our phrase structure grammars with features. GPSG goes one step further and %describes categories as sets of feature"=value pairs.
 %The category in (\mex{1}a) can be represented as in (\mex{1}b):
 \eal
@@ -71,11 +71,16 @@
 \ea
 \label{gpsg-regeln}
 \begin{tabular}[t]{@{}l@{~$\to$~}ll@{}}
-V2  & H[5]                                    & (\emph{kommen} `come', \emph{schlafen} `sleep')\\
-V2  & H[6], N2[\textsc{case} acc]                & (\emph{kennen} `know', \emph{suchen} `search')\\
-V2  & H[7], N2[\textsc{case} dat]                & (\emph{helfen} `help', \emph{vertrauen} `trust')\\
-V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  & (\emph{geben} `give', \emph{zeigen} `show')\\
-V2  & H[9], V3[+dass]                         & (\emph{wissen} `know', \emph{glauben} `believe')\\
+V2  & H[5]                                    & （kommen（来）、schlafen（睡觉））\\
+V2  & H[6], N2[\textsc{case} acc]                &（kennen（认识）、suchen（查找））\\
+V2  & H[7], N2[\textsc{case} dat]                &（helfen（帮助）、vertrauen（相信））\\
+V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  &（geben（给）、zeigen（展示））\\
+V2  & H[9], V3[+dass]                         &（wissen（知道）、glauben（认为））\\
+%V2  & H[5]                                    & (\emph{kommen} `come', \emph{schlafen} `sleep')\\
+%V2  & H[6], N2[\textsc{case} acc]                & (\emph{kennen} `know', \emph{suchen} `search')\\
+%V2  & H[7], N2[\textsc{case} dat]                & (\emph{helfen} `help', \emph{vertrauen} `trust')\\
+%V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  & (\emph{geben} `give', \emph{zeigen} `show')\\
+%V2  & H[9], V3[+dass]                         & (\emph{wissen} `know', \emph{glauben} `believe')\\
 \end{tabular}
 \z
 %
@@ -84,17 +89,17 @@ V2  & H[9], V3[+dass]                         & (\emph{wissen} `know', \emph{gla
 %\xbar~projection level. For Uszkoreit, the maximum number of projections of a verbal projection is three
 %rather than two as is often assumed.
 
-规则右边的H表示中心语（head）。中心语特征原则（Head Feature Convention，HFC）\isc{中心语特征原则}\is{Head Feature Convention (HFC)} 确保了母结点中的特定特征也在标记有H的结点上出现（详细情况请看\citealp*[\S~5.4]{GKPS85a}和\citealp[67]{Uszkoreit87a}）：
+规则右边的H表示中心语（head）。中心语特征原则（Head Feature Convention，HFC）\isc{中心语特征原则}\is{Head Feature Convention (HFC)} 确保了父结点中的特定特征也在标记有H的结点上出现（详细情况请看\citealp*[\S~5.4]{GKPS85a}和\citealp[67]{Uszkoreit87a}）：
 %The H on the right side of the rule stands for \emph{head}. The \emph{Head Feature Convention}
 %(HFC)\is{Head Feature Convention (HFC)} ensures that certain features
 %of the mother node are also present on the node marked with H (for details see
 %\citealp*[Section~5.4]{GKPS85a} and \citealp[67]{Uszkoreit87a}):
 \begin{principle-break}[Head Feature Convention]
-母结点与子结点必须具有相同的中心语特征，除非它们另有用途。
+父结点与子结点必须具有相同的中心语特征，除非它们另有用途。
 %The mother node and the head daughter must bear the same head features unless indicated otherwise.
 \end{principle-break}
 %
-在（\mex{0}）中，可以用于规则的动词用方括号表示。与普通的短语结构规则相同的是，在GPSG中，我们也需要动词有相应的词汇项。（\mex{1}）给出了两个例子：
+在（\mex{0}）中，可在规则中使用的动词用方括号表示。与普通的短语结构规则相同的是，在GPSG中，我们也需要动词有相应的词汇项。（\mex{1}）给出了两个例子：
 %In (\mex{0}), examples for verbs which can be used in the rules are given in brackets. As with ordinary phrase structure grammars, one also %requires
 %corresponding lexical entries for verbs in GPSG. Two examples are provided in (\mex{1}):
 \ea
@@ -103,17 +108,18 @@ V[5, \textsc{vform} \emph{inf}]  & einzuschlafen\\
 V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 \end{tabular}
 \z
-第一条规则说明\emph{einzuschlafen} （睡觉）的\subcat 值为5，而且第二条表示\emph{aufzuessen}（吃完）的\subcat 值为6。接着， \emph{einzuschlafen}只能用在第一条规则（\mex{-1}）中，而\emph{aufzuessen} 只能用在第二条规则中。进而，（\mex{0}）包括了动词的形式信息（\emph{inf}表示带\emph{zu}的不定式）。
+第一条规则说明einzuschlafen（睡觉）的\subcat 值为5，而且第二条表示aufzuessen（吃完）的\subcat 值为6。接着， einzuschlafen只能用在第一条规则（\mex{-1}）中，而aufzuessen只能用在第二条规则中。进而，（\mex{0}）包括了动词的形式信息（\emph{inf}表示带zu的不定式）。
 %The first rule states that \emph{einzuschlafen} `to fall asleep' has a \subcat value of 5 and the second indicates that \emph{aufzuessen} `to %finish eating'  has a
 %\subcat value of 6. It follows, then, that \emph{einzuschlafen} can only be used in the first rule (\mex{-1}) and \emph{aufzuessen} can
 %only be used in the second. Furthermore, (\mex{0}) contains information about the form of the verb
 %(\emph{inf} stands for infinitives with \emph{zu} `to').
 
-如果我们用（\mex{-1}）中的第二条规则和（\mex{0}）中的第二条规则分析（\mex{1}）中的句子，我们就会得到图\vref{Abb-HFC}中的结构。
+如果我们用（\mex{-1}）中的第二条规则和（\mex{0}）中的第二条规则分析（\mex{1}）中的句子，我们就会得到图\ref{Abb-HFC}中的结构。
+%如果我们用（\mex{-1}）中的第二条规则和（\mex{0}）中的第二条规则分析（\mex{1}）中的句子，我们就会得到图%\vref{Abb-HFC}中的结构。
 %If we analyze the sentence in (\mex{1}) with the second rule in (\mex{-1}) and the second rule in (\mex{0}), then we arrive at the structure in %Figure~\vref{Abb-HFC}.
 \ea
 \gll Karl hat versucht, [den Kuchen aufzuessen].\\
-	Karl AUX 尝试 \spacebr{}DET 蛋糕 吃完\\
+	Karl AUX 尝试 \spacebr{}DET 蛋糕 吃.INF.完\\
 \glt `Karl试着把蛋糕吃完。'
 %	Karl has tried \spacebr{}the cake to.eat.up\\
 %\glt `Karl tried to finish eating the cake.'
@@ -124,13 +130,13 @@ V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 sm edges
 [{V2[\vform \type{inf}]}
   [N2 [den Kuchen;DET 蛋糕,roof] ]
-  [{V[6, \vform \type{inf}]} [aufzuessen;INF.吃.完] ] ]
+  [{V[6, \vform \type{inf}]} [aufzuessen;完.INF.吃] ] ]
 \end{forest}
 }
 \caption{\label{Abb-HFC}GPSG中中心语特征的投射}
 %\caption{\label{Abb-HFC}Projection of head features in GPSG}
 \end{figure}%
-（\mex{-2}）中的规则没有涉及子结点的顺序，这就是为什么动词（H[6]）也可以位于末位。这一方面将在第\ref{GPSG-lokale-Umstellung}节详细讨论。关于HFC，我们要记住的重要一点是不定式动词的形式也在母结点上显示。与第\ref{Kapitel-PSG}章讨论的简单短语结构规则不同是，这一观点自动承袭了GPSG中的中心语特征原则。在（\mex{-1}）中，\vform 是给定的，而且中心语特征原则确保了这样的情况，当（\ref{gpsg-regeln}）中的规则被应用后，相应的信息表现在母结点上。对于例（\mex{0}）中的短语，我们得到了词类V2[\textsc{vform} \emph{inf}] ，而且这保证了这一短语只在它应该出现的地方出现：
+（\mex{-2}）中的规则没有涉及子结点的顺序，这就是为什么动词（H[6]）也可以位于末位。这一方面将在\ref{GPSG-lokale-Umstellung}详细讨论。关于HFC，我们要记住的重要一点是不定式动词的形式也在父结点上显示。与第\ref{Kapitel-PSG}章讨论的简单短语结构规则不同是，这一观点自动承袭了GPSG中的中心语特征原则。在（\mex{-1}）中，\vform 是给定的，而且中心语特征原则确保了这样的情况，当（\ref{gpsg-regeln}）中的规则被应用后，相应的信息表现在父结点上。对于例（\mex{0}）中的短语，我们得到了词类V2[\textsc{vform} \emph{inf}] ，而且这保证了这一短语只在它应该出现的地方出现：
 %The rules in (\mex{-2}) say nothing about the order of the daughters which is why the verb (H[6]) can also be in final position. This aspect will %be discussed
 %in more detail in Section~\ref{GPSG-lokale-Umstellung}. With regard to the HFC, it is important to bear in mind that information about the %infinitive verb form is also
 %present on the mother node. Unlike simple phrase structure rules such as those discussed in Chapter~\ref{Kapitel-PSG}, this follows %automatically from
@@ -141,54 +147,54 @@ sm edges
 \label{Beispiel-GPSG-Kopfeigenschaften}
 \ex[]{
 \gll [Den Kuchen aufzuessen] hat er nicht gewagt.\\
-	\spacebr{}DET 蛋糕 吃完 AUX 他 不 敢\\
+	\spacebr{}DET 蛋糕 吃.INF.完 AUX 他 不 敢\\
 \glt `他不敢把蛋糕吃完。'
 %	\spacebr{}the cake to.eat.up has he not dared\\
 %\glt `He did not dare to finish eating the cake.'
 }
 \ex[*]{
 \gll [Den Kuchen aufzuessen] darf er nicht.\\
-\spacebr{}DET 蛋糕 吃完 允许 他 不\\
+\spacebr{}DET 蛋糕 吃.INF.完 允许 他 不\\
 %\spacebr{}the cake to.eat.up be.allowed.to he not\\
 }
 \glt 想说：“不让他把蛋糕吃完。” 
 %\glt Intended: `He is not allowed to finish eating the cake.'
 \ex[*]{
 \gll [Den Kuchen aufessen] hat er nicht gewagt.\\
-	\spacebr{}DET 蛋糕 吃完 AUX 他 不 敢\\
+	\spacebr{}DET 蛋糕 吃.完 AUX 他 不 敢\\
 \glt 想说：“他不敢吃完蛋糕。” 
 %	\spacebr{}the cake eat.up has he not dared\\
 %\glt Intended: `He did not dare to finish eating the cake.'
 }
 \ex[]{
 \gll [Den Kuchen aufessen] darf er nicht.\\
-	\spacebr{}DET 蛋糕 吃完 允许 他 不\\
+	\spacebr{}DET 蛋糕 吃.完 允许 他 不\\
 \glt `不让他把蛋糕吃完。'
 %	\spacebr{}the cake eaten.up be.allowed.to he not\\
 %\glt `He is not allowed to finish eating the cake.'
 }
 \zl
-\emph{gewagt}（敢）选择一个带\emph{zu}不定式的动词和动词短语，而不是一个单纯的不定式，而\emph{darf}（允许）带有一个单纯的不定式。
+gewagt（敢）选择一个带zu不定式的动词和动词短语，而不是一个单纯的不定式，而darf（允许）带有一个单纯的不定式。
 %\emph{gewagt} `dared' selects for a verb or verb phrase with an infinitive with \emph{zu} `to' but
 %not a bare infinitive, while \emph{darf} `be allowed to' takes a bare infinitive.
 
-这在名词短语方面也是类似的：有针对不带论元的名词的规则，也有带特定论元的名词的规则。例（\mex{1}）中给出了要么不带论元，要么带两个PP的名词的规则\citep*[\page 127]{GKPS85a}：
+这在名词短语方面也是类似的：有针对不带论元的名词的规则，也有带特定论元的名词的规则。例（\mex{1}）给出了要么不带论元，要么带两个PP的名词的规则\citep*[\page 127]{GKPS85a}：
 %This works in an analogous way for noun phrases: there are rules for nouns which do not take an argument as well as for nouns with certain %arguments. Examples of rules for 
 %nouns which either require no argument or two PPs are given in (\mex{1}) \citep*[\page 127]{GKPS85a}:
 \ea
 \begin{tabular}[t]{@{}l@{~$\to$~}ll@{}}
-N1 & H[30] & (\emph{Haus}（房子）, \emph{Blume}（花）)\\
-N1 & H[31], PP[\emph{mit}], PP[\emph{über}] & (\emph{Gespräch}（说话）, \emph{Streit}（争论）)\\
+N1 & H[30] &（Haus（房子）、Blume（花）)\\
+N1 & H[31], PP[\emph{mit}], PP[\emph{über}] &（Gespräch（说话）、Streit（争论）)\\
 %N1 & H[30] & (\emph{Haus} `house', \emph{Blume} `flower')\\
 %N1 & H[31], PP[\emph{mit}], PP[\emph{über}] & (\emph{Gespräch} `talk', \emph{Streit} `argument')\\
 \end{tabular}
 \z
-\nbar 和限定词的组合规则如下所示：
+\nbar 跟限定词的组合规则如下所示：
 %The rule for the combination of \nbar and a determiner is as follows:
 \ea
 N2 $\to$ Det, H1
 \z
-N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一层的中心语子结点的投射。中心语特征规定确保了中心语子结点也是一个名词性投射，因为在\xbar 层上区分出的中心语子结点上的所有特征与整个NP上的特征相同。当分析（\mex{1}）时，（\mex{-1}）中的第二条规则允准了\nbar \emph{Gesprächs mit Maria über Klaus}。事实上，\emph{Gesprächs}（对话）是第二个，并在\emph{Gesprächs}的词汇项中表示，而且因为\emph{Gesprächs}是中心语，它也按照中心语特征原则在\nbar 上显示。
+N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一层的中心语子结点的投射。中心语特征原则确保了中心语子结点也是一个名词性投射，因为在\xbar 层上区分出的中心语子结点上的所有特征与整个NP上的特征相同。当分析（\mex{1}）时，（\mex{-1}）中的第二条规则允准了\nbar “Gesprächs mit Maria über Klaus”。事实上，Gesprächs（对话）是属格，并在Gesprächs的词汇项中表示，而且因为Gesprächs是中心语，它也按照中心语特征原则在\nbar 上显示。
 %N2 stands for NP, that is, for a projection of a noun phrase on bar level two, whereas H1
 %stands for a projection of the head daughter on the bar level one.
 %The Head Feature Convention ensures that the head daughter is also a nominal projection, since all features on the head daughter apart %from the \xbar~level 
@@ -202,17 +208,17 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 %	 the.\gen{} conversation-\gen{} with Maria about Klaus\\
 %\glt `the conversation with Maria about Klaus'
 \z
-对于\nbar 与限定词的组合，我们应用（\mex{-1}）中的规则。中心语的词类范畴限定了规则左边的要素的词性，这就是为什么（\mex{-1}）中的规则对应于我们在第\pageref{Regel-NP-Xbar}页（\ref{Regel-NP-Xbar}）中遇到的经典的\xbar 规则。由于\emph{Gesprächs mit Maria über Klaus}是中心语子结点，有关\nbar 的属格信息也在NP结点上显示。
+对于\nbar 与限定词的组合，我们应用（\mex{-1}）中的规则。中心语的词类范畴限定了规则左边要素的词性，这就是为什么（\mex{-1}）中的规则对应于我们在第\pageref{Regel-NP-Xbar}页（\ref{Regel-NP-Xbar}）中遇到的经典的\xbar 规则。由于Gesprächs mit Maria über Klaus是中心语子结点，有关\nbar 的属格信息也在NP结点上显示。
 %For the combination of \nbar with the determiner, we apply the rule in (\mex{-1}). The category of
 %the head determines the word class of the element on the left"=hand side of the rule, which is why
 %the rule in (\mex{-1}) corresponds to the classical \xbar~rules that we encountered in (\ref{Regel-NP-Xbar}) on page~\pageref{Regel-NP-%Xbar}. Since \emph{Gesprächs mit Maria über Klaus} is
 %the head daughter, the information about the genitive of \nbar is also present at the NP node.
 
-\subsection{局部\textcolor{red}{重新排序/语序重列}}
+\subsection{局部语序重列}
 %\subsection{Local reordering}
 \label{GPSG-lokale-Umstellung}\label{sec-IDLP-intro}
 
-我们要讨论的第一个现象是论元的重新排序。正如在第\ref{sec-GB-lokale-Umstellung}节已经讨论过的，中场的论元可以按照几乎任意顺序排列。（\mex{1}）给出了一些例子：
+我们要讨论的第一个现象是论元的重新排序。正如在\ref{sec-GB-lokale-Umstellung}已经讨论过的，中场的论元可以按照几乎任意顺序排列。（\mex{1}）给出了一些例子：
 %The first phenomenon to be discussed is local reordering of arguments. As was already discussed in
 %Section~\ref{sec-GB-lokale-Umstellung}, arguments in the middle field can occur in an almost
 %arbitrary order. (\mex{1}) gives some examples:
@@ -220,13 +226,13 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 \label{bsp-GPSG-anordnung}
 \ex 
 \gll {}[weil] der Mann der Frau das Buch gibt\\
-     {}\spacebr{}因为 the.\nom{} 男人 the.\dat{} 女人 the.\acc{} 书 给\\
+     {}\spacebr{}因为 DET.\nom{} 男人 DET.\dat{} 女人 DET.\acc{} 书 给\\
 \glt `因为这个男人把这本书给这个女人'
 %     {}\spacebr{}because the.\nom{} man the.\dat{} woman the.\acc{} book gives\\
 %\glt `because the man gives the book to the woman'
 \ex 
 \gll {}[weil] der Mann das Buch der Frau gibt\\
-     {}\spacebr{}因为 DET.\nom{} 男人 DET.\acc{}书 DET.\dat{} 女人 给\\
+     {}\spacebr{}因为 DET.\nom{} 男人 DET.\acc{} 书 DET.\dat{} 女人 给\\
 %     {}\spacebr{}because the.\nom{} man the.\acc{} book the.\dat{} woman gives\\
 \ex 
 \gll {}[weil] das Buch der Mann der Frau gibt\\
@@ -255,7 +261,7 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 S  & $\to$ NP[nom]& NP[dat] & NP[acc] & V\_nom\_dat\_acc\\
 \end{tabular}
 \z
-如果有人想分析（\mex{-1}）中的其他语序，那么我们就需要增加五条规则，即一共有六个：
+如果有人想分析（\mex{-1}）中的其他语序，那么我们就需要增加五条规则，即一共有六条：
 %If one wishes to analyze the other orders in (\mex{-1}), then one requires an additional five rules, that is, six in total:
 \ea
 \label{Regeln-PSG-Abfolge}
@@ -305,7 +311,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 %The rule in (\mex{0}) simply states that S dominates all other nodes. Due to the abandonment of ordering restrictions for the right"=hand side %of the rule, we
 %only need one rule rather than twelve. 
 
-无论如何，没有\textcolor{red}{规则右边/针对规则右部}的任何一种限制的话，就有太\textcolor{red}{多/}自由了。比如说，下面的语序也是被允许的：
+无论如何，如果不对规则右部施加任何限制的话，那么这一规则就过于自由了。比如说，下面的语序也是被允许的：
 %Nevertheless, without any kind of restrictions on the right"=hand side of the rule, there would be far too much freedom. For example, the %following order would be
 %permissible:
 \ea[*]{
@@ -315,7 +321,8 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 %     the woman.\dat{} the.\nom{} man gives the.\acc{} book\\
 }
 \z
-这样的语序被所谓的线性优先规则（Linear Precedence Rules）\isc{线性优先原则}\is{Linear Precedence Rule} 或LP"=规则\isc{LP"=规则}\is{LP"=rule}排除了。LP"=限制是在局部树上的限制，即深度为一的树。例如，有可能应用线性规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
+这样的语序被所谓的线性优先规则（Linear Precedence Rules）\isc{线性优先原则}\is{Linear Precedence Rule} 或LP"=规则\isc{LP"=规则}\is{LP"=rule}排除了。LP"=限制是在局部树上的限制，即深度为一的树。例如，有可能应用线性规则来证明图\ref{fig-gpsg-lokaler-Baum}中V、NP[nom]、NP[acc]和NP[dat]的语序。
+%例如，有可能应用线性规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
 %Such orders are ruled out by so"=called \emph{Linear Precedence Rules}\is{Linear Precedence Rule} or LP"=rules\is{LP"=rule}. %LP"=constraints are restrictions on
 %local trees, that is, trees with a depth of one. It is, for example, possible to state something
 %about the order of V, NP[nom], NP[acc] and NP[dat] in Figure~\vref{fig-gpsg-lokaler-Baum} using linearization
@@ -348,7 +355,7 @@ X       & V[$-$\textsc{mc}]\\
 %\textsc{mc}\isfeat{mc} stands for \emph{main clause}. The LP"=rules ensure that in main clauses (+\textsc{mc}), the verb precedes all other %constituents and follows them in subordinate clauses
 %($-$\textsc{mc}). There is a restriction that says that all verbs with the \textsc{mc}"=value `+' also have to be (+\textsc{fin}). This will rule out %infinitive forms in initial position.
 
-这些LP规则不允许在局部树中被占有前场或后场的语序。这是想要的情况。我们将看到前置是如何在第\ref{Abschnitt-GPSG-Fernabhaengigkeiten}节进行说明的。
+这些LP规则不允许在局部树中被占有前场或后场的语序。这是想要的情况。我们将在\ref{Abschnitt-GPSG-Fernabhaengigkeiten}看到前置是如何分析的。
 %These LP rules do not permit orders with an occupied prefield or postfield in a local tree. This is intended. We will see how fronting can be %accounted for in Section~\ref{Abschnitt-GPSG-Fernabhaengigkeiten}.
 \isc{成分序列}\is{constituent order}
 
@@ -366,7 +373,7 @@ V2  & H[7], N2[\textsc{case} dat]                \\
 V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  \\
 \end{tabular}
 \z
-这些规则可以用来分析（\mex{1}）中出现的动词短语\emph{dem Mann das Buch zu geben}（给这个人这本书）和\emph{das Buch dem Mann zu geben}（把这本书给这个人），但是我们不能分析（\ref{bsp-GPSG-anordnung}）这类句子，因为主语不在（\mex{0}）的规则右边出现。
+这些规则可以用来分析（\mex{1}）中出现的动词短语dem Mann das Buch zu geben（给这个人这本书）和das Buch dem Mann zu geben（把这本书给这个人），但是我们不能分析（\ref{bsp-GPSG-anordnung}）这类句子，因为主语不在（\mex{0}）中规则的右边出现。
 %These rules can be used to analyze the verb phrases \emph{dem Mann das Buch zu geben} `to give the man the
 %book' and \emph{das Buch dem Mann zu geben} `to give the book to the man' as they appear in
 %(\mex{1}), but we cannot analyze sentences like (\ref{bsp-GPSG-anordnung}), since the subject does
@@ -374,24 +381,25 @@ V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  \\
 \eal
 \ex 
 \gll Er verspricht, [dem Mann das Buch zu geben].\\
-     他 承诺    \spacebr{}the.\dat{} 人 the.\acc{} 书 to 给\\
+     他 承诺    \spacebr{}DET.\dat{} 人 DET.\acc{} 书 INF 给\\
 \glt `他承诺给这个人这本书。'
 %     he promises    \spacebr{}the.\dat{} man the.\acc{} book to give\\
 %\glt `He promises to give the man the book.'
 \ex 
 \gll Er verspricht, [das Buch dem Mann zu geben].\\
-	 他 承诺 \spacebr{}the.\acc{} 书 the.\dat{} 人 to 给\\
+	 他 承诺 \spacebr{}DET.\acc{} 书 DET.\dat{} 人 INF 给\\
 \glt `他承诺把这本书给这个人。'
 %	 he promises \spacebr{}the.\acc{} book the.\dat{} man to give\\
 %\glt `He promises to give the book to the man.'
 \zl
-带有（\mex{1}）形式的规则不能用来分析德语的GPSG语法，因为它不能推导出（\ref{bsp-GPSG-anordnung}）中的所有语序，因为主语可以出现在（\ref{bsp-GPSG-anordnung}c）所示的VP的元素之中。
+带有（\mex{1}）形式的规则不能用来分析德语的GPSG语法，因为它不能推导出（\ref{bsp-GPSG-anordnung}）中的所有语序，因为主语可以出现在（\ref{bsp-GPSG-anordnung}c）所示的VP元素中。
 %A rule with the format of (\mex{1}) does not make much sense for a GPSG analysis of German since it
 %cannot derive all the orders in (\ref{bsp-GPSG-anordnung}) as the subject can occur between the elements of the VP as in (\ref{bsp-GPSG-%anordnung}c).
 \ea
 S $\to$ N2 V2
 \z
-根据（\mex{0}）中的规则，有可能分析如图\vref{fig-gpsg-VP}中的（\ref{bsp-GPSG-anordnung}a），而且也可以分析在VP内部具有不同NP顺序的（\ref{bsp-GPSG-anordnung}b）。但是，（\ref{bsp-GPSG-anordnung}）中剩下的例子不能由（\mex{0}）中的规则来分析。
+根据（\mex{0}）中的规则，有可能分析如图\ref{fig-gpsg-VP}中的（\ref{bsp-GPSG-anordnung}a），而且也可以分析在VP内部具有不同NP顺序的（\ref{bsp-GPSG-anordnung}b）。但是，（\ref{bsp-GPSG-anordnung}）中剩下的例子不能由（\mex{0}）中的规则来分析。
+%根据（\mex{0}）中的规则，有可能分析如图\vref{fig-gpsg-VP}中的（\ref{bsp-GPSG-anordnung}a），而且也可以分析在%VP内部具有不同NP顺序的（\ref{bsp-GPSG-anordnung}b）。但是，（\ref{bsp-GPSG-anordnung}）中剩下的例子不%能由（\mex{0}）中的规则来分析。
 %With the rule in (\mex{0}), it is possible to analyze (\ref{bsp-GPSG-anordnung}a) as in
 %Figure~\vref{fig-gpsg-VP} and it would also be possible to analyze (\ref{bsp-GPSG-anordnung}b) with
 %a different ordering of the NPs inside the VP. The remaining examples in (\ref{bsp-GPSG-anordnung})
@@ -411,18 +419,18 @@ sm edges
 %\caption{\label{fig-gpsg-VP}VP analysis  for German (not appropriate in the GPSG framework)}
 \end{figure}%
 %
-\textcolor{red}{这与在同一局部树中的唯一元素有关系，也就是说，在规则右边出现的元素可以被重新排序。/这是因为只有同一局部树中的元素，即规则右部的元素，其语序可以重列。}
-当我们对VP的组成部分重新排序的时候，我们可以\textcolor{red}{推导/得到}（\ref{bsp-GPSG-anordnung}b）中的语序，不可能把主语放在宾语之间的低位上。
-\textcolor{red}{相反/作为应对}，我们可以运用元规则来分析\textcolor{red}{句子，其中主语出现在动词的其他论元之间/那些主语出现在动词的其他论元之间的句子}。
-这一规则\textcolor{red}{将短语结构规则联系到其他短语结构规则上/将不同的短语结构规则联系到一起}。
-元规则可以被理解为一种指导原则，该原则为\textcolor{red}{带有/符合}一定形式的每条规则创造出\textcolor{red}{其他/新}规则，而且这些新造的规则可以\textcolor{red}{反过来/}允准局部树。
+这是因为只有同一局部树中的元素，即规则右部的元素，其语序可以重列。
+虽然我们可以对VP的组成部分进行重新排序并因此得到（\ref{bsp-GPSG-anordnung}b）中的语序，但是我们不可能把主语放在宾语之间的低位上。
+作为应对，我们可以运用元规则来分析那些主语出现在动词的其他论元之间的句子。
+这一规则将不同的短语结构规则联系到一起。
+元规则可以被理解为一种指导原则，该原则为符合一定形式的每条规则创造出新规则，而且这些新造的规则可以反过来允准局部树。
 %This has to do with the fact that only elements in the same local tree, that is, elements which occur on the right"=hand side of a rule, can be %reordered.
 %While we can reorder the parts of the VP and thereby derive (\ref{bsp-GPSG-anordnung}b), it is not possible to place the subject at a lower %position between
 %the objects. Instead, a metarule can be used to analyze sentences where the subject occurs between other arguments of the verb. This rule %relates phrase structure
 %rules to other phrase structure rules. A metarule can be understood as a kind of instruction that creates
 %another rule for each rule with a certain form and these newly created rules will in turn license local trees.
 
-对于眼前这个例子，我们可以构成一个元规则\textcolor{red}{，如下所示/}：如果在语法中有一条带有“V2包括某些成分”形式的规则，那么也有另一条规则“V3包括V2所包括的$+$\textcolor{red}{主格中的NP/带有主格的NP}”。在形式化术语中，这种情况如下所示：
+对于眼前这个例子，我们可以构成一个元规则：如果在语法中有一条带有“V2包括某些成分”形式的规则，那么也有另一条规则“V3包括V2所包括的$+$带有主格的NP”。在形式化术语中，这种情况如下所示：
 %For the example at hand, we can formulate a metarule which says the following: if there is a rule with the form ``V2 consists of something'' in %the grammar,
 %then there also has to be another rule ``V3 consists of whatever V2 consists $+$ an NP in the nominative''. In formal terms, this looks as %follows:
 \ea
@@ -430,7 +438,7 @@ sm edges
 V2  $\to$ W $\mapsto$\\
 V3  $\to$ W, N2[\textsc{case} nom]
 \z
-W是一个变量，它表示任意数量的范畴（W = \emph{what\-ever}）。元规则创造了从（\ref{gpsg-regel-dat-ditransitiv}）中的规则来的（\mex{1}）中的规则：
+W是一个变量，它表示任意数量的范畴（W = \emph{what\-ever}）。元规则从（\ref{gpsg-regel-dat-ditransitiv}）中的规则创造出了（\mex{1}）中的规则：
 %W is a variable which stands for an arbitrary number of categories (W = \emph{what\-ever}). The metarule creates the following rule in 
 %(\mex{1}) from the rules
 %in (\ref{gpsg-regel-dat-ditransitiv}):
@@ -442,7 +450,7 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \z
 
 \noindent
-现在，主语和其他论元都出现在规则的右边，而且只要\textcolor{red}{没有LP规则被违反了/不违反LP规则}，就可以自由排序。
+现在，主语和其他论元都出现在规则的右边，而且只要不违反LP规则，就可以自由排序。
 %Now, the subject and other arguments both occur in the right"=hand side of the rule and can therefore be freely ordered as long as no LP %rules are violated.%
 \isc{元规则|)}\is{metarule|)}
 
@@ -451,9 +459,9 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \label{Sec-GPSG-Sem}
 
 %\addlines[2]
-\citew*[\S~9--10]{GKPS85a}所谓的语义学源于Richard\citet{Montague74a-u}。\textcolor{red}{与规定每条规则的组合可能性的语义理论不同的是/有些语义理论规定了每条规则全部可能的组合，和这些理论不同}（请看第\ref{sec-PSG-Semantik}节），GPSG应用更为\textcolor{red}{普遍性/一般性}的\textcolor{red}{规则/规则}。
-这有可能是基于这样的事实，每个\textcolor{red}{需要/将进行}组合的表达式都有一个语义类型。我们惯于区分实体\isc{实体}\is{entity}（\type{e}）与真值\isc{真值}\is{truth value}（\type{t}）。
-实体指称真实世界（或可能世界）中的对象，而整个句子可以为真，也可以为假，也就是说，\textcolor{red}{他/它}们有一个真值。
+\citew*[\S~9--10]{GKPS85a}所谓的语义学可追溯到Richard \citet{Montague74a-u}。有些语义理论规定了每条规则全部可能的组合，跟这些理论不同的是（请看\ref{sec-PSG-Semantik}），GPSG应用具有一般性的规则。
+这有可能是基于这样的事实，每个要组合的表达式都有一个语义类型。我们惯于区分实体\isc{实体}\is{entity}（\type{e}）与真值\isc{真值}\is{truth value}（\type{t}）。
+实体指称真实世界（或可能世界）中的对象，而整个句子可以为真，也可以为假，也就是说，它们有一个真值。
 我们有可能从类型\type{e}和\type{t}中创造出更为复杂的类型。通常来说，下面的情况是可能的：如果\type{a}和\type{b}是类型，那么\sliste{ \type{a}, \type{b} }也是一个类型。复杂类型的例子有\sliste{ \type{e}, \type{t} }和\sliste{ \type{e}, \sliste{
     \type{e}, \type{t} }}。我们可以针对这类类型表达式界定如下的组合性规则：
 %The semantics adopted by \citew*[Chapter~9--10]{GKPS85a}  goes back to Richard
@@ -465,12 +473,12 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 %\sliste{ \type{e}, \sliste{
 %    \type{e}, \type{t} }}. We can define the following combinatorial rule for this kind of typed expressions:
 \ea
-如果$\alpha$属于类型\sliste{ \type{b}, \type{a} }\textcolor{red}{和/，}$\beta$ of type \type{b}，那么$\alpha(\beta)$属于类型\type{a}。
+如果$\alpha$属于类型\sliste{ \type{b}, \type{a} }，$\beta$属于类型\type{b}，那么$\alpha(\beta)$属于类型\type{a}。
 %If $\alpha$ is of type \sliste{ \type{b}, \type{a} } and $\beta$ of type \type{b}, then $\alpha(\beta)$ is of type
 %\type{a}.
 \z
 \addlines[2]
-这类组合也叫做\textcolor{red}{功能性应用/函数应用}（functional application）\isc{功能性应用}\is{functional application}。根据（\mex{0}）中的规则，有可能类型\sliste{ \type{e}, \sliste{
+这类组合也叫做功能性应用（functional application）\isc{功能性应用}\is{functional application}。根据（\mex{0}）中的规则，有可能类型\sliste{ \type{e}, \sliste{
     \type{e}, \type{t} }}对应于这样一个表达式，它需要与类型\type{e}的两个表达式相组合，以得到\type{t}的表达式。
   第一步与\type{e}的组合会产出\sliste{ \type{e}, \type{t} }，而且第二步与深层\type{e}的组合会得到\type{t}。这与我们在第\pageref{lambda-moegen}页看到的$\lambda$"=表达式相似：$\lambda y \lambda x$ \relation{like}(x, y)需要将y和x相组合。这一例子的结果是\relation{mögen}（\relation{max}, \relation{lotte}），即在相关世界中要么为真，要么为假的表达式。
 %This type of combination is also called \emph{functional application}\is{functional application}.
@@ -493,7 +501,7 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \ex TYP(Det) = \sliste{ TYP(N$'$), TYP(NP) }
 \ex TYP(VP)  = \sliste{ \type{e}, \type{t} }
 \zl
-句子属于类型\type{t}，因为它可能为真，也可能为假。一个VP需要类型\type{e}的表达式来产出类型\type{t}的句子。NP的类型也许乍看起来很奇怪，但是，如果我们考虑带有数量词的NP的意义，我们就有能理解它。对于诸如（\mex{1}a）的句子，我们一般会假定如（\mex{1}b）的表达式：
+句子属于类型\type{t}，因为它可能为真，也可能为假。一个VP需要类型\type{e}的表达式来产出类型\type{t}的句子。NP的类型也许乍看起来很奇怪，但是，如果我们考虑带有数量词的NP的意义，我们就有可能理解它。对于诸如（\mex{1}a）的句子，我们一般会假定如（\mex{1}b）的表达式：
 %A sentence is of type \type{t} since it is either true or false. A VP needs an expression of type \type{e} to yield a sentence of type \type{t}.
 %The type of the NP may seem strange at first glance, however, it is possible to understand it if one considers the meaning of NPs with %quantifiers.
 %For sentences such as (\mex{1}a), a representation such as (\mex{1}b) is normally assumed:
@@ -501,7 +509,7 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \ex 
 \gll All children laugh.\\
 所有 孩子 笑\\
-\glt `所有的孩子都在笑。'
+\glt `所有孩子都在笑。'
 \ex $\forall x$ \relation{child}(x) $\to$ \relation{laugh}(x)
 \zl
 符号$\forall$表示全称量词\isc{量词!全称量词}\is{quantifier!universal}。该公式可以这样来解读。对于每一个对象而言，它具有孩子这样的属性，而且它也在笑。如果我们考虑NP的贡献，那么我们会看到全称量词对孩子的限制以及从NP而来的逻辑蕴涵：
@@ -512,14 +520,13 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \ea
 $\forall x$ \relation{child}(x) $\to$ P(x)
 \z
-这就意味着NP是需要与表达式相组合的，该表达式只有一个\textcolor{red}{公开/开放}的槽，对应于（\mex{0}）中的x。这一过程在（\ref{semantische-Typen}b）中形成：一个NP对应于
-\textcolor{red}{需要某种以构成真或假的表达式的类型\sliste{ \type{e},  \type{t} }的语义表达式（即，属于类型\type{t}）/需要类型为\sliste{ \type{e},  \type{t} }的表达式，与之结合可以形成一个或真或假的表达式（即，属于类型\type{t}）}。
+这就意味着NP是需要与表达式相组合的，该表达式只有一个开放的槽，对应于（\mex{0}）中的x。这一过程在（\ref{semantische-Typen}b）中形成：一个NP对应于类型为\sliste{ \type{e},  \type{t} }的表达式，与之结合可以形成一个或真或假的表达式（即，属于类型\type{t}）。
 %This means that an NP is something that must be combined with an expression which has exactly one open slot corresponding to the x in 
 %(\mex{0}). This is formulated in (\ref{semantische-Typen}b):
 %an NP corresponds to a semantic expression which needs something of type \sliste{ \type{e},
 % \type{t} } to form an expression which is either true or false (that is, of type \type{t}).
 
-N$'$表示类型$\lambda$x child(x)的名词性表达式。这意味着，如果有一个具体的个体可以插入到x的位置上，那么我们将得到一个要么为真要么为假的表达式。对于一个给定的条件，要么John具有称为孩子的属性，要么没有。N$'$具有与VP相同的类型。
+N$'$表示类型$\lambda$x child(x)的名词性表达式。这意味着，如果有一个具体的个体可以插入到x的位置上，那么我们将得到一个要么为真要么为假的表达式。对于一个给定的条件，要么John具有作为孩子的属性，要么没有。N$'$具有与VP相同的类型。
 %An N$'$ stands for a nominal expression for the kind  $\lambda$x child(x). This means if there is a specific individual which one can insert in %place of the x, then we arrive at an
 %expression that is either true or false. For a given situation, it is the case that either John has the property of being a child or he does not. An %N$'$ has the same type as
 %a VP.
@@ -530,9 +537,9 @@ N$'$表示类型$\lambda$x child(x)的名词性表达式。这意味着，如果
 %(\ref{semantische-Typen}b), that is, a determiner is semantically something which has to be combined with the meaning of N$'$
 %to give the meaning of an NP.
 
-\citet*[\page 209]{GKPS85a}指出了遵守规则对应假说\isc{规则到规则假说}\is{rule"=to"=rule hypothesis}的\textcolor{red}{语法的语义具体化/语义规范}是冗余的（请看第\ref{sec-PSG-Semantik}节），因为，\textcolor{red}{不管有关组合的规则与规则的要求，它在很多方面都是足够的，简单来说函子被应用于论元/即便不管组合中的规则对应的要求，仅仅约束函子需要应用于论元就足以明确语义加工过程}。
-如果我们使用（\ref{semantische-Typen}）中那些类型，\textcolor{red}{也很清楚哪个成分是函子，哪个是论元/哪个成分是函子、哪个成分是论元，这是很清楚的}。
-按照这一方式，名词不能被应用于限定词，\textcolor{red}{而相反是可以的/恰恰是反过来的限定词应用于名词}。（\mex{1}a）中的组合得不到合乎语法的结果，而（\mex{1}b）被规则排除了。
+\citet*[\page 209]{GKPS85a}指出了遵守规则对应假说\isc{规则到规则假说}\is{rule"=to"=rule hypothesis}的语法的语义赋值是冗余的（请看\ref{sec-PSG-Semantik}），因为，即便不管组合中的规则对应的要求，在很多情况下仅仅约束函子需要应用于论元就足以明确语义加工过程。
+如果我们使用（\ref{semantische-Typen}）中那些类型，哪个成分是函子、哪个成分是论元，这是很清楚的。
+按照这一方式，名词不能被应用于限定词，恰恰相反限定词可以应用于名词。（\mex{1}a）中的组合得不到合乎语法的结果，而（\mex{1}b）被规则排除了。
 %\citet*[\page 209]{GKPS85a} point out a redundancy in the semantic specification of grammars which follow the rule"=to"=rule
 %hypothesis\is{rule"=to"=rule hypothesis} (see Section~\ref{sec-PSG-Semantik}) since, instead of giving rule"=by"=rule instructions with regard %to combinations, it suffices in many cases simply
 %to say that the functor is applied to the argument. If we use types such as those in (\ref{semantische-Typen}), it is also clear which constituent %is the functor
@@ -550,21 +557,20 @@ N$'$表示类型$\lambda$x child(x)的名词性表达式。这意味着，如果
 普遍的组合原则如下所示：
 %The general combinatorial principle is then as follows:
 \eanoraggedright
-\textcolor{red}{
-针对子结点的语义贡献的组合的功能性应用会产出对应于母结点类型的合乎语法的表达/通过对子结点的语义进行函数应用操作可以产生对应于母结点语义类型的良形式语义表达}。
+通过对子结点的语义进行函数应用操作可以产生对应于父结点语义类型的良形式语义表达。
 %Use functional application for the combination of the semantic contribution of the daughters to yield a well-formed expression corresponding %to the
 %type of the mother node.
 \z
-GPSG著作的作者们认为这一原则可以应用于大部分的GPSG规则，这样只有少部分情况需要用\textcolor{red}{外在/显形}的规则来处理。
+GPSG著作的作者们认为这一原则可以应用于大部分的GPSG规则，这样只有少部分情况需要用显性规则来处理。
 %The authors of the GPSG book assume that this principle can be applied to the vast majority of GPSG rules so that only a few special cases %have to be dealt
 %with by explicit rules.
 
-\subsection{\textcolor{red}{状语/附接语}}
+\subsection{附接语}
 %\subsection{Adjuncts}
 \label{Abschnitt-Adjunkte-GPSG}
 
-对于\isc{附接语|(}\is{adjunct|(}英语中的名词性结构，\citet[\page 126]{GKPS85a}认为\xbar 分析以及我们在第\ref{sec-psg-np}节看到的分析适用于德语的名词结构。
-尽管如此，如果我们假定\textcolor{red}{平面/扁平}分支结构的话，在动词域内对状语的分析会有问题，因为状语可以自由出现在论元之间：
+对于\isc{附接语|(}\is{adjunct|(}英语中的名词性结构，\citet[\page 126]{GKPS85a}认为\xbar 分析以及我们在\ref{sec-psg-np}看到的分析适用于德语的名词结构。
+尽管如此，如果我们假定平铺的分支结构，那么在动词域内对状语的分析会有问题，因为状语可以自由出现在论元之间：
 %For\is{adjunct|(} nominal structures in English\il{English}, \citet[\page 126]{GKPS85a} assume the \xbar~analysis and, as we have seen in %Section~\ref{sec-psg-np}, this analysis is applicable
 %to nominal structures in German. Nevertheless, there is a problem regarding the treatment of adjuncts in the verbal domain if one assumes %flat branching structures, since adjuncts can
 %freely occur between arguments:
@@ -594,7 +600,7 @@ GPSG著作的作者们认为这一原则可以应用于大部分的GPSG规则，
 \label{regel-ditransitiv-adv}
 V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom], AdvP
 \z
-当然，附接语也可以出现在其他配价类型的动词的论元之间：
+当然，附接语也可以出现在其他配价类型的动词论元之间：
 %Of course, adjuncts can also occur between the arguments of verbs from other valence classes:
 \ea
 \gll weil (oft) die Frau (oft) dem Mann (oft) hilft\\
@@ -622,8 +628,8 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 V2  $\to$ W $\mapsto$\\
 V2  $\to$ W, AdvP
 \z 
-通过在（\ref{subjekt-meta}）中主语引入的元规则，（\ref{regel-ditransitiv-adv}）中的V3"=规则由V2"=规则推导出来。由于在一个句子中有几个状语，\textcolor{red}{像（\ref{Adjunkt-MR}）的元规则必须被允许应用多次/必须允许可以多次应用像（\ref{Adjunkt-MR}）这样的元规则}。
-元规则的循环应用在文献中经常因为生成能力\isc{能力!生成能力}\is{capacity!generative}而被规则排除（请看第\ref{sec-generative-capacity}章）（\citealp{Thompson82a-u}、\citealp[\page 146]{Uszkoreit87a}）。如果我们用Kleene星号\isc{Kleene星号}\is{Kleene star}\isc{*}\is{*}表示，那么就可以构成状语的元规则，这样就不用重复应用了\citep[\page 146]{Uszkoreit87a}：
+通过在（\ref{subjekt-meta}）中主语引入的元规则，（\ref{regel-ditransitiv-adv}）中的V3"=规则由V2"=规则推导出来。由于在一个句子中可以有几个附接语，必须允许可以多次应用像（\ref{Adjunkt-MR}）这样的元规则。
+元规则的循环应用在文献中经常因为生成能力过强\isc{能力!生成能力}\is{capacity!generative}而被规则排除（请看第\ref{sec-generative-capacity}章）（\citealp{Thompson82a-u}、\citealp[\page 146]{Uszkoreit87a}）。如果我们用Kleene星号\isc{Kleene星号}\is{Kleene star}\isc{*}\is{*}表示，那么就可以构成状语的元规则，这样就不用重复应用了\citep[\page 146]{Uszkoreit87a}：
 %By means of the subject introducing metarule in (\ref{subjekt-meta}), the V3"=rule in (\ref{regel-ditransitiv-adv}) is derived from a V2"=rule.
 %Since there can be several adjuncts in one sentence, a metarule such as (\ref{Adjunkt-MR}) must be allowed to apply multiple times. The %recursive
 %application of metarules is often ruled out in the literature due to reasons of generative capacity\is{capacity!generative} (see
@@ -646,9 +652,9 @@ V2  $\to$ W $\mapsto$\\
 V2  $\to$ W, AdvP*
 \z 
 如果我们采用（\mex{0}）中的规则，那么如何决定状语的语义贡献就不够清楚了。\footnote{
-  在LFG\indexlfg 中，状语被安排在功能性结构的集合中（请看第\ref{Abschnitt-LFG-Adjunkte}节）。这也适用于Kleene星号标记的使用。从f"=结构\isc{f"=结构}\is{f"=structure}来看，有可能通过指向c"=结构\isc{c"=结构}\is{c"=structure}来计算出相应域的语义指称。在HPSG\indexhpsg
-  中，\citet{Kasper94a}提出了一个与GPSG相关的方法，该方法是关于\textcolor{red}{平面/扁平}分支结构与任意数量的状语的。然而，在HPSG中，我们可以利用所谓的关系限制。这与可以在复杂结构中创造关系的小项目是类似的。应用这些关系限制，就可能计算出\textcolor{red}{平面/扁平}分支结构中未受到数量限制的状语的意义。
-}对于（\mex{-1}）中的规则，我们可以在输入规则中将AdvP的语义贡献与V2的语义贡献组合起来。如果元规则被应用多次的话，这自然也是可能的。\textcolor{red}{如果元规则被应用于（\mex{1}a），比如说/比如说，如果元规则被应用于（\mex{1}a）}，（\mex{1}a）中的V2"=结点包括第一个副词的语义贡献。
+  在LFG\indexlfg 中，状语被安排在功能性结构的集合中（请看\ref{Abschnitt-LFG-Adjunkte}）。这也适用于Kleene星号标记的使用。从f"=结构\isc{f"=结构}\is{f"=structure}来看，有可能通过指向c"=结构\isc{c"=结构}\is{c"=structure}来计算出相应域的语义指称。在HPSG\indexhpsg
+  中，\citet{Kasper94a}提出了一个与GPSG相关的方法，该方法是关于平铺分支结构与任意数量的状语的。然而，在HPSG中，我们可以利用所谓的关系限制。这与可以在复杂结构中创造关系的小项目是类似的。应用这些关系限制，就可能计算出平铺分支结构中未受到数量限制的状语的意义。
+}对于（\mex{-1}）中的规则，我们可以在输入规则中将AdvP的语义贡献与V2的语义贡献组合起来。如果元规则被应用多次的话，这自然也是可能的。比如说，如果元规则被应用于（\mex{1}a），（\mex{1}a）中的V2"=结点包括第一个副词的语义贡献。
 %If one adopts the rule in (\mex{0}), then it is not immediately clear how the semantic contribution of the adjuncts can be determined.\footnote{
 %	In LFG\indexlfg, an adjunct is entered into a set in the functional structure (see Section~\ref{Abschnitt-LFG-Adjunkte}). This also works with %the use
 %	of the Kleene Star notation. From the f"=structure\is{f"=structure}, it is possible to compute the semantic denotation with corresponding %scope by making reference
@@ -668,7 +674,7 @@ V2  $\to$ W, AdvP*
 %The V2"=node in (\mex{0}b) receives the semantic representation of the adverb applied to the V2"=node in
 %(\mex{0}a).
 
-\citet{WP92b}指出，如果不想应用元规则来计算短语结构规则的集合，而是在句子分析的过程中直接应用元规则的话，可以应用像（\ref{Adjunkt-MR}）一样的元规则。因为句子总是有限长度的，而且元规则在新允准的规则的右边引入一个额外的AdvP，元规则只能\textcolor{red}{被应用于有限的次数/进行有限次应用}。
+\citet{WP92b}指出，如果不想应用元规则来计算短语结构规则的集合，而是在句子分析的过程中直接应用元规则的话，可以应用像（\ref{Adjunkt-MR}）一样的元规则。因为句子总是有限长度的，而且元规则在新允准的规则右边引入一个额外的AdvP，元规则只能进行有限次应用。
 %\citet{WP92b} have shown that it is possible to use metarules such as (\ref{Adjunkt-MR}) if one does not use
 %metarules to compute a set of phrase structure rules, but rather directly applies the metarules
 %during the analysis of a sentence. Since sentences are always of finite length and the metarule
@@ -696,7 +702,7 @@ V2  $\to$ W, AdvP*
 \end{itemize}
 
 \noindent
-\textcolor{red}{这对可以构成被动的所有动词来说都是正确的/对于可以构成被动的所有动词来说，这都是正确的}。不管动词是带一个、两个还是三个论元，都没有什么区别：
+对于可以构成被动的所有动词来说，这都是正确的。不管动词是带一个、两个，还是三个论元，都没有什么区别：
 %This is true for all verb classes which can form the passive. It does not make a difference whether the verbs takes one, two or three %arguments:
 \eal
 \label{beispiel-arbeiten}
@@ -758,8 +764,8 @@ V2  $\to$ W, AdvP*
 \zl
 
 \noindent
-在简单的短语结构语法中，我们需要\textcolor{red}{针对每对句子列出两条独立的规则，指向要研究动词的配价类型/结合正在讨论的动词的配价类型，针对每对句子列出两条独立的规则}。
-上面讨论的被动的特征就不会在规则集合中被明确地\textcolor{red}{证明/表示}出来。在GPSG中，有可能应用元规则来解释主动和被动规则之间的关系：对于每条主动规则，\textcolor{red}{带有受到抑制的主语的对应被动原则/相对应的带有受到抑制的主语的被动规则}被允准了。主动句和被动句之间的联系可以\textcolor{red}{这样/通过这样的方式}来描述。
+在简单的短语结构语法中，我们需要结合正在讨论的动词的配价类型，针对每对句子列出两条独立的规则。
+上面讨论的被动特征就不会在规则集合中被明确地表示出来。在GPSG中，有可能应用元规则来解释主动和被动规则之间的关系：对于每条主动规则，相对应的带有受到抑制的主语的被动规则被允准了。主动句和被动句之间的联系可以通过这样的方式来描述。
 %In a simple phrase structure grammar, we would have to list  two separate rules for each pair of sentences making reference to the valence %class of the
 %verb in question. The characteristics of the passive discussed above would therefore not be
 %explicitly stated in the set of rules. In GPSG, it is possible to explain the relation between
@@ -767,7 +773,7 @@ V2  $\to$ W, AdvP*
 %The link between active and passive clauses can therefore be captured in this way.  
 
 %\addlines[2]
-和转换语法/GB\indexgb \indexmp 的一个重要区别是我们没有在两棵树之间创造关系，而是在主动与被动规则之间创造关系。这两条规则允准了两个没有联系的结构，即（\mex{1}b）中的结构并不是从（\mex{1}a）的结构中推导而来的。
+和转换语法/GB\indexgb\indexmp 的一个重要区别是我们没有在两棵树之间创造关系，而是在主动与被动规则之间创造关系。这两条规则允准了两个没有联系的结构，即（\mex{1}b）中的结构并不是从（\mex{1}a）的结构中推导而来的。
 %An important difference to Transformational Grammar/GB\indexgb\indexmp is that we are not creating a
 %relation between two trees, but rather between active and passive rules. The two rules license two
 %unrelated structures, that is, the structure of (\mex{1}b) is not derived from the structure of (\mex{1}a). 
@@ -787,10 +793,10 @@ V2  $\to$ W, AdvP*
 %\glt `because he was beaten'
 \zl
 %
-尽管如此，主动/被动之间的\textcolor{red}{普遍性/相关性}还是被捕捉到了。
+尽管如此，主动/被动之间的相关性还是被捕捉到了。
 %The generalization with regard to active/passive is captured nevertheless.
 
-接下来，我将详细讨论\citew*{GKPS85a}中给出的被动的分析。作者认为下面的元规则\isc{元规则|(}\is{metarule|(}适用于英语（第59页）：\footnote{
+接下来，我将详细讨论\citew*{GKPS85a}中给出的被动分析。作者认为下面的元规则\isc{元规则|(}\is{metarule|(}适用于英语（第59页）：\footnote{
 请看\citew[\page 1114]{WP92b}针对德语的平行规则，该规则是指元规则左边的宾格。
 }
 %In what follows, I will discuss the analysis of the passive given in \citew*{GKPS85a} in some more detail. The authors suggest the following %metarule\is{metarule|(}
@@ -823,12 +829,12 @@ VP[\textsc{pas}] $\to$ H[3], PP[\emph{to}], (PP[\emph{by}])\\
 \ex
 \gll {} [\sub{S} The man [\sub{VP} devoured the carcass]].\\
 {} [\sub{S} DET 男人 [\sub{VP} 吞 DET 骨架]]\\
-\glt `'
+\glt `这个男人把骨架吞了。'
 %{} [\sub{S} The man [\sub{VP} devoured the carcass]].
 \ex
 \gll {} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].\\
 {} [\sub{S} DET 男人 [\sub{VP} 递 DET 剑 PREP Tracy]].\\
-\glt `'
+\glt `这个男人把剑递给Tracy。'
 %{} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].
 \zl
 VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
@@ -842,23 +848,23 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 \ex
 \gll {} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].\\
 {} [\sub{S} DET 骨架 AUX [\sub{VP[\textsc{pas}]} 吞 (PREP DET 男人)]].\\
-\glt `'
+\glt `这个骨架被（这个男人）吞了。'
 %{} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].
 \ex
 \gll {} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].\\
 {} [\sub{S} DET 剑 AUX [\sub{VP[\textsc{pas}]} 递 PREP Tracy (PREP DET 男人)]].\\
-\glt `'
+\glt `这把剑被（这个男人）递给了Tracy。'
 %{} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].
 \zl
 %
-初看上去，这一分析很奇怪，因为宾语在VP内部替换为一个PP，该PP在主动句中是主语。尽管该分析针对句法角度合乎语法的结构做出了正确的判断，但是相对应的语义分析并不清晰。尽管如此，我们也是可以使用词汇规则\isc{词汇规则}\is{lexical rule}来允准被动分词，并按照某种方式来操控输出词汇项的语义，其中\emph{by}-PP在语义上被正确地整合进来\citep[\page 219]{GKPS85a}。
+初看上去，这一分析很奇怪，因为宾语在VP内部替换为一个PP，该PP在主动句中是主语。尽管该分析针对句法角度合乎语法的结构做出了正确的判断，但是相对应的语义分析并不清晰。尽管如此，我们也是可以使用词汇规则\isc{词汇规则}\is{lexical rule}来允准被动分词，并按照某种方式来操控输出词汇项的语义，其中by-PP在语义上被正确地整合进来\citep[\page 219]{GKPS85a}。
 %At first glance, this analysis may seem odd as an object is replaced inside the VP by a PP which would be the subject in an
 %active clause. Although this analysis makes correct predictions with regard to the syntactic well"=formedness of structures, it
 %seems unclear how one can account for the semantic relations. It is possible, however, to use a
 %lexical rule\is{lexical rule} that licenses the passive participle and manipulates the semantics of
 %the output lexical item in such a way that the \emph{by}-PP is correctly integrated semantically \citep[\page 219]{GKPS85a}.
 
-但是，如果我们试着将这一分析应用到德语，我们就会遇到问题。因为非人称被动\isc{被动!非人称被动}\is{passive!impersonal}不能简单地通过抑制宾语而得到。诸如``arbeiten''（工作）和``denken''（想）的动词的V2"=规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
+但是，如果我们试着将这一分析应用到德语，我们就会遇到问题。因为非人称被动\isc{被动!非人称被动}\is{passive!impersonal}不能简单地通过抑制宾语而得到。诸如arbeiten（工作）和denken（想）的动词的V2"=规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
 %We arrive at a problem, however, if we try to apply this analysis to German since the impersonal passive\is{passive!impersonal} cannot be %derived
 %by simply suppressing an object. The V2"=rules for verbs such as \emph{arbeiten} `work' and \emph{denken} `think' as used for the analysis %of
 %(\ref{beispiel-arbeiten}a) and (\ref{beispiel-denken}a) have the following form:
@@ -868,8 +874,8 @@ V2 $\to$ H[5]\\
 V2 $\to$ H[13], PP[\emph{an}]\\
 \end{tabular}
 \z
-在这些规则的右边没有NP能够变成\emph{von}-PP。如果被动在规则中被分析为名词论元的抑制，那么它就应该从非人称被动的存在而来，被动的元规则必须应用到可以允准定式小句的规则上，因为关于是否有主语的信息只出现在定式小句的规则中。\footnote{
-GPSG与GB\indexgb 的不同之处在于，非定式动词投射不包括空主语的结点。这在本书讨论的所有其他理论中也是真的，除了树邻接语法\indextag 。
+在这些规则的右边没有NP能够变成von-PP。如果被动在规则中被分析为名词论元的抑制，那么它就应该从非人称被动而来，被动的元规则必须应用到可以允准定式小句的规则上，因为关于是否有主语的信息只出现在定式小句的规则中。\footnote{
+GPSG与GB\indexgb 的不同之处在于，非定式动词投射不包括空主语的结点。这在本书讨论的所有其他理论中也是一样的，除了树邻接语法\indextag。
 }在这类系统中，定式句子（V3）的规则是基本规则，而V2的规则可以从中推导出来。
 %There is no NP on the right"=hand side of these rules which could be turned into a \emph{von}-PP. If the passive
 %is to be analyzed as suppressing an NP argument in a rule, then it should follow from the existence of the impersonal passive 
@@ -888,7 +894,7 @@ GPSG与GB\indexgb 的不同之处在于，非定式动词投射不包括空主�
 % subjects and objects are not in the same local tree either.
 %}
 对于英语来说，一般认为句子包括一个主语和一个VP（请看\citealp[\page 139]{GKPS85a}）。这就意味着我们对英语和德语的被动式会得到两个非常不同的分析结果，该结果并不能得到同样的描述性结论，即被动是主语的抑制与宾语的提升。德语和英语的核心区别看上去是英语强制要求有一个主语，\footnote{
-  在某些条件下，主语在英语中也可以被省略。更多有关\textcolor{red}{命令式/祈使句}和其他无主句的例子，请看第~\pageref{Beispiel-Imperativ-Englisch}页。
+  在某些条件下，主语在英语中也可以被省略。更多有关祈使句和其他无主句的例子，请看第~\pageref{Beispiel-Imperativ-Englisch}页。
 }这就是为什么英语没有非人称被动。这是一个独立于被动的属性，但是，它会影响到被动结构存在与否的可能性。\isc{元规则|)}\is{metarule|)}
 %For English, it is assumed that a sentence consists of a subject and a VP (see \citealp[\page 139]{GKPS85a}). 
 %This means that we arrive at two very different analyses for the passive in English and German, which do not capture
@@ -908,11 +914,8 @@ GPSG分析的问题在于配价信息在短语结构规则中编码，而主语�
 %Categorial Grammar\indexcg, HPSG\indexhpsg, Construction Grammar\indexcxg, and Dependency Grammar\indexdg
 %which encode valence separately from phrase structure rules and therefore do not have a principled problem with impersonal passive.\is{passive!impersonal|)}
 
-\textcolor{red}{请看\citet[\page 394--396]{Jacobson87b}在GPSG中有关被动分析的更多有问题的地方，
-而且可以看到在范畴语法、GB、LFG和HPSG中配价的词汇表征可以实现现象的词汇分析，在GPSG中配价表征的基础假设的原则问题是不可能实现的。
-/\citet[\page 394--396]{Jacobson87b}讨论了更多的GPSG的被动分析中存在的问题，
+\citet[\page 394--396]{Jacobson87b}讨论了更多的GPSG的被动分析中存在的问题，
 这篇论文也包含了关于基于词来表达配价信息的有意义的讨论，基于词来表征配价的方法被范畴语法、GB、LFG和HPSG广泛采用，它允许我们对相关现象进行基于词的分析，但GPSG的针对配价信息的理论假设不允许我们使用这种方法。
-}
 %See \citet[\page 394--396]{Jacobson87b} for more problematic aspects of the passive analysis in GPSG and for the insight that a lexical %representation of valence -- as assumed
 %in Categorial Grammar, GB, LFG and HPSG -- allows for a lexical analysis of the phenomenon, which is however unformulable in GPSG for %principled reasons having to
 %do with the fundamental assumptions regarding valence representations.
@@ -922,7 +925,7 @@ GPSG分析的问题在于配价信息在短语结构规则中编码，而主语�
 %\section{Verb position}
 \label{Abschnitt-Verbstellung-GPSG}
 
-\mbox{}\citet{Uszkoreit87a}\isc{动词位置|(}\is{Verb position|(}将动词位于首位与位于末尾的语序分析为\textcolor{red}{平面/扁平}树的线性顺序变体。这一分析的细节已经在第\ref{GPSG-lokale-Umstellung}节进行了讨论。
+\mbox{}\citet{Uszkoreit87a}\isc{动词位置|(}\is{Verb position|(}将动词位于首位与位于末尾的语序分析为平铺树的线性顺序变体。这一分析的细节已经在\ref{GPSG-lokale-Umstellung}进行了讨论。
 %\mbox{}\citet{Uszkoreit87a}\is{Verb position|(} analyzed verb"=initial and verb"=final order as linearization variants of a flat tree. The details of %this analysis have already
 %been discussed in Section~\ref{GPSG-lokale-Umstellung}.
 
@@ -935,7 +938,7 @@ GPSG版本的另一种分析来自于\citet[\page 110]{Jacobs86a}：Jacobs的分
 %\section{Long"=distance dependencies as the result of local dependencies}
 \label{Abschnitt-GPSG-Fernabhaengigkeiten}\label{sec-nld-gpsg}
 
-GPSG的一个创新点是它将长距离依存\isc{长距离依存|(}\is{long"=distance dependency|(}看作是\textcolor{red}{局部依存的序列/一系列局部依存}\citep{Gazdar81}。以德语为例，该方法可以解释为将成分提前到前场。截至目前，我们只看到动词首位与动词末位的GPSG分析：（\mex{1}）中的序列只是简单的线性变体。
+GPSG的一个创新点是它将长距离依存\isc{长距离依存|(}\is{long"=distance dependency|(}看作是一系列局部依存\citep{Gazdar81}。以德语为例，该方法可以解释为将成分提前到前场。截至目前，我们只看到动词首位与动词末位的GPSG分析：（\mex{1}）中的序列只是简单的线性变体。
 %One\is{long"=distance dependency|(} of the main innovations of GPSG is its treatment of long"=distance dependencies as a sequence of %local dependencies \citep{Gazdar81}.
 %This approach will be explained taking constituent fronting to the prefield in German as an
 %example. Until now, we have only seen the GPSG analysis for verb-initial and verb-final position: the
@@ -1014,7 +1017,7 @@ V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 %In (\mex{0}), X stands for an arbitrary category which is marked as missing in V3 by the `/'. X is referred to as a 
 %\emph{filler}\is{filler}.
 
-在我们的例子中，X的\textcolor{red}{值的格/格的值}在（\mex{1}）中被详细列出来：
+在我们的例子中，X取值的各种可能性在（\mex{1}）中被详细列出来：
 %The interesting cases of values for X with regard to our examples are given in (\mex{1}):
 \ea
 \begin{tabular}[t]{@{}l@{~$\to$~}l@{~}l@{}}
@@ -1040,8 +1043,9 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 %it with something else, for instance \emph{prefield}. This would not affect the analysis. X in (\mex{0})
 %stands for an arbitrary category. This is a new X and it is independent from the one in (\ref{gpsg-vs-regel}). 
 
-图\vref{fig-nld-gpsg}显示了（\mex{1}）中分析的规则的互动关系。\footnote{%
-  \textsc{fin}特征在某些结点上被省略了，\textcolor{red}{因为/考虑到}它是冗余的：$+$\textsc{mc}"=动词总是需要\textsc{fin}的值为“+”。
+图\ref{fig-nld-gpsg}显示了（\mex{1}）中分析的规则的互动关系。\footnote{%
+%图\vref{fig-nld-gpsg}显示了（\mex{1}）中分析的规则的互动关系。\footnote{%
+  \textsc{fin}特征在某些结点上被省略了，考虑到它是冗余的：$+$\textsc{mc}"=动词总是需要\textsc{fin}的值为“+”。
 }
 %Figure~\vref{fig-nld-gpsg} shows the interaction of the rules for the analysis of
 %(\mex{1}).\footnote{%
@@ -1071,14 +1075,14 @@ sm edges
 %\caption{\label{fig-nld-gpsg}Analysis of fronting in GPSG}
 \end{figure}%
 %
-（\ref{meta-slash-intro}）中的元规则允准了将与格宾语加到斜杠上的规则。该规则现在允准了“gibt er das Buch”（给他这本书）的子树。V[+\textsc{mc}] $<$ X的线性规则规定了动词位于V3局部树的最左边。下一步，斜杠后面的成分被绑定了。在LP"=规则 [+\textsc{top}] $<$ X之后，绑定的成分必须位于V3结点的左边。
+（\ref{meta-slash-intro}）中的元规则允准了将与格宾语加到斜杠上的规则。该规则现在允准了gibt er das Buch（给他这本书）的子树。V[+\textsc{mc}] $<$ X的线性规则规定了动词位于V3局部树的最左边。下一步，斜杠后面的成分被绑定了。在LP"=规则 [+\textsc{top}] $<$ X之后，绑定的成分必须位于V3结点的左边。
 %The metarule in (\ref{meta-slash-intro}) licenses a rule which adds a dative object into slash. This
 %rule now licenses the subtree for \emph{gibt er das Buch} `gives he the book'.
 %The linearization rule V[+\textsc{mc}] $<$ X orders the verb to the very left inside of the local
 %tree for V3. In the next step, the constituent following the slash is bound off. Following the
 %LP"=rule [+\textsc{top}] $<$ X, the bound constituent must be ordered to the left of the V3 node.
 
-图\ref{fig-nld-gpsg}中的分析看起来有点过于复杂，因为（\mex{0}）中的名词短语全都依存于同一个动词。我们可以创造一个线性规则系统来允许我们分析带有整个\textcolor{red}{平铺/扁平}结构的（\mex{0}）。尽管如此，我们仍然需要第\pageref{bsp-Fernabhaengigkeit}页的（\ref{bsp-Fernabhaengigkeit}）中的句子——为了方便，这里重复为（\mex{1}）——的分析：
+图\ref{fig-nld-gpsg}中的分析看起来有点过于复杂，因为（\mex{0}）中的名词短语全都依存于同一个动词。我们可以创造一个线性规则系统来允许我们分析带有整个平铺结构的（\mex{0}）。尽管如此，我们仍然需要第\pageref{bsp-Fernabhaengigkeit}页的（\ref{bsp-Fernabhaengigkeit}）中的句子——为了方便，这里重复为（\mex{1}）——的分析：
 %The analysis given in Figure~\ref{fig-nld-gpsg} may seem too complex since the noun phrases in (\mex{0}) all depend on the same verb. It is %possible to invent a system
 %of linearization rules which would allow one to analyze (\mex{0}) with an entirely flat structure. One would nevertheless still need an analysis %for sentences such as those in 
 %(\ref{bsp-Fernabhaengigkeit}) on
@@ -1095,10 +1099,10 @@ sm edges
 %\glt `He apparently tried to cheat an insurance company out of two million Deutsche Marks.'
 \ex
 \gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
-    \spacebr{}谁 相信 他 CONJ 他 {} AUX 反驳 \textsc{refl} ART 政客 PREP 尼罗河\\
+    \spacebr{}谁 相信 他 CONJ 他 {} COP 反驳 \textsc{refl} ART 政客 PREP 尼罗河\\
 %     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
 \footnotetext{
-        Spiegel，1999年8月，第18页。
+        《明镜周刊》（\emph{Spiegel}），1999年8月，第18页。
 }
 \glt `\,“他认为他是谁呀？”，一位来自尼罗河的政客声称道。'
 %\glt `\,``Who does he think he is?'', a politician from the Nile exclaimed.'
@@ -1125,8 +1129,8 @@ sm edges
 \glt `但是，共和党们更难对他发起攻击。'
 %\glt `It is, however, more difficult for the Republicans to launch attacks against him.'
 \zl
-（\mex{0}）中的句子不能按照局部重新排序来进行解释，因为前场中的元素并不依存于最高的动词，\textcolor{red}{但是相反是/而是}从低层的小句而来的。因为只有从同一局部树中而来的元素才能重新排序，（\mex{0}）中的句子不能在没有针对长距离依存\textcolor{red}{安排/设置}其他机制的情况下得到分析。\footnote{
-我们可以想象，针对非局部依存的特征机制只针对那些真正包括非局部依存的句子。这在HPSG\indexhpsg 中，由\citet{Kathol95a}和\citet{Wetta2011a}做到了，在依存语法中由\citet{GO2009a}做到了。我将在第\ref{sec-linearization-problems-dg}节详细讨论依存语法分析，并且指出将简单的V2句子处理为非V2句子的变体的分析在下面几个方面是有问题的，包括前置状语的辖域\isc{辖域}\is{scope}、简单句的和非局部依存句的并列\isc{并列}\is{coordination} ，以及所谓的多重前置\isc{显性多重前置}\is{apparent multiple fronting}。
+（\mex{0}）中的句子不能按照局部语序重列来进行解释，因为前场中的元素并不依存于最高的动词，而是从低层的小句而来。因为只有从同一局部树中而来的元素才能重新排序，（\mex{0}）中的句子不能在没有针对长距离依存设置其他机制的情况下得到分析。\footnote{
+我们可以想象，针对非局部依存的特征机制只针对那些真正包括非局部依存的句子。这在HPSG\indexhpsg 中，由\citet{Kathol95a}和\citet{Wetta2011a}做到了，在依存语法中由\citet{GO2009a}做到了。我将在\ref{sec-linearization-problems-dg}详细讨论依存语法的分析，并且指出将简单的V2句子处理为非V2句子的变体的分析在下面几个方面是有问题的，包括前置状语的辖域\isc{辖域}\is{scope}、简单句的和非局部依存句的并列\isc{并列}\is{coordination} ，以及所谓的多重前置\isc{显性多重前置}\is{apparent multiple fronting}。
 }
 %The sentences in (\mex{0}) cannot be explained by local reordering as the elements in the prefield are not dependent on the highest verb, but %instead originate in the lower clause.
 %Since only elements from the same local tree can be reordered, the sentences in (\mex{0}) cannot be analyzed without postulating some kind %of additional mechanism for long"=distance
@@ -1141,7 +1145,8 @@ sm edges
 %}
 
 %\addlines
-在我对这章进行总结之前，我还将讨论另一个前置的例子，即（\mex{0}）中更为复杂的例子。（\mex{0}）中的分析包括几个步骤：导入、渗透和最后绑定长距离依存信息。这些步骤如图\vref{fig-gpsg-udc}所示。
+在我对这章进行总结之前，我还将讨论另一个前置的例子，即（\mex{0}）中更为复杂的例子。（\mex{0}）中的分析包括几个步骤：导入、渗透和最后绑定长距离依存信息。这些步骤如图\ref{fig-gpsg-udc}所示。
+%这些步骤如图\vref{fig-gpsg-udc}所示。
 %Before I conclude this chapter, I will discuss yet another example of fronting, namely one of the
 %more complex examples in (\mex{0}). The analysis of (\mex{0}c) consists of several steps: the
 %introduction, percolation and finally binding off of information about the long"=distance dependency.
@@ -1166,14 +1171,14 @@ sm edges,empty nodes
 \caption{\label{fig-gpsg-udc}GPSG中的长距离依存分析}
 %\caption{\label{fig-gpsg-udc}Analysis of long"=distance dependencies in GPSG}
 \end{figure}%
-简单来说，我认为\emph{gesehen habe} （已经看见）就像一个正常的及物动词。\footnote{
+简单来说，我认为gesehen habe （已经看见）就像一个正常的及物动词。\footnote{
 请看\citew{Nerbonne86a}和\citew{Johnson86a}有关GPSG中动词复杂式的分析。
 }
 %Simplifying somewhat, I assume that \emph{gesehen habe} `have seen' behaves like a normal transitive verb.\footnote{
 %   See \citew{Nerbonne86a} and \citew{Johnson86a}, for analyses of verbal complexes in GPSG.
 %}
-由（\ref{meta-slash-intro}）中的元规则允准的短语结构规则允准了“ich”（我）和“gesehen habe”（已经看见）的组合，并在V3结点上表示为缺失的宾格宾语。标句词“dass”（那个）与“ich gesehen habe”（我已经看见）相组合，而且有关宾格NP缺失的信息在树中具有渗透性。这一渗透过程由所谓的\textcolor{red}{次/底部}特征原则（Foot Feature Principle）\isc{次特征原则}\is{Foot Feature
-Principle}控制，它是指所有的子结点的\textcolor{red}{次/底部}特征也在母结点上出现。因为\textsc{slash}特征（空位特征）是一个\textcolor{red}{次/底部}特征，如果他们没有在局部树内绑定的话，在“/”后的范畴会在树中自下而上地渗透。最后一步，V3/N2[acc]与缺失的N2[acc]相组合。结果是一个\textcolor{red}{在/位于}最高投射层的完整的定式陈述句。
+由（\ref{meta-slash-intro}）中的元规则允准的短语结构规则允准了ich（我）和gesehen habe（已经看见）的组合，并在V3结点上表示为缺失的宾格宾语。标句词dass（那个）与ich gesehen habe（我已经看见）相组合，而且有关宾格NP缺失的信息在树中具有渗透性。这一渗透过程由所谓的底部特征原则（Foot Feature Principle）\isc{底部特征原则}\is{Foot Feature
+Principle}控制，它是指所有的子结点的底部特征也在父结点上出现。因为\textsc{slash}特征（空位特征）是一个底部特征，如果他们没有在局部树内绑定的话，在“/”后的范畴会在树中自下而上地渗透。最后一步，V3/N2[acc]与缺失的N2[acc]相组合。结果是一个位于最高投射层的完整的定式陈述句。
 %A phrase structure rule licensed by the metarule in (\ref{meta-slash-intro}) licenses the combination of \emph{ich} `I' and \emph{gesehen %habe} `has seen'
 %and represents the missing accusative object on the V3 node. The complementizer \emph{dass} `that' is combined with \emph{ich gesehen
 %habe} `I have seen' and the information about the fact that an accusative NP is missing is percolated up the tree. This percolation is %controlled by the
@@ -1188,8 +1193,8 @@ Principle}控制，它是指所有的子结点的\textcolor{red}{次/底部}特�
 %\section{Summary and classification}
 \label{Abschnitt-Einordnung-GPSG}\label{sec-derivation-GPSG}
 
-在Chomsky针对短语结构语法的批评二十余年后，\textcolor{red}{GPSG框架下的大规模语法片段做成了/出现了第一个基于GPSG的大规模语法片段}，针对简单的短语结构规则无法解释的现象它都提供了解释。尽管GPSG的工作本质上是基于Harman1963年的无转换的想法，但它也已经远远超越了这一层次。特别地，GPSG的一个特殊成就是\citet{Gazdar81}对长距离依存的处理。通过应用\slasch"=机制，可以解释同时从连词中提取元素（跨域提取\isc{跨域提取}\is{Across the Board Extraction}，\citealp{Ross67}）。
-下面的选自\citet[\page 173]{Gazdar81}的例子表明了连词中的空位必须是一致的，即某范畴的填充语必须对应于每个连词的空位：
+在Chomsky针对短语结构语法的批评二十余年后，出现了第一个基于GPSG的大规模语法片段，针对简单的短语结构规则无法解释的现象它都提供了解释。尽管GPSG的工作本质上是基于Harman在1963年的无转换的想法，但它也已经远远超越了这一层次。特别地，GPSG的一个特殊成就是\citet{Gazdar81}对长距离依存的处理。通过应用\slasch"=机制，可以解释同时从连词中提取元素（跨域提取\isc{跨域提取}\is{Across the Board Extraction}，\citealp{Ross67}）。
+下面选自\citet[\page 173]{Gazdar81}的例子表明了连词中的空位必须是一致的，即某范畴的填充语必须对应于每个连词的空位：
 %\todoandrew{Einordnung? Something like ``evalutaion'' or ``putting things into context''}\todostefan{hmm.. ja so etwas wie 'classification of %%GPSG' (as a theory)} 
 %Some twenty years after Chomsky's criticism of phrase structure grammars, the first large grammar fragment in the GPSG framework appeared and %offered analyses of phenomena
 %which could not be described by simple phrase structure rules. Although works in GPSG essentially build on Harman's 1963 idea of a %transformation-less grammar, they also go far
@@ -1238,7 +1243,7 @@ GPSG可以处理这类带有空位信息传送的机制。在对称并列结构�
 \subsection{配价与形态}
 %\subsection{Valence and morphology}
 
-GPSG中配价的编码在几个方面是有问题的。例如，形态化进程将词的配价属性考虑进来。\textcolor{red}{带有后缀\suffix{bar}的形容词只跟及物动词是可以生成的，即带有宾格宾语的动词可以进行被动化/只有及物动词，即带有宾格宾语可以进行被动化的动词，可以和后缀\suffix{bar}组合派生出形容词}：
+GPSG中配价的编码在几个方面是有问题的。例如，形态化进程将词的配价属性考虑进来。只有及物动词，即带有宾格宾语可以进行被动化的动词，可以跟后缀\suffix{bar}组合派生出形容词：
 %The encoding of valence in GPSG is problematic for several reasons. For example, morphological processes take into account the valence %properties of words. 
 %Adjectival derivation with the suffix \suffix{bar} `-able' is only productive with transitive verbs,
 %that is, with verbs with an accusative object which can undergo passivization:
@@ -1246,11 +1251,13 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \ex[]{
 \gll lös-bar\\
      解决-able\\  	\jambox{(主格, 宾格)}
+     \glt `可解决的'
 %     solv-able\\  	\jambox{(nominative, accusative)}
 }
 \ex[]{
 \gll vergleich-bar\\ 
      比较-able\\ \jambox{(主格, 宾格, PP[mit])}
+     \glt `可比较的'
 %     compar-able\\ \jambox{(nominative, accusative, PP[mit])}
 }
 \ex[*]{
@@ -1264,7 +1271,7 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %	 help-able\\\jambox{(nominative, dative)}
 }
 \zl
-带有\prefix{-bar}的推导规则必须指向配价信息。这在GPSG语法中是不可能的，因为每个词条都只能指派给一个数字，该数字说明可以使用的这个词条的规则相关的信息。对于\bards 来说，我们必须在推导规则中列出与宾格宾语的规则相对应的所有数字，他们当然无法充分地描述这些现象。进而，得到的形容词的配价也受限于动词的配价。例如，\emph{vergleichen}（比较）这类动词需要一个\emph{mit} (with)-PP，而且\emph{vergleichbar}也是一样的（Riehemann \citeyear[\page 7, 54]{Riehemann93a}、\citeyear[\page 68]{Riehemann98a}）。在下面的章节中，我们将会遇到这样的模型，其中词汇项包括动词是否选择了宾格宾语的信息。在这类模型中，需要语言对象的配价属性的形态规则可以被较好地形式化表示出来。
+带有\prefix{-bar}的推导规则必须指向配价信息。这在GPSG语法中是不可能的，因为每个词条都只能指派给一个数字，该数字说明可以使用的这个词条的规则相关的信息。对于\prefix{-bar}的推导来说，我们必须在推导规则中列出与宾格宾语的规则相对应的所有数字，他们当然无法充分地描述这些现象。进而，得到的形容词的配价也受限于动词的配价。例如，vergleichen（比较）这类动词需要一个mit（跟）-PP，而且vergleichbar也是一样的（Riehemann \citeyear[\page 7, 54]{Riehemann93a}；\citeyear[\page 68]{Riehemann98a}）。在下面的章节中，我们将会遇到这样的模型，其中词汇项包括动词是否选择了宾格宾语的信息。在这类模型中，需要语言对象的配价属性的形态规则可以被较好地形式化表示出来。
 %A rule for derivations with \prefix{-bar} `-able' must therefore make reference to valence
 %information. This is not possible in GPSG grammars since every lexical entry is only assigned a
 %number which says something about the rules in which this entry can be used. For \bards, one would
@@ -1278,12 +1285,12 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %morphological rules which need to access the valence properties of linguistic objects can be
 %adequately formulated.
 
-关于配价和派生形态的问题还会在第\ref{sec-val-morph}节有所讨论，我们会讨论LFG\indexlfg 和构式语法\indexcxg 中用到的方法，这些方法都共享了GPSG中有关配价的编码的思想。
+关于配价和派生形态的问题还会在\ref{sec-val-morph}有所讨论，我们会讨论LFG\indexlfg 和构式语法\indexcxg 中用到的方法，这些方法都共享了GPSG中有关配价的编码的思想。
 %The issue of interaction of valence and derivational morphology will be taken up in
 %Section~\ref{sec-val-morph} again, where approaches in LFG\indexlfg and Construction
 %Grammar\indexcxg are discussed that share assumptions about the encoding of valence with GPSG.
 
-\subsection{配价与\textcolor{red}{部分动词短语前置/动词短语部分前置}}
+\subsection{配价与动词短语部分前置}
 %\subsection{Valence and partial verb phrase fronting}
 
 \citet{Nerbonne86a}和\citet{Johnson86a}在GPSG框架下研究了部分动词短语前置\isc{部分动词短语前置|(}\is{partial verb phrase fronting|(}问题。如（\mex{1}）所示：在（\mex{1}a）中，光杆动词前置，而其论元在中场被实现，在（\mex{1}b）中，一个宾语与动词一起前置，而且在（\mex{1}c）中所有的宾语都与动词一起前置。
@@ -1295,20 +1302,20 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \eal
 \ex 
 \gll Erzählen wird er seiner Tochter ein Märchen können.\\
-     告诉  AUX 他 他的 女儿 一 童话故事 AUX\\
+     告诉  AUX 他 他的 女儿 ART 童话故事 AUX\\
 %     tell will he his daughter a fairy.tale can\\
 \ex 
 \gll Ein Märchen erzählen wird er seiner Tochter können.\\
-     一 童话故事 告诉 AUX 他 他的 女儿 AUX\\
+     ART 童话故事 告诉 AUX 他 他的 女儿 AUX\\
 %     a fairy.tale tell will he his daughter can\\
 \ex 
 \gll Seiner Tochter ein Märchen erzählen wird er können.\\
-     他的 女儿 一 童话故事 告诉 AUX 他 AUX\\
+     他的 女儿 ART 童话故事 告诉 AUX 他 AUX\\
 \glt `他能够给他的女儿讲一个童话故事。'
 %     his daughter a fairy.tale tell will he can\\
 %\glt `He will be able to tell his daughter a fairy tale.'
 \zl
-（\mex{0}）中的句子的问题是动词\emph{erzählen}（告诉）的配价要求在句子中的多个位置上被满足。对于前置的成分，我们需要一条规则来允许双及物动词实现为没有论元或者带有一个或两个宾语。进而，需要确保的是，在前场缺失的论元在小句的剩余部分被实现。省略必有论元或者将论元实现为不同的格属性是不合法的，如（\mex{1}）中的例子所示：
+（\mex{0}）中句子的问题是动词erzählen（告诉）的配价要求在句子中的多个位置上被满足。对于前置的成分，我们需要一条规则来允许双及物动词实现为没有论元或者带有一个或两个宾语。进而，需要确保的是，在前场缺失的论元在小句的剩余部分被实现。省略必有论元或者将论元实现为不同的格属性是不合法的，如（\mex{1}）中的例子所示：
 %The problem with sentences such as those in (\mex{0}) is that the valence requirements of the verb
 %\emph{erzählen} `to tell' are realized in various positions in the sentence. For fronted
 %constituents, one requires a rule which allows a ditransitive to be realized without its arguments
@@ -1344,7 +1351,7 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %ultimately amount to changing the representation of valence information in the direction of
 %Categorial Grammar.\is{partial verb phrase fronting|)} 
 
-在我转向GPSG的形式化的表示力的问题之前，我要指出的是，我们在前面几节中讨论的问题都与GPSG的配价表征是相关的。我们在讨论第\ref{sec-passive-gpsg}节的被动的时候就已经发现了与配价相关的问题：由于主语和宾语由短语结构规则导入，而且由于在有些语言中，主语和宾语不在同一棵局部树内，看起来无法描述GPSG中主语受到抑制的被动式。
+在我转向GPSG的形式化的表示力的问题之前，我要指出的是，我们在前面几节中讨论的问题都与GPSG的配价表征是相关的。我们在讨论\ref{sec-passive-gpsg}的被动时就已经发现了与配价相关的问题：由于主语和宾语由短语结构规则导入，而且由于在有些语言中，主语和宾语不在同一棵局部树内，看起来无法描述GPSG中主语受到抑制的被动式。
 %Before I turn to the expressive power of the GPSG formalism, I want to note that the problems that
 %we discussed in the previous subsections are both related to the representation of valence in GPSG. We
 %already run into valence"=related problems when discussing the passive in Section~\ref{sec-passive-gpsg}: since subjects and objects are %introduced in
@@ -1352,10 +1359,10 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %%same local tree, there seems to be no way to describe the passive as the suppression of the subject
 %in GPSG.
 
-\subsection{\textcolor{red}{普遍/生成}能力}
+\subsection{生成能力}
 %\subsection{Generative capacity}
 
-在GPSG中，\textcolor{red}{线性系统/语序线性化}、\textcolor{red}{统制/支配}和元规则通常由条件所限制。这些条件我们不会在这里按照下面的方式来讨论，即我们可以从GPSG语法的具体化中创造出我们在第\ref{Kapitel-PSG}章看到的这类短语结构语法。这类语法也叫做上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}\isc{能力!生成能力}\is{capacity!generative}。在上世纪80年代中期，一般认为上下文无关文法无法描述自然语言，语言需要比上下文无关文法更为强有力的语法形式化系统（\citealp{Shieber85a,Culy85a}，历史文献请看\citew{Pullum86a}）。所谓的语法形式化的生成能力（generative capacity）在第\ref{sec-generative-capacity}章有所讨论。
+在GPSG中，语序线性化系统、支配和元规则通常由条件所限制。这些条件我们不会在这里按照下面的方式来讨论，即我们可以从GPSG语法的具体化中创造出我们在第\ref{Kapitel-PSG}章看到的这类短语结构语法。这类语法也叫做上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}\isc{能力!生成能力}\is{capacity!generative}。在上世纪80年代中期，一般认为上下文无关文法无法描述自然语言，语言需要比上下文无关文法更为强有力的语法形式化系统（\citealp{Shieber85a,Culy85a}，历史文献请看\citew{Pullum86a}）。所谓的语法形式化的生成能力（generative capacity）在第\ref{sec-generative-capacity}章有所讨论。
 %In GPSG, the system of linearization, dominance and metarules is normally restricted by conditions
 %we will not discuss here in such a way that one could create a phrase structure grammar of the kind
 %we saw in Chapter~\ref{Kapitel-PSG} from the specification of a GPSG grammar. Such grammars are also called
@@ -1366,8 +1373,8 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %overview). The so-called \emph{generative capacity} of grammar formalisms is discussed in
 %Chapter~\ref{sec-generative-capacity}.
 
-随着HPSG这类基于约束的模型（请看第\ref{Kapitel-HPSG}章）和范畴语法这类基于约束的模型变体（请看第\ref{Kapitel-CG}章和\citealp{Uszkoreit86d}）的出现，大部分之前在GPSG框架下工作的学者转向了其他理论框架。GPSG对长距离依存的分析以及直接\textcolor{red}{统制/支配}和线性优先的区别仍然在如今的HPSG\indexhpsg 和构式语法\indexcxg
-的变体中使用。请看第\ref{sec-ld-lp-tag}节有关树邻接语法的变体将优先与\textcolor{red}{统制/支配}区别开来的分析。
+随着HPSG这类基于约束的模型（请看第\ref{Kapitel-HPSG}章）和范畴语法这类基于约束的模型变体（请看第\ref{Kapitel-CG}章和\citealp{Uszkoreit86d}）的出现，大部分之前在GPSG框架下工作的学者转向了其他理论框架。GPSG对长距离依存的分析以及直接支配和线性优先的区别仍然在如今的HPSG\indexhpsg 和构式语法\indexcxg
+的变体中使用。请看\ref{sec-ld-lp-tag}有关树邻接语法的变体将优先与支配区别开来的分析。
 %Following the emergence of constraint"=based models such as HPSG (see Chapter~\ref{Kapitel-HPSG}) and
 %unification-based variants of Categorial Grammar (see Chapter~\ref{Kapitel-CG} and
 %\citealp{Uszkoreit86d}), most authors previously working in GPSG turned to other frameworks. The GPSG
@@ -1427,7 +1434,7 @@ GPSG的主要文献是\citew*{GKPS85a}。\citet{Jacobson87b}对该书进行了�
 %are contrasted with alternatives from Categorial Grammar\indexcg and reference is made to the heavily Categorial Grammar influenced work %of \citet{Pollard84a-u}, which
 %counts as one of the predecessors of HPSG. Some of Jacobson's suggestions can be found in later works in HPSG.
 
-德语语法可以在\citew{Uszkoreit87a}和\citew{Busemann92a-u}中找到。\citet{Gazdar81}提出了长距离依存分析，该方法如今仍在HPSG等理论中所使用。
+德语语法可以在\citew{Uszkoreit87a}和\citew{Busemann92a-u}中找到。\citet{Gazdar81}提出了长距离依存分析，该方法如今仍在HPSG等理论中使用。
 %Grammars of German can be found in \citew{Uszkoreit87a} and \citew{Busemann92a-u}. \citet{Gazdar81} developed an analysis of %long"=distance dependencies, which
 %is still used today in theories such as HPSG.
 
