@@ -220,25 +220,24 @@ frbox/.style={
 % set initial sizes of example number and judgement sizes
 %\exewidth{\exnrfont （34）}
 
-%\catcode`(=\active \catcode`)=\active
-%\protected\def({（} \protected\def){）}
-
 
 % This is done in the langscibook class
 %\newindex{sbc}{scx}{scd}{Subject index Chinese}
 
 \makeatletter
 % Subject index in Chinese
+\newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
 \newcommand{\isc}[1]{%
   \if@noftnote%
     \index[sbc]{#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
     %\indexftn{#1}{\value{footnotemark}}%
   \fi%
 }
 \makeatother
+
 
 
 \let\vref\ref
