@@ -611,6 +611,10 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \newcommand{\footnoteindex@lan}[2]{\index[lan]{#2|infn{#1}}}
 \newcommand{\footnoteindex@wrd}[2]{\index[wrd]{#2|infn{#1}}}
 
+% Subject index in Chinese
+\newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
+
+
 \fi
 
 \newcommand{\ia}[1]{\if@noftnote%
@@ -629,6 +633,16 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1}%
 %\indexftn{#1}{\value{footnotemark}}%
 \fi%
+}
+
+\newcommand{\isc}[1]{%
+  \if@noftnote%
+    \index[sbc]{#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
 }
 
 %% \index[lan] für Einträge in separaten Index
