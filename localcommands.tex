@@ -247,3 +247,10 @@ frbox/.style={
 %% check what the unified people have to say on this.
 %% This is as deifined in langscibook.cls but with Chinese brackets
 \bibpunct[: ]{（}{）}{;}{a}{}{,}
+
+
+% use Chinese brackets
+\renewcommand{\pref}[1]{（\ref{#1}）}
+\renewcommand{\pmex}[1]{（\mex{#1}）}
+\renewcommand{\pmexa}[1]{（\mex{#1}a）}
+\renewcommand{\pmexb}[1]{（\mex{#1}b）}
