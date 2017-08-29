@@ -224,19 +224,19 @@ frbox/.style={
 % This is done in the langscibook class
 %\newindex{sbc}{scx}{scd}{Subject index Chinese}
 
-\makeatletter
-% Subject index in Chinese
-\newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
-\newcommand{\isc}[1]{%
-  \if@noftnote%
-    \index[sbc]{#1}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
-    %\indexftn{#1}{\value{footnotemark}}%
-  \fi%
-}
-\makeatother
+%% \makeatletter
+%% % Subject index in Chinese
+%% \newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
+%% \newcommand{\isc}[1]{%
+%%   \if@noftnote%
+%%     \index[sbc]{#1}%
+%%     \else%
+%%     \edef\tempnumber{\thefootnote}%
+%%     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
+%%     %\indexftn{#1}{\value{footnotemark}}%
+%%   \fi%
+%% }
+%% \makeatother
 
 
 
