@@ -321,7 +321,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 %     the woman.\dat{} the.\nom{} man gives the.\acc{} book\\
 }
 \z
-这样的语序被所谓的线性优先规则（Linear Precedence Rules）\isc{线性优先原则}\is{Linear Precedence Rule} 或LP"=规则\isc{LP"=规则}\is{LP"=rule}排除了。LP"=限制是在局部树上的限制，即深度为一的树。例如，有可能应用线性规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
+这样的语序被所谓的线性优先规则（Linear Precedence Rules）\isc{线性优先原则}\is{Linear Precedence Rule} 或LP"=规则\isc{LP-规则}\is{LP"=rule}排除了。LP"=限制是在局部树上的限制，即深度为一的树。例如，有可能应用线性规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
 %Such orders are ruled out by so"=called \emph{Linear Precedence Rules}\is{Linear Precedence Rule} or LP"=rules\is{LP"=rule}. %LP"=constraints are restrictions on
 %local trees, that is, trees with a depth of one. It is, for example, possible to state something
 %about the order of V, NP[nom], NP[acc] and NP[dat] in Figure~\vref{fig-gpsg-lokaler-Baum} using linearization
@@ -627,7 +627,7 @@ V2  $\to$ W $\mapsto$\\
 V2  $\to$ W, AdvP
 \z 
 通过在（\ref{subjekt-meta}）中主语引入的元规则，（\ref{regel-ditransitiv-adv}）中的V3"=规则由V2"=规则推导出来。由于在一个句子中可以有几个附接语，必须允许可以多次应用像（\ref{Adjunkt-MR}）这样的元规则。
-元规则的循环应用在文献中经常因为生成能力过强\isc{能力!生成能力}\is{capacity!generative}而被规则排除（请看第\ref{sec-generative-capacity}章）（\citealp{Thompson82a-u}、\citealp[\page 146]{Uszkoreit87a}）。如果我们用Kleene星号\isc{Kleene星号}\is{Kleene star}\isc{*}\is{*}表示，那么就可以构成状语的元规则，这样就不用重复应用了\citep[\page 146]{Uszkoreit87a}：
+元规则的循环应用在文献中经常因为生成能力过强\isc{能力!生成能力}\is{capacity!generative}而被规则排除（请看第\ref{sec-generative-capacity}章）（\citealp{Thompson82a-u}；\citealp[\page 146]{Uszkoreit87a}）。如果我们用Kleene星号\isc{Kleene星号}\is{Kleene star}\isc{*}\is{*}表示，那么就可以构成状语的元规则，这样就不用重复应用了\citep[\page 146]{Uszkoreit87a}：
 %By means of the subject introducing metarule in (\ref{subjekt-meta}), the V3"=rule in (\ref{regel-ditransitiv-adv}) is derived from a V2"=rule.
 %Since there can be several adjuncts in one sentence, a metarule such as (\ref{Adjunkt-MR}) must be allowed to apply multiple times. The %recursive
 %application of metarules is often ruled out in the literature due to reasons of generative capacity\is{capacity!generative} (see
@@ -650,7 +650,7 @@ V2  $\to$ W $\mapsto$\\
 V2  $\to$ W, AdvP*
 \z 
 如果我们采用（\mex{0}）中的规则，那么如何决定状语的语义贡献就不够清楚了。\footnote{
-  在LFG\indexlfgc 中，状语被安排在功能性结构的集合中（请看\ref{Abschnitt-LFG-Adjunkte}）。这也适用于Kleene星号标记的使用。从f"=结构\isc{f"=结构}\is{f"=structure}来看，有可能通过指向c"=结构\isc{c"=结构}\is{c"=structure}来计算出相应域的语义指称。在HPSG\indexhpsgc
+  在LFG\indexlfgc 中，状语被安排在功能性结构的集合中（请看\ref{Abschnitt-LFG-Adjunkte}）。这也适用于Kleene星号标记的使用。从f"=结构\isc{f-结构}\is{f"=structure}来看，有可能通过指向c"=结构\isc{c-结构}\is{c"=structure}来计算出相应域的语义指称。在HPSG\indexhpsgc
   中，\citet{Kasper94a}提出了一个与GPSG相关的方法，该方法是关于平铺分支结构与任意数量的状语的。然而，在HPSG中，我们可以利用所谓的关系限制。这与可以在复杂结构中创造关系的小项目是类似的。应用这些关系限制，就可能计算出平铺分支结构中未受到数量限制的状语的意义。
 }对于（\mex{-1}）中的规则，我们可以在输入规则中将AdvP的语义贡献与V2的语义贡献组合起来。如果元规则被应用多次的话，这自然也是可能的。比如说，如果元规则被应用于（\mex{1}a），（\mex{1}a）中的V2"=结点包括第一个副词的语义贡献。
 %If one adopts the rule in (\mex{0}), then it is not immediately clear how the semantic contribution of the adjuncts can be determined.\footnote{
@@ -862,7 +862,7 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 %lexical rule\is{lexical rule} that licenses the passive participle and manipulates the semantics of
 %the output lexical item in such a way that the \emph{by}-PP is correctly integrated semantically \citep[\page 219]{GKPS85a}.
 
-但是，如果我们试着将这一分析应用到德语，我们就会遇到问题。因为非人称被动\isc{被动!非人称被动}\is{passive!impersonal}不能简单地通过抑制宾语而得到。诸如arbeiten（工作）和denken（想）的动词的V2"=规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
+但是，如果我们试着将这一分析应用到德语，我们就会遇到问题。因为非人称被动\isc{被动!非人称被动|(}\is{passive!impersonal|(}不能简单地通过抑制宾语而得到。诸如arbeiten（工作）和denken（想）的动词的V2"=规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
 %We arrive at a problem, however, if we try to apply this analysis to German since the impersonal passive\is{passive!impersonal} cannot be %derived
 %by simply suppressing an object. The V2"=rules for verbs such as \emph{arbeiten} `work' and \emph{denken} `think' as used for the analysis %of
 %(\ref{beispiel-arbeiten}a) and (\ref{beispiel-denken}a) have the following form:
