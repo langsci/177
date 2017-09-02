@@ -2046,7 +2046,7 @@ dg edges
 %\caption{\label{dg-alleged-murderer}Analysis that would result if one considered all scope-bearing adjuncts
  % to be heads}
 \end{figure}%
-这个结构可能有非投射性的其他问题。\isc{投射性}\is{投射性} Eroms确实对限定词进行了不同的处理，所以这个非可投射性的类型对他来说不是一个问题。但是，否定的中心语分析会得到德语的所谓一致结构的非可投射性。例（\mex{1}）中的句子有两种解读：在第一种解读中，否定的辖域包括singen（唱歌），而在第二种解读中包括singen darf（唱歌允许）。
+这个结构可能有非投射性的其他问题。\isc{可投射性}\is{projectivity} Eroms确实对限定词进行了不同的处理，所以这个非可投射性的类型对他来说不是一个问题。但是，否定的中心语分析会得到德语的所谓一致结构的非可投射性。例（\mex{1}）中的句子有两种解读：在第一种解读中，否定的辖域包括singen（唱歌），而在第二种解读中包括singen darf（唱歌允许）。
 %This structure would have the additional problem of being non-projective.\is{projectivity} Eroms does treat the determiner
 %differently from what is assumed here, so this type of non"=projectivity may not be a problem for
 %him. However, the head analysis of negation would result in non"=projectivity in so"=called coherent
@@ -2835,33 +2835,42 @@ dg edges
 %unambiguously. For instance, the graph in Figure~\vref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is perfectly compatible with the
 %meaning of this sentence: \emph{dass} dominates \emph{kommt} and \emph{kommt} dominates
 %\emph{Peter}, while \emph{ob} dominates \emph{kommt} and \emph{kommt} dominates \emph{Klaus}. 
-%\begin{figure}
-%\centerline{%
-%\begin{forest}
-%dg edges
-%[V, l sep+=6pt
-  %[Subjunction,name=subj1
-    %[dass;that]
-    %[V,name=v1,no edge
-      %[N,name=n1, no edge [Peter;Peter]]
-      %[kommt;comes]]]
-  %[klärt;resolves]
-  %[Adv, dg adjunct [nicht;not]]
-  %[Subjunction,name=subj2
-    %[ob;whether]
-    %[V,name=v2,no edge
-      %[N,name=n2, no edge [Klaus;Klaus]]
-      %[kommt;comes]]]]
-%\draw (subj1.south)--(v2.north);
-%\draw (subj2.south)--(v1.north);
-%\draw (v1.south)--(n2.north);
-%\draw (v2.south)--(n1.north);
-%\end{forest}
-%}
-%\caption{\label{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}The dependency graph of
-  %\emph{Dass Peter kommt, klärt nicht, ob Klaus kommt.} `That Peter comes does not resolve the
-  %question of whether Klaus comes.' is not unambiguously determined by semantics.}
-%\end{figure}%
+\begin{figure}
+\centerline{%
+\begin{forest}
+dg edges
+[V, l sep+=6pt
+  [Subjunction,name=subj1
+    [dass;CONJ]
+%      [dass;that]
+    [V,name=v1,no edge
+      [N,name=n1, no edge [Peter;Peter]]
+      [kommt;来]]]
+%           [kommt;comes]]]
+  [klärt;解决]
+%    [klärt;resolves]
+  [Adv, dg adjunct [nicht;不]]
+%    [Adv, dg adjunct [nicht;not]]
+  [Subjunction,name=subj2
+    [ob;是否]
+  %      [ob;whether]
+    [V,name=v2,no edge
+      [N,name=n2, no edge [Klaus;Klaus]]
+      [kommt;来]]]]
+ %      [kommt;comes]]]]
+\draw (subj1.south)--(v2.north);
+\draw (subj2.south)--(v1.north);
+\draw (v1.south)--(n2.north);
+\draw (v2.south)--(n1.north);
+\end{forest}
+}
+\caption{\label{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}
+  “Dass Peter kommt, klärt nicht, ob Klaus kommt.”（Peter来并不能解决Klaus是否来的问题。）的依存图并不由语义来明确地决定。}
+%  \caption{\label{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}The dependency graph of
+%  \emph{Dass Peter kommt, klärt nicht, ob Klaus kommt.} `That Peter comes does not resolve the
+%  question of whether Klaus comes.' is not unambiguously determined by semantics.}
+\end{figure}%
+我在依存链中使用了错误的kommt，但是这是次序化的问题，而且不同于依存关系。一旦有人考虑到次序化的问题，图~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}中的依存图就被排除了，这时因为ob（是否）并不前置于它的动词性依存成分kommt（来）。但是这个解释并不适用于图~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}中的例子。这里，所有的依存成分都被正确地线性排列；只是die和Türen的非连续性是不合适的。如果要求die和Türen是连续的，我们基本上要求成分归位（请看第~\pageref{fn-projective-dg-vs-constituents}页的脚注~\ref{fn-projective-dg-vs-constituents}）。相似地，有关连续性的没有任何限制的非投射性分析允准例（\mex{1}b）中的语词杂拌：
 %I used the wrong \emph{kommt} in the dependency chains, but this is an issue of linearization and is
 %independent of dependency. As soon as one takes linearization information into account, the %dependency graph in Figure~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is ruled out %since \emph{ob} `whether' does not precede its verbal dependent \emph{kommt} `comes'. But this %explanation does not work for the example in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-%dg}. Here, all dependents are linearized correctly; it is just the discontinuity of \emph{die} and 
 %\emph{Türen} that is inappropriate. If it is required that \emph{die} and \emph{Türen} are %continuous, we have basically let constituents back in (see Footnote~\ref{fn-projective-dg-vs-%constituents} on page~\pageref{fn-projective-dg-vs-constituents}). 
@@ -2894,39 +2903,50 @@ dg edges
 %(\mex{0}b) is a variant of (\mex{0}a) in which the elements of the two clausal arguments are in
 %correct order with respect to each other, but both clauses are discontinuous in such a way that the
 %elements of each clause alternate. The dependency graph is shown in Figure~\vref{fig-dass-ob-peter-klaus-kommt-spielt}.
-%\begin{figure}
-%\centerline{%
-%\begin{forest}
-%dg edges
-%[V, l sep+=6pt
-   % [Adv, dg adjunct [deshalb;therefore] ]
-    %[klärt;resolves]
-    %[Subjunction, name=s1
-       % [dass;that]]
-    %[Subjunction, name=s2
-       % [ob;whether]]
-    %[hidden, phantom
-       % [hidden, phantom
-          %  [N, name=n1
-             %   [Peter;Peter]]]
-        %[hidden, phantom
-           % [N, name=n2[Klaus;Klaus]]]
-        %[V, name=v1
-           % [kommt;\strut comes]]]
-    %[hidden, phantom
-       % [V, name=v2
-          %  [spielt;plays]]]
-%]
-%\draw (s1.south)--(v1.north);
-%\draw (s2.south)--(v2.north);
-%\draw (v1.south)--(n1.north);
-%\draw (v2.south)--(n2.north);
-%\end{forest}
-%}
+\begin{figure}
+\centerline{%
+\begin{forest}
+dg edges
+[V, l sep+=6pt
+    [Adv, dg adjunct [deshalb;因此] ]
+%        [Adv, dg adjunct [deshalb;therefore] ]
+    [klärt;解决]
+%        [klärt;resolves]
+    [Subjunction, name=s1
+        [dass;CONJ]]
+%             [dass;that]]
+    [Subjunction, name=s2
+        [ob;是否]]
+%             [ob;whether]]
+    [hidden, phantom
+        [hidden, phantom
+            [N, name=n1
+                [Peter;Peter]]]
+        [hidden, phantom
+            [N, name=n2[Klaus;Klaus]]]
+        [V, name=v1
+            [kommt;\strut 来]]]
+%                   [kommt;\strut comes]]]
+    [hidden, phantom
+        [V, name=v2
+            [spielt;玩]]]
+%                      [spielt;plays]]]
+]
+\draw (s1.south)--(v1.north);
+\draw (s2.south)--(v2.north);
+\draw (v1.south)--(n1.north);
+\draw (v2.south)--(n2.north);
+\end{forest}
+}
+\caption{\label{fig-dass-ob-peter-klaus-kommt-spielt}“Deshalb klärt dass ob Peter Klaus kommt spielt.”（因此解决了Peter是否Klaus来玩）的语词杂拌的依存图由不限制非连续性的依存语法的非投射性所允准}
 %\caption{\label{fig-dass-ob-peter-klaus-kommt-spielt}The dependency graph of the word salad
-  %\emph{Deshalb klärt dass ob Peter Klaus kommt spielt.} `Therefore resolves that whether Peter
-  %Klaus comes plays' which is admitted by non-projective Dependency Grammars that do not %restrict discontinuity}
-%\end{figure}%
+%  \emph{Deshalb klärt dass ob Peter Klaus kommt spielt.} `Therefore resolves that whether Peter
+%  Klaus comes plays' which is admitted by non-projective Dependency Grammars that do not restrict discontinuity}
+\end{figure}%
+正如在第~\ref{sec-fcg-nld}节有关流变构式语法的非局部依存的分析中所解释的\indexfcgc，像英语和德语这类语言的语法必须按照这种方式来限制小句，除了向左前置的例外情况，它们都是连续的。我们可以在\citew[\page 192]{Hudson80a}中找到类似的观点。Hudson也证明了，一个成分可以在英语\il{English}中前置，只要它的所有依存成分跟它一起前置（第184页）。这个“带有它的所有依存成分的成分”
+就是基于组成成分的语法中的组成成分。区别在于，这个对象并没有一个明确的名字，并且不被看作是大部分依存语法中包含中心词和它的依存成分的不同实体。\footnote{
+不过，请参考\citet{Hellwig2003a}的观点，即是有表示整个组成成分，而不仅仅是词的中心语的语言对象。 
+}
 %As was explained in Section~\ref{sec-fcg-nld} on the analysis of nonlocal dependencies in Fluid
 %Construction Grammar\indexfcg, a grammar of languages like English and German has to %constrain the clauses in such a way that they are
 %continuous with the exception of extractions to the left. A similar statement can be found in
@@ -2939,14 +2959,15 @@ dg edges
 %See however \citet{Hellwig2003a} for an explicit proposal that assumes that there is a linguistic
 %object that represents the whole constituent rather than just the lexical head.
 %}
-%
+
+现在总结下本节的主要内容，我给出了一个对应于依存语法的短语结构语法。我还展示了非连续成分是如何允准的。但是，还有未提及的问题：并不是某个短语具有的所有属性都跟词汇中心语一致，而且这些差异必须在某个地方表示。我将在下一小节讨论这个内容。
 %Summing up what has been covered in this section so far, I have shown what a phrase structure
 %grammar that corresponds to a certain Dependency Grammar looks like. I have also shown how %discontinuous
 %constituents can be allowed for. However, there are issues that remained unaddressed so far: not %all
 %properties that a certain phrase has are identical to its lexical head and the differences have to
 %be represented somewhere. I will discuss this in the following subsection.
-%\is{projectivity|)} 
-%
+\isc{投射性|)}\is{projectivity|)} 
+
 \subsubsection{在中心语和投射之间没有保持一致的特征}
 %\subsubsection{Features that are not identical between heads and projections}
 \label{sec-dg-daughters-mothers}
@@ -3256,17 +3277,18 @@ lexical & \ms{ cont & \\
 \zl
 当然，有方法可以模拟所有可以在短语结构的框架下（如GPSG、CxG、HPSG或者简便句法：一个空中心语）模拟的现象。图\vref{fig-n-p-n}显示了student after student的分析。
 %Of course there is a way to model all the phenomena that would be modeled by a phrasal construction in frameworks like GPSG, CxG, HPSG, or %Simpler Syntax: an empty head. Figure~\vref{fig-n-p-n} shows the analysis of \emph{student after student}.
-%\begin{figure}
-%\begin{forest}
-%dg edges
-%[N
-  %[\trace]
- % [N [student]]
-  %[P [after]]
-  %[N [student]]]
-%\end{forest}
-%\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty %head}
-%\end{figure}%
+\begin{figure}
+\begin{forest}
+dg edges
+[N
+  [\trace]
+  [N [student]]
+  [P [after]]
+  [N [student]]]
+\end{forest}
+\caption{\label{fig-n-p-n}带有空中心语的N-P-N构式的依存语法分析}
+%\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty head}
+\end{figure}%
 空N的词汇项是非常特殊的，因为没有相似的非空的词汇名词，即没有名词选了两个光杆N和一个P。
 %The lexical item for the empty N would be very special, since there are no similar non-empty lexical
 %nouns, that is, there is no noun that selects for two bare Ns and a P.
