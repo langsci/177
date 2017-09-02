@@ -588,7 +588,7 @@ tag
 \section{被动}
 
 类似转换生成语法中的转换机制，可以设计一种分析方法来处理被动
-\isc{被动／被动式|(}\is{passive|(}：通过词汇规则来根据一个针对主动形式的词汇项，
+\isc{被动|(}\is{passive|(}：通过词汇规则来根据一个针对主动形式的词汇项，
 来推出相应的被动形式基本树\citep[\page 50--51]{KJ85a}，这里的主动形式的词汇项指那些包含了主动形式的相应基本树的词汇项。
 
 \citet[\page 55]{KJ85a}提出了替代这种基于转换的分析的另一种方法，能够更好地处理被称之为“提升”
@@ -599,7 +599,7 @@ tag
 也有人提议
 \isc{多重承继}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citealp{Candito96a}及其扩展分析——citealp*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
 \isc{多重承继}\is{inheritance!multiple|)}
-\isc{被动／被动式|)}\is{passive|)}
+\isc{被动|)}\is{passive|)}
 
 \section{长距离依存}
 \label{TAG-Fernabh}
@@ -700,9 +700,9 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 }
 \z
 这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作
-\isc{附接的必要性}\is{adjunction!obligatory}。
+\isc{附接!附接的必要性|(}\is{adjunction!obligatory|(}。
 \il{English|)}
-\isc{长距离依存}\is{long"=distance dependency|)} 
+\isc{长距离依存|)}\is{long"=distance dependency|)} 
 
 \section{新的发展和理论变体}
 
@@ -712,7 +712,7 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 \subsection{FTAG}
 
 在FTAG
-{树邻接语法（TAG）!基于特征结构的树邻接语法（FTAG）|(}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|(}中，结点并不是原子的（N、NP、VP或S），而是包含有特征描写。
+\isc{树邻接语法（TAG）!基于特征结构的树邻接语法（FTAG）|(}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|(}中，结点并不是原子的（N、NP、VP或S），而是包含有特征描写。
 除了用于进行替换的结点之外，每一个结点都有一个顶结构、一个底结构。其中，顶结构说的是一棵树作为一个大的结构的一个子部分应该具有的属性，而底结构则陈述了某一个结点下面的成分应该具有的属性。用于替换的结点只有一个顶结构。图\vref{Abbildung-FTAG-laughs}是laughs（笑）的树结构实例。\todostefan{geschwungenen Pfeil, alignierte Knoten}
 \begin{figure}
 \centerline{%
@@ -938,10 +938,10 @@ tag
 %此处只能意义，原文若探究字面意义，不仅不通顺，还算是写错了。
 
 这个例子展示了，我们在处理长距离依存时曾经采用过的强制附接
-\isc{附接!附接的必要性|)}\is{adjunction!obligatory|)}机制可以通过令顶结构和底结构特征取值不一致来实现。
+\isc{附接!附接的必要性}\is{adjunction!obligatory}机制可以通过令顶结构和底结构特征取值不一致来实现。
 如果一棵树中存在不兼容的顶结构与底结构，这棵树就不能是最终的导出树。%又一个错误
 这意味着至少需要再进行一次附接操作才能得到良形式的树。
-\isc{树邻接语法（TAG）基于特征结构的树邻接语法}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}
+\isc{树邻接语法（TAG）!基于特征结构的树邻接语法（FTAG）|)}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}
 
 \subsection{V"=TAG}
 \label{sec-vtag}
@@ -1101,7 +1101,7 @@ NP$_2$ NP$_3$ NP$_1$ V$_{3}$V$_{2}$V$_{1}$
      CONJ 他     DET 书 没有人 INF 读 保证 被允许 \\
 \glt `没有人被允许保证他读那本书'
 \z
-因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（{tree"=local multi"=component LTAG}，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说在这种例子里，不像关系从句里的例子，我们可以有两种选择（也就是说，否定这种模式或基于语言运用或基于语言能力进行解释）。
+因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说在这种例子里，不像关系从句里的例子，我们可以有两种选择（也就是说，否定这种模式或基于语言运用或基于语言能力进行解释）。
 \ea
 \label{ex-mc-ltag-fails}
 NP$_2$ NP$_4$ NP$_3$ NP$_1$ V$_{4}$V$_{3}$V$_{2}$V$_{1}$
