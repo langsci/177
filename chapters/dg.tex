@@ -566,16 +566,20 @@ Engel使用E\sub{sub}来表示主语，还有E\sub{acc}、E\sub{dat}和E\sub{gen
 \begin{forest}
 [V\sub{fin, \sliste{ \normalfont sub, sit }}\\
  war\\
- was
+ AUX
+%  was
  [E\sub{sub}\\
   ich\\
-  I]
+  我]
+%    I]
  [E\sub{sit}\\
   bei Tom\\
-  with Tom]
+  PREP Tom]
+%    with Tom]
  [A\sub{temp}\\
   gestern\\
-  yesterday]]
+  昨天]]
+%    yesterday]]
 \end{forest}
 }
 \caption{\label{fig-ich-bei-tom-gestern}根据\citet[\page 50]{Engel2014a}的ich、war、bei Tom和gestern（我昨天跟Tom在一起。）的不同语序的依存图}
@@ -1111,7 +1115,7 @@ dg edges
 \begin{forest}
 dg edges
 [V
-  [N,name=nacc,no edge,tier=mytier, [wen;who] ]
+  [N,name=nacc,no edge,tier=mytier, [wen;谁] ]
   [glaubst;认为 ] 
   [N,name=nich,no edge,tier=vprt [ich;我 ] ]
   [N [du;你] ]
@@ -1138,7 +1142,7 @@ dg edges
 %    du, dass gesehen habe?} `Who do you think I saw?'}
 \end{figure}%
 \addlines[2]
-需要注意的是，（\mex{0}）中成分的语序与提出的表示空间位置的观点是兼容的\citet[\page 50]{Engel2014a}：有一个由\emph{wen}（谁）填充的\vfc，有一个由glaubst（认为）填充的句子左边界，还有由ich（我）、du（你）和小句论元填充的\mf 。在\mf 有像ich（我）和du（你）这样的代词是完全正常的。问题在于这些代词来属于不同的类型：du属于主动词glaubst（认为），而ich （我）依存于（gesehen（看见））habe（AUX）。一个理论需要覆盖的事实是，前置和外置分别瞄定小句的最左边和最右边。这可以直接按照基于成分的方法来模拟，正如我们在前几章所看到的。
+需要注意的是，（\mex{0}）中成分的语序与提出的表示空间位置的观点是兼容的\citet[\page 50]{Engel2014a}：有一个由wen（谁）填充的\vfc，有一个由glaubst（认为）填充的句子左边界，还有由ich（我）、du（你）和小句论元填充的\mf 。在\mf 有像ich（我）和du（你）这样的代词是完全正常的。问题在于这些代词来属于不同的类型：du属于主动词glaubst（认为），而ich （我）依存于（gesehen（看见））habe（AUX）。一个理论需要覆盖的事实是，前置和外置分别瞄定小句的最左边和最右边。这可以直接按照基于成分的方法来模拟，正如我们在前几章所看到的。
 %Note that the order of elements in (\mex{0}) is compatible with statements that refer to
 %topological fields as suggested by \citet[\page 50]{Engel2014a}: there is a \vf filled by \emph{wen}
 %`who', there is a left sentence bracket filled by
@@ -1503,11 +1507,11 @@ dg edges
 \begin{forest}
 dg edges
 [V 
-      [N [Det,name=det [All] ]
-         [girls] ]
-      [Conj,dg junction [and]]
-      [N,name=n [boys] ]
-      [dance]]
+      [N [Det,name=det [All;所有] ]
+         [girls;女孩] ]
+      [Conj,dg junction [and;和]]
+      [N,name=n [boys;男孩] ]
+      [dance;跳舞]]
 \draw (n.south)--(det.north);
 \end{forest}
 \caption{\label{fig-dg-junction-all-girls-and-boys}对并列应用特殊的联结（junction）关系的分析}
@@ -1539,20 +1543,20 @@ dg edges
 \begin{forest}
 dg edges
 [V 
-      [N [N [John] ]
-         [and]
-         [N [Mary] ] ]
-      [laugh]]
+      [N [N [John;John] ]
+         [and;和]
+         [N [Mary;Mary] ] ]
+      [laugh;笑]]
 \end{forest}
 \hfill
 \begin{forest}
 dg edges
 [V 
-      [N [Det,name=det [All] ]
-         [N [girls] ]
-            [and]
-            [N [boys] ] ]
-      [dance]]
+      [N [Det,name=det [All;所有] ]
+         [N [girls;女孩们] ]
+            [and;和]
+            [N [boys;男孩们] ] ]
+      [dance;跳舞]]
 \end{forest}
 \hfill\mbox{}
 \caption{\label{fig-dg-coordination-with-conjunction-as-head}无联结（junction）的将连词看作是中心语的并列的分析}
@@ -1613,24 +1617,31 @@ all girls and boys这个句子的图看起来太奇怪了，因为限定词和�
 %coordination. An example is the following sentence from \citet[\page 217]{Levine2003a}:
 \ea
 \gll Robin came in, found a chair, sat down, and whipped off her logging boots in exactly thirty seconds flat.\\
-Robin 进 找到 一 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \glt `Robin进来，找到了一把椅子，坐下来，并在三十秒内就把她的靴子脱下来了。'
 \z
 附接语in exactly thirty seconds flat可以指向（\mex{1}a）中的whipped off her logging boots，或者像（\mex{1}b)）中那样覆盖所有三个连词：
 %The adjunct \emph{in exactly thirty seconds flat} can refer either to \emph{whipped off her logging
 %  boots} as in (\mex{1}a) or scope over all three conjuncts together as in (\mex{1}b):
 \eal
-\ex Robin came in, found a chair, sat down, and [[pulled off her logging boots] in exactly thirty seconds flat].
+\ex 
+\gll Robin came in, found a chair, sat down, and [[pulled off her logging boots] in exactly thirty seconds flat].\\
+Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+\glt `Robin进来，找到了一把椅子，坐下来，并在三十秒内就把她的靴子脱下来了。'
 \ex\label{ex-Robin-flat-VP}
-Robin [[came in, found a chair, sat down, and pulled off her logging boots] in exactly thirty seconds flat].
+\gll Robin [[came in, found a chair, sat down, and pulled off her logging boots] in exactly thirty seconds flat].\\
+Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+\glt `Robin在三十秒内进来，找到了一把椅子，坐下来，并把她的靴子脱下来了。'
 \zl
 图\vref{fig-dg-adjunct-attachment-wrong}中的泰尼埃式的分析对应于（\mex{1}），而如图\vref{fig-dg-adjunct-attachment-right}中将连词作为中心语的分析对应于（\mex{0}b）。
 %The Tesnièreian analysis in Figure~\vref{fig-dg-adjunct-attachment-wrong} corresponds to (\mex{1}), while an analysis that
 %treats the conjunction as the head as in Figure~\vref{fig-dg-adjunct-attachment-right} corresponds
 %to (\mex{0}b).
 \ea
-Robin came in in exactly thirty seconds flat and Robin found a chair in exactly thirty seconds flat
-and Robin pulled off her logging boots in exactly thirty seconds flat.
+\gll Robin came in in exactly thirty seconds flat and Robin found a chair in exactly thirty seconds flat
+and Robin pulled off her logging boots in exactly thirty seconds flat.\\
+Robin 进 来 在 确定地 三十 秒 干脆 和 Robin 找到 ART 椅子 在 确定地 三十 秒 干脆 和 Robin 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+\glt `Robin在三十秒内进来，在三十秒内找到了一把椅子，并在三十秒内把她的靴子脱下来了。'
 \z
 当附接语分别指向每个连词的，而不是如（\ref{ex-Robin-flat-VP}）中由动词短语表示的指向一个累积的事件的时候，就会得到（\mex{0}）中的解读。
 %The reading in (\mex{0}) results when an adjunct refers to each conjunct individually rather then referring to a
@@ -1641,18 +1652,18 @@ and Robin pulled off her logging boots in exactly thirty seconds flat.
 dg edges
 [\phantom{V}
   [V, l sep+=2ex, name=v1, no edge
-    [N,name=n1 [Robin]]
-    [came]
-    [Part [in] ] ]
-  [Conj,dg junction [and]]
-  [V, l sep+=2ex, name=v2, no edge [found]
+    [N,name=n1 [Robin;Robin]]
+    [came;来]
+    [Part [in;进] ] ]
+  [Conj,dg junction [and;和]]
+  [V, l sep+=2ex, name=v2, no edge [found;找到]
      [N 
-       [Det [a]]
-       [chair]]
-     [P, dg adjunct, name=p [in]
+       [Det [a;ART]]
+       [chair;椅子]]
+     [P, dg adjunct, name=p [in;在]
         [N 
-          [Det [thirty]]
-          [seconds]]]
+          [Det [thirty;三十]]
+          [seconds;秒]]]
 ]]
 \draw (v2.south)--(n1.north)
       (v1.south)--(p.north);
@@ -1664,19 +1675,19 @@ dg edges
 \begin{forest}
 dg edges
 [V, 
-  [N,name=n1 [Robin]]
+  [N,name=n1 [Robin;Robin]]
   [V
-    [came]
-    [Part [in] ] ]
-  [and]
-  [V [found]
+    [came;来]
+    [Part [in;在] ] ]
+  [and;和]
+  [V [found;找到]
      [N 
-       [Det [a]]
-       [chair]] ]
-  [P, dg adjunct [in]
+       [Det [a;ART]]
+       [chair;椅子]] ]
+  [P, dg adjunct [in;在]
      [N 
-       [Det [thirty]]
-       [seconds]]]]
+       [Det [thirty;三十]]
+       [seconds;秒]]]]
 \end{forest}
 \caption{\label{fig-dg-adjunct-attachment-right}带有联系关系的动词并列的分析}
 %\caption{\label{fig-dg-adjunct-attachment-right}Analysis of verb coordination involving the connection relation}
@@ -2046,7 +2057,7 @@ dg edges
 %\caption{\label{dg-alleged-murderer}Analysis that would result if one considered all scope-bearing adjuncts
  % to be heads}
 \end{figure}%
-这个结构可能有非投射性的其他问题。\isc{可投射性}\is{projectivity} Eroms确实对限定词进行了不同的处理，所以这个非可投射性的类型对他来说不是一个问题。但是，否定的中心语分析会得到德语的所谓一致结构的非可投射性。例（\mex{1}）中的句子有两种解读：在第一种解读中，否定的辖域包括singen（唱歌），而在第二种解读中包括singen darf（唱歌允许）。
+这个结构可能有非投射性的其他问题。\isc{可投射性}\is{projectivity} Eroms确实对限定词进行了不同的处理，所以这个非可投射性的类型对他来说不是一个问题。但是，否定的中心语分析会得到德语的所谓一致结构的非可投射性。例（\mex{1}）中的句子有两种解读：在第一种解读中，否定的辖域包括singen（唱歌），而在第二种解读中包括singen darf（唱歌 允许）。
 %This structure would have the additional problem of being non-projective.\is{projectivity} Eroms does treat the determiner
 %differently from what is assumed here, so this type of non"=projectivity may not be a problem for
 %him. However, the head analysis of negation would result in non"=projectivity in so"=called coherent
@@ -2067,7 +2078,7 @@ nicht（不）的辖域包括动词复杂形式的解读会得到图\vref{dg-nic
 \begin{forest}
 dg edges
 [Subjunction
-  [dass;that]
+  [dass;CONJ]
   [Adv
     [N, no edge, name=n, tier=n [er;他]]
     [nicht;不]
@@ -2201,7 +2212,7 @@ sm edges
 %account for sentences like (\mex{1}).
 \ea
 \gll Dem Saft eine kräftige Farbe geben Blutorangen.\footnotemark\\
-     DET 果汁 一   强烈   颜色 给 血.橙\\
+     DET 果汁 ART   强烈   颜色 给 血.橙\\
 %     the juice a   strong   color give blood.oranges\\
 \footnotetext{
 \citet{BC2010a}在曼海姆的德语系举办的\emph{Deutsches Referenzkorpus}（DeReKo）中发现了这个例子：\url{http://www.ids-mannheim.de/kl/projekte/korpora}
@@ -2313,7 +2324,7 @@ dg edges
 %And although the respective structures are marked, such multiple frontings\\is{fronting!apparent multiple} can even cross clause boundaries:
 \ea 
 \gll Der        Maria einen    Ring glaube  ich nicht, daß  er je   schenken wird.\footnotemark\\
-     DET.\dat{} Maria 一.\acc{} 戒指 相信 我   不    CONJ 他 曾经 给     AUX\\
+     DET.\dat{} Maria ART.\acc{} 戒指 相信 我   不    CONJ 他 曾经 给     AUX\\
 %     the.\dat{} Maria a.\acc{} ring believe I   not    that he ever give     will\\
 \footnotetext{
 \citew[\page 67]{Fanselow93a}.
@@ -2335,7 +2346,7 @@ dg edges
 %discontinuous constituents of (\mex{1}) as it is depicted in Figure~\vref{fig-ein-junger-Kerl-stand-da}.
 \ea
 \gll Ein junger Kerl stand da, mit langen blonden Haaren, die sein Gesicht einrahmten,   [\ldots]\footnotemark\\ 
-     一 年轻 人 站 那儿 PREP 长 金色 头发 CONJ 他的 脸 装框\\
+     ART 年轻 人 站 那儿 PREP 长 金色 头发 CONJ 他的 脸 装框\\
 \glt `一位脸旁镶满金发的年轻小伙子站在那儿' 
 %     a young guy stood there with long blond hair that his face framed\\
 %\glt `A young guy was standing there with long blond hair that framed his face' 
@@ -2415,14 +2426,14 @@ dg edges
 \begin{forest}
 sm edges
 [NP
-  [D [a] ]
-  [N [book] ] ]
+  [D [a;ART] ]
+  [N [book;书] ] ]
 \end{forest}\hfill%
 \begin{forest}
 dg edges
 [N
-  [D [a] ]
-  [book] ]
+  [D [a;ART] ]
+  [book;书] ]
 \end{forest}
 \hfill\mbox{}
 \caption{在短语结构语法和依存语法分析中的\label{fig-a-book-psg-dg}a book}
@@ -2445,12 +2456,12 @@ dg edges
 sm edges
 [V
   [N
-    [D [the] ]
-    [N [child] ] ]
-  [V [reads]]
+    [D [the;DET] ]
+    [N [child;孩子] ] ]
+  [V [reads;读]]
   [N
-    [D [a] ]
-    [N [book] ] ] ]
+    [D [a;ART] ]
+    [N [book;书] ] ] ]
 \end{forest}
 }
 \caption{\label{fig-the-child-reads-a-book-psg}带有平铺规则的短语结构的“The child reads a book.”的分析}
@@ -2748,26 +2759,32 @@ sm edges
 %There are plenty of works about how to relax the projectivity without suppressing it.}
 根据这个语法，我们可以分析图\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}的非可投射结构以及更多的内容。针对域合并的分析如图\vref{fig-dass-die-Frauen-Tueren-oeffnen-domains}所示。
 %With such a grammar we could analyze the non-projecting structure of Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg} and much more. The %analysis in terms of domain union is shown in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-domains}. 
-%\begin{figure}
-%\centerline{%
-%\begin{forest}
-%sm edges
-%[{V[\dom \phonliste{ die, Frauen, Türen, öffnen }]}
-  %[{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;the] ]
-  %[{NP[\dom \phonliste{ Frauen }]}
-     %[Frauen;women] ]
-  %[{NP[\dom \phonliste{ die, Türen }]},name=Türen
-    %[Det, phantom ]
-    %[{N[\dom \phonliste{ Türen }]}, tier=det-n 
-     %[Türen;doors] ] ]
-  %[{V[\dom \phonliste{ öffnen }]} 
-    %[öffnen;open] ]
-%]
-%\draw (Türen.south)--(die.north);
-%\end{forest}
-%}
-%\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}Unwanted analysis of \emph{dass die %Frauen Türen öffnen} `that the women open doors' using Reape-style constituent order domains}
-%\end{figure}%
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[{V[\dom \phonliste{ die, Frauen, Türen, öffnen }]}
+  [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;DET] ]
+  % [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;the] ]
+  [{NP[\dom \phonliste{ Frauen }]}
+     [Frauen;女人] ]
+     %    [Frauen;women] ]
+  [{NP[\dom \phonliste{ die, Türen }]},name=Türen
+    [Det, phantom ]
+    [{N[\dom \phonliste{ Türen }]}, tier=det-n 
+     [Türen;门] ] ]
+     %   [Türen;doors] ] ]
+  [{V[\dom \phonliste{ öffnen }]} 
+    [öffnen;开] ]
+ %   [öffnen;open] ]
+]
+\draw (Türen.south)--(die.north);
+\end{forest}
+}
+\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}使用Reape式短语成分域的“dass die Frauen Türen öffnen”（这个女人开门）不合适分析}
+%\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}Unwanted analysis of “dass die Frauen Türen %öffnen” `that the women open doors' using Reape-style constituent order domains}
+\end{figure}%
+很明显，我们不需要这样的不一致性。由此，我们需要有保证一致性的限制条件。一个限制条件就是要求具有投射性，这样就对应于我们上面讨论的短语结构语法。
 %It is clear that such discontinuity is unwanted and hence one has to have restrictions that enforce %continuity. One possible restriction is to require projectivity and hence equivalence to phrase %structure grammars in the sense that was discussed above.
 %
 关于成分/""依存关系对于分析自然语言哪一个是首要/必须的这个问题是存在争议的：\citet{Hudson80a}和\citet{Engel96a}认为依存关系是充分的，这被大部分依存语法学家所认可（根据\citealp{Engel96a}），\citet{Leiss2003a}认为不是这样的。为了解决这个问题，我们来看一些例子：
@@ -3160,14 +3177,14 @@ lexical & \ms{ cont & \\
   [V{[\emph{fin}]}$''$
     [N$''$
       [N$'$, tier=nbar, name=nbar, edge=dashed
-        [Adj [small]]
-        [N   [children]] ] ]
+        [Adj [small;小]]
+        [N   [children;孩子们]] ] ]
     [V{[\emph{fin}]}$'$
-      [V{[\emph{fin}]} [were]]
+      [V{[\emph{fin}]} [were;AUX]]
       [V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
         [V{[\emph{ing}]}$'$, tier=nbar
-          [V{[\emph{ing}]} [playing]]
-          [Adv [outside]] ] ] ]
+          [V{[\emph{ing}]} [playing;玩]]
+          [Adv [outside;外面]] ] ] ]
   ]
   \draw[dashed] (ving.south)--(nbar.north);
 \end{forest}
@@ -3204,10 +3221,22 @@ lexical & \ms{ cont & \\
 \citet[\S~4.E]{Hudson80a}讨论了（\mex{1}）中所示的无中心语的结构：
 %\citet[Section~4.E]{Hudson80a} discusses headless constructions like those in (\mex{1}):
 \eal
-\ex the rich
-\ex the biggest
-\ex the longer the stem
-\ex (with) his hat over his eyes
+\ex 
+\gll the rich\\
+DET 富有\\
+\glt `富人们'
+\ex 
+\gll the biggest\\
+DET 最大\\
+\glt `最大的东西'
+\ex 
+\gll the longer the stem\\
+DET 更长 DET 茎\\
+\glt `更长的茎'
+\ex 
+\gll (with) his hat over his eyes\\
+PREP 他的 帽子 PREP 他的 眼睛\\
+\glt `他的帽子遮住了眼睛'
 \zl
 他认为，术语形容词（adjective）和名词（noun）应该属于术语实体（substantive），它包括这两个术语。然后他指出“如果一条规则需要覆盖传统上指称为带或者不带中心语的名词短语，它只称为‘名词’，而且这可以自动允许要么是实体要么是形容词作为中心语的结构。”（第195页）但是，这里需要提出的问题是，像the rich这样的实体性短语的内部依存结构是什么样的呢。连接这些项目的唯一方式看起来是假定限定词依存于形容词。但是这可以允许像the rich man的短语的两个结构：一个是限定词依存于形容词，另一个是它依存于名词。所以，词性的未分析不能解决这个问题。当然，所有无中心语的结构的所有问题都可以通过假定空成分来解决。\footnote{请参阅\ref{sec-psg-np}关于名词短语的短语结构语法中的空中心语的假设。}在\hpsgc 的关系小句的分析中是这样做的\citep[\S~5]{ps2}。英语和德语的关系小句包括一个短语，它包括一个关系词和一个句子，其中关系短语是缺失的。Pollard\& Sag提出了空关系代词，它选择关系小句以及带有空位的小句\citep[\page 216--217]{ps2}。相似的分析可以在依存语法中找到（\citealp[\page  291]{Eroms2000a}）。\footnote{
 依存语法表示通常有一个\stem{d}成分作为关系小句的中心语。但是，由于关系代词也出现在小句中，而且由于\stem{d}没有被两次发音，假定一个额外的\stem{d}中心语基本上就是假定一个空的中心语。
@@ -3215,7 +3244,7 @@ lexical & \ms{ cont & \\
 另一个选择是假定具有多重功能的词汇：所以说，一个关系代词可以既是一个中心语，也同时是一个从属语（\citealp[\S 246, §8--11]{Tesniere2015a-not-crossreferenced}；\citealp[\page xlvi]{OK2015a}；\citealp[\page  129--130]{Kahane2009a}）。至少Kahane的分析是\ref{Abschnitt-Relativsaetze-CG}讨论的范畴语法分析的一个例子，而且它具有相同的问题：如果关系代词是中心语，它选择了缺失关系代词的小句，不容易看到这个分析是如何扩展到（i）中的抽吸过程\isc{抽吸过程}\is{pied-piping}的，其中被提取的成分是一个包括关系代词，而不是代词本身的完整短语。
 \ea
 \gll die Frau, von deren Schwester ich ein Bild gesehen habe\\
-     DET 女人 PREP 谁的 姐妹 我 一 图片 看见 AUX\\
+     DET 女人 PREP 谁的 姐妹 我 ART 图片 看见 AUX\\
 \glt `我在她的姐妹那里看到一张照片的那个女人'
 \zlast
 }
@@ -3269,11 +3298,26 @@ lexical & \ms{ cont & \\
 %\citet{Jackendoff2008a}\is{construction!N-P-N|(} that it does not make sense to assume that one of the elements in N-P-N constructions like those in %(\mex{1}) is the head.
 \addlines
 \eal
-\ex day by day, paragraph by paragraph, country by country
-\ex dollar for dollar, student for student, point for point
-\ex face to face, bumper to bumper
-\ex term paper after term paper, picture after picture
-\ex book upon book, argument upon argument
+\ex 
+\gll day by day, paragraph by paragraph, country by country\\
+天 PREP 天 段落 PREP 段落 国家 PREP 国家\\
+\glt `一天又一天，一段又一段，一个国家又一个国家'
+\ex 
+\gll dollar for dollar, student for student, point for point\\
+美元 PREP 美元 学生 PREP 学生 点 PREP 点\\
+\glt `美元换美元，学生换学生，点换点'
+\ex 
+\gll face to face, bumper to bumper\\
+脸 PREP 脸 保险杠 PREP 保险杠\\
+\glt `脸对脸，保险杠对保险杠'
+\ex 
+\gll term paper after term paper, picture after picture\\
+学期 试卷 PREP 学期 试卷 图片 PREP 图片\\
+\glt `试卷接着试卷，图片接着图片'
+\ex 
+\gll book upon book, argument upon argument\\
+书 PREP 书 论点 PREP 论点\\
+\glt `书堆着书，论点叠着论点'
 \zl
 当然，有方法可以模拟所有可以在短语结构的框架下（如GPSG、CxG、HPSG或者简便句法：一个空中心语）模拟的现象。图\vref{fig-n-p-n}显示了student after student的分析。
 %Of course there is a way to model all the phenomena that would be modeled by a phrasal construction in frameworks like GPSG, CxG, HPSG, or %Simpler Syntax: an empty head. Figure~\vref{fig-n-p-n} shows the analysis of \emph{student after student}.
@@ -3282,9 +3326,9 @@ lexical & \ms{ cont & \\
 dg edges
 [N
   [\trace]
-  [N [student]]
-  [P [after]]
-  [N [student]]]
+  [N [student;学生]]
+  [P [after;PREP]]
+  [N [student;学生]]]
 \end{forest}
 \caption{\label{fig-n-p-n}带有空中心语的N-P-N构式的依存语法分析}
 %\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty head}
@@ -3300,7 +3344,9 @@ dg edges
 \citet{Bragmann2015a}指出了N-P-N构式的另一使得事情更加复杂的方面。这个模式没有受限于两个名词。可以是任意数量的：
 %\citet{Bragmann2015a} pointed out an additional aspect of the N-P-N construction, which makes things more complicated. The pattern is not restricted %to two nouns. There can be arbitrarily many of them:
 \ea
-Day after day after day went by, but I never found the courage to talk to her.
+\gll Day after day after day went by, but I never found the courage to talk to her.\\
+天 PREP 天 PREP 天 过 PREP 但是 我 从未 找到 DET 勇气 INF 说话 INF 她\\
+\glt `一天又一天过去了，但是我仍未找到勇气跟她说话。'
 \z
 所以说，Bragmann提出了（\mex{1}）中的模式，而不是N-P-N范式，这里`+'\isc{$+$}\is{$+$}表示一个序列的至少一次重复。
 %So rather than an N-P-N pattern Bragmann suggests the pattern in (\mex{1}), where `+'\is{$+$} stands for at least one repetition of a sequence.
@@ -3332,13 +3378,13 @@ N (P N)+
 \eal
 \ex 
 \gll Ich habe einen Mann getroffen, der blonde Haare hat.\\
-     我 AUX 一 男人 见面 谁 金色 头发 有\\
+     我 AUX ART 男人 见面 谁 金色 头发 有\\
 \glt `我跟一位有着金色头发的男士见面了。'
 %     I have a man met who blond hair has\\
 %\glt `I have met a man who has blond hair.'
 \ex 
 \gll Einen Mann getroffen, der blonde Haare hat, habe ich noch nie.\\
-     一 男人 见面 谁 金色 头发 有 AUX 我 yet 从未\\
+     ART 男人 见面 谁 金色 头发 有 AUX 我 yet 从未\\
 \glt `我从未见到过有着金色头发的男人。'
 %     a man met who blond hair has have I yet never\\
 %\glt `I have never met a man who has blond hair.'
