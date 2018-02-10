@@ -3095,7 +3095,7 @@ lexical & \ms{ cont & \\
 %properties from their head (p.\,604). They are in fact constituents. So this very explicit and
 %formalized variant of Dependency Grammar is very close to HPSG, as Hellwig states himself (p.\,603).
 %
-%Hudson's Word Grammar \citeyearpar{Hudson2015a} is also explicitly worked out and, as will be shown,
+%Hudson's Word Grammar \citeyearpar{Hudson2017a} is also explicitly worked out and, as will be shown,
 %it is rather similar to HPSG. The representation in
 %Figure~\vref{fig-wg-small-children-are-playing-outside} is a detailed description of what the 
 %abbreviated version in Figure~\vref{fig-wg-small-children-are-playing-outside-abbreviated} stands for.
@@ -3125,10 +3125,10 @@ lexical & \ms{ cont & \\
   \draw[deparrow] (playing'') to[out=220, in=east] (children');
   \draw[deparrow] (playing') to[out=east, in=north] (outside);
 \end{forest}
-\caption{\label{fig-wg-small-children-are-playing-outside}根据\citet{Hudson2015a}的“Small children were
+\caption{\label{fig-wg-small-children-are-playing-outside}根据\citet[\page 105]{Hudson2017a}的“Small children were
     playing outside.”的分析}
 %\caption{\label{fig-wg-small-children-are-playing-outside}Analysis of \emph{Small children were
-%    playing outside.} according to \citet{Hudson2015a}}
+%    playing outside.} according to \citet{Hudson2017a}}
 \end{figure}%
 \begin{figure}
 \begin{forest}
@@ -3147,8 +3147,8 @@ lexical & \ms{ cont & \\
   \draw[deparrow] (playing.north) to[out=north, in=north] (children);
   \draw[deparrow] ([xshift=3pt]playing.north) to[out=north, in=north] (outside);
 \end{forest}
-\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}根据\citet{Hudson2015a}的“Small children were  playing outside.”的简略分析}
-%\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of \emph{Small children were  playing outside.} according to \citet{Hudson2015a}}
+\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}根据\citet[\page 105]{Hudson2017a}的“Small children were  playing outside.”的简略分析}
+%\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of \emph{Small children were  playing outside.} according to \citet{Hudson2017a}}
 \end{figure}%
 在第一个图中显示的是两个结点的组合得到一个新结点。例如，playing和outside的组合得到playing$'$，small和children的组合得到children$'$，而且children$'$和playing$'$的组合得到playing$''$。were和playing$''$的组合得到were$'$，以及 children$''$和were$'$的组合得到were$''$。唯一剩下需要解释的是为什么有一个结点children，它不是两个结点的组合（即children$''$）的结果。顶点与底部的连线表示缺省的承继关系\isc{承继!缺省承继}\is{inheritance!default}。即，上层结点继承了缺省的底层结点的所有属性。缺省的可以被覆盖，即上层结点的信息会与统治结点的信息不同。这就使得按照语义的组合性的操作成为可能：两个结点组合的结果的那个结点的语义是两个组合的结点的意义的组合。再来看children，children$'$具有必须邻接到playing的属性，但是因为这个结构是一个升位结构，其中children提升到了were的主语位置上，这个属性被children的一个新的实例覆盖了，即children$''$。
 %What is shown in the first diagram is that a combination of two nodes results in a new node. For
