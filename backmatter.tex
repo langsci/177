@@ -12,11 +12,13 @@
 \small
    
 
+
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{chapter}{索引} 
 %\addcontentsline{toc}{chapter}{Index} 
 \addcontentsline{toc}{section}{人名索引}
 \ohead{人名索引}
+\renewcommand{\lsNameIndexTitle}{人名索引}
 %\addcontentsline{toc}{section}{Name index}
 %\ohead{Name index}
 %with biblatex
@@ -28,13 +30,17 @@
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{section}{语言索引}
 \ohead{语言索引} 
+\renewcommand{\lsLanguageIndexTitle}{语言索引}
 %\addcontentsline{toc}{section}{Language index}
 %\ohead{Language index} 
 \printindex[lan] 
+
+
   
 \phantomsection%this allows hyperlink in ToC to work
 \addcontentsline{toc}{section}{术语索引}
 \ohead{术语索引}
+\renewcommand{\lsSubjectIndexTitle}{术语索引}
 %\addcontentsline{toc}{section}{Subject index}
 %\ohead{Subject index}
 \printindex[sbj]

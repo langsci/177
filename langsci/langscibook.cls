@@ -594,7 +594,8 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 % \newindex{aut}{adx}{and}{Name index}
 \newindex{sbj}{sdx}{snd}{\lsSubjectIndexTitle}
 % special addition for separate English and Chinese index
-\newindex{sbc}{scx}{scd}{Subject index Chinese}
+%\newindex{sbc}{scx}{scd}{Subject index Chinese}
+\newindex{sbc}{scx}{scd}{中文术语索引}
 \renewindex{default}{adx}{and}{\lsNameIndexTitle} %biblatex can only deal with the default index
 \newindex{wrd}{wdx}{wnd}{Expression index}
 \newindex{rwrd}{rdx}{rnd}{Reverse expression index}
