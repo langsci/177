@@ -36,53 +36,26 @@ SOURCE=gt.bib \
 .SUFFIXES: .tex
 
 
-# removing the bbl file is important since otherwise the -min-crossrefs option may not work
-#	\rm -f $*.bbl
-
-# there are two different index.format files.
-# they contain special characters for delimination. Standard is ", but this is used
-# for German. "+" is used as operator in the book and appears in the index of symbols.
-# So I use "." as a separator for the subject index and "+" as separator for the authors index.
-# St. Mü. 16.02.2016
-
-# Since having the references missing results in different page layout
-# \addlines throws errors. These are skipped with nonstopmode
-# no, I rather call addlines in draft mode and make sure before that it 
-# works properly.
-
-# one extra cycle is needed for addlines to stabalize ....
-
-
-# bib is stable now and is included
-# does not work, since authorindex needs bib in .aux
-# %.pdf: %.tex $(SOURCE)
-# 	\rm -f $*.bbl
-# 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
-# 	xelatex -no-pdf -interaction=nonstopmode $* 
-# 	correct-toappear
-# 	correct-index
-# 	\rm $*.adx
-# 	authorindex -i -p $*.aux > $*.adx
-# 	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
-# 	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
-# 	makeindex -gs index.format -o $*.lnd $*.ldx
-# 	makeindex -gs index.format -o $*.snd $*.sdx
-# 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
-
-#	\rm -f $*.bbl
-#	bibtex  -min-crossrefs=200 $*
 %.pdf: %.tex $(SOURCE)
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $* 
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $*
-	\rm $*.adx
-	authorindex -i -p $*.aux > $*.adx
-	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
-	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
+	correct-index
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.adx
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldx
+	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' *.adx
+	sed -i.backup 's/{\\O }/Oe/' *.adx
+	python3 fixindex.py
+	mv $*mod.adx $*.adx
+	makeindex -gs index.format-plus -o $*.and $*.adx
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
 	zhmakeindex -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
+
 
 
 # removed this. It was about Umlaute	bin/correct-index
@@ -109,7 +82,7 @@ SOURCE=gt.bib \
 
 bbl:
 	xelatex -no-pdf -interaction=nonstopmode grammatical-theory
-	bibtex  -min-crossrefs=200 grammatical-theory
+	bib  -min-crossrefs=200 grammatical-theory
 	xelatex -no-pdf -interaction=nonstopmode grammatical-theory
 	bibtex  -min-crossrefs=200 grammatical-theory
 	bin/correct-toappear

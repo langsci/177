@@ -21,7 +21,7 @@
 % Version 15.6.98
 \NeedsTeXFormat{LaTeX2e}
 
-\input merkmalstruktur.sty
+%\RequirePackage{merkmalstruktur}
 
 
 % equation Umgebung, die auf \\ reagiert
@@ -231,7 +231,7 @@
 %\newgray{hell}{.85}
 %\newcommand{\clash}[1]{\psframebox[linecolor=hell,fillcolor=hell,fillstyle=solid]{#1}}
 
-%und verwendet haben wir's z.B. folgendermaßen:
+%und verwendet haben wir's z.B. folgenderma�en:
 %
 %\begin{avm}
 %\[p & \<\phonfont{wird}\>\\
@@ -314,17 +314,17 @@
 
 \usepackage{varioref,ifthen}
 
-%\iflanguage{german}{%
-% die Standardversionen sind ein bißchen doof ...
-\def\reftextfaceafter{在\reftextvario{下}{后}一页}%
-\def\reftextfacebefore{在\reftextvario{上}{前}一页}%
-\def\reftextafter{在下一页}%
-\def\reftextbefore{在上一页}%
-\def\reftextcurrent{在该页}%
-\def\reftextfaraway#1{第\pageref{#1}页的}%
-\def\reftextpagerange#1#2{第\pageref{#1}--\pageref{#2}页的}%
-\def\reftextlabelrange#1#2{从第\ref{#1}页到第\ref{#2}页的}%
-%}{}
+\iflanguage{german}{%
+% die Standardversionen sind ein bi�chen doof ...
+\def\reftextfaceafter{auf der \reftextvario{gegen\"uberliegenden}{n\"achsten} Seite}%
+\def\reftextfacebefore{auf der \reftextvario{gegen\"uberliegenden}{vorigen} Seite}%
+\def\reftextafter{auf der \reftextvario{n\"achsten}{folgenden} Seite}%
+\def\reftextbefore{auf der vorigen Seite}%
+\def\reftextcurrent{auf dieser Seite}%
+\def\reftextfaraway#1{auf Seite~\pageref{#1}}%
+\def\reftextpagerange#1#2{auf den Seiten~\pageref{#1}--\pageref{#2}}%
+\def\reftextlabelrange#1#2{\ref{#1} bis~\ref{#2}}%
+}{}
 
 % zeigen \dieabbildungfiguresref{abb-avm-frau}{abb-avm-mann}
 % -> zeigen Abbildung 1.5 auf Seite 77 und Abbildung 1.6 auf Seite 78
@@ -398,10 +398,12 @@ Abbildung~\ref{#1}\vpageref[]{#1} und Abbildung~\ref{#2} \vpageref{#2}%
 
 % http://semantics-online.org/geek/2003/11/how_to_get_doi_into_a_latex_bibliography
 %
-\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+%\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{doi:#1}}
+
+\newcommand{\mydoi}[1]{\textsc{doi}: \href{http://dx.doi.org/#1}{\nolinkurl{#1}}}
 
 
-\usepackage{abbrev}
+%\Requirepackage{abbrev}
 
 
 % LFG arrows taken from Mary Dalrymple's macros
@@ -467,6 +469,8 @@ Abbildung~\ref{#1}\vpageref[]{#1} und Abbildung~\ref{#2} \vpageref{#2}%
 
 
 
+\RequirePackage{etoolbox}
 
-
-
+% to be able to use this in glosses in forest trees
+\robustify\textsc
+\robustify\textit

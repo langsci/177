@@ -30,12 +30,9 @@
 
 \hypersetup{bookmarksopenlevel=0}
 
-\iftoggle{draft}{
-\usepackage{todonotes}
-}{
-\usepackage[disable]{todonotes}
+\iftoggle{draft}{}{
+\presetkeys{todonotes}{disable}{}
 }
-
 
 
 \usepackage{metalogo} % xelatex
@@ -68,9 +65,10 @@
 
 \usepackage{langsci/styles/jambox}
 
-\usepackage{langsci/styles/langsci-optional}
+% This has side effects on my-ccg commands do no know why
+%\usepackage{langsci/styles/langsci-optional}
 
-
+\usepackage{langsci/styles/langsci-lgr}
 
 \usepackage{german}\selectlanguage{USenglish}
 
@@ -78,7 +76,7 @@
 \usepackage{graphicx}
 
 
-\usepackage{styles/makros.2e,styles/article-ex,styles/additional-langsci-index-shortcuts,
+\usepackage{styles/merkmalstruktur,styles/abbrev,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,styles/oneline,
 styles/eng-date,styles/my-theorems}
 
 
