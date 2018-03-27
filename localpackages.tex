@@ -30,8 +30,14 @@
 
 \hypersetup{bookmarksopenlevel=0}
 
-\iftoggle{draft}{}{
-\presetkeys{todonotes}{disable}{}
+%% \iftoggle{draft}{}{
+%% \presetkeys{todonotes}{disable}{}
+%% }
+
+\iftoggle{draft}{
+\usepackage{todonotes}
+}{
+\usepackage[disable]{todonotes}
 }
 
 
@@ -68,7 +74,7 @@
 % This has side effects on my-ccg commands do no know why
 %\usepackage{langsci/styles/langsci-optional}
 
-\usepackage{langsci/styles/langsci-lgr}
+%\usepackage{langsci/styles/langsci-lgr}
 
 \usepackage{german}\selectlanguage{USenglish}
 

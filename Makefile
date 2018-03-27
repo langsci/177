@@ -38,9 +38,9 @@ SOURCE=gt.bib \
 
 %.pdf: %.tex $(SOURCE)
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
-	biber $*
+	bibtex $*
 	xelatex -no-pdf -interaction=nonstopmode $* 
-	biber $*
+	bibtex $*
 	xelatex -no-pdf -interaction=nonstopmode $*
 	correct-index
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes

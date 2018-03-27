@@ -211,9 +211,8 @@ frbox/.style={
 % biblatex stuff
 % get rid of initials for Carl J. Pollard and Carl Pollard in the main text:
 % Müller is Müller, even if there is a G. Müller
-\ExecuteBibliographyOptions{uniquename=false}
-
-\ExecuteBibliographyOptions{mincrossrefs=99}
+%\ExecuteBibliographyOptions{uniquename=false}
+%\ExecuteBibliographyOptions{mincrossrefs=99}
 
 
 
@@ -245,25 +244,25 @@ frbox/.style={
 %% }
 %% \makeatother
 
-\AtBeginDocument{ % why this?
-% special addition for separate English and Chinese index
-%\newindex{sbc}{scx}{scd}{Subject index Chinese}
-\newindex{sbc}{scx}{scd}{中文术语索引}
-}
+%% \AtBeginDocument{ % why this?
+%% % special addition for separate English and Chinese index
+%% %\newindex{sbc}{scx}{scd}{Subject index Chinese}
+%% \newindex{sbc}{scx}{scd}{中文术语索引}
+%% }
 
-% entries for the Chinese index
-\makeatletter
-\newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
-\newcommand{\isc}[1]{%
-  \if@noftnote%
-    \index[sbc]{#1}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
-    %\indexftn{#1}{\value{footnotemark}}%
-  \fi%
-}
-\makeatother
+%% % entries for the Chinese index
+%% \makeatletter
+%% \newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
+%% \newcommand{\isc}[1]{%
+%%   \if@noftnote%
+%%     \index[sbc]{#1}%
+%%     \else%
+%%     \edef\tempnumber{\thefootnote}%
+%%     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
+%%     %\indexftn{#1}{\value{footnotemark}}%
+%%   \fi%
+%% }
+%% \makeatother
 
 
 \let\vref\ref
@@ -271,7 +270,7 @@ frbox/.style={
 
 %% check what the unified people have to say on this.
 %% This is as deifined in langscibook.cls but with Chinese brackets
-%\bibpunct[: ]{（}{）}{;}{a}{}{,}
+\bibpunct[: ]{（}{）}{;}{a}{}{,}
 
 
 % use Chinese brackets

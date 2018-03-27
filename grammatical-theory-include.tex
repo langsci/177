@@ -2,7 +2,7 @@
 \input{localpackages.tex}
 \input{localcommands.tex}
 
-\bibliography{gt}
+%\bibliography{gt}
 
 % fix, remove once forest is updated
 \makeatletter
@@ -18,7 +18,7 @@
 % Mit Widmung geht es auf S. 7 los
 \thispagestyle{empty}~\newpage\setcounter{page}{7}% for printing 2up
 
-%\tableofcontents
+\tableofcontents
 
 \include{chapters/preface}
 
@@ -58,6 +58,8 @@
 \include{chapters/phrasal}
 \include{chapters/coregram}
 \include{chapters/conclusions}
+
+\appendix
 \include{chapters/loesungen}
 
 \input{backmatter}
