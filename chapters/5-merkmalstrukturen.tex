@@ -198,11 +198,11 @@ children    & \liste{ \ms{
 %such a representation it is possible to make certain claims about a mother or father without having to necessarily
 %search for the respective descriptions in a list.
 
-如果元素的序列是无关的，那么我们可以用集合\isc{集合}\is{set}，而不是列表。集合用弧形括号（curly brackets）表示。\footnote{
+如果元素的序列是无关的，那么我们可以用集合\isc{集合}\is{set}，而不是列表。集合用弧形括号（curly brackets）表示。\footnote{%
 集合的定义需要很多技术指标。本书中，我只用集合来表示语义信息。这点用列表也可以做到，这就是为什么我在这里没有引入集合，而是使用了列表。
 }
 %If the order of the elements is irrelevant, then we could use sets\is{set} rather than lists.
-%Sets are written inside curly brackets.\footnote{
+%Sets are written inside curly brackets.\footnote{%
 %The definition of a set requires many technicalities. 
 %In this book, I would use sets only for collecting semantic information. This can be done equally
 %well using lists, which is why I do not introduce sets here and instead use lists.%
@@ -538,11 +538,11 @@ mother    & \ms[person]{
 }
 \z
 \vspace{-\baselineskip}\end{figure}%
-例（\mex{0}）中所描写的结构叫做循环结构，因为如果我们按照一个具体的路径就会进入一个循环：如路径\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{
+例（\mex{0}）中所描写的结构叫做循环结构，因为如果我们按照一个具体的路径就会进入一个循环：如路径\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{%
 这里的点是指到列表中值为\textsc{children}（孩子）\iboxt{2}的路径。请看练习\ref{ua-liste}。
 }可以重复无限的次数。
 %Structures such as those described in (\mex{0}) are called cyclic because one ends up going in a circle if one follows a particular path: \eg the %path 
-%\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{
+%\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{%
 %	The dots here stand for the path to \iboxt{2} in the list which is the value of \textsc{children}. See Exercise~\ref{ua-liste}.%
 %}
 %can be potentially repeated an infinite number of times.
@@ -553,13 +553,13 @@ mother    & \ms[person]{
 \label{sec-unification}
 
 \mbox{}\isc{合一|(}\is{unification|(}%
-语言规则在特征描写的帮助下可以写成与HPSG和构式语法中的词汇项完全相同的格式。对于短语中可以用作子结点的一个词或者较大的短语实体来说，这个词或者短语必须具有语法规则中与子结点们的描写相兼容的属性。如果这种兼容性存在的话，那么我们可以说各自的对象是可以合一的（unifiable）。\footnote{
+语言规则在特征描写的帮助下可以写成与HPSG和构式语法中的词汇项完全相同的格式。对于短语中可以用作子结点的一个词或者较大的短语实体来说，这个词或者短语必须具有语法规则中与子结点们的描写相兼容的属性。如果这种兼容性存在的话，那么我们可以说各自的对象是可以合一的（unifiable）。\footnote{%
   合一（unification）这个概念需要小心使用，它只在语言学理论的形式化基础的某些假说下才是合适的。非正式的情况下，这一术语经常用于没有在技术上界定合一的形式化系统中。在HPSG中，它大部分是指对两个描写的约束导向一个单一的描写。我们在这里想直观说明的是，所描写的对象需要同时满足所有描写的约束条件（约束满足）。因为合一（unification）这个术语应用范围较广，本节也采用这一概念。在后面的理论讨论中，除了基于合一的方法，我们不会再使用该术语。相反，这里给出的约束满足（constraint satisfaction）这个概念在后面的章节中发挥了重要的作用。
 }
 %Grammatical rules\todostefan{Read Ristad} are written exactly like lexical entries in HPSG and Construction Grammar and are done so with %the help of feature descriptions.
 %For a word or a larger phrasal entity to be usable as daughter in a phrase licensed by some
 %grammatical rule, the word or phrase must have properties which are compatible with the description of the daughters in the grammatical rule. %If
-%this kind of compatibility exists, then we can say that the respective items are \emph{unifiable}.\footnote{
+%this kind of compatibility exists, then we can say that the respective items are \emph{unifiable}.\footnote{%
 %	The term \emph{unification} should be used with care. It is only appropriate if certain assumptions with regard to the formal basis
 %	of linguistic theories are made. Informally, the term is often used in formalisms where unification is not technically defined. In HPSG, it mostly %means that
 %	the constraints of two descriptions lead to a single description. What one wants to say here, intuitively, is that the objects described have to

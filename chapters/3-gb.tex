@@ -15,8 +15,8 @@
 %\citew{Grewendorf88a}, \citew{Haider93a}, \citew{Sternefeld2006a-u}.
 
 针对乔姆斯基式理论的不同应用通常被归入到生成语法（Generative Grammar）\index{Generative Grammar}的名头下面。这一术语来源于这样的事实，乔姆斯基提出的短语结构语法和其扩充的理论框架可以生成合乎语法的表达式（请看第\pageref{Seite-generiert}页）。正是这一组句子在形式上构成了一种语言，我们可以通过检查一个特定的句子是否是由给定的文法生成的句子集合中的一部分来判断该句子是否属于该语言。从这个意义来看，简单的短语结构语法与相应的形式化理论、GPSG、LFG、HPSG和构式语法（Construction
-Grammar，CxG）都属于生成理论。近年来，以形式化为基础的理论不断涌现，如LFG、HPSG和CxG，前述的语法理论现在被称为模型论（model"=theoretic）\isc{模型论文法}\is{model"=theoretic grammar} ，而不是生成枚举（generative"=enumerative）理论\footnote{
-模型论的方法总是基于约束的，所以说模型论（model"=thoretic）和基于约束（constraint"=based）的理论有时是同义的。} （请看第\ref{Abschnitt-Generativ-Modelltheoretisch}章的讨论）。在1965年，乔姆斯基按照下面这种方式来界定生成语法（Generative Grammar）（也可以参考\citealp[\page 162]{Chomsky95a-u}）：\footnote{
+Grammar，CxG）都属于生成理论。近年来，以形式化为基础的理论不断涌现，如LFG、HPSG和CxG，前述的语法理论现在被称为模型论（model"=theoretic）\isc{模型论文法}\is{model"=theoretic grammar} ，而不是生成枚举（generative"=enumerative）理论\footnote{%
+模型论的方法总是基于约束的，所以说模型论（model"=thoretic）和基于约束（constraint"=based）的理论有时是同义的。} （请看第\ref{Abschnitt-Generativ-Modelltheoretisch}章的讨论）。在1965年，乔姆斯基按照下面这种方式来界定生成语法（Generative Grammar）（也可以参考\citealp[\page 162]{Chomsky95a-u}）：\footnote{%
 A grammar of a language purports to be a description of the ideal speaker-hearer's intrinsic
 competence. If the grammar is, furthermore, perfectly explicit\,--\,in other words, if it does not
 rely on the intelligence of the understanding reader but rather provides an explicit analysis of
@@ -30,7 +30,7 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative g
 %HPSG and Construction Grammar (CxG) are generative theories.
 %In recent years, a different view of the formal basis of theories such as LFG, HPSG and CxG has
 %emerged such that the aforementioned theories are now \emph{model theoretic}
-%theories\is{model"=theoretic grammar} rather than generative"=enumerative ones\footnote{
+%theories\is{model"=theoretic grammar} rather than generative"=enumerative ones\footnote{%
 %Model theoretic approaches are always constraint"=based and the terms \emph{model theoretic} and \emph{constraint"=based} are 
 %sometimes used synonymously. 
 %} (See Chapter~\ref{Abschnitt-Generativ-Modelltheoretisch} for discussion). In 1965, Chomsky defined the term \emph{Generative Grammar}
@@ -189,7 +189,7 @@ sm edges
 %The symbols on the left of transformational rules do not necessarily have to be in a local tree, that is, they can be daughters of different mothers
 %as in Figure~\ref{fig-Passivtransformation}.
 
-重写文法按照属性的不同可以归入四个复杂性等级\isc{复杂性等级}\is{complexity class}。最简单的文法被分到第3类，而最复杂的叫做0型。所谓的上下文无关文法（context"=free grammar）\isc{上下文无关文法}\is{context-free grammar}叫做2型文法。允许符号被任意其他符号所替换的转换文法叫做0型文法\citep{PR73a-u}。\label{page-TG-Typ0}在对自然语言的复杂度进行研究的基础上，人们发现最复杂的0型文法对于自然语言来说太复杂了。按照这一观点，假设我们需要针对语言知识进行受限的形式化演算\citep[\page 62]{Chomsky65a}，那么我们就需要限制转换的形式与潜在能力。\footnote{
+重写文法按照属性的不同可以归入四个复杂性等级\isc{复杂性等级}\is{complexity class}。最简单的文法被分到第3类，而最复杂的叫做0型。所谓的上下文无关文法（context"=free grammar）\isc{上下文无关文法}\is{context-free grammar}叫做2型文法。允许符号被任意其他符号所替换的转换文法叫做0型文法\citep{PR73a-u}。\label{page-TG-Typ0}在对自然语言的复杂度进行研究的基础上，人们发现最复杂的0型文法对于自然语言来说太复杂了。按照这一观点，假设我们需要针对语言知识进行受限的形式化演算\citep[\page 62]{Chomsky65a}，那么我们就需要限制转换的形式与潜在能力。\footnote{%
     有关形式语言能力的更多内容，请看第\ref{sec-generative-capacity}章。
 } 
 %Rewrite grammars were divided into four complexity classes\is{complexity class} based on the properties they
@@ -198,7 +198,7 @@ sm edges
 %be replaced by arbitrary other symbols are of Type-0 \citep{PR73a-u}.\label{page-TG-Typ0} Research on the complexity
 %of natural languages shows that the highest complexity level (Type-0) is too complex for natural language. It follows from this
 %-- assuming that one wants to have a restrictive formal apparatus for the description of grammatical knowledge \citep[\page 62]{Chomsky65a} -- that
-%the form and potential power of transformations has to be restricted.\footnote{
+%the form and potential power of transformations has to be restricted.\footnote{%
 %	For more on the power of formal languages, see Chapter~\ref{sec-generative-capacity}.
 %} 
 针对转换语法的早期版本的另一个争论是，由于缺乏限制，转换进行互动的方式是不够清楚的。而且，转换删除语言材料这点也是有问题的（请看\citealp[\S~3.1.4]{Klenk2003a}）。基于上述原因，新的理论被提出来，如管辖与约束理论\citep{Chomsky81a} 。在这个模型下，语法规则的形式受到严格的限制（请看\ref{Abschnitt-X-Bar}）。通过转换而移动的元素仍然在他们原始的位置上，这样就使得原始位置是可获得的，也就为语义解读提供了可能。也有更具有普遍性的原则来限制转换的\isc{转换|)}\is{transformation|)}过程。
@@ -670,12 +670,12 @@ $\theta$"=角色                & \underline{施事} & 受益者\\[2mm]\hline
 将语义角色和特定句法要求对应起来的过程（如，受益者=与格）也叫做联接（linking）\isc{联接}\is{linking}。
 %Assigning semantic roles to specific syntactic requirements (beneficiary = dative) is also called \emph{linking}.\is{linking}
 
-按照论元的主次顺序可以对论元进行排序：最高阶论元位于左边最远的位置上。以helfen为例，最高阶论元就是外部论元（external argument）\isc{论元!外部论元}\is{argument!external}，所以施事下面用下划线表示。对于所谓的非宾格动词\isc{动词!非宾格动词}\is{verb!unaccusative}而言，\footnote{
+按照论元的主次顺序可以对论元进行排序：最高阶论元位于左边最远的位置上。以helfen为例，最高阶论元就是外部论元（external argument）\isc{论元!外部论元}\is{argument!external}，所以施事下面用下划线表示。对于所谓的非宾格动词\isc{动词!非宾格动词}\is{verb!unaccusative}而言，\footnote{%
 有关非宾格动词的讨论请参阅\citew{Perlmutter78}。作格动词（ergative verb）\isc{动词!作格动词}\is{verb!ergative}也是常见的术语，尽管用词不够准确。有关乔姆斯基框架下非宾格动词的早期研究请参阅\citew{Burzio81-u,Burzio86a-u-gekauft}，有关德语的相关研究请参阅\citew{Grewendorf89a}。同样，有关这些术语的用法以及历史上的评介请参阅\citew{Pullum88a} 。
 }
 最高阶论元并不是外部论元。所以在相应的词条中没有用下划线表示。
 %Arguments are ordered according to their ranking: the highest argument is furthest left. In the case
-%of \emph{helfen}, the highest argument is the external argument\is{external argument}, which is why the agent is underlined. With so"=called unaccusative %verbs,\is{verb!unaccusative}\footnote{
+%of \emph{helfen}, the highest argument is the external argument\is{external argument}, which is why the agent is underlined. With so"=called unaccusative %verbs,\is{verb!unaccusative}\footnote{%
 %See \citew{Perlmutter78} for a discussion of unaccusative verbs. The term \emph{ergative verb}\is{verb!ergative} is also common, albeit
 %a misnomer. See \citew{Burzio81-u,Burzio86a-u-gekauft} for the earliest work on unaccusatives in the Chomskyan framework and 
 %\citew{Grewendorf89a} for German. Also, see \citew{Pullum88a} on the usage of these terms and for a historical evaluation.
@@ -686,19 +686,19 @@ $\theta$"=角色                & \underline{施事} & 受益者\\[2mm]\hline
 %\subsection{\xbart}
 \label{Abschnitt-X-Bar}
 
-在GB理论\is{X theory@\xbar theory|(}中，所有由核心语法\isc{核心语法}\is{core grammar}\footnote{
+在GB理论\is{X theory@\xbar theory|(}中，所有由核心语法\isc{核心语法}\is{core grammar}\footnote{%
 \citet[\page 7--8]{Chomsky81a}将语言区分成常规区域和边缘区域，常规区域是指那些由语法决定的，基于基因自然习得的那部分固定的语言知识，而边缘区域是指语言中不规则的部分，\egc 熟语“to pull the wool over sb.'s eyes”（掩人耳目）。请参阅\ref{Abschnitt-musterbasiert}。
 }
-允准的句法结构都适用于\xbar 范式（请看\ref{sec-xbar}）。\footnote{
+允准的句法结构都适用于\xbar 范式（请看\ref{sec-xbar}）。\footnote{%
 \citet[\page 210]{Chomsky70a} 允许从\xbarc 范式中推导出语法规则。但是，更为普遍的看法是语言完全应用\xbarc 的结构。
 }
 在\isc{X理论@\xbarc 理论|(}\is{X theory@\xbar theory|(}下面的章节中，我将对其提出的句法范畴和有关语法规则的解释方面的基本论断进行评价。
-%In\is{X theory@\xbar theory|(} GB, it is assumed that all syntactic structures licensed by the core grammar\is{core grammar}\footnote{
+%In\is{X theory@\xbar theory|(} GB, it is assumed that all syntactic structures licensed by the core grammar\is{core grammar}\footnote{%
 % \citet[\page 7--8]{Chomsky81a} distinguishes between a regular area of language that is determined by a grammar that
 % can be acquired using genetically determined language"=specific knowledge and a periphery\is{periphery}, to which irregular parts
 % of language such as idioms (\eg \emph{to pull the wool over sb.'s eyes}) belong. See Section~\ref{Abschnitt-musterbasiert}.
 %}
-%correspond to the \xbar schema (see Section~\ref{sec-xbar}).\footnote{
+%correspond to the \xbar schema (see Section~\ref{sec-xbar}).\footnote{%
 %   \citet[\page 210]{Chomsky70a} allows for grammatical rules that deviate from the \xbar schema.
 %   It is, however, common practice to assume that languages exclusively use \xbar structures.
 %}
@@ -814,7 +814,7 @@ $-$N & P = [ $-$N, $-$V ] &  V = [ $-$N, $+$V ] \\
 %     the night during\\
 %\glt `during the night'
 \zl
-所以说，我们要么必须发明一个新范畴，要么我们放弃用二元范畴特征来描述排序方面的限制。如果我们要把后置词看作是一个新范畴，我们就必须假定还有一个二元特征。\footnote{
+所以说，我们要么必须发明一个新范畴，要么我们放弃用二元范畴特征来描述排序方面的限制。如果我们要把后置词看作是一个新范畴，我们就必须假定还有一个二元特征。\footnote{%
 Martin Haspelmath\aimention{Martin Haspelmath}指出，我们可以提出这样一条规则，将中心语后的论元成分放在中心语前的位置上（请参阅\citealp[\page 89]{Riemsdijk78a}有关转换方法的讨论）。这与德语形容词的前置论元的情况是一致的：
 \eal
 \ex
@@ -829,7 +829,7 @@ Martin Haspelmath\aimention{Martin Haspelmath}指出，我们可以提出这样�
 } 
 %Therefore, one must either invent a new category, or abandon the attempt to use binary category features to describe ordering restrictions.
 %If one were to place postpositions in a new category, it would be necessary to assume another binary
-%feature.\footnote{
+%feature.\footnote{%
 %Martin Haspelmath\aimention{Martin Haspelmath} has pointed out that one could assume a rule that moves a
 %post-head argument into a pre-head position (see \citealp[\page 89]{Riemsdijk78a} for the discussion
 %of a transformational solution). This would be parallel to the realization of
@@ -1213,10 +1213,10 @@ sm edges
 
 %\addlines[2]
 %\largerpage
-很多学者都采用了CP/IP模型来分析德语。\footnote{
+很多学者都采用了CP/IP模型来分析德语。\footnote{%
 对于没有IP的GB分析，请看\citew{BK89a}、\citew[\page 157]{Hoehle91}、\citew{Haider93a,Haider97a}和\citew[Section~IV.3]{Sternefeld2006a-u}。Haider认为I的功能被整合进动词中。在LFG中，英语有IP（\citealp[\S~6.2]{Bresnan2001a}；\citealp[\S~3.2.1]{Dalrymple2001a-u}），而德语没有\citep[\S~3.2.3.2]{Berman2003a}。而在HPSG中，根本就没有IP。
 } 
-%The CP/IP model has been adopted by many scholars for the analysis of German.\footnote{
+%The CP/IP model has been adopted by many scholars for the analysis of German.\footnote{%
 %  For GB analyses without IP, see \citew{BK89a}, \citew[\page 157]{Hoehle91},
 %  \citew{Haider93a,Haider97a} and \citew[Section~IV.3]{Sternefeld2006a-u}. Haider assumes
 %  that the function of I is integrated into the verb. In LFG\indexlfg, an IP is assumed for English
@@ -1352,7 +1352,7 @@ sm edges
 \label{Abschnitt-Verbstellung-GB}\label{sec-verb-position-gb}
 
 \addlines[-1]
-在德语中，VP和IP的中心语位置位于它们的补足语右边，\vnullc 和\inullc 属于句子的右边界。主语和其他成分（补足语和附接语）都出现在\vnullc 和\inullc 的左边，并且构成中场。有人认为，德语——至少从D"=结构来看——是一个SOV类型的语言（=~这种语言的基本语序是主语--宾语--动词）。有关德语作为一种SOV型语言的研究几乎跟转换语法一样古老。最早是由\citet*[\page34]{Bierwisch63}提出的。\footnote{
+在德语中，VP和IP的中心语位置位于它们的补足语右边，\vnullc 和\inullc 属于句子的右边界。主语和其他成分（补足语和附接语）都出现在\vnullc 和\inullc 的左边，并且构成中场。有人认为，德语——至少从D"=结构来看——是一个SOV类型的语言（=~这种语言的基本语序是主语--宾语--动词）。有关德语作为一种SOV型语言的研究几乎跟转换语法一样古老。最早是由\citet*[\page34]{Bierwisch63}提出的。\footnote{%
 Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。我们可以在\citew[\page117--135]{Fourquet70a}中找到由Bierwisch援引的法语手稿的德语译文。其他观点请参考\citew{Bach62a}、\citew{Reis74a}、\citew{Koster75a}和\citew[Chapter~1]{Thiersch78a}。有关德语具有隐含的SOV模式的观点也在GPSG\citep[\page110]{Jacobs86a}、LFG \citep[\S~2.1.4]{Berman96a-u} 和HPSG的文献（\citealp*{KW91a}；\citealp{Oliva92a}；\citealp*{Netter92}；
 \citealp*{Kiss93}；\citealp*{Frank94}；\citealp*{Kiss95a}；\citealp{Feldhaus97}；\citealp{Meurers2000b}；\citealp{Mueller2005c,MuellerGS}）中有所提及。
 }
@@ -1363,7 +1363,7 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 %and \inull and form the middle field. It is assumed
 %that German -- at least in terms of D"=structure -- is an SOV language (=~ a language with the base order Subject--Object--Verb).
 %The analysis of German as an SOV language is almost as old as Transformational Grammar itself. It was originally proposed by
-%\citet*[\page34]{Bierwisch63}.\footnote{
+%\citet*[\page34]{Bierwisch63}.\footnote{%
 %	Bierwisch attributes the assumption of an underlying verb"=final order to \citet{Fourquet57a}. A German translation of the
 %	French manuscript cited by Bierwisch can be found in \citew[\page117--135]{Fourquet70a}. For other proposals, see \citew{Bach62a},
 %\citew{Reis74a}, \citew{Koster75a} and \citew[Chapter~1]{Thiersch78a}. Analyses which assume that
@@ -1380,10 +1380,10 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 % 35,4  SVO
 %  6,9  VSO
 
-有关动词位于后面的观点是受到下面数据的启发：\footnote{
+有关动词位于后面的观点是受到下面数据的启发：\footnote{%
 针对第1点和第2点，请看\citew[\page34--36]{Bierwisch63}。针对\ref{SOV-Skopus}，请看\citew[\S~2.3]{Netter92}。
 }
-%The assumption of verb"=final order\label{page-verbletzt} as the base order is motivated by the following observations:\footnote{
+%The assumption of verb"=final order\label{page-verbletzt} as the base order is motivated by the following observations:\footnote{%
 %	For points 1 and 2, see \citew[\page34--36]{Bierwisch63}. For point~\ref{SOV-Skopus} see \citew[Section~2.3]{Netter92}.%
 %}
 
@@ -1840,12 +1840,12 @@ sm edges
 %depending on the syntactic environment. For the analysis of the passive, which will be discussed in this section, only
 %structural and lexical case will be relevant.}
 
-下面是结构格的例子：\footnote{
+下面是结构格的例子：\footnote{%
 我们来比较\citew*[\page 200]{HM94a}。
 
 例（\mex{1}b）也叫做AcI\isc{动词!AcI|uu}\is{verb!AcI|uu} 结构。AcI是“Accusativus cum infinitivo”的缩写，它表示 “不定式宾格”。所嵌套动词（kommen，这里表示“来”）的逻辑主语变成了主动词（lassen，“让”）的宾格宾语。AcI"=动词一般是感官动词\isc{动词!感官动词}\is{verb!perception}，如hören（听）、sehen（看）和lassen（让）。
 }
-%The following are examples of structural case:\footnote{
+%The following are examples of structural case:\footnote{%
    %     Compare \citew*[\page 200]{HM94a}.
 
 	%	(\mex{1}b) is a so"=called AcI\is{verb!AcI|uu} construction. AcI stands for \emph{Accusativus cum infinitivo}, which means ``accusative
@@ -2074,7 +2074,7 @@ sm edges
 \gll weil der Ball dem Jungen geschenkt wurde\\
      因为 \textsc{det}.\nom{} 球 \textsc{det}.\dat{} 男孩 给 \textsc{aux}\\
 \zl
-对比例（\mex{0}c），例（\mex{0}b）是没有标记的顺序。例（\mex{0}b）中的der Ball（球）与例（\mex{0}a）中的den Ball出现在相同的位置上。也就是说，移位并不是必需的。只有格是不同的。但是，例（\mex{0}c）相对于（\mex{0}b）而言，在某种程度上是有标记的。我们提出的诸如（\mex{0}b）的分析中包括了抽象的移位过程：元素在他们的位置上，但是连接到主语的位置上，并从那里接收到他们的格信息。\citet[\page 1311]{Grewendorf93}认为在诸如例（\mex{0}b）的主语位置上有一个空的虚指代词\isc{空成分}\is{empty element}\isc{代词!虚指代词}\is{pronoun!expletive}，而且在诸如例（\mex{1}）的句子的主语位置上包含了非人称被动\isc{被动!非人称被动}\is{passive!impersonal}的过程：\footnote{
+对比例（\mex{0}c），例（\mex{0}b）是没有标记的顺序。例（\mex{0}b）中的der Ball（球）与例（\mex{0}a）中的den Ball出现在相同的位置上。也就是说，移位并不是必需的。只有格是不同的。但是，例（\mex{0}c）相对于（\mex{0}b）而言，在某种程度上是有标记的。我们提出的诸如（\mex{0}b）的分析中包括了抽象的移位过程：元素在他们的位置上，但是连接到主语的位置上，并从那里接收到他们的格信息。\citet[\page 1311]{Grewendorf93}认为在诸如例（\mex{0}b）的主语位置上有一个空的虚指代词\isc{空成分}\is{empty element}\isc{代词!虚指代词}\is{pronoun!expletive}，而且在诸如例（\mex{1}）的句子的主语位置上包含了非人称被动\isc{被动!非人称被动}\is{passive!impersonal}的过程：\footnote{%
 请看\citew[\page 11--12]{Koster86a}有关荷兰语\il{Dutch}的平行分析，还有\citew{Lohnstein2014a}基于移位的分析，即对于人称被动而言，也包括一个空的虚指代词。
 }
 %In comparison to (\mex{0}c), (\mex{0}b) is the unmarked order. \emph{der Ball} `the ball' in (\mex{0}b) occurs
@@ -2084,7 +2084,7 @@ sm edges
 %the subject position and receive their case information from there. \citet[\page 1311]{Grewendorf93}
 %assumes that there is an empty expletive pronoun\is{empty element}\is{pronoun!expletive}
 %in the subject position of sentences such as (\mex{0}b) as well as in the subject position of sentences with an
-%impersonal passive\is{passive!impersonal} such as (\mex{1}):\footnote{
+%impersonal passive\is{passive!impersonal} such as (\mex{1}):\footnote{%
 %	See \citew[\page 11--12]{Koster86a} for a parallel analysis for Dutch\il{Dutch} as well as 
 %	\citew{Lohnstein2014a} for a movement"=based account of the passive that also involves an
    %     empty expletive for the analysis of the impersonal passive.
@@ -2103,7 +2103,7 @@ sm edges
 %empty elements that are connected to argument positions and seek to describe the passive in a more
 %general, cross"=linguistically consistent manner as the suppression of the most prominent argument.
 
-进而，我们需要回答的问题是为什么宾格宾语没有从动词那里得到格指派。对于这一问题的解释可追溯到\citet[\page 178--185]{Burzio86a-u-gekauft}提出的Burzio概说（Burzio's Generalization）。\isc{Burzio概说}\is{Burzio's Generalization}\footnote{
+进而，我们需要回答的问题是为什么宾格宾语没有从动词那里得到格指派。对于这一问题的解释可追溯到\citet[\page 178--185]{Burzio86a-u-gekauft}提出的Burzio概说（Burzio's Generalization）。\isc{Burzio概说}\is{Burzio's Generalization}\footnote{%
 Burzio提出的早期的形式化表述等同于下述描述：一个动词指派宾格，当且仅当它指派给它的主语一个语义角色。这个概念在以下两个方面来看都是有问题的。在（i）中，动词并没有指派给主语语义角色，但是不管怎样都有宾格：
 \ea
 \gll Mich friert.\\
@@ -2121,7 +2121,7 @@ Burzio提出的早期的形式化表述等同于下述描述：一个动词指�
 }
 %A further question which needs to be answered is why the accusative object does not receive case from the verb.
 %This is captured by a constraint, which goes back to \citet[\page 178--185]{Burzio86a-u-gekauft} and is therefore
-%referred to as \emph{Burzio's Generalization}.\is{Burzio's Generalization}\footnote{
+%referred to as \emph{Burzio's Generalization}.\is{Burzio's Generalization}\footnote{%
 %Burzio's original formulation was equivalent to the following: a verb assigns accusative if and only if it assigns
 %a semantic role to its subject.
 %This claim is problematic from both sides. In (i), the verb does not assign a semantic role to the subject, however
@@ -2288,13 +2288,13 @@ sm edges
 \z
 
 \citet[\page 308]{SE2002a}讨论了日语中的相关例子，他们将之归功于Kazuko 
-Yatsushiro\aimention{Kazuko Yatsushiro}。他们提出了这样一个分析，其中第一步是将宾格宾语提到主语的前面。然后，与格宾语放在它的前面，然后，第三步移位是，宾语再次移动。最后一步既可以构成S"=结构\footnote{
+Yatsushiro\aimention{Kazuko Yatsushiro}。他们提出了这样一个分析，其中第一步是将宾格宾语提到主语的前面。然后，与格宾语放在它的前面，然后，第三步移位是，宾语再次移动。最后一步既可以构成S"=结构\footnote{%
    这些作者是在最简方案下提出这些理论的。这就意味着没有严格意义上的表层结构。我只是简单地将他们的分析翻译为这里所使用的术语。
 }，也可以构成音位形式。对于后者来说，这种移位没有任何语义效应。但是，这种分析可以预测正确的有可能性的解读，它并不需要带有中间步骤的格外的移位操作。
 %\citet[\page 308]{SE2002a} discuss analogous examples from Japanese\il{Japanese}, which they credit to Kazuko 
 %Yatsushiro\aimention{Kazuko Yatsushiro}. They develop an analysis where the first step is to move the accusative object in front of the subject.
 %Then, the dative object is placed in front of that and then, in a third movement, the accusative is moved once more. The last movement can
-%take place to construct either the S"=structure\footnote{
+%take place to construct either the S"=structure\footnote{%
 %	The authors are working in the Minimalist framework. This means there is no longer S"=structure strictly speaking. I
 %	have simply translated the analysis into the terms used here.
 %}
@@ -2302,7 +2302,7 @@ Yatsushiro\aimention{Kazuko Yatsushiro}。他们提出了这样一个分析，�
 %While this analysis can predict the correct available readings, it does require a number of additional movement operations with intermediate steps.
 \isc{辖域|)}\is{s\textsc{cop}e|)}
 
-与移位分析相对的另外一种分析方法是基础生成（base generation）\isc{基础生成}\is{base generation}：由短语结构规则允准生成的最初结构叫做基础结构（base）。基础生成的一个变体认为动词一次与一个论元相组合，而且每个$\theta$"=角色被指派给相应的中心语"=论元配置。其中，与动词相组合的论元的顺序不是固定的，这就意味着（\ref{ex-gb-umstellung}）中所有的顺序可以不通过任何转换而直接生成。\footnote{
+与移位分析相对的另外一种分析方法是基础生成（base generation）\isc{基础生成}\is{base generation}：由短语结构规则允准生成的最初结构叫做基础结构（base）。基础生成的一个变体认为动词一次与一个论元相组合，而且每个$\theta$"=角色被指派给相应的中心语"=论元配置。其中，与动词相组合的论元的顺序不是固定的，这就意味着（\ref{ex-gb-umstellung}）中所有的顺序可以不通过任何转换而直接生成。\footnote{%
 我们将这个与第\pageref{psg-binaer}页（\ref{psg-binaer}）中的语法相比较。这个语法包括一个V和一个NP来构成一个新的V。由于在短语结构规则中没有提及论元的格，NPs可以按照任意顺序来与动词相组合。
 }这类观点由\citet{Fanselow2001a}提出来分析GB理论。\footnote{%
 基础生成分析在HPSG\indexhpsgc 框架下是一种自然分析。它是由Gunji\nocite{Gunji86a}在1986年提出来分析日语的，我们会在\ref{sec-HPSG-lokale-Umstellung}来详细讨论这一方法。\citet[\page 313--314]{SE2002a}声称他们认为句法是派生的，即有一系列句法树需要被推导出来。我认为事实上这是不大可能的。比如说，\citet{Kiss2001a}提出的分析就说明了辖域问题可以在基于约束的理论中得到很好的解释。
@@ -2312,7 +2312,7 @@ Yatsushiro\aimention{Kazuko Yatsushiro}。他们提出了这样一个分析，�
 %rules is referred to as the \emph{base}. One variant of base generation assumes that the verb is
 %combined with one argument at a time and each $\theta$"=role is assigned in the respective head"=argument configuration. The order in which
 %arguments are combined with the verb is not specified, which means that all of the orders in (\ref{ex-gb-umstellung}) can be
-%generated directly without any transformations.\footnote{
+%generated directly without any transformations.\footnote{%
 % Compare this to the grammar in (\ref{psg-binaer}) on page~\pageref{psg-binaer}. This grammar
 % combines a V and an NP to form a new V. Since nothing is said about the case of the argument in the
 % phrase structure rule, the NPs can be combined with the verb in any order.
@@ -2433,7 +2433,7 @@ Meinunger2000a%S. 30
 \label{sec-formalization-gb}
 %\addlines
 
-Bierwisch在他发表于1963年的有关转换语法的那篇文章中指出：\footnote{
+Bierwisch在他发表于1963年的有关转换语法的那篇文章中指出：\footnote{%
 Es ist also sehr wohl möglich, daß mit den formulierten Regeln Sätze erzeugt werden können,
 die auch in einer nicht vorausgesehenen Weise aus der Menge der grammatisch richtigen Sätze herausfallen,
 die also durch Eigenschaften gegen die Grammatikalität verstoßen, die wir nicht wissentlich aus
@@ -2443,7 +2443,7 @@ einer für natürliche Sprachen angemessenen Grammatik ist sicherlich eine mit H
 zu bewältigende Auf"|gabe. Sie könnte vorgenommen werden, indem die Grammatik als Rechenprogramm in einem
 Elektronenrechner realisiert wird, so daß überprüft werden kann, in welchem Maße das Resultat
 von der zu beschreibenden Sprache abweicht.}
-%In his 1963 work on Transformational Grammar, Bierwisch writes the following:\footnote{
+%In his 1963 work on Transformational Grammar, Bierwisch writes the following:\footnote{%
 %Es ist also sehr wohl möglich, daß mit den formulierten Regeln Sätze erzeugt werden können,
 %die auch in einer nicht vorausgesehenen Weise aus der Menge der grammatisch richtigen Sätze herausfallen,
 %die also durch Eigenschaften gegen die Grammatikalität verstoßen, die wir nicht wissentlich aus
@@ -2559,37 +2559,37 @@ Bierwisch所说的这些观点在过去几十年经验主义的研究中显得�
 %(\citealp*[\page 6]{GKPS85a};
 %\citealp{Pullum85a,Pullum89b}; \citealp[\page 48]{Pullum91b}; \citealp{KP90a}). 
 
-主流生成语法内部这种缺乏精确和细节的研究\footnote{
+主流生成语法内部这种缺乏精确和细节的研究\footnote{%
 	请看\citew[\page 550]{Kuhns86a}、\citew[\page 508]{CL92a}、\citew[\page262]{KT91a}、\citew[\page
   3]{Kolb97a}和\citew[\page 580]{Freidin97a-u}，以及针对后者的\citew[\page 25, 47]{Veenstra98a}、\citew[\page 888]{LLJ2000b}和
   \citew[\page 397, 399, 400]{Stabler2010a} 。 
-}，以及对基本假设的不断修订\footnote{
+}，以及对基本假设的不断修订\footnote{%
 	参考\citew[\page 4]{Kolb97a}、\citew{Fanselow2009a} 和第\pageref{Zitat-Stabler}页引用Stabler的话。
 } 导致他们的研究成果极少能够应用到计算实现中。有一些基于转换语法、GB理论或MP模型，以及借鉴了主流生成语法思想的一些实现系统\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,%
 FG2012a% 
-},\footnote{
+},\footnote{%
   请看\citew{FC94a}将统计方法整合进GB理论中的研究。
 }。但是，这些实现系统通常不用转换或者很大程度上与出版提出的理论假设不一致。例如，\citet[\page 102--104]{Marcus80a-u}和
-\citet[\page 5]{Stabler87a}应用特别的规则来描述助动词倒装\isc{助动词倒装}\is{auxiliary inversion}的问题。\footnote{
+\citet[\page 5]{Stabler87a}应用特别的规则来描述助动词倒装\isc{助动词倒装}\is{auxiliary inversion}的问题。\footnote{%
   \citet{NF86a-u,NF87a-u}指出，Marcus的剖析器只能剖析上下文无关的语言。由于自然语言更为复杂（看第\ref{sec-generative-capacity}章），而且相应复杂度的语法可以在目前的转换语法的框架内被允准，Marcus的剖析器既不是乔姆斯基理论下的充分实现，也不是分析自然语言整体的一个软件。
 }
-%The lack of precision and working out of the details\footnote{
+%The lack of precision and working out of the details\footnote{%
 %	See \eg \citew[\page 550]{Kuhns86a}, \citew[\page 508]{CL92a}, \citew[\page262]{KT91a}, \citew[\page
 %  3]{Kolb97a} and \citew[\page 580]{Freidin97a-u}, \citew[\page 25, 47]{Veenstra98a}, \citew[\page 888]{LLJ2000b} and
  % \citew[\page 397, 399, 400]{Stabler2010a} for the latter. 
-%} and the frequent modification of basic assumptions\footnote{
+%} and the frequent modification of basic assumptions\footnote{%
 %	See \eg \citew[\page 4]{Kolb97a}, \citew{Fanselow2009a} and the quote from Stabler on page~\pageref{Zitat-Stabler}.
 %} has led to insights gained by Mainstream Generative Grammar rarely being translated into computer implementations.
 %There are some implementations that are based on Transformational Grammar/GB/MP models or borrow ideas from Mainstream
 %Generative Grammar
 %\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-%u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,%
 %FG2012a% 
-%},\footnote{
+%},\footnote{%
 %  See \citew{FC94a} for a combination of a GB approach with statistical methods.
 %}
 %but these implementations often do not use transformations or differ greatly from the theoretical assumptions of the
 %publications. For example, \citet[\page 102--104]{Marcus80a-u} and
-%\citet[\page 5]{Stabler87a} use special purpose rules for auxiliary inversion\is{auxiliary inversion}.\footnote{
+%\citet[\page 5]{Stabler87a} use special purpose rules for auxiliary inversion\is{auxiliary inversion}.\footnote{%
 %  \citet{NF86a-u,NF87a-u} has shown that Marcus' parser can only parse context"=free languages. Since natural languages
 %  are of a greater complexity (see Chapter~\ref{sec-generative-capacity}) and grammars of corresponding complexity
 %  are allowed by current versions of Transformational Grammar, Marcus' parser can be neither an adequate implementation of
@@ -2634,12 +2634,12 @@ Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_v
 %list \emph{has scheduled the meeting for Wednesday} begins with a VP. This is the case and the remaining list L is empty. As a result, the
 %sentence has been successfully processed.
 
-这一分析的问题在于每个词都在词典中进行了核查。诸如（\mex{1}）这样的句子\footnote{
+这一分析的问题在于每个词都在词典中进行了核查。诸如（\mex{1}）这样的句子\footnote{%
   \url{http://www.cooperativegrocer.coop/articles/index.php?id=595}. \zhdate{2010/3/28}。
-}就无法分析了：\footnote{
+}就无法分析了：\footnote{%
   有关词汇成分并列是语言学理论的一种观点的讨论，请看\citew{Abeille2006a}。
 } 
-%The problem with this analysis is that exactly one word is checked in the lexicon. Sentences such as (\mex{1}) can not be analyzed:\footnote{
+%The problem with this analysis is that exactly one word is checked in the lexicon. Sentences such as (\mex{1}) can not be analyzed:\footnote{%
 %  For a discussion that shows that the coordination of lexical elements has to be an option in linguistic theories, see \citew{Abeille2006a}.
 %} 
 \ea
@@ -2658,7 +2658,7 @@ Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_v
 %The alternative to a rule such as (\mex{-1}a) would be the one in (\mex{1}), which is the one that
 %is used in theories like GPSG \citep[\page 62]{GKPS85a}, LFG \citep[\page 491]{Falk84a-u}, some HPSG analyses
 %(\citealp[\page 36]{GSag2000a-u}), and Construction Grammar
-%\citep{Fillmore99a}:%% \footnote{
+%\citep{Fillmore99a}:%% \footnote{%
 %%   \citealp[\page 42]{ps2} Pollard \& Sag suggest a general schema that combines a head with all its arguments in one
 %%   go. This general schema also combines v(aux+), np, and vp directly and hence accounts for
 %%   auxiliary inversion without any movement transformation.
@@ -2680,13 +2680,13 @@ s $\to$ v(aux+), np, vp.
 %the surface structures can actually be derived from the base structure \citep[\page 10]{Kay2011a}.
 
 这章还讨论了其他与基于转换的分析不同的应用实现。比如说，\citet[\page 265, \S~4]{KT91a}得到这样的结论，一个陈述的、基于约束的方法对于GB来说比一个推导的方法更为有效。\citet{Johnson89a}提出了推导式剖析方法（Parsing as Deduction）\isc{推导式剖析方法}\is{Parsing as Deduction}，该方法重建了GB的子理论（\xbartc、
-$Theta$"=理论\isc{$Theta$"=理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}、格语法 \ldots\ldots）作为逻辑表达式。\footnote{
+$Theta$"=理论\isc{$Theta$"=理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}、格语法 \ldots\ldots）作为逻辑表达式。\footnote{%
 请看\citew[\page 511]{CL92a}和\citew[\page 38]{FC94a}有关其他基于约束的推导式剖析方法。
 }
 %There are other implementations discussed in this chapter that differ from transformation"=based analyses. For example, \citet[\page 265, Section~4]{KT91a}
 %arrive at the conclusion that a declarative, constraint"=based approach to GB is more appropriate than a derivational one. \citet{Johnson89a}
 %suggests a \emph{Parsing as Deduction} approach\is{Parsing as Deduction} which reformulates sub"=theories of GB (\xbart,
-%Theta"=Theory\is{theta-theory@$\theta$-Theory}, Case Theory, \ldots) as logical expressions.\footnote{
+%Theta"=Theory\is{theta-theory@$\theta$-Theory}, Case Theory, \ldots) as logical expressions.\footnote{%
 %	See \citew[\page 511]{CL92a} and \citew[\page 38]{FC94a} for another constraint"=based Parsing-as-Deduction approach.
 %}
 这些方法可以在逻辑的基础上各自独立地应用。在Johnson的分析中，\gbtc 被看作是基于约束的系统。更多普遍性的约束条件从S"= 结构和D"=结构的限制条件中抽取出来，这样就可以直接用于剖析了。这就意味着转换并不是直接由剖析器实现的。如Johnson所指出的，他所模拟的语言片段是非常小的。比如说，它没有针对wh"=移位的描述（第114页）。

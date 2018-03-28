@@ -59,13 +59,13 @@
 %are prominent, whereas in (\mex{0}b) these are treated just like the information about case,
 %number or person. 
 
-词汇项具有\subcatc 特征。\isc{价}\is{valence}\isc{次范畴化}\is{subcategorization}特征值用数字来表示该词能够应用的某种短语结构规则。（\mex{1}）给出了短语规则的例子并列出了能够在这些规则中出现的一些动词。\footnote{
+词汇项具有\subcatc 特征。\isc{价}\is{valence}\isc{次范畴化}\is{subcategorization}特征值用数字来表示该词能够应用的某种短语结构规则。（\mex{1}）给出了短语规则的例子并列出了能够在这些规则中出现的一些动词。\footnote{%
 下面讨论的例子选自\citew{Uszkoreit87a}。
 }
 
 %Lexical entries have a feature \subcat.\is{valence}\is{subcategorization} The value is a number
 %which says something about the kind of grammatical rules in which the word can be used. 
-%(\mex{1}) shows examples for grammatical rules and lists some verbs which can occur in these rules.\footnote{
+%(\mex{1}) shows examples for grammatical rules and lists some verbs which can occur in these rules.\footnote{%
 %The analyses discussed in the following are taken from \citew{Uszkoreit87a}.
 %}
 \ea
@@ -636,7 +636,7 @@ V2  $\to$ W, AdvP
 %146]{Uszkoreit87a}:
 %% Kein Problem, wenn Mengen erzeugt werden, da in einer Menge jedes Element nur einmal enthalten
 %% ist. Ist aber trotzdem unschön.
-%% \footnote{
+%% \footnote{%
 %% Note that the Kleene star\is{Kleene star} stands for arbitrarily many repetitions of a symbol. This includes zero
 %% repetitions. Depending on the implementation of metarules this would license infinitely many rules
 %% since the output of the metarule can be its input. Even if this feeding is excluded, the
@@ -649,11 +649,11 @@ V2  $\to$ W, AdvP
 V2  $\to$ W $\mapsto$\\
 V2  $\to$ W, AdvP*
 \z 
-如果我们采用（\mex{0}）中的规则，那么如何决定状语的语义贡献就不够清楚了。\footnote{
+如果我们采用（\mex{0}）中的规则，那么如何决定状语的语义贡献就不够清楚了。\footnote{%
   在LFG\indexlfgc 中，状语被安排在功能性结构的集合中（请看\ref{Abschnitt-LFG-Adjunkte}）。这也适用于Kleene星号标记的使用。从f"=结构\isc{f-结构}\is{f"=structure}来看，有可能通过指向c"=结构\isc{c-结构}\is{c"=structure}来计算出相应域的语义指称。在HPSG\indexhpsgc
   中，\citet{Kasper94a}提出了一个与GPSG相关的方法，该方法是关于平铺分支结构与任意数量的状语的。然而，在HPSG中，我们可以利用所谓的关系限制。这与可以在复杂结构中创造关系的小项目是类似的。应用这些关系限制，就可能计算出平铺分支结构中未受到数量限制的状语的意义。
 }对于（\mex{-1}）中的规则，我们可以在输入规则中将AdvP的语义贡献与V2的语义贡献组合起来。如果元规则被应用多次的话，这自然也是可能的。比如说，如果元规则被应用于（\mex{1}a），（\mex{1}a）中的V2"=结点包括第一个副词的语义贡献。
-%If one adopts the rule in (\mex{0}), then it is not immediately clear how the semantic contribution of the adjuncts can be determined.\footnote{
+%If one adopts the rule in (\mex{0}), then it is not immediately clear how the semantic contribution of the adjuncts can be determined.\footnote{%
 %	In LFG\indexlfg, an adjunct is entered into a set in the functional structure (see Section~\ref{Abschnitt-LFG-Adjunkte}). This also works with %the use
 %	of the Kleene Star notation. From the f"=structure\is{f"=structure}, it is possible to compute the semantic denotation with corresponding %s\textsc{cop}e by making reference
 %	to the c"=structure\is{c"=structure}. In HPSG\indexhpsg, \citet{Kasper94a} has made a proposal which corresponds to the
@@ -684,11 +684,11 @@ V2  $\to$ W, AdvP*
 %\section{Passive as a metarule}
 \label{sec-passive-gpsg}
 
-德语被动式\isc{被动|(}\is{passive|(}可以按照下面保持整个理论中立的方式来描述：\footnote{
+德语被动式\isc{被动|(}\is{passive|(}可以按照下面保持整个理论中立的方式来描述：\footnote{%
 这一描述不能适用于其他语言。比如说，冰岛语允许与格宾语。请看\citet*{ZMT85a}。
 }
 %The German passive\is{passive|(} can be described in an entirely theory"=neutral way as
-%follows:\footnote{
+%follows:\footnote{%
 %  This characterization does not hold for other languages. For instance, Icelandic allows for dative
 %  subjects. See \citet*{ZMT85a}.
 %}
@@ -794,11 +794,11 @@ V2  $\to$ W, AdvP*
 尽管如此，主动/被动之间的相关性还是被捕捉到了。
 %The generalization with regard to active/passive is captured nevertheless.
 
-接下来，我将详细讨论\citew*{GKPS85a}中给出的被动分析。作者认为下面的元规则\isc{元规则|(}\is{metarule|(}适用于英语\il{English}（第59页）：\footnote{
+接下来，我将详细讨论\citew*{GKPS85a}中给出的被动分析。作者认为下面的元规则\isc{元规则|(}\is{metarule|(}适用于英语\il{English}（第59页）：\footnote{%
 请看\citew[\page 1114]{WP92b}针对德语的平行规则，该规则是指元规则左边的宾格。
 }
 %In what follows, I will discuss the analysis of the passive given in \citew*{GKPS85a} in some more detail. The authors suggest the following %metarule\is{metarule|(}
-%for English\il{English} (p.\,59):\footnote{
+%for English\il{English} (p.\,59):\footnote{%
 %  See \citew[\page 1114]{WP92b} for a parallel rule for German which refers to accusative case on the left"=hand side of the metarule.
 %}
 
@@ -872,26 +872,26 @@ V2 $\to$ H[5]\\
 V2 $\to$ H[13], PP[\emph{an}]\\
 \end{tabular}
 \z
-在这些规则的右边没有NP能够变成von-PP。如果被动在规则中被分析为名词论元的抑制，那么它就应该从非人称被动而来，被动的元规则必须应用到可以允准定式小句的规则上，因为关于是否有主语的信息只出现在定式小句的规则中。\footnote{
+在这些规则的右边没有NP能够变成von-PP。如果被动在规则中被分析为名词论元的抑制，那么它就应该从非人称被动而来，被动的元规则必须应用到可以允准定式小句的规则上，因为关于是否有主语的信息只出现在定式小句的规则中。\footnote{%
 GPSG与GB\indexgbc 的不同之处在于，非定式动词投射不包括空主语的结点。这在本书讨论的所有其他理论中也是一样的，除了树邻接语法\indextagc。
 }在这类系统中，定式句子（V3）的规则是基本规则，而V2的规则可以从中推导出来。
 %There is no NP on the right"=hand side of these rules which could be turned into a \emph{von}-PP. If the passive
 %is to be analyzed as suppressing an NP argument in a rule, then it should follow from the existence of the impersonal passive 
 %that the passive metarule has to be applied to rules which license finite clauses, since information about whether there is a subject
-% or not is only present in rules for finite clauses.\footnote{
+% or not is only present in rules for finite clauses.\footnote{%
 %	GPSG differs from GB\indexgb in that infinitive verbal projections do not contain nodes for empty subjects. This is also true for all other
 %	theories discussed in this book with the exception of Tree-Adjoining Grammar\indextag.
 %} In this kind of system, the rules for finite sentences (V3) are the basic rules and the rules for V2 would be derived from these.
-只有能够应用到V3的是适用于德语的，因为英语没有在规则右边既包括主语也包括宾语的V3规则。\footnote{
+只有能够应用到V3的是适用于德语的，因为英语没有在规则右边既包括主语也包括宾语的V3规则。\footnote{%
 \citet[\page 62]{GKPS85a}提出了一条元规则与我们在第\pageref{subjekt-meta}页提出的主语引入的元规则相似。由他们的元规则允准的规则被用来分析英语中助词的位置，并只允准\textsc{aux} NP VP的形式序列。在这类结构中，主语和宾语不在同一棵局部树内。
 }
 %It would only make sense to have a metarule which applies to V3 for German since English does not have V3 rules which contain both the %subject
-%and its object on the right"=hand side of the rule.\footnote{
+%and its object on the right"=hand side of the rule.\footnote{%
 % \citet[\page 62]{GKPS85a} suggest a metarule similar to our subject introduction metarule on page~\pageref{subjekt-meta}.
 % The rule that is licensed by their metarule is used to analyze the position of auxiliaries in English and only licenses sequences of the form %\textsc{aux} NP VP. In such structures,
 % subjects and objects are not in the same local tree either.
 %}
-对于英语来说，一般认为句子包括一个主语和一个VP（请看\citealp[\page 139]{GKPS85a}）。这就意味着我们对英语和德语的被动式会得到两个非常不同的分析结果，该结果并不能得到同样的描述性结论，即被动是主语的抑制与宾语的提升。德语和英语的核心区别看上去是英语强制要求有一个主语，\footnote{
+对于英语来说，一般认为句子包括一个主语和一个VP（请看\citealp[\page 139]{GKPS85a}）。这就意味着我们对英语和德语的被动式会得到两个非常不同的分析结果，该结果并不能得到同样的描述性结论，即被动是主语的抑制与宾语的提升。德语和英语的核心区别看上去是英语强制要求有一个主语，\footnote{%
   在某些条件下，主语在英语中也可以被省略。更多有关祈使句和其他无主句的例子，请看第~\pageref{Beispiel-Imperativ-Englisch}页。
 }这就是为什么英语没有非人称被动。这是一个独立于被动的属性，但是，它会影响到被动结构存在与否的可能性。\isc{元规则|)}\is{metarule|)}
 %For English, it is assumed that a sentence consists of a subject and a VP (see \citealp[\page 139]{GKPS85a}). 
@@ -899,7 +899,7 @@ GPSG与GB\indexgbc 的不同之处在于，非定式动词投射不包括空主�
 %the descriptive insight that the passive is the suppression of the subject and the subsequent
 %promotion of the object in the same way.
 %The central difference
-%between German and English seems to be that English obligatorily requires a subject,\footnote{
+%between German and English seems to be that English obligatorily requires a subject,\footnote{%
 %  Under certain conditions, the subject can also be omitted in English. For more on imperatives and other subject"=less examples, see
 %  page~\pageref{Beispiel-Imperativ-Englisch}.
 %} which is why English does not have an impersonal passive. 
@@ -1126,12 +1126,12 @@ sm edges
 \glt `但是，共和党们更难对他发起攻击。'
 %\glt `It is, however, more difficult for the Republicans to launch attacks against him.'
 \zl
-（\mex{0}）中的句子不能按照局部语序重列来进行解释，因为前场中的元素并不依存于最高的动词，而是从低层的小句而来。因为只有从同一局部树中而来的元素才能重新排序，（\mex{0}）中的句子不能在没有针对长距离依存设置其他机制的情况下得到分析。\footnote{
+（\mex{0}）中的句子不能按照局部语序重列来进行解释，因为前场中的元素并不依存于最高的动词，而是从低层的小句而来。因为只有从同一局部树中而来的元素才能重新排序，（\mex{0}）中的句子不能在没有针对长距离依存设置其他机制的情况下得到分析。\footnote{%
 我们可以想象，针对非局部依存的特征机制只针对那些真正包括非局部依存的句子。这在HPSG\indexhpsgc 中，由\citet{Kathol95a}和\citet{Wetta2011a}做到了，在依存语法中由\citet{GO2009a}做到了。我将在\ref{sec-linearization-problems-dg}详细讨论依存语法的分析，并且指出将简单的V2句子处理为非V2句子的变体的分析在下面几个方面是有问题的，包括前置状语的辖域\isc{辖域}\is{s\textsc{cop}e}、简单句的和非局部依存句的并列\isc{并列}\is{coordination} ，以及所谓的多重前置\isc{显性多重前置}\is{apparent multiple fronting}。
 }
 %The sentences in (\mex{0}) cannot be explained by local reordering as the elements in the prefield are not dependent on the highest verb, but %instead originate in the lower clause.
 %Since only elements from the same local tree can be reordered, the sentences in (\mex{0}) cannot be analyzed without postulating some kind %of additional mechanism for long"=distance
-%dependencies.\footnote{
+%dependencies.\footnote{%
 %  One could imagine analyses that assume the special mechanism for nonlocal dependencies only for
 %  sentences that really involve dependencies that are nonlocal. This was done in HPSG\indexhpsg by
 %  \citet{Kathol95a} and \citet{Wetta2011a} and by \citet{GO2009a} in \dg. I discuss the Dependency
@@ -1167,10 +1167,10 @@ sm edges,empty nodes
 \caption{\label{fig-gpsg-udc}GPSG中的长距离依存分析}
 %\caption{\label{fig-gpsg-udc}Analysis of long"=distance dependencies in GPSG}
 \end{figure}%
-简单来说，我认为gesehen habe （已经看见）就像一个正常的及物动词。\footnote{
+简单来说，我认为gesehen habe （已经看见）就像一个正常的及物动词。\footnote{%
 请看\citew{Nerbonne86a}和\citew{Johnson86a}有关GPSG中动词复杂式的分析。
 }
-%Simplifying somewhat, I assume that \emph{gesehen habe} `have seen' behaves like a normal transitive verb.\footnote{
+%Simplifying somewhat, I assume that \emph{gesehen habe} `have seen' behaves like a normal transitive verb.\footnote{%
 %   See \citew{Nerbonne86a} and \citew{Johnson86a}, for analyses of verbal complexes in GPSG.
 %}
 由（\ref{meta-slash-intro}）中的元规则允准的短语结构规则允准了ich（我）和gesehen habe（已经看见）的组合，并在V3结点上表示为缺失的宾格宾语。标句词dass（那个）与ich gesehen habe（我已经看见）相组合，而且有关宾格NP缺失的信息在树中具有渗透性。这一渗透过程由所谓的底部特征原则（Foot Feature Principle）\isc{底部特征原则}\is{Foot Feature

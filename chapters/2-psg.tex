@@ -36,13 +36,13 @@
 %therefore also be assigned to the category NP.
 
 短语结构语法用规则来说明符号是如何指派到某类词中，并且这些词是如何构成更复杂的单位的。如（\mex{1}）所示，这是用来分析例句（\mex{0}）的一个简单的短语结构语法：
-\footnote{
+\footnote{%
 我们暂不分析weil（因为）。因为对于德语的动词位于第一位和动词位于第二位的小句的确切分析来说，我们还需要一些额外的假设，所以在这一章只讨论动词位于句末的小句。
 }$^,$\footnote{\label{fn-np-pron-ps-rule}%
 NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$ er这条规则来说明，但是这就需要另一条规则来说明能够代替整个NP的人称代词NP $\to$ PersPron。（\mex{1}）将前面两条规则整合成一条，并且说明er（他）出现在名词短语可以出现的位置上。
 }
 %Phrase structure grammars come with rules specifying which symbols are assigned to certain kinds of words and how these are combined to create more
-%complex units. A simple phrase structure grammar which can be used to analyze (\mex{0}) is given in (\mex{1}):\footnote{
+%complex units. A simple phrase structure grammar which can be used to analyze (\mex{0}) is given in (\mex{1}):\footnote{%
 %	I ignore the conjunction \emph{weil} `because' for now. Since the exact analysis of
 %        German verb"=first and verb"=second clauses requires a number of additional assumptions, we will restrict ourselves to verb"=final clauses in this chapter.
 %}$^,$\footnote{\label{fn-np-pron-ps-rule}%
@@ -234,11 +234,11 @@ sm edges
 %  binary branching structure}
 \end{figure}%
 
-实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{det}的宾格形式），那么就会生成不合乎语法的句子，如例（\mex{1}b--d）所示：\footnote{
+实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{det}的宾格形式），那么就会生成不合乎语法的句子，如例（\mex{1}b--d）所示：\footnote{%
 应用（\ref{psg-binaer}）中的文法，我们还会遇到别的问题，即我们无法确定什么时候话语是完整的，因为符号V被用来表示V和NP的所有组合。由此，我们也可以用这个文法来分析（i）中的句子：
 %Both the grammar in (\mex{0}) and (\ref{bsp-grammatik-psg}) are too imprecise.
 %If we adopt additional lexical entries for \emph{ich} `I' and \emph{den} `the' (accusative) in our grammar, then we would incorrectly
-%license the ungrammatical sentences in (\mex{1}b--d):\footnote{
+%license the ungrammatical sentences in (\mex{1}b--d):\footnote{%
 %	With the grammar in (\ref{psg-binaer}), we also have the additional problem that we cannot determine when an utterance is complete
 %	since the symbol V is used for all combinations of V and NP. Therefore, we can also analyze the sentence in (i) with this grammar:
   
@@ -384,11 +384,11 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 在上面的规则中，有关动词所需论元数量的信息在“nom\_dat\_acc”这个标记中有所说明。
 %In the rules above, the information about the number of arguments required by a verb is included in the marking `nom\_dat\_acc'.
 
-为了说明例（\mex{1}）中的限定词与名词的一致关系，我们需要整合性\isc{性}\is{gender}（阴性、阳性、中性）、数\isc{数}\is{number}（单数、复数）、格\isc{格}\is{case}（主格、属格、与格、宾格），以及屈折类型（强、弱）的信息\footnote{
+为了说明例（\mex{1}）中的限定词与名词的一致关系，我们需要整合性\isc{性}\is{gender}（阴性、阳性、中性）、数\isc{数}\is{number}（单数、复数）、格\isc{格}\is{case}（主格、属格、与格、宾格），以及屈折类型（强、弱）的信息\footnote{%
 这些是形容词的屈折变化类型，它们也同样适用于某些名词，如Beamter（公务员）、Verwandter（亲戚）和Gesandter（公使）。有关形容词类型的更多信息请参考第\pageref{page-Flexionsklasse-Wunderlich}页。
 }。
 %In order to capture the determiner"=noun agreement in (\mex{1}), we have to incorporate information about gender\is{gender} (fem, mas, neu),
-%number\is{number} (sg, pl), case\is{case} (nom, gen, dat, acc) and the inflectional classes (strong, weak)\footnote{
+%number\is{number} (sg, pl), case\is{case} (nom, gen, dat, acc) and the inflectional classes (strong, weak)\footnote{%
 %These are inflectional classes for adjectives which are also relevant for some nouns such as \emph{Beamter} `civil servant', 
 %\emph{Verwandter} `relative', \emph{Gesandter} `envoy'.
 %For more on adjective classes see page~\pageref{page-Flexionsklasse-Wunderlich}.%
@@ -423,10 +423,10 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 %	 a civil.servant the civil.servant\\\jambox{(inflectional class)}
 %\zl
 %\addlines        
-我们不用NP $\to$ Det N这条规则，我们将要用到下面这些规则，如例（\mex{1}）所示：\footnote{ 
+我们不用NP $\to$ Det N这条规则，我们将要用到下面这些规则，如例（\mex{1}）所示：\footnote{%
 为了方便，这些规则没有包括屈折类型相关的信息。
 }  
-%Instead of the rule NP $\to$ Det N, we will have to use rules such as those in (\mex{1}):\footnote{
+%Instead of the rule NP $\to$ Det N, we will have to use rules such as those in (\mex{1}):\footnote{%
 %  To keep things simple, these rules do not incorporate information regarding the inflection class.
 %}
 \ea
@@ -467,13 +467,13 @@ NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 %all have something in common. In formal terms, the only thing that the rules have in common is that there is one symbol on the
 %left"=hand side of the rule and two on the right.
 
-我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以采用一条附加的特征来表示性，另一条特征来表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{
+我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以采用一条附加的特征来表示性，另一条特征来表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{%
 第\ref{chap-feature-descriptions}章介绍了属性值结构。这些结构总是包括一对属性名称和属性值。在这样的情况下，值的顺序就不重要了，因为每个值都是独一无二的，并由相应的特征名称来指定。因为我们在（\mex{0}）这样的格式中没有属性名称，所以值的顺序是重要的。
 }
 %We can solve this problem by introducing features which are assigned to category symbols and therefore allow for the values of
 %such features to be included in our rules. For example, we can assume the features person, number and case for the category
 %symbol NP. For determiners and nouns, we would adopt an additional feature for gender and one for
-%inflectional class. (\mex{1}) shows two rules augmented by the respective values in brackets:\footnote{
+%inflectional class. (\mex{1}) shows two rules augmented by the respective values in brackets:\footnote{%
 %  Chapter~\ref{chap-feature-descriptions} introduces attribute value structures. In these structure we always
 %have pairs of a feature name and a feature value. In such a setting, the order of values is not
 % important, since every value is uniquely identified by the corresponding feature name. Since we do not have a feature name
@@ -592,11 +592,11 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 %\zl
 
 \noindent
-为了提高可读性，我从现在开始在语义表示中使用谓词的英语释义。\footnote{
+为了提高可读性，我从现在开始在语义表示中使用谓词的英语释义。\footnote{%
 需要注意的是，我并不是说英语适合表示语言的语义关系与概念，其实它们也可以用其他语言来表示。
 }
 %To enhance readability I use English translations of the predicates in semantic representations
-%from now on.\footnote{
+%from now on.\footnote{%
 %  Note that I do not claim that English is suited as representation language for semantic relations
  % and concepts that can be expressed in other languages.
 %}
@@ -820,17 +820,17 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 %refers to. Whereas (\mex{0}a) refers to a being which has the property of being a woman, the referent of (\mex{0}b) must
 %also have the property of being known to us.
 
-前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的一条规则。\footnote{
+前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的一条规则。\footnote{%
 参看\citew[\page 238]{Eisenberg2004a}中有关名词短语中平铺结构的假说。
-}$^,$\footnote{
+}$^,$\footnote{%
 当然，还有诸如性和数的其他特征也应该在这一节里讨论。但是，为了降低解释的难度，我们暂不考虑这些问题。
 }
 %Our previous rules for noun phrases simply combined a noun and a determiner and can therefore only be used to
 %analyze (\mex{0}a). The question we are facing now is how we can modify this rule or which additional rules we would
 %have to assume in order to analyze the other noun phrases in (\mex{0}). In addition to rule (\mex{1}a), one could propose 
-%a rule such as the one in (\mex{1}b).\footnote{
+%a rule such as the one in (\mex{1}b).\footnote{%
 %	See \citew[\page 238]{Eisenberg2004a} for the assumption of flat structures in noun phrases.
-%}$^,$\footnote{
+%}$^,$\footnote{%
 %	There are, of course, other features such as gender and number, which should be part of all the rules
 %	discussed in this section. I have omitted these in the following for ease of exposition.
 %}
@@ -1163,11 +1163,11 @@ sm edges
 %	 \spacebr{}no not the coming of.the carpenter the {} of.the plumber is important\\
 %\glt `No, it isn't the visit of the carpenter, but rather the visit of the plumber that is important.'
 %\zl
-在英语中，代词one必须用在相应的位置上，\footnote{
+在英语中，代词one必须用在相应的位置上，\footnote{%
 参看\citet[\S~4.12]{FLGR2012a} ，在英语中这些例子没有代词one。
 } 但是德语中，名词\isc{名词}\is{noun}就被简单地省略了。
 %In English, the pronoun
-%\emph{one} must often be used in the corresponding position,\footnote{
+%\emph{one} must often be used in the corresponding position,\footnote{%
   %See \citet[Section~4.12]{FLGR2012a} for English\il{English} examples without the
   %pronoun \emph{one}.
 %} but in German the noun\is{noun} is
@@ -1862,12 +1862,12 @@ sm edges
 %  and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'}
 \end{figure}%
 
-图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{
+图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请看\citew{Muysken82a}。
 }
 %The analysis given in Figure~\ref{Abb-das-schoene-Bild-von-Paris} assumes that all non"=heads in a rule are
 %phrases. One therefore has to assume that there is a determiner phrase even if the determiner is not combined with other elements.
-%The unary branching of determiners is not elegant but it is consistent.\footnote{
+%The unary branching of determiners is not elegant but it is consistent.\footnote{%
 %	For an alternative version of \xbar theory which does not assume elaborate structure for determiners see \citew{Muysken82a}.
 %}
 在图\ref{Abb-das-schoene-Bild-von-Paris}中，Paris（巴黎）这个NP的一元分支看起来也有点奇怪，但是如果我们把它放进更为复杂的名词短语之中， 它们就不那么奇怪了：
@@ -2119,10 +2119,10 @@ NP $\to$ Det Adj
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
 %\glt `He is waiting for a miracle next to the bus shelter.'
 \zl
-\item 请安装Prolog系统（如SWI"=Prolog\footnote{
+\item 请安装Prolog系统（如SWI"=Prolog\footnote{%
 \url{http://www.swi-prolog.org} 
 }）
-%\item Install a Prolog system (\eg SWI"=Prolog\footnote{
+%\item Install a Prolog system (\eg SWI"=Prolog\footnote{%
 %\url{http://www.swi-prolog.org} 
 %})
 并测试你的语法。详细的使用说明可以在对应手册中定子句文法（Definite Clause Grammar，DCG）\isc{定子句文法}\is{Definite Clause Grammar (DCG)}的关键词下面找到。
