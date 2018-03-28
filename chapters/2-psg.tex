@@ -765,7 +765,7 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 	 \textsc{art} 女人\\
 \ex 
 \gll eine Frau, die wir kennen\\
-	 \textsc{art} 女人 \textsc{conj} 我们 认识\\
+	 \textsc{art} 女人 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine Frau aus Stuttgart\\
 	 \textsc{art} 女人 \textsc{prep} 斯图加特\\
@@ -774,16 +774,16 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 	 \textsc{art} 聪明 女人\\
 \ex 
 \gll eine Frau aus Stuttgart, die wir kennen\\
-	 \textsc{art} 女人 \textsc{prep} 斯图加特 \textsc{conj} 我们 认识\\
+	 \textsc{art} 女人 \textsc{prep} 斯图加特 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart\\
 	 \textsc{art} 聪明 女人 \textsc{prep} 斯图加特\\
 \ex 
 \gll eine kluge Frau, die wir kennen\\
-	 \textsc{art} 聪明 女人 \textsc{conj} 我们 认识\\
+	 \textsc{art} 聪明 女人 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart, die wir kennen\\
-	 \textsc{art} 聪明 女人 \textsc{prep} 斯图加特 \textsc{conj} 我们 认识\\
+	 \textsc{art} 聪明 女人 \textsc{prep} 斯图加特 \textsc{rel} 我们 认识\\
 \zl
 %\eal
 %\label{Beispiele-NP-Adjunkte}
@@ -991,7 +991,7 @@ sm edges
 \eal
 \ex 
 \gll dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt\\
-	 \textsc{conj} Peter \textsc{det} 人 \textsc{det} 书 给 和 Maria \textsc{det} 女人 \textsc{det} 唱片 给\\
+     \textsc{conj} Peter \textsc{det} 人 \textsc{det} 书 给 和 Maria \textsc{det} 女人 \textsc{det} 唱片 给\\
 \glt `Peters给这个人这本书，并且Maria给这个女人这张唱片'
 %	 that Peter the man the book gives and Maria the woman the record gives\\
 %\glt `that Peters gives the book to the man and Maria the record to the woman'
@@ -1108,7 +1108,7 @@ sm edges
 \glt `一位从汉堡来的聪明的'
 \ex 
 \gll eine kluge \_, die alle kennen\\
-	 \textsc{art} 聪明 {} \textsc{conj} 所有人 知道\\
+	 \textsc{art} 聪明 {} \textsc{rel} 所有人 知道\\
 \glt `一个大家都知道的聪明的'
 \zl
 
@@ -1120,7 +1120,7 @@ sm edges
 \glt `不，指的不是Klaus的爸爸，而是Peter的爸爸。'
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
-	 \spacebr{}不 不  \textsc{det} 图片 \textsc{prep} \textsc{det} 公路 \textsc{det} {} \textsc{prep}.\textsc{det} 格莱姆隧道 \textsc{aux} 印象深刻\\
+	 \spacebr{}不 不  \textsc{det} 图片 \textsc{prep} \textsc{det} 公路 \textsc{det} {} \textsc{prep}.\textsc{det} 格莱姆隧道 \textsc{cop} 印象深刻\\
 \glt `不，不是公路的照片让人印象深刻，而是格莱姆隧道的照片。'
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
@@ -1229,7 +1229,7 @@ sm edges
 %	 women\\
 \ex 
 \gll Frauen, die wir kennen\\
-	 女人 \textsc{conj} 我们 认识\\
+	 女人 \textsc{rel} 我们 认识\\
 %	 women who we know\\
 \ex 
 \gll kluge Frauen\\
@@ -1237,7 +1237,7 @@ sm edges
 %	 smart women\\
 \ex 
 \gll kluge Frauen, die wir kennen\\
-	 聪明 女人 \textsc{conj} 我们 认识\\
+	 聪明 女人 \textsc{rel} 我们 认识\\
 %	 smart women who we know\\
 \zl
 如果名词是集合名词\isc{名词!集合名词}\is{noun!mass}的话，限定词在单数时可以被省略：
@@ -1417,7 +1417,7 @@ sm edges
 \ea
 \gll {}[\sub{NP} einige [\sub{\nbar} kluge [\sub{\nbar} [\sub{\nbar} Frauen ] und [\sub{\nbar} Männer
 ]]]]\\
-      {}一些    {}           聪明 {}          {}           女人  {}  和 {} 男人\\
+      {}         一些    {}           聪明 {}          {}           女人  {}  和 {} 男人\\
 %      {}	some    {}           smart {}          {}           women  {}  and {} men\\
 \z
 
