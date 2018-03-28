@@ -359,7 +359,7 @@ LP$^\alpha_2$ = \{ \}
 \label{ex-weil-ihm-das-Buch-jemand-zu-lesen-versprochen-hat-drei}
 \gll weil    ihm das Buch jemand   zu lesen versprochen hat\footnotemark\\
 %     because him.\dat{} the.\acc{} book somebody.\nom{} to read promised has\\
-     因为 他.\dat{} \textsc{det}.\acc{} 书 有些人.\nom{} INF 读 保证 \textsc{aux} \\
+     因为 他.\dat{} \textsc{det}.\acc{} 书 有些人.\nom{} \textsc{inf} 读 保证 \textsc{aux} \\
 \footnotetext{
 \citew{Bech55a}介绍了更多的关于这种语言现象的例子。
 }
@@ -380,12 +380,12 @@ LP$^\alpha_2$ = \{ \}
 \ex 
 \gll \ldots{} daß  der        Detektiv  dem        Klienten [den Verdächtigen des Verbrechens zu überführen] versprach\\
 %         {}   that the.\nom{} detective the.\dat{} client   \spacebr{}the.\acc{} suspect the.\gen{} crime to indict promised\\
-{}  \textsc{conj}  \textsc{det}.\nom{} 探员 \textsc{det}.\dat{} 委托人   \spacebr{}\textsc{det}.\acc{} 嫌疑人 \textsc{det}.\gen{} 犯罪 INF 起诉 保证\\
+{}  \textsc{conj}  \textsc{det}.\nom{} 探员 \textsc{det}.\dat{} 委托人   \spacebr{}\textsc{det}.\acc{} 嫌疑人 \textsc{det}.\gen{} 犯罪 \textsc{inf} 起诉 保证\\
 %  \glt `that the detective promised the client to indict the suspect of the crime'
   \glt `探员向客户保证会起诉犯罪活动的嫌疑人'
 \ex\label{Beispiel-Joshi-NP4} 
 \gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~~~~~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
-{}     \textsc{conj}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     INF 起诉  保证\\
+{}     \textsc{conj}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     \textsc{inf} 起诉  保证\\
 \zl
 相关动词的LTAG基本树参见图\vref{Abbildung-Kontrollverben-TAG}。
 \begin{figure}
@@ -405,8 +405,8 @@ tag, baseline
 				[NP$_2^2$
 					[e]]
 				[V$_2$
-					[zu überführen;INF 起诉]]]]]]
-%					[zu überführen;INF 起诉to indict]]]]]]
+					[zu überführen;\textsc{inf} 起诉]]]]]]
+%					[zu überführen;\textsc{inf} 起诉to indict]]]]]]
 \end{forest}
 \begin{forest}
 tag, baseline
@@ -456,7 +456,7 @@ tag
 						[NP$_2^2$
 							[e]]
 						[V$_2$
-							[zu überführen;INF 起诉]]]]
+							[zu überführen;\textsc{inf} 起诉]]]]
 %							[zu überführen;to indict]]]]
 				[V$_1$
 					[versprach;保证]]]]]]
@@ -487,7 +487,7 @@ tag
 						[NP$_2^2$
 							[e]]
 						[V$_2$
-							[zu überführen;INF 起诉]]]]]
+							[zu überführen;\textsc{inf} 起诉]]]]]
 %							[zu überführen;to indict]]]]]
 			[V$_1$
 				[versprach;保证]]]]]
@@ -558,7 +558,7 @@ tag
 							[NP$_2^2$
 								[e]]
 							[V$_2$
-								[zu überführen;INF 起诉]]]]]
+								[zu überführen;\textsc{inf} 起诉]]]]]
 %								[zu überführen;to indict]]]]]
 				[V$_1$
 					[versprach;保证]]]]]]
@@ -1098,7 +1098,7 @@ NP$_2$ NP$_3$ NP$_1$ V$_{3}$V$_{2}$V$_{1}$
 \gll dass ihm$_2$ das Buch$_3$ niemand$_1$ zu lesen$_3$ versprechen$_2$ darf$_1$\\
 %     that him     the book     nobody     to read      promise         be.allowed.to\\
 %\glt `that nobody is allowed to promise him to read the book' 
-     \textsc{conj} 他     \textsc{det} 书 没有人 INF 读 保证 被允许 \\
+     \textsc{conj} 他     \textsc{det} 书 没有人 \textsc{inf} 读 保证 被允许 \\
 \glt `没有人被允许保证他读那本书'
 \z
 因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说在这种例子里，不像关系从句里的例子，我们可以有两种选择（也就是说，否定这种模式或基于语言运用或基于语言能力进行解释）。
