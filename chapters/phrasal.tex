@@ -3568,7 +3568,7 @@ sm edges
 %\caption{\label{Abbildung-He-knows-and-loves-this-record-TAG}TAG analysis of \emph{He knows and
 %    loves this record.}}
 \end{figure}%
-在这个图中，主语和宾语节点都只出现一次。两个基础句法树的S节点都统制he（他）NP。同样，宾语NP节点属于两个VP。连接词连接用粗线标志的两个动词。Sarkar和Joshi提供了一种算法来决定哪些节点可以共享。这一结构初看起来可能有点奇怪，但是这不是派生树，但是派生树很重要，因为要用派生树来计算语义。作者展示了为当前讨论的例子以及更加复杂的例子都可以正确地构建派生树。
+在这个图中，主语和宾语节点都只出现一次。两个基础句法树的S节点都统制he（他）NP。同样，宾语NP节点属于两个VP。连接词连接用粗线标志的两个动词。Sarkar和Joshi提供了一种算法来决定哪些节点可以共享。这一结构初看起来可能有点奇怪，但是对于树邻接语法而言，这并不是派生结果树，相对而言派生过程树是重要的，因为要用派生过程树来计算语义。作者展示了为当前讨论的例子以及更加复杂的例子都可以正确地构建派生过程树。
 %The subject and object nodes are only present once in this figure. The S nodes of both elementary trees both dominate the \emph{he} NP.
 %In the same way, the object NP node belongs to both VPs. The conjunction connects two verbs indicated by the thick lines. Sarkar and Joshi provide an
 %algorithm that determines which nodes are to be shared. The structure may look strange at first, but for TAG purposes, it is not the derived tree but rather the derivation tree that is important, since this is the one that is used to compute the semantic interpretation. The authors show that the derivation trees
@@ -3670,7 +3670,7 @@ sm edges
 %themselves need not necessarily occur directly adjacent to their arguments. See the discussion in
 %Section~\ref{Abschnitt-musterbasiert} about pattern"=based models of language acquisition.
 
-计算图~\ref{Abbildung-He-gave-george-a-book-and-martha-a-record-TAG}所示复杂结构的语义贡献不可能非常简单。在树邻接语法\indextagc（TAG）中，除了派生句法树之外还有派生句法树用于计算语言对象的语义。构式语法没有这种分层表征。这里讨论的句子的意义怎样从它们的组成部分派生出来对于短语方法来说仍然是开放的。
+计算图~\ref{Abbildung-He-gave-george-a-book-and-martha-a-record-TAG}所示复杂结构的语义贡献不可能非常简单。在树邻接语法\indextagc（TAG）中，除了派生过程树之外还有派生结果树用于计算语言对象的语义。构式语法没有这种分层表征。这里讨论的句子的意义怎样从它们的组成部分派生出来对于短语方法来说仍然是开放的。
 %The computation of the semantic contribution of complex structures such as those in
 %Figure~\ref{Abbildung-He-gave-george-a-book-and-martha-a-record-TAG} is by no means trivial. In
 %TAG\indextag, there is the derivation tree in addition to the derived tree that can then be used to
@@ -4213,7 +4213,7 @@ wahnsinnig leid tut% -- Den hatte ich so gerne.
 \section{来自统计分析的证据}
 \label{stat-sec}
 
-在这一节，我们想来看一下声称支持短语观点的来自统计学的证据。我们首先看一下面向数据的分析技术，\citet{Bod2009a}曾用这种技术来为语言习得构建模型，然后讨论一下\citet{SG2009a}提出的collostructional分析。最后，我们认为这些分布分析不能够解决论元结构构式是用短语方法还是词汇方法进行分析的问题。
+在这一节，我们想来看一下声称支持短语观点的来自统计学的证据。我们首先看一下面向数据的分析技术，\citet{Bod2009a}曾用这种技术来为语言习得构建模型，然后讨论一下\citet{SG2009a}提出的搭配构式分析。最后，我们认为这些分布分析不能够解决论元结构构式是用短语方法还是词汇方法进行分析的问题。
 %In this section, we want to look at arguments from statistics that have been claimed to support a phrasal
 %view.  We first look at data-oriented parsing, a technique that was successfully used by
 %\citet{Bod2009a} to model language acquisition and then we turn to the collostructional analysis by
@@ -4345,7 +4345,7 @@ sm edges
 %it is possible to translate an analysis using an empty head into one with a lexical rule. For the present example, any argumentation for a particular analysis will 
 %be purely theory"=internal.
 
-虽然无监督面向数据技术分析不能帮助我们决定使用哪种分析方式，但是仍然有语法的某些方面，这些结构可以提供信息：在二分结构假设之下，也可以有不同的分支的可能性，这一点取决于是否假设带有动词移位的分析。这意味着虽然没有在输入中假设一个空成分，但是在数据派生树中仍然有反映。图~\vref{Abbildung-DOP-Verbbewegung}中左边的树展示了一个遵循\citew[\page 159]{Steedman2000a-u}观点的分析，参看\ref{sec-Verbstellung-CG-Steedman}。右边的树展示了来自GB类型动词移位的分析（参看\ref{Abschnitt-Verbstellung-GB}）。
+虽然无监督面向数据技术分析不能帮助我们决定使用哪种分析方式，但是仍然有语法的某些方面，这些结构可以提供信息：在二分结构假设之下，也可以有不同的分支的可能性，这一点取决于是否假设带有动词移位的分析。这意味着虽然没有在输入中假设一个空成分，但是在统计上的派生结果树中仍然有反映。图~\vref{Abbildung-DOP-Verbbewegung}中左边的树展示了一个遵循\citew[\page 159]{Steedman2000a-u}观点的分析，参看\ref{sec-Verbstellung-CG-Steedman}。右边的树展示了来自GB类型动词移位的分析（参看\ref{Abschnitt-Verbstellung-GB}）。
 %Although Unsupervised Data-Oriented Parsing (U"=DOP) cannot help us to decide between analyses, there are areas of grammar for which these structures are of interest: under the assumption of
 %binary"=branching structures, there are different branching possibilities depending on whether one assumes an analysis with verb movement or not. This means that
 %although one does not see an empty element in the input, there is a reflex in statistically"=derived trees. The left tree in
@@ -4405,7 +4405,7 @@ sm edges
 
 \subsection{搭配构式}
 
-\mbox{}\citet[\S~5]{SG2009a}提出了一种插入分析：“如果词的意义与构式匹配，则词语出现在一个给定构式（提供的槽）中”。作者声称他们已经的“搭配构式分析已经从多个角度验证了插入分析”。 Stefanowitsch和Gries可以展示特定动词多半出现在特定构式中，而其它动词从不出现在相应构式中。例如，give（给）、tell（告诉）、send（寄送）、offer（提供）、show（展示）可以出现在双及物构式中，而make（制作）和do（做）则不能出现在该构式中，即就动词在语料库中出现的总频率来讲，它们比预期出现的频率低得多。就这一分布，作者写道：
+\mbox{}\citet[\S~5]{SG2009a}提出了一种插入分析：“如果词的意义与构式匹配，则词语出现在一个给定构式（提供的槽）中”。作者声称他们的“搭配构式分析已经从多个角度验证了插入分析”。 Stefanowitsch和Gries可以展示特定动词多半出现在特定构式中，而其它动词从不出现在相应构式中。例如，give（给）、tell（告诉）、send（寄送）、offer（提供）、show（展示）可以出现在双及物构式中，而make（制作）和do（做）则不能出现在该构式中，即就动词在语料库中出现的总频率来讲，它们比预期出现的频率低得多。就这一分布，作者写道：
 %\mbox{}\citet[Section~5]{SG2009a} assume a plugging analysis: ``words
 %  occur in (slots provided by) a given   construction if their meaning matches that of the
 %  construction''. The authors claim that their \emph{collostructional analysis has confirmed}
