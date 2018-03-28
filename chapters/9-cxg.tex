@@ -1534,11 +1534,11 @@ dtrs & \ibox{1} list of signs
 %daughters.'' An example of such a constraint given in prose is the Locality Principle of \citet[\page 143--144]{ps}.
 %\is{locality|)}
 
-\subsubsection{词汇抽取和\textsc{local}特征}
+%\subsubsection{词汇抽取和\textsc{local}特征}
 %\subsubsection{Lexical extraction and the \textsc{local} feature}
-\label{sec-sbcg-local-feature}
+%\label{sec-sbcg-local-feature}
 
-Ivan Sag研究的一个重要主题就是要从语法中取消空成分\isc{空成分}\is{empty element}。他与人合作提出了一种不使用空成分来提取的基于词汇的分析\citep*{NB94,BMS2001a}。并非像早期HPSG版本那样假设一个语迹（参看\ref{sec-nld-HPSG}），而是假设了一个词汇规则（词汇构式）或者列表值特征（例如\argstc 和\textsc{valence}）之间的一个特殊映射，因此一个在\textsc{gap}列表（也就是HPSG早期版本中的\slaschc ）中存在一个元素的词项可以被允准。标准HPSG中的\localfc 值用于捆绑填充语和空位共享的信息。语迹的词条在第\pageref{le-extraktionsspur}页的 （\ref{le-extraktionsspur}）给出，为了方便这里重新写为 （\mex{1}）。
+%Ivan Sag研究的一个重要主题就是要从语法中取消空成分\isc{空成分}\is{empty element}。他与人合作提出了一种不使用空成分来提取的基于词汇的分析\citep*{NB94,BMS2001a}。并非像早期HPSG版本那样假设一个语迹（参看%\ref{sec-nld-HPSG}），而是假设了一个词汇规则（词汇构式）或者列表值特征（例如\argstc 和\textsc{valence}）之间的一个特殊映射，因此一个在\textsc{gap}列表（也就是HPSG早期版本中的\slaschc ）中存在一个元素的词项可%以被允准。标准HPSG中的\localfc 值用于捆绑填充语和空位共享的信息。语迹的词条在第\pageref{le-extraktionsspur}页的 （\ref{le-extraktionsspur}）给出，为了方便这里重新写为 （\mex{1}）。
 %A main theme in Ivan Sag's work was to eliminate empty elements\is{empty element} from grammar. He co-developed a
 %lexical analysis of extraction that did not use empty elements \citep*{NB94,BMS2001a}. Rather than
 %assuming a trace as in earlier versions of HPSG (see Section~\ref{sec-nld-HPSG}) a lexical rule
@@ -1548,23 +1548,23 @@ Ivan Sag研究的一个重要主题就是要从语法中取消空成分\isc{空�
 %bundle all those information that is shared between a filler and the gap. The lexical entry for the
 %trace was given as (\ref{le-extraktionsspur}) on page~\pageref{le-extraktionsspur} and is repeated
 %as (\mex{1}) for convenience.
-\begin{figure}
-\eas
-\label{le-extraction-trace-two}
-Extraction trace: \\
-\ms[word]{
- phon & \phonliste{} \\[1mm]
- synsem & \ms{ loc   & \ibox{1}\\
-               nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
-                                                %extra & \liste{} \\
-                             to-bind$|$slash & \eliste
-                           } 
-             }
-}
-\zs
-\vspace{-2\baselineskip}
-\end{figure}%
-对于基于语迹的提取的分析，重要的是只有\textsc{category}和\contc 下面的信息被填充语和空位所共享。这些信息绑定在\localc 之下。填充项的子节点和音系信息并不共享。因为语迹是没有发音的，所以它们的\textsc{phonology}值与填充项的任意\textsc{phonology}值都不兼容。
+%\begin{figure}
+%\eas
+%\label{le-extraction-trace-two}
+%Extraction trace: \\
+%\ms[word]{
+% phon & \phonliste{} \\[1mm]
+% synsem & \ms{ loc   & \ibox{1}\\
+%               nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
+%                                                %extra & \liste{} \\
+%                            to-bind$|$slash & \eliste
+%                           } 
+%             }
+%}
+%\zs
+%\vspace{-2\baselineskip}
+%\end{figure}%
+%对于基于语迹的提取的分析，重要的是只有\textsc{category}和\contc 下面的信息被填充语和空位所共享。这些信息绑定在\localc 之下。填充项的子节点和音系信息并不共享。因为语迹是没有发音的，所以它们的\textsc{phonology}%值与填充项的任意\textsc{phonology}值都不兼容。
 %For the trace-based analysis of extraction it is crucial that only information under
 %\textsc{category} and \cont is shared between filler and gap. This information is bundled under
 %\local. Information about daughters and phonology of the filler is not shared. Since traces are not
@@ -1572,35 +1572,35 @@ Extraction trace: \\
 %a filler.%\pagebreak
 
 %\addlines
-在基于词汇的方法中，需要假设一个另外的词项，这个词项有一个元素在\slaschc 或\textsc{gap}中。
+%在基于词汇的方法中，需要假设一个另外的词项，这个词项有一个元素在\slaschc 或\textsc{gap}中。
 %In a lexical approach, one would assume an additional lexical item with an element in \slasch or
 %\textsc{gap}.
-\ea
-根据\citet[\page 163]{Sag2012a}的非局部依存的词汇介入：\\*
+%\ea
+%根据\citet[\page 163]{Sag2012a}的非局部依存的词汇介入：\\*
 %Lexical introduction of nonlocal dependencies %in SBCG
 %according to \citet[\page 163]{Sag2012a}:\\*
-\ms{
-form & \phonliste{ like }\\
-arg-st & \liste{ \ibox{1} \ms{ NP\\
-                               gap & \eliste },  \ibox{2} \ms{ NP\\
-                                                               gap & \eliste } 
-               }\\
-syn    & \ms{ val & \sliste{ \ibox{1} }\\
-              gap & \sliste{ \ibox{2} }
-}
-}
-\z
-（\mex{1}） 的分析就产生了一个语言对象，在这个语言对象里动词like（喜欢）\argstlc 列表中的第二个元素的\textsc{form}值是\phonliste{ bagels }。
+%\ms{
+%form & \phonliste{ like }\\
+%arg-st & \liste{ \ibox{1} \ms{ NP\\
+%                               gap & \eliste },  \ibox{2} \ms{ NP\\
+ %                                                              gap & \eliste } 
+%               }\\
+%syn    & \ms{ val & \sliste{ \ibox{1} }\\
+%              gap & \sliste{ \ibox{2} }
+%}
+%}
+%\z
+%（\mex{1}） 的分析就产生了一个语言对象，在这个语言对象里动词like（喜欢）\argstlc 列表中的第二个元素的\textsc{form}值是\phonliste{ bagels }。
 %The analysis of (\mex{1}) then results in a linguistic object in which the second element of the
 %\argstl of \emph{like} has the \textsc{form} value \phonliste{ bagels }.
-\ea
-Bagels, I like.
-\z
-在一个基于语迹的解释中，提取成分的\textsc{form}值是一个空列表。
+%\ea
+%Bagels, I like.
+%\z
+%在一个基于语迹的解释中，提取成分的\textsc{form}值是一个空列表。
 %In a trace-based account, the \textsc{form} value of the extracted element would be the empty list.
 
 %\addlines
-现在，问题是并非所有人都同意无界依存的无语迹分析。例如，\citet{LH2006a}写了一本专著来讨论各种版本的对于提取的无语迹解释并且反对它们。\citet{Chaves2009a}为一些疑问提供了解决方法，但是并没有完全解决它们。虽然包括\localfc 特征的特征框架允许研究者假设基于语迹的分析，但是SBCG的特征框架使得这种方法不再可能。所以，在其理论中运用语迹的研究者永远不会接受SBCG特征框架。对空元素的更多讨论见第\ref{chap-empty}章。
+%现在，问题是并非所有人都同意无界依存的无语迹分析。例如，\citet{LH2006a}写了一本专著来讨论各种版本的对于提取的无语迹解释并且反对它们。\citet{Chaves2009a}为一些疑问提供了解决方法，但是并没有完全解决它们。%虽然包括\localfc 特征的特征框架允许研究者假设基于语迹的分析，但是SBCG的特征框架使得这种方法不再可能。所以，在其理论中运用语迹的研究者永远不会接受SBCG特征框架。对空元素的更多讨论见第\ref{chap-empty}章。
 %Now, the problem is that not everybody agrees with the traceless analysis of unbounded
 %dependencies. For instance, \citet{LH2006a} wrote a monograph discussing various versions of
 %traceless accounts of extraction and argue against them. \citet{Chaves2009a} suggested solutions to
@@ -1610,7 +1610,7 @@ Bagels, I like.
 %more on empty elements.
 
 %\addlines[2]
-在非局部依存中设置共享信息的另一个好处是通过指派一些信息在共享信息之外来排除这些信息。这种做法曾被\citet{Hoehle94a}、\citet{Mueller96a,Mueller2002b}和\citet{Meurers99a}用于解释德语中的部分动词短语前置现象。德语中部分动词短语前置是指动词可以跟一些或所有宾语一起前置，即使该动词在其它环境中不形成VP。例如，（\mex{1}a） 中的erzählen（告诉）和wird（将要）通常构建一个复杂短语，这一短语不能通过将erzählen（告诉）的投射置换到左边而分开。
+%在非局部依存中设置共享信息的另一个好处是通过指派一些信息在共享信息之外来排除这些信息。这种做法曾被\citet{Hoehle94a}、\citet{Mueller96a,Mueller2002b}和\citet{Meurers99a}用于解释德语中的部分动词短语前置现象。%德语中部分动词短语前置是指动词可以跟一些或所有宾语一起前置，即使该动词在其它环境中不形成VP。例如，（\mex{1}a） 中的erzählen（告诉）和wird（将要）通常构建一个复杂短语，这一短语不能通过将erzählen（告诉）的%投射置换到左边而分开。
 %A further advantage of having a package of information that is shared in nonlocal dependencies is
 %that some information can be excluded from sharing by specifying it outside of such a package. This
 %was used by \citet{Hoehle94a}, \citet{Mueller96a,Mueller2002b}, and \citet{Meurers99a} to account for partial
@@ -1619,60 +1619,60 @@ Bagels, I like.
 %form a VP in other contexts. For instance, \emph{erzählen} `tell' and \emph{wird} `will' in
 %(\mex{1}a) usually form a complex that may not be separated by scrambling a projection of
 %\emph{erzählen} to the left.
-\eal
-\ex[]{
-\gll  dass er seiner Tochter ein Märchen erzählen wird\\
-      REL 他 他的 女儿 \textsc{art} 仙女.故事 告诉 \textsc{aux}\\
-\glt `他会给他女儿讲一个童话故事这件事'  
+%\eal
+%\ex[]{
+%\gll  dass er seiner Tochter ein Märchen erzählen wird\\
+ %     REL 他 他的 女儿 \textsc{art} 仙女.故事 告诉 \textsc{aux}\\
+%\glt `他会给他女儿讲一个童话故事这件事'  
 %\gll  dass er seiner Tochter ein Märchen erzählen wird\\
 %      that he his daughter a fairy.tale tell will\\
 %\glt `that he will tell his daughter a fairy tale'  
-}
-\ex[*]{
-\gll dass er seiner Tochter ein Märchen erzählen nie wird\\
-     REL 他 他的    女儿 \textsc{art} 仙女.故事 告诉 NEG \textsc{aux}\\
+%}
+%\ex[*]{
+%\gll dass er seiner Tochter ein Märchen erzählen nie wird\\
+ %    REL 他 他的    女儿 \textsc{art} 仙女.故事 告诉 NEG \textsc{aux}\\
 %\gll dass er seiner Tochter ein Märchen erzählen nie wird\\
 %     that he his    daughter a fairy.tale tell never will\\
-}
-\zl
-\citet{HN94a}解决这一问题是依赖于为动词性复杂体假设一个特殊图式并且假设这样的动词复杂体以某种方式标记（后来是用取值为“+”的\lexfc 来标记的）并且组成一个动词性复杂体的中心词选择具有合适标记的元素。所以在（\mex{0}a） 的分析中wird（将要）选择\lexc+ 元素而动词erzählen（告诉）满足这一要求。
+%}
+%\zl
+%\citet{HN94a}解决这一问题是依赖于为动词性复杂体假设一个特殊图式并且假设这样的动词复杂体以某种方式标记（后来是用取值为“+”的\lexfc 来标记的）并且组成一个动词性复杂体的中心词选择具有合适标记的元素。所以在%（\mex{0}a） 的分析中wird（将要）选择\lexc+ 元素而动词erzählen（告诉）满足这一要求。
 %\citet{HN94a} account for this by assuming a special schema for verbal complexes and by assuming
 %that such verbal complexes are marked in a certain way (later this was encoded with the \lexf with
 %the value `+') and that heads that form a verbal complex select for appropriately marked
 %elements. So in the analysis of (\mex{0}a) \emph{wird} `will' selects a \lex+ element and the word
 %\emph{erzählen} `tell' satisfies this requirement.
 
-很多非局部依存解释面临的问题是前置的成分并不一定是单一的动词：
+%很多非局部依存解释面临的问题是前置的成分并不一定是单一的动词：
 %The problem for many accounts of nonlocal dependencies is that the fronted material is not necessarily a
 %single verb:
-\eal
-\label{bsp-erzaehlen-wird}
-\ex
-\gll Erzählen wird er       seiner Tochter ein Märchen.\\
-     告诉     \textsc{aux} 他.\nom{} 他的.\dat{} 女儿   \textsc{art}.\acc{}   童话\\
-\glt `他会给他的女儿讲一个童话故事。'
+%\eal
+%\label{bsp-erzaehlen-wird}
+%\ex
+%\gll Erzählen wird er       seiner Tochter ein Märchen.\\
+%     告诉     \textsc{aux} 他.\nom{} 他的.\dat{} 女儿   \textsc{art}.\acc{}   童话\\
+%\glt `他会给他的女儿讲一个童话故事。'
 %\gll Erzählen wird er       seiner Tochter ein Märchen.\\
 %     tell      will he.\nom{} his.\dat{} daughter   a.\acc{}   fairytale\\
 %\glt `He will tell his daughter a fairytale.'
-\ex
-\gll Ein Märchen        erzählen wird er       seiner Tochter.\\
-     \textsc{art}   童话.\acc{} 告诉      \textsc{aux} 他.\nom{} 他的.\dat{}    女儿\\
+%\ex
+%\gll Ein Märchen        erzählen wird er       seiner Tochter.\\
+%     \textsc{art}   童话.\acc{} 告诉      \textsc{aux} 他.\nom{} 他的.\dat{}    女儿\\
 %\gll Ein Märchen        erzählen wird er       seiner Tochter.\\
 %     a   fairytale.\acc{} tell      will he.\nom{} his.\dat{}    daughter\\
-\ex  
-\gll Seiner Tochter        erzählen wird er       das Märchen.\\
-     他的.\dat{}    女儿 告诉     \textsc{aux} 他.\nom{} \textsc{art}.\acc{} 童话\\
+%\ex  
+%\gll Seiner Tochter        erzählen wird er       das Märchen.\\
+%     他的.\dat{}    女儿 告诉     \textsc{aux} 他.\nom{} \textsc{art}.\acc{} 童话\\
 %\gll Seiner Tochter        erzählen wird er       das Märchen.\\
 %     his.\dat{}    daughter tell     will he.\nom{} the.\acc{} fairytale\\
-\ex  
-\gll Seiner Tochter        ein Märchen        erzählen wird er.\\
-     他的.\dat{}    女儿 \textsc{art}.\acc{}   童话 告诉      \textsc{aux} 他.\nom\\
+%\ex  
+%\gll Seiner Tochter        ein Märchen        erzählen wird er.\\
+%     他的.\dat{}    女儿 \textsc{art}.\acc{}   童话 告诉      \textsc{aux} 他.\nom\\
 %\gll Seiner Tochter        ein Märchen        erzählen wird er.\\
 %     his.\dat{}    daughter a.\acc{}   fairytale tell      will he.\nom\\
-\zl
-如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充项的取值可能是\lexc$-$ 。如果所有信息都像在SBCG中那样共享，这种方法是不可能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，也就是说，\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和\textsc{cntxt}（这些特征可以参看\citealp[\page 98]{Sag2012a}）\footnote{
-  注意，这些结构共享是必需的。不能不指定论元结构列表中这些特征的取值。因为我们有一种模型-理论的观点，所以不指定取值会导致相应的结构有无限的歧义，因为这些结构可能有无数种实例。%  
-}并且将这些特征分组的目的是避免多重单个结构共享，在多重单个结构共享中特征取值之间有系统性联系。
+%\zl
+%如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所%有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充项的取值可能是\lexc$-$ 。如果所有信息都像在SBCG中那样共享，这种方法是不可%能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，也就是说，\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和%\textsc{cntxt}（这些特征可以参看\citealp[\page 98]{Sag2012a}）\footnote{
+ % 注意，这些结构共享是必需的。不能不指定论元结构列表中这些特征的取值。因为我们有一种模型-理论的观点，所以不指定取值会导致相应的结构有无限的歧义，因为这些结构可能有无数种实例。%  
+%}并且将这些特征分组的目的是避免多重单个结构共享，在多重单个结构共享中特征取值之间有系统性联系。
 %If the local requirement of \emph{wird} would be shared between filler and gap, the sentences in
 %(\mex{0}b)--(\mex{0}d) would be ruled out, since the projections in the \vf are not lexical elements
 %but complex phrasal projections that are \lex$-$. Now, as pointed out by the authors mentioned
