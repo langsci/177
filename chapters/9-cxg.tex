@@ -39,11 +39,11 @@ Fillmore、Kay、Jackendoff以及其他学者都指出：在很大程度上，�
 \eal
 \ex 
 \gll What is this scratch doing on the table?\\
-      什么 COP DET 擦痕 做 PREP DET 桌子\\
+      什么 \textsc{cop} \textsc{det} 擦痕 做 \textsc{prep} \textsc{det} 桌子\\
 \glt `桌子上为什么有擦痕？'
 \ex 
 \gll What do you think your name is doing in my book?\\
-      什么 AUX 你 想 GEN 名字 COP 做 PREP 我的 书\\
+      什么 \textsc{aux} 你 想 GEN 名字 \textsc{cop} 做 \textsc{prep} 我的 书\\
 \glt `你觉得我书上为什么有你的名字？'
 %\ex What is this scratch doing on the table?
 %\ex What do you think your name is doing in my book?
@@ -86,7 +86,7 @@ Fillmore、Kay、Jackendoff以及其他学者都指出：在很大程度上，�
 %in (\mex{1}) that determines the number of arguments.
 \ea
 \gll Willy watered the plants flat.\\
-	 Willy 浇水 DET 植物 平\\
+	 Willy 浇水 \textsc{det} 植物 平\\
 \glt `Willy浇水把植物浇平了。'
 %Willy watered the plants flat.
 \z
@@ -505,11 +505,11 @@ val & \menge{ \ms{ role & \ms{ $\theta$ & agent\\
 \label{ex-cxg-weltmeister}
 \ex 
 \gll Er schlägt den Weltmeister.\\
-	 他 打 DET 世界.冠军\\
+	 他 打 \textsc{det} 世界.冠军\\
 \glt `他在打世界冠军。'
 \ex 
 \gll Der Weltmeister wird (von ihm) geschlagen.\\
-	 DET 世界.冠军 COP \spacebr{}PREP 他 打\\
+	 \textsc{det} 世界.冠军 \textsc{cop} \spacebr{}\textsc{prep} 他 打\\
 \glt `世界冠军正在（被他）打。'
 %\ex 
 %\gll Er schlägt den Weltmeister.\\
@@ -567,7 +567,7 @@ val  \ibox{1}\\
 %}
 \ea
 \gll Das Buch liest sich gut.\\
-	 DET 书 读 \refl{} 好\\
+	 \textsc{det} 书 读 \refl{} 好\\
 \glt `这本书读起来很好/很容易读。'
 %\gll Das Buch liest sich gut.\\
 %	 the book reads \refl{} good\\
@@ -593,14 +593,14 @@ val  \ibox{1}\\
 \eal\label{ex-double-passivization}
 \ex\label{ex-double-passivization-strangle}
 \gll Bu şato-da boğ-ul-un-ur.\\
-     DET 城堡-\textsc{loc} 绞死-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
+     \textsc{det} 城堡-\textsc{loc} 绞死-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
 \glt `某人在这座城堡中（被某人）绞死了。'
 %\gll Bu şato-da boğ-ul-un-ur.\\
 %     this château-\textsc{loc} strangle-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
 %\glt `One is strangled (by one) in this château.'
 \ex\label{ex-double-passivization-hit}
 \gll Bu oda-da döv-ül-ün-ür.\\
-     DET 房间-\textsc{loc} 击打-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
+     \textsc{det} 房间-\textsc{loc} 击打-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
 \glt `某人在这座房间内（被某人）打。'
 %\gll Bu oda-da döv-ül-ün-ür.\\
 %     this room-\textsc{loc} hit-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
@@ -711,7 +711,7 @@ CxG不同的变体对抽象构式的性质有不同的假设。在范畴语法�
 %example). (\mex{1}) shows an example in which the abstract rule of forward application was used:
 \ea
 \gll {}[[[[Gibt] der Mann] der Frau] das Buch]\\
-	 {}\spacebr{}\spacebr{}\spacebr{}\spacebr{}给 DET 男人 DET 女人 DET 书\\
+	 {}\spacebr{}\spacebr{}\spacebr{}\spacebr{}给 \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
 \glt `那个男人给那个女人书了吗？'
 %\gll {}[[[[Gibt] der Mann] der Frau] das Buch]\\
 %	 {}\spacebr{}\spacebr{}\spacebr{}\spacebr{}give the man the woman the book\\
@@ -775,15 +775,15 @@ S $\to$ V, NP, NP, Adj*
 %the italicized words in (\mex{1}) would be part of a ditransitive construction.
 \ea
 \gll \emph{Gibt} \emph{der} \emph{Mann} morgen \emph{der} \emph{Frau} unter der Brücke \emph{das} \emph{Geld}?\\
-	 给 DET 男人 明天 DET 女人 PREP DET 桥 DET 钱\\
+	 给 \textsc{det} 男人 明天 \textsc{det} 女人 \textsc{prep} \textsc{det} 桥 \textsc{det} 钱\\
 \glt `明天那个男人是不是将要在桥下给那个女人钱？'
 %\gll \emph{Gibt} \emph{der} \emph{Mann} morgen \emph{der} \emph{Frau} unter der Brücke \emph{das} \emph{Geld}?\\
 %	 gives the man tomorrow the woman under the bridge the money\\
 %\glt `Is the man going to give the woman the money under the bridge tomorrow?'
 \z
-构式实现为非连续形式并且附接语插入到空位中。在这种分析方式中，仍然需要解释量词以及附接语的辖域\isc{辖域}\is{scope}是如何确定的。虽然这是可能的，但是这种方式并不明显而且至今没有在任何CxG方法中实现出来。对于允许不连续成分方法的进一步论述可以参看第~\ref{sec-discontinuous-constituents-HPSG}节。\isc{成分!非连续|)}\is{constituent!discontinuous|)}\isc{动词位置|)}\is{verb position|)}
+构式实现为非连续形式并且附接语插入到空位中。在这种分析方式中，仍然需要解释量词以及附接语的辖域\isc{辖域}\is{s\textsc{cop}e}是如何确定的。虽然这是可能的，但是这种方式并不明显而且至今没有在任何CxG方法中实现出来。对于允许不连续成分方法的进一步论述可以参看第~\ref{sec-discontinuous-constituents-HPSG}节。\isc{成分!非连续|)}\is{constituent!discontinuous|)}\isc{动词位置|)}\is{verb position|)}
 %The construction has been realized discontinuously and the adjuncts are inserted into the gaps.
-%In this kind of approach, one still has to explain how the scope\is{scope} of quantifiers and adjuncts is determined.
+%In this kind of approach, one still has to explain how the s\textsc{cop}e\is{s\textsc{cop}e} of quantifiers and adjuncts is determined.
 %While this may be possible, the solution is not obvious and has not been worked out in any of the
 %CxG approaches to date. For further discussions of approaches that allow for discontinuous constituents see Section~\ref{sec-discontinuous-constituents-HPSG}.
 %\is{constituent!discontinuous|)}\is{verb position|)}
@@ -930,7 +930,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 \eal
 \ex[]{
 \gll Dem Student graut vor der Prüfung.\\
-     DET.\dat{} 学生 害怕 PREP DET 考试\\
+     \textsc{det}.\dat{} 学生 害怕 \textsc{prep} \textsc{det} 考试\\
 \glt `学生害怕考试。'
 %\gll Dem Student graut vor der Prüfung.\\
 %     the.\dat{} student dreads before the exam\\
@@ -938,7 +938,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 }
 \ex[*]{\label{ex-ich-graue}
 \gll Ich graue dem Student vor der Prüfung.\\
-     我 害怕   DET.\dat{} 学生 PREP DET 考试\\
+     我 害怕   \textsc{det}.\dat{} 学生 \textsc{prep} \textsc{det} 考试\\
 %\gll Ich graue dem Student vor der Prüfung.\\
 %     I dread   the.\dat{} student before the exam\\
 }
@@ -963,13 +963,13 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 \eal
 \ex[*]{
 \gll Der Mann schläft das Buch.\\
-     DET 男人 睡觉 DET 书\\
+     \textsc{det} 男人 睡觉 \textsc{det} 书\\
 %\gll Der Mann schläft das Buch.\\
 %     the man sleeps the book\\
 }
 \ex[*]{
 \gll Der Mann denkt an die Frau das Buch.\\
-     DET 男人 想 PREP DET 女人 DET 书\\
+     \textsc{det} 男人 想 \textsc{prep} \textsc{det} 女人 \textsc{det} 书\\
 %\gll Der Mann denkt an die Frau das Buch.\\
 %     the man thinks at the woman the book\\
 }
@@ -998,7 +998,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 %subject does not get a semantic role. The referent of \emph{du} is not the one who \emph{seems}.
 \ea
 \gll Du scheinst gleich einzuschlafen.\\
-     你 好像.2\sg{} 很快 PREP.PREP.睡觉\\
+     你 好像.2\sg{} 很快 \textsc{prep}.\textsc{prep}.睡觉\\
 \glt `好像你很快就要睡觉了。'
 %\gll Du scheinst gleich einzuschlafen.\\
 %     you seem.2\sg{} soon in.to.sleep\\
@@ -1023,7 +1023,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 %\glt `Richard smiles at him.'
 \ex
 \gll Richard fischt den Teich leer.\\
-     Richard 钓鱼 DET 池塘 空\\
+     Richard 钓鱼 \textsc{det} 池塘 空\\
 %\gll Richard fischt den Teich leer.\\
 %     Richard fishes the pond empty\\
 \zl
@@ -1210,28 +1210,28 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 \label{ex-idiom-non-nominative-external}
 \ex 
 \gll nicht wissen, wo    X\_Dat der Kopf steht\\
-     NEG   知道    REL X     ART 中心语 站立\\
+     NEG   知道    REL X     \textsc{art} 中心语 站立\\
 \glt `不知道X的中心语在哪里'
 %\gll nicht wissen, wo    X\_Dat der Kopf steht\\
 %     not   know    where X     the head stands\\
 %\glt `to not know where x's head is at'
 \ex\label{mich-tritt-ein-Pferd}
 \gll glauben, X\_Acc tritt ein Pferd\\
-     相信  X     击打 ART 马\\
+     相信  X     击打 \textsc{art} 马\\
 \glt `非常吃惊'
 %\gll glauben, X\_Acc tritt ein Pferd\\
 %     believe  X     kicks a horse\\
 %\glt `be utterly surprised'
 \ex 
 \gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
-	 看 好像.如果 AUX X ART 鸡肉 ART 面包 PREP.吃\\
+	 看 好像.如果 \textsc{aux} X \textsc{art} 鸡肉 \textsc{art} 面包 \textsc{prep}.吃\\
 \glt `看起来很疑惑/迷惑'
 %\gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
 %	 look as.if had X the chicken the bread away.eaten\\
 %\glt `to look confused/puzzled'
 \ex
 \label{ex-look-as-if-butter}
-看 好像 如果 黄油 AUX.NEG 融化 [PREP X的 嘴巴]
+看 好像 如果 黄油 \textsc{aux}.NEG 融化 [\textsc{prep} X的 嘴巴]
 \glt '看起来好像完全无辜'
 %look as if butter wouldn't melt [in X's mouth]
 %\glt 'to look absolutely innocent'
@@ -1242,13 +1242,13 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 \eal
 \ex[]{
 \gll Ich glaube, mich      /  \# dich tritt ein Pferd.\\
-     我   相信 我.\acc{} {} {} 你.\acc{} 击打 ART 马\\
+     我   相信 我.\acc{} {} {} 你.\acc{} 击打 \textsc{art} 马\\
 %\gll Ich glaube, mich      /  \# dich tritt ein Pferd.\\
 %     I   believe me.\acc{} {} {} you.\acc{} kicks a horse\\
 }
 \ex[]{
 \gll Jonas glaubt, ihn  tritt ein Pferd.\footnotemark\\
-     Jonas 相信 他 击打 ART 马\\
+     Jonas 相信 他 击打 \textsc{art} 马\\
 \footnotetext{
   \url{http://www.machandel-verlag.de/der-katzenschatz.html}, 06.07.2015.
 }
@@ -1262,7 +1262,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 }
 \ex[\#]{
 \gll Jonas glaubt, dich  tritt ein Pferd.\\
-     Jonas 相信 你 击打 ART 马\\
+     Jonas 相信 你 击打 \textsc{art} 马\\
 \glt `Jonas相信一匹马踢你。'
 %\gll Jonas glaubt, dich  tritt ein Pferd.\\
 %     Jonas believes you kicks a horse\\
@@ -1316,7 +1316,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %clause. They provide the following example:
 \ea
 \gll Justin Bieber—Once upon a time ∅ butter wouldn't melt in little Justin's mouth. Now internationally famous for being a weapons-grade petulant brat\\    %\ldots
-     Justin Bieber—一次 PREP ART 时间 ∅ 黄油 AUX.NEG 融化 PREP 小 Justin的 嘴 现在 国际的 著名 PREP COP ART 武器-级别 易怒的 小孩\\
+     Justin Bieber—一次 \textsc{prep} \textsc{art} 时间 ∅ 黄油 \textsc{aux}.NEG 融化 \textsc{prep} 小 Justin的 嘴 现在 国际的 著名 \textsc{prep} \textsc{cop} \textsc{art} 武器-级别 易怒的 小孩\\
 \glt `Justin Bieber曾经非常天真无邪。现在因为其极其易怒而在国际上臭名昭著。'
 %Justin Bieber—Once upon a time ∅ butter wouldn't melt in little Justin's mouth. Now internationally famous for being a weapons-grade petulant brat
 \z
@@ -1330,14 +1330,14 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 \eal
 \ex 
 \gll Ich glaube, dass mich ein Pferd tritt.\\
-     我 相信   REL 我   ART 马   击打\\
+     我 相信   REL 我   \textsc{art} 马   击打\\
 \glt `我相信一匹马踢我。'
 %\gll Ich glaube, dass mich ein Pferd tritt.\\
 %     I believe   that me   a horse   kicks\\
 %\glt `I believe that a horse kicks me.'
 \ex 
 \gll Ich glaube, ein Pferd tritt mich.\\
-    我 相信   ART 马   击打 我\\
+    我 相信   \textsc{art} 马   击打 我\\
 \glt `我相信一匹马踢我。'
 %\gll Ich glaube, ein Pferd tritt mich.\\
 %     I believe   a horse   kicks me\\
@@ -1402,7 +1402,7 @@ dtrs \onems{ filler-dtr  \ms[word]{ synsem$|$loc & \ibox{1}
 %Und von wegen, die dort lebende Menschen hätte keine Bedürfnisse wie Strassen, schulen,
 %Krankenhäuser, 
 \gll ich glaub es tritt mich ein Pferd wenn ich einen derartigen Unsinn lese.\footnotemark\\
-     我 相信 \expl{} 击打 我 ART 马 REL 我 ART DET 胡说 读\\
+     我 相信 \expl{} 击打 我 \textsc{art} 马 REL 我 \textsc{art} \textsc{det} 胡说 读\\
 \footnotetext{
   \url{http://www.welt.de/wirtschaft/article116297208/Die-verlogene-Kritik-an-den-Steuerparadiesen.html}，评论区，\zhdate{2015/12/10}。
 }
@@ -1417,7 +1417,7 @@ dtrs \onems{ filler-dtr  \ms[word]{ synsem$|$loc & \ibox{1}
 %\pagebreak
 \ex 
 \gll omg dieser xBluuR der nn ist wieder da ey nein ich glaub es tritt mich ein Pferd!!\footnotemark\\
-    omgDET   XBluuR 他  {} COP  再次 这里 {} NEG 我 相信 \expl{} 击打 我 ART 马\\
+    omg\textsc{det}   XBluuR 他  {} \textsc{cop}  再次 这里 {} NEG 我 相信 \expl{} 击打 我 \textsc{art} 马\\
 \footnotetext{
   \url{http://forum.gta-life.de/index.php?user/3501-malcolm/}，\zhdate{2015/12/10}。
 }
@@ -1431,7 +1431,7 @@ dtrs \onems{ filler-dtr  \ms[word]{ synsem$|$loc & \ibox{1}
 %\glt `OMG, this xBluuR, the nn, he is here again, no, I am utterly surprised.'
 \ex 
 \gll ich glaub jetzt tritt mich ein pferd\footnotemark\\
-    我 相信 现在   击打 我 ART 马\\
+    我 相信 现在   击打 我 \textsc{art} 马\\
 \footnotetext{
   \url{http://www.castingshow-news.de/menowin-frhlich-soll-er-zum-islam-konvertieren-7228/}，\zhdate{2015/12/10}。
 }
@@ -1622,7 +1622,7 @@ Bagels, I like.
 \eal
 \ex[]{
 \gll  dass er seiner Tochter ein Märchen erzählen wird\\
-      REL 他 他的 女儿 ART 仙女.故事 告诉 AUX\\
+      REL 他 他的 女儿 \textsc{art} 仙女.故事 告诉 \textsc{aux}\\
 \glt `他会给他女儿讲一个童话故事这件事'  
 %\gll  dass er seiner Tochter ein Märchen erzählen wird\\
 %      that he his daughter a fairy.tale tell will\\
@@ -1630,7 +1630,7 @@ Bagels, I like.
 }
 \ex[*]{
 \gll dass er seiner Tochter ein Märchen erzählen nie wird\\
-     REL 他 他的    女儿 ART 仙女.故事 告诉 NEG AUX\\
+     REL 他 他的    女儿 \textsc{art} 仙女.故事 告诉 NEG \textsc{aux}\\
 %\gll dass er seiner Tochter ein Märchen erzählen nie wird\\
 %     that he his    daughter a fairy.tale tell never will\\
 }
@@ -1649,24 +1649,24 @@ Bagels, I like.
 \label{bsp-erzaehlen-wird}
 \ex
 \gll Erzählen wird er       seiner Tochter ein Märchen.\\
-     告诉     AUX 他.\nom{} 他的.\dat{} 女儿   ART.\acc{}   童话\\
+     告诉     \textsc{aux} 他.\nom{} 他的.\dat{} 女儿   \textsc{art}.\acc{}   童话\\
 \glt `他会给他的女儿讲一个童话故事。'
 %\gll Erzählen wird er       seiner Tochter ein Märchen.\\
 %     tell      will he.\nom{} his.\dat{} daughter   a.\acc{}   fairytale\\
 %\glt `He will tell his daughter a fairytale.'
 \ex
 \gll Ein Märchen        erzählen wird er       seiner Tochter.\\
-     ART   童话.\acc{} 告诉      AUX 他.\nom{} 他的.\dat{}    女儿\\
+     \textsc{art}   童话.\acc{} 告诉      \textsc{aux} 他.\nom{} 他的.\dat{}    女儿\\
 %\gll Ein Märchen        erzählen wird er       seiner Tochter.\\
 %     a   fairytale.\acc{} tell      will he.\nom{} his.\dat{}    daughter\\
 \ex  
 \gll Seiner Tochter        erzählen wird er       das Märchen.\\
-     他的.\dat{}    女儿 告诉     AUX 他.\nom{} ART.\acc{} 童话\\
+     他的.\dat{}    女儿 告诉     \textsc{aux} 他.\nom{} \textsc{art}.\acc{} 童话\\
 %\gll Seiner Tochter        erzählen wird er       das Märchen.\\
 %     his.\dat{}    daughter tell     will he.\nom{} the.\acc{} fairytale\\
 \ex  
 \gll Seiner Tochter        ein Märchen        erzählen wird er.\\
-     他的.\dat{}    女儿 ART.\acc{}   童话 告诉      AUX 他.\nom\\
+     他的.\dat{}    女儿 \textsc{art}.\acc{}   童话 告诉      \textsc{aux} 他.\nom\\
 %\gll Seiner Tochter        ein Märchen        erzählen wird er.\\
 %     his.\dat{}    daughter a.\acc{}   fairytale tell      will he.\nom\\
 \zl
@@ -1725,12 +1725,12 @@ Bagels, I like.
 \eal
 \ex 
 \gll an institute\\
-     ART 学院\\
+     \textsc{art} 学院\\
 \glt `一所学院'
 %an institute
 \ex 
 \gll a  house\\
-     ART 房子\\
+     \textsc{art} 房子\\
 \glt `一所房子'
 \zl
 %\addlines
@@ -1770,7 +1770,7 @@ Bagels, I like.
 %  159]{Sag2012a}. Hence, both verbs in (\mex{1}) can see the phonology of the subject:
 \ea
 \gll Kim can eat apples.\\
-     Kim AUX 吃 苹果\\
+     Kim \textsc{aux} 吃 苹果\\
 \glt `Kim能吃苹果。'
 % Kim can eat apples.
 \z
@@ -1943,7 +1943,7 @@ dtrs   & \liste{ \ms[Determiner]{
 \label{ex-dass-die-frauen-tueren-oeffnen-disc}
 \ex[]{
 \gll [dass] die Frauen Türen öffnen\\
-     \spacebr{}CONJ DET 女人 门 开\\
+     \spacebr{}\textsc{conj} \textsc{det} 女人 门 开\\
 \glt `女人开门'
 %     \spacebr{}that the women  doors open\\
 %\glt `that the woman open doors'
@@ -2031,19 +2031,19 @@ Crysmann, Beaver \biband Sag分析了并列现象\isc{并列}\is{coordination}�
 \eal
 \ex[]{
 \gll Mary tossed me a drink.\\
-     Mary 扔 我 ART 饮料\\
+     Mary 扔 我 \textsc{art} 饮料\\
 \glt `Mary扔给我一瓶饮料。'
 %Mary tossed me a drink.
 }
 \ex[]{
 \gll Mary happily tossed me a drink.\\
-     Mary 快乐地 扔 我 ART 饮料\\
+     Mary 快乐地 扔 我 \textsc{art} 饮料\\
 \glt `Mary快乐地扔给我一瓶饮料。'
 %Mary happily tossed me a drink.
 }
 \ex[*]{
 \gll Mary tossed happily me a drink.\\
-     Mary 扔 快乐地 我 ART 饮料\\
+     Mary 扔 快乐地 我 \textsc{art} 饮料\\
 %Mary tossed happily me a drink.
 }
 \zl
@@ -2235,17 +2235,17 @@ evokes & \liste{ \ms[right-triangle]{
 \eal
 \ex 
 \gll He sent her the letter.\\
-     他 寄送 她 DET 信\\
+     他 寄送 她 \textsc{det} 信\\
 \glt `他寄给她信。'
 %He sent her the letter.
 \ex 
 \gll He sent the letter.\\
-     他 寄送 DET 信\\
+     他 寄送 \textsc{det} 信\\
 \glt `他寄信。'
 %He sent the letter.
 \ex 
 \gll The letter was sent to her.\\
-     ART 信 COP 寄送 PREP 她\\
+     \textsc{art} 信 \textsc{cop} 寄送 \textsc{prep} 她\\
 \glt `这封信被寄送给她了。'
 %The letter was sent to her.
 \zl
@@ -2323,7 +2323,7 @@ evokes & \liste{ \ms[right-triangle]{
 %would be unintegrated (see Chapter~\ref{chap-phrasal} for an extended discussion of such constructions).
 \ea
 \gll He sneezed the foam off the cappuccino.\\
-     他 打喷嚏 DET 泡沫 PREP DET  卡布奇诺咖啡\\
+     他 打喷嚏 \textsc{det} 泡沫 \textsc{prep} \textsc{det}  卡布奇诺咖啡\\
 \glt `他打喷嚏把泡沫从卡布奇诺咖啡上吹走了。'
 %He sneezed the foam off the cappuccino.
 \footnote{
@@ -2342,7 +2342,7 @@ evokes & \liste{ \ms[right-triangle]{
 \ea
 \label{ex-schlag-den-mann-tot}
 \gll Schlag den Mann tot!\\
-     击打   DET 男人  死\\
+     击打   \textsc{det} 男人  死\\
 \glt `把这个男人打死！' 或者 `打这个死人！'
 %\gll Schlag den Mann tot!\\
 %     beat   the man  dead\\
@@ -2355,7 +2355,7 @@ evokes & \liste{ \ms[right-triangle]{
 %other sentences with depictive predicates:
 \ea
 \gll Iss den Fisch roh!\\
-     吃 DET 鱼 生的\\
+     吃 \textsc{det} 鱼 生的\\
 %\gll Iss den Fisch roh!\\
 %     eat the fish raw\\
 \z
@@ -2385,7 +2385,7 @@ evokes & \liste{ \ms[right-triangle]{
 }
 \ex[*]{
 \gll She dined a steak.\\  
-    她 吃饭 ART 牛排\\
+    她 吃饭 \textsc{art} 牛排\\
 %She dined a steak.
 }
 \zl
@@ -2422,12 +2422,12 @@ evokes & \liste{ \ms[right-triangle]{
 \eal
 \ex 
 \gll This book, I read.\\  
-    DET 书 我 读\\
+    \textsc{det} 书 我 读\\
 \glt `这本书，我读。'
 %This book, I read.
 \ex 
 \gll What did the boy hit?\\  
-    什么 AUX ART 男孩 击打\\
+    什么 \textsc{aux} \textsc{art} 男孩 击打\\
 \glt `这个男孩击打了什么？'
 %What did the boy hit?
 \zl
@@ -2439,7 +2439,7 @@ Van Trijp的分析涉及到几种一般不会出现在短语结构语法中的�
 %role. Figure~\vref{fig-what-did-the-boy-hit} shows the analysis of (\mex{1}).
 \ea
 \gll What did the boy hit?\\  
-    什么 AUX ART 男孩 击打\\
+    什么 \textsc{aux} \textsc{art} 男孩 击打\\
 \glt `这个男孩在击打什么？'
 %What did the boy hit?
 \z
@@ -2450,9 +2450,9 @@ for tree={l sep+=5mm}
 [TRANSITVE-CLAUSE-UNIT, name=tcu
   [NP-UNIT-1, name=np1
     [PRO [what]] ]
-  [AUX,tier=det, no edge, name=aux [did] ]
+  [\textsc{aux},tier=det, no edge, name=aux [did] ]
   [NP-UNIT-2, name=np2
-    [DET, tier=det [the]]
+    [\textsc{det}, tier=det [the]]
     [N   [boy]] ]
   [VP-UNIT, name=vp
     [V [hit] ] ]
@@ -2511,7 +2511,7 @@ Van Trijp表示英语中包含非局部依存构式的句子以话题开头。\f
 \ea
 \label{bsp-fronted-focus-two}
 \gll Q: What did you name your cat?\\  
-     Q: 什么 AUX 你 命名 你的 猫\\
+     Q: 什么 \textsc{aux} 你 命名 你的 猫\\
 \glt `你给你的猫取什么名？'
 \gll A: Rosie I named her. \\    （\emph{Rosie} = \textsc{focus})
      Q: Rosie 我 命名 她\\
@@ -2522,7 +2522,7 @@ Van Trijp表示英语中包含非局部依存构式的句子以话题开头。\f
 \ea
 \label{bsp-fronted-topic-two}
 \gll Q: What did you name your pets?\\    
-     Q: 什么 AUX 你 命名 你的 宠物\\
+     Q: 什么 \textsc{aux} 你 命名 你的 宠物\\
 \glt `你叫你的宠物什么名字？' 
 \gll A: My dog, I named Harold. My cat, I named Rosie.\\    （\emph{my dog}, \emph{my cat} = \textsc{topic})
      A: 我的 狗 我 命名 Harold 我的 猫 我 命名 Rosie\\
@@ -2543,12 +2543,12 @@ Van Trijp分析的另外一个问题是，他假设助动词do是一个宾语标
 \eal
 \ex 
 \gll Who saw the man?\\  
-     谁 看见 DET 男人\\
+     谁 看见 \textsc{det} 男人\\
 \glt `谁看见了这个男人？'
 %Who saw the man?
 \ex 
 \gll Who did John see?\\  
-     谁 AUX John 看见\\
+     谁 \textsc{aux} John 看见\\
 \glt `John看见了谁？'
 %Who did John see?
 \zl
@@ -2557,7 +2557,7 @@ Van Trijp分析的另外一个问题是，他假设助动词do是一个宾语标
 \ea
 Who \emph{did} see the man?
 \gll Who \emph{did} see the man?\\  
-     谁 AUX 看见 DET 男人\\
+     谁 \textsc{aux} 看见 \textsc{det} 男人\\
 \glt `谁看见了这个男人？'
 %Who \emph{did} see the man?
 \z
@@ -2567,27 +2567,27 @@ Who \emph{did} see the man?
 \settowidth\jamwidth{(prepositional object)}
 \ex
 \gll Where did you see the man?\\    \jambox{(adverbial)}
-     哪里AUX 你 看见 DET 男人\\
+     哪里\textsc{aux} 你 看见 \textsc{det} 男人\\
 \glt `你在哪里看见了这个男人？'
 %Where did you see the man? \jambox{(adverbial)}
 \ex 
 \gll How tall is the man?\\     \jambox{(predicative)}
-     怎样 高 COP ADET 男人\\
+     怎样 高 \textsc{cop} A\textsc{det} 男人\\
 \glt `这个男人有多高？'
 %How tall is the man? \jambox{(predicative)}
 \ex
 \gll What did John consider Peter?\\      \jambox{(predicative)}
-     什么 AUX John 认为 Peter\\
+     什么 \textsc{aux} John 认为 Peter\\
 \glt `John认为Peter是什么？'
 %What did John consider Peter? \jambox{(predicative)}
 \ex 
 \gll What does this book cost?\\       \jambox{(adverbial)}
-     什么 AUX 这 书 花费\\
+     什么 \textsc{aux} 这 书 花费\\
 \glt `这本书花费了多少钱？'
 %What does this book cost? \jambox{(adverbial)}
 \ex 
 \gll About what did you talk?\\       \jambox{(prepositional object)}
-     PREP 什么 AUX 你 说\\
+     \textsc{prep} 什么 \textsc{aux} 你 说\\
 \glt `你谈论了什么？'
 %About what did you talk? \jambox{(prepositional object)}
 \zl
@@ -2596,7 +2596,7 @@ Who \emph{did} see the man?
 \ea
 \settowidth\jamwidth{(prepositional object)}
 \gll Who does he think saw this man?\\   \jambox{(subject)}
-     谁 AUX 他 认为 看见 这 男人\\
+     谁 \textsc{aux} 他 认为 看见 这 男人\\
 \glt `他认为谁看见了这个男人？'
 %Who does he think saw this man? \jambox{(subject)}
 \z
@@ -2621,14 +2621,14 @@ Who \emph{did} see the man?
 
 还有另外一个实践性问题：假设填充语与其来源存在联系的方法可以解决辖域歧义问题，这种辖域歧义只有当某一元素提取才会产生。例如，对比 （\mex{1}a） 中的句子与 （\mex{1}b, c）中的句子：虽然在 （\mex{1}a） 、（\mex{1}c）中oft（经常）与nicht（不）的顺序是一样的，（\mex{1}a） 存在歧义但是 （\mex{1}c） 不存在。
 %There is a further empirical problem: approaches that assume that a filler is related to its origin
-%can explain scope ambiguities that only arise when an element is extracted. Compare for instance the
+%can explain s\textsc{cop}e ambiguities that only arise when an element is extracted. Compare for instance the
 %sentence in (\mex{1}a) with the sentences in (\mex{1}b, c): although the order of \emph{oft} `often' and
 %\emph{nicht} `not' in (\mex{1}a) and (\mex{1}c) is the same, (\mex{1}a) is ambiguous but (\mex{1}c) is
 %not.
 \eal
 \ex 
 \gll Oft liest er das Buch nicht.\\
-     经常 读 他 DET 书 不\\
+     经常 读 他 \textsc{det} 书 不\\
 \glt `大多数情况下他不读这本书。' 或者 `他并非经常读这本书。'
 %\gll Oft liest er das Buch nicht.\\
 %     often reads he the book not\\
@@ -2636,14 +2636,14 @@ Who \emph{did} see the man?
 %often.'
 \ex
 \gll dass er das Buch nicht oft liest\\
-     REL 他 DET 书 不 经常 读\\
+     REL 他 \textsc{det} 书 不 经常 读\\
 \glt `他并非经常读这本书这件事'
 %\gll dass er das Buch nicht oft liest\\
 %     that he the book not often reads\\
 %\glt `that it is not the case that he reads the book often'
 \ex
 \gll dass er das Buch oft nicht liest\\
-     REL 他 DET 书 经常 不 读\\
+     REL 他 \textsc{det} 书 经常 不 读\\
 \glt `大多数情况下他并不读这本书这件事'
 %\gll dass er das Buch oft nicht liest\\
 %     that he the book often not reads\\
@@ -2688,17 +2688,17 @@ Who \emph{did} see the man?
 \label{ex-atb-gazdar-two}
 \ex[]{ %The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP \& S/NP)}
 \gll The kennel     which Mary made and Fido sleeps in has been stolen.\\   \jambox{(= S/NP \& S/NP)}
-    ART  狗窝 REL Mary 做 并且 Fido 睡 PREP AUX COP 偷\\
+    \textsc{art}  狗窝 REL Mary 做 并且 Fido 睡 \textsc{prep} \textsc{aux} \textsc{cop} 偷\\
 \glt `Mary制作并且Fido在里面睡的那个狗窝被人偷走了。'
 }
 \ex[]{ %The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= S/PP \& S/PP)}
 \gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.\\   \jambox{(= S/PP \& S/PP)}
-    ART  狗窝 PREP REL Mary 保持 药物 并且 Fido 睡 PREP AUX COP 偷\\
+    \textsc{art}  狗窝 \textsc{prep} REL Mary 保持 药物 并且 Fido 睡 \textsc{prep} \textsc{aux} \textsc{cop} 偷\\
 \glt `Mary放药物并且Fido在里面睡的那个狗窝被人偷走了。'
 }
 \ex[*]{%The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP \& S/PP)}
 \gll The kennel (in) which Mary made and Fido sleeps has been stolen.\\     \jambox{(= S/NP \& S/PP)}
-    ART  狗窝 PREP REL Mary 做 并且 Fido 睡 PREP AUX COP 偷\\
+    \textsc{art}  狗窝 \textsc{prep} REL Mary 做 并且 Fido 睡 \textsc{prep} \textsc{aux} \textsc{cop} 偷\\
 }
 \zl
 上面例子的共性是如果两个或多个成分有相同的句法范畴和相同的\slashvsc 取值的话，它们就可以并列。这就解释了（\mex{0}a、b）中的which和in which为什么可以在各自的小句中填充两个位置。那么，不采用\slashfc 来分析缺失成分信息弥散的理论就必须寻找另外的方式去确保所有的论元槽被填充并且被提取成分和相应的论元角色之间的关系是正确的。注意这一点在van Trijp提出的模型中并不直接，因为他必须允许介词in与它左边的一些成分组合，这些成分同时也是made的主语。通常一个NP不能简单地充当两个中心语的论元。见例（\mex{1}a）：
@@ -2715,12 +2715,12 @@ Who \emph{did} see the man?
 \eal
 \ex[*]{
 \gll John said about the cheese that I like.\\
-    John 说 PREP DET 奶酪 REL 我 喜欢\\
+    John 说 \textsc{prep} \textsc{det} 奶酪 REL 我 喜欢\\
 %John said about the cheese that I like.
 }
 \ex[]{
 \gll John said about the cheese that I like it.\\
-    John 说 PREP DET 奶酪 REL 我 喜欢 它\\
+    John 说 \textsc{prep} \textsc{det} 奶酪 REL 我 喜欢 它\\
 \glt `John谈论了我喜欢的那种奶酪。'
 %John said about the cheese that I like it.
 }
@@ -2788,12 +2788,12 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
   \eal
   \ex 
 \gll Peter will read the book.\\
-    Peter AUX 读 DET 书\\
+    Peter \textsc{aux} 读 \textsc{det} 书\\
 \glt `Peter将会读这本书。'
 %Peter will read the book.
   \ex 
 \gll Peter has read the book.\\
-    Peter AUX 读 DET 书\\
+    Peter \textsc{aux} 读 \textsc{det} 书\\
 \glt `Peter已经读过这本书了。'
 %Peter has read the book.
   \zllast
@@ -2810,13 +2810,13 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 \eal
 \ex[]{
 \gll The boy I think left.\\
-     DET 男孩 我 认为 离开\\
+     \textsc{det} 男孩 我 认为 离开\\
 \glt `我认为那个男孩离开了。'
 %The boy I think left.
 }
 \ex[*]{
 \gll I the boy think left.\\
-     我 DET 男孩 认为 离开\\
+     我 \textsc{det} 男孩 认为 离开\\
 %I the boy think left.
 }
 \zl
@@ -2883,7 +2883,7 @@ Van Trijp表明FCG与他称之为生成方法的不同之处在于它不仅希�
 %parts of phrases is given in (\mex{1}):
 \ea
 \gll Dieses Buch hat der Mann mir versprochen, seiner Frau zu geben, der gestern hier aufgetreten ist.\\
-     这   书 AUX DET 男人  我  承诺     他的    妻子 PREP 给   REL 昨天 这里 演奏 COP\\
+     这   书 \textsc{aux} \textsc{det} 男人  我  承诺     他的    妻子 \textsc{prep} 给   REL 昨天 这里 演奏 \textsc{cop}\\
 \glt `昨天在这里演奏的那个男人向我承诺把这本书给他的妻子。'
 %\gll Dieses Buch hat der Mann mir versprochen, seiner Frau zu geben, der gestern hier aufgetreten ist.\\
 %     this   book has the man  me  promised     his    wife to give   who yesterday here performed is\\
@@ -2935,7 +2935,7 @@ Van Trijp表明FCG与他称之为生成方法的不同之处在于它不仅希�
 %flaws that can be easily fixed or assumptions that can simply be dropped (role of \emph{do} as object marker, claim that
 %the initial position in English fronting construction is the topic), some empirical shortcomings
 %(coordination, admittance of illformed utterances with discontinuous constituents), some empirical
-%problems when the analysis is extended to other languages (scope of adjuncts in German), and the
+%problems when the analysis is extended to other languages (s\textsc{cop}e of adjuncts in German), and the
 %parsimony of the analyses is not really comparable since the restrictions on continuity are not
 %really worked out (or at least not published). If the formalization of restrictions on continuity in FCG turns out to be even
 %half as complex as the formalization that is necessary for accounts of nonlocal dependencies
@@ -3294,7 +3294,7 @@ Van Trijp对比了SBCG和FCG并且说SBCG遵循理论物理学——像乔姆斯
 %governing verb. 
 \ea
 \gll I am waiting for my man.\\
-    我 COP 等待 PREP 我的 人\\
+    我 \textsc{cop} 等待 \textsc{prep} 我的 人\\
 \glt `我在等待我的人。'
 %I am waiting for my man.
 \z 

@@ -4,7 +4,7 @@
 %\chapter{Generative"=enumerative vs.\ model-theoretic approaches}
 \label{Abschnitt-Generativ-Modelltheoretisch}
 
-生成"=枚举方法\isc{模型论语法|(}\is{model"=theoretic grammar|(}假设语法生成一个符号序列的集合（词串）。这就是术语生成语法\isc{生成语法}\is{Generative Grammar} 的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 DET 书 DET 男人 给）。
+生成"=枚举方法\isc{模型论语法|(}\is{model"=theoretic grammar|(}假设语法生成一个符号序列的集合（词串）。这就是术语生成语法\isc{生成语法}\is{Generative Grammar} 的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{det} 书 \textsc{det} 男人 给）。
 %Generative"=enumerative\is{model"=theoretic grammar|(} approaches assume that a grammar generates a set of sequences of symbols (strings of words).
 %This is where the term Generative Grammar\is{Generative Grammar} comes from. Thus, it is possible to use the grammar on
 %page~\pageref{bsp-grammatik-psg}, repeated here as (\mex{1}), to derive the string \emph{er das Buch dem Mann gibt}
@@ -160,25 +160,25 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \eal
 \ex[]{
 \gll Du kennst diesen Aufsatz.\\
-	 你 知道.\textsc{2sg} DET.\acc{} 散文\\
+	 你 知道.\textsc{2sg} \textsc{det}.\acc{} 散文\\
 %\gll Du kennst diesen Aufsatz.\\
 %	 you know.\textsc{2sg} this.\acc{} essay\\
 }
 \ex[*]{
 \gll Du kennen diesen Aufsatz.\\
-	你 知道.\textsc{3pl} DET.\acc{} essay\\
+	你 知道.\textsc{3pl} \textsc{det}.\acc{} essay\\
 %\gll Du kennen diesen Aufsatz.\\
 %	you know.\textsc{3pl} this.\acc{} essay\\
 }
 \ex[*]{
 \gll Du kennen dieser Aufsatz.\\
-你 知道.\textsc{3pl} DET.\nom{} 散文\\
+你 知道.\textsc{3pl} \textsc{det}.\nom{} 散文\\
 %\gll Du kennen dieser Aufsatz.\\
 %you know.\textsc{3pl} this.\nom{} essay\\
 }
 \ex[*]{
 \gll Du kennen Aufsatz dieser.\\
-你 知道.\textsc{3pl} 散文 DET.\nom{}\\
+你 知道.\textsc{3pl} 散文 \textsc{det}.\nom{}\\
 %\gll Du kennen Aufsatz dieser.\\
 %you know.\textsc{3pl} essay this.\nom{}\\
 }
@@ -191,7 +191,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 % the sentence in (\mex{1}) violates grammatical rules of German, but is nevertheless still interpretable.
 \ea
 \gll Studenten stürmen mit Flugblättern und Megafon die Mensa und rufen alle auf zur Vollversammlung in der Glashalle \emph{zum} \emph{kommen}. \emph{Vielen} bleibt das Essen im Mund stecken und \emph{kommen} \emph{sofort} \emph{mit}.\footnotemark\\
-学生 风暴 PREP 飞行员 和 扩音器 DET 餐馆 并且 号召 所有的 PREP PREP 全体.会议 PREP DET 玻璃.大厅 PREP.DET 来 很多.\dat{} 停留 DET 食物 PREP.DET 嘴巴 塞 并且 来 立即 PREP\\
+学生 风暴 \textsc{prep} 飞行员 和 扩音器 \textsc{det} 餐馆 并且 号召 所有的 \textsc{prep} \textsc{prep} 全体.会议 \textsc{prep} \textsc{det} 玻璃.大厅 \textsc{prep}.\textsc{det} 来 很多.\dat{} 停留 \textsc{det} 食物 \textsc{prep}.\textsc{det} 嘴巴 塞 并且 来 立即 \textsc{prep}\\
 \footnotetext{
   Streikzeitung der Universität Bremen，\zhdate{2003/12/04}，第2页。强调部分是我加的。 
 }
@@ -236,7 +236,7 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用一个�
 %for example the one given in Figure~\vref{fig-and-of-the}.%
 \ea
 \gll That cat is afraid of the dog and of the parrot.\\
-	 那 猫 COP 害怕 PREP DET 狗 和 DET 鹦鹉\\
+	 那 猫 \textsc{cop} 害怕 \textsc{prep} \textsc{det} 狗 和 \textsc{det} 鹦鹉\\
 \glt `那只猫害怕狗和鹦鹉。'
 %That cat is afraid of the dog and of the parrot.
 \z
@@ -300,12 +300,12 @@ Ewan Klein\aimention{Ewan Klein}指出范畴语法\indexcgc 和最简方案，�
 \eal
 \ex 
 \gll The man$_i$ sleeps. He$_i$ snores.\\
-	 DET 男人$_i$ 睡觉 他$_i$  打呼噜\\
+	 \textsc{det} 男人$_i$ 睡觉 他$_i$  打呼噜\\
 \glt `那个男人$_i$睡觉。他$_i$打呼噜。'
 %\ex The man$_i$ sleeps. He$_i$ snores.
 \ex 
 \gll The woman$_i$ sleeps. He$_{*i}$ snores.\\
-	 DET 女人$_i$ 睡觉 他$_{*i}$  打呼噜\\
+	 \textsc{det} 女人$_i$ 睡觉 他$_{*i}$  打呼噜\\
 \glt `那个女人$_i$睡觉。他$_{*i}$打呼噜。'
 %\ex The woman$_i$ sleeps. He$_{*i}$ snores.
 \zl
@@ -319,12 +319,12 @@ Ewan Klein\aimention{Ewan Klein}指出范畴语法\indexcgc 和最简方案，�
 \eal
 \ex 
 \gll I have a cousin$_i$. He$_i$ is very smart.\\
-	 我 有 ART 表兄$_i$ 他$_i$ COP 非常 聪明\\
+	 我 有 \textsc{art} 表兄$_i$ 他$_i$ \textsc{cop} 非常 聪明\\
 \glt `我有一个表兄。他非常聪明。'
 %\ex I have a cousin$_i$. He$_i$ is very smart.
 \ex 
 \gll I have a cousin$_i$. She$_i$ is very smart.\\
-	 我 有 ART 表兄$_i$ 她$_i$ COP 非常 聪明\\
+	 我 有 \textsc{art} 表兄$_i$ 她$_i$ \textsc{cop} 非常 聪明\\
 \glt `我有一个表兄。她非常聪明。'
 %\ex I have a cousin$_i$. She$_i$ is very smart.
 \zl
@@ -340,7 +340,7 @@ Ten Hacken认为类似于例（\mex{1}）的例子都是有问题的：
 %\ex Niels has two cousins.
 \ex 
 \gll How many cousins does Niels have?\\
-	Q 很多 表亲 AUX Niels 有\\
+	Q 很多 表亲 \textsc{aux} Niels 有\\
 \glt `Niels有多少表亲？'
 %\ex How many cousins does Niels have?
 \zl
@@ -351,12 +351,12 @@ Ten Hacken认为类似于例（\mex{1}）的例子都是有问题的：
 \eal
 \ex 
 \gll Niels and Odette are cousins.\\
-	Niels 和 Odette COP 表亲\\
+	Niels 和 Odette \textsc{cop} 表亲\\
 \glt `Niels 和 Odette是表亲？'
 %\ex Niels and Odette are cousins.
 \ex 
 \gll Niels und Odette sind Cousin und Cousine.\\
-	 Niels 和 Odette COP 表亲.\mas{} 和 表亲.\fem\\
+	 Niels 和 Odette \textsc{cop} 表亲.\mas{} 和 表亲.\fem\\
 %\gll Niels und Odette sind Cousin und Cousine.\\
 %	 Niels and Odette are cousin.\mas{} and cousin.\fem\\
 \zl
@@ -377,12 +377,12 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \eal
 \ex 
 \gll Niels and Odette are cousins. They are very smart.\\
-	Niels 和 Odette COP 表亲 他们 COP 非常 聪明\\
+	Niels 和 Odette \textsc{cop} 表亲 他们 \textsc{cop} 非常 聪明\\
 \glt `Niels 和 Odette是表亲。他们非常聪明。'
 %\ex Niels and Odette are cousins. They are very smart.
 \ex 
 \gll The cousins/brothers/sisters are standing over there. They are very smart.\\
-	DET 表/兄弟/姐妹 COP 站 PREP 那里 他们 COP 非常 聪明\\
+	\textsc{det} 表/兄弟/姐妹 \textsc{cop} 站 \textsc{prep} 那里 他们 \textsc{cop} 非常 聪明\\
 \glt `那些表/兄弟/姐妹正站在那边。他们非常聪明。'
 %\ex The cousins/brothers/sisters are standing over there. They are very smart.
 \zl
@@ -402,7 +402,7 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 %component, and here the gender value is determined for each noun in the lexicon. For the binding of personal pronouns, there is no gender difference in German. 
 \ea
 \gll Die Schwestern / Brüder / Vereinsmitglieder / Geschwister stehen dort.~~~~~~ Sie lächeln.\\
-     DET 姐妹.\fem{} {} 兄弟.\mas{} {} 俱乐部.成员.\neu{} {} 兄弟姐妹 站 那里 他们 笑\\
+     \textsc{det} 姐妹.\fem{} {} 兄弟.\mas{} {} 俱乐部.成员.\neu{} {} 兄弟姐妹 站 那里 他们 笑\\
 \glt `那些姐妹/兄弟/俱乐部成员/兄弟姐妹正站在那边。他们在笑。'
 %\gll Die Schwestern / Brüder / Vereinsmitglieder / Geschwister stehen dort.~~~~~~ Sie lächeln.\\
 %     the sisters.\fem{} {} brothers.\mas{} {} club.members.\neu{} {} siblings stand there they smile.\\
@@ -414,21 +414,21 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \label{Beispiel-einer-nach-dem-anderen}
 \ex
 \gll Die Fenster wurden eins nach dem anderen geschlossen.\\
-	 DET 窗户.\neu{}  COP 一.\neu{} PREP DET 另外的 被关\\
+	 \textsc{det} 窗户.\neu{}  \textsc{cop} 一.\neu{} \textsc{prep} \textsc{det} 另外的 被关\\
 \glt `窗户一个接一个地被关上了。'
 %\gll Die Fenster wurden eins nach dem anderen geschlossen.\\
 %	 the windows.\neu{} were one.\neu{} after the other closed\\
 %\glt `The windows were closed one after the other.'
 \ex 
 \gll Die Türen wurden eine nach der anderen geschlossen.\\
-	DET 门.\fem{} COP 一.\fem{} PREP DET 另外的 被关\\
+	\textsc{det} 门.\fem{} \textsc{cop} 一.\fem{} \textsc{prep} \textsc{det} 另外的 被关\\
 \glt `门被一个接一个地关上了。'
 %\gll Die Türen wurden eine nach der anderen geschlossen.\\
 %	the doors.\fem{} were one.\fem{} after the other closed\\
 %\glt `The doors were closed one after the other.'
 \ex 
 \gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
-	 DET 门闩.\mas{} COP 一.\mas{} PREP DET 另外的 被关\\
+	 \textsc{det} 门闩.\mas{} \textsc{cop} 一.\mas{} \textsc{prep} \textsc{det} 另外的 被关\\
 \glt `门闩被一个接一个地关上了。'
 %\gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
 %	 the bolts.\mas{} were one.\mas{} after the other closed\\
@@ -440,7 +440,7 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \eal
 \ex 
 \gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
-	 DET 成员.\neu{} PREP.DET 政治局 COP 一.\neu{} {} 一.\mas{} PREP DET 另外的 PREP.PREP DET 大厅 运送\\
+	 \textsc{det} 成员.\neu{} \textsc{prep}.\textsc{det} 政治局 \textsc{cop} 一.\neu{} {} 一.\mas{} \textsc{prep} \textsc{det} 另外的 \textsc{prep}.\textsc{prep} \textsc{det} 大厅 运送\\
 \glt `政治局的成员一个接一个地被排挤出去。'
 %\gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
 %	 the members.\neu{} of.the politburo were one.\neu{} {} one.\mas{} after the other out.of the hall carried\\
@@ -448,7 +448,7 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \ex 
 \gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
 Keller.\\
-DET 成员.\neu{} PREP.DET 女人的.跳舞.俱乐部 离开 ART.\neu{} {} ART.\fem{} PREP DET.\neu{} {} DET.\fem{} 另外的 PREP.DET 保护 PREP.DET 黑暗的 DET
+\textsc{det} 成员.\neu{} \textsc{prep}.\textsc{det} 女人的.跳舞.俱乐部 离开 \textsc{art}.\neu{} {} \textsc{art}.\fem{} \textsc{prep} \textsc{det}.\neu{} {} \textsc{det}.\fem{} 另外的 \textsc{prep}.\textsc{det} 保护 \textsc{prep}.\textsc{det} 黑暗的 \textsc{det}
 地下室\\
 \glt `女子舞蹈俱乐部的成员在黑暗的掩护下一个接一个地离开了地下室。'
 %\gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
@@ -463,7 +463,7 @@ DET 成员.\neu{} PREP.DET 女人的.跳舞.俱乐部 离开 ART.\neu{} {} ART.\
 \eal
 \ex 
 \gll "`Farbe bringt die meiste Knete!"' verriet ein 14jähriges~~~ türkisches~~ \emph{Mädchen}, \emph{die} die Mauerstückchen am      Nachmittag am Checkpoint Charlie an Japaner und US-Bürger verkauft.\footnotemark\\
-\hspaceThis{"`}颜色 带来 \deter~ 最多 钱 揭露 \deter~ 14-年龄.老  土耳其 女孩.\neu{} REL.\fem{} DET 墙.碎片
+\hspaceThis{"`}颜色 带来 \deter~ 最多 钱 揭露 \deter~ 14-年龄.老  土耳其 女孩.\neu{} REL.\fem{} \textsc{det} 墙.碎片
 in.the afternoon at Checkpoint Charlie at Japanese and US-citizens sells\\  
 \footnotetext{
         taz， \zhdate{1990/06/04}，第6页。
@@ -481,7 +481,7 @@ in.the afternoon at Checkpoint Charlie at Japanese and US-citizens sells\\
 \ex 
 {\raggedright
 \gll Es ist ein junges {\em Mädchen\/}, {\em die\/} auf der Suche nach CDs bei Bolzes reinschaut.\footnotemark\\
-	 他 COP ART 年轻的 女孩.\neu{} REL.\fem{} PREP DET 寻找 PREP CDs PREP Bolzes 停下.PREP\\
+	 他 \textsc{cop} \textsc{art} 年轻的 女孩.\neu{} REL.\fem{} \textsc{prep} \textsc{det} 寻找 \textsc{prep} CDs \textsc{prep} Bolzes 停下.\textsc{prep}\\
 \footnotetext{
         taz，\zhdate{1996/03/13}，第11页。
       }

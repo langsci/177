@@ -244,17 +244,17 @@ HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受�
 \eal
 \ex[*]{
 \gll dass Peter das Buch schläft\\
-	 CONJ Peter DET 书 睡觉\\
+	 \textsc{conj} Peter \textsc{det} 书 睡觉\\
 %	 that Peter the book sleeps\\
 }
 \ex[*]{
 \gll dass Peter erwartet\\
-	 CONJI Peter 等待\\
+	 \textsc{conj}I Peter 等待\\
 %	 that Peter expects\\
 }
 \ex[*]{
 \gll dass Peter über den Mann erwartet\\
-	 CONJ Peter 关于 DET 人 等待\\
+	 \textsc{conj} Peter 关于 \textsc{det} 人 等待\\
 %	 that Peter about the man expects\\
 }
 \zl
@@ -302,11 +302,11 @@ S $\to$ NP[\type{nom}], NP[\type{acc}], V[\type{nom\_acc}]
 \eal
 \ex 
 \gll {}[dass] Peter schläft\label{Bsp-Peter-schlaeft}\\
-	{}\spacebr{}CONJ Peter 睡觉\\
+	{}\spacebr{}\textsc{conj} Peter 睡觉\\
 %	{}\spacebr{}that Peter sleeps\\
 \ex 
 \gll {}[dass] Peter Maria erwartet\\
-	{}\spacebr{}CONJ Peter Maria 等待\\
+	{}\spacebr{}\textsc{conj} Peter Maria 等待\\
 \glt `Peter在等Maria'
 %	{}\spacebr{}that Peter Maria expects\\
 %\glt `that Peter expects Maria'
@@ -385,7 +385,7 @@ sm edges
 sm edges
 [NP
 	[Det
-		[dem;DET]]
+		[dem;\textsc{det}]]
 %		[dem;the]]
 	[N
 		[Mann;男人]]]
@@ -473,7 +473,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 \eal
 \ex 
 \gll {}[der Mann] und [die Frau]\\
-	 {}\spacebr{}DET 男人 和 \spacebr{}DET 女人\\
+	 {}\spacebr{}\textsc{det} 男人 和 \spacebr{}\textsc{det} 女人\\
 %	 {}\spacebr{}the man and \spacebr{}the woman\\
 \ex 
 \gll Er [kennt] und [liebt] diese Schallplatte.\\
@@ -481,7 +481,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 %	 he.\nom{} \spacebr{}knows and \spacebr{}loves this.\acc{} record\\
 \ex 
 \gll Er ist [dumm] und [arrogant].\\
-	他 COP \spacebr{}哑的 和 \spacebr{}傲慢\\
+	他 \textsc{cop} \spacebr{}哑的 和 \spacebr{}傲慢\\
 %	he is \spacebr{}dumb and \spacebr{}arrogant\\
 \zl
 （\mex{0}b）应该跟（\mex{1}）中的例子相比较。在（\mex{1}a）中，动词分别选择了一个宾格宾语和一个与格宾语，并且在（\mex{1}b）中，动词选择了一个宾格宾语和一个介词宾语：
@@ -498,7 +498,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 }
 \ex[*]{ 
 \gll weil er auf Maria kennt und wartet\\
-     因为 他 PREP Maria 认识 和 等待\\
+     因为 他 \textsc{prep} Maria 认识 和 等待\\
 \glt 想说：“因为他认识Maria，并等她”
 %     because he for Maria knows and waits\\
 %\glt Intended: `because he knows Maria and waits for her'
@@ -610,22 +610,22 @@ Argument $<$ Head[\initial --]
 \eal
 \ex[]{
 \gll {}[in [den Schrank]]\\
-     \spacebr{}PREP \spacebr{}DET 壁橱\\
+     \spacebr{}\textsc{prep} \spacebr{}\textsc{det} 壁橱\\
 %     \spacebr{}in \spacebr{}the cupboard\\
 }
 \ex[*]{
 \gll {}[[den Schrank] in]\\
-     \hspaceThis{[[}DET 壁橱 PREP\\
+     \hspaceThis{[[}\textsc{det} 壁橱 \textsc{prep}\\
 %     \hspaceThis{[[}the cupboard in\\
 }
 \ex[]{
 \gll {}dass [er [ihn umfüllt]]\\
-     {}CONJ \spacebr{}他 \spacebr{}它 倒\\
+     {}\textsc{conj} \spacebr{}他 \spacebr{}它 倒\\
 %     {}that \spacebr{}he \spacebr{}it decants\\
 }
 \ex[*]{
 \gll {}dass [er [umfüllt ihn]]\\
-     {}CONJ \spacebr{}他 \spacebr{}倒 它\\
+     {}\textsc{conj} \spacebr{}他 \spacebr{}倒 它\\
 %     {}that \spacebr{}he \spacebr{}decants it\\
 }
 \zl
@@ -642,26 +642,26 @@ Argument $<$ Head[\initial --]
 \label{bsp-projektion-v-merkmale}
 \ex[]{
 \gll {}[Dem Mann helfen] will er nicht.\\
- {}\spacebr{}DET 男人 帮助 想 他 不\\
+ {}\spacebr{}\textsc{det} 男人 帮助 想 他 不\\
 \glt `他不想帮助这个男人。'
 % {}\spacebr{}the man help wants he not\\
 %\glt `He doesn't want to help the man.'
 }
 \ex[]{
 \gll {}[Dem Mann geholfen] hat er nicht.\\
-{}\spacebr{}DET 男人 帮助 AUX 他 不\\
+{}\spacebr{}\textsc{det} 男人 帮助 \textsc{aux} 他 不\\
 \glt `他没帮助这个男人。'
 %{}\spacebr{}the man helped has he not\\
 %\glt `He hasn't helped the man.'
 }
 \ex[*]{
 \gll {}[Dem Mann geholfen] will er nicht.\\
-{}\spacebr{}DET 男人 帮助 想 他 不\\
+{}\spacebr{}\textsc{det} 男人 帮助 想 他 不\\
 %{}\spacebr{}the man helped wants he not\\
 }
 \ex[*]{
 \gll{}[Dem Mann helfen] hat er nicht.\\
-{}\spacebr{}DET 男人 帮助 AUX 他 不\\
+{}\spacebr{}\textsc{det} 男人 帮助 \textsc{aux} 他 不\\
 %{}\spacebr{}the man help has he not\\
 }
 \zl
@@ -704,10 +704,10 @@ sm edges, for tree={l+=\baselineskip}
 		[er;他]]
 	[V{[\type{fin}, \subcat \sliste{ \ibox{1} }]}, name=fin2
 		[\ibox{2} NP{[\textit{dat}]}
-			[dem Mann;DET 男人,roof]]
+			[dem Mann;\textsc{det} 男人,roof]]
 		[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2} }]}, name=fin3
 			[\ibox{3} NP{[\textit{acc}]}
-				[das Buch;DET 书,roof]]
+				[das Buch;\textsc{det} 书,roof]]
 			[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2}, \ibox{3} }]}, name=fin4
 				[gibt;给]]]]]	
 tikz={\draw[<->] ($(fin1.south west)+(\offsetup,0)$) to ($(fin2.north west)+(\offset,0)$);
@@ -764,14 +764,14 @@ sm edges
              subcat & \sliste{ \ibox{2} }
              }
 		[\ibox{3} NP{[\textit{dat}]}
-			[dem Mann;DET 男人, roof]]
+			[dem Mann;\textsc{det} 男人, roof]]
 %			[dem Mann;the man, roof]]
 		[\ms{
                                                                                    head & \ibox{1}\\
                                                                                    subcat & \sliste{ \ibox{2}, \ibox{3} }
                                                                                     }
 			[\ibox{4} NP{[\textit{acc}]}
-				[das Buch;DET 书, roof]]
+				[das Buch;\textsc{det} 书, roof]]
 %				[das Buch;the book, roof]]
 			[\ms{
                                                                                    head & \ibox{1} \ms[verb]{
@@ -959,7 +959,7 @@ GB、LFG和TAG这些理论和HPSG与CxG这些理论的一个重要差别在于�
 %`it' cannot refer to \emph{Frau} `woman'.
 \ea
 \gll Die Frau$_i$ kauft ein Buch$_j$. Sie$_i$ liest es$_j$.\\
-	  DET 女人 买 ART 书 她 读 它\\
+	  \textsc{det} 女人 买 \textsc{art} 书 她 读 它\\
 \glt `这个女人买了一本书。她在读它。'
 %	 the woman buys a book she reads it\\
 %\glt `The woman buys a book. She reads it.'
@@ -1079,7 +1079,7 @@ GB、LFG和TAG这些理论和HPSG与CxG这些理论的一个重要差别在于�
 动词及其论元的语义贡献之间的联系是在词汇项中建立起来的。这样，我们可以确保动词的论元角色被指派到句中正确的论元上面。但是，这并不是语义所担负的唯一责任。它必须能够生成不同的意义解读，这与量词辖域的歧义（请参阅第\pageref{Beispiel-Every-man-loves-a-woman}页），以及在其他谓词下面谓词的语义嵌套的处理是有关系的。所有这些要求都在MRS中得到满足。受限于篇幅，我们不展开说明。读者可以参考\citet*{CFPS2005a}的文章，以及讨论部分中\ref{Abschnitt-leere-Elemente-Semantik}的内容。
 %The connection between the semantic contribution of the verb and its arguments is established in the lexical entry.
 %As such, we ensure that the argument roles of the verb are assigned to the correct argument in the sentence. This is, however, not the only
-%thing that the semantics is responsible for. It has to be able to generate the various readings associated with quantifier scope ambiguities 
+%thing that the semantics is responsible for. It has to be able to generate the various readings associated with quantifier s\textsc{cop}e ambiguities 
 %(see page~\pageref{Beispiel-Every-man-loves-a-woman}) as well as deal with semantic embedding of predicates under other predicates. All %these
 %requirements are fulfilled by MRS. Due to space considerations, we cannot go into detail here. The reader is referred to the article by
 %\citet*{CFPS2005a} and to Section~\ref{Abschnitt-leere-Elemente-Semantik} in the discussion chapter.
@@ -1123,7 +1123,7 @@ interessantes（有趣的）是一个形容词，它不带任何论元成分，�
 %have a dative NP in their \subcatl.
 \ea
 \gll ein dem König treues Mädchen\\
-	ART DET.\dat{} 国王 忠诚的 女孩\\
+	\textsc{art} \textsc{det}.\dat{} 国王 忠诚的 女孩\\
 \glt `对国王忠诚的女孩儿'
 %	a the.\dat{} king loyal girl\\
 %\glt `a girl loyal to the king'
@@ -1220,12 +1220,12 @@ non-head"=dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 \eal
 \ex[]{
 \gll die Wurst in der Speisekammer\\
-     DET 香肠 PREP DET 食品箱\\
+     \textsc{det} 香肠 \textsc{prep} \textsc{det} 食品箱\\
 %     the sausage in the pantry\\
 }
 \ex[*]{
 \gll die Wurst in\\
-	 DET 香肠 PREP\\
+	 \textsc{det} 香肠 \textsc{prep}\\
 %	 the sausage in\\
 }
 \zl
@@ -1333,7 +1333,7 @@ HPSG理论\isc{被动|(}\is{passive|(}遵循Bresnan的思想（请参阅\ref{Abs
 %  This rule assumes that arguments of ditransitive verbs are in the order nominative, accusative,
 %  dative. Throughout this chapter, I assume a nominative, dative, accusative order, which
 %  corresponds to the unmarked order of arguments in the German clause. \citet{Kiss2001a} argued that
-%  a representation of the unmarked order is needed to account for scope facts in
+%  a representation of the unmarked order is needed to account for s\textsc{cop}e facts in
 %  German. Furthermore, the order of the arguments corresponds to the order one would assume for
 %  English, which has the advantage that cross"=linguistic generalizations can be captured. In
 %  earlier work I assumed that the order is nominative, accusative, dative since this order encodes a
@@ -1355,19 +1355,19 @@ HPSG理论\isc{被动|(}\is{passive|(}遵循Bresnan的思想（请参阅\ref{Abs
 \eal
 \ex[]{
 \gll Der Mann hat den Weltmeister geschlagen.\\
-	   DET 男人 AUX DET 世界.冠军 打\\
+	   \textsc{det} 男人 \textsc{aux} \textsc{det} 世界.冠军 打\\
 \glt `这个男人打了世界冠军。'
 %	 the man has the world.champion beaten\\
 %\glt `The man has beaten the world champion.'
 }
 \ex[*]{
 \gll Der Mann wird den Weltmeister geschlagen.\\
-	DET 男人 AUX DET 世界.冠军 打\\
+	\textsc{det} 男人 \textsc{aux} \textsc{det} 世界.冠军 打\\
 %	 the man is the world.champion beaten\\
 }
 \ex[]{
 \gll Der Weltmeister wird geschlagen.\\
-	 DET 世界.冠军 AUX 打\\
+	 \textsc{det} 世界.冠军 \textsc{aux} 打\\
 \glt `世界冠军被人打了。'
 %	 the world.champion is beaten\\
 %\glt `The world champion is (being) beaten.'
@@ -1607,13 +1607,13 @@ d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, 
 \eal
 \ex 
 \gll Er hat den Weltmeister geschlagen.\\
-	 他 AUX DET 世界.冠军 打\\
+	 他 \textsc{aux} \textsc{det} 世界.冠军 打\\
 \glt `他把世界冠军打了。'
 %	 he has the world.champion beaten\\
 %\glt `He has beaten the world champion.'
 \ex 
 \gll Der Weltmeister wurde geschlagen.\\
-	 DET 世界.冠军 AUX 打\\
+	 \textsc{det} 世界.冠军 \textsc{aux} 打\\
 \glt `世界冠军被打了。'
 %	 the world.champion was beaten\\
 %\glt `The world champion was beaten.'
@@ -1759,7 +1759,7 @@ sm edges
 \eal
 \ex 
 \gll dass [jeder diesen Mann kennt]\\
-     CONJ \spacebr{}每人 这 男人 认识\\
+     \textsc{conj} \spacebr{}每人 这 男人 认识\\
 \glt `每个人都认识这个男人'
 %     that \spacebr{}everybody this man knows\\
 %\glt `that everybody knows this man'
@@ -1782,7 +1782,7 @@ sm edges
 \eal
 \ex[]{
 \gll Gibt [der Mann der Frau das Buch \_$_{gibt}$]?\\
-	 给 \spacebr{}DET 男人 DET 女人 DET 书\\
+	 给 \spacebr{}\textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
 \glt `这个男人给这个女人书了吗？'
 %	 gives \spacebr{}the man the woman the book\\
 %\glt `Does the man give the woman the book?'
@@ -1790,7 +1790,7 @@ sm edges
 \ex[*]{
 \label{bsp-kennt-gibt}
 \gll Kennt [der Mann der Frau das Buch \_$_{gibt}$]?\\
-	 认识 \spacebr{}DET 男人 DET 女人 DET 书\\
+	 认识 \spacebr{}\textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
 %	 knows \spacebr{}the man the woman the book\\
 }
 \zl
@@ -2230,25 +2230,25 @@ sm edges
 %\glt `It rains.'
 \ex 
 \gll Am Sonntag hat ein Eisbär einen Mann gefressen.\\
-     PREP 星期天 AUX ART 北极熊 ART 人 吃\\
+     \textsc{prep} 星期天 \textsc{aux} \textsc{art} 北极熊 \textsc{art} 人 吃\\
 \glt `在星期天，有一头北极熊吃了一个人。'
 %    on Sunday  has a   polar.bear a man eaten\\
 %\glt `On Sunday, a polar bear ate a man.'
 \ex 
 \gll Vielleicht hat der Schauspieler seinen Text vergessen.\\
-     也许    AUX DET 男演员 他的 台词 忘记\\
+     也许    \textsc{aux} \textsc{det} 男演员 他的 台词 忘记\\
 \glt `也许，这个男演员已经忘记他的台词了。'
 %     perhaps    has the actor his text forgotten\\
 %\glt `Perhaps, the actor has forgotton his text.'
 \ex 
 \gll Einem Schauspieler ist der Text entfallen.\\
-     ART.\dat{} 男演员 AUX DET.\nom{} 台词 忘记\\
+     \textsc{art}.\dat{} 男演员 \textsc{aux} \textsc{det}.\nom{} 台词 忘记\\
 \glt `一位男演员忘记台词了。'
 %     a.\dat{} actor is the.\nom{} text forgotten\\
 %\glt `An actor forgot the text.'
 \ex
 \gll Einem Kind wurde das Fahrrad gestohlen.\\
-     ART.\dat{} 孩子 AUX DET.\nom{} 自行车 偷\\
+     \textsc{art}.\dat{} 孩子 \textsc{aux} \textsc{det}.\nom{} 自行车 偷\\
 \glt `一辆自行车从一个孩子那里被偷走了。'
  %    a.\dat{} child was the.\nom{} bike stolen\\
 %\glt `A bike was stolen from a child.'
@@ -2278,25 +2278,25 @@ Fanselow认为信息结构的影响与中场的重新排序有关。所以通过
 %\glt `Does it rains?'
 \ex 
 \gll Hat am Sonntag ein Eisbär einen Mann gefressen?\\
-     AUX PREP 星期天  ART   北极熊 ART 人 吃\\
+     \textsc{aux} \textsc{prep} 星期天  \textsc{art}   北极熊 \textsc{art} 人 吃\\
 \glt `一个北极熊在星期天吃了一个人吗？'
 %     has on Sunday  a   polar.bear a man eaten\\
 %\glt `Did a polar bear eat a man on Sunday?'
 \ex 
 \gll Hat vielleicht der Schauspieler seinen Text vergessen?\\
-     AUX 也许    DET 男演员 他的 台词 忘记\\
+     \textsc{aux} 也许    \textsc{det} 男演员 他的 台词 忘记\\
 \glt `这位男演员忘记他的台词了吗？'
 %     has perhaps    the actor his text forgotten\\
 %\glt `Has the actor perhaps forgotton his text?'
 \ex 
 \gll Ist einem Schauspieler der Text entfallen?\\
-      AUX  ART.\dat{} 男演员     DET.\nom{} 台词 忘记\\
+      \textsc{aux}  \textsc{art}.\dat{} 男演员     \textsc{det}.\nom{} 台词 忘记\\
 \glt `一个男演员忘记台词了吗？'
  %    is  a.\dat{} actor     the.\nom{} text forgotten\\
 %\glt `Did an actor forget the text?'
 \ex
 \gll Wurde einem Kind das Fahrrad gestohlen?\\
-     AUX ART.\dat{} 孩子 DET.\nom{} 自行车 偷\\
+     \textsc{aux} \textsc{art}.\dat{} 孩子 \textsc{det}.\nom{} 自行车 偷\\
 \glt `有辆自行车从孩子那里偷走了吗？'
  %    was a.\dat{} child the.\nom{} bike stolen\\
 %\glt `Was a bike stolen from a child?'
@@ -2559,7 +2559,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 %Figure~\vref{Abbildung-die-Zerstorung}.
 \ea
 \gll die Zerstörung der Stadt durch die Soldaten\\
-	 DET 毁灭 PREP.DET 城市 PREP DET 士兵\\
+	 \textsc{det} 毁灭 \textsc{prep}.\textsc{det} 城市 \textsc{prep} \textsc{det} 士兵\\
 %	 the destruction of.the city by the soldiers\\
 \z
 \begin{figure}
@@ -2569,7 +2569,7 @@ sm edges
 [N\feattab{\spr \sliste{  },\\
            \subcat \sliste{  } }
 	[\ibox{1} Det
-		[die;DET]]
+		[die;\textsc{det}]]
 %		[die;the]]
 			[N\feattab{\spr \sliste{ \ibox{1} },\\
                    \subcat \sliste{  } }
@@ -2580,10 +2580,10 @@ sm edges
 				[Zerstörung;毁灭]]
 %				[Zerstörung;destruction]]
 			[\ibox{3} NP{[\type{gen}]}
-				[der Stadt; DET 城市,roof]]]
+				[der Stadt; \textsc{det} 城市,roof]]]
 %				[der Stadt; of the city,roof]]]
 		[\ibox{2} PP{[\type{durch}]}
-			[durch die Soldaten; PREP DET士兵,roof]]]]
+			[durch die Soldaten; \textsc{prep} \textsc{det}士兵,roof]]]]
 %			[durch die Soldaten; by the soldiers,roof]]]]
 \end{forest}}
 \caption{带有配价特征\sprc 的NP分析}\label{Abbildung-die-Zerstorung} 
@@ -2738,7 +2738,7 @@ HPSG与范畴语法的不同之处在于\indexcgc，它假定了更多的特征�
 %demonstrative pronoun. The relative clause in (\mex{1}) would be analyzed as a finite clause from which a PP has been extracted:
 \ea
 \gll der Mann, [\sub{RS} [\sub{PP} an den] [\sub{S/PP} wir gedacht haben]]\\
-     DET 男人   {}        {}        PREP 谁  {}          我们 想 AUX\\
+     \textsc{det} 男人   {}        {}        \textsc{prep} 谁  {}          我们 想 \textsc{aux}\\
 \glt `我们想起的那个男人'
 %     the man   {}        {}        on who  {}          we  thought have\\
 %\glt `the man we thought of'
@@ -2755,7 +2755,7 @@ HPSG与范畴语法的不同之处在于\indexcgc，它假定了更多的特征�
 %(\mex{1}) as -- unlike in Categorial Grammar -- the relative pronoun does not have to know anything about the contexts in which it can be %used.
 \ea
 \gll der Mann, [\sub{RS} [\sub{NP} den] [\sub{S/NP} wir kennen]]\\
-	 DET 男人 {} {} CONJ {} 我们 认识\\
+	 \textsc{det} 男人 {} {} \textsc{conj} {} 我们 认识\\
 \glt `我们认识的那个男人'
 %	 the man {} {} that {} we know\\
 %\glt `the man that we know'
@@ -2907,7 +2907,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %\item How does case assignment take place in the analysis of example (\mex{1})?
 \ea
 \gll Dem Mann wurde ein Buch geschenkt.\\
-	 DET.\dat{} 男人 AUX ART.\nom{} 书 给\\
+	 \textsc{det}.\dat{} 男人 \textsc{aux} \textsc{art}.\nom{} 书 给\\
 \glt `这个男人被给了一本书。'
 %	 the.\dat{} man was a.\nom{} book given\\
 %\glt `The man was given a book.'
@@ -2925,7 +2925,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %\item Give a feature description for (\mex{1}) ignoring \emph{dass}.
 \ea
 \gll {}[dass] Max lacht\\
-	 {}\spacebr{}CONJ Max 笑\\
+	 {}\spacebr{}\textsc{conj} Max 笑\\
 %	 {}\spacebr{}that Max laughs\\
 \z
 \item \ref{Abschnitt-HPSG-Adjunkte}中有关名词和所修饰形容词的组合分析只是一个初步的分析。比如说，没有解释我们如何能够确定形容词和名词在格上保持一致。请思考一下如何扩展这个分析，这样就可以分析（\mex{1}a）中的形容词名词组合了，而不是（\mex{1}b）中的对象：
@@ -2935,12 +2935,12 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \eal
 \ex[]{
 \gll eines interessanten Mannes\\
-	 ART.\gen{} 有趣的.\gen{} 男人.\gen{}\\
+	 \textsc{art}.\gen{} 有趣的.\gen{} 男人.\gen{}\\
 %	 an.\gen{} interesting.\gen{} man.\gen{}\\
 }
 \ex[*]{ 
 \gll eines interessanter Mannes\\
- ART.\gen{} 有趣的.\nom{} 男人.\gen{}\\
+ \textsc{art}.\gen{} 有趣的.\nom{} 男人.\gen{}\\
 % an.\gen{} interesting.\nom{} man.\gen{}\\
 }
 \zl

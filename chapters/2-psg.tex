@@ -19,7 +19,7 @@
 %and \emph{gibt} `gives' is a verb\is{verb}.
 \ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
 \gll weil er das Buch dem Mann gibt\\
-	 因为 他 DET 书 DET 人 给\\
+	 因为 他 \textsc{det} 书 \textsc{det} 人 给\\
 \glt `因为他给人这本书'
 \z
 %\ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
@@ -120,11 +120,11 @@ sm edges
 [S
   [NP [er;他] ]
   [NP
-    [Det [das;DET] ]
+    [Det [das;\textsc{det}] ]
     [N [Buch;书] ] 
   ]
   [NP
-    [Det [dem;DET] ]
+    [Det [dem;\textsc{det}] ]
     [N [Mann;人] ] 
   ]
   [V [gibt;给] ]
@@ -169,7 +169,7 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
 %such as (\mex{1}).
 \ea
 \gll {}[\sub{S} [\sub{NP} er] [\sub{NP} [\sub{Det} das] [\sub{N} Buch]]  [\sub{NP} [\sub{Det} dem] [\sub{N} Mann]] [\sub{V} gibt]]\\
-     {}         {}       他  {}        {}       DET  {}      书    {}        {}       DET  {}       人     {}      给\\  
+     {}         {}       他  {}        {}       \textsc{det}  {}      书    {}        {}       \textsc{det}  {}       人     {}      给\\  
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
 \z
 无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，而这是与具体的结构没有太多关系的。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
@@ -178,7 +178,7 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
 %in (\mex{1}), which differs from (\ref{bsp-weil-er-das-buch-dem-mann-gibt}) in the order of objects: 
 \ea
 \gll {}[weil] er dem Mann das Buch gibt\\
-	 {}\spacebr{}因为 他.\nom{} DET.\dat{} 人 DET.\acc{} 书 给\\
+	 {}\spacebr{}因为 他.\nom{} \textsc{det}.\dat{} 人 \textsc{det}.\acc{} 书 给\\
 \glt `因为他给这个人这本书'
 \z
 %\ea
@@ -220,11 +220,11 @@ sm edges
   [NP [er;他] ]
   [V
     [NP
-      [Det [das;DET] ]
+      [Det [das;\textsc{det}] ]
       [N [Buch;书] ] ]
     [V
       [NP
-        [Det [dem;DET] ]
+        [Det [dem;\textsc{det}] ]
         [N [Mann;人] ] ]
       [V [gibt;给] ] ] ] ]
 \end{forest}
@@ -234,7 +234,7 @@ sm edges
 %  binary branching structure}
 \end{figure}%
 
-实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（DET的宾格形式），那么就会生成不合乎语法的句子，如例（\mex{1}b--d）所示：\footnote{
+实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{det}的宾格形式），那么就会生成不合乎语法的句子，如例（\mex{1}b--d）所示：\footnote{
 应用（\ref{psg-binaer}）中的文法，我们还会遇到别的问题，即我们无法确定什么时候话语是完整的，因为符号V被用来表示V和NP的所有组合。由此，我们也可以用这个文法来分析（i）中的句子：
 %Both the grammar in (\mex{0}) and (\ref{bsp-grammatik-psg}) are too imprecise.
 %If we adopt additional lexical entries for \emph{ich} `I' and \emph{den} `the' (accusative) in our grammar, then we would incorrectly
@@ -245,11 +245,11 @@ sm edges
 \eal
 \ex[*]{
 \gll der Mann erwartet\\
-     DET 人 希望\\
+     \textsc{det} 人 希望\\
 }
 \ex[*]{
 \gll des        Mannes     er        das Buch dem Mann gibt\\
-     DET.\gen{} 人.\gen{} 他.\nom{} DET.\acc{} 书 DET.\dat{} 人 给\\
+     \textsc{det}.\gen{} 人.\gen{} 他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
 }
 \zl
 动词所带的论元数量应该在文法中显示出来。在下面的章节中，我们将介绍动词对论元的选择（价）在不同的语法理论中是如何表述的。
@@ -259,20 +259,20 @@ sm edges
 \eal
 \ex[]{
 \gll er        das Buch        dem Mann       gibt\\
-     他.\nom{} DET.\acc{} 书 DET.\dat{} 人 给\\
+     他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
 \glt `他把书给这个人。'
 }
 \ex[*]{
 \gll ich      das Buch        dem Mann       gibt\\
-     我.\nom{} DET.\acc{} 书 DET.\dat{} 人 给\\
+     我.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
 }
 \ex[*]{
 \gll er        das        Buch den        Mann gibt\\
-     他.\nom{} DET.\acc{} 书 DET.\acc{} 人 给\\
+     他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\acc{} 人 给\\
 }
 \ex[*]{
 \gll er        den        Buch       dem Mann gibt\\
-     他.\nom{} DET.\mas{} 书(\neu) DET 人  给\\
+     他.\nom{} \textsc{det}.\mas{} 书(\neu) \textsc{det} 人  给\\
 }
 \zl
 例（\mex{0}b）违反了主谓一致原则\isc{主谓一致|(}\is{agreement|(} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
@@ -349,11 +349,11 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 }
 \ex[*]{
 \gll Er schläft das Buch.\\
-	 他 睡觉 DET 书\\
+	 他 睡觉 \textsc{det} 书\\
 }
 \ex[]{
 \gll Er kennt das Buch.\\
-	 他 认识 DET 书\\
+	 他 认识 \textsc{det} 书\\
 \glt `他认识这本书。'
 }
 \ex[*]{
@@ -396,16 +396,16 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \eal\settowidth\jamwidth{（屈折类型）}
 \ex 
 \gll der Mann, die Frau, das Buch\\
-	 DET.\mas{} 人(\mas) DET.\fem{} 女人(\fem) DET.\neu{} 书(\neu)\\\jambox{（性）}
+	 \textsc{det}.\mas{} 人(\mas) \textsc{det}.\fem{} 女人(\fem) \textsc{det}.\neu{} 书(\neu)\\\jambox{（性）}
 \ex 
 \gll das Buch, die Bücher\\
-	 DET 书.\sg{} DET 书.\pl\\\jambox{（数）}
+	 \textsc{det} 书.\sg{} \textsc{det} 书.\pl\\\jambox{（数）}
 \ex 
 \gll des Buches, dem Buch\\
-	 DET.\gen{} 书.\gen{} DET.\dat{} 书\\\jambox{（格）}
+	 \textsc{det}.\gen{} 书.\gen{} \textsc{det}.\dat{} 书\\\jambox{（格）}
 \ex\isc{屈折类型}\is{inflectional class} 
 \gll ein Beamter, der Beamte\\
-	 一 公务员 DET 公务员\\\jambox{（屈折类型）}
+	 一 公务员 \textsc{det} 公务员\\\jambox{（屈折类型）}
 \zl
 \addlines  
 %\eal\settowidth\jamwidth{(Inflectional class)}
@@ -762,28 +762,28 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 \label{Beispiele-NP-Adjunkte}
 \ex 
 \gll eine Frau\\
-	 ART 女人\\
+	 \textsc{art} 女人\\
 \ex 
 \gll eine Frau, die wir kennen\\
-	 ART 女人 CONJ 我们 认识\\
+	 \textsc{art} 女人 \textsc{conj} 我们 认识\\
 \ex 
 \gll eine Frau aus Stuttgart\\
-	 ART 女人 PREP 斯图加特\\
+	 \textsc{art} 女人 \textsc{prep} 斯图加特\\
 \ex 
 \gll eine kluge Frau\\
-	 ART 聪明 女人\\
+	 \textsc{art} 聪明 女人\\
 \ex 
 \gll eine Frau aus Stuttgart, die wir kennen\\
-	 ART 女人 PREP 斯图加特 CONJ 我们 认识\\
+	 \textsc{art} 女人 \textsc{prep} 斯图加特 \textsc{conj} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart\\
-	 ART 聪明 女人 PREP 斯图加特\\
+	 \textsc{art} 聪明 女人 \textsc{prep} 斯图加特\\
 \ex 
 \gll eine kluge Frau, die wir kennen\\
-	 ART 聪明 女人 CONJ 我们 认识\\
+	 \textsc{art} 聪明 女人 \textsc{conj} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart, die wir kennen\\
-	 ART 聪明 女人 PREP 斯图加特 CONJ 我们 认识\\
+	 \textsc{art} 聪明 女人 \textsc{prep} 斯图加特 \textsc{conj} 我们 认识\\
 \zl
 %\eal
 %\label{Beispiele-NP-Adjunkte}
@@ -911,7 +911,7 @@ NP $\to$ Det A* N
 \begin{forest}
 sm edges
 [NP
-   [Det [eine;ART] ]
+   [Det [eine;\textsc{art}] ]
    [\nbar
       [N [Frau;女人] ] ] ]
 \end{forest}
@@ -919,7 +919,7 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-   [Det [eine;ART] ]
+   [Det [eine;\textsc{art}] ]
    [\nbar
       [A [kluge;聪明] ]
       [\nbar
@@ -930,7 +930,7 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-  [Det [eine;ART] ]
+  [Det [eine;\textsc{art}] ]
     [\nbar
     [A [glückliche;快乐] ]
        [\nbar
@@ -951,11 +951,11 @@ sm edges
 \ea
 \label{Beispiel-Iteration-Adjektive}
 \gll A: Alle klugen Frauen sind unglücklich.\\
-\spacebr{} 所有 聪明 女人 COP 不开心\\
+\spacebr{} 所有 聪明 女人 \textsc{cop} 不开心\\
 %\spacebr{} all smart women are unhappy\\
 
 \gll B: Nein, ich kenne eine glückliche kluge Frau.\\
-	\spacebr{} 不 我 认识 ART 开心 聪明 女人\\
+	\spacebr{} 不 我 认识 \textsc{art} 开心 聪明 女人\\
 %	\spacebr{} no I know a happy smart woman\\
 \z
 我们观察到，这段话可以加上Aber alle glücklichen
@@ -991,7 +991,7 @@ sm edges
 \eal
 \ex 
 \gll dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt\\
-	 CONJ Peter DET 人 DET 书 给 和 Maria DET 女人 DET 唱片 给\\
+	 \textsc{conj} Peter \textsc{det} 人 \textsc{det} 书 给 和 Maria \textsc{det} 女人 \textsc{det} 唱片 给\\
 \glt `Peters给这个人这本书，并且Maria给这个女人这张唱片'
 %	 that Peter the man the book gives and Maria the woman the record gives\\
 %\glt `that Peters gives the book to the man and Maria the record to the woman'
@@ -1032,19 +1032,19 @@ sm edges
 \label{Beispiele-NP-relationale-Nomina}
 \ex 
 \gll der Vater von Peter\\
-	 DET 爸爸 PREP Peter\\
+	 \textsc{det} 爸爸 \textsc{prep} Peter\\
 \glt `Peter的爸爸'
 %	 the father of Peter\\
 %\glt `Peter's father'
 \ex 
 \gll das Bild vom Gleimtunnel\\
-	 DET 照片 PREP.DET 格莱姆隧道\\
+	 \textsc{det} 照片 \textsc{prep}.\textsc{det} 格莱姆隧道\\
 \glt `格莱姆隧道的照片'
 %	 the picture of.the Gleimtunnel\\
 %\glt `the picture of the Gleimtunnel'
 \ex 
 \gll das Kommen des Installateurs\\
-	 DET 来 DET 水管工\\
+	 \textsc{det} 来 \textsc{det} 水管工\\
 \glt `水管工的检查'
 %	 the coming of.the plumber\\
 %\glt `the plumber's visit'
@@ -1065,21 +1065,21 @@ sm edges
 \begin{forest}
 sm edges
 [NP
- [Det [das;DET] ]
+ [Det [das;\textsc{det}] ]
  [\nbar
    [N [Bild;照片] ]
-   [PP [vom Gleimtunnel;PREP.DET 格莱姆隧道,roof ] ] ] ]
+   [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道,roof ] ] ] ]
 \end{forest}%
 \hspace{2em}%
 \begin{forest}
 sm edges
 [NP
-  [Det [das;DET] ]
+  [Det [das;\textsc{det}] ]
   [\nbar
     [\nbar
       [N [Bild;照片] ]
-      [PP [vom Gleimtunnel;PREP.DET 格莱姆隧道,roof ] ] ] 
-    [PP [im Gropiusbau;PREP.DET 格罗皮乌斯博物馆,roof ] ] ] ]
+      [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道,roof ] ] ] 
+    [PP [im Gropiusbau;\textsc{prep}.\textsc{det} 格罗皮乌斯博物馆,roof ] ] ] ]
 \end{forest}}
 \caption{\label{Abbildung-NP-mit-PP-Argument}名词与位于右侧的作为附接语的PP补足语“vom Gleimtunnel”的组合}
 %\caption{\label{Abbildung-NP-mit-PP-Argument}Combination of a noun with PP complement
@@ -1095,20 +1095,20 @@ sm edges
 \label{ex-nounless-np}
 \ex 
 \gll eine kluge \_\\
-	 ART 聪明\\
+	 \textsc{art} 聪明\\
 \glt `一个聪明的'
 \ex 
 \gll eine kluge große \_\\
-     ART    聪明 高\\
+     \textsc{art}    聪明 高\\
 \glt `一个聪明的高的'
 
 \ex 
 \gll eine kluge \_ aus Hamburg\\
-	 ART 聪明 {} PREP 汉堡\\
+	 \textsc{art} 聪明 {} \textsc{prep} 汉堡\\
 \glt `一位从汉堡来的聪明的'
 \ex 
 \gll eine kluge \_, die alle kennen\\
-	 ART 聪明 {} CONJ 所有人 知道\\
+	 \textsc{art} 聪明 {} \textsc{conj} 所有人 知道\\
 \glt `一个大家都知道的聪明的'
 \zl
 
@@ -1116,15 +1116,15 @@ sm edges
 \label{ex-nounless-np-relational-noun}
 \ex 
 \gll (Nein, nicht der Vater von Klaus), der \_ von Peter war gemeint.\\
-	\spacebr{}不 不  DET 爸爸 PREP Klaus DET {} PREP Peter AUX 指的是\\
+	\spacebr{}不 不  \textsc{det} 爸爸 \textsc{prep} Klaus \textsc{det} {} \textsc{prep} Peter \textsc{aux} 指的是\\
 \glt `不，指的不是Klaus的爸爸，而是Peter的爸爸。'
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
-	 \spacebr{}不 不  DET 图片 PREP DET 公路 DET {} PREP.DET 格莱姆隧道 AUX 印象深刻\\
+	 \spacebr{}不 不  \textsc{det} 图片 \textsc{prep} \textsc{det} 公路 \textsc{det} {} \textsc{prep}.\textsc{det} 格莱姆隧道 \textsc{aux} 印象深刻\\
 \glt `不，不是公路的照片让人印象深刻，而是格莱姆隧道的照片。'
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
-	 \spacebr{}不 不  DET 来 DET 木匠 DET {} DET 水管工 COP 重要\\
+	 \spacebr{}不 不  \textsc{det} 来 \textsc{det} 木匠 \textsc{det} {} \textsc{det} 水管工 \textsc{cop} 重要\\
 \glt `不，木匠来不重要，水管工来很重要。'
 \zl
 %\eal
@@ -1191,7 +1191,7 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-  [Det [eine;ART] ]
+  [Det [eine;\textsc{art}] ]
   [\nbar
     [A [kluge;聪明] ]
     [\nbar
@@ -1201,10 +1201,10 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-  [Det [das;DET] ]
+  [Det [das;\textsc{det}] ]
   [\nbar
     [N [\trace] ]
-    [PP [vom Gleimtunnel;PREP.DET 格莱姆隧道, roof] ] ] ]
+    [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道, roof] ] ] ]
 \end{forest}
 \hfill%
 \mbox{}
@@ -1229,7 +1229,7 @@ sm edges
 %	 women\\
 \ex 
 \gll Frauen, die wir kennen\\
-	 女人 CONJ 我们 认识\\
+	 女人 \textsc{conj} 我们 认识\\
 %	 women who we know\\
 \ex 
 \gll kluge Frauen\\
@@ -1237,7 +1237,7 @@ sm edges
 %	 smart women\\
 \ex 
 \gll kluge Frauen, die wir kennen\\
-	 聪明 女人 CONJ 我们 认识\\
+	 聪明 女人 \textsc{conj} 我们 认识\\
 %	 smart women who we know\\
 \zl
 如果名词是集合名词\isc{名词!集合名词}\is{noun!mass}的话，限定词在单数时可以被省略：
@@ -1249,7 +1249,7 @@ sm edges
 %	 grain\\
 \ex 
 \gll Getreide, das gerade gemahlen wurde\\
-	 粮食 CONJ 刚 种 AUX\\
+	 粮食 \textsc{conj} 刚 种 \textsc{aux}\\
 \glt `刚种的粮食'
 %	 grain that just ground was\\
 %\glt `grain that has just been ground'
@@ -1259,7 +1259,7 @@ sm edges
 %	 fresh grain\\
 \ex 
 \gll frisches Getreide, das gerade gemahlen wurde\\
-	 新鲜 粮食 CONJ 刚刚 种 AUX\\
+	 新鲜 粮食 \textsc{conj} 刚刚 种 \textsc{aux}\\
 \glt `刚种的新鲜的粮食'
 %	 fresh grain that just ground was\\
 %\glt `fresh grain that has just been ground'
@@ -1275,7 +1275,7 @@ sm edges
 %\glt `I help smart ones.'
 \ex 
 \gll Dort drüben steht frisches, das gerade gemahlen wurde.\\
-	 那儿 那边 有 新鲜 CONJ 刚 种 AUX\\
+	 那儿 那边 有 新鲜 \textsc{conj} 刚 种 \textsc{aux}\\
 \glt `在那边有一些刚种的新鲜的（粮食）。'
 %	 there over stands fresh that just ground was\\
 %\glt `Over there is some fresh (grain) that has just been ground.'
@@ -1316,19 +1316,19 @@ sm edges
 \eal
 \ex 
 \gll der seiner Frau treue Mann\\
-	 DET 他的.\dat{} 妻子 忠诚 男人\\
+	 \textsc{det} 他的.\dat{} 妻子 忠诚 男人\\
 \glt `忠于妻子的男人'
 \ex 
 \gll der auf seinen Sohn stolze Mann\\
-	 DET PREP 他的.\acc{} 儿子 骄傲 男人\\
+	 \textsc{det} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
 \glt `以儿子为骄傲的男人'
 \ex 
 \gll der seine Frau liebende Mann\\
-	 DET 他的.\acc{} 女人 爱 男人\\
+	 \textsc{det} 他的.\acc{} 女人 爱 男人\\
 \glt `爱妻子的男人'
 \ex 
 \gll der von seiner Frau geliebte Mann\\
-     DET PREP 他的.\dat{} 妻子 爱 男人\\
+     \textsc{det} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
 \glt `被妻子爱的男人'	 
 \zl
 %\eal
@@ -1443,19 +1443,19 @@ PP $\to$ P NP
 \eal
 \ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
 \gll {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\\
-	 {}\spacebr{}\spacebr{}ART 步 PREP DET 深渊 保留 他 站\\
+	 {}\spacebr{}\spacebr{}\textsc{art} 步 \textsc{prep} \textsc{det} 深渊 保留 他 站\\
 \glt `他在离深渊一步之遥的地方站住了。'
 \ex 
 \gll {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.\\
-	 {}\spacebr{}\spacebr{}短暂 PREP DET  起飞 坏 DET 空调 出来\\
+	 {}\spacebr{}\spacebr{}短暂 \textsc{prep} \textsc{det}  起飞 坏 \textsc{det} 空调 出来\\
 \glt `起飞后不久，空调就停止工作了。'
 \ex 
 \gll {}[[Schräg] hinter der Scheune] ist ein Weiher.\\
-	 {}\spacebr{}\spacebr{}斜 PREP DET 谷仓 COP ART 池塘\\
+	 {}\spacebr{}\spacebr{}斜 \textsc{prep} \textsc{det} 谷仓 \textsc{cop} \textsc{art} 池塘\\
 \glt `在谷仓的斜对面有一个池塘。'
 \ex 
 \gll {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.\\
-	 {}\spacebr{}\spacebr{}中间 PREP.DET 丛林 碰到 DET 研究人员 PREP ART 古老 寺庙\\
+	 {}\spacebr{}\spacebr{}中间 \textsc{prep}.\textsc{det} 丛林 碰到 \textsc{det} 研究人员 \textsc{prep} \textsc{art} 古老 寺庙\\
 \glt `在丛林当中，研究者碰到了一栋古老的寺庙。'
 \zl
 %\eal
@@ -1489,12 +1489,12 @@ PP $\to$ P NP
 \eal
 \ex[*]{
 \gll [\sub{PP} einen Schritt [\sub{PP} kurz [\sub{PP} vor dem Abgrund]]]\\
-	 {} ART 步 {} 短 {} PREP DET  深渊\\
+	 {} \textsc{art} 步 {} 短 {} \textsc{prep} \textsc{det}  深渊\\
 	 %	 {} one step {} shortly {} before the abyss\\
 }
 \ex[*]{
 \gll [\sub{PP} kurz [\sub{PP} einen Schritt [\sub{PP} vor dem Abgrund]]]\\
-	 {} 短 {} ART 步 {} PREP DET  深渊\\
+	 {} 短 {} \textsc{art} 步 {} \textsc{prep} \textsc{det}  深渊\\
 %	 {} shortly {} one step {} before the abyss\\
 }
 \zl
@@ -1518,7 +1518,7 @@ PP $\to$ P NP
 %of an example with an adjective in the first position following the rules in (\mex{0}b) and (\mex{0}d):
 \ea
 \gll vor dem Abgrund\\
-	 PREP DET 深渊\\
+	 \textsc{prep} \textsc{det} 深渊\\
 \glt `在深渊前'
 %	 before the abyss\\
 %\glt `in front of the abyss'
@@ -1529,8 +1529,8 @@ PP $\to$ P NP
 sm edges
 [PP
   [\pbar
-    [P [vor;PREP] ]
-    [NP [dem Abgrund;DET 深渊, roof] ] ] ]
+    [P [vor;\textsc{prep}] ]
+    [NP [dem Abgrund;\textsc{det} 深渊, roof] ] ] ]
 \end{forest}
 \hfill
 \begin{forest}
@@ -1538,8 +1538,8 @@ sm edges
 [PP
   [AP [kurz;短暂,roof] ]
   [\pbar
-    [P [vor;PREP] ]
-    [NP [dem Abgrund;DET 深渊,roof] ] ] ]
+    [P [vor;\textsc{prep}] ]
+    [NP [dem Abgrund;\textsc{det} 深渊,roof] ] ] ]
 \end{forest}
 %% \begin{tikzpicture}
 %% \tikzset{level 1+/.style={level distance=2\baselineskip}}
@@ -1610,19 +1610,19 @@ sm edges
 \eal
 \ex 
 \gll He is proud.\\
-     他 COP 骄傲\\
+     他 \textsc{cop} 骄傲\\
 \glt `他感到很骄傲。'
 \ex 
 \gll He is very proud.\\
-他 COP 非常 骄傲\\
+他 \textsc{cop} 非常 骄傲\\
 \glt `他感到非常骄傲。'
 \ex 
 \gll He is proud of his son.\\
-他 COP 骄傲 PREP 他的 儿子\\
+他 \textsc{cop} 骄傲 \textsc{prep} 他的 儿子\\
 \glt `他为他的儿子感到骄傲。'
 \ex 
 \gll He is very proud of his son.\\
-他 COP 非常 骄傲 PREP 他的 儿子\\
+他 \textsc{cop} 非常 骄傲 \textsc{prep} 他的 儿子\\
 \glt `他为他的儿子感到非常骄傲。'
 \zl
 与介词短语不同的是，带补足语的形容词通常是可选的。proud（骄傲）可以带或不带PP。表达程度的very（很）也是可选的。
@@ -1679,7 +1679,7 @@ sm edges
 [AP
   [\abar
     [A [proud;骄傲] ]
-    [PP [of his son;PREP 他的 儿子,roof] ] ] ]
+    [PP [of his son;\textsc{prep} 他的 儿子,roof] ] ] ]
 \end{forest}
 %% \begin{tikzpicture}
 %% \tikzset{level 1+/.style={level distance=2\baselineskip}}
@@ -1696,7 +1696,7 @@ sm edges
   [AdvP [very;非常] ]
   [\abar
     [A [proud;骄傲] ]
-    [PP [of his son;PREP 他的 儿子,roof] ] ] ]
+    [PP [of his son;\textsc{prep} 他的 儿子,roof] ] ] ]
 \end{forest}
 %% \begin{tikzpicture}
 %% \tikzset{level 1+/.style={level distance=2\baselineskip}}
@@ -1741,7 +1741,7 @@ sm edges
 \xbar\mbox{ 规则} & \mbox{带有特定的范畴} & \mbox{例子}\\[2mm]
 %\xbar\mbox{ rule} & \mbox{with specific categories} & \mbox{example strings}\\[2mm]
 $\overline{\overline{\mbox{X}}} \rightarrow \overline{\overline{\mbox{specifier}}}$~~\xbar &
-$\overline{\overline{\mbox{N}}} \rightarrow \overline{\overline{\mbox{DET}}}$~~\nbar & \mbox{the [picture of Paris]} \\
+$\overline{\overline{\mbox{N}}} \rightarrow \overline{\overline{\mbox{\textsc{det}}}}$~~\nbar & \mbox{the [picture of Paris]} \\
 $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \nbar $\rightarrow$ \nbar~~$\overline{\overline{\mbox{REL\_CLAUSE}}}$ & \mbox{[picture of Paris]}\\
                             &                                              & \mbox{[that everybody knows]}\\
 \xbar $\rightarrow \overline{\overline{\mbox{adjunct}}}$~~\xbar            & \nbar $\rightarrow \overline{\overline{\mbox{A}}}$~~\nbar & \mbox{beautiful [picture of Paris]}\\
@@ -1831,7 +1831,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;DET] ] ] ]
+      [Det [das;\textsc{det}] ] ] ]
   [\nbar
     [N [Bild;图片] ] ] ]
 \end{forest}
@@ -1841,7 +1841,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;DET] ] ] ]
+      [Det [das;\textsc{det}] ] ] ]
   [\nbar
     [AP
       [\abar
@@ -1850,7 +1850,7 @@ sm edges
       [N [Bild;图片] ]
       [PP 
         [\pbar
-          [P [von;PREP] ]
+          [P [von;\textsc{prep}] ]
           [NP
             [\nbar
               [N [Paris;巴黎] ] ] ] ] ] ] ] ]
@@ -1876,13 +1876,13 @@ sm edges
 \eal
 \ex 
 \gll das Paris der dreißiger Jahre\\
-	 DET 巴黎 DET 三十 年\\
+	 \textsc{det} 巴黎 \textsc{det} 三十 年\\
 \glt `30年代的巴黎'
 %	 the Paris of.the thirty years\\
 %\glt `30's Paris'
 \ex 
 \gll die Maria aus Hamburg\\
-	 DET Maria PREP 汉堡\\
+	 \textsc{det} Maria \textsc{prep} 汉堡\\
 \glt `来自汉堡的Maria'
 %	 the Maria from Hamburg\\
 %\glt `Maria from Hamburg'
@@ -1917,7 +1917,7 @@ sm edges
 %	 V in the sentence (\mex{1}).
 \ea
 \gll er das Buch dem Mann gibt\\
-	 他 DET 书 DET 人 给\\
+	 他 \textsc{det} 书 \textsc{det} 人 给\\
 \glt `他给这个人这本书。'
 %	 he the book the man gives\\
 %\glt `He gives the book to the man.'
@@ -1989,7 +1989,7 @@ NP $\to$ Modifier* books Modifier*
 \glt `有趣的书'
 \ex 
 \gll interesting books from Stuttgart\\
-有趣 书 PREP 斯图加特\\
+有趣 书 \textsc{prep} 斯图加特\\
 \glt `斯图加特的有趣的书'
 \zl
 
@@ -2003,15 +2003,15 @@ NP $\to$ Modifier* books Modifier*
 \eal
 \ex 
 \gll Examine the plight of the very poor.\\
-检查 DET 困境 PREP DET 非常 穷\\
+检查 \textsc{det} 困境 \textsc{prep} \textsc{det} 非常 穷\\
 \glt `了解穷人的困境'
 \ex 
 \gll Their outfits range from the flamboyant to the functional.\\
-他们的 套装 范围 PREP DET 华丽 PREP DET 功能性\\
+他们的 套装 范围 \textsc{prep} \textsc{det} 华丽 \textsc{prep} \textsc{det} 功能性\\
 \glt `他们的套装从华丽的到功能性的都有。'
 \ex 
 \gll The unimaginable happened.\\
-DET 不可想象的 发生\\
+\textsc{det} 不可想象的 发生\\
 \glt `不可思议的事情发生了。'
 \zl
 例（\mex{1}）说明了对应于其结构的短语结构规则：
@@ -2042,21 +2042,21 @@ NP $\to$ Det Adj
       \eal
       \ex[]{
       \gll Der Mann hilft der Frau.\\
-            DET.\nom{} 男人 帮助 DET.\dat{} 女人\\
+            \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人\\
       \glt `这个男人帮助这个女人。'
       %           the.\nom{} man helps the.\dat{} woman\\
       %\glt `The man helps the woman.'
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
-                 他.\nom{} 给 她.\dat{} DET 书\\
+                 他.\nom{} 给 她.\dat{} \textsc{det} 书\\
       \glt `他给她这本书。'
 %           he.\nom{} gives her.\dat{} the book\\
 %      \glt `He gives her the book.'
       }
       \ex[]{
       \gll Er wartet auf ein Wunder.\\
-           他.\nom{} 等 PREP ART 奇迹\\
+           他.\nom{} 等 \textsc{prep} \textsc{art} 奇迹\\
 	  \glt `他在等奇迹发生。'
 	  %           he.\nom{} waits on a miracle\\
 	  %\glt `He is waiting for a miracle.'
@@ -2068,12 +2068,12 @@ NP $\to$ Det Adj
       \eal
       \ex[*]{
       \gll  Der Mann hilft er.\\
-		    DET.\nom{} 人 帮助 他.\nom{}\\
+		    \textsc{det}.\nom{} 人 帮助 他.\nom{}\\
 		   % the.\nom{} man helps he.\nom{}\\
       }
       \ex[*]{
       \gll  Er gibt ihr den Buch.\\
-            他.\nom{} 给 她.\dat{} DET.\mas{} 书.\neu{}\\
+            他.\nom{} 给 她.\dat{} \textsc{det}.\mas{} 书.\neu{}\\
            %he.\nom{} gives her.\dat{} the.\mas{} book.\neu{}\\
       }
       \zl
@@ -2084,37 +2084,37 @@ NP $\to$ Det Adj
 \eal
 \ex 
 \gll Der Mann hilft der Frau jetzt.\\
-     DET.\nom{} 男人 帮助 DET.\dat{} 女人 现在\\
+     \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 现在\\
 \glt `这个男人在帮助这个女人。'
 %     the.\nom{} man helps the.\dat{} woman now\\
 %\glt `The man helps the woman now.'
 \ex 
 \gll Der Mann hilft der Frau neben dem Bushäuschen.\\
-     DET.\nom{} 男人 帮助 DET.\dat{} 女人 PREP DET 公交车候车亭\\
+     \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 \textsc{prep} \textsc{det} 公交车候车亭\\
 \glt `这个男人帮助公交车候车亭旁边的那个女人。'
 %     the.\nom{} man helps the.\dat{} woman next.to the bus.shelter\\
 %\glt `The man helps the woman next to the bus shelter.'
 \ex 
 \gll Er gibt ihr das Buch jetzt.\\
-     他.\nom{} 给 她.\dat{} DET.\acc{} 书 现在\\
+     他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 现在\\
 \glt '他现在给她这本书。'
 %     he.\nom{} gives her.\dat{} the.\acc{} book now\\
 %\glt 'He gives her the book now.'
 \ex 
 \gll Er gibt ihr das Buch neben dem Bushäuschen.\\
-     他.\nom{} 给 她.\dat{} DET.\acc{} 书 PREP DET 公交车候车亭\\
+     他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 \textsc{prep} \textsc{det} 公交车候车亭\\
 \glt `他给她公交车候车亭旁的那本书。'
 %     he.\nom{} gives her.\dat{} the.\acc{} book next.to the bus.shelter\\
 %\glt `He gives her the book next to the bus shelter.'
 \ex 
 \gll Er wartet jetzt auf ein Wunder.\\
-     他.\nom{} 等 现在 PREP ART 奇迹\\
+     他.\nom{} 等 现在 \textsc{prep} \textsc{art} 奇迹\\
 \glt `他在等奇迹发生。' 
 %     he.\nom{} waits now on a miracle\\
 %\glt `He is waiting for a miracle now.'
 \ex 
 \gll Er wartet neben dem Bushäuschen auf ein Wunder.\\
-      他.\nom{} 等 PREP DET.\dat{} 公交车候车亭 PREP ART 奇迹\\
+      他.\nom{} 等 \textsc{prep} \textsc{det}.\dat{} 公交车候车亭 \textsc{prep} \textsc{art} 奇迹\\
 \glt `他在等公交车候车亭旁的奇迹发生。'
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
 %\glt `He is waiting for a miracle next to the bus shelter.'
@@ -2145,7 +2145,7 @@ NP $\to$ Det Adj
 
 针对语义信息整合进短语结构语法中的讨论是比较少的。有关谓词逻辑的讨论以及它如何整合进短语结构语法中，还有量词辖域的讨论，可以参考\citew{BB2005a}。
  %The discussion of the integration of semantic information into phrase structure grammars was very short. A detailed discussion of predicate logic and
-%its integration into phrase structure grammars -- as well as a discussion of quantifier scope -- can be found in \citew{BB2005a}. 
+%its integration into phrase structure grammars -- as well as a discussion of quantifier s\textsc{cop}e -- can be found in \citew{BB2005a}. 
 }
 
 % wsun: DONE

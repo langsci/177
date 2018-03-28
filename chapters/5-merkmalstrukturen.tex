@@ -307,22 +307,22 @@ children    & list of person~
 %%     [\type{printer}
 %%       [\type{laser printer}]
 %%       [\ldots]]
-%%     [\subnode{copier}{\type{photocopier}}] ]
+%%     [\subnode{\textsc{cop}ier}{\type{photo\textsc{cop}ier}}] ]
 %%   [\subnode{scanning}{\type{scanning device}}
 %%     [\type{scanner}
 %%       [\type{negative scanner}]
 %%       [\ldots] ] ]
 %%   [\ldots]]
-%% \draw (scanning.south)--(copier.north);
+%% \draw (scanning.south)--(\textsc{cop}ier.north);
 %% \end{forest}
 \begin{tabular}{cccc}
 \multicolumn{4}{c}{\mynode{ed}{\type{电子设备}}}\\[6ex]
 \mynode{p}{\type{打印设备}} & & \mynode{sc}{\type{扫描设备}} & \mynode{other}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\[6ex]
-\mynode{printer}{\type{打印机}}   & \mynode{copy}{\type{复印机}}  & \mynode{scanner}{\type{扫描机}}\\[6ex]
+\mynode{printer}{\type{打印机}}   & \mynode{\textsc{cop}y}{\type{复印机}}  & \mynode{scanner}{\type{扫描机}}\\[6ex]
 \mynode{l-p}{\type{激光打印机}}  & \mynode{other-p}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}  & \mynode{negscan}{\type{底片扫描机}} & 
 %\multicolumn{4}{c}{\mynode{ed}{\type{electric appliance}}}\\[6ex]
 %\mynode{p}{\type{printing device}} & & \mynode{sc}{\type{scanning device}} & \mynode{other}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\[6ex]
-%\mynode{printer}{\type{printer}}   & \mynode{copy}{\type{photocopier}}  & \mynode{scanner}{\type{scanner}}\\[6ex]
+%\mynode{printer}{\type{printer}}   & \mynode{\textsc{cop}y}{\type{photo\textsc{cop}ier}}  & \mynode{scanner}{\type{scanner}}\\[6ex]
 %\mynode{l-p}{\type{laser printer}}  & \mynode{other-p}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}  & \mynode{negscan}{\type{negative scanner}} & 
 \mynode{other-sc}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\
 \end{tabular}
@@ -330,11 +330,11 @@ children    & list of person~
 \draw(ed.south)--(p.north)
      (ed.south)--(sc.north)
      (ed.south)--(other.north)
-     (p.south)--(copy.north)
+     (p.south)--(\textsc{cop}y.north)
      (p.south)--(printer.north)
      (printer.south)--(l-p.north)
      (printer.south)--(other-p.north)
-     (sc.south)--(copy.north)
+     (sc.south)--(\textsc{cop}y.north)
      (sc.south)--(scanner.north)
      (scanner.south)--(negscan.north)
      (scanner.south)--(other-sc.north);
@@ -347,8 +347,8 @@ children    & list of person~
 %\eg 
 %a power supply with a certain power consumption. All subtypes of  \type{electrical device} ``inherit'' this property. In this way, \type{printing %device} and
 %\type{scanning device} also have a power supply with a specific power consumption. A
-%\type{printing device} can produce information and a \type{scanning device} can read in information. A \type{photocopier} can both produce %information and read it. Photocopiers have both the properties of scanning and printing devices.
-%This is expressed by the connection between the two superordinate types and \type{photocopier} in
+%\type{printing device} can produce information and a \type{scanning device} can read in information. A \type{photo\textsc{cop}ier} can both produce %information and read it. Photo\textsc{cop}iers have both the properties of scanning and printing devices.
+%This is expressed by the connection between the two superordinate types and \type{photo\textsc{cop}ier} in
 %Figure~\ref{fig-electric-appliance}. If a type is at the same time the subtype of several superordinate types, then we
 %speak of \emph{multiple inheritance}\is{inheritance!multiple}. If devices can print, but not scan, they are of type \emph{printer}. This type can %have further more
 %specific subtypes, which in turn may have particular properties, \eg \type{laser printer}. New
@@ -402,7 +402,7 @@ lastname & barbanow
 \z
 因为我们将类型层级看作是一种表达的手段，我们有时可以不做具体的析取，而是用上级类型\isc{类型}\is{type}：以“打印机”$\vee$“复印机”为例，我们可以简单地写“打印设备”，如果我们按照图\vref{fig-electric-appliance}所示的类型层级的话。
 %Since we have type hierarchies as a means of expression, we can sometimes do without disjunctive specification of values and instead state %the supertype\is{type}:
-%for \type{printer} $\vee$  \type{photocopier}, one can simply write \type{printing device} if one assumes the type hierarchy in Figure~\vref{fig-%electric-appliance}.%
+%for \type{printer} $\vee$  \type{photo\textsc{cop}ier}, one can simply write \type{printing device} if one assumes the type hierarchy in Figure~\vref{fig-%electric-appliance}.%
 \isc{析取|)}\is{disjunction|)}
 
 \section{结构共享}
@@ -416,21 +416,21 @@ lastname & barbanow
 \eal
 \ex[]{
 \gll Der Mann schläft.\\
-	 DET 男人 睡觉\\
+	 \textsc{det} 男人 睡觉\\
 \glt `这个男人正在睡觉。'
 %	 the man sleeps\\
 %\glt `The man is sleeping.'
 }
 \ex[]{
 \gll Die Männer schlafen.\\
-	 DET 男人 睡觉\\
+	 \textsc{det} 男人 睡觉\\
 \glt `这些男人正在睡觉。'
 %	 the men sleep\\
 %\glt `The men are sleeping.'
 }
 \ex[*]{
 \gll Der Mann schlafen.\\
-	 DET 男人 睡觉\\
+	 \textsc{det} 男人 睡觉\\
 \glt 想说“这些男人正在睡觉。”
 %	 the man sleep\\
 %\glt Intended: `The man are sleeping.'
@@ -661,19 +661,19 @@ date-of-birth & 15.10.1965
 \eal\settowidth\jamwidth{(nominative)}
 \ex 
 \gll Die        Frau schläft. \\      
-     DET.\nom{} 女人 睡觉\\\jambox{（主格）}
+     \textsc{det}.\nom{} 女人 睡觉\\\jambox{（主格）}
 %     the.\nom{} woman sleeps\\\jambox{(nominative)}
 \ex 
 \gll Wir gedenken der Frau. \\ 
-     我们 想念 DET.\gen{} 女人\\\jambox{（属格）}
+     我们 想念 \textsc{det}.\gen{} 女人\\\jambox{（属格）}
 %      we commemorate the.\gen{} woman\\\jambox{(genitive)}
 \ex 
 \gll Er hilft der Frau.  \\    
-     他 帮助 DET.\dat{} 女人\\\jambox{（与格）}
+     他 帮助 \textsc{det}.\dat{} 女人\\\jambox{（与格）}
 %      he helps the.\dat{} woman\\\jambox{(dative)}
 \ex 
 \gll Er liebt die Frau.   \\   
-     他 爱 DET.\acc{} 女人\\\jambox{（宾格）}
+     他 爱 \textsc{det}.\acc{} 女人\\\jambox{（宾格）}
 %      he loves the.\acc{} woman\\\jambox{(accusative)}
 \zl
 在给定的模型中，只有全部明确的表达式，即模型包括四种形式的Frau，每种形式带有一种不同的格。对于阳性名词Mann（男人）来说，我们可以在描写中给出格的信息，因为属格"=单数形式Mann-es与其他的单数形式是不同的，这可以在（\mex{0}）的例子中加入Mann来看到。例（\mex{1}）给出了Frau（女人）和Mann（男人）的特征描写：

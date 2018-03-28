@@ -311,7 +311,7 @@ arg: $-$\\\hline
 多元成分LTAG（Multi-Component LTAG）
 \isc{多成分树邻接语法}\is{Multi-Component TAG}是TAG的一个扩展，\citet{KJ2003a}展示了如何基于它
 处理量词作用域
-\isc{辖域}\is{scope}的问题，他们也讨论了嵌入动词的复杂情况。感兴趣的读者可以阅读他们的原始论文。
+\isc{辖域}\is{s\textsc{cop}e}的问题，他们也讨论了嵌入动词的复杂情况。感兴趣的读者可以阅读他们的原始论文。
 
 \section{局部语序重列}
 \label{Abschnitt-MC-TAG}\label{sec-ld-lp-tag}
@@ -359,14 +359,14 @@ LP$^\alpha_2$ = \{ \}
 \label{ex-weil-ihm-das-Buch-jemand-zu-lesen-versprochen-hat-drei}
 \gll weil    ihm das Buch jemand   zu lesen versprochen hat\footnotemark\\
 %     because him.\dat{} the.\acc{} book somebody.\nom{} to read promised has\\
-     因为 他.\dat{} DET.\acc{} 书 有些人.\nom{} INF 读 保证 AUX \\
+     因为 他.\dat{} \textsc{det}.\acc{} 书 有些人.\nom{} INF 读 保证 \textsc{aux} \\
 \footnotetext{
 \citew{Bech55a}介绍了更多的关于这种语言现象的例子。
 }
 %\glt `because somebody promised him to read the book'
 \glt `因为有人向他保证读这本书'
 \z
-在（\mex{0}）中, das Buch（这本书）是zu lesen（读）的宾语，ihm（他）和jemand（有个人）分别是versprochen（保证）和hat（AUX）的依赖词。这些例子可以用\citet{Joshi87b}提出来的LD/LP"=TAG进行分析，也可以用自由序TAG（Free Order TAG，简称FO"=TAG
+在（\mex{0}）中, das Buch（这本书）是zu lesen（读）的宾语，ihm（他）和jemand（有个人）分别是versprochen（保证）和hat（\textsc{aux}）的依赖词。这些例子可以用\citet{Joshi87b}提出来的LD/LP"=TAG进行分析，也可以用自由序TAG（Free Order TAG，简称FO"=TAG
 \isc{TAG!自由语序树邻接语法（FO-TAG）}\is{TAG!Free Order (FO"=TAG)})\citep*[\page 21]{BJR91a}进行分析，二者都允许表示依存关系的边交叉。
 \isc{投射性}\is{projectivity}
 
@@ -380,12 +380,12 @@ LP$^\alpha_2$ = \{ \}
 \ex 
 \gll \ldots{} daß  der        Detektiv  dem        Klienten [den Verdächtigen des Verbrechens zu überführen] versprach\\
 %         {}   that the.\nom{} detective the.\dat{} client   \spacebr{}the.\acc{} suspect the.\gen{} crime to indict promised\\
-{}  CONJ  DET.\nom{} 探员 DET.\dat{} 委托人   \spacebr{}DET.\acc{} 嫌疑人 DET.\gen{} 犯罪 INF 起诉 保证\\
+{}  \textsc{conj}  \textsc{det}.\nom{} 探员 \textsc{det}.\dat{} 委托人   \spacebr{}\textsc{det}.\acc{} 嫌疑人 \textsc{det}.\gen{} 犯罪 INF 起诉 保证\\
 %  \glt `that the detective promised the client to indict the suspect of the crime'
   \glt `探员向客户保证会起诉犯罪活动的嫌疑人'
 \ex\label{Beispiel-Joshi-NP4} 
 \gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~~~~~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
-{}     CONJ  DET.\gen{} 犯罪           DET.\nom{} 探员 DET.\acc{} 嫌疑人   DET.\dat{}  委托人   {}      {}     INF 起诉  保证\\
+{}     \textsc{conj}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     INF 起诉  保证\\
 \zl
 相关动词的LTAG基本树参见图\vref{Abbildung-Kontrollverben-TAG}。
 \begin{figure}
@@ -609,7 +609,7 @@ tag
 图\vref{abb-nld-TAG}是（\mex{1}）分析的一个实例：
 \ea
 \gll Who$_i$ did John tell Sam that Bill likes \_$_i$?\\
-谁$_i$ AUX John 告诉 Sam CONJ Bill 喜欢 \_$_i$\\
+谁$_i$ \textsc{aux} John 告诉 Sam \textsc{conj} Bill 喜欢 \_$_i$\\
 \glt `John告诉Sam了，Bill喜欢谁？'
 \z
 %
@@ -689,14 +689,14 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 这样一个插入性的操作可以重复很多次，所以在像（\mex{1}）这样的句子中，who可以跨越多个小句边界移动到很远的位置：
 \ea 
 \gll Who$_i$ did John tell Sam that Mary said that Bill likes \_$_i$?\\
-谁$_i$ AUX John 告诉 Sam CONJ Mary 说 CONJ Bill 喜欢 \_$_i$\\
+谁$_i$ \textsc{aux} John 告诉 Sam \textsc{conj} Mary 说 \textsc{conj} Bill 喜欢 \_$_i$\\
 \glt `John告诉Sam，Mary说Bill喜欢谁？'
 \z
 %
 还有一个很重要的细节：尽管（\mex{1}）中的树包含范畴S，（\mex{1}）并不是一个合语法的英语句子。
 \ea[*]{
 \gll who that Bill likes\\
-谁 CONJ Bill 喜欢\\
+谁 \textsc{conj} Bill 喜欢\\
 }
 \z
 这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作
@@ -1061,12 +1061,12 @@ V"=TAG
 \gll dass der Hund bellt, der  die Katze jagt,  die  die Maus  gefangen hat\\
 %    that the dog  barks  that the cat   chases that the mouse caught   has\\
 %\glt `that the dog that chases the cat that caught the mouse barks'
-     CONJ DET 狗  叫  CONJ DET 猫 追 CONJ DET 老鼠 捉 AUX   \\
+     \textsc{conj} \textsc{det} 狗  叫  \textsc{conj} \textsc{det} 猫 追 \textsc{conj} \textsc{det} 老鼠 捉 \textsc{aux}   \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \ex 
 \gll dass der Hund, [$_1$ der  die Katze, [$_2$ die  die Maus  gefangen hat,~$_2$] jagt~$_1$] bellt\\
      %that the dog   {}    that the cat    {}    that the mouse caught   has        chases    barks\\
-     CONJ DET 狗  {}  CONJ DET 猫 {} CONJ DET 老鼠 捉 AUX   捉 叫 \\
+     \textsc{conj} \textsc{det} 狗  {}  \textsc{conj} \textsc{det} 猫 {} \textsc{conj} \textsc{det} 老鼠 捉 \textsc{aux}   捉 叫 \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \zl
 
@@ -1075,8 +1075,8 @@ V"=TAG
 \ea
 \gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$ die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
 lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr einem~~~~~~~ Parkplatz weichen.\\
-DET 长椅 {} PREP 其 当时 DET 老.人 PREP.DET 村庄 {} CONJ 所有 儿童 {} CONJ 来.PREP {} 友好地 目光 给 {}
-长 小时 安静 彼此相邻 坐 {} 必须 PREP.DET 上一个 年 ART 停车场 让道\\
+\textsc{det} 长椅 {} \textsc{prep} 其 当时 \textsc{det} 老.人 \textsc{prep}.\textsc{det} 村庄 {} \textsc{conj} 所有 儿童 {} \textsc{conj} 来.\textsc{prep} {} 友好地 目光 给 {}
+长 小时 安静 彼此相邻 坐 {} 必须 \textsc{prep}.\textsc{det} 上一个 年 \textsc{art} 停车场 让道\\
 %the benches {} on which back.then the old.people of.the village {} that all children {} that came.by {} friendly glances gave {}
 %long hours silent next.to.each.other sat {} must in.the last year a car.park give.way.to\\
 \glt `村子里的那些本来安静地彼此相邻的、供老居民们互相友好地照看所有经过的孩子的长椅们在去年不得不给停车场让道了。'
@@ -1098,7 +1098,7 @@ NP$_2$ NP$_3$ NP$_1$ V$_{3}$V$_{2}$V$_{1}$
 \gll dass ihm$_2$ das Buch$_3$ niemand$_1$ zu lesen$_3$ versprechen$_2$ darf$_1$\\
 %     that him     the book     nobody     to read      promise         be.allowed.to\\
 %\glt `that nobody is allowed to promise him to read the book' 
-     CONJ 他     DET 书 没有人 INF 读 保证 被允许 \\
+     \textsc{conj} 他     \textsc{det} 书 没有人 INF 读 保证 被允许 \\
 \glt `没有人被允许保证他读那本书'
 \z
 因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说在这种例子里，不像关系从句里的例子，我们可以有两种选择（也就是说，否定这种模式或基于语言运用或基于语言能力进行解释）。
@@ -1132,7 +1132,7 @@ NP$_2$ NP$_4$ NP$_3$ NP$_1$ V$_{4}$V$_{3}$V$_{2}$V$_{1}$
 我认为依赖语法形式模型的表达能力来对论元移位情况进行限制是不合理的，因为这些限制独立于动词复合体而存在，这些限制同样也可以在只包括两个论元的简单动词中出现。语序重列的问题在于仍然有可能将名词短语分配给它们所属的动词。如果这个分配导致歧义
 \isc{歧义}\is{ambiguity}，并且这种歧义无法通过格、选择限制、上下文知识或语调消解，则会选择无标记的成分语序。
 \citet*[\page 68]{Hoberg81a}论证了基于这一点可以很好地处理诸如下面实例的语言现象：\footnote{        
-Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）。
+Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{det}）。
 这使得句子语义上更加通顺，但被约束的代词的序列线性化的要求可能干预相应的句法过程。因此，在这里我将代词换成了定冠词。
 }
 \eal
@@ -1141,21 +1141,21 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \gll Hanna hat immer schon gewußt, daß das Kind sie verlassen will.\\
 %	 Hanna has always already known that the child she leave wants\\
 %\glt `Hanna has always known that the child wants to leave her.'
-	 Hanna AUX 总是 已经 知道 CONJ DET 孩子 她 离开 希望 \\ 
+	 Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} \textsc{det} 孩子 她 离开 希望 \\ 
 \glt `Hanna一直都知道孩子希望离开她。'
 }
 \ex[\#]{
 \gll Hanna hat immer schon gewußt, daß sie das Kind verlassen will.\\
 %     Hanna has always already known that she the child  leave wants\\
 %\glt Preferred reading: `Hanna has always known that she wants to leave the child.'
-      Hanna AUX 总是 已经 知道 CONJ 她 DET 孩子 离开 希望 \\ 
+      Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det} 孩子 离开 希望 \\ 
 \glt 倾向于解读为：`Hanna一直都知道她希望离开孩子。' 
 }
 \ex[]{
   \raggedright
 \gll Hanna hat immer schon gewußt, daß sie der Mann verlassen will.\\
 %     Hanna has always already known that she the.\nom{} man leave wants.to\\
-     Hanna AUX 总是 已经 知道 CONJ 她 DET.\nom{} 男人 离开 希望 \\ 
+     Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det}.\nom{} 男人 离开 希望 \\ 
 %\glt `Hanna has always known that the man wants to leave her.'
 \glt `Hanna一直都知道那个男人希望离开她。' 
 }
@@ -1175,24 +1175,24 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \gll Sie mischt Wein Wasser bei.\\
 %     she mixes wine water into\\
 %\glt `She mixes water into the wine.'
-     她 混合 酒 水 PREP \\
+     她 混合 酒 水 \textsc{prep} \\
 \glt `她将水混到酒里。'
 \ex 
 \gll Sie mischt Wasser Wein bei.\\
 %     she mixes water wine into\\
 %\glt `She mixes wine into the water.'
-     她 混合 水 酒 PREP \\
+     她 混合 水 酒 \textsc{prep} \\
 \glt `她将酒混到水里。'
 \ex 
 \gll Sie mischt dem Wein das Wasser bei.\\
 %     she mixes the.\dat{} wine the.\acc{} water into\\
 %\glt `She mixes the water into the wine.'
-     她 混合 DET.\dat{} 酒 DET.\acc{} 水 PREP \\ 
+     她 混合 \textsc{det}.\dat{} 酒 \textsc{det}.\acc{} 水 \textsc{prep} \\ 
 \glt `她将水混到酒里。'
 \ex 
 \gll Sie mischt das Wasser dem Wein bei.\\
 %    she mixes the.\acc{} water the.\dat{} wine into\\
-     她 混合 DET.\acc{} 水 DET.\dat{} 酒 PREP \\ 
+     她 混合 \textsc{det}.\acc{} 水 \textsc{det}.\dat{} 酒 \textsc{prep} \\ 
 %\glt `She mixes the water into the wine.'
 \glt `她将水混到酒里。'
 \zl
@@ -1204,7 +1204,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \gll weil    er        den        Mann dem        Jungen des Freundes gedenken helfen lassen will\\
 %     because he.\nom{} the.\acc{} man  the.\dat{} boy    of.the.\gen{} friend remember help let wants\\
 %\glt `because he wants to let the man help the boy remember his friend'
-     因为 他.\nom{} DET.\acc{} 男人  DET.\dat{} 男孩    PREP.DET.\gen{} 朋友 记得 帮助 让 希望 \\
+     因为 他.\nom{} \textsc{det}.\acc{} 男人  \textsc{det}.\dat{} 男孩    \textsc{prep}.\textsc{det}.\gen{} 朋友 记得 帮助 让 希望 \\
 \glt `因为他希望让那个男人帮助那个男孩记得他的朋友' 
 \z
 另一个策略是控制动词对有生和无生宾语的选择，通过论元的有生性来辅助解释。
@@ -1212,7 +1212,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \ea
 \gll weil niemand$_1$ [den Mann]$_2$ [der Frau]$_3$ [diesen Teich]$_4$  leer$_4$ fischen$_3$ helfen$_2$ sah$_1$\\
 %     because nobody.\nom{} \spacebr{}the.\acc{} man \spacebr{}the.\dat{} woman \spacebr{}this.\acc{} pond empty fish help saw\\
-     因为 没有人.\nom{} \spacebr{}DET.\acc{} 男人 \spacebr{}DET.\dat{} 女人 \spacebr{}这个.\acc{} 池塘 空 钓鱼 帮助 看见 \\
+     因为 没有人.\nom{} \spacebr{}\textsc{det}.\acc{} 男人 \spacebr{}\textsc{det}.\dat{} 女人 \spacebr{}这个.\acc{} 池塘 空 钓鱼 帮助 看见 \\
 %\glt `because nobody saw the man help the woman fish the pond empty'
 \glt `因为没有人看见那个男人帮助那个女人把池塘里的鱼钓光了' 
 \z
@@ -1222,7 +1222,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \ea
 \gll weil [der Frau]$_2$ [diesen Teich]$_4$ [den Mann]$_3$ niemand$_1$ leer$_4$ fischen$_3$ helfen$_2$ sah$_1$\\
 % because \spacebr{}the.\dat{} woman \spacebr{}this.\acc{} pond \spacebr{}the.\acc{} man nobody.\nom{} empty fish help saw\\
-  因为 \spacebr{}DET.\dat{} 女人 \spacebr{}这个.\acc{} 池塘 \spacebr{}DET.\acc{} 男人 没有人.\nom{} 空 钓鱼 帮助 看见 \\
+  因为 \spacebr{}\textsc{det}.\dat{} 女人 \spacebr{}这个.\acc{} 池塘 \spacebr{}\textsc{det}.\acc{} 男人 没有人.\nom{} 空 钓鱼 帮助 看见 \\
 \glt `因为没有人看见那个男人帮助那个女人把池塘里的鱼钓光了'
 \z
 （\mex{0}）比（\mex{-1}）的形式标记更多，不过总是针对局部重列的现象（Gisbert Fanselow\aimention{Gisbert Fanselow}, p.\,c.\ 2006）。
@@ -1268,7 +1268,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（DET）�
 \ea
 \gll der dem König treue Diener\\
 % the the.\dat{} king loyal servant\\
-  DET DET.\dat{} 国王 皇家 雇工\\
+  \textsc{det} \textsc{det}.\dat{} 国王 皇家 雇工\\
 \glt `国王的皇家雇工'
 \z
 \end{enumerate}

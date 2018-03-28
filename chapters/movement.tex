@@ -25,7 +25,7 @@
 %She beats him.
 \ex\label{ex-he-was-beaten}
 \gll He was beaten.\\
-     他 AUX 打\\
+     他 \textsc{aux} 打\\
 \glt `他被打了。'
 %He was beaten.
 \zl
@@ -40,7 +40,7 @@
 %of (\mex{1}):
 \ea
 \gll Jason was killed.\\
-     Jason AUX 杀\\
+     Jason \textsc{aux} 杀\\
 \glt `Jason被杀了。'
 %Jason was killed.
 \z
@@ -266,19 +266,19 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 \label{ex-passive-German-no-movement-two}
 \ex 
 \gll weil das Mädchen dem Jungen den Ball schenkt\\
-     因为 DET 女孩 DET.\dat{} 男孩 DET.\acc{} 球 给\\
+     因为 \textsc{det} 女孩 \textsc{det}.\dat{} 男孩 \textsc{det}.\acc{} 球 给\\
 \glt `因为这个女孩把球给了这个男孩'
 %\gll weil das Mädchen dem Jungen den Ball schenkt\\
 %     because the girl the.\dat{} boy the.\acc{} Ball gives\\
 %\glt `because the girl gives the ball to the boy'
 \ex 
 \gll weil dem Jungen der Ball geschenkt wurde\\
-     因为 DET.\dat{} 男孩 DET.\nom{} 球 给 COP\\
+     因为 \textsc{det}.\dat{} 男孩 \textsc{det}.\nom{} 球 给 \textsc{cop}\\
 %\gll weil dem Jungen der Ball geschenkt wurde\\
 %     because the.\dat{} boy the.\nom{} ball given was\\
 \ex 
 \gll weil der Ball dem Jungen geschenkt wurde\\
-     因为 DET.\nom{} 球 DET.\dat{} 男孩 给 COP\\
+     因为 \textsc{det}.\nom{} 球 \textsc{det}.\dat{} 男孩 给 \textsc{cop}\\
 \glt `因为这个球被人给了这个男孩'
 %\gll weil der Ball dem Jungen geschenkt wurde\\
 %     because the.\nom{} ball the.\dat{} boy given was\\
@@ -326,7 +326,7 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 \eal
 \ex\iw{versuchen|(}
 \gll daß er auch von mir zu überreden versucht wurde\footnotemark\\
-     REL 他.\nom{} 也 PREP 我 INF 说服 尝试 AUX\\
+     REL 他.\nom{} 也 \textsc{prep} 我 INF 说服 尝试 \textsc{aux}\\
 \footnotetext{
         \citew*[\page 212]{Oppenrieder91a}\ia{Oppenrieder}.%
 }
@@ -339,7 +339,7 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 %\glt `that an attempt to persuade him was also made by me'
 \ex 
 \gll weil    der Wagen oft zu reparieren versucht wurde\\
-     因为 DET 车.\nom{}   经常 INF 修理   尝试  AUX\\
+     因为 \textsc{det} 车.\nom{}   经常 INF 修理   尝试  \textsc{aux}\\
 \glt `因为为了修这辆车已经做了很多尝试'\label{bsp-zu-reparieren-versucht-wurde}
 %\gll weil    der Wagen oft zu reparieren versucht wurde\\
 %     because the car.\nom{}   often to repair   tried     was\\
@@ -351,11 +351,11 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 %analysis of (\mex{0}b) would be (\mex{1}):
 \ea
 \gll weil    [\sub{IP} der Wagen$_i$ [\sub{VP} oft   [\sub{VP} [\sub{VP} [\sub{VP} \_$_i$ zu reparieren] versucht] wurde]\\
-     因为 {}        DET 车.\nom{} {}        经常 {}        {}        {}        {}    INF 修理       尝试     AUX\\
+     因为 {}        \textsc{det} 车.\nom{} {}        经常 {}        {}        {}        {}    INF 修理       尝试     \textsc{aux}\\
 %\gll weil    [\sub{IP} der Wagen$_i$ [\sub{VP} oft   [\sub{VP} [\sub{VP} [\sub{VP} \_$_i$ zu reparieren] versucht] wurde]\\
 %     because {}        the car.\nom{} {}        often {}        {}        {}        {}    to repair       tried     was\\
 \z
-虽然这一方法直接地解释了（\ref{bsp-zu-reparieren-versucht-wurde}） 合法这一事实，但是也存在另外一种解释。在HPSG理论对于德语（和丹麦语\il{丹麦语}\il{Dutch}）的分析中，假设（\ref{bsp-zu-reparieren-versucht-wurde}） 中的动词可以组成一个动词性复杂体，即zu reparieren versucht wurde（去修尝试COP）组成一个单位。当两个或更多动词组成一个复杂体时，最高点的动词就会从它嵌套的动词中吸引论元\citep{HN89a,HN94a,BvN98}。像versuchen（去尝试）一样的动词选择一个主语、一个带有zu （去）的不定式以及所有被该不定式选择的补语。在例（\mex{1}）的分析中，versuchen（去尝试）选择其主语、reparieren（去修理）的宾语以及动词zu reparieren（去修理）。
+虽然这一方法直接地解释了（\ref{bsp-zu-reparieren-versucht-wurde}） 合法这一事实，但是也存在另外一种解释。在HPSG理论对于德语（和丹麦语\il{丹麦语}\il{Dutch}）的分析中，假设（\ref{bsp-zu-reparieren-versucht-wurde}） 中的动词可以组成一个动词性复杂体，即zu reparieren versucht wurde（去修尝试\textsc{cop}）组成一个单位。当两个或更多动词组成一个复杂体时，最高点的动词就会从它嵌套的动词中吸引论元\citep{HN89a,HN94a,BvN98}。像versuchen（去尝试）一样的动词选择一个主语、一个带有zu （去）的不定式以及所有被该不定式选择的补语。在例（\mex{1}）的分析中，versuchen（去尝试）选择其主语、reparieren（去修理）的宾语以及动词zu reparieren（去修理）。
 %While this is a straight-forward explanation of the fact that
 %(\ref{bsp-zu-reparieren-versucht-wurde}) is grammatical, another explanation is possible as well. In
 %the HPSG analysis of German (and Dutch\il{Dutch}) it is assumed that verbs like those in
@@ -368,7 +368,7 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 %object of \emph{reparieren} `to repair' and for the verb \emph{zu reparieren} `to repair'.
 \ea
 \gll weil er den Wagen zu reparieren versuchen will\\
-     因为 他.\nom{} DET.\acc{} 车 INF 修理 尝试 想\\
+     因为 他.\nom{} \textsc{det}.\acc{} 车 INF 修理 尝试 想\\
 \glt `因为他想尽力修好这辆车'
 %\gll weil er den Wagen zu reparieren versuchen will\\
 %     because he.\nom{} the.\acc{} car to repair try wants\\
@@ -386,10 +386,10 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 下面就剩下用基于移位的方式来解释局部重新排序（杂序）了。审稿人指出，杂序、被动和非局部提取可以用同一个机制解释。长期以来一直认为，辖域问题使得用基于移位的方法来分析杂序是必要的，但是\citew[\page 146]{Kiss2001a}和\citew[\S~2.6]{Fanselow2001a}指出事实正好相反：对杂序基于移位的分析在现有量词辖域方面得出来了错误的推测。我已经在\ref{sec-GB-lokale-Umstellung}讨论了相关的例子，这里不再重复。从这里得出的结论是：被动、杂序和长距离提取是三种不同的现象应该不同对待。在HPSG理论中采用的对被动的分析是基于\citet{Haider86}的分析，他的分析是在GB框架中展开的。HPSG中使用的分析局部重新排序的“杂序-作为-基础生成”的方法刚开始也被很多GB/最简方案的支持者所接受，如\citet{Fanselow2001a}。
 %This leaves us with movement"=based accounts of local reordering (scrambling). The reviewer
 %suggested that scrambling, passive, and nonlocal extraction may be analyzed with the same
-%mechanism. It was long thought that scope facts made the assumption of movement"=based analyses of
+%mechanism. It was long thought that s\textsc{cop}e facts made the assumption of movement"=based analyses of
 %scrambling necessary, but it was pointed out by \citew[\page 146]{Kiss2001a} and
 %\citew[Section~2.6]{Fanselow2001a} that the reverse is true: movement"=based accounts of scrambling
-%make wrong predictions with regard to available quantifier scopings. I discussed the respective
+%make wrong predictions with regard to available quantifier s\textsc{cop}ings. I discussed the respective
 %examples in Section~\ref{sec-GB-lokale-Umstellung} already and will not repeat the discussion
 %here. The conclusion that has to be drawn from this is that passive, scrambling, and long distance
 %extraction are three different phenomena that should be treated differently. The solution for the
@@ -411,7 +411,7 @@ keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172
 dg edges
 [V
   [N, edge=dashed 
-    [Det [die;DET] ]
+    [Det [die;\textsc{det}] ]
     [Idee;想法]] 
   [wird;将] 
   [N [jeder;每个人] ]
@@ -432,10 +432,10 @@ dg edges
 dg edges
 [V
   [Adv [Gestern;昨天] ]
-  [hat;AUX] 
+  [hat;\textsc{aux}] 
   [N, edge=dashed [sich;他自己] ]
   [N
-    [Det [der;DET]]
+    [Det [der;\textsc{det}]]
     [Spieler;球员]]
   [V$_g$ [verletzt;弄伤]]]
 %    [Adv [Gestern;yesterday] ]
@@ -466,12 +466,12 @@ dg edges
   [dass;REL]
   [V
     [N, edge=dashed
-      [Det [der;DET]]
+      [Det [der;\textsc{det}]]
       [Wagen;汽车]]
     [V
       [V$_g$ [zu reparieren;INF 修理]]
       [versucht;尝试]]
-    [wurde;AUX]]]
+    [wurde;\textsc{aux}]]]
 %      [dass;that]
 %  [V
 %    [N, edge=dashed
@@ -486,7 +486,7 @@ dg edges
 %\caption{\label{fig-dass-der-wagen-zu-reparieren-versucht-wurde-dg-rising}Analysis of the remote
 %  passive \emph{dass der Wagen zu reparieren versucht wurde} `that it was tried to repair the car' involving rising}
 \end{figure}%%
-zu reparieren（去修理）的宾语上升到助动词wurde（COP）处。
+zu reparieren（去修理）的宾语上升到助动词wurde（\textsc{cop}）处。
 %The object of \emph{zu reparieren} `to repair' rises to the auxiliary \emph{wurde} `was'.
 
 Groß和Osborne使用相同的机制来处理所有这些现象，但是应该清楚的是，在精确使用时，三者还是存在差异的。Groß和Osborne认为英语中没有杂序，但是德语中有。如果想说明这一点，就必须要用某种方式来区分两种现象，因为如果不能展示两种现象的差异的话，就会推测出英语中也有杂序，因为德语和英语中都允许长距离前置。\citet[\page 58]{GO2009a}假设发生上升的宾语名词一定要是主格。但是，如果它们为深远被动假设的这种上升与他们为杂序假设的上升相同的话，就会预测在例（\mex{1}）中den Wagen也获得主格：
@@ -500,13 +500,13 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 %\emph{den Wagen} gets nominative in (\mex{1}) as well:
 \ea
 \gll dass den Wagen niemand repariert hat\\
-     REL DET.\acc{} 车 没有人.\nom{} 修理 AUX\\
+     REL \textsc{det}.\acc{} 车 没有人.\nom{} 修理 \textsc{aux}\\
 \glt `没有人修理这辆车这件事'
 %\gll dass den Wagen niemand repariert hat\\
 %     that the.\acc{} car nobody.\nom{} repaired has\\
 %\glt `that nobody repaired the car'
 \z
-因为den Wagen（车）和repariert（被修理）并不相邻，den Wagen必须上升到下一个更高的中心语以便能允许成分的投射性实现。所以，为了适当地指派格，必须考虑一个特定成分移至中心语所管辖的论元。因为助动词hat （AUX）已经管辖主格，NP den Wagen必须实现为受格。在（\mex{0}）中假设主格和受格都依存于hat（AUX）的分析都基本上是HPSG和一些GB理论所假设的动词复杂体分析。
+因为den Wagen（车）和repariert（被修理）并不相邻，den Wagen必须上升到下一个更高的中心语以便能允许成分的投射性实现。所以，为了适当地指派格，必须考虑一个特定成分移至中心语所管辖的论元。因为助动词hat （\textsc{aux}）已经管辖主格，NP den Wagen必须实现为受格。在（\mex{0}）中假设主格和受格都依存于hat（\textsc{aux}）的分析都基本上是HPSG和一些GB理论所假设的动词复杂体分析。
 %Since \emph{den Wagen} `the car' and \emph{repariert} `repaired' are not adjacent, \emph{den Wagen} has to rise to the
 %next higher head in order to allow for a projective realization of elements. So in order to assign
 %case properly, one has to take into account the arguments that are governed by the head to which a
@@ -528,7 +528,7 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 \eal
 \ex[]{ 
 \gll Den Wagen dünkt mich, dass er repariert.\\
-    DET.\acc{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
+    \textsc{det}.\acc{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
 \glt `我认为他修理了这辆车。'
 %\gll Den Wagen dünkt mich, dass er repariert.\\
 %     the.\acc{} car thinks me.\acc{}     that he.\nom{} repairs\\
@@ -536,7 +536,7 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 }
 \ex[*]{
 \gll Der Wagen dünkt mich, dass er repariert.\\
-    DET.\nom{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
+    \textsc{det}.\nom{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
 %\gll Der Wagen dünkt mich, dass er repariert.\\
 %     the.\nom{} car thinks me.\acc{}     that he.\nom{} repairs\\
 }
@@ -547,7 +547,7 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 \eal
 \ex[]{
 \gll Mir scheint, dass die Wagen ihm gefallen.\\
-     我.\dat.1\pl{} 好像.3\sg{} REL DET 车.3\pl{} 他 取悦.3\pl{} \\
+     我.\dat.1\pl{} 好像.3\sg{} REL \textsc{det} 车.3\pl{} 他 取悦.3\pl{} \\
 \glt `在我看来，他喜欢这辆车。'
 %\gll Mir scheint, dass die Wagen ihm gefallen.\\
 %     me.\dat.1\pl{} seems.3\sg{} that the cars.3\pl{} him please.3\pl{} \\
@@ -558,7 +558,7 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 %%      the car   seems   me   that him pleases\\
 \ex[]{
 \gll Die Wagen scheint mir, dass ihm gefallen.\\
-     DET 车.3\pl{}  好像.3\sg{}     我.\dat{}   REL 他 取悦.3\pl{}\\
+     \textsc{det} 车.3\pl{}  好像.3\sg{}     我.\dat{}   REL 他 取悦.3\pl{}\\
 \glt `这辆车，在我看来他喜欢。'
 %\gll Die Wagen scheint mir, dass ihm gefallen.\\
 %     the cars.3\pl{}  seem.3\sg{}     me.\dat{}   that him please.3\pl{}\\
@@ -567,18 +567,18 @@ Groß和Osborne使用相同的机制来处理所有这些现象，但是应该�
 
 \ex[*]{
 \gll  Die Wagen scheinen mir, dass ihm gefällt.\\
-      DET 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\sg{}\\
+      \textsc{det} 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\sg{}\\
 %\gll  Die Wagen scheinen mir, dass ihm gefällt.\\
 %      the cars.3\pl{}  seem.3\pl{}     me.\dat{}   that him pleases.3\sg{}\\
 }
 \ex[*]{
 \gll Die Wagen scheinen mir, dass ihm gefallen.\\
-     DET 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\pl{}\\
+     \textsc{det} 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\pl{}\\
 %\gll Die Wagen scheinen mir, dass ihm gefallen.\\
 %     the cars.3\pl{}  seem.3\pl{}     me.\dat{}   that him please.3\pl{}\\
 }
 \zl
-这显示杂序/深远被动和提取不能用相同的机制来处理，或者如果它们用相同的机制来处理，就要确保有该机制的特定变体将这些差异考虑进去。我想Groß和Osborne所为是简单地重新编码了一下短语结构语法的关系。在图~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}中的die Idee（想法）和wird jeder verstehen（AUX 每个人理解）有一些关系，正如在GB、LFG、GPSG、HPSG等其它相似框架中一样。在HPSG中，die Idee（想法）是填充语-中心语构式中的填充语。深远被动和助动词论元的局部重新排序、情态动词和其它行为相似的动词都用动词复杂体来解释，其中所有非-动词论元都依赖于最高动词\citep{HN94a}。
+这显示杂序/深远被动和提取不能用相同的机制来处理，或者如果它们用相同的机制来处理，就要确保有该机制的特定变体将这些差异考虑进去。我想Groß和Osborne所为是简单地重新编码了一下短语结构语法的关系。在图~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}中的die Idee（想法）和wird jeder verstehen（\textsc{aux} 每个人理解）有一些关系，正如在GB、LFG、GPSG、HPSG等其它相似框架中一样。在HPSG中，die Idee（想法）是填充语-中心语构式中的填充语。深远被动和助动词论元的局部重新排序、情态动词和其它行为相似的动词都用动词复杂体来解释，其中所有非-动词论元都依赖于最高动词\citep{HN94a}。
 %This shows that scrambling/remote passive and extraction should not be dealt with by the same mechanism or if they
 %are dealt with by the same mechanism one has to make sure that there are specialized variants of the
 %mechanism that take the differences into account. 

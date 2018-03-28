@@ -119,7 +119,7 @@ V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 %If we analyze the sentence in (\mex{1}) with the second rule in (\mex{-1}) and the second rule in (\mex{0}), then we arrive at the structure in %Figure~\vref{Abb-HFC}.
 \ea
 \gll Karl hat versucht, [den Kuchen aufzuessen].\\
-	Karl AUX 尝试 \spacebr{}DET 蛋糕 吃.INF.完\\
+	Karl \textsc{aux} 尝试 \spacebr{}\textsc{det} 蛋糕 吃.INF.完\\
 \glt `Karl试着把蛋糕吃完。'
 %	Karl has tried \spacebr{}the cake to.eat.up\\
 %\glt `Karl tried to finish eating the cake.'
@@ -129,7 +129,7 @@ V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 \begin{forest}
 sm edges
 [{V2[\vform \type{inf}]}
-  [N2 [den Kuchen;DET 蛋糕,roof] ]
+  [N2 [den Kuchen;\textsc{det} 蛋糕,roof] ]
   [{V[6, \vform \type{inf}]} [aufzuessen;完.INF.吃] ] ]
 \end{forest}
 }
@@ -147,28 +147,28 @@ sm edges
 \label{Beispiel-GPSG-Kopfeigenschaften}
 \ex[]{
 \gll [Den Kuchen aufzuessen] hat er nicht gewagt.\\
-	\spacebr{}DET 蛋糕 吃.INF.完 AUX 他 不 敢\\
+	\spacebr{}\textsc{det} 蛋糕 吃.INF.完 \textsc{aux} 他 不 敢\\
 \glt `他不敢把蛋糕吃完。'
 %	\spacebr{}the cake to.eat.up has he not dared\\
 %\glt `He did not dare to finish eating the cake.'
 }
 \ex[*]{
 \gll [Den Kuchen aufzuessen] darf er nicht.\\
-\spacebr{}DET 蛋糕 吃.INF.完 允许 他 不\\
+\spacebr{}\textsc{det} 蛋糕 吃.INF.完 允许 他 不\\
 %\spacebr{}the cake to.eat.up be.allowed.to he not\\
 }
 \glt 想说：“不让他把蛋糕吃完。” 
 %\glt Intended: `He is not allowed to finish eating the cake.'
 \ex[*]{
 \gll [Den Kuchen aufessen] hat er nicht gewagt.\\
-	\spacebr{}DET 蛋糕 吃.完 AUX 他 不 敢\\
+	\spacebr{}\textsc{det} 蛋糕 吃.完 \textsc{aux} 他 不 敢\\
 \glt 想说：“他不敢吃完蛋糕。” 
 %	\spacebr{}the cake eat.up has he not dared\\
 %\glt Intended: `He did not dare to finish eating the cake.'
 }
 \ex[]{
 \gll [Den Kuchen aufessen] darf er nicht.\\
-	\spacebr{}DET 蛋糕 吃.完 允许 他 不\\
+	\spacebr{}\textsc{det} 蛋糕 吃.完 允许 他 不\\
 \glt `不让他把蛋糕吃完。'
 %	\spacebr{}the cake eaten.up be.allowed.to he not\\
 %\glt `He is not allowed to finish eating the cake.'
@@ -203,7 +203,7 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 %  is the head, it is also present at \nbar, following the Head Feature Convention.
 \ea
 \gll des Gespräch-s mit Maria über Klaus\\
-	 DET.\gen{} 对话-\gen{} 跟 Maria 关于 Klaus\\
+	 \textsc{det}.\gen{} 对话-\gen{} 跟 Maria 关于 Klaus\\
 \glt `跟Maria有关Klaus的对话'
 %	 the.\gen{} conversation-\gen{} with Maria about Klaus\\
 %\glt `the conversation with Maria about Klaus'
@@ -226,29 +226,29 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 \label{bsp-GPSG-anordnung}
 \ex 
 \gll {}[weil] der Mann der Frau das Buch gibt\\
-     {}\spacebr{}因为 DET.\nom{} 男人 DET.\dat{} 女人 DET.\acc{} 书 给\\
+     {}\spacebr{}因为 \textsc{det}.\nom{} 男人 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 书 给\\
 \glt `因为这个男人把这本书给这个女人'
 %     {}\spacebr{}because the.\nom{} man the.\dat{} woman the.\acc{} book gives\\
 %\glt `because the man gives the book to the woman'
 \ex 
 \gll {}[weil] der Mann das Buch der Frau gibt\\
-     {}\spacebr{}因为 DET.\nom{} 男人 DET.\acc{} 书 DET.\dat{} 女人 给\\
+     {}\spacebr{}因为 \textsc{det}.\nom{} 男人 \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 女人 给\\
 %     {}\spacebr{}because the.\nom{} man the.\acc{} book the.\dat{} woman gives\\
 \ex 
 \gll {}[weil] das Buch der Mann der Frau gibt\\
-{}\spacebr{}因为 DET.\acc{} 书 DET.\nom{} 男人 DET.\dat{} 女人 给\\
+{}\spacebr{}因为 \textsc{det}.\acc{} 书 \textsc{det}.\nom{} 男人 \textsc{det}.\dat{} 女人 给\\
 %{}\spacebr{}because the.\acc{} book the.\nom{} man the.\dat{} woman gives\\
 \ex 
 \gll {}[weil] das Buch der Frau der Mann gibt\\
-{}\spacebr{}因为 DET.\acc{} 书 DET.\dat{} 女人 DET.\nom{} 男人 给\\
+{}\spacebr{}因为 \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 女人 \textsc{det}.\nom{} 男人 给\\
 %{}\spacebr{}because the.\acc{} book the.\dat{} woman the.\nom{} man gives\\
 \ex 
 \gll {}[weil] der Frau der Mann das Buch gibt\\
-{}\spacebr{}因为 DET.\dat{} 女人 DET.\nom{} 男人 DET.\acc{} 书 给\\
+{}\spacebr{}因为 \textsc{det}.\dat{} 女人 \textsc{det}.\nom{} 男人 \textsc{det}.\acc{} 书 给\\
 %{}\spacebr{}because the.\dat{} woman the.\nom{} man the.\acc{} book gives\\
 \ex 
 \gll {}[weil] der Frau das Buch der Mann gibt\\
-{}\spacebr{}因为 DET.\dat{} 女人 DET.\acc{} 书 DET.\nom{} 男人 给\\
+{}\spacebr{}因为 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 书 \textsc{det}.\nom{} 男人 给\\
 %{}\spacebr{}because the.\dat{} woman the.\acc{} book the.\nom{} man gives\\
 \zl
 
@@ -317,7 +317,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 \ea[*]{
 \label{bsp-der-frau-der-mann-gibt}
 \gll Der Frau der Mann gibt ein Buch.\\
-     DET 女人.\dat{} DET.\nom{} 男人 给 DET.\acc{} 书\\
+     \textsc{det} 女人.\dat{} \textsc{det}.\nom{} 男人 给 \textsc{det}.\acc{} 书\\
 %     the woman.\dat{} the.\nom{} man gives the.\acc{} book\\
 }
 \z
@@ -380,13 +380,13 @@ V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  \\
 \eal
 \ex 
 \gll Er verspricht, [dem Mann das Buch zu geben].\\
-     他 承诺    \spacebr{}DET.\dat{} 人 DET.\acc{} 书 INF 给\\
+     他 承诺    \spacebr{}\textsc{det}.\dat{} 人 \textsc{det}.\acc{} 书 INF 给\\
 \glt `他承诺给这个人这本书。'
 %     he promises    \spacebr{}the.\dat{} man the.\acc{} book to give\\
 %\glt `He promises to give the man the book.'
 \ex 
 \gll Er verspricht, [das Buch dem Mann zu geben].\\
-	 他 承诺 \spacebr{}DET.\acc{} 书 DET.\dat{} 人 INF 给\\
+	 他 承诺 \spacebr{}\textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 INF 给\\
 \glt `他承诺把这本书给这个人。'
 %	 he promises \spacebr{}the.\acc{} book the.\dat{} man to give\\
 %\glt `He promises to give the book to the man.'
@@ -407,10 +407,10 @@ S $\to$ N2 V2
 \begin{forest}
 sm edges
 [S
-  [{N2[nom]} [der Mann;DET 男人,roof] ]
+  [{N2[nom]} [der Mann;\textsc{det} 男人,roof] ]
   [V2
-    [{N2[dat]} [der Frau;DET 女人,roof] ]
-    [{N2[acc]} [das Buch;DET 书,roof] ] 
+    [{N2[dat]} [der Frau;\textsc{det} 女人,roof] ]
+    [{N2[acc]} [das Buch;\textsc{det} 书,roof] ] 
     [V [gibt;给] ] ] ]
 \end{forest}}
 \caption{\label{fig-gpsg-VP}德语的VP分析（在GPSG框架下并不合适）}
@@ -575,21 +575,21 @@ GPSG著作的作者们认为这一原则可以应用于大部分的GPSG规则，
 \eal
 \ex 
 \gll weil der Mann der Frau das Buch \emph{gestern} gab\\
-	 因为 DET 男人 DET 女人 DET 书 昨天 给\\
+	 因为 \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 昨天 给\\
 \glt `因为这个男人昨天把这本书给这个女人了'
 %	 because the man the woman the book yesterday gave\\
 %\glt `because the man gave the book to the woman yesterday'
 \ex 
 \gll weil der Mann der Frau \emph{gestern} das Buch gab\\
-	 因为 DET 男人 DET 女人 昨天 DET 书 给\\
+	 因为 \textsc{det} 男人 \textsc{det} 女人 昨天 \textsc{det} 书 给\\
 %	 because the man the woman yesterday the book gave\\
 \ex 
 \gll weil der Mann \emph{gestern} der Frau das Buch gab\\
-	 因为 DET 男人 昨天 DET 女人 DET 书 给\\
+	 因为 \textsc{det} 男人 昨天 \textsc{det} 女人 \textsc{det} 书 给\\
 %	 because the man yesterday the woman the book gave\\
 \ex 
 \gll weil \emph{gestern} der Mann der Frau das Buch gab\\
-	 因为 昨天 DET 男人 DET 女人 DET 书 给\\
+	 因为 昨天 \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
 %	 because yesterday the man the woman the book gave\\
 \zl
 对于（\mex{0}）来说，我们需要如下的规则：
@@ -602,7 +602,7 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 %Of course, adjuncts can also occur between the arguments of verbs from other valence classes:
 \ea
 \gll weil (oft) die Frau (oft) dem Mann (oft) hilft\\
-	因为 \spacebr{}经常 DET 女人 \spacebr{}经常 DET 男人 \spacebr{}经常 帮助\\
+	因为 \spacebr{}经常 \textsc{det} 女人 \spacebr{}经常 \textsc{det} 男人 \spacebr{}经常 帮助\\
 \glt `因为这个女人经常帮助这个男人'
 %	because \spacebr{}often the woman \spacebr{}often the man \spacebr{}often helps\\
 %\glt `because the woman often helps the man'
@@ -611,7 +611,7 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 %Furthermore, adjuncts can occur between the arguments of a VP:
 \ea
 \gll Der Mann hat versucht, der Frau heimlich das Buch zu geben.\\
-	DET 男人 AUX 尝试 DET 女人 秘密地 DET 书 INF 给\\
+	\textsc{det} 男人 \textsc{aux} 尝试 \textsc{det} 女人 秘密地 \textsc{det} 书 INF 给\\
 \glt `这个男人试着秘密地把这本书给这个女人。'
 %	the man has tried the woman secretly the book to give\\
 %\glt `The man tried to secretly give the book to the woman.'
@@ -655,7 +655,7 @@ V2  $\to$ W, AdvP*
 }对于（\mex{-1}）中的规则，我们可以在输入规则中将AdvP的语义贡献与V2的语义贡献组合起来。如果元规则被应用多次的话，这自然也是可能的。比如说，如果元规则被应用于（\mex{1}a），（\mex{1}a）中的V2"=结点包括第一个副词的语义贡献。
 %If one adopts the rule in (\mex{0}), then it is not immediately clear how the semantic contribution of the adjuncts can be determined.\footnote{
 %	In LFG\indexlfg, an adjunct is entered into a set in the functional structure (see Section~\ref{Abschnitt-LFG-Adjunkte}). This also works with %the use
-%	of the Kleene Star notation. From the f"=structure\is{f"=structure}, it is possible to compute the semantic denotation with corresponding %scope by making reference
+%	of the Kleene Star notation. From the f"=structure\is{f"=structure}, it is possible to compute the semantic denotation with corresponding %s\textsc{cop}e by making reference
 %	to the c"=structure\is{c"=structure}. In HPSG\indexhpsg, \citet{Kasper94a} has made a proposal which corresponds to the
 %        GPSG proposal with regard to flat branching structures and
 %	an arbitrary number of adjuncts. In HPSG, however, one can make use of so"=called relational constraints. These are similar to small %programs which
@@ -706,13 +706,13 @@ V2  $\to$ W, AdvP*
 \label{beispiel-arbeiten}
 \ex 
 \gll weil er noch gearbeitet hat\\
-	 因为 他.\nom{} 仍然 工作 AUX\\
+	 因为 他.\nom{} 仍然 工作 \textsc{aux}\\
 \glt '因为他仍然在工作'
 %	 because he.\nom{} still worked has\\
 %\glt 'because he has still worked'
 \ex 
 \gll weil noch gearbeitet wurde\\
-	 因为 仍然 工作 AUX\\
+	 因为 仍然 工作 \textsc{aux}\\
 \glt `因为那儿仍然有工作'
 %	 because still worked was\\
 %\glt `because there was still working there'
@@ -721,13 +721,13 @@ V2  $\to$ W, AdvP*
 \label{beispiel-denken}
 \ex 
 \gll weil er an Maria gedacht hat\\
-	 因为 他.\nom{} PREP Maria 想 AUX\\
+	 因为 他.\nom{} \textsc{prep} Maria 想 \textsc{aux}\\
 \glt `因为他想起了Maria'
 %	 because he.\nom{} on Maria thought has\\
 %\glt `because he thought of Maria'
 \ex 
 \gll weil an Maria gedacht wurde\\
-	 因为 PREP Maria 想 AUX\\
+	 因为 \textsc{prep} Maria 想 \textsc{aux}\\
 \glt `因为Maria被想起了'
 %	 because on Maria thought was\\
 %\glt `because Maria was thought of'
@@ -735,13 +735,13 @@ V2  $\to$ W, AdvP*
 \eal
 \ex 
 \gll weil sie ihn geschlagen hat\\
-	 因为 她.\nom{} 他.\acc{} 打 AUX\\
+	 因为 她.\nom{} 他.\acc{} 打 \textsc{aux}\\
 \glt `因为她打了他'
 %	 because she.\nom{} him.\acc{} beaten has\\
 %\glt `because she has beaten him'
 \ex 
 \gll weil er geschlagen wurde\\
-	 因为 他.\nom{} 打 AUX\\
+	 因为 他.\nom{} 打 \textsc{aux}\\
 \glt `因为他被打了'
 %	 because he.\nom{} beaten was\\
 %\glt `because he was beaten'
@@ -749,13 +749,13 @@ V2  $\to$ W, AdvP*
 \eal
 \ex 
 \gll weil er ihm den Aufsatz gegeben hat\\
-      因为 他.\nom{} 他.\dat{} DET.\acc{} 文章 给 AUX\\
+      因为 他.\nom{} 他.\dat{} \textsc{det}.\acc{} 文章 给 \textsc{aux}\\
 \glt `因为他把这篇文章给他了'
 %     because he.\nom{} him.\dat{} the.\acc{} essay given has\\
 %\glt `because he has given him the essay'
 \ex 
 \gll weil ihm der Aufsatz gegeben wurde\\
-     因为 他.\dat{} DET.\nom{} 文章 给 AUX\\
+     因为 他.\dat{} \textsc{det}.\nom{} 文章 给 \textsc{aux}\\
 \glt `因为他被给了这篇文章'
 %     because him.\dat{} the.\nom{} essay given was\\
 %\glt `because he was given the essay'
@@ -779,13 +779,13 @@ V2  $\to$ W, AdvP*
 \eal
 \ex 
 \gll weil sie ihn geschlagen hat\\
-     因为 她.\nom{} 他.\acc{} 打 AUX\\
+     因为 她.\nom{} 他.\acc{} 打 \textsc{aux}\\
 \glt `因为她打了他'
 %     because she.\nom{} him.\acc{} beaten has\\
 %\glt `because she has beaten him'
 \ex 
 \gll weil er geschlagen wurde\\
-     因为 他.\nom{} 打 AUX\\
+     因为 他.\nom{} 打 \textsc{aux}\\
 \glt `因为他被打了'
  %    because he.\nom{} beaten was\\
 %\glt `because he was beaten'
@@ -826,12 +826,12 @@ VP[\textsc{pas}] $\to$ H[3], PP[\emph{to}], (PP[\emph{by}])\\
 \eal
 \ex
 \gll {} [\sub{S} The man [\sub{VP} devoured the carcass]].\\
-{} [\sub{S} DET 男人 [\sub{VP} 吞 DET 骨架]]\\
+{} [\sub{S} \textsc{det} 男人 [\sub{VP} 吞 \textsc{det} 骨架]]\\
 \glt `这个男人把骨架吞了。'
 %{} [\sub{S} The man [\sub{VP} devoured the carcass]].
 \ex
 \gll {} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].\\
-{} [\sub{S} DET 男人 [\sub{VP} 递 DET 剑 PREP Tracy]].\\
+{} [\sub{S} \textsc{det} 男人 [\sub{VP} 递 \textsc{det} 剑 \textsc{prep} Tracy]].\\
 \glt `这个男人把剑递给Tracy。'
 %{} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].
 \zl
@@ -845,12 +845,12 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 \eal
 \ex
 \gll {} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].\\
-{} [\sub{S} DET 骨架 AUX [\sub{VP[\textsc{pas}]} 吞 (PREP DET 男人)]].\\
+{} [\sub{S} \textsc{det} 骨架 \textsc{aux} [\sub{VP[\textsc{pas}]} 吞 (\textsc{prep} \textsc{det} 男人)]].\\
 \glt `这个骨架被（这个男人）吞了。'
 %{} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].
 \ex
 \gll {} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].\\
-{} [\sub{S} DET 剑 AUX [\sub{VP[\textsc{pas}]} 递 PREP Tracy (PREP DET 男人)]].\\
+{} [\sub{S} \textsc{det} 剑 \textsc{aux} [\sub{VP[\textsc{pas}]} 递 \textsc{prep} Tracy (\textsc{prep} \textsc{det} 男人)]].\\
 \glt `这把剑被（这个男人）递给了Tracy。'
 %{} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].
 \zl
@@ -883,12 +883,12 @@ GPSG与GB\indexgbc 的不同之处在于，非定式动词投射不包括空主�
 %	theories discussed in this book with the exception of Tree-Adjoining Grammar\indextag.
 %} In this kind of system, the rules for finite sentences (V3) are the basic rules and the rules for V2 would be derived from these.
 只有能够应用到V3的是适用于德语的，因为英语没有在规则右边既包括主语也包括宾语的V3规则。\footnote{
-\citet[\page 62]{GKPS85a}提出了一条元规则与我们在第\pageref{subjekt-meta}页提出的主语引入的元规则相似。由他们的元规则允准的规则被用来分析英语中助词的位置，并只允准AUX NP VP的形式序列。在这类结构中，主语和宾语不在同一棵局部树内。
+\citet[\page 62]{GKPS85a}提出了一条元规则与我们在第\pageref{subjekt-meta}页提出的主语引入的元规则相似。由他们的元规则允准的规则被用来分析英语中助词的位置，并只允准\textsc{aux} NP VP的形式序列。在这类结构中，主语和宾语不在同一棵局部树内。
 }
 %It would only make sense to have a metarule which applies to V3 for German since English does not have V3 rules which contain both the %subject
 %and its object on the right"=hand side of the rule.\footnote{
 % \citet[\page 62]{GKPS85a} suggest a metarule similar to our subject introduction metarule on page~\pageref{subjekt-meta}.
-% The rule that is licensed by their metarule is used to analyze the position of auxiliaries in English and only licenses sequences of the form %AUX NP VP. In such structures,
+% The rule that is licensed by their metarule is used to analyze the position of auxiliaries in English and only licenses sequences of the form %\textsc{aux} NP VP. In such structures,
 % subjects and objects are not in the same local tree either.
 %}
 对于英语来说，一般认为句子包括一个主语和一个VP（请看\citealp[\page 139]{GKPS85a}）。这就意味着我们对英语和德语的被动式会得到两个非常不同的分析结果，该结果并不能得到同样的描述性结论，即被动是主语的抑制与宾语的提升。德语和英语的核心区别看上去是英语强制要求有一个主语，\footnote{
@@ -944,13 +944,13 @@ GPSG的一个创新点是它将长距离依存\isc{长距离依存|(}\is{long"=d
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau das Buch gibt\\
-	 {}\spacebr{}CONJ DET 男人 DET 女人 DET 书 给\\
+	 {}\spacebr{}\textsc{conj} \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
 \glt `这个男人把这本书给这个女人'
 %	 {}\spacebr{}that the man the woman the book gives\\
 %\glt `that the man gives the book to the woman'
 \ex 
 \gll Gibt der Mann der Frau das Buch?\\
-	 给 DET 男人 DET 女人 DET 书\\
+	 给 \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
 \glt `这个男人把这本书给这个女人了吗？'
 %	 gives the man the woman the book\\
 %\glt `Does the man give the book to the woman?'
@@ -960,13 +960,13 @@ GPSG的一个创新点是它将长距离依存\isc{长距离依存|(}\is{long"=d
 \eal
 \ex 
 \gll Der Mann gibt der Frau das Buch.\\
-     DET 男人 给  DET 女人 DET 书\\
+     \textsc{det} 男人 给  \textsc{det} 女人 \textsc{det} 书\\
 \glt `这个男人给这个女人这本书。'
 %     the man  gives the woman the book\\
 %\glt `The man gives the woman the book.'
 \ex 
 \gll Der Frau gibt der Mann das Buch.\\
-     DET 女人 给 DET 男人 DET 书\\
+     \textsc{det} 女人 给 \textsc{det} 男人 \textsc{det} 书\\
 \glt `这个女人给这个男人这本书。'
 %     the woman gives the man the book\\
 %\glt `The man gives the woman the book.'
@@ -1051,7 +1051,7 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 %\addlines[2]
 \ea
 \gll Dem Mann gibt er das Buch.\\
-     DET.\dat{} 男人 给 他.\nom{} DET.\acc{} 书\\
+     \textsc{det}.\dat{} 男人 给 他.\nom{} \textsc{det}.\acc{} 书\\
 \glt `他给这个男人这本书。'
 %     the.\dat{} man gives he,\nom{} the.\acc{} book\\
 %\glt `He gives the man the book.'
@@ -1061,11 +1061,11 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 \begin{forest}
 sm edges
 [{V3[+\textsc{fin}, $+$\textsc{mc}]}
-  [{N2[dat,+\textsc{top}]} [dem Mann;DET 男人,roof] ]
+  [{N2[dat,+\textsc{top}]} [dem Mann;\textsc{det} 男人,roof] ]
   [{V3[+\textsc{mc}]/N2[dat]}
     [{V[8,+\textsc{mc}]} [gibt;给] ]
     [{N2[nom]} [er;他] ] 
-    [{N2[acc]} [das Buch;DET 书, roof] ] ] ]
+    [{N2[acc]} [das Buch;\textsc{det} 书, roof] ] ] ]
 \end{forest}
 }
 \caption{\label{fig-nld-gpsg}GPSG中前置的分析}
@@ -1087,7 +1087,7 @@ sm edges
 \eal
 \ex\label{bsp-um-zwei-millionen-zwei}
 \gll {}[Um zwei Millionen Mark]$_i$ soll er versucht haben, [eine Versicherung \_$_i$ zu betrügen].\footnotemark\\
-       {}\spacebr{}大约 两 百万 马克 应该 他 试图 AUX \spacebr{}ART 保险公司 {} INF 欺骗\\
+       {}\spacebr{}大约 两 百万 马克 应该 他 试图 \textsc{aux} \spacebr{}\textsc{art} 保险公司 {} INF 欺骗\\
 %     {}\spacebr{}around two million Deutsche.Marks should he tried have \spacebr{}an insurance.company {} to deceive\\
 \footnotetext{
          taz，\zhdate{2001/05/04}，第20页。
@@ -1096,7 +1096,7 @@ sm edges
 %\glt `He apparently tried to cheat an insurance company out of two million Deutsche Marks.'
 \ex
 \gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
-    \spacebr{}谁 相信 他 CONJ 他 {} COP 反驳 \textsc{refl} ART 政客 PREP 尼罗河\\
+    \spacebr{}谁 相信 他 \textsc{conj} 他 {} \textsc{cop} 反驳 \textsc{refl} \textsc{art} 政客 \textsc{prep} 尼罗河\\
 %     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
 \footnotetext{
         《明镜周刊》（\emph{Spiegel}），1999年8月，第18页。
@@ -1105,7 +1105,7 @@ sm edges
 %\glt `\,``Who does he think he is?'', a politician from the Nile exclaimed.'
 \ex\label{ex-wen-glaubst-du-dass-zwei}
 \gll Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe?\footnotemark\\
-     谁 认为 你 CONJ 我 {} 看见 AUX\\
+     谁 认为 你 \textsc{conj} 我 {} 看见 \textsc{aux}\\
 %     who believe you that I {} seen have\\
 \footnotetext{
     \citew[\page84]{Scherpenisse86a}.
@@ -1115,7 +1115,7 @@ sm edges
 \ex
 {\raggedright
 \gll {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer, [~[~Angriffe~\_$_i$] zu lancieren].\footnotemark\\
-	 {}\spacebr{}反对 他 陷阱 它 DET 共和党人闷 但是 更难
+	 {}\spacebr{}反对 他 陷阱 它 \textsc{det} 共和党人闷 但是 更难
          \hspaceThis{[~[~}攻击 INF 发起\\
 %	 {}\spacebr{}against him fall it the Republicans however more.difficult
 %         \hspaceThis{[~[~}attacks to launch\\
@@ -1127,7 +1127,7 @@ sm edges
 %\glt `It is, however, more difficult for the Republicans to launch attacks against him.'
 \zl
 （\mex{0}）中的句子不能按照局部语序重列来进行解释，因为前场中的元素并不依存于最高的动词，而是从低层的小句而来。因为只有从同一局部树中而来的元素才能重新排序，（\mex{0}）中的句子不能在没有针对长距离依存设置其他机制的情况下得到分析。\footnote{
-我们可以想象，针对非局部依存的特征机制只针对那些真正包括非局部依存的句子。这在HPSG\indexhpsgc 中，由\citet{Kathol95a}和\citet{Wetta2011a}做到了，在依存语法中由\citet{GO2009a}做到了。我将在\ref{sec-linearization-problems-dg}详细讨论依存语法的分析，并且指出将简单的V2句子处理为非V2句子的变体的分析在下面几个方面是有问题的，包括前置状语的辖域\isc{辖域}\is{scope}、简单句的和非局部依存句的并列\isc{并列}\is{coordination} ，以及所谓的多重前置\isc{显性多重前置}\is{apparent multiple fronting}。
+我们可以想象，针对非局部依存的特征机制只针对那些真正包括非局部依存的句子。这在HPSG\indexhpsgc 中，由\citet{Kathol95a}和\citet{Wetta2011a}做到了，在依存语法中由\citet{GO2009a}做到了。我将在\ref{sec-linearization-problems-dg}详细讨论依存语法的分析，并且指出将简单的V2句子处理为非V2句子的变体的分析在下面几个方面是有问题的，包括前置状语的辖域\isc{辖域}\is{s\textsc{cop}e}、简单句的和非局部依存句的并列\isc{并列}\is{coordination} ，以及所谓的多重前置\isc{显性多重前置}\is{apparent multiple fronting}。
 }
 %The sentences in (\mex{0}) cannot be explained by local reordering as the elements in the prefield are not dependent on the highest verb, but %instead originate in the lower clause.
 %Since only elements from the same local tree can be reordered, the sentences in (\mex{0}) cannot be analyzed without postulating some kind %of additional mechanism for long"=distance
@@ -1136,7 +1136,7 @@ sm edges
 %  sentences that really involve dependencies that are nonlocal. This was done in HPSG\indexhpsg by
 %  \citet{Kathol95a} and \citet{Wetta2011a} and by \citet{GO2009a} in \dg. I discuss the Dependency
 %  Grammar analyses in detail in Section~\ref{sec-linearization-problems-dg} and show that analyses
-%  that treat simple V2 sentences as ordering variants of non-V2 sentences have problems with the scope\is{scope} of
+%  that treat simple V2 sentences as ordering variants of non-V2 sentences have problems with the s\textsc{cop}e\is{s\textsc{cop}e} of
 %  fronted adjuncts, with coordination\is{coordination} of simple sentences and sentences with nonlocal dependencies
 %  and with so-called multiple frontings\is{apparent multiple fronting}.
 %}
@@ -1158,10 +1158,10 @@ sm edges,empty nodes
     [{V[9,+\textsc{mc}]} [glaubst;向心] ]
     [{N2[nom]} [du;你] ] 
     [{V3[+dass,$-$\textsc{mc}]/N2[acc]} 
-      [{}[dass;CONJ] ]
+      [{}[dass;\textsc{conj}] ]
       [{V3[$-$dass,$-$\textsc{mc}]/N2[acc]} 
          [{N2[nom]} [ich;我] ]
-         [{V[6,$-$\textsc{mc}]} [gesehen habe;看见 AUX,roof] ] ] ] ] ]
+         [{V[6,$-$\textsc{mc}]} [gesehen habe;看见 \textsc{aux},roof] ] ] ] ] ]
 \end{forest}
 }
 \caption{\label{fig-gpsg-udc}GPSG中的长距离依存分析}
@@ -1202,21 +1202,21 @@ Principle}控制，它是指所有的子结点的底部特征也在父结点上�
 \ex
 []{ 
 \gll The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP \& S/NP)}\\
-DET 狗窝 CONJ Mary 做 和 Fido 睡觉 PREP AUX AUX 偷\\
+\textsc{det} 狗窝 \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\
 \glt `Mary做的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP %\& S/NP)}
 }
 \ex
 []{ 
 \gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= S/PP \& S/PP)}\\
-DET 狗窝 PREP CONJ Mary 放 药 和 Fido 睡觉 PREP AUX AUX 偷\\
+\textsc{det} 狗窝 \textsc{prep} \textsc{conj} Mary 放 药 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\
 \glt `Mary放药的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= %S/PP \& S/PP)}
 }
 \ex
 [*]{
 \gll The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP \& S/PP)}\\
-DET 狗窝 (PREP) CONJ Mary 做 和 Fido 睡觉 AUX AUX 偷\\\
+\textsc{det} 狗窝 (\textsc{prep}) \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\
 %[*]{The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP %\& S/PP)}
 }
 \zl
@@ -1298,15 +1298,15 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \eal
 \ex 
 \gll Erzählen wird er seiner Tochter ein Märchen können.\\
-     告诉  AUX 他 他的 女儿 ART 童话故事 AUX\\
+     告诉  \textsc{aux} 他 他的 女儿 \textsc{art} 童话故事 \textsc{aux}\\
 %     tell will he his daughter a fairy.tale can\\
 \ex 
 \gll Ein Märchen erzählen wird er seiner Tochter können.\\
-     ART 童话故事 告诉 AUX 他 他的 女儿 AUX\\
+     \textsc{art} 童话故事 告诉 \textsc{aux} 他 他的 女儿 \textsc{aux}\\
 %     a fairy.tale tell will he his daughter can\\
 \ex 
 \gll Seiner Tochter ein Märchen erzählen wird er können.\\
-     他的 女儿 ART 童话故事 告诉 AUX 他 AUX\\
+     他的 女儿 \textsc{art} 童话故事 告诉 \textsc{aux} 他 \textsc{aux}\\
 \glt `他能够给他的女儿讲一个童话故事。'
 %     his daughter a fairy.tale tell will he can\\
 %\glt `He will be able to tell his daughter a fairy tale.'
@@ -1322,19 +1322,19 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \eal
 \ex[]{
 \gll Verschlungen hat er es nicht.\\
-     吞噬     AUX 他.\nom{} 它.\acc{} 不\\
+     吞噬     \textsc{aux} 他.\nom{} 它.\acc{} 不\\
 \glt `他没有把它吞噬。'
 %     devoured     has he.\nom{} it.\acc{} not\\
 %\glt `He did not devour it.'
 }
 \ex[*]{
 \gll Verschlungen hat er nicht.\\
-     吞噬     AUX 他.\nom{} 不\\
+     吞噬     \textsc{aux} 他.\nom{} 不\\
 %      devoured     has he.\nom{} not\\
 }
 \ex[*]{
 \gll Verschlungen hat er ihm nicht.\\
-     吞噬     AUX 他.\nom{} 他.\dat{} 不\\
+     吞噬     \textsc{aux} 他.\nom{} 他.\dat{} 不\\
 %     devoured     has he.\nom{} him.\dat{} not\\
 }
 \zl
@@ -1400,20 +1400,20 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \eal
 \ex 
 \gll {}[dass] der Mann ihn liest\\
-	 {}\spacebr{}CONJ DET.\nom{} 男人 它.\acc{} 读\\
+	 {}\spacebr{}\textsc{conj} \textsc{det}.\nom{} 男人 它.\acc{} 读\\
 \glt `这个男人在读它'
 %	 {}\spacebr{}that the.\nom{} man him.\acc{} reads\\
 %\glt `that the man reads it'
 \ex 
 \gll {}[dass] ihn der Mann liest\\
-	{}\spacebr{}CONJ 它.\acc{} DET..\nom{} 男人 读\\
+	{}\spacebr{}\textsc{conj} 它.\acc{} \textsc{det}..\nom{} 男人 读\\
 \glt `这个男人在读它'
 %	{}\spacebr{}that him.\acc{} the.\nom{} man reads\\
 %\glt `that the man reads it'
 %\ex {}[dass] er gelesen wurde
 \ex 
 \gll Der Mann liest ihn.\\
-     DET..\nom{} 男人 读 它.\acc\\
+     \textsc{det}..\nom{} 男人 读 它.\acc\\
 \glt `这个男人在读它。'
 %     the.\nom{} man reads him.\acc\\
 %\glt `The man reads it.'

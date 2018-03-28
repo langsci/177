@@ -296,7 +296,7 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 \ea
 \label{Lexikonregel-Passiv-CG}
 \begin{tabular}[t]{@{}ll@{~$\to$~}l@{}}
-句法:   & $\alpha \in$ (s\bs np)/np & PST-PART($\alpha$) $\in$ PstP/np$_{by}$\\
+句法:   & $\alpha \in$ (s\bs np)/np & PST-P\textsc{art}($\alpha$) $\in$ PstP/np$_{by}$\\
 语义: & $\alpha'$                 & $\lambda y\lambda x \alpha'(y) (x)$
 \end{tabular}
 \z
@@ -312,7 +312,7 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 按照这样的分析，（\mex{1}）的推导为图\vref{abb-CG-Passiv}所示。
 \ea
 \gll John was touched by Mary.\\
-John AUX 触摸 PREP Mary\\
+John \textsc{aux} 触摸 \textsc{prep} Mary\\
 \glt `John被Mary触碰了一下。'
 \z
 \begin{figure}
@@ -341,11 +341,11 @@ np   & (s\bs np)/\mathit{PstP} & \mathit{PstP}/np_{by} & np_{by}/np & np\\
 \eal
 \ex 
 \gll He gave the book to Mary.\\
-他 给 DET 书 PREP Mary\\
+他 给 \textsc{det} 书 \textsc{prep} Mary\\
 \glt `他把书给Mary。'
 \ex 
 \gll The book was given to Mary.\\
-DET 书  AUX 给 PREP Mary\\
+\textsc{det} 书  \textsc{aux} 给 \textsc{prep} Mary\\
 \glt `书被交给Mary了。'
 \zl
 gave（给）有范畴((s\bs np)/pp)/np，也就是说这个动词必须先结合一个名词短语NP the book（那本书）和一个介词短语to Mary（给Mary），最后再组合一个主语。
@@ -477,7 +477,7 @@ isst & er  & ihn & \_\\
 \ex 
 \gll dass [er ihn isst]\\
 %     that \spacebr{}he it eats\\
-     CONJ \spacebr{}他 它 吃\\
+     \textsc{conj} \spacebr{}他 它 吃\\
 \ex 
 \gll Isst [er ihn \_ ]\\
 %     eats \spacebr{}he it\\
@@ -531,11 +531,11 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 \eal
 \ex\label{Bsp-these-apples}
 \gll These apples, Harry must have been eating. \\
-     这些 苹果 Harry 一定 AUX AUX 吃。\\
+     这些 苹果 Harry 一定 \textsc{aux} \textsc{aux} 吃。\\
 \glt 这些苹果，Harry一定已经吃过了。
 \ex 
 \gll apples which Harry devours \\
-     苹果 CONJ Harry 吞食 \\
+     苹果 \textsc{conj} Harry 吞食 \\
 \glt Harry正在吞食的苹果
 \zl
 在（\mex{0}）的分析中，最前面的名词短语these apples和关系代词which都是函子，都以s/np为变元。
@@ -664,7 +664,7 @@ st/(s/np)\;\;     & s/{(s\bs np)}        & {(s\bs np)}/vp & vp/vp\mathdash en & 
 图\vref{abb-CG-UDC-lang}是（\mex{1}）的相应分析。
 \ea
 \gll Apples, I believe that Harry eats. \\
-     苹果 我 相信 CONJ Harry 吃 \\
+     苹果 我 相信 \textsc{conj} Harry 吃 \\
 \glt `苹果，我相信Harry吃了。
 \z
 \begin{figure}
@@ -756,7 +756,7 @@ Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，
 \citet[\page 614]{SB2006a-u}使用下面的关系小句（\mex{1}）阐述了长距离依存的一种分析：
 \ea
 \gll the man  that Manny says Anna married \\
-     ART 男人 CONJ Manny 说 Anna 结婚 \\
+     \textsc{art} 男人 \textsc{conj} Manny 说 Anna 结婚 \\
 \glt Manny说Anna与之结婚的那个男人
 \z
 这里的关系代词是married的宾语，但出现在了从句Anna married的外部。
@@ -806,11 +806,11 @@ Manny和says，然后是“Manny says”和“Anna married”都可以通过前�
 \ex\label{Beispiel-Minister}
 % TODO: Chinese translation
 \gll Here's the minister [[in [the middle [of [whose sermon]]]] the dog barked]. \\
-     这里是 DET 牧师 PREP DET 中间 PREP CONJ 布道 DET 狗 叫 \\
+     这里是 \textsc{det} 牧师 \textsc{prep} \textsc{det} 中间 \textsc{prep} \textsc{conj} 布道 \textsc{det} 狗 叫 \\
 \glt `这有一个那条狗在他布道过程中吠叫的牧师。'\footnote{\citew[\page 212]{ps2}}
 \ex 
 \gll Reports [the height of the lettering on the covers of which] the government prescribes should be abolished.\\
-     报告 DET 高度 PREP DET 印字 PREP DET 封面 CONJ DET 政府 规定 应该 被 废除 \\
+     报告 \textsc{det} 高度 \textsc{prep} \textsc{det} 印字 \textsc{prep} \textsc{det} 封面 \textsc{conj} \textsc{det} 政府 规定 应该 被 废除 \\
      \glt `那些封面上的印字高度被政府规定的报告应该被废弃。'\label{Ross-reports}\footnote{\citew[\page 109]{Ross67}。\nocite{Ross86a-u}} \\
 \zl
 在（\mex{0}）中, 关系代词嵌入了一个短语中，这个短语是从关系小句剩余部分中抽取出来的。
@@ -831,11 +831,11 @@ Manny和says，然后是“Manny says”和“Anna married”都可以通过前�
 \eal
 \ex 
 \gll a report the cover of which Keats (expects that Chapman) will design\\
-ART 报告 DET 封面 PREP CONJ Keats 期待 CONJ Chapman AUX 设计\\
+\textsc{art} 报告 \textsc{det} 封面 \textsc{prep} \textsc{conj} Keats 期待 \textsc{conj} Chapman \textsc{aux} 设计\\
 \glt `一个Keats（以为Chapman）会设计的报告的封面'
 \ex 
 \gll a subject on which Keats (expects that Chapman) will speak\\
-ART 主题 PREP CONJ Keats 期待 CONJ Chapman AUX 发言\\
+\textsc{art} 主题 \textsc{prep} \textsc{conj} Keats 期待 \textsc{conj} Chapman \textsc{aux} 发言\\
 \glt `一个Keats（以为Chapman）会发言的主题'
 \zl
 在针对（\mex{0}b）的分析中，which左侧需要一个介词（pp/np），用以形成范畴(n$\backslash$n)/(s/pp)。
@@ -848,7 +848,7 @@ Ross的例子（\ref{Ross-reports}）同样可以用（\mex{-1}c）进行分析�
 \ea
 \gll ~[reports [the height of the lettering on the covers of]\sub{np/np}
 which]\sub{(n$\backslash$n)/(s/np)} the government prescribes\\
-报告 DET 高度 PREP DET 字体 PREP DET 封面 PREP CONJ DET 政府 规定\\
+报告 \textsc{det} 高度 \textsc{prep} \textsc{det} 字体 \textsc{prep} \textsc{det} 封面 \textsc{prep} \textsc{conj} \textsc{det} 政府 规定\\
 \glt `报告了政府规定的封面上字体的高度'
 \z
 复杂表达式the height of the lettering on the covers of在应用了组合规则之后形成np/np，而剩下的分析同（\mex{-1}a）的分析。
@@ -857,7 +857,7 @@ which]\sub{(n$\backslash$n)/(s/np)} the government prescribes\\
 在这个新问题中，关系短语是从小句的中间进行提取的（参见\citealp[\page 410]{Pollard88a}）：
 \ea
 \gll Fido is the dog which we put downstairs. \\
-     Fido COP DET 狗 CONJ 我们 放置 楼下 \\
+     Fido \textsc{cop} \textsc{det} 狗 \textsc{conj} 我们 放置 楼下 \\
 \glt `Fido是那条我们放到楼下的狗。'
 \z
 这里的问题和我们在话题化中遇到的问题是很像：we put对应的范畴是(s/pp)/np而不是s/np，正因为这个原因我们无法直接将其与（\ref{le-Relativpronomen-CG}）中的关系代词进行组合。
@@ -867,7 +867,7 @@ which]\sub{(n$\backslash$n)/(s/np)} the government prescribes\\
 \ea
 \label{Beispiel-about-which}
 \gll about which John talked \\
-     关于 CONJ John 谈论 \\
+     关于 \textsc{conj} John 谈论 \\
 \glt `John谈论过的'
 \z
 在词汇项（\ref{le-relpron-Steedman}b）中，which的左面需要一个语言单位，这个语言单位需要一个名词短语以形成一个完整的介词短语。
@@ -875,7 +875,7 @@ which]\sub{(n$\backslash$n)/(s/np)} the government prescribes\\
 Morrill注意到我们需要假定新的词汇项以解释如（\mex{1}）中的现象：关系代词出现在相应短语的中间位置。
 \ea
 \gll the contract [the loss of which after so much wrangling] John would finally have to pay for \\
-     DET 合同 DET 损失 PREP CONJ PREP 如此 多 争论 John 会 终于 AUX INF 赔偿 PREP\\
+     \textsc{det} 合同 \textsc{det} 损失 \textsc{prep} \textsc{conj} \textsc{prep} 如此 多 争论 John 会 终于 \textsc{aux} INF 赔偿 \textsc{prep}\\
 \glt `其损失在经过如此多争论之后John终于必须赔偿的那个合同'
 \z
 上述现象可以通过增加词汇项描写来解决，另有一些其他现象也可以进行类似的处理。
@@ -915,13 +915,13 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 \item 分析下面的句子：
 \ea
 \gll The children in the room laugh loudly. \\
-     DET 孩子们 PREP DET 房间 笑 大声。\\
+     \textsc{det} 孩子们 \textsc{prep} \textsc{det} 房间 笑 大声。\\
 \glt `那个房间里的孩子们笑得很大声。'
 \z
 \item\label{ue-Xbar-CG} 分析（\mex{1}）中的名词短语：
 \ea
 \gll the picture of Mary \\
-     DET 图片 介词 Mary \\
+     \textsc{det} 图片 介词 Mary \\
 \glt `Mary的图片'
 \z
 比较你的分析结果和图\vref{Abbildung-NP-mit-PP-Argument}中的结构，思考\xbarc 句法中的范畴在范畴语法中是如何表示的。

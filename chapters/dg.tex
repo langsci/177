@@ -373,10 +373,10 @@ dg edges
       The \& child \& reads \& a \& book. \\
    \end{deptext}
    \deproot{3}{ROOT}
-   \depedge{2}{1}{DET}
+   \depedge{2}{1}{\textsc{det}}
    \depedge{3}{2}{SBJ}
    \depedge{3}{5}{OBJ}
-   \depedge{5}{4}{DET}
+   \depedge{5}{4}{\textsc{det}}
 \end{dependency}
 }
 \caption{\label{fig-the-child-reads-the-book-dg-sentence}“The child reads a book.”的分析的另一种表示形式}
@@ -396,9 +396,9 @@ dg edges
 sm edges
 [reads
   [child,edge label={node[midway,left,font=\scriptsize]{SBJ~~}} 
-    [the,edge label={node[midway,left,font=\scriptsize]{DET}}] ]
+    [the,edge label={node[midway,left,font=\scriptsize]{\textsc{det}}}] ]
   [book,edge label={node[midway,right,font=\scriptsize]{~OBJ}} 
-    [a,edge label={node[midway,right,font=\scriptsize]{DET}}] ] ]
+    [a,edge label={node[midway,right,font=\scriptsize]{\textsc{det}}}] ] ]
 \end{forest}
 }
 \caption{\label{fig-the-child-reads-the-book-dg-words}\emph{The child reads a book.}的分析的另一种表示形式}
@@ -488,7 +488,7 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %Figure~\vref{fig-the-child-often-reads-the-book-slowly} shows the analysis of (\mex{1}):
 \ea
 \gll The child often reads the book slowly.\\
-DET 孩子 经常 读 DET 书 慢慢地\\
+\textsc{det} 孩子 经常 读 \textsc{det} 书 慢慢地\\
 \glt `孩子们常常慢慢地读书。'
 \z
 \begin{figure}
@@ -544,21 +544,21 @@ Engel使用E\sub{sub}来表示主语，还有E\sub{acc}、E\sub{dat}和E\sub{gen
 \label{ex-gestern-war-ich-bei-tom}
 \ex 
 \gll Gestern war ich bei Tom.\\
-     昨天 COP I PREP Tom\\
+     昨天 \textsc{cop} I \textsc{prep} Tom\\
 \glt `我昨天跟Tom在一起。'
 %     yesterday was I with Tom\\
 %\glt `I was with Tom yesterday.'
 \ex 
 \gll Ich war gestern bei Tom.\\
-     我   COP 昨天 PREP Tom\\
+     我   \textsc{cop} 昨天 \textsc{prep} Tom\\
 %     I   was yesterday with Tom\\
 \ex 
 \gll Bei Tom war ich gestern.\\
-     PREP Tom  COP 我 昨天\\
+     \textsc{prep} Tom  \textsc{cop} 我 昨天\\
 %     with Tom  was I yesterday\\
 \ex 
 \gll Ich war bei Tom gestern.\\
-     我 COP PREP Tom 昨天\\
+     我 \textsc{cop} \textsc{prep} Tom 昨天\\
 %     I was with Tom yesterday\\
 \zl
 \begin{figure}[htb]
@@ -566,7 +566,7 @@ Engel使用E\sub{sub}来表示主语，还有E\sub{acc}、E\sub{dat}和E\sub{gen
 \begin{forest}
 [V\sub{fin, \sliste{ \normalfont sub, sit }}\\
  war\\
- AUX
+ \textsc{aux}
 %  was
  [E\sub{sub}\\
   ich\\
@@ -574,7 +574,7 @@ Engel使用E\sub{sub}来表示主语，还有E\sub{acc}、E\sub{dat}和E\sub{gen
 %    I]
  [E\sub{sit}\\
   bei Tom\\
-  PREP Tom]
+  \textsc{prep} Tom]
 %    with Tom]
  [A\sub{temp}\\
   gestern\\
@@ -618,7 +618,7 @@ Stelle) [\ldots]''
 dg edges
 [V
   [N
-    [D,no edge,name=die [die;DET] ]
+    [D,no edge,name=die [die;\textsc{det}] ]
      [Frauen;女人] ]
 %    [D,no edge,name=die [die;the] ]
 %     [Frauen;women] ]
@@ -676,7 +676,7 @@ Tim Osborne（p.\,c.\ 2015）提醒我，所有的情况下并不是这样的：
 %lexical approaches to argument linking\is{linking} can be adopted. However, argument linking and semantic
 %role\is{semantic role} assignment are just a small part of the problem that has to be solved when natural language
 %expressions have to be assigned a meaning. 
-%Issues regarding the scope of adjuncts and quantifiers
+%Issues regarding the s\textsc{cop}e of adjuncts and quantifiers
 %have to be solved and it is clear that dependency graphs representing dependencies without taking
 %into account linear order are not sufficient. An unordered dependency graph assigns grammatical
 %functions to a dependent of a head and hence it is similar in many respects to an \lfg
@@ -736,7 +736,7 @@ David 吞光 一 三明治 在 中午 昨天\\
 %Our standard example in (\mex{1}) is analyzed as shown in Figure~\vref{fig-passive-dg}.
 \ea
 \gll [dass] der Weltmeister geschlagen wird\\
-     \spacebr{}CONJ DET 世界.冠军 击败 AUX\\
+     \spacebr{}\textsc{conj} \textsc{det} 世界.冠军 击败 \textsc{aux}\\
 \glt `世界冠军被击败了' 
 %     \spacebr{}that the world.champion beaten is\\
 %\glt `that the world champion is (being) beaten' 
@@ -748,10 +748,10 @@ dg edges
 [V\sub{fin, \sliste{ \normalfont prt }}, s sep=8mm
   [V\sub{prt, \sliste{ \normalfont sub $\Rightarrow\varnothing$, akk $\Rightarrow$ sub}}
     [N
-      [D [der;DET] ]
+      [D [der;\textsc{det}] ]
       [Weltmeister;世界.冠军] ]
     [geschlagen;击败] ] 
-  [wird;AUX]]
+  [wird;\textsc{aux}]]
 %        [D [der;the] ]
 %     [Weltmeister;world.champion] ]
 %    [geschlagen;beaten] ] 
@@ -776,18 +776,18 @@ dg edges
 \eal
 \ex
 \gll weil der Wagen zu reparieren versucht wurde\\
-     因为 DET.\sg.\nom{} 汽车 INF 修理 尝试 AUX\\
+     因为 \textsc{det}.\sg.\nom{} 汽车 INF 修理 尝试 \textsc{aux}\\
 \glt `因为试着修理这辆汽车'
 %     because the.\sg.\nom{} car to repair tried was\\
 %\glt `because it was tried to repair the car'
 \ex
 \gll weil die Wagen zu reparieren versucht wurden\\
-     因为 DET.\pl.\nom{} 汽车 INF 修理 尝试 AUX\\
+     因为 \textsc{det}.\pl.\nom{} 汽车 INF 修理 尝试 \textsc{aux}\\
 \glt `因为试着修理这辆汽车'
 %     because the.\pl.\nom{} cars to repair tried were\\
 %\glt `because it was tried to repair the cars'
 \zl
-这里，zu reparieren的宾语与助词wurde（单数）和wurden（复数）保持一致，这个宾语是嵌套在两层深的动词的宾语。但是，关于如何分析这些远被动的问题在Engel的系统中是有待解决的问题，而且这个问题的解决方法可能会包含HPSG中应用的机制：zu reparieren的论元被提升到统治动词versucht上，被动应用于这个动词，并将宾语转化为主语，这是通过助词提升的。这就解释了zu reparieren（修理）的隐含宾语与wurde（单数）之间的一致关系。\citet{Hudson97a}在词语法的框架下提出了德语的动词性补足语的分析，这个分析包括了他所谓的概化提升（generalized raising）的过程。他指出，主语和补足语一起提升到了统治中心语中。请注意，这样包括概化提升的分析可以直接对（i）这类句子进行分析，因为宾语将依存于与主语相同的中心语上，即hat （AUX），由此可以放在主语前。
+这里，zu reparieren的宾语与助词wurde（单数）和wurden（复数）保持一致，这个宾语是嵌套在两层深的动词的宾语。但是，关于如何分析这些远被动的问题在Engel的系统中是有待解决的问题，而且这个问题的解决方法可能会包含HPSG中应用的机制：zu reparieren的论元被提升到统治动词versucht上，被动应用于这个动词，并将宾语转化为主语，这是通过助词提升的。这就解释了zu reparieren（修理）的隐含宾语与wurde（单数）之间的一致关系。\citet{Hudson97a}在词语法的框架下提出了德语的动词性补足语的分析，这个分析包括了他所谓的概化提升（generalized raising）的过程。他指出，主语和补足语一起提升到了统治中心语中。请注意，这样包括概化提升的分析可以直接对（i）这类句子进行分析，因为宾语将依存于与主语相同的中心语上，即hat （\textsc{aux}），由此可以放在主语前。
 %Here the object of \emph{zu reparieren}, which is the object of a verb which is embedded two levels deep,
 %agrees with the auxiliaries \emph{wurde} `was' and \emph{wurden} `were'. However, the question how to analyze these remote
 %passives is open in Engel's system anyway and the solution of this problem would probably involve the mechanism
@@ -803,7 +803,7 @@ dg edges
 \ea
 \label{ex-gestern-hat-sich-der-spieler-verletzt}
 \gll Gestern hat sich der Spieler verletzt.\\
-     昨天 AUX 自己 DET 选手 受伤\\
+     昨天 \textsc{aux} 自己 \textsc{det} 选手 受伤\\
 \glt `这个选手昨天伤到了自己。'
 %     yesterday has self the player injured\\
 %\glt `The player injured himself yesterday.'
@@ -838,13 +838,13 @@ dg edges
 dg edges
 [V\sub{fin, \sliste{ \normalfont sub, prt }}, s sep=8mm
   [N
-    [D [der; DET] ]
+    [D [der; \textsc{det}] ]
     [Weltmeister;世界.冠军] ]
 %    [D [der;the] ]
 %    [Weltmeister;world.champion] ]
   [V\sub{prt, \sliste{ \normalfont sub $\Rightarrow\varnothing$, akk $\Rightarrow$ sub}}
     [geschlagen;击败] ] 
-  [wird;AUX]]
+  [wird;\textsc{aux}]]
 %    [geschlagen;beaten] ] 
 %  [wird;is]]
 \end{forest}
@@ -891,7 +891,7 @@ dg edges
 \eal
 \ex
 \gll [dass] jeder diesen Mann kennt\\
-     \spacebr{}CONJ 每人 这 男人 认识\\
+     \spacebr{}\textsc{conj} 每人 这 男人 认识\\
 \glt `每个人都认识这个男人'
 %     \spacebr{}that everybody this man knows\\
 %\glt `that everybody knows this man'
@@ -963,13 +963,13 @@ dg edges
 \eal
 \ex
 \gll [dass] jeder diesen Mann kennt\\
-     \spacebr{}CONJ 每人 这 男人 认识\\
+     \spacebr{}\textsc{conj} 每人 这 男人 认识\\
 \glt `每个人都认识这个男人'
 %     \spacebr{}that everybody this man knows\\
 %\glt `that everybody knows this man'
 \ex
 \gll [dass] diesen Mann jeder kennt\\
-     \spacebr{}CONJ 这 男人 每人 认识\\
+     \spacebr{}\textsc{conj} 这 男人 每人 认识\\
 \glt `每个人都认识这个男人'
 %     \spacebr{}that this man everybody knows\\
 %\glt `that everybody knows this man'
@@ -1044,7 +1044,7 @@ dg edges
 \ea
 \label{ex-wen-glaubst-du-dass-dg}
 \gll Wen$_i$    glaubst        du,        daß  ich       \_$_i$ gesehen habe?\footnotemark\\
-     谁.\acc{} 认为.2\sg{} 你.\nom{} CONJ 我.\nom{} {}      看见    AUX\\
+     谁.\acc{} 认为.2\sg{} 你.\nom{} \textsc{conj} 我.\nom{} {}      看见    \textsc{aux}\\
 %     who.\acc{} believe.2\sg{} you.\nom{} that I.\nom{} {}      seen    have\\
 \footnotetext{
     \citew[\page84]{Scherpenisse86a}.
@@ -1070,7 +1070,7 @@ dg edges
 %  [glaubst;believe] 
 %  [N [du;you] ]
   [Subjunction
-    [dass;CONJ]
+    [dass;\textsc{conj}]
 %    [dass;that]
     [V\sub{fin, \sliste{ \normalfont sub, prt }}
       [N [ich;我 ] ]
@@ -1078,7 +1078,7 @@ dg edges
       [V\sub{prt}, name=vprt
         [N,phantom,tier=mytier]
         [gesehen;看见] ]
-      [habe;AUX] ] ] ]
+      [habe;\textsc{aux}] ] ] ]
  %       [gesehen;seen] ]
 %      [habe;have] ] ] ]
 \draw (vprt.south)--(nacc.north);
@@ -1104,7 +1104,7 @@ dg edges
 %Figure~\vref{fig-wen-glaubst-ich-du-dass-dg} should be excluded.
 \ea[*]{
 \gll Wen        glaubst        ich      du, dass gesehen habe?\\
-     谁.\acc{} 认为.2\sg{} 我.\nom{} 你.\nom{} CONJ 看见 AUX\\
+     谁.\acc{} 认为.2\sg{} 我.\nom{} 你.\nom{} \textsc{conj} 看见 \textsc{aux}\\
 \glt 想说：“你认为我看见谁了？”
 %     who.\acc{} believe.2\sg{} I.\nom{} you.\nom{} that seen have\\
 %\glt Intended: `Who do you think I saw?'
@@ -1124,13 +1124,13 @@ dg edges
 %  [N,name=nich,no edge,tier=vprt [ich;I ] ]
 %  [N [du;you] ]
   [Subjunction
-    [dass;CONJ]
+    [dass;\textsc{conj}]
 %    [dass;that]
     [V\sub{fin, \sliste{ \normalfont sub, prt }}, name=vfin
       [V\sub{prt}, name=vprt,tier=vprt
         [N,phantom,tier=mytier]
         [gesehen;看见 ] ]
-      [habe;AUX ] ] ] ]
+      [habe;\textsc{aux} ] ] ] ]
 %        [gesehen;seen] ]
 %      [habe;have] ] ] ]
 \draw (vprt.south)--(nacc.north);
@@ -1142,7 +1142,7 @@ dg edges
 %    du, dass gesehen habe?} `Who do you think I saw?'}
 \end{figure}%
 \addlines[2]
-需要注意的是，（\mex{0}）中成分的语序与提出的表示空间位置的观点是兼容的\citet[\page 50]{Engel2014a}：有一个由wen（谁）填充的\vfc，有一个由glaubst（认为）填充的句子左边界，还有由ich（我）、du（你）和小句论元填充的\mf 。在\mf 有像ich（我）和du（你）这样的代词是完全正常的。问题在于这些代词来属于不同的类型：du属于主动词glaubst（认为），而ich （我）依存于（gesehen（看见））habe（AUX）。一个理论需要覆盖的事实是，前置和外置分别瞄定小句的最左边和最右边。这可以直接按照基于成分的方法来模拟，正如我们在前几章所看到的。
+需要注意的是，（\mex{0}）中成分的语序与提出的表示空间位置的观点是兼容的\citet[\page 50]{Engel2014a}：有一个由wen（谁）填充的\vfc，有一个由glaubst（认为）填充的句子左边界，还有由ich（我）、du（你）和小句论元填充的\mf 。在\mf 有像ich（我）和du（你）这样的代词是完全正常的。问题在于这些代词来属于不同的类型：du属于主动词glaubst（认为），而ich （我）依存于（gesehen（看见））habe（\textsc{aux}）。一个理论需要覆盖的事实是，前置和外置分别瞄定小句的最左边和最右边。这可以直接按照基于成分的方法来模拟，正如我们在前几章所看到的。
 %Note that the order of elements in (\mex{0}) is compatible with statements that refer to
 %topological fields as suggested by \citet[\page 50]{Engel2014a}: there is a \vf filled by \emph{wen}
 %`who', there is a left sentence bracket filled by
@@ -1190,14 +1190,14 @@ dg edges
 %  [glaubst;believe] 
 %  [N [du;you] ]
   [Subjunction
-    [dass;CONJ]
+    [dass;\textsc{conj}]
  %   [dass;that]
     [V\sub{fin, \sliste{ \normalfont sub, prt }}
       [N [ich;我 ] ]
 %      [N [ich;I ] ]
       [V\sub{prt, g}, 
         [gesehen;看见] ]
-      [habe;AUX] ] ] ]
+      [habe;\textsc{aux}] ] ] ]
 %        [gesehen;seen] ]
 %      [habe;have] ] ] ]
 \end{forest}
@@ -1223,12 +1223,12 @@ dg edges
 %  hat} `who yet nobody here seen has' is extraposed from the NP headed by \emph{Frau} `woman'.
 \ea
 \gll Dem Mann, den wir alle begrüßt haben, hat die Frau das Buch gegeben, die noch niemand hier gesehen hat.\\
-     DET 男人   谁 我们 都 打招呼 AUX      AUX DET 女人 DET 书 给 谁 但 没人 这里 看见 AUX\\
+     \textsc{det} 男人   谁 我们 都 打招呼 \textsc{aux}      \textsc{aux} \textsc{det} 女人 \textsc{det} 书 给 谁 但 没人 这里 看见 \textsc{aux}\\
 \glt `这里没有人看见过的那个女人把这本书给了这个男人，这个我们都打过招呼的男人。'
 %     the man   who we all greeted have      has the woman the book given who yet nobody here seen has\\
 %\glt `The woman  who nobody ever saw here gave the book to the man, who all of us greeted.'
 \z
-所以，这就意味着中心语和移位成分之间的联系（依存关系）已经说的很清楚的。这就是\citet{Hudson97a,Hudson2000a}在他的词语法中对非局部依存关系的分析：除了连接词与它的主语、宾语和其他成分的依存关系，他还提出了提取成分的更深层次的依存关系。比如说，（\ref{ex-wen-glaubst-du-dass-dg}）中的wen（谁），为了简便这里重复为（\mex{1}），是gesehen（看见）的宾语以及glaubst（认为）和dass（CONJ）的提取。
+所以，这就意味着中心语和移位成分之间的联系（依存关系）已经说的很清楚的。这就是\citet{Hudson97a,Hudson2000a}在他的词语法中对非局部依存关系的分析：除了连接词与它的主语、宾语和其他成分的依存关系，他还提出了提取成分的更深层次的依存关系。比如说，（\ref{ex-wen-glaubst-du-dass-dg}）中的wen（谁），为了简便这里重复为（\mex{1}），是gesehen（看见）的宾语以及glaubst（认为）和dass（\textsc{conj}）的提取。
 %So this means that the connections (dependencies) between the head and the dislocated element have
 %to be made explicit. This is what \citet{Hudson97a,Hudson2000a} does in his Word
 %Grammar\indexwg analysis of nonlocal dependencies: in addition to dependencies that relate a word to
@@ -1238,7 +1238,7 @@ dg edges
 \ea
 \label{ex-wen-glaubst-du-dass-dg-two}
 \gll Wen glaubst du, dass ich gesehen habe?\\
-     谁 认为 你 CONJ 我 看见 AUX\\
+     谁 认为 你 \textsc{conj} 我 看见 \textsc{aux}\\
 \glt `你认为我看见了谁？'
 %     who believe you that I seen have\\
 %\glt `Who do you believe that I saw?'
@@ -1287,7 +1287,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %\caption{\label{fig-wen-glaubst-du-dass-wg}Projective analysis of \emph{Wen glaubst du, dass
 %    ich gesehen habe?} `Who do you think I saw?' in Word Grammar involving multiple dependencies}
 \end{figure}%
-词上的连线是通常对主语、宾语和其他论元的依存连线（r是sharer的缩写，它指动词性补足语，l代表clausal complement），在词下的连线是针对提取成分的连线（x$<$）。从gesehen（看见）连到wen（谁）是特殊的，因为它既是一个宾语连线也是一个提取连线（x$<$o）。这个连线是对图\ref{fig-wen-glaubst-du-dass-dg-rising}中由虚线标记的小$g$和N的明确的说明。除了图\ref{fig-wen-glaubst-du-dass-dg-rising}中的情况，图\ref{fig-wen-glaubst-du-dass-wg}也有一个从dass（CONJ ）到wen（谁）的提取连线。我们可以用Engel、Eroms和Gross \& Osborne的图形表示法来表示词语法的依存关系：我们可以简单地从V$_{prt}$结点和从属词结点上加虚线到统治wen（谁）的N结点。
+词上的连线是通常对主语、宾语和其他论元的依存连线（r是sharer的缩写，它指动词性补足语，l代表clausal complement），在词下的连线是针对提取成分的连线（x$<$）。从gesehen（看见）连到wen（谁）是特殊的，因为它既是一个宾语连线也是一个提取连线（x$<$o）。这个连线是对图\ref{fig-wen-glaubst-du-dass-dg-rising}中由虚线标记的小$g$和N的明确的说明。除了图\ref{fig-wen-glaubst-du-dass-dg-rising}中的情况，图\ref{fig-wen-glaubst-du-dass-wg}也有一个从dass（\textsc{conj} ）到wen（谁）的提取连线。我们可以用Engel、Eroms和Gross \& Osborne的图形表示法来表示词语法的依存关系：我们可以简单地从V$_{prt}$结点和从属词结点上加虚线到统治wen（谁）的N结点。
 %The links above the words are the usual dependency links for subjects (s) and objects (o) and other
 %arguments (r is an abbreviation for \emph{sharer}, which refers to verbal complements, l stands for
 %\emph{clausal complement}) and the links below the words are links for extractees (x$<$). The link from \emph{gesehen}
@@ -1325,7 +1325,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 
 \largerpage
 \noindent
-非缠绕原则保证了没有交叉的依存线，即它保证了结构是可投射的\citep[\page 23]{Hudson2000a}。因为非局部依存关系是通过具体的依存机制确立的，有人想排除非可投射的分析。这一原则也排除了（\mex{1}b），这里green（绿色）依存于peas（豌豆），但是并不是邻接于peas（豌豆）。由于on（PREP）选择了peas（豌豆），从on（PREP）到peas（豌豆）的箭头就会与从peas（豌豆）到green（绿色）的箭头交叉。
+非缠绕原则保证了没有交叉的依存线，即它保证了结构是可投射的\citep[\page 23]{Hudson2000a}。因为非局部依存关系是通过具体的依存机制确立的，有人想排除非可投射的分析。这一原则也排除了（\mex{1}b），这里green（绿色）依存于peas（豌豆），但是并不是邻接于peas（豌豆）。由于on（\textsc{prep}）选择了peas（豌豆），从on（\textsc{prep}）到peas（豌豆）的箭头就会与从peas（豌豆）到green（绿色）的箭头交叉。
 %The No-tangling Principle ensures that there are no crossing dependency lines, that is, it ensures
 %that structures are projective \citep[\page 23]{Hudson2000a}. Since non-local dependency relations are established via the
 %specific dependency mechanism, one wants to rule out the non"=projective analysis. This principle
@@ -1335,12 +1335,12 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 \eal
 \ex[]{
 \gll He lives on green peas.\\
-他 生存 PREP 绿色 豌豆\\
+他 生存 \textsc{prep} 绿色 豌豆\\
 \glt `他靠绿色豌豆生存。'
 }
 \ex[*]{
 \gll He lives green on peas.\\
-他 生存 绿色 PREP 豌豆\\
+他 生存 绿色 \textsc{prep} 豌豆\\
 }
 \zl
 不孤单原则确保了没有单独的词组连接到结构的主要部分上。没有这条规则，（\mex{0}b）就会被分析为孤立的（green（绿色））\citep[\page 23]{Hudson2000a}。
@@ -1613,24 +1613,24 @@ all girls and boys这个句子的图看起来太奇怪了，因为限定词和�
 
 这类联结也适用于动词的并列。但是，也不是没有问题的，因为附接语的辖域可以覆盖到离它最近的连词，或者是整个并列结构。例如下面\citet[\page 217]{Levine2003a}中的句子：
 %Such junctions are also assumed for the coordination of verbs. This is, however, not without problems,
-%since adjuncts can have scope over the conjunct that is closest to them or over the whole
+%since adjuncts can have s\textsc{cop}e over the conjunct that is closest to them or over the whole
 %coordination. An example is the following sentence from \citet[\page 217]{Levine2003a}:
 \ea
 \gll Robin came in, found a chair, sat down, and whipped off her logging boots in exactly thirty seconds flat.\\
-Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+Robin 来 进 找到 \textsc{art} 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \glt `Robin进来，找到了一把椅子，坐下来，并在三十秒内就把她的靴子脱下来了。'
 \z
 附接语in exactly thirty seconds flat可以指向（\mex{1}a）中的whipped off her logging boots，或者像（\mex{1}b)）中那样覆盖所有三个连词：
 %The adjunct \emph{in exactly thirty seconds flat} can refer either to \emph{whipped off her logging
-%  boots} as in (\mex{1}a) or scope over all three conjuncts together as in (\mex{1}b):
+%  boots} as in (\mex{1}a) or s\textsc{cop}e over all three conjuncts together as in (\mex{1}b):
 \eal
 \ex 
 \gll Robin came in, found a chair, sat down, and [[pulled off her logging boots] in exactly thirty seconds flat].\\
-Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+Robin 来 进 找到 \textsc{art} 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \glt `Robin进来，找到了一把椅子，坐下来，并在三十秒内就把她的靴子脱下来了。'
 \ex\label{ex-Robin-flat-VP}
 \gll Robin [[came in, found a chair, sat down, and pulled off her logging boots] in exactly thirty seconds flat].\\
-Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+Robin 来 进 找到 \textsc{art} 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \glt `Robin在三十秒内进来，找到了一把椅子，坐下来，并把她的靴子脱下来了。'
 \zl
 图\vref{fig-dg-adjunct-attachment-wrong}中的泰尼埃式的分析对应于（\mex{1}），而如图\vref{fig-dg-adjunct-attachment-right}中将连词作为中心语的分析对应于（\mex{0}b）。
@@ -1640,7 +1640,7 @@ Robin 来 进 找到 ART 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确
 \ea
 \gll Robin came in in exactly thirty seconds flat and Robin found a chair in exactly thirty seconds flat
 and Robin pulled off her logging boots in exactly thirty seconds flat.\\
-Robin 进 来 在 确定地 三十 秒 干脆 和 Robin 找到 ART 椅子 在 确定地 三十 秒 干脆 和 Robin 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
+Robin 进 来 在 确定地 三十 秒 干脆 和 Robin 找到 \textsc{art} 椅子 在 确定地 三十 秒 干脆 和 Robin 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \glt `Robin在三十秒内进来，在三十秒内找到了一把椅子，并在三十秒内把她的靴子脱下来了。'
 \z
 当附接语分别指向每个连词的，而不是如（\ref{ex-Robin-flat-VP}）中由动词短语表示的指向一个累积的事件的时候，就会得到（\mex{0}）中的解读。
@@ -1658,7 +1658,7 @@ dg edges
   [Conj,dg junction [and;和]]
   [V, l sep+=2ex, name=v2, no edge [found;找到]
      [N 
-       [Det [a;ART]]
+       [Det [a;\textsc{art}]]
        [chair;椅子]]
      [P, dg adjunct, name=p [in;在]
         [N 
@@ -1682,7 +1682,7 @@ dg edges
   [and;和]
   [V [found;找到]
      [N 
-       [Det [a;ART]]
+       [Det [a;\textsc{art}]]
        [chair;椅子]] ]
   [P, dg adjunct [in;在]
      [N 
@@ -1723,7 +1723,7 @@ dg edges
    [er (O)\\他\hspaceThis{(O)}]
 %    [er (O)\\he\hspaceThis{(O)}]
    [E
-     [in\\PREP]
+     [in\\\textsc{prep}]
 %       [in\\in]
      [Traumboot (O)\\梦.船\hspaceThis{(O)}
 %        [Traumboot (O)\\dream.boat\hspaceThis{(O)}
@@ -1731,7 +1731,7 @@ dg edges
 %          [das\\das]
        [Liebe (O)\\爱\hspaceThis{(O)}
 %            [Liebe (O)\\love\hspaceThis{(O)}
-         [der\\DET]]] ] ] 
+         [der\\\textsc{det}]]] ] ] 
 %              [der\\the]]] ] ]
 \end{forest}
 %% \begin{forest}
@@ -1830,21 +1830,21 @@ dg edges
 %could be identified as the head. For more on headless constructions see Section~\ref{sec-headless-constructions-dg}.
 
 \subsection{辖域}
-%\subsection{Scope}
+%\subsection{S\textsc{cop}e}
 
 正如\citet[\page lix]{OK2015a}所指出的，\tes 使用了所谓的多图\isc{多图|(}\is{polygraph|(}来表示辖域关系。所以说，由于例（\mex{1}）中的that you saw yesterday是指red cars，而不单是cars，这通过red和cars的联系而不是单个成分开始的线来表示\citep[\page 150, Stemma~149]{Tesniere2015a-not-crossreferenced}。
-%As \citet[\page lix]{OK2015a} point out, \tes uses so-called polygraphs\is{polygraph|(} to represent scopal
+%As \citet[\page lix]{OK2015a} point out, \tes uses so-called polygraphs\is{polygraph|(} to represent s\textsc{cop}al
 %relations. So, since \emph{that you saw yesterday} in (\mex{1}) refers to \emph{red cars} rather
 %than \emph{cars} alone, this is represented by a line that starts at the connection between
 %\emph{red} and \emph{cars} rather than on one of the individual elements \citep[\page 150, Stemma~149]{Tesniere2015a-not-crossreferenced}.
 \ea
 \gll red cars that you saw yesterday\\
-红色 汽车 CONJ 你 看见 昨天\\
+红色 汽车 \textsc{conj} 你 看见 昨天\\
 \glt `你昨天看见的红色汽车'
 \z
-\tes 的分析如图\vref{fig-tesniere-scope}的左边表达式的描述。值得指出的是，这个表达式对应于图\ref{fig-tesniere-scope}右边的短语结构树。
-%\tes's analysis is depicted in the left representation in Figure~\vref{fig-tesniere-scope}. It is worth noting that this representation
-%corresponds to the phrase structure tree on the right of Figure~\ref{fig-tesniere-scope}.
+\tes 的分析如图\vref{fig-tesniere-s\textsc{cop}e}的左边表达式的描述。值得指出的是，这个表达式对应于图\ref{fig-tesniere-s\textsc{cop}e}右边的短语结构树。
+%\tes's analysis is depicted in the left representation in Figure~\vref{fig-tesniere-s\textsc{cop}e}. It is worth noting that this representation
+%corresponds to the phrase structure tree on the right of Figure~\ref{fig-tesniere-s\textsc{cop}e}.
 \begin{figure}
 \hfill
 \begin{forest}
@@ -1866,8 +1866,8 @@ word tier
   [that you saw yesterday]]
 \end{forest}
 \hfill\mbox{}
-\caption{\label{fig-tesniere-scope}\tes 表示辖域的方式以及由\citet[\page lix]{OK2015a}提出的基于短语结构分析的比较}
-%\caption{\label{fig-tesniere-scope}\tes's way of representing scope and the comparison with phrase structure"=based analyses by \citet[\page lix]%{OK2015a}}
+\caption{\label{fig-tesniere-s\textsc{cop}e}\tes 表示辖域的方式以及由\citet[\page lix]{OK2015a}提出的基于短语结构分析的比较}
+%\caption{\label{fig-tesniere-s\textsc{cop}e}\tes's way of representing s\textsc{cop}e and the comparison with phrase structure"=based analyses by \citet[\page lix]%{OK2015a}}
 \end{figure}%
 %<HERE>
 在red和cars之间的组合B对应于右手边图中的B结点，而且red cars和that you saw yesterday的组合A对应于A结点。所以说，在短语结构语法中被清晰表示并指派了名称的对象在\tes 的分析中是没有名字的，但是由于测谎仪的假说，可以指向这些组合。\isc{测谎仪}\is{polygraph}也请参阅图\ref{fig-small-children-are-playing-outside}的讨论，它显示出了Hudson为了模拟语义关系而提出的额外结点。
@@ -1891,7 +1891,7 @@ word tier
 %%      Pascal collects old used table.wear\\
 %% \ex
 %% \gll Pascal sammelt alte englische Kupferstiche.\\
-%%      Pascal collects old English copperplate.prints\\
+%%      Pascal collects old English \textsc{cop}perplate.prints\\
 %% \zl
 %
 %% \subsection{Topological Dependency Grammar}
@@ -1946,7 +1946,7 @@ word tier
 \eal
 \ex\label{ex-oft-liest-er-das-buch-nicht} 
 \gll Oft liest er das Buch nicht.\\
-     经常 读 他 DET  书 不\\
+     经常 读 他 \textsc{det}  书 不\\
 \glt `经常的情况是他不读书。' 或者\\
      `他经常读书，事实不是这样的。'
 %     often reads he the book not\\
@@ -1954,13 +1954,13 @@ word tier
 %     `It is not the case that he reads the book often.'
 \ex
 \gll dass er das Buch nicht oft liest\\
-      CONJ 他 DET 书 不 经常 读\\
+      \textsc{conj} 他 \textsc{det} 书 不 经常 读\\
 \glt `他经常读书，事实不是这样的。'
  %    that he the book not often reads\\
 %\glt `It is not the case that he reads the book often.'
 \ex
 \gll dass er das Buch oft nicht liest\\
-     CONJI 他 DET 书 经常 不 读\\
+     \textsc{conj}I 他 \textsc{det} 书 经常 不 读\\
 \glt `经常的情况是，他不读书。'
 %     that he the book often not reads\\
 %\glt `It is often that he does not read the book.'
@@ -1979,7 +1979,7 @@ dg edges
   [liest;读] 
   [N [er;他] ]
   [N 
-    [Det [das;DET] ]
+    [Det [das;\textsc{det}] ]
     [Buch;书] ]
   [Adv, dg adjunct [nicht;不]] ]
 \end{forest}
@@ -1989,11 +1989,11 @@ dg edges
 \end{figure}%
 当然，（\mex{0}b）和（\mex{0}c）的依存关系不是不同的。图是相同的，只有语序序列是不同的。所以说，辖域的不同不能从依存关系中推导出来，而且像（\mex{1}）的复杂声明是必要的：
 %Of course the dependencies for (\mex{0}b) and (\mex{0}c) do not differ. The graphs would be the
-%same, only differing in serialization. Therefore, differences in scope could not be derived from the
+%same, only differing in serialization. Therefore, differences in s\textsc{cop}e could not be derived from the
 %dependencies and complicated statements like (\mex{1}) would be necessary:
 \ea
 如果从属语在\vfc 中次序化了，它可以跨域，而且位于它所从属的中心语的所有其他附接语下面。
-%If a dependent is linearized in the \vf it can both scope over and under all other adjuncts of the
+%If a dependent is linearized in the \vf it can both s\textsc{cop}e over and under all other adjuncts of the
 %head it is a dependent of.
 \z
 \citet[\page 320]{Eroms85a}提出了否定的分析，其中否定被当作中心语来处理；也就是说，例（\mex{1}）中的句子具有图\vref{dg-adv-head}中的结构。\footnote{
@@ -2037,24 +2037,24 @@ dg edges
 %}
 
 对于成分否定或者带有成分的其他辖域来说也是一样的。比如说，例（\mex{1}）的分析可以如图\vref{dg-alleged-murderer}所示。
-%The same is true for constituent negation or other scope bearing elements. For example, the analysis of (\mex{1})
+%The same is true for constituent negation or other s\textsc{cop}e bearing elements. For example, the analysis of (\mex{1})
 %would have to be the one in Figure~\vref{dg-alleged-murderer}.
 \ea
 \gll der angebliche Mörder\\
-     DET 所谓的 杀人犯\\
+     \textsc{det} 所谓的 杀人犯\\
 %     the alleged murderer\\
 \z
 \begin{figure}
 \begin{forest}
 dg edges
 [Adj
-    [Det, no edge, name=det, l+=3\baselineskip, [der;DET] ]
+    [Det, no edge, name=det, l+=3\baselineskip, [der;\textsc{det}] ]
   [angebliche;所谓]
   [N, name=n [Mörder;杀人犯]]]
 \draw (n.south)--(det.north);
 \end{forest}
 \caption{\label{dg-alleged-murderer}覆盖全域的附接语作为中心语所得到结果的分析}
-%\caption{\label{dg-alleged-murderer}Analysis that would result if one considered all scope-bearing adjuncts
+%\caption{\label{dg-alleged-murderer}Analysis that would result if one considered all s\textsc{cop}e-bearing adjuncts
  % to be heads}
 \end{figure}%
 这个结构可能有非投射性的其他问题。\isc{可投射性}\is{projectivity} Eroms确实对限定词进行了不同的处理，所以这个非可投射性的类型对他来说不是一个问题。但是，否定的中心语分析会得到德语的所谓一致结构的非可投射性。例（\mex{1}）中的句子有两种解读：在第一种解读中，否定的辖域包括singen（唱歌），而在第二种解读中包括singen darf（唱歌 允许）。
@@ -2062,23 +2062,23 @@ dg edges
 %differently from what is assumed here, so this type of non"=projectivity may not be a problem for
 %him. However, the head analysis of negation would result in non"=projectivity in so"=called coherent
 %constructions in German. The sentence in (\mex{1}) has two readings: in the first reading, the negation
-%scopes over \emph{singen} `sing' and in the second one over \emph{singen darf} `sing may'.
+%s\textsc{cop}es over \emph{singen} `sing' and in the second one over \emph{singen darf} `sing may'.
 \ea\label{ex-dass-er-nicht-singen-darf} 
 \gll dass er nicht singen darf\\
-     CONJ 他 不 唱歌 允许\\
+     \textsc{conj} 他 不 唱歌 允许\\
 \glt `他不被允许唱歌' 或 `他被允许不唱歌'
 %     that he not sing may\\
 %\glt `that he is not allowed to sing' or `that he is allowed not to sing'
 \z
 \addlines[2]
 nicht（不）的辖域包括动词复杂形式的解读会得到图\vref{dg-nicht-singen-darf}中给出的非可投射结构。
-%The reading in which \emph{nicht} `not' scopes over the whole verbal complex would result in the
+%The reading in which \emph{nicht} `not' s\textsc{cop}es over the whole verbal complex would result in the
 %non-projective structure that is given in Figure~\vref{dg-nicht-singen-darf}.
 \begin{figure}
 \begin{forest}
 dg edges
 [Subjunction
-  [dass;CONJ]
+  [dass;\textsc{conj}]
   [Adv
     [N, no edge, name=n, tier=n [er;他]]
     [nicht;不]
@@ -2118,7 +2118,7 @@ dg edges
   [liest;读] 
   [N [er;他] ]
   [N 
-    [Det [das;DET] ]
+    [Det [das;\textsc{det}] ]
     [Buch;书] ]
   [Adv\sub{g}, dg adjunct [nicht;不]] ]
 \end{forest}
@@ -2128,7 +2128,7 @@ dg edges
 [V, l sep+=5pt
   [N [er;他] ]
   [N 
-    [Det [das;DET] ]
+    [Det [das;\textsc{det}] ]
     [Buch;书] ]
   [Adv, dg adjunct=4pt [nicht;不]
     [Adv [oft;经常] ] ] 
@@ -2144,17 +2144,17 @@ dg edges
 %The figure on the right-hand side shows the graph for the corresponding verb-final sentence. The
 %reading corresponding to constituent negation can be illustrated with contrastive
 %expressions. While in (\mex{1}a) it is only \emph{oft} `often' which is negated, it is \emph{oft
-%  gelesen} `often read' that is in the scope of negation in (\mex{1}b).
+%  gelesen} `often read' that is in the s\textsc{cop}e of negation in (\mex{1}b).
 \eal
 \ex 
 \gll Er hat das Buch nicht oft gelesen, sondern selten.\\
-     他 AUX DET 书 不 经常 读     但是 很少\\
+     他 \textsc{aux} \textsc{det} 书 不 经常 读     但是 很少\\
 \glt `他不经常读书，但是偶尔读。'
 %     he has the book not often read     but seldom\\
 %\glt `He did not read the book often, but seldom.'
 \ex
 \gll Er hat das Buch nicht oft gelesen, sondern selten gekauft.\\
-     他 AUX DET 书 不 经常 读     但是 很少 买\\
+     他 \textsc{aux} \textsc{det} 书 不 经常 读     但是 很少 买\\
 \glt `他不经常读书，但是偶尔会买书。'
 %     he has the book not often read     but seldom bought\\
 %\glt `He did not read the book often but rather bought it seldom.'
@@ -2169,7 +2169,7 @@ sm edges
     [N [er;他] ]
     [V
       [NP 
-        [Det [das;DET] ]
+        [Det [das;\textsc{det}] ]
         [N [Buch;书] ] ]
       [V 
         [Adv [nicht;不]] 
@@ -2183,7 +2183,7 @@ sm edges
     [N [er;他] ]
     [V
       [NP 
-        [Det [das;DET] ]
+        [Det [das;\textsc{det}] ]
         [N [Buch;书] ] ] 
       [V 
         [Adv 
@@ -2212,7 +2212,7 @@ sm edges
 %account for sentences like (\mex{1}).
 \ea
 \gll Dem Saft eine kräftige Farbe geben Blutorangen.\footnotemark\\
-     DET 果汁 ART   强烈   颜色 给 血.橙\\
+     \textsc{det} 果汁 \textsc{art}   强烈   颜色 给 血.橙\\
 %     the juice a   strong   color give blood.oranges\\
 \footnotetext{
 \citet{BC2010a}在曼海姆的德语系举办的\emph{Deutsches Referenzkorpus}（DeReKo）中发现了这个例子：\url{http://www.ids-mannheim.de/kl/projekte/korpora}
@@ -2230,10 +2230,10 @@ sm edges
 \begin{forest}
 dg edges
 [V
-  [N [Det,tier=eine [dem;DET]]
+  [N [Det,tier=eine [dem;\textsc{det}]]
    [Saft;果汁] ]
   [N, l sep+=3pt 
-      [Det,tier=eine [eine;ART] ]
+      [Det,tier=eine [eine;\textsc{art}] ]
       [Adj, dg adjunct=4pt  [kräftige;强烈]]
       [Farbe;颜色]]
   [geben;给] 
@@ -2275,9 +2275,9 @@ dg edges
 \begin{forest}
 dg edges
 [V\sub{g}
-  [V,edge=dashed [N [Det [dem;DET]]
+  [V,edge=dashed [N [Det [dem;\textsc{det}]]
       [Saft;果汁] ]
-     [N [Det [eine;ART] ]
+     [N [Det [eine;\textsc{art}] ]
         [Adj, dg adjunct=4pt [kräftige;强烈]]
         [Farbe;颜色]]
      [ \trace ] ]
@@ -2301,7 +2301,7 @@ dg edges
 \ex
 \label{ex-mehrfach-vf-adv-acc}
 \gll [Gezielt] [Mitglieder] [im     Seniorenbereich]       wollen  die Kendoka allerdings nicht werben.\footnotemark\\
-    \spacebr{}特别地 \spacebr{}成员     \spacebr{}PREP.DET 高级.市民.选区 想要.INF DET 剑道家 但是    不   招募\\
+    \spacebr{}特别地 \spacebr{}成员     \spacebr{}\textsc{prep}.\textsc{det} 高级.市民.选区 想要.INF \textsc{det} 剑道家 但是    不   招募\\
 \glt `但是，剑道家的会员招募策略并不想指向高级市民的选区。'%
 %    \spacebr{}specifically \spacebr{}members     \spacebr{}in.the senior.citizens.sector want.to the Kendoka however    not   recruit\\
 %\glt `However, the Kendoka do not intend to target the senior citizens sector with their member recruitment strategy.'%
@@ -2312,7 +2312,7 @@ dg edges
       }
 \ex 
 \gll {}[Kurz] [die Bestzeit] hatte der Berliner Andreas Klöden [\ldots] gehalten.\footnotemark\\
-	 \spacebr{}简短地 \spacebr{}DET 最好.时光 AUX DET 柏林人 Andreas Klöden {} 拥有\\
+	 \spacebr{}简短地 \spacebr{}\textsc{det} 最好.时光 \textsc{aux} \textsc{det} 柏林人 Andreas Klöden {} 拥有\\
 %	 \spacebr{}briefly \spacebr{}the best.time had the Berliner Andreas Klöden {} held\\
 \footnotetext{
         Märkische Oderzeitung，2001年07月28日或29日，第28页。
@@ -2324,7 +2324,7 @@ dg edges
 %And although the respective structures are marked, such multiple frontings\\is{fronting!apparent multiple} can even cross clause boundaries:
 \ea 
 \gll Der        Maria einen    Ring glaube  ich nicht, daß  er je   schenken wird.\footnotemark\\
-     DET.\dat{} Maria ART.\acc{} 戒指 相信 我   不    CONJ 他 曾经 给     AUX\\
+     \textsc{det}.\dat{} Maria \textsc{art}.\acc{} 戒指 相信 我   不    \textsc{conj} 他 曾经 给     \textsc{aux}\\
 %     the.\dat{} Maria a.\acc{} ring believe I   not    that he ever give     will\\
 \footnotetext{
 \citew[\page 67]{Fanselow93a}.
@@ -2346,7 +2346,7 @@ dg edges
 %discontinuous constituents of (\mex{1}) as it is depicted in Figure~\vref{fig-ein-junger-Kerl-stand-da}.
 \ea
 \gll Ein junger Kerl stand da, mit langen blonden Haaren, die sein Gesicht einrahmten,   [\ldots]\footnotemark\\ 
-     ART 年轻 人 站 那儿 PREP 长 金色 头发 CONJ 他的 脸 装框\\
+     \textsc{art} 年轻 人 站 那儿 \textsc{prep} 长 金色 头发 \textsc{conj} 他的 脸 装框\\
 \glt `一位脸旁镶满金发的年轻小伙子站在那儿' 
 %     a young guy stood there with long blond hair that his face framed\\
 %\glt `A young guy was standing there with long blond hair that framed his face' 
@@ -2364,12 +2364,12 @@ dg edges
 dg edges
 [V
   [N,l sep+=2mm,name=n
-    [Det [ein;ART]]
+    [Det [ein;\textsc{art}]]
     [Adj, dg adjunct,tier=adj [junger;年轻]]
     [Kerl;人] ]
   [stand;站]
   [Adv, dg adjunct [da;那儿]]
-  [P, no edge,tier=adj,name=p [mit;PREP]
+  [P, no edge,tier=adj,name=p [mit;\textsc{prep}]
     [N,l sep+=2mm
       [Adj, dg adjunct [langen;长] ]
       [Adj, dg adjunct [blonden;金色] ]
@@ -2426,13 +2426,13 @@ dg edges
 \begin{forest}
 sm edges
 [NP
-  [D [a;ART] ]
+  [D [a;\textsc{art}] ]
   [N [book;书] ] ]
 \end{forest}\hfill%
 \begin{forest}
 dg edges
 [N
-  [D [a;ART] ]
+  [D [a;\textsc{art}] ]
   [book;书] ]
 \end{forest}
 \hfill\mbox{}
@@ -2456,11 +2456,11 @@ dg edges
 sm edges
 [V
   [N
-    [D [the;DET] ]
+    [D [the;\textsc{det}] ]
     [N [child;孩子] ] ]
   [V [reads;读]]
   [N
-    [D [a;ART] ]
+    [D [a;\textsc{art}] ]
     [N [book;书] ] ] ]
 \end{forest}
 }
@@ -2649,11 +2649,11 @@ dom  & \sliste{ \ibox{1} } \\
 \begin{forest}
 sm edges
 [{V[\dom \phonliste{ der Frau, ein Mann, das Buch, gibt }]}
-  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;ART 男人,roof]]
+  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;\textsc{art} 男人,roof]]
   [{V[\dom \phonliste{ der Frau, das Buch, gibt }]}
-   [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]} [der Frau;DET 女人,roof] ]
+   [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]} [der Frau;\textsc{det} 女人,roof] ]
    [{V[\dom \phonliste{ das Buch, gibt }]}
-    [{~~~NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;DET 书,roof] ]
+    [{~~~NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;\textsc{det} 书,roof] ]
     [{V[\dom \phonliste{ gibt }]} [gibt;给] ] ] ] ]
 %    [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man,roof]]
 %  [{V[\dom \phonliste{ der Frau, das Buch, gibt }]}
@@ -2682,12 +2682,12 @@ sm edges
 \begin{forest}
 sm edges
 [{V[\dom \phonliste{ der Frau, ein Mann, das Buch, gibt }]}
-  [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]~~~~~~}, no edge, name=np-dat,tier=dat-tier, [der Frau;DET 女人,roof] ]
-  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;ART 男人, roof]]
+  [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]~~~~~~}, no edge, name=np-dat,tier=dat-tier, [der Frau;\textsc{det} 女人,roof] ]
+  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;\textsc{art} 男人, roof]]
   [{V[\dom \phonliste{ der Frau, das Buch, gibt }]}, name=v
    [NP, phantom, tier=dat-tier ]
    [{V[\dom \phonliste{ das Buch, gibt }]}
-    [{NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;DET 书,roof] ]
+    [{NP[\type{acc}, \dom \phonliste{ das, Buch }]} [das Buch;\textsc{det} 书,roof] ]
     [{V[\dom \phonliste{ gibt }]} [gibt;给] ] ] ] ]
 %   [{NP[\type{dat}, \dom \phonliste{ der, Frau  }]~~~~~~}, no edge, name=np-dat,tier=dat-tier, [der Frau;the woman,roof] ]
 %  [{NP[\type{nom}, \dom \phonliste{ ein, Mann }]} [ein Mann;a man, roof]]
@@ -2764,7 +2764,7 @@ sm edges
 \begin{forest}
 sm edges
 [{V[\dom \phonliste{ die, Frauen, Türen, öffnen }]}
-  [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;DET] ]
+  [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;\textsc{det}] ]
   % [{D[\dom \phonliste{ die }]},no edge,name=die,tier=det-n [die;the] ]
   [{NP[\dom \phonliste{ Frauen }]}
      [Frauen;女人] ]
@@ -2795,7 +2795,7 @@ sm edges
 %that it is not. In order to settle the issue, let us take a look at some examples:
 \ea
 \gll Dass Peter kommt, klärt nicht, ob Klaus spielt.\\
-     CONJ Peter 来    解决 不 是否 Klaus 玩\\
+     \textsc{conj} Peter 来    解决 不 是否 Klaus 玩\\
 \glt `Peter来并不能解决Klaus是不是想玩儿这个问题。'
 %     that Peter comes    resolves not whether Klaus plays\\
 %\glt `That Peter comes does not resolve the question of whether Klaus will play.'
@@ -2819,7 +2819,7 @@ $\neg$
 dg edges
 [V, l sep+=6pt
   [Subjunction
-    [dass;CONJ]
+    [dass;\textsc{conj}]
     [V
       [N [Peter;Peter]]
       [kommt;来]]]
@@ -2841,7 +2841,7 @@ dg edges
 %But note that this does not hold in the general case. Take for instance the example in (\mex{1}):
 \ea
 \gll Dass Peter kommt, klärt nicht, ob Klaus kommt.\\
-     CONJ Peter 来    解决 不 是否 Klaus 玩儿\\
+     \textsc{conj} Peter 来    解决 不 是否 Klaus 玩儿\\
 \glt `Peter来并不解决Klaus是否来的问题。'
 %     that Peter comes    resolves not whether Klaus plays\\
 %\glt `That Peter comes does not resolve the question of whether Klaus comes.'
@@ -2858,7 +2858,7 @@ dg edges
 dg edges
 [V, l sep+=6pt
   [Subjunction,name=subj1
-    [dass;CONJ]
+    [dass;\textsc{conj}]
 %      [dass;that]
     [V,name=v1,no edge
       [N,name=n1, no edge [Peter;Peter]]
@@ -2897,12 +2897,12 @@ dg edges
 \eal
 \ex[]{
 \gll Deshalb klärt, dass Peter kommt, ob Klaus spielt.\\
-     所以 解决 CONJ Peter 来 是否 Klaus 玩\\
+     所以 解决 \textsc{conj} Peter 来 是否 Klaus 玩\\
 %     therefore resolves that Peter comes whether Klaus plays\\
 }
 \ex[*]{
 \gll Deshalb klärt dass ob Peter Klaus kommt spielt.\\
-     所以 解决 CONJ 是否 Peter Klaus 来 玩\\
+     所以 解决 \textsc{conj} 是否 Peter Klaus 来 玩\\
 %     therefore resolves that whether Peter Klaus comes plays\\
 }
 %% Haider, das Beispiel ist vielleicht nicht so gut,
@@ -2930,7 +2930,7 @@ dg edges
     [klärt;解决]
 %        [klärt;resolves]
     [Subjunction, name=s1
-        [dass;CONJ]]
+        [dass;\textsc{conj}]]
 %             [dass;that]]
     [Subjunction, name=s2
         [ob;是否]]
@@ -3180,7 +3180,7 @@ lexical & \ms{ cont & \\
         [Adj [small;小]]
         [N   [children;孩子们]] ] ]
     [V{[\emph{fin}]}$'$
-      [V{[\emph{fin}]} [were;AUX]]
+      [V{[\emph{fin}]} [were;\textsc{aux}]]
       [V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
         [V{[\emph{ing}]}$'$, tier=nbar
           [V{[\emph{ing}]} [playing;玩]]
@@ -3223,19 +3223,19 @@ lexical & \ms{ cont & \\
 \eal
 \ex 
 \gll the rich\\
-DET 富有\\
+\textsc{det} 富有\\
 \glt `富人们'
 \ex 
 \gll the biggest\\
-DET 最大\\
+\textsc{det} 最大\\
 \glt `最大的东西'
 \ex 
 \gll the longer the stem\\
-DET 更长 DET 茎\\
+\textsc{det} 更长 \textsc{det} 茎\\
 \glt `更长的茎'
 \ex 
 \gll (with) his hat over his eyes\\
-PREP 他的 帽子 PREP 他的 眼睛\\
+\textsc{prep} 他的 帽子 \textsc{prep} 他的 眼睛\\
 \glt `他的帽子遮住了眼睛'
 \zl
 他认为，术语形容词（adjective）和名词（noun）应该属于术语实体（substantive），它包括这两个术语。然后他指出“如果一条规则需要覆盖传统上指称为带或者不带中心语的名词短语，它只称为‘名词’，而且这可以自动允许要么是实体要么是形容词作为中心语的结构。”（第195页）但是，这里需要提出的问题是，像the rich这样的实体性短语的内部依存结构是什么样的呢。连接这些项目的唯一方式看起来是假定限定词依存于形容词。但是这可以允许像the rich man的短语的两个结构：一个是限定词依存于形容词，另一个是它依存于名词。所以，词性的未分析不能解决这个问题。当然，所有无中心语的结构的所有问题都可以通过假定空成分来解决。\footnote{请参阅\ref{sec-psg-np}关于名词短语的短语结构语法中的空中心语的假设。}在\hpsgc 的关系小句的分析中是这样做的\citep[\S~5]{ps2}。英语和德语的关系小句包括一个短语，它包括一个关系词和一个句子，其中关系短语是缺失的。Pollard\& Sag提出了空关系代词，它选择关系小句以及带有空位的小句\citep[\page 216--217]{ps2}。相似的分析可以在依存语法中找到（\citealp[\page  291]{Eroms2000a}）。\footnote{
@@ -3244,7 +3244,7 @@ PREP 他的 帽子 PREP 他的 眼睛\\
 另一个选择是假定具有多重功能的词汇：所以说，一个关系代词可以既是一个中心语，也同时是一个从属语（\citealp[\S 246, §8--11]{Tesniere2015a-not-crossreferenced}；\citealp[\page xlvi]{OK2015a}；\citealp[\page  129--130]{Kahane2009a}）。至少Kahane的分析是\ref{Abschnitt-Relativsaetze-CG}讨论的范畴语法分析的一个例子，而且它具有相同的问题：如果关系代词是中心语，它选择了缺失关系代词的小句，不容易看到这个分析是如何扩展到（i）中的抽吸过程\isc{抽吸过程}\is{pied-piping}的，其中被提取的成分是一个包括关系代词，而不是代词本身的完整短语。
 \ea
 \gll die Frau, von deren Schwester ich ein Bild gesehen habe\\
-     DET 女人 PREP 谁的 姐妹 我 ART 图片 看见 AUX\\
+     \textsc{det} 女人 \textsc{prep} 谁的 姐妹 我 \textsc{art} 图片 看见 \textsc{aux}\\
 \glt `我在她的姐妹那里看到一张照片的那个女人'
 \zlast
 }
@@ -3300,23 +3300,23 @@ PREP 他的 帽子 PREP 他的 眼睛\\
 \eal
 \ex 
 \gll day by day, paragraph by paragraph, country by country\\
-天 PREP 天 段落 PREP 段落 国家 PREP 国家\\
+天 \textsc{prep} 天 段落 \textsc{prep} 段落 国家 \textsc{prep} 国家\\
 \glt `一天又一天，一段又一段，一个国家又一个国家'
 \ex 
 \gll dollar for dollar, student for student, point for point\\
-美元 PREP 美元 学生 PREP 学生 点 PREP 点\\
+美元 \textsc{prep} 美元 学生 \textsc{prep} 学生 点 \textsc{prep} 点\\
 \glt `美元换美元，学生换学生，点换点'
 \ex 
 \gll face to face, bumper to bumper\\
-脸 PREP 脸 保险杠 PREP 保险杠\\
+脸 \textsc{prep} 脸 保险杠 \textsc{prep} 保险杠\\
 \glt `脸对脸，保险杠对保险杠'
 \ex 
 \gll term paper after term paper, picture after picture\\
-学期 试卷 PREP 学期 试卷 图片 PREP 图片\\
+学期 试卷 \textsc{prep} 学期 试卷 图片 \textsc{prep} 图片\\
 \glt `试卷接着试卷，图片接着图片'
 \ex 
 \gll book upon book, argument upon argument\\
-书 PREP 书 论点 PREP 论点\\
+书 \textsc{prep} 书 论点 \textsc{prep} 论点\\
 \glt `书堆着书，论点叠着论点'
 \zl
 当然，有方法可以模拟所有可以在短语结构的框架下（如GPSG、CxG、HPSG或者简便句法：一个空中心语）模拟的现象。图\vref{fig-n-p-n}显示了student after student的分析。
@@ -3327,7 +3327,7 @@ dg edges
 [N
   [\trace]
   [N [student;学生]]
-  [P [after;PREP]]
+  [P [after;\textsc{prep}]]
   [N [student;学生]]]
 \end{forest}
 \caption{\label{fig-n-p-n}带有空中心语的N-P-N构式的依存语法分析}
@@ -3345,7 +3345,7 @@ dg edges
 %\citet{Bargmann2015a} pointed out an additional aspect of the N-P-N construction, which makes things more complicated. The pattern is not restricted %to two nouns. There can be arbitrarily many of them:
 \ea
 \gll Day after day after day went by, but I never found the courage to talk to her.\\
-天 PREP 天 PREP 天 过 PREP 但是 我 从未 找到 DET 勇气 INF 说话 INF 她\\
+天 \textsc{prep} 天 \textsc{prep} 天 过 \textsc{prep} 但是 我 从未 找到 \textsc{det} 勇气 INF 说话 INF 她\\
 \glt `一天又一天过去了，但是我仍未找到勇气跟她说话。'
 \z
 所以说，Bargmann提出了（\mex{1}）中的模式，而不是N-P-N范式，这里`+'\isc{$+$}\is{$+$}表示一个序列的至少一次重复。
@@ -3378,19 +3378,19 @@ N (P N)+
 \eal
 \ex 
 \gll Ich habe einen Mann getroffen, der blonde Haare hat.\\
-     我 AUX ART 男人 见面 谁 金色 头发 有\\
+     我 \textsc{aux} \textsc{art} 男人 见面 谁 金色 头发 有\\
 \glt `我跟一位有着金色头发的男士见面了。'
 %     I have a man met who blond hair has\\
 %\glt `I have met a man who has blond hair.'
 \ex 
 \gll Einen Mann getroffen, der blonde Haare hat, habe ich noch nie.\\
-     ART 男人 见面 谁 金色 头发 有 AUX 我 yet 从未\\
+     \textsc{art} 男人 见面 谁 金色 头发 有 \textsc{aux} 我 yet 从未\\
 \glt `我从未见到过有着金色头发的男人。'
 %     a man met who blond hair has have I yet never\\
 %\glt `I have never met a man who has blond hair.'
 \ex 
 \gll Dass er morgen kommen wird, freut uns.\\
-     CONJ 他 明天 来 AUX 愉悦 我们\\
+     \textsc{conj} 他 明天 来 \textsc{aux} 愉悦 我们\\
 \glt `他明天会来让我们很高兴。'
 %     that he tomorrow come will pleases us\\
 %\glt `That he will come tomorrow pleases us.'

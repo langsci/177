@@ -84,7 +84,7 @@ Joseph Bayer（康斯坦斯）、
 %be externally merged with another object and so on. As an example consider the NP in (\mex{1}):
 \ea
 \gll the man who we know\\
-DET 男人 CONJ 我们 认识\\
+\textsc{det} 男人 \textsc{conj} 我们 认识\\
 \glt `我们认识的那个男人'
 \z
 为了得到这个NP，动词know与它的宾语who通过外部合并到一起。在下面讨论的几个中间过程的合并之后，know who将与we合并，最后who通过内部合并移到左边，得到了who we know。这个关系小句还可以通过外部合并与man组合在一起，并且继续进行下去。
@@ -130,7 +130,7 @@ DET 男人 CONJ 我们 认识\\
 %Overt syntax stands for syntactic operations that usually have a visible effect. After overt syntax
 %the syntactic object is sent off to the interfaces and some transformations may take place after
 %this Spell-Out point. Since such transformations do not affect pronunciation, this part of syntax is
-%called \emph{covert syntax}. Like in GB's LF, the covert syntax can be used to derive certain scope
+%called \emph{covert syntax}. Like in GB's LF, the covert syntax can be used to derive certain s\textsc{cop}e
 %readings. 
 
 这一架构后来被修改成在推导过程中的很多点都可以作定型点。现在是这样假定的，在推导过程中包括很多阶段（phases）\isc{阶段}\is{phase}，一旦一个完整的短语被用在与中心语的组合中\citep{Chomsky2008a}，它就被定型了。比如说，像例（\mex{1}）中的从句that Peter comes是一个短语，它在整个句子完成之前被送到表层。\footnote{
@@ -147,7 +147,7 @@ Andreas Pankau（p.\,c.\, 2015）跟我指出，这种分段的概念有一个�
 
 \ea
 \gll He believes that Peter comes.\\
-他 认为 CONJ Peter 来\\
+他 认为 \textsc{conj} Peter 来\\
 \glt `他认为Peter会来。'
 \z
 对于截止到哪个范畴构成完整的短语这一问题有许多不同的看法。因为阶段这个概念对于下面的内容并不重要，我会在下面忽略这一概念。请看\ref{sec-dtc}中有关阶段的心理语言学的可能性与普遍意义上的最简结构的讨论。
@@ -164,7 +164,7 @@ Andreas Pankau（p.\,c.\, 2015）跟我指出，这种分段的概念有一个�
 %\emph{letters} may have a P feature, which means that it has to combine with a PP in order to form a complete phrase.
 \ea
 \gll letters to Peter\\
-信 PREP Peter\\
+信 \textsc{prep} Peter\\
 \glt `给Peter的信'
 \z
 一般认为，既有可预测的特征，也有不可预测的特征。不可预测的特征的例子是名词的数的特征。单数和复数的区别在语义上是具有相关性的。词类的范畴特征纯粹是句法特征，所以它不能在语义上被解读。最简方案认为所有不可预测的特征需要在复杂的语言对象的推导过程中被用到。这种对特征的穷尽过程被叫做核查（checking）。比如说，我们再来看名词letters的例子。例（\mex{0}）的分析如图\vref{fig-letters-to-peter-minimalism}所示。
@@ -196,7 +196,7 @@ letters的P特征是不可预测的，这点由P前面的小u表示。letters的
 %the N feature of P is not checked. This situation is shown in Figure~\vref{fig-letters-to-minimalism}.
 \ea[*]{
 \gll letters to\\
-信 PREP\\
+信 \textsc{prep}\\
 }
 \z
 \begin{figure}
@@ -224,11 +224,11 @@ baseline
 \eal
 \ex[*]{
 \gll letters to he\\
-信 PREP 他\\
+信 \textsc{prep} 他\\
 }
 \ex[]{
 \gll letters to him\\
-信 PREP 他\\
+信 \textsc{prep} 他\\
 \glt `给他的信'
 }
 \zl
@@ -326,11 +326,11 @@ baseline
 \eal
 \ex[*]{
 \gll Emily showed himself Benjamin in the mirror.\\
-Emily 展示 他自己 Benjamin PREP DET 镜子\\
+Emily 展示 他自己 Benjamin \textsc{prep} \textsc{det} 镜子\\
 }
 \ex[]{
 \gll Peter showed himself Benjamin in the mirror.\\
-Peter 展示 他自己 Benjamin PREP DET 镜子\\
+Peter 展示 他自己 Benjamin \textsc{prep} \textsc{det} 镜子\\
 \glt `Peter在镜子中给他自己看Benjamin。'
 }
 \zl
@@ -521,7 +521,7 @@ baseline
 %analysis of (\mex{1}):
 \ea
 \gll Anna will read the book.\\
-Anna 将 读 DET 书\\
+Anna 将 读 \textsc{det} 书\\
 \glt `Anna将要读书。'
 \z
 \begin{figure}
@@ -677,7 +677,7 @@ baseline
 %approach, since it is compatible with the analysis of so-called unaccusative verbs and the passive. Figure~\vref{fig-Anna-reads-the-book-minimalism-TP} shows the TP for (\mex{1}):
 \ea
 \gll Anna reads the book.\\
-Anna 读 DET 书\\
+Anna 读 \textsc{det} 书\\
 \glt `Anna读这本书。'
 \z
 \begin{figure}
@@ -867,12 +867,12 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 \eal
 \ex[*]{
 \gll der getanzte Mann\\
-     DET 跳舞 人\\
+     \textsc{det} 跳舞 人\\
 %     the danced man\\
 }
 \ex[]{
 \gll der gestorbene Mann\\
-     DET 死 人\\
+     \textsc{det} 死 人\\
 \glt `这个死人'
 %     the died man\\
 %\glt `the dead man'
@@ -884,13 +884,13 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 \eal
 \ex
 \gll dass der Mann das Buch gelesen hat\\
-     CONJ DET 人  DET 书 读 AUX\\
+     \textsc{conj} \textsc{det} 人  \textsc{det} 书 读 \textsc{aux}\\
 \glt `这个人读这本书'
 %     that the man  the book read has\\
 %\glt `that the man read the book'
 \ex
 \gll das gelesene Buch\\
-     DET 读 书\\
+     \textsc{det} 读 书\\
 %     the read book\\
 \zl
 现在的设想是gestorben（死）的论元看上去像宾语，而getanzt（跳舞）的论元像主语。如果形容词性被动式可以说明宾语，这就解释了为什么例（\mex{-1}b）是可能的，而例（\mex{-1}a）是不可能的。
@@ -921,7 +921,7 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 %PassP). See Figure~\ref{fig-passive-schlagen-mp} for the analysis of the example in (\mex{1}):
 \ea
 \gll dass er geschlagen wurde\\
-     CONJ 他 打 AUX\\
+     \textsc{conj} 他 打 \textsc{aux}\\
 \glt `他被打了'
 %     that he beaten was\\
 %\glt `that he was beaten'
@@ -969,7 +969,7 @@ Pass中心语要求小\emph{v}的Infl特征具有Pass的值，这就导致了输
 %moved to T in order to check the EPP feature:
 \ea
 \gll weil getanzt wurde\\
-     因为 跳舞 AUX\\
+     因为 跳舞 \textsc{aux}\\
 \glt `因为那儿有人跳舞'
 %     because danced was\\
 %\glt `because there was dancing there'
@@ -1038,13 +1038,13 @@ G.\,Müller提出了\textit{v}的可选特征和触发局部重新排序的V（�
 \eal
 \ex 
 \gll dass Hans diesen Brief meinem Onkel gibt\\
-     CONJ Hans 这 信 我的 舅舅 给\\
+     \textsc{conj} Hans 这 信 我的 舅舅 给\\
 \glt `Hans把这封信给我的舅舅'
 %     that Hans this letter my uncle gives\\
 %\glt `that Hans gives this letter to my uncle'
 \ex
 \gll dass Hans meinem Onkel diesen Brief gibt\\
-     CONJ Hans 我的 舅舅 这 信 给\\
+     \textsc{conj} Hans 我的 舅舅 这 信 给\\
 \glt `Hans给我的舅舅这封信'
 %     that Hans my uncle this letter gives\\
 %\glt `that Hans gives to my uncle this letter'
@@ -1213,8 +1213,8 @@ Johnson、Lappin和Kolb曾质疑过乔姆斯基系统的计算方面。乔姆斯
 %differentiate between two agreement positions for direct and indirect objects (AgrO\is{category!functional!AgrO},
 %AgrIO\is{category!functional!AgrIO}). As well as AgrS\is{category!functional!AgrS}, AgrO\is{category!functional!AgrO} 
 %and Neg\is{category!functional!Neg}, \citet{BS97a-u} assume the functional heads Share\is{category!functional!Share} and 
-%Dist\is{category!functional!Dist} in order to explain scope phenomena in English as feature"=driven movements at LF. For a treatment
-%of scope phenomena without empty elements or movement, see Section~\ref{Abschnitt-leere-Elemente-Semantik}.  
+%Dist\is{category!functional!Dist} in order to explain s\textsc{cop}e phenomena in English as feature"=driven movements at LF. For a treatment
+%of s\textsc{cop}e phenomena without empty elements or movement, see Section~\ref{Abschnitt-leere-Elemente-Semantik}.  
 %\citew[\page 13]{BG2005a} assume the categories $-$PolP\is{category!functional!$-$Pol}, $+$PolP\is{category!functional!+Pol} and
 %\%PolP\is{category!functional!\%Pol} for their discussion of polarity.
 
@@ -1297,18 +1297,18 @@ AgrN\isc{范畴!功能范畴!AgrN}\is{category!functional!AgrN}、AgrV\isc{范�
 这也适用于外置\isc{外置}\is{extraposition}，即德语中将成分移到后场。通常这会被分析为右向移位，\citet[\S~9]{Kayne94a-u}将它分析为把所有其他成分向左移动。Kayne认为（i.b）是通过移动一部分的NP来从（i.a）推导而来的：
 \eal
 \ex \gll just walked into the room [\sub{NP} someone who we don't know].\\
-刚 走 进 DET  房间 \sub{NP} 某人 谁 我们 不 认识\\
+刚 走 进 \textsc{det}  房间 \sub{NP} 某人 谁 我们 不 认识\\
 \glt `刚走进房间[\sub{NP} 我们不认识的某人]'
 \ex 
 \gll Someone$_i$ just walked into the room [\sub{NP} \_$_i$ who we don't know].\\
-某人$_i$ 刚 走 进 DET 房间 \sub{NP} \_$_i$ 谁 我们 不 认识\\
+某人$_i$ 刚 走 进 \textsc{det} 房间 \sub{NP} \_$_i$ 谁 我们 不 认识\\
 \glt `某人刚走进房间[\sub{NP} \_$_i$ 我们不认识的]'
 \zl
 （i.a）一定是某种推导出的中间表示，否则英语就不会是SV(O)，而是V(O)S。
 由此，（i.a）是通过将VP\emph{just walked into the room}前置由（ii）推导出来的。
 \ea
 \gll Someone who we don't know just walked into the room\\
-某人 谁 我们 不 认识 刚 走 进 DET 房间\\
+某人 谁 我们 不 认识 刚 走 进 \textsc{det} 房间\\
 \glt `我们不认知的某个人刚走进房间'
 \z
 需要承认的是，这类分析不能轻易地与语言运用模型相组合（请看第\ref{Abschnitt-Diskussion-Performanz}章）。
@@ -1401,7 +1401,7 @@ where n children=0{delay=with translation}{}
 	[TopP
 		[DP$_j$ [diese Sonate;这 奏鸣曲,tier=below,l=31\baselineskip]]
 		[SubjP
-			[DP$_i$ [der Mann;DET 男人,tier=word]]
+			[DP$_i$ [der Mann;\textsc{det} 男人,tier=word]]
 			[ModP
 				[AdvP [wahrscheinlich;可能,l=20\baselineskip]]
 				[ObjP
@@ -1415,7 +1415,7 @@ where n children=0{delay=with translation}{}
 								[AuxP
 									[VP$_k$ [gespielt;玩,tier=word]]
 									[Aux+
-										[Aux [hat;AUX,tier=word]]
+										[Aux [hat;\textsc{aux},tier=word]]
 										[vP
 											[DP$_i$]
 											[VP$_k$
@@ -1593,13 +1593,13 @@ geben（这个人要给的这本书）这句话中处理TopP或FocP。由此，u
 \eal
 \ex 
 \gll um dem Mann das Buch zu geben\\
-     PREP DET 人 DET 书 INF 给\\
+     \textsc{prep} \textsc{det} 人 \textsc{det} 书 INF 给\\
 \glt `给那个人这本书'
 %     for the man the book to give\\
 %\glt `to give the man the book'
 \ex 
 \gll um das Buch dem Mann zu geben\\
-     PREP DET 书 DET 人 INF 给\\
+     \textsc{prep} \textsc{det} 书 \textsc{det} 人 INF 给\\
 \glt `把这本书给那个人'
 %     for the book the man to give\\
 %\glt `to give the book to the man'
@@ -1629,19 +1629,19 @@ geben（这个人要给的这本书）这句话中处理TopP或FocP。由此，u
 \eal
 \ex 
 \gll Ken could not have heard the news.\\
-Ken AUX 不 AUX 听 DET 新闻\\
+Ken \textsc{aux} 不 \textsc{aux} 听 \textsc{det} 新闻\\
 \glt `Ken不可能听过这个新闻。'
 \ex 
 \gll Ken could have not heard the news.\\
-Ken AUX AUX 不 听 DET 新闻\\
+Ken \textsc{aux} \textsc{aux} 不 听 \textsc{det} 新闻\\
 \glt Ken可能没听过这个新闻。`'
 \ex 
 \gll a [not unapproachable] figure\\
-ART 不 不可接触 人物\\
+\textsc{art} 不 不可接触 人物\\
 \glt `一位不可接触的人物'
 \ex 
 \gll {}[Not always] has she seasoned the meat.\\
-AUX 总是 AUX 她 DET 肉\\
+\textsc{aux} 总是 \textsc{aux} 她 \textsc{det} 肉\\
 \glt `她并不总是把肉调味。'
 \zl
 如果所有这些投射只是没有更多属性（有关动词形式、形容词词性、副词词性）的NegP，这就无法说明他们不同的句法分布。否定很明显只是更多普遍性问题的一个特殊的情况，因为副词在传统意义上可以附加在形容词上构成形容词短语，而不是Chinque意义上的副词短语。比如说，例（\mex{1}）中的副词oft（经常）修饰lachender（笑）构成了形容词短语oft lachender，这就像未被修饰的形容词助词lachender：它修饰Mann（人），并位于它前面。
@@ -1655,13 +1655,13 @@ AUX 总是 AUX 她 DET 肉\\
 \eal
 \ex
 \gll ein lachender Mann\\
-     ART 笑 人\\
+     \textsc{art} 笑 人\\
 \glt `一位大笑的人'
 %     a   laughing man\\
 %\glt `a laughing man'
 \ex
 \gll ein oft lachender Mann\\
-     ART 经常 大笑 人\\
+     \textsc{art} 经常 大笑 人\\
 \glt `一位经常大笑的人'
 %     a   often laughing man\\
 %\glt `a man that laughs often'
@@ -1715,13 +1715,13 @@ AUX 总是 AUX 她 DET 肉\\
 \eal
 \ex 
 \gll dass die Polizei gestern Linguisten verhaftete\\
-	 CONJ DET 经常 昨天 语言学家 逮捕\\
+	 \textsc{conj} \textsc{det} 经常 昨天 语言学家 逮捕\\
 \glt `昨天警察逮捕了语言学家'
 %	 that the police yesterday linguists arrested\\
 %\glt `that the police arrested linguists yesterday'
 \ex 
 \gll dass die Polizei Linguisten gestern verhaftete\\
-	 CONJ DET 警察 语言学家 昨天 逮捕\\
+	 \textsc{conj} \textsc{det} 警察 语言学家 昨天 逮捕\\
 \glt `昨天警察逮捕了语言学家'
 %	 that the police linguists yesterday arrested\\
 %\glt `that the police arrested linguists yesterday'
@@ -1763,7 +1763,7 @@ AUX 总是 AUX 她 DET 肉\\
 %\citep[\page 138]{Chomsky2008a}. All that remains is Merge and Move, that is, Internal and External Merge. Internal and External Merge %combine two syntactic objects $\alpha$ and $\beta$ into a larger
 %syntactic object which is represented as a set \{ $\alpha$, $\beta$ \}.  $\alpha$ and $\beta$ can be
 %either lexical items or internally complex syntactic objects. Internal Merge moves a part of an object to its periphery.\footnote{%
-%To be more specific, part of a syntactic object is copied and the copy is placed at the edge of the entire object. The original of this copy is
+%To be more specific, part of a syntactic object is \textsc{cop}ied and the \textsc{cop}y is placed at the edge of the entire object. The original of this \textsc{cop}y is
 %no longer relevant for pronunciation (\emph{Copy Theory of Move\-ment}).\is{Copy Theory of Movement}
 %} The result of internally merging
 %an element is a set \{ $\alpha$, $\beta$ \} where $\alpha$ was a part of $\beta$. External Merge
@@ -1900,7 +1900,7 @@ Chomsky在他的\citeyear{Chomsky2013a}这篇论文中给出了两个词汇项�
 %The case in which two non-LIs are externally merged (for instance a nominal
 %and a verbal phrase) is not discussed in \citew{Chomsky2008a}. \citet[\page 43--44]{Chomsky2013a}
 %suggests that a phrase XP is irrelevant for the labeling of \{ XP, YP \} if XP is moved (or rather
-%copied in the Copy Theory of Movement\is{Copy Theory of Movement}) in a further step. Chomsky assumes that one of two phrases in
+%\textsc{cop}ied in the Copy Theory of Movement\is{Copy Theory of Movement}) in a further step. Chomsky assumes that one of two phrases in
 %an \{ XP, YP \} combination has to move, since otherwise labeling would be impossible (p.\,12).\footnote{\label{fn-labeling-gleiche-Kategorie}%
 %  His explanation is contradictory: on p.\,11 Chomsky assumes that a label of a combination of
 %  two entities with the same category is this category. But in his treatment of coordination, he
@@ -1934,7 +1934,7 @@ Chomsky在他的\citeyear{Chomsky2013a}这篇论文中给出了两个词汇项�
 
 另一个问题是$\alpha$这个标记应该是W的标记，因为Conj并不能决定是哪个标记。这就导致，我们需要在Z和W之间进行选择，来决定$\gamma$的标记。按照Chomsky的逻辑，要么是Z，要么是W必须要移位来使得标记$\gamma$成立。\citet{Chomsky2013a}在脚注40中提到了这一问题，但是并没有给出解决办法。
 }
-%Since Z in $\beta$ is only a copy, it does not count for labeling and $\beta$ can get the label
+%Since Z in $\beta$ is only a \textsc{cop}y, it does not count for labeling and $\beta$ can get the label
 %of W. It is stipulated for the combination of Z and $\alpha$ that Conj cannot be the label and hence
 %the label of the complete structure is Z.\footnote{
 %    As Bob Borsley (p.c.\,2013) pointed out to me, this makes wrong predictions for coordinations of
@@ -2037,7 +2037,7 @@ Chomsky关于自由关系从句的方法是有趣的，但是不能在全维度�
 \eal
  \ex 
 \gll Ihr könnt beginnen, [mit  \emph{wem}] ihr wollt.\footnotemark\\
-     你 可以    开始    \hspaceThis{[}PREP 谁 你 想要\\
+     你 可以    开始    \hspaceThis{[}\textsc{prep} 谁 你 想要\\
 \glt `你想跟你想要的任何一个人开始。'
 %     you can    start    \hspaceThis{[}with whom you want\\
 %\glt `You can start with whoever you like.'
@@ -2046,7 +2046,7 @@ Chomsky关于自由关系从句的方法是有趣的，但是不能在全维度�
 }
 \ex 
 \gll {}[\emph{Wessen}      Birne]    noch halbwegs in der Fassung steckt, pflegt solcherlei Erloschene zu meiden;\footnotemark\\
-       \hspaceThis{[}谁的 灯泡/头 也  半路  PREP DET 插座  AUX      使用  这样      消逝    INF 避免\\
+       \hspaceThis{[}谁的 灯泡/头 也  半路  \textsc{prep} \textsc{det} 插座  \textsc{aux}      使用  这样      消逝    INF 避免\\
 \glt `那些还有一半智慧的人想要避免这类空字符；'
 %       \hspaceThis{[}whose bulb/head yet  halfway  in the socket  is      uses  such       extinct    to avoid\\
 %\glt `Those who still have their wits half way about them tend to avoid such vacant characters;'
@@ -2056,7 +2056,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 }
 \ex 
 \gll {}[\emph{Wessen} Schuhe] "`danach"'  besprenkelt sind, hat keinen Baum gefunden und war nicht zu einem Bogen in der Lage.\footnotemark\\
-       \hspaceThis{[}谁的    鞋   此后 有斑点的    AUX   AUX 不     树 找到    和 AUX 不   INF ART     弓   PREP DET 位置\\
+       \hspaceThis{[}谁的    鞋   此后 有斑点的    \textsc{aux}   \textsc{aux} 不     树 找到    和 \textsc{aux} 不   INF \textsc{art}     弓   \textsc{prep} \textsc{det} 位置\\
 \glt `那些鞋上有斑点的人找不到树也不能按照弧形来小便。'
 %       \hspaceThis{[}whose    shoes   after.that speckled    are   has no     tree found    and was not   to a     bow   in the position\\
 %\glt `Those whose shoes are spattered afterwards couldn't find a tree and were incapable of peeing in an arc.'
@@ -2070,7 +2070,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 假设空中心语是有问题的，因为它只能在那些由状语修饰的情况下用作论元，叫做关系小句\citep[\page 97]{Mueller99b}。对于后期重新发现这一问题的也可以看\citew[\page 187]{Ott2011a}。这一问题可以在HPSG理论下得到解决，通过假定一个一元投射，投射到关系小句的合适的范畴。我也应用一元投射来分析所谓的非匹配的自由关系小句\citep{Mueller99b}。在非匹配的自由关系小句的结构中，关系小句填充了论元槽的位置，该位置并不对应于关系短语的属性\citep{Bausewein90}。Bausewein讨论了下面的例子，这里关系短语是一个PP，但是自由关系代词填充了kocht（做饭）的宾格槽。
 \begin{exe}\exi{(i)}
   \gll Sie kocht, worauf   sie Appetit hat.\\
-       她 做饭  是什么 她 胃口 AUX\\
+       她 做饭  是什么 她 胃口 \textsc{aux}\\
   \glt `她想吃的时候就做饭。'
   \z
 请看\citew[\page 60--62]{Mueller99b}关于语料库的例子。
@@ -2149,7 +2149,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 %problematic for interrogative/relative phrases like \pmex{1}.
 \ea
 \gll with whom\\
-PREP 谁\\
+\textsc{prep} 谁\\
 \glt `跟谁'
 \z
 \pmex{0}中的短语既是一个介词短语（因为第一词是介词），也是一个疑问/关系短语（因为第二个词是一个疑问/关系词）。所以，我们需要的是PP的正确标记，像\pmex{0}中那种是覆盖了从子结点到父结点的不同属性的界定良好的形式。\footnote{
@@ -2319,11 +2319,11 @@ Chomsky在他早期的研究中没有严格遵守线性化的思路，但是某�
 \eal
 \ex\label{ex-whistled-a} 
 \gll Hobbs whistled and hummed the same tune.\\
-Hobbs 吹口哨 和 哼 DET 相同 调子\\
+Hobbs 吹口哨 和 哼 \textsc{det} 相同 调子\\
 \glt `Hobbs吹着口哨，并哼着相同的曲调。'
 \ex\label{ex-whistled-b} 
 \gll Hobbs whistled the same tune and hummed the same tune.\\
-Hobbs 吹口哨 DET 相同 调子 和 哼 DET 相同 调子\\
+Hobbs 吹口哨 \textsc{det} 相同 调子 和 哼 \textsc{det} 相同 调子\\
 \glt `Hobbs吹着相同的调子，并且哼着相同的调子。'
 \zl
 因为语义解读不能在语音形式层面看到像删除这样的处理\citep[\S~3]{Chomsky95a-u}，语义之间的区别不能通过删除材料的分析而得到解释。
@@ -2344,7 +2344,7 @@ Hobbs 吹口哨 DET 相同 调子 和 哼 DET 相同 调子\\
 }
 \ex[*]{
 \gll He tried to persuade, but couldn't convince, him.\\
-他 尝试 INF 劝说 但是 AUX-NEG 说服 他\\
+他 尝试 INF 劝说 但是 \textsc{aux}-NEG 说服 他\\
 }
 \zl
 如果him没有重读的话，第二个例子是不合乎语法的。相较而言，\pref{ex-tried-persuade-and-convince-him}是合格的，即使带有不重读的him。所以，如果\pref{ex-tried-persuade-and-convince-him}是右结点提升的一个例子，对比就是出乎意料的。由此，Borsley排除了右结点提升分析。
@@ -2458,11 +2458,11 @@ Pollard \& Sag和Sag \& Ginzburg提出了英语的平铺结构。由于其中一
 \eal
 \ex\label{ex-gave-john-a-book-a} 
 \gll {}[[gave John] a book]\\
-给 John ART 书\\
+给 John \textsc{art} 书\\
 \glt `给John一本书'
 \ex\label{ex-gave-john-a-book-b} 
 \gll {}[gave John a book]\\
-给 John ART 书\\
+给 John \textsc{art} 书\\
 \glt `给John一本书'
 \zl
 与\pref{ex-gave-john-a-book-a}不同的是，只有像\pref{ex-gave-john-a-book-b}的分析是被允许的；也就是说，中心语与它所有的论元相组合。另一方面是假定二元分支结构（\citealp{MuellerHPSGHandbook}；\citealp[\S~1.2.2]{MOeDanish}）。在这一方法中，中心语补足语模式不能限制中心语结点的词或短语的状态。HPSG理论中的二元分支结构对应于MP的外部合并。
@@ -2566,7 +2566,7 @@ im(t$_1$[+f]) = \begin{forest}
 \z
 t$_1$是一棵带有t$_2$子树的树，它的特征f的值是`$-$'。这一子树被删除了（t$_2$[$-$f]$^> \mapsto \epsilon$），然后没有特征$-$f（t$_2^>$）的被删除子树的拷贝位于限定语的位置。在限定语位置上的元素必须是最大投射。这一要求由提升的`$>$'来表示。
 %t$_1$ is a tree with a subtree t$_2$ which has the feature f with the value `$-$'. This subtree is
-%deleted (t$_2$[$-$f]$^> \mapsto \epsilon$) and a copy of the deleted subtree without the $-$f
+%deleted (t$_2$[$-$f]$^> \mapsto \epsilon$) and a \textsc{cop}y of the deleted subtree without the $-$f
 %feature (t$_2^>$) is positioned in specifier position. The element in specifier position has to be a maximal
 %projection. This requirement is visualized by the raised `$>$'.
 
@@ -2842,16 +2842,16 @@ Stabler将这一形式叫做导向性的最简方案（DMG）。这一最简方�
 \ms[word]{
 phon   & \phonliste{ 'gramər } \\[1mm]
 synsem$|$loc & \ms[loc]{ cat  & \ms[cat]{ head & \type{noun}\\
-                                          spr & \sliste{ DET }
+                                          spr & \sliste{ \textsc{det} }
                                       } \\[6mm]
                          cont & \ldots \ms[grammar]{ inst & X \\
                                    }
             }
 }
 \z
-grammar的词性是名词。为了构成一个完整的短语，它需要一个限定词。这由值为\sliste{ DET }的\sprc 特征来表示。语义信息列于\contc 下。更多细节请看第\ref{chap-HPSG}章。
+grammar的词性是名词。为了构成一个完整的短语，它需要一个限定词。这由值为\sliste{ \textsc{det} }的\sprc 特征来表示。语义信息列于\contc 下。更多细节请看第\ref{chap-HPSG}章。
 %The part of speech of \emph{grammar} is \type{noun}. In order to form a complete phrase, it requires
-%a determiner. This is represented by giving the \spr feature the value \sliste{ DET }. Semantic
+%a determiner. This is represented by giving the \spr feature the value \sliste{ \textsc{det} }. Semantic
 %information is listed under \cont. For details see Chapter~\ref{chap-HPSG}.
 
 由于我们穷尽地处理句法各个方面，只有使用过的特征的子集是相关的：配价信息和词类信息以及与短语的外在分布有关的某些形态句法属性表现为\textsc{synsem$|$""loc$|$""cat}路径下的特征描述。这里特别有趣的特征是所谓的中心语特征。在词汇中心语和它的最大投射之间共享中心语特征。复杂的层级结构也被模拟为特征值偶对。复杂语言对象的组成成分通常表现为复杂对象的表示的部分。比如说，特征\textsc{head-daughter}的值是一个特征结构，该特征结构模拟了包括短语的中心语的语言学对象。中心语特征原则\pmex{1}指向这个子结点，并且保证中心语与完整对象的中心语特征是相同的。
@@ -3017,7 +3017,7 @@ non-head-dtrs & \liste{ $\beta$ }\\
 %}
 \ea
 \gll Gelesen$_i$ hat$_j$ das Buch keiner \_$_i$ \_$_j$.\\
-读 AUX DET 书 没有人\\
+读 \textsc{aux} \textsc{det} 书 没有人\\
 %     read        has     the book nobody\\
 \z
 相反，Stabler被迫要假定\pmexb{1}中这样的分析（请看G.\ 
@@ -3059,7 +3059,7 @@ Bagels, I like and Ellison hates.\footnote{
 }
 \ex 
 \gll The man who$_i$ [Mary loves \_$_i$] and [Sally hates \_$_i$] computed my tax.\\
-DET 男人 CONJ$_i$ Mary 爱 \_$_i$ 和 Sally 恨 \_$_i$ 计算 我的 税\\
+\textsc{det} 男人 \textsc{conj}$_i$ Mary 爱 \_$_i$ 和 Sally 恨 \_$_i$ 计算 我的 税\\
 \glt `Mary喜爱但是Sally憎恨的这个男人计算了我的税。'
 \zl
 \addlines[2]
@@ -3067,8 +3067,8 @@ DET 男人 CONJ$_i$ Mary 爱 \_$_i$ 和 Sally 恨 \_$_i$ 计算 我的 税\\
 %This problem was solved for GPSG by \citet{Gazdar81} and the solution carries over to HPSG. The
 %Minimalist community tried to address these problems by introducing operations like sideward
 %movement\is{sideward movement} \citep{Nunes2004a-u} where constituents can be inserted into sister trees. So in the
-%example in (\mex{0}a), \emph{Bagels} is copied from the object position of \emph{hates} into the
-%object position of \emph{like} and then these two copies are related to the fronted element. Kobele
+%example in (\mex{0}a), \emph{Bagels} is \textsc{cop}ied from the object position of \emph{hates} into the
+%object position of \emph{like} and then these two \textsc{cop}ies are related to the fronted element. Kobele
 %criticized such solutions since they overgenerate massively and need complicated filters. What he
 %suggests instead is the introduction of a GPSG-style \slasch mechanism into Minimalist theories \citep{Kobele2008a}.
 
@@ -3076,7 +3076,7 @@ DET 男人 CONJ$_i$ Mary 爱 \_$_i$ 和 Sally 恨 \_$_i$ 计算 我的 税\\
 %Furthermore,
 %movement paradoxes \citep[Chapter~2]{Bresnan2001a} can be avoided by not sharing all information between filler and gap, a solution
 %that is not available for transformational accounts, which usually assume identity of filler and gap
-%or -- as under the Copy Theory of Movement\is{Copy Theory of Movement} -- assume that a derivation contains multiple copies of one
+%or -- as under the Copy Theory of Movement\is{Copy Theory of Movement} -- assume that a derivation contains multiple \textsc{cop}ies of one
 %object only one of which is spelled out. See also \citew{Borsley2012a} for further puzzles for, and
 %problems of, movement-based approaches.
 
@@ -3107,19 +3107,19 @@ MG和HPSG更深一层的区分在于中心语"=填充语不是分析长距离议
 \eal
 \ex 
 \gll Under no circumstances \emph{did she think they would do that}.\\
-PREP 没有 条件 \emph{AUX 她 想 他们 AUX 做 那}\\
+\textsc{prep} 没有 条件 \emph{\textsc{aux} 她 想 他们 \textsc{aux} 做 那}\\
 \glt `在没有任何条件下，她想他们会那样做。'
 \ex 
 \gll Whose book \emph{are you reading}?\\
-谁的 书 AUX 你 读\\
+谁的 书 \textsc{aux} 你 读\\
 \glt `你在读谁的书？'
 \ex 
 \gll Am I tired!\\
-AUX 我 累\\
+\textsc{aux} 我 累\\
 \glt `我累了！'
 \ex 
 \gll Did Kim leave?\\
-AUX Kim 离开\\
+\textsc{aux} Kim 离开\\
 \glt `Kim离开了吗？'
 \zl
 \citet{Fillmore99a}在他的构式语法框架下分析助词倒装捕捉了几个不同的应用语境，并指出在不同的语境下有语义和语用的不同。每个理论都需要说明这些。进而，我们不需要十个模式。正如范畴语法那样，我们有可能在词汇项中来决定助词或空的中心语（请看第\ref{Abschnitt-Phrasal-Lexikalisch}章更多有关词汇和短语分析的讨论）。除此之外，每个理论都要在某种程度上解释这十种区别。如果有人认为这与句法无关，那么这就需要在语义组成上进行模拟。这就意味着在这一点上没有理由倾向于一种理论。
@@ -3169,12 +3169,12 @@ AUX Kim 离开\\
 \eal
 \ex[]{
 \gll letters to Peter\\
-信 PREP Peter\\
+信 \textsc{prep} Peter\\
 \glt `给Peter的信'
 }
 \ex[*]{
 \gll letters to\\
-信 PREP\\
+信 \textsc{prep}\\
 }
 \zl
 \begin{figure}
@@ -3207,10 +3207,10 @@ baseline
 %a determiner:
 \ea
 \gll vom Bus\\
-     PREP.DET 公交车\\
+     \textsc{prep}.\textsc{det} 公交车\\
 %     from.the bus\\
 \z
-在复杂描述可以用来描写依存关系的理论中，被依存的对象可以部分满足。所以比如说HPSG中，像vom（PREP.DET）这个复合介词可以选择一个\nbarc ，它是一个缺少限定语的名词性投射：
+在复杂描述可以用来描写依存关系的理论中，被依存的对象可以部分满足。所以比如说HPSG中，像vom（\textsc{prep}.\textsc{det}）这个复合介词可以选择一个\nbarc ，它是一个缺少限定语的名词性投射：
 %In theories in which complex descriptions can be used to describe dependants, the dependent may be
 %partly saturated. So for instance in HPSG, fused prepositions like \emph{vom} `from.the' can select an \nbar,
 %which is a nominal projection lacking a specifier:
@@ -3328,7 +3328,7 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 在\citet[\S~9]{Veenstra98a}中有一个计数的词汇项。这个词汇项包括一个计数的集合，它包括功能中心语，可以用在某类句子中。比如说，Veenstra认为计数可以用在带有二价动词的句子和主语位于首位的句子、带有单价动词的嵌套句、带有单价动词的wh"=疑问句，以及带有单价动词的极性疑问句。这一计数集合的一个元素对应于一个特别的句法配置以及在构式语法\indexcxgc 思想下的短语构式。Veenstra的分析并不是在最简方案下找到的计数的概念的形式化。通常，它被认为是包含所有句子生成所需词汇项的计数。如（i）所示，复杂句可以包括带有不同句子类型的句子的组合：
 \ea
 \gll Der Mann, der behauptet hat, dass Maria gelacht hat, steht neben der Palme, die im letzten Jahr gepflanzt wurde.\\
-      DET 男人 CONJ 声称 AUX CONJ Maria 大笑 AUX 站 PREP DET 棕榈树 CONJ PREP 上次 年 种植 AUX\\
+      \textsc{det} 男人 \textsc{conj} 声称 \textsc{aux} \textsc{conj} Maria 大笑 \textsc{aux} 站 \textsc{prep} \textsc{det} 棕榈树 \textsc{conj} \textsc{prep} 上次 年 种植 \textsc{aux}\\
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree that was planted
 %last year.'
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree planted last year.'
@@ -3380,7 +3380,7 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 %\ex the king -s will -s have been eat -ing the pie
 %\zllast
 %}, no treatment of multiple agreement\is{agreement} \citep[Section~27.4.3]{Stabler2010b} and above all no semantics\is{semantics}. PF and %LF processes are not modelled.\footnote{
-%	See \citet{SE2002a} for suggestions of PF and LF"=movement and the deletion of parts of copies (p.\,285).
+%	See \citet{SE2002a} for suggestions of PF and LF"=movement and the deletion of parts of \textsc{cop}ies (p.\,285).
 %	The implementation of this would be far from trivial.
 %} 
 由Sandiway Fong开发的语法和计算系统与理论的大小和相似度基本一致\citep{FG2012a,Fong2014a}：语法片段较小，句法编码，如直接在短语结构中标注\citep[\S~4]{FG2012a}，而且远远位于\xbarc 理论的后面。进而，他们不包括形态变化。没有实现拼写输出，所以最终无法剖析和生成任何话语。\footnote{
@@ -3394,7 +3394,7 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 %	The claim by \citet*[\page 1221]{BPYC2011a} in reference to Fong's work is just plain wrong: \emph{But since we have
 %    sometimes adverted to computational considerations, as with the ability to ``check'' features of
 %    a head/label, this raises a legitimate concern about whether our framework is computationally
-%    realizable. So it is worth noting that the copy conception of movement\is{Copy Theory of Movement}, along with the locally
+%    realizable. So it is worth noting that the \textsc{cop}y conception of movement\is{Copy Theory of Movement}, along with the locally
 %    oriented ``search and labeling'' procedure described above, can be implemented computationally
  %   as an efficient parser; see Fong, 2011, for details.} If one has a piece of software which cannot
 %	parse a single sentence, then one cannot claim that it is efficient since one does not know whether the 
@@ -3458,9 +3458,9 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 %The discussion of labeling, abandonment of \xbar theory and a comparison between Stabler's Minimalist Grammars and HPSG from
 %Sections~\ref{Abschnitt-Labeling}--\ref{Abschnitt-MG} can be found in \citew{MuellerUnifying}.
 
-\citet{BG2005a}所著的《韵律短语、非连续及否定的辖域》（\emph{Intonational Phrasing, Discontinuity, and the Scope of Negation} ）可以推荐给想深入了解的读者。作者将否定量词的分析与最简方案（在Kayne的影响下）和范畴语法（在Steedman的影响下）中的宽域进行了比较。
-%\emph{Intonational Phrasing, Discontinuity, and the Scope of Negation} by \citet{BG2005a} is recommended for the more advanced reader. %The authors compare analyses of negated quantifiers with wide
-%  scope in the framework of Minimalism (following Kayne) as well as Categorial Grammar (following Steedman).
+\citet{BG2005a}所著的《韵律短语、非连续及否定的辖域》（\emph{Intonational Phrasing, Discontinuity, and the S\textsc{cop}e of Negation} ）可以推荐给想深入了解的读者。作者将否定量词的分析与最简方案（在Kayne的影响下）和范畴语法（在Steedman的影响下）中的宽域进行了比较。
+%\emph{Intonational Phrasing, Discontinuity, and the S\textsc{cop}e of Negation} by \citet{BG2005a} is recommended for the more advanced reader. %The authors compare analyses of negated quantifiers with wide
+%  s\textsc{cop}e in the framework of Minimalism (following Kayne) as well as Categorial Grammar (following Steedman).
 
 \citew{Sternefeld2006a-u}对开发了德语转换语法分析的句法（839页）进行了详细的介绍，这些语法（以转换为模）几乎与HPSG理论下的语法完全一致（按照层级体系在配价列表中的论元的特征描述）。Sternefeld的结构是最小的，因为他没有假定任何功能投射，如果他们不能在所研究的语言中被激发的话。Sternefeld对于其他研究中理所当然的某些方面特别严格。Sternefeld把他的书看作是教科书，通过这本书，学生可以学到在提出理论时如何做到论述的一致性。基于此，这本书要强烈推荐给学生和博士生。
 %\citew{Sternefeld2006a-u} is a good, detailed introduction to syntax (839 pages) which develops a Transformational Grammar analysis of %German which
