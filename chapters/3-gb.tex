@@ -149,11 +149,11 @@ NP& V &NP & $\to$ 3 [\sub{\textsc{aux}} be] 2en [\sub{PP} [\sub{P} by] 1]\\
 \eal
 \ex 
 \gll John loves Mary.\\
-John 爱 Mary\\
+     John 爱 Mary\\
 \glt `John爱着Mary。'
 \ex 
 \gll Mary is loved by John.\\
-Mary \textsc{aux} 爱 \textsc{prep} John\\
+     Mary \textsc{aux} 爱 \textsc{prep} John\\
 \glt `Mary正被John爱着。'
 \zl
 \begin{figure}
@@ -175,7 +175,7 @@ sm edges
   [S, for tree={parent anchor=south, child anchor=north}
   	[NP[Mary;Mary]]
 	[VP
-	[Aux[is;\textsc{cop}, tier=word]]
+	[Aux[is;\textsc{aux}, tier=word]]
 	[V[loved;爱, tier=word]]
 	[PP
 	[P[by;\textsc{prep}, tier=word]]
@@ -253,7 +253,7 @@ Parameters|(}认为，语言知识一定是天生的，因为语言系统就是�
 \ex
 \gll zibun -no syasin-o mise-te iru\\
 %     \refl{}  from picture     showing be\\
-       \refl{}  \textsc{prep} 图片 展示 PTCP\\
+       \refl{}  \textsc{postp} 图片 展示 \textsc{aux}\\
 \zl
 可见，日语动词、名词和形容词短语是相应的英语句子的镜像结构。我们在（\mex{1}）的表格中进行了简单的总结，并且给出语序参数的参数值：
 %As one can see, the Japanese verb, noun and prepositional phrases are a mirror image of the corresponding phrases in English.
@@ -461,19 +461,19 @@ want $+$ to $\to$ wanna
 \eal
 \ex 
 \gll Peter kauft einen Tisch. Er gefällt ihm.\\
-	 Peter 买 \textsc{art} 桌子.\mas{} 他 喜欢 它\\
+	 Peter 买 \textsc{art} 桌子(\mas) 他 喜欢 它\\
 \glt `Peter在买一个桌子。他喜欢它。'
 %	 Peter buys a table.\mas{} he likes him\\
 %\glt `Peter is buying a table. He likes it/him.'
 \ex 
 \gll Peter kauft eine Tasche. Er gefällt ihm.\\
-	 Peter 买 \textsc{art} 包.\fem{} 他 喜欢 它\\
+	 Peter 买 \textsc{art} 包(\fem) 他 喜欢 它\\
 \glt `Peter在买一个包。他喜欢它。'
 %	 Peter buys a bag.\fem{} he likes him\\
 %\glt `Peter is buying a bag. He likes it/him.'
 \ex 
 \gll Peter kauft eine Tasche. Er gefällt sich.\\
-	 Peter 买 \textsc{art} 包.\fem{} he 喜欢 他自己\\
+	 Peter 买 \textsc{art} 包(\fem{}) he 喜欢 他自己\\
 \glt `Peter在买一个包。他喜欢他自己。'
 %	 Peter buys a bag.\fem{} he likes himself\\
 %\glt `Peter is buying a bag. He likes himself.'
@@ -2041,18 +2041,18 @@ sm edges
 %This movement"=based analysis works well for English\il{English} since the underlying object always has to move:
 \eal
 \ex[]{
-\gll The mother gave [the girl] [a cookie].\\
-\textsc{det} 妈妈 给 \textsc{det} 女孩 \textsc{art} 饼干\\
+\gll The          mother gave [the girl] [a cookie].\\
+     \textsc{det} 妈妈    给   \spacebr\textsc{det} 女孩 \spacebr\textsc{art} 饼干\\
 \glt `妈妈给这个女孩饼干。'
 }
 \ex[]{
-{}\gll [The girl] was given [a cookie] (by the mother).\\
-\textsc{det} 女孩 \textsc{aux} 给 \textsc{art} 饼干 \textsc{prep} \textsc{det} 妈妈\\
+{}\gll [The girl]              was          given [a cookie]               (by the mother).\\
+      \spacebr\textsc{det} 女孩 \textsc{aux} 给    \spacebr\textsc{art} 饼干 \hspaceThis{(}\textsc{prep} \textsc{det} 妈妈\\
 \glt `这个女孩从妈妈那里得到了饼干。'
 }
 \ex[*]{
-\gll It was given [the girl] [a cookie].\\
-它 \textsc{aux} 给 \textsc{det} 女孩 \textsc{art} 饼干\\
+\gll It    was          given [the girl] [a cookie].\\
+     \expl{} \textsc{aux} 给    \spacebr\textsc{det} 女孩 \spacebr\textsc{art} 饼干\\
 }
 \zl
 %
@@ -2645,7 +2645,7 @@ Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_v
 \ea
 \gll Could or should we pool our capital with that of other co-ops to address the needs of a regional
 ``neighborhood''?\\
-\textsc{aux} 或 \textsc{aux} 我们 合作 我们的 资本 \textsc{prep} \textsc{conj} \textsc{prep} 其他的 合作者 \textsc{inf} 应对 \textsc{det} 需求 \textsc{prep} \textsc{art} 区域的 邻居\\
+\textsc{aux} 或 \textsc{aux} 我们 合作 我们的 资本 \textsc{prep} \textsc{conj} \textsc{prep} 其他的 合作者 \textsc{inf} 应对 \textsc{det} 需求 \textsc{prep} \textsc{art} 区域的 \hspaceThis{``}邻居\\
 \glt `我们是可以还是应该将我们的资金与其他合作者的资金一起用来解决区域性的“邻居”的需求？'
 
 \z
@@ -2745,19 +2745,21 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %should be accepted and adopted for a sufficient amount of time by the research community in
 %question.
 
-\section*{思考题}
+%\section*{思考题}
 %\section*{Comprehension questions}
 
+\bigskip
+\questions{
 \begin{enumerate}
 \item 请举例说明功能范畴与词汇范畴。
 \item 如何用二元特征来表示词汇范畴？这样做有什么好处？
 %\item Give some examples of functional and lexical categories.
 %\item How can one represent lexical categories with binary features and what advantages does this have?
 \end{enumerate}
-
-\section*{练习题}
+}
+%\section*{练习题}
 %\section*{Exercises}
-
+\exercises{
 %\addlines
 \begin{enumerate}
 \item 请画出下列句子的句法树：
@@ -2798,10 +2800,12 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %For the passive sentences, use the analysis where the subject noun phrase is moved from the object position, that is, the analysis
 %without an empty expletive as the subject.
 \end{enumerate}
+}
 
-\section*{延伸阅读}
+%\section*{延伸阅读}
 %\section*{Further reading}
 
+\furtherreading{
 在\ref{Abschnitt-GB-allgemein}到\ref{sec-GB-lokale-Umstellung}，我参考了Peter Gallmann\aimention{Peter Gallmann} 2003年以来的文献材料。但是，我在很多地方做了一些调整。对于其中的任何错误与不足，我个人负全部责任。有关Peter Gallmann的材料，请看\url{http://www.syntax-theorie.de}。
 %For Sections~\ref{Abschnitt-GB-allgemein}--\ref{sec-GB-lokale-Umstellung}, I used material from Peter Gallmann\aimention{Peter Gallmann}
 %from 2003 \citep{Gallmann2003a}. This has been modified, however, at various points. I am solely responsible for any mistakes or inadequacies.
@@ -2834,7 +2838,7 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %extraction with multiple gaps (see also the discussion of (\ref{ex-atb-minimalism}) on
 %p.\,\pageref{ex-atb-minimalism} and of (\ref{ex-atb-gazdar}) on p.\,\pageref{ex-atb-gazdar} of this
 %book), extractions where fillers and gaps do not match and extraction without gaps.
-
+}
 
 % wsun DONE
 % Lulu DONE
