@@ -83,8 +83,8 @@ Joseph Bayer（康斯坦斯）、
 %one of the combined items is moved to the left by applying Internal Merge. The resulting object can
 %be externally merged with another object and so on. As an example consider the NP in (\mex{1}):
 \ea
-\gll the man who we know\\
-\textsc{det} 男人 \textsc{conj} 我们 认识\\
+\gll the          man who            we know\\
+     \textsc{det} 男人 \textsc{rel} 我们 认识\\
 \glt `我们认识的那个男人'
 \z
 为了得到这个NP，动词know与它的宾语who通过外部合并到一起。在下面讨论的几个中间过程的合并之后，know who将与we合并，最后who通过内部合并移到左边，得到了who we know。这个关系小句还可以通过外部合并与man组合在一起，并且继续进行下去。
@@ -1296,12 +1296,13 @@ AgrN\isc{范畴!功能范畴!AgrN}\is{category!functional!AgrN}、AgrV\isc{范�
 组成成分序列最终是可见的是由左向移位推导而成的。\footnote{\label{fn-Kayne-Extraposition}%
 这也适用于外置\isc{外置}\is{extraposition}，即德语中将成分移到后场。通常这会被分析为右向移位，\citet[\S~9]{Kayne94a-u}将它分析为把所有其他成分向左移动。Kayne认为（i.b）是通过移动一部分的NP来从（i.a）推导而来的：
 \eal
-\ex \gll just walked into the room [\sub{NP} someone who we don't know].\\
-刚 走 进 \textsc{det}  房间 \sub{NP} 某人 谁 我们 不 认识\\
+\ex 
+\gll just walked into the           room [\sub{NP} someone who we don't know].\\
+     刚   走      进   \textsc{det}  房间 {}         某人     谁  我们 不 认识\\
 \glt `刚走进房间[\sub{NP} 我们不认识的某人]'
 \ex 
-\gll Someone$_i$ just walked into the room [\sub{NP} \_$_i$ who we don't know].\\
-某人$_i$ 刚 走 进 \textsc{det} 房间 \sub{NP} \_$_i$ 谁 我们 不 认识\\
+\gll Someone$_i$ just walked into the         room [\sub{NP} \_$_i$ who we don't know].\\
+     某人         刚   走     进   \textsc{det} 房间 {}        {}     谁  我们 不 认识\\
 \glt `某人刚走进房间[\sub{NP} \_$_i$ 我们不认识的]'
 \zl
 （i.a）一定是某种推导出的中间表示，否则英语就不会是SV(O)，而是V(O)S。
@@ -1446,7 +1447,7 @@ where n children=0{delay=with translation}{}
 %as assumed by \citet{Pollock89a-u}, \citet{Haegeman95a-u} and others, leads to problems. See
 %\citew{Bobaljik99a} for problems with the argumentation for Cinque's cascade of adverb"=projections.
 
-进而，还需要指出SubjP和ObjP，TraP\isc{范畴!功能范畴!Tra}\is{category!functional!Tra}（及物短语）和IntraP\isc{范畴!功能范畴!Intra}\is{category!functional!Intra} （不及物短语）（\citealp[\page 1745]{Karimi-Doostan2005a}）和TopP\isc{范畴!功能范畴!Top}\is{category!functional!Top} （话题短语），DistP\isc{范畴!功能范畴!Dist}\is{category!functional!Dist}\linebreak（数量短语），AspP\isc{范畴!功能范畴!Asp}\is{category!functional!Asp} （情态短语） （\citealp[\page 22]{EKiss2003a-u}；\citealp[\page 35]{Karimi2005a}），PathP\isc{范畴!功能范畴!PathP}\is{category!functional!PathP}和PlaceP\isc{范畴!功能范畴!PlaceP}\is{category!functional!PlaceP}\citep[\page 246]{Svenonius2004a-u}这些范畴符号都包含了语法功能\isc{语法功能}\is{grammatical function}、配价、信息结构和语义的信息。\footnote{%
+进而，还需要指出SubjP和ObjP，TraP\isc{范畴!功能范畴!Tra}\is{category!functional!Tra}（及物短语）和IntraP\isc{范畴!功能范畴!Intra}\is{category!functional!Intra} （不及物短语）（\citealp[\page 1745]{Karimi-Doostan2005a}）和TopP\isc{范畴!功能范畴!Top}\is{category!functional!Top} （话题短语），DistP\isc{范畴!功能范畴!Dist}\is{category!functional!Dist} （数量短语），AspP\isc{范畴!功能范畴!Asp}\is{category!functional!Asp} （情态短语） （\citealp[\page 22]{EKiss2003a-u}；\citealp[\page 35]{Karimi2005a}），PathP\isc{范畴!功能范畴!PathP}\is{category!functional!PathP}和PlaceP\isc{范畴!功能范畴!PlaceP}\is{category!functional!PlaceP}\citep[\page 246]{Svenonius2004a-u}这些范畴符号都包含了语法功能\isc{语法功能}\is{grammatical function}、配价、信息结构和语义的信息。\footnote{%
 更多例子和参考资料请看Newmeyer（\citeyear[\page 194]{Newmeyer2004b}、\citeyear[\page 82]{Newmeyer2005a}）Newmeyer也研究了规定每个语义角色（如施事、受益格、工具、致事、随伴格和逆行格短语）投射的条件。
 }
 %Furthermore, it has to be pointed out that SubjP and ObjP, TraP\is{category!functional!Tra} (Transitive
@@ -2029,7 +2030,7 @@ Chomsky关于自由关系从句的方法是有趣的，但是不能在全维度�
 
 \ea
 \gll I'll read [whichever book] you give me.\\
-我-将 读 任何一个 书 你 给 我\\
+     我-将 读   \spacebr{}任何一个 书 你 给 我\\
 \glt `我会读你给我的任何一本书。'
 \z
 
@@ -2055,8 +2056,8 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 %Thomas Gsella, taz, 12.02.1997, p.\,20.
 }
 \ex 
-\gll {}[\emph{Wessen} Schuhe] "`danach"'  besprenkelt sind, hat keinen Baum gefunden und war nicht zu einem Bogen in der Lage.\footnotemark\\
-       \hspaceThis{[}谁的    鞋   此后 有斑点的    \textsc{aux}   \textsc{aux} 不     树 找到    和 \textsc{aux} 不   \textsc{inf} \textsc{art}     弓   \textsc{prep} \textsc{det} 位置\\
+\gll {}[\emph{Wessen}     Schuhe] "`danach"'  besprenkelt sind, hat keinen Baum gefunden und war nicht zu einem Bogen in der Lage.\footnotemark\\
+       \hspaceThis{[}谁的  鞋      \hspaceThis{"`}此后 有斑点的    \textsc{aux}   \textsc{aux} 不     树 找到    和 \textsc{cop} 不   \textsc{prep} \textsc{art}     弓   \textsc{prep} \textsc{det} 位置\\
 \glt `那些鞋上有斑点的人找不到树也不能按照弧形来小便。'
 %       \hspaceThis{[}whose    shoes   after.that speckled    are   has no     tree found    and was not   to a     bow   in the position\\
 %\glt `Those whose shoes are spattered afterwards couldn't find a tree and were incapable of peeing in an arc.'
@@ -2287,7 +2288,7 @@ Chomsky在他早期的研究中没有严格遵守线性化的思路，但是某�
 \ea
 \label{ex-he-knows-and-loves-this-record-MP}
 \gll He [knows and loves] this record.\\
-他 知道 和 喜爱 这 专辑\\
+     他 \spacebr{}知道 和 喜爱 这 专辑\\
 \glt `他知道并喜爱这张专辑。'
 \z
 例如，在\citet[\page 264]{Steedman91a}提出的分析中，and（作为中心语）首先与love合并，然后得到的结果与knows合并。这一组合的结果是具有所组合部分相同句法属性的复杂对象：结果是一个复杂动词，该动词需要一个主语和一个宾语。在与两个动词并列的组合之后，结果需要与this record和he组合。this record在所有相关方面都像补足语。但是，按照Chomsky的定义，它应该是一个限定语，因为它与合并的第三次应用所组合。得到的结果是不清楚的。Chomsky认为合并不能说明成分序列。按照他的观点，线性化发生在语音形式（Phonological
@@ -2458,11 +2459,11 @@ Pollard \& Sag和Sag \& Ginzburg提出了英语的平铺结构。由于其中一
 \eal
 \ex\label{ex-gave-john-a-book-a} 
 \gll {}[[gave John] a book]\\
-给 John \textsc{art} 书\\
+       \hspaceThis{[[}给 John \textsc{art} 书\\
 \glt `给John一本书'
 \ex\label{ex-gave-john-a-book-b} 
 \gll {}[gave John a book]\\
-给 John \textsc{art} 书\\
+       \spacebr{}给 John \textsc{art} 书\\
 \glt `给John一本书'
 \zl
 与\pref{ex-gave-john-a-book-a}不同的是，只有像\pref{ex-gave-john-a-book-b}的分析是被允许的；也就是说，中心语与它所有的论元相组合。另一方面是假定二元分支结构（\citealp{MuellerHPSGHandbook}；\citealp[\S~1.2.2]{MOeDanish}）。在这一方法中，中心语补足语模式不能限制中心语结点的词或短语的状态。HPSG理论中的二元分支结构对应于MP的外部合并。
@@ -2760,7 +2761,7 @@ Adger认为带有非作格动词的句子的分析包括选择了施事的小\em
 \ea
 \label{ex-he-knows-and-loves-this-record-MP-zwei}
 \gll He [knows and loves] this record.\\
-他 知道 和 喜爱 这 专辑\\
+     他 \spacebr{}知道 和 喜爱 这 专辑\\
 \glt `他知道并喜爱这张专辑。'
 \z
 % 07.10.2015
@@ -3058,8 +3059,8 @@ Bagels, I like and Ellison hates.\footnote{%
   \citew[\page 205]{ps2}.
 }
 \ex 
-\gll The man who$_i$ [Mary loves \_$_i$] and [Sally hates \_$_i$] computed my tax.\\
-\textsc{det} 男人 \textsc{conj}$_i$ Mary 爱 \_$_i$ 和 Sally 恨 \_$_i$ 计算 我的 税\\
+\gll The          man who$_i$ [Mary loves \_$_i$] and [Sally hates \_$_i$] computed my tax.\\
+     \textsc{det} 男人 \textsc{rel} Mary 爱 {} 和 Sally 恨 {} 计算 我的 税\\
 \glt `Mary喜爱但是Sally憎恨的这个男人计算了我的税。'
 \zl
 \addlines[2]
@@ -3106,11 +3107,11 @@ MG和HPSG更深一层的区分在于中心语"=填充语不是分析长距离议
 %exclamatives (\mex{1}c) and polar interrogatives (\mex{1}d):
 \eal
 \ex 
-\gll Under no circumstances \emph{did she think they would do that}.\\
-\textsc{prep} 没有 条件 \emph{\textsc{aux} 她 想 他们 \textsc{aux} 做 那}\\
+\gll Under no circumstances \emph{did} \emph{she} \emph{think} \emph{they} \emph{would} \emph{do} \emph{that}.\\
+     \textsc{prep} 没有 条件 \textsc{aux} 她 想 他们 \textsc{aux} 做 那\\
 \glt `在没有任何条件下，她想他们会那样做。'
 \ex 
-\gll Whose book \emph{are you reading}?\\
+\gll Whose book \emph{are} \emph{you} \emph{reading}?\\
 谁的 书 \textsc{aux} 你 读\\
 \glt `你在读谁的书？'
 \ex 
@@ -3327,8 +3328,8 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 }，并没有转移派生限制\isc{转移派生限制}\is{transderivational constraint}，也没有计数\isc{计数}\is{numeration}\footnote{%
 在\citet[\S~9]{Veenstra98a}中有一个计数的词汇项。这个词汇项包括一个计数的集合，它包括功能中心语，可以用在某类句子中。比如说，Veenstra认为计数可以用在带有二价动词的句子和主语位于首位的句子、带有单价动词的嵌套句、带有单价动词的wh"=疑问句，以及带有单价动词的极性疑问句。这一计数集合的一个元素对应于一个特别的句法配置以及在构式语法\indexcxgc 思想下的短语构式。Veenstra的分析并不是在最简方案下找到的计数的概念的形式化。通常，它被认为是包含所有句子生成所需词汇项的计数。如（i）所示，复杂句可以包括带有不同句子类型的句子的组合：
 \ea
-\gll Der Mann, der behauptet hat, dass Maria gelacht hat, steht neben der Palme, die im letzten Jahr gepflanzt wurde.\\
-      \textsc{det} 男人 \textsc{rel} 声称 \textsc{aux} \textsc{conj} Maria 大笑 \textsc{aux} 站 \textsc{prep} \textsc{det} 棕榈树 \textsc{conj} \textsc{prep} 上次 年 种植 \textsc{aux}\\
+\gll Der          Mann, der         behauptet hat,         dass          Maria gelacht hat,         steht neben        der          Palme, die im letzten Jahr gepflanzt wurde.\\
+     \textsc{det} 男人  \textsc{rel} 声称      \textsc{aux} \textsc{conj} Maria 大笑     \textsc{aux} 站   \textsc{prep} \textsc{det} 棕榈树 \textsc{rel} \textsc{prep}.\textsc{det} 上次 年 种植 \textsc{aux}\\
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree that was planted
 %last year.'
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree planted last year.'
