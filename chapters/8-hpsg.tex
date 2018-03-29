@@ -328,7 +328,6 @@ sm edges
 %\caption{\label{abb-peter-schlaeft}Analysis of \emph{Peter schläft} `Peter sleeps' in \emph{dass
 %    Peter schläft} `that Peter sleeps'}
 \end{figure}%
-\addlines
 在图\ref{abb-peter-schlaeft}和\ref{abb-Peter-Maria-erwartet}中，\subcatlc 中的一个元素在每个局部树中与其中心语相组合。与所选择的中心语相组合的元素不再出现在父结点的\subcatlc 中。V[\subcat \sliste{ }]对应于一个完整的短语（VP或S）。带有数字的框盒表示结构共享\isc{结构共享}\is{structure sharing}（请参阅\ref{sec-strukturteilung}）。结构共享是HPSG中最为重要的表达手段。它在诸如配价、一致和长距离依存中发挥着重要的作用。在上面的例子中，\iboxt{1} 表示\subcatlc 中的描写与树中的另一个子结点是相同的。在配价列表中的描写通常是部分描写，也就是说，不是论元的所有属性都被穷尽地描写出来。所以说，有可能像schläft（睡觉）这样的动词可以跟不同种类的语言对象相组合：主语可以是一个代词、一个专有名词或是一个复杂的名词短语，唯一关键的地方是我们所说的语言对象要有一个空的\subcatlc，并且具有正确的格属性。\footnote{%
 而且，它必须与动词保持一致。这里并没有显示出这一点。
 }
@@ -439,7 +438,6 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
             }
 }
 \z
-%\addlines
 外层有特征\phonc 和\synsemc。正如前面提到的，\phonc 包括语言对象的语音表示。\synsemc 的值是包括可以被其他中心语所选择的句法和语义信息的特征结构。短语符号的子结点在\synsemc 之外表示。这就确保了在选择中具有一定程度的局部性\isc{定域}\is{locality}：中心语不能进入它所选择的元素的内部结构（Pollard \& Sag\citeyear[\page 143--145]{ps}，\citeyear[\page 23]{ps2}）。也可以参考\ref{sec-mother}和\ref{sec-locality}关于局部性的讨论。在\synsemc 内部，有关于局部上下文的信息（\localc，简写为\loc
 ），也有长距离依存的信息（\textsc{nonlocal}或简写为\nonlocc ）。局部相关的信息包括句法（\textsc{category}或\catc）和语义（\textsc{content}或\contc）信息。句法信息包括决定短语的核心属性的信息，即中心语信息。这在\headc 下面有所表示。更多细节将在\ref{Abschnitt-Kopfeigenschaften}讨论。此外，语言对象的词类属于短语的中心语属性。同样，\headc、\subcatc 属于\catc 内部的信息。符号的语义内容用\contc 来表示。\contc 值的类型是\type{mrs}，即最小递归语义（Minimal Recursion Semantics）\indexmrsc
 \citep*{CFPS2005a}。一个MRS结构包括一个索引和限制该索引的关系列表。在\textsc{nonlocal}特征中，这里只给出了\slasch 。还有处理关系小句\isc{关系小句}\is{relative clause}和疑问小句\isc{疑问小句}\is{interrogative clause}的特征（\citealp{ps2}；\citealp{Sag97a}；\citealp{GSag2000a-u}；\citealp{Holler2005a-u}），不过不在这里讨论。
@@ -564,7 +562,6 @@ non-head-dtrs \sliste{ \onems{ phon \phonliste{ Peter }\\
 }
 \z
 % for the example on the next page
-\addlines
 NP[\type{nom}]是复杂特征描写的缩写。模式~\ref{schema-bin-prel}将中心语子结点的\subcatlc 划分为一个单一元素列表和其他部分。由于schläft（睡觉）在它的\subcatlc 中只有一个元素，剩余的是空列表。这个剩余部分也是父结点的\subcatvc。
 %NP[\type{nom}] is an abbreviation for a complex feature description. Schema~\ref{schema-bin-prel} divides the \subcatl of the head daughter %into
 %a single"=element list and what is left. Since \emph{schläft} `sleeps' only has one element in its \subcatl, what remains is the empty list.
@@ -734,7 +731,6 @@ GPSG\indexgpsgc 的中心语特征约规\isc{中心语特征约规}\is{Head Feat
                            }
 }
 \zs
-\addlines
 中心语特征原则（Head Feature Principle）具有如下的形式：
 %The \emph{Head Feature Principle} takes the following form:
 \begin{principle-break}[中心语特征原则]\isc{原则!中心语特征原则}\is{principle!Head Feature}
@@ -1163,7 +1159,6 @@ dem König treues的\catvc：\\
 %Since \textsc{mod} is a head feature, the Head Feature Principle (see page~\pageref{prinzip-hfp}) ensures that the \modv of the entire %projection is identical
 %to the \modv of the lexical entry for \emph{treues} `loyal'.
 
-%\addlines
 不同于假设修饰语选择中心语，我们可以把中心语所有可能的附接语的描写都纳入到中心语中。这一观点由\citet[\page 161]{ps}提出。\citet[\S~1.9]{ps2}对前面的分析进行了修订，因为不能说明修饰语的语义。\footnote{%
 不过，可以参考\citew*{BMS2001a}。\citew*{BMS2001a}提出了一个整合的分析，其中附接语可以选择中心语，附接语也可以被中心语所选择。最简递归语义是支持这一分析的语义理论\indexmrsc。应用这种语义分析方法，就可以避免由\citet*{ps}带来的修饰语的语义问题。
 }
@@ -1229,7 +1224,6 @@ non-head"=dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 %	 the sausage in\\
 }
 \zl
-%\addlines[2]
 例（\mex{0}a）需要进一步的解释。如（\mex{0}a）中使用的介词in具有下面的\catvc：
 %Example (\mex{0}a) requires some further explanation. The preposition \emph{in} (as used in (\mex{0}a)) has the following \catv:
 
@@ -1315,7 +1309,6 @@ HPSG理论\isc{被动|(}\is{passive|(}遵循Bresnan的思想（请参阅\ref{Abs
 }
 \z
 
-\addlines
 \noindent
 词汇规则将动词词根\footnote{%
 术语\emph{stem}包括词根（\stem{helf}，“帮助”）、派生词（\stem{besing}，“唱”）和复合词。这样词汇规则就可以用在像\stem{helf}的词根和诸如\stem{besing}的派生形式之中了。
@@ -1634,7 +1627,6 @@ d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, 
 %\section{Verb position}
 \label{Abschnitt-Verbstellung-HPSG}
 
-\addlines[2]
 我这里要说明的动词位置分析是基于GB分析的\isc{动词位置|(}\is{verb position|(}。在HPSG中，有许多不同的方法来描述动词的位置，但是，依我看，GB分析的HPSG变体是唯一合适的\citep{Mueller2005c,Mueller2005d,MuellerGS}。（\mex{1}）的分析可以总结如下：在动词首位的小句中，动词末位上有一个语迹。在首位的位置上有一个动词的特殊形式选择了动词语迹的投射。特殊的词汇项由词汇规则允准。动词和语迹之间的连接被看作是GPSG中的长距离依存问题，并通过树中的信息或特征结构（结构共享\isc{结构共享}\is{structure sharing}）的识别来实现。
 %The\is{verb position|(} analysis of verb position that I will present here is based on the GB"=analysis. In HPSG, there are a number of different %approaches
 %to describe the verb position, however in my opinion, the HPSG variant of the GB analysis is the only adequate one 
@@ -1777,8 +1769,6 @@ sm edges
 %\emph{kennt} as the head in (\mex{0}b). Furthermore, we must ensure that the verbal projection with which \emph{kennt} is combined %contains the verb trace belonging to
 %\emph{kennt}. If it could contain a trace belonging to \emph{gibt} `gives', for example, we would be able to analyze sentences such as 
 %(\mex{1}b):
-%\addlines bug here?
-\largerpage
 \eal
 \ex[]{
 \gll Gibt [der Mann der Frau das Buch \_$_{gibt}$]?\\
@@ -1849,7 +1839,6 @@ synsem$|$loc \ibox{1} \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
                 }
 }
 \zs
-\largerpage
 通过对（\mex{0}）中的\localvc 和\dslc 值的共享，动词语迹的句法和语义信息在它的最大投射上表示出来，而且位于首位的动词可以核查这个语迹的投射是否是兼容的。\footnote{%
 需要注意的是，（\mex{0}）中的描写是循环的，因为标签\ibox{1}用于它自己内部。请参阅\ref{sec-cyclic-fd}关于循环特征描写的内容。循环描写是用来表示语言对象最为直接的方式，这个语言对象带有缺失的局部属性，并且将这些信息作为\dslfc 的值按照中心语路径传递上去。当我们看到第\pageref{le-verbspur}页上的（\ref{le-verbspur}）的动词语迹的最终版本时，这种思路会显得更为清晰。
 }

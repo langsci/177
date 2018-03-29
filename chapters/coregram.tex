@@ -175,7 +175,7 @@ typehierarchy
 \caption{\label{Abbildung-Hierarchie}反映词汇项与支配模式承继层级的小节}
 %\caption{\label{Abbildung-Hierarchie}Section of an inheritance hierarchy with lexical entries and dominance schemata}
 \end{figure}%
-对于屈折词，相关词根\isc{词根}\is{root}在词库中。例如，schlaf（睡觉）、lieb（爱）和geb（给）。在图~\ref{Abbildung-Hierarchie}中，有\type{root}的不同次类型，词根的概括类型：例如，\type{intrans-verb}代表不及物动词，\type{trans-verb} 代表及物动词。及物动词可以进一步划分为严格及物动词（带有主格和受格论元）和双及物动词（带有主格和受格和与格论元）。上述层级当然必须需要大幅改进，因为及物和不及物动词都会有进一步的分类。例如，不及物动词可以分为非受格\isc{动词!非受格}\is{verb!unaccusative}和非作格\isc{动词!非作格}\is{verb!unergative}动词，并且即便是严格的及物动词也可以进一步区分出小类（见\citealp[\S~2]{Welke2009a}）。\pagebreak
+对于屈折词，相关词根\isc{词根}\is{root}在词库中。例如，schlaf（睡觉）、lieb（爱）和geb（给）。在图~\ref{Abbildung-Hierarchie}中，有\type{root}的不同次类型，词根的概括类型：例如，\type{intrans-verb}代表不及物动词，\type{trans-verb} 代表及物动词。及物动词可以进一步划分为严格及物动词（带有主格和受格论元）和双及物动词（带有主格和受格和与格论元）。上述层级当然必须需要大幅改进，因为及物和不及物动词都会有进一步的分类。例如，不及物动词可以分为非受格\isc{动词!非受格}\is{verb!unaccusative}和非作格\isc{动词!非作格}\is{verb!unergative}动词，并且即便是严格的及物动词也可以进一步区分出小类（见\citealp[\S~2]{Welke2009a}）。
 %For inflected words, the relevant roots\is{root} are in the lexicon. Examples of this are \stem{schlaf} `sleep', \stem{lieb} `love' and \stem{geb}
 %`give'. In Figure~\ref{Abbildung-Hierarchie}, there are different subtypes of \type{root}, the
 %general type for roots: \eg \type{intrans-verb} for intransitive
@@ -184,7 +184,6 @@ typehierarchy
 %as there are even further sub"=classes for both transitive and intransitive verbs. For example, one can divide intransitive verbs into unaccusative\is{verb!unaccusative}
 %and unergative\is{verb!unergative} verbs and even strictly transitive verbs would have to be divided into further sub"=classes (see \citealp[Section~2]{Welke2009a}).\pagebreak
 
-\addlines
 除了词根类型之外，上图还包含词干\isc{词干}\is{stem}和词语\isc{词语}\is{word}的类型。复杂词根是派生自简单词根，但是仍然必须要屈折的（\stem{lesbar}（可读的）\stem{besing}（唱关于）。词语是不会屈折的对象。词语的例子是代词\isc{代词}\is{pronoun}er（他）、sie（她）等，还有介词。一个屈折\isc{屈折}\is{inflection}形式可以来自于一个动词词干，如geliebt（被爱）、besingt（唱关于）。屈折词和（复杂）词干可以再次通过派生\isc{派生}\is{derivation}规则来建立联系。以这种方式，geliebt（被爱）可以重新范畴化为形容词词干，该词干必须与形容词词尾组合（geliebt-e）。复杂词干/词的相关描述是\type{complex-stem}或者\type{word}的次类型。这些次类型描述了像geliebte这种复杂词必须有的形式。关于这一技术的使用，见\citew[\S~3.2.7]{Mueller2002b}。使用统制模式，所有的词都可以组合成短语。这里给出的层级肯定不是完整的。有很多其它的价类，并且可以假设更加概括的类型来简单地描述一阶、二阶或三阶谓词。这些类型可能对于描述其它语言可行。这里，我们只是处理了类型层级的一小部分以便能与Croft的层级进行对比：在图~\ref{Abbildung-Hierarchie}中，没有为形式为[Sbj IntrVerb]的句模提供类型，但是有为了一个特定价的词汇对象的类型（V[\subcat \sliste{ NP[\str] }]）。然后，词汇规则就可以用于相关词汇对象，该词汇对象允准带有另外的价或引入关于屈折信息的对象。完整的词可以在句法上使用相对概括的规则以完成组合，例如在中心语"=论元结构中。纯粹短语方法遇到的问题因此就可以被避免了。但是，词位类的概括和可以组合的表达就可以在层级中表示。
 %In addition to a type for roots, the above figure contains types for stems\is{stem} and words\is{word}. Complex stems are complex objects that are
 %derived from simple roots but still have to be inflected (\stem{lesbar} `readable', \stem{besing}
@@ -235,7 +234,6 @@ typehierarchy
 %descriptive levels and for type hierarchies as a good tool for representing generalizations. This
 %section explores a way to develop grammars that are motivated by facts from several languages.
 
-%\largerpage
 如果看一下多种语言学流派当前的研究方式就可以发现研究语言的两种极端的方式。一方面，有主流的生成语法（MGG）阵营并且，在另一方面，有构式语法/认知语法阵营。我必须声明我这里所说并非对这些流派的所有成员都适用，只适用于极端情况。MGG语言学家的目标是寻找底层结构。因为底层结构必须对所有语言都是一样的（缺少动因），所以考察一种语言就足够了，即英语。这种研究策略的结果是得到了一个最有影响力英语语言学家提出的模型，其他学者就尽力去调整其它语言。因为英语有NP VP结构，所以所有语言都要有这一结构。因为英语在被动句中重新调整成分的顺序，被动是一种移位现象，所以所有语言必须这样运作。我在\ref{sec-case-assignment}和第\ref{chap-scrambling-extraction-passive}章都特别仔细地讨论了用该方法分析德语的效果，并且指出被动是移位这一假设对德语会产生错误的预测，因为德语被动句的主语仍然在宾语位置上。另外，这一分析需要假设不可见的虚位，即既不能看见也没有任何意义的实体。
 %If one looks at the current practice in various linguistic schools one finds two extreme ways of
 %approaching language. On the one hand, we have the Mainstream Generative Grammar (MGG) camp and, on the
@@ -289,7 +287,6 @@ typehierarchy
 %\item French\il{French}
 \end{itemize}
 
-%\addlines[-1]
 \noindent
 	这些语言属于不同的语系（印欧语系、非亚语系、汉藏语系），并且印欧语系中的语言属于不同的语族（日耳曼、罗曼、印度-伊朗语族）。图~\ref{fig-lang-fams}提供了一个概要。我们在带有语义内容的HPSG\indexhpsgc 理论框架内写出了完全形式化的、计算机可处理的语法模块。在这里不会讨论细节，但是有兴趣的读者可以参考\citew{MuellerCoreGram}。
 %These languages belong to diverse language families 
@@ -359,7 +356,6 @@ typehierarchy
 \caption{\label{fig-german-dutch}德语和荷兰语共有的属性}
 %\caption{\label{fig-german-dutch}Shared properties of German and Dutch}
 \end{figure}%
-\largerpage[-1]
 有很多属性是德语和丹麦语所共有的（Set3）。例如，Set3包括词项的论元结构，一个包含论元句法和语义属性描述以及这些论元与词项意义联系的列表。除了SOV语言的限制，Set3还包括动词的位置和V2小句中成分的前置。相应的限制为两种语法所共有。虽然这些集合在图~\ref{fig-german-dutch}中也安排在一个层级当中，但是该图与前面章节所论述的类型层级没有关系。这些类型层级是我们语言学理论的一部分，并且这些层级的很多部分可以在不同集合中：那些与更加宽泛的方面有关的类型层级部分可见于图~\ref{fig-german-dutch}中的Set3，荷兰语或德语特有的部分可以在相应的其它集合中。当我们增加其它语言时，例如丹麦语，我们又有了新的差异。虽然德语和荷兰语是SOV，但是丹麦语是SVO语言。图~\vref{fig-german-dutch-danish}展示了增加语言之后的情况：最高的节点表征了对所有语言都适用的限制（例如，论元结构限制、联系和V2），该节点下面的节点（Set4）包含了只适用于德语和丹麦语的限制。 \footnote{%
 原则上，会存在限制适用于荷兰语和丹麦语，但是不适用于德语或者适用于德语和丹麦语但是不适用于荷兰语。这些限制应该分别从Set1和Set2移出并插入更高的限制集合。这些集合没有出现在该图上，我仍然用来自于图~\ref{fig-german-dutch}的Set1和Set2来称说德语和荷兰语的限制集合。  
 }例如，Set4包括关于动词复杂体和SOV顺序的限制。Set4和Set5的合并是图~\ref{fig-german-dutch}的Set3。

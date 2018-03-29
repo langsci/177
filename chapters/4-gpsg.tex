@@ -458,7 +458,6 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 %\subsection{Semantics}
 \label{Sec-GPSG-Sem}
 
-%\addlines[2]
 \citew*[\S~9--10]{GKPS85a}所谓的语义学可追溯到Richard \citet{Montague74a-u}。有些语义理论规定了每条规则全部可能的组合，跟这些理论不同的是（请看\ref{sec-PSG-Semantik}），GPSG应用具有一般性的规则。
 这有可能是基于这样的事实，每个要组合的表达式都有一个语义类型。我们惯于区分实体\isc{实体}\is{entity}（\type{e}）与真值\isc{真值}\is{truth value}（\type{t}）。
 实体指称真实世界（或可能世界）中的对象，而整个句子可以为真，也可以为假，也就是说，它们有一个真值。
@@ -477,7 +476,6 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 %If $\alpha$ is of type \sliste{ \type{b}, \type{a} } and $\beta$ of type \type{b}, then $\alpha(\beta)$ is of type
 %\type{a}.
 \z
-\addlines[2]
 这类组合也叫做功能性应用（functional application）\isc{功能性应用}\is{functional application}。根据（\mex{0}）中的规则，有可能类型\sliste{ \type{e}, \sliste{
     \type{e}, \type{t} }}对应于这样一个表达式，它需要与类型\type{e}的两个表达式相组合，以得到\type{t}的表达式。
   第一步与\type{e}的组合会产出\sliste{ \type{e}, \type{t} }，而且第二步与深层\type{e}的组合会得到\type{t}。这与我们在第\pageref{lambda-moegen}页看到的$\lambda$"=表达式相似：$\lambda y \lambda x$ \relation{like}(x, y)需要将y和x相组合。这一例子的结果是\relation{mögen}（\relation{max}, \relation{lotte}），即在相关世界中要么为真，要么为假的表达式。
@@ -619,7 +617,6 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 %\glt `The man tried to secretly give the book to the woman.'
 \z 
 
-%\addlines[2]
 \noindent
 为了分析这些句子，我们可以使用一条元规则，其中在V2的右边加上一个状语\citep[\page 146]{Uszkoreit87a}。
 %In order to analyze these sentences, we can use a metarule which adds an adjunct to the right"=hand side of a V2 \citep[\page 146]%{Uszkoreit87a}.
@@ -772,7 +769,6 @@ V2  $\to$ W, AdvP*
 %active and passive rules using a metarule: for each active rule, a corresponding passive rule with suppressed subject is licensed.
 %The link between active and passive clauses can therefore be captured in this way.  
 
-%\addlines[2]
 和转换语法/GB\indexgbc\indexmpc 的一个重要区别是我们没有在两棵树之间创造关系，而是在主动与被动规则之间创造关系。这两条规则允准了两个没有联系的结构，即（\mex{1}b）中的结构并不是从（\mex{1}a）的结构中推导而来的。
 %An important difference to Transformational Grammar/GB\indexgb\indexmp is that we are not creating a
 %relation between two trees, but rather between active and passive rules. The two rules license two
@@ -1035,7 +1031,6 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 \ea
 {}[+\textsc{top}] $<$ X
 \z
-\addlines
 \textsc{top}表示话题化（topicalized）。正如我们在第\pageref{Seite-Topikalisierung}页提到的，前场并没有限制为话题。焦点元素与虚位成分可以在前场出现，这就是为什么特征名称并不理想的原因。但是，有可能将其替换为其他名称，如前场（prefield）。这不会影响我们的分析。（\mex{0}）中的X表示一个任意范畴。这是一个新的X，与（\ref{gpsg-vs-regel}）中的那个是不同的。
 %\textsc{top} stands for \emph{topicalized}. As was mentioned on
 %page~\pageref{Seite-Topikalisierung}, the prefield is not restricted to topics. Focused elements and expletives can
@@ -1050,7 +1045,6 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 %(\mex{1}).\footnote{%
 %  The \textsc{fin} feature has been omitted on some of the nodes since it is redundant: $+$\textsc{mc}"=verbs always require the \textsc{fin} %value `+'.
 %}
-%\addlines[2]
 \ea
 \gll Dem Mann gibt er das Buch.\\
      \textsc{det}.\dat{} 男人 给 他.\nom{} \textsc{det}.\acc{} 书\\
@@ -1143,8 +1137,7 @@ sm edges
 %  and with so-called multiple frontings\is{apparent multiple fronting}.
 %}
 
-%\addlines
-在我对这章进行总结之前，我还将讨论另一个前置的例子，即（\mex{0}）中更为复杂的例子。（\mex{0}）中的分析包括几个步骤：导入、渗透和最后绑定长距离依存信息。这些步骤如图\vref{fig-gpsg-udc}所示。
+%在我对这章进行总结之前，我还将讨论另一个前置的例子，即（\mex{0}）中更为复杂的例子。（\mex{0}）中的分析包括几个步骤：导入、渗透和最后绑定长距离依存信息。这些步骤如图\vref{fig-gpsg-udc}所示。
 %Before I conclude this chapter, I will discuss yet another example of fronting, namely one of the
 %more complex examples in (\mex{0}). The analysis of (\mex{0}c) consists of several steps: the
 %introduction, percolation and finally binding off of information about the long"=distance dependency.

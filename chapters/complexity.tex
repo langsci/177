@@ -3,7 +3,6 @@
 \chapter{生成能力与语言形式描述}
 \label{sec-generative-capacity}
 
-\largerpage[-1]
 前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG设计得只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citealp{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致的语言。Carl \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
 如果物理学家要求形式描述来约束理论的话：\\
 \begin{tabular}{@{}l@{~}p{11cm}}
@@ -100,7 +99,6 @@
        Spiegel，1999年3月，第42页。
      }
 \glt `来自HVA大约120人都留在了他们的房子里。'
-%\largerpage
 \ex 
 \gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
 	 {}\spacebr{}\textsc{prep} \textsc{det} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} \textsc{prep} \textsc{det} 包厢\\
@@ -170,7 +168,6 @@
   taz, \zhdate{2005/09/02}，第18页。%
 }
 \glt `但是，对于这件事的反抗正在升级。'
-\largerpage[2]
 \ex
 \gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
 	 {}\spacebr{}\textsc{prep} \textsc{det} 骑车.职业的.场景 知道 他 \spacebr{}没人 {} {} 今后\\
@@ -232,7 +229,6 @@
 %       Spiegel, 3/1999, p.\,42.
 %     }
 %\glt `Around 120 people from the HVA stayed there inside their buildings.'
-%\largerpage
 %\ex 
 %\gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
 %	 {}\spacebr{}from the \hspaceThis{"`}English theater stand \spacebr{}two models {} in the cabinets\\
@@ -302,7 +298,6 @@
 %  taz, 02.09.2005, p.\,18.%
 %}
 %\glt `Resistance to this is now rising, however:'
-%\largerpage[2]
 %\ex
 %\gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
 %	 {}\spacebr{}from the cycling.professional.scene knows him \spacebr{}nobody {} {} anymore\\

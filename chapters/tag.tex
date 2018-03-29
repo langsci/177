@@ -316,7 +316,6 @@ arg: $-$\\\hline
 \section{局部语序重列}
 \label{Abschnitt-MC-TAG}\label{sec-ld-lp-tag}
 
-\addlines 
 \isc{成分序列|(}\is{constituent order|(}TAG中，每一个词都对应一族树。为了解释不同的语序，我们可以利用不同的树来对应不同的语序，如假定双宾及物动词对应于六棵子树，每棵子树都对应于一种不同的论元位置安排。我们可以通过词汇规则
 \isc{词汇规则}\is{lexical rule}来建立树之间的关联。这种基于词汇规则的分析类似\citet{Uszkoreit86b}基于范畴语法的分析。
 
@@ -432,7 +431,6 @@ tag, baseline
 \isc{空成分}\is{empty element}只存在于树上。
 它们并没有单独的词典中的词汇项与之相对应，词典里的词汇项均只包含有语音形式的词及其基本树。
 
-%\largerpage
 versprach（保证）的树可以被插入到zu überführen（起诉）树中的任意的一个S结点，从而得到图\ref{Abbildung-TAG-Permutation-one}和\ref{Abbildung-TAG-Permutation-two}中的树。
 %\thefiguresref{Abbildung-TAG-Permutation-one}{Abbildung-TAG-Permutation-two}.
 \begin{figure}
@@ -500,7 +498,6 @@ tag
 \noindent
 在图\ref{Abbildung-TAG-Permutation-one}中，versprach的树被直接插入到PRO这个NP的上方，而在图\ref{Abbildung-TAG-Permutation-two}中，这棵树被插入到了NP$_2^1$的上方。
 
-\addlines
 很明显，用这样的方式没有办法得到一棵überführen的论元出现在versprach的论元中间的情况。\citet*{JBR2000a}因此建议扩展LTAG。在MC-TAG中，一个语法并不是直接由基本树组成，而是由基本树的有限集合组成。在每一步的推导中，一个集合被选择了就意味着这个集合里的全部基本树要同时添加到某棵树上。图\vref{Abbildung-MC-TAG-versprach}展示了versprach所包含的多元成分。
 \begin{figure}
 %% ~\\[2ex]
@@ -580,7 +577,6 @@ tag
 
 \section{动词位置}
 
-%\largerpage
 动词的位置
 \isc{动词位置|(}\is{verb position|(}也可以做和GPSG并行的分析：在一个给定的序列线性化域（linearization domain）中，我们既可以让动词实现在前置位置上也可以实现在后置位置上。动词位置对小句的类型有影响，进而会影响到语义，基于词汇规则的分析同样可行：可以让一条词汇规则将一棵在后置位置放置了动词的树变成一棵在前置位置放置了定式动词的树。这和GB、最简方案以及HPSG的分析是相似的。 
 \isc{动词位置|)}\is{verb position|)}
@@ -594,7 +590,6 @@ tag
 \citet[\page 55]{KJ85a}提出了替代这种基于转换的分析的另一种方法，能够更好地处理被称之为“提升”
 \isc{提升}\is{raising}的语言现象。他们的分析假定动词的论元都位列于子类框架（subcategorization）表中。如果一个动词匹配了某棵树相应的子类框架表，这个动词就可以进入到这棵树中。对应第\pageref{pass-lr-mlr}页讨论过的HPSG的词汇规则，Kroch和Joshi形式化得到了一条（TAG）词汇规则：该规则的输入端显式地提及一个宾格宾语。Kroch和Joshi针对非人称被动提出了一种复杂的分析，在不及物动词里没有实现出来的宾语，他们使用了语义上为空的角色来处理（第56页）。
 这样的一种使用抽象的辅助实体的方式事实上是可以避免的：我们可以采纳始于\citet{Haider86}的HPSG\indexhpsgc 分析，我们在\ref{Abschnitt-HPSG-Passiv}中讨论过这种分析。
-\largerpage
 
 也有人提议
 \isc{多重承继}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citealp{Candito96a}及其扩展分析——\citealp*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
@@ -981,7 +976,6 @@ V"=TAG
     遵照\citet[\page 6]{Rambow94a}的geben（给）在V"=TAG中的词汇描写
   }
 \end{figure}%
-\addlines
 这个词汇描写包括了给定动词的一棵树，一个范畴为VP的空成分，三棵用于将VP和NP结合起来的树。像MC"=TAG一样，对支配关系进行了显性声明。
 图\ref{Abbildung-Lexical-Set-geben-V-TAG}中的支配限制要求每棵树中位于低处的VP结点都支配了最右侧的树的最高处的VP结点。动词论元的顺序以及动词的位置并没有给定。唯一限定的是：带有NP的树的低处的VP，以及geben（给）的低处的VP要支配空成分的VP。有了这一树集合，我们可以推出论元顺序的任意一种排列。Rambow同时也展示了如何利用词汇项来分析动词复合体。图\vref{Abbildung-zu-reparieren-versprochen-V-TAG}展示了由“zu reparieren”（修补）和versprochen（保证）组成的动词复合体的树集描写，其中包含了支配关系限制。
 \begin{figure}
@@ -1084,7 +1078,6 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 \z
 参见\citew{Gibson98a}了解其它的会影响语言加工的因素。
 
-\addlines
 \citet{JBR2000a}讨论了动词复合体中的论元语序重列问题。他们所关注的模式如（\mex{1}）所示：
 \ea
 $\sigma$(NP$_1$ NP$_2$ \ldots{} NP$_n$) V$_{n}$V$_{n-1}$ \ldots{} V$_{1}$
@@ -1160,7 +1153,6 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \glt `Hanna一直都知道那个男人希望离开她。' 
 }
 \zl
-\pagebreak
 
 \noindent
 除非是对另外一种解读有很强的倾向性，否则不太可能将例（\mex{0}a）的语序换成例（\mex{0}b）中的语序。

@@ -64,7 +64,6 @@
 %theory. This problem is solved by Stabler by assuming that intransitive verbs are combined with an empty object \citep[\page 61,
 %124]{Veenstra98a}. Since these silent elements do not contribute to the meaning of an expression, we are also dealing with empty expletive pronouns.
 
-\addlines
 在其他理论中，有人研究反对空成分也有人赞成空成分。在范畴语法\indexcgc 中，Steedman提出了一种不借助空成分的方式来分析非局部依存（见\ref{sce-nld-cg}），但是正如\citet{Pollard88a}指出的那样，Steedman的分析需要为NP提供多种类型提升\isc{类型提升}\is{type raising}或者需要为关系代词\isc{代词!关系}\is{pronoun!relative}提供一个相比大量的复杂词项（见\ref{Abschnitt-CG-UDC}）。另一方面，\citet{KoenigE99a-u}使用语迹。在\ref{Abschnitt-GPSG-Fernabhaengigkeiten}，我们曾经讨论过，在GPSG\indexgpsgc 中，\citet[\page 76--77]{Uszkoreit87a}提出了一个不用语迹的对于提取\isc{提取}\is{extraction}的分析，但是\citet*[\page 143]{GKPS85a}的分析却使用语迹。在LFG\indexlfgc 中，也有人用语迹\citep[\page 67]{Bresnan2001a}，也有人不用（\ref{Abschnitt-Verbstellung-LFG}和\ref{Abschnitt-NLA-LFG}）。HPSG\indexhpsgc 中的很多短语分析都起源于避免使用空成分（见\ref{Abschnitt-Phrasale-Konstruktionen}）。例如，\citet{Sag97a}对关系小句的分析，该分析用相应的短语规则代替了\citew{ps2}所用的空关系化标记。在另一方面，\citew{Bender2000a}和\citew*[\page 464]{SWB2003a}却假设了一个空系词\isc{系词}\is{\textsc{cop}ula}。另外一个想要从HPSG中清除空成分的例子是用词库而不是语迹来描写长距离依存\citep*{BMS2001a}。但是，正如 \citet{LH2006a}所展示的，用词汇手段引入长距离依存的提取理论在处理并列结构的语义解释时有问题。关于如何解决这一问题，见\citew{Chaves2009a}。有很多TAG分析\indextagc 没有在词库中包含空成分（例如，可以参见\ref{TAG-Fernabh}和\citew{Kroch87a}），但是也存在\citet[\page 194]{Kallmeyer2005a-u}的TAG分析，假设一个语迹来给包含动词复杂体的句子中的成分进行重新排序。\citet[\page 10--11]{Rambow94a}假设每一个动词短语中都有一个空动词（见\ref{sec-vtag}对于V"=TAG\isc{树邻接语法 (TAG)!向量 (V-TAG)}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}的论述） 。\footnote{%
 注意TAG中的空成分与其它理论中的空成分有细微差异。在TAG中，空成分通常是初级树的一部分，即它们不与其它成分组合。  
 }在依存语法中，\mel （\citeyear[\page 303]{Melcuk88a-u}；\citeyear[\page 219]{Melcuk2003a-u}）、\citet[\page 253]{Starosta88a-u}、\citet[\page 471--472]{Eroms2000a}、Hudson（\citeyear[\S~3.7]{Hudson2007a-u}、\citeyear[\page 166]{Hudson2010b-u}）和\citet{Engel2014a}为指定语、名词、省略、祈使句、控制不定式和并列结构假设了空成分，但是\citet[\page 73]{GO2009a}反对空成分（省略现象是例外\citealp{Osborne2016a-u}）。
@@ -264,7 +263,6 @@ sm edges
 %on the mother node in Figure~\ref{Abbildung-Kopf-ohne-Spur}: the \locv of the accusative object was identified with the element in
 %\textsc{inher$|$slash} on the mother node and the accusative object does not occur in the valence list any more.
 
-\largerpage
 第\ref{Kapitel-HPSG}章所呈现的语法包含另外一个空成分：一个动词语迹。这一语迹也必须要消除。
 %The grammar presented in Chapter~\ref{Kapitel-HPSG} contains another empty element: a verb trace. This would then also have to be
 %eliminated.
@@ -417,7 +415,6 @@ sm edges, for tree={l sep= 5ex}
 %	 reads will he it \spacebr{}not\\
 %\glt `He won't read it.'
 \zl
-\largerpage
 两个空成分的取消导致了增加十二个新规则。这些规则并不是完全透明，并且不是非常明显为什么父节点描述了一种遵循普遍语法规律的语言对象。例如，遵循图~\ref{Abbildung-Kopf-ohne-Verbspur}模式的结构中没有中心语。因为有12条其他模式的理论和带有两个空成分的理论之间没有经验上的差异，一般会偏向于假设较少的理论（奥卡姆剃刀原则），所以会选择带有两个空成分的理论。
 %Eliminating two empty elements therefore comes at the price of twelve new rules. These rules are not particularly transparent and it is not immediately
 %obvious why the mother node describes a linguistic object that follows general grammatical laws. For example, there are no heads in the structures following
@@ -453,7 +450,6 @@ V$'$ $\to$ (V) (NP) PP*
 \ea
 V$'$ $\to$ $\epsilon$
 \z
-\addlines
 所以，虽然空成分没有明确列在词库中，但是该理论其实包含一个空成分。这一点来源于规则右边的所有成分都可以省略。（\mex{-1}f）中的规则对应图~\ref{Abbildung-Kopf-ohne-Verbspur}结构中允准的模式。在允准的LFG结构中，也不存在中心语。另外，该理论还有大量规则对应于我们从HPSG语法中取消空成分时产生的那些规则。但是，这一事实隐藏在LFG规则的表征模式之中。LFG的规则模式允许一些大规模的规则集合（甚至是使用*的无限集合）进行便捷地简写\indexlfgendc。
 %Thus, one does in fact have an empty element in the grammar although the empty element is not explicitly listed in the lexicon.
 %This follows from the optionality of all elements on the right"=hand side of a rule. The rule in (\mex{-1}f) corresponds
@@ -579,7 +575,6 @@ Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范�
 %will reproduce Egg's analysis in an MRS"=like notation.\todostefan{Kallmeyer: MRS erlaubt nur Quantoren in qeq-Ausdrücken, d.h. im strengen Sinne
 %    ist das hier keine MRS.}
 
-\addlines
 在我们研究（\ref{ex-alle-wieder}）和 （\ref{ex-wieder-alle}）之前，我们先考虑一下例（\mex{1}）中比较简单的句子：
 %Before we turn to (\ref{ex-alle-wieder}) and (\ref{ex-wieder-alle}), let us consider the simpler sentence in (\mex{1}):
 \ea
@@ -897,7 +892,6 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
          slash  & \sliste{ NP[\type{acc}] }\\
        }
 \zl
-\addlines
 在（\mex{0}）中，（\mex{0}a）是一个基本词项而（\mex{0}b）通过一个词汇规则与 （\mex{0}a）联系。另外的分析只是说明了\textsc{arg-st}特征\isfeat{arg-st}的合适取值\footnote{%
 \argstc 代表论元结构。\argstc 的取值是一个列表，包含一个中心语的所有论元。关于\argstc 更多的信息，可以参见\ref{Abschnitt-Arg-St}。
 }而\subcatc 和\slashvc 都是通过相关限制从\argstvc 推导而来。（\mex{1}）显示了两个被允准的词项。
@@ -1047,7 +1041,6 @@ sm edges
 %    91--92]{Flickinger2008a}; \citealp{MuellerPredication,MuellerCopula}).
 %}\is{empty element|)}\is{lexical rule|)}\is{transformation|)}\is{construction!resultative|)}
 
-\largerpage
 我们已经看到一些转换可以被词汇规则替换并且一些词汇规则可以被空中心语替换。下面的章节解决以下问题：提取、置换、被动等现象是不是应该像在GB/最简方案中统一描述或者像在LFG和HPSG中用不同的工具描述。
 %We have therefore seen that certain transformations can be replaced by lexical rules and also that
 %lexical rules can be replaced by empty heads. 

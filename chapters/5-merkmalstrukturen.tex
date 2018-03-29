@@ -101,7 +101,6 @@ mother		 & \ldots\\
 \textsc{father}（父亲）特征的值是包含（\mex{-1}）中同样特征的特征描写。
 %The value of the \textsc{father} feature is another feature description containing the same features as (\mex{-1}).
 
-\addlines
 在特征描写中，路径（path）\isc{路径}\is{path}是一个直接彼此承袭的序列特征。路径值（value of a path）是在路径末端的特征描写。由此，\textsc{father$|$date-of-birth}的值为\emph{10.05.1960}。
 %In feature descriptions, a \emph{path}\is{path} is a sequence of features which immediately follow each other.
 %The \emph{value of a path} is the feature description at the end of the path. Therefore,
@@ -212,7 +211,6 @@ children    & \liste{ \ms{
 %\section{Types}
 \label{sec-formalismus-typen}
 
-\addlines
 在\isc{类型|(}\is{type|(}上一节中，我们介绍了包括特征"=值偶对的特征描述，并且说明了有必要在特征上赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型是说的哪些特征可以或者必须属于一个具体的结构。前面讲到的描写表示了类型\type{person}（人）的对象。
 %In\is{type|(} the previous section, we introduced feature descriptions consisting of feature"=value pairs and showed that it makes sense to %allow for
 %complex values for features. In this section, feature descriptions will be augmented to include types. Feature descriptions which are assigned %a type
@@ -290,8 +288,7 @@ children    & list of person~
 %Both alternatives differ mostly in the fact that the information which is modelled by types is not
 %immediately accessible for structure sharing, which is discussed in Section~\ref{sec-strukturteilung}.
 
-%\addlines
-类型层级体系\label{Seite-Typhierarchie}在捕捉语言学的一般性特征方面发挥了重要的作用，这就是为什么类型层级体系和约束与信息的承继需要在后面的例子中进行解释。我们可以将类型层级体系看成是一种有效的组织信息的方式。在百科辞典中，个体之间是相互联系的，比如说猴子和老师这两个词条的联系在于二者都指向哺乳动物。针对哺乳动物的描写同样也适用于从属于它的概念中。同样，如果我们希望描写不同的电子设备，我们可以应用图\vref{fig-electric-appliance}中的层级体系。
+%类型层级体系\label{Seite-Typhierarchie}在捕捉语言学的一般性特征方面发挥了重要的作用，这就是为什么类型层级体系和约束与信息的承继需要在后面的例子中进行解释。我们可以将类型层级体系看成是一种有效的组织信息的方式。在百科辞典中，个体之间是相互联系的，比如说猴子和老师这两个词条的联系在于二者都指向哺乳动物。针对哺乳动物的描写同样也适用于从属于它的概念中。同样，如果我们希望描写不同的电子设备，我们可以应用图\vref{fig-electric-appliance}中的层级体系。
 %Type hierarchies\label{Seite-Typhierarchie} play an important role in capturing linguistic generalizations, which is why type hierarchies and
 %the inheritance of constraints and information will be explained with reference to a further example in what follows. One can think of type %hierarchies as an effective
 %way of organizing information. In an encyclopedia, the individual entries are linked in such a way
@@ -356,7 +353,6 @@ children    & list of person~
 %specific. For example, the material that can be scanned with a \type{negative scanner} is far more
 %restricted than that of the supertype \type{scanner}, since negative scanners can only scan negatives.
 
-\addlines
 模拟的对象都有一个最大的具体类型。在上例中，这意味着存在类型为“激光打印机”和“底片打印机”的对象，而不存在类型为“打印设备”的对象。这是因为，“打印设备”具体化程度不是最大的，该类型有两个次类型。
 %The objects that are modeled always have a maximally specific type. In the example above, this means that we can have objects of the type %\type{laser printer} and \type{negative scanner}
 %but not of the type \type{printing device}. This is due to the fact that \type{printing device} is not maximally specific since this type has two %subtypes.
@@ -593,7 +589,6 @@ gender & male\\
 haircolor & red
 }
 \zl
-\addlines[-1]
 例（\mex{1}）中描写的结果可能是寻找一位金发的、叫Meier的女性个体：
 %The description in (\mex{1}) would be a possible result for a search for a blonde, female individual called Meier:
 \ea
@@ -697,7 +692,6 @@ gender & mas\\
 case & nominative $\vee$ dative $\vee$ accusative~~\\
 }
 \zl
-\addlines
 与（\mex{0}b）不同的是，（\mex{0}a）并不包括格属性，这是因为我们不需要说明Frau的描写中有任何格的信息。由于所有的名词性对象都需要一个格属性，很清楚的是Frau的结构必须也有一个格特征。格特征的值属于类型\type{case}（格）。\type{case}是一个一般类型，它包括次级类型\type{nominative}（主格）、\type{genitive}（属格）、\type{dative}（与格）和\type{accusative}（宾格）。具体的语言对象总是将这些最大限度上确定的类型作为他们的格的值。（\mex{0}）的特征结构如图\ref{abb-avm-frau}和图\ref{abb-avm-mann}所示。
 %Unlike (\mex{0}b), (\mex{0}a) does not contain a case feature since we do not need to say anything special about case in the description of 
 %\emph{Frau}.
