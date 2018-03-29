@@ -49,6 +49,7 @@
 在\ref{sec-PSG-Merkmale}中，我们在短语结构语法中增加了特征。GPSG更进一步，它将词类范畴描述为特征值偶对的集合。例（\mex{1}a）中的词类范畴可以表示为（\mex{1}b）：
 %In Section~\ref{sec-PSG-Merkmale}, we augmented our phrase structure grammars with features. GPSG goes one step further and %describes categories as sets of feature"=value pairs.
 %The category in (\mex{1}a) can be represented as in (\mex{1}b):
+\exewidth{（5）}
 \eal
 \ex NP(3,sg,{nom})
 \ex \{ \textsc{cat} n, \textsc{bar} 2, \textsc{per} 3, \textsc{num} sg, \textsc{case} nom \} 
@@ -70,7 +71,7 @@
 %}
 \ea
 \label{gpsg-regeln}
-\begin{tabular}[t]{@{}l@{~$\to$~}ll@{}}
+\begin{tabular}[t]{@{}l@{~$\to$~}l@{~~}l@{}}
 V2  & H[5]                                    & （kommen（来）、schlafen（睡觉））\\
 V2  & H[6], N2[\textsc{case} acc]                &（kennen（认识）、suchen（查找））\\
 V2  & H[7], N2[\textsc{case} dat]                &（helfen（帮助）、vertrauen（相信））\\
@@ -263,6 +264,7 @@ S  & $\to$ NP[nom]& NP[dat] & NP[acc] & V\_nom\_dat\_acc\\
 \z
 如果有人想分析（\mex{-1}）中的其他语序，那么我们就需要增加五条规则，即一共有六条：
 %If one wishes to analyze the other orders in (\mex{-1}), then one requires an additional five rules, that is, six in total:
+\exewidth{（35）}
 \ea
 \label{Regeln-PSG-Abfolge}
 \begin{tabular}[t]{@{}l@{ }l@{ }l@{ }l@{ }l@{ }}
@@ -826,12 +828,12 @@ VP[\textsc{pas}] $\to$ H[3], PP[\emph{to}], (PP[\emph{by}])\\
 \eal
 \ex
 \gll {} [\sub{S} The man [\sub{VP} devoured the carcass]].\\
-{} [\sub{S} \textsc{det} 男人 [\sub{VP} 吞 \textsc{det} 骨架]]\\
+{} {} \textsc{det} 男人 {} 吞 \textsc{det} 骨架\\
 \glt `这个男人把骨架吞了。'
 %{} [\sub{S} The man [\sub{VP} devoured the carcass]].
 \ex
 \gll {} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].\\
-{} [\sub{S} \textsc{det} 男人 [\sub{VP} 递 \textsc{det} 剑 \textsc{prep} Tracy]].\\
+{} {} \textsc{det} 男人 {} 递 \textsc{det} 剑 \textsc{prep} Tracy\\
 \glt `这个男人把剑递给Tracy。'
 %{} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].
 \zl
@@ -845,12 +847,12 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 \eal
 \ex
 \gll {} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].\\
-{} [\sub{S} \textsc{det} 骨架 \textsc{aux} [\sub{VP[\textsc{pas}]} 吞 (\textsc{prep} \textsc{det} 男人)]].\\
+{} {} \textsc{det} 骨架 \textsc{aux} {} 吞 \hspaceThis{(}\textsc{prep} \textsc{det} 男人\\
 \glt `这个骨架被（这个男人）吞了。'
 %{} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].
 \ex
 \gll {} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].\\
-{} [\sub{S} \textsc{det} 剑 \textsc{aux} [\sub{VP[\textsc{pas}]} 递 \textsc{prep} Tracy (\textsc{prep} \textsc{det} 男人)]].\\
+{} {} \textsc{det} 剑 \textsc{aux} {} 递 \textsc{prep} Tracy \hspaceThis{(}\textsc{prep} \textsc{det} 男人\\
 \glt `这把剑被（这个男人）递给了Tracy。'
 %{} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].
 \zl
@@ -1201,22 +1203,22 @@ Principle}控制，它是指所有的子结点的底部特征也在父结点上�
 \label{ex-atb-gazdar}
 \ex
 []{ 
-\gll The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP \& S/NP)}\\
-\textsc{det} 狗窝 \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\
+\gll The kennel     which Mary made and Fido sleeps in has been stolen.\\
+\textsc{det} 狗窝 \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\	 \jambox{(= S/NP \& S/NP)}
 \glt `Mary做的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP %\& S/NP)}
 }
 \ex
 []{ 
-\gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= S/PP \& S/PP)}\\
-\textsc{det} 狗窝 \textsc{prep} \textsc{conj} Mary 放 药 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\
+\gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.\hspace{-2pt}\\
+\textsc{det} 狗窝 \textsc{prep} \textsc{conj} Mary 放 药 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/PP \& S/PP)}
 \glt `Mary放药的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= %S/PP \& S/PP)}
 }
 \ex
 [*]{
-\gll The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP \& S/PP)}\\
-\textsc{det} 狗窝 (\textsc{prep}) \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\
+\gll The kennel (in) which Mary made and Fido sleeps has been stolen.\hspace{-2pt}\\
+\textsc{det} 狗窝 \hspaceThis{(}\textsc{prep} \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/NP \& S/PP)}
 %[*]{The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP %\& S/PP)}
 }
 \zl
@@ -1378,9 +1380,11 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %still used in HPSG\indexhpsg and variants of Construction Grammar\indexcxg to this day. See also
 %Section~\ref{sec-ld-lp-tag} for a Tree Adjoining Grammar variant that separates dominance from precedence.
 
-\section*{思考题}
+%\section*{思考题}
 %\section*{Comprehension questions}
 
+\bigskip
+\questions{
 \begin{enumerate}
 \item 在ID/LP形式下，语法是指什么？
 %\todoandrew{What does it mean for a
@@ -1391,9 +1395,10 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 %\item How are linear variants of constituents in the middle field handled by GPSG?
 %\item Think of some phenomena which have been described by transformations and consider how GPSG has analyzed these data using %other means.
 \end{enumerate}
+}
 
-\section*{Exercises}
-
+%\section*{Exercises}
+\exercises{
 \begin{enumerate}
 \item 请写出能够分析下列句子的一个小型的GPSG语法：
 %\item Write a small GPSG grammar which can analyze the following sentences:
@@ -1421,10 +1426,12 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 注意要在每条规则中包括所有的论元，而不是应用一条引入主语的元规则。
 %Include all arguments in a single rule without using the metarule for introducing subjects.
 \end{enumerate}
+}
 
-\section*{延伸阅读}
+%\section*{延伸阅读}
 %\section*{Further reading}
 
+\furtherreading{
 GPSG的主要文献是\citew*{GKPS85a}。\citet{Jacobson87b}对该书进行了严肃的评判。有些有问题的分析与范畴语法\indexcgc 中的方法进行了对比，而且参考了受到范畴语法重大影响的\citet{Pollard84a-u}，这篇文献被认为是HPSG的先驱之作。Jacobson的一些设想可以在HPSG晚一些的文献中找到。
 %The main publication in GPSG is \citew*{GKPS85a}. This book has been critically discussed by \citet{Jacobson87b}. Some problematic %analyses
 %are contrasted with alternatives from Categorial Grammar\indexcg and reference is made to the heavily Categorial Grammar influenced work %of \citet{Pollard84a-u}, which
@@ -1436,6 +1443,7 @@ GPSG的主要文献是\citew*{GKPS85a}。\citet{Jacobson87b}对该书进行了�
 
 GPSG的历史起源可以在\citew{Pullum89a}中找到相关的信息。
 %A history of the genesis of GPSG can be found in \citew{Pullum89a}.
+}
 
 % Zu kurz
 %\citet[Abschnitt~5.6.4]{Rambow94a} vergleicht seine TAG"=Analyse mit der GPSG"=Variante von \citet{Uszkoreit87a}.
