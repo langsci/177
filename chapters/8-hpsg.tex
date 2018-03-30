@@ -225,7 +225,7 @@ HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受�
 \ea
 \label{psg-valenz}
 %\oneline{%
-\begin{tabular}[t]{@{}l@{~$\to$~}l@{\hspace{3em}}l@{}}
+\begin{tabular}[t]{@{}l@{~$\to$~}l@{\hspace{2em}}l@{}}
       S & NP[\type{nom}], V                             & \emph{X schläft}（X正在睡觉）\\
  %      `X is sleeping'\\
       S & NP[\type{nom}], NP[\type{acc}], V                         & \emph{X Y erwartet} （X在等Y）\\
@@ -1504,10 +1504,10 @@ lex-dtr \onems[stem]{
 %(\mex{1}) shows prototypical valence lists for finite verbs:
 \ea
 \label{ex-verben-active}
-\begin{tabular}[t]{@{}l@{~}l@{~}l}
-a. & schläft（睡觉）:       & \subcat \sliste{ NP[\type{str}]$_j$ }\\
-b. & unterstützt （支持）: & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{str}]$_k$ }\\
-c. & hilft （帮助）:          & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$ }\\
+\begin{tabular}[t]{@{}l@{~}l@{~~}l}
+a. & schläft（睡觉）:       & \subcat \sliste{ NP[\type{str}]$_j$ }\\[1mm]
+b. & unterstützt （支持）: & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{str}]$_k$ }\\[1mm]
+c. & hilft （帮助）:          & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$ }\\[1mm]
 d. & schenkt （给）:        & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
 %a. & \emph{schläft} `sleeps':       & \subcat \sliste{ NP[\type{str}]$_j$ }\\
 %b. & \emph{unterstützt} `supports': & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{str}]$_k$ }\\
@@ -1577,10 +1577,10 @@ d. & schenkt （给）:        & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{l
 %embedded verb are taken over by the auxiliary.  After combining the participle with the passive auxiliary,
 %we arrive at the following \subcat lists:
 \ea
-\begin{tabular}[t]{@{}l@{~}l@{~}l}
-a. & geschlafen wird （被睡觉）:      & \subcat \sliste{ }\\
-b. & unterstützt wird （被支持）: & \subcat \sliste{ NP[\type{str}]$_k$ }\\
-c. & geholfen wird（被帮助）:        & \subcat \sliste{ NP[\type{ldat}]$_k$ }\\
+\begin{tabular}[t]{@{}l@{~}l@{~~}l}
+a. & geschlafen wird （被睡觉）:      & \subcat \sliste{ }\\[1mm]
+b. & unterstützt wird （被支持）: & \subcat \sliste{ NP[\type{str}]$_k$ }\\[1mm]
+c. & geholfen wird（被帮助）:        & \subcat \sliste{ NP[\type{ldat}]$_k$ }\\[1mm]
 d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
 %a. & \emph{geschlafen wird} `slept is':      & \subcat \sliste{ }\\
 %b. & \emph{unterstützt wird} `supported is': & \subcat \sliste{ NP[\type{str}]$_k$ }\\
@@ -2548,7 +2548,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 %Figure~\vref{Abbildung-die-Zerstorung}.
 \ea
 \gll die Zerstörung der Stadt durch die Soldaten\\
-	 \textsc{det} 毁灭 \textsc{prep}.\textsc{det} 城市 \textsc{prep} \textsc{det} 士兵\\
+	 \textsc{det} 毁灭 \textsc{det} 城市 \textsc{prep} \textsc{det} 士兵\\
 %	 the destruction of.the city by the soldiers\\
 \z
 \begin{figure}
@@ -2744,7 +2744,7 @@ HPSG与范畴语法的不同之处在于\indexcgc，它假定了更多的特征�
 %(\mex{1}) as -- unlike in Categorial Grammar -- the relative pronoun does not have to know anything about the contexts in which it can be %used.
 \ea
 \gll der Mann, [\sub{RS} [\sub{NP} den] [\sub{S/NP} wir kennen]]\\
-	 \textsc{det} 男人 {} {} \textsc{conj} {} 我们 认识\\
+	 \textsc{det} 男人 {} {} \textsc{rel} {} 我们 认识\\
 \glt `我们认识的那个男人'
 %	 the man {} {} that {} we know\\
 %\glt `the man that we know'
@@ -2886,9 +2886,11 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \isc{中心语驱动的短语结构语法|)}\is{Head-Driven Phrase Structure Grammar (HPSG)|)}
 
 
-\section*{思考题}
+%\section*{思考题}
 %\section*{Comprehension questions}
 
+\bigskip
+\questions{
 \begin{enumerate}
 \item 在HPSG中，句法树的地位是什么?
 \item 在例（\mex{1}）的分析中，格指派是如何发生的？?
@@ -2904,11 +2906,11 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \item 什么是联接（linking），它在HPSG中是如何表示的？
 %\item What is \emph{linking} and how is it accounted for in HPSG?
 \end{enumerate}
+}
 
-
-\section*{练习题}
+%\section*{练习题}
 %\section*{Exercises}
-
+\exercises{
 \begin{enumerate}
 \item 请给出（\mex{1}）的特征描写，dass不用分析。
 %\item Give a feature description for (\mex{1}) ignoring \emph{dass}.
@@ -2935,10 +2937,11 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \zl
 
 \end{enumerate}
+}
 
-\section*{延伸阅读}
+%\section*{延伸阅读}
 %\section*{Further reading}
-
+\furtherreading{
 这里，理论各部分的表示跟其他理论一样都是相对来说比较简短的。对于HPSG理论更为全面的介绍，包括特征构架的动机，请参阅\citew{MuellerLehrbuch1}。\nocite{Mueller99a,Mueller2002b}特别是，这里简略说明了被动的分析。更为全面的分析包括非宾格动词、形容词分词、情态不及物动词、不同的被动变体以及长被动\isc{被动!长被动}\is{passive!long}，这些可以参考\citew[\S~3]{Mueller2002b}和\citew[\S~17]{MuellerLehrbuch1}。
 %Here, the presentation of the individual parts of the theory was -- as with other theories -- kept relatively short. For a more comprehensive
 %introduction to HPSG, including motivation of the feature geometry, see \citew{MuellerLehrbuch1}.\nocite{Mueller99a,Mueller2002b}
@@ -2948,7 +2951,14 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 
 HPSG理论的综述可以参考\citew{LM2006a}、\citew{PK2006a-u}、\citew{Bildhauer2014a-u}和\citew{MuellerHPSGHandbook}。
 %Overviews of HPSG can be found in \citew{LM2006a}, \citew{PK2006a-u}, \citew{Bildhauer2014a-u} and \citew{MuellerHPSGHandbook}.
+}
 
 % lulu DONE
 % wsun DONE
 %      <!-- Local IspellDict: en_US-w_accents -->
+
+
+
+% transl of (62) missing
+% einheitliche Behandlung von Relativpronomina
+
