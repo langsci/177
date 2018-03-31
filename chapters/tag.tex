@@ -383,7 +383,7 @@ LP$^\alpha_2$ = \{ \}
 %  \glt `that the detective promised the client to indict the suspect of the crime'
   \glt `探员向客户保证会起诉犯罪活动的嫌疑人'
 \ex\label{Beispiel-Joshi-NP4} 
-\gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~~~~~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
+\gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
 {}     \textsc{conj}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     \textsc{inf} 起诉  保证\\
 \zl
 相关动词的LTAG基本树参见图\vref{Abbildung-Kontrollverben-TAG}。
@@ -569,11 +569,7 @@ tag
 \isc{多成分树邻接语法}\is{Multi-Component TAG}
 \isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|)}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|)} 
 %Andere Varianten, die andere Konstituentenanordnungen zulassen sind V-TAG
-其它允准上述结构成分语序的TAG变体包括V-TAG
-\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a} 
-和TT-MC-TAG
-\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\citep{Lichte2007a}。
-\isc{成分序列|)}\is{constituent order|)}
+其它允准上述结构成分语序的TAG变体包括V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a}和TT-MC-TAG\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\citep{Lichte2007a}。\isc{成分序列|)}\is{constituent order|)}
 
 \section{动词位置}
 
@@ -604,7 +600,7 @@ tag
 图\vref{abb-nld-TAG}是（\mex{1}）分析的一个实例：
 \ea
 \gll Who$_i$ did John tell Sam that Bill likes \_$_i$?\\
-谁$_i$ \textsc{aux} John 告诉 Sam \textsc{conj} Bill 喜欢 \_$_i$\\
+     谁 \textsc{aux} John 告诉 Sam \textsc{conj} Bill 喜欢 \\
 \glt `John告诉Sam了，Bill喜欢谁？'
 \z
 %
@@ -684,7 +680,7 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 这样一个插入性的操作可以重复很多次，所以在像（\mex{1}）这样的句子中，who可以跨越多个小句边界移动到很远的位置：
 \ea 
 \gll Who$_i$ did John tell Sam that Mary said that Bill likes \_$_i$?\\
-谁$_i$ \textsc{aux} John 告诉 Sam \textsc{conj} Mary 说 \textsc{conj} Bill 喜欢 \_$_i$\\
+     谁      \textsc{aux} John 告诉 Sam \textsc{conj} Mary 说 \textsc{conj} Bill 喜欢\\
 \glt `John告诉Sam，Mary说Bill喜欢谁？'
 \z
 %
@@ -1055,21 +1051,21 @@ V"=TAG
 \gll dass der Hund bellt, der  die Katze jagt,  die  die Maus  gefangen hat\\
 %    that the dog  barks  that the cat   chases that the mouse caught   has\\
 %\glt `that the dog that chases the cat that caught the mouse barks'
-     \textsc{conj} \textsc{det} 狗  叫  \textsc{conj} \textsc{det} 猫 追 \textsc{conj} \textsc{det} 老鼠 捉 \textsc{aux}   \\
+     \textsc{conj} \textsc{det} 狗  叫  \textsc{rel} \textsc{det} 猫 追 \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \ex 
 \gll dass der Hund, [$_1$ der  die Katze, [$_2$ die  die Maus  gefangen hat,~$_2$] jagt~$_1$] bellt\\
      %that the dog   {}    that the cat    {}    that the mouse caught   has        chases    barks\\
-     \textsc{conj} \textsc{det} 狗  {}  \textsc{conj} \textsc{det} 猫 {} \textsc{conj} \textsc{det} 老鼠 捉 \textsc{aux}   捉 叫 \\
+     \textsc{conj} \textsc{det} 狗  {}  \textsc{rel} \textsc{det} 猫 {} \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   捉 叫 \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \zl
 
 \noindent
 这里有意思的是可以构建对于听者来说更为简单的中心嵌入（center embedding）的例子。基于这样的方式，我们可以构建一些可以被加工处理的数量更多的中心嵌入的例子，从而说明了严格假定关系从句最多只能做两级中心嵌入的语法是错误的。以下是Hans Uszkoreit\aimention{Hans Uszkoreit}举的例子，它更容易被加工，因为所有的嵌入的关系从句都被隔离开来并且动词和更高层的小句也被隔离了。
 \ea
-\gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$ die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
+\gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$~die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
 lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr einem~~~~~~~ Parkplatz weichen.\\
-\textsc{det} 长椅 {} \textsc{prep} 其 当时 \textsc{det} 老.人 \textsc{prep}.\textsc{det} 村庄 {} \textsc{conj} 所有 儿童 {} \textsc{conj} 来.\textsc{prep} {} 友好地 目光 给 {}
+\textsc{det} 长椅 {} \textsc{prep} 其 当时 \textsc{det} 老.人 \textsc{det} 村庄 {} \textsc{rel} 所有 儿童 \hspaceThis{[$_3$~}\textsc{rel} 来.\textsc{prep} {} 友好地 目光 给 {}
 长 小时 安静 彼此相邻 坐 {} 必须 \textsc{prep}.\textsc{det} 上一个 年 一 停车场 让道\\
 %the benches {} on which back.then the old.people of.the village {} that all children {} that came.by {} friendly glances gave {}
 %long hours silent next.to.each.other sat {} must in.the last year a car.park give.way.to\\
@@ -1145,12 +1141,12 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \glt 倾向于解读为：`Hanna一直都知道她希望离开孩子。' 
 }
 \ex[]{
-  \raggedright
+\raggedright
 \gll Hanna hat immer schon gewußt, daß sie der Mann verlassen will.\\
 %     Hanna has always already known that she the.\nom{} man leave wants.to\\
-     Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det}.\nom{} 男人 离开 希望 \\ 
-%\glt `Hanna has always known that the man wants to leave her.'
+     Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det}.\nom{} 男人 离开 希望\\ 
 \glt `Hanna一直都知道那个男人希望离开她。' 
+%\glt `Hanna has always known that the man wants to leave her.'
 }
 \zl
 
@@ -1196,7 +1192,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \gll weil    er        den        Mann dem        Jungen des Freundes gedenken helfen lassen will\\
 %     because he.\nom{} the.\acc{} man  the.\dat{} boy    of.the.\gen{} friend remember help let wants\\
 %\glt `because he wants to let the man help the boy remember his friend'
-     因为 他.\nom{} \textsc{det}.\acc{} 男人  \textsc{det}.\dat{} 男孩    \textsc{prep}.\textsc{det}.\gen{} 朋友 记得 帮助 让 希望 \\
+     因为 他.\nom{} \textsc{det}.\acc{} 男人  \textsc{det}.\dat{} 男孩    \textsc{det}.\gen{} 朋友 记得 帮助 让 希望 \\
 \glt `因为他希望让那个男人帮助那个男孩记得他的朋友' 
 \z
 另一个策略是控制动词对有生和无生宾语的选择，通过论元的有生性来辅助解释。
@@ -1239,22 +1235,23 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 }，其词典中并不包含空成分。空成分可以出现在树中，树再作为一个整体出现在词典中。
 
 基本树的大小不受限制，这使得TAG在分析习语的时候特别方便（见第\ref{Abschnitt-Diskussion-Lokalitaet}节）。
-因为递归从基本树中排除掉了，因此在导出树中距离特别远的元素可以包含在同一个基本树中（扩展的局域性
-\isc{定域}\is{locality}）。
+因为递归从基本树中排除掉了，因此在导出树中距离特别远的元素可以包含在同一个基本树中（扩展的局域性\isc{定域}\is{locality}）。
 
 \citet*{KKNV95a}论证了满足特定要求的HPSG语法可以转写为TAG语法。通过这种方式，我们可以得到一个计算复杂度
 \isc{生成能力}\is{capacity!generative}更明确的语法。HPSG语法一般都是0-型文法，而不同的TAG变体可以用来刻画从2-型语言到弱上下文相关语言
 \isc{弱上下文相关语言}\is{mildly context"=sensitive grammar}之间的不同语言\citep{Joshi85a-u}。\citet*{YMTT2001a}提出了一个算法可以将FB"=LTAG语法翻译成弱上下文相关语言的HPSG文法。
 
-\section*{思考题}
-
+%\section*{思考题}
+\bigskip
+\questions{
 \begin{enumerate}
 \item TAG是如何分析长距离依存的？在分析长距离依存的时候是否需要空成分？
 \item 是否有可能通过标准的TAG过程来分析多个动词的论元的语序重列问题？
 \end{enumerate} 
+}
 
-\section*{练习题}
-
+%\section*{练习题}
+\exercises{
 \begin{enumerate}
 \item 用LTAG分析下列词串：
 \ea
@@ -1264,9 +1261,10 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \glt `国王的皇家雇工'
 \z
 \end{enumerate}
+}
 
-\section*{延伸阅读}
-
+%\section*{延伸阅读}
+\furtherreading{
 重要的论文包括\citew*{JLT75a-u}、\citew{Joshi87a-u}和\citew{JS97a}。很多更关心语言本体的读者并不会过多涉猎讨论TAG形式性质的论文。
 \citew{KJ85a}很好地总结了针对语言现象的分析。 针对TAG的语言学与计算语言学的论文可以在Abeill{\'e}和Rambow\nocite{AR2000a-ed-not-crossreferenced}所编辑的论文中找到。\citet{Rambow94a}比较了他的TAG变体（V"=TAG
 \isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}）和Karttunen的激进词汇主义（Radical Lexicalism）方法、Uszkoreit的GPSG\indexgpsgc、组合范畴语法\indexcgc, HPSG\indexhpsgc 以及依存语法\indexdgc。 
@@ -1279,7 +1277,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \isc{树邻接语法（TAG）|)}\is{Tree Adjoining Grammar (TAG)|)}
 
 \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附接到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为“mutmaßlichen Mörder”（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
-
+}
 
 %      <!-- Local IspellDict: en_US-w_accents -->
 
