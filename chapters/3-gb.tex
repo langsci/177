@@ -1065,7 +1065,7 @@ sm edges
 \gll Will Ann read the newspaper?\\
       \textsc{aux} Ann 读 \textsc{det} 报纸\\
 \z
-让我们来假设，问句的结构与带有标补语的句子的结构是一致的。这就意味着问句也像CP。但是，与（\mex{-1}）中的句子不同，这里并没有从属连词。在问句的D"=结构中，\cnullc 位置是空的，而且助动词随后被移到这个位置上。图\vref{Abb-GB-Ja-Nein}是对（\mex{0}）的分析。
+让我们来假设，问句的结构与带有标补语的句子的结构是一致的。这就意味着问句也像CP。但是，它与（\mex{-1}）中的句子不同，这里并没有从属连词。在问句的D"=结构中，\cnullc 位置是空的，而且助动词随后被移到这个位置上。图\vref{Abb-GB-Ja-Nein}是对（\mex{0}）的分析。
 %Let us assume that the structure of questions corresponds to the structure of sentences with complementizers. This means that questions are also
 %CPs. Unlike the sentences in (\mex{-1}), however, there is no subordinating conjunction. In the D"=structure of questions, the \cnull position is
 %empty and the auxiliary verb is later moved to this position. Figure~\vref{Abb-GB-Ja-Nein} shows an analysis of (\mex{0}).
@@ -1116,7 +1116,7 @@ sm edges
 [IP
 	[NP[Ann; Ann,roof]]
 	[I$'$
-		[I$^0$[-s]]
+		[I$^0$[-s;-\textsc{3sg}]]
 		[VP
 			[V$'$
 				[V$^0$[read-;读-]]
@@ -1615,7 +1615,7 @@ sm edges
 				[V$'$
 					[NP[diesen Mann;这个 男人, roof]]
 					[V$^0$[\trace$_j$]]]]
-			[I$^0$[kenn-$_j$ -t;认识- -s]]]]]]
+			[I$^0$[kenn-$_j$ -t;认识- -\textsc{3sg}]]]]]]
 \end{forest}
 \caption{\label{Abb-GB-Komplementierer}在\cnullc 中带有标补语的句子}
 %\caption{\label{Abb-GB-Komplementierer}Sentence with a complemen\-ti\-zer in \cnull}
@@ -1655,7 +1655,7 @@ sm edges
 sm edges
 [CP
 [C$'$
-	[C$^0$[(kenn-$_j$ -t)$_k$;认识]]
+	[C$^0$[(kenn-$_j$ -t)$_k$;认识- -\textsc{3sg}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[I$'$
@@ -1723,7 +1723,7 @@ sm edges
 [CP
 [NP [diesen Mann$_i$;这个男人, roof]]
 [C$'$
-	[C$^0$[(kenn-$_j$ -t)$_k$; 认识- -s]]
+	[C$^0$[(kenn-$_j$ -t)$_k$; 认识- -\textsc{3sg}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[I$'$
@@ -1962,7 +1962,7 @@ sm edges
 			[V$'$
 				[NP,   name=aobject [den Jungen;\textsc{det} 男孩, roof]]
 				[V$^0$,name=verb    [zeig-;展示-]]]]]
-	[I$^0$, name=Infl [-t;-s]]]]
+	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]]
 \draw[->,dotted] (Infl.north) .. controls (3.5,-0.3) and (-1.5,.5) .. ($(subject.north)+(-.1,.1)$);
 \draw[->]        (verb.north) .. controls (2.8,-2.9) and (-.4,.5) .. ($(subject.north)+(0,.1)$);
 \draw[->,dashed] (verb.north) .. controls (2.8,-3.0) and (0,-3.3) .. ($(dobject.north)+(0,.1)$);
@@ -2001,8 +2001,8 @@ sm edges
 			[NP, name=dobject [der Frau;\textsc{det} 女人, roof]]
 			[V$'$
 				[NP,   name=aobject [\_$_i$]]
-				[V$^0$,name=verb [gezeigt wir-;被展示, roof]]]]]
-	[I$^0$ ,name=Infl [-\/d]]]]
+				[V$^0$,name=verb [gezeigt wir-;展示 \textsc{aux}, roof]]]]]
+	[I$^0$ ,name=Infl [-\/d;-\textsc{3sg}]]]]
 \draw[->,dotted] (Infl.north) .. controls (2.5,.35)   and (-1.5,-.05) .. ($(subject.north)+(0,.1)$);
 \draw[->,dashed] (verb.north) .. controls (2.2,-3.4) and (0,-3.1) .. ($(dobject.north)+(0,.1)$);
 \draw[->]        (verb.north) .. controls (2.0,-4.55) and (1.2,-4.35) .. ($(aobject.north)+(0,.1)$);
@@ -2226,7 +2226,7 @@ sm edges
 			[V$'$
 				[NP   [\trace$_i$]]
 				[V$^0$  [gib-;给-]]]]]
-	[I$^0$, name=Infl [-t;-s]]]] ]
+	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]] ]
 \end{forest}
 \caption{作为IP附加语的局部语序重列分析}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
 %\caption{Analysis of local reordering as adjunction to IP}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
@@ -2450,7 +2450,7 @@ implementing the grammar as a calculating task on a computer so that it
 becomes possible to verify to which degree the result deviates from the
 language to be described. }
 \end{quote}
-Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请看\citew{Grewendorf89a}和 \citew{Fanselow92}。除了对于这些现象的分析，\citep{Lenerz77}提出了可能的短语成分位置的限制条件，还有格指派分析\citep*{YMJ87,Meurers99b,Prze99}，动词性复杂结构\isc{动词性复杂结构}\is{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
+Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请看\citew{Grewendorf89a}和\citew{Fanselow92}。除了对于这些现象的分析，\citep{Lenerz77}提出了可能的短语成分位置的限制条件，还有格指派分析\citep*{YMJ87,Meurers99b,Prze99}，动词性复杂结构\isc{动词性复杂结构}\is{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
 \citealp{Meurers99c}; \citealp{Mueller99a,Mueller2002b}; \citealp{deKuthy2002a}）。所有这些现象都是彼此联系的！
 %Bierwisch's claim is even more valid in light of the empirical progress made in the last decades. For example,
 %\citet{Ross67} identified restrictions for movement and long"=distance dependencies and \citet{Perlmutter78} discovered
@@ -2772,7 +2772,7 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %     the man.\nom{} helps the.\dat{} woman\\
 %\glt `The man is helping the woman.'
 \zl
-请这样分析被动句：位于主语的名词短语是从宾语的位置移动而来的，也就是说，主语并不是一个空的虚指代词。
+\hspace{+2em}请这样分析被动句：位于主语的名词短语是从宾语的位置移动而来的，也就是说，主语并不是一个空的虚指代词。
 %For the passive sentences, use the analysis where the subject noun phrase is moved from the object position, that is, the analysis
 %without an empty expletive as the subject.
 \end{enumerate}
@@ -2782,7 +2782,7 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %\section*{Further reading}
 
 \furtherreading{
-在\ref{Abschnitt-GB-allgemein}到\ref{sec-GB-lokale-Umstellung}，我参考了Peter Gallmann\aimention{Peter Gallmann} 2003年以来的文献材料。但是，我在很多地方做了一些调整。对于其中的任何错误与不足，我个人负全部责任。有关Peter Gallmann的材料，请看\url{http://www.syntax-theorie.de}。
+\hspace{+2em}在\ref{Abschnitt-GB-allgemein}到\ref{sec-GB-lokale-Umstellung}，我参考了Peter Gallmann\aimention{Peter Gallmann} 2003年以来的文献材料。但是，我在很多地方做了一些调整。对于其中的任何错误与不足，我个人负全部责任。有关Peter Gallmann的材料，请看\url{http://www.syntax-theorie.de}。
 %For Sections~\ref{Abschnitt-GB-allgemein}--\ref{sec-GB-lokale-Umstellung}, I used material from Peter Gallmann\aimention{Peter Gallmann}
 %from 2003 \citep{Gallmann2003a}. This has been modified, however, at various points. I am solely responsible for any mistakes or inadequacies.
 %For current materials by Peter Gallmann, see \url{http://www.syntax-theorie.de}. 
