@@ -37,15 +37,14 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative g
 %in the following way (see also \citealp[\page 162]{Chomsky95a-u}):
 \begin{quote}
 一种语言的语法应该是对理想的听者--说者的内在能力的描写。进而，如果这种语法能够完美地表示出来——换言之，如果它不依赖于读者的智力，而只是针对他的贡献给出一个明确的分析的话——我们就可以将之称为生成语法（generative
-  grammar）。\citep[\page 4]{Chomsky65a}
+  grammar）。\citep[\page 4]{Chomsky65a}\footnote{
+A grammar of a language purports to be a description of the ideal speaker-hearer's intrinsic
+competence. If the grammar is, furthermore, perfectly explicit\,--\,in other words, if it does not
+rely on the intelligence of the understanding reader but rather provides an explicit analysis of
+his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
+  grammar}. }
 \end{quote}
-%\begin{quote}
-%A grammar of a language purports to be a description of the ideal speaker-hearer's intrinsic
-%competence. If the grammar is, furthermore, perfectly explicit\,--\,in other words, if it does not
-%rely on the intelligence of the understanding reader but rather provides an explicit analysis of
-%his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
-%  grammar}. \citep[\page 4]{Chomsky65a}
-%\end{quote}
+
 按照这一定义，本书讨论的所有语法理论都应该被看作是生成语法。为了进一步区分，有时会用主流生成语法（Mainstream Generative Grammar，MGG）\isc{主流生成语法}\is{Mainstream
   Generative Grammar}这一概念\citep[\page 3]{CJ2005a}来表示乔姆斯基式模型。在这一章，我将阐述一个发展全面且影响深远的乔姆斯基式语法，即\gbtc。有关乔姆斯基的最简方案的最新内容将在第\ref{chapter-mp}章具体说明。
 %In this sense, all grammatical theories discussed in this book would be viewed as generative grammars.
@@ -2438,21 +2437,19 @@ von der zu beschreibenden Sprache abweicht.}
 %Elektronenrechner realisiert wird, so daß überprüft werden kann, in welchem Maße das Resultat
 %von der zu beschreibenden Sprache abweicht.}
 \begin{quote}
-很有可能的是，由我们构造的规则所生成的句子出乎意料地是不合乎语法的，也就是说，它们由于某些属性而违反了合格性，而这些属性是在我们的检验中要特别排除的。这就意味着，语法是对一种语言的结构的假说。对于自然语言的语法的合格性的系统诊断显然不能再由人工来解决。这一任务可以由计算机按照计算任务来进行实现，这样就可以对所描述语言派生出的结果进行检验。\citep*[\page 163]{Bierwisch63}
+很有可能的是，由我们构造的规则所生成的句子出乎意料地是不合乎语法的，也就是说，它们由于某些属性而违反了合格性，而这些属性是在我们的检验中要特别排除的。这就意味着，语法是对一种语言的结构的假说。对于自然语言的语法的合格性的系统诊断显然不能再由人工来解决。这一任务可以由计算机按照计算任务来进行实现，这样就可以对所描述语言派生出的结果进行检验。\citep*[\page 163]{Bierwisch63}\footnote{
+It is very possible that the rules that we formulated generate
+sentences which are outside of the set of grammatical sentences in an
+unpredictable way, that is, they violate grammaticality due to
+properties that we did not deliberately exclude in our examination. This
+is meant by the statement that a grammar is a hypothesis about the
+structure of a language. A systematic check of the implications of a
+grammar that is appropriate for natural languages is surely a task that
+cannot be done by hand any more. This task could be solved by
+implementing the grammar as a calculating task on a computer so that it
+becomes possible to verify to which degree the result deviates from the
+language to be described. }
 \end{quote}
-%\begin{quote}
-%It is very possible that the rules that we formulated generate
-%sentences which are outside of the set of grammatical sentences in an
-%unpredictable way, that is, they violate grammaticality due to
-%properties that we did not deliberately exclude in our examination. This
-%is meant by the statement that a grammar is a hypothesis about the
-%structure of a language. A systematic check of the implications of a
-%grammar that is appropriate for natural languages is surely a task that
-%cannot be done by hand any more. This task could be solved by
-%implementing the grammar as a calculating task on a computer so that it
-%becomes possible to verify to which degree the result deviates from the
-%language to be described. \citep*[\page 163]{Bierwisch63}
-%\end{quote}
 Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请看\citew{Grewendorf89a}和 \citew{Fanselow92}。除了对于这些现象的分析，\citep{Lenerz77}提出了可能的短语成分位置的限制条件，还有格指派分析\citep*{YMJ87,Meurers99b,Prze99}，动词性复杂结构\isc{动词性复杂结构}\is{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
 \citealp{Meurers99c}; \citealp{Mueller99a,Mueller2002b}; \citealp{deKuthy2002a}）。所有这些现象都是彼此联系的！
 %Bierwisch's claim is even more valid in light of the empirical progress made in the last decades. For example,
@@ -2467,24 +2464,22 @@ Bierwisch所说的这些观点在过去几十年经验主义的研究中显得�
 再来看其他内容：
 %Consider another quote:
 \begin{quote}
-早期语言学研究的目标，也是计算语言学中语言学部分的核心目标，是开发出一种语法能够针对英语中的每一句话都指派给一个合理的句法结构。在理论语言学中，这一目标并不重要。特别是在管辖约束理论中，为了追求语法的深层原则早就抛弃了大规模的语法片段。问题在于，不管我们分析小规模语法片段分析得有多深，我们都无法知道识别正确分析这一问题到底有多难。大的语法片段不仅仅是小语法片段的倍数\,--\,当我们开始研究大片段的时候，就已经有质的变化了。当语法能够适应的结构增加，需要被排除的句子的剖析结构也显著地增加。\citep[\page 20]{Abney96a}
+早期语言学研究的目标，也是计算语言学中语言学部分的核心目标，是开发出一种语法能够针对英语中的每一句话都指派给一个合理的句法结构。在理论语言学中，这一目标并不重要。特别是在管辖约束理论中，为了追求语法的深层原则早就抛弃了大规模的语法片段。问题在于，不管我们分析小规模语法片段分析得有多深，我们都无法知道识别正确分析这一问题到底有多难。大的语法片段不仅仅是小语法片段的倍数\,--\,当我们开始研究大片段的时候，就已经有质的变化了。当语法能够适应的结构增加，需要被排除的句子的剖析结构也显著地增加。\citep[\page 20]{Abney96a}\footnote{
+A goal of earlier linguistic work, and one that is still a central goal of the
+linguistic work that goes on in computational linguistics, is to develop grammars
+that assign a reasonable syntactic structure to every sentence of English,
+or as nearly every sentence as possible. This is not a goal that is currently much
+in fashion in theoretical linguistics. Especially in Government-Binding theory
+(GB), the development of large fragments has long since been abandoned in
+favor of the pursuit of deep principles of grammar.
+The s\textsc{cop}e of the problem of identifying the correct parse cannot be appreciated
+by examining behavior on small fragments, however deeply analyzed.
+Large fragments are not just small fragments several times over\,--\,there is a
+qualitative change when one begins studying large fragments. As the range of
+constructions that the grammar accommodates increases, the number of undesired parses for sentences increases dramatically.
+}
 \end{quote}
-%\begin{quote}
-%A goal of earlier linguistic work, and one that is still a central goal of the
-%linguistic work that goes on in computational linguistics, is to develop grammars
-%that assign a reasonable syntactic structure to every sentence of English,
-%or as nearly every sentence as possible. This is not a goal that is currently much
-%in fashion in theoretical linguistics. Especially in Government-Binding theory
-%(GB), the development of large fragments has long since been abandoned in
-%favor of the pursuit of deep principles of grammar.
-%The s\textsc{cop}e of the problem of identifying the correct parse cannot be appreciated
-%by examining behavior on small fragments, however deeply analyzed.
-%Large fragments are not just small fragments several times over\,--\,there is a
-%qualitative change when one begins studying large fragments. As the range of
-%constructions that the grammar accommodates increases, the number of undesired parses for sentences
-%increases dramatically. \citep[\page 20]{Abney96a}
-%\end{quote}
-%
+
 所以，正如Bierwisch和Abney所指出的，我们非常需要发展出一个能够解释人类语言的大规模片段的合理理论。但是理论语言学家所要实现的则更多：他们的目标是构建出能够完美地解释所有语言的限制条件，或者至少对某些语言类型来说是这样的。这样的话，我们就需要对不仅仅是一种语言，而是许多语言的交互关系有一个整体的认识。这个任务太难了，以至于个体的研究者不能胜任。在这点上，计算机可以提供帮助，因为他们可以立即指出理论中不一致的地方。在去掉这些不一致之后，计算机实现程序可以用来系统地测试数据或者语料库，进而检查理论在经验上是否是自足的（Müller,
   \citeyear[\S~22]{Mueller99a}; \citeyear{MuellerCoreGram}; \citeyear{MuellerKernigkeit}; \citealp{OF98}; \citealp{Bender2008c}, 参见\ref{sec-formal}）。
 %So, as Bierwisch and Abney point out, developing a sound theory of a large fragment of a human
@@ -2506,25 +2501,25 @@ Bierwisch所说的这些观点在过去几十年经验主义的研究中显得�
 \begin{quote}
 %It is this point of view that lies behind the rough distinction between leading ideas and execution, 
 %and that motivates much of what follows. 
-我想我们实际上开始得到语法的一些基本原则，这些原则也许处于合适的抽象层面上。同时，我们有必要对它们进行检验，并且通过开发十分具体的机制来测试他们在事实方面的充分性。然后，我们应该尽量区分开具有前瞻性思想的讨论与选取了具体实现形式的讨论。\citep*[\page 2--3]{Chomsky81a}
-%I think that we are, in fact, beginning to approach a grasp of certain 
-%basic principles of grammar at what may be the appropriate level of abstraction. At the same time, 
-%it is necessary to investigate them and determine their empirical adequacy by developing quite specific mechanisms.
-%We should, then, try to distinguish as clearly as we can between discussion that bears on leading ideas and
-%discussion that bears on the choice of specific realizations of them. \citep*[\page 2--3]{Chomsky81a}
+我想我们实际上开始得到语法的一些基本原则，这些原则也许处于合适的抽象层面上。同时，我们有必要对它们进行检验，并且通过开发十分具体的机制来测试他们在事实方面的充分性。然后，我们应该尽量区分开具有前瞻性思想的讨论与选取了具体实现形式的讨论。\citep*[\page 2--3]{Chomsky81a}\footnote{
+I think that we are, in fact, beginning to approach a grasp of certain 
+basic principles of grammar at what may be the appropriate level of abstraction. At the same time, 
+it is necessary to investigate them and determine their empirical adequacy by developing quite specific mechanisms.
+We should, then, try to distinguish as clearly as we can between discussion that bears on leading ideas and
+discussion that bears on the choice of specific realizations of them.}
 \end{quote}
 上面这段话在写给《自然语言与语言学理论》（\emph{Natural Language and Linguistic Theory}）的一封信中进行了更为清晰的阐述：
 %This is made explicit in a letter to \emph{Natural Language and Linguistic Theory}:
 \begin{quote}
-即使在数学中，我们所谓的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解的水平都至关重要。毫无疑问，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，只要这是可以展示出来的，自然是好的。目前，据我所知，我们有着生动的互动与令人激动的进展，但是没有没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}
-%Even in mathematics, the concept of formalization in our sense was not
-%developed until a century ago, when it became important for advancing research
-%and understanding. I know of no reason to suppose that linguistics is so much
-%more advanced than 19th century mathematics or contemporary molecular
-%biology that pursuit of Pullum's injunction would be helpful, but if that can be
-%shown, fine. For the present, there is lively interchange and exciting progress
-%without any sign, to my knowledge, of problems related to the level of formality
-%of ongoing work. \citep[\page 146]{Chomsky90a}
+即使在数学中，我们所谓的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解的水平都至关重要。毫无疑问，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，只要这是可以展示出来的，自然是好的。目前，据我所知，我们有着生动的互动与令人激动的进展，但是没有没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}\footnote{
+Even in mathematics, the concept of formalization in our sense was not
+developed until a century ago, when it became important for advancing research
+and understanding. I know of no reason to suppose that linguistics is so much
+more advanced than 19th century mathematics or contemporary molecular
+biology that pursuit of Pullum's injunction would be helpful, but if that can be
+shown, fine. For the present, there is lively interchange and exciting progress
+without any sign, to my knowledge, of problems related to the level of formality
+of ongoing work. }
 \end{quote}
 这种与严格意义上的形式化的背离导致在主流生成语法下相当多的文献有时会得到不一致的观点，这些观点导致我们无法清晰地将不同文献的观点整合起来。比如说管辖\isc{管辖}\is{government}这个核心概念就有几种不同的界定（概述请看\citealp{AS83a} \footnote{%
 进一步的定义可在 \citew{AL84a-u}中找到。不过，这与\citet[\page 104--106]{PP86a}中的早期版本是一致的。%
