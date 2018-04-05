@@ -12,14 +12,14 @@
 \eal
 \ex 
 \gll Karl glaubt, dass morgen seine Schwester kommt.\\
-	 Karl 相信 REL 明天 他的 姐姐 来\\
+	 Karl 相信 \textsc{conj} 明天 他的 姐姐 来\\
 \glt `Karl相信他的姐姐明天将会来。'
 %\gll Karl glaubt, dass morgen seine Schwester kommt.\\
 %	 Karl believes that tomorrow his sister comes\\
 %\glt `Karl believes that his sister is coming tomorrow.'
 \ex 
 \gll Karl glaubt, dass seine Schwester morgen kommt.\\
-	 Karl 相信 REL 他的 姐姐 明天 来\\
+	 Karl 相信 \textsc{conj} 他的 姐姐 明天 来\\
 %\gll Karl glaubt, dass seine Schwester morgen kommt.\\
 %	 Karl believes that his sister tomorrow comes\\
 \zl
@@ -102,7 +102,7 @@ sm edges
 						[VP
 							[V$'$
 								[V
-									[be;\textsc{aux}]]
+									[be;\textsc{cop}]]
 								[NP
 									[a liar;一 骗子,roof]]]]]]]]]]
 \end{forest}
@@ -171,7 +171,7 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 \eal
 \ex 
 \gll John believes him to be a liar.\\
-	 John 相信 他 \textsc{prep} \textsc{cop} 一 骗子\\
+	 John 相信 他 \textsc{inf} \textsc{cop} 一 骗子\\
 \glt `John相信他是一个骗子。'
 %John believes him to be a liar.
 \ex 
@@ -183,7 +183,7 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 %\glt `I take him to be a liar.'
 \ex 
 \gll Er scheint ein Lügner zu sein.\\
-	 他 好像 一.\nom{} 骗子 \textsc{prep} \textsc{cop}\\
+	 他 好像 一.\nom{} 骗子 \textsc{inf} \textsc{cop}\\
 \glt `他好像是一个骗子。'	 
 %\gll Er scheint ein Lügner zu sein.\\
 %	 he seems a.\nom{} liar to be\\
@@ -209,12 +209,12 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 \eal
 \ex 
 \gll She is very smart, isn't she / * he?\\
-	 她 \textsc{cop} 非常 聪明 \textsc{cop}.NEG 她/*他\\
+     她 \textsc{cop} 非常 聪明 \textsc{cop}.\textsc{neg} 她 {} {} 他\\
 \glt `她很聪明，是吗？'
 %She is very smart, isn't she / * he?
 \ex 
 \gll They are very smart, aren't they?\\
-	 他们 \textsc{cop} 非常 聪明 \textsc{cop}.NEG 他们\\
+     他们 \textsc{cop} 非常 聪明 \textsc{cop}.\textsc{neg} 他们\\
 \glt `他们很聪明，是吗？'
 %They are very smart, aren't they?
 \zl
@@ -231,12 +231,12 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 \eal
 \ex 
 \gll He$_i$ lost [his$_i$ / *her$_j$ marbles].\\
-	 他$_i$ 丢失[他的$_i$ / *她的$_j$ 大理石].\\
+     他      丢失 \spacebr{}他的 {} \hspaceThis{*}她的 大理石\\
 \glt `他失去了理智。'
 %He$_i$ lost [his$_i$ / *her$_j$ marbles].
 \ex 
-\gll They$_i$ kept/lost [their$_i$ / *our$_j$ cool].\\
-	 他们$_i$ 保持/丢失 [他们的$_i$ / *我们的$_j$ 凉爽的].\\
+\gll They$_i$ kept / lost [their$_i$ / *our$_j$ cool].\\
+     他们     保持  {} 丢失 \spacebr{}他们的 {} \hspaceThis{*}我们的 凉爽的\\
 \glt `他们保持/失去了理智。'
 %They$_i$ kept/lost [their$_i$ / *our$_j$ cool].
 \zl
@@ -449,14 +449,14 @@ tag
 \eal
 \ex 
 \gll dass er$_i$ die Äpfel$_j$ ungewaschen$_{i/j}$ isst\\
-	 REL 他 \textsc{det} 苹果 没洗的 吃\\
+	 \textsc{conj} 他 \textsc{det} 苹果 没洗的 吃\\
 \glt `他吃没洗的苹果这件事'
 %\gll dass er$_i$ die Äpfel$_j$ ungewaschen$_{i/j}$ isst\\
 %	 that he the apples unwashed eats\\
 %\glt `that he eats the apples unwashed'
 \ex 
 \gll dass er$_i$ ungewaschen$_{i/*j}$ die Äpfel$_j$ isst\\
-	 REL 他 没洗的 \textsc{det} 苹果 吃\\
+	 \textsc{conj} 他 没洗的 \textsc{det} 苹果 吃\\
 \glt `虽然他没被洗但是他吃苹果这件事'
 %\gll dass er$_i$ ungewaschen$_{i/*j}$ die Äpfel$_j$ isst\\
 %	 that he unwashed the apples eats\\
@@ -513,7 +513,7 @@ tag
 %% \end{tikzpicture}
 %}
 %\hfill\mbox{}
-\caption{“dass er die Äpfel ungewaschen isst”（REL 他 \textsc{det} 苹果 没洗的 吃）和“dass er ungewaschen die Äpfel isst”（REL 他 没洗的 \textsc{det} 苹果 吃）的分析}\label{anal-er-die-frau-nackt-sieht}
+\caption{“dass er die Äpfel ungewaschen isst”（\textsc{conj} 他 \textsc{det} 苹果 没洗的 吃）和“dass er ungewaschen die Äpfel isst”（\textsc{conj} 他 没洗的 \textsc{det} 苹果 吃）的分析}\label{anal-er-die-frau-nackt-sieht}
 %\caption{Analysis of \emph{dass er die Äpfel ungewaschen isst} `that he the apples unwashed eats' and \emph{dass er ungewaschen die
 %    Äpfel isst} `that he unwashed the apples eat'}\label{anal-er-die-frau-nackt-sieht}
 \end{figure}%
@@ -527,12 +527,12 @@ tag
 \eal
 \ex 
 \gll John [[\sub{VP} ate the apples$_i$] unwashed$_i$].\\
-	John [[\sub{VP} 吃 \textsc{det} 苹果$_i$] 没洗的$_i$].\\
+	John {} 吃 \textsc{det} 苹果 没洗的\\
 \glt `John吃了没洗的苹果。'
 %John [[\sub{VP} ate the apples$_i$] unwashed$_i$].
 \ex 
 \gll You can't [[\sub{VP} give them$_i$ injections] unconscious$_i$].\\
-	你 \textsc{aux}.NEG [[\sub{VP} 给 他们$_i$ 注射] 无意识的$_i$].\\
+	你 \textsc{aux}.\textsc{neg} {} 给 他 注射] 无意识的\\
 \glt `你不能无意识地给他注射。'
 %You can't [[\sub{VP} give them$_i$ injections] unconscious$_i$].
 \footnote{%
