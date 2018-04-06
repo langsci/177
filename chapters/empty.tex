@@ -50,7 +50,7 @@
 %\glt `I am scared.'
 \ex 
 \gll Mich dürstet.\\
-	我.\acc{} \textsc{cop}.渴\\
+	我.\acc{} 渴\\
 \glt `我渴。'
 %\gll Mich dürstet.\\
 %	 me.\acc{} is.thirsty\\
@@ -137,8 +137,8 @@
 \ea
 %Bagels, I like.
 \gll Bagels, I like.\\
-	 Bagels 我 喜欢\\
-\glt `Bagels，我喜欢。'
+	 百吉饼 我 喜欢\\
+\glt `百吉饼，我喜欢。'
 \z
 每一种语法理论或多或少地都要解释这些事实。必须用某种方式来表征（\mex{0}）中的like（喜欢）的行为就像一个丢失了某些成分的动词短语。其中一种可能是使用语迹。\citet*[\page 153, \S~4.1]{BHPS61a}展示出，可以将带有空成分的短语结构语法转变成没有空成分的样子。在很多情况下，同样的技术可以用于这里展示的其它理论，我们会在下面的小节详细讨论这一点。
 %Every theory of grammar has to somehow account for these facts. It must be represented in some way that \emph{like} in (\mex{0}) behaves
@@ -229,7 +229,7 @@ sm edges
                 \textsc{loc} \ibox{1},\\
                 \textsc{inher$|$slash} \sliste{ \ibox{1} }}} [\trace]]
   [V\feattab{
-                \subcat \sliste{ NP[\type{nom}], \ibox{4} NP[\type{acc}] }} [liest;reads]]]
+                \subcat \sliste{ NP[\type{nom}], \ibox{4} NP[\type{acc}] }} [liest;读]]]
 \end{forest}
 \caption{\label{Abbildung-Kopf+Spur}使用语迹分析长距离依存的信息介绍}
 %\caption{\label{Abbildung-Kopf+Spur}Introduction of information about long"=distance dependencies with a trace}
@@ -253,7 +253,7 @@ sm edges
                                     \textsc{inher$|$slash} \sliste{ \ibox{1} } }}\\
     [V\feattab{
                                              \subcat \sliste{ NP[\type{nom}], NP\ibox{1}[\type{acc}] }}\\
-          [liest;reads]]]
+          [liest;读]]]
 \end{forest}
 \caption{\label{Abbildung-Kopf-ohne-Spur}使用单分支投射分析长距离依存的信息介绍}
 %\caption{\label{Abbildung-Kopf-ohne-Spur}Introduction of information about long"=distance dependencies using a unary projection}
@@ -300,7 +300,7 @@ sm edges
                                     \textsc{head$|$dsl} \ibox{1},\\
                                     \subcat \ibox{2} }
    [{\ibox{3} NP[\type{acc}]}
-     [ die Berichte;the reports, roof] ]
+     [ die Berichte;\textsc{det} 报告, roof] ]
    [V\ibox{1}\feattab{
                     \textsc{head$|$dsl} \ibox{1},\\
                     \subcat \ibox{2} $\oplus$ \sliste{ \ibox{3} NP[\type{acc}] }} 
@@ -321,7 +321,7 @@ sm edges, for tree={l sep= 5ex}
      \textsc{head$|$dsl} V[\subcat \ibox{2} $\oplus$ \sliste{ \ibox{3} NP[\type{acc}] }],\\
      \subcat \ibox{2}} 
    [{\ibox{3} NP[\type{acc}]}
-      [die Berichte;the reports, roof]]]
+      [die Berichte;\textsc{det} 报告, roof]]]
 \end{forest}
 \caption{\label{Abbildung-Kopf-ohne-Verbspur}使用单分支投射对动词位置进行的分析}
 %\caption{\label{Abbildung-Kopf-ohne-Verbspur}Analysis of verb position using a unary projection}
@@ -380,7 +380,7 @@ sm edges, for tree={l sep= 5ex}
 \ex 
 \gll Oft$_i$ liest$_j$ er [ihn t$_i$ t$_j$].\\
 	 经常 读 他 \spacebr{}它\\
-\glt `他经常读它。He often reads it.'
+\glt `他经常读它。'
 %\gll Oft$_i$ liest$_j$ er [ihn t$_i$ t$_j$].\\
 %	 often reads he \spacebr{}it\\
 %\glt `He often reads it.'
@@ -513,7 +513,7 @@ no word baseline
 		[TP
 			[AgrOP
 				[DP
-					[alle Fenster$_ j$;all windows,roof,tier=word]]
+					[alle Fenster$_ j$;所有 窗户,roof,tier=word]]
 				[AgrO$'$
 					[VoiceP
 						[DP
@@ -524,7 +524,7 @@ no word baseline
 							[VP
 								[XP
 									[t$_j$,tier=word]
-									[offen;open,tier=word]]
+									[offen;打开,tier=word]]
 								[V
 									[BECOME,tier=word]]]]]
 					[AgrO]]]
@@ -591,7 +591,7 @@ Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范�
 %to force this reading if one rules out the first reading through contextual information \citep{Egg99a}:
 \ea
 \gll Erst war nur die Hälfte der Fenster im Bus auf, aber dann öffnete Max alle Fenster.\\
-     第一 \textsc{cop} 只有 \textsc{det} 一半 \textsc{det} 窗户 \textsc{prep}.\textsc{det} 公共汽车 打开 但是 然后 打开 Max \textsc{det} 窗户\\
+     第一 \textsc{cop} 只有 \textsc{det} 一半 \textsc{det} 窗户 \textsc{prep}.\textsc{det} 公共汽车 打开 但是 然后 打开 Max 所有 窗户\\
 \glt `刚开始，公共汽车上的窗户只有一半是打开的，但是Max后来打开了所有的窗子。'
 %\gll Erst war nur die Hälfte der Fenster im Bus auf, aber dann öffnete Max alle Fenster.\\
 %     first was only the half of.the windows in.the bus open but then opened Max all windows\\
@@ -625,7 +625,7 @@ Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范�
 %% \draw(h7.south)--(h5.north);
 %% \end{tikzpicture}
 \includegraphics{Figures/max-alle-fenster-oeffnete-mrs-cropped.pdf}
-\caption{\emph{Max alle Fenster öffnete}的支配图\label{Abbildung-Max-alle-Fenster-oeffnete}}
+\caption{“Max alle Fenster öffnete”的支配图\label{Abbildung-Max-alle-Fenster-oeffnete}}
 %\caption{Dominance graph for \emph{Max alle Fenster öffnete}\label{Abbildung-Max-alle-Fenster-oeffnete}}
 \end{figure}%
 图~\ref{Abbildung-Max-alle-Fenster-oeffnete}中的每个关系都有一个名词，可以用于指称关系或“抓住”它。这些名词被称作手柄（handle）。这一统制图表明$h0$统制$h1$和$h6$、$h2$统制$h4$、$h3$统制$h5$、$h7$ 统制$h5$ 。具体的辖域关系不完全赋值：全称量词可以管辖CAUSE，CAUSE也可以管辖全称量词。图~\ref{fig-alle-cause}和图\ref{fig-cause-alle}描述了辖域值确定的两个变体。
@@ -669,7 +669,7 @@ Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范�
 %% \draw(h3.south)--(h5.north);
 %% \end{tikzpicture}
 \includegraphics{Figures/solution-mrs-cause-all-open-cropped.pdf}
-\caption{ CAUSE(max, $\forall$ x window(x) $\to$ open(x))意义的支配图\label{fig-cause-alle}}
+\caption{CAUSE(max, $\forall$ x window(x) $\to$ open(x))意义的支配图\label{fig-cause-alle}}
 %\caption{Graph for te reading CAUSE(max, $\forall$ x window(x) $\to$ open(x)).\label{fig-cause-alle}}
 \end{figure}%
 图~\ref{Abbildung-Max-alle-Fenster-oeffnete}中的不完全赋值图没有说明$h3$和$h6$之间的关系。它表明的唯一的信息是：$h3$以某种方式统制$h5$ 。在图~\ref{fig-alle-cause}中，每一个（$h3$）统制CAUSE （$h6$） 并且CAUSE统制open（$h5$） 。所以，\relation{every}间接统制\relation{open}。在图~\ref{fig-cause-alle}中，CAUSE统制\relation{every}，并且\relation{every}统制\relation{open}。图~\ref{Abbildung-Max-alle-Fenster-oeffnete}再一次说明了限制，但是$h7$只是间接统制$h5$ 。
@@ -704,19 +704,19 @@ sm edges, for tree={l sep= 4ex}
     \hcons \relliste{ h0 \qeq h1, h2 \qeq h4 } } 
     [Det\feattab{
     \rels \relliste{ h1:every(x, h2, h3) },\\
-    \hcons \relliste{ h0 \qeq h1, h2 \qeq h4  } } [alle] ]
+    \hcons \relliste{ h0 \qeq h1, h2 \qeq h4  } } [alle;所有] ]
     [N\feattab{
     \rels \relliste{ h4:window(x) },\\
-    \hcons \relliste{ } } [Fenster] ] ]
+    \hcons \relliste{ } } [Fenster;窗户] ] ]
   [V\feattab{
                                            \subcat \sliste{ NP\ind{y}, \ibox{2} },\\
                                            \rels \relliste{ h6:CAUSE(y,h7), h5:open(x) },\\
-                                           \hcons \relliste{ h0 \qeq h6, h7 \qeq h5 } } [öffnete] ]
+                                           \hcons \relliste{ h0 \qeq h6, h7 \qeq h5 } } [öffnete;打开] ]
 ]
 \end{forest}
 }
 %\end{sideways}
-\caption{\label{Abbildung-Fenster-oeffnete-MRS}alle Fenster öffnete的MRS分析}
+\caption{\label{Abbildung-Fenster-oeffnete-MRS}“alle Fenster öffnete”的MRS分析}
 %\caption{\label{Abbildung-Fenster-oeffnete-MRS}MRS analysis of \emph{alle Fenster öffnete}}
 \end{figure}%
 这一结构并不区别于为alle Kinder kennt （所有儿童都知道）所假设的结构，涉及语义上简单的动词kennen（知道）。唯一的差异来源于涉及的具体动词。正如~\ref{Abschnitt-HPSG-Semantik}所示，词之间的关系向上传递。辖域限制也是如此。这些信息都在列表中表征。\hcons 代表手柄约束（handle constraints）。\qeq in h0 \qeq h6 代表模（modulo）数量词辖域相同。
@@ -732,7 +732,7 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
 \ea
 \label{ex-wieder-alle-zwei}
 \gll dass Max wieder alle Fenster öffnete\\
-	 \textsc{conj} Max 再次 \textsc{det} 窗子 打开\\
+	 \textsc{conj} Max 再次 所有 窗子 打开\\
 \glt `Max再次打开了所有这些窗子这件事'
 %\gll dass Max wieder alle Fenster öffnete\\
 %	 that Max again all windows opened\\
@@ -782,7 +782,7 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
 \ea
 \label{ex-alle-wieder-zwei}
 \gll dass Max alle Fenster wieder öffnete\\
-	 \textsc{conj} Max \textsc{det} 窗子 再次 打开\\
+	 \textsc{conj} Max 所有 窗子 再次 打开\\
 %\gll dass Max alle Fenster wieder öffnete\\
 %	 that Max all windows again opened\\
 \z
@@ -943,7 +943,7 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
 %such as (\mex{1}), lexical rules have been proposed (\citealp{Verspoor97a}; \citealp{Wechsler97a}; \citealp{WN2001a}; \citealp[Chapter~5]{Mueller2002b}).
 \ea
 \gll [dass] Peter den Teich leer fischt\\
-	 \spacebr{}\textsc{conj} Peter \textsc{det} 池塘 空 钓鱼\\
+	 \spacebr{}\textsc{conj} Peter \textsc{det} 池塘 空 钓\\
 \glt `Peter把池塘里的鱼都钓光了这件事'
 %\gll [dass] Peter den Teich leer fischt\\
 %	 \spacebr{}that Peter the pond empty fishes\\
@@ -961,13 +961,13 @@ sm edges
 		[Peter;Peter]]
 	[V{[\subcat \sliste{ NP[\type{nom}] }]}
 		[NP{[\type{acc}]}
-			[den Teich;the pond, roof]]
+			[den Teich;\textsc{det} 池塘, roof]]
 		[V{[\subcat \sliste{ NP[\type{nom}], NP[\type{acc}] } ]}
 			[Adj
-				[leer;empty]]
+				[leer;空]]
 			[V{[\subcat \sliste{ NP[\type{nom}], NP[\type{acc}], Adj } ]}
 				[V{[\subcat \sliste{ NP[\type{nom}]} ]}
-					[fischt;fishes]]]]]]
+					[fischt;钓]]]]]]
 \end{forest}
 \caption{\label{Abbildung-Resultativ-LR}使用词汇规则对结果构式进行的分析}
 %\caption{\label{Abbildung-Resultativ-LR}Analysis of the resultative construction with a lexical rule}
@@ -992,13 +992,13 @@ sm edges
 		[Peter;Peter]]
 	[{V[\subcat \sliste{ NP[\type{nom}] }]}
 		[{NP[\type{acc}]}
-			[den Teich;the pond,roof]]
+			[den Teich;\textsc{det} 池塘,roof]]
 		[{V[\subcat \sliste{ NP{[\type{nom}]}, NP{[\type{acc}]} }]}
 			[Adj
-				[leer;empty]]
+				[leer;空]]
 			[{[\subcat \sliste{ NP{[\type{nom}]}, NP{[\type{acc}]}, Adj }]}
 				[{V[\subcat \sliste{ NP{[\type{nom}]} }]}
-					[fischt;fishes]]
+					[fischt;钓]]
 				[{V[\subcat \sliste{ NP{[\type{nom}]}, NP{[\type{acc}]}, Adj, V{[\subcat \sliste{ NP{[\type{nom}]} }]} }]}
 					[\trace]]]]]]
 \end{forest}
