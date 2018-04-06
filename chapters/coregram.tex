@@ -31,7 +31,7 @@
 \eal
 \ex[]{
 \gll weil der Mann wahrscheinlich diese Sonate nicht oft gut gespielt hat\hspace{-2pt}\\
-     因为 \textsc{det} 男人 可能 \textsc{det} 奏鸣曲 NEG 经常 好 演奏 \textsc{aux}\hspace{-2pt}\\
+     因为 \textsc{det} 男人 可能 \textsc{det} 奏鸣曲 \textsc{neg} 经常 好 演奏 \textsc{aux}\hspace{-2pt}\\
 \glt `因为这个男人可能并没有经常演奏这一奏鸣曲'
 %\gll weil der Mann wahrscheinlich diese Sonate nicht oft gut gespielt hat\hspace{-2pt}\\
 %     because the man probably this sonata not often well played has\hspace{-2pt}\\
@@ -39,7 +39,7 @@
 }
 \ex[*]{
 \gll weil der Mann wahrscheinlich nicht oft gut hat gespielt diese Sonate\\
-     因为 \textsc{det} 男人 可能 NEG 经常 好 \textsc{aux} 演奏 \textsc{det} 奏鸣曲\\ 
+     因为 \textsc{det} 男人 可能 \textsc{neg} 经常 好 \textsc{aux} 演奏 \textsc{det} 奏鸣曲\\ 
 %\gll weil der Mann wahrscheinlich nicht oft gut hat gespielt diese Sonate\\
 %     because the man probably not often well has played this sonata\\ 
 }
@@ -85,7 +85,7 @@
 %By using the same descriptive inventory for syntax and morphology, it is possible to capture
 %cross"=linguistic generalizations: something that is inflection/derivation in one language can be syntax in another.
 
-可以刻画对词语和短语都起作用的原则，另外可以获得跨语言的概括或者对于特定语言组的概括。例如，语言可以分为具有固定语序的语言以及具有更加灵活语序或者语序完全自由的语言。对应的类型可以通过在一个类型层级中的限制来表征。不同的语言可以用层级的一部分并且可以刻画每一种类型的不同限制（见\citealp[\S~9.2]{AW98a}）。HPSG\indexhpsgc 与LFG\indexlfgc 和TAG\indextagc 等其它理论不同，因为在本体上短语与词相同。这意味着不存在特殊的c"=结构或者树结构。对于复杂短语的描述只是简单地包含另外的特征来说明它们子节点的信息。以这种方式，就可以刻画关于统制模式的跨语言学的概括。在LFG中，c"=结构规则通常针对不同的语言而不同。用统一描述体系的另外一个优势还在于可以获得词和短语规则以及词和短语之间的相似点。例如，dass （REL）这样的标补词跟简单动词或者处在前面的并列动词有很多相同的属性：
+可以刻画对词语和短语都起作用的原则，另外可以获得跨语言的概括或者对于特定语言组的概括。例如，语言可以分为具有固定语序的语言以及具有更加灵活语序或者语序完全自由的语言。对应的类型可以通过在一个类型层级中的限制来表征。不同的语言可以用层级的一部分并且可以刻画每一种类型的不同限制（见\citealp[\S~9.2]{AW98a}）。HPSG\indexhpsgc 与LFG\indexlfgc 和TAG\indextagc 等其它理论不同，因为在本体上短语与词相同。这意味着不存在特殊的c"=结构或者树结构。对于复杂短语的描述只是简单地包含另外的特征来说明它们子节点的信息。以这种方式，就可以刻画关于统制模式的跨语言学的概括。在LFG中，c"=结构规则通常针对不同的语言而不同。用统一描述体系的另外一个优势还在于可以获得词和短语规则以及词和短语之间的相似点。例如，dass （\textsc{conj}）这样的标补词跟简单动词或者处在前面的并列动词有很多相同的属性：
 %It is possible to formulate principles that hold for both words and phrases and furthermore, it is possible to capture
 %cross"=linguistic generalizations or generalizations that hold for certain groups of languages. For example, languages can be divided
 %into those with fixed constituent order and those with more flexible or completely free constituent order. The corresponding types can be represented
@@ -104,7 +104,7 @@
 \eal
 \ex
 \gll {}[dass] Maria die Platte kennt und liebt\\
-	 {}\spacebr{}REL Maria \textsc{det} 唱片 知道 并且 喜欢\\
+	 {}\spacebr{}\textsc{conj} Maria \textsc{det} 唱片 知道 并且 喜欢\\
 \glt `知道并且喜欢这张唱片这件事'
 %\gll {}[dass] Maria die Platte kennt und liebt\\
 %	 {}\spacebr{}that Maria the record knows and loves\\
@@ -265,9 +265,9 @@ typehierarchy
 %} \citep{MuellerCoreGramBrief,MuellerCoreGram}. In the CoreGram project we work on a set of
 %typologically diverse languages in parallel:
 \begin{itemize}
-\item 德语\il{德语}\il{German}  \citep{MuellerLehrbuch1,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MuellerArten,MuellerGS}
+\item 德语\il{德语}\il{German}  \citep{MuellerLehrbuch1,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MuellerArten,MuellerGS}\vspace{-\baselineskip}
 %\item German\il{German}  \citep{MuellerLehrbuch1,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MuellerArten,MuellerGS}
-\item 丹麦语  \citep{Oersnes2009a,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MOe2013b,MOeDanish}
+\item 丹麦语  \citep{Oersnes2009a,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MOe2013b,MOeDanish}\vspace{-\baselineskip}
 %\item Danish  \citep{Oersnes2009a,MuellerPredication,MuellerCopula,MOe2011a,MOe2013a,MOe2013b,MOeDanish}
 \item 波斯语\il{波斯语}\il{Persian} \citep*{MuellerPersian,MG2010a}
 %\item Persian\il{Persian} \citep*{MuellerPersian,MG2010a}
@@ -537,14 +537,14 @@ typehierarchy
 \eal
 \ex 
 \gll {}[Versucht, zu lesen], hat er das Buch nicht.\\
-       \spacebr{}尝试 \textsc{inf} 读 \textsc{aux} 他.\nom{} \textsc{det}.\acc{} 书 NEG\\
+       \spacebr{}尝试 \textsc{inf} 读 \textsc{aux} 他.\nom{} \textsc{det}.\acc{} 书 \textsc{neg}\\
 \glt `他并不想尝试读这本书。'
 %\gll {}[Versucht, zu lesen], hat er das Buch nicht.\\
 %       \spacebr{}tried to read has he.\nom{} the.\acc{} book not\\
 %\glt `He did not try to read the book.'
 \ex 
 \gll {}[Versucht, einen Freund vorzustellen], hat er ihr noch nie.\\
-       \spacebr{}尝试 一.\acc{} 朋友 INF.介绍 \textsc{aux} 他.\nom{} 她的.\dat{} 尚未 从不\\
+       \spacebr{}尝试 一.\acc{} 朋友 \textsc{inf}.介绍 \textsc{aux} 他.\nom{} 她的.\dat{} 尚未 从不\\
 \glt `他从未尝试介绍一个朋友给她。'
 %\gll {}[Versucht, einen Freund vorzustellen], hat er ihr noch nie.\\
 %       \spacebr{}tried a.\acc{} friend to.introduce has he.\nom{} her.\dat{} yet never\\
@@ -604,7 +604,7 @@ typehierarchy
 %something in the special, designated position:
 \ea
 \gll Es kamen drei Männer zum Tor hinein.\\
-     \expl{} 来 三 男人 INF.\textsc{det} 门 \textsc{prep}\\
+     \expl{} 来 三 男人 \textsc{prep}.\textsc{det} 门 \textsc{prep}\\
 \glt `三个男人通过门进来了。'
 %\gll Es kamen drei Männer zum Tor hinein.\\
 %     \expl{} came three man to.the gate in\\
