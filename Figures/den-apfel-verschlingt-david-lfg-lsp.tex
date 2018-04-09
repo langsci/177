@@ -1,76 +1,93 @@
 %% -*- coding:utf-8 -*-
-\documentclass[ number=1
-                ,series=tbls,
-	        %,blackandwhite
-	        ,smallfont
-                ,bibtex
-	        %,draftmode  
-		  ]{langsci/langscibook}                          
+%% -*- coding:utf-8 -*-
+%% \documentclass[ number=1
+%%                 ,series=tbls,
+%% 	        %,blackandwhite
+%% 	        ,smallfont
+%%                 ,bibtex
+%% 	        %,draftmode  
+%% 		  ]{../langsci-2016-03-04-new/langscibook}                          
 
-\usepackage{langsci-forest-setup,makros.2e,dalrymple}
+% This works with lualatex under texlive 2017
+    \documentclass{article}
 
-%\usepackage{forest,lsp-forest-setup-texlive-2013,makros.2e,dalrymple}
+    \usepackage{libertine}\usepackage[libertine]{newtxmath}
 
-%\usetikzlibrary{tikzmark}
+    \usepackage{luatexja-fontspec}\setmainjfont{SimSun}
 
-% http://tex.stackexchange.com/questions/218417/replacing-tree-dvips-connect-nodes-in-a-tabular-environment/218458#218458
-% Instead of using the package tikzmark, you can define your own \tikzmark being a regular node. There's no need to use tcolorbox package.
 
-\newcommand{\mynode}[2]%
-           {\tikz[baseline=(#1.base), remember picture]\node[outer sep=0pt, inner sep=0pt] (#1) {#2};}
+    \usepackage{langsci-forest-setup,german,makros.2e,abbrev,merkmalstruktur,dalrymple,my-xspace}
 
-\newcommand{\mysubnode}[2]%
-           {\tikz[baseline=(#1.base), remember picture]\node[outer sep=0pt, inner sep=0pt] (#1) {#2};}
+    \usepackage{langsci-lgr}
 
-           
-\newcommand{\centtab}[1]{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+    \usetikzlibrary{tikzmark}
 
-\begin{document}
-\thispagestyle{empty}
+    %\usepackage[whole]{bxcjkjatype} conflicts with forest
 
-\begin{forest}
-sm edges
-[\subnode{cp}{CP}
-  [\centtab{(\up \textsc{df})= (\up \textsc{comp}* \textsc{gf})\\
-            (\up \textsc{df})=\down \\
-            \mysubnode{npobj}{NP}}
-        [den Apfel;the apple, roof]]
-  [\centtab{\up~=~\down\\
-    \mysubnode{cbar}{\cbar}}
-    [\centtab{\up~=~\down\\
-     \mysubnode{c}{C}} [verschlingt;devours]]
-    [\centtab{\up~=~\down\\
-     \mysubnode{vp}{VP}}
-      [\centtab{(\upsp \textsc{subj}) = \down\\
-                \mysubnode{npsubj}{NP}}
-        [David;David]]]]]
-\end{forest}\hfill
-\raisebox{13em}{%
-\mynode{all}{\lfgms{ pred & `VERSCHLINGEN\sliste{\subj,\obj}'~~\\
-         subj & \mynode{fdavid}{\lfgms{ pred &  `DAVID' \\
-                                      case & nom\\
-                   }}\\
-         tense & PRES\\
-         topic & \mynode{fapple}{\lfgms{ pred & `APFEL'\\
-                                    case & acc\\
-                   }}\\
-         obj & \mynode{obj}{}
-       }}}
-\begin{tikzpicture}[overlay,remember picture] 
-\draw[->] (cp)     to[out= 0,in=180] (all.west);
-\draw[->] (cbar)   to[out=10,in=180] (all.west);
-\draw[->] (c)      to[out=10,in=180] (all.west);
-\draw[->] (vp)     to[out= 0,in=180] (all.west);
-\draw[->] (npsubj) to[out=15,in=200] (fdavid.west);
-\draw[->] (npobj)  to[out= 0,in=215] (fapple.west);
-%
-% the arc in the f-structure
-%\draw     (obj)    .. controls +(right:10em) and +(up:4em)
-%                   .. (fapple.east);
+    % requires xelatex
+    %\usepackage{xeCJK}
+    %\setCJKmainfont{SimSun}
 
-\draw      (obj)   to[out=0,in=0,distance=6em] (fapple.east);
-\end{tikzpicture}
-\end{document}
+
+        % to set the MRSes for scope underspecification
+    %http://tex.stackexchange.com/questions/218417/replacing-tree-dvips-connect-nodes-in-a-tabular-environment/218458#218458
+    \usepackage{tcolorbox}
+    \tcbuselibrary{skins}
+    \newtcbox{\mybox}[1][]{empty,shrink tight,nobeforeafter,on line,before upper=\vphantom{gM},remember as=#1,top=2pt,bottom=2pt}
+
+
+    \newcommand{\mynode}[2]{\mybox[#1]{#2}}
+    \newcommand{\centtab}[1]{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+
+
+
+    \begin{document}
+    \thispagestyle{empty}
+
+
+    \begin{forest}
+    sm edges
+    [\subnode{cp}{CP}
+      [\centtab{(\up \textsc{df})= (\up \textsc{comp}* \textsc{gf})\\
+                (\up \textsc{df})=\down \\
+                \subnode{npobj}{NP}}
+            [den Apfel;\textsc{det.def} 苹果, roof]]
+      [\centtab{\up~=~\down\\
+        \subnode{cbar}{\cbar}}
+        [\centtab{\up~=~\down\\
+         \subnode{c}{C}} [verschlingt;吞食]]
+        [\centtab{\up~=~\down\\
+         \subnode{vp}{VP}}
+          [\centtab{(\upsp \textsc{subj}) = \down\\
+                    \subnode{npsubj}{NP}}
+            [David;David]]]]]
+    \end{forest}\hfill
+    \raisebox{13em}{%
+    \mynode{all}{\lfgms{ pred & `VERSCHLINGEN\sliste{\lfgsubj,\lfgobj}'~~\\
+             subj & \mynode{fdavid}{\lfgms{ pred &  `DAVID' \\
+                                          case & nom\\
+                       }}\\
+             tense & PRES\\
+             topic & \mynode{fapple}{\lfgms{ pred & `APFEL'\\
+                                        case & acc\\
+                       }}\\
+             obj & \mynode{obj}{}
+           }}}
+    \begin{tikzpicture}[overlay,remember picture] 
+    \draw[->] (cp)     to[out= 0,in=180] (all.west);
+    \draw[->] (cbar)   to[out=10,in=180] (all.west);
+    \draw[->] (c)      to[out=10,in=180] (all.west);
+    \draw[->] (vp)     to[out= 0,in=180] (all.west);
+    \draw[->] (npsubj) to[out=15,in=200] (fdavid.west);
+    \draw[->] (npobj)  to[out= 0,in=215] (fapple.west);
+    %
+    % the arc in the f-structure
+    %\draw     (obj)    .. controls +(right:10em) and +(up:4em)
+    %                   .. (fapple.east);
+
+    \draw      (obj)   to[out=0,in=0,distance=6em] (fapple.east);
+    \end{tikzpicture}
+    \end{document}
 
 
 
