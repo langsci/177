@@ -917,8 +917,8 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 %\emph{werden} `be', which forms a Passive Phrase\is{category!functional!Passive} (abbreviated as
 %PassP). See Figure~\ref{fig-passive-schlagen-mp} for the analysis of the example in (\mex{1}):
 \ea
-\gll dass er geschlagen wurde\\
-     \textsc{conj} 他 打 \textsc{aux}\\
+\gll dass          er geschlagen wurde\\
+     \textsc{conj} 他 打          \textsc{aux}\\
 \glt `他被打了'
 %     that he beaten was\\
 %\glt `that he was beaten'
@@ -933,13 +933,13 @@ for tree={fit=rectangle}
        [\vP
          [VP
            [pronoun {[\st{nom}]} ]
-           [\phonliste{schlagen}]]
+           [\phonliste{schlagen}\\打]]
          [\textit{v}
-           [\textit{schlagen}]
+           [\textit{schlagen}\\打]
            [{\textit{v}[\st{\textit{u}Infl}:Pass]}]]]
-       [\phonliste{werden}]]
+       [\phonliste{werden}\\\textsc{aux}]]
      [{T[past,\st{nom}]}
-       [\textit{werden} {[Pass,\st{\textit{u}Infl}:past*]}]
+       [\textit{werden} {[Pass,\st{\textit{u}Infl}:past*]}\\\textsc{aux}\hspaceThis{[Pass,\st{\textit{u}Infl}:past*]}]
        [{T[past]}]]]
 \end{forest}
 %\end{sideways}
