@@ -234,27 +234,39 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用一个�
 %can occur as part of the coordination of PPs in sentences such as (\mex{1}) and would therefore have some structure in these cases,
 %for example the one given in Figure~\vref{fig-and-of-the}.%
 \ea
-\gll That cat is afraid of the dog and of the parrot.\\
-	 那 猫 \textsc{cop} 害怕 \textsc{prep} \textsc{det} 狗 和 \textsc{det} 鹦鹉\\
+\gll That cat is          afraid of             the          dog and of the parrot.\\
+     那    猫 \textsc{cop} 害怕    \textsc{prep} \textsc{det} 狗   和  \textsc{prep} \textsc{det} 鹦鹉\\
 \glt `那只猫害怕狗和鹦鹉。'
 %That cat is afraid of the dog and of the parrot.
 \z
 \begin{figure}
 \centering
-\begin{tikzpicture}
-\tikzset{level 1+/.style={level distance=3\baselineskip}}
-%\tikzset{frontier/.style={distance from root=23\baselineskip}}
-\Tree[.PP
-        PP
-        [.{PP[\textsc{coord} \emph{and} ]}
-          [.Conj and ]
-          [.{PP} 
-            [.P of ]
-            [.NP 
-              [.Det the ]
-              {\nbar}  ] ] ] 
-]
-\end{tikzpicture}
+%% \begin{tikzpicture}
+%% \tikzset{level 1+/.style={level distance=3\baselineskip}}
+%% %\tikzset{frontier/.style={distance from root=23\baselineskip}}
+%% \Tree[.PP
+%%         PP
+%%         [.{PP[\textsc{coord} \emph{and} ]}
+%%           [.Conj and ]
+%%           [.{PP} 
+%%             [.P of ]
+%%             [.NP 
+%%               [.Det the ]
+%%               {\nbar}  ] ] ] 
+%% ]
+%% \end{tikzpicture}
+\begin{forest}
+%sm edges
+[PP
+  [PP]
+  [{PP[\textsc{coord} \emph{and} ]}
+    [Conj [and\\和]]
+    [PP
+      [P [of\\\textsc{prep}]]
+      [NP
+        [Det [the\\\textsc{det}]]
+        [\nbar]]]]]
+\end{forest}
 \caption{\label{fig-and-of-the}\citew[\page 32]{PS2001a}给出的and of the的结构}
 %\caption{\label{fig-and-of-the}Structure of the fragment \emph{and of the} following
 %  \citew[\page 32]{PS2001a}}
