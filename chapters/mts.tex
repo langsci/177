@@ -234,27 +234,27 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用一个�
 %can occur as part of the coordination of PPs in sentences such as (\mex{1}) and would therefore have some structure in these cases,
 %for example the one given in Figure~\vref{fig-and-of-the}.%
 \ea
-\gll That cat is          afraid of             the          dog and of the parrot.\\
-     那    猫 \textsc{cop} 害怕    \textsc{prep} \textsc{det} 狗   和  \textsc{prep} \textsc{det} 鹦鹉\\
+\gll That cat is afraid of the dog and of the parrot.\\
+	 那 猫 \textsc{cop} 害怕 \textsc{prep} \textsc{det} 狗 和 \textsc{prep} \textsc{det} 鹦鹉\\
 \glt `那只猫害怕狗和鹦鹉。'
 %That cat is afraid of the dog and of the parrot.
 \z
 \begin{figure}
 \centering
-%% \begin{tikzpicture}
-%% \tikzset{level 1+/.style={level distance=3\baselineskip}}
-%% %\tikzset{frontier/.style={distance from root=23\baselineskip}}
-%% \Tree[.PP
-%%         PP
-%%         [.{PP[\textsc{coord} \emph{and} ]}
-%%           [.Conj and ]
-%%           [.{PP} 
-%%             [.P of ]
-%%             [.NP 
-%%               [.Det the ]
-%%               {\nbar}  ] ] ] 
-%% ]
-%% \end{tikzpicture}
+%%\begin{tikzpicture}
+%%\tikzset{level 1+/.style={level distance=3\baselineskip}}
+%%%\tikzset{frontier/.style={distance from root=23\baselineskip}}
+%%\Tree[.PP
+%%        PP
+%%        [.{PP[\textsc{coord} \emph{and} ]}
+%%          [.Conj and ]
+%%          [.{PP} 
+%%            [.P of ]
+ %%           [.NP 
+%%              [.Det the ]
+ %%             {\nbar}  ] ] ] 
+%%]
+%%\end{tikzpicture}
 \begin{forest}
 %sm edges
 [PP
@@ -351,7 +351,7 @@ Ten Hacken认为类似于例（\mex{1}）的例子都是有问题的：
 %\ex Niels has two cousins.
 \ex 
 \gll How many cousins does Niels have?\\
-	Q 很多 表亲 \textsc{aux} Niels 有\\
+	\textsc{que} 很多 表亲 \textsc{aux} Niels 有\\
 \glt `Niels有多少表亲？'
 %\ex How many cousins does Niels have?
 \zl
@@ -424,22 +424,22 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \eal
 \label{Beispiel-einer-nach-dem-anderen}
 \ex
-\gll Die Fenster wurden eins nach dem anderen geschlossen.\\
-	 \textsc{det} 窗户.\neu{}  \textsc{aux} 一.\neu{} \textsc{prep} \textsc{det} 另外的 被关\\
+\gll Die Fenster wurden eins nach dem anderen ge-schloss-en.\\
+	 \textsc{det} 窗户.\neu{}  \textsc{aux} 一.\neu{} \textsc{prep} \textsc{det} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
 \glt `窗户一个接一个地被关上了。'
 %\gll Die Fenster wurden eins nach dem anderen geschlossen.\\
 %	 the windows.\neu{} were one.\neu{} after the other closed\\
 %\glt `The windows were closed one after the other.'
 \ex 
 \gll Die Türen wurden eine nach der anderen geschlossen.\\
-	\textsc{det} 门.\fem{} \textsc{aux} 一.\fem{} \textsc{prep} \textsc{det} 另外的 被关\\
+	\textsc{det} 门.\fem{} \textsc{aux} 一.\fem{} \textsc{prep} \textsc{det} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
 \glt `门被一个接一个地关上了。'
 %\gll Die Türen wurden eine nach der anderen geschlossen.\\
 %	the doors.\fem{} were one.\fem{} after the other closed\\
 %\glt `The doors were closed one after the other.'
 \ex 
 \gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
-	 \textsc{det} 门闩.\mas{} \textsc{aux} 一.\mas{} \textsc{prep} \textsc{det} 另外的 被关\\
+	 \textsc{det} 门闩.\mas{} \textsc{aux} 一.\mas{} \textsc{prep} \textsc{det} 其他 \textsc{inf}.\textsc{ptcp}.关.\textsc{ptcp}\\
 \glt `门闩被一个接一个地关上了。'
 %\gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
 %	 the bolts.\mas{} were one.\mas{} after the other closed\\
@@ -451,7 +451,7 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \eal
 \ex 
 \gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
-	 \textsc{det} 成员.\neu{} \textsc{det} 政治局 \textsc{aux} 一.\neu{} {} 一.\mas{} \textsc{prep} \textsc{det} 另外的 \textsc{prep} \textsc{det} 大厅 运送\\
+	 \textsc{det} 成员.\neu{} \textsc{det} 政治局 \textsc{aux} 一.\neu{} {} 一.\mas{} \textsc{prep} \textsc{det} 其他 \textsc{prep} \textsc{det} 大厅 运送\\
 \glt `政治局的成员一个接一个地被排挤出去。'
 %\gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
 %	 the members.\neu{} of.the politburo were one.\neu{} {} one.\mas{} after the other out.of the hall carried\\
@@ -459,7 +459,7 @@ Ten Hacken得出结论，性取值一定要保持是未指定的，按照他的�
 \ex 
 \gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
 Keller.\\
-\textsc{det} 成员.\neu{} \textsc{det} 女人的.跳舞.俱乐部 离开 一.\neu{} {} 一.\fem{} \textsc{prep} \textsc{det}.\neu{} {} \textsc{det}.\fem{} 另外的 \textsc{prep}.\textsc{det} 保护 \textsc{det} 黑暗的 \textsc{det}
+\textsc{det} 成员.\neu{} \textsc{det} 女子.跳舞.俱乐部 离开 一.\neu{} {} 一.\fem{} \textsc{prep} \textsc{det}.\neu{} {} \textsc{det}.\fem{} 其他 \textsc{prep}.\textsc{det} 保护 \textsc{det} 黑暗的 \textsc{det}
 地下室\\
 \glt `女子舞蹈俱乐部的成员在黑暗的掩护下一个接一个地离开了地下室。'
 %\gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
@@ -468,18 +468,18 @@ Keller.\\
 %basement\\
 %\glt `The members of the women's dance club left the basement one after the other under cover of darkness.'
 \zl
-在带有类似于Weib（女人） （pej.） 和Mädchen（女孩）名词的人称或关系化小句中，也可以看见偏离性范畴而使用生物性别的情况。
+在带有类似于Weib（女人） （贬义词） 和Mädchen（女孩）名词的人称或关系化小句中，也可以看见偏离性范畴而使用生物性别的情况。
 %This deviation from gender in favor of sexus can also be seen with binding of personal and relative pronouns with nouns such as
 %\emph{Weib} `woman' (pej.) and \emph{Mädchen} `girl':
 \eal
 \ex 
 \gll "`Farbe bringt die meiste Knete!"' verriet ein 14jähriges~~~ türkisches~~ \emph{Mädchen}, \emph{die} die Mauerstückchen am      Nachmittag am Checkpoint Charlie an Japaner und US-Bürger verkauft.\footnotemark\\
-\hspaceThis{"`}颜色 带来 \deter~ 最多 钱 揭露 \deter~ 14-年龄.老  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \textsc{det} 墙.碎片
-in.the afternoon at Checkpoint Charlie at Japanese and US-citizens sells\\  
+\hspaceThis{"`}颜色 带来 \deter~ 最多 钱 揭露 \deter~ 14-岁  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \textsc{det} 墙.碎片
+\textsc{prep}.\textsc{det} 下午 在 检查站 查理 \textsc{prep} 日本 和 美国-国民 卖\\  
 \footnotetext{%
         taz， \zhdate{1990/06/04}，第6页。
       }
-\glt `\,“彩色的最贵”，一个在Charlie检票站向日本和美国市民出售墙的碎片的14岁的土耳其小女孩说。'
+\glt `\,“彩色的最贵”，一个在查理检查站向日本人和美国人出售墙碎片的14岁土耳其小女孩说。'
 %\gll "`Farbe bringt die meiste Knete!"' verriet ein 14jähriges türkisches {\em Mädchen\/}, {\em die\/} die Mauerstückchen am
 %      Nachmittag am Checkpoint Charlie an Japaner und US-Bürger verkauft.\footnotemark\\
 %\hspaceThis{"`}color brings the most money revealed a 14-year.old Turkish girl.\neu{} who.\fem{} the wall.pieces
@@ -492,12 +492,12 @@ in.the afternoon at Checkpoint Charlie at Japanese and US-citizens sells\\
 \ex 
 {\raggedright
 \gll Es ist ein junges {\em Mädchen\/}, {\em die\/} auf der Suche nach CDs bei Bolzes reinschaut.\footnotemark\\
-	 他 \textsc{cop} 一 年轻的 女孩.\neu{} \textsc{rel}.\fem{} \textsc{prep} \textsc{det} 寻找 \textsc{prep} CDs \textsc{prep} Bolzes 停下.\textsc{prep}\\
+	 他 \textsc{cop} 一 年轻的 女孩.\neu{} \textsc{rel}.\fem{} \textsc{prep} \textsc{det} 寻找 \textsc{prep} CDs \textsc{prep} Bolzes 停下\\
 \footnotetext{%
         taz，\zhdate{1996/03/13}，第11页。
       }
 \par}
-\glt `是一个寻找CD的小女孩在Bolzes停下了。' 
+\glt `有一个寻找CD的小女孩在Bolzes停下了。' 
 %\gll Es ist ein junges {\em Mädchen\/}, {\em die\/} auf der Suche nach CDs bei Bolzes reinschaut.\footnotemark\\
 %	 it is a young girl.\neu{} who.\fem{} on the search for CDs at Bolzes stops.by\\
 %\footnotetext{%
@@ -545,7 +545,7 @@ typehierarchy
 [ gender
    [fem] [mas] [neu] [none] ]
 \end{forest}
-\caption{\label{fig-typehierarchy-gender-ten-Hacken}ten Hacken问题的一种解决方式的类型层级}
+\caption{\label{fig-typehierarchy-gender-ten-Hacken}Ten Hacken问题的一种解决方式的类型层级}
 %\caption{\label{fig-typehierarchy-gender-ten-Hacken}Type hierarchy for one of the solutions of ten Hacken's problem}
 \end{figure}%
 
