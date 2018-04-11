@@ -11,22 +11,20 @@
 是美国宾夕法尼亚大学的Aravind Joshi提出来的一套语法理论\citep*{JLT75a-u}。
 在宾夕法尼亚大学，Aravind Joshi和Anthony Kroch指导了几篇优秀的博士论文（如\citealp{Rambow94a}）。
 其他的重要的开展TAG研究的科研院所包括：巴黎第七大学（Anne Abeill\'{e}）、美国的哥伦比亚大学（Owen Rambow）和德国杜塞尔多夫大学（Laura Kallmeyer）。
-\citew{Rambow94a}和\citew{Gerdes2002b-u}针对德语展开的研究。\footnote{%
+\citew{Rambow94a}和\citew{Gerdes2002b-u}针对德语展开的研究\footnote{%
   因为我对法语了解有限，所以此处我仅仅援引一些法语文献而不对其内容进行讨论。
-}
+}。
 %Viola: \todostefan{leaves a little oder much - something wie als nettes Understatement im Deutschen passt hier leider nicht :-)}
 
 从表示能力的角度来看，TAG和它的一些扩展性变体相对精确地展现了人类在理解和处理语言的时候做了什么，这也是这种语法理论能够吸引大量研究人员注意的主要原因。为了便于和上下文无关文法
-\isc{上下文无关文法}\is{context"=free grammar}（Type-2 languages）形成对应，广义短语结构语法\indexgpsgc 在设计之初就对表示能力施加了很多限制，即便如此，事实上，GPSG在这方面仍然问题多多\citep{Shieber85a,Culy85a}。\footnote{%
+\isc{上下文无关文法}\is{context"=free grammar}（Type-2 languages）形成对应，广义短语结构语法\indexgpsgc 在设计之初就对表示能力施加了很多限制，即便如此，事实上，GPSG在这方面仍然问题多多\citep{Shieber85a,Culy85a}\footnote{%
   参阅\citet{Pullum86a}以了解关于复杂性的讨论，参阅G.\ \citew{GMueller2011a}以了解针对德语的非上下文无关性的讨论，
-  这种分析和Culy分析N-P-N构式的工作具有一定的相似性。（参阅\ref{Abschnitt-NPN-Konstruktion}）。%
-   }像HPSG\indexhpsgc 和CxG\indexcxgc 这样的语法理论可以产生/描写所谓的0-型语言，相较于目前我们所假设的自然语言的复杂度，其描写能力过强。
+  这种分析和Culy分析N-P-N构式的工作具有一定的相似性。（参阅\ref{Abschnitt-NPN-Konstruktion}）%
+   }。像HPSG\indexhpsgc 和CxG\indexcxgc 这样的语法理论可以产生/描写所谓的0-型语言，相较于目前我们所假设的自然语言的复杂度，其描写能力过强。
 目前通行的假设认为自然语言的复杂度位于上下文无关
 \isc{复杂类型}\is{complexity class}
 \isc{上下文无关文法}\is{context"=free grammar}和上下文相关
-\isc{上下文相关文法}\is{context"=sensitive grammar} （1-型） 语言之间。这个类被称为“弱上下文相关”（mildly context sensitive）
-\isc{弱上下文相关}\is{mildly context"=sensitive grammar}。
-一些TAG变体处于这个语言类中，一种假设认为他们恰好产生出自然语言中的结构，不多也不少。
+\isc{上下文相关文法}\is{context"=sensitive grammar} （1-型） 语言之间。这个类被称为“弱上下文相关”（mildly context sensitive）。\isc{弱上下文相关}\is{mildly context"=sensitive grammar}一些TAG变体处于这个语言类中，一种假设认为他们恰好产生出自然语言中的结构，不多也不少。
 欲了解更多的关于复杂度的讨论，可以参见\ref{Abschnitt-Kompetenz-Performanz-TAG}和\ref{sec-generative-capacity}。
 
 有各种各样的系统可以处理TAG语法\citep*{DHSSX2000a-u,PKMLD2008a-u,KLMPDE2008a-u,Koller2017a-u}。
@@ -60,7 +58,7 @@
 \begin{forest}
 tag
 [NP
-	[John]]
+	[John;John]]
 \end{forest}
 \hfill
 \begin{forest}
@@ -69,14 +67,14 @@ tag
 	[NP$\downarrow$]
 	[VP
 		[V
-			[laughs]]]]
+			[laughs;笑]]]]
 \end{forest}
 \hfill
 \begin{forest}
 tag
 [VP
 	[ADV
-		[always]]
+		[always;总是]]
 	[VP*]]
 \end{forest}
 \hfill\mbox{}
@@ -101,10 +99,10 @@ tag
 [S
 	[NP$\downarrow$,
           [NP, substitution
-            [John]]]
+            [John;John]]]
 	[VP
 		[V
-			[laughs]]]]
+			[laughs;笑]]]]
 \end{forest}
 \hspace{1em}
 $\leadsto$
@@ -113,10 +111,10 @@ $\leadsto$
 tag
 [S
 	[NP
-		[John]]
+		[John;John]]
 	[VP
 		[V
-			[laughs]]]]
+			[laughs;笑]]]]
 \end{forest}
 }
 \caption{\label{abb-Substitution}替换}
@@ -138,17 +136,17 @@ tag
 tag
 [S
 	[NP
-		[John]]
+		[John;John]]
 	[VP
 		[V
-			[laughs]]]]
+			[laughs;笑]]]]
 \end{forest}
 \hspace{0.5cm}
 \begin{forest}
 tag
 [VP
 	[ADV
-		[always]]
+		[always;总是]]
 	[VP*]]
 \end{forest}
 \hspace{1em}
@@ -158,13 +156,13 @@ $\leadsto$
 tag
 [S
 	[NP
-		[John]]
+		[John;John]]
 	[VP
 		[ADV
-			[always]]
+			[always;总是]]
 		[VP
 			[V
-				[laughs]]]]]
+				[laughs;笑]]]]]
 \end{forest}
 }
 \caption{\label{abb-Adjunktion}附接}
@@ -218,12 +216,12 @@ Max 喜欢 Anouk\\
 tag
 [S
 	[NP$\downarrow$
-          [NP,substitution [Max]]]
+          [NP,substitution [Max;Max]]]
 	[VP
 		[V
-			[likes]]
+			[likes;喜欢]]
 		[NP$\downarrow$
-                  [NP,substitution [Anouk] ]]]]
+                  [NP,substitution [Anouk;Anouk] ]]]]
 \end{forest}
 \hspace{1em}
 $\leadsto$
@@ -232,12 +230,12 @@ $\leadsto$
 tag
 [S
 	[NP
-		[Max]]
+		[Max;Max]]
 	[VP
 		[V
-			[likes]]
+			[likes;喜欢]]
 		[NP
-			[Anouk]]]]
+			[Anouk;Anouk]]]]
 \end{forest}
 \caption{\label{Abbildung-Max-likes-Anouk}“Max likes Anouk.”中的基本树与导出树}
 \end{figure}%
@@ -252,7 +250,7 @@ tag
 	[NP$\downarrow$ {(1)}]
 	[VP {(2)}
 		[V {(2.1)}
-			[likes]]
+			[likes;喜欢]]
 		[NP$\downarrow$ {(2.2)}]]]
 \end{forest}
 }
@@ -369,12 +367,12 @@ LP$^\alpha_2$ = \{ \}
 \isc{TAG!自由语序树邻接语法（FO-TAG）}\is{TAG!Free Order (FO"=TAG)})\citep*[\page 21]{BJR91a}进行分析，二者都允许表示依存关系的边交叉。
 \isc{投射性}\is{projectivity}
 
-因为某些限制在FO"=TAG中不能很好地表示\citep[\page 48--50]{Rambow94a}，研究者又提出了多元成分TAG（Multi"=Component TAG）
+因为某些限制在FO"=TAG中不能很好地表示\citep[\page 48--50]{Rambow94a}，研究者又提出了多元成分TAG（Multi"=Component TAG）。
 \isc{多成分树邻接语法}\is{Multi-Component TAG}
-\isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|(}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|(}。 
-\citet*{JBR2000a}用（\mex{1}）中的例子阐释了简单的LTAG语法在处理（\mex{0}）这样的句子时所存在的问题：\footnote{%
+\isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|(}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|(} 
+\citet*{JBR2000a}用（\mex{1}）中的例子阐释了简单的LTAG语法在处理（\mex{0}）这样的句子时所存在的问题\footnote{%
   作者们采用了versprochen hat而不是versprach，这听起来好一些但却并没有对应到他们所使用的树上。
-}
+}：
 \eal
 \ex 
 \gll \ldots{} daß  der        Detektiv  dem        Klienten [den Verdächtigen des Verbrechens zu überführen] versprach\\
@@ -569,7 +567,7 @@ tag
 \isc{多成分树邻接语法}\is{Multi-Component TAG}
 \isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|)}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|)} 
 %Andere Varianten, die andere Konstituentenanordnungen zulassen sind V-TAG
-其它允准上述结构成分语序的TAG变体包括V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a}和TT-MC-TAG\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\citep{Lichte2007a}。\isc{成分序列|)}\is{constituent order|)}
+其它允准上述结构成分语序的TAG变体包括V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a}和TT-MC-TAG\citep{Lichte2007a}。\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\isc{成分序列|)}\is{constituent order|)}
 
 \section{动词位置}
 
@@ -690,8 +688,8 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 谁 \textsc{conj} Bill 喜欢\\
 }
 \z
-这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作
-\isc{附接!附接的必要性|(}\is{adjunction!obligatory|(}。
+这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作。
+\isc{附接!附接的必要性|(}\is{adjunction!obligatory|(}
 \il{English|)}
 \isc{长距离依存|)}\is{long"=distance dependency|)} 
 
@@ -728,7 +726,7 @@ tag
               num & sing\\
              }\\
       }}, substitution,tier=2
-      [John, tier=word] ] ]
+      [John;John, tier=word] ] ]
   [{\ms{
      cat & {\upshape VP}\\
      agr & \ibox{1} \ms{
@@ -745,7 +743,7 @@ tag
        \ms{
           cat & {\upshape V}\\
        }}, tier=2
-       [laughs,tier=word]]]
+       [laughs;笑,tier=word]]]
 ] 
 \end{forest}
 }
@@ -774,7 +772,7 @@ tag
               num & sing\\
              }\\
       }}
-      [John, tier=word] ]
+      [John;John, tier=word] ]
   [{\ms{
      cat & {\upshape VP}\\
      agr & \ibox{1} \ms{
@@ -791,7 +789,7 @@ tag
        \ms{
           cat & {\upshape V}\\
        }}
-       [laughs,tier=word]]]
+       [laughs;笑,tier=word]]]
 ] 
 \end{forest}
 }
@@ -906,7 +904,7 @@ tag
                 per & 3\\ 
                 num & sing\\
                }\\
-         }} [is]]
+         }} [is\\\textsc{aux}]]
      [{\ms{
         cat & {\upshape VP}\\ 
         mode & ger\\
@@ -919,7 +917,7 @@ tag
            }\vspace{1mm}\\
         \ms{
              cat & {\upshape V}\\
-        }} [laughing]]]]]
+        }} [laughing\\笑]]]]]
 \end{forest}
 }
   \caption{\label{Obl-Adjunktion-FTAG-Ergebnis}FTAG中强制附接的结果}
@@ -960,7 +958,8 @@ V"=TAG
             [NP$\downarrow$]
             [VP, tikz+={\ignoreme\draw [densely dashed] ([yshift=2.5pt].south) [out=-75, in=-125] to ($(!u.north)!3/4!(!un.north)$) [out=55,in=100] to (!rl.north); }]]
     [VP
-            [geben]
+            [geben\\给]
+%             [geben]
             [VP, tikz+={\ignoreme\draw [densely dashed] ([yshift=2.5pt].south) [out=-75, in=-125] to ($(!u.north)!3/4!(!un.north)$) [out=55,in=100] to (!rl.north); }]]
     [VP
             [$\epsilon$]]]
@@ -1012,11 +1011,13 @@ V"=TAG
       [VP
         [VP
           [$\epsilon$]
-          [zu reparieren]
-        ]
+          [zu reparieren\\\textsc{inf} 修补]
+%          [zu reparieren]
+                  ]
         [VP, baseline
           [$\epsilon$]
-          [versprochen]
+          [versprochen\\保证]
+%          [versprochen]
         ]
       ]
     ]
@@ -1032,8 +1033,8 @@ V"=TAG
 这个地方有意思的是这种方法和\citet[\S~2.1.3]{Berman96a-u}在LFG\indexlfgc 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
 在Berman的分析中，动词直接投射（project）并形成VP，然后附接上论元。
 
-和本书中讨论的其它分析不同的是：不管动词位置如何，导出树中总是有一个空成分
-\isc{空成分}\is{empty element}。 
+和本书中讨论的其它分析不同的是：不管动词位置如何，导出树中总是有一个空成分。
+\isc{空成分}\is{empty element} 
 \isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）|)}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)|)}
 
 \subsection{语言能力与语言运用的区分以及树本地化的MC"=LTAG的生成能力}
@@ -1065,7 +1066,7 @@ V"=TAG
 \ea
 \gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$~die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
 lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr einem~~~~~~~ Parkplatz weichen.\\
-\textsc{det} 长椅 {} \textsc{prep} 其 当时 \textsc{det} 老.人 \textsc{det} 村庄 {} \textsc{rel} 所有 儿童 \hspaceThis{[$_3$~}\textsc{rel} 来.\textsc{prep} {} 友好地 目光 给 {}
+\textsc{det} 长椅 {} \textsc{prep} 那 当时 \textsc{det} 老.人 \textsc{det} 村庄 {} \textsc{rel} 所有 儿童 \hspaceThis{[$_3$~}\textsc{rel} 经过 {} 友好地 目光 给 {}
 长 小时 安静 彼此相邻 坐 {} 必须 \textsc{prep}.\textsc{det} 上一个 年 一 停车场 让道\\
 %the benches {} on which back.then the old.people of.the village {} that all children {} that came.by {} friendly glances gave {}
 %long hours silent next.to.each.other sat {} must in.the last year a car.park give.way.to\\
@@ -1120,10 +1121,10 @@ NP$_2$ NP$_4$ NP$_3$ NP$_1$ V$_{4}$V$_{3}$V$_{2}$V$_{1}$
 请注意，TL-MCLTAG并不限制一个句子中能出现多少个动词。这套理论本身允许任意多的动词。因此我们需要像其他语法理论一样需要在语言运用的限制上做假设，以此解释为何我们完全找不到带有五个甚至更多个动词的动词复合体。TL-MCLTAG可以预测进行论元语序重列的可能性。
 我认为依赖语法形式模型的表达能力来对论元移位情况进行限制是不合理的，因为这些限制独立于动词复合体而存在，这些限制同样也可以在只包括两个论元的简单动词中出现。语序重列的问题在于仍然有可能将名词短语分配给它们所属的动词。如果这个分配导致歧义
 \isc{歧义}\is{ambiguity}，并且这种歧义无法通过格、选择限制、上下文知识或语调消解，则会选择无标记的成分语序。
-\citet*[\page 68]{Hoberg81a}论证了基于这一点可以很好地处理诸如下面实例的语言现象：\footnote{%
+\citet*[\page 68]{Hoberg81a}论证了基于这一点可以很好地处理诸如下面实例的语言现象\footnote{%
 Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{det}）。
 这使得句子语义上更加通顺，但被约束的代词的序列线性化的要求可能干预相应的句法过程。因此，在这里我将代词换成了定冠词。
-}
+}：
 \eal
 \judgewidth{\#}
 \ex[]{
