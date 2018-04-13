@@ -1,0 +1,53 @@
+%% -*- coding:utf-8 -*-
+
+% general stuff for grammar theory is in local packages.tex
+% everything that is specific to Chinese is in here.
+
+%% below are added by Lulu for the Chinese version of the book
+\usepackage{zhnumber}
+% to type­set Chi­nese rep­re­sen­ta­tions of num­bers.  
+
+\usepackage{titlesec}  
+% for Chinese style of titles of chapters and sections.
+\renewcommand{\partname}{第\thepart{}部分}  
+\def\thepart{\zhdig{part}}
+%\pagenumbering {zhnum}
+\renewcommand{\chaptername}{第\zhnum{chapter}章}  
+
+% The following would also change the chapter and section number in the heading. We do not want
+% this. 27.10.2016
+%\def\thechapter{\zhnum{chapter}}
+%\def\thesection{\zhnum{section}}
+
+
+%re\newcommand{\sectionname}{节}  
+\renewcommand{\figurename}{图}  
+\renewcommand{\tablename}{表}  
+\renewcommand{\bibname}{参考文献}  
+\renewcommand{\contentsname}{目~~~~录}  
+\renewcommand{\listfigurename}{图~目~录}  
+\renewcommand{\listtablename}{表~目~录}  
+\renewcommand{\indexname}{索~引}  
+\renewcommand{\abstractname}{\Large{摘~要}}  
+\newcommand{\keywords}[1]{\\ \\ \textbf{关~键~词}：#1}  
+\titleformat{\chapter}[block]{\center\Large\bf}{\chaptername}{20pt}{}  
+\titleformat{\section}[block]{\large\bf}{\thesection}{10pt}{}  
+\titleformat{\tableofcontents}[block]{\center\Large\bf}{\contensname}{20pt}{}  
+\titleformat{\part}[block]{\center\Large\bf}{\partname}{20pt}{}  
+\titleformat{\index}[block]{\center\Large\bf}{\indexname}{20pt}{}  
+
+\usepackage{titlesec}  
+% for Chinese style of table of contents
+%\titlecontents{\chapter}
+
+\usepackage{indentfirst}
+% In Chinese, each paragraph should be indented.
+\setlength{\parindent}{2em}
+% the indented space should be two characters.
+
+
+
+
+
+%\usepackage{newunicodechar}
+%\newunicodechar{(}{（}

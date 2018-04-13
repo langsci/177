@@ -30,29 +30,71 @@
 
 \hypersetup{bookmarksopenlevel=0}
 
-%% \iftoggle{draft}{}{
-%% \presetkeys{todonotes}{disable}{}
-%% }
-
+%% now loaded by the langsci class
 \iftoggle{draft}{
 \usepackage{todonotes}
 }{
 \usepackage[disable]{todonotes}
 }
 
+%\iftoggle{draft}{}{
+%\presetkeys{todonotes}{disable}{}
+%}
+
 
 \usepackage{metalogo} % xelatex
 
 \usepackage{multicol}
 
-%\usepackage{langsci/styles/langsci-forest-v105-setup}
+\usepackage{bookmark}
+
+\usepackage{styles/my-ccg-ohne-colortbl}
+
+\usepackage{langsci/styles/jambox}
+
+% This has side effects on my-ccg commands do no know why
+%\usepackage{langsci/styles/langsci-optional}
+
+\usepackage{styles/oneline}
+
+%\usepackage{langsci/styles/langsci-lgr}
+
+\usepackage{graphicx}
+
+
+
+\usepackage{lastpage,float,soul,tabularx}
+
+
+
+
+\usepackage{styles/ogonek}        % For Ewa Dabrowska
+
+
+\usepackage{styles/mycommands}% \spacebr
+
+
+% still needed
+% for direction of government examples
+% for CoreGram classes
+% and one \Tree in mts.tex
+\usepackage{tikz-qtree}
+
+\usepackage{langsci/styles/langsci-gb4e}
+
+
+\usepackage{subfig}
+
+%\renewcommand{\xbar}{X̅\xspace}
+
+
+%\usepackage[external,linguistics]{styles/forest/forest}
+
+
+% for reasons I do not understand this cannot be moved further down and 
+% the loading of forest further down cannot be removed. St. Mü. 26.01.2017
+% It breaks the dependency grammar trees in forest.
 \usepackage{langsci/styles/langsci-forest-setup}
-
-%\usepackage{forest}
-% for forest version2
-%\useforestlibrary{linguistics}
-%\forestapplylibrarydefaults{linguistics}
-
 
 
 \forestset{
@@ -64,53 +106,17 @@
 
 
 
-\usepackage{bookmark}
-
-\usepackage{styles/my-ccg-ohne-colortbl}
 
 
-\usepackage{langsci/styles/jambox}
-
-% This has side effects on my-ccg commands do no know why
-%\usepackage{langsci/styles/langsci-optional}
-
-%\usepackage{langsci/styles/langsci-lgr}
-
+% has to be loaded after forest-setup because of incompatibilities with the dg-style.
 \usepackage{german}\selectlanguage{USenglish}
 
-
-\usepackage{graphicx}
-
-
-\usepackage{styles/merkmalstruktur,styles/abbrev,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,styles/oneline,
+\usepackage{styles/merkmalstruktur,styles/abbrev,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,
 styles/eng-date,styles/my-theorems}
-
-
-
-\usepackage{lastpage,float,comment,soul,tabularx}
-
 
 % loaded in macros.2e \usepackage[english]{varioref}
 % do not stop and warn! This will be tested in the final version
-\vrefwarning
-
-
-\usepackage{ogonek}        % For Ewa Dabrowska
-
-
-\usepackage{mycommands}% \dash
-
-
-% still needed
-\usepackage{tikz-qtree}
-
-\usepackage{langsci/styles/langsci-gb4e-chinese}
-
-
-\usepackage{subfig}
-
-%\renewcommand{\xbar}{X̅\xspace}
-
+%\vrefwarning
 
 
 \setcounter{secnumdepth}{4}
@@ -140,21 +146,12 @@ styles/eng-date,styles/my-theorems}
 \usepackage{styles/eng-hyp}
 \fi
 
-\hyphenation{Chom-sky Gre-wen-dorf My-ko-wiec-ka}
- 
-
-
-
 \usepackage{appendix}
 
 
 % adds lines to both the odd and even page.
 % bloddy hell! This is really an alpha package! Do not use the draft option! 07.03.2016
-%\usepackage{addlines}
-
-% please ignore all calls to \addlines as for now, they are left over from the English text
-\newcommand{\addlines}[1][1]{}
-
+\usepackage{addlines}
 
 %% \let\addlinesold=\addlines
 %% % there is one optional argument. Second element in brackets is the default 
@@ -164,8 +161,12 @@ styles/eng-date,styles/my-theorems}
 %% }
 
 
+% do nothing now
+%\let\addlinesold=\addlines
+%\renewcommand{\addlines}[1][1]{}
+
 % for addlines to work
-%\strictpagecheck         reinsert later when addlines is really used.
+\strictpagecheck
 
 
 
@@ -181,62 +182,16 @@ styles/eng-date,styles/my-theorems}
 
 %\usepackage{caption}
 
-%% below are added by Lulu for the Chinese version of the book
-\usepackage{zhnumber}
-% to type­set Chi­nese rep­re­sen­ta­tions of num­bers.  
 
-\usepackage{titlesec}  
-% for Chinese style of titles of chapters and sections.
-\renewcommand{\partname}{第\thepart{}部分}  
-\def\thepart{\zhdig{part}}
-%\pagenumbering {zhnum}
-\renewcommand{\chaptername}{第\zhnum{chapter}章}  
-
-% The following would also change the chapter and section number in the heading. We do not want
-% this. 27.10.2016
-%\def\thechapter{\zhnum{chapter}}
-%\def\thesection{\zhnum{section}}
-
-
-%re\newcommand{\sectionname}{节}  
-\renewcommand{\figurename}{图}  
-\renewcommand{\tablename}{表}  
-\renewcommand{\bibname}{参考文献}  
-\renewcommand{\contentsname}{目~~~~录}  
-\renewcommand{\listfigurename}{图~目~录}  
-\renewcommand{\listtablename}{表~目~录}  
-\renewcommand{\indexname}{索~引}  
-\renewcommand{\abstractname}{\Large{摘~要}}  
-\newcommand{\keywords}[1]{\\ \\ \textbf{关~键~词}：#1}  
-\titleformat{\chapter}[block]{\center\Large\bf}{\chaptername}{20pt}{}  
-\titleformat{\section}[block]{\large\bf}{\thesection}{10pt}{}  
-\titleformat{\tableofcontents}[block]{\center\Large\bf}{\contensname}{20pt}{}  
-\titleformat{\part}[block]{\center\Large\bf}{\partname}{20pt}{}  
-\titleformat{\index}[block]{\center\Large\bf}{\indexname}{20pt}{}  
-
-\usepackage{titlesec}  
-% for Chinese style of table of contents
-%\titlecontents{\chapter}
-
-\usepackage{indentfirst}
-% In Chinese, each paragraph should be indented.
-\setlength{\parindent}{2em}
-% the indented space should be two characters.
-
-
-
-
-
-
-
-
-
-
-
-
-%\usepackage{newunicodechar}
-%\newunicodechar{(}{（}
 
 \usepackage{langsci/styles/langsci-tbls}
 % do not need identation for enumerate since we are in a box anyway.
 \usepackage{enumitem}
+
+
+
+
+
+
+
+
