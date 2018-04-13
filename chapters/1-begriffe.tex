@@ -57,7 +57,7 @@
       {}一 句子 \textsc{cop} 一 句子 \textsc{cop} 一 句子\\
 \ex\label{einbettung-dass-Saetze}
 \gll that Max thinks that Julius knows that Otto claims that Karl suspects that Richard confirms that Friederike is laughing\\
-      \textsc{conj} Max 认为 \textsc{conj} Julius 知道 \textsc{conj} Otto 声称 \textsc{conj} Carl 怀疑 \textsc{conj} Richard 承认 \textsc{conj} Friederike \textsc{aux} 笑\\
+      \textsc{comp} Max 认为 \textsc{comp} Julius 知道 \textsc{comp} Otto 声称 \textsc{comp} Carl 怀疑 \textsc{comp} Richard 承认 \textsc{comp} Friederike \textsc{aux} 笑\\
 \zl
 
 例（\mex{0}b）是对a sentence is a sentence这组词的说明，即它是一个句子。我们也可以按照（\mex{0}b）的方式来扩展句子，将这一整句话也看作是一句话。（\mex{0}c）是将Friederike is laughing和Richard confirms组合起来构成了一个新句子“Richard confirms, that Friederike is laughing”。按照同样的方式，我们还可以将Karl suspects扩展进来。由此，我们就可以将一个不太复杂的句子嵌套进来构成一个非常复杂的句子。这样就可以一句句地嵌套下去。（\mex{0}c）这类句子类似于“俄罗斯套娃”\isc{俄罗斯套娃}（matryoshka\is{matryoshka}）：每个娃娃都由一个套一个的不同颜色的更小的娃娃构成。（\mex{0}c）中的句子也是以同样的方式构成的，即他们都由更小的成分，而且是不同的名词和动词组成。我们可以用方括号很清楚地表示出来，如下所示：
@@ -168,7 +168,7 @@ Friederike说这句话的时候，正在习得德语句子中定式动词（fini
 \begin{quote}
 \label{quote-Chomsky-Formalisierung}%
 在发现语言结构的过程中，对语言结构的精确建模，不管是正面的、还是负面的，都起到十分重要的作用。通过对一条不可接受的结论进行精确但是不充分的建模过程，可以暴露出这种不充分的确切来源，并最终对语言数据有更深层次的理解。乐观来看，一个形式化的理论可以为许多问题自动提供解决方案，而不是像其他那些被精细设计的理论那样。那些晦涩的，凭直觉判定的理念既不能得到荒谬的结论，也不能得到新的、正确的结论。所以说，他们在这两个方面都没有实际的用处。我认为那些质疑过语言学理论的发展在精确和技术层面上的价值的学者们都无法认识到这种方法的巨大潜力，即严密地论证观点以及严格地将之应用在语言事实上，而不是为了避免由特设的调整以及模糊的组成方式造成的不合格的结论。
-\citep[\page5]{Chomsky57a}\footnote{
+\citep[\page5]{Chomsky57a}\footnote{%
 Precisely constructed models for linguistic structure can play an
 important role, both negative and positive, in the process of discovery 
 itself. By pushing a precise but inadequate formulation to
@@ -189,7 +189,7 @@ by ad hoc adjustments or loose formulation.}
 
 \begin{quote}
 正如我们经常指出，但是不能过度强调的是，语言形式化的一个重要的目的就是可以使得研究者们看到一种观点的缺点的同时也看到它的优点。只有这样，我们才能使研究变得有效率。
-\citep[\page322]{Dowty79a}\footnote{
+\citep[\page322]{Dowty79a}\footnote{%
 As is frequently pointed out but cannot be overemphasized, an important goal
 of formalization in linguistics is to enable subsequent researchers to see the defects
 of an analysis as clearly as its merits; only then can progress be made efficiently.}
@@ -390,11 +390,11 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 \eal
 \ex[]{
 \gll dass keiner [diese Frau] kennt\\
-     \textsc{conj} 没有 \textsc{det} 女人 认识\\
+     \textsc{comp} 没有 \textsc{det} 女人 认识\\
   }
 \ex[]{
 \gll dass [diese Frau] keiner kennt\\
-	 \textsc{conj} \textsc{det} 女人 没有 认识\\
+	 \textsc{comp} \textsc{det} 女人 没有 认识\\
 \glt `没有人认识这个女人'
   }
 \zl
@@ -410,11 +410,11 @@ of an analysis as clearly as its merits; only then can progress be made efficien
  \eal
 \ex[*]{
 \gll  dass Frau keiner diese kennt\\
-      \textsc{conj} 女人 没有 \textsc{det} 认识\\
+      \textsc{comp} 女人 没有 \textsc{det} 认识\\
 }
 \ex[*]{
 \gll dass Frau kennt keiner diese\\
-     \textsc{conj} 女人 认识 没有 这\\
+     \textsc{comp} 女人 认识 没有 这\\
 }
 \zl
 
@@ -523,7 +523,7 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 }
 \ex[]{\label{bsp-dass-es-jetzt-regnet}
 \gll dass es jetzt regnet\\
-     \textsc{conj} 它 现在 下雨\\
+     \textsc{comp} 它 现在 下雨\\
 \glt `现在在下雨'
 }
 \zl
@@ -536,12 +536,12 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 \eal
 \ex[*]{\label{bsp-dass-jetzt-es-regnet}
 \gll dass jetzt es regnet\\
-     \textsc{conj} 现在 它 下雨\\
+     \textsc{comp} 现在 它 下雨\\
 \glt 想说：“现在正在下雨”
 }
 \ex[]{
 \gll dass jetzt keiner klatscht\\
-     \textsc{conj} 现在 没有人 鼓掌\\
+     \textsc{comp} 现在 没有人 鼓掌\\
 \glt `现在没有人在鼓掌'
 }
 \zl
@@ -644,7 +644,7 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 %zwei Satzglieder, da sie beide unabhängig voneinander in Anfangsposition gerückt werden
 %können.%}
 \begin{quote}
-\textbf{句子成分测试}\isc{组成成分}\is{constituent}是一个应用$\to$话题化的方式来对复杂成分进行分析的过程。由于话题化只允许一个单独的成分移到句子的开头，复杂的成分序列，比如说副词短语，实际上包括一个或多个组成成分。在“Ein Taxi quält sich im Schrittempo durch den Verkehr（出租车正在以步行的速度顽强地前进）”这个例子中，im Schrittempo（以步行的速度）和durch den Verkehr（通过交通）都是句子成分，因为他们都可以各自独立地前置。\citep[\page446]{Bussmann83a}\footnote{
+\textbf{句子成分测试}\isc{组成成分}\is{constituent}是一个应用$\to$话题化的方式来对复杂成分进行分析的过程。由于话题化只允许一个单独的成分移到句子的开头，复杂的成分序列，比如说副词短语，实际上包括一个或多个组成成分。在“Ein Taxi quält sich im Schrittempo durch den Verkehr（出租车正在以步行的速度顽强地前进）”这个例子中，im Schrittempo（以步行的速度）和durch den Verkehr（通过交通）都是句子成分，因为他们都可以各自独立地前置。\citep[\page446]{Bussmann83a}\footnote{%
 \textbf{Satzglied test}\is{constituent} A procedure based on $\to$ topicalization used to analyze complex constituents.Since topicalization only allows a single constituent to be moved to the beginning of the sentence, complex sequences of constituents, for example adverb phrases, can be shown to actually consist of one or more constituents. In the example \textit{Ein Taxi quält sich im Schrittempo durch den Verkehr} `A taxi was struggling at walking speed through the traffic', \textit{im Schrittempo} `at walking speed' and \textit{durch den Verkehr} `through the traffic' are each constituents as both can be fronted independently of each other.}
 \end{quote}
 
@@ -1172,7 +1172,7 @@ wegen（因为）通常被看作是前置词，尽管它也会出现在名词后
 \eal
 \ex 
 \gll Klaus glaubt, dass er lügt.\\
-	 Klaus 认为 \textsc{conj} 他 说谎\\
+	 Klaus 认为 \textsc{comp} 他 说谎\\
 \glt `Klaus认为他在说谎。'
 \ex 
 \gll Klaus glaubt ihm nicht, weil er lügt.\\
@@ -1274,21 +1274,21 @@ Mann（男人）这样的名词短语的词。而冠词通常与名词相组合�
 \eal
 \ex 
 \gll Ich komme eben        aus der          Stadt, \emph{wo}    ich Zeuge eines Unglücks gewesen bin.\footnotemark\\
-     我  来     \particle{} 自  \textsc{det} 城市   \textsc{conj} 我  见证  一 事故 \textsc{cop} \textsc{aux} \\
+     我  来     \particle{} 自  \textsc{det} 城市   \textsc{rel} 我  见证  一 事故 \textsc{cop} \textsc{aux} \\
 \footnotetext{%
  	\citew*[\page 672]{Duden84-Authors}.
  	}\label{bsp-wo-ich-zeuge}
 \glt `在我来自的那个城市里，我亲眼目睹了一个事故。'
 \ex 
 \gll Studien haben gezeigt, daß mehr Unfälle in Städten passieren, \emph{wo} die Zebrastreifen abgebaut werden, weil die Autofahrer unaufmerksam werden.\footnotemark\\
-     研究 \textsc{aux} 表明 \textsc{conj} 更多 事故 \textsc{prep} 城市 发生 哪里 \textsc{det} 斑马线 去除 \textsc{aux} 因为 \textsc{det} 司机 疏忽 \textsc{cop}\\
+     研究 \textsc{aux} 表明 \textsc{comp} 更多 事故 \textsc{prep} 城市 发生 哪里 \textsc{det} 斑马线 去除 \textsc{aux} 因为 \textsc{det} 司机 疏忽 \textsc{cop}\\
 \footnotetext{%
         《柏林日报》（taz berlin）, \zhdate{1997/11/03}，第23页。
         }
 \glt `研究表明，城市中事故更多发生在没有斑马线的地方，因为司机们更易疏忽。'
 \ex 
 \gll Zufällig war ich in dem Augenblick zugegen, \emph{wo} der Steppenwolf zum erstenmal unser Haus betrat und bei meiner Tante sich einmietete.\footnotemark\\
-	 恰巧地 \textsc{aux} 我 在 \textsc{det} 时候 出现 \textsc{conj} \textsc{det} 荒原狼 \textsc{prep}.\textsc{det} 第一次 我们的 房子 进入 和 在 我的 姑姑 \textsc{refl} 租房\\
+	 恰巧地 \textsc{aux} 我 在 \textsc{det} 时候 出现 \textsc{rel} \textsc{det} 荒原狼 \textsc{prep}.\textsc{det} 第一次 我们的 房子 进入 和 在 我的 姑姑 \textsc{refl} 租房\\
 
 \footnotetext{%
                 Herman Hesse, 《荒原狼》（\emph{Der Steppenwolf}），Berlin und Weimar: Auf"|bau出版社，1986年，第6页。
@@ -1303,11 +1303,11 @@ Mann（男人）这样的名词短语的词。而冠词通常与名词相组合�
 %There are also usages of the relatives \emph{dessen} `whose' and \emph{wessen} `whose' in %combination with a noun:
 \eal
 \ex 
-\gll der Mann, dessen Schwester ich kenne\\
-	 \textsc{det} 男人 \textsc{conj} 姐妹 我 认识\\
+\gll der          Mann, dessen Schwester ich kenne\\
+     \textsc{det} 男人  \textsc{rel} 姐妹 我 认识\\
 \ex 
 \gll Ich möchte wissen, wessen Schwester du kennst.\\
-	 我 想 知道 \textsc{conj} 姐妹 你 认识\\
+	 我 想 知道 \textsc{que} 姐妹 你 认识\\
 \glt `我想知道你认识谁的姐妹。'
 \zl
 根据杜登的分类标准，这些词被看作是“关系冠词”（Relativartikelwort）和“疑问冠词”（Interrogativartikelwort）。他们通常被看作是关系代词和疑问代词的一部分（参看\citew[\page 229]{Eisenberg2004a}）。如果按照Eisenberg提出的术语来看，这些词的归类问题是不具有争议的，因为他没有对冠词、代词和名词进行区分，而是将它们都归为名词类。但是对于那些提出需要区分出冠词和代词的学者来说，疑问代词也是一个经常探讨的问题，即他们可以作为冠词使用，也可以替代一个名词短语。
@@ -1679,12 +1679,12 @@ NP, acc, 3, sg\\[2mm]
 \eal
 \ex[*]{
 \gll Ich glaube, dass regnet.\\
-     我 想     \textsc{conj} 下雨\\
+     我 想     \textsc{comp} 下雨\\
 \glt 想说：“我想是下雨了。”
 }
 \ex[*]{
 \gll Ich glaube, dass Klaus erholt.\\
-	 我 想 \textsc{conj} Klaus 恢复\\
+	 我 想 \textsc{comp} Klaus 恢复\\
 \glt 想说：“我相信Klaus在恢复之中。”	 
 }
 \zl
@@ -1706,7 +1706,7 @@ NP, acc, 3, sg\\[2mm]
 \ex 
 % TODO: 为什么例子翻译成汉语？
 \gll the man {\em who\/} {\em Mary\/} {\em loves\/}\\
-      \textsc{det}  男人 \textsc{conj} Mary  爱\\
+      \textsc{det}  男人 \textsc{rel} Mary  爱\\
 \glt `Mary爱着的那个男人'       
 \zl
 附接语\isc{说明语}\is{adjunct}具有如下的句法和语义属性：
@@ -1998,7 +1998,7 @@ NP, acc, 3, sg\\[2mm]
 }
 \ex[]{
 \gll Klaus behauptet, dass er den Männern hilft.\\
-	 Klaus 声称 \textsc{conj} 他 \textsc{det}.\dat{} 男人.\dat{} 帮助\\
+	 Klaus 声称 \textsc{comp} 他 \textsc{det}.\dat{} 男人.\dat{} 帮助\\
 \glt `Klaus声称他在帮助那个男人。'
 }
 \ex[*]{
@@ -2021,7 +2021,7 @@ NP, acc, 3, sg\\[2mm]
 %construction (\mex{0}c) to be well"=formed. This is, however, not the case. Instead of (\mex{0}c), it is necessary %o use (\mex{1}):
 \ea
 \gll Die Männer behaupten, dass ihnen geholfen wird.\\
-	 \textsc{det} 男人.\nom{} 声称 \textsc{conj} 他们.\dat{} 帮助 \textsc{aux}\\
+	 \textsc{det} 男人.\nom{} 声称 \textsc{comp} 他们.\dat{} 帮助 \textsc{aux}\\
 \glt `这些男人们声称他们被帮助了。'
 \z
 %
@@ -2085,11 +2085,11 @@ NP, acc, 3, sg\\[2mm]
 \eal
 \ex
 \gll Dass er schon um sieben kommen wollte, stimmt nicht.\\
-	 \textsc{conj} 他 已经 在 七点 来 想 确定 不\\
+	 \textsc{comp} 他 已经 在 七点 来 想 确定 不\\
 \glt `他想尽可能在七点赶来，这不是真的。'
 \ex 
 \gll Dass er Maria geheiratet hat, gefällt mir.\\
-	 \textsc{conj} 他 Maria 娶 \textsc{aux} 高兴 我\\
+	 \textsc{comp} 他 Maria 娶 \textsc{aux} 高兴 我\\
 \glt `我很高兴他娶了Maria。'
 \zl
 \eal
@@ -2183,7 +2183,7 @@ NP, acc, 3, sg\\[2mm]
 %With ditransitives such as the German \emph{geben} `to give', the accusative object is the direct object and the %dative is the indirect object.
 \ea
 \gll dass er dem Mann den Aufsatz gibt\\
-	 \textsc{conj} 他.\nom{} \textsc{det}.\dat{} 人.\dat{} \textsc{det}.\acc{} 论文.\acc{} 给\\
+	 \textsc{comp} 他.\nom{} \textsc{det}.\dat{} 人.\dat{} \textsc{det}.\acc{} 论文.\acc{} 给\\
 \glt `他给那个人这篇论文'
 \z
 对于三价动词（带有三个论元的动词）来说，我们可以看到动词要么可以带一个属格宾语\isc{属格}\is{genitive}（\mex{1}a），要么对于带宾格的直接宾语来说，再带一个宾格\isc{格!宾格}\is{case!accusative}宾语（\mex{1}b）：
@@ -2192,11 +2192,11 @@ NP, acc, 3, sg\\[2mm]
 \eal
 \ex 
 \gll dass er den Mann des Mordes bezichtigte\\
-	 \textsc{conj} 他 \textsc{det}.\acc{} 人.\acc{} \textsc{det}.\gen{} 谋杀.\gen{} 控告\\
+	 \textsc{comp} 他 \textsc{det}.\acc{} 人.\acc{} \textsc{det}.\gen{} 谋杀.\gen{} 控告\\
 \glt `他控告了杀人的人'
 \ex 
 \gll dass er den Mann den Vers lehrte\\
-	 \textsc{conj} he \textsc{det}.\acc{} 人.\acc{} \textsc{det}.\acc{} 诗.\acc{} 教\\
+	 \textsc{comp} he \textsc{det}.\acc{} 人.\acc{} \textsc{det}.\acc{} 诗.\acc{} 教\\
 \glt `他教那个人读诗了'
 \zl
 这类宾语有时也叫做间接宾语。
@@ -2209,7 +2209,7 @@ NP, acc, 3, sg\\[2mm]
 %is not normally classed as a direct object \citep{Cook2006a-u}. 
 \ea
 \gll dass er dem Mann hilft\\
-     \textsc{conj} 他 \textsc{det}.\dat{} 人.\dat{} 帮助\\
+     \textsc{comp} 他 \textsc{det}.\dat{} 人.\dat{} 帮助\\
 \glt `他帮助那个人'
 \z
 在很多理论中，语法功能并不是构成理论多原始成分，而是与树结构中的位置密切相关的。所以说，德语中的直接宾语在句法配置中首先与动词组合这个特点被认为是德语句子的底层结构。
@@ -2227,11 +2227,11 @@ NP, acc, 3, sg\\[2mm]
 \eal
 \ex\label{Beispiel-dass-du-sprichst} 
 \gll Dass du sprichst, wird erwähnt.\\
-     \textsc{conj} 你 说话 \textsc{aux} 提到\\
+     \textsc{comp} 你 说话 \textsc{aux} 提到\\
 \glt `你在说话的事实被提及了。'
 \ex
 \gll Er erwähnt, dass du sprichst.\\
-	 他 提到 \textsc{conj} 你 说话\\
+	 他 提到 \textsc{comp} 你 说话\\
 \glt `他提到你在说话。'
 \zl
 这种情况下，我们不能真的将从句看作是宾格宾语，因为它没有格属性。但是，我们用带有宾格标记的名词短语来替换这个句子：
@@ -2351,7 +2351,7 @@ NP, acc, 3, sg\\[2mm]
 \ex 
 \gll Laß den wüsten Kerl [\ldots] meinetwegen ihr Komplize sein.\\
      让 \textsc{det}.\acc{} 疯狂的.\acc{} 家伙 {} 我所关心的 她的.\nom{} 从犯 \textsc{cop}\\
-\glt `我所关心的是，让我们来假定那个疯狂的家伙是她的从犯。'  \citep*[{\S}\,6925]{Duden66-Authors}
+\glt `我所关心的是，让我们来假定那个疯狂的家伙是她的从犯。' \citep*[{\S}\,6925]{Duden66-Authors}%
 %\ex Laß mich dein treuer Herold sein.\label{bsp-lass-mich}
 \ex 
 \gll Baby, laß mich dein Tanzpartner sein.\\
@@ -2528,7 +2528,7 @@ Culicoverr \& Jackendoff的观点就站不脚了。\footnote{%
 \eal
 \ex 
 \gll (Peter hat erzählt,) dass er das Eis gegessen \emph{hat}.\\
-     \hspaceThis{(}Peter \textsc{aux} 告诉 \textsc{conj} 他 \textsc{det} 雪糕 吃 \textsc{aux}\\
+     \hspaceThis{(}Peter \textsc{aux} 告诉 \textsc{comp} 他 \textsc{det} 雪糕 吃 \textsc{aux}\\
 \glt `Peter说他把雪糕吃完了。'
 \ex 
 \gll \emph{Hat} Peter das Eis gegessen?\\
@@ -2708,14 +2708,14 @@ with whom$_{rel}$ &             & you                                    & spoke
 \glt ｀不管将要发生什么，北德广播公司早就已经是赢家了。'
 \ex 
 \gll Interessant, zu erwähnen, daß ihre Seele völlig    in Ordnung war.\footnotemark\\
-	 有趣 \textsc{inf} 提到 \textsc{conj} 她的 灵魂 完整地 \textsc{prep} 顺序 \textsc{cop}\\
+	 有趣 \textsc{inf} 提到 \textsc{comp} 她的 灵魂 完整地 \textsc{prep} 顺序 \textsc{cop}\\
 \footnotetext{%
         Michail Bulgakow, \emph{Der Meister und Margarita}. München: Deutscher Taschenbuch Verlag. 1997，第422页。
       }
 \glt ｀值得注意的是，她的灵魂完好无损。'
 \ex
 \gll Ein Treppenwitz der    Musikgeschichte, daß die Kollegen   von Rammstein vor    fünf Jahren noch im      Vorprogramm   von Sandow spielten.\footnotemark\\
-	 一 讽刺 \textsc{det} 音乐历史 \textsc{conj} \textsc{det} 成员 \textsc{prep} Rammstein \textsc{prep} 五 年 仍然 \textsc{prep}.\textsc{det} 开场 \textsc{prep} Sandow 表演\\
+	 一 讽刺 \textsc{det} 音乐历史 \textsc{comp} \textsc{det} 成员 \textsc{prep} Rammstein \textsc{prep} 五 年 仍然 \textsc{prep}.\textsc{det} 开场 \textsc{prep} Sandow 表演\\
 \footnotetext{%
          Flüstern \& Schweigen, taz, \zhdate{1999/07/12}, 第14页。 %war das englisch? 07.12.1999, p.\,14
 }
@@ -2730,11 +2730,11 @@ with whom$_{rel}$ &             & you                                    & spoke
 \glt `今后将发生什么并不重要 \ldots'
 \ex
 \gll Interessant ist zu erwähnen, dass ihre Seele völlig in Ordnung war.\\
-	 有趣 \textsc{cop} \textsc{inf} 提到 \textsc{conj} 她的 灵魂 完整地 \textsc{prep} 顺序 \textsc{cop}\\
+	 有趣 \textsc{cop} \textsc{inf} 提到 \textsc{comp} 她的 灵魂 完整地 \textsc{prep} 顺序 \textsc{cop}\\
 \glt `值得注意的是，她的灵魂完好无损。'
 \ex %{\raggedright
-\gll Ein Treppenwitz der Musikgeschichte ist, dass die Kollegen von~~~~~~ Rammstein vor fünf Jahren noch im Vorprogramm von Sandow spielten.\hspace{-5pt}\\
-	 一 讽刺 \textsc{det} 音乐历史 \textsc{cop} \textsc{conj} \textsc{det} 成员 \textsc{prep} Rammstein \textsc{prep} 五 年 仍然 \textsc{prep}.\textsc{det} 开场 \textsc{prep} Sandow 表演\\
+\gll Ein Treppenwitz der Musikgeschichte ist, dass die Kollegen von~~~~~~~~~~~ Rammstein vor fünf Jahren noch im Vorprogramm von Sandow spielten.\hspace{-5pt}\\
+	 一 讽刺 \textsc{det} 音乐历史 \textsc{cop} \textsc{comp} \textsc{det} 成员 \textsc{prep} Rammstein \textsc{prep} 五 年 仍然 \textsc{prep}.\textsc{det} 开场 \textsc{prep} Sandow 表演\\
     %\par}     
 \glt `五年前，Rammstein 的成员仍为Sandow作开场演出是音乐史上的一件具有讽刺意义的事件。'
 \zl
@@ -2912,7 +2912,7 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \eal
 \ex 
 \gll Kommt drauf an, mit wem dass sie zu tun haben.\\
-     来 \textsc{adv} \partic{} \textsc{prep} 谁 \textsc{conj} 你 \textsc{inf} 做 \textsc{aux}\\
+     来 \textsc{adv} \partic{} \textsc{prep} 谁 \textsc{comp} 你 \textsc{inf} 做 \textsc{aux}\\
 \glt `这要取决于是谁在处理。'
 %\ex
 \zl
@@ -2949,11 +2949,11 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
       \spacebr{}消失 \textsc{prep} 长 长 时间 \textsc{aux} 在那儿 \textsc{det} 机会  东西 \textsc{inf} 变化\\
 \ex 
 \gll Wir haben        schon       seit          langem gewußt, daß du kommst.\\
-     我们 \textsc{aux} \particle{} \textsc{prep} 长     知道     \textsc{conj} 你 来\\
+     我们 \textsc{aux} \particle{} \textsc{prep} 长     知道     \textsc{comp} 你 来\\
 \glt `我们早就知道你要来了。'
 \ex 
 \gll {}[Gewußt, daß du kommst,] haben wir schon seit langem.\\
-	 \spacebr{}知道 \textsc{conj} 你 来 \textsc{aux} 我们 \particle{} \textsc{prep} 长\\
+	 \spacebr{}知道 \textsc{comp} 你 来 \textsc{aux} 我们 \particle{} \textsc{prep} 长\\
 \zl
 
 
@@ -3051,7 +3051,7 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \glt `Peter认识的那个男人爱着这个女人。'
 \ex 
 \gll Der Mann liebt eine Frau, die Peter kennt.\\
-	 \textsc{det} 男人 爱 一 女人 \textsc{conj} Peter 认识\\
+	 \textsc{det} 男人 爱 一 女人 \textsc{rel} Peter 认识\\
 \glt `这个男人爱着那个彼得认识的女人。'
 %\ex Die Studenten behaupten, nur wegen der Hitze einzuschlafen.
 \ex 
@@ -3061,11 +3061,11 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 % Daniela Schröder:  better: behaupten. Or if you prefer the perfect, change the end of the sentence: eingeschlafen zu sein.         
 \ex 
 \gll Dass Peter nicht kommt, ärgert Klaus.\\
-	 \textsc{conj} Peter 不 来 惹恼 Klaus\\
+	 \textsc{comp} Peter 不 来 惹恼 Klaus\\
 \glt `Peter不能来的事实惹恼了Klaus。'
 \ex 
 \gll Einen Mann küssen, der ihr nicht gefällt, würde sie nie.\\
-	 一 男人 亲 \textsc{conj} 她 不 喜欢 \textsc{aux} 她 从不\\
+	 一 男人 亲 \textsc{rel} 她 不 喜欢 \textsc{aux} 她 从不\\
 \glt `她绝不会亲一个她不喜欢的男人。'
 \zl
 \end{enumerate}
@@ -3112,7 +3112,7 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 %such as with \emph{der Mittwoch} in (\mex{1}), \emph{aber} in (\mex{2}a) and \emph{denn} in (\mex{2}b):
 \ea
 \gll Der Mittwoch, der passt mir gut.\\
-	 \textsc{det} 星期三 \textsc{conj} 适合 我 好\\
+	 \textsc{det} 星期三 \textsc{comp} 适合 我 好\\
 \glt `周三，我有空。'
 \z
 \eal
@@ -3122,7 +3122,7 @@ kennt”（他认识的吗？）这样的关系从句呢？它们构成了中场
 \glt `但是明天晚上会有人喂狗吗？'
 \ex 
 \gll Denn dass es regnet, damit rechnet keiner.\\
-     因为 \textsc{conj} 它 下雨 对此 想到 没有人\\
+     因为 \textsc{comp} 它 下雨 对此 想到 没有人\\
 \glt `因为没人想到会下雨。'
 \zl
 \hspace{+2em}Höhle还讨论了空间位置理论的历史发展。

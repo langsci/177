@@ -377,12 +377,12 @@ LP$^\alpha_2$ = \{ \}
 \ex 
 \gll \ldots{} daß  der        Detektiv  dem        Klienten [den Verdächtigen des Verbrechens zu überführen] versprach\\
 %         {}   that the.\nom{} detective the.\dat{} client   \spacebr{}the.\acc{} suspect the.\gen{} crime to indict promised\\
-{}  \textsc{conj}  \textsc{det}.\nom{} 探员 \textsc{det}.\dat{} 委托人   \spacebr{}\textsc{det}.\acc{} 嫌疑人 \textsc{det}.\gen{} 犯罪 \textsc{inf} 起诉 保证\\
+{}  \textsc{comp}  \textsc{det}.\nom{} 探员 \textsc{det}.\dat{} 委托人   \spacebr{}\textsc{det}.\acc{} 嫌疑人 \textsc{det}.\gen{} 犯罪 \textsc{inf} 起诉 保证\\
 %  \glt `that the detective promised the client to indict the suspect of the crime'
   \glt `探员向客户保证会起诉犯罪活动的嫌疑人'
 \ex\label{Beispiel-Joshi-NP4} 
-\gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
-{}     \textsc{conj}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     \textsc{inf} 起诉  保证\\
+\gll \ldots{} daß  des        Verbrechens$_k$ der        Detektiv  den Verdächtigen$_j$~~~ dem         Klienten [\_$_j$ \_$_k$ zu überführen] versprach\\
+{}     \textsc{comp}  \textsc{det}.\gen{} 犯罪           \textsc{det}.\nom{} 探员 \textsc{det}.\acc{} 嫌疑人   \textsc{det}.\dat{}  委托人   {}      {}     \textsc{inf} 起诉  保证\\
 \zl
 相关动词的LTAG基本树参见图\vref{Abbildung-Kontrollverben-TAG}。
 \begin{figure}
@@ -598,7 +598,7 @@ tag
 图\vref{abb-nld-TAG}是（\mex{1}）分析的一个实例：
 \ea
 \gll Who$_i$ did John tell Sam that Bill likes \_$_i$?\\
-     谁 \textsc{aux} John 告诉 Sam \textsc{conj} Bill 喜欢 \\
+     谁 \textsc{aux} John 告诉 Sam \textsc{comp} Bill 喜欢 \\
 \glt `John告诉Sam了，Bill喜欢谁？'
 \z
 %
@@ -678,14 +678,14 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 这样一个插入性的操作可以重复很多次，所以在像（\mex{1}）这样的句子中，who可以跨越多个小句边界移动到很远的位置：
 \ea 
 \gll Who$_i$ did John tell Sam that Mary said that Bill likes \_$_i$?\\
-     谁      \textsc{aux} John 告诉 Sam \textsc{conj} Mary 说 \textsc{conj} Bill 喜欢\\
+     谁      \textsc{aux} John 告诉 Sam \textsc{comp} Mary 说 \textsc{comp} Bill 喜欢\\
 \glt `John告诉Sam，Mary说Bill喜欢谁？'
 \z
 %
 还有一个很重要的细节：尽管（\mex{1}）中的树包含范畴S，（\mex{1}）并不是一个合语法的英语句子。
 \ea[*]{
 \gll who that Bill likes\\
-谁 \textsc{conj} Bill 喜欢\\
+谁 \textsc{comp} Bill 喜欢\\
 }
 \z
 这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作。
@@ -1052,12 +1052,12 @@ V"=TAG
 \gll dass der Hund bellt, der  die Katze jagt,  die  die Maus  gefangen hat\\
 %    that the dog  barks  that the cat   chases that the mouse caught   has\\
 %\glt `that the dog that chases the cat that caught the mouse barks'
-     \textsc{conj} \textsc{det} 狗  叫  \textsc{rel} \textsc{det} 猫 追 \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   \\
+     \textsc{comp} \textsc{det} 狗  叫  \textsc{rel} \textsc{det} 猫 追 \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \ex 
 \gll dass der Hund, [$_1$ der  die Katze, [$_2$ die  die Maus  gefangen hat,~$_2$] jagt~$_1$] bellt\\
      %that the dog   {}    that the cat    {}    that the mouse caught   has        chases    barks\\
-     \textsc{conj} \textsc{det} 狗  {}  \textsc{rel} \textsc{det} 猫 {} \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   捉 叫 \\
+     \textsc{comp} \textsc{det} 狗  {}  \textsc{rel} \textsc{det} 猫 {} \textsc{rel} \textsc{det} 老鼠 捉 \textsc{aux}   捉 叫 \\
 \glt `追着那只捉老鼠的猫的那只狗在叫'
 \zl
 
@@ -1088,7 +1088,7 @@ NP$_2$ NP$_3$ NP$_1$ V$_{3}$V$_{2}$V$_{1}$
 \gll dass ihm$_2$ das Buch$_3$ niemand$_1$ zu lesen$_3$ versprechen$_2$ darf$_1$\\
 %     that him     the book     nobody     to read      promise         be.allowed.to\\
 %\glt `that nobody is allowed to promise him to read the book' 
-     \textsc{conj} 他     \textsc{det} 书 没有人 \textsc{inf} 读 保证 被允许 \\
+     \textsc{comp} 他     \textsc{det} 书 没有人 \textsc{inf} 读 保证 被允许 \\
 \glt `没有人被允许保证他读那本书'
 \z
 因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说在这种例子里，不像关系从句里的例子，我们可以有两种选择（也就是说，否定这种模式或基于语言运用或基于语言能力进行解释）。
@@ -1131,21 +1131,21 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \gll Hanna hat immer schon gewußt, daß das Kind sie verlassen will.\\
 %	 Hanna has always already known that the child she leave wants\\
 %\glt `Hanna has always known that the child wants to leave her.'
-	 Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} \textsc{det} 孩子 她 离开 希望 \\ 
+	 Hanna \textsc{aux} 总是 已经 知道 \textsc{comp} \textsc{det} 孩子 她 离开 希望 \\ 
 \glt `Hanna一直都知道孩子希望离开她。'
 }
 \ex[\#]{
 \gll Hanna hat immer schon gewußt, daß sie das Kind verlassen will.\\
 %     Hanna has always already known that she the child  leave wants\\
 %\glt Preferred reading: `Hanna has always known that she wants to leave the child.'
-      Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det} 孩子 离开 希望 \\ 
+      Hanna \textsc{aux} 总是 已经 知道 \textsc{comp} 她 \textsc{det} 孩子 离开 希望 \\ 
 \glt 倾向于解读为：`Hanna一直都知道她希望离开孩子。' 
 }
 \ex[]{
 \raggedright
 \gll Hanna hat immer schon gewußt, daß sie der Mann verlassen will.\\
 %     Hanna has always already known that she the.\nom{} man leave wants.to\\
-     Hanna \textsc{aux} 总是 已经 知道 \textsc{conj} 她 \textsc{det}.\nom{} 男人 离开 希望\\ 
+     Hanna \textsc{aux} 总是 已经 知道 \textsc{comp} 她 \textsc{det}.\nom{} 男人 离开 希望\\ 
 \glt `Hanna一直都知道那个男人希望离开她。' 
 %\glt `Hanna has always known that the man wants to leave her.'
 }

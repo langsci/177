@@ -977,7 +977,7 @@ Naturv\aa rdsverket.\footnotemark\\
     我们来看最后一个例子。在一个非常有影响力的短语分析中，Hale和Keyser（\citeyear{HK93a-u}）通过名词合并从类似于[PUT a saddle ON x]的结构中派生出名源动词，例如，to saddle（给……装马鞍）。同样，有这种假想派生过程的动词也可以很正常地与其它类型的动词并列并且共享依存成分：
 \ea
 \gll Realizing the dire results of such a capture and that he was the only one to prevent it, he quickly [saddled and mounted] his trusted horse and with a grim determination began a journey that would become legendary.\\
-    实现 \textsc{det} 悲惨的 结果 \textsc{prep} 这样 一 捕获 和 那 他 \textsc{cop} \textsc{det} 唯一 一个 \textsc{inf} 阻止 它 他 很快地 \spacebr{}装马鞍 并 骑上 他的 值得信任的 马 并且 \textsc{prep} 一 残忍的 决定 开始 一 旅程 \textsc{conj} \textsc{aux} 变成 传奇\\
+    实现 \textsc{det} 悲惨的 结果 \textsc{prep} 这样 一 捕获 和 那 他 \textsc{cop} \textsc{det} 唯一 一个 \textsc{inf} 阻止 它 他 很快地 \spacebr{}装马鞍 并 骑上 他的 值得信任的 马 并且 \textsc{prep} 一 残忍的 决定 开始 一 旅程 \textsc{rel} \textsc{aux} 变成 传奇\\
 \glt `意识到被捕后的悲惨下场以及他是唯一可以阻止这一结果的人，他给自己忠诚的马装上马鞍，并骑上这匹马，带着坚定的决心，开始了一场注定成为传奇的旅程。' 
 \footnote{\url{http://www.jouetthouse.org/index.php?option=com_content&view=article&id=56&Itemid=63},
   \zhdate{2012/07/12}}  
@@ -1150,7 +1150,7 @@ Asudeh, Dalrymple \& Toivonen的论文讲述了词汇完整性和构式。\citet
 \eal
 \ex 
 \gll {}[dass] jemand die Nordsee leer fischt\\
-     {}\spacebr{}\textsc{conj} 某人 \textsc{det} 北.海 空 钓鱼\\
+     {}\spacebr{}\textsc{comp} 某人 \textsc{det} 北.海 空 钓鱼\\
 \glt `某人钓鱼把北海的鱼都钓光了这件事'
 %\gll {}[dass] jemand die Nordsee leer fischt\\
 %     {}\spacebr{}that somebody the North.Sea empty fishes\\
@@ -1664,7 +1664,7 @@ If $a$ is animate, then $kill(e, a) = truth$ if $e$ is an event in which $a$ die
 \eal
 \ex\label{bird}
 \gll A little bird told X that S.\\
-     一 小 鸟 告诉 X \textsc{conj} S\\
+     一 小 鸟 告诉 X \textsc{comp} S\\
 \glt `X听到了传言S.'
  %A little bird told X that S.
 %\glt `X heard the rumor that S.'
@@ -1715,13 +1715,13 @@ If $a$ is animate, then $kill(e, a) = truth$ if $e$ is an event in which $a$ die
 \label{grow1}
 \ex[]{
 \gll that John grows tomatoes\\
-     \textsc{conj} John 种植 西红柿\\
+     \textsc{comp} John 种植 西红柿\\
 \glt `John种植西红柿这件事'
 %that John grows tomatoes
 }
 \ex[]{
 \gll that tomatoes grow\\
-     \textsc{conj} 西红柿 生长\\
+     \textsc{comp} 西红柿 生长\\
 \glt `西红柿生长这件事'
 %that tomatoes grow
 }
@@ -1749,13 +1749,13 @@ If $a$ is animate, then $kill(e, a) = truth$ if $e$ is an event in which $a$ die
 \label{destroy1}
 \ex[]{
 \gll that the army destroyed the city\\
-     \textsc{conj} \textsc{det} 军队 破坏 \textsc{det} 城市\\
+     \textsc{comp} \textsc{det} 军队 破坏 \textsc{det} 城市\\
 \glt `军队破坏这座城市这件事'
 %that the army destroyed the city
 }
 \ex[*]{
 \gll that the city destroyed\\
-     \textsc{conj} \textsc{det} 城市 破坏\\
+     \textsc{comp} \textsc{det} 城市 破坏\\
 %that the city destroyed
 }
 \zl
@@ -1994,14 +1994,14 @@ content  & depend\textrm{(}x,y\textrm{)}\\
 \eal
 \ex 
 \gll dass der Opfer gedacht werde\\
-     \textsc{conj} \textsc{det} 受害者.\gen{} 铭记 \textsc{aux}\\
+     \textsc{comp} \textsc{det} 受害者.\gen{} 铭记 \textsc{aux}\\
 \glt `受害者将会被铭记'
 %\gll dass der Opfer gedacht werde\\
 %     that the victims.\gen{} remembered is\\
 %\glt `that the victims would be remembered'
 \ex 
 \gll daß auch hier den Opfern des Faschismus gedacht werde [\ldots]\footnotemark\\
-     \textsc{conj} 也 这里 \textsc{det} 受害者.\dat{} \textsc{det} 法西斯 铭记 \textsc{aux}\\
+     \textsc{comp} 也 这里 \textsc{det} 受害者.\dat{} \textsc{det} 法西斯 铭记 \textsc{aux}\\
 \glt `法西斯的受害者在这里也将会被铭记'
 \footnotetext{%
 Frankfurter Rundschau，\zhdate{1997/11/07}，第6页。
@@ -2481,26 +2481,26 @@ Haugereid假设了二叉\isc{分支!二叉}\is{branching!binary}结构，在二�
 \eal
 \ex 
 \gll dass [\sub{arg1} keiner [\sub{arg2} Pizza isst]]\\
-     \textsc{conj} {} 没人 {} 披萨 吃\\
+     \textsc{comp} {} 没人 {} 披萨 吃\\
 \glt `没人吃披萨这件事'
 %\gll dass [\sub{arg1} keiner [\sub{arg2} Pizza isst]]\\
 %     that {} nobody {} pizza eats\\
 %\glt `that nobody eats pizza'
 \ex 
 \gll dass [\sub{arg2} Pizza [\sub{arg1} keiner isst]]\\
-	 \textsc{conj} {} 披萨 {} 没人 吃\\
+	 \textsc{comp} {} 披萨 {} 没人 吃\\
 %\gll dass [\sub{arg2} Pizza [\sub{arg1} keiner isst]]\\
 %	 that {} pizza {} nobody eats\\
 \ex 
 \gll dass [\sub{arg1} keiner [gerne [\sub{arg2} Pizza isst]]]\\
-	 \textsc{conj} {} 没人 \spacebr{}高兴地 {} 披萨 吃\\
+	 \textsc{comp} {} 没人 \spacebr{}高兴地 {} 披萨 吃\\
 \glt `没人会高兴地吃披萨这件事'
 %\gll dass [\sub{arg1} keiner [gerne [\sub{arg2} Pizza isst]]]\\
 %	 that {} nobody \spacebr{}gladly {} pizza eats\\
 %\glt `that nobody eats pizza gladly'
 \ex 
 \gll dass [[hier              [\sub{arg1} keiner [\sub{arg2} Pizza isst]]]\\
-     \textsc{conj} \hspaceThis{[[}这里 {}          没人 {} 披萨 吃\\
+     \textsc{comp} \hspaceThis{[[}这里 {}          没人 {} 披萨 吃\\
 \glt `这里没人吃披萨这件事'
 %\gll dass [[hier              [\sub{arg1} keiner [\sub{arg2} Pizza isst]]]\\
 %     that \hspaceThis{[[}here {}          nobody {} pizza eats\\
@@ -2874,7 +2874,7 @@ kick the bucket（死）是一个相对凝固的表达，即不可能在不丧�
 %The beans were spilled by Pat.
 \ex 
 \gll The strings [that Pat pulled] got Chris the job.\\
-     \textsc{det} 绳子 \spacebr{}\textsc{conj} Pat 拉 获得 Chris \textsc{det} 工作\\
+     \textsc{det} 绳子 \spacebr{}\textsc{comp} Pat 拉 获得 Chris \textsc{det} 工作\\
 \glt `Pat走后门让Chris找到了工作。'
 %The strings [that Pat pulled] got Chris the job.
 \zl
@@ -4156,7 +4156,7 @@ Lion Feuchtwanger, \emph{Jud Süß}，第276页，摘自\citew[\page 56]{Grubaci
 \gll "`Heath Ledger"' kann ich nicht einmal schreiben, ohne dass mir sein ins Gras-Gebeiße wieder so
 wahnsinnig leid tut% -- Den hatte ich so gerne.
 \footnotemark\\
-    \spacebr{}Heath Ledger \textsc{aux} 我 \textsc{neg} 甚至 写 \textsc{prep} \textsc{conj} 我 他的 \textsc{prep}.\textsc{det} 草地.一点 再次 这样
+    \spacebr{}Heath Ledger \textsc{aux} 我 \textsc{neg} 甚至 写 \textsc{prep} \textsc{comp} 我 他的 \textsc{prep}.\textsc{det} 草地.一点 再次 这样
     疯狂 悲伤 做\\
 \footnotetext{%
 \url{http://www.coffee2watch.at/egala}. \zhdate{2012/03/23} 
@@ -4662,7 +4662,7 @@ G.\ \citet{GMueller2009a}曾经提出过一个更加复杂的分析。Müller �
 \eal
 \ex 
 \gll {}[dass] jemand diese Klamotten in den Müll schmeißt\\
-     {}\spacebr{}\textsc{conj} 某人 这 衣服 \textsc{prep} \textsc{det} 垃圾 扔\\
+     {}\spacebr{}\textsc{comp} 某人 这 衣服 \textsc{prep} \textsc{det} 垃圾 扔\\
 \glt `某人将这些衣服扔到垃圾里这件事'     
 %\gll {}[dass] jemand diese Klamotten in den Müll schmeißt\\
 %     {}\spacebr{}that somebody these clothes in the trash throws\\

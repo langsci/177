@@ -942,7 +942,7 @@ GPSG的一个创新点是它将长距离依存\isc{长距离依存|(}\is{long"=d
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau das Buch gibt\\
-	 {}\spacebr{}\textsc{conj} \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
+	 {}\spacebr{}\textsc{comp} \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
 \glt `这个男人把这本书给这个女人'
 %	 {}\spacebr{}that the man the woman the book gives\\
 %\glt `that the man gives the book to the woman'
@@ -1092,7 +1092,7 @@ sm edges
 %\glt `He apparently tried to cheat an insurance company out of two million Deutsche Marks.'
 \ex
 \gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
-    \spacebr{}谁 相信 他 \textsc{conj} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep} 尼罗河\\
+    \spacebr{}谁 相信 他 \textsc{comp} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep} 尼罗河\\
 %     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
 \footnotetext{%
         《明镜周刊》（\emph{Spiegel}），1999年8月，第18页。
@@ -1101,7 +1101,7 @@ sm edges
 %\glt `\,``Who does he think he is?'', a politician from the Nile exclaimed.'
 \ex\label{ex-wen-glaubst-du-dass-zwei}
 \gll Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe?\footnotemark\\
-     谁 认为 你 \textsc{conj} 我 {} 看见 \textsc{aux}\\
+     谁 认为 你 \textsc{comp} 我 {} 看见 \textsc{aux}\\
 %     who believe you that I {} seen have\\
 \footnotetext{%
     \citew[\page84]{Scherpenisse86a}.
@@ -1153,7 +1153,7 @@ sm edges,empty nodes
     [{V[9,+\textsc{mc}]} [glaubst;向心] ]
     [{N2[nom]} [du;你] ] 
     [{V3[+dass,$-$\textsc{mc}]/N2[acc]} 
-      [{}[dass;\textsc{conj}] ]
+      [{}[dass;\textsc{comp}] ]
       [{V3[$-$dass,$-$\textsc{mc}]/N2[acc]} 
          [{N2[nom]} [ich;我] ]
          [{V[6,$-$\textsc{mc}]} [gesehen habe;看见 \textsc{aux},roof] ] ] ] ] ]
@@ -1197,21 +1197,21 @@ Principle}控制，它是指所有的子结点的底部特征也在父结点上�
 \ex
 []{ 
 \gll The kennel     which Mary made and Fido sleeps in has been stolen.\\
-\textsc{det} 狗窝 \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\	 \jambox{(= S/NP \& S/NP)}
+\textsc{det} 狗窝 \textsc{rel} Mary 做 和 Fido 睡觉 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\	 \jambox{(= S/NP \& S/NP)}
 \glt `Mary做的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP %\& S/NP)}
 }
 \ex
 []{ 
 \gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.\hspace{-2pt}\\
-\textsc{det} 狗窝 \textsc{prep} \textsc{conj} Mary 放 药 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/PP \& S/PP)}
+\textsc{det} 狗窝 \textsc{prep} \textsc{rel} Mary 放 药 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/PP \& S/PP)}
 \glt `Mary放药的那个Fido睡在里面的狗窝被偷了。'
 %[]{ The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= %S/PP \& S/PP)}
 }
 \ex
 [*]{
 \gll The kennel (in) which Mary made and Fido sleeps has been stolen.\hspace{-2pt}\\
-\textsc{det} 狗窝 \hspaceThis{(}\textsc{prep} \textsc{conj} Mary 做 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/NP \& S/PP)}
+\textsc{det} 狗窝 \hspaceThis{(}\textsc{prep} \textsc{rel} Mary 做 和 Fido 睡觉 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/NP \& S/PP)}
 %[*]{The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP %\& S/PP)}
 }
 \zl
@@ -1398,13 +1398,13 @@ GPSG中配价的编码在几个方面是有问题的。例如，形态化进程�
 \eal
 \ex 
 \gll {}[dass] der Mann ihn liest\\
-	 {}\spacebr{}\textsc{conj} \textsc{det}.\nom{} 男人 它.\acc{} 读\\
+	 {}\spacebr{}\textsc{comp} \textsc{det}.\nom{} 男人 它.\acc{} 读\\
 \glt `这个男人在读它'
 %	 {}\spacebr{}that the.\nom{} man him.\acc{} reads\\
 %\glt `that the man reads it'
 \ex 
 \gll {}[dass] ihn der Mann liest\\
-	{}\spacebr{}\textsc{conj} 它.\acc{} \textsc{det}..\nom{} 男人 读\\
+	{}\spacebr{}\textsc{comp} 它.\acc{} \textsc{det}..\nom{} 男人 读\\
 \glt `这个男人在读它'
 %	{}\spacebr{}that him.\acc{} the.\nom{} man reads\\
 %\glt `that the man reads it'

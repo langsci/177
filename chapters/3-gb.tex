@@ -37,7 +37,7 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative g
 %in the following way (see also \citealp[\page 162]{Chomsky95a-u}):
 \begin{quote}
 一种语言的语法应该是对理想的听者--说者的内在能力的描写。进而，如果这种语法能够完美地表示出来——换言之，如果它不依赖于读者的智力，而只是针对他的贡献给出一个明确的分析的话——我们就可以将之称为生成语法（generative
-  grammar）。\citep[\page 4]{Chomsky65a}\footnote{
+  grammar）。\citep[\page 4]{Chomsky65a}\footnote{%
 A grammar of a language purports to be a description of the ideal speaker-hearer's intrinsic
 competence. If the grammar is, furthermore, perfectly explicit\,--\,in other words, if it does not
 rely on the intelligence of the understanding reader but rather provides an explicit analysis of
@@ -360,7 +360,7 @@ S"=结构包括语音形式（Phonetic Form，PF）\isc{语音形式（PF）}\is
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau das Buch gibt\\
-	 {}\spacebr{}\textsc{conj} \textsc{det}.\nom{}  男人 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 书 给\\
+	 {}\spacebr{}\textsc{comp} \textsc{det}.\nom{}  男人 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 书 给\\
 \glt `这个男人给这个女人这本书'
 %	 {}\spacebr{}that the.\nom{} man the.\dat{} woman the.\acc{} book gives\\
 %\glt `that the man gives the woman the book'
@@ -395,7 +395,7 @@ S"=结构包括语音形式（Phonetic Form，PF）\isc{语音形式（PF）}\is
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau das Buch gibt\\
-	 {}\spacebr{}\textsc{conj} \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
+	 {}\spacebr{}\textsc{comp} \textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书 给\\
 \glt `这个男人给这个女人这本书'
 %	 {}\spacebr{}that the man the woman the book gives\\
 %\glt `that the man gives the woman the book'
@@ -1009,10 +1009,10 @@ sm edges
 \eal
 \ex 
 \gll that Ann will read the newspaper\\
-      \textsc{conj} Ann 将 读 \textsc{det} 报纸\\
+      \textsc{comp} Ann 将 读 \textsc{det} 报纸\\
 \ex\label{ex-that-ann-reads-the-newspaper}
 \gll that Ann reads the newspaper\\
-      \textsc{conj} Ann 读 \textsc{det} 报纸\\
+      \textsc{comp} Ann 读 \textsc{det} 报纸\\
 \zl
 在像（\mex{0}）的句子中，CP没有指定语。图\ref{Abb-GB-Englisch-CP}显示了（\mex{0}a）的分析。
 %图\vref{Abb-GB-Englisch-CP}展示了（\mex{0}a）的分析。
@@ -1028,7 +1028,7 @@ sm edges
 sm edges
 [CP
 [C$'$
-	[C$^0$[that; \textsc{conj}]]
+	[C$^0$[that; \textsc{comp}]]
 	[IP
 		[NP[Ann; Ann,roof]]
 		[I$'$
@@ -1464,7 +1464,7 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 %\glt `The clown is trying to give Kurt-Martin the goods.'
 \ex 
 \gll dass der Clown Kurt-Martin die Ware gibt\\
-	 \textsc{conj} \textsc{det} 小丑 Kurt-Martin \textsc{det} 物品 给\\
+	 \textsc{comp} \textsc{det} 小丑 Kurt-Martin \textsc{det} 物品 给\\
 \glt `小丑给Kurt-Martin这些物品'
 %	 that the clown Kurt-Martin the goods gives\\
 %\glt `that the clown gives Kurt-Martin the goods'
@@ -1477,11 +1477,11 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 \eal
 \ex 
 \gll dass er ihn gesehen$_3$ haben$_2$ muss$_1$\\
-	 \textsc{conj} 他 他 看见 \textsc{aux} 必须\\
+	 \textsc{comp} 他 他 看见 \textsc{aux} 必须\\
 %	 that he him seen have must\\
 \ex 
 \gll at han må$_1$ have$_2$ set$_3$ ham\\
-     \textsc{conj} 他 必须 \textsc{aux} 看见 他\\
+     \textsc{comp} 他 必须 \textsc{aux} 看见 他\\
 \glt `他必须看见他'
  %    that he must have seen him\\
 %\glt `that he must have seen him'
@@ -1594,7 +1594,7 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 %sentence bracket, as illustrated by (\mex{1}).
 \ea 
 \gll dass jeder diesen Mann kennt\\
-      \textsc{conj} 每个人 这 人 认识\\
+      \textsc{comp} 每个人 这 人 认识\\
 \glt `每个人都认识这个人'
 %     that everybody this man knows\\
 %\glt `that everybody knows this man'
@@ -1607,7 +1607,7 @@ Bierwisch认为是\citet{Fourquet57a}最早提出了底层动词末位假设。�
 sm edges
 [CP
 [C$'$
-	[C$^0$[dass;\textsc{conj}]]
+	[C$^0$[dass;\textsc{comp}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[I$'$
@@ -1765,7 +1765,7 @@ sm edges
 %\glt `He apparently tried to cheat an insurance company out of two million Deutsche Marks.'
 \ex
 \gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
-     \spacebr{}谁 相信 他 \textsc{conj} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep} 尼罗河\\
+     \spacebr{}谁 相信 他 \textsc{comp} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep} 尼罗河\\
 %     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
 \footnotetext{%
         《明镜周刊》（ \emph{Spiegel}），1999年8月，第18页。
@@ -1775,7 +1775,7 @@ sm edges
 %\glt `\,``Who does he think he is?'', a politician from the Nile exclaimed.'
 \ex\label{ex-wen-glaubst-du-dass}
 \gll Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe?\footnotemark\\
-     谁 认为 你 \textsc{conj} 我 {} 看见 \textsc{aux}\\
+     谁 认为 你 \textsc{comp} 我 {} 看见 \textsc{aux}\\
 %     who believe you that I {} seen have\\
 \footnotetext{%
     \citew[\page84]{Scherpenisse86a}.
@@ -1942,11 +1942,11 @@ sm edges
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau den Jungen zeigt\\
-     \spacebr{}\textsc{conj} \textsc{det} 男人 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 男孩 展示\\
+     \spacebr{}\textsc{comp} \textsc{det} 男人 \textsc{det}.\dat{} 女人 \textsc{det}.\acc{} 男孩 展示\\
 \glt `这个男人将这个男孩展示给这个女人'
 \ex 
 \gll{}[dass] der Junge der Frau gezeigt wird\\
-      \spacebr{}\textsc{conj} \textsc{det} 男孩.\nom{} \textsc{det}.\dat{} 女人 展示 \textsc{aux}\\
+      \spacebr{}\textsc{comp} \textsc{det} 男孩.\nom{} \textsc{det}.\dat{} 女人 展示 \textsc{aux}\\
 \glt `这个男孩被展示给这个女人'
 \zl
 \begin{figure}
@@ -2245,13 +2245,13 @@ sm edges
 \eal
 \ex 
 \gll Es ist nicht der Fall, daß er mindestens einem Verleger fast jedes Gedicht anbot.\\
-     它 \textsc{cop} 不 \textsc{det} 事实 \textsc{conj} 他 至少 一 出版社 几乎 每 诗 提供\\
+     它 \textsc{cop} 不 \textsc{det} 事实 \textsc{comp} 他 至少 一 出版社 几乎 每 诗 提供\\
 \glt `事实并不是他给至少一家出版社提供了几乎每一首诗。'
 %     it is not the case that he at.least one publisher almost every poem offered\\
 %\glt `It is not the case that he offered at least one publisher almost every poem.'
 \ex 
 \gll Es ist nicht der Fall, daß er fast jedes Gedicht$_i$ mindestens einem Verleger \_$_i$ anbot.\\
-	 它 \textsc{cop} 不 \textsc{det} 事实 \textsc{conj} 他 几乎 每 诗 至少 一 出版社 {} 提供\\
+	 它 \textsc{cop} 不 \textsc{det} 事实 \textsc{comp} 他 几乎 每 诗 至少 一 出版社 {} 提供\\
 \glt `事实并不是他给至少一家出版社提供了几乎每一首诗。'
 %	 it is not the case that he almost every poem at.least one publisher {} offered\\
 %\glt `It is not the case that he offered almost every poem to at least one publisher.'
@@ -2266,7 +2266,7 @@ sm edges
 %`at least one publisher'. However, this reading does not exist.
 \ea
 \gll Ich glaube, dass mindestens einem Verleger$_i$ fast jedes Gedicht$_j$ nur dieser Dichter \_$_i$ \_$_j$ angeboten hat.\\
-	 我 相信 \textsc{conj} 至少 一 出版社 几乎 每 诗 只有 这 诗人 {} {} 提供 \textsc{aux}\\
+	 我 相信 \textsc{comp} 至少 一 出版社 几乎 每 诗 只有 这 诗人 {} {} 提供 \textsc{aux}\\
 \glt `我想，只有这位诗人给至少一家出版社提供了几乎每一首诗。'
 %	 I believe that at.least one publisher almost every poem only this poet {} {} offered has\\
 %\glt `I think that only this poet offered almost every poem to at least one publisher.'
@@ -2437,7 +2437,7 @@ von der zu beschreibenden Sprache abweicht.}
 %Elektronenrechner realisiert wird, so daß überprüft werden kann, in welchem Maße das Resultat
 %von der zu beschreibenden Sprache abweicht.}
 \begin{quote}
-很有可能的是，由我们构造的规则所生成的句子出乎意料地是不合乎语法的，也就是说，它们由于某些属性而违反了合格性，而这些属性是在我们的检验中要特别排除的。这就意味着，语法是对一种语言的结构的假说。对于自然语言的语法的合格性的系统诊断显然不能再由人工来解决。这一任务可以由计算机按照计算任务来进行实现，这样就可以对所描述语言派生出的结果进行检验。\citep*[\page 163]{Bierwisch63}\footnote{
+很有可能的是，由我们构造的规则所生成的句子出乎意料地是不合乎语法的，也就是说，它们由于某些属性而违反了合格性，而这些属性是在我们的检验中要特别排除的。这就意味着，语法是对一种语言的结构的假说。对于自然语言的语法的合格性的系统诊断显然不能再由人工来解决。这一任务可以由计算机按照计算任务来进行实现，这样就可以对所描述语言派生出的结果进行检验。\citep*[\page 163]{Bierwisch63}\footnote{%
 It is very possible that the rules that we formulated generate
 sentences which are outside of the set of grammatical sentences in an
 unpredictable way, that is, they violate grammaticality due to
@@ -2501,7 +2501,7 @@ constructions that the grammar accommodates increases, the number of undesired p
 \begin{quote}
 %It is this point of view that lies behind the rough distinction between leading ideas and execution, 
 %and that motivates much of what follows. 
-我想我们实际上开始得到语法的一些基本原则，这些原则也许处于合适的抽象层面上。同时，我们有必要对它们进行检验，并且通过开发十分具体的机制来测试他们在事实方面的充分性。然后，我们应该尽量区分开具有前瞻性思想的讨论与选取了具体实现形式的讨论。\citep*[\page 2--3]{Chomsky81a}\footnote{
+我想我们实际上开始得到语法的一些基本原则，这些原则也许处于合适的抽象层面上。同时，我们有必要对它们进行检验，并且通过开发十分具体的机制来测试他们在事实方面的充分性。然后，我们应该尽量区分开具有前瞻性思想的讨论与选取了具体实现形式的讨论。\citep*[\page 2--3]{Chomsky81a}\footnote{%
 I think that we are, in fact, beginning to approach a grasp of certain 
 basic principles of grammar at what may be the appropriate level of abstraction. At the same time, 
 it is necessary to investigate them and determine their empirical adequacy by developing quite specific mechanisms.
@@ -2511,7 +2511,7 @@ discussion that bears on the choice of specific realizations of them.}
 上面这段话在写给《自然语言与语言学理论》（\emph{Natural Language and Linguistic Theory}）的一封信中进行了更为清晰的阐述：
 %This is made explicit in a letter to \emph{Natural Language and Linguistic Theory}:
 \begin{quote}
-即使在数学中，我们所谓的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解的水平都至关重要。毫无疑问，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，只要这是可以展示出来的，自然是好的。目前，据我所知，我们有着生动的互动与令人激动的进展，但是没有没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}\footnote{
+即使在数学中，我们所谓的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解的水平都至关重要。毫无疑问，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，只要这是可以展示出来的，自然是好的。目前，据我所知，我们有着生动的互动与令人激动的进展，但是没有没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}\footnote{%
 Even in mathematics, the concept of formalization in our sense was not
 developed until a century ago, when it became important for advancing research
 and understanding. I know of no reason to suppose that linguistics is so much
@@ -2624,7 +2624,7 @@ Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_v
 \ea
 \gll Could or should we pool our capital with that of other co-ops to address the needs of a regional
 ``neighborhood''?\\
-\textsc{aux} 或 \textsc{aux} 我们 合作 我们的 资本 \textsc{prep} \textsc{conj} \textsc{prep} 其他的 合作者 \textsc{inf} 应对 \textsc{det} 需求 \textsc{prep} 一 区域的 \hspaceThis{``}邻居\\
+\textsc{aux} 或 \textsc{aux} 我们 合作 我们的 资本 \textsc{prep} \textsc{comp} \textsc{prep} 其他的 合作者 \textsc{inf} 应对 \textsc{det} 需求 \textsc{prep} 一 区域的 \hspaceThis{``}邻居\\
 \glt `我们是可以还是应该将我们的资金与其他合作者的资金一起用来解决区域性的“邻居”的需求？'
 
 \z
@@ -2743,13 +2743,13 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 \eal
 \ex 
 \gll dass die Frau den Mann liebt\\
-     \textsc{conj} \textsc{det}.\nom{} 女人 \textsc{det}.\acc{} 男人 爱\\
+     \textsc{comp} \textsc{det}.\nom{} 女人 \textsc{det}.\acc{} 男人 爱\\
 \glt `这个女人爱这个男人'
 %     that the.\nom{} woman the.\acc{} man loves\\
 %\glt `that the woman loves the man'
 \ex 
 \gll dass der Mann geliebt wird\\
-     \textsc{conj} \textsc{det}.\nom{} 男人 爱 \textsc{aux}\\
+     \textsc{comp} \textsc{det}.\nom{} 男人 爱 \textsc{aux}\\
 \glt `这个男人被人爱'
 %     that the.\nom{} man loved is\\
 %\glt `that the man is loved'
@@ -2761,7 +2761,7 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %\glt `The man is loved.'
 \ex 
 \gll dass der Mann der Frau hilft\\
-     \textsc{conj} \textsc{det}.\nom{} 男人 \textsc{det}.\dat{} 女人 帮助\\
+     \textsc{comp} \textsc{det}.\nom{} 男人 \textsc{det}.\dat{} 女人 帮助\\
 \glt `这个男人帮助这个女人'
 %     that the.\nom{} man the.\dat{} woman helps\\
 %\glt `that the man helps the woman'
