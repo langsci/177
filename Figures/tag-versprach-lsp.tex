@@ -1,32 +1,29 @@
 %% -*- coding:utf-8 -*-
-\documentclass[ number=1
-                ,series=lnls,
-                ,isbn=978-3-944675-21-3,
-                ,url=http://langsci-press.org/catalog/book/14,
-	        ,output=long    % long|short|inprep              
-	        %,blackandwhite
-	        ,smallfont
-	        %,draftmode  
-                ,bibtex
-                ,copyright=CC-BY-ND
-		  ]{../langsci/langscibook}                          
+%% \documentclass[ number=1
+%%                 ,series=lnls,
+%%                 ,isbn=978-3-944675-21-3,
+%%                 ,url=http://langsci-press.org/catalog/book/14,
+%% 	        ,output=long    % long|short|inprep              
+%% 	        %,blackandwhite
+%% 	        ,smallfont
+%% 	        %,draftmode  
+%%                 ,bibtex
+%%                 ,copyright=CC-BY-ND
+%% 		  ]{../langsci/langscibook}                          
 
 
-\usepackage{forest,lsp-forest-setup-texlive-2013,makros.2e}
+% This works with lualatex under texlive 2017
+    \documentclass{article}
 
-%% % for fixing texlive 2015
+    \usepackage{libertine}\usepackage[libertine]{newtxmath}
 
-%% %% %deceive the driver
-%% \def\pdftexversion{140}
-%% %% %use the old driver for dvipdfm
-%% \def\pgfsysdriver{pgfsys-dvipdfm.def} 
-
-% does not help
+    \usepackage{luatexja-fontspec}\setmainjfont{SimSun}
 
 
-\usetikzlibrary{tikzmark}
+    \usepackage{../langsci/styles/langsci-forest-setup,german,makros.2e,abbrev,merkmalstruktur,dalrymple,my-xspace}
 
-% compile with texlive 2013
+    \usepackage{langsci-lgr}
+
 
 \begin{document}
 \thispagestyle{empty}
@@ -48,7 +45,7 @@
 		[NP$_1^2\downarrow$]
 		[S*]
 		[V$_1$
-			[versprach]]]]
+			[versprach\\保证]]]]
 \end{forest}
 \hspace{2ex}
 \begin{tikzpicture}[overlay,remember picture,out=-70,in=110,dashed]
