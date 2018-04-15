@@ -1,17 +1,24 @@
 %% -*- coding:utf-8 -*-
-\documentclass[ number=1
-                ,series=tbls,
-	        %,blackandwhite
-	        ,smallfont
-	        %,draftmode  
-		  ]{../LSP/langsci}                          
+%% \documentclass[ number=1
+%%                 ,series=tbls,
+%% 	        %,blackandwhite
+%% 	        ,smallfont
+%% 	        %,draftmode  
+%% 		  ]{../LSP/langsci}                          
+
+% This works with lualatex under texlive 2017
+    \documentclass{article}
+
+    \usepackage{libertine}\usepackage[libertine]{newtxmath}
+
+    \usepackage{luatexja-fontspec}\setmainjfont{SimSun}
 
 
-\usepackage{forest,lsp-forest-setup-texlive-2013,makros.2e}
+    \usepackage{../langsci/styles/langsci-forest-setup,german,makros.2e,abbrev,merkmalstruktur,dalrymple,my-xspace}
 
-\usetikzlibrary{tikzmark}
+    \usepackage{langsci-lgr}
 
-% compile with texlive 2013
+
 
 \begin{document}
 \thispagestyle{empty}
@@ -38,7 +45,7 @@
                       per & 3\\ 
                       num & sing\\
                      }\\
-       }} [is]]
+       }} [is\\\textsc{aux}]]
   [{\ms{
        cat & {\upshape VP}\\ 
        mode & ger\\
@@ -74,7 +81,7 @@
        \ms{
             cat & {\upshape V}\\
         }}
-       [laughing]]]]
+       [laughing\\\rule{0pt}{11pt}笑]]]]
 \end{forest}
 \hfill\mbox{}
 \begin{tikzpicture}[overlay,remember picture,out=0,in=220]

@@ -684,8 +684,8 @@ tell可以附接到这个树上，因为tell的这个树可以插入到“who th
 %
 还有一个很重要的细节：尽管（\mex{1}）中的树包含范畴S，（\mex{1}）并不是一个合语法的英语句子。
 \ea[*]{
-\gll who that Bill likes\\
-谁 \textsc{comp} Bill 喜欢\\
+\gll who that          Bill likes\\
+     谁  \textsc{comp} Bill 喜欢\\
 }
 \z
 这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作。
@@ -805,7 +805,7 @@ tag
 图\vref{Obl-Adjunktion-FTAG}展示了laughing的树，这棵树上的VP结点的两个结构中的\textsc{mode}特征的值不一致。
 \begin{figure}
 \centerline{%
-\includegraphics{Figures/tag-obl-adj-ftag-cropped}
+\includegraphics{Figures/tag-obl-adj-ftag-crop}
 }
 % This does not work with texlive 2015 use texlive 2013
 %% \hfill
@@ -917,7 +917,7 @@ tag
            }\vspace{1mm}\\
         \ms{
              cat & {\upshape V}\\
-        }} [laughing\\笑]]]]]
+        }} [laughing\\\rule{0pt}{10pt}笑]]]]]
 \end{forest}
 }
   \caption{\label{Obl-Adjunktion-FTAG-Ergebnis}FTAG中强制附接的结果}
