@@ -635,8 +635,9 @@ val  \ibox{1}\\
 要讨论的另外一组有问题的数据来自于土耳其语的致使化\citep[\page 146]{Lewis67a-u}：
 %The second set of problematic data that will be discussed comes from causativization in Turkish \citep[\page 146]{Lewis67a-u}:
 \ea
-öl-dür-t-tür-t- \\
-`去导致某人导致某人去导致某人去杀某人'\\
+\gll öl-dür-t-tür-t- \\
+\textsc{det}-导致-导致-导致-导致\\
+\glt `去导致某人导致某人去导致某人去杀某人'
 (杀死 = 导致某人去死)
 %öl-dür-t-tür-t- \\
 %`to cause someone to cause someone to cause someone to kill someone'\\
@@ -989,7 +990,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 %subject does not get a semantic role. The referent of \emph{du} is not the one who \emph{seems}.
 \ea
 \gll Du scheinst gleich einzuschlafen.\\
-     你 好像.2\sg{} 很快 \textsc{prep}.\textsc{prep}.睡觉\\
+     你 好像.2\sg{} 很快 \textsc{part}.\textsc{inf}.睡觉\\
 \glt `好像你很快就要睡觉了。'
 %\gll Du scheinst gleich einzuschlafen.\\
 %     you seem.2\sg{} soon in.to.sleep\\
@@ -1213,7 +1214,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %\glt `be utterly surprised'
 \ex 
 \gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
-	 看 好像 \textsc{aux} X   \textsc{det} 鸡肉  \textsc{det} 面包 \textsc{adv}.吃\\
+	 看 好像 \textsc{aux} X   \textsc{det} 鸡肉  \textsc{det} 面包 光.吃\\
 \glt `看起来很疑惑/迷惑'
 %\gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
 %	 look as.if had X the chicken the bread away.eaten\\
@@ -2424,13 +2425,13 @@ for tree={l sep+=5mm}
 %l sep+=10mm
 [TRANSITVE-CLAUSE-UNIT, name=tcu
   [NP-UNIT-1, name=np1
-    [PRO [what]] ]
-  [\textsc{aux},tier=det, no edge, name=aux [did] ]
+    [PRO [what\\什么]] ]
+  [\textsc{aux},tier=det, no edge, name=aux [did\\\textsc{aux}] ]
   [NP-UNIT-2, name=np2
-    [\textsc{det}, tier=det [the]]
-    [N   [boy]] ]
+    [\textsc{det}, tier=det [the\\\textsc{det}]]
+    [N   [boy\\男孩]] ]
   [VP-UNIT, name=vp
-    [V [hit] ] ]
+    [V [hit\\击打] ] ]
 ]
 \draw (vp.south)--(aux.north);
 \node (topic) [base left=of tcu]
@@ -2860,8 +2861,8 @@ Van Trijp表明FCG与他称之为生成方法的不同之处在于它不仅希�
 %parts of phrases is given in (\mex{1}):
 \ea
 \gll Dieses Buch hat der Mann mir versprochen, seiner Frau zu geben, der gestern hier aufgetreten ist.\\
-     这   书 \textsc{aux} \textsc{det} 男人  我  承诺     他的    妻子 \textsc{inf} 给   \textsc{rel} 昨天 这里 演奏 \textsc{aux}\\
-\glt `昨天在这里演奏的那个男人向我承诺把这本书给他的妻子。'
+     这   书 \textsc{aux} \textsc{det} 男人  我  承诺     他的    妻子 \textsc{inf} 给   \textsc{rel} 昨天 这里 出现 \textsc{aux}\\
+\glt `昨天在这里出现的那个男人向我承诺把这本书给他的妻子。'
 %\gll Dieses Buch hat der Mann mir versprochen, seiner Frau zu geben, der gestern hier aufgetreten ist.\\
 %     this   book has the man  me  promised     his    wife to give   who yesterday here performed is\\
 %\glt `The man who performed here yesterday promised me to give this book to his wife.'
@@ -3278,8 +3279,8 @@ Van Trijp对比了SBCG和FCG并且说SBCG遵循理论物理学——像乔姆斯
 %governing verb. 
 \ea
 \gll I am waiting for my man.\\
-    我 \textsc{aux} 等待 \textsc{prep} 我的 人\\
-\glt `我在等待我的人。'
+    我 \textsc{aux} 等待 \textsc{prep} 我的 男人\\
+\glt `我在等我的男人。'
 %I am waiting for my man.
 \z 
 所以，假设选择限制的强局部性就要求所有无法在局部解决的现象都要通过上传信息来分析。
