@@ -156,7 +156,7 @@ Edeltraud \citet{Werner93a-u}, 哈雷-维滕贝格。
 %it is fairly clear what the dependencies in an utterance are. Therefore it is easy to annotate
 %consistently and train statistical parsers on such annotated data.
 
-除了统计模型，还有所谓的深层处理系统，这些系统依赖于手工构造的、语言学驱动的语法。我已经提到了Meľčuk在机器翻译方面做了一些工作；\citet{HZ60a-u}有针对俄语\il{Russian}的剖析器；\citet{SN86a}开发了一个使用英语\il{English}语法的句法剖析器，\citet*{JLV86a-u}开发了一个用芬兰语\il{Finnish}演示的剖析器，\citet{Hellwig86a-u,Hellwig2003a,Hellwig2006a}开发了英语\il{English}的词语法，\citet{Covington90a}开发了俄语\il{Russian}和拉丁语\il{Latin}的剖析器，这个系统可以剖析非连续的成分，还有\citet{Menzel98a-u}实现了一个德语依存语法的高质量的剖析器。在\citew*{Kettunen86a-u,Lehtola86a-u,MS98a-u}中还提及了其他计算剖析器。下面列出了有依存语法的语法片段的若干种语言：
+除了统计模型，还有所谓的深层处理系统，这些系统依赖于手工构造的、语言学驱动的语法。我已经提到了Meľčuk在机器翻译方面做了一些工作；\citet{HZ60a-u}有针对俄语\il{Russian}的剖析器；\citet{SN86a}开发了一个使用英语\il{English}语法的句法剖析器，\citet*{JLV86a-u}开发了一个用芬兰语\il{Finnish}演示的剖析器，\citet{Hellwig86a-u,Hellwig2003a,Hellwig2006a}开发了英语\il{English}的词语法，\citet{Covington90a}开发了俄语\il{Russian}和拉丁语\il{Latin}的剖析器，这个系统可以剖析非连续的成分，还有\citet{Menzel98a-u}实现了一个德语依存语法的高质量的剖析器。\citet{Kettunen86a-u}、\citet{Lehtola86a-u}和\citet{MS98a-u}还提及了其他计算剖析器。下面列出了有依存语法的语法片段的若干种语言：
 %Apart from statistical modeling, there are also so-called deep processing systems, that is, systems
 %that rely on a hand-crafted, linguistically motivated grammar. I already mentioned Meľčuk's work in
 %the context of machine translation; \citet{HZ60a-u} had a parser for Russian\il{Russian};
@@ -323,12 +323,12 @@ Jingyang Jiang and Haitao Liu*. The Effects of Sentence Length on Dependency Dis
 dg edges
 [V
   [N
-    [D [the] ]
-     [child] ]
-  [reads]
+    [D [the;\textsc{det}] ]
+     [child;孩子] ]
+  [reads;读]
   [N
-    [D [a] ]
-    [book] ] ]
+    [D [a;一] ]
+    [book;书] ] ]
 \end{forest}
 }
 \caption{\label{fig-the-child-reads-the-book-dg}“The child reads a book.”的分析}
@@ -396,7 +396,7 @@ sm edges
     [a,edge label={node[midway,right,font=\scriptsize]{\textsc{det}}}] ] ]
 \end{forest}
 }
-\caption{\label{fig-the-child-reads-the-book-dg-words}\emph{The child reads a book.}的分析的另一种表示形式}
+\caption{\label{fig-the-child-reads-the-book-dg-words}“The child reads a book.”的分析的另一种表示形式}
 %\caption{\label{fig-the-child-reads-the-book-dg-words}Alternative presentation of the analysis of \emph{The child reads a book.}}
 \end{figure}%
 由于我们对从属词上的结的依存关系有清晰的可视化表示，我们就不用箭头来表示这个信息了。但是，有些依存语法的变体，比如说\wg{}，使用了相互依存关系。由此，比如说，有些理论认为在his child的分析中，his依存于child，而且child依存于his。如果必须要描述这种相互依存的关系，则需要对所有的依存关系使用箭头或者有些层级树中的依存关系用下划线表示，而其他依存关系用箭头表示。
@@ -491,14 +491,14 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
     dg edges
     [V,l sep=2\baselineskip
       [N
-        [D [the] ]
-         [child] ]
-      [Adv,dg adjunct [often]]
-      [reads]
+        [D [the;\textsc{det}] ]
+         [child;孩子] ]
+      [Adv,dg adjunct [often;经常]]
+      [reads;读]
       [N
-        [D [the] ]
-        [book] ]
-      [Adv,dg adjunct [slowly]] ]
+        [D [the;\textsc{det}] ]
+        [book;书] ]
+      [Adv,dg adjunct [slowly;慢慢地]] ]
     \end{forest}
 }
 \caption{\label{fig-the-child-often-reads-the-book-slowly}“The child often reads the book slowly.”的分析}
@@ -538,7 +538,7 @@ Engel使用E\sub{sub}来表示主语，还有E\sub{acc}、E\sub{dat}和E\sub{gen
 \label{ex-gestern-war-ich-bei-tom}
 \ex 
 \gll Gestern war ich bei Tom.\\
-     昨天 \textsc{cop} I \textsc{prep} Tom\\
+     昨天 \textsc{cop} 我 \textsc{prep} Tom\\
 \glt `我昨天跟Tom在一起。'
 %     yesterday was I with Tom\\
 %\glt `I was with Tom yesterday.'
@@ -686,8 +686,8 @@ Tim Osborne（p.\,c.\ 2015）提醒我，所有的情况下并不是这样的：
 \ea
 \label{ex-david-devoured-a-sandwich-at-noon-yesterday-two}
 \gll David devoured a sandwich at noon yesterday.\\
-David 吞光 一 三明治 在 中午 昨天\\
-\glt `David昨天中午吞光了一个三明治。'
+David 吞食 一 三明治 在 中午 昨天\\
+\glt `David昨天中午狼吞虎咽地吃光了一个三明治。'
 \z
 这就是未排序的依存图中的编码形式。由于这个平行特征，\citet[\page 308]{Broeker2003a-u}针对依存语法也提出了粘着语义学就不足为奇了\isc{粘着语义学}\is{glue semantics}（\citealp*{DLS93a-u}；\citealp[\S~8]{Dalrymple2001a-u}）。我们在\ref{glue-semantics}已经介绍过粘着语义学了。
 %This is exactly what is encoded in an unordered dependency graph. Because of this parallel it comes
@@ -1477,10 +1477,10 @@ dependencies between Es.
 \begin{forest}
 dg edges
 [V 
-      [N [John] ]
-      [Conj,dg junction [and]]
-      [N [Mary] ]
-      [laugh]]
+      [N [John;John] ]
+      [Conj,dg junction [and;和]]
+      [N [Mary;Mary] ]
+      [laugh;笑]]
 \end{forest}
 \caption{\label{fig-dg-junction}对并列应用特殊的联结（junction）关系的分析}
 %\caption{\label{fig-dg-junction}Analysis of coordination using the special relation \emph{junction}}
@@ -2280,7 +2280,7 @@ dg edges
 \ex
 \label{ex-mehrfach-vf-adv-acc}
 \gll [Gezielt] [Mitglieder] [im     Seniorenbereich]       wollen  die Kendoka allerdings nicht werben.\footnotemark\\
-    \spacebr{}特别地 \spacebr{}成员     \spacebr{}\textsc{prep}.\textsc{det} 高级.市民.选区 想要.\textsc{inf} \textsc{det} 剑道家 但是    不   招募\\
+    \spacebr{}特别地 \spacebr{}成员     \spacebr{}\textsc{prep}.\textsc{det} 高级.市民.选区 想要 \textsc{det} 剑道家 但是    不   招募\\
 \glt `但是，剑道家的会员招募策略并不想指向高级市民的选区。'%
 %    \spacebr{}specifically \spacebr{}members     \spacebr{}in.the senior.citizens.sector want.to the Kendoka however    not   recruit\\
 %\glt `However, the Kendoka do not intend to target the senior citizens sector with their member recruitment strategy.'%
@@ -3221,7 +3221,7 @@ lexical & \ms{ cont & \\
 另一个选择是假定具有多重功能的词汇：所以说，一个关系代词可以既是一个中心语，也同时是一个从属语（\citealp[\S 246, §8--11]{Tesniere2015a-not-crossreferenced}；\citealp[\page xlvi]{OK2015a}；\citealp[\page  129--130]{Kahane2009a}）。至少Kahane的分析是\ref{Abschnitt-Relativsaetze-CG}讨论的范畴语法分析的一个例子，而且它具有相同的问题：如果关系代词是中心语，它选择了缺失关系代词的小句，不容易看到这个分析是如何扩展到（i）中的抽吸过程\isc{抽吸过程}\is{pied-piping}的，其中被提取的成分是一个包括关系代词，而不是代词本身的完整短语。
 \ea
 \gll die Frau, von deren Schwester ich ein Bild gesehen habe\\
-     \textsc{det} 女人 \textsc{prep} 谁的 姐妹 我 一 图片 看见 \textsc{aux}\\
+     \textsc{det} 女人 \textsc{prep} \textsc{rel} 姐妹 我 一 图片 看见 \textsc{aux}\\
 \glt `我在她的姐妹那里看到一张照片的那个女人'
 \zlast
 }
@@ -3321,7 +3321,7 @@ dg edges
 %\citet{Bargmann2015a} pointed out an additional aspect of the N-P-N construction, which makes things more complicated. The pattern is not restricted %to two nouns. There can be arbitrarily many of them:
 \ea
 \gll Day after day after day went by, but I never found the courage to talk to her.\\
-天 \textsc{prep} 天 \textsc{prep} 天 过 \textsc{prep} 但是 我 从未 找到 \textsc{det} 勇气 \textsc{inf} 说话 \textsc{inf} 她\\
+天 \textsc{prep} 天 \textsc{prep} 天 过 \textsc{adv} 但是 我 从未 找到 \textsc{det} 勇气 \textsc{inf} 说话 \textsc{perp} 她\\
 \glt `一天又一天过去了，但是我仍未找到勇气跟她说话。'
 \z
 所以说，Bargmann提出了（\mex{1}）中的模式，而不是N-P-N范式，这里`+'\isc{$+$}\is{$+$}表示一个序列的至少一次重复。
@@ -3357,13 +3357,13 @@ N (P N)+
 \eal
 \ex 
 \gll Ich habe einen Mann getroffen, der blonde Haare hat.\\
-     我 \textsc{aux} 一 男人 见面 谁 金色 头发 有\\
+     我 \textsc{aux} 一 男人 见面 \textsc{rel} 金色 头发 有\\
 \glt `我跟一位有着金色头发的男士见面了。'
 %     I have a man met who blond hair has\\
 %\glt `I have met a man who has blond hair.'
 \ex 
 \gll Einen Mann getroffen, der blonde Haare hat, habe ich noch nie.\\
-     一 男人 见面 谁 金色 头发 有 \textsc{aux} 我 yet 从未\\
+     一 男人 见面 \textsc{rel} 金色 头发 有 \textsc{aux} 我 还 从未\\
 \glt `我从未见到过有着金色头发的男人。'
 %     a man met who blond hair has have I yet never\\
 %\glt `I have never met a man who has blond hair.'
