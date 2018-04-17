@@ -1118,11 +1118,11 @@ Johnson、Lappin和Kolb曾质疑过乔姆斯基系统的计算方面。乔姆斯
 \subsubsection{功能投射与语言知识的模式化}
 %\subsubsection{Functional projections and modularization of linguistic knowledge}
 
-移位必须由特征核查所允准这一思想导致了（静态）功能中心语数量的膨胀\isc{范畴!功能范畴|(}\is{category!functional|(}。\footnote{%
+移位必须由特征核查所允准这一思想导致了（静态）功能中心语数量的膨胀\isc{范畴!功能范畴|(}\is{category!functional|(}\footnote{%
 这类中心语的假设并不是必要的，因为特征可以被集中，然后他们能被一起核查。在这一点，HPSG\indexhpsgc 理论在本质上是类似的，请看\citew[\S~II.3.3.4, \S~II.4.2]{Sternefeld2006a-u}。
 
 在所谓的制图\isc{制图}\is{cartography}方法中，每个形态句法特征都对应于一个独立的句法中心语\citep[\page 54, 61]{CR2010a}。对于一个明显形式化的方法来说，在一个组合操作中有一个特征被利用了（请看\citew[\page 335]{Stabler2001a}）。Stabler的最简方案语法（Minimalist Grammars）\indexmgc 在\ref{Abschnitt-MG}中有更为详细的讨论。
-} 
+}。 
 \citet[\page 297]{Rizzi97a-u}提出了图\vref{Abbildung-Rizzi}（也可以参考Grewendorf \citeyear[\page 85, 240]{Grewendorf2002a}，\citeyear{Grewendorf2009a}）中的结构。
 %The assumption that movement must be licensed by feature checking has led to an inflation of the number of (silent) functional 
 %heads\is{category!functional}.\footnote{%
@@ -1292,18 +1292,18 @@ AgrN\isc{范畴!功能范畴!AgrN}\is{category!functional!AgrN}、AgrV\isc{范�
 \eal
 \ex 
 \gll just walked into the           room [\sub{NP} someone who we don't know].\\
-     刚   走      进   \textsc{det}  房间 {}         某人     谁  我们 不 认识\\
+     刚   走      进   \textsc{det}  房间 {}         某人     谁  我们 \textsc{aux}.不 认识\\
 \glt `刚走进房间[\sub{NP} 我们不认识的某人]'
 \ex 
 \gll Someone$_i$ just walked into the         room [\sub{NP} \_$_i$ who we don't know].\\
-     某人         刚   走     进   \textsc{det} 房间 {}        {}     谁  我们 不 认识\\
+     某人         刚   走     进   \textsc{det} 房间 {}        {}     谁  我们 \textsc{aux}.不 认识\\
 \glt `某人刚走进房间[\sub{NP} \_$_i$ 我们不认识的]'
 \zl
 （i.a）一定是某种推导出的中间表示，否则英语就不会是SV(O)，而是V(O)S。
 由此，（i.a）是通过将VP\emph{just walked into the room}前置由（ii）推导出来的。
 \ea
 \gll Someone who we don't know just walked into the room\\
-某人 谁 我们 不 认识 刚 走 进 \textsc{det} 房间\\
+某人 谁 我们 \textsc{aux}.不 认识 刚 走 进 \textsc{det} 房间\\
 \glt `我们不认知的某个人刚走进房间'
 \z
 需要承认的是，这类分析不能轻易地与语言运用模型相组合（请看第\ref{Abschnitt-Diskussion-Performanz}章）。
@@ -1512,10 +1512,10 @@ where n children=0{delay=with translation}{}
 sm edges without translation
 [pP
    [p
-	[P [with]]
+	[P [with;\textsc{prep}]]
 	[p [$\varnothing$]]]
    [AgrOP
-	[D [\textbf{me}]]
+	[D [\textbf{me};我]]
 	[$\overline{\mbox{AgrO}}$
 		[AgrO
 			[P [t$'$]]
@@ -1632,11 +1632,11 @@ Ken \textsc{aux} \textsc{aux} 不 听 \textsc{det} 新闻\\
 \glt Ken可能没听过这个新闻。`'
 \ex 
 \gll a [not unapproachable] figure\\
-一 不 不可接触 人物\\
+一 \spacebr{}不 不可接触 人物\\
 \glt `一位不可接触的人物'
 \ex 
 \gll {}[Not always] has she seasoned the meat.\\
-\textsc{aux} 总是 \textsc{aux} 她 \textsc{det} 肉\\
+{}\spacebr{}不 总是 \textsc{aux} 她 调味 \textsc{det} 肉\\
 \glt `她并不总是把肉调味。'
 \zl
 如果所有这些投射只是没有更多属性（有关动词形式、形容词词性、副词词性）的NegP，这就无法说明他们不同的句法分布。否定很明显只是更多普遍性问题的一个特殊的情况，因为副词在传统意义上可以附加在形容词上构成形容词短语，而不是Chinque意义上的副词短语。比如说，例（\mex{1}）中的副词oft（经常）修饰lachender（笑）构成了形容词短语oft lachender，这就像未被修饰的形容词助词lachender：它修饰Mann（人），并位于它前面。
@@ -1965,7 +1965,7 @@ Chomsky讨论的另一特殊情况是LI$\alpha$与非LI$\beta$的内部合并。
 \ea
 \label{ex-what-you-wrote}
 \gll what [ C [you wrote \emph{t}]]\\
-什么 C 你 写 \emph{t}\\
+什么 \spacebr{} {} \spacebr{}你 写 \\
 \glt `你写了什么'
 \z
 如果标记是由\pref{Label2}决定的，那么在GB框架下就有一个被叫做CP的句法对象；由于这个CP是疑问句，它可以在\pmexa{1}中被用作wonder的补足语。如果标记是由\pref{Label1}来决定的，我们就可以在\pmexb{1}中得到被用为read的宾格宾语的宾语，即在GB术语中与DP相关的成分。
