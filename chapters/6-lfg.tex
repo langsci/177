@@ -215,7 +215,7 @@ f-结构可以由功能描述（functional descriptions）来确立。
 \eal
 \ex{
 \gll David sneezed. \\
-     David 打喷嚏。\\
+     David 打喷嚏\\
 \glt `David打了个喷嚏。'
 }
 \ex
@@ -265,8 +265,8 @@ $f$: \lfgms{ pred  & {\small `SNEEZE\arglist{\lfgsubj}'}\\
 %% \Aput*{$\phi$}
 %% \end{tabular}
 \tree{IP}{%
-  \tree[b]{NP}{\tree{N$'$}{\tree{N}{\le{David}}}}
-  \tree{I$'$}{\tree{VP}{\tree{V$'$}{\tree{V}{\le{sneezed}}}}}}%
+  \tree[b]{NP}{\tree{N$'$}{\tree{N}{\le{David\\David}}}}
+  \tree{I$'$}{\tree{VP}{\tree{V$'$}{\tree{V}{\le{sneezed\\打喷嚏}}}}}}%
 \hspace*{4em}%
 \raisebox{-2em}{\lfgms{
 pred & {\small `SNEEZE\arglist{\lfgsubj}}'\\
@@ -343,7 +343,7 @@ f-结构需同时满足两个合格性的条件：它们必须同时完备（com
 \eal
 \ex[*]{
   \gll David devoured. \\
-       David 吞食。\\
+       David 吞食\\
 }
 \ex[]{
 \lfgms{ pred & {\small `DEVOUR\sliste{\lfgsubj,\lfgobj}'}\\
@@ -361,7 +361,7 @@ f-结构需同时满足两个合格性的条件：它们必须同时完备（com
 \eal
 \ex[*]{
 \gll David devoured a sandwich that Peter sleeps. \\
-     David 吞食 一 三明治 \textsc{comp} Peter 睡觉。\\
+     David 吞食 一 三明治 \textsc{comp} Peter 睡觉\\
   %\\
 %`David verschlang ein Sandwich, daß Peter schläft.'
 }
@@ -483,7 +483,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}（�
 \eal
 \ex{
 \gll David yawned. \\
-     David 打哈欠。\\
+     David 打哈欠\\
 \glt `David打哈欠了。'
 }
 \ex ~\\[-\baselineskip]

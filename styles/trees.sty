@@ -52,7 +52,7 @@
 
 \def\le{\@ifnextchar[{\@le}{\@le[lex]}}
 \def\@le[#1]#2{\renewcommand\psedge{\ncdiag[arm=0,angleA=270,angleB=90,linewidth=.5pt]}
-               \TR[name={#1}]{#2}}
+               \TR[name={#1}]{\begin{tabular}{@{}c@{}}#2\end{tabular}}}
 
 \def\tri#1{\setbox1\hbox{#1}%
            \pstree[levelsep=2ex,nodesep=3pt,treesep=.5cm]{%
