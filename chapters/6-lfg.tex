@@ -285,7 +285,7 @@ $\phi$指明了NP结点与其相对应的f-结构之间的映射关系，在图�
 \begin{tabular}[t]{@{}c@{}}
 \rnode{a}{\rnode{v1}{V$'$}}\\[2ex]
 \rnode{b}{\rnode{v}{V}}\\[2ex]
-\rnode{sneezed}{sneezed}\\
+\rnode{sneezed}{\begin{tabular}{@{}c@{}}sneezed\\打喷嚏\end{tabular}}\\
 \end{tabular}
 \hspace*{4em}
 \rnode{d}{\raisebox{-2em}{\lfgms{ pred & {\small `SNEEZE\arglist{\lfgsubj}'}\\
@@ -303,16 +303,16 @@ IP、I$'$和I（亦包括VP）被映射到同一个f-结构上。
 \eal
 \ex{
   \gll David is yawning.\\
-       David \textsc{aux} 打哈欠。 \\
+       David \textsc{aux} 打哈欠\\
   \glt `David正在打哈欠。 
 }
 
 \ex {\tree[a]{IP}{%
   \tree{NP}{\tree{N$'$}{%
-    \tree{N}{\le{David}}}}
+    \tree{N}{\le{David\\David}}}}
   \tree[b]{I$'$}{%
-    \tree[c]{I}{\le{is}}
-    \tree[d]{VP}{\tree[e]{V$'$}{\tree[f]{V}{\le{yawning}}}}}}}%
+    \tree[c]{I}{\le{is\\\textsc{aux}}}
+    \tree[d]{VP}{\tree[e]{V$'$}{\tree[f]{V}{\le{yawning\\打哈欠}}}}}}}%
 \hspace*{4em}%
 {\rnode{o}{\raisebox{-2em}{\lfgms{ pred & {\small `YAWN\arglist{\lfgsubj}'}\\
                                    tense & \lfgpres\\
@@ -442,7 +442,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}（�
 \z
 
 \ea
-\tree{V}{\le{sneezed}}
+\tree{V}{\le{sneezed\\打喷嚏}}
 \hspace*{4em}
 \rnode{d}{\mbox{\lfgms{ pred & {\small `SNEEZE\arglist{\lfgsubj}'}\\
                         tense & \lfgpast}}}
@@ -489,8 +489,8 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}（�
 \ex ~\\[-\baselineskip]
 \hspace*{-2em}
 {\ctree[ip]{IP}{%
-  \tree[b]{NP}{\tree[n]{N}{\le{\em David}}}
-  \tree[ii]{I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{\em yawned}}}}}}%
+  \tree[b]{NP}{\tree[n]{N}{\le{David\\David}}}
+  \tree[ii]{I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{yawned\\打哈欠}}}}}}%
 \hspace*{3em}%
 {\fd{\rnode{s}{\fdand{\feat{\pred}{\small `YAWN\arglist{\subj}'}
            \feat{\subj}{\rnode{i}{\fdand{\feat{\pred}{\small `DAVID'}}}}}}}}%
