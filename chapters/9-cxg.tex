@@ -1525,7 +1525,7 @@ dtrs & \ibox{1} list of signs
 %\subsubsection{Lexical extraction and the \textsc{local} feature}
 %\label{sec-sbcg-local-feature}
 
-%Ivan Sag研究的一个重要主题就是要从语法中取消空成分\isc{空成分}\is{empty element}。他与人合作提出了一种不使用空成分来提取的基于词汇的分析\citep*{NB94,BMS2001a}。并非像早期HPSG版本那样假设一个语迹（参看%\ref{sec-nld-HPSG}），而是假设了一个词汇规则（词汇构式）或者列表值特征（例如\argstc 和\textsc{valence}）之间的一个特殊映射，因此一个在\textsc{gap}列表（也就是HPSG早期版本中的\slaschc ）中存在一个元素的词项可%以被允准。标准HPSG中的\localfc 值用于捆绑填充语和空位共享的信息。语迹的词条在第\pageref{le-extraktionsspur}页的 （\ref{le-extraktionsspur}）给出，为了方便这里重新写为 （\mex{1}）。
+%Ivan Sag研究的一个重要主题就是要从语法中取消空成分\isc{空成分}\is{empty element}。他与人合作提出了一种不使用空成分来提取的基于词汇的分析\citep*{NB94,BMS2001a}。并非像早期HPSG版本那样假设一个语迹（参看%\ref{sec-nld-HPSG}），而是假设了一个词汇规则（词汇构式）或者列表值特征（例如\argstc 和\textsc{valence}）之间的一个特殊映射，因此一个在\textsc{gap}列表（也就是HPSG早期版本中的\slaschc）中存在一个元素的词项可%以被允准。标准HPSG中的\localfc 值用于捆绑填充语和空位共享的信息。语迹的词条在第\pageref{le-extraktionsspur}页的 （\ref{le-extraktionsspur}）给出，为了方便这里重新写为 （\mex{1}）。
 %A main theme in Ivan Sag's work was to eliminate empty elements\is{empty element} from grammar. He co-developed a
 %lexical analysis of extraction that did not use empty elements \citep*{NB94,BMS2001a}. Rather than
 %assuming a trace as in earlier versions of HPSG (see Section~\ref{sec-nld-HPSG}) a lexical rule
@@ -3125,10 +3125,9 @@ non-head-dtrs   \sliste{ \ibox{5} [ synsem \ibox{3} ] }
 %\The following code shows how (\mex{0}b) is implemented in TRALE:
 \begin{verbatim}
 arg_h rule (head_argument_phrase,
-          synsem:loc:cat:head:initial:minus,
-          head_dtr:HeadDtr,
-          non_head_dtrs:[NonHeadDtr]
-         )
+            synsem:loc:cat:head:initial:minus,
+            head_dtr:HeadDtr,
+            non_head_dtrs:[NonHeadDtr])
   ===>
 cat> NonHeadDtr,
 cat> HeadDtr.
@@ -3334,7 +3333,7 @@ Van Trijp表明HPSG/SBCG是一个“生成语法”，因为其目的只是解�
 %\subsubsubsection{A note on engineering}
 
 我认为FCG最大的问题是把语言学问题与工程问题混在一起了。\footnote{%
-如果所有研究FCG的论文都被当做记录FCG系统的文章（参看第~\pageref{Steels-FCG-System}页的脚注~\ref{Steels-FCG-System} ） ，因为如果是那样的话，就需要包含这些技术细节。如果FCG论文要被当做描述某种构式语法理论语言学论文的话，Lisp表示以及安装细节就会带来阅读障碍。
+如果所有研究FCG的论文都被当做记录FCG系统的文章（参看第~\pageref{Steels-FCG-System}页的脚注~\ref{Steels-FCG-System}） ，因为如果是那样的话，就需要包含这些技术细节。如果FCG论文要被当做描述某种构式语法理论语言学论文的话，Lisp表示以及安装细节就会带来阅读障碍。
 }只对工程问题有用的一些特征出现在了语言学的论文中，一些为了使得句法分析器能够运行的技术假设与语言学限制混淆了。用于表征格信息的位向量编码成为了有趣的格系统论文的一部分。位向量编码没有任何错误。它也用于HPSG的实现中（\citealp[\page 55]{Reape91}；\citealp[\page 269]{Babel}），但是这并没有混入到理论论文中。
 %A problematic property of work done in FCG is that linguistic and engineering aspects are mixed.\footnote{%
 %This is not a problem if all FCG papers are read as papers documenting the FCG-system (see
