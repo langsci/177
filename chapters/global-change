@@ -8,7 +8,7 @@ echo $x
 #sed -e 's/Lesetips/Literatur/g'   $x >$x.neu
 #sed -e 's/DET/\\textsc{det}/g'   $x >$x.neu
 #sed -e 's/INF /\\textsc{inf} /g'   $x >$x.neu
-sed -e 's/\\textsc{art}/一/g'   $x >$x.neu
+sed -e 's/\\textsc{conj}/\\textsc{comp}/g'   $x >$x.neu
 #sed -e 's/ vform-/ \{\\sc vform}-/g'   $x >$x.neu
 end
 
