@@ -34,7 +34,7 @@
 \newcommand{\lsOutput}{long}
 \newcommand{\lsFontsize}{11pt}
 \newcommand{\lsCopyright}{CC-BY}
-\newcommand{\lsBiblatexBackend}{bibtex}
+\newcommand{\lsBiblatexBackend}{biber}
 \newif\iflsDraft \lsDraftfalse
 \newif\iflsOpenReview \lsOpenReviewfalse
 \newif\iflsShowIndex \lsShowIndexfalse
@@ -80,7 +80,7 @@
 \DeclareStringOption{copyright}[CC-BY]
 	\define@key{langscibook}{copyright}{%
 		\renewcommand{\lsCopyright}{#1}}
-\DeclareStringOption{biblatexbackend}[bibtex]
+\DeclareStringOption{biblatexbackend}[biber]
 	\define@key{langscibook}{biblatexbackend}{%
 		\renewcommand{\lsBiblatexBackend}{#1}}
 \DeclareVoidOption{blackandwhite}{
