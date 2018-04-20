@@ -50,7 +50,9 @@ SOURCE=gt.bib \
 	sed -i.backup 's/{\\O }/Oe/' *.adx
 	python3 fixindex.py
 	mv $*mod.adx $*.adx
-	makeindex -gs index.format-plus -o $*.and $*.adx
+	authorindex -i -p $*.aux > $*.adx
+	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
+	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
 	zhmakeindex -o $*.scd $*.scx
