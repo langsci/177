@@ -4,8 +4,7 @@
 %\chapter{Categorial Grammar}
 \label{Kapitel-CG}\label{chap-CG}
 
-在本书所讨论的所有方法中，范畴语法
-\isc{范畴语法|(}\is{Categorial Grammar (CG)|(}是第二古老的方法。
+在本书所讨论的所有方法中，范畴语法\isc{范畴语法|(}\is{Categorial Grammar (CG)|(}是第二古老的方法。
 上个世纪三十年代波兰逻辑学家\href{http://en.wikipedia.org/wiki/Kazimierz_Ajdukiewicz}{Kazimierz Ajdukiewicz}提出了这种分析方法\citep{Ajdukiewicz35a-u}。
 范畴语法备受逻辑学家和语义学家青睐，主要原因在于在范畴语法中，句法和语义描写紧密耦合，所有的句法组合都遵从语义组合。
 语义研究中的一些典范工作使用了范畴语法，如Richard Montague\citeyearpar{Montague74a-u}的工作。
@@ -37,28 +36,22 @@
 \end{itemize}
 \citet*[\page 15]{BCPW2007a}提到过一个针对古典阿拉伯语\il{Arabic}的实现。
 
-一些处理范畴语法的系统增加了概率
-\isc{统计学}\is{statistics}模块，所以处理结果的鲁棒性很高\citep*{OB97a,CHS2002a-u}。
+一些处理范畴语法的系统增加了概率\isc{统计学}\is{statistics}模块，所以处理结果的鲁棒性很高\citep*{OB97a,CHS2002a-u}。
 一些系统采用了从（标注）语料中抽取词汇项的方法，\citet{Briscoe2000a}和\citet{Villavicencio2002a}使用了一些统计信息，
-这些信息来自于他们的基于普遍语法
-\isc{普遍语法}\is{Universal Grammar (UG)}的语言获取模型
-\isc{语言习得}\is{language acquisition}。
+这些信息来自于他们的基于普遍语法\isc{普遍语法}\is{Universal Grammar (UG)}的语言获取模型\isc{语言习得}\is{language acquisition}。
 
 \section{关于表示形式的一般说明}
 
 接下来，我介绍一些范畴语法中的基本假设。在此之后，我讨论一些基于组合范畴语法的具体分析，这些分析选自\citep{Steedman97a}。
-除了组合范畴语法之外，也有一些范畴语法的其它变体，如类型逻辑范畴语法\citet{Morrill94a-u,Dowty97a-u,Moortgat2011a-u}。
+除了组合范畴语法之外，也有一些范畴语法的其它变体，如类型逻辑范畴语法（\citet{Morrill94a-u,Dowty97a-u,Moortgat2011a-u}）。
 在本书中对其它类型的范畴语法不再加以讨论。
 
 \subsection{配价信息的表示}
 \label{sec-forward-backward-application}
 
-在
-\isc{价|(}\is{valence|(}范畴语法中，复杂范畴替换了GPSG\indexgpsgc 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
-一些短语结构语法规则
-\isc{短语结构语法}\is{phrase structure grammar}
-可以用复杂范畴来替换：
-\is{/|(} 
+在\isc{价|(}\is{valence|(}范畴语法中，复杂范畴替换了GPSG\indexgpsgc 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
+一些短语结构语法规则\isc{短语结构语法}\is{phrase structure grammar}
+可以用复杂范畴来替换：\isc{/|(}\is{/|(} 
 
 \ea
 \label{LE-CG}
@@ -93,6 +86,7 @@ X/Y $*$ Y = X
 \deriv{2}{
 %\begin{tabular}{@{}cc@{}}
 chased       & Mary\\
+\textrm{追} & Mary\\
 %\uline{1}    & \uline{1} \\
 \hr & \hr\\
 vp/np   & np\\
@@ -114,9 +108,9 @@ CG中的一个推导可以视为一个二叉树。
 sn edges
 [vp
 	[vp/np
-		[chased]]
+		[chased;追]]
 	[np
-		[Mary]]]
+		[Mary;Mary]]]
 \end{forest}
 }
 \caption{\label{Abb-CG-als-Baum}图\ref{abb-cg-transitives-Verb}中推导的树形表示}
@@ -144,6 +138,7 @@ Y $*$ X$\backslash$Y = X
 \centerline{%
 \deriv{4}{
 the  & cat & chased         & Mary\\
+\textsc{det}  & \textrm{猫} & \textrm{追}         & Mary\\
 \hr  & \hr & \hr            & \hr \\
 np/n & n   & (s\bs np)/np   & np\\
 \multicolumn{2}{@{}c}{\forwardapp} & \multicolumn{2}{c@{}}{\forwardapp}\\
@@ -219,6 +214,7 @@ Y:a & X\bs Y:f & X: f a\\
 \centerline{%
 \deriv{3}{
 Jacob & eats         & apples\\
+Jacob & \textrm{吃}         & \textrm{苹果}\\
 \hr & \hr          & \hr \\
 np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'\\
          & \multicolumn{2}{c@{}}{\forwardapp}\\
@@ -264,6 +260,7 @@ np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'
 \oneline{%
 \deriv{9}{
 The  & small & cat & chased       & Mary & quickly                & round                     & the & garden\\
+\textsc{det}  & \textrm{小} & \textrm{猫} & \textrm{追}       & Mary & \textrm{迅速地}                & \textrm{绕着}                     & \textsc{det}  & \textrm{花园}\\
 \hr  & \hr   & \hr & \hr          & \hr  & \hr                    & \hr                       & \hr & \hr\\
 np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs (s\bs np)/np & np/n & n\\
      & \multicolumn{2}{c}{\forwardapp} & \multicolumn{2}{c}{\forwardapp}\\
@@ -317,6 +314,7 @@ John \textsc{aux} 触摸 \textsc{prep} Mary\\
 \centerline{%
 \deriv{5}{%
 John & was            & touched      & by         & Mary.\\
+John & \textsc{aux}            & \textrm{触碰}      & \textsc{prep}         & Mary.\\
 \hr  & \hr            & \hr_{\mathrm{LR}}  & \hr        & \hr\\
 np   & (s\bs np)/\mathit{PstP} & \mathit{PstP}/np_{by} & np_{by}/np & np\\
      &                &              & \multicolumn{2}{c@{}}{\forwardapp}\\
@@ -380,6 +378,7 @@ Steedman利用\textsc{sub}特征来区分从句和非从句的句子。这两个
 \centerline{%
 \deriv{3}{%
 er      & ihn   & isst\\
+\textrm{他}      & \textrm{他}   & \textrm{吃}\\
 \hr     & \hr   & \hr \\
 np[nom] & np[acc]     & (s_{+\mathrm{SUB}}\bs np[nom]) \bs np[acc]\\
 &\mc{2}{c@{}}{\backwardapp}\\
@@ -393,6 +392,7 @@ np[nom] & np[acc]     & (s_{+\mathrm{SUB}}\bs np[nom]) \bs np[acc]\\
 \centerline{%
 \deriv{3}{%
 isst & er  & ihn \\
+\textrm{吃}      & \textrm{他}   & \textrm{他}\\
 \hr  & \hr & \hr    \\
 ((s_{-\mathrm{SUB}}/np[acc])/np[nom]& np[nom]    & np[acc]      \\
 \mc{2}{@{}c}{\forwardapp}\\
@@ -422,6 +422,7 @@ isst & er  & ihn \\
 %\begin{sideways}%
 \deriv{4}{%
 isst & er  & ihn & \_\\
+\textrm{吃}      & \textrm{他}   & \textrm{他} & \\
 \hr & \hr  & \hr & \hr \\
 (s\bs np[nom]) \bs np[acc]    & np[nom] & np[acc]      & (((s\bs (s\bs np[nom]) \bs np[acc])\bs np[nom]) \bs np[acc]\\
 &&\mc{2}{c@{}}{\backwardapp}\\
@@ -595,6 +596,7 @@ X/Y大致可以理解为“如果我找到一个Y，则我就是一个完整的X
 \centerline{%
 \deriv{6}{
 These\;apples  & Harry                & must & have & been & eating\\
+\textrm{这些}\;\textrm{苹果}  & Harry                & \textrm{必须} & \textsc{aux} & \textsc{aux} & \textrm{吃}\\
 \hr           & \forwardt            & \hr  & \hr  & \hr  & \hr\\
 %
 %
@@ -634,6 +636,7 @@ $\Rightarrow$表示我们可以对任意的X进行类型提升，得到st/(s/X).
 \centerline{%
 \deriv{6}{
 These\;apples  & Harry                & must & have & been & eating\\
+\textrm{这些}\;\textrm{苹果}  & Harry                & \textrm{必须} & \textsc{aux} & \textsc{aux} & \textrm{吃}\\
 \forwardtop   & \forwardt            & \hr  & \hr  & \hr  & \hr\\
 %
 %
@@ -664,6 +667,7 @@ st/(s/np)\;\;     & s/{(s\bs np)}        & {(s\bs np)}/vp & vp/vp\mathdash en & 
 \centerline{%
 \deriv{6}{
 Apples        & I             & believe        & that & Harry         & eats\\
+\textrm{苹果}  & \textrm{我}               & \textrm{相信} & \textsc{comp} & Harry & \textrm{吃}\\
 \forwardtop   & \forwardt     & \hr            & \hr  & \hr           & \hr\\
 %
 %
@@ -692,6 +696,7 @@ st/(s/np)\;\;     & s/(s\bs np)  & (s\bs np)/s'    & s'/s & s/(s\bs np) & (s\bs 
 \centerline{%
 \deriv{4}{
 Fido                 & we            & put        & downstairs\\
+Fido                 & \textrm{我们}            & \textrm{放置}        & \textrm{楼下}\\
 \forwardtoptop       & \forwardt     & \hr        & \hr  \\
 %
 %
@@ -747,7 +752,7 @@ Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，
 \citet[\page 614]{SB2006a-u}使用下面的关系小句（\mex{1}）阐述了长距离依存的一种分析：
 \ea
 \gll the man  that Manny says Anna married \\
-     一 男人 \textsc{rel} Manny 说 Anna 结婚 \\
+     \textsc{det} 男人 \textsc{rel} Manny 说 Anna 结婚 \\
 \glt Manny说Anna与之结婚的那个男人
 \z
 这里的关系代词是married的宾语，但出现在了从句Anna married的外部。
@@ -767,6 +772,7 @@ Steedman假设关系代词的词汇信息为（\mex{1}）：
 \centerline{%
 \deriv{5}{
 that                                & Manny                                                   & says                              & Anna                 & married\\
+\textsc{rel}                                & Manny                                                   & \textrm{说}                              & Anna                 & \textrm{结婚}\\
 \hr                                 & \forwardt                                               & \hr                               & \forwardt            & \hr \\
 %
 %
@@ -797,11 +803,11 @@ Manny和says，然后是“Manny says”和“Anna married”都可以通过前�
 \ex\label{Beispiel-Minister}
 % TODO: Chinese translation
 \gll Here's the         minister [[in                         [the                  middle [of [whose sermon]]]] the dog barked]. \\
-     这里是 \textsc{det} 牧师      \hspaceThis{[[}\textsc{prep} \spacebr\textsc{det} 中间     \spacebr\textsc{prep} \textsc{rel} 布道 \textsc{det} 狗 叫 \\
+     这里.\textsc{cop} \textsc{det} 牧师      \hspaceThis{[[}\textsc{prep} \spacebr\textsc{det} 中间     \spacebr\textsc{prep} \textsc{rel} 布道 \textsc{det} 狗 叫 \\
 \glt `这有一个那条狗在他布道过程中吠叫的牧师。'\footnote{\citew[\page 212]{ps2}}
 \ex 
 \gll Reports [the                 height of           the           lettering on            the          covers of which] the government prescribes should be abolished.\\
-     报告     \spacebr\textsc{det} 高度   \textsc{prep} \textsc{det} 印字       \textsc{prep} \textsc{det} 封面    \textsc{prep} \textsc{rel} \textsc{det} 政府 规定 应该 被 废除 \\
+     报告     \spacebr\textsc{det} 高度   \textsc{prep} \textsc{det} 印字       \textsc{prep} \textsc{det} 封面    \textsc{prep} \textsc{rel} \textsc{det} 政府 规定 应该 \textsc{aux} 废除 \\
 \glt `那些封面上的印字高度被政府规定的报告应该被废弃。'\label{Ross-reports}\footnote{\citew[\page 109]{Ross67}。\nocite{Ross86a-u}} \\
 \zl
 在（\mex{0}）中, 关系代词嵌入了一个短语中，这个短语是从关系小句剩余部分中抽取出来的。
@@ -913,8 +919,8 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 \item\label{ue-Xbar-CG} 分析（\mex{1}）中的名词短语：
 \ea
 \gll the picture of Mary \\
-     \textsc{det} 图片 介词 Mary \\
-\glt `Mary的图片'
+     \textsc{det} 照片 \textsc{prep} Mary \\
+\glt `Mary的照片'
 \z
 比较你的分析结果和图\vref{Abbildung-NP-mit-PP-Argument}中的结构，思考\xbarc 句法中的范畴在范畴语法中是如何表示的。
 \end{enumerate}
