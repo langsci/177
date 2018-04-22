@@ -9,6 +9,7 @@ SOURCE=gt.bib \
 	localmetadata.tex \
 	localcommands.tex \
 	localpackages.tex \
+	localpackages-chinese.tex \
 	backmatter.tex \
 	chapters/1-begriffe.tex\
 	chapters/2-psg.tex\

@@ -47,7 +47,20 @@
 
 % quotes should be in simkai（楷体）
 \newCJKfontfamily[\fontpath simkai]\simkai{KaiTi}[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]
+
+% indentation of the whole quotation is 2em like the paragraph indentation
+% St. Mü. 22.04.2018
+\makeatletter
+\renewenvironment{quotation}
+			   {\list{}{\leftmargin2em\listparindent 2em%
+						%\itemindent    \listparindent
+						%\rightmargin   \leftmargin
+						\parsep        \z@ \@plus\p@}%
+				\item\relax}
+			   {\endlist}
+\makeatother
 \AtBeginEnvironment{quotation}{\simkai}
+
 
 
 %\usepackage{newunicodechar}

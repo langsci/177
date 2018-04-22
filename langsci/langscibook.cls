@@ -1507,7 +1507,7 @@ is, or will remain, accurate or appropriate.
 %% quotations are indented at one side only
 %% there is no indentation at the beginning of the quote
 \renewenvironment{quotation}
-			   {\list{}{\listparindent 1.5em%
+			   {\list{}{\listparindent 2em%
 						%\itemindent    \listparindent
 						%\rightmargin   \leftmargin
 						\parsep        \z@ \@plus\p@}%
