@@ -3,7 +3,7 @@
 \chapter{生成能力与语言形式描述}
 \label{sec-generative-capacity}
 
-前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG设计得只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citealp{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致的语言。Carl \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
+前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG设计得只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citealp{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致的语言。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
 如果物理学家要求形式描述来约束理论的话：\\
 \begin{tabular}{@{}l@{~}p{10.8cm}}
 编辑：     & 爱因斯坦教授，我恐怕不能接收你在广义相对论方面的论文。\\
@@ -11,7 +11,7 @@
 编辑：     & 不，但是我们注意到你的微分方程式是用集合论中的一阶语言表达的。这是一个完全不受限制的形式描述！为什么这样做呢？你本可以写出任意集合微分方程式的！ \citep{Pollard96a}
 \end{tabular}
 }
-不应该是描述语言约束理论，而应该是理论包含必须适用于研究对象的限制。这是\citet[\page 277, 280]{Chomsky81b}所持的观点。也可以参看\citew[\S~4]{Berwick82a-u}和\citew[\S~8]{KB82a-u}对于LFG的论述以及\citew[\S~3.5]{Johnson88}对于LFG中离线句法分析能力限制\isc{离线句法分析能力限制}\is{Off-Line Parsability}（Off-Line Parsability Constraint）的论述和对于属性"=值语法的总体论述。
+不应该是描述语言约束理论，而应该是理论包含必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b}所持的观点。也可以参看 \citew[\S~4]{Berwick82a-u}和 \citew[\S~8]{KB82a-u}对于LFG的论述以及 \citew[\S~3.5]{Johnson88}对于LFG中离线句法分析能力限制\isc{离线句法分析能力限制}\is{Off-Line Parsability}（Off-Line Parsability Constraint）的论述和对于属性"=值语法的总体论述。
 %In\is{capacity!generative|(}\is{complexity class|(} several of the preceding chapters,
 %the complexity hierarchy for formal languages was mentioned. The simplest languages are so"=called regular languages\is{regular language} (Type-3),
 %they are followed by those described as context"=free grammars\is{context"=free grammar} (Type-2), then those grammars which are 
@@ -31,7 +31,7 @@
 %\citep[\page 595]{Hellwig2003a}. 
 %LFG\indexlfg and HPSG\indexhpsg, as well as Chomsky's theory in \emph{Aspects}, fall into the class of Type-0 languages \citep{Berwick82a-u,Johnson88}.
 %The question at this point is whether it is an ideal goal to find a descriptive language that has exactly the same power as the object it describes.
-%Carl \citet{Pollard96a} once said that it would be odd to claim that certain theories in physics were not adequate simply because they make use of tools
+%Carl  \citet{Pollard96a} once said that it would be odd to claim that certain theories in physics were not adequate simply because they make use of tools
 %from mathematics that are too powerful.\footnote{% 
 %If physicists required the formalism to constrain the theory:\\
 %\begin{tabular}{@{}l@{~}p{11cm}}
@@ -44,11 +44,11 @@
 %\end{tabular}
 %}
 %It is not the descriptive language that should constrain the theory but rather the theory contains the restrictions
-%that must hold for the objects in question. This is the view that \citet[\page 277, 280]{Chomsky81b} takes. Also, see 
-%\citew[Section~4]{Berwick82a-u},
-%\citew[Section~8]{KB82a-u} on LFG and \citew[Section~3.5]{Johnson88} on the \emph{Off-Line Parsability Constraint}\is{Off-Line Parsability}
+%that must hold for the objects in question. This is the view that  \citet[\page 277, 280]{Chomsky81b} takes. Also, see 
+% \citew[Section~4]{Berwick82a-u},
+% \citew[Section~8]{KB82a-u} on LFG and  \citew[Section~3.5]{Johnson88} on the \emph{Off-Line Parsability Constraint}\is{Off-Line Parsability}
 %in LFG and attribute"=value grammars in general.
-    当然，在条件允许的情况下选择复杂性最低的语法也有技术方面的原因：我们知道对于计算机来说处理复杂性较低的语法更加容易。要获知一个任务的复杂性，就需要确定相关计算的所谓“最坏情况”，即确定一个程序在最差情况下使用某种语法处理一定长度输入时需要多长时间。但是，我们不禁提出这样一个问题：最差情况对确定任务复杂性是否真的有用。例如，一些允许非连续成分的语法在最差情况下比那些只允许连续字符串组合的常规短语结构语法表现更差\citep[\S~8]{Reape91}。正如我在\citew{Mueller2004b}所指出的那样：从单词出发构建更大单位的句法分析器\isc{句法分析器}\is{parser}（一个自底向上的句法分析器在处理假设动词移位分析的语法时，比处理假设非连续成分的语法更为低效。这与动词语迹没有语音形式有关，由于动词语迹没有语音形式所以句法分析器需要借助另外的手段来定位它们。因此，需要假设动词语迹可以出现在字符串的任意位置，并且在大多数情况下这些语迹对于完整输入的分析不起任何作用。因为动词语迹没有指定其价（valence）信息，所以能与句子中任意成分进行组合，这造成了很大的计算负担。相反，如果允许不连续成分，那么就可以放弃使用动词语迹，计算负担因此降低了。但是，使用非连续成分的分析最终因为语言学原因被放弃了\citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS}。尽管如此，研究两种语法的句法分析行为仍然具有价值。因为这种研究显示最差情况对确定任务复杂性并非总是有效。
+    当然，在条件允许的情况下选择复杂性最低的语法也有技术方面的原因：我们知道对于计算机来说处理复杂性较低的语法更加容易。要获知一个任务的复杂性，就需要确定相关计算的所谓“最坏情况”，即确定一个程序在最差情况下使用某种语法处理一定长度输入时需要多长时间。但是，我们不禁提出这样一个问题：最差情况对确定任务复杂性是否真的有用。例如，一些允许非连续成分的语法在最差情况下比那些只允许连续字符串组合的常规短语结构语法表现更差\citep[\S~8]{Reape91}。正如我在 \citew{Mueller2004b}所指出的那样：从单词出发构建更大单位的句法分析器\isc{句法分析器}\is{parser}（一个自底向上的句法分析器在处理假设动词移位分析的语法时，比处理假设非连续成分的语法更为低效。这与动词语迹没有语音形式有关，由于动词语迹没有语音形式所以句法分析器需要借助另外的手段来定位它们。因此，需要假设动词语迹可以出现在字符串的任意位置，并且在大多数情况下这些语迹对于完整输入的分析不起任何作用。因为动词语迹没有指定其价（valence）信息，所以能与句子中任意成分进行组合，这造成了很大的计算负担。相反，如果允许不连续成分，那么就可以放弃使用动词语迹，计算负担因此降低了。但是，使用非连续成分的分析最终因为语言学原因被放弃了\citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS}。尽管如此，研究两种语法的句法分析行为仍然具有价值。因为这种研究显示最差情况对确定任务复杂性并非总是有效。
 %There is of course a technical reason to look for a grammar with the lowest level of complexity possible:
 %we know that it is easier for computers to process grammars with lower complexity than more
 %complex grammars. To get an idea about the complexity of a task, the so"=called `worst case' for the
@@ -56,7 +56,7 @@
 %of a certain length in the least favorable case to get a result for a grammar from a certain class. This begs the question if the worst case is actually relevant. 
 %For example, some grammars that allow discontinuous constituents perform less favorably in the worst case than normal phrase structure grammars 
 %that only allow for combinations of continuous strings \citep[Section~8]{Reape91}.
-%As I have shown in \citew{Mueller2004b}, a parser\is{parser} that builds up larger units starting from words (a bottom-up parser) is far less
+%As I have shown in  \citew{Mueller2004b}, a parser\is{parser} that builds up larger units starting from words (a bottom-up parser) is far less
 %efficient when processing a grammar assuming a verb movement analysis than is the case for a bottom-up parser that allows for discontinuous constituents.
 %This has to do with the fact that verb traces do not contribute any phonological material and a parser cannot locate them without further machinery.
 %It is therefore assumed that a verb trace exists in every position in the string and in most cases
@@ -67,9 +67,9 @@
 %In the end, the analysis using discontinuous constituents was eventually discarded for linguistic reasons \citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS},
 %however, the investigation of the parsing behavior of both grammars is still interesting as it shows that worst case properties are not always
 %informative.
-    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性：\citet[\S~3.2]{GM2007a}认为Stabler提出的增加了后附接（late adjunction）和外置的最简语法\indexmgc（参看\ref{Abschnitt-MG}）比弱上下文相关文法的生成力更强。如果一种语法禁止从附接语位置提取成分\isc{提取!从附接语位置}\is{extraction!from adjuncts}（\citealp[\page46]{FG2002a}）并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文相关文法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文相关文法。
+    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性： \citet[\S~3.2]{GM2007a}认为Stabler提出的增加了后附接（late adjunction）和外置的最简语法\indexmgc（参看\ref{Abschnitt-MG}）比弱上下文相关文法的生成力更强。如果一种语法禁止从附接语位置提取成分\isc{提取!从附接语位置}\is{extraction!from adjuncts}（\citealp[\page46]{FG2002a}）并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文相关文法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文相关文法。
 %I will discuss another example of the fact that language"=specific restrictions can restrict the complexity of a grammar:
-%\citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
+% \citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
 %Section~\ref{Abschnitt-MG}) with extensions for late adjunction and extraposition are actually more powerful than mildly context"=sensitive.
 %If one bans extraction from adjuncts\is{extraction!from adjuncts} (\citealp[\page
 %46]{FG2002a}) and also assumes the Shortest Move Constraint\is{Shortest Move Constraint (SMC)} (see footnote~\ref{Fn-SMC} on page~\pageref{Fn-SMC}), then one arrives at a grammar that is mildly"=context sensitive
@@ -98,7 +98,7 @@
 \gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
      \spacebr{}\textsc{prep} \textsc{det} 剩下的.剩余的 成分 好像 \spacebr{}\textsc{det} 决定因素 {} \textsc{det} 最少 分类.问题 \textsc{prep}.\textsc{inf}.扔\\
 \footnotetext{%
-      在\citew[\page 102]{Engel70a}的正文中。
+      在 \citew[\page 102]{Engel70a}的正文中。
 }
 \glt `在剩余成分中，决定因素在分类方面提出的问题最少。'
 \ex\label{bsp-von-den-gefangenen} 
@@ -119,7 +119,7 @@
 \gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
 	 {}\spacebr{}\textsc{prep} \textsc{det} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} \textsc{prep} \textsc{det} 包厢\\
 \footnotetext{%
-        Frankfurter Rundschau, 摘自\citew[\page 52]{deKuthy2001a}。
+        Frankfurter Rundschau, 摘自 \citew[\page 52]{deKuthy2001a}。
       }
 \glt `来自`英语剧场'的两个模特都在包厢里。'
 %Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
@@ -135,7 +135,7 @@
         im Stadtarchiv.\footnotemark\\
 	{}\spacebr{}\textsc{prep} 大主教 Carl Theodor Freiherr \textsc{prep} Dalberg 有 它 例如 \spacebr{}一 图画 {} \textsc{prep}.\textsc{det} 城市.档案\\
 \footnotetext{%
-        Frankfurter Rundschau, 摘自\citew[\page 7]{deKuthy2002a}。
+        Frankfurter Rundschau, 摘自 \citew[\page 7]{deKuthy2002a}。
 }
 \glt `例如，在城市档案馆中，有一幅来自Dalberg的大主教Carl Theodor Freiherr的画像。'
 \ex 
@@ -213,7 +213,7 @@
 %\gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
 %     \spacebr{}of the left.over elements seem \spacebr{}the determinants {} the fewest classification.problems to.throw.up\\
 %\footnotetext{%
-%      In the main text of \citew[\page 102]{Engel70a}.
+%      In the main text of  \citew[\page 102]{Engel70a}.
 %}
 %\glt `Of the remaining elements, the determinants seem to pose the fewest problems for classification.'
 %\ex\label{bsp-von-den-gefangenen} 
@@ -234,7 +234,7 @@
 %\gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
 %	 {}\spacebr{}from the \hspaceThis{"`}English theater stand \spacebr{}two models {} in the cabinets\\
 %\footnotetext{%
-%        Frankfurter Rundschau, quoted from \citew[\page 52]{deKuthy2001a}.
+%        Frankfurter Rundschau, quoted from  \citew[\page 52]{deKuthy2001a}.
 %      }
 %\glt `Two models from the `English Theater' are in the cabinets.'
 %Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
@@ -250,7 +250,7 @@
 %        im Stadtarchiv.\footnotemark\\
 %	{}\spacebr{}from archbishop Carl Theodor Freiherr from Dalberg gives it for.example \spacebr{}a picture {} in.the city.archives\\
 %\footnotetext{%
-%        Frankfurter Rundschau, quoted from \citew[\page 7]{deKuthy2002a}.
+%        Frankfurter Rundschau, quoted from  \citew[\page 7]{deKuthy2002a}.
 %}
 %\glt `For example, there is a picture of archbishop Carl Theodor Freiherr of Dalberg in the city archives.'
 %\ex 
