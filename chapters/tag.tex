@@ -238,7 +238,16 @@ tag
 \caption{\label{Abbildung-Max-likes-Anouk}“Max likes Anouk.”中的基本树与导出树}
 \end{figure}%
 树中的结点按照从上到下、从左到右的顺序进行编号。likes树中的结点按照这种方式编号后的结果如图\vref{Abbildung-Knotenpositionen}所示。
-树中最高的结点为S，其位置编号为0。在S之下有一个NP和一个VP结点。这些结点同样从0开始计数。\todostefan{Timm: Noch üblicher ist es vielleicht, mit 1 anzufangen. D.h. nur der Wurzelknoten hat die Adresse 0.}NP为位置0，而VP为1。VP结点同样有两个子结点：V和宾语NP。V编号0，而宾语NP为1。将这些编号组合起来，我们就可以无歧义地指称树中的任意独立元素。主语位置的NP为00，因为它是S的一个子结点且出现在第一的位置上。宾语位置的NP为011，因为它在S（0）之下的VP（S的第二个子结点，为1）中，且出现在第二的位置上（VP的第二个子结点，为1）。
+树中最高的结点为S，其位置编号为0。在S之下有一个NP和一个VP结点。这些结点同样从1开始计数。NP为位置1，而VP为2。VP结点同样有两个子结点：V和宾语NP。V编号1，而宾语NP为2。将这些编号组合起来，我们就可以无歧义地指称树中的任意独立元素。主语位置的NP为1，因为它是S的一个子结点且出现在第一的位置上。宾语位置的NP为2.2，因为它在S（0）之下的VP（S的第二个子结点，为2）中，且出现在第二的位置上（VP的第二个子结点，为2）。
+
+%The nodes in trees are numbered from top to bottom and from left to right. The result of this %numbering of nodes for \emph{likes} 
+%is shown in Figure~\vref{Abbildung-Knotenpositionen}. The topmost node in the tree for  %\emph{likes} is S and has the position 0.
+%Beneath S, there is an NP and a VP node. These nodes are again numbered starting at
+%1. NP has the position 1 and VP the position 2.
+%The VP node has in turn two daughters: V and the object NP. V receives number 1 and the object %NP 2. This makes it possible to combine these numbers and then it is possible to unambiguously %access individual elements in the tree. The position for the subject NP
+%is 1 since this is a daughter of S and occurs in first position. The object NP has the numeric
+%sequence 2.2 since it is below the VP (the second daughter of S = 2) and occurs in second position
+%(the second daughter of VP = 2)
 
 \begin{figure}
 \centerline{%
