@@ -668,6 +668,9 @@ al desirabilite de un nov lingua franca: On refusa continuar payar custosi tradu
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% has to be done before loading hyperref, since hyperref modifies footnotes.
+\KOMAoptions{footnotes=multiple} 
+
 \usepackage[
 	bookmarks=true,bookmarksopen=true,bookmarksopenlevel=1,%
 	bookmarksdepth=5,
@@ -1355,7 +1358,8 @@ is, or will remain, accurate or appropriate.
 \newlength{\normalparindent}
 \AtBeginDocument{\setlength{\normalparindent}{\parindent}}
 
-\KOMAoptions{footnotes=multiple}
+% This has to be set before hyperref is loaded
+%\KOMAoptions{footnotes=multiple}
 
 %% http://tex.stackexchange.com/questions/28465/multiple-footnotes-at-one-point/71015#71015
 \let\oldFootnote\footnote
