@@ -19,11 +19,13 @@
 %\def\thechapter{\zhnum{chapter}}
 %\def\thesection{\zhnum{section}}
 
+%\lsBookLanguageChinese
+%\renewcommand{\lsBookLanguage}{chinese}
 
 %re\newcommand{\sectionname}{节}  
 \renewcommand{\figurename}{图}  
 \renewcommand{\tablename}{表}  
-\renewcommand{\bibname}{参考文献}  
+%\renewcommand{\bibname}{参考文献}  
 \renewcommand{\contentsname}{目~~~~录}  
 \renewcommand{\listfigurename}{图~目~录}  
 \renewcommand{\listtablename}{表~目~录}  
@@ -68,3 +70,33 @@
 
 %\usepackage{newunicodechar}
 %\newunicodechar{(}{（}
+
+
+
+% use Chinese parenthesis
+% https://tex.stackexchange.com/a/428832/18561
+\makeatletter
+\renewcommand*{\bibleftparen}{\unspace\blx@postpunct（}
+\renewcommand*{\bibrightparen}{\blx@postpunct）}
+
+
+\AtBeginDocument{
+\newindex{sbc}{scx}{scd}{中文术语索引}
+}
+
+\newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
+\newcommand{\isc}[1]{%
+  \if@noftnote%
+    \index[sbc]{#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
+}
+
+\makeatother
+
+
+
+

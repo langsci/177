@@ -39,9 +39,9 @@ SOURCE=gt.bib \
 
 %.pdf: %.tex $(SOURCE)
 	xelatex -no-pdf -interaction=nonstopmode $* |grep -v math
-	bibtex $*
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $* 
-	bibtex $*
+	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $*
 	correct-index
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
@@ -51,9 +51,7 @@ SOURCE=gt.bib \
 	sed -i.backup 's/{\\O }/Oe/' *.adx
 	python3 fixindex.py
 	mv $*mod.adx $*.adx
-	authorindex -i -p $*.aux > $*.adx
-	sed -e 's/}{/|hyperpage}{/g' $*.adx > $*.adx.hyp
-	makeindex -gs index.format-plus -o $*.and $*.adx.hyp
+	makeindex -gs index.format-plus -o $*.and $*.adx
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
 	zhmakeindex -o $*.scd $*.scx
@@ -210,7 +208,9 @@ source:
 
 
 clean:
-	rm -f *.bak *~ *.log *.blg *.bbl *.aux *.toc *.cut *.out *.tmp *.tpm *.adx *.idx *.ilg *.ind *.and *.glg *.glo *.gls *.657pk *.adx.hyp *.bbl.old *.ldx *.lnd *.rdx *.sdx *.snd *.wdx *.wdv *.xdv
+	rm -f *.bak *~ *.log *.blg *.bbl *.aux *.toc *.cut *.out *.tmp *.tpm *.adx *.idx *.ilg *.ind \
+	*.and *.glg *.glo *.gls *.657pk *.adx.hyp *.bbl.old *.ldx *.lnd *.rdx *.sdx *.snd *.scd *.wdx \
+	*.wdv *.xdv chapters/*.aux *.for *.aux.copy *-blx.bib *.auxlock *.bcf *.mw *.run.xml
 	rm -f chapters/*~ chapters/*.aux
 
 check-clean:

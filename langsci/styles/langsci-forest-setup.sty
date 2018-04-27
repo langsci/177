@@ -32,8 +32,6 @@
 \tikzset{deparrow/.style={-Latex}}%,blue}}
 
 
-% load this externally since it has to be loaded with full path
-
 % does not work with forest v1.05 did not check later versions
 \usepackage[external,linguistics]{forest}
 \tikzset{external/up to date check=simple}
@@ -50,12 +48,10 @@
 % The version with apostrophe replaces it.
 \forestset{default preamble'={
     for tree={align=center,parent anchor=south, child anchor=north,anchor=north,base=bottom},
-% This would align trees to the baseline. We do not want this for TAG
-% where several trees have to be aligned with respect to their center.
-%    before drawing tree={
-%      sort by=y,
-%      for min={tree}{baseline}
-%    }
+    before drawing tree={
+      sort by=y,
+      for min={tree}{baseline}
+    }
   }}
 
 
@@ -120,22 +116,6 @@
 \def\gettranslation#1{\gettranslationA#1;;\endget}
 \def\gettranslationA#1;#2;{\removesep#2;}
 \def\removesep#1;#2\endget{#1}
-
-\forestset{
-  with non-aligned translation/.style={
-    l sep=0,inner xsep=0,
-    append non-aligned translation/.expanded/.wrap pgfmath arg={\gettranslation{##1}}{content},
-    content/.expanded/.wrap pgfmath arg={\gettext{##1}}{content},
-  },
-  append non-aligned translation/.style={
-    if={strequal("#1","")}{}{
-      append={[#1,no edge,inner xsep=0,inner ysep=0,outer ysep=0,
-               %tier=gloss,
-               l=\baselineskip + 0.2ex,
-        ]}
-    }
-  }
-}
 
 
 % a specific style that specifies the word tier: all nodes that do not have any children
@@ -218,7 +198,7 @@ dg junction/.style={no edge, tikz+={\draw (!p.east)--(!.west) (.east)--(!n.west)
 % http://tex.stackexchange.com/questions/207459/getting-old-school-trees-with-forest
 % fit -> fit=band causes all nodes to have nothing below them
 tag/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top,fit=rectangle},
-  where n children=0{delay=with non-aligned translation}{},
+  where n children=0{delay=with translation}{},
 % the following breaks the alignments in sets
   begin draw/.code={\begin{tikzpicture}[baseline=(current bounding box.center)]}
 },
