@@ -5,14 +5,17 @@
 
 %% below are added by Lulu for the Chinese version of the book
 \usepackage{zhnumber}
-% to type­set Chi­nese rep­re­sen­ta­tions of num­bers.  
+% to type­set Chinese representations of numbers.  
 
 \usepackage{titlesec}  
+\AtBeginDocument{
+
 % for Chinese style of titles of chapters and sections.
 \renewcommand{\partname}{第\thepart{}部分}  
 \def\thepart{\zhdig{part}}
 %\pagenumbering {zhnum}
 \renewcommand{\chaptername}{第\zhnum{chapter}章}  
+%\renewcommand{\chapterautorefname}{第\zhnum{chapter}章}%
 
 % The following would also change the chapter and section number in the heading. We do not want
 % this. 27.10.2016
@@ -37,8 +40,7 @@
 \titleformat{\tableofcontents}[block]{\center\Large\bf}{\contensname}{20pt}{}  
 \titleformat{\part}[block]{\center\Large\bf}{\partname}{20pt}{}  
 \titleformat{\index}[block]{\center\Large\bf}{\indexname}{20pt}{}  
-
-\usepackage{titlesec}  
+}
 % for Chinese style of table of contents
 %\titlecontents{\chapter}
 
@@ -77,7 +79,7 @@
 % https://tex.stackexchange.com/a/428832/18561
 \makeatletter
 \renewcommand*{\bibleftparen}{\unspace\blx@postpunct（}
-\renewcommand*{\bibrightparen}{\blx@postpunct）}
+\renewcommand*{\bibrightparen}{\blx@postpunct）\unspace\midsentence}
 
 
 \AtBeginDocument{
