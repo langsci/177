@@ -15,6 +15,10 @@
 \def\thepart{\zhdig{part}}
 %\pagenumbering {zhnum}
 \renewcommand{\chaptername}{第\zhnum{chapter}章}  
+\renewcommand{\appendixname}{附录}
+\appto\appendix{
+\renewcommand{\chaptername}{\appendixname\thechapter} 
+}
 %\renewcommand{\chapterautorefname}{第\zhnum{chapter}章}%
 
 % The following would also change the chapter and section number in the heading. We do not want
@@ -36,6 +40,7 @@
 \renewcommand{\abstractname}{\Large{摘~要}}  
 \newcommand{\keywords}[1]{\\ \\ \textbf{关~键~词}：#1}  
 \titleformat{\chapter}[block]{\center\Large\bf}{\chaptername}{20pt}{}  
+\titleformat{\appendix}[block]{\center\Large\bf}{\appendixname}{20pt}{}  
 \titleformat{\section}[block]{\large\bf}{\thesection}{10pt}{}  
 \titleformat{\tableofcontents}[block]{\center\Large\bf}{\contensname}{20pt}{}  
 \titleformat{\part}[block]{\center\Large\bf}{\partname}{20pt}{}  
