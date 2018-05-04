@@ -179,7 +179,7 @@ Andreas Pankau（p.\,c.\, 2015）跟我指出，这种分段的概念有一个�
 \begin{forest}
 baseline
 [N 
-  [\emph{letters} {[N, pl, \st{\textit{u}P}]}]
+  [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信]
   [P
     [\emph{to} {[P, \st{\textit{u}N}]}]
     [\emph{Peter} {[N]}]]]
@@ -800,7 +800,7 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
               [\textit{v}]]]]
         [\phonliste{ kennt T }]]]]
 \end{forest}
-\caption{\label{fig-kennt-jeder-diesen-mann-minimalism}在 \citet{Adger2003a}的分析下有关“Kennt jeder diesen Mann?”（每个人都认识这个男人吗？）的分析}
+\caption{\label{fig-kennt-jeder-diesen-mann-minimalism}在\citet{Adger2003a}的分析下有关“Kennt jeder diesen Mann?”（每个人都认识这个男人吗？）的分析}
 %\caption{\label{fig-kennt-jeder-diesen-mann-minimalism}Analysis of \emph{Kennt jeder diesen Mann?} `Does everybody know this man?' following the
 %  analysis of  \citet{Adger2003a}}
 \end{figure}%
@@ -2336,7 +2336,7 @@ Hobbs 吹口哨 \textsc{det} 相同 调子 和 哼 \textsc{det} 相同 调子\\
 }
 \ex[*]{
 \gll He tried to persuade, but couldn't convince, him.\\
-他 尝试 \textsc{inf} 劝说 但是 \textsc{aux}-NEG 说服 他\\
+他 尝试 \textsc{inf} 劝说 但是 \textsc{aux}.\textsc{neg} 说服 他\\
 }
 \zl
 如果him没有重读的话，第二个例子是不合乎语法的。相较而言，\pref{ex-tried-persuade-and-convince-him}是合格的，即使带有不重读的him。所以，如果\pref{ex-tried-persuade-and-convince-him}是右结点提升的一个例子，对比就是出乎意料的。由此，Borsley排除了右结点提升分析。
@@ -3003,7 +3003,7 @@ non-head-dtrs & \liste{ $\beta$ }\\
 %}
 \ea
 \gll Gelesen$_i$ hat$_j$ das Buch keiner \_$_i$ \_$_j$.\\
-读 \textsc{aux} \textsc{det} 书 没有人\\
+        读 \textsc{aux} \textsc{det} 书 没有人\\
 %     read        has     the book nobody\\
 \z
 相反，Stabler被迫要假定\pmexb{1}中这样的分析（请看G.\ 
@@ -3012,8 +3012,14 @@ non-head-dtrs & \liste{ $\beta$ }\\
 % \citew{GMueller98a} for a remnant movement analysis). In a first step, \emph{das Buch} is moved out
 %of the VP \pmexa{1} and in a second step, the emptied VP is fronted as in \pmexb{1}.
 \eal
-\ex {}Hat [das Buch]$_j$ [keiner [\sub{VP} \_$_j$ gelesen]].
-\ex {}[\sub{VP} \_$_j$ Gelesen]$_i$ hat [das Buch]$_j$ [keiner \_$_i$].
+\ex 
+\gll {}Hat [das Buch]$_j$ [keiner [\sub{VP} \_$_j$ gelesen]].\\
+	{}\textsc{aux} \spacebr{}\textsc{det} 书 \spacebr{}没有人 \spacebr{}{} {} 读\\
+\glt `这本书没人读。'
+\ex 
+\gll {}[\sub{VP} \_$_j$ Gelesen]$_i$ hat [das Buch]$_j$ [keiner \_$_i$].\\
+	{}\spacebr{}{} {} 读 \textsc{aux} \spacebr{}\textsc{det} 书 \spacebr{}没有人\\
+\glt `这本书没人读。'
 \zl
  \citet[\page 281]{Haider93a}, % \citet[Abschnitt~]{deKuthy2002a}, 
  \citet[\S~2]{dKM2001a}和 \citet{Fanselow2002a}指出，这类剩余移位分析对于德语是有问题的。Fanselow所指的需要剩余移位分析的唯一现象的问题是多重前置\isc{前置!显性多重前置}\is{fronting!apparent multiple}（请看 \citew{Mueller2003b}
@@ -3039,7 +3045,9 @@ non-head-dtrs & \liste{ $\beta$ }\\
 \eal
 \label{ex-atb-minimalism}
 \ex\label{ex-bagels-i-like-and-ellison-hates}
-Bagels, I like and Ellison hates.\footnote{%
+\gll Bagels, I like and Ellison hates.\\
+	百吉饼 我 喜欢 和 Ellison 讨厌\\
+\glt `百吉饼，我喜欢吃，但是Ellison不喜欢吃。'\footnote{%
    \citew[\page 205]{ps2}。
 }
 \ex 
