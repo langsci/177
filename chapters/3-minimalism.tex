@@ -179,10 +179,10 @@ Andreas Pankau（p.\,c.\, 2015）跟我指出，这种分段的概念有一个�
 \begin{forest}
 baseline
 [N 
-  [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信]
+  [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
-    [\emph{to} {[P, \st{\textit{u}N}]}]
-    [\emph{Peter} {[N]}]]]
+    [\emph{to} {[P, \st{\textit{u}N}]}\\\textsc{prep}\hspaceThis{[P, \st{\textit{u}N}]}]
+    [\emph{Peter} {[N]}\\Peter\hspaceThis{[N]}]]]
 \end{forest}
 \caption{\label{fig-letters-to-peter-minimalism}不可预测特征的配价表征}
 %\caption{\label{fig-letters-to-peter-minimalism}Valence representation via uninterpretable features}
@@ -203,8 +203,8 @@ letters的P特征是不可预测的，这点由P前面的小u表示。letters的
 \begin{forest}
 baseline
 [N 
-  [\emph{letters} {[N, pl, \st{\textit{u}P}]}]
-  [\emph{to} {[P, \textit{u}N]}]]
+  [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
+  [\emph{to} {[P, \textit{u}N]}\\\textsc{prep}\hspaceThis{[P, \textit{u}N]}]]
 \end{forest}
 \caption{\label{fig-letters-to-minimalism}基于不可预测特征的不合法的句法对象}
 %\caption{\label{fig-letters-to-minimalism}Illegitimate syntactic object due to an uninterpretable feature}
@@ -237,10 +237,10 @@ baseline
 \begin{forest}
 baseline
 [N 
-  [\emph{letters} {[N, pl, \st{\textit{u}P}]}]
+  [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
-    [\emph{to} {[P, \st{\textit{u}N}, \st{acc}]}]
-    [\emph{him} {[N, \st{acc}]}]]]
+    [\emph{to} {[P, \st{\textit{u}N}, \st{acc}]}\\\textsc{prep}\hspaceThis{[P, \st{\textit{u}N}, \st{acc}]}]
+    [\emph{him} {[N, \st{acc}]}\\他\hspaceThis{[N, \st{acc}]}]]]
 \end{forest}
 \caption{\label{fig-letters-to-him-minimalism}一致关系的特征核查}
 %\caption{\label{fig-letters-to-him-minimalism}Feature checking via Agree}
@@ -361,29 +361,29 @@ b. & 包括 B
 \begin{forest}
 baseline
 [\vbar
- [\textit{show}]
- [\textit{himself}]
- [\textit{Benjamin}]]
+ [\textit{show}\\展示]
+ [\textit{himself}\\他自己]
+ [\textit{Benjamin}\\Benjamin]]
 \end{forest}
 \hfill
 \begin{forest}
 baseline
 [\vbar
    [\vbar
-     [\textit{show}]
-     [\textit{himself}] ]
- [\textit{Benjamin}]]
+     [\textit{show}\\展示]
+     [\textit{himself}\\他自己] ]
+ [\textit{Benjamin}\\Benjamin]]
 \end{forest}
 \hfill\hfill
 \begin{forest}
 baseline
 [\littlevbar
- [\textit{show}]
+ [\textit{show}\\展示]
  [VP
-   [\textit{himself}]
+   [\textit{himself}\\他自己]
    [\vbar
     [V]
-    [\textit{Benjamin}]]]]
+    [\textit{Benjamin}\\Benjamin]]]]
 \end{forest}
 \caption{\label{fig-ditransitives-options}双及物动词的三种可能分析}
 %\caption{\label{fig-ditransitives-options}Three possible analyses of ditransitives}
@@ -413,14 +413,14 @@ baseline
 \begin{forest}
 baseline
 [\vP
-  [\textit{Peter}]
+  [\textit{Peter}\\Peter]
   [\littlevbar
-   [\textit{v} $+$ \textit{show}]
+   [\textit{v} $+$ \textit{show}\\\hspaceThis{\textit{v} $+$}展示]
    [VP
-     [\textit{himself}]
+     [\textit{himself}\\他自己]
      [\vbar
-      [\phonliste{ show } {[V]}]
-      [\textit{Benjamin}]]]]]
+      [\phonliste{ show } {[V]}\\展示\hspaceThis{[V]}]
+      [\textit{Benjamin}\\Benjamin]]]]]
 \end{forest}
 \caption{\label{fig-ditransitives-little-v}移动到小\emph{v}的双及物分析}
 %\caption{\label{fig-ditransitives-little-v}Analysis of ditransitives involving movement to \littlev}
@@ -459,12 +459,14 @@ Adger认为，这种语义角色指派的不一致有助于语言习得\isc{语�
 \begin{forest}
 baseline
 [\vP
-  [Agent]
+  [施事]
+%   [Agent]
   [\littlevbar~{[\st{\textit{u}D}]}
    [\textit{v}]
    [VP
-      [\textit{burn} {[V, \st{\textit{u}D}]}]
-      [Theme]]]]]
+      [\textit{burn} {[V, \st{\textit{u}D}]}\\燃烧\hspaceThis{[V, \st{\textit{u}D}]}]
+      [客体]]]]]
+%            [Theme]]]]]
 \end{forest}
 \caption{\label{fig-transitives-little-v}包括小\emph{v}的严格及物动词的分析}
 %\caption{\label{fig-transitives-little-v}Analysis of strictly transitives involving \littlev}
@@ -475,10 +477,11 @@ baseline
 \begin{forest}
 baseline
 [\vP
-  [Agent]
+  [施事]
+%   [Agent]
   [\littlevbar~{[\st{\textit{u}D}]}
    [\textit{v} ]
-   [ \textit{laugh} {[V]}]]]
+   [ \textit{laugh} {[V]}\\笑\hspaceThis{[V]}]]]
 \end{forest}
 \caption{\label{fig-intransitives-little-v}包括小\emph{v}的不及物动词分析}
 %\caption{\label{fig-intransitives-little-v}Analysis of intransitives involving \littlev}
@@ -527,17 +530,17 @@ Anna 将 读 \textsc{det} 书\\
 \begin{forest}
 baseline
 [TP
- [\textit{Anna} {[D]}]
+ [\textit{Anna} {[D]}\\Anna\hspaceThis{[D]}]
  [\tbar{[\st{\textit{u}D*}]}
-   [\textit{will} T{[pres]}]
+   [\textit{will} T{[pres]}\\\textsc{aux}\hspaceThis{T{[pres]}}]
    [\vP
-     [\phonliste{ Anna }]
+     [\phonliste{ Anna }\\Anna]
      [\littlevbar~{[\st{\textit{u}D}]}
        [\textit{v}
-         [\textit{read}] [\textit{v}]]
+         [\textit{read}\\读] [\textit{v}]]
        [VP
-         [\phonliste{ read } {[V, \st{\textit{u}D}]}]
-         [DP [\textit{the book}, roof]]]]]]]
+         [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
+         [DP [\textit{the book}\\\textsc{det} 书, roof]]]]]]]
 \end{forest}
 \caption{\label{fig-Anna-will-read-the-book-minimalism}包括情态词和从\textit{v}到T的主语移位的“Anna will read the book”的句子分析}
 %\caption{\label{fig-Anna-will-read-the-book-minimalism}Analysis of \emph{Anna will read the book.}
@@ -559,17 +562,17 @@ baseline
 [CP
  [C{[Decl]}]
  [TP
- [\textit{Anna} {[D]}]
+ [\textit{Anna} {[D]}\\Anna\hspaceThis{[D]}]
  [\tbar{[\st{\textit{u}D*}]}
-   [\textit{will} T{[pres]}]
+   [\textit{will} T{[pres]}\\\textsc{aux}\hspaceThis{T{[pres]}}]
    [\vP
-     [\phonliste{ Anna }]
+     [\phonliste{ Anna }\\Anna]
      [\littlevbar~{[\st{\textit{u}D}]}
        [\textit{v}
-         [\textit{read}] [\textit{v}]]
+         [\textit{read}\\读] [\textit{v}]]
        [VP
-         [\phonliste{ read } {[V, \st{\textit{u}D}]}]
-         [DP [\textit{the book}, roof]]]]]]]]
+         [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
+         [DP [\textit{the book}\\\textsc{det} 书, roof]]]]]]]]
 \end{forest}
   \caption{\label{fig-Anna-will-read-the-book-minimalism-CP}带有空C和小句类型特征Decl的CP的“Anna will read the book”的句子分析}
 %\caption{\label{fig-Anna-will-read-the-book-minimalism-CP}Analysis of \emph{Anna will read the book.}
@@ -631,23 +634,23 @@ baseline
 \begin{forest}
 baseline
 [CP
- [\textit{what} {[D, wh]}]
+ [\textit{what} {[D, wh]}\\什么\hspaceThis{[D, wh]}]
  [\cbar{[\st{\textit{u}wh*}]}
    [C
-     [\textit{will} T{[\st{Q*}]}]
+     [\textit{will} T{[\st{Q*}]}\\\textsc{aux}\hspaceThis{T{[\st{Q*}]}}]
      [C{[Q]}] ]
    [TP
-   [\textit{Anna} {[D]}]
+   [\textit{Anna} {[D]}\\Anna\hspaceThis{[D]}]
    [\tbar{[\st{\textit{u}D*}]}
-     [\phonliste{ will } {[T]}]
+     [\phonliste{ will } {[T]}\\\textsc{aux}\hspaceThis{[T]}]
      [\vP
-       [\phonliste{ Anna }]
+       [\phonliste{ Anna }\\Anna]
        [\littlevbar~{[\st{\textit{u}D}]}
          [\textit{v}
-           [\textit{read}] [\textit{v}]]
+           [\textit{read}\\读] [\textit{v}]]
          [VP
-           [\phonliste{ read } {[V, \st{\textit{u}D}]}]
-           [\phonliste{what}]]]]]]]]
+           [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
+           [\phonliste{what}\\什么]]]]]]]]
 \end{forest}
   \caption{\label{fig-What-will-Anna-read-minimalism}带有空C和强wh特征的“What will Anna read?”的句子分析}
 %\caption{\label{fig-What-will-Anna-read-minimalism}Analysis of \emph{What will Anna read?}
@@ -683,17 +686,17 @@ Anna 读 \textsc{det} 书\\
 \begin{forest}
 baseline
 [TP
- [\textit{Anna} {[D, \st{nom}]}]
+ [\textit{Anna} {[D, \st{nom}]}\\Anna\hspaceThis{[D, \st{nom}]}]
  [\tbar{[\st{\textit{u}D*}, \st{nom}]}
    [T{[pres]}]
    [\vP
-     [\phonliste{ Anna }]
+     [\phonliste{ Anna }\\Anna]
      [\littlevbar~{[\st{\textit{u}D}]}
        [\textit{v}
-         [\textit{read}] [\textit{v} {[\st{acc}]}]]
+         [\textit{read}\\读] [\textit{v} {[\st{acc}]}]]
        [VP
-         [\phonliste{ read } {[V, \st{\textit{u}D}]}]
-         [DP{[\st{acc}]} [\textit{the book}, roof]]]]]]]
+         [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
+         [DP{[\st{acc}]} [\textit{the book}\\\textsc{det} 书, roof]]]]]]]
 \end{forest}
 \caption{\label{fig-Anna-reads-the-book-minimalism-TP}T的格指派和“Anna reads the book”这句的TP中的\textit{v}}
 %\caption{\label{fig-Anna-reads-the-book-minimalism-TP}Case assignment by T and \textit{v} in the TP
@@ -783,22 +786,22 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 [CP
     [C
       [T{[\st{Decl*}]}
-        [\textit{kennt} {[\st{Pres*}]}]
+        [\textit{kennt} {[\st{Pres*}]}\\认识\hspaceThis{[\st{Pres*}]}]
         [T{[Pres]}]]
       [C{[Decl]}]]
     [TP
-      [\textit{jeder}]
+      [\textit{jeder}\\每人]
       [\tbar{[\st{\textit{u}D*}]}
         [\vP
-          [\phonliste{ jeder }]
+          [\phonliste{ jeder }\\每人]
           [\littlevbar
             [VP
-              [DP [\textit{diesen Mann}, roof] ]
-              [\phonliste{ kennt }]]
+              [DP [\textit{diesen Mann}\\这 男人, roof] ]
+              [\phonliste{ kennt }\\认识]]
             [\textit{v}
-              [\phonliste{ kennt }]
+              [\phonliste{ kennt }\\认识]
               [\textit{v}]]]]
-        [\phonliste{ kennt T }]]]]
+        [\phonliste{ kennt T }\\认识\hspaceThis{T}]]]]
 \end{forest}
 \caption{\label{fig-kennt-jeder-diesen-mann-minimalism}在\citet{Adger2003a}的分析下有关“Kennt jeder diesen Mann?”（每个人都认识这个男人吗？）的分析}
 %\caption{\label{fig-kennt-jeder-diesen-mann-minimalism}Analysis of \emph{Kennt jeder diesen Mann?} `Does everybody know this man?' following the
@@ -824,26 +827,26 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 \begin{figure}
 \begin{forest}
 [CP
-  [\emph{diesen Mann} {[top] }]
+  [\emph{diesen Mann} {[top] }\\这 男人\hspaceThis{[top] }]
   [\cbar{[\st{\textit{u}top*}]}
     [C
       [T{[\st{Decl*}]}
-        [\textit{kennt} {[\st{Pres*}]}]
+        [\textit{kennt} {[\st{Pres*}]}\\认识\hspaceThis{[\st{Pres*}]}]
         [T{[Pres]}]]
       [C{[Decl]}]]
     [TP
-      [\textit{jeder}]
+      [\textit{jeder}\\每人]
       [\tbar{[\st{\textit{u}D*}]}
         [\vP
-          [\phonliste{ jeder }]
+          [\phonliste{ jeder }\\每人]
           [\littlevbar
             [VP
-              [\phonliste{ diesen Mann }{[D]}]
-              [\phonliste{ kennt }]]
+              [\phonliste{ diesen Mann }{[D]}\\这 男人\hspaceThis{[D]}]
+              [\phonliste{ kennt }\\认识]]
             [\textit{v}
-              [\phonliste{ kennt }]
+              [\phonliste{ kennt }\\认识]
               [\textit{v}]]]]
-        [\phonliste{ kennt T }]]]]]
+        [\phonliste{ kennt T }\\认识\hspaceThis{T}]]]]]
 \end{forest}
 \caption{\label{fig-diesen-mann-kennt-jeder}在 \citet[\page 331]{Adger2003a}的分析下有关“Diesen Mann kennt jeder.”（这个男人，每个人都认识。）的分析}
 %\caption{\label{fig-diesen-mann-kennt-jeder}Analysis of \emph{Diesen Mann kennt jeder.} `This man, everybody knows.' following the
@@ -903,8 +906,9 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 [\vP
   [\textit{v}]
   [VP
-    [\textit{fall}{[V, \textit{u}N]}]
-    [Theme]]]
+    [\textit{fall}{[V, \textit{u}N]}\\落下\hspaceThis{[V, \textit{u}N]}]
+    [客体]]]
+%     [Theme]]]
 \end{forest}
 \caption{\label{fig-little-v-unaccusative}在 \citet[\page 140]{Adger2003a}下，带fall、collapse和wilt这类非宾格动词的\vPc 结构}
 %\caption{\label{fig-little-v-unaccusative}Structure of \vP with unaccusative verbs like \emph{fall},
@@ -1007,20 +1011,20 @@ G.\,Müller提出了\textit{v}的可选特征和触发局部重新排序的V（�
 \begin{forest}
 [CP
     [C
-      [dass]]
+      [dass\\\textsc{comp}]]
     [TP
         [\vP
-          [\emph{diesen Mann}]
+          [\emph{diesen Mann}\\这 男人]
           [\littlevbar
-            [ \emph{jeder}]
+            [ \emph{jeder}\\每人]
             [\littlevbar
                 [VP
-                  [\phonliste{ diesen Mann } {[D]}] 
-                  [\phonliste{ kennt }]]
+                  [\phonliste{ diesen Mann } {[D]}\\这 男人\hspaceThis{[D]}] 
+                  [\phonliste{ kennt }\\认识]]
                 [\textit{v}
-                  [\phonliste{ kennt }]
+                  [\phonliste{ kennt }\\认识]
                   [\textit{v}]]]] ]
-        [\textit{kennt} {[T]}]]]
+        [\textit{kennt} {[T]}\\认识\hspaceThis{[T]}]]]
 \end{forest}
 \caption{\label{fig-scrambling-minimalism}“dass diesen Mann jeder kennt”（每个人都认识这个人）句中宾语移到\textit{v}的限定语位置上的分析}
 %\caption{\label{fig-scrambling-minimalism}Analysis of \emph{dass diesen Mann jeder kennt} `that everybody knows this man' as movement
@@ -1512,10 +1516,10 @@ where n children=0{delay=with translation}{}
 sm edges without translation
 [pP
    [p
-	[P [with;\textsc{prep}]]
+	[P [with\\\textsc{prep}]]
 	[p [$\varnothing$]]]
    [AgrOP
-	[D [\textbf{me};我]]
+	[D [\textbf{me}\\我]]
 	[$\overline{\mbox{AgrO}}$
 		[AgrO
 			[P [t$'$]]
@@ -1533,7 +1537,7 @@ sm edges without translation
 %to retain the well-established structure in (\ref{minimal-pp-structure}).
 
  \citet[\page
-549--550]{Sternefeld2006a-u}对这一分析提出质疑，并将之比喻为瑞士奶酪（充满了空洞）。这个瑞士奶酪的比喻也许太贴切了，因为，与瑞士奶酪不同的时是，这一分析中空洞的比率非常大（两个词与五个空元素）。我们已经看过第\pageref{Abbildung-NP-ohne-Det}页有关名词短语的分析了，这里NP的结构，只包括一个形容词klugen（聪明），它所包含的空元素比显性的词还多。与这里所讨论的PP的分析不同的是，空成分只出现在显性的限定词和名词实际出现的位置上。另一方面，小p投射是全部由理论内部推导的。对于图\ref{Abbildung-Radfords-PP}的分析没有任何一条附加的假设是由理论外推导而成的（请看\citealp[\page 549--550]{Sternefeld2006a-u}）。
+549--550]{Sternefeld2006a-u}对这一分析提出质疑，并将之比喻为瑞士奶酪（充满了空洞）。这个瑞士奶酪的比喻也许太贴切了，因为，与瑞士奶酪不同的是，这一分析中空洞的比率非常大（两个词与五个空元素）。我们已经看过第\pageref{Abbildung-NP-ohne-Det}页有关名词短语的分析了，这里NP的结构，只包括一个形容词klugen（聪明），它所包含的空元素比显性的词还多。与这里所讨论的PP的分析不同的是，空成分只出现在显性的限定词和名词实际出现的位置上。另一方面，小p投射是全部由理论内部推导的。对于图\ref{Abbildung-Radfords-PP}的分析没有任何一条附加的假设是由理论外推导而成的（请看\citealp[\page 549--550]{Sternefeld2006a-u}）。
 % \citet[\page 549--550]{Sternefeld2006a-u} is critical of this analysis and compares it to Swiss cheese (being full of holes).
 %The comparison to Swiss cheese is perhaps even too positive since, unlike Swiss cheese, the ratio of substance to holes in the analysis is extreme
 %(2 words vs.\ 5 empty elements). We have already seen an analysis of noun phrases on page~\pageref{Abbildung-NP-ohne-Det}, where the structure of an NP, which only consisted %of
@@ -3174,17 +3178,17 @@ MG和HPSG更深一层的区分在于中心语"=填充语不是分析长距离议
 \begin{forest}
 baseline
 [N 
-  [\emph{letters}{[N, pl, \st{\textit{u}P}]}]
+  [\emph{letters}{[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
-    [\emph{to}{[P, \st{\textit{u}N}]}]
-    [\emph{Peter}]]]
+    [\emph{to}{[P, \st{\textit{u}N}]}\\\textsc{prep}\hspaceThis{[P, \st{\textit{u}N}]}]
+    [\emph{Peter}\\Peter]]]
 \end{forest}
 \hfill
 \begin{forest}
 baseline
 [N 
-  [\emph{letters}{[N, pl, \st{\textit{u}P}]}]
-  [\emph{to}{[P, \textit{u}N]}]]
+  [\emph{letters}{[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
+  [\emph{to}{[P, \textit{u}N]}\\\textsc{prep}\hspaceThis{[P, \textit{u}N]}]]
 \end{forest}
 \hfill\mbox{}
 \caption{\label{fig-letters-to-peter-adger} \citet[\page 95]{Adger2003a}对letters to Peter的分析}
