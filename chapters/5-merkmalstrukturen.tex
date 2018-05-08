@@ -50,22 +50,22 @@
 \section{特征描写}
 %\section{Feature descriptions}
 
-当\isc{特征描写|(}\is{feature description|(}描写语言符号时，我们必须要说明属性的信息。对于名词而言，我们会说它有格、性、数和人称的特征。对于Mannes（男人）这个词来说，我们可以说这些特征的值为\emph{genitive}（属格）、\emph{masculine}（阳性）、\emph{singular}（单数）及\emph{3}（第三人称）。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写形式：
+当\isc{特征描写|(}\is{feature description|(}描写语言符号时，我们必须要说明属性的信息。对于名词而言，它有格、性、数和人称的特征。以“男人”这个词为例，这些特征的值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写形式：
 %When\is{feature description|(} describing linguistic signs, we have to say something about their properties. For a noun, we can say that it has %case, gender, number and person features.
 %For a word such as  \emph{Mannes} `man', we can say that these features have the values \emph{genitive}, \emph{masculine}, %\emph{singular} and \emph{3}.
 %If we were to write these as a list of feature"=value pairs, we would arrive at the following feature description:
 \eas
-Mannes（男人）的特征-值偶对：\\
+“男人”的特征-值偶对：\\
 %Feature-value pair for \emph{Mannes}:\\
 \ms{
 %格   & 属格\\
 %性   & 阳性\\
 %数 & 单数\\
 %人称   & 第3人称\\
-case（格）   & genitive（属格）\\
-gender（性）   & masculine（阳性）\\
-number（数） & singular（单数）\\
-person（人称）  & 3（第3人称）\\
+格   & 属格\\
+性   & 阳性\\
+数 & 单数\\
+人称  & 第3人称\\
 }
 \zs
 我们也可以用特征描写来描述不同的事物。例如，我们可以像例（\mex{1}）那样来描述一个人：
@@ -75,9 +75,9 @@ person（人称）  & 3（第3人称）\\
 %名    & max\\
 %姓   & meier\\
 %出生日期 & \zhdate{1985/10/10}\\
-firstname（名）    & max\\
-lastname（姓）  & meier\\
-date-of-birth（出生日期） & 10.10.1985（\zhdate{1985/10/10}）\\
+名    & max\\
+姓   & meier\\
+出生日期  & \zhdate{1985/10/10}\\
 }
 \z
 人与人之间的关系也可以在特征值偶对中表示。例如，Max Meier的父亲叫做Peter Meier这样的事实可以通过对（\mex{0}）的扩展来表示，如下所示：
@@ -85,59 +85,59 @@ date-of-birth（出生日期） & 10.10.1985（\zhdate{1985/10/10}）\\
 %called Peter Meier can be captured by expanding (\mex{0}) as follows: 
 \ea
 \ms{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985（\zhdate{1985/10/10}）\\
-father     & \ms{
-             firstname & peter\\
-             lastname  & meier\\
-             date-of-birth   & 10.05.1960（\zhdate{1960/05/10}）\\
-             father     & \ldots\\
-             mother   & \ldots\\
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲     & \ms{
+             名 & peter\\
+             姓   & meier\\
+             出生日期    & \zhdate{1960/05/10}\\
+             父亲     & \ldots\\
+             母亲   & \ldots\\
              }\\
-mother		 & \ldots\\
+母亲		 & \ldots\\
 }
 \z
-\textsc{father}（父亲）特征的值是包含（\mex{-1}）中同样特征的特征描写。
-%The value of the \textsc{father} feature is another feature description containing the same features as (\mex{-1}).
+\textsc{父亲}特征的值是包含（\mex{-1}）中同样特征的特征描写。
+%The value of the \textsc{父亲} feature is another feature description containing the same features as (\mex{-1}).
 
-在特征描写中，路径（path）\isc{路径}\is{path}是一个直接彼此承袭的序列特征。路径值（value of a path）是在路径末端的特征描写。由此，\textsc{father$|$date-of-birth}的值为\emph{10.05.1960}。
+在特征描写中，路径（path）\isc{路径}\is{path}是一个直接彼此承袭的序列特征。路径值（value of a path）是在路径末端的特征描写。由此，\textsc{父亲$|$出生日期}的值为“\zhdate{1960/05/10}”。
 %In feature descriptions, a \emph{path}\is{path} is a sequence of features which immediately follow each other.
 %The \emph{value of a path} is the feature description at the end of the path. Therefore,
-%the value of \textsc{father$|$date-of-birth} is \emph{10.05.1960}.
+%the value of \textsc{father$|$出生日期 } is \emph{10.05.1960}.
 
 我们设想出在诸如（\mex{0}）的表示中包括很多不同的特征。有人可能会问，如何在（\mex{0}）中加入后代的信息呢？
 %One can think of many different features that could be included in representations such as (\mex{0}). One may wonder how
 %to integrate information about offspring into (\mex{0}).
 
-一个显而易见的解决方案就是加入\textsc{daughter}（女儿）和\textsc{son}（儿子）这两个特征：
+一个显而易见的解决方案就是加入\textsc{女儿}和\textsc{儿子}这两个特征：
 %An obvious solution would be to add features for \textsc{daughter} und \textsc{son}:
 \ea
 \ms{
-firstname    & max\\
-lastname  & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ldots\\
-mother     & \ldots\\
-daughter    & \ldots\\   
+名    & max\\
+姓   & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲      & \ldots\\
+母亲     & \ldots\\
+女儿    & \ldots\\   
 }
 \z
-但是，这一方法也有让人不满意的地方，比如它无法直接清晰地说明如何来描写有几个女儿的人。是否应该引入诸如\textsc{daughter-1}或\textsc{daughter-3}这样的特征呢？
+但是，这一方法也有让人不满意的地方，比如它无法直接清晰地说明如何来描写有几个女儿的人。是否应该引入诸如\textsc{女儿-1}或\textsc{女儿-3}这样的特征呢？
 %This solution is not satisfactory as it is not immediately clear how one could describe a person with several daughters.
 %Should one really introduce features such as \textsc{daughter-1} or \textsc{daughter-3}?
 \ea
 \ms{
-firstname    & max\\
-lastname  & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ldots\\
-mother     & \ldots\\
-daughter-1    & \ldots\\   
-daughter-2  & \ldots\\
-daughter-3  & \ldots\\
+名    & max\\
+姓   & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲      & \ldots\\
+母亲     & \ldots\\
+女儿-1    & \ldots\\   
+女儿-2  & \ldots\\
+女儿-3  & \ldots\\
 }
 \z
-我们想要设定多少个特征呢？限制是什么？\textsc{daughter"=32}的值会是什么呢？
+我们想要设定多少个特征呢？限制是什么？\textsc{女儿"=32}的值会是什么呢？
 %How many features do we want to assume? Where is the limit?
 %What would the value of \textsc{daughter"=32} be?
 
@@ -148,18 +148,18 @@ daughter-3  & \ldots\\
 %Max Meier has a daughter called Clara, who herself has no daughter.
 \ea
 \ms{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ldots\\
-mother     & \ldots\\
-daughter    & \liste{ \ms{
-                     firstname    & clara\\
-                     lastname   & meier\\
-                     date-of-birth & 10.10.2014（\zhdate{2004/10/10}）\\
-                     father      & \ldots\\
-                     mother     & \ldots\\
-                     daughter   & \liste{ }\\   
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲      & \ldots\\
+母亲     & \ldots\\
+女儿    & \liste{ \ms{
+                     名    & clara\\
+                     姓    & meier\\
+                     出生日期  & \zhdate{2004/10/10}\\
+                     父亲      & \ldots\\
+                     母亲     & \ldots\\
+                     女儿   & \liste{ }\\   
 } }\\   
 }
 \z
@@ -171,20 +171,20 @@ daughter    & \liste{ \ms{
 \begin{figure}[tb]
 \ea
 \ms{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-\textbf{gender} & \textbf{male}\\
-father      & \ldots\\
-mother     & \ldots\\
-children    & \liste{ \ms{
-                     firstname    & clara\\
-                     lastname   & meier\\
-                     date-of-birth & 10.10.2014\\
-                     \textbf{gender} & \textbf{female}\\
-                     father      & \ldots\\
-                     mother     & \ldots\\
-                     children     & \liste{ }\\   
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+\textbf{性别} & \textbf{男}\\
+父亲      & \ldots\\
+母亲     & \ldots\\
+子女    & \liste{ \ms{
+                     名    & clara\\
+                     姓    & meier\\
+                     出生日期  & \zhdate{2004/10/10}\\
+                     \textbf{性别} & \textbf{女}\\
+                     父亲      & \ldots\\
+                     母亲     & \ldots\\
+                     子女     & \liste{ }\\   
 } }\\   
 }
 \z
@@ -211,75 +211,75 @@ children    & \liste{ \ms{
 %\section{Types}
 \label{sec-formalismus-typen}
 
-在\isc{类型|(}\is{type|(}上一节中，我们介绍了包括特征"=值偶对的特征描述，并且说明了有必要在特征上赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型是说的哪些特征可以或者必须属于一个具体的结构。前面讲到的描写表示了类型\type{person}（人）的对象。
+在\isc{类型|(}\is{type|(}上一节中，我们介绍了包括特征"=值偶对的特征描述，并且说明了有必要在特征上赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型是说的哪些特征可以或者必须属于一个具体的结构。前面讲到的描写表示了类型\type{人}的对象。
 %In\is{type|(} the previous section, we introduced feature descriptions consisting of feature"=value pairs and showed that it makes sense to %allow for
 %complex values for features. In this section, feature descriptions will be augmented to include types. Feature descriptions which are assigned %a type
 %are also called \emph{typed feature descriptions}. Types say something about which features can or must belong to a 
 %particular structure. The description previously discussed describes an object of the type \type{person}.
 \ea
-\ms[person]{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-gender & male\\
-father      & \ldots\\
-mother     & \ldots\\
-children     & \liste{ \ldots, \ldots{} }
+\ms[人]{
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+性别 & 男\\
+父亲      & \ldots\\
+母亲     & \ldots\\
+子女     & \liste{ \ldots, \ldots{} }
 }
 \z
 类型用斜体表示。
 %Types are written in \textit{italics}. 
 
-类型的具体化决定了所模拟的对象具有什么样的属性。这样一个理论才能描写这些属性。诸如\textsc{operating voltage}（工作电压）这样的属性与类型\textit{person}（人）是无关的。如果我们知道一个给定对象的类型，那么我们也会知道该对象一定具有一定的属性，即使我们还不知道这些属性具体的值。这样，（\mex{1}）仍是对Max Meier的描写，即使它并不包括任何有关Max的生日信息：
+类型的具体化决定了所模拟的对象具有什么样的属性。这样一个理论才能描写这些属性。诸如\textsc{工作电压}这样的属性与类型\textit{人}是无关的。如果我们知道一个给定对象的类型，那么我们也会知道该对象一定具有一定的属性，即使我们还不知道这些属性具体的值。这样，（\mex{1}）仍是对Max Meier的描写，即使它并不包括任何有关Max的生日信息：
 %The specification of a type determines which properties a modelled object has. It is then only
 %possible for a theory to say something about these properties.
 %Properties such as \textsc{operating voltage} are not relevant for objects of the type \textit{person}. If we know the type of a given object, then %we
 %also know that this object must have certain properties even if we do not yet know their exact values. In this way, (\mex{1}) is still a description %of
 %Max Meier even though it does not contain any information about Max' date of birth:
 \ea
-\ms[person]{
-firstname   & max\\
-lastname   & meier\\
-gender & male
+\ms[人]{
+名   & max\\
+姓    & meier\\
+性别 & 男
 }
 \z
-但是，我们知道Max Meier一定是在某天出生的，因为这是对类型\textit{person}（人）的描述。对于（\mex{0}）这类结构来说，“Max的生日是什么？”这个问题是有意义的，而“Max有哪种工作电压？”这个问题就是无意义的。如果我们知道一个对象是属于类型\textit{person}（人）的，那么就会有如下的基本结构：
+但是，我们知道Max Meier一定是在某天出生的，因为这是对类型\textit{人}的描述。对于（\mex{0}）这类结构来说，“Max的生日是什么？”这个问题是有意义的，而“Max有哪种工作电压？”这个问题就是无意义的。如果我们知道一个对象是属于类型\textit{人}的，那么就会有如下的基本结构：
 %We know, however, that Max Meier must have been born on some day since this is a description of the type \textit{person}.
 %The question \emph{What is Max' date of birth?} makes sense for a structure such as (\mex{0}) in a way that the question
 %\emph{Which operating voltage does Max have?} does not. If we know that an object is of the type \textit{person}, then we have
 %the following basic structure:
 \ea
-\ms[person]{
-firstname    & firstname\\
-lastname & lastname\\
-date-of-birth & date\\
-gender & gender\\
-father      & person\\
-mother    & person\\
-children    & list of person~
+\ms[人]{
+名    & 名\\
+姓  & 姓 \\
+出生日期  & 日期\\
+性别 & 性别\\
+父亲      & 人\\
+母亲    & 人\\
+子女    & 人的列表~
 }
 \z
-在（\mex{0}）和（\mex{-1}）中，\textsc{firstname}（名）这类特征的值用斜体表示。这些值也是类型。但是，他们与\type{person}（人）这类特征不同，因为它们没有特征。这些特征叫做原子式（atomic）\isc{类型!原子式}\is{type!atomic}。
-%In (\mex{0}) and (\mex{-1}), the values of features such as \textsc{firstname} are in italics. These values are also types. They are different from
+在（\mex{0}）和（\mex{-1}）中，\textsc{名}这类特征的值用斜体表示。这些值也是类型。但是，他们与\type{人}这类特征不同，因为它们没有次类特征。这些特征叫做原子式（atomic）\isc{类型!原子式}\is{type!atomic}。
+%In (\mex{0}) and (\mex{-1}), the values of features such as \textsc{名} are in italics. These values are also types. They are different from
 %types such as \type{person}, however, as no features belong to them. These kinds of types are called \emph{atomic}\is{type!atomic}.
 
 特征按照层级来进行组织\isc{类型层级体系|(}\is{type hierarchy|(}。
 %Types are organized into hierarchies\is{type hierarchy|(}.
-对于\textit{person}（人）来说，可以界定次类型\textit{woman} （女人）和\textit{man}（男人）。这会决定给定对象的性别。（\mex{1}）显示了类型\textit{woman}（女人）的特征结构，这与类型\textit{man}（男人）的特征结构是类似的。
+对于\textit{人}来说，可以界定次类型\textit{女人} 和\textit{男人}。这会决定给定对象的性别。（\mex{1}）显示了类型\textit{女人}的特征结构，这与类型\textit{男人}的特征结构是类似的。
 %It is possible to define the subtypes  \textit{woman} and \textit{man} for  \textit{person}. These would determine the gender of a given object.
 %(\mex{1}) shows the feature structure for the type \textit{woman}, which is analogous to that of \textit{man}.
 \ea
-\ms[female person]{
-firstname    & firstname\\
-lastname & lastname\\
-date-of-birth & date\\
-gender & female\\
-father      & person\\
-mother    & person\\
-children    & list of person~   
+\ms[女性]{
+名    & 名\\
+姓  & 姓 \\
+出生日期  & 日期\\
+性别  & 女\\
+父亲      & 人\\
+母亲    & 人\\
+子女    & 人的列表~   
 }
 \z
-在这点上，我们应该自问是否需要\textsc{gender}（性别）这个特征。必要信息已经在\type{woman}（女人）这个类型中显示出来了。
+在这点上，我们应该自问是否需要\textsc{性别}这个特征。必要信息已经在\type{女人}这个类型中显示出来了。
 下面的问题和语言本体分析是相关的：特定的信息是由特定的特征表示的？还是仅存储在一个类型而没有一个独立的特征与之对应？
 这两个方面的差异是巨大的，因为通过类型模拟的信息的事实没有直接通过结构共享而获得，这点在\ref{sec-strukturteilung}有所讨论。
 %At this point, we could ask ourselves if we really need the feature \textsc{gender}. The necessary information is already represented in the %type \type{woman}.
@@ -371,27 +371,27 @@ children    & list of person~
 %twenty years after leaving school and could not recall the exact names of some former classmates, it would be possible to search the web for %``Julia (Warbanow or Barbanow)''. In
 %feature descriptions, this ``or'' is expressed by a `$\vee$'\is{$\vee$}.
 \ea
-\ms[person]{
+\ms[人]{
 %\ms[person]{
-firstname  & julia\\
-lastname & warbanow $\vee$ barbanow
+名  & julia\\
+姓  & warbanow $\vee$ barbanow
 }
 \z
 一些网络的搜索引擎不允许使用带有“或者”的搜索。这种情况下，我们需要给出两个不同的搜索选项：一个是“Julia Warbanow”，而另一个是“Julia Barbanow”。这就对应于下面用析取连接的描写形式：
 %Some internet search engines do not allow for searches with `or'. In these cases, one has to carry out two distinct search operations: one for %``Julia Warbanow'' and then another
 %for ``Julia Barbanow''. This corresponds to the two following disjunctively connected descriptions:
 \ea
-\ms[person]{
+\ms[人]{
 %\ms[person]{
-firstname  & julia\\
-lastname & warbanow
-% firstname  & julia\\
+名  & julia\\
+姓  & warbanow
+% 名  & julia\\
 % lastname & warbanow
 } $\vee $
-\ms[person]{
+\ms[人]{
 %\ms[person]{
-firstname  & julia\\
-lastname & barbanow
+名  & julia\\
+姓  & barbanow
 % firstname  & julia\\
 % lastname & barbanow
 }
@@ -412,21 +412,21 @@ lastname & barbanow
 \eal
 \ex[]{
 \gll Der Mann schläft.\\
-	 \textsc{det} 男人 睡觉\\
+	 \textsc{det}.\textsc{3sg} 男人 睡觉\\
 \glt `这个男人正在睡觉。'
 %	 the man sleeps\\
 %\glt `The man is sleeping.'
 }
 \ex[]{
 \gll Die Männer schlafen.\\
-	 \textsc{det} 男人 睡觉\\
+	 \textsc{det}.\textsc{pl} 男人 睡觉\\
 \glt `这些男人正在睡觉。'
 %	 the men sleep\\
 %\glt `The men are sleeping.'
 }
 \ex[*]{
 \gll Der Mann schlafen.\\
-	 \textsc{det} 男人 睡觉\\
+	 \textsc{det}.\textsc{3sg} 男人 睡觉\\
 \glt 想说“这些男人正在睡觉。”
 %	 the man sleep\\
 %\glt Intended: `The man are sleeping.'
@@ -441,27 +441,27 @@ lastname & barbanow
 %A claim about the identity of values is stronger. Let us take the following feature description containing
 %information about the children that Max's father and mother have as an example:
 \ea
-\ms[person]{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ms[person]{
-              firstname  & peter\\
-              lastname & meier\\
-              children   & \liste{ \ms[person]{
-                                 firstname & klaus
+\ms[人]{
+名    & max\\
+姓    & meier\\
+出生日期  & 10.10.1985\\
+父亲      & \ms[人]{
+              名  & peter\\
+              姓  & meier\\
+              子女   & \liste{ \ms[人]{
+                                 名 & klaus
                                  }, \ldots }
              }\\
-mother    & \ms[person]{
-              firstname  & anna\\
-              lastname & meier\\
-              children   & \liste{ \ms[person]{
-                                 firstname & klaus
+母亲    & \ms[人]{
+              名  & anna\\
+              姓  & meier\\
+              子女   & \liste{ \ms[人]{
+                                 名 & klaus
                                  }, \ldots }
              }
 }
 \z
-请注意\textsc{father$|$children}和\textsc{mother$|$children}的路径下面，我们找到一个包括名为Klaus的人的描述。有关该特征描述是Peter和Anna的一个孩子还是两个孩子的问题是无法回答的。当然，我们是在分析前面关系中的两个不同的孩子，只不过他们碰巧都叫做Klaus。
+请注意\textsc{父亲$|$子女}和\textsc{母亲$|$子女}的路径下面，我们找到一个包括名为Klaus的人的描述。有关该特征描述是Peter和Anna的一个孩子还是两个孩子的问题是无法回答的。当然，我们是在分析前面关系中的两个不同的孩子，只不过他们碰巧都叫做Klaus。
 %Notice that under the paths \textsc{father$|$children} and \textsc{mother$|$children}, we find a
 %list containing a description of a person with the first name Klaus. The question of whether the
 %feature description is of one or two children of Peter and Anna cannot be answered. It is certainly
@@ -472,21 +472,21 @@ mother    & \ms[person]{
 %By using structure sharing, it is possible to specify the identity of the two values as in (\mex{1}).
 \begin{figure}
 \ea
-\ms[person]{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ms[person]{
-              firstname  & peter\\
-              lastname & meier\\
-              children   & \liste{ \ibox{1} \ms[person]{
-                                 firstname & klaus
+\ms[人]{
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲      & \ms[人]{
+              名  & peter\\
+              姓  & meier\\
+              子女   & \liste{ \ibox{1} \ms[人]{
+                                 名 & klaus
                                  }, \ldots }
              }\\
-mother    & \ms[person]{
-              firstname  & anna\\
-              lastname & meier\\
-              children & \liste{ \ibox{1}, \ldots }
+母亲    & \ms[人]{
+              名  & anna\\
+              姓  & meier\\
+              子女 & \liste{ \ibox{1}, \ldots }
              }
 }
 \z
@@ -515,27 +515,27 @@ mother    & \ms[person]{
 \begin{figure}
 \ea
 \label{bsp-avm-zyklen}
-\ibox{2} \ms[person]{
-firstname    & max\\
-lastname   & meier\\
-date-of-birth & 10.10.1985\\
-father      & \ms[person]{
-              firstname  & peter\\
-              lastname & meier\\
-              children   & \liste{ \ibox{1} \ms[person]{
-                                 firstname & klaus
+\ibox{2} \ms[人]{
+名    & max\\
+姓    & meier\\
+出生日期  & \zhdate{1985/10/10}\\
+父亲      & \ms[人]{
+              名  & peter\\
+              姓  & meier\\
+              子女   & \liste{ \ibox{1} \ms[人]{
+                                 名 & klaus
                                  }, \ibox{2} }
              }\\
-mother    & \ms[person]{
-              firstname  & anna\\
-              lastname & meier\\
-              children   & \liste{ \ibox{1}, \ibox{2} }
+母亲    & \ms[人]{
+              名  & anna\\
+              姓  & meier\\
+              子女   & \liste{ \ibox{1}, \ibox{2} }
              }
 }
 \z
 \vspace{-\baselineskip}\end{figure}%
-例（\mex{0}）中所描写的结构叫做循环结构，因为如果我们按照一个具体的路径就会进入一个循环：如路径\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{%
-这里的点是指到列表中值为\textsc{children}（孩子）\iboxt{2}的路径。请看练习\ref{ua-liste}。
+例（\mex{0}）中所描写的结构叫做循环结构，因为如果我们按照一个具体的路径就会进入一个循环：如路径\textsc{父亲$|$""子女$|$""\ldots$|$""父亲$|$""子女$|$\ldots}\footnote{%
+这里的点是指到列表中值为\textsc{子女}\iboxt{2}的路径。请看练习\ref{ua-liste}。
 }可以重复无限的次数。
 %Structures such as those described in (\mex{0}) are called cyclic because one ends up going in a circle if one follows a particular path: \eg the %path 
 %\textsc{father$|$""children$|$""\ldots$|$""father$|$""children$|$\ldots}\footnote{%
@@ -578,27 +578,27 @@ mother    & \ms[person]{
 %do not want to get descriptions of a male red-head (\mex{1}b). The descriptions in (\mex{1}) are incompatible and cannot be unified:
 \eal
 \ex\label{ex-meier-female-blonde}
-\ms[person]{
-lastname   & meier\\
-gender & female\\
-haircolor  & blonde
+\ms[人]{
+姓    & meier\\
+性别  & 女\\
+发色  & 金色
 }
-\ex \ms[person]{
-lastname   & meier\\
-gender & male\\
-haircolor & red
+\ex \ms[人]{
+姓    & meier\\
+性别  & 男\\
+发色 & 红色
 }
 \zl
 例（\mex{1}）中描写的结果可能是寻找一位金发的、叫Meier的女性个体：
 %The description in (\mex{1}) would be a possible result for a search for a blonde, female individual called Meier:
 \ea
 \label{info-detective}
-\ms[person]{
-firstname    & katharina\\
-lastname   & meier\\
-gender & female\\
-date-of-birth & 15.10.1965\\
-haircolor  & blonde
+\ms[人]{
+名    & katharina\\
+姓    & meier\\
+性别  & 女\\
+出生日期  & \zhdate{1965/10/15}\\
+发色  & 金色
 }
 \z
 Katharina Meier还可以有其他侦探不知道的属性。重要的是侦探所知的属性与委托人要寻找的属性是一致的。进而，侦探使用可靠的信息而不是制造出有关寻找对象的任何信息是非常重要的。（\mex{-1}a）中搜查的合一与（\mex{0}）中侦探可获得的信息实际上是（\mex{0}），而不是（\mex{1}），如下所示：
@@ -607,13 +607,13 @@ Katharina Meier还可以有其他侦探不知道的属性。重要的是侦探�
 %object. The unification of the search in (\mex{-1}a) and the information accessible to the detective in (\mex{0}) is in fact (\mex{0}) and not 
 %(\mex{1}), for example:
 \ea
-\ms[person]{
-firstname    & katharina\\
-lastname   & meier\\
-gender & female\\
-date-of-birth & 15.10.1965\\
-haircolor  & blond\\
-children     & \liste{}
+\ms[人]{
+名    & katharina\\
+姓    & meier\\
+性别  & 女\\
+出生日期  & \zhdate{1965/10/15}\\
+发色  & 金色\\
+子女     & \liste{}
 }
 \z
 （\mex{0}）包括了孩子的信息，它既不属于（\ref{ex-meier-female-blonde}），也不属于（\ref{info-detective}）。事实上，Katharina Meier可能没有孩子，但是也有可能其他叫做Katharina Meier的人具有其他相同的属性。根据这一新创的信息，我们可以排除一个或者多个可能的候选人。
@@ -627,11 +627,11 @@ children     & \liste{}
 %It is possible that our detective Max Müller does not have any information about hair color in his
 %files. His files could contain the following information:
 \ea
-\ms[person]{
-firstname   & katharina\\
-lastname   & meier\\
-gender & female\\
-date-of-birth & 15.10.1965
+\ms[人]{
+名   & katharina\\
+姓    & meier\\
+性别  & 女\\
+出生日期  & \zhdate{1965/10/15}
 }
 \z
 这些数据与搜索的标准是相容的。如果我们要将（\mex{-3}a）和（\mex{0}）进行合一，我们可以得到（\mex{-2}）。如果我们假设侦探做得不错，那么现在就会知道她最初要找的人的属性，还有一些新发现的属性。
@@ -681,18 +681,19 @@ date-of-birth & 15.10.1965
 Frau（女人）:\\*[1pt]
 %Frau `woman':\\*[1pt]
 \ms{
-gender & fem\\
+性  & 阴性\\
 %kasus & Kasus\\
 }
 \ex\label{avm-mann}
 Mann（男人）:\\*[2pt]
 %Mann `man':\\*[2pt]
 \ms{
-gender & mas\\
-case & nominative $\vee$ dative $\vee$ accusative~~\\
+性  & 阳性\\
+格 & 主格 $\vee$ 与格 $\vee$ 宾格~~\\
+%case & nominative $\vee$ dative $\vee$ accusative~~\\
 }
 \zl
-与（\mex{0}b）不同的是，（\mex{0}a）并不包括格属性，这是因为我们不需要说明Frau的描写中有任何格的信息。由于所有的名词性对象都需要一个格属性，很清楚的是Frau的结构必须也有一个格特征。格特征的值属于类型\type{case}（格）。\type{case}是一个一般类型，它包括次级类型\type{nominative}（主格）、\type{genitive}（属格）、\type{dative}（与格）和\type{accusative}（宾格）。具体的语言对象总是将这些最大限度上确定的类型作为他们的格的值。（\mex{0}）的特征结构如图\ref{abb-avm-frau}和图\ref{abb-avm-mann}所示。
+与（\mex{0}b）不同的是，（\mex{0}a）并不包括格属性，这是因为我们不需要说明Frau的描写中有任何格的信息。由于所有的名词性对象都需要一个格属性，很清楚的是Frau的结构必须也有一个格特征。格特征的值属于类型\type{格}。\type{格}是一个一般类型，它包括次级类型\type{主格}、\type{属格}、\type{与格}和\type{宾格}。具体的语言对象总是将这些最大限度上确定的类型作为他们的格的值。（\mex{0}）的特征结构如图\ref{abb-avm-frau}和图\ref{abb-avm-mann}所示。
 %Unlike (\mex{0}b), (\mex{0}a) does not contain a case feature since we do not need to say anything special about case in the description of 
 %\emph{Frau}.
 %Since all nominal objects require a case feature, it becomes clear that the structures for \emph{Frau} must actually also have a case feature.
@@ -852,7 +853,7 @@ case & nominative $\vee$ dative $\vee$ accusative~~\\
 \caption{\label{abb-avm-mann}（\ref{avm-mann}）中的Mann（男人）的特征结构描写}
 %\caption{\label{abb-avm-mann}Feature structures for the description of \emph{Mann} `man' in  (\ref{avm-mann})}
 \end{figure}%
-在这些表达式中，每一个结点都有一定的类型（\type{noun}、\type{fem}、\type{nominative} \ldots），并且特征结构中的类型总是最大限度地具体化，即他们没有深层的次类型。总有一个进入结点（上例中的\type{noun}），以及其他用特征标签标注的用箭头连接起来的结点（\textsc{gender}、\textsc{case}）。
+在这些表达式中，每一个结点都有一定的类型（\type{名词}、\type{阴性}、\type{主格} \ldots），并且特征结构中的类型总是最大限度地具体化，即他们没有深层的次类型。总有一个进入结点（上例中的\type{名词}），以及其他用特征标签标注的用箭头连接起来的结点（\textsc{性别}、\textsc{格}）。
 %In these representations, each node has a certain type (\type{noun}, \type{fem}, \type{nominative},
 %\ldots) and the types in feature structures are always maximally specific, that is, they do not have
 %any further subtypes. There is always an entry node (\type{noun} in the example above) and the other
@@ -932,35 +933,35 @@ case & nominative $\vee$ dative $\vee$ accusative~~\\
 %\item Are the following structures compatible, that is, can they be used to describe the same object? 
 \ea
 \onems{
-firstname \type{max}\\
-lastname \type{meier}\\
-father    \ms[person]{
-              firstname  & peter\\
-              lastname & meier
+名 \type{max}\\
+姓  \type{meier}\\
+父亲    \ms[人]{
+              名  & peter\\
+              姓  & meier
              }
 }\hspace{0.5cm}\onems{
-firstname  \type{max}\\
-lastname \type{meier}\\
-father   \ms[person]{
-              firstname  & peter\\
-             lastname & müller
+名  \type{max}\\
+姓  \type{meier}\\
+父亲   \ms[人]{
+              名  & peter\\
+             姓  & müller
              }
 }
 \z
 \ea
 \onems{
-firstname   \type{max}\\
-lastname  \type{meier}\\
-father     \ms[person]{
-              firstname & peter\\
-              lastname & meier
+名   \type{max}\\
+姓   \type{meier}\\
+父亲     \ms[人]{
+              名 & peter\\
+              姓  & meier
              }
 }\hspace{0.5cm}\onems{
-firstname   \type{max}\\
-lastname  \type{meier}\\
-mother      \ms[person]{
-              firstname  & ursula\\
-              lastname & müller
+名   \type{max}\\
+姓   \type{meier}\\
+母亲      \ms[人]{
+              名  & ursula\\
+              姓  & müller
              }
 }
 \z
@@ -975,7 +976,7 @@ mother      \ms[person]{
 \begin{enumerate}
 \item 请设想如何通过特征描写来描写乐器。
 %\item Think about how one could describe musical instruments using feature descriptions.
-\item 请设计一个词类（\type{det}、\type{comp}、\type{noun}、\type{verb}、\type{adj}、\type{prep}）的类型层级体系。请设想可以组织类型层级的方式，这样我们可以对第\pageref{Tabelle-Merkmalszerlegung-Wortarten}页的图\ref{Tabelle-Merkmalszerlegung-Wortarten}中的二元特征的概括进行表示。
+\item 请设计一个词类（\type{限定词}、\type{标句词}、\type{名词}、\type{动词}、\type{形容词}、\type{介词}）的类型层级体系。请设想可以组织类型层级的方式，这样我们可以对第\pageref{Tabelle-Merkmalszerlegung-Wortarten}页的图\ref{Tabelle-Merkmalszerlegung-Wortarten}中的二元特征的概括进行表示。
 %\item Come up with a type hierarchy for the word classes (\type{det}, \type{comp}, \type{noun}, \type{verb},
 %      \type{adj}, \type{prep}). Think about the ways in which one can organize the type hierachy so that one
 %	  can express the generalizations that where captured by the binary features in Table~\ref{Tabelle-Merkmalszerlegung-Wortarten} on page~%\pageref{Tabelle-Merkmalszerlegung-Wortarten}.
