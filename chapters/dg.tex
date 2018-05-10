@@ -1092,7 +1092,7 @@ dg edges
 \ea[*]{
 \gll Wen        glaubst        ich      du, dass gesehen habe?\\
      谁.\acc{} 认为.2\sg{} 我.\nom{} 你.\nom{} \textsc{comp} 看见 \textsc{aux}\\
-\glt 想说：“你认为我看见谁了？”
+\glt 想说：\quotetrans{你认为我看见谁了？}
 %     who.\acc{} believe.2\sg{} I.\nom{} you.\nom{} that seen have\\
 %\glt Intended: `Who do you think I saw?'
 }
@@ -1931,8 +1931,8 @@ word tier
 \ex\label{ex-oft-liest-er-das-buch-nicht} 
 \gll Oft liest er das Buch nicht.\\
      经常 读 他 \textsc{det}  书 不\\
-\mytrans{经常的情况是他不读书。' 或者\}
-     `他经常读书，事实不是这样的。'
+\glt \quotetrans{经常的情况是他不读书。} 或者\\
+     \quotetrans{他经常读书，事实不是这样的。}
 %     often reads he the book not\\
 %\mytrans{It is often that he does not read the book.' or\}
 %     `It is not the case that he reads the book often.'
@@ -2983,10 +2983,10 @@ dg edges
 \ex \emph{book}: $\lambda y\;(\relation{book}(y))$
 \ex \emph{a book}: $\lambda Q \exists x (\relation{book}(x) \wedge Q(x))$
 \zl
-现在，依存语法标记的问题是没有能够联系到a book的语义的NP结点（请参阅第\pageref{fig-a-book-psg-dg}页的图\ref{fig-a-book-psg-dg}），树中出现的唯一事物是词汇N的结点：book的结点。\footnote{ \citet[\page 391--392]{Hudson2003a}\indexwgc 对此清楚地表述：“在依存分析中，从属词修饰中心语词的意义，所以后者带有整个短语的意义。例如，在\emph{long books about linguistics}中，由于从属词的修饰效应，词books表示‘关于语言学的长书’。”对于这个观点的具体实现请参阅图\vref{fig-wg-small-children-are-playing-outside}。另一种观点是在\mttc 中假定不同的表示层次\citep{Melcuk81a}。实际上，HPSG理论中的\contvc 也是一个不同的表示层。但是，这个表示层跟建立起来的其他结构是同步的。}不过，这不是一个大问题：词汇属性可以表示为作为不同特征值的最高结点的部分。那么，依存图中的N结点会有\contvc，它对应于完整短语的语义贡献以及对应于短语的词汇中心语的贡献的\textsc{lex-cont}值。所以对于a book来说，我们会得到下面的表达式：
+现在，依存语法标记的问题是没有能够联系到a book的语义的NP结点（请参阅第\pageref{fig-a-book-psg-dg}页的图\ref{fig-a-book-psg-dg}），树中出现的唯一事物是词汇N的结点：book的结点。\footnote{\citet[\page 391--392]{Hudson2003a}\indexwgc 对此清楚地表述：“在依存分析中，从属词修饰中心语词的意义，所以后者带有整个短语的意义。例如，在\emph{long books about linguistics}中，由于从属词的修饰效应，词books表示‘关于语言学的长书’。”对于这个观点的具体实现请参阅图\vref{fig-wg-small-children-are-playing-outside}。另一种观点是在\mttc 中假定不同的表示层次\citep{Melcuk81a}。实际上，HPSG理论中的\contvc 也是一个不同的表示层。但是，这个表示层跟建立起来的其他结构是同步的。}不过，这不是一个大问题：词汇属性可以表示为作为不同特征值的最高结点的部分。那么，依存图中的N结点会有\contvc，它对应于完整短语的语义贡献以及对应于短语的词汇中心语的贡献的\textsc{lex-cont}值。所以对于a book来说，我们会得到下面的表达式：
 %Now, the problem for the Dependency Grammar notation is that there is no NP node that could be
 %associated with the semantics of \emph{a book} (see Figure~\ref{fig-a-book-psg-dg} on page~\pageref{fig-a-book-psg-dg}), the only thing present in the %tree is a node for the
-%lexical N: the node for \emph{book}.\footnote{ \citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the %dependents modify the head word's meaning, so the latter carries the meaning of the whole phrase. For example, in  \emph{long books about %linguistics}, the word \emph{books} means `long books about linguistics' thanks to the modifying effect of the dependents.'' For a concrete %implementation of this idea see Figure~\vref{fig-wg-small-children-are-playing-outside}.An alternative is to assume different representational levels as in %\mtt \citep{Melcuk81a}. In fact the \contv in HPSG is also a different representational level. However, this representational level is in sync  with the other %structure that is build.} This is not a big problem, however: the lexical properties can be represented as part of the highest node as the value of a %separate feature. The N node in a dependency graph would then have a \contv that corresponds to the semantic contribution of the complete phrase %and a \textsc{lex-cont} value that corresponds to the contribution of the lexical head of the phrase. So for \emph{a book} we would get the following %representation:
+%lexical N: the node for \emph{book}.\footnote{\citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the %dependents modify the head word's meaning, so the latter carries the meaning of the whole phrase. For example, in  \emph{long books about %linguistics}, the word \emph{books} means `long books about linguistics' thanks to the modifying effect of the dependents.'' For a concrete %implementation of this idea see Figure~\vref{fig-wg-small-children-are-playing-outside}.An alternative is to assume different representational levels as in %\mtt \citep{Melcuk81a}. In fact the \contv in HPSG is also a different representational level. However, this representational level is in sync  with the other %structure that is build.} This is not a big problem, however: the lexical properties can be represented as part of the highest node as the value of a %separate feature. The N node in a dependency graph would then have a \contv that corresponds to the semantic contribution of the complete phrase %and a \textsc{lex-cont} value that corresponds to the contribution of the lexical head of the phrase. So for \emph{a book} we would get the following %representation:
 \ea
 \ms{
 cont & $\lambda Q \exists x (\relation{book}(x) \wedge Q(x))$\\
