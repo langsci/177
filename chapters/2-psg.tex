@@ -20,12 +20,12 @@
 \ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
 \gll weil er das Buch dem Mann gibt\\
 	 因为 他 \textsc{det} 书 \textsc{det} 人 给\\
-\glt `因为他给人这本书'
+\mytrans{因为他给人这本书}
 \z
 %\ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
 %\gll weil er das Buch dem Mann gibt\\
 %	 because he the book the man gives\\
-%\glt `because he gives the man the book'
+%\mytrans{because he gives the man the book}
 %\z
 在\ref{konstituententests}中，我们介绍了组成成分测试的若干方法。采用这些方法，我们可以判断出das Buch（这本书）和dem Mann（这个人）这两组字符串分别构成了组成成分。那么这些成分需要特定的符号来指称他们。因为在这些短语中，名词起到了重要的作用，它们就叫做“名词短语”（noun phrase）或简称为NP。因为代词er（他）也可以出现在完整的名词短语所在的位置中，所以代词也应归入NP这一类别中。
 %Using the constituency tests we introduced in Section~\ref{konstituententests}, we can show that
@@ -179,12 +179,12 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
 \ea
 \gll {}[weil] er dem Mann das Buch gibt\\
 	 {}\spacebr{}因为 他.\nom{} \textsc{det}.\dat{} 人 \textsc{det}.\acc{} 书 给\\
-\glt `因为他给这个人这本书'
+\mytrans{因为他给这个人这本书}
 \z
 %\ea
 %\gll {}[weil] er dem Mann das Buch gibt\\
 %	 {}\spacebr{}because he.\nom{} the.\dat{} man the.\acc{} book gives\\
-%\glt `because he gives the man the book'
+%\mytrans{because he gives the man the book}
 %\z
 与例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）相比，这句话中用来替代限定词和名词的规则采用了不同的顺序。具体来说，这里并不是用das（这）来替代第一个Det，也不是用Buch（书）来替代第一个名词，而是用dem（这）来替代第一个Det，并用Mann（人）替代第一个名词。
 %The rules for replacing determiners and nouns are simply applied in a different order than in (\ref{bsp-weil-er-das-buch-dem-mann-gibt}). Rather than replacing the first Det with \emph{das} %`the' and the first noun with \emph{Buch} `book', the first Det is replaced with \emph{dem} `the' and the first noun with \emph{Mann}.
@@ -260,7 +260,7 @@ sm edges
 \ex[]{
 \gll er        das Buch        dem Mann       gibt\\
      他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
-\glt `他把书给这个人。'
+\mytrans{他把书给这个人。}
 }
 \ex[*]{
 \gll ich      das Buch        dem Mann       gibt\\
@@ -345,7 +345,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \ex[]{
 \gll Er schläft.\\
 	 他 睡觉\\
-\glt `他正在睡觉。'
+\mytrans{他正在睡觉。}
 }
 \ex[*]{
 \gll Er schläft das Buch.\\
@@ -354,7 +354,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \ex[]{
 \gll Er kennt das Buch.\\
 	 他 认识 \textsc{det} 书\\
-\glt `他认识这本书。'
+\mytrans{他认识这本书。}
 }
 \ex[*]{
 \gll Er kennt.\\
@@ -365,7 +365,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 %\ex[]{
 %\gll Er schläft.\\
 %	 he sleeps\\
-%\glt `He is sleeping.'
+%\mytrans{He is sleeping.}
 %}
 %\ex[*]{
 %\gll Er schläft das Buch.\\
@@ -374,7 +374,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 %\ex[]{
 %\gll Er kennt das Buch.\\
 %	 he knows the book\\
-%\glt `He knows the book.'
+%\mytrans{He knows the book.}
 %}
 %\ex[*]{
 %\gll Er kennt.\\
@@ -556,8 +556,8 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 \ex\label{Bsp-Max-schlaeft}
 \gll Max schläft.\\
      Max 睡觉\\
-\glt `Max正在睡觉。'
-%\glt `Max is sleeping.'
+\mytrans{Max正在睡觉。}
+%\mytrans{Max is sleeping.}
 \ex\label{Bsp-schlafen-max} 
 \relation{schlafen}(\relation{max})
 \zl
@@ -571,21 +571,21 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 \ex 
 \gll Jeder Junge schläft.\\
      每个 男孩 睡觉\\
-\glt `每个男孩都在睡觉。'
+\mytrans{每个男孩都在睡觉。}
 \ex 
 \gll Alle Jungen schlafen.\\
      所有 男孩 睡觉\\
-\glt `所有的男孩都在睡觉。'	 
+\mytrans{所有的男孩都在睡觉。}	 
 \zl
 %\eal
 %\ex 
 %\gll Jeder Junge schläft.\\
 %     every boy sleeps\\
-%\glt `Every boy sleeps.'
+%\mytrans{Every boy sleeps.}
 %\ex 
 %\gll Alle Jungen schlafen.\\
    %  all boys sleep\\
-%\glt `All boys sleep.'	 
+%\mytrans{All boys sleep.}	 
 %\zl
 
 \noindent
@@ -614,29 +614,29 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 \ex 
 \gll Paul schläft.\\
      Paul 睡觉\\
-\glt `Paul正在睡觉。'
+\mytrans{Paul正在睡觉。}
 \ex 
 \gll Mio schläft.\\
      Mio 睡觉\\
-\glt `Mio正在睡觉。'
+\mytrans{Mio正在睡觉。}
 \ex 
 \gll Xaver schläft.\\
      Xaver 睡觉\\
-\glt `Xaver正在睡觉。'
+\mytrans{Xaver正在睡觉。}
 \zl
 % \eal
 %\ex 
 %\gll Paul schläft.\\
 %     Paul sleeps\\
-%\glt `Paul is sleeping.'
+%\mytrans{Paul is sleeping.}
 %\ex 
 %\gll Mio schläft.\\
 %     Mio sleeps\\
-%\glt `Mio is sleeping.'
+%\mytrans{Mio is sleeping.}
 %\ex 
 %\gll Xaver schläft.\\
 %     Xaver sleeps\\
-%\glt `Xaver is sleeping.'
+%\mytrans{Xaver is sleeping.}
 %\zl
 所以说，我们可以抽象出\relation{sleep}的任意一种具体用法。相反，以（\ref{sleep-max}）中的\relation{max}为例，我们用变量（如$x$）来表示。这个$x$可以在指定的句子中被替换为\relation{paul}、\relation{mio}或\relation{xaver}。为了保证我们能在给定的含义中接触到这些变量，我们在它们前面写上$\lambda$。这样，schläft（睡觉）的含义可以表示如下：
 % new English text of second edition:
@@ -670,10 +670,10 @@ $\lambda x~\relation{sleep}(x)$ \relation{max}
 \ex\label{Bsp-Max-mag-Lotte} 
 \gll Max mag Lotte.\\
      Max 喜欢 Lotte\\
-\glt `Max喜欢Lotte.'
+\mytrans{Max喜欢Lotte.}
 %\gll Max mag Lotte.\\
  %    Max likes Lotte\\
-%\glt `Max likes Lotte.'
+%\mytrans{Max likes Lotte.}
 \ex \relation{like}(\relation{max}, \relation{lotte})
 \zl
 mag（喜欢）的$\lambda$"=抽象如例（\mex{1}）所示：
@@ -848,13 +848,13 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 \label{Beispiel-alle-weitern-schlagkraeftigen-Argumente}
 \gll alle weiteren schlagkräftigen Argumente\\
 	 所有 进一步 强有力 论证\\
-\glt `所有其他的强有力的论证'
+\mytrans{所有其他的强有力的论证}
 \z
 %\ea
 %\label{Beispiel-alle-weitern-schlagkraeftigen-Argumente}
 %\gll alle weiteren schlagkräftigen Argumente\\
 %	 all further strong arguments\\
-%\glt `all other strong arguments'
+%\mytrans{all other strong arguments}
 %\z
 为了分析（\mex{0}），我们需要例（\mex{1}）中的规则：
 %In order to be able to analyze (\mex{0}), we require a rule such as (\mex{1}): 
@@ -879,10 +879,10 @@ NP $\to$ Det A* N
 \ea
 \gll alle [[geschickten Kinder] und [klugen Frauen]]\\
 	 所有  \spacebr{}\spacebr{}有能力 孩子 和  \spacebr{}聪明 女人\\
-\glt `所有有能力的孩子和聪明的女人'	 
+\mytrans{所有有能力的孩子和聪明的女人}	 
 %\gll alle [[geschickten Kinder] und [klugen Frauen]]\\
 %	 all  \spacebr{}\spacebr{}skillful children and  \spacebr{}smart women\\
-%\glt `all the skillful children and smart women'	 
+%\mytrans{all the skillful children and smart women}	 
 \z
 如果我们假设并列涉及到具有相同句法属性的两个或两个以上的字符串的组合的话，那么我们就需要认为形容词和名词构成了一个单位。
 %If we assume that coordination involves the combination of two or more word strings with the same syntactic properties, then we would have to assume
@@ -993,15 +993,15 @@ sm edges
 \ex 
 \gll dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt\\
      \textsc{comp} Peter \textsc{det} 人 \textsc{det} 书 给 和 Maria \textsc{det} 女人 \textsc{det} 唱片 给\\
-\glt `Peters给这个人这本书，并且Maria给这个女人这张唱片'
+\mytrans{Peters给这个人这本书，并且Maria给这个女人这张唱片}
 %	 that Peter the man the book gives and Maria the woman the record gives\\
-%\glt `that Peters gives the book to the man and Maria the record to the woman'
+%\mytrans{that Peters gives the book to the man and Maria the record to the woman}
 \ex 
 \gll be- und ent"=laden\\
 	 \prt{} 和 \prt{}"=装载\\
-\glt `装载和卸载'
+\mytrans{装载和卸载}
 %	 \prt{} and \prt{}"=load\\
-%\glt `load and unload'
+%\mytrans{load and unload}
 \zl
 % Dass in (\mex{-1}) wirklich keine normale symmetrische Koordination vorliegt, sieht man, wenn man
 % (\mex{-1}) mit (\mex{1}) vergleicht:
@@ -1033,21 +1033,21 @@ sm edges
 \ex 
 \gll der Vater von Peter\\
 	 \textsc{det} 爸爸 \textsc{prep} Peter\\
-\glt `Peter的爸爸'
+\mytrans{Peter的爸爸}
 %	 the father of Peter\\
-%\glt `Peter's father'
+%\mytrans{Peter's father}
 \ex 
 \gll das Bild vom Gleimtunnel\\
 	 \textsc{det} 照片 \textsc{prep}.\textsc{det} 格莱姆隧道\\
-\glt `格莱姆隧道的照片'
+\mytrans{格莱姆隧道的照片}
 %	 the picture of.the Gleimtunnel\\
-%\glt `the picture of the Gleimtunnel'
+%\mytrans{the picture of the Gleimtunnel}
 \ex 
 \gll das Kommen des Installateurs\\
 	 \textsc{det} 来 \textsc{det} 水管工\\
-\glt `水管工的检查'
+\mytrans{水管工的检查}
 %	 the coming of.the plumber\\
-%\glt `the plumber's visit'
+%\mytrans{the plumber's visit}
 \zl
 \noindent
 下面是用来分析（\ref{Beispiele-NP-relationale-Nomina}a、b）的规则，如（\mex{1}）所示：
@@ -1096,20 +1096,20 @@ sm edges
 \ex 
 \gll eine kluge \_\\
 	 一 聪明\\
-\glt `一个聪明的'
+\mytrans{一个聪明的}
 \ex 
 \gll eine kluge große \_\\
      一    聪明 高\\
-\glt `一个聪明的高的'
+\mytrans{一个聪明的高的}
 
 \ex 
 \gll eine kluge \_ aus Hamburg\\
 	 一 聪明 {} \textsc{prep} 汉堡\\
-\glt `一位从汉堡来的聪明的'
+\mytrans{一位从汉堡来的聪明的}
 \ex 
 \gll eine kluge \_, die alle kennen\\
 	 一 聪明 {} \textsc{rel} 所有人 知道\\
-\glt `一个大家都知道的聪明的'
+\mytrans{一个大家都知道的聪明的}
 \zl
 
 \eal
@@ -1117,35 +1117,35 @@ sm edges
 \ex 
 \gll (Nein, nicht der Vater von Klaus), der \_ von Peter war gemeint.\\
 	\spacebr{}不 不  \textsc{det} 爸爸 \textsc{prep} Klaus \textsc{det} {} \textsc{prep} Peter \textsc{aux} 指的是\\
-\glt `不，指的不是Klaus的爸爸，而是Peter的爸爸。'
+\mytrans{不，指的不是Klaus的爸爸，而是Peter的爸爸。}
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
 	 \spacebr{}不 不  \textsc{det} 图片 \textsc{prep} \textsc{det} 公路 \textsc{det} {} \textsc{prep}.\textsc{det} 格莱姆隧道 \textsc{cop} 印象深刻\\
-\glt `不，不是公路的照片让人印象深刻，而是格莱姆隧道的照片。'
+\mytrans{不，不是公路的照片让人印象深刻，而是格莱姆隧道的照片。}
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
 	 \spacebr{}不 不  \textsc{det} 来 \textsc{det} 木匠 \textsc{det} {} \textsc{det} 水管工 \textsc{cop} 重要\\
-\glt `不，木匠来不重要，水管工来很重要。'
+\mytrans{不，木匠来不重要，水管工来很重要。}
 \zl
 %\eal
 %\label{ex-nounless-np}
 %\ex 
 %\gll eine kluge \_\\
 %	 a smart\\
-%\glt `a smart one'
+%\mytrans{a smart one}
 %\ex 
 %\gll eine kluge große \_\\
 %     a    smart tall\\
-%\glt `a smart tall one'
+%\mytrans{a smart tall one}
 %
 %\ex 
 %\gll eine kluge \_ aus Hamburg\\
 %	 a smart {} from Hamburg\\
-%\glt `a smart one from Hamburg'
+%\mytrans{a smart one from Hamburg}
 %\ex 
 %\gll eine kluge \_, die alle kennen\\
 %	 a smart {} who everyone knows\\
-%\glt `a smart one who everyone knows'
+%\mytrans{a smart one who everyone knows}
 %\zl
 %
 %\eal
@@ -1153,15 +1153,15 @@ sm edges
 %\ex 
 %\gll (Nein, nicht der Vater von Klaus), der \_ von Peter war gemeint.\\
 %	\spacebr{}no not the father of Klaus the {} of Peter was meant\\
-%\glt `No, it wasn't the father of Klaus, but rather the one of Peter that was meant.'
+%\mytrans{No, it wasn't the father of Klaus, but rather the one of Peter that was meant.}
 %\ex 
 %\gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
 %	 \spacebr{}no not the picture of the motorway the {} of.the Gleimtunnel was impressive\\
-%\glt `No, it wasn't the picture of the motorway, but rather the one of the Gleimtunnel that was impressive.'
+%\mytrans{No, it wasn't the picture of the motorway, but rather the one of the Gleimtunnel that was impressive.}
 %\ex 
 %\gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
 %	 \spacebr{}no not the coming of.the carpenter the {} of.the plumber is important\\
-%\glt `No, it isn't the visit of the carpenter, but rather the visit of the plumber that is important.'
+%\mytrans{No, it isn't the visit of the carpenter, but rather the visit of the plumber that is important.}
 %\zl
 在英语中，代词one必须用在相应的位置上，\footnote{%
 参看 \citet[\S~4.12]{FLGR2012a} ，在英语中这些例子没有代词one。
@@ -1249,9 +1249,9 @@ sm edges
 \ex 
 \gll Getreide, das gerade gemahlen wurde\\
 	 粮食 \textsc{rel} 刚 种 \textsc{aux}\\
-\glt `刚种的粮食'
+\mytrans{刚种的粮食}
 %	 grain that just ground was\\
-%\glt `grain that has just been ground'
+%\mytrans{grain that has just been ground}
 \ex 
 \gll frisches Getreide\\
 	 新鲜 粮食\\
@@ -1259,9 +1259,9 @@ sm edges
 \ex 
 \gll frisches Getreide, das gerade gemahlen wurde\\
 	 新鲜 粮食 \textsc{rel} 刚刚 种 \textsc{aux}\\
-\glt `刚种的新鲜的粮食'
+\mytrans{刚种的新鲜的粮食}
 %	 fresh grain that just ground was\\
-%\glt `fresh grain that has just been ground'
+%\mytrans{fresh grain that has just been ground}
 \zl
 最后，限定词和名词都可以被省略：
 %Finally, both the determiner and the noun can be omitted: 
@@ -1269,15 +1269,15 @@ sm edges
 \ex 
 \gll Ich helfe klugen.\\
 	 我 帮助 聪明\\
-\glt `我帮助聪明人。'
+\mytrans{我帮助聪明人。}
 %	 I help smart\\
-%\glt `I help smart ones.'
+%\mytrans{I help smart ones.}
 \ex 
 \gll Dort drüben steht frisches, das gerade gemahlen wurde.\\
 	 那儿 那边 有 新鲜 \textsc{rel} 刚 种 \textsc{aux}\\
-\glt `在那边有一些刚种的新鲜的（粮食）。'
+\mytrans{在那边有一些刚种的新鲜的（粮食）。}
 %	 there over stands fresh that just ground was\\
-%\glt `Over there is some fresh (grain) that has just been ground.'
+%\mytrans{Over there is some fresh (grain) that has just been ground.}
 \zl
 图\vref{Abbildung-NP-ohne-Det}展示了相应的树形图。
 %Figure~\vref{Abbildung-NP-ohne-Det} shows the corresponding trees. 
@@ -1316,37 +1316,37 @@ sm edges
 \ex 
 \gll der seiner Frau treue Mann\\
 	 \textsc{det} 他的.\dat{} 妻子 忠诚 男人\\
-\glt `忠于妻子的男人'
+\mytrans{忠于妻子的男人}
 \ex 
 \gll der auf seinen Sohn stolze Mann\\
 	 \textsc{det} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
-\glt `以儿子为骄傲的男人'
+\mytrans{以儿子为骄傲的男人}
 \ex 
 \gll der seine Frau liebende Mann\\
 	 \textsc{det} 他的.\acc{} 女人 爱 男人\\
-\glt `爱妻子的男人'
+\mytrans{爱妻子的男人}
 \ex 
 \gll der von seiner Frau geliebte Mann\\
      \textsc{det} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
-\glt `被妻子爱的男人'	 
+\mytrans{被妻子爱的男人}	 
 \zl
 %\eal
 %\ex 
 %\gll der seiner Frau treue Mann\\
 %	 the his.\dat{} wife faithful man\\
-%\glt `the man faithful to his wife'
+%\mytrans{the man faithful to his wife}
 %\ex 
 %\gll der auf seinen Sohn stolze Mann\\
 %	 the on his.\acc{} son proud man\\
-%\glt `the man proud of his son'
+%\mytrans{the man proud of his son}
 %\ex 
 %\gll der seine Frau liebende Mann\\
 %	 the his.\acc{} woman loving man\\
-%\glt `the man who loves his wife'
+%\mytrans{the man who loves his wife}
 %\ex 
 %\gll der von seiner Frau geliebte Mann\\
 %     the by his.\dat{} wife loved man\\
-%\glt `the man loved by his wife'	 
+%\mytrans{the man loved by his wife}	 
 %\zl
 把这点考虑进来的话，我们需要将规则（\ref{NP-Regeln-Adj}）按照如下的方式来修改：
 %Taking this into account, the rule (\ref{NP-Regeln-Adj}) has to be modified in the following way:
@@ -1443,37 +1443,37 @@ PP $\to$ P NP
 \ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
 \gll {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\\
 	 {}\spacebr{}\spacebr{}一 步 \textsc{prep} \textsc{det} 深渊 保留 他 站\\
-\glt `他在离深渊一步之遥的地方站住了。'
+\mytrans{他在离深渊一步之遥的地方站住了。}
 \ex 
 \gll {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.\\
 	 {}\spacebr{}\spacebr{}短暂 \textsc{prep} \textsc{det}  起飞 坏 \textsc{det} 空调 出来\\
-\glt `起飞后不久，空调就停止工作了。'
+\mytrans{起飞后不久，空调就停止工作了。}
 \ex 
 \gll {}[[Schräg] hinter der Scheune] ist ein Weiher.\\
 	 {}\spacebr{}\spacebr{}斜 \textsc{prep} \textsc{det} 谷仓 \textsc{cop} 一 池塘\\
-\glt `在谷仓的斜对面有一个池塘。'
+\mytrans{在谷仓的斜对面有一个池塘。}
 \ex 
 \gll {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.\\
 	 {}\spacebr{}\spacebr{}中间 \textsc{prep}.\textsc{det} 丛林 碰到 \textsc{det} 研究人员 \textsc{prep} 一 古老 寺庙\\
-\glt `在丛林当中，研究者碰到了一栋古老的寺庙。'
+\mytrans{在丛林当中，研究者碰到了一栋古老的寺庙。}
 \zl
 %\eal
 %\ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
 %\gll {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\\
 %	 {}\spacebr{}\spacebr{}one step before the abyss remained he stand\\
-%\glt `He stopped one step in front of the abyss.'
+%\mytrans{He stopped one step in front of the abyss.}
 %\ex 
 %\gll {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.\\
 %	 {}\spacebr{}\spacebr{}shortly after the take.off fell the air.conditioning out\\
-%\glt `Shortly after take off, the air conditioning stopped working.'
+%\mytrans{Shortly after take off, the air conditioning stopped working.}
 %\ex 
 %\gll {}[[Schräg] hinter der Scheune] ist ein Weiher.\\
 %	 {}\spacebr{}\spacebr{}diagonally behind the barn is a pond\\
-%\glt `There is a pond diagonally across from the barn.'
+%\mytrans{There is a pond diagonally across from the barn.}
 %\ex 
 %\gll {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.\\
 %	 {}\spacebr{}\spacebr{}middle in.the jungle stumbled the researchers on an old temple\\
-%\glt `In the middle of the jungle, the researches came across an old temple.'
+%\mytrans{In the middle of the jungle, the researches came across an old temple.}
 %\zl
 为了分析例（\mex{0}a、b）中的句子，我们可以提出下面这些规则，如（\mex{1}）所示：
 %To analyze the sentences in (\mex{0}a,b), one could propose the following rules in (\mex{1}):
@@ -1518,9 +1518,9 @@ PP $\to$ P NP
 \ea
 \gll vor dem Abgrund\\
 	 \textsc{prep} \textsc{det} 深渊\\
-\glt `在深渊前'
+\mytrans{在深渊前}
 %	 before the abyss\\
-%\glt `in front of the abyss'
+%\mytrans{in front of the abyss}
 \z
 \begin{figure}
 \hfill
@@ -1609,19 +1609,19 @@ sm edges
 \ex 
 \gll He is proud.\\
      他 \textsc{cop} 骄傲\\
-\glt `他感到很骄傲。'
+\mytrans{他感到很骄傲。}
 \ex 
 \gll He is very proud.\\
 他 \textsc{cop} 非常 骄傲\\
-\glt `他感到非常骄傲。'
+\mytrans{他感到非常骄傲。}
 \ex 
 \gll He is proud of his son.\\
 他 \textsc{cop} 骄傲 \textsc{prep} 他的 儿子\\
-\glt `他为他的儿子感到骄傲。'
+\mytrans{他为他的儿子感到骄傲。}
 \ex 
 \gll He is very proud of his son.\\
 他 \textsc{cop} 非常 骄傲 \textsc{prep} 他的 儿子\\
-\glt `他为他的儿子感到非常骄傲。'
+\mytrans{他为他的儿子感到非常骄傲。}
 \zl
 与介词短语不同的是，带补足语的形容词通常是可选的。proud（骄傲）可以带或不带PP。表达程度的very（很）也是可选的。
 %Unlike prepositional phrases, complements of adjectives are normally optional. \emph{proud} can be used with or without a PP.
@@ -1874,15 +1874,15 @@ sm edges
 \ex 
 \gll das Paris der dreißiger Jahre\\
 	 \textsc{det} 巴黎 \textsc{det} 三十 年\\
-\glt `30年代的巴黎'
+\mytrans{30年代的巴黎}
 %	 the Paris of.the thirty years\\
-%\glt `30's Paris'
+%\mytrans{30's Paris}
 \ex 
 \gll die Maria aus Hamburg\\
 	 \textsc{det} Maria \textsc{prep} 汉堡\\
-\glt `来自汉堡的Maria'
+\mytrans{来自汉堡的Maria}
 %	 the Maria from Hamburg\\
-%\glt `Maria from Hamburg'
+%\mytrans{Maria from Hamburg}
 \zl
 虽然一元投射有些不够优雅，但是我们不用过于担心，因为在（\ref{Lexikon-Projektion}）有关词汇项的讨论中，大部分情况下一元分支结点都是可以避免的，或者说我们争取避免这样的结构。如果不这样做的话，我们就会得到伪歧义结构\isc{歧义!伪歧义}\is{ambiguity!spurious}。在下面的章节中，我们将讨论范畴语法和中心语驱动的短语结构语法，这些语法理论没有针对限定词、形容词和名词的一元规则。
 %Unary projections are somewhat inelegant but this should not concern us too much here, as we have
@@ -1913,9 +1913,9 @@ sm edges
 \ea
 \gll er das Buch dem Mann gibt\\
 	 他 \textsc{det} 书 \textsc{det} 人 给\\
-\glt `他给这个人这本书。'
+\mytrans{他给这个人这本书。}
 %	 he the book the man gives\\
-%\glt `He gives the book to the man.'
+%\mytrans{He gives the book to the man.}
 \z
 你的回答应该与（\ref{bsp-anwendung-grammatik}）中的分析保持一致。
 %Your answer should resemble the analysis in (\ref{bsp-anwendung-grammatik}).
@@ -1930,9 +1930,9 @@ sm edges
 \ex 
 \gll Joshi freut sich.\\
 	 Joshi 高兴 \refl{}\\
-\glt `Joshi很高兴。'
+\mytrans{Joshi很高兴。}
 %	 Joshi is.happy \refl{}\\
-%\glt `Joshi is happy.'
+%\mytrans{Joshi is happy.}
 \zl
 \end{enumerate}
 }
@@ -1977,15 +1977,15 @@ NP $\to$ Modifier* books Modifier*
 \ex 
 \gll books\\
 书\\
-\glt `书'
+\mytrans{书}
 \ex 
 \gll interesting books\\
 有趣 书\\
-\glt `有趣的书'
+\mytrans{有趣的书}
 \ex 
 \gll interesting books from Stuttgart\\
 有趣 书 \textsc{prep} 斯图加特\\
-\glt `斯图加特的有趣的书'
+\mytrans{斯图加特的有趣的书}
 \zl
 
 请在你的回答中考虑到并列的语料。请假设对称的并列结构\isc{并列}\is{coordination}要求其并列的短语或词具有相同的句法属性。
@@ -1999,15 +1999,15 @@ NP $\to$ Modifier* books Modifier*
 \ex 
 \gll Examine the plight of the very poor.\\
 检查 \textsc{det} 困境 \textsc{prep} \textsc{det} 非常 穷\\
-\glt `了解穷人的困境'
+\mytrans{了解穷人的困境}
 \ex 
 \gll Their outfits range from the flamboyant to the functional.\\
 他们的 套装 范围 \textsc{prep} \textsc{det} 华丽 \textsc{prep} \textsc{det} 功能性\\
-\glt `他们的套装从华丽的到功能性的都有。'
+\mytrans{他们的套装从华丽的到功能性的都有。}
 \ex 
 \gll The unimaginable happened.\\
 \textsc{det} 不可想象的 发生\\
-\glt `不可思议的事情发生了。'
+\mytrans{不可思议的事情发生了。}
 \zl
 例（\mex{1}）说明了对应于其结构的短语结构规则：
 %(\mex{1}) shows a phrase structure rule that corresponds to their construction:
@@ -2038,23 +2038,23 @@ NP $\to$ Det Adj
       \ex[]{
       \gll Der Mann hilft der Frau.\\
             \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人\\
-      \glt `这个男人帮助这个女人。'
+      \mytrans{这个男人帮助这个女人。}
       %           the.\nom{} man helps the.\dat{} woman\\
-      %\glt `The man helps the woman.'
+      %\mytrans{The man helps the woman.}
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
                  他.\nom{} 给 她.\dat{} \textsc{det} 书\\
-      \glt `他给她这本书。'
+      \mytrans{他给她这本书。}
 %           he.\nom{} gives her.\dat{} the book\\
-%      \glt `He gives her the book.'
+%      \mytrans{He gives her the book.}
       }
       \ex[]{
       \gll Er wartet auf ein Wunder.\\
            他.\nom{} 等 \textsc{prep} 一 奇迹\\
-	  \glt `他在等奇迹发生。'
+	  \mytrans{他在等奇迹发生。}
 	  %           he.\nom{} waits on a miracle\\
-	  %\glt `He is waiting for a miracle.'
+	  %\mytrans{He is waiting for a miracle.}
       }
 %      \ex[]{
 %       Er wartet neben dem Bushäuschen auf ein Wunder.
@@ -2080,15 +2080,15 @@ NP $\to$ Det Adj
 \ex 
 \gll Der Mann hilft der Frau jetzt.\\
      \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 现在\\
-\glt `这个男人在帮助这个女人。'
+\mytrans{这个男人在帮助这个女人。}
 %     the.\nom{} man helps the.\dat{} woman now\\
-%\glt `The man helps the woman now.'
+%\mytrans{The man helps the woman now.}
 \ex 
 \gll Der Mann hilft der Frau neben dem Bushäuschen.\\
      \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 \textsc{prep} \textsc{det} 公交车候车亭\\
-\glt `这个男人帮助公交车候车亭旁边的那个女人。'
+\mytrans{这个男人帮助公交车候车亭旁边的那个女人。}
 %     the.\nom{} man helps the.\dat{} woman next.to the bus.shelter\\
-%\glt `The man helps the woman next to the bus shelter.'
+%\mytrans{The man helps the woman next to the bus shelter.}
 \ex 
 \gll Er gibt ihr das Buch jetzt.\\
      他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 现在\\
@@ -2098,21 +2098,21 @@ NP $\to$ Det Adj
 \ex 
 \gll Er gibt ihr das Buch neben dem Bushäuschen.\\
      他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 \textsc{prep} \textsc{det} 公交车候车亭\\
-\glt `他给她公交车候车亭旁的那本书。'
+\mytrans{他给她公交车候车亭旁的那本书。}
 %     he.\nom{} gives her.\dat{} the.\acc{} book next.to the bus.shelter\\
-%\glt `He gives her the book next to the bus shelter.'
+%\mytrans{He gives her the book next to the bus shelter.}
 \ex 
 \gll Er wartet jetzt auf ein Wunder.\\
      他.\nom{} 等 现在 \textsc{prep} 一 奇迹\\
-\glt `他在等奇迹发生。' 
+\mytrans{他在等奇迹发生。} 
 %     he.\nom{} waits now on a miracle\\
-%\glt `He is waiting for a miracle now.'
+%\mytrans{He is waiting for a miracle now.}
 \ex 
 \gll Er wartet neben dem Bushäuschen auf ein Wunder.\\
       他.\nom{} 等 \textsc{prep} \textsc{det}.\dat{} 公交车候车亭 \textsc{prep} 一 奇迹\\
-\glt `他在等公交车候车亭旁的奇迹发生。'
+\mytrans{他在等公交车候车亭旁的奇迹发生。}
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
-%\glt `He is waiting for a miracle next to the bus shelter.'
+%\mytrans{He is waiting for a miracle next to the bus shelter.}
 \zl
 \item 请安装Prolog系统（如SWI"=Prolog\footnote{%
 \url{http://www.swi-prolog.org} 
