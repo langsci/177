@@ -7,6 +7,8 @@
 \usepackage{zhnumber}
 % to type­set Chinese representations of numbers.  
 
+%\usepackage[UTF8, heading = true]{ctex}
+
 \usepackage{titlesec}  
 \AtBeginDocument{
 
@@ -83,8 +85,10 @@
 % use Chinese parenthesis
 % https://tex.stackexchange.com/a/428832/18561
 \makeatletter
-\renewcommand*{\bibleftparen}{\unspace\blx@postpunct（}
-\renewcommand*{\bibrightparen}{\blx@postpunct）\unspace\midsentence}
+%\renewcommand*{\bibleftparen}{\unspace\blx@postpunct（}
+%\renewcommand*{\bibrightparen}{\blx@postpunct）\unspace\midsentence}
+
+
 
 
 \AtBeginDocument{
@@ -215,5 +219,12 @@ Unter den Linden 6\\
 
 
 
+\newcommand{\mytrans}[1]{\trans\quotetrans{#1}}
 
 
+\newcommand{\quotetrans}[1]{“#1”}
+%\newcommand{\quotetrans}[1]{`#1´}
+% The following does not work since we have trnaslations ending in question marks or without punctuation
+%\newcommand{\quotetrans}[1]{`#1\hspace{-0.2em}'}
+
+ 
