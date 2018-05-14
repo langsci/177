@@ -305,15 +305,24 @@ typehierarchy
 \begin{figure}
 \centerfit{
 \begin{forest}
-[Languages
-        [Indo-European
-          [Germanic [Danish] [English] [German] [Yiddish] ]
-          [Romance [French] [Spanish] ] 
-          [Indo-Iranian [Hindi] [Persian] ] ]
-        [Afro-Asiatic 
-          [Semitic [Maltese] ] ]
-        [Sino-Tibetan 
-          [Sinitic [Mandarin Chinese] ] ] ]
+[语言
+        [印欧语系
+          [日耳曼语族 [丹麦语] [英语] [德语] [意第绪语] ]
+          [罗曼语族 [法语] [西班牙语] ] 
+          [印度伊朗语族 [印地语] [波斯语] ] ]
+        [亚非语系 
+          [闪语族 [马耳他语] ] ]
+        [汉藏语系 
+          [汉语族 [现代汉语] ] ] ]
+%[Languages
+%        [Indo-European
+%          [Germanic [Danish] [English] [German] [Yiddish] ]
+%          [Romance [French] [Spanish] ] 
+%          [Indo-Iranian [Hindi] [Persian] ] ]
+%        [Afro-Asiatic 
+%          [Semitic [Maltese] ] ]
+%        [Sino-Tibetan 
+%          [Sinitic [Mandarin Chinese] ] ] ]
 \end{forest}
 }
 \caption{CoreGram项目涵盖的语系和语支}\label{fig-lang-fams}
@@ -346,8 +355,8 @@ typehierarchy
     \Tree[.\node (Set3) { ~Set 3~ };
                   \node (Set1) { ~Set 1~ }; \node (Set2) { ~Set 2~ }; ]  
 
-    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch}; 
-
+    \node [below=of Set1] {德语}; \node [below=of Set2] {荷兰语}; 
+%    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch}; 
 %    \node [left=of Set5] {V2};
      \node [left=of Set3] {\begin{tabular}{@{}c@{}}Arg St\\V2\\SOV\\VC\end{tabular}};
 %    \node [right=of Set11] {SVO};
@@ -399,8 +408,8 @@ typehierarchy
                [.\node (Set4) { ~Set 4~ };
                   \node (Set1) { ~Set 1~ }; \node (Set2) { ~Set 2~ }; ] \node (Set6) { ~Set 6~ }; ] 
 
-    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch};  \node [below=of Set6] {Danish};
-
+    \node [below=of Set1] {德语}; \node [below=of Set2] {荷兰语};  \node [below=of Set6] {丹麦语};
+%    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch};  \node [below=of Set6] {Danish};
     \node [left=of Set5] {\begin{tabular}{@{}c@{}}Arg Str\\V2\end{tabular}};
     \node [left=of Set4] {\begin{tabular}{@{}c@{}}SOV\\VC\end{tabular}};
 %    \node [right=of Set11] {SVO};
@@ -433,9 +442,10 @@ typehierarchy
                   \node (Set1) { ~Set 1~ }; \node (Set2) { ~Set 2~ }; ] \node (Set6) { ~Set 6~ }; ] 
                [.\node (Set11) { ~Set 11~ }; \node (Set12) { ~Set 12~ };  \node (Set13) { ~Set 13~ }; ] 
     ]
-    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch};  \node [below=of Set6] {Danish};
-    \node [below=of Set12] {English}; \node [below=of Set13] {French}; 
-
+    \node [below=of Set1] {德语}; \node [below=of Set2] {荷兰语};  \node [below=of Set6] {丹麦语};
+    \node [below=of Set12] {英语}; \node [below=of Set13] {法语}; 
+%    \node [below=of Set1] {German}; \node [below=of Set2] {Dutch};  \node [below=of Set6] {Danish};
+%    \node [below=of Set12] {English}; \node [below=of Set13] {French}; 
     \node [left=of Set8] {Arg Str};
     \node [left=of Set7] {V2};
     \node [left=of Set4] {\begin{tabular}{@{}c@{}}SOV\\VC\end{tabular}};
