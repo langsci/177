@@ -221,9 +221,10 @@ Unter den Linden 6\\
 
 \newcommand{\mytrans}[1]{\trans\quotetrans{#1}}
 
+% use Chinese single quotes and adjust the kerning
+\newcommand{\quotetrans}[1]{‘#1’}
+\xeCJKsetkern{。}{’}{0.2em}
 
-\newcommand{\quotetrans}[1]{“#1”}
-%\newcommand{\quotetrans}[1]{`#1´}
 % The following does not work since we have trnaslations ending in question marks or without punctuation
 %\newcommand{\quotetrans}[1]{`#1\hspace{-0.2em}'}
 
