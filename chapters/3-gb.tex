@@ -94,7 +94,7 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
 %\mytrans{because somebody is still working there}
 \ex 
 \gll weil dort noch gearbeitet wurde\\
-     因为 那儿 仍 工作 \textsc{aux}\\
+     因为 那儿 仍 工作 \passivepst{}\\
 \mytrans{因为那儿还有需要做的工作}	 
 %     because there still worked was\\
 %\mytrans{because work was still being done there}	 
@@ -108,7 +108,7 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
 %\mytrans{because he beats the world champion}
 \ex 
 \gll weil der Weltmeister geschlagen wurde\\
-	 因为 \textsc{det} 世界冠军 击败 \textsc{aux}\\
+	 因为 \textsc{det} 世界冠军 击败 \passivepst{}\\
 \mytrans{因为世界冠军被击败了}
 %	 because the world.champion beaten was\\
 %\mytrans{because the world champion was beaten}
@@ -123,7 +123,7 @@ his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
 %\mytrans{because the man is stealing the key from the woman}
 \ex 
 \gll weil der Frau der Schlüssel gestohlen wurde\\
-	 因为 \textsc{det} 女人 \textsc{det} 钥匙 偷 \textsc{aux}\\
+	 因为 \textsc{det} 女人 \textsc{det} 钥匙 偷 \passivepst{}\\
 \mytrans{因为这把钥匙从这个女人这里被偷走了}
 %	 because the woman the key stolen was\\
 %\mytrans{because the key was stolen from the woman}
@@ -152,7 +152,7 @@ NP& V &NP & $\to$ 3 [\sub{\textsc{aux}} be] 2en [\sub{PP} [\sub{P} by] 1]\\
 \mytrans{John爱着Mary。}
 \ex 
 \gll Mary is loved by John.\\
-     Mary \textsc{aux} 爱 \textsc{prep} John\\
+     Mary \passiveprs{} 爱 \textsc{prep} John\\
 \mytrans{Mary正被John爱着。}
 \zl
 \begin{figure}
@@ -174,7 +174,7 @@ sm edges
   [S, for tree={parent anchor=south, child anchor=north}
   	[NP[Mary;Mary]]
 	[VP
-	[Aux[is;\textsc{aux}, tier=word]]
+	[Aux[is;\passiveprs, tier=word]]
 	[V[loved;爱, tier=word]]
 	[PP
 	[P[by;\textsc{prep}, tier=word]]
@@ -1869,7 +1869,7 @@ sm edges
 \mytrans{Karl打败了世界冠军。}
 \ex 
 \gll Der Weltmeister wird geschlagen.\\
-     \textsc{det}.\nom{} 世界冠军 \textsc{aux} 打败\\
+     \textsc{det}.\nom{} 世界冠军 \passiveprs{} 打败\\
 \mytrans{世界冠军被打败了。}
 \zl
 
@@ -1883,7 +1883,7 @@ sm edges
      我们 记得 \textsc{det}.\gen{} 受害者\\
 \ex 
 \gll Der Opfer wird gedacht.\\
-     \textsc{det}.\gen{} 受害者 \textsc{aux} 被记住\\
+     \textsc{det}.\gen{} 受害者 \passiveprs{} 被记住\\
 \mytrans{受害者被记住了。}
 \zl
 例（\mex{0}b）是所谓非人称被动\isc{被动!非人称被动}\is{passive!impersonal}的一个例子。与例（\mex{-1}b）不同的是，宾格宾语变成了主语，而（\mex{0}b）中没有主语\isc{主语}\is{subject}。请看\ref{Abschnitt-Subjekt}。
@@ -1899,7 +1899,7 @@ sm edges
 \mytrans{这个人帮助了他。}
 \ex 
 \gll Ihm wird geholfen.\\
-     他.\dat{} \textsc{aux} 帮助\\
+     他.\dat{} \passiveprs{} 帮助\\
 \mytrans{他被帮助了。}
 \zl
 对于与格来说，它应该被看作是词汇格，还是说在动词结构环境中的一些或者所有与格都应该被看作是结构格还是存在争议的。限于篇幅，我不在这里展开讨论，有兴趣的读者可以参考 \citew{MuellerLehrbuch1}中第14章的内容。在后面的内容中，我将按照 \citet[\page 20]{Haider86}的假设，认为与格实际上是一个词汇格。\isc{格!词汇格}\is{case!lexical} 
@@ -1949,7 +1949,7 @@ sm edges
 \mytrans{这个男人将这个男孩展示给这个女人}
 \ex 
 \gll{}[dass] der Junge der Frau gezeigt wird\\
-      \spacebr{}\textsc{comp} \textsc{det} 男孩.\nom{} \textsc{det}.\dat{} 女人 展示 \textsc{aux}\\
+      \spacebr{}\textsc{comp} \textsc{det} 男孩.\nom{} \textsc{det}.\dat{} 女人 展示 \passiveprs{}\\
 \mytrans{这个男孩被展示给这个女人}
 \zl
 \begin{figure}
@@ -2004,8 +2004,8 @@ sm edges
 			[NP, name=dobject [der Frau;\textsc{det} 女人, roof]]
 			[V$'$
 				[NP,   name=aobject [\_$_i$]]
-				[V$^0$,name=verb [gezeigt wir-;展示 \textsc{aux}, roof]]]]]
-	[I$^0$, name=Infl [-\/d;-\textsc{3sg}]]]]
+				[V$^0$,name=verb [gezeigt wir-;展示 \passive, roof]]]]]
+	[I$^0$, name=Infl [-\/d;-\textsc{prs.3s}]]]]
 \draw[->,dotted] (Infl.north) .. controls (2.6,-.25)   and (-1.4,-.25) .. ($(subject.north)+(0,.1)$);
 \draw[->,dashed] (verb.north) .. controls (2.2,-3.8) and (0,-3.4) .. ($(dobject.north)+(0,.1)$);
 \draw[->]        (verb.north) .. controls (2.0,-4.8) and (1.2,-4.6) .. ($(aobject.north)+(0,.1)$);
@@ -2035,12 +2035,12 @@ sm edges
 }
 \ex[]{
 {}\gll [The girl]              was          given [a cookie]               (by the mother).\\
-      \spacebr\textsc{det} 女孩 \textsc{aux} 给    \spacebr{}一 饼干 \hspaceThis{(}\textsc{prep} \textsc{det} 妈妈\\
+      \spacebr\textsc{det} 女孩 \passivepst{} 给    \spacebr{}一 饼干 \hspaceThis{(}\textsc{prep} \textsc{det} 妈妈\\
 \mytrans{这个女孩从妈妈那里得到了饼干。}
 }
 \ex[*]{
 \gll It    was          given [the girl] [a cookie].\\
-     \expl{} \textsc{aux} 给    \spacebr\textsc{det} 女孩 \spacebr{}一 饼干\\
+     \expl{} \passivepst{} 给    \spacebr\textsc{det} 女孩 \spacebr{}一 饼干\\
 }
 \zl
 %
@@ -2056,11 +2056,11 @@ sm edges
 \mytrans{因为这个女孩将球给了这个男孩儿}
 \ex 
 \gll weil dem Jungen der Ball geschenkt wurde\\
-	 因为 \textsc{det}.\dat{} 男孩 \textsc{det}.\nom{} 球 给 \textsc{aux}\\
+	 因为 \textsc{det}.\dat{} 男孩 \textsc{det}.\nom{} 球 给 \passivepst{}\\
 \mytrans{因为这个球被送给了这个男孩}
 \ex 
 \gll weil der Ball dem Jungen geschenkt wurde\\
-     因为 \textsc{det}.\nom{} 球 \textsc{det}.\dat{} 男孩 给 \textsc{aux}\\
+     因为 \textsc{det}.\nom{} 球 \textsc{det}.\dat{} 男孩 给 \passivepst{}\\
 \zl
 对比例（\mex{0}c），例（\mex{0}b）是没有标记的顺序。例（\mex{0}b）中的der Ball（球）与例（\mex{0}a）中的den Ball出现在相同的位置上。也就是说，移位并不是必需的。只有格是不同的。但是，例（\mex{0}c）相对于（\mex{0}b）而言，在某种程度上是有标记的。我们提出的诸如（\mex{0}b）的分析中包括了抽象的移位过程：元素在他们的位置上，但是连接到主语的位置上，并从那里接收到他们的格信息。 \citet[\page 1311]{Grewendorf93}认为在诸如例（\mex{0}b）的主语位置上有一个空的虚指代词\isc{空成分}\is{empty element}\isc{代词!虚指代词}\is{pronoun!expletive}，而且在诸如例（\mex{1}）的句子的主语位置上包含了非人称被动\isc{被动!非人称被动}\is{passive!impersonal}的过程：\footnote{%
 请看 \citew[\page 11--12]{Koster86a}有关荷兰语\il{Dutch}的平行分析，还有 \citew{Lohnstein2014a}基于移位的分析，即对于人称被动而言，也包括一个空的虚指代词。
@@ -2079,7 +2079,7 @@ sm edges
 %}\todostefan{Gianina: to difficult to parse}
 \ea
 \gll weil heute nicht gearbeitet wird\\
-     因为 今天 不 工作 \textsc{aux}\\
+     因为 今天 不 工作 \passiveprs{}\\
 \mytrans{因为今天没有完成的工作}
 \z
 空的虚指代词是指我们看不到也听不到的成分。对于这类空成分的讨论，可以参考\ref{Abschnitt-UG-EPP}和第\ref{Abschnitt-Diskussion-leere-Elemente}章。
@@ -2160,7 +2160,7 @@ Burzio概说（修订版）：\\
 %to have analyses such as the following in (\mex{1}) where np is an empty expletive:
 \ea
 \gll np was read the book.\\
-np \textsc{aux} 读 \textsc{det} 书\\
+np \passivepst{} 读 \textsc{det} 书\\
 \z
 相反，Koster提出，英语中的主语要么受制于其他成分（即非虚指成分），要么在词汇上被填充，即由可见的材料填充。这样，例（\mex{0}）的结构就被排除了，并且我们可以保证the book需要被置于定式动词的前面，以使得主语位置被填充上。
 %Koster rather assumes that subjects in English are either bound by other elements (that is, non"=expletive) or lexically filled, that
@@ -2752,13 +2752,13 @@ Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u};
 %\mytrans{that the woman loves the man}
 \ex 
 \gll dass der Mann geliebt wird\\
-     \textsc{comp} \textsc{det}.\nom{} 男人 爱 \textsc{aux}\\
+     \textsc{comp} \textsc{det}.\nom{} 男人 爱 \passiveprs{}\\
 \mytrans{这个男人被人爱}
 %     that the.\nom{} man loved is\\
 %\mytrans{that the man is loved}
 \ex 
 \gll Der Mann wird geliebt.\\
-     \textsc{det}.\nom{} 男人 \textsc{aux} 爱\\
+     \textsc{det}.\nom{} 男人 \passiveprs{} 爱\\
 \mytrans{这个男人被人爱。}
 %     the.\nom{} man is loved\\
 %\mytrans{The man is loved.}

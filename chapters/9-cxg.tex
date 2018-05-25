@@ -504,7 +504,7 @@ val & \menge{ \ms{ role & \ms{ $\theta$ & agent\\
 \mytrans{他在打世界冠军。}
 \ex 
 \gll Der Weltmeister wird (von ihm) geschlagen.\\
-     \textsc{det} 世界.冠军 \textsc{aux} \spacebr{}\textsc{prep} 他 打\\
+     \textsc{det} 世界.冠军 \passiveprs{} \hspaceThis{(}\textsc{prep} 他 打\\
 \mytrans{世界冠军正在（被他）打。}
 %\ex 
 %\gll Er schlägt den Weltmeister.\\
@@ -1214,7 +1214,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %\mytrans{be utterly surprised}
 \ex 
 \gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
-	 看 好像 \textsc{aux} X   \textsc{det} 鸡肉  \textsc{det} 面包 光.吃\\
+     看        好像 \textsc{aux} X   \textsc{det} 鸡肉  \textsc{det} 面包 光.吃\\
 \mytrans{看起来很疑惑/迷惑}
 %\gll aussehen, als hätten X\_Dat die Hühner das Brot weggefressen\\
 %	 look as.if had X the chicken the bread away.eaten\\
@@ -2223,7 +2223,7 @@ evokes & \liste{ \ms[right-triangle]{
 %He sent the letter.
 \ex 
 \gll The letter was sent to her.\\
-      \textsc{det} 信 \textsc{aux} 寄送 \textsc{prep} 她\\
+      \textsc{det} 信 \passivepst{} 寄送 \textsc{prep} 她\\
 \mytrans{这封信被寄送给她了。}
 %The letter was sent to her.
 \zl
@@ -2665,17 +2665,17 @@ Van Trijp分析的另外一个问题是，他假设助动词do是一个宾语标
 \label{ex-atb-gazdar-two}
 \ex[]{ %The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP \& S/NP)}
 \gll The kennel     which Mary made and Fido sleeps in has been stolen.\\   
-    \textsc{det}  狗窝 \textsc{rel} Mary 做 并且 Fido 睡 \textsc{prep} \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/NP \& S/NP)}
+    \textsc{det}  狗窝 \textsc{rel} Mary 做 并且 Fido 睡 \textsc{prep} \textsc{aux} \passive{} 偷\\\jambox{(= S/NP \& S/NP)}
 \mytrans{Mary制作并且Fido在里面睡的那个狗窝被人偷走了。}
 }
 \ex[]{ %The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= S/PP \& S/PP)}
 \gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.\\   
-    \textsc{det}  狗窝 \textsc{prep} \textsc{rel} Mary 保持 药物 并且 Fido 睡 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/PP \& S/PP)}
+    \textsc{det}  狗窝 \textsc{prep} \textsc{rel} Mary 保持 药物 并且 Fido 睡 \textsc{aux} \passive{} 偷\\\jambox{(= S/PP \& S/PP)}
 \mytrans{Mary放药物并且Fido在里面睡的那个狗窝被人偷走了。}
 }
 \ex[*]{%The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP \& S/PP)}
 \gll The kennel (in) which Mary made and Fido sleeps has been stolen.\\     
-    \textsc{det}  狗窝 \hspaceThis{(}\textsc{prep} \textsc{rel} Mary 做 并且 Fido 睡 \textsc{aux} \textsc{aux} 偷\\\jambox{(= S/NP \& S/PP)}
+    \textsc{det}  狗窝 \hspaceThis{(}\textsc{prep} \textsc{rel} Mary 做 并且 Fido 睡 \textsc{aux} \passive{} 偷\\\jambox{(= S/NP \& S/PP)}
 }
 \zl
 上面例子的共性是如果两个或多个成分有相同的句法范畴和相同的\slashvsc 取值的话，它们就可以并列。这就解释了（\mex{0}a、b）中的which和in which为什么可以在各自的小句中填充两个位置。那么，不采用\slashfc 来分析缺失成分信息弥散的理论就必须寻找另外的方式去确保所有的论元槽被填充并且被提取成分和相应的论元角色之间的关系是正确的。注意这一点在van Trijp提出的模型中并不直接，因为他必须允许介词in与它左边的一些成分组合，这些成分同时也是made的主语。通常一个NP不能简单地充当两个中心语的论元。见例（\mex{1}a）：

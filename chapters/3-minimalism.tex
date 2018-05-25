@@ -922,7 +922,7 @@ Anna和the book这两个NP开始是没有赋值的不可解读的格特征：[\t
 %PassP). See Figure~\ref{fig-passive-schlagen-mp} for the analysis of the example in (\mex{1}):
 \ea
 \gll dass          er geschlagen wurde\\
-     \textsc{comp} 他 打          \textsc{aux}\\
+     \textsc{comp} 他 打          \passivepst{}\\
 \mytrans{他被打了}
 %     that he beaten was\\
 %\mytrans{that he was beaten}
@@ -941,9 +941,9 @@ for tree={fit=rectangle}
          [\textit{v}
            [\textit{schlagen}\\打]
            [{\textit{v}[\st{\textit{u}Infl}:Pass]}]]]
-       [\phonliste{werden}\\\textsc{aux}]]
+       [\phonliste{werden}\\\passive{}]]
      [{T[past,\st{nom}]}
-       [\textit{werden} {[Pass,\st{\textit{u}Infl}:past*]}\\\textsc{aux}\hspaceThis{[Pass,\st{\textit{u}Infl}:past*]}]
+       [\textit{werden} {[Pass,\st{\textit{u}Infl}:past*]}\\\passive{}\hspaceThis{[Pass,\st{\textit{u}Infl}:past*]}]
        [{T[past]}]]]
 \end{forest}
 %\end{sideways}
@@ -970,7 +970,7 @@ Pass中心语要求小\emph{v}的Infl特征具有Pass的值，这就导致了输
 %moved to T in order to check the EPP feature:
 \ea
 \gll weil getanzt wurde\\
-     因为 跳舞 \textsc{aux}\\
+     因为 跳舞 \passivepst{}\\
 \mytrans{因为那儿有人跳舞}
 %     because danced was\\
 %\mytrans{because there was dancing there}
@@ -2053,7 +2053,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 }
 \ex 
 \gll {}[\emph{Wessen}     Schuhe] "`danach"'  besprenkelt sind, hat keinen Baum gefunden und war nicht zu einem Bogen in der Lage.\footnotemark\\
-       \hspaceThis{[}谁的  鞋      \hspaceThis{"`}此后 有斑点的    \textsc{aux}   \textsc{aux} 没有一个   树 找到    和 \textsc{cop} 不   \textsc{prep} 一     弓   \textsc{prep} \textsc{det} 位置\\
+       \hspaceThis{[}谁的  鞋      \hspaceThis{"`}此后 有斑点的    \passiveprs{}   \textsc{aux} 没有一个   树 找到    和 \textsc{cop} 不   \textsc{prep} 一     弓   \textsc{prep} \textsc{det} 位置\\
 \mytrans{那些鞋上有斑点的人找不到树也不能按照弧形来小便。}
 %       \hspaceThis{[}whose    shoes   after.that speckled    are   has no     tree found    and was not   to a     bow   in the position\\
 %\mytrans{Those whose shoes are spattered afterwards couldn't find a tree and were incapable of peeing in an arc.}
@@ -3111,7 +3111,7 @@ MG和HPSG更深一层的区分在于中心语"=填充语不是分析长距离议
 \mytrans{你在读谁的书？}
 \ex 
 \gll Am I tired!\\
-\textsc{aux} 我 累\\
+\textsc{cop} 我 累\\
 \mytrans{我累了！}
 \ex 
 \gll Did Kim leave?\\
@@ -3321,7 +3321,7 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 在 \citet[\S~9]{Veenstra98a}中有一个计数的词汇项。这个词汇项包括一个计数的集合，它包括功能中心语，可以用在某类句子中。比如说，Veenstra认为计数可以用在带有二价动词的句子和主语位于首位的句子、带有单价动词的嵌套句、带有单价动词的wh"=疑问句，以及带有单价动词的极性疑问句。这一计数集合的一个元素对应于一个特别的句法配置以及在构式语法\indexcxgc 思想下的短语构式。Veenstra的分析并不是在最简方案下找到的计数的概念的形式化。通常，它被认为是包含所有句子生成所需词汇项的计数。如（i）所示，复杂句可以包括带有不同句子类型的句子的组合：
 \ea
 \gll Der          Mann, der         behauptet hat,         dass          Maria gelacht hat,         steht neben        der          Palme, die im letzten Jahr gepflanzt wurde.\\
-     \textsc{det} 男人  \textsc{rel} 声称      \textsc{aux} \textsc{comp} Maria 大笑     \textsc{aux} 站   \textsc{prep} \textsc{det} 棕榈树 \textsc{rel} \textsc{prep}.\textsc{det} 上次 年 种植 \textsc{aux}\\
+     \textsc{det} 男人  \textsc{rel} 声称      \textsc{aux} \textsc{comp} Maria 大笑     \textsc{aux} 站   \textsc{prep} \textsc{det} 棕榈树 \textsc{rel} \textsc{prep}.\textsc{det} 上次 年 种植 \passivepst{}\\
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree that was planted
 %last year.'
 %\mytrans{The man who claimed that Maria laughed is standing next to the palm tree planted last year.}
