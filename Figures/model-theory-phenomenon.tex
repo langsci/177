@@ -25,29 +25,46 @@
 %\psgrid
 \rput[Bl](0,0){%
 \begin{tabular}[b]{@{}ccc@{}}
-phenomenon && model\\
+现象 && 模型\\
 \rnode{phen}{\fbox{\begin{tabular}{c}
-linguistic\\
-objects\\
+语言\\
+对象\\
 \end{tabular}}}&&\rnode{modell}{\fbox{\begin{tabular}{c}
-feature\\
-structures\\
+特征\\
+结构\\
 \end{tabular}}}\\[10ex]
 &\rnode{theorie}{\fbox{\begin{tabular}{c}
-feature\\
-descriptions\\
+特征\\
+描写\\
 \end{tabular}}}\\
-&formal theory\\
+&形式化理论\\
+%phenomenon && model\\
+%\rnode{phen}{\fbox{\begin{tabular}{c}
+%linguistic\\
+%objects\\
+%\end{tabular}}}&&\rnode{modell}{\fbox{\begin{tabular}{c}
+%feature\\
+%structures\\
+%\end{tabular}}}\\[10ex]
+%&\rnode{theorie}{\fbox{\begin{tabular}{c}
+%feature\\
+%descriptions\\
+%\end{tabular}}}\\
+%&formal theory\\
 \end{tabular}}
 %\anodeconnect[l]{modell}[r]{phen}%
-\ncline{->}{modell}{phen}\nbput{models}
+\ncline{->}{modell}{phen}\nbput{模拟}
+%\ncline{->}{modell}{phen}\nbput{models}
 %\ncdiag[angleA=180,angleB=45]{->}{modell}{theorie}
 \psline{<-}(5.4,1.6)(6,2.4)
-\rput[Bl](6,2){licensed by the theory} % früher Erfüllung, jetzt FR Änderung
+\rput[Bl](6,2){由理论允准} % früher Erfüllung, jetzt FR Änderung
+%\rput[Bl](6,2){licensed by the theory} % früher Erfüllung, jetzt FR Änderung
 \psline{->}(5,1.7)(5.6,2.4)
-\rput[Bl](3.4,2.0){determines}
+\rput[Bl](3.4,2.0){决定}
+%\rput[Bl](3.4,2.0){determines}
 %\nccurve{<-}{modell}{theorie}\nbput{legt fest}
-\ncline{->}{theorie}{phen}\naput{predicts}%
+\ncline{->}{theorie}{phen}\naput{预测}%
+%\ncline{->}{theorie}{phen}\naput{predicts}%
 %\aanodeconnect[b]{modell}[tr]{theorie}%
 %\anodeconnect[tl]{theorie}[b]{phen}%
 \end{pspicture}
