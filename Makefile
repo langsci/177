@@ -61,6 +61,12 @@ stable: grammatical-theory.pdf
 	cp grammatical-theory.pdf stable.pdf
 
 
+proofreading: proofreading.pdf
+
+
+proofreading.pdf: grammatical-theory.pdf
+	pdftk grammatical-theory.pdf multistamp prstamp.pdf output proofreading.pdf 
+
 # removed this. It was about Umlaute	bin/correct-index
 
 
