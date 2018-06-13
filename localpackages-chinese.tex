@@ -86,7 +86,9 @@
 % https://tex.stackexchange.com/a/428832/18561
 \makeatletter
 \renewcommand*{\bibleftparen}{\unspace\blx@postpunct（}
+%\renewcommand*{\bibleftparen}{\blx@postpunct（}
 \renewcommand*{\bibrightparen}{\blx@postpunct）\unspace\midsentence}
+%\renewcommand*{\bibrightparen}{\blx@postpunct）\midsentence}
 
 
 
@@ -228,4 +230,69 @@ Unter den Linden 6\\
 % The following does not work since we have trnaslations ending in question marks or without punctuation
 %\newcommand{\quotetrans}[1]{`#1\hspace{-0.2em}'}
 
- 
+
+
+% use a less heavy variant of Libertine: Display font
+  %% \setmainfont[
+  %%         Ligatures={TeX,Common},
+  %%         Path=\fontpath,
+  %%         PunctuationSpace=0,
+  %%         Numbers={Proportional},
+  %%         BoldFont = LinLibertine_RZ.otf ,
+  %%         ItalicFont = LinLibertine_RI.otf ,
+  %%         BoldItalicFont = LinLibertine_RZI.otf,
+  %%         BoldSlantedFont = LinLibertine_RZ.otf,
+  %%         SlantedFont    = LinLibertine_R.otf,
+  %%         SlantedFeatures = {FakeSlant=0.25},
+  %%         BoldSlantedFeatures = {FakeSlant=0.25},
+  %%         SmallCapsFeatures = {FakeSlant=0,Numbers=OldStyle},
+  %%         ]{LinLibertine_DR.otf} 
+
+
+
+%\setCJKmainfont{LinLibertine_R.otf}
+
+
+\makeatletter
+\newlength\fake@f
+\newlength\fake@c
+\def\fakesc#1{%
+  \begingroup%
+  \xdef\fake@name{\csname\curr@fontshape/\f@size\endcsname}%
+  \fontsize{\fontdimen8\fake@name}{\baselineskip}\selectfont%
+  \uppercase{#1}%
+  \endgroup%
+}
+\makeatother
+
+
+
+%\setmainfont{SourceHanSerifSC-ExtraLight}\setCJKmainfont{SourceHanSerifSC-ExtraLight}  %\let\textsc\fakesc
+%\setmainfont{SourceHanSerifSC-Light}\setCJKmainfont{SourceHanSerifSC-Light}  %\let\textsc\fakesc
+%\setmainfont{SourceHanSerifSC-Medium}\setCJKmainfont{SourceHanSerifSC-Medium}  %\let\textsc\fakesc
+
+
+%\setmainfont{cmunrm.otf}
+
+%\setmainfont{SimSun}\setCJKmainfont{SimSun}
+
+%\setCJKmainfont{SourceHanSerifSC-ExtraLight} zu dünn
+
+%\setCJKmainfont{SourceHanSerifSC-Light} zu dünn
+
+%\setCJKmainfont{SourceHanSerifSC-Medium}  nicht schön ???
+
+
+%\setCJKmainfont[Scale=MatchUppercase]{SourceHanSerifSC-Regular}
+
+
+%\setmainfont{SourceSerifPro-Regular}\setCJKmainfont[Scale=MatchUppercase]{SourceHanSerifSC-Regular}
+
+
+\setmainfont{SourceSerifPro-Light}\setCJKmainfont[Scale=MatchUppercase]{SourceHanSerifSC-Regular}
+
+\newcommand{\passive}{被}
+\newcommand{\passivepst}{\passive.\textsc{pst}}
+\newcommand{\passiveprs}{\passive.\textsc{prs}}
+\newcommand{\passiveimp}{\passive.\textsc{imp}}
+
