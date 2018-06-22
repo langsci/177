@@ -196,7 +196,7 @@ TAG和其它的语法理论不同的地方在于它允许结构被再次打散�
 %\begin{sloppypar}
 讨论TAG的文献经常区分两种树——导出树与推导树
 \isc{推导树}\is{derivation tree}。
-导出树对应于组成成分结构（也就是图\ref{abb-Substitution}和\ref{abb-Adjunktion}中的“John laughs”以及“John always laughs”所对应的树）。
+导出树对应于组成成分结构（也就是图\ref{abb-Substitution}和\ref{abb-Adjunktion}中的John laughs以及John always laughs所对应的树）。
 而推导树则包含了推导的历史，也就是如何将基本树组合在一起的信息。
 推导树中的元素表示了谓词论元依存关系（predicate"=argument dependency），这也是为什么可以通过推导树进行语义推导的原因。
 基于（\mex{1}）我们来介绍这样的分析过程。
@@ -235,7 +235,7 @@ tag
 		[NP
 			[Anouk;Anouk]]]]
 \end{forest}
-\caption{\label{Abbildung-Max-likes-Anouk}“Max likes Anouk.”中的基本树与导出树}
+\caption{\label{Abbildung-Max-likes-Anouk}Max likes Anouk.中的基本树与导出树}
 \end{figure}%
 树中的结点按照从上到下、从左到右的顺序进行编号。likes树中的结点按照这种方式编号后的结果如图\vref{Abbildung-Knotenpositionen}所示。
 树中最高的结点为S，其位置编号为0。在S之下有一个NP和一个VP结点。这些结点同样从1开始计数。NP为位置1，而VP为2。VP结点同样有两个子结点：V和宾语NP。V编号1，而宾语NP为2。将这些编号组合起来，我们就可以无歧义地指称树中的任意独立元素。主语位置的NP为1，因为它是S的一个子结点且出现在第一的位置上。宾语位置的NP为2.2，因为它在S（0）之下的VP（S的第二个子结点，为2）中，且出现在第二的位置上（VP的第二个子结点，为2）。
@@ -273,7 +273,7 @@ tag
 	[Anouk,edge label={node[midway,right]{~2.2}}]]
 \end{forest}
 }
-\caption{\label{Abbildung-Ableitungsbaum}“Max likes Anouk.”的推导树}
+\caption{\label{Abbildung-Ableitungsbaum}Max likes Anouk.的推导树}
 \end{figure}%
 推导树表示了这样的事实：likes的基本树可以和两个论元相结合，这两个论元分别在位置00和011处做替换。
 究竟是什么样的东西放置到了这两个结点上？推导树也包含了上述信息。
@@ -680,8 +680,8 @@ tag
 %}
 \caption{\label{abb-nld-TAG}TAG中的长距离依存分析}
 \end{figure}%
-“WH COMP NP likes \_$_i$”的树属于likes的树族，因此包含在词典之中。
-tell可以附接到这个树上，因为tell的这个树可以插入到“who that Bill likes \_$_i$”这棵树的中间位置。
+WH COMP NP likes \_$_i$的树属于likes的树族，因此包含在词典之中。
+tell可以附接到这个树上，因为tell的这个树可以插入到who that Bill likes \_$_i$这棵树的中间位置。
 这样一个插入性的操作可以重复很多次，所以在像（\mex{1}）这样的句子中，who可以跨越多个小句边界移动到很远的位置：
 \ea 
 \gll Who$_i$ did John tell Sam that Mary said that Bill likes \_$_i$?\\
@@ -979,7 +979,7 @@ V"=TAG
   }
 \end{figure}%
 这个词汇描写包括了给定动词的一棵树，一个范畴为VP的空成分，三棵用于将VP和NP结合起来的树。像MC"=TAG一样，对支配关系进行了显性声明。
-图\ref{Abbildung-Lexical-Set-geben-V-TAG}中的支配限制要求每棵树中位于低处的VP结点都支配了最右侧的树的最高处的VP结点。动词论元的顺序以及动词的位置并没有给定。唯一限定的是：带有NP的树的低处的VP，以及geben（给）的低处的VP要支配空成分的VP。有了这一树集合，我们可以推出论元顺序的任意一种排列。Rambow同时也展示了如何利用词汇项来分析动词复合体。图\vref{Abbildung-zu-reparieren-versprochen-V-TAG}展示了由“zu reparieren”（修补）和versprochen（保证）组成的动词复合体的树集描写，其中包含了支配关系限制。
+图\ref{Abbildung-Lexical-Set-geben-V-TAG}中的支配限制要求每棵树中位于低处的VP结点都支配了最右侧的树的最高处的VP结点。动词论元的顺序以及动词的位置并没有给定。唯一限定的是：带有NP的树的低处的VP，以及geben（给）的低处的VP要支配空成分的VP。有了这一树集合，我们可以推出论元顺序的任意一种排列。Rambow同时也展示了如何利用词汇项来分析动词复合体。图\vref{Abbildung-zu-reparieren-versprochen-V-TAG}展示了由zu reparieren（修补）和versprochen（保证）组成的动词复合体的树集描写，其中包含了支配关系限制。
 \begin{figure}
 \vspace{4\baselineskip}
 \oneline{%
@@ -1032,7 +1032,7 @@ V"=TAG
 }
 }
 \vspace{2.5\baselineskip}
-  \caption{\label{Abbildung-zu-reparieren-versprochen-V-TAG}V"=TAG中的动词复合体“zu reparieren versprochen”的分析}
+  \caption{\label{Abbildung-zu-reparieren-versprochen-V-TAG}V"=TAG中的动词复合体zu reparieren versprochen的分析}
 \end{figure}%%
 其中的两棵带有NP的树支配了versprochen，而另外两棵支配了zu reparieren。
 带有NP的树的次序并没有被限制，因而这些NP间的任意排列都是被允准的。\pagebreak
@@ -1160,7 +1160,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 
 \noindent
 除非是对另外一种解读有很强的倾向性，否则不太可能将例（\mex{0}a）的语序换成例（\mex{0}b）中的语序。
-这是因为无论sie（她）还是“das Kind”（孩子）都没有被无歧义地标示成主格或者宾格。（\mex{0}b）因此必须解读为Hanna是那个想要离开孩子的那个人。当然，如果至少一个论元被无歧义地做了格标记，这个语序重列也是可能的，就像例（\mex{0}c）那样。
+这是因为无论sie（她）还是das Kind（孩子）都没有被无歧义地标示成主格或者宾格。（\mex{0}b）因此必须解读为Hanna是那个想要离开孩子的那个人。当然，如果至少一个论元被无歧义地做了格标记，这个语序重列也是可能的，就像例（\mex{0}c）那样。
 
 对于由阴性可数名词组成的名词短语来说，主格和宾格的形式，属格和与格的形式相同。
 对于不可数名词，情况更加糟糕。如果它们不加冠词，阴性名词的所有的格形式都是一样的，例如Milch（牛奶）。
@@ -1280,7 +1280,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
  \citet[\S~6]{Rambow94a}展示了一个基于自动机的语言运用理论。他将这种理论应用到德语上并表示可以解释在对多个动词的论元进行重列加工时所遇到的困难。 
 \isc{树邻接语法（TAG）|)}\is{Tree Adjoining Grammar (TAG)|)}
 
- \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附接到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为“mutmaßlichen Mörder”（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
+ \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附接到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为mutmaßlichen Mörder（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
 }
 
 %      <!-- Local IspellDict: en_US-w_accents -->
