@@ -1,7 +1,12 @@
 {
   "versions": [{
     "versiontype": "proofreading",
-    "title": "语法理论: 从转换语法到基于约束的理论 ",
+    "title": "语法理论: 从转换语法到基于约束的理论",
+    "authors": [{"name": "Stefan Müller"}],
+    "publishedAt": "2017-09-05T00:00:33.000Z"
+  },{
+    "versiontype": "proofreading2",
+    "title": "语法理论: 从转换语法到基于约束的理论",
     "authors": [{"name": "Stefan Müller"}],
     "publishedAt": "2017-09-05T00:00:33.000Z"
   }]
