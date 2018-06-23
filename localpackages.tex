@@ -1,0 +1,237 @@
+%\usepackage{bigfoot}
+
+
+% http://tex.stackexchange.com/questions/38607/no-room-for-a-new-dimen
+\usepackage{etex}\reserveinserts{28}
+
+% http://tex.stackexchange.com/questions/229500/tikzmark-and-xelatex
+% temporary fix, remove later
+%\newcount\pdftexversion \pdftexversion140 \def\pgfsysdriver{pgfsys-dvipdfm.def} \usepackage{tikz} \usetikzlibrary{tikzmark}
+
+%\usepackage[section]{placeins}
+
+\usepackage{eurosym} % should go once Berthold fixes unicode
+
+
+% http://tex.stackexchange.com/questions/284097/subscript-like-math-but-without-the-minus-sign?noredirect=1#comment685345_284097
+% for subscripts
+\usepackage{amsmath}
+%\usepackage{unicode-math} breaks the CCG derivations, the horizontal lines are too high
+
+
+% \justify to switch of \raggedright in translations
+%\usepackage{ragged2e}
+
+% Haitao Liu
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+
+
+
+\hypersetup{bookmarksopenlevel=0}
+
+%% \iftoggle{draft}{}{
+%% \presetkeys{todonotes}{disable}{}
+%% }
+
+\iftoggle{draft}{
+\usepackage{todonotes}
+}{
+\usepackage[disable]{todonotes}
+}
+
+
+\usepackage{metalogo} % xelatex
+
+\usepackage{multicol}
+
+%\usepackage{langsci/styles/langsci-forest-v105-setup}
+\usepackage{langsci/styles/langsci-forest-setup}
+
+%\usepackage{forest}
+% for forest version2
+%\useforestlibrary{linguistics}
+%\forestapplylibrarydefaults{linguistics}
+
+
+
+\forestset{
+      terminus/.style={tier=word, for children={tier=tabular}, for tree={fit=band}, for descendants={no path, align=left, l sep=0pt}},
+      sn edges original/.style={for tree={parent anchor=south, child anchor=north,align=center,base=top}},
+      no path/.style={edge path={}},
+      set me left/.style={calign with current edge, child anchor=north west, for parent={parent anchor=south west}},
+}
+
+
+
+\usepackage{bookmark}
+
+\usepackage{styles/my-ccg-ohne-colortbl}
+
+
+\usepackage{langsci/styles/jambox}
+
+% This has side effects on my-ccg commands do no know why
+%\usepackage{langsci/styles/langsci-optional}
+
+%\usepackage{langsci/styles/langsci-lgr}
+
+\usepackage{german}\selectlanguage{USenglish}
+
+
+\usepackage{graphicx}
+
+
+\usepackage{styles/merkmalstruktur,styles/abbrev,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,styles/oneline,
+styles/eng-date,styles/my-theorems}
+
+
+
+\usepackage{lastpage,float,comment,soul,tabularx}
+
+
+% loaded in macros.2e \usepackage[english]{varioref}
+% do not stop and warn! This will be tested in the final version
+\vrefwarning
+
+
+\usepackage{ogonek}        % For Ewa Dabrowska
+
+
+\usepackage{mycommands}% \dash
+
+
+% still needed
+\usepackage{tikz-qtree}
+
+\usepackage{langsci/styles/langsci-gb4e-chinese}
+
+
+\usepackage{subfig}
+
+%\renewcommand{\xbar}{X̅\xspace}
+
+
+
+\setcounter{secnumdepth}{4}
+
+
+\usepackage{dgmacros,pst-tree,trees,dalrymple} % Mary Dalrymples macros
+
+
+%%% trick for using adjustbox
+\let\pstricksclipbox\clipbox
+\let\clipbox\relax
+
+% http://tex.stackexchange.com/questions/206728/aligning-several-forest-trees-in-centered-way/206731#206731
+% for aligning TAG trees
+\usepackage[export]{adjustbox}
+
+% draw a grid for getting the coordinates
+\usepackage{tikz-grid}
+
+% for offsets in trees
+\newlength{\offset}
+\newlength{\offsetup}
+
+\ifxetex
+\usepackage{styles/eng-hyp-utf8}
+\else
+\usepackage{styles/eng-hyp}
+\fi
+
+\usepackage{appendix}
+
+
+% adds lines to both the odd and even page.
+% bloddy hell! This is really an alpha package! Do not use the draft option! 07.03.2016
+%\usepackage{addlines}
+
+% please ignore all calls to \addlines as for now, they are left over from the English text
+\newcommand{\addlines}[1][1]{}
+
+
+%% \let\addlinesold=\addlines
+%% % there is one optional argument. Second element in brackets is the default 
+%% \renewcommand{\addlines}[1][1]{
+%% \todosatz{addlines}
+%% \addlinesold[#1]
+%% }
+
+
+% for addlines to work
+%\strictpagecheck         reinsert later when addlines is really used.
+
+
+
+% http://tex.stackexchange.com/questions/3223/subscripts-for-primed-variables
+%
+% to get 
+% {}[ af   [~]\sub{V} ]\sub{V$'$}
+%
+% typeset properly. Thanks, Sebastian.
+%
+\usepackage{subdepth}
+
+
+%\usepackage{caption}
+
+%% below are added by Lulu for the Chinese version of the book
+\usepackage{zhnumber}
+% to type­set Chi­nese rep­re­sen­ta­tions of num­bers.  
+
+\usepackage{titlesec}  
+% for Chinese style of titles of chapters and sections.
+\renewcommand{\partname}{第\thepart{}部分}  
+\def\thepart{\zhdig{part}}
+%\pagenumbering {zhnum}
+\renewcommand{\chaptername}{第\zhnum{chapter}章}  
+
+% The following would also change the chapter and section number in the heading. We do not want
+% this. 27.10.2016
+%\def\thechapter{\zhnum{chapter}}
+%\def\thesection{\zhnum{section}}
+
+
+%re\newcommand{\sectionname}{节}  
+\renewcommand{\figurename}{图}  
+\renewcommand{\tablename}{表}  
+\renewcommand{\bibname}{参考文献}  
+\renewcommand{\contentsname}{目~~~~录}  
+\renewcommand{\listfigurename}{图~目~录}  
+\renewcommand{\listtablename}{表~目~录}  
+\renewcommand{\indexname}{索~引}  
+\renewcommand{\abstractname}{\Large{摘~要}}  
+\newcommand{\keywords}[1]{\\ \\ \textbf{关~键~词}：#1}  
+\titleformat{\chapter}[block]{\center\Large\bf}{\chaptername}{20pt}{}  
+\titleformat{\section}[block]{\large\bf}{\thesection}{10pt}{}  
+\titleformat{\tableofcontents}[block]{\center\Large\bf}{\contensname}{20pt}{}  
+\titleformat{\part}[block]{\center\Large\bf}{\partname}{20pt}{}  
+\titleformat{\index}[block]{\center\Large\bf}{\indexname}{20pt}{}  
+
+\usepackage{titlesec}  
+% for Chinese style of table of contents
+%\titlecontents{\chapter}
+
+\usepackage{indentfirst}
+% In Chinese, each paragraph should be indented.
+\setlength{\parindent}{2em}
+% the indented space should be two characters.
+
+
+
+
+
+
+
+
+
+
+
+
+%\usepackage{newunicodechar}
+%\newunicodechar{(}{（}
+
+\usepackage{langsci/styles/langsci-tbls}
+% do not need identation for enumerate since we are in a box anyway.
+\usepackage{enumitem}

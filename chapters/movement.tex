@@ -1,0 +1,599 @@
+%% -*- coding:utf-8 -*-
+\chapter{提取，杂序和被动：是一种还是几种不同的描写装置？}
+%\chapter{Extraction, scrambling, and passive: one or several descriptive devices?}
+\label{chap-scrambling-extraction-passive}
+
+一位匿名审稿人建议讨论一下转换理论与LFG、HPSG等理论的差异在哪里。这位审稿人指出转换语法只用一种工具就可以描述主动/被动变换、杂序和提取，但是LFG、HPSG等理论要用三种不同的技术来描述三种现象。如果这一观点是正确的并且分析能够做出正确的预测，相应的GB/最简方案理论会比其它理论更好，因为科学中最宽泛的目的就是提出需要最少假设的理论。我已经在\ref{sec-passive-gb}讨论了GB理论如何分析被动，但是这里我想将上述讨论扩展一下，并且包括最简方案的分析以及来自于依存语法的分析。
+%An anonymous reviewer suggested discussing one issue in which transformational theories differ from
+%theories like LFG and HPSG. The reviewer claimed that Transformational Grammars use just one tool
+%for the description of active/passive alternations, scrambling, and extraction, while theories like
+%LFG and HPSG use different techniques for all three phenomena. If this claim were correct and if
+%the analyses made correct predictions, the respective GB/Minimalism theories would be better
+%than their competitors, since the general aim in science
+%is to develop theories that need a minimal set of assumptions. I already commented on the analysis of
+%passive in GB in Section~\ref{sec-passive-gb}, but I want to extend this discussion here and include
+%a Minimalist analysis and one from Dependency Grammar. 
+
+被动分析的任务就是解释例（\mex{1}）中所示的论元实现的差异：
+%The task of any passive analysis is to explain the difference in argument realization in examples
+%like (\mex{1}):
+\eal
+\ex\label{ex-she-beats-him}
+\gll She beats him.\\
+     她 打 他\\
+\glt `她打他。'
+%She beats him.
+\ex\label{ex-he-was-beaten}
+\gll He was beaten.\\
+     他 \textsc{aux} 打\\
+\glt `他被打了。'
+%He was beaten.
+\zl
+在这些关于下棋的例子中，beat的受格宾语在（\mex{0}b）中就会实现为主格。另外，可以观察到成分的位置是不同的：虽然him在 （\mex{0}a）中出现在动词之后宾语位置上，在（\mex{0}b）中出现在动词之前。在GB中这一现象通过移位来解释。GB理论认为宾语在被动构式中没有获得格指派所以必须移位到主语位置上，在主语位置上可以由定式动词指派格。这一分析也可以见于最简方案的分析中，如David Adger的教材\citeyearpar{Adger2003a}。图~\vref{fig-passive-mp}展示了他对例 （\mex{1}）的分析：
+%In these examples about chess, the accusative object of \emph{beat} is realized as the nominative
+%in (\mex{0}b). In addition, it can be observed that the position of the elements is different: while
+%\emph{him} is realized postverbally in object position in (\mex{0}a), it is realized preverbally in
+%(\mex{0}b). In GB this is explained by a movement analysis. It is assumed that the object does not
+%get case in passive constructions and hence has to move into the subject position where case is
+%assigned by the finite verb. This analysis is also assumed in Minimalist work as in
+%David Adger's textbook \citeyearpar{Adger2003a}, for instance. Figure~\vref{fig-passive-mp} shows his analysis
+%of (\mex{1}):
+\ea
+\gll Jason was killed.\\
+     Jason \textsc{aux} 杀\\
+\glt `Jason被杀了。'
+%Jason was killed.
+\z
+\begin{figure}
+\centerfit{
+\begin{forest}
+for tree={fit=rectangle}
+[TP
+  [Jason]
+  [{\tbar[\st{\textit{u}N*}]}
+     [{T[past,\st{nom}]}
+       [be{[Pass,\st{\textit{u}Infl}:past*]}]
+       [{T[past]}]]
+     [PassP
+       [\phonliste{be}]
+       [\vP
+         [\textit{v}
+           [\textit{kill}]
+           [{\textit{v}[\st{\textit{u}Infl}:Pass]}]]
+         [VP
+           [\phonliste{kill}]
+           [\phonliste{Jason}]]]]]]
+]
+\end{forest}
+}
+\caption{\label{fig-passive-mp}Adger在最简方案框架内基于移位对于被动的分析（第231页）}
+%\caption{\label{fig-passive-mp}Adger's Minimalist movement-based analysis of the passive (p.\,231)}
+\end{figure}%
+TP代表时短语并且对应我们在第\ref{chap-GB}章中讨论的IP。PassP是被动\isc{范畴!功能性的!PassP}\is{category!functional!PassP}的一个功能中心语。\vPc\isc{范畴!功能性的!v@\textit{v}}\is{category!functional!v@\textit{v}}是为了分析动词短语的特殊范畴，该范畴最初用于分析双及物动词\citep{Larson88a}。VP是一个包含动词及其宾语的常规VP。在Adger的分析中，动词kill从VP的动词位置移位到\textit{v}的中心语位置，被动助动词be从PassP的中心语位置移位到时短语的中心语位置。像Infl一样的特征在与这些移位组合时被“核查”。这些核查和赋值操作的具体实现在这里并不重要。重要的是Jason从宾语位置移位到一个曾经被认为是T的指定语的位置（见第~\pageref{fn-Chomsky-on-Specifiers}页的脚注~\ref{fn-Chomsky-on-Specifiers}参看指定语的概念）。所有这些分析都假设小词不能给其宾语指派受格，所以宾语必须移位到另外一个位置获得格指派或特征核查。在GB的文献中，很少清楚地说明具体怎样形式化地表征小词不能指派格这一事实。下面是在文献中可以找到的一些观点：
+%TP stands for Tense Phrase and corresponds to the IP that was discussed in
+%Chapter~\ref{chap-GB}. PassP is a functional head for passives\is{category!functional!PassP}. \vP\is{category!functional!v@\textit{v}} is
+%a special category for the analysis of verb phrases that was originally introduced for the analysis
+%of ditransitives \citep{Larson88a}
+%; \citealp[\page 315]{Chomsky95a}) auch für transitive Verben
+%and VP is the normal VP that consists of verb and object. In Adger's analysis, the
+%verb \emph{kill} moves from the verb position in VP to the head position of \textit{v}, the
+%passive auxiliary \emph{be} moves from the head position of PassP to the head position of the Tense
+%Phrase. Features like Infl are `checked' in combination with such movements. The exact implementation
+%of these checking and valuing operations does not matter here. What is important is that
+%\emph{Jason} moves from the object position to a position that was formerly known as the specifier
+%position of T (see Footnote~\ref{fn-Chomsky-on-Specifiers} on
+%page~\pageref{fn-Chomsky-on-Specifiers} on the notion of specifier). All these analyses assume that
+%the participle cannot assign accusative to its object and that the object has to move to another
+%position to get case or check features.
+%How exactly one can formally represents the fact that the participle cannot assign case is hardly ever made explicit in the GB literature.\todostefan{Baker, Johnson, Roberts 1989 sagen, dass der akkusativ dem pro externen Argument zugewiesen wird}
+%The following is a list of statements that can be found in the literature:
+\eal
+\ex 我们应该假设，被动化的动词失去了在其补足语位置上指派宾格的能力。\footnote{
+We shall assume that a passivized verb loses the ability to assign structural ACCUSATIVE case to
+its complement.}\citep[\page 183]{Haegeman94a-u}
+%\ex We shall assume that a passivized verb loses the ability to assign structural ACCUSATIVE case to
+%its complement. \citep[\page 183]{Haegeman94a-u}
+
+\ex 主动句的宾语变成被动式的主语，因为被动不能管辖宾格（宾格的丧失）。\footnote{
+das Objekt des Aktivsatzes wird zum Subjekt des Passivsatzes, weil die passivische Verbform
+keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption).}\citep[\page 172]{Lohnstein2014a} 
+%\ex das Objekt des Aktivsatzes wird zum Subjekt des Passivsatzes, weil die passivische Verbform
+%keinen Akkusativ"=Kasus regieren kann (Akk"=Kasus"=Absorption). \citep[\page 172]{Lohnstein2014a} 
+\zl
+另外，有时候会说外部题元角色被动词的形态吸收了（\citealp{Jaeggli86a}；\citealp[\page 183]{Haegeman94a-u}） 。现在，如果我们将在这一点表示清楚，这将意味着什么？针对beat这样的动词有一些词项。主动形式有能力将受格指派给宾语，但是被动形式不能。因为这是所有及物动词共有的属性（按照及物动词的定义），这是应该被记住的一些规律。表征这一规律的一种方法是假设一个特殊的被动语素，该语素可以抑制施事，并且在指定它所附加的词干的格时会改变一些东西。这是怎样工作从来没有说清楚过。让我们来对比一下基于语素的分析与基于词汇规则的分析：正如我们在\ref{Abschnitt-leere-Elemente-LRs-Transformations}所解释的，在那些输入、输出的语音形式没有差别的现象中，可以使用空中心语而不使用词汇规则。所以，例如，正如在结果构式中允准而外论元的词汇规则可以被空中心语代替。但是，正如在\ref{Abschnitt-HPSG-Passiv}所解释的，词汇规则也可以用于刻画形态。这一点对于构式语法\indexcxgc 也是对的（见Gert Booij在构式形态学方面的工作\citeyearpar{Booij2010a}，该工作在很多方面与Riehemann在HPSG方面的工作相似\citeyearpar{Riehemann93a,Riehemann98a}）。在被动词汇规则的案例中，小词形态与词干组合并且主语被抑制到相应的价列表中。这一点在GB/MP文献中描述过。用于分析ge-lieb-t（被爱）的词汇规则见图~\vref{fig-morpheme-vs-lexical-rule}左边。
+%In addition, it is sometimes said that the external theta"=role is absorbed by the verb morphology
+%（\citealp{Jaeggli86a}; 
+%\citealp[]{Roberts87a}; 
+%\citealp[\page 183]{Haegeman94a-u}). Now, what would it entail if we made this explicit? There is some
+%lexical item for verbs like \emph{beat}. The active form has the ability to assign accusative to its
+%object, but the passive form does not. Since this is a property that is shared by all transitive
+%verbs (by definition of the term transitive verb), this is some regularity that has to be
+%captured. One way to capture this is the assumption of a special passive morpheme that suppresses
+%the agent and changes something in the case specification of the stem it attaches too. How this
+%works in detail was never made explicit.
+%Let us compare this morpheme"=based analysis with lexical rule"=based analyses: as was explained in
+%Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}, empty heads can be used instead of
+%lexical rules in those cases in which the phonological form of the input and the output do not
+%differ. So for example, lexical rules that license additional arguments as in
+%resultative constructions, for instance, can be replaced by an empty head. However, as was explained in Section~\ref{Abschnitt-HPSG-Passiv}, lexical 
+%rules are also used to model morphology. This is also true for Construction Grammar\indexcxg (see
+%Gert Booij's work on Construction Morphology \citeyearpar{Booij2010a}, which is in many ways similar to Riehemann's work in
+%HPSG \citeyearpar{Riehemann93a,Riehemann98a}). In the case of the passive lexical rule, the participle
+%morphology is combined with the stem and the subject is suppressed in the corresponding valence
+%list. This is exactly what is described in the GB/MP literature. The respective lexical rule for the
+%analysis of \emph{ge-lieb-t} `loved' is depicted in Figure~\vref{fig-morpheme-vs-lexical-rule} to
+%the left.
+\begin{figure}
+\hfill
+\begin{forest}
+[{[ \phon \phonliste{ ge } $\oplus$ \ibox{1} $\oplus$ \phonliste{ t } ]}
+   [ {[ \phon \ibox{1} ]}   ]]
+\end{forest}
+\hfill
+\begin{forest}
+[V
+  [V-Aff [ge]]
+  [V-Stem]
+  [V-Aff [t]]]
+\end{forest}
+\hfill\mbox{}
+\caption{\label{fig-morpheme-vs-lexical-rule}基于词汇规则/构式主义  vs.\ 基于语素的分析}
+%\caption{\label{fig-morpheme-vs-lexical-rule}Lexical rule"=based/constructionist
+%  vs.\ morpheme"=based analysis}
+\end{figure}%
+基于语素的分析见右边。为了简单起见，我假设了一个平铺分析，但是那些坚持二叉结构的人必须想出办法来决定是\prefix{ge}还是\suffix{t}首先与词干组合，并且特征选择和特征渗透以何种方式进行。独立于如何描述形态学，屈折形式（在两个图中的最高节点）比词干有不同的属性这一事实需要以某种方式表征。在基于语素的理论中，语素用于抑制施事并且改变格指派属性。在词汇规则/构式理论中通过相应的词汇规则来完成这些任务。在需要的工具和需要的说明方面不存在差异。
+%The morpheme"=based analysis is shown to the right. To keep things simple, I assume a flat analysis,
+%but those who insist on binary branching structures would have to come up with a way of deciding
+%whether the \prefix{ge} or the \suffix{t} is combined first with the stem and in which way selection
+%and percolation of features takes place. Independent of how morphology is done, the fact  that the inflected form (the top node in both figures) has different properties than the
+%verb stem has to be represented somehow. In the morpheme"=based world, the morpheme is responsible for suppressing the agent and
+%changing the case assignment properties, in the lexical rule/construction world this is done by the
+%respective lexical rule. There is no difference in terms of needed tools and necessary stipulations.
+
+在最简方案理论中情形有一点不同。例如，\citep[\page 229,  231]{Adger2003a}如此写道：
+%The situation in Minimalist theories is a little bit different. For instance, \citep[\page 229,
+%  231]{Adger2003a} writes the following:
+\begin{quote}
+被动与非受格类似，因为它们都不向它们的宾语指派格，并且它们不需要有一个题元主语， [\ldots]。另外，助动词的功能是选择非受格小\vPc 这一观点同时解释了缺乏受格和缺乏题元主语\citep[\page 229, 231]{Adger2003a}。
+%Passives are akin to unaccusatives, in that they do not assign accusative case to their object,
+%and they do not appear to have a thematic subject. [\ldots] Moreover, the idea that the function of
+%this auxiliary is to select an unaccusative little \vP simultaneously explains the lack of
+%accusative case and the lack of a thematic subject. \citep[\page 229, 231]{Adger2003a}  
+\end{quote}
+所以这是一个明确的表述。在GB分析中假设的词干与一个被动小词形式之间的关系是一个与两种不同版本\littlevc 组合的动词词干。选择哪一个\textit{v}取决于管辖中心语，一个功能性的Perf\isc{范畴!功能性的!Perf}\is{category!functional!Perf}中心语或者一个Pass\isc{范畴!功能性的!Pass}\is{category!functional!Pass}中心语。这可以在图~\vref{fig-Pass-vs-Perf-and-little-v}中描述。
+%So this is an explicit statement. The relation between a stem and a passive participle form that was
+%assumed in GB analyses is now a verb stem that is combined with two different versions of
+%\littlev. Which \textit{v} is chosen is determined by the governing head, a functional
+%Perf\is{category!functional!Perf} head or a Pass\is{category!functional!Pass} head. This can be
+%depicted as in Figure~\vref{fig-Pass-vs-Perf-and-little-v}.
+\begin{figure}
+\hfill
+\begin{forest}
+[\vP
+     [DP]
+     [\littlevbar
+       [\textit{v}{[\st{\textit{u}D}]}]
+       [VP
+         [\textit{kill} {[V, \st{\textit{u}D}]}]
+         [DP ]]]]
+\end{forest}
+\hfill
+\begin{forest}
+[\vP
+       [\textit{v}]
+       [VP
+         [\textit{kill} {[V, \st{\textit{u}D}]}]
+         [DP ]]]
+\end{forest}
+\hfill\mbox{}
+\caption{\label{fig-Pass-vs-Perf-and-little-v}在最简理论框架内使用两种不同的\littlevc 对被动以及完成时进行的分析}
+%\caption{\label{fig-Pass-vs-Perf-and-little-v}Analysis of the passive and the perfect and the
+%  passive in a Minimalist theory involving two different versions of \littlev}
+%\caption{\label{fig-Pass-vs-Perf-and-little-v}Analysis of the passive and the perfect and the
+%  passive in a Minimalist theory involving two different versions of \littlev}
+\end{figure}%
+当kill在完成体或被动时，拼写方式killed。如果用在主动态与第三人称单数主语中，就拼写为kills。这可以与一个词汇分析进行对比，例如HPSG中假设的一种。这一分析参见图~\vref{fig-LR-passive-HPSG}。
+%When \emph{kill} is used in the perfect or the passive, it is spelled out as \emph{killed}. If it
+%is used in the active with a 3rd person singular subject it is spelled out as \emph{kills}. This can
+%be compared with a lexical analysis, for instance the one assumed in HPSG. The analysis
+%is shown in Figure~\vref{fig-LR-passive-HPSG}.
+\begin{figure}
+\hfill
+\begin{forest}
+[V\feattab{\spr   \sliste{ \ibox{1} },\\
+           \comps \sliste{ \ibox{2} },\\
+           \argst \sliste{ \ibox{1} NP[\str], \ibox{2} NP[\str] }}
+ [V\feattab{
+           \argst \sliste{ \ibox{1} NP[\str], \ibox{2} NP[\str] }}]]
+\end{forest}
+\hfill
+\begin{forest}
+[V\feattab{\spr   \sliste{ \ibox{2} },\\
+           \comps \sliste{ },\\
+           \argst \sliste{ \ibox{2} NP[\str] }}
+ [V\feattab{
+           \argst \sliste{ \ibox{1} NP[\str], \ibox{2} NP[\str] }}]]
+\end{forest}
+\hfill\mbox{}
+\caption{\label{fig-LR-passive-HPSG}在HPSG框架中基于词汇规则对于完成时的分析}
+%\caption{\label{fig-LR-passive-HPSG}Lexical rule"=based analysis of the perfect and the passive in HPSG}
+\end{figure}%
+左边图展示了被一个词汇规则允准的词项，该词汇规则作用于词干kill-。该词干在其论元结构列表上有两个元素并且对于主动形式来说完整论元结构列表对于被允准的词项和词干是一样的。\argstlc 的第一个成分会映射到\sprc，另外的成分会映射到\compsc（在英语中）。被动在右图描述：带有结构格的\argstc 的第一个成分被抑制，因为在词干\iboxb{2}的\argstlc 上第二个成分就变成了第一个成分，这一成分映射到\sprc。参见\ref{sec-hpsg-passive}来看HPSG对被动的分析以及\ref{Abschnitt-Arg-St}对\argstc 以及德语和英语\il{英语}\il{English}之间的差异的评论。
+%The left figure shows a lexical item that is licensed by a lexical rule that is applied to the stem
+%\stem{kill}. The stem has two elements in its argument structure list and for the active forms the
+%complete argument structure list is shared between the licensed lexical item and the stem. The first
+%element of the \argstl is mapped to \spr and the other elements to \comps (in English). Passive is
+%depicted in the right figure: the first element of the \argst with structural case is suppressed and
+%since the element that was the second element in the \argstl of the stem \iboxb{2} is now the first element,
+%this item is mapped to \spr. See Section~\ref{sec-hpsg-passive} for passive in HPSG and Section~\ref{Abschnitt-Arg-St} for comments on
+%\argst and the differences between German and English\il{English}. 
+
+对于图~\ref{fig-Pass-vs-Perf-and-little-v}和~\ref{fig-LR-passive-HPSG}的讨论是对\ref{Abschnitt-leere-Elemente-LRs-Transformations}提出的问题的进一步解释：词汇规则可以被空中心语替代，反之亦然。HPSG认为有跟屈折相关并且对应于论元以某种形式实现的屈折的词根，最简方案却假设了\littlevc 的两个变体，这两个变体在论元选择方面存在差异。现在，问题是这两种方法之间存在实际差异吗？我们如果考虑语言习得问题，那么就会存在差异。儿童可以从语料中获得的是有很多以某种方式相互关联的屈折形式。仍然存在疑问的是他们是否针对可以侦测到空小\textit{v}s 。当然可以说儿童操作图~\ref{fig-Pass-vs-Perf-and-little-v}所指的结构块。但是，那么一个动词就会只是一个组块，包含一个\littlevc 和V，并且包含一些开放的槽。这与HPSG分析所假设的并无差异。
+%The discussion of Figures~\ref{fig-Pass-vs-Perf-and-little-v} and~\ref{fig-LR-passive-HPSG} are
+%a further illustration of a point made in Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}:
+%lexical rules can be replaced by empty heads and vice versa. While HPSG says there are stems that
+%are related to inflected forms and corresponding to the inflection the arguments are realized in a
+%certain way, Minimalist theories assume two variants of \littlev that differ in their selection of
+%arguments. Now, the question is: are there empirical differences between the two approaches? I think
+%there are differences if one considers the question of language acquisition. What children can
+%acquire from data is that there are various inflected forms and that they are related somehow. What
+%remains questionable is whether they really would be able to detect empty little \textit{v}s. One
+%could claim of course that children operate with chunks of structures such as the ones in
+%Figure~\ref{fig-Pass-vs-Perf-and-little-v}. But then a verb would be just a chunk consisting of
+%\littlev and V and having some open slots. This would be indistinguishable from what the HPSG
+%analysis assumes.
+
+就“词汇规则作为附加的工具”这一侧面而言，讨论是封闭的，但是注意标准GB/最简方案的分析与LFG和HPSG的分析以另外一种方式存在差异，因为他们假设被动与移位相关，即他们假设相同的机制用于非局部依存。\footnote{
+在最简理论中有另外一个选择。因为一致\isc{一致}\is{Agree}可以非局部核查特征，T可以将主格指派给嵌套元素。所以，原则上宾语可以不用移位到T，而可以在VP中获得主格。但是，\citet[\page 368]{Adger2003a}假设德语在T上有一个很强的EPP特征，所以底层的宾语必须移位到T的指定语。这基本上是GB理论对于德语被动的分析，带有其概念上的问题和短处。  
+}这一分析对于英语等语言有用，在这些语言中宾语在主动态中出现在动词之后，被动态中出现在动词之前，但是对于德语这种语言没有用，因为在德语中成分的顺序更加自由。\citet[\S~4.4.3]{Lenerz77}讨论了第~\pageref{ex-passive-German-no-movement}页中的例 （\ref{ex-passive-German-no-movement}） ，为了方便这些例子重复写在例（\ref{ex-passive-German-no-movement-two}）中：
+%As far as the ``lexical rules as additional tool'' aspect is concerned, the discussion is closed, but
+%note that the standard GB/Minimalism analyses differ in another way from LFG and HPSG analyses,
+%since they assume that passive has something to do with movement, that is, they assume that the same mechanisms
+%are used that are used for nonlocal dependencies.\footnote{
+%  There is another option in Minimalist theories. Since Agree\is{Agree} can check features
+%  nonlocally, T can assign nominative to an embedded element. So, in principle the object may get
+%  nominative in the VP without moving to T. However, \citet[\page 368]{Adger2003a} assumes that German has a
+%  strong EPP feature on T, so that the underlying object has to move to the specifier of T. This is
+%  basically the old GB analysis of passive in German with all its conceptual problems and disadvantages.
+%}
+%This works for languages like English in which
+%the object has to be realized in postverbal position in the active and in preverbal position in the
+%passive, but it fails for languages like German in which the order of constituents is more free.
+%\citet[Section~4.4.3]{Lenerz77} discussed the examples in (\ref{ex-passive-German-no-movement}) on
+%page~\pageref{ex-passive-German-no-movement} -- which are repeated here as
+%(\ref{ex-passive-German-no-movement-two}) for convenience:
+\eal
+\label{ex-passive-German-no-movement-two}
+\ex 
+\gll weil das Mädchen dem Jungen den Ball schenkt\\
+     因为 \textsc{det} 女孩 \textsc{det}.\dat{} 男孩 \textsc{det}.\acc{} 球 给\\
+\glt `因为这个女孩把球给了这个男孩'
+%\gll weil das Mädchen dem Jungen den Ball schenkt\\
+%     because the girl the.\dat{} boy the.\acc{} Ball gives\\
+%\glt `because the girl gives the ball to the boy'
+\ex 
+\gll weil dem Jungen der Ball geschenkt wurde\\
+     因为 \textsc{det}.\dat{} 男孩 \textsc{det}.\nom{} 球 给 \textsc{cop}\\
+%\gll weil dem Jungen der Ball geschenkt wurde\\
+%     because the.\dat{} boy the.\nom{} ball given was\\
+\ex 
+\gll weil der Ball dem Jungen geschenkt wurde\\
+     因为 \textsc{det}.\nom{} 球 \textsc{det}.\dat{} 男孩 给 \textsc{cop}\\
+\glt `因为这个球被人给了这个男孩'
+%\gll weil der Ball dem Jungen geschenkt wurde\\
+%     because the.\nom{} ball the.\dat{} boy given was\\
+%\glt `because the ball was given to the boy'
+\zl
+虽然（\mex{0}b）和（\mex{0}c）中的语序都是可能的，但是（\mex{0}b）中的与格--主格顺序是无标记的情况。在德语中有一个非常强力的显性化倾向，要求有生的NP出现在无生的NP之前\citep[\page 46]{Hoberg81a}。这一线性化规则不受被动化影响。假设被动是一种移位的理论或者必须假设（\mex{0}a）的被动是（\mex{0}c），并且（\mex{0}b）是通过一个重新排序操作从（\mex{0}c）推导出来的（这应该是不可行的，因为通常假设越是标记的构式需要越多的转换），或者必须想出别的方法来解释被动句的主语和主动句的宾语出现在相同的位置。正如在\ref{sec-passive-gb}解释的那样，一种这样的解释是假设一个空的虚位主语，该虚位主语处于可以被指派主格的位置，并且以某种方式将该虚位主语与宾语位置的主语联系起来。虽然这一点多少起作用，但是应该清楚的是挽救基于移位的对被动的分析，代价是非常高的：必须假设一个空虚位成分，即一个既没有形式也没有意义的成分。存在这样一个宾语不能从输入中推断出来，除非假设结构是给定的。所以，必须要假设一个更加丰富的UG\indexugc。
+%While both orders in (\mex{0}b) and (\mex{0}c) are possible, the one with dative--nominative order
+%in (\mex{0}b) is the unmarked one. There is a strong linearization preference in German demanding that
+%animate NPs be serialized before inanimate ones \citep[\page 46]{Hoberg81a}. This linearization rule is
+%unaffected by passivization. 
+%Theories that assume that passive is movement either have to
+%assume that the passive of (\mex{0}a) is (\mex{0}c) and (\mex{0}b) is derived from (\mex{0}c) by a
+%further reordering operation (which would be implausible since usually one assumes that more marked
+%constructions require more transformations), or they would have to come up with other
+%explanations for the fact that the subject of the passive sentence has the same position as the
+%object in active sentences. As was already explained in Section~\ref{sec-passive-gb}, one such explanation is to
+%assume an empty expletive subject that is placed in the position where nominative is assigned and
+%to somehow connect this expletive element to the subject in object position. While this somehow
+%works, it should be clear that the price for rescuing a movement"=based analysis of passive is rather
+%high: one has to assume an empty expletive element, that is, something that neither has a form nor a
+%meaning. The existence of such an object could not be inferred from the input unless it is assumed
+%that the structures in which it is assumed are given. Thus, a rather rich UG\indexug would have to be
+%assumed. 
+
+这里需要问的一个问题是：为什么基于移位的分析有这么多问题，为什么基于价的分析没有这些问题？该问题的原因是被动的分析融合了两件事：像英语这种SVO语言用位置编码主语，主语在被动中被抑制了。如果这两件事被分开那么就没问题了。（\ref{ex-she-beats-him}）中主动句的宾语在（\ref{ex-he-was-beaten}） 中可以实现为主语。这一点可以通过假设处在论元结构列表上带有结构格的第一个NP可以实现为主语并且映射到相应的论元特征：英语中的\sprc。这种映射是针对特定语言的（参见\ref{Abschnitt-Arg-St}和\citew{MuellerGermanic}，在该文中我讨论了冰岛语\il{冰岛语}\il{Icelandic}，该语言是一种SVO语言，其主语有词汇格）。
+%The question one needs to ask here is: why does the movement"=based analysis have these problems and why
+%does the valence"=based analysis not have them? The cause of the problem is that the analysis
+%of the passive mixes two things: the fact that SVO languages like English encode subjecthood
+%positionally, and the fact that the subject is suppressed in passives. If these two things are
+%separated the problem disappears. The fact that the object of the active sentence in (\ref{ex-she-beats-him}) is
+%realized as the subject in (\ref{ex-he-was-beaten}) is explained by the assumption that the first NP on the
+%argument structure list with structural case is realized as subject and mapped to the respective valence feature: \spr in
+%English. Such mappings can be language specific (see Section~\ref{Abschnitt-Arg-St} and
+%\citew{MuellerGermanic} where I discuss Icelandic\il{Icelandic}, which is an SVO language with
+%subjects with lexical case).
+
+下面，我将讨论另外一组经常被当做基于移位分析的证据的例子。（\mex{1}）中例子就是所谓的深远被动句\isc{被动!深远}\is{passive!remote}\citep[\page 175--176]{Hoehle78a}。\footnote{
+参见\citew[\S~3.1.4.1]{Mueller2002b}和\citew{Wurmbrand2003a}的语料库例子。
+}
+%In what follows, I discuss another set of examples that are sometimes seen as evidence for a
+%movement"=based analysis. The examples in (\mex{1}) are instances of the so"=called remote passive\is{passive!remote}
+%\citep[\page 175--176]{Hoehle78a}.\footnote{
+%  See \citew[Section~3.1.4.1]{Mueller2002b} and \citew{Wurmbrand2003a} for corpus examples.
+%}
+\eal
+\ex\iw{versuchen|(}
+\gll daß er auch von mir zu überreden versucht wurde\footnotemark\\
+     REL 他.\nom{} 也 \textsc{prep} 我 INF 说服 尝试 \textsc{aux}\\
+\footnotetext{
+        \citew*[\page 212]{Oppenrieder91a}\ia{Oppenrieder}.%
+}
+\glt `我也曾努力去说服他这件事'
+%\gll daß er auch von mir zu überreden versucht wurde\footnotemark\\
+%     that he.\nom{} also from me to persuade tried got\\
+%\footnotetext{
+%        \citew*[\page 212]{Oppenrieder91a}\ia{Oppenrieder}.%
+%}
+%\glt `that an attempt to persuade him was also made by me'
+\ex 
+\gll weil    der Wagen oft zu reparieren versucht wurde\\
+     因为 \textsc{det} 车.\nom{}   经常 INF 修理   尝试  \textsc{aux}\\
+\glt `因为为了修这辆车已经做了很多尝试'\label{bsp-zu-reparieren-versucht-wurde}
+%\gll weil    der Wagen oft zu reparieren versucht wurde\\
+%     because the car.\nom{}   often to repair   tried     was\\
+%\glt `because many attempts were made to repair the car'\label{bsp-zu-reparieren-versucht-wurde}
+\zl
+这些例子的有趣之处在于主语是深层嵌套动词的底层宾语。这好像意味着宾语是从动词短语中提取出来的。所以对（\mex{0}b）的分析应该是（\mex{1}）：
+%What is interesting about these examples is that the subject is the underlying object of a deeply
+%embedded verb. This seems to suggest that the object is extracted out of the verb phrase. So the
+%analysis of (\mex{0}b) would be (\mex{1}):
+\ea
+\gll weil    [\sub{IP} der Wagen$_i$ [\sub{VP} oft   [\sub{VP} [\sub{VP} [\sub{VP} \_$_i$ zu reparieren] versucht] wurde]\\
+     因为 {}        \textsc{det} 车.\nom{} {}        经常 {}        {}        {}        {}    INF 修理       尝试     \textsc{aux}\\
+%\gll weil    [\sub{IP} der Wagen$_i$ [\sub{VP} oft   [\sub{VP} [\sub{VP} [\sub{VP} \_$_i$ zu reparieren] versucht] wurde]\\
+%     because {}        the car.\nom{} {}        often {}        {}        {}        {}    to repair       tried     was\\
+\z
+虽然这一方法直接地解释了（\ref{bsp-zu-reparieren-versucht-wurde}） 合法这一事实，但是也存在另外一种解释。在HPSG理论对于德语（和丹麦语\il{丹麦语}\il{Dutch}）的分析中，假设（\ref{bsp-zu-reparieren-versucht-wurde}） 中的动词可以组成一个动词性复杂体，即zu reparieren versucht wurde（去修尝试\textsc{cop}）组成一个单位。当两个或更多动词组成一个复杂体时，最高点的动词就会从它嵌套的动词中吸引论元\citep{HN89a,HN94a,BvN98}。像versuchen（去尝试）一样的动词选择一个主语、一个带有zu （去）的不定式以及所有被该不定式选择的补语。在例（\mex{1}）的分析中，versuchen（去尝试）选择其主语、reparieren（去修理）的宾语以及动词zu reparieren（去修理）。
+%While this is a straight-forward explanation of the fact that
+%(\ref{bsp-zu-reparieren-versucht-wurde}) is grammatical, another explanation is possible as well. In
+%the HPSG analysis of German (and Dutch\il{Dutch}) it is assumed that verbs like those in
+%(\ref{bsp-zu-reparieren-versucht-wurde}) form a verbal complex, that is, \emph{zu reparieren
+%  versucht wurde} `to repair tried was' forms one unit. When two or more verbs form a complex, the
+%highest verb attracts the arguments from the verb it embeds \citep{HN89a,HN94a,BvN98}. A verb like
+%\emph{versuchen} `to try'
+%selects a subject, an infinitive with \emph{zu} `to' and all complements that are selected by this
+%infinitive. In the analysis of (\mex{1}), \emph{versuchen} `to try' selects for its subject, the
+%object of \emph{reparieren} `to repair' and for the verb \emph{zu reparieren} `to repair'.
+\ea
+\gll weil er den Wagen zu reparieren versuchen will\\
+     因为 他.\nom{} \textsc{det}.\acc{} 车 INF 修理 尝试 想\\
+\glt `因为他想尽力修好这辆车'
+%\gll weil er den Wagen zu reparieren versuchen will\\
+%     because he.\nom{} the.\acc{} car to repair try wants\\
+%\glt `because he wants to try to repair the car'
+\z
+现在，如果被动词汇规则应用于\stem{versuch}，它就会抑制\stem{versuch}的带有结构格的第一个论元，该论元在句法上实现为\stem{versuch}的主语。\stem{versuch}的下一个论元是zu reparieren的宾语。因为这一成分是第一个带有结构格的NP，所以它是主格，见例（\ref{bsp-zu-reparieren-versucht-wurde}）。所以，这可以显示存在不依赖移位来解释深层被动的方法。因为基于移位的分析有问题，并且因为如果没有移位仍然可以解释所有现象，所以没有移位的方法更好。
+%Now if the passive lexical rule applies to \stem{versuch}, it suppresses the first argument of
+%\stem{versuch} with structural case, which is the subject of \stem{versuch}. The next argument of
+%\stem{versuch} is the object of \emph{zu reparieren}. Since this element is the first NP with
+%structural case, it gets nominative as in (\ref{bsp-zu-reparieren-versucht-wurde}). So, this shows
+%that there is an analysis of the remote passive that does not rely on movement. Since
+%movement"=based analyses were shown to be problematic and since there are no data that cannot be
+%explained without movement, analyses without movement have to be preferred.
+
+下面就剩下用基于移位的方式来解释局部重新排序（杂序）了。审稿人指出，杂序、被动和非局部提取可以用同一个机制解释。长期以来一直认为，辖域问题使得用基于移位的方法来分析杂序是必要的，但是\citew[\page 146]{Kiss2001a}和\citew[\S~2.6]{Fanselow2001a}指出事实正好相反：对杂序基于移位的分析在现有量词辖域方面得出来了错误的推测。我已经在\ref{sec-GB-lokale-Umstellung}讨论了相关的例子，这里不再重复。从这里得出的结论是：被动、杂序和长距离提取是三种不同的现象应该不同对待。在HPSG理论中采用的对被动的分析是基于\citet{Haider86}的分析，他的分析是在GB框架中展开的。HPSG中使用的分析局部重新排序的“杂序-作为-基础生成”的方法刚开始也被很多GB/最简方案的支持者所接受，如\citet{Fanselow2001a}。
+%This leaves us with movement"=based accounts of local reordering (scrambling). The reviewer
+%suggested that scrambling, passive, and nonlocal extraction may be analyzed with the same
+%mechanism. It was long thought that s\textsc{cop}e facts made the assumption of movement"=based analyses of
+%scrambling necessary, but it was pointed out by \citew[\page 146]{Kiss2001a} and
+%\citew[Section~2.6]{Fanselow2001a} that the reverse is true: movement"=based accounts of scrambling
+%make wrong predictions with regard to available quantifier s\textsc{cop}ings. I discussed the respective
+%examples in Section~\ref{sec-GB-lokale-Umstellung} already and will not repeat the discussion
+%here. The conclusion that has to be drawn from this is that passive, scrambling, and long distance
+%extraction are three different phenomena that should be treated differently. The solution for the
+%analysis of the passive that is adopted in HPSG is based on an analysis by \citet{Haider86}, who
+%worked within the GB framework. The ``scrambling-as-base generation'' approach to local reordering
+%that was used in HPSG right from the beginning \citep{Gunji86a} is also adopted by some practitioners
+%of GB/Minimalism, \eg \citet{Fanselow2001a}.
+
+已经讨论了GB/最简方案的分析，我们现在讨论一下依存语法的分析。\citet{GO2009a}认为w-前置、话题化、杂序、外置、分裂和深远被动应该用它所谓的上升\isc{上升}\is{rising}进行分析。上升的概念已经在第~\ref{sec-nld-dg}节解释过。图~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}和图~\ref{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising}显示了宾语前置和宾语杂序的例子。
+%Having discussed the analyses in GB/Minimalism, I now turn to Dependency Grammar. 
+%\citet{GO2009a} suggest that \emph{w}-fronting, topicalization, scrambling, extraposition,
+%splitting, and also the remote passive should be analyzed by what they call
+%\emph{rising}\is{rising}. The concept was already explained in Section~\ref{sec-nld-dg}. The
+%Figures~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}
+%and~\ref{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising} show examples for the fronting and the scrambling of an object.
+\begin{figure}
+\centering
+\begin{forest}
+dg edges
+[V
+  [N, edge=dashed 
+    [Det [die;\textsc{det}] ]
+    [Idee;想法]] 
+  [wird;将] 
+  [N [jeder;每个人] ]
+  [V$_g$ [verstehen;理解]]]
+     %[Det [die;the] ]
+    %[Idee;idea]] 
+  %[wird;will] 
+  %[N [jeder;everybody] ]
+  %[V$_g$ [verstehen;understand]]]
+\end{forest}
+\caption{\label{fig-die-idee-wird-jeder-verstehen-dg-rising}使用提升来分析“Die Idee wird jeder verstehen.”（每个人都会理解这一观点。）}
+%\caption{\label{fig-die-idee-wird-jeder-verstehen-dg-rising}Analysis of \emph{Die Idee wird jeder
+%    verstehen.} `Everybody will understand the idea.' involving rising}
+\end{figure}%%
+\begin{figure}
+\centering
+\begin{forest}
+dg edges
+[V
+  [Adv [Gestern;昨天] ]
+  [hat;\textsc{aux}] 
+  [N, edge=dashed [sich;他自己] ]
+  [N
+    [Det [der;\textsc{det}]]
+    [Spieler;球员]]
+  [V$_g$ [verletzt;弄伤]]]
+%    [Adv [Gestern;yesterday] ]
+%  [hat;has] 
+%  [N, edge=dashed [sich;himself] ]
+%  [N
+%    [Det [der;the]]
+%    [Spieler;player]]
+%  [V$_g$ [verletzt;injured]]]
+\end{forest}
+\caption{\label{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising}通过提升主要动词verletzt（弄伤）的宾语对“Gestern hat sich der Spieler verletzt.”（昨天，那个球员弄伤了自己。）的分析}
+%\caption{\label{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising}Analysis of \emph{Gestern hat
+%    sich der Spieler verletzt.} `Yesterday, the player injured himself.' involving rising of the object of the main
+%  verb \emph{verletzt} `injured'}
+\end{figure}%%
+Groß和Osborne认为宾语依存于带有助动词的句子中的主要动词，主语依存于助动词。已因此，宾语die Idee（想法）和宾语sich（REFL）都必须上升到下一个更高的动词，以便于使得结构能投射\isc{投射性}\is{projectivity}。图~\vref{fig-dass-der-wagen-zu-reparieren-versucht-wurde-dg-rising}展示了对深远被动的分析。
+%Groß and Osborne assume that the object depends on the main verb in sentences with auxiliary verbs,
+%while the subject depends on the auxiliary. Therefore, the object \emph{die Idee} `the idea' and
+%the object \emph{sich} `himself' have to rise to the next higher verb in order to keep the
+%structures projective\is{projectivity}.
+%Figure~\vref{fig-dass-der-wagen-zu-reparieren-versucht-wurde-dg-rising} shows the analysis of the
+%remote passive.
+\begin{figure}
+\centering
+\begin{forest}
+dg edges
+[Subjunction
+  [dass;REL]
+  [V
+    [N, edge=dashed
+      [Det [der;\textsc{det}]]
+      [Wagen;汽车]]
+    [V
+      [V$_g$ [zu reparieren;INF 修理]]
+      [versucht;尝试]]
+    [wurde;\textsc{aux}]]]
+%      [dass;that]
+%  [V
+%    [N, edge=dashed
+%      [Det [der;the]]
+%      [Wagen;car]]
+%    [V
+%      [V$_g$ [zu reparieren;to repair]]
+%      [versucht;tried]]
+%    [wurde;was]]]
+\end{forest}
+\caption{\label{fig-dass-der-wagen-zu-reparieren-versucht-wurde-dg-rising}使用提升对深远被动句“dass der Wagen zu reparieren versucht wurde”（尽力去修理这辆车这件事）的分析}
+%\caption{\label{fig-dass-der-wagen-zu-reparieren-versucht-wurde-dg-rising}Analysis of the remote
+%  passive \emph{dass der Wagen zu reparieren versucht wurde} `that it was tried to repair the car' involving rising}
+\end{figure}%%
+zu reparieren（去修理）的宾语上升到助动词wurde（\textsc{cop}）处。
+%The object of \emph{zu reparieren} `to repair' rises to the auxiliary \emph{wurde} `was'.
+
+Groß和Osborne使用相同的机制来处理所有这些现象，但是应该清楚的是，在精确使用时，三者还是存在差异的。Groß和Osborne认为英语中没有杂序，但是德语中有。如果想说明这一点，就必须要用某种方式来区分两种现象，因为如果不能展示两种现象的差异的话，就会推测出英语中也有杂序，因为德语和英语中都允许长距离前置。\citet[\page 58]{GO2009a}假设发生上升的宾语名词一定要是主格。但是，如果它们为深远被动假设的这种上升与他们为杂序假设的上升相同的话，就会预测在例（\mex{1}）中den Wagen也获得主格：
+%Groß and Osborne use the same mechanism for all these phenomena, but it should be clear that there
+%have to be differences in the exact implementation. Groß and Osborne say that English does not have
+%scrambling, while German does. If this is to be captured, there must be a way to distinguish the two
+%phenomena, since if this were not possible, one would predict that English has scrambling as well,
+%since both German and English allow long distance fronting. \citet[\page 58]{GO2009a} assume
+%that object nouns that rise must take the nominative. But if the kind of rising that they assume
+%for remote passives is identical to the one that they assume for scrambling, they would predict that
+%\emph{den Wagen} gets nominative in (\mex{1}) as well:
+\ea
+\gll dass den Wagen niemand repariert hat\\
+     REL \textsc{det}.\acc{} 车 没有人.\nom{} 修理 \textsc{aux}\\
+\glt `没有人修理这辆车这件事'
+%\gll dass den Wagen niemand repariert hat\\
+%     that the.\acc{} car nobody.\nom{} repaired has\\
+%\glt `that nobody repaired the car'
+\z
+因为den Wagen（车）和repariert（被修理）并不相邻，den Wagen必须上升到下一个更高的中心语以便能允许成分的投射性实现。所以，为了适当地指派格，必须考虑一个特定成分移至中心语所管辖的论元。因为助动词hat （\textsc{aux}）已经管辖主格，NP den Wagen必须实现为受格。在（\mex{0}）中假设主格和受格都依存于hat（\textsc{aux}）的分析都基本上是HPSG和一些GB理论所假设的动词复杂体分析。
+%Since \emph{den Wagen} `the car' and \emph{repariert} `repaired' are not adjacent, \emph{den Wagen} has to rise to the
+%next higher head in order to allow for a projective realization of elements. So in order to assign
+%case properly, one has to take into account the arguments that are governed by the head to which a
+%certain element rises. Since the auxiliary \emph{hat} `has' already governs a nominative, the NP \emph{den
+%  Wagen} has to be realized in the accusative. An analysis that assumes that both the accusative and
+%nominative depend on \emph{hat} `has' in (\mex{0}) is basically the verbal complex analysis
+%assumed in HPSG and some GB variants.
+
+但是，要注意，这一点没有扩展到非局部依存。格可以通过动词或动词复杂体来局部指派，但是不能指派到原来的成分上。NPs长距离提取在德语的西部变体中更加常见，并且只有一少部分动词不是自己带主格论元。下面的例子涉及dünken（去想）该词管辖一个受格和一个句子宾语和scheinen（好像），该词管辖一个与格和一个句子宾语。如果（\mex{1}a）用den Wagen 上升到dünkt来分析，就会期望den Wagen ‘the car’获得主格，因为没有其它成分得到主格。但是（\mex{0}b）就被排除了。
+%Note, however, that this does not extend to nonlocal dependencies. Case is assigned locally by verbs or
+%verbal complexes, but not to elements that come from far away. The long distance extraction of
+%NPs is more common in southern variants of German and there are only a few verbs that do not take a
+%nominative argument themselves. The examples below involve \emph{dünken} `to think', which governs an
+%accusative and a sentential object and \emph{scheinen} `to seem', which governs a dative and a
+%sentential object. If (\mex{1}a) is analyzed with \emph{den Wagen} rising to
+%\emph{dünkt}, one might expect that \emph{den Wagen} `the car' gets nominative since there is no other element
+%in the nominative. However, (\mex{0}b) is entirely out.
+
+\eal
+\ex[]{ 
+\gll Den Wagen dünkt mich, dass er repariert.\\
+    \textsc{det}.\acc{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
+\glt `我认为他修理了这辆车。'
+%\gll Den Wagen dünkt mich, dass er repariert.\\
+%     the.\acc{} car thinks me.\acc{}     that he.\nom{} repairs\\
+%\glt `I think that he repairs the car'
+}
+\ex[*]{
+\gll Der Wagen dünkt mich, dass er repariert.\\
+    \textsc{det}.\nom{} 车 认为 我.\acc{}     REL 他.\nom{} 修理\\
+%\gll Der Wagen dünkt mich, dass er repariert.\\
+%     the.\nom{} car thinks me.\acc{}     that he.\nom{} repairs\\
+}
+\zl
+
+与之相似，前置成分和它所依附的动词之间没有一致关系：
+%Similarly there is no agreement between the fronted element and the verb to which it attaches:
+\eal
+\ex[]{
+\gll Mir scheint, dass die Wagen ihm gefallen.\\
+     我.\dat.1\pl{} 好像.3\sg{} REL \textsc{det} 车.3\pl{} 他 取悦.3\pl{} \\
+\glt `在我看来，他喜欢这辆车。'
+%\gll Mir scheint, dass die Wagen ihm gefallen.\\
+%     me.\dat.1\pl{} seems.3\sg{} that the cars.3\pl{} him please.3\pl{} \\
+%\glt `He seems to me to like the cars.'
+}
+%% \ex 
+%% \gll Der Wagen scheint mir, dass ihm gefällt.\\
+%%      the car   seems   me   that him pleases\\
+\ex[]{
+\gll Die Wagen scheint mir, dass ihm gefallen.\\
+     \textsc{det} 车.3\pl{}  好像.3\sg{}     我.\dat{}   REL 他 取悦.3\pl{}\\
+\glt `这辆车，在我看来他喜欢。'
+%\gll Die Wagen scheint mir, dass ihm gefallen.\\
+%     the cars.3\pl{}  seem.3\sg{}     me.\dat{}   that him please.3\pl{}\\
+%\glt `The cars, he seems to me to like.'
+}
+
+\ex[*]{
+\gll  Die Wagen scheinen mir, dass ihm gefällt.\\
+      \textsc{det} 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\sg{}\\
+%\gll  Die Wagen scheinen mir, dass ihm gefällt.\\
+%      the cars.3\pl{}  seem.3\pl{}     me.\dat{}   that him pleases.3\sg{}\\
+}
+\ex[*]{
+\gll Die Wagen scheinen mir, dass ihm gefallen.\\
+     \textsc{det} 车.3\pl{}  好像.3\pl{}     我.\dat{}   REL 他 取悦.3\pl{}\\
+%\gll Die Wagen scheinen mir, dass ihm gefallen.\\
+%     the cars.3\pl{}  seem.3\pl{}     me.\dat{}   that him please.3\pl{}\\
+}
+\zl
+这显示杂序/深远被动和提取不能用相同的机制来处理，或者如果它们用相同的机制来处理，就要确保有该机制的特定变体将这些差异考虑进去。我想Groß和Osborne所为是简单地重新编码了一下短语结构语法的关系。在图~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}中的die Idee（想法）和wird jeder verstehen（\textsc{aux} 每个人理解）有一些关系，正如在GB、LFG、GPSG、HPSG等其它相似框架中一样。在HPSG中，die Idee（想法）是填充语-中心语构式中的填充语。深远被动和助动词论元的局部重新排序、情态动词和其它行为相似的动词都用动词复杂体来解释，其中所有非-动词论元都依赖于最高动词\citep{HN94a}。
+%This shows that scrambling/remote passive and extraction should not be dealt with by the same mechanism or if they
+%are dealt with by the same mechanism one has to make sure that there are specialized variants of the
+%mechanism that take the differences into account. 
+%I think what Groß and Osborne did is simply recode the attachment relations of phrase structure
+%grammars. \emph{die Idee} `the idea' has some relation to \emph{wird jeder verstehen} `will
+%everybody understand' in Figure~\ref{fig-die-idee-wird-jeder-verstehen-dg-rising}, as it does in GB, LFG, GPSG, HPSG, and
+%other similar frameworks. In HPSG, \emph{die Idee} `the idea' is the filler in a filler-head configuration. The remote
+%passive and local reorderings of arguments of auxiliaries, modal verbs, and other verbs that behave similarly
+%are explained by verbal complex formation where all non-verbal arguments depend on the highest verb \citep{HN94a}.
+
+这一章可以总结如下，局部重新排序和长距离依存是两种不同的现象，应该用不同的工具来描述（或者当使用一种工具时，要有进一步的限制来区分各自现象）。与之相似，对于被动基于移位的解释是有问题的，因为被动并不一定包含重新排序。
+%Concluding this chapter, it can be said that local reorderings and long"=distance dependencies are two
+%different things that should be described with different tools (or there should be further
+%constraints that differ for the respective phenomena when the same tool is used). Similarly, movement"=based analyses
+%of the passive are problematic since passive does not necessarily imply reordering. 
+
+
+%      <!-- Local IspellDict: en_US-w_accents -->

@@ -1,0 +1,43 @@
+#!/bin/tcsh -f
+
+# korrektur der Indexeintr"age in Fu"snoten
+
+# M\"ock -> M"ock
+# M\newumlaut ock -> M"ock
+# \pit -> \it
+# \it~ -> \it
+
+
+#printf "\n\n"
+#grep "\\active" subind.idx autind.idx
+#printf "\n\n"
+
+foreach x (*.bbl)
+echo $x
+sed -e 's/To Appear{/To Appear~{/g' \
+    -e 's/to appear{/to appear~{/g' \
+    -e 's/toappear{/toappear~{/g' \
+    -e 's/In Vorbereitung{/In Vorbereitung~{/g' \
+    -e 's/In Preparation{/In Preparation~{/g' \
+    -e 's/inPreparation{/inPreparation~{/g' \
+    -e 's/{tted}/{Submitted}/g' \
+    -e 's/{tion}/{In Preparation}/g' \
+    -e 's/Erscheint{/Erscheint~{/g' \
+    -e 's/Erscheinta/Erscheint~a/g' \
+    -e 's/Erscheintb/Erscheint~b/g' \
+    -e 's/Erscheintc/Erscheint~c/g' \
+    -e 's/Erscheintd/Erscheint~d/g' \
+    -e 's/?}\\\/}\./?}\\\/}/' \
+    -e 's/S.\\,M{\\"u}ller/St.\\,M{\"u}ller/' \
+    -e 's/?}\\\/},/?}\\\/}/'  $x >$x.neu
+
+end
+
+
+foreach x (*.bbl)
+printf "."
+mv -f $x $x.old
+mv $x.neu $x
+end
+
+printf "\n"

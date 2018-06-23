@@ -1,0 +1,2965 @@
+%% -*- coding:utf-8 -*-
+%\renewcommand{\mytoday}{\number年\number月\number日}
+
+\chapter{中心语驱动的短语结构语法}
+%\chapter{Head-Driven Phrase Structure Grammar}
+\label{Kapitel-HPSG}
+\label{chap-HPSG}
+
+中心语驱动的短语结构语法（Head-Driven Phrase Structure Grammar，HPSG）\isc{中心语驱动的短语结构语法|(}\is{Head-Driven Phrase Structure
+  Grammar (HPSG)|(} 是由Carl Pollard和Ivan Sag在上世纪八十年代在斯坦福和Palo Alto的惠普研究实验室开发出来的\citep{ps,ps2}。与LFG一样，HPSG隶属于西海岸语言学。另一个与LFG的相似之处在于HPSG旨于提供一个语言运用与语言能力相互兼容的理论（\citealp{SW2011a,SW2015a}，以及第\ref{Abschnitt-Diskussion-Performanz}章）。
+%Head-Driven Phrase Structure Grammar (HPSG)\is{Head-Driven Phrase Structure
+%  Grammar (HPSG)|(} was developed by Carl Pollard and
+%Ivan Sag in the mid-80's in Stanford and in the Hewlett"=Packard research laboratories in Palo Alto
+%\citep{ps,ps2}. Like LFG, HPSG is part of so"=called West Coast linguistics. Another similarity to
+%LFG is that HPSG aims to provide a theory of competence which is compatible with performance
+%(\citealp{SW2011a,SW2015a}, see also Chapter~\ref{Abschnitt-Diskussion-Performanz}).  
+
+HPSG语法描写语言的形式化属性是很好理解的，而且我们有很多可以处理这种语法的系统
+%The formal properties of the description language for HPSG grammars are well"=understood and there are
+%many systems for processing such grammars
+\citep*{DS91a,%STUF
+%Emele94a-u,Zajac92a-u,%TFS
+DD93a-u,%CUF
+PV91a-u,%Logic Based Implementation
+DISCO94,%
+%
+Erbach95a,%Profit
+Schuetz96,STRD96a-u,%ALEP
+SRTD96a,%LS-Gram
+UBCCDDEEMMO-96a,Babel,Mueller2004b,%
+CP96,PC99,% ALE
+%NB97b-u,% HDRUG ist nur Visualisierung
+GMG97a-u,% ConTroll
+Copestake2002a,% LKB
+Callmeier00a-u,% PET
+Dahlloef2003a-u,% PETFSG-II.2
+MPR2002a-u,Penn2004a-u,% TRALE
+Mueller2007b,% Grammix
+Sato2008a-u,%
+Kaufmann2009a-u,% Java
+Slayden2012a-u,% agree http://moin.delph-in.net/AgreeTop
+Packard2015a-u% ACE http://moin.delph-in.net/AceTop
+}。\footnote{
+\citet{UBCCDDEEMMO-96a}和\citet{Bolc:Czuba:ea:96a-u}比较了已有的和1990年代初开发的系统。\citet{MelnikHandWritten}比较了LKB和 TRALE。也请参阅\citew[\S~5.1]{MuellerCoreGram}。
+}
+%.\footnote{
+%\citet{UBCCDDEEMMO-96a} and \citet{Bolc:Czuba:ea:96a-u} compare systems that were available or were
+%developed at the beginnings of the 1990s. \citet{MelnikHandWritten}
+%compares LKB and TRALE. See also \citew[Section~5.1]{MuellerCoreGram}.
+%}
+目前，Ann Copestake开发的LKB系统\isc{语言知识构建系统}\is{Linguistic Knowledge Builder (LKB)} 和Gerald Penn \citep*{MPR2002a-u,Penn2004a-u}开发的TRALE系统拥有最多的用户。DELPH"=IN联盟\isc{DELPH-IN联盟}\is{DELPH-IN}（它的语法片段是基于LKB的）和许多TRALE用户\isc{TRALE系统}\is{TRALE}已经针对许多不同语言开发了许多小型语法和一些大规模的语法片段。下面列出的就是在不同系统中实现的语言：
+%Currently, the LKB system\is{Linguistic Knowledge Builder (LKB)} by Ann Copestake and the TRALE
+%system, that was developed by Gerald Penn \citep*{MPR2002a-u,Penn2004a-u}, have the most users. The
+%DELPH"=IN consortium\is{DELPH-IN} -- whose grammar fragments are based on the LKB -- and various TRALE users\is{TRALE} have %developed many small and some
+%large grammar fragments of various languages. The following is a list of implementations in different systems:
+\begin{itemize}
+%
+\item 阿拉伯语（Arabic）\il{Arabic} \citep*{HBZ2010a-u,Hahn2011a-u,MIRA2012a-u,BH2014a-u,LBL2015a-u,AHMW2015a-u},
+\item 孟加拉语（Bengali）\il{Bengali} \citep*{Paul2004a-u,IHR2012a-u},
+\item 保加利亚语（Bulgarian）\il{Bulgarian} \citep*{SOSK2004a-u,Osenova2010a-u,Osenova2010b-u,Osenova2011a-u},
+\item 粤语（Cantonese）\il{Cantonese} \citep*{FSB2015a-u},
+\item 丹麦语（Danish）\il{Danish} \citep{Oersnes95a,Oersnes2009a,NP2004a,MuellerPredication,MOe2011a,MuellerCopula,MOeDanish},
+\item 德语（German）
+\citep{%
+Kiss91a,%
+Netter93a-u,Netter96a,% DISCO
+Meurers94,% ALE, Troll
+HMRSW97a-ed,Kordoni99a-ed-not-crossreferenced,Tseng2000a-ed,% ConTroll
+GK94-u,% STUF
+Keller95,% CUF
+Babel,Mueller99a,% Babel
+%LKB
+MK2000a,Crysmann2003b,Crysmann2005a-u,Crysmann2005c,%
+MuellerLehrbuch1,%
+KP2007a,KP2008a-u,Kaufmann2009a-u,Fokkens2011a}, 
+\item 英语（English）\il{English} \citep*{CF2000a-u,FCS2000a,Flickinger2000a,Dahlloef2002a-u,Dahlloef2003a-u,dKM2003b,MdKM2003a,DKMM2004a-u}, 
+\item 世界语（Esperanto）\il{Esperanto} \citep{Li96a-u},
+\item 法语（French）\il{French} \citep*{Tseng2003b-u},
+\item Ga语（Ga）\il{Ga} \citep*{KDHB2007a,Hellan2007a-u},
+\item 格鲁吉亚语（Georgian）\il{Georgian} \citep{Abzianidze2011a-u},
+\item 希腊语（Greek）\il{Greek} \citep{KN2005a-u},
+{\sloppy
+% needed for Herzig Shinfux 
+\item 豪萨语（Hausa）\il{Hausa} \citep{Crysmann2005b-u,Crysmann2009a-u,Crysmann2011a-u,Crysmann2012a-u,Crysmann2016a},
+\item 希伯来语（Hebrew）\il{Hebrew} \citep*{MelnikHandWritten,HMW2013a-u,AHMW2015a-u}, 
+\item 印尼语（Indonesian）\il{Indonesian} \citep*{MBS2015a-u}
+\item 日语（Japanese）\il{Japanese} \citep{Siegel2000a,SB2002a,BS2005a,SBB2016a}, 
+}
+\item 韩语（Korean）\il{Korean} \citep*{KY2003a-u,KY2004a-u,KY2006a,KY2009a-u,KSY2007a-u,SKBY2010a-u,KYSB2011a-u},
+\item 马耳他语（Maltese）\il{Maltese} \citep{MuellerMalteseSketch},
+\item 现代汉语（Mandarin Chinese）\il{Mandarin Chinese} 
+\citep*{Liu97a,% PATR
+Ng97a,% ALE
+ML2009a,ML2013a,FSB2015a-u},
+\item 荷兰语（Dutch）\il{Dutch} \citep*{NB94,BvNM2001a-u,Fokkens2011a},
+\item 挪威语（Norwegian）\il{Norwegian} \citep{HH2004a-u,BH2004a-u,HB2006a-u,Haugereid2017a-u}, 
+\item 波斯语（Persian）\il{Persian} \citep{MuellerPersian,MG2010a},
+\item 波兰语（Polish）\il{Polish} \citep*{PKMM2002a-u,MMPK2003a-u}, % did not do any work ,Bolc2005a-u},
+\item 葡萄牙语（Portuguese）\il{Portuguese} \citep{BC2008a-u,BC2008b-single-quotes,CB2010a-u},
+\item 俄语（Russian）\il{Russian} \citep{AZ2009a-u}, %aus Korpora konvertiert ...
+\item 萨哈泼丁语（Sahaptin）\il{Sahaptin} \citep{Drellishak2009a-u}, % auch NACL 2010
+\item 西班牙语（Spanish）\il{Spanish}
+  \citep*{PinedaMeza2005-u,PinedaMeza2005b-u,Bildhauer2008a,Marimon2013a-u% LKB
+}, 
+\item 手语（Sign Language）（德语\il{sign language!German}、法语\il{sign language!French}、英式英语\il{sign language!British}、希腊语\il{sign language!Greek}）
+% (German\il{sign language!German}, French\il{sign language!French}, British\il{sign language!British}, Greek!\il{sign language!Greek}) \citep{SM2002a-u,MS2004a-u,SG2010a-u},
+\item 南美手语（South African Sign Language）\il{sign language!South African} \citep{Bungeroth2002a-u},
+\item 土耳其语（Turkish）\il{Turkish} \citep*{FPB09a-u},
+\item Wambaya语（Wambaya）\il{Wambaya} \citep{Bender2008b-u,Bender2008a,Bender2010a-u}.
+\item 依地语（Yiddish）\il{Yiddish} \citep{MOe2011a},
+\end{itemize}
+第一个应用HPSG理论实现的语法是Palo Alto的惠普实验室开发的英语语法\citep*{FPW85a,Flickinger87}。德语语法是由海德堡、斯图加特和萨尔布吕肯的LILOG项目开发的。随后，在海德堡、萨尔布吕肯和斯坦福的\verbmobil 项目共同开发了德语、英语和日语的语法。\verbmobil 是在德国历时最长的人工智能项目。它是针对旅游计划和日程安排领域的口语的机器翻译项目\citep{Wahlster2000a-ed-not-crossreferenced}。
+%The first implemented HPSG grammar was a grammar of English developed in the Hewlett"=Packard labs in Palo Alto
+%\citep*{FPW85a,Flickinger87}. Grammars for German were developed in Heidelberg, Stuttgart and
+%Saarbrücken in the LILOG project. Subsequently, grammars for German, English and Japanese were
+%developed in Heidelberg, Saarbrücken and Stanford in the \verbmobil project. \verbmobil was the
+%largest ever AI project in Germany. It was a machine translation project for spoken language in the
+%domains of trip planning and appointment scheduling \citep{Wahlster2000a-ed-not-crossreferenced}.
+
+目前，在语法开发方面有两大团体：DELPH-IN联盟（应用HPSG的深层语言处理）\footnote{
+  \url{http://www.delph-in.net/}。 \zhdate{2015/11/13}
+} 和CoGETI\isc{CoGETI}\is{CoGETI}网络（基于约束的语法：经验、理论与实现）\footnote{
+\url{http://wwwuser.gwdg.de/~cogeti/}。 \zhdate{2015/11/13}. 由DFG基金（基金编号：HO3279/3-1）资助。}。
+%Currently there are two larger groups that are working on the development of grammars: the DELPH-IN consortium (Deep Linguistic %Processing with HPSG)\footnote{
+%  \url{http://www.delph-in.net/}. 13.11.2015.
+%} and the network CoGETI\is{CoGETI} (Constraintbasierte Grammatik: Empirie, Theorie und Implementierung)\footnote{
+%\url{http://wwwuser.gwdg.de/~cogeti/}. 13.11.2015. Supported by the DFG under the grant number HO3279/3-1.%
+%}. 
+上面列出的大部分语法片段是由DELPH-IN的成员开发的，其中有一些是基于语法矩阵（Grammar Matrix）的\isc{语法矩阵}\is{Grammar Matrix} 。语法矩阵是为LKB开发的一个平台，它为语法编写者提供了一个类型学驱动的初始语法，该语法对应于所开发的语言的属性\citep*{BFO2002a-u}。核心语法工程（the CoreGram project）\isc{核心语法}\is{CoreGram}\footnote{\url{https://hpsg.hu-berlin.de/Projects/CoreGram.html}。 \mytodayc。
+}
+是一个在柏林自由大学开展的类似项目。它是针对德语\il{German}、丹麦语\il{Danish}、波斯语\il{Persian}、马耳他语\il{Maltese}、现代汉语\il{Mandarin Chinese}、西班牙语\il{Spanish}、法语\il{French}和印地语\il{Yiddish}的语法开发项目，这些语法都共享一个核心语法。针对所有语言的约束条件在一个地方表示，并且应用到所有语法中。而且，还有针对特定语言类型的限制，这些限制被一起表示并且根据各自的语法来应用。所以，虽然语法矩阵是用来供个人语法编写者使用、调试和修正语法的语法开发平台，而核心语法是真正地针对不同语言的语法开发的，这些语法同步地进行开发，并且同步地进行维护。有关核心语法的介绍可以参考\citew{MuellerCoreGramBrief,MuellerCoreGram}。
+%Many of the grammar fragments that are listed above were developed by members of DELPH-IN and some
+%were derived from the Grammar Matrix\is{Grammar Matrix} which was developed for the LKB to provide
+%grammar writers with a typologically motivated initial grammar that corresponds to the properties of
+%the language under development \citep*{BFO2002a-u}. The CoreGram project\is{CoreGram}\footnote{
+%\url{http://hpsg.fu-berlin.de/Projects/CoreGram.html}. \mytoday.
+%} is a similar project that is being run at the Freie Universität
+%Berlin. It is developing grammars for German\il{German}, Danish\il{Danish},
+%Persian\il{Persian}, Maltese\il{Maltese}, Mandarin Chinese\il{Mandarin Chinese},
+%Spanish\il{Spanish}, French\il{French} and Yiddish\il{Yiddish} that share a common core. Constraints
+%that hold for all languages are represented in one place and used by all grammars. Furthermore there are constraints that
+%hold for certain language classes and again they are represented together and used by the respective
+%grammars. So while the Grammar Matrix is used to derive grammars that individual grammar writers can use, adapt and modify to suit
+%their needs, CoreGram really develops grammars for various languages that are used simultaneously
+%and have to stay in sync. A description of the CoreGram can be found in \citew{MuellerCoreGramBrief,MuellerCoreGram}.
+
+还有的系统是将语言学驱动的分析与统计模块结合起来\citep{Brew95a,MNT2005a-u,MT2008a-u}，或者从语料库中学习语法和辞典\citep{Fouvry2003a-u,CZ2009a-u}。
+%There are systems that combine linguistically motivated analyses with statistics components
+%\citep{Brew95a,MNT2005a-u,MT2008a-u} or learn grammars or lexica from corpora \citep{Fouvry2003a-u,CZ2009a-u}. 
+
+下面列出了两个可以对语法进行测试的网址：
+%The following URLs point to pages on which grammars can be tested:
+\begin{itemize}
+\item \url{http://www.delph-in.net/erg/}
+\item \url{https://hpsg.hu-berlin.de/Demos/}
+% nicht wirklich HPSG
+%http://www-tsujii.is.s.u-tokyo.ac.jp/enju/demo.html
+\end{itemize}
+
+
+\section{有关表示形式的一般说明}
+%\section{General remarks on the representational format}
+
+HPSG具有下述特征：它是基于词汇的理论，即大部分的语言约束位于词或词根的描写中。HPSG基于索绪尔的符号论：语言符号的形式与意义总是一起表示的。类型特征结构被用于模拟所有相关的信息。\footnote{没有按照顺序阅读的读者和对类型特征描写不太熟悉的读者可以先参考第\ref{chap-feature-descriptions}章。
+}这些结构可以跟（\mex{1}）中的特征描写一起描述。词汇项、短语和原则都按照同样的形式化方法来模拟和描述。有关词类和规则模式的概括由承继层级体系来表示（请参阅\ref{sec-formalismus-typen}）。语音、句法和语义在单一结构中表示。没有像管辖与约束理论中PF或LF这样单独的表示层次。（\mex{1}）节录了Grammatik（语法）这个词的部分表示形式。
+%HPSG has the following characteristics: it is a lexicon"=based theory, that is, the majority of
+%linguistic constraints are situated in the descriptions of words or roots. HPSG is sign-based in the
+%sense of Saussure \citeyearpar{Saussure16a-Fr}\nocite{Saussure16a}: the form and meaning of linguistic signs are always
+%represented together. Typed feature structures are used to model all relevant information.\footnote{
+%Readers who read this book non-sequentially and who are unfamiliar with typed feature descriptions
+%and typed feature structures should consult Chapter~\ref{chap-feature-descriptions} first.
+%} These
+%structures can be described with feature descriptions such as in (\mex{1}). Lexical entries, phrases
+%and principles are always modeled and described with the same formal means.  Generalizations about
+%word classes or rule schemata are captured with inheritance hierarchies (see Section~\ref{sec-formalismus-typen}). Phonology, syntax and
+%semantics are represented in a single structure. There are no separate levels of representation such
+%as PF or LF in Government \& Binding Theory.  (\mex{1}) shows an excerpt from the representation of
+%a word such as \emph{Grammatik} `grammar'.
+
+%\begin{figure}
+\ea
+\emph{Grammatik} （语法）的词汇项：\\
+%Lexical item for the word \emph{Grammatik} `grammar':\\
+\ms[word]{
+phonology   & \phonliste{ Grammatik } \\[1mm]
+syntax-semantics & \ldots \ms[local]{ category  & \ms[category]{ head & \ms[noun]{ case & \ibox{1}
+                                                                                               }\\[3mm]
+                                                                               subcat & \sliste{ Det[\textsc{case}~\ibox{1}] }\\[1mm]
+                                                                             } \\[10mm]
+                                          content & \ldots \ms[grammatik]{ inst & X 
+                                                                                    }
+            }
+}
+\z
+%\vspace{-\baselineskip}
+%\end{figure}%
+
+我们可以看到这一特征描写包括词的语音、句法范畴和语义。为了简便，\textsc{phonology}(\phonc )的值大部分按照正字法来表示。在完整的理论中，\phonvc 是一个包括节律栅\isc{节律栅}\is{metrical grid}和轻重音\isc{轻重音}\is{accent}信息的复杂结构。请参阅\citew{BK94b}、\citew{Orgun96a}、\citew{Hoehle99a-u}、\citew{Walther99a-u}、\citew[Chapter~6]{Crysmann2002a}和\citew{Bildhauer2008a}在HPSG框架下关于语音学\isc{语音学}\is{phonology}的分析。针对（\mex{0}）中表示的详细信息将在下面的章节中给予解释。
+%One can see that this feature description contains information about the phonology, syntactic category and semantic content of the word
+%\emph{Grammatik}. To keep things simple, the value of \textsc{phonology} (\phon) is mostly given as
+%an orthographic representation. In fully fleshed-out
+%theories, the \phonv is a complex structure that contains information about metrical grids\is{metrical grid} and weak or strong accents%\is{accent}.
+%See \citew{BK94b}, \citew{Orgun96a}, \citew{Hoehle99a-u}, \citew{Walther99a-u},
+%\citew[Chapter~6]{Crysmann2002a}, and \citew{Bildhauer2008a} for phonology\is{phonology} in the
+%framework of HPSG. The details of the description in (\mex{0}) will be explained in the following sections.
+
+HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受到了其他理论框架下理论发展的影响。针对配价信息和功能组合\isc{功能组合}\is{function composition}处理的函子参数结构借鉴自范畴语法\indexcgc。函子构成在德语和韩语这类语言中的动词复杂结构的分析中起到了重要的作用。直接支配\isc{支配!直接支配}\is{dominance!immediate}/线性优先\isc{线性优先}\is{linear precedence}\isc{ID/LP语法}\is{ID/LP grammar}模式（ID/LP模式，请参阅第\ref{sec-IDLP-intro}节）和长距离依存（请参阅\ref{sec-nld-gpsg}）的Slash机制都来源于GPSG\indexgpsgc。这里针对德语动词位置的分析受到管辖与约束理论\indexgbc 框架下开发的语法的启发（请参阅\ref{sec-verb-position-gb}）。
+%HPSG has adopted various insights from other theories and newer analyses have been influenced by developments in other theoretical %frameworks.
+%Functor"=argument structures, the treatment of valence information and function
+%composition\is{function composition} have been adopted from
+%Categorial Grammar\indexcg. Function composition plays an important role in the analysis of verbal
+%complexes in languages like German and Korean. The Immediate Dominance\is{dominance!immediate}/Linear Precedence\is{linear %precedence}\is{ID/LP grammar} format
+%(ID/LP format, see Section~\ref{sec-IDLP-intro}) as well as the Slash mechanism for long"=distance
+%dependencies (see Section~\ref{sec-nld-gpsg}) both come from GPSG\indexgpsg. The analysis assumed
+%here for verb position in German is inspired by the one that was developed in the framework of Government \& Binding\indexgb
+%(see Section~\ref{sec-verb-position-gb}).
+
+\subsection{配价信息的表示}
+%\subsection{Representation of valence information}
+
+第\ref{Kapitel-PSG}章\isc{价|(}\is{valence|(}讨论的短语结构语法\isc{短语结构语法}\is{phrase structure grammar}的缺点是需要大量不同的规则来表示不同的配价类型。（\mex{1}）给出了这类规则的一些例子以及相应的动词。
+%The\is{valence|(} phrase structure grammars\is{phrase structure grammar} discussed in Chapter~\ref{Kapitel-PSG} have the disadvantage that
+%one requires a great number of different rules for the various valence types. (\mex{1}) shows some examples of this kind of rules and the %corresponding
+%verbs.
+\ea
+\label{psg-valenz}
+%\oneline{%
+\begin{tabular}[t]{@{}l@{~$\to$~}l@{\hspace{3em}}l@{}}
+      S & NP[\type{nom}], V                             & \emph{X schläft}（X正在睡觉）\\
+ %      `X is sleeping'\\
+      S & NP[\type{nom}], NP[\type{acc}], V                         & \emph{X Y erwartet} （X在等Y）\\
+ %     `X expects Y'\\
+      S & NP[\type{nom}], PP[\type{über}], V           & \emph{X über Y spricht}（X在谈论Y） \\
+ %     `X talks about Y'\\
+      S & NP[\type{nom}], NP[\type{dat}], NP[\type{acc}], V                     & \emph{X Y Z gibt}（X把Z给Y） \\
+%      `X gives Z to Y'\\
+      S & NP[\type{nom}], NP[\type{dat}], PP[\type{mit}], V        & \emph{X Y mit Z dient} （X与Z一起服务Y）\\
+ %     `X serves Y with Z'\\
+      \end{tabular}
+%}
+\z
+为了保证语法不制造出不正确的句子，我们必须要确保只根据合适的规则来使用动词。
+%In order for the grammar not to create any incorrect sentences, one has to ensure that verbs are only used with appropriate rules.
+\eal
+\ex[*]{
+\gll dass Peter das Buch schläft\\
+	 \textsc{conj} Peter \textsc{det} 书 睡觉\\
+%	 that Peter the book sleeps\\
+}
+\ex[*]{
+\gll dass Peter erwartet\\
+	 \textsc{conj}I Peter 等待\\
+%	 that Peter expects\\
+}
+\ex[*]{
+\gll dass Peter über den Mann erwartet\\
+	 \textsc{conj} Peter 关于 \textsc{det} 人 等待\\
+%	 that Peter about the man expects\\
+}
+\zl
+所以说，动词（和通常所说的中心语）必须分成不同的配价类型。然后，这些配价类型必须被分配给语法规则。然后，我们必须要进一步明确（\mex{-1}）中及物动词的规则，如下所示：
+%Therefore, verbs (and heads in general) have to be divided into valence classes. These valence classes have to then be assigned to %grammatical rules.
+%One must therefore further specify the rule for transitive verbs in (\mex{-1}) as follows:
+\ea
+S $\to$ NP[\type{nom}], NP[\type{acc}], V[\type{nom\_acc}]
+\z
+这里，配价被编码两次。首先，我们说明了哪类成分可以或者必须发生，然后我们在词汇中说明动词所属的配价类型。在\ref{Abschnitt-Einordnung-GPSG}，我们指出了屈折变化过程与配价信息是相关的。所以，我们需要从语法规则中去除多余的配价信息。基于这个原因，HPSG跟范畴语法一样包括了在中心语所在的词汇项的中心语论元的表示。\subcatfc 带有列表值，它包括为了得到一个完整短语必须要跟中心语组合的宾语的表示。（\mex{1}）给出了（\ref{psg-valenz}）中动词的例子：
+%Here, valence has been encoded twice. First, we have said something in the rules about what kind of elements can or must occur, and then %we have stated
+% in the lexicon which valence class the verb belongs to. In Section~\ref{Abschnitt-Einordnung-GPSG}, it was pointed out that morphological %processes
+% need to refer to valence information. Hence, it is desirable to remove redundant valence information from grammatical rules. For this reason, %HPSG
+% -- like Categorial Grammar --  includes descriptions of the arguments of a head in the lexical entry of that head. There is a feature with a list-%value,
+% the \subcatf, which contains descriptions of the objects that must combine with a head in order to yield a complete phrase. (\mex{1})
+%  gives some examples for the verbs in (\ref{psg-valenz}):
+\ea
+\begin{tabular}[t]{@{}lll}
+      Verb             & \subcat\\
+      schlafen（睡觉） 
+%      `to sleep'
+       & \sliste{ NP[\type{nom}] }\\
+      erwarten （等待）
+%      `to expect' 
+      & \sliste{ NP[\type{nom}], NP[\type{acc}] }\\
+      sprechen （说话）
+%      `to speak' 
+      & \sliste{ NP[\type{nom}], PP[\type{über}] }\\
+      geben （给）
+ %     `to give'    
+      & \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }\\
+      dienen （服务）
+%      `to serve'   
+      & \sliste{ NP[\type{nom}], NP[\type{dat}], PP[\type{mit}] }\\  
+      \end{tabular}
+\z
+\subcatc\isfeat{subcat}是次范畴化的缩写。通常来说，中心语需要次范畴\isc{次范畴化}\is{subcategorization}的论元。请参阅第\pageref{Seite-Subkategoriesierung}页更多关于次范畴化（subcategorization）这个术语的内容。\isc{价|)}\is{valence|)}
+%\subcat\isfeat{subcat} is an abbreviation for subcategorization. It is often said that a head subcategorizes\is{subcategorization} for
+%certain arguments. See page~\pageref{Seite-Subkategoriesierung} for more on the term \emph{subcategorization}.\is{valence|)}
+
+图\vref{abb-peter-schlaeft}给出了（\mex{1}a）的分析，而图\vref{abb-Peter-Maria-erwartet}给出了（\mex{1}b）的分析：
+%Figure~\vref{abb-peter-schlaeft} shows the analysis for (\mex{1}a) and the analysis for (\mex{1}b) is in Figure~\vref{abb-Peter-Maria-erwartet}:
+
+\begin{samepage}
+\eal
+\ex 
+\gll {}[dass] Peter schläft\label{Bsp-Peter-schlaeft}\\
+	{}\spacebr{}\textsc{conj} Peter 睡觉\\
+%	{}\spacebr{}that Peter sleeps\\
+\ex 
+\gll {}[dass] Peter Maria erwartet\\
+	{}\spacebr{}\textsc{conj} Peter Maria 等待\\
+\glt `Peter在等Maria'
+%	{}\spacebr{}that Peter Maria expects\\
+%\glt `that Peter expects Maria'
+\zl
+\end{samepage}
+%
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[V{[\subcat \eliste]}
+	[{\ibox{1} NP[\type{nom}]}
+		[Peter;Peter]]
+	[V{[\subcat \sliste{ \ibox{1} }]}
+		[schläft;睡觉]]]
+%		[schläft;sleeps]]]
+\end{forest}
+\caption{\label{abb-peter-schlaeft}小句\emph{dass Peter schläft}（Peter在睡觉）内\emph{Peter schläft}（Peter睡觉）的分析}
+%\caption{\label{abb-peter-schlaeft}Analysis of \emph{Peter schläft} `Peter sleeps' in \emph{dass
+%    Peter schläft} `that Peter sleeps'}
+\end{figure}%
+\addlines
+在图\ref{abb-peter-schlaeft}和\ref{abb-Peter-Maria-erwartet}中，\subcatlc 中的一个元素在每个局部树中与其中心语相组合。与所选择的中心语相组合的元素不再出现在父结点的\subcatlc 中。V[\subcat \sliste{ }]对应于一个完整的短语（VP或S）。带有数字的框盒表示结构共享\isc{结构共享}\is{structure sharing}（请参阅\ref{sec-strukturteilung}）。结构共享是HPSG中最为重要的表达手段。它在诸如配价、一致和长距离依存中发挥着重要的作用。在上面的例子中，\iboxt{1} 表示\subcatlc 中的描写与树中的另一个子结点是相同的。在配价列表中的描写通常是部分描写，也就是说，不是论元的所有属性都被穷尽地描写出来。所以说，有可能像schläft（睡觉）这样的动词可以跟不同种类的语言对象相组合：主语可以是一个代词、一个专有名词或是一个复杂的名词短语，唯一关键的地方是我们所说的语言对象要有一个空的\subcatlc，并且具有正确的格属性。\footnote{
+而且，它必须与动词保持一致。这里并没有显示出这一点。
+}
+%In Figures~\ref{abb-peter-schlaeft} and~\ref{abb-Peter-Maria-erwartet}, one element of the \subcatl is combined with its head in each
+%local tree. The elements that are combined with the selecting head are then no longer present in the \subcatl of the mother node.
+%V[\subcat \sliste{ }] corresponds to a complete phrase (VP or S). The boxes with numbers show the structure sharing (see Section~\ref{sec-%strukturteilung}).
+%Structure sharing\is{structure sharing} is the most important means of expression in HPSG. It plays a central role for phenomena such as %valence, agreement
+%and long"=distance dependencies. In the examples above, \iboxt{1} indicates that the description in
+%the \subcatl is identical to another daughter in the tree.
+%The descriptions contained in valence lists are usually partial descriptions, that is, not all properties of the argument are exhaustively %described. Therefore, it is
+%possible that a verb such as \emph{schläft} `sleeps' can be combined with various kinds of linguistic objects: the subject can be a pronoun, a %proper name
+%or a complex noun phrase, it only matters that the linguistic object in question has an empty \subcatl and bears the correct case.\footnote{
+%Furthermore, it must agree with the verb. This is not shown here.
+%}
+%
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[V{[\subcat \eliste]}
+	[{\ibox{1} NP[\type{nom}]}
+		[Peter;Peter]]
+	[V{[\subcat \sliste{ \ibox{1} }]}
+		[{\ibox{2} NP[\type{acc}]}
+			[Maria;Maria]]
+		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} }]}
+			[erwartet;等]]]]
+%			[erwartet;expects]]]]
+\end{forest}}
+\caption{\label{abb-Peter-Maria-erwartet}\emph{Peter Maria erwartet}（Peter在等Maria）的分析}
+%\caption{\label{abb-Peter-Maria-erwartet}Analysis of \emph{Peter Maria erwartet} `Peter expects Maria.'}
+\end{figure}%
+
+\subsection{组成成分结构的表示}
+%\subsection{Representation of constituent structure}
+\label{sec-HPSG-constituent-structure}
+
+正如我们已经指出的，HPSG中的特征表示是形态规则、词汇项和句法规则的唯一描写机制。我们目前已看到的树只是组成成分结构的可视化结果，他们并不具有任何理论地位。在HPSG中也有重写规则。\isc{短语结构语法}\is{phrase structure grammar}\footnote{
+但是，在某些HPSG的计算实现中应用了短语结构规则，这是为了提高处理的效率。
+}
+短语结构规则的工作由特征描写来处理。有关支配的信息通过\textsc{dtr}特征（中心语子结点和非中心语子结点）表示出来，有关优先顺序的信息在\phonc 中表示。（\mex{1}）展示了特征表示中\phonvsc 是如何表示的，该特征表示对应于图\vref{fig-dem-mann-fs}中的树。
+%As already noted, feature descriptions in HPSG serve as the sole descriptive inventory of morphological rules, lexical entries and syntactic %rules.
+%The trees we have seen thus far are only visualizations of the constituent structure and do not have any theoretical status. There are also no
+%rewrite rules in HPSG.\is{phrase structure grammar}\footnote{
+%	However, phrase structure rules are used in some computer implementations of HPSG in order to improve
+ %       the efficiency of processing.}
+%The job of phrase structure rules is handled by feature descriptions.
+%Information about dominance is represented using \textsc{dtr} features (head daughter and non"=head daughter), information about p%recedence
+%is implicitly contained in \phon. (\mex{1}) shows the representation of \phonvs in a feature description corresponding to the tree in Figure~
+%\vref{fig-dem-mann-fs}.
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[NP
+	[Det
+		[dem;\textsc{det}]]
+%		[dem;the]]
+	[N
+		[Mann;男人]]]
+%		[Mann;man]]]
+\end{forest}
+\caption{\label{fig-dem-mann-fs}\emph{dem Mann}（这个男人）的分析}
+%\caption{\label{fig-dem-mann-fs}Analysis of \emph{dem Mann} `the man'}
+\end{figure}%
+\ea
+\ms{ 
+  phon     & \phonliste{ dem Mann }\\[1mm]
+  head-dtr & \onems{ phon \phonliste{ Mann }
+                 }\\
+  non-head-dtrs & \sliste{ \onems{ phon \phonliste{ dem }
+                            }}
+}
+\z
+在（\mex{0}）中，只有一个中心语子结点（\textsc{head-dtr}\isfeat{head-dtr}）。中心语子结点是包括中心语的子结点。在带有子结点das（这）和Bild von Maria（Maria的照片）的结构中，后者是中心语子结点。原则上，可以有多个非中心语子结点。如果我们假设带有及物动词的句子是一个平铺结构的话，如图\vref{er-das-buch-dem-mann-gibt-flat}所示，那么我们就有三个非中心语子结点。\isfeat{non-head-dtrs}我们也可以假设一个没有中心语的二叉结构（参阅\citealp[\S~11]{MuellerLehrbuch1}关于关系小句的分析）。在这类结构中，我们可以有不只一个非中心语子结点，具体来说是两个。
+%In (\mex{0}), there is exactly one head daughter (\textsc{head-dtr}\isfeat{head-dtr}).
+%The head daughter is always the daughter containing the head. In a structure with the daughters 
+%\emph{das} `the' and \emph{Bild von Maria} `picture of Maria', the latter would be the head daughter. In principle, there can be
+%multiple non"=head daughters. If we were to assume a flat structure for a sentence with a ditransitive verb, as in Figure~\vref{er-das-buch-%dem-mann-gibt-flat},
+%we would have three non"=head daughters.\isfeat{non-head-dtrs} It also makes sense to assume binary
+%branching structures without heads (see \citealp[Chapter~11]{MuellerLehrbuch1} for an analysis of
+%relative clauses). In such structures we would also have more than one non"=head daughter, namely exactly two.
+
+在我们展示只有那些论元与中心语的要求相匹配的中心语"=论元结构是如何被允准的之前，我将先说明HPSG中特征描写的一般结构。在本章开头给出的结构在这里的（\mex{1}）重复显示出来，并且加上了目前讨论相关的所有细节：
+%Before it is shown how it is ensured that only those head"=argument structures are licensed in which the argument matches the requirements %of the head, I will
+%present the general structure of feature descriptions in HPSG. The structure presented at the start of this chapter is repeated in (\mex{1}) with %all the details
+%relevant to the present discussion:
+\ea
+\label{LE-Grammatik}
+\ms[word]{
+phon   & \phonliste{ Grammatik } \\[1mm]
+synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \ibox{1}
+                                                                      }\\[3mm]
+                                                     subcat & \sliste{ Det[\textsc{case}~\ibox{1}] }\\[1pt] 
+                                                    } \\[6mm]
+                                cont & \ms[mrs]{
+                                       ind & \ibox{2} \ms{ per & third\\
+                                                           num & sg\\
+                                                           gen & fem\\
+                                                         }\\
+                                       rels & \sliste{ \ms[grammatik]{ inst & \ibox{2} 
+                                                                    } }
+                                        }
+                              }\\
+               nonloc & \ms{ inher$|$slash   & \eliste{}\\
+                             to-bind$|$slash & \eliste{}\\
+                           }
+            }
+}
+\z
+%\addlines
+外层有特征\phonc 和\synsemc。正如前面提到的，\phonc 包括语言对象的语音表示。\synsemc 的值是包括可以被其他中心语所选择的句法和语义信息的特征结构。短语符号的子结点在\synsemc 之外表示。这就确保了在选择中具有一定程度的局部性\isc{定域}\is{locality}：中心语不能进入它所选择的元素的内部结构（Pollard \& Sag\citeyear[\page 143--145]{ps}，\citeyear[\page 23]{ps2}）。也可以参考\ref{sec-mother}和\ref{sec-locality}关于局部性的讨论。在\synsemc 内部，有关于局部上下文的信息（\localc，简写为\loc
+），也有长距离依存的信息（\textsc{nonlocal}或简写为\nonlocc ）。局部相关的信息包括句法（\textsc{category}或\catc）和语义（\textsc{content}或\contc）信息。句法信息包括决定短语的核心属性的信息，即中心语信息。这在\headc 下面有所表示。更多细节将在\ref{Abschnitt-Kopfeigenschaften}讨论。此外，语言对象的词类属于短语的中心语属性。同样，\headc、\subcatc 属于\catc 内部的信息。符号的语义内容用\contc 来表示。\contc 值的类型是\type{mrs}，即最小递归语义（Minimal Recursion Semantics）\indexmrsc
+\citep*{CFPS2005a}。一个MRS结构包括一个索引和限制该索引的关系列表。在\textsc{nonlocal}特征中，这里只给出了\slasch 。还有处理关系小句\isc{关系小句}\is{relative clause}和疑问小句\isc{疑问小句}\is{interrogative clause}的特征（\citealp{ps2}；\citealp{Sag97a}；\citealp{GSag2000a-u}；\citealp{Holler2005a-u}），不过不在这里讨论。
+%In the outer layer, there are the features \phon and \synsem. As previously mentioned, \phon contains the phonological representation of a %linguistic
+%object. The value of \synsem is a feature structure which contains syntactic and semantic information that can be selected by other heads.
+%The daughters of phrasal signs are represented outside of \synsem. This ensures that there is a
+%certain degree of locality\is{locality} involved in selection: a head cannot access the internal
+%structure of the elements which it selects (Pollard und Sag \citeyear[\page 143--145]{ps};
+%\citeyear[\page 23]{ps2}). See also Sections~\ref{sec-mother} and~\ref{sec-locality} for a
+%discussion of locality. Inside \synsem, there is information relevant in local contexts (\local,
+%abbreviated to \loc) as well as information important for long"=distance dependencies
+%(\textsc{nonlocal} or \nonloc for short). Locally relevant information includes syntactic
+%(\textsc{category} or \cat), and semantic (\textsc{content} or \cont) information. Syntactic
+%information encompasses information that determines the central characteristics of a phrase, that
+%is, the head information. This is represented under \head. Further details of this will be discussed in
+% Section~\ref{Abschnitt-Kopfeigenschaften}. Among other things, the part of speech of a 
+% linguistic object belongs to the head properties of a phrase. As well as \head, \subcat belongs to the information contained inside \cat. The %semantic content
+% of a sign is present under \cont. The type of the \contv is \type{mrs}, which stands for \emph{Minimal Recursion
+%Semantics}\indexmrs \citep*{CFPS2005a}. An MRS structure is comprised of an index and a list of
+%relations which restrict this index. Of the \textsc{nonlocal} features, only \slasch is given here. There are further features for dealing with %relative\is{relative clause}
+%and interrogative clauses\is{interrogative clause} (\citealp{ps2}; \citealp{Sag97a};
+%\citealp{GSag2000a-u}; \citealp{Holler2005a-u}), which will not be discussed here.
+%\pagebreak
+
+正如我们看到的，Grammatik（语法）这个词的描写相对复杂。理论上，我们可以列出在一个单独的特征"=值偶对的列表中直接列出给定对象的所有属性。但是，这会带来一些问题，这些特征"=值偶对组的认定很难表示。应用（\mex{0}）中的特征向量，我们表示这样的事实，在诸如（\mex{1}）中的那些对称并列结构\isc{并列|(}\is{coordination|(}中，所有连词的\catvsc 是相同的。 \label{Seite-HPSG-Koordination}
+%As can be seen, the description of the word \emph{Grammatik} `grammar' becomes relatively complicated. In theory, it would be possible to %list all properties
+%of a given object directly in a single list of feature"=value pairs. This would, however, have the disadvantage that the identity of groups of %feature"=value pairs could not be
+%expressed as easily. Using the feature geometry in (\mex{0}), one can express the fact that the \catvs of both conjuncts in symmetric %coordinations\is{coordination|)}
+%such as those in (\mex{1}) are identical.\label{Seite-HPSG-Koordination}
+
+\eal
+\ex 
+\gll {}[der Mann] und [die Frau]\\
+	 {}\spacebr{}\textsc{det} 男人 和 \spacebr{}\textsc{det} 女人\\
+%	 {}\spacebr{}the man and \spacebr{}the woman\\
+\ex 
+\gll Er [kennt] und [liebt] diese Schallplatte.\\
+	 他.\nom{} \spacebr{}认识 和 \spacebr{}爱 这.\acc{} 专辑\\
+%	 he.\nom{} \spacebr{}knows and \spacebr{}loves this.\acc{} record\\
+\ex 
+\gll Er ist [dumm] und [arrogant].\\
+	他 \textsc{cop} \spacebr{}哑的 和 \spacebr{}傲慢\\
+%	he is \spacebr{}dumb and \spacebr{}arrogant\\
+\zl
+（\mex{0}b）应该跟（\mex{1}）中的例子相比较。在（\mex{1}a）中，动词分别选择了一个宾格宾语和一个与格宾语，并且在（\mex{1}b）中，动词选择了一个宾格宾语和一个介词宾语：
+%(\mex{0}b) should be compared with the examples in (\mex{1}). In (\mex{1}a), the verbs select for an
+%accusative and a dative object, respectively and in (\mex{1}b), the verbs select for an accusative
+%and a prepositional object:
+\eal
+\ex[*]{
+\gll Er kennt und hilft dieser Frau / diese Frau.\\
+     他.\nom{} 认识 和 帮助 这.\dat{} 女人 {} 这.\acc{} 女人\\
+\glt 想说：“他认识并帮助这个女人。”
+%     he.\nom{} knows and helps this.\dat{} woman {} this.\acc{} woman\\
+%\glt Intended: `He knows and helps this woman.'
+}
+\ex[*]{ 
+\gll weil er auf Maria kennt und wartet\\
+     因为 他 \textsc{prep} Maria 认识 和 等待\\
+\glt 想说：“因为他认识Maria，并等她”
+%     because he for Maria knows and waits\\
+%\glt Intended: `because he knows Maria and waits for her'
+}
+\zl
+不过，（\mex{0}a）的英文译文是合适的，因为knows和helps都带一个宾格宾语。而（\mex{0}a）是不合格的，因为kennt带一个宾格宾语，而hilft带一个与格宾语。相似地，（\mex{0}b）也是不合格的，因为kennt带一个宾格宾语，而wartet带一个包括介词auf的介词短语。
+%While the English translation of (\mex{0}a) is fine, since both \emph{knows} and \emph{helps} take an
+%accusative, (\mex{0}a) is out, since \emph{kennt} `knows' takes an accusative and \emph{hilft}
+%`helps' a dative object. Similarly, (\mex{0}b) is out since \emph{kennt} `knows' selects an accusative object and
+%\emph{wartet} `waits' selects for a prepositional phrase containing the preposition \emph{auf} `for'.
+
+如果配价和词类信息没有在一个共同的子结构中表示的话，我们就需要分别说明，诸如（\mex{-1}）的语段需要所有的连词具有相同的配价和词类信息。\isc{并列|)}\is{coordination|)}
+%If valence and the part of speech information were not represented in one common sub-structure, we would
+%have to state separately that utterances such as (\mex{-1}) require that both
+%conjuncts have the same valence and part of speech.\is{coordination|)}
+
+在介绍了特征向量之后，我们现在可以转向中心语"=论元范式\isc{范式!中心语-论元范式}\is{schema!head"=argument}的内容了：
+%After this general introduction of the feature geometry that is assumed here, we can now turn to the head"=argument %schema\is{schema!head"=argument}:
+\begin{schema}[中心语"=论元范式（二叉结构，初级版本）]
+%\begin{schema}[Head-Argument Schema (binary branching, preliminary version)]
+\label{schema-bin-prel}
+~\\
+\type{head-argument-phrase}\istype{head"=argument"=phrase} \impl\\
+\onems{
+      synsem$|$loc$|$cat$|$subcat \ibox{1} \\
+      head-dtr$|$synsem$|$loc$|$cat$|$subcat \ibox{1} $\oplus$ \sliste{ \ibox{2} } \\
+      non-head-dtrs \sliste{ [ \synsem \ibox{2} ] }
+      }
+\end{schema}
+模式~\ref{schema-bin-prel}表明了具有类型\type{head"=argument"=phrase}的语言对象必须具有的属性。模式~\ref{schema-bin-prel}中的箭头\isc{\impl}\is{\impl}表示逻辑蕴涵\isc{蕴涵}\is{implication}，并不是我们从短语结构语法中所知的重写规则的箭头。`$\oplus$'\isc{$\oplus$}\is{$\oplus$} （附加关系\isc{关系!附加关系}\is{relation!\emph{append}}）是包括两个列表的关系。（\mex{1}）显示了包括两个元素的列表的可能分叉结构：
+%Schema~\ref{schema-bin-prel} states the properties a linguistic object of the type \type{head"=argument"=phrase} must have.
+%The arrow\is{\impl} in Schema~\ref{schema-bin-prel} stands for a logical implication\is{implication} and not for the arrow of rewrite rules
+%as we know it from phrase structure grammars. `$\oplus$'\is{$\oplus$}
+%(\emph{append}\is{relation!\emph{append}}) is a relation which combines two lists. (\mex{1}) shows 
+%possible splits of a list that contains two elements:
+\ea
+\begin{tabular}[t]{@{}l@{~}l@{}}
+\phonliste{ x, y } = & \phonliste{ x } $\oplus$ \phonliste{ y } or\\
+                     & \phonliste{} $\oplus$ \phonliste{ x, y } or\\
+                     & \phonliste{ x, y } $\oplus$ \phonliste{}\\
+\end{tabular}
+\z
+列表\phonliste{ x, y }可以进一步被划分为两个列表，每个列表包括一个元素，或者相反地被划分为空列表和\phonliste{ x, y }。
+%The list \phonliste{ x, y } can be subdivided into two lists each containing one element, or alternatively into the empty list
+%and \phonliste{ x, y }.
+
+模式~\ref{schema-bin-prel}可以这样来解读：如果一个对象属于类型\type{head"=argument"=phrase}，那么它必须具有蕴含右手边的属性。在具体的术语中，这意味着这些对象总是具有对应于\iboxt{1}的配价列表，他们具有一个中心语子结点，该子结点具有一个可以划分为两个子列表\ibox{1}和\sliste{ \ibox{2} }的配价列表，而且他们具有一个非中心语子结点，它的句法和语义属性（\synsemvc）与中心语子结点\iboxb{2}的\subcatlc 的最后一个元素是兼容的。（\mex{1}）提供了与（\ref{Bsp-Peter-schlaeft}）中的例子相对应的特征描写。
+%Schema~\ref{schema-bin-prel} can be read as follows: if an object is of the type \type{head"=argument"=phrase} then it must have the %properties
+%on the right"=hand side of the implication. In concrete terms, this means that these objects always have a valence list which corresponds to 
+%\iboxt{1}, that they have a head daughter with a valence list that can be divided into two sublists  \ibox{1} and \sliste{ \ibox{2} } and
+%also that they have a non"=head daughter whose syntactic and semantic properties (\synsemv) are compatible with the last element of the
+%\subcatl of the head daughter \iboxb{2}. (\mex{1}) provides the corresponding feature description for the example in (\ref{Bsp-Peter-schlaeft}). 
+\ea
+\onems[head-argument-phrase]{
+phon \phonliste{ Peter schläft }\\
+synsem$|$loc$|$cat$|$subcat \eliste\\
+head-dtr \onems{ phon \phonliste{ schläft }\\
+                 synsem$|$loc$|$cat$|$subcat \sliste{ \ibox{1} NP[\type{nom}] }
+               }\\
+non-head-dtrs \sliste{ \onems{ phon \phonliste{ Peter }\\
+                               \synsem \ibox{1}
+                             } }
+}
+\z
+% for the example on the next page
+\addlines
+NP[\type{nom}]是复杂特征描写的缩写。模式~\ref{schema-bin-prel}将中心语子结点的\subcatlc 划分为一个单一元素列表和其他部分。由于schläft（睡觉）在它的\subcatlc 中只有一个元素，剩余的是空列表。这个剩余部分也是父结点的\subcatvc。
+%NP[\type{nom}] is an abbreviation for a complex feature description. Schema~\ref{schema-bin-prel} divides the \subcatl of the head daughter %into
+%a single"=element list and what is left. Since \emph{schläft} `sleeps' only has one element in its \subcatl, what remains is the empty list.
+%This remainder is also the \subcatv of the mother.
+
+\subsection{语序线性化规则}
+%\subsection{Linearization rules}
+\label{Abschnitt-LP-Regeln-HPSG}
+
+支配模式并没有说明任何跟子结点顺序有关的问题\indexgpsgc。正如在GPSG中，语序规则被分开处理。语序规则可以借助子结点的属性，它们在模式中的功能（中心语\isc{中心语}\is{head}、论元\isc{论元}\is{argument}、附接语\isc{附接语}\is{adjunct} \ldots）或者两者都有。
+%Dominance schemata do not say anything\indexgpsg about the order of the daughters. As in GPSG, linearization rules are specified %separately.
+%Linearization rules can make reference to the properties of daughters, their function in a schema (head\is{head}, argument\is{argument},
+%adjunct\is{adjunct}, \ldots) or both.
+%% Does not fit the introductionary level here.
+%% \footnote{
+%%   Note that rules like (\ref{lp-ini-arg}) refer to aspects of dependency, a point that was made
+%%   explicit by \citet[\page 183]{Hudson80a}, who discussed the question of whether dependency or
+%%   constituency was primary and whether one could dispense with one of these concepts. See
+%%   Section~\ref{sec-dependency-vs-constituency} for further discussion.
+%% } 
+如果我们假定所有的中心语具有特征\initial\isfeat{initial} ，那么位于他们所带论元之前的中心语的\initialvc 为 `$+$' ，而位于他们所带论元之后的中心语的值为 `--'。（\mex{1}）中的线性顺序规则确保了诸如（\mex{2}b、d）的不合乎语法的顺序被规则排除了。\footnote{
+  名词短语会给（\mex{1}）带来问题：截至目前，限定词被看作是论元，并且包括在中心语名词的\subcatlc 中。限定词在名词的左边出现，而名词的所有其他论元在右边出现。这个问题可以通过重新界定语序线性化规则\citep[\page 164--165]{Mueller99a}来解决，或者通过为限定词引入一个特殊的配价属性来解决\citep[\S~9.4]{ps2}。有关使用这一特征的方法，请参阅\ref{Abschnitt-Spr}。
+}
+%If we assume a feature \initial\isfeat{initial} for all heads, then heads which precede their arguments would have the \initialv `$+$' and heads %following their
+%  arguments would have the value `--'. The linearization rules in (\mex{1}) ensure that ungrammatical orders such as (\mex{2}b,d) are
+%  ruled out.\footnote{
+%  Noun phrases pose a problem for (\mex{1}): determiners have been treated as argument until now and were included in the \subcatl of the
+%  head noun. Determiners occur to the left of noun, whereas all other arguments of the noun are to the right. This problem can be solved %either  by refining linearization rules \citep[\page
+ % 164--165]{Mueller99a} or by introducing a special valence feature for determiners
+%  \citep[Section~9.4]{ps2}. For an approach using such a
+%  feature, see Section~\ref{Abschnitt-Spr}.%  
+%}\LATER{Andrew McIntyre?: Problem goes away, if D is the head.}
+
+\eal
+\ex\label{lp-ini-arg} 
+Head[\initial$+$] $<$ Argument
+\ex 
+Argument $<$ Head[\initial --]
+\zl
+介词的\initial 值为`$+$' ，而且必须位于论元的前面。位于末尾的动词的值为 `$-$'，由此他们必须位于他们所带的论元后面。
+%Prepositions have an \initialv `$+$' and therefore have to precede arguments. Verbs in final position bear the value `$-$' and have to follow
+%their arguments.
+\eal
+\ex[]{
+\gll {}[in [den Schrank]]\\
+     \spacebr{}\textsc{prep} \spacebr{}\textsc{det} 壁橱\\
+%     \spacebr{}in \spacebr{}the cupboard\\
+}
+\ex[*]{
+\gll {}[[den Schrank] in]\\
+     \hspaceThis{[[}\textsc{det} 壁橱 \textsc{prep}\\
+%     \hspaceThis{[[}the cupboard in\\
+}
+\ex[]{
+\gll {}dass [er [ihn umfüllt]]\\
+     {}\textsc{conj} \spacebr{}他 \spacebr{}它 倒\\
+%     {}that \spacebr{}he \spacebr{}it decants\\
+}
+\ex[*]{
+\gll {}dass [er [umfüllt ihn]]\\
+     {}\textsc{conj} \spacebr{}他 \spacebr{}倒 它\\
+%     {}that \spacebr{}he \spacebr{}decants it\\
+}
+\zl
+
+\subsection{中心语属性的投射}
+%\subsection{Projection of head properties}
+\label{Abschnitt-Kopfeigenschaften}
+
+正如在\ref{Abschnitt-Kopf}所讨论的，中心语的某些属性对于整个短语的分布是非常重要的。比如说，动词形式是对于动词的投射分布重要的那些特征。某些动词要求带有特殊形式的动词性论元：
+%As was explained in Section~\ref{Abschnitt-Kopf} certain properties of heads are important for the distribution of
+%the whole phrase. For instance, the verb form belongs to the features that are important for the
+%distribution of verbal projections. Certain verbs require a verbal argument with a particular form:
+\eal
+\label{bsp-projektion-v-merkmale}
+\ex[]{
+\gll {}[Dem Mann helfen] will er nicht.\\
+ {}\spacebr{}\textsc{det} 男人 帮助 想 他 不\\
+\glt `他不想帮助这个男人。'
+% {}\spacebr{}the man help wants he not\\
+%\glt `He doesn't want to help the man.'
+}
+\ex[]{
+\gll {}[Dem Mann geholfen] hat er nicht.\\
+{}\spacebr{}\textsc{det} 男人 帮助 \textsc{aux} 他 不\\
+\glt `他没帮助这个男人。'
+%{}\spacebr{}the man helped has he not\\
+%\glt `He hasn't helped the man.'
+}
+\ex[*]{
+\gll {}[Dem Mann geholfen] will er nicht.\\
+{}\spacebr{}\textsc{det} 男人 帮助 想 他 不\\
+%{}\spacebr{}the man helped wants he not\\
+}
+\ex[*]{
+\gll{}[Dem Mann helfen] hat er nicht.\\
+{}\spacebr{}\textsc{det} 男人 帮助 \textsc{aux} 他 不\\
+%{}\spacebr{}the man help has he not\\
+}
+\zl
+wollen（想）总是带一个不带zu的不定式，而haben则要求分词形式的动词。glauben（认为）可以与定式小句共现，但是不能跟不带zu的不定式共现：
+%\emph{wollen} `to want' always requires an infinitive without \emph{zu} `to', while \emph{haben} `have' on the other hand requires a verb in %participle form.
+%\emph{glauben} `believe' can occur with a finite clause, but not with an infinitive without \emph{zu}:
+\eal
+\ex[]{
+\gll Ich glaube, Peter kommt morgen.\\
+	 我 认为 Peter 来 明天\\
+\glt `我认为Peter明天会来。'
+%	 I believe Peter comes tomorrow\\
+%\glt `I think Peter is coming tomorrow.'
+}
+\ex[*]{
+\gll Ich glaube, Peter morgen kommen.\\
+	 我 认为 Peter 明天 来\\
+%	 I believe Peter tomorrow come\\
+}
+\ex[*]{
+\gll Ich glaube, morgen kommen.\\
+	我 认为 明天 来\\
+%	I believe tomorrow come\\
+}
+\zl
+
+\noindent
+这说明动词的投射不能只包括词类的信息，也要包括动词形式的信息。图\vref{fig-projektion-head-feat}在定式动词gibt（给）的基础上说明了这一点。
+%This shows that projections of verbs must not only contain information about the part of speech but also information
+%about the verb form. Figure~\vref{fig-projektion-head-feat} shows
+%this on the basis of the finite verb \emph{gibt} `gives'.
+\begin{figure}
+\settowidth{\offset}{V[\type{fi}}
+\settowidth{\offsetup}{V[\type{fin}}
+\centerline{
+\begin{forest}
+sm edges, for tree={l+=\baselineskip}
+[V{[\type{fin}, \subcat \eliste]}, name=fin1
+	[\ibox{1} NP{[\type{nom}]}
+		[er;他]]
+	[V{[\type{fin}, \subcat \sliste{ \ibox{1} }]}, name=fin2
+		[\ibox{2} NP{[\textit{dat}]}
+			[dem Mann;\textsc{det} 男人,roof]]
+		[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2} }]}, name=fin3
+			[\ibox{3} NP{[\textit{acc}]}
+				[das Buch;\textsc{det} 书,roof]]
+			[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2}, \ibox{3} }]}, name=fin4
+				[gibt;给]]]]]	
+tikz={\draw[<->] ($(fin1.south west)+(\offsetup,0)$) to ($(fin2.north west)+(\offset,0)$);
+      \draw[<->] ($(fin2.south west)+(\offsetup,0)$) to ($(fin3.north west)+(\offset,0)$);
+      \draw[<->] ($(fin3.south west)+(\offsetup,0)$) to ($(fin4.north west)+(\offset,0)$);}
+\end{forest}
+}
+\caption{\label{fig-projektion-head-feat}动词的中心语特征的投射}
+%\caption{\label{fig-projektion-head-feat}Projection of the head features of the verb}
+\end{figure}%
+
+GPSG\indexgpsgc 的中心语特征约规\isc{中心语特征约规}\is{Head Feature Convention (HFC)}确保了子结点的中心语特征与那些中心语子结点上的特征是一致的。HPSG语法有一个类似的规则。与GPSG不同的是，特征结构中的一组特征里明确地包含了中心语特征。他们被列于路径\textsc{synsem$|$loc$|$cat$|$head}下。（\mex{1}）说明了词汇项gibt（给）的信息：
+%GPSG\indexgpsg has the Head Feature Convention\is{Head Feature Convention (HFC)} that ensures that head features on the mother node %are identical to those on the node of the head daughter.
+%In HPSG, there is a similar principle. Unlike GPSG, head features are explicitly contained as a group of features in the feature structures.
+%They are listed under the path \textsc{synsem$|$loc$|$cat$|$head}. (\mex{1}) shows the lexical item
+%for \emph{gibt} `gives':
+\eas
+\emph{gibt}（给）：\\
+%\emph{gibt} `gives':\\
+\onems[word]{ 
+     phon    \phonliste{ gibt }\\
+     synsem$|$loc$|$cat \ms{ head   & \ms[verb]{ vform & fin} \\
+                             subcat & \sliste{ NP[\type{nom}], NP[\type{dat}], NP[\type{acc}] }
+                           }
+}
+\zs
+\addlines
+中心语特征原则（Head Feature Principle）具有如下的形式：
+%The \emph{Head Feature Principle} takes the following form:
+\begin{principle-break}[中心语特征原则]\isc{原则!中心语特征原则}\is{principle!Head Feature}
+%\begin{principle-break}[\emph{Head~Feature~Principle}]\is{principle!Head Feature}
+\label{prinzip-hfp}
+%In a structure with a head, the head features of the mother are identical to (share the same structure as) the head features
+%of the head daughter.
+任何中心语短语的\textsc{head}值与其中心语子结点的\textsc{head}值是结构共享的。
+%The \textsc{head} value of any headed phrase is structure-shared with the \textsc{head} value of the head daughter.
+\end{principle-break}
+图\ref{fig-projektion-head-feat-ausf}是具有结构共享的图\ref{fig-projektion-head-feat}的变体。
+%图\vref{fig-projektion-head-feat-ausf}是具有结构共享的图\ref{fig-projektion-head-feat}的变体。
+%Figure~\vref{fig-projektion-head-feat-ausf} is a variant of Figure~\ref{fig-projektion-head-feat} with the structure sharing made
+%explicit.
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[\ms{head & \ibox{1}\\
+     subcat & \sliste{ }
+     }
+	[{\ibox{2} NP{[\type{nom}]}}
+		[er;他]]
+%		[er;he]]
+	[\ms{
+             head & \ibox{1}\\
+             subcat & \sliste{ \ibox{2} }
+             }
+		[\ibox{3} NP{[\textit{dat}]}
+			[dem Mann;\textsc{det} 男人, roof]]
+%			[dem Mann;the man, roof]]
+		[\ms{
+                                                                                   head & \ibox{1}\\
+                                                                                   subcat & \sliste{ \ibox{2}, \ibox{3} }
+                                                                                    }
+			[\ibox{4} NP{[\textit{acc}]}
+				[das Buch;\textsc{det} 书, roof]]
+%				[das Buch;the book, roof]]
+			[\ms{
+                                                                                   head & \ibox{1} \ms[verb]{
+                                                                                                  vform & fin
+                                                                                                  }\\
+                                                                                   subcat & \sliste{ \ibox{2}, \ibox{3}, \ibox{4} }
+                                                                                    }
+				[gibt;给]]]]]	
+%				[gibt;gives]]]]]
+\end{forest}
+\caption{\label{fig-projektion-head-feat-ausf}具有结构共享的动词的中心语特征投射}
+%\caption{\label{fig-projektion-head-feat-ausf}Projection of head features of a verb with structure sharing}
+\end{figure}%
+
+%\noindent
+下一节将说明如何对该原则进行形式化，以及它是如何整合进HPSG的理论框架之中的。
+%The following section will deal with how this principle is formalized as well as how it can be integrated into the architecture of HPSG.
+
+\subsection{承继层级体系与概括}
+%\subsection{Inheritance hierarchies and generalizations}
+\label{Abschnitt-Vererbung-HPSG}
+
+截至目前，我们已经看到了支配模式的一个例子，在接下来的章节中会有更多的内容，比如说中心语"=附接语结构的模式，以及长距离依存问题的解决。中心语特征原则是一个普遍性的原则，所有模式所允准的结构必须满足其要求。正如上面所提及的，所有的结构都必须有一个中心语。在形式上，这可以通过将句法结构分成带有中心语和不带中心语两类来进行区分，并且将类型\type{headed"=phrase}赋予到那些具有中心语的结构上。类型\type{head"=argument"=phrase}（第\pageref{schema-bin-prel}页上的模式\ref{schema-bin-prel}的描写类型）是\type{headed"=phrase}的一个子类型。某个类型x的对象总是具有x的上位类型对象的所有属性。回想\ref{sec-formalismus-typen}所举的例子：类型\textit{female person}的宾语具有类型\textit{person}的所有属性。进而，类型\type{female person}的宾语具有额外的、不跟\type{person}的其他子类型共享的更为具体的属性。
+%Up to now, we have seen one example of a dominance schema and more will follow in the coming sections, \eg schemata for head"=adjunct %structures as well
+%as for the binding off of long"=distance dependencies. The Head Feature Principle is a general
+%principle which must be met by all structures licensed by these schemata. As mentioned above, it must be met by all structures with a head. %Formally, this can be captured by categorizing syntactic structures into those with and those without
+%heads and assigning the type \type{headed"=phrase} to those with a head.
+%The type \type{head"=argument"=phrase} -- the type which the description in
+%Schema~\ref{schema-bin-prel} on page~\pageref{schema-bin-prel} has -- is a subtype
+%of \type{headed"=phrase}. Objects of a certain type x always have all properties that objects
+%have that are supertypes of x. Recall the example from Section~\ref{sec-formalismus-typen}:
+%an object of the type \textit{female person} has all the properties of the type
+%\textit{person}. Furthermore, objects of type \type{female person} have additional, more specific properties not shared by other subtypes of %\type{person}.
+
+如果我们在上位类型上进行约束，那么这会自动影响到它的所有下位类型。由此，中心语特征原则就按照下面的内容来表示：
+%If one formulates a restriction on a supertype, this automatically affects all of its subtypes. The
+%Head Feature Principle hence can be formalized as follows:
+\ea
+\type{headed"=phrase}\istype{headed"=phrase} \impl
+\ms{ 
+synsem$|$loc$|$cat$|$head \ibox{1}\\
+head-dtr$|$synsem$|$loc$|$cat$|$head \ibox{1}\\
+} 
+\z
+箭头\isc{\impl}\is{\impl}对应于上面提到的逻辑蕴涵\isc{蕴涵}\is{implication}。所以说，（\mex{0}）可以这样来解读：
+%The arrow\is{\impl} corresponds to a logical implication\is{implication}, as mentioned above. Therefore, (\mex{0}) can be read as follows:
+如果一个结构属于类型\type{headed"=phrase}，那么它必须满足这样的条件，\textsc{synsem$|$""loc$|$""cat$|$""head}的值与\textsc{head-dtr$|$""synsem$|$""loc$|$cat$|$head}的值是相同的。
+%if a structure is of type \type{headed"=phrase}, then it must hold that the value of
+%\textsc{synsem$|$""loc$|$""cat$|$""head} is identical to the value of \textsc{head-dtr$|$""synsem$|$""loc$|$cat$|$head}.
+
+在\type{sign}下的类型层级的表示如图\vref{fig-type-sign}所示。  
+%An extract from the type hierarchy under \type{sign} is given in Figure~\vref{fig-type-sign}.
+\begin{figure}
+\centering
+\begin{forest}
+typehierarchy
+[\type{sign}
+  [\type{word}]
+  [\type{phrase} 
+    [\type{non-headed-phrase}]
+    [\type{headed-phrase} [\type{head-argument-phrase}]]]]
+\end{forest}
+\caption{\label{fig-type-sign}\type{sign}的类型层级：\type{headed"=phrase}的所有子类型都承袭了约束条件}
+%\caption{\label{fig-type-sign}Type hierarchy for \type{sign}: all subtypes of \type{headed"=phrase} inherit constraints}
+\end{figure}%
+
+\noindent
+\type{word}和\type{phrase}是语言符号的子类型。短语可以划分为带有中心语的短语（\type{headed"=phrase}）和不带中心语的短语（\type{non"=headed"=phrase}）。还有短语的子类型\type{non"=headed"=phrase}和\type{headed"=phrase}。我们已经讨论了\type{head"=argument"=phrase}，还有\type{headed"=phrase}的其他子类型将在后面的章节中详细讨论。与\type{word}和\type{phrase}相似的是，类型\type{root}和\type{stem}也在词汇和形态\isc{形态}\is{morphology}的结构中起到了重要的作用。限于本书的篇幅，我们不可能在这里深入讨论这些类型，但是可以参考第\ref{Abschnitt-UG-mit-Hierarchie}章的内容。
+%\type{word} and \type{phrase} are subclasses of linguistic signs. Phrases can be divided into phrases with heads (\type{headed"=phrase})
+%and those without (\type{non"=headed"=phrase}). There are also subtypes for phrases of type \type{non"=headed"=phrase} and 
+%\type{headed"=phrase}.
+%We have already discussed \type{head"=argument"=phrase}, and other subtypes of \type{headed"=phrase} will be discussed in the later %sections.
+%As well as \type{word} and \type{phrase}, there are the types \type{root} and \type{stem}, which play an important role for the structure of the
+%lexicon and the morphological\is{morphology} component. Due to space considerations, it is not possible to further discuss these types here,
+%but see Chapter~\ref{Abschnitt-UG-mit-Hierarchie}.
+
+（\mex{1}）中的描写显示了第\pageref{schema-bin-prel}页的中心语论元模式，还有从\type{headed"=phrase}承继而来的类型\type{head"=argument"=phrase}的限制。
+%The description in (\mex{1}) shows the Head"=Argument Schema from page~\pageref{schema-bin-prel} together with the restrictions that the %type
+%\type{head"=argument"=phrase} inherits from \type{headed"=phrase}.
+\eas
+\label{head-arg-schema-hfp}
+中心语-论元模式 $+$ 中心语特征原则：\\
+%Head-Argument Schema + Head Feature Principle:\\
+\onems[head-argument-phrase~]{
+synsem$|$loc$|$cat  \ms{ head   & \ibox{1} \\
+                          subcat & \ibox{2}
+                        }\\
+head-dtr$|$synsem$|$loc$|$cat \ms{ head   & \ibox{1} \\
+                                   subcat & \ibox{2} $\oplus$ \sliste{ \ibox{3} }
+                                 } \\
+non-head-dtrs   \sliste{ [ synsem \ibox{3} ] }
+}
+\zs
+（\mex{1}）给出了由模式\ref{schema-bin-prel}允准的结构的描写。与配价信息一样的是，中心语信息在（\mex{1}）中得到了确认，而且中心语特征原则是如何确保特征的投射也是比较明显的：整个结构\iboxb{1}的中心语的值对应于动词gibt（给）的中心语的值。
+%(\mex{1}) gives a description of a structure licensed by Schema~\ref{schema-bin-prel}.
+%As well as valence information, the head information is specified in (\mex{1}) and it is also apparent how the Head Feature Principle
+%ensures the projection of features: the head value of the entire structure \iboxb{1} corresponds to
+%the head value of the verb \emph{gibt} `gives'.
+\ea
+\onems[head-argument-phrase~]{
+      phon  \phonliste{ das Buch gibt }\\[1mm]
+      synsem$|$loc$|$cat \ms{ head & \ibox{1}\\
+                              subcat & \ibox{2} \sliste{ NP[\type{nom}], NP[\type{dat}] }\\[1pt]
+                            }\\
+      head-dtr \onems[word]{ phon \phonliste{ gibt }\\
+                             synsem$|$loc$|$cat \ms{ head & \ibox{1} \ms[verb]{vform & fin
+                                                                            }\\
+                                                     subcat & \ibox{2}  $\oplus$ \sliste{ \ibox{3} }
+                                                   }
+                       } \\
+      non-head-dtrs \sliste{ \onems{ 
+                                        phon \phonliste{ das Buch }\\
+                                        synsem \ibox{3} \onems{ loc$|$cat \ms{ head  & \ms[noun]{ cas & acc
+                                                                                                } \\
+                                                                               subcat &  \eliste
+                                                                             }
+                                                              }\\
+                                        head-dtr \ldots\\
+                                        non-head-dtrs \ldots
+                                     }
+                       }
+}
+\z
+
+\noindent
+对于整个句子er das Buch dem Mann gibt（他把这本书给这个男人）来说，我们得到了由例（\mex{1}）描述的结构（在图\ref{fig-projektion-head-feat-ausf}中已经显示过了）：
+%For the entire sentence \emph{er das Buch dem Mann gibt} `he the book to the man gives', we arrive at a structure (already shown in Figure~%\ref{fig-projektion-head-feat-ausf}) 
+%described by (\mex{1}):
+\ea
+\label{HPSG-Rootnode}
+\ms{
+synsem$|$loc$|$cat \ms{ head & \ms[verb]{vform & fin
+                                       }\\
+                        subcat & \eliste\\
+                      }
+}
+\z
+该描写对应于第\pageref{bsp-grammatik-psg}页的短语结构语法中的句子符号\isc{句子符号}\is{sentence symbol}S，但是（\mex{0}）还额外地包括了动词形式的信息。
+%This description corresponds to the sentence symbol\is{sentence symbol} S in the phrase structure grammar on page~\pageref{bsp-%grammatik-psg},
+%however (\mex{0}) additionally contains information about the form of the verb.
+
+我们将承继模式作为例子来说明我们是如何对语言对象进行概括的，但是，我们也想在理论的其他方面来捕捉这些信息：如范畴语法\indexcxgc、HPSG的词库\isc{词库}\is{lexicon}包括大量的信息。词汇项（根与词）可以被分成不同的类别，进而被赋予不同的类型。按照这一方式，我们可以描写所有的动词、不及物动词和及物动词具有的共同信息。请参阅第\pageref{Abbildung-Hierarchie}页的图\ref{Abbildung-Hierarchie}。
+%Using dominance schemata as an example, we have shown how generalizations about linguistic objects
+%can be captured, however, we also want to be able to capture generalizations in other areas of the
+%theory: like Categorial Grammar\indexcxg, the HPSG lexicon\is{lexicon} contains a very large amount
+%of information. Lexical entries (roots and words) can also be divided into classes, which can then
+%be assigned types. In this way, it is possible to capture what all verbs, intransitive verbs and
+%transitive verbs, have in common. See Figure~\ref{Abbildung-Hierarchie} on
+%page~\pageref{Abbildung-Hierarchie}.
+
+这里我们介绍了HPSG理论的一些基本概念，在下面的章节中，我们将分析词的语义是如何表示的，以及短语的意义是如何通过组合性原则来表示的。
+%Now that some fundamental concepts of HPSG have been introduced, the following section will show how the semantic contribution of words %is represented and
+%how the meaning of a phrase can be determined compositionally.
+
+\subsection{语义}
+%\subsection{Semantics}
+\label{Abschnitt-HPSG-Semantik}
+
+GB、LFG和TAG这些理论和HPSG与CxG这些理论的一个重要差别在于语言对象的语义内容是按照特征结构来模拟的，这跟所有其他的属性是一样的。正如前面提到的，语义信息在路径\textsc{synsem|""loc|""cont}下。（\mex{1}）给出了Buch（书）的\contvc 的例子。这一表示是基于最简递归语义\indexmrsc （MRS）的：\footnote{
+ \citet{ps2}和\citet{GSag2000a-u}利用了情景语义学\isc{情景语义学}\is{Situation Semantics}\citep*{BP83a,CMP90,Devlin92}\nocite{BP87a}。另一种已经在HPSG理论中应用的方法是词汇资源语法\isc{词汇资源语法}\is{Lexical Resource Semantics (LRS)}\citep{RS2004a-u}。有关HPSG理论中早期的未充分分析请参阅\citew{Nerbonne93a}。
+}
+%An important difference between theories such as GB, LFG and TAG, on the one hand, and HPSG and CxG on the other is that the semantic %content of a linguistic
+%object is modeled in a feature structure just like all its other properties. As previously mentioned, semantic information is found under the path
+%\textsc{synsem|""loc|""cont}. (\mex{1}) gives an example of the \contv for \emph{Buch} `book'. The
+%representation is based on Minimal Recursion Semantics\indexmrs (MRS):\footnote{
+%   \citet{ps2} and \citet{GSag2000a-u} make use of Situation Semantics\is{Situation Semantics}  %\citep*{BP83a,CMP90,Devlin92}\nocite{BP87a}.
+%   An alternative approach which has already been used in HPSG is Lexical Resource Semantics\is{Lexical Resource Semantics (LRS)} %\citep{RS2004a-u}.
+%   For an early underspecification analysis in HPSG, see \citew{Nerbonne93a}.
+%}
+\ea
+\label{le-buch}
+\ms[mrs]
+           { ind & \ibox{1} \ms{ per & 3 \\
+                                 num & sg \\
+                                 gen & neu
+                               } \\
+             rels & \sliste{ \ms[buch]{ inst & \ibox{1} } }
+           }
+\z
+\textsc{ind}表示标引，\textsc{rels}是关系的列表。诸如人称\isfeat{per}\isc{人称}、\is{Person}数\isfeat{num}和性\isfeat{gen}的特征是名词性标引的一部分。\isc{格}\is{case}\isc{性}\is{gender}\isc{数}\is{number}这些指标在决定指称或共指关系中是非常重要的。比如说，（\mex{1}）中的sie（她）指称Frau（女人），但是不指Buch（书）。另一方面，es （它）不能指称Frau（女人）。
+%\textsc{ind} stands for index and \textsc{rels} is a list of relations. Features such as person\isfeat{per},\is{Person} number\isfeat{num} and
+%gender\isfeat{gen} are part of a nominal index.\is{case}\is{gender}\is{number} These are important
+%in determining reference or coreference.
+%For example, \emph{sie} `she' in (\mex{1}) can refer to \emph{Frau} `woman' but not to \emph{Buch} `book'. On the other hand, \emph{es} 
+%`it' cannot refer to \emph{Frau} `woman'.
+\ea
+\gll Die Frau$_i$ kauft ein Buch$_j$. Sie$_i$ liest es$_j$.\\
+	  \textsc{det} 女人 买 \textsc{art} 书 她 读 它\\
+\glt `这个女人买了一本书。她在读它。'
+%	 the woman buys a book she reads it\\
+%\glt `The woman buys a book. She reads it.'
+\z
+通常来说，代词必须在人称、数和性上与其所指代的成分相一致。相应的标引需要保持一致。在HPSG中，这点通过结构共享来实现。也可以说是共指关系（\textit{coindexation}）\isc{共指}\is{coindexation}。（\mex{1}）给出了反身代词的共指关系的一些例子\isc{代词!反身代词}\is{pronoun!reflexive}：
+%In general, pronouns have to agree in person, number and gender with the element they refer to. Indices are then identified accordingly.
+%In HPSG, this is done by means of structure sharing. It is also common to speak of \textit{coindexation}\is{coindexation}.
+%(\mex{1}) provides some examples of coindexation of reflexive pronouns\is{pronoun!reflexive}:
+\eal
+\ex
+\gll Ich$_i$ sehe mich$_i$.\\
+     我 看见 我自己\\
+%     I see myself\\
+\ex 
+\gll Du$_i$ siehst dich$_i$.\\
+     你 看见 你自己\\
+%     you see yourself\\
+\ex 
+\gll Er$_i$ sieht sich$_i$.\\
+     他 看见 他自己\\
+%     he sees himself\\
+\ex 
+\gll Wir$_i$ sehen uns$_i$.\\
+     我们      看见   我们自己\\
+%     we      see   ourselves\\
+\ex 
+\gll Ihr$_i$ seht euch$_i$.\\
+     你们 看见 你们自己\\
+%     you see yourselves\\
+\ex 
+\gll Sie$_i$ sehen sich$_i$.\\
+     他们 看见 他们自己\\
+%     they see themselves\\
+\zl
+共指的哪个部分是可能的还是必须的这个问题是由约束理论决定的\isc{约束理论}\is{Binding Theory}。\citet{PS92,ps2}指出，HPSG中的约束理论在实现约束关系时并没有像GB理论中关于树的构型问题那样引起许多的问题。但是，HPSG理论中的约束理论还是有一些待解决的问题的\citep[\S~20.4]{Mueller99a}。
+%The question of which instances of coindexation are possible and which are necessary is determined by Binding Theory\is{Binding Theory}.
+%\citet{PS92,ps2} have shown that Binding Theory in HPSG does not have many of the problems that arise when implementing binding in GB
+%with reference to tree configurations. There are, however, a number of open questions for Binding Theory in HPSG \citep[Section~20.4]
+%{Mueller99a}.
+
+（\mex{1}）给出了动词geben（给）的\contvc 的信息：
+%(\mex{1}) shows the \contv for the verb \emph{geben} `give':
+\ea
+\label{mrs-geben}
+\ms[mrs]
+           { ind & \ibox{1} event \\
+             rels & \sliste{ \ms[geben]{ event & \ibox{1} \\
+                                        agent & index \\
+                                        goal  & index \\
+                                        theme & index } }
+           } 
+\z
+一般认为，带有\type{event}类型的事件变量\isc{事件}\is{event}的动词是在\textsc{ind}下表示的，这跟名词对象的标引是一样的。 
+%It is assumed that verbs have an event variable\is{event} of the type \type{event}, which is represented under \textsc{ind} just as with indices %for nominal objects.
+\isc{联接|(}\is{linking|(}
+截至目前，我们没有将配价列表\isc{价}\is{valence}中的元素指派给语义表示中的论元角色\isc{语义角色}\is{semantic role}。这一联系叫做联接（linking）。（\mex{1}）说明了HPSG理论中，联接是如何运作的。名词短语论元的指称标引与中心语决定的语义角色关系中的一种情况是结构共享的。\isc{论元}\is{argument}
+%Until now, we did not assign elements in the valence list\is{valence} to argument roles\is{semantic role} in the semantic representation. This %connection is referred to
+%as \emph{linking}. (\mex{1}) shows how linking works in HPSG. The referential indices of the argument
+%noun phrases are structure"=shared with one of the semantic roles of the relation contributed by the
+%head.\is{argument}
+\eas
+\label{le-geben}
+\emph{gibt}（给）：\\
+%\emph{gibt} `gives':\\
+\ms
+{ cat & \ms{ head & \ms[verb]
+                     { vform & fin } \\
+             subcat & \sliste{ NP[\type{nom}]\ind{1}, NP[\type{dat}]\ind{2}, NP[\type{acc}]\ind{3}   } \\
+           } \\
+  cont &  \ms[mrs]
+           { ind & \ibox{4} event \\
+             rels & \sliste{ \ms[geben]{ event & \ibox{4} \\
+                                        agent & \ibox{1} \\
+                                        goal  & \ibox{2} \\
+                                        theme & \ibox{3}  } }
+           }
+}
+\zs
+因为我们使用诸如\textsc{agent}（施事）和\textsc{patient}（受事）这样的术语来表示论元角色，我们就可以说明配价类型的概况和论元角色的实现。比如说，我们将动词分成带有一个施事的动词、带有一个施事和主题的动词，以及带有施事和受事的动词等。这些不同的配价或联接模式可以在类型层级体系\isc{类型层级体系}\is{type hierarchy}中表示，而且这些类别可以被指派到具体的词汇项上，即我们可以让他们继承\isc{承继}\is{inheritance}各自类型的约束条件。带有施事、主题和目标的动词类型的约束条件可以按照（\mex{1}）中的形式来表示：
+%Since we use general terms such as \textsc{agent} and \textsc{patient} for argument roles, it is possible to state generalizations about %valence classes and
+%the realization of argument roles. For example, one can divide verbs into verbs taking an agent, verbs with an agent and theme, verbs with %agent and patient etc.
+%These various valence/linking patterns can be represented in type hierarchies\is{type hierarchy} and
+%these classes can be assigned to the specific lexical entries, that is, one can have them inherit
+%constraints from the respective types\is{inheritance}. A type constraint for verbs with agent, theme
+%and goal takes the form of (\mex{1}):
+\ea
+\label{ex-agens-theme-goal-linking}
+\onems
+{ cat$|$subcat \sliste{ []\ind{1}, []\ind{2}, []\ind{3}  } \\[1mm]
+  cont  \ms[mrs]
+           { ind & \ibox{4} event \\
+             rels & \sliste{ \ms[agent-goal-theme-rel~~]{ event & \ibox{4} \\
+                                        agent & \ibox{1} \\
+                                        goal  & \ibox{2} \\
+                                        theme & \ibox{3} } }
+           }
+}
+\z
+[]\ind{1}表示带有标引\iboxt{1}的未被指定的句法范畴的对象。具有\relation{geben}关系的类型是\type{agent-goal-theme-rel}的一个子类型。在（\mex{0}）中，是词geben（给）的词汇项或者说是词根\stem{geb}具有联接的范式。更多有关HPSG理论中的联接理论，请参阅\citew{Davis96a-u}、\citew{Wechsler91a-u}和\citew{DK2000b-u}。
+%[]\ind{1} stands for an object of unspecified syntactic category with the index
+%\iboxt{1}. 
+%The type for the relation \relation{geben} is a subtype of \type{agent-goal-theme-rel}.
+%The lexical entry for the word \emph{geben} `give' or rather the root \stem{geb} has the linking pattern in (\mex{0}).
+%
+%For more on theories of linking in HPSG, see \citew{Davis96a-u}, \citew{Wechsler91a-u} und \citew{DK2000b-u}.
+\isc{联接|)}\is{linking|)}
+
+目前，我们只看到了词汇项的意义是如何表示的。语义原则\isc{原则!语义原则}\is{principle!Semantics}决定了短语语义的计算：整个表达式的标引对英语中心语子结点的标引，而且整个符号的\relsvc 对应于子结点的\relsvc 的加合，以及由支配模式引入的任何关系。最后一点很重要，这是因为假设模式可以对语义有所贡献可以说明某些情况下一个短语的整体意义不仅仅是其组成成分的简单加合。\isc{组构关系}\is{compositionality}与之相关的例子经常在构式语法中进行讨论\indexcxgc。HPSG中的语义组合理论这样组织就使得特定模式的语义可以整合进一段话语的整体意义之中。例子请参考\ref{Abschnitt-Phrasale-Konstruktionen}。
+%Up to now, we have only seen how the meaning of lexical entries can be represented. The Semantics Principle\is{principle!Semantics}
+%determines the computation of the semantic contribution of phrases: the index of the entire expression corresponds to the index of
+%the head daughter, and the \relsv of the entire sign corresponds to the concatenation of the \relsvs of the daughters plus any relations
+%introduced by the dominance schema. The last point is important because the assumption that schemata can add something to meaning can %capture
+%the fact that there are some cases where the entire meaning of a phrase is more than simply the sum of its parts.\is{compositionality}
+%Pertinent examples are often discussed as part of Construction Grammar\indexcxg. Semantic
+%composition in HPSG is organized such that meaning components that are due to certain patterns can be integrated into the complete %meaning of an utterance. For examples, see Section~\ref{Abschnitt-Phrasale-Konstruktionen}.
+
+动词及其论元的语义贡献之间的联系是在词汇项中建立起来的。这样，我们可以确保动词的论元角色被指派到句中正确的论元上面。但是，这并不是语义所担负的唯一责任。它必须能够生成不同的意义解读，这与量词辖域的歧义（请参阅第\pageref{Beispiel-Every-man-loves-a-woman}页），以及在其他谓词下面谓词的语义嵌套的处理是有关系的。所有这些要求都在MRS中得到满足。受限于篇幅，我们不展开说明。读者可以参考\citet*{CFPS2005a}的文章，以及讨论部分中\ref{Abschnitt-leere-Elemente-Semantik}的内容。
+%The connection between the semantic contribution of the verb and its arguments is established in the lexical entry.
+%As such, we ensure that the argument roles of the verb are assigned to the correct argument in the sentence. This is, however, not the only
+%thing that the semantics is responsible for. It has to be able to generate the various readings associated with quantifier s\textsc{cop}e ambiguities 
+%(see page~\pageref{Beispiel-Every-man-loves-a-woman}) as well as deal with semantic embedding of predicates under other predicates. All %these
+%requirements are fulfilled by MRS. Due to space considerations, we cannot go into detail here. The reader is referred to the article by
+%\citet*{CFPS2005a} and to Section~\ref{Abschnitt-leere-Elemente-Semantik} in the discussion chapter.
+\isc{语义学}\is{semantics}
+
+\subsection{附接语}
+%\subsection{Adjuncts}
+\label{Abschnitt-HPSG-Adjunkte}\label{sec-adjuncts-hpsg}
+
+与中心语通过\subcatc 来选择论元类似的是\isc{附接语|(}\is{adjunct|(}，附接语也可以通过使用特征（\textsc{modified}）来选择他们的中心语\isfeat{mod}。修饰名词和关系小句的形容词和介词短语选择一个几乎完整的名词性投射，即一个名词只需要与限定词相组合以构成一个完整的NP。（\mex{1}）显示了每个\type{synsem}对象的描写。与\xbarc 理论中（请参阅\ref{sec-xbar}）类似的符号\nbarc 表示这个特征描写的缩写形式。
+%Analogous\is{adjunct|(} to the selection of arguments by heads via \subcat, adjuncts can also select their heads using a feature 
+%(\textsc{modified})\isfeat{mod}.
+%Adjectives, prepositional phrases that modify nouns, and relative clauses select an almost complete nominal projection, that is, a noun that %only still needs to
+%be combined with a determiner to yield a complete NP. (\mex{1}) shows a description of the respective \type{synsem}
+%object. The symbol \nbar, which is familiar from \xbart (see Section~\ref{sec-xbar}), is used as abbreviation
+%for this feature description.
+
+\ea
+AVM被简写为\nbarc：\\*
+%AVM that is abbreviated as \nbar:\\*
+\ms{
+  cat \ms{ head   & noun\\
+           subcat & \sliste{ Det }\\
+  }
+}
+\z
+（\mex{1}）显示了interessantes（有趣的）词汇项的部分信息：
+%(\mex{1}) shows part of the lexical item for \emph{interessantes} `interesting':
+\eas\isc{形容词}\is{adjective}
+\label{le-interessantes}
+interessantes（有趣的）\catvc：\\
+%\catv for \emph{interessantes} `interesting':\\
+\ms{ head & \ms[adj]{ %prd & $-$ \\
+                        mod &  \nbar~~
+                      } \\
+              subcat & \sliste{}
+}
+\zs
+interessantes（有趣的）是一个形容词，它不带任何论元成分，由此它有一个空的\subcatlc。诸如treu （忠诚的）这样的形容词在他们的\subcatlc 中会有一个与格NP。
+%\emph{interessantes} is an adjective that does not take any arguments and therefore has an empty \subcatl. Adjectives such as \emph{treu} %`loyal' would
+%have a dative NP in their \subcatl.
+\ea
+\gll ein dem König treues Mädchen\\
+	\textsc{art} \textsc{det}.\dat{} 国王 忠诚的 女孩\\
+\glt `对国王忠诚的女孩儿'
+%	a the.\dat{} king loyal girl\\
+%\glt `a girl loyal to the king'
+\z
+在（\mex{1}）中可以看到\catvc：
+%The \catv is given in (\mex{1}):
+\ea
+\label{le-treue}
+treues（忠诚的）的\cat 值：\\
+%\catv for \emph{treues} `loyal':\\
+\ms{ head & \ms[adj]{ %prd & $-$ \\
+                        mod &  \nbar~~
+                      } \\
+              subcat & \sliste{ NP[\type{dat}] }
+}
+\z
+dem König treues （对国王的忠诚）构成了一个形容词短语，它修饰Mädchen（女孩儿）这个词。
+%\emph{dem König treues} `loyal to the king' forms an adjective phrase, which modifies \emph{Mädchen}.
+
+与属于\textsc{cat}的选择性特征\subcatc 不同的是，\textsc{mod} 是一个中心语特征。原因是选择修饰中心语的特征必须在附接语的最大投射中出现。\nbarc{}-短语dem König treues（对国王的忠诚）必须包括在整个AP的表达式中，就像它在词汇层面的（\ref{le-interessantes}）中的形容词的词汇项中出现一样。形容词短语dem König treues具有跟基本形容词interessantes （有趣的）一样的句法属性。
+%Unlike the selectional feature \subcat that belongs to the features under \textsc{cat}, \textsc{mod} is a head feature.
+%The reason for this is that the feature that selects the modifying head has to be present on the maximal projection of the adjunct. The  \nbar{}-%modifying property of the adjective
+%phrase \emph{dem König treues} `loyal to the king' has to be included in the representation of the entire AP just as it is present in the lexical %entry for adjectives in (\ref{le-interessantes})
+%at the lexical level. The adjectival phrase \emph{dem König treues} has the same syntactic
+%properties as the basic adjective \emph{interessantes} `interesting':
+\ea
+\label{avm-dem-koenig-treues}
+dem König treues的\catvc：\\
+%\catv für \emph{dem König treues}:\\
+\ms{ head & \ms[adj]{ %prd & $-$ \\
+                        mod &  \nbar~~
+                      } \\
+              subcat & \eliste{ }
+}
+\z
+因为\textsc{mod}是一个中心语特征，中心语特征原则（请看第~\pageref{prinzip-hfp}页）会保证整个投射的\modvc 与treues（忠诚的）的词汇项的\modvc 是一致的。
+%Since \textsc{mod} is a head feature, the Head Feature Principle (see page~\pageref{prinzip-hfp}) ensures that the \modv of the entire %projection is identical
+%to the \modv of the lexical entry for \emph{treues} `loyal'.
+
+%\addlines
+不同于假设修饰语选择中心语，我们可以把中心语所有可能的附接语的描写都纳入到中心语中。这一观点由\citet[\page 161]{ps}提出。\citet[\S~1.9]{ps2}对前面的分析进行了修订，因为不能说明修饰语的语义。\footnote{
+不过，可以参考\citew*{BMS2001a}。\citew*{BMS2001a}提出了一个整合的分析，其中附接语可以选择中心语，附接语也可以被中心语所选择。最简递归语义是支持这一分析的语义理论\indexmrsc。应用这种语义分析方法，就可以避免由\citet*{ps}带来的修饰语的语义问题。
+}
+%As an alternative to the selection of the head by the modifier, one could assume a description of all possible adjuncts on the head itself. This %was suggested by
+%\citet[\page 161]{ps}. \citet[Section~1.9]{ps2} revised the earlier analysis since the semantics of
+%modification could not be captured.\footnote{
+%		See \citew*{BMS2001a}, however. \citet*{BMS2001a} pursue a hybrid analysis where there are adjuncts which select heads and also %adjuncts that are selected
+%		by a head. Minimal Recursion Semantics\indexmrs is the semantic theory underlying this analysis. Using this semantics, the problems
+%		arising for \citet*{ps} with regard to the semantics of modifiers are avoided.
+%}
+
+图\vref{fig-ha-selektion}表示了中心语"=附接语结构中的选择信息。
+%Figure~\vref{fig-ha-selektion} demonstrates selection in head"=adjunct structures.
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[\nbar
+	[AP{[\textsc{head$|$mod} \ibox{1}]}
+		[interessantes;有趣的]]
+%		[interessantes;interesting]]
+	[\ibox{1} \nbar
+		[Buch;书]]]
+%		[Buch;book]]]
+\end{forest}}
+\caption{\label{fig-ha-selektion}中心语"=附接语结构（选择）}
+%\caption{\label{fig-ha-selektion}Head"=adjunct structure (selection)}
+\end{figure}%
+
+中心语"=附接语结构是由模式~\ref{ha-schema-prel}\isc{范式!中心语-附接语范式}\is{schema!head"=adjunct}所允准的。\istype{head"=adjunct"=phrase}
+%Head"=adjunct structures are licensed by the Schema~\ref{ha-schema-prel}\is{schema!head"=adjunct}.\istype{head"=adjunct"=phrase}
+%\begin{figure}
+%\begin{samepage}
+\begin{schema}[中心语-附接语模式]
+%\begin{schema}[Head-Adjunct Schema]
+\label{ha-schema-prel}
+~\\
+\type{head"=adjunct"=phrase} \impl\\
+\onems{ 
+head"=dtr$|$synsem \ibox{1} \\[2mm]
+non-head"=dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
+                                                       subcat     & \sliste{}
+                                                     }
+                           } }
+}
+\end{schema}
+%\end{samepage}
+%\vspace{-\baselineskip}\end{figure}%
+
+附接语\iboxb{1}的选择性特征的值与中心语子结点的\synsemc 值是相同的。这样就可以确保中心语子结点具有附接语所确定的属性。非中心语子结点的\subcatvc 是空列表，这也就是为什么只有完全饱和的附接语允许出现在中心语"=附接语结构中。这样，诸如（\mex{1}b）的短语就被规则排除出去了：
+%The value of the selectional feature on the adjunct \iboxb{1} is identified with the \synsemv of the head daughter, thereby ensuring that the %head
+%daughter has the properties specified by the adjunct. The  \subcatv of the non"=head daughter is the
+%empty list, which is why only completely saturated adjuncts are allowed in head"=adjunct structures. Phrases such as (\mex{1}b) are %therefore correctly ruled out:
+\eal
+\ex[]{
+\gll die Wurst in der Speisekammer\\
+     \textsc{det} 香肠 \textsc{prep} \textsc{det} 食品箱\\
+%     the sausage in the pantry\\
+}
+\ex[*]{
+\gll die Wurst in\\
+	 \textsc{det} 香肠 \textsc{prep}\\
+%	 the sausage in\\
+}
+\zl
+%\addlines[2]
+例（\mex{0}a）需要进一步的解释。如（\mex{0}a）中使用的介词in具有下面的\catvc：
+%Example (\mex{0}a) requires some further explanation. The preposition \emph{in} (as used in (\mex{0}a)) has the following \catv:
+
+\ea
+in的\catvc：\\
+%\catv of \emph{in}:\\
+\ms{ head & \ms[prep]{
+                   mod & \nbar~~
+                   } \\
+           subcat & \sliste{ NP[\type{dat}] }
+}
+\z
+在将in和名词短语der Speisekammer（食品箱）相组合后，我们会得到：
+%After combining \emph{in} with the nominal phrase \emph{der Speisekammer} `the pantry' one gets:
+
+\eas
+in der Speisekammer（在食品箱里）的\catvc：\\
+%\catv for \emph{in der Speisekammer} `in the pantry':\\
+\ms{
+head & \ms[prep]{
+       mod & \nbar~~
+       } \\
+subcat & \sliste{ }
+}
+\zs
+
+\noindent
+该表达式对应于形容词interessantes（有趣的），而且也可按照同样的方式来使用，如忽略PP的位置：PP修饰\nbarc。
+%This representation corresponds to that of the adjective \emph{interessantes} `interesting' and can -- ignoring the position of the PP -- also be %used in the same way:
+%the PP modifies a \nbar.
+
+那些只能用作论元，不能修饰任何成分的中心语具有\type{none}的\modvc 值。这样，他们就不会出现在中心语附接语结构中的非中心语子结点的位置上了，因为中心语子结点的MOD值需要与中心语子结点的\synsemc 值兼容。
+%Heads that can only be used as arguments but do not modify anything have a \modv of \type{none}.
+%They can therefore not occur in the position of the non"=head daughter in head"=adjunct structures since the \modv of the non"=head %daughter has to be compatible
+%with the \synsemv of the head daughter.
+\isc{附接语|)}\is{adjunct|)}
+
+\section{被动}
+%\section{Passive}
+\label{Abschnitt-HPSG-Passiv}\label{sec-hpsg-passive}
+
+HPSG理论\isc{被动|(}\is{passive|(}遵循Bresnan的思想（请参阅\ref{Abschnitt-LFG-Passiv}），将被动放在词汇层面进行处理。
+\footnote{
+有些例外是受到构式语法影响的一些分析，如\citet{Tseng2007a}和\citet{Haugereid2007a}。但是，这些方法是有问题的，因为他们无法解释Bresnan的形容词性被动。对于Haugereid的分析的其他问题，请参阅\citew{Mueller2007d}和\ref{Abschnitt-Diskussion-Haugereid}。
+}一条词汇规则\isc{词汇规则|(}\is{lexical rule|(}将词根作为输入，并允准了分词形式，并且最凸显的论元（所谓的指定论元\isc{论元!指定论元}\is{argument!designated}）受到了抑制。\footnote{
+更多有关指定论元的内容请参阅\citew{Haider86}。德语中被动的HPSG分析相当程度上受到了Haider的影响。Haider使用指定论元来模拟所谓的非宾格和非作格动词之间的区别\citep{Perlmutter78}：非宾格动词\isc{动词!非宾格动词}\is{verb!unaccusative}与非作格动词\isc{动词!非作格动词}\is{verb!unergative}和及物动词\isc{动词!及物动词}\is{verb!transitive}的区别在于他们没有一个指定的论元。我们在这里不列出非宾格方面的文献。读者可以去看Haider的原始研究以及\citew{MuellerLehrbuch1}中与被动有关的内容。
+}
+%HPSG\is{passive|(} follows Bresnan's argumentation (see Section~\ref{Abschnitt-LFG-Passiv}) and takes care of the passive in the lexicon.
+%\footnote{
+%	Some exceptions to this are analyses influenced by \cxg such as \citet{Tseng2007a} and \citet{Haugereid2007a}.
+%	These approaches are problematic, however, as they cannot account for Bresnan's adjectival passives. For other problems with
+%	Haugereid's analysis, see \citew{Mueller2007d} and Section~\ref{Abschnitt-Diskussion-Haugereid}.%
+%} A lexical rule\is{lexical rule|(} takes the verb stem as its input and licenses the participle form and the most prominent argument (the so-%called
+%designated argument\is{argument!designated}) is suppressed.\footnote{
+%	For more on the designated argument, see \citew{Haider86}. HPSG analyses of the passive in German have been considerably influenced %by Haider.
+%	Haider uses the designated argument to model the difference between so-called unaccusative
+ %       and unergative verbs \citep{Perlmutter78}: unaccusative verbs\is{verb!unaccusative} differ from unergatives\is{verb!unergative} and %transitives\is{verb!transitive} in that they do not have
+%	a designated argument. We cannot go into the literature on unaccusativity here. The reader is referred to the original works by Haider and %the
+%	chapter on the passive in \citew{MuellerLehrbuch1}.
+%}
+因为语法功能\isc{语法功能}\is{grammatical function}并不是HPSG理论中的一部分，我们不需要任何映射的原则来将宾语映射到主语上。无论如何，我们还是要解释被动下格的变化。如果有人在词汇项中完整地区分了指定论元的格，那么这个人就需要确保及物动词的宾格论元在被动式中被实现为主格。（\mex{1}）展示了这样的词汇规则是什么样子的：
+%Since grammatical functions\is{grammatical function} are not part of theory in HPSG, we do not require any mapping principles that map %objects to subjects.
+%Nevertheless, one still has to explain the change of case under passivization. If one fully
+%specifies the case of a particular argument in the lexical entries, one has to ensure that the
+%accusative argument of a transitive verb is realized as nominative in the passive. (\mex{1}) shows
+%what the respective lexical rule would look like:
+
+\ea
+\label{pass-lr-mlr}
+从\citet{Kiss92}而来的人称被动的词汇规则：\\*
+%Lexical rule for personal passives adapted from \citet{Kiss92}:\\*
+\onems[stem]{
+  phon \ibox{1}\\
+  synsem$|$loc$|$cat~ \ms{ head & verb  \\ 
+                           subcat & \sliste{ NP[\type{nom}], NP[\type{acc}]$_{\ibox{2}}$ } $\oplus$ \ibox{3}
+                         } 
+} $\mapsto$ \\
+\flushright\onems[word]{
+  phon $f\iboxb{1}$\\
+  synsem$|$loc$|$cat \ms{ head & \ms{ vform & passive-part } \\
+                          subcat & \sliste{ NP[\type{nom}]$_{\ibox{2}}$ } $\oplus$ \ibox{3}
+                        }
+}
+\z
+
+\addlines
+\noindent
+词汇规则将动词词根\footnote{
+术语\emph{stem}包括词根（\stem{helf}，“帮助”）、派生词（\stem{besing}，“唱”）和复合词。这样词汇规则就可以用在像\stem{helf}的词根和诸如\stem{besing}的派生形式之中了。
+}作为它的输入，这就要求有一个主格论元、一个宾格论元以及其他可能的论元成分（如果\ibox{3}不是一个空列表的话），并且允准一个需要带有主格论元和\ibox{3}中可能论元成分的词汇项。\footnote{
+该规则假定了双及物动词的论元是按照主格、宾语和与格的顺序排列的。在本章中，我假设了主格、与格和宾格的顺序，这对应于德语论元的未标记语序。\citet{Kiss2001a}指出，未标记语序的表示可以用来说明德语的辖域事实。而且，论元的顺序对应于英语的顺序，这在捕捉跨语言的共性方面是具有优势的。在早先的工作中，我认为语序是主格、宾格和与格这样排列的，因为这个顺序表示了凸现的层级体系，而这在德语语法的大部分方面都是具有相关性的。例子有：省略\isc{省略}\is{ellipsis} \citep{Klein85}、话题省略\isc{前场!省略}\is{prefield!ellipsis}\isc{话题脱落}\is{Topic Drop} \citep{Fries88b}、自由关系小句\isc{关系小句!自由关系小句}\is{relative clause!free} \citep{Bausewein90,Pittner95b,Mueller99b}、描述性次级谓词\isc{描述性谓词}\is{depictive predicate} \citep{Mueller2001c,Mueller2002b,Mueller2008a}、约束理论\isc{约束理论}\is{Binding Theory}（\citealp{Grewendorf85a}；Pollard \& Sag: \citeyear{PS92}，\citeyear[\S~6]{ps2}）。这一语序也对应于\citet{KC77a}和\citet{Pullum77a}提出的旁格的层级体系\isc{旁格}\is{obliqueness}。为了说明这一层级体系，需要提出一个带有主格、宾格和与格语序的列表。
+下面将要提出的被动规则与这两种论元语序都是相容的。
+} 该词汇规则的输入指定了输出词的\vformvc。这是非常重要的，因为助动词和核心动词必须一起出现。比如说，不能用完成分词来取代被动分词，因为在Kiss的理论中，他们的格是不同的。
+%This lexical rule takes a verb stem\footnote{
+%	The term \emph{stem} includes roots (\stem{helf} `help-'), products of derivation
+%        (\stem{besing} `to sing about') and compounds. The lexical rule can therefore also be applied to
+%        stems like \stem{helf} and derived forms such as \stem{besing}.%
+%} as its input, which requires a nominative argument, an accusative argument and possibly further arguments (if \iboxt{3} is not the empty
+%list) and licenses a lexical entry that requires a nominative argument and possibly the arguments in
+%\ibox{3}.\footnote{
+%  This rule assumes that arguments of ditransitive verbs are in the order nominative, accusative,
+%  dative. Throughout this chapter, I assume a nominative, dative, accusative order, which
+%  corresponds to the unmarked order of arguments in the German clause. \citet{Kiss2001a} argued that
+%  a representation of the unmarked order is needed to account for s\textsc{cop}e facts in
+%  German. Furthermore, the order of the arguments corresponds to the order one would assume for
+%  English, which has the advantage that cross"=linguistic generalizations can be captured. In
+%  earlier work I assumed that the order is nominative, accusative, dative since this order encodes a
+%  prominence hierarchy that is relevant in a lot of areas in German grammar. Examples are: ellipsis\is{ellipsis} \citep{Klein85},
+%  Topic Drop\is{prefield!ellipsis}\is{Topic Drop} \citep{Fries88b}, free relatives\is{relative clause!free}
+% \citep{Bausewein90,Pittner95b,Mueller99b},
+%% \item Passive\is{passive} \citep{KC77a}
+%  depictive secondary predicates\is{depictive predicate} \citep{Mueller2001c,Mueller2002b,Mueller2008a},
+ % Binding Theory\is{Binding Theory} (\citealp{Grewendorf85a}; Pollard und Sag: \citeyear{PS92};
+%  \citeyear[Chapter~6]{ps2}). This order also corresponds to the Obliqueness
+ % Hierarchy\is{obliqueness} suggested by \citet{KC77a} and \citet{Pullum77a}. In order to capture
+%  this hierarchy, a special list with nominative, accusative, dative order would have to be assumed.
+
+%  The version of the passive lexical rule that will be suggested below is compatible with both orders of arguments.
+%} The output
+%of the lexical rule specifies the \vformv of the output word. This is important as the auxiliary and
+%the main verb must go together. For example, it is not possible to use the perfect participle instead of the passive participle since these differ
+%in their valence in Kiss' approach:
+\eal
+\ex[]{
+\gll Der Mann hat den Weltmeister geschlagen.\\
+	   \textsc{det} 男人 \textsc{aux} \textsc{det} 世界.冠军 打\\
+\glt `这个男人打了世界冠军。'
+%	 the man has the world.champion beaten\\
+%\glt `The man has beaten the world champion.'
+}
+\ex[*]{
+\gll Der Mann wird den Weltmeister geschlagen.\\
+	\textsc{det} 男人 \textsc{aux} \textsc{det} 世界.冠军 打\\
+%	 the man is the world.champion beaten\\
+}
+\ex[]{
+\gll Der Weltmeister wird geschlagen.\\
+	 \textsc{det} 世界.冠军 \textsc{aux} 打\\
+\glt `世界冠军被人打了。'
+%	 the world.champion is beaten\\
+%\glt `The world champion is (being) beaten.'
+}
+\zl
+
+\noindent
+词汇规则的解释有一些规定：在输入符号中没有提及的所有信息都被输入符号替代了。这样，动词的意义在被动规则中没有被提及，这就使得被动规则是一个保留意义的规则。输入和输出的\contvsc 没有在规则中提及，所以是相同的。这里重要的是它们保留的联接信息。比如说，以动词词根\stem{schlag}（打）所应用的规则为例：
+%There are a few conventions for the interpretation of lexical rules: all information that is not mentioned
+%in the output sign is taken over from the input sign. Thus, the meaning of the verb is not mentioned
+%in the passive rule, which makes sense as the passive rule is a meaning preserving rule. The \contvs
+%of the input and output are not mentioned in the rule and hence are identical. It is important here that the linking
+%information its retained. As an example consider the application of the rule to the verb stem
+%\stem{schlag} `beat': 
+\eal
+\label{lr-passiv-beispiel}
+\ex 
+\begin{tabular}[t]{@{}l@{}}
+\stem{schlag}（打）的输入：\\
+%Input \stem{schlag} `beat' :\\
+\onems{
+phon \phonliste{ schlag }\\[2mm]
+synsem$|$loc \ms{ cat & \ms{ head   & verb\\
+                             subcat & \sliste{ NP[\type{nom}]\ind{1}, NP[\type{acc}]\ind{2} } \\
+                           }\\
+                  cont & \ms{
+                         ind & \ibox{3} event\\
+                         rels & \sliste{ \ms[schlagen]{
+                                         event   & \ibox{3}\\
+                                         agent   & \ibox{1}\\
+                                         patient & \ibox{2}
+                                        } 
+                                      }\\[-1ex]
+                         }\\
+                }\\
+}
+\end{tabular}
+%\flushright sieht doof aus
+%\mbox{}\hspace{1em}
+\ex 
+\begin{tabular}[t]{@{}l@{}}
+\emph{geschlagen} （被打）的输出：\\
+%Output \emph{geschlagen} `beaten':\\
+\onems{
+phon \phonliste{ geschlagen }\\[2mm]
+synsem$|$loc \ms{ cat  & \ms{ head   & \ms[verb]{ vform & passive-part
+                                                } \\
+                              subcat & \sliste{ NP[\type{nom}]\ind{2} } \\
+                            }\\
+                  cont & \ms{
+                         ind & \ibox{3} event\\
+                         rels & \sliste{ \ms[schlagen]{
+                                         event   & \ibox{3}\\
+                                         agent   & \ibox{1}\\
+                                         patient & \ibox{2}
+                                        } 
+                                      }
+                         }
+                }
+}
+\end{tabular}
+\zl
+施事的角色联接到\stem{schlag}的主语。在被动之后，主语受到抑制，联接到\stem{schlag}的受事角色上的论元成为分词的主语。论元联接没有受到这个影响，并且名词性论元被正确地指派到受事角色上。
+%The agent role is connected to the subject of \stem{schlag}. After passivization, the subject is suppressed and the argument connected to
+%the patient role of \stem{schlag} becomes the subject of the participle. Argument linking is not affected by this and thus the nominative %argument is
+%correctly assigned to the patient role.
+
+正如\citet{Meurers2001a}所指出的，词汇规则也可以通过特征描写来进行表示。\label{pageref-lr-mit-dtr}（\mex{1}）给出了（\ref{pass-lr-mlr}）的特征描写表示。
+%As \citet{Meurers2001a} has shown, lexical rules can also be captured with feature
+%descriptions.\label{pageref-lr-mit-dtr} (\mex{1}) shows the feature description representation of (\ref{pass-lr-mlr}).
+\begin{figure}
+\ea
+\label{passiv-lr-mit-dtr}
+\onems[acc-passive-lexical-rule]{
+     phon $f\iboxb{1}$\\
+     synsem$|$loc$|$cat \ms{ head & \ms{ vform & passive-part
+                                       } \\
+                             subcat & \sliste{ NP[\type{nom}]$_{\ibox{2}}$ } $\oplus$ \ibox{3} 
+                           } \\
+lex-dtr \onems[stem]{
+        phon \ibox{1}\\
+        synsem$|$loc$|$cat~ \ms{ head & verb \\ 
+                  subcat & \sliste{ NP[\type{nom}], NP[\type{acc}]$_{\ibox{2}}$ } $\oplus$ \ibox{3}
+                }
+     }
+}
+\z
+\vspace{-\baselineskip}
+\end{figure}%
+在（\ref{pass-lr-mlr}）中规则的左手边囊括进了（\mex{0}）中的\textsc{lex-dtr}值\isfeat{lex-dtr}。因为这类词汇规则被完整地整合到形式化系统中，对应于这些词汇规则的特征结构也有他们自己的类型。如果一个给定规则的应用结果是一个屈折变化的词，那么这个词汇规则的类型（我们所举的例子中的\type{acc-passive-lexical-rule}）就是\type{word}的次类型。由于词汇规则具有类型，就可以对词汇规则进行概括。\isc{词汇规则|(}\is{lexical rule|(}
+%What is on the left"=hand side of the rule in (\ref{pass-lr-mlr}), is contained in the value of \textsc{lex-dtr}\isfeat{lex-dtr} in (\mex{0}).
+%Since this kind of lexical rule is fully integrated into the formalism, feature structures corresponding to these lexical rules also have their own
+%type. If the result of the application of a given rule is an inflected word, then the type of the lexical rule (\type{acc-passive-lexical-rule} in our %example)
+%is a subtype of \type{word}. Since lexical rules have a type, it is possible to state generalizations over lexical rules.\is{lexical rule|(}
+
+目前我们讨论的词汇规则适用于人称被动。但是，对于非人称被动，我们就需要第二条词汇规则了。而且，我们需要针对被动和完成时准备两条不同的词汇项，尽管在德语中他们的形式是一样的。在下面，我将讨论被动的理论所需的基本假设，该假设可以充分地解释人称被动和非人称被动，并且只需要用分词形式的一个词汇项来说明就足够了。
+%The lexical rules discussed thus far work well for the personal passive. For the impersonal passive,
+%however, we would require a second lexical rule. Furthermore, we would have two different lexical
+%items for the passive and the perfect, although the forms are always identical in German.  In the following,
+%I will discuss the basic assumptions that are needed for a theory of the passive that can sufficiently
+%explain both personal and impersonal passives and thereby only require one lexical item for the
+%participle form.
+
+\subsection{配价信息与格原则}
+%\subsection{Valence information and the Case Principle}
+
+在\isc{原则!格原则|(}\is{principle!Case|(}\ref{Abschnitt-struktureller-Kasus}中，结构格与结构之间是有差异的。在HPSG的文献中，一般按照\citet{Haider86}的观点，认为与格是一个词汇格。对于带有词汇格标记的论元来说，他们的格的值直接在论元的描写中有所表示。带有结构格的论元也在词汇描写中说明了，他们带有结构格，只不过没有给出真正的格的值。为了保证语法不会得到任何错误的结论，它必须要确保结构格根据他们出现的语境而得到一个独一无二的值。这点由格原则来处理：\footnote{%
+这里的格原则被简化了。所谓的“升”格\isc{提升}\is{raising}需要特殊的处理。更多细节可以参考\citew{Meurers99b}、\citew{Prze99b}和\citew[\S~14,
+    \S~17]{MuellerLehrbuch1}。这些著作中给出的格原则与\citet*{YMJ87}提出的理论非常相似，由此该原则也可以解释他们的工作中所讨论的语言的格系统，尤其是爱尔兰语复杂的格系统。\isc{爱尔兰语的}\is{Icelandic}
+}
+%In\is{principle!Case|(} Section~\ref{Abschnitt-struktureller-Kasus}, the difference between structural
+%and lexical case was motivated. In the HPSG literature, it is assumed following \citet{Haider86}
+%that the dative is a lexical case. For arguments marked with a lexical case, their case value is
+%directly specified in the description of the argument. Arguments with structural case are also
+%specified in the lexicon as taking structural case, but the actual case value is not provided. In
+%order for the grammar not to make any false predictions, it has to be ensured that the structural
+%cases receive a unique value dependent on their 
+%environment. This is handled by the Case Principle:\footnote{%
+%	The Case Principle has been simplified here. Cases of so-called `raising'\is{raising} require special treatment.
+%	For more details, see \citew{Meurers99b}, \citew{Prze99b} and \citew[Chapter~14,
+%    Chapter~17]{MuellerLehrbuch1}. The Case Principle given in these publications is very similar to the one proposed by \citet*{YMJ87}
+%	and can therefore also explain the case systems of the languages discussed in their work, notably the complicated
+%	case system of Icelandic.\is{Icelandic}
+%}
+\begin{principle-break}[\hypertarget{case-p}{格原则}]
+%\begin{principle-break}[\hypertarget{case-p}{Case Principle}]
+\label{case-p}
+\begin{itemize}
+\item 在一个包括主语和补足语的动词中心语的列表中，第一个带有结构格的成分是主格。
+\item 该列表中的所有其他带有结构格的成分是宾格。
+\item 在主格的上下文中，带有结构格的成分被赋予了属格。\isc{格!属格}\is{case!genitive}.
+%\item In a list containing the subject as well as complements of a verbal head, the first element with
+%structural case receives nominative.
+%\item All other elements in the list with structural case receive accusative.
+%\item In nominal environments, elements with structural case are assigned genitive\is{case!genitive}.
+\end{itemize}
+\end{principle-break}
+
+\noindent
+例（\mex{1}）给出了定式动词的原型配价列表：
+%(\mex{1}) shows prototypical valence lists for finite verbs:
+\ea
+\label{ex-verben-active}
+\begin{tabular}[t]{@{}l@{~}l@{~}l}
+a. & schläft（睡觉）:       & \subcat \sliste{ NP[\type{str}]$_j$ }\\
+b. & unterstützt （支持）: & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{str}]$_k$ }\\
+c. & hilft （帮助）:          & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$ }\\
+d. & schenkt （给）:        & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
+%a. & \emph{schläft} `sleeps':       & \subcat \sliste{ NP[\type{str}]$_j$ }\\
+%b. & \emph{unterstützt} `supports': & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{str}]$_k$ }\\
+%c. & \emph{hilft} `helps':          & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$ }\\
+%d. & \emph{schenkt} `gives':        & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
+\end{tabular}
+\z
+\emph{str}表示词汇与格的\emph{structural}和\emph{ldat}。
+%\emph{str} stands for \emph{structural} and \emph{ldat} for lexical dative. 
+%% It is commonly assumed in HPSG that elements in the valence list
+%% are ordered corresponding to the Obliqueness Hierarchy\is{obliqueness} in \citet{KC77a} and \citet{Pullum77a}:
+%% \begin{table}[H]
+%% \resizebox{\linewidth}{!}{%
+%% \begin{tabular}{@{}l@{\hspace{1ex}}l@{\hspace{1ex}}l@{\hspace{1ex}}l@{\hspace{1ex}}l@{\hspace{1ex}}l@{}}
+%% SUBJECT $=>$ & DIRECT $=>$ & INDIRECT $=>$ & OBLIQUES $=>$ & GENITIVES $=>$  & OBJECTS OF \\
+%%              & OBJECT      & OBJECT        &               &                 & COMPARISON 
+%% \end{tabular}%
+%% }\label{page-obliquen-h}
+%% \end{table}%
+%%
+%% \noindent
+%% This hierarchy corresponds to the different syntactic activeness of grammatical functions.
+%% Elements that occur further left tend to occur in specific syntactic constructions more often. Examples for
+%% syntactic constructions where obliqueness plays a role are the following:
+%% \begin{itemize}
+%% \item Ellipsis\is{ellipsis} \citep{Klein85}
+%% \item Topic Drop\is{prefield!ellipsis}\is{Topic Drop} \citep{Fries88b}
+%% \item Free relatives\is{relative clause!free}
+%%       \citep{Bausewein90,Pittner95b,Mueller99b}
+%% \item Passive\is{passive} \citep{KC77a}
+%% \item Depictive predicates\is{depictive predicate} \citep{Mueller2001c,Mueller2002b,Mueller2008a}
+%% \item Binding Theory\is{Binding Theory} (\citealp{Grewendorf85a}; Pollard und Sag:
+%%   \citeyear{PS92}; \citeyear[Chapter~6]{ps2})
+%% \end{itemize}
+%% \noindent
+格原则确保了上面所列动词的主语实现为主格，而带有结构格的宾语被赋予了宾格。
+%The Case Principle ensures that the subjects of the verbs listed above have to be realized in the nominative and also that objects with %structural case are assigned
+%accusative.
+
+对于结构格和词汇格之间的区别，我们可以构造一个被动－词汇规则来表示人称被动和非人称被动\isc{被动!非人称被动}\is{passive!impersonal}：
+%With the difference between structural and lexical case, it is possible to formulate a passive-lexical rule that can account for both the personal %and the
+%impersonal passive\is{passive!impersonal}:
+
+\eas
+\label{pass-lr-mlr-str}
+人称被动和非人称被动的词汇规则（简化版）：\\
+%Lexical rule for personal and impersonal passive (simplified):\\
+\onems[stem]{
+  phon \ibox{1}\\
+  synsem$|$loc$|$cat~ \ms{ head & verb  \\ 
+                           subcat & \sliste{ NP[\type{str}] } $\oplus$ \ibox{2} \\
+                         } 
+} $\mapsto$ \\
+\flushright\onems[word]{
+  phon $f\iboxb{1}$\\
+  synsem$|$loc$|$cat \ms{ head & \ms{ vform & ppp } \\
+                          subcat & \ibox{2} \\
+                        }
+}
+\zs
+
+这条词汇规则真正做到了我们在被动的预备理论的方面上所期待的功能：它抑制了带有结构格的最凸显的论元，即对应于主动句的主语的论元。动词－助动词结构的标准分析认为主动词和助动词构成了一个动词性复杂结构\citep{HN94a,Pollard94a,Mueller99a,Mueller2002b,Meurers2000b,Kathol2000a}。嵌套的论元被助动词替代。在加入被动助动词分词后，我们可以得到如下的\subcatc 列表：
+%This lexical rule does exactly what we expect it to do from a pretheoretical perspective on the passive: it suppresses the most prominent %argument with structural case, that is, the argument
+%that corresponds to the subject in the active clause. The standard analysis of verb auxiliary
+%constructions assumes that the main verb and the auxiliary forms a verbal complex
+%\citep{HN94a,Pollard94a,Mueller99a,Mueller2002b,Meurers2000b,Kathol2000a}. The arguments of the
+%embedded verb are taken over by the auxiliary.  After combining the participle with the passive auxiliary,
+%we arrive at the following \subcat lists:
+\ea
+\begin{tabular}[t]{@{}l@{~}l@{~}l}
+a. & geschlafen wird （被睡觉）:      & \subcat \sliste{ }\\
+b. & unterstützt wird （被支持）: & \subcat \sliste{ NP[\type{str}]$_k$ }\\
+c. & geholfen wird（被帮助）:        & \subcat \sliste{ NP[\type{ldat}]$_k$ }\\
+d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
+%a. & \emph{geschlafen wird} `slept is':      & \subcat \sliste{ }\\
+%b. & \emph{unterstützt wird} `supported is': & \subcat \sliste{ NP[\type{str}]$_k$ }\\
+%c. & \emph{geholfen wird}:  `helped is'      & \subcat \sliste{ NP[\type{ldat}]$_k$ }\\
+%d. & \emph{geschenkt wird}: `given is'       & \subcat \sliste{ NP[\type{ldat}]$_k$, NP[\type{str}]$_l$ }\\
+\end{tabular}
+\z
+（\mex{0}）与（\ref{ex-verben-active}）是不同的，因为首位的NP是不同的。如果NP具有结构格，它就会得到主格。如果没有带结构格的NP，如例（\mex{0}c）所示，那么格不会变化，即由词汇确定的。
+%(\mex{0}) differs from (\ref{ex-verben-active}) in that a different NP is in first position. If this NP has structural case, it will receive nominative %case.
+%If there is no NP with structural case, as in (\mex{0}c), the case remains as it was, that is,
+%lexically specified.
+
+我们在这儿无法得到完美的分析。不过，需要指出的是，对于与分词相同的词汇项被用于（\mex{1}）。
+%We cannot go into the analysis of the perfect here. It should be noted, however, that the same lexical
+%item for the participle is
+%used for (\mex{1}).
+\eal
+\ex 
+\gll Er hat den Weltmeister geschlagen.\\
+	 他 \textsc{aux} \textsc{det} 世界.冠军 打\\
+\glt `他把世界冠军打了。'
+%	 he has the world.champion beaten\\
+%\glt `He has beaten the world champion.'
+\ex 
+\gll Der Weltmeister wurde geschlagen.\\
+	 \textsc{det} 世界.冠军 \textsc{aux} 打\\
+\glt `世界冠军被打了。'
+%	 the world.champion was beaten\\
+%\glt `The world champion was beaten.'
+\zl
+助动词决定了哪些论元被实现了（\citealp{Haider86}、\citealp[\S~17]{MuellerLehrbuch1}）。（\ref{pass-lr-mlr-str}）中的词汇规则允准了可以用在被动和完成式中的形式。这样，\vformvc 属于\type{ppp}，它表示完成式被动分词（participle perfect passive）。
+%It is the auxiliary that determines which arguments are realized (\citealp{Haider86}; \citealp[Chapter~17]{MuellerLehrbuch1}).
+%The lexical rule in (\ref{pass-lr-mlr-str}) licenses a form that can be used both in passive and perfect. Therefore, the
+%\vformv is of \type{ppp}, which stands for \emph{participle perfect passive}.
+\isc{原则!格原则|)}\is{principle!Case|)}
+
+我们应该注意到，该分析适用于没有成分移动的被动。这里没有涉及GB分析中的问题\indexgbc。论元的重新排序（请参阅\ref{Abschnitt-HPSG-lokale-Umstellung}）是独立于被动化的。与\gpsgc、\cgc 或Bresnan的LFG分析\indexlfgc 不同的是，在词汇映射理论\isc{词汇映射理论（LMT）}\is{Lexical Mapping Theory (LMT)}（请参阅第\pageref{page-LMT}页）引入之前完全没有提及宾格宾语。被动可以直接分析为主语的抑制。任何别的成分都与语法的其他原则具有互动关系。\isc{被动|(}\is{passive|(}
+%One should note that this analysis of the passive works without movement of constituents. The problems with the GB analysis\indexgb do not %arise here.
+%Reordering of arguments (see Section~\ref{Abschnitt-HPSG-lokale-Umstellung}) is independent of passivization. The accusative object is not %mentioned
+%at all unlike in \gpsg, \cg or Bresnan's LFG analysis\indexlfg from before the introduction of
+%Lexical Mapping Theory\is{Lexical Mapping Theory (LMT)} (see page~\pageref{page-LMT}). The passive can be analyzed directly as the %suppression of the subject. Everything else follows from interaction with other principles of grammar.\is{passive|(}
+
+\section{动词位置}
+%\section{Verb position}
+\label{Abschnitt-Verbstellung-HPSG}
+
+\addlines[2]
+我这里要说明的动词位置分析是基于GB分析的\isc{动词位置|(}\is{verb position|(}。在HPSG中，有许多不同的方法来描述动词的位置，但是，依我看，GB分析的HPSG变体是唯一合适的\citep{Mueller2005c,Mueller2005d,MuellerGS}。（\mex{1}）的分析可以总结如下：在动词首位的小句中，动词末位上有一个语迹。在首位的位置上有一个动词的特殊形式选择了动词语迹的投射。特殊的词汇项由词汇规则允准。动词和语迹之间的连接被看作是GPSG中的长距离依存问题，并通过树中的信息或特征结构（结构共享\isc{结构共享}\is{structure sharing}）的识别来实现。
+%The\is{verb position|(} analysis of verb position that I will present here is based on the GB"=analysis. In HPSG, there are a number of different %approaches
+%to describe the verb position, however in my opinion, the HPSG variant of the GB analysis is the only adequate one 
+%\citep{Mueller2005c,Mueller2005d,MuellerGS}.
+%The analysis of (\mex{1}) can be summarized as follows: in the verb-initial clauses, there is a trace in verb-final position. There is a special %form of the 
+%verb in initial position that selects a projection of the verb trace. This special lexical item is licensed by a lexical rule. The connection between %the
+%verb and the trace is treated like long"=distance dependencies in GPSG via identification of information in the tree or feature structure 
+%(structure sharing\is{structure sharing}).
+
+\ea
+\label{bsp-kennt-jeder-diesen-Mann}
+\gll Kennt$_k$ jeder diesen Mann \_$_k$?\\
+	认识 每人 这 男人\\
+\glt `每个人都认识这个男人吗？'
+%	knows everyone this man\\
+%\glt `Does everyone know this man?'
+\z
+图\vref{Abbildung-Verbstellung-HPSG}给出了这一问题的整体情况。
+%Figure~\vref{Abbildung-Verbstellung-HPSG} gives an overview of this.
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[VP
+	[V \sliste{ VP//V }, name=vini
+	   [V,name=vlast [kennt$_k$;认识]]]
+%	   [V,name=vlast [kennt$_k$;knows]]]
+	[VP//V, name=vp
+	   [NP [jeder;每个人]]
+%	   [NP [jeder;everyone]]
+	   [V$'$//V, name=vbar
+	     [NP [diesen Mann;这个 男人, roof]]
+%	     [NP [diesen Mann;this man, roof]]
+		[V//V,name=vtrace [ \trace$_k$]]]]]
+%\draw[<->] (vone) to (vtwo);
+%%\draw (-2,-5) to[grid with coordinates] (4,0.5);
+%% \draw[<-] (3,-3.4) .. controls (3.2,-3.6) .. (3.5,-3.4)
+%%                    .. controls ()         .. (;
+\draw[<->] ($(vtrace.south)+(-.25,.1)$)    to [bend right=45]  ($(vtrace.south)+(.25,.1)$);
+\draw[<->] (vtrace)                        to [out=45, in=0]  (vbar);
+\draw[<->] ($(vbar.north east)+(-0.2,0)$)  to [out=80, in=0]  (vp);
+\draw[<->] ($(vp.north east)+(-0.25,-.1)$)  to [out=145,in=35] ($(vini.north east)+(-.5,-.1)$);
+\draw[<->] ($(vini.south east)+(-.45,.1)$) to [bend left=30] ($(vlast.north east)+(-.1,-.1)$);
+\end{forest}
+\caption{\label{Abbildung-Verbstellung-HPSG}HPSG中动词位置的分析}
+%\caption{\label{Abbildung-Verbstellung-HPSG}Analysis of verb position in HPSG}
+\end{figure}%
+位于动词末位的动词语迹在句法和语义上跟动词非常相似。缺失动词的信息表示为特征\textsc{double slash}（缩写为：\textsc{dsl}\isfeat{dsl}）的值。这是一个中心语特征，并且传递到了最大投射上（VP）。位于首位的动词其\subcatlc 中有一个缺失了动词（VP//V）的VP。词汇规则输入端的动词就是在一般情况下出现在末端位置的动词。在图\ref{Abbildung-Verbstellung-HPSG}中，有两个最大的动词投射：语迹充当中心语的jeder diesen Mann \_$_k$和kennt充当中心语的kennt jeder diesen Mann \_$_k$。
+%The verb trace in final position behaves just like the verb both syntactically and semantically. The information about the missing word is %represented
+%as the value of the feature \textsc{double slash} (abbreviated: \textsc{dsl}\isfeat{dsl}). This is a head feature and is therefore passed up to the %maximal projection
+%(VP). The verb in initial position has a VP in its \subcatl which is missing a verb (VP//V). This is the same verb that was the input
+%for the lexical rule and that would normally occur in final position. In
+%Figure~\ref{Abbildung-Verbstellung-HPSG}, there are two maximal verb projections:
+%\emph{jeder diesen Mann \_$_k$} with the trace as the head and \emph{kennt jeder diesen Mann \_$_k$} with \emph{kennt} as the head.
+
+该分析将在下面的内容中得到更多细节上的解释。对于图\ref{Abbildung-Verbstellung-HPSG}中的语迹来说，我们需要假定（\mex{1}）中的词汇项。
+%This analysis will be explained in more detail in what follows. For the trace in Figure~\ref{Abbildung-Verbstellung-HPSG}, one could assume
+%the lexical entry in (\mex{1}).
+%\begin{figure}
+\eas
+kennt（认识）的动词语迹：\\
+%Verb trace for \emph{kennt} `knows':\\
+\onems{
+phon \phonliste{}\\
+synsem$|$loc \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin
+                                              }\\
+                              subcat & \sliste{ \npnom\ind{1}, \npacc\ind{2} }
+                            }\\
+                  cont & \ms{
+                         ind & \ibox{3}\\
+                         rels & \sliste{ \ms[kennen]{
+                                         event       & \ibox{3}\\
+                                         experiencer & \ibox{1}\\
+                                         theme       & \ibox{2}
+                                         }
+                                      }
+                        }
+                }
+}
+\zs
+%\vspace{-\baselineskip}
+%\end{figure}%
+这个词汇项与普通动词kennt的区别只在于它的\phonvc。
+%This lexical entry differs from the normal verb \emph{kennt} only in its \phonv.
+%
+带有语迹的分析的句法过程如图\vref{verb-movement-syn-simple}所示。
+%The syntactic aspects of an analysis with this trace are represented in Figure~\vref{verb-movement-syn-simple}.
+
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[V{[\subcat \eliste]}
+	[V
+		[kennt;认识]]
+%		[kennt;knows]]
+	[V{[\subcat \eliste]}
+		[\ibox{3} NP{[\textit{nom}]}
+			[jeder;每个人]]
+%			[jeder;everyone]]
+		[V{[\subcat \sliste{ \ibox{3} }]}
+			[\ibox{4} NP{[\textit{acc}]}
+				[diesen Mann;这个 男人, roof]]
+%				[diesen Mann;this man, roof]]
+			[{[V[\subcat \sliste{ \ibox{3}, \ibox{4} }]}
+				[\trace]]]]]]
+\end{forest}
+}
+\caption{\label{verb-movement-syn-simple}\emph{Kennt jeder diesen Mann?}（每个人都认识这个男人吗？）的分析}
+%\caption{\label{verb-movement-syn-simple}Analysis of \emph{Kennt jeder diesen Mann?} `Does everyone know this man?'}
+\end{figure}%
+语迹与diesen Mann（这个男人）和jeder（每个人）的组合遵守了我们目前提到的规则与原则。这就要求我们立刻回答是什么允准了图\ref{verb-movement-syn-simple}中的动词以及它具有的地位。
+%The combination of the trace with \emph{diesen Mann} `this man' and \emph{jeder} `everbody' follows the rules and principles that we have %encountered thus far.
+%This begs the immediate question as to what licenses the verb \emph{kennt}
+%in Figure~\ref{verb-movement-syn-simple} and what status it has.
+
+如果我们想要捕捉到这样的事实，位于首位的定式动词像一个标补语的话\isc{标补语}\is{complementizer} \citep{Hoehle97a}，那么就可以给予图\ref{verb-movement-syn-simple}中kennt以中心语地位，而且允许kennt选择一个饱和的、动词位于末位的动词投射。但是位于首位的定式动词与标补语是不同的，因为他们需要一个动词语迹的投射，而标补语需要显性动词的投射。
+%If we want to capture the fact that the finite verb in initial position behaves like a complementizer\is{complementizer} \citep{Hoehle97a}, then it %makes sense to
+%give head status to \emph{kennt} in Figure~\ref{verb-movement-syn-simple} and have \emph{kennt} select a saturated, verb-final verbal %projection.
+%Finite verbs in initial position differ from complementizers in that they require a projection of a verb trace, whereas complementizers need %projections
+%of overt verbs:
+\eal
+\ex 
+\gll dass [jeder diesen Mann kennt]\\
+     \textsc{conj} \spacebr{}每人 这 男人 认识\\
+\glt `每个人都认识这个男人'
+%     that \spacebr{}everybody this man knows\\
+%\glt `that everybody knows this man'
+\ex 
+\gll Kennt [jeder diesen Mann \_ ]\\
+	 认识 \spacebr{}每人 这 男人\\
+\glt `每个人都认识这个男人吗？'
+%	 knows \spacebr{}everybody this man\\
+%\glt `Does everybody know this man?'
+\zl
+
+\noindent
+通常来说，对于（\mex{0}b）中作为中心语的kennt的分析，仅仅限定kennen（认识）选择一个完整的句子并不是一个必要条件。进而，我们还需要确保与动词kennt组合的动词投射包括与kennt对应的动词语迹。如果不施加这一限制就会造成分析错误。例如，我们有可能错把例（\mex{1}b）这种不合法的句子分析为合法的句子：
+%It is normally not the case that \emph{kennen} `know' selects a complete sentence and nothing else as would be necessary for the analysis of 
+%\emph{kennt} as the head in (\mex{0}b). Furthermore, we must ensure that the verbal projection with which \emph{kennt} is combined %contains the verb trace belonging to
+%\emph{kennt}. If it could contain a trace belonging to \emph{gibt} `gives', for example, we would be able to analyze sentences such as 
+%(\mex{1}b):
+%\addlines bug here?
+\largerpage
+\eal
+\ex[]{
+\gll Gibt [der Mann der Frau das Buch \_$_{gibt}$]?\\
+	 给 \spacebr{}\textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
+\glt `这个男人给这个女人书了吗？'
+%	 gives \spacebr{}the man the woman the book\\
+%\glt `Does the man give the woman the book?'
+}
+\ex[*]{
+\label{bsp-kennt-gibt}
+\gll Kennt [der Mann der Frau das Buch \_$_{gibt}$]?\\
+	 认识 \spacebr{}\textsc{det} 男人 \textsc{det} 女人 \textsc{det} 书\\
+%	 knows \spacebr{}the man the woman the book\\
+}
+\zl
+
+\noindent
+在前面的讨论中，前置动词和动词语迹的依存关系通过同指来表示。在HPSG中，同指总是由结构共享来实现的。这样，位于首位的动词必须要求语迹确切地具有动词位于末位所应具有的那些属性。由此，必须共享的信息都是局部相关的句法和语义信息，即在\localc 下的所有信息。因为\phonc 不是\localc 特征的一部分，它没有被共享，这就是为什么语迹的\phonc 值和动词的值可以不同的原因。截至目前，该分析中有一个重要的细节缺失了：语迹的\localc 值不能与首位动词的要求直接结构共享，因为动词kennt只能选择语迹的投射的属性，而被选择的投射的\subcatlc 是空列表。这就导致（\ref{bsp-kennt-gibt}）的讨论中所指出的问题。由此，必须保证动词语迹的所有信息在它投射的最高点上是可获得的。这可以通过中心语特征的引入来获得，它的值与语迹的\localvc 是相同的。这个特征被称为\textsc{dsl}\isfeat{dsl}。正如在上面已经提及的，\textsc{dsl}表示双重斜杠（double slash）。它被这样称呼的原因是，它有一个跟\slashfc 相似的功能，我们可以在后面的章节中讲到这个功能。\footnote{
+特征\dslc 是由\citet*{Jacobson87}在范畴语法\indexcgc 的框架下提出用来描写英语倒装\isc{助动词倒装}\is{auxiliary inversion}的中心语移动的。\citet{Borsley89}采用了这一观点，并将其译为HPSG的术语，这样就可以看到，在CP/IP系统的HPSG变体中，中心语移位是如何用\textsc{dsl}模拟的。\textsc{dsl}特征在HPSG的中心语移位过程的引入是由这样的事实驱动的，与\ref{Abschnitt-Fernabhängigkeiten-HPSG}讨论的长距离依存\isc{长距离依存}\is{long"=distance dependency}不同的是，这类移位是局部的。
+这种将动词语迹作为中心语的部分的信息的渗透来自于\citet{Oliva92a}。
+}
+（\mex{1}）显示了动词语迹的修订版本：
+%In the preceding discussion, the dependency between the fronted verb and the verb trace was expressed by coindexation. In HPSG, identity %is always
+%enforced by structure sharing. The verb in initial position must therefore require that the trace
+%has exactly those properties of the verb that the verb would have had, were it in final
+%position. The information that must be shared is therefore all locally relevant syntactic and
+%semantic information, that is, all information under \local. Since \phon is not part of the \local features, it is not shared and this is why the 
+%\phon values of the trace and verb can
+%differ. Up to now, one crucial detail has been missing in the analysis: the \local value of the
+%trace cannot be directly structure"=shared with a requirement of the initial verb since the verb
+%\emph{kennt} can only select the properties of the projection of the trace and the \subcatl of the
+%selected projection is the empty list. This leads us to the problem that was pointed out in the
+%discussion of (\ref{bsp-kennt-gibt}). It must therefore be ensured that all information about the verb trace is available
+%on the highest node of its projection. This can be achieved by introducing a head feature whose
+%value is identical to the \localv of the trace. This feature is referred to as
+%\textsc{dsl}\isfeat{dsl}. As was already mentioned above, \textsc{dsl} stands for \emph{double
+%  slash}. It is called so because it has a similar function to the \slashf, which we will encounter in the following section.\footnote{
+%	The feature \dsl was proposed by \citet*{Jacobson87} in the framework of Categorial Grammar\indexcg to describe head movement in %English\il{English}
+%	inversions\is{auxiliary inversion}. \citet{Borsley89} adopted this idea and translated it into HPSG terms, thereby showing how head %movement
+%	in a HPSG variant of the CP/IP system can be modeled using \textsc{dsl}.
+%	The introduction of the \textsc{dsl} feature to describe head movement processes in HPSG is
+%        motivated by the fact that, unlike long"=distance dependencies\is{long"=distance dependency} as will be discussed in Section~%\ref{Abschnitt-Fernabhängigkeiten-HPSG}, this kind of movement is local.
+	
+%	The suggestion to percolate information about the verb trace as part of the head information comes from \citet{Oliva92a}.%
+%}
+%(\mex{1}) shows the modified entry for the verb trace:
+
+\eas
+kennt的动词语迹（初级版本）：\\
+%Verb trace of \emph{kennt} (preliminary version):\\
+\label{le-verbspur-kennt}%
+\onems{
+phon \phonliste{}\\
+synsem$|$loc \ibox{1} \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
+                                                dsl   & \ibox{1}
+                                              }\\
+                              subcat & \sliste{ \npnom\ind{2}, \npacc\ind{3} }
+                            }\\
+                  cont & \ms{
+                         ind & \ibox{4}\\
+                         rels & \sliste{ \ms[kennen]{
+                                         event       & \ibox{4}\\
+                                         experiencer & \ibox{2}\\
+                                         theme       & \ibox{3}
+                                         }
+                                      }
+                        }
+                }
+}
+\zs
+\largerpage
+通过对（\mex{0}）中的\localvc 和\dslc 值的共享，动词语迹的句法和语义信息在它的最大投射上表示出来，而且位于首位的动词可以核查这个语迹的投射是否是兼容的。\footnote{
+需要注意的是，（\mex{0}）中的描写是循环的，因为标签\ibox{1}用于它自己内部。请参阅\ref{sec-cyclic-fd}关于循环特征描写的内容。循环描写是用来表示语言对象最为直接的方式，这个语言对象带有缺失的局部属性，并且将这些信息作为\dslfc 的值按照中心语路径传递上去。当我们看到第\pageref{le-verbspur}页上的（\ref{le-verbspur}）的动词语迹的最终版本时，这种思路会显得更为清晰。
+}
+%Through sharing of the \localv and the \dsl value in (\mex{0}), the syntactic and semantic information of the verb trace
+%is present at its maximal projection, and the verb in initial position can check whether the
+%projection of the trace is compatible.\footnote{
+%  Note that the description in (\mex{0}) is cyclic since the tag \ibox{1} is used inside itself. See
+%  Section~\ref{sec-cyclic-fd} on cyclic feature descriptions. This cyclic description is the most
+%  direct way to express that a linguistic object with certain local properties is missing and to pass this
+%  information on along the head path as the value of the \dslf. This will be even clearer when we look
+%  at the final version of the verb trace in (\ref{le-verbspur}) on page~\pageref{le-verbspur}.%
+%}%
+\isc{语迹!动词语迹|(}\is{trace!verb|(}
+
+对于动词位于首位的具体的词汇项由下面的词汇规则\isc{词汇规则!动词首位位置|(}\is{lexical rule!verb"=initial position|(}允准：\footnote{
+%The special lexical item for verb-initial position is licensed by the following lexical rule\is{lexical rule!verb"=initial position|(}:\footnote{
+% SvNMP90a
+这个词汇规则分析不能解释（i）这类句子：
+%	The lexical rule analysis cannot explain sentences such as (i):
+\ea
+\gll Karl kennt und liebt diese Schallplatte.\\
+	 Karl 认识 和 爱 这 专辑\\
+%	 Karl knows and loves this record\\
+\z
+这与词汇规则不能用于并列组合的结果是有关系的，它构成了一个复杂的句法对象。如果我们将词汇规则分别应用到每个动词上的话，那么我们会得到动词的不同类型，他们分别选择kennen（认识）和lieben（爱）的动词语迹。由于连词的\catvsc 在并列中互相指认，包括kennt和liebt的V1变体的并列可以被排除出去，因为被选择的VP的\dslvsc 包括各自动词的意义，而且是不兼容的\citep[\page 13]{Mueller2005c}。除了词汇规则，我们需要假定一个一元的句法规则，它应用到短语kennt und liebt（认识和爱）上。正如我们看到的，这里假定的HPSG形式化的词汇规则对应于一元规则，这样（\mex{1}）和相应的句法规则的区别很大程度上是表达上的差异。
+%This has to do with the fact that the lexical rule cannot be applied to the result of coordination, which constitutes a complex syntactic object.
+%If we apply the lexical rule individually to each verb, then we arrive at variants of the verbs which would each select verb traces for 
+%\emph{kennen} `to know' and \emph{lieben} `to love'. Since the \catvs of the conjuncts are identified with
+%each other in coordinations, coordinations involving the V1 variants of  \emph{kennt} and
+%\emph{liebt} would be ruled out since the \dslvs of the selected VPs contain the meaning of
+%the respective verbs and are hence not compatible \citep[\page 13]{Mueller2005c}. Instead of a lexical rule, one must assume a unary %syntactic rule that applies to the phrase \emph{kennt und liebt} `knows and loves'.
+%As we have seen, lexical rules in the HPSG formalization assumed here correspond to unary rules such that the difference between 
+%(\mex{1}) and a corresponding syntactic rule is mostly a difference in representation.
+}
+\eas
+\label{lr-verb-movement}
+\begin{tabular}[t]{@{}l@{}}
+位于首位的动词的词汇规则：\\
+%Lexical rule for verbs in initial position:\\
+\ms{
+synsem$|$loc & \ibox{1} \ms{ cat$|$head & \ms[verb]{ vform & fin\\
+                                                     initial & $-$
+                                             }
+                  }
+} $\mapsto$\\
+\hfill\ms{
+synsem$|$loc$|$cat & \ms{ head & \ms[verb]{vform & fin\\
+                                          initial & $+$\\
+                                          dsl     & none
+                                 }\\
+                           subcat & \sliste{ \onems{ loc$|$cat \onems{ head  \ms[verb]{
+                                                               dsl & \ibox{1}
+                                                               }\\
+                                                         subcat \eliste
+                                                       }
+                                              } }
+                         }
+}
+\end{tabular}
+\zs
+
+\noindent
+由这个词汇规则允准的动词选择了动词语迹的最大投射，它跟输入动词具有相同的局部属性。这是由输入动词的\localc 和选择的动词投射的\dslc 值的共指来实现的。只有末位（\textsc{initial}$-$）中的定式动词可以作为这一规则的输入。输出是位于首位（\textsc{initial}+）的动词。
+%The verb licensed by this lexical rule selects a maximal projection of the verb trace which has the same local properties as the input verb.
+%This is achieved by the coindexation of the \local values of the input verb and the \dsl values of the selected verb projection.
+%Only finite verbs in final position (\textsc{initial}$-$) can be the input for this rule. The output
+%is a verb in initial-position (\textsc{initial}+).
+%
+相应的扩展分析如图\vref{verb-movement-syn}所示。V1-LR表示动词首位的词汇规则。
+%The corresponding extended analysis is given in Figure~\vref{verb-movement-syn}. V1-LR stands for the verb-initial lexical rule.
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[V{[\subcat \eliste]}
+	[V{[\subcat \sliste{ \ibox{1} }]}
+		[V{[\subcat \ibox{2}]}, tier=np,edge label={node[midway,right]{V1-LR}}
+			[kennt;认识]]]
+%			[kennt;knows]]]
+	[\ibox{1} V{\feattab{
+             \textsc{dsl$|$cat$|$subcat} \ibox{2},\\
+             \textsc{subcat} \eliste }}
+		[\ibox{3} NP{[\textit{nom}]}, tier=np
+			[jeder;每个人]]
+%			[jeder;everyone]]
+		[V{\feattab{
+                      \textsc{dsl$|$cat$|$subcat} \ibox{2},\\
+                      \textsc{subcat} \sliste{ \ibox{3} } }}
+			[\ibox{4} NP{[\textit{acc}]}
+				[diesen Mann;这个 男人,roof]]
+%				[diesen Mann;this man,roof]]
+			[V{\feattab{
+                              \textsc{dsl$|$cat$|$subcat} \ibox{2},\\
+                              \textsc{subcat} \ibox{2} \sliste{ \ibox{3}, \ibox{4} } }}
+				[\trace]]]]]
+\end{forest}
+\caption{\label{verb-movement-syn}\emph{Kennt jeder diesen Mann?}（每个人都认识这个男人吗？）的分析的可视化}
+%\caption{\label{verb-movement-syn}Visualization of the analysis of \emph{Kennt jeder diesen Mann?} `Does everyone know this man?'}
+\end{figure}%
+%V1-LR steht für die Verberst"=Lexikonregel.
+
+\noindent
+（\mex{0}）中的词汇规则允准了选择VP（图\ref{verb-movement-syn}中的\iboxt{1}）的动词。这个VP的\dslvc 对应于词汇规则输入动词的\locvc。\dslvc 的部分也是图\ref{verb-movement-syn} \iboxb{2}中表示的配价信息。因为\dslc 是一个中心语特征，VP的\dslvc 与动词语迹是相同的，而且由于动词语迹的\locvc 与\dslvc 是相同的，动词kennen的\subcatc 信息在语迹中也是可获得的。语迹与其论元的组合跟普通动词相比是完全一样的。
+%The lexical rule in (\mex{0}) licenses a verb that selects a VP (\iboxt{1} in
+%Figure~\ref{verb-movement-syn}). The \dslv of this VP corresponds to the \locv of the verb that is the input of the lexical rule.
+%Part of the \dslv is also the valence information represented in Figure \ref{verb-movement-syn} \iboxb{2}.
+%Since \dsl is a head feature, the \dslv of the VP is identical to that of the verb trace and since the \locv of the verb trace is identified
+%with the \dslv, the \subcat information of the verb \emph{kennen} is also available at the trace. The combination of the trace with its
+%arguments proceeds exactly as with an ordinary verb.
+
+如果我们必须为每个动词假定一个具体的语迹，这样就不令人满意了。幸运地是，这是不必要的，因为（\mex{1}）中的一个普通的语迹对于带有动词移位的句子分析来说是足够的了。\isc{循环!特征描写中的循环}\is{cycle!in feature description}
+%It would be unsatisfactory if we had to assume a special trace for every verb. Fortunately, this is not necessary as a general trace as
+%in (\mex{1}) will suffice for the analysis of sentences with verb movement.\is{cycle!in feature description}
+
+\eas
+按照\citew[\page 206--208]{Meurers2000b}的一般动词语迹：\isc{语迹!动词语迹|)}\is{trace!verb|)}\isc{空成分}\is{empty element}\\
+%General verb trace following \citew[\page 206--208]{Meurers2000b}:\is{trace!verb}\is{empty element}\\
+\label{le-verbspur}
+\onems{
+phon \phonliste{}\\
+synsem$|$loc   \ibox{1} \ms{ cat$|$head$|$dsl   & \ibox{1}\\
+                   }\\
+}
+\zs
+这乍看上去可能有些出人意料，但是如果我们仔细看词汇规则（\ref{lr-verb-movement}）和树中\textsc{dsl}特征渗透的互动关系，那么动词投射的\dslvc 就更加清晰了，由此，动词语迹的\localvc 由输入动词的\localvc 决定。在图\ref{verb-movement-syn}中， kennt是动词移位词汇规则的输入。相应的结构共享可以确保，在（\ref{bsp-kennt-jeder-diesen-Mann}）的分析中，动词语迹的\localvc 确切地对应于（\ref{le-verbspur-kennt}）中给出的内容。
+%This may seem surprising at first glance, but if we look closer at the interaction of the lexical rule (\ref{lr-verb-movement}) and the percolation %of the
+%\textsc{dsl} feature in the tree, then it becomes clear that the \dslv of the verb projection and therefore the \localv of the verb trace is %determined by the \localv
+%of the input verb. In Figure~\ref{verb-movement-syn}, \emph{kennt} is the input for the verb
+%movement lexical rule. The relevant structure sharing ensures that, in
+%the analysis of (\ref{bsp-kennt-jeder-diesen-Mann}), the \localv of the verb trace corresponds exactly to what is given in (\ref{le-verbspur-%kennt}).
+
+我们将动词位置分析的最为重要的内容总结如下：
+%The most important points of the analysis of verb position are summarized below:
+\begin{itemize}
+\item 词汇规则为每一个定式动词都允准了一个特殊词项。
+\item 该词汇项占据了首位，并且要求它的论元是动词语迹的完整投射。
+\item 动词语迹必须具有\dslvc，并且\dslvc 与词汇规则输入动词的\localvc 相同。
+\item 由于\dslc 是一个中心语特征，被选择的\dslvc 也在语迹中表示。
+\item 因为语迹的\dslvc 与其\localvc 是相同的，所以语迹的\localvc 与词汇规则输入动词的\localvc 相同。
+%\item A lexical rule licenses a special lexical item for each finite verb.
+%\item This lexical item occupies the initial position and requires as its argument a complete projection of a verb trace.
+%\item The projection of the verb trace must have a \dslv corresponding to the \localv of the input verb of the lexical rule.
+%\item Since \dsl is a head feature, the selected \dslv is also present on the trace.
+%\item As the \dslv of the trace is identical to its \localv, the \localv of the trace is identical to the \localv of the input verb in the
+%lexical rule.
+\end{itemize}
+\isc{词汇规则!动词首位位置|)}\is{lexical rule!verb"=initial position|)}
+
+\noindent
+在讨论完动词开头的句子之后，我们现在来看局部语序重列的内容。\isc{动词位置|(}\is{verb position|(}
+%After discussing the analysis of verb-first sentences, we will now turn to local reordering.\is{verb position|(}
+
+\section{局部语序重列}
+%\section{Local reordering}
+\label{sec-HPSG-lokale-Umstellung}
+\label{Abschnitt-HPSG-lokale-Umstellung}
+
+针对中场的语序分析有许多种可能性\isc{组成成分位置|(}\is{constituent position|(}：我们可以假定一个\gpsgc 中的平铺结构\citep{Kasper94a}、或者假定一个二叉结构，并且允许论元按照任意语序来填充。\citet{Kathol2001a}和\citet{Mueller99a,Mueller2002b,Mueller2004b}提出了一个折衷的看法：带有特殊列表的二叉结构，这个列表包括属于一个中心语的论元和附接语。论元和附接语在这些列表内部按照自由语序排列。请参阅\citew{Reape94a}和本书的\ref{sec-discontinuous-constituents-HPSG}有关这些方法的形式化表示。所有这些平铺分析和折衷分析都被证明是错误的（请参阅\citealp{Mueller2005c,Mueller2004e}和\citealp[Section~9.5.1]{MuellerLehrbuch1}），由此，我只讨论二叉结构的分析。
+%There are several possibilities for\is{constituent position|(} the analysis of constituent order in the middle field: one can assume completely flat %structures
+%as in \gpsg \citep{Kasper94a}, or instead assume binary branching structures and allow for arguments to be saturated in any order.
+%A compromise was proposed by \citet{Kathol2001a} and \citet{Mueller99a,Mueller2002b,Mueller2004b}:
+%binary branching structures with a special list that contains the arguments and adjuncts belonging
+%to one head. The arguments and adjuncts are allowed to be freely ordered inside such lists. See
+%\citew{Reape94a} and Section~\ref{sec-discontinuous-constituents-HPSG} of this book for the formal details of these approaches. Both the
+%completely flat analysis and the compromise have proved to be on the wrong track (see \citealp{Mueller2005c,Mueller2004e} and
+%\citealp[Section~9.5.1]{MuellerLehrbuch1}) and therefore, I will only discuss the analysis with binary branching structures.
+
+图\vref{Abbildung-Konstituentenstellung-HPSG-normal}表示了（\mex{1}a）的分析。
+%Figure~\vref{Abbildung-Konstituentenstellung-HPSG-normal} shows the analysis of (\mex{1}a).
+
+\eal
+\ex 
+\gll {}[weil] jeder diesen Mann kennt\\
+	 {}\spacebr{}因为 每人 这 人 认识\\
+%	 {}\spacebr{}because everyone this man knows\\
+\ex 
+\gll {}[weil] diesen Mann jeder kennt\\
+	 {}\spacebr{}因为 这 人 每人 认识\\
+\glt `因为每个人都认识这个男人'
+%	 {}\spacebr{}because this man everyone knows\\
+%\glt `because everyone knows this man'
+\zl
+%
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[V{[\subcat \sliste{}]}
+	[\ibox{1} NP{[\type{nom}]}
+		[jeder;每个人]]
+%		[jeder;everybody]]
+	[V{[\subcat \sliste{ \ibox{1} }]}
+		[\ibox{2} NP{[\type{acc}]}
+			[diesen Mann;这个 男人, roof]]
+%			[diesen Mann;this man, roof]]
+		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} }]}
+			[kennt;认识]]]]
+%			[kennt;knows]]]]
+\end{forest}
+\caption{\label{Abbildung-Konstituentenstellung-HPSG-normal}HPSG中的成分序列分析：无标记语序}
+%\caption{\label{Abbildung-Konstituentenstellung-HPSG-normal}Analysis of constituent order in HPSG: unmarked order}
+\end{figure}%
+正如\ref{sec-HPSG-constituent-structure}所解释的，动词首先跟其\subcatlc 上最后一个元素对应的论元组合。有标记语序的分析如图\vref{Abbildung-Konstituentenstellung-HPSG-markiert}所示。
+%The arguments of the verb are combined with the verb starting with the last element of the \subcatl,
+%as explained in Section~\ref{sec-HPSG-constituent-structure}. 
+%The analysis of the marked order is shown in Figure~\vref{Abbildung-Konstituentenstellung-HPSG-markiert}. 
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[V{[\subcat \sliste{}]}
+	[\ibox{2} NP{[\type{acc}]}
+		[diesen Mann;这个 男人, roof]]
+%		[diesen Mann;this man, roof]]
+	[V{[\subcat \sliste{ \ibox{2} }]}
+        	[\ibox{1} NP{[\type{nom}]}
+	        	[jeder;每个人]]
+%	        	[jeder;everybody]]
+		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} }]}
+			[kennt;认识]]]]
+%			[kennt;knows]]]]
+\end{forest}
+\caption{\label{Abbildung-Konstituentenstellung-HPSG-markiert}HPSG中成分序列的分析：有标记语序}
+%\caption{\label{Abbildung-Konstituentenstellung-HPSG-markiert}Analysis of constituent order in
+%  HPSG: marked order}
+\end{figure}%
+这两棵树的区别只在于从\subcatlc 中取走的成分的顺序：在图\ref{Abbildung-Konstituentenstellung-HPSG-normal}中，\subcatlc 的最后一个成分先被释放，而图\ref{Abbildung-Konstituentenstellung-HPSG-markiert}中是第一个成分。
+%Both trees differ only in the order in which the elements are taken off from the \subcatl:
+%in Figure~\ref{Abbildung-Konstituentenstellung-HPSG-normal}, the last element of the \subcatl is discharged first and in Figure~
+%\ref{Abbildung-Konstituentenstellung-HPSG-markiert}
+%the first one is.
+
+下面的模式是中心语"=论元模式的修订版：
+%The following schema is a revised version of the Head"=Argument Schema:
+\begin{samepage}
+\begin{schema}[中心语-论元模式（二叉结构）]
+%\begin{schema}[Head-Argument Schema (binary branching)]
+\label{schema-bin-prel2}
+~\\
+\type{head"=argument"=phrase}\istype{head"=argument"=phrase} \impl\\
+\onems{
+      synsem$|$loc$|$cat$|$subcat \ibox{1} $\oplus$ \ibox{3}\\
+      head-dtr$|$synsem$|$loc$|$cat$|$subcat \ibox{1} $\oplus$ \sliste{ \ibox{2} } $\oplus$ \ibox{3}\\
+      non-head-dtrs \sliste{ [ \textsc{synsem} \ibox{2} ] }\\
+}
+\end{schema}
+\end{samepage}
+在第一版的中心语"=论元模式中，总是\subcatlc 中的最后一个成分与中心语相组合，这里的\subcatlc 通过附加（append）被分成了三个部分\isc{关系!附加关系}\is{relation!\emph{append}}：一个任意长度的列表\iboxb{1}、一个只包括一个成分（\sliste{ \ibox{2} }）的列表，以及另一个任意长度的列表\iboxb{3}。列表\ibox{1}和\iboxb{3}被组合起来，并且结果是父结点的\subcatvc。
+%Whereas in the first version of the Head"=Argument Schema it was always the last element from the \subcatl that was combined with the %head,
+%the \subcatl is divided into three parts using \emph{append}\is{relation!\emph{append}}: a list of arbitrary length \iboxb{1},
+%a list consisting of exactly one element (\sliste{ \ibox{2} }) and a further list of arbitrary length \iboxb{3}. The lists \ibox{1} and \ibox{3}
+%are combined and the result is the \subcatv of the mother node.
+具有固定语序的语言\isc{成分序列!固定成分序列}\is{constituent order!fixed}\isc{成分序列!自由成分序列}\is{constituent
+  order!free}（如英语）与德语这类语言是不同的，因为他们从一个方向开始释放论元（更多有关英语的主语的内容，请参阅\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么\ibox{1}要么\ibox{3}总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个与\ref{Abschnitt-Kaynesche-Modelle}的Kayne式\aimention{Richard S. Kayne}的分析相比较，这里它被认为是所有语言都是从基础语序 [specifier [head complement]]推导而来的（请参阅图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要花费一些理论上的努力来得到正确的语序。与之相对比的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在他们所属的分支类型上是不同的。\footnote{ 
+这并没有排除这样的事实，我们讨论的这个结构具有不同的属性，只要把他们的处理度考虑进来的话。请参阅\citew{Gibson98a,Hawkins99a}和第\ref{Abschnitt-Diskussion-Performanz}章。
+}$^,$\footnote{%
+\citet[\page
+  18]{Haider97c}指出，这里提出的这类分析中，VX语言的分支类型与XV语言的分支类型不同。这影响了c"=统制\isc{c-统制}\is{c"=command}关系，并且这样对GB/MP下的约束理论产生了影响。但是，分支的方向与HPSG的分析是无关的，因为约束原则被界定为使用了o"=统制\isc{o-统制}\is{o"=command}
+    \citep[\S~6]{ps2}，而o"=统制对应于旁格层级\isc{旁格}\is{Obliqueness}，即\subcatlc 中元素的语序，而不是这些元素与中心语相组合的语序。
+}
+%Languages with fixed constituent order\is{constituent order!fixed}\is{constituent order!free} (such as English\il{English})
+%differ from languages such as German in that they discharge the arguments starting from one side (for more on the subject in
+%English, see Section~\ref{Abschnitt-Spr}), whereas languages with free constituent order can combine arguments with the verb
+%in any order. In languages with fixed constituent order, either \ibox{1} or \ibox{3} is always the empty list. Since German structures are
+%not restricted with regard to \ibox{1}
+%or \ibox{3}, that is \ibox{1} and \ibox{3} can either be the empty list or contain elements, the
+%intuition is captured that there are less restrictions in languages with free constituent order than in languages with fixed order.
+%We can compare this to the Kayneian\aimention{Richard S. Kayne} analysis from Section~\ref{Abschnitt-Kaynesche-Modelle}, where it was %assumed
+%that all languages are derived from the base order [specifier [head complement]] (see
+%Figure~\vref{Abbildung-Remnant-Movement-Satzstruktur} for Laenzlinger's analysis of German as an
+%SVO"=language \citep{Laenzlinger2004a}). In these kinds of analyses, languages such as English constitute the most basic case and %languages with
+%free ordering require some considerable theoretical effort to get the order right. In comparison to that, the analysis proposed here
+%requires more theoretical restrictions if the language has more restrictions on permutations of its constituents. The complexity of
+%the licensed structures does not differ considerably from language to language under an HPSG approach. Languages differ only in the type
+%of branching they have.\footnote{ 
+%This does not exclude that the structures in question have different properties as far as their
+%processability by humans is concerned. See \citew{Gibson98a,Hawkins99a} and
+%  Chapter~\ref{Abschnitt-Diskussion-Performanz}.
+%}$^,$\footnote{%
+%\citet[\page 18]{Haider97c} has pointed out that the branching type of VX languages differs from
+%those of XV languages in analyses of the kind that is proposed here. This affects the c"=command
+%relations\is{c"=command} and therefore has implications for Binding Theory in GB/MP. However, the direction of branching is irrelevant for %HPSG analyses as
+%Binding Principles are defined using o"=command\is{o"=command} \citep[Chapter~6]{ps2} and o"=command makes reference to the %Obliqueness 
+%Hierarchy\is{Obliqueness}, that is, the order of elements in the \subcatl rather than the order in which these elements are combined with the %head.
+%}
+
+这里展示的分析应用了任意顺序的论元的组合，这与GB/MP框架下的\citet{Fanselow2001a}的分析，以及\citet[\S~3.1]{Hoffmann95a-u}和\citet{SB2006a-u}的范畴语法的分析是很相似的。Gunji\nocite{Gunji86a}早在1986年就针对日语提出了类似的HPSG分析。
+%The analysis presented here utilizing the combination of arguments in any order is similar to that of \citet{Fanselow2001a} in the framework
+%of GB/MP as well as the Categorial Grammar analyses of \citet[Section~3.1]{Hoffmann95a-u} and \citet{SB2006a-u}.
+%Gunji\nocite{Gunji86a} proposed similar HPSG analyses for Japanese\il{Japanese} as early as 1986.
+\isc{成分序列|)}\is{constituent order|)}
+
+\section{长距离依存}
+%\section{Long"=distance dependencies}
+\label{Abschnitt-Fernabhängigkeiten-HPSG}\label{sec-nld-HPSG}
+
+长距离依存\isc{长距离依存|(}\is{long"=distance dependency|(}分析应用了最初由GPSG中发展而来的技术：关于缺失成分的信息被传递到树上（或者特征结构中）。\footnote{
+在HPSG中，没有什么真正地在特征结构和树中按照字面意义“向上传递”。这可以看作是确定性理论（如HPSG理论）与像转换语法一样的推导性理论之间的最为重要的差别（请参阅第\ref{sec-dtc}节）。不过，它对于解释性这一目的是有意义的，它为了解释这个分析就好像这个结构是自底向上构建的，但是语言知识独立于处理的方向。在最近的计算实现中，结构的构建更多是自底向上的，但是还有其他自顶向下工作的系统。非局部依存的分析中唯一重要的事情是缺失成分的信息，这个成分在所有的中间结点上与填充语和空位的信息是一致的。
+}
+在前置成分通常应该出现的那个位置上有一个语迹。图\ref{Abbildung-Fernabhaengigkeiten-HPSG}表示了（\mex{1}）的分析。
+%图\vref{Abbildung-Fernabhaengigkeiten-HPSG}表示了（\mex{1}）的分析。
+%The\is{long"=distance dependency|(} analysis of long"=distance dependencies utilizes techniques that were originally developed in GPSG:
+%information about missing constituents is passed up the tree (or feature structure).\footnote{
+%	In HPSG, nothing is actually `passed up' in a literal sense in feature structures or
+%        trees. This could be seen as one of the most important differences between deterministic
+ %       (\eg HPSG) and derivational theories like transformational grammars (see
+ %       Section~\ref{sec-dtc}). Nevertheless, it makes sense for expository purposes to explain
+%        the analysis as if the structure were built bottom"=up, but linguistic knowledge is independent of the direction
+%	of processing. In recent computer implementations, structure building is mostly carried out
+ %       bottom"=up but there were other systems which worked top"=down. The only thing that is
+ %       important in the analysis of nonlocal dependencies is that the information about the missing
+%	element on all intermediate nodes is identical to the information in the filler and the gap.
+%}
+%There is a trace at the position where the fronted element would normally occur. Figure~\vref{Abbildung-Fernabhaengigkeiten-HPSG} shows
+%the analysis of (\mex{1}).
+\ea
+\label{Beispiel-Diesen-Mann-kent-jeder-HPSG}
+\gll {}[Diesen Mann]$_j$ kennt$_i$ \_$_j$ jeder \_$_i$.\\
+	 {}\spacebr{}这 男人 认识 {} 每人\\
+\glt `每个人都认识这个男人。'
+%	 {}\spacebr{}this man knows {} everyone\\
+%\glt `Everyone knows this man.'
+\z
+\begin{figure}
+\settowidth{\offset}{N}
+\centering
+\begin{forest}
+sm edges
+[VP
+	[NP,name=np
+		[diesen Mann$_i$;这个 男人,roof]]
+%		[diesen Mann$_i$;this man,roof]]
+	[VP/NP,name=vpnp2
+		[V
+			[V
+				[kennt$_k$;认识]]]
+%				[kennt$_k$;knows]]]
+		[VP/NP,name=vpnp1
+			[NP/NP, name=npnp
+				[\trace$_i$]]
+			[V$'$
+				[NP
+					[jeder;每个人]]
+%					[jeder;everyone]]
+				[V
+				  [\trace$_k$]]]]]]
+\draw[<->] ($(npnp.east)$)  to [bend right=45] ($(vpnp1.south east)+(-.25,.1)$);
+\draw[<->] ($(vpnp1.north east)+(-.26,-.1)$)  to [bend right=45] ($(vpnp2.east)+(-0,0)$);
+\draw[<->] ($(vpnp2.north)+(.26,-0)$) parabola[parabola height=5mm] ($(np.north)+(-.15,0)$);
+\end{forest}
+\caption{\label{Abbildung-Fernabhaengigkeiten-HPSG}HPSG中的长距离依存分析}
+%\caption{\label{Abbildung-Fernabhaengigkeiten-HPSG}Analysis of long"=distance dependencies in HPSG}
+\end{figure}%
+
+原则上，我们也可以假定宾语是从未标记的位置上提取出来的（请参阅\ref{sec-GB-lokale-Umstellung}关于未标记位置的内容）。提取的语迹可以在主语后面：
+%In principle, one could also assume that the object is extracted from its unmarked position (see
+%Section~\ref{sec-GB-lokale-Umstellung} on the unmarked position). The extraction trace would then
+%follow the subject:
+\ea
+\label{Beispiel-Diesen-Mann-kent-jeder-trace-follows-subjectHPSG}
+\gll {}[Diesen Mann]$_j$ kennt$_i$ jeder \_$_j$  \_$_i$.\\
+	 {}\spacebr{}这 男人 认识 每人 {}\\
+\glt `每个人都认识这个男人。'
+%	 {}\spacebr{}this man knows everyone {}\\
+%\glt `Everyone knows this man.'
+\z
+\citet{Fanselow2004c}认为，某些特定的短语可以处于前场，而不具有特殊的语用功能。比如说，主动句中的（虚位）主语（\mex{1}a）、时间副词（\mex{1}b）、句子副词（\mex{1}c）、心理动词的与格宾语（\mex{1}d），以及被动中的宾语（\mex{1}e）可以处于前场，即使他们既不是话题，也不是焦点。
+%\citet{Fanselow2004c} argues that certain phrases can be placed in the Vorfeld without having a
+%special pragmatic function. For instance, (expletive) subjects in active sentences (\mex{1}a),
+%temporal adverbials (\mex{1}b), sentence adverbials (\mex{1}c), dative objects of psychological verbs (\mex{1}d) and objects in
+%passives (\mex{1}e) can be placed in the Vorfeld, even though they are neither topic nor focus.
+\eal
+\ex
+\gll Es regnet.\\
+     它 下雨\\
+\glt `下雨了。'
+ %    it rains\\
+%\glt `It rains.'
+\ex 
+\gll Am Sonntag hat ein Eisbär einen Mann gefressen.\\
+     \textsc{prep} 星期天 \textsc{aux} \textsc{art} 北极熊 \textsc{art} 人 吃\\
+\glt `在星期天，有一头北极熊吃了一个人。'
+%    on Sunday  has a   polar.bear a man eaten\\
+%\glt `On Sunday, a polar bear ate a man.'
+\ex 
+\gll Vielleicht hat der Schauspieler seinen Text vergessen.\\
+     也许    \textsc{aux} \textsc{det} 男演员 他的 台词 忘记\\
+\glt `也许，这个男演员已经忘记他的台词了。'
+%     perhaps    has the actor his text forgotten\\
+%\glt `Perhaps, the actor has forgotton his text.'
+\ex 
+\gll Einem Schauspieler ist der Text entfallen.\\
+     \textsc{art}.\dat{} 男演员 \textsc{aux} \textsc{det}.\nom{} 台词 忘记\\
+\glt `一位男演员忘记台词了。'
+%     a.\dat{} actor is the.\nom{} text forgotten\\
+%\glt `An actor forgot the text.'
+\ex
+\gll Einem Kind wurde das Fahrrad gestohlen.\\
+     \textsc{art}.\dat{} 孩子 \textsc{aux} \textsc{det}.\nom{} 自行车 偷\\
+\glt `一辆自行车从一个孩子那里被偷走了。'
+ %    a.\dat{} child was the.\nom{} bike stolen\\
+%\glt `A bike was stolen from a child.'
+\zl
+Fanselow认为信息结构的影响与中场的重新排序有关。所以通过（\mex{1}）中宾格宾语的排序，我们可以得到特定的效果：
+%Fanselow argues that information structural effects can be due to reordering in the Mittelfeld. So
+%by ordering the accusative object as in (\mex{1}), one can reach certain effects:
+\ea
+\gll Kennt diesen Mann jeder?\\
+     认识 这 男人 每人\\
+\glt `每个人都认识这个男人吗？'
+%     knows this man everybody\\
+%\glt `Does everybody know this man?'
+\z
+如果有人认为有前置成分移到了\vfc，而且它们不具有粘附其上的信息结构的限制，而且这些信息结构的限制与中场的重新排序是有联系的，那么这个在中场的首位成分被前置的假设就解释了为什么（\mex{-1}）中的例子没有在信息结构上进行标记。前场的成分在中场的首位也是没有标记的：
+%If one assumes that there are frontings to the \vf that do not have information structural constraints
+%attached to them and that information structural constraints are associated with reorderings in the
+%Mittelfeld, then the assumption that the initial element in the Mittelfeld is fronted explains why the
+%examples in (\mex{-1}) are not information structurally marked. The elements in the Vorfeld are
+%unmarked in the initial position in the Mittelfeld as well:
+\eal
+\ex
+\gll Regnet es?\\
+     下雨 它\\
+\glt `下雨了吗？'
+%     rains it\\
+%\glt `Does it rains?'
+\ex 
+\gll Hat am Sonntag ein Eisbär einen Mann gefressen?\\
+     \textsc{aux} \textsc{prep} 星期天  \textsc{art}   北极熊 \textsc{art} 人 吃\\
+\glt `一个北极熊在星期天吃了一个人吗？'
+%     has on Sunday  a   polar.bear a man eaten\\
+%\glt `Did a polar bear eat a man on Sunday?'
+\ex 
+\gll Hat vielleicht der Schauspieler seinen Text vergessen?\\
+     \textsc{aux} 也许    \textsc{det} 男演员 他的 台词 忘记\\
+\glt `这位男演员忘记他的台词了吗？'
+%     has perhaps    the actor his text forgotten\\
+%\glt `Has the actor perhaps forgotton his text?'
+\ex 
+\gll Ist einem Schauspieler der Text entfallen?\\
+      \textsc{aux}  \textsc{art}.\dat{} 男演员     \textsc{det}.\nom{} 台词 忘记\\
+\glt `一个男演员忘记台词了吗？'
+ %    is  a.\dat{} actor     the.\nom{} text forgotten\\
+%\glt `Did an actor forget the text?'
+\ex
+\gll Wurde einem Kind das Fahrrad gestohlen?\\
+     \textsc{aux} \textsc{art}.\dat{} 孩子 \textsc{det}.\nom{} 自行车 偷\\
+\glt `有辆自行车从孩子那里偷走了吗？'
+ %    was a.\dat{} child the.\nom{} bike stolen\\
+%\glt `Was a bike stolen from a child?'
+\zl
+所以，我认为前置论元的语迹在未标记的语序中不是中场"=首位的，而是最后与中心语相组合，正如\ref{sec-HPSG-lokale-Umstellung}所描述的那样。当然，这也同样适用于那些在未标记语序的中场"=首位的所有提取的论元：以（\mex{1}）为例，语迹最后与中心语组合：
+%So, I assume that the trace of a fronted argument that would not be Mittelfeld"=initial in the unmarked order is combined with
+%the head last, as described in Section~\ref{sec-HPSG-lokale-Umstellung}. Of course, the same applies
+%to all extracted arguments that would be Mittelfeld"=initial in the unmarked order anyway: the
+%traces are combined last with the head as for instance in (\mex{1}):
+\ea
+\label{Beispiel-jeder-kennt-diesen-Mann-HPSG}
+\gll {}[Jeder]$_j$ kennt$_i$ \_$_j$ diesen Mann \_$_i$.\\
+	 {}\spacebr{}每人 认识 {} 这 男人\\
+\glt `每个人都认识这个男人。'
+%	 {}\spacebr{}everybody knows {} this man\\
+%\glt `Everyone knows this man.'
+\z
+在介绍完基本思想之后，我们现在来看技术上的细节：与我们在\ref{Abschnitt-Verbstellung-HPSG}讨论的动词移位不同的是，成分移位是非局部的，这就是为什么两个移位类型按照不同的特征（\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}）来模拟的原因。\textsc{dsl}是一个中心语特征，而且跟所有其他中心语特征一样，投射到投射层的最高点（更多有关中心语特征原则的内容，请参阅第\pageref{prinzip-hfp}页）。另一方面，\slaschc 是一个属于\textsc{synsem|nonloc}下表示的\textsc{nonloc}特征的特征。\nonlocc 特征的值是带有特征\textsc{inherited}（或者简写为\textsc{inher}）和\textsc{to-bind}的结构。\textsc{inher}的值是一个包括长距离依存中成分信息的结构。（\mex{1}）给出了\citet[\page 163]{ps2}提出的结构：\footnote{
+Pollard \& Sag认为，\textsc{que}、\textsc{rel}和\slaschc 的值是集合，而不是列表。集合背后的数学原理更为复杂，这就是为什么我在这里假定是列表。
+}
+%After this rough characterization of the basic idea, we now turn to the technical details: unlike verb
+%movement, which was discussed in Section~\ref{Abschnitt-Verbstellung-HPSG}, constituent movement is
+%nonlocal, which is why the two movement types are modeled with different features (\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}).
+%\textsc{dsl} is a head feature and, like all other head features, projects to the highest node of a projection (for more on the Head Feature %Principle,
+%see page~\pageref{prinzip-hfp}). \slasch, on the other hand, is a feature that belongs to the \textsc{nonloc} features represented under %\textsc{synsem|nonloc}. The value of the \nonloc feature is a structure with the features \textsc{inherited} (or \textsc{inher} for short) and 
+%\textsc{to-bind}. The value of \textsc{inher} is a structure containing information about elements involved in a long"=distance dependency.
+%(\mex{1}) gives the structure assumed by \citet[\page 163]{ps2}:\footnote{
+%  Pollard \& Sag assume that the values of \textsc{que}, \textsc{rel}, and \slasch are sets rather
+%  than lists. The math behind sets is rather complicated, which is why I assume lists here.
+%}
+\ea
+\ms[nonloc]{
+ que & \type{list~of~npros} \\
+ rel & \type{list~of~indices} \\
+ slash & \type{list~of~local~structures}
+ %extra & \ms[list~of~local~structures]{} \\
+}
+\z
+\textsc{que}\isfeat{que}对于疑问句的分析是很重要的，就像 \textsc{rel}\isfeat{rel}对于关系小句的分析是非常重要的一样。由于这些内容不在本书的范围内，所以后面我们会省略这些内容。\textsc{slash}\isfeat{slash}的值是\type{local}对象的一个列表。
+%\textsc{que}\isfeat{que} is important for the analysis of interrogative clauses as is \textsc{rel}\isfeat{rel} for the analysis of relative
+%clauses. Since these will not feature in this book, they will be omitted in what follows. The value of \textsc{slash}\isfeat{slash}
+%is a list of \type{local} objects.
+
+正如\isc{语迹!提取语迹|(}\is{trace!extraction
+    trace|(}动词移位的分析中，我们假定在宾格通常出现的位置上有一个语迹，而且这个语迹共享了那个宾语的属性。由此，动词可以在局部满足它的配价要求。动词是否已经和语迹组合而没与真正的论元组合这一信息，在复杂符号内部进行表示，并且在树上向上传递。这样，长距离依存的问题就可以通过树中更高的位于前场的成分得到解决。
+%As\is{trace!extraction trace|(} with the analysis of verb movement, it is assumed that there is a
+%trace in the position where the accusative object would normally occur and that this trace shares the properties of that object. The verb can %therefore satisfy its valence requirements locally. Information about whether
+%there has been combination with a trace and not with a genuine argument is represented inside the complex sign and passed upward in the %tree.
+%The long"=distance dependency can then be resolved by an element in the prefield higher in the tree.
+
+长距离依存通过语迹而引入，它在其\slashlc 中有一个对应于必有论元的\localvc 的特征。（\mex{1}）显示了对于（\ref{Beispiel-Diesen-Mann-kent-jeder-HPSG}）的分析必需的语迹描述：
+%Long"=distance dependencies are introduced by the trace, which has a feature corresponding to the \localv of the required argument in its %\slashl.
+%(\mex{1}) shows the description of the trace as is required for the analysis of (\ref{Beispiel-Diesen-Mann-kent-jeder-HPSG}):
+
+\eas
+\label{le-spur-acc-o-kennen}
+kennen的宾格宾语的语迹（初级版本）：\\
+%Trace of the accusative object of \emph{kennen} (preliminary):\\
+\ms[word]{
+ phon & \phonliste{} \\[2mm]
+ synsem & \ms{ loc   & \ibox{1} \ms{ cat \ms{ head & \ms[noun]{
+                                                     cas & acc
+                                                     } \\
+                                              subcat & \sliste{}
+                                            } 
+                                   }\\
+nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
+                                                %extra & \sliste{} \\
+              to-bind$|$slash & \eliste
+            } 
+}
+}
+\zs
+
+\noindent
+由于语迹没有内部结构（没有子结点），他们属于类型\type{word}。语迹跟宾格宾语具有相同的属性。宾格宾语没在语迹占据的位置上出现的事实通过\slaschc 的值来表示。\isc{语迹!提取语迹|)}\is{trace!extraction trace|)} 
+%Since traces do not have internal structure (no daughters), they are of type \type{word}.
+%The trace has the same properties as the accusative object. The fact that the accusative object is not present at the position occupied by the %trace
+%is represented by the value of \slasch.\is{trace!extraction trace|)} 
+%
+
+下面的原则用来确保\textsc{nonloc}的信息在树上向上进行传递。
+%The following principle is responsible for ensuring that \textsc{nonloc} information is passed up the tree.
+
+\begin{samepage}
+\isc{原则!非局部@\textsc{非局部}}\is{principle!nonloc-@\textsc{nonloc}-}
+\begin{principle-break}[非局部特征原则]
+%\begin{principle-break}[Nonlocal Feature Principle]
+\label{Prinzip-der-Nichtlokalen-Merkmale}
+在中心语短语中，对于每个非局部特征来说，父结点的\textsc{inherited}值是一个列表，该列表是子结点的\textsc{inherited}值减去中心语子结点的\textsc{to-bind}列表中成分的连接。
+%In a headed phrase, for each nonlocal feature, the \textsc{inherited} value of the mother is a list
+%that is the concatenation of the \textsc{inherited} values of the daughters minus the elements in the
+%\textsc{to-bind} list of the head daughter.
+\end{principle-break}
+\end{samepage}
+
+\noindent
+中心语"=填充语模式（模式\ref{hf-schemaa}）允准了图\vref{Abbildung-Diesen-Mann-kennt-jeder}中的最高结点。
+%The Head"=Filler Schema (Schema~\ref{hf-schemaa}) licenses the highest node in Figure~\vref{Abbildung-Diesen-Mann-kennt-jeder}.
+%
+\begin{figure}
+\begin{schema}[中心语"=填充语模式]
+%\begin{schema}[Head"=Filler Schema]
+\label{hf-schemaa}\isc{程式!填充语-中心语程式}\is{schema!Filler"=Head}
+~\\\samepage
+\type{head-filler-phrase}\istype{head"=filler"=phrase} \impl\\
+\onems{ 
+%synsem$|$nonloc$|$slash  \eliste\\
+head-dtr$|$synsem       \onems{ loc$|$cat \onems{ head \ms[verb]{vform & fin\\
+                                                                 initial & \upshape $+$
+                                                                }\\
+                                                  subcat \sliste{}
+                                               }\\
+                             nonloc \ms{ inher$|$slash &  \sliste{ \ibox{1} }\\
+                                         to-bind$|$slash &  \sliste{ \ibox{1} }
+                                       }
+                        }\\
+non-head-dtrs  \sliste{ \onems{ synsem \onems{ loc \ibox{1}\\
+                                           nonloc$|$inher$|$slash \sliste{}
+                                 }} }
+   }
+\end{schema}
+\vspace{-\baselineskip}
+\end{figure}%
+该模式将一个定式、动词居首的小句（\textsc{initial}+）与一个非中心子结点组合在一起。该小句的\textsc{slash}上有一个元素并且该\textsc{slash}元素与那个非中心子结点的\textsc{local}取值相同。在这个结构中，没有论元被满足。没有任何动词可以从填充语子结点本身提取出来，这通过非中心语子结点的\textsc{slash}值的确定而实现。图\ref{Abbildung-Diesen-Mann-kennt-jeder}给出了前置到前场的分析的具体变体。
+%The schema combines a finite, verb-initial clause (\textsc{initial}+) that has an element in \textsc{slash} with a non"=head daughter whose
+%\textsc{local} value is identical to the \textsc{slash} element.
+%In this structure, no arguments are saturated. Nothing can be extracted from the filler daughter itself, which is ensured
+%by the specification of the \textsc{slash} value of the non"=head daughter. Figure~\ref{Abbildung-Diesen-Mann-kennt-jeder} shows a more %detailed
+%variant of the analysis of fronting to the prefield.
+%
+\begin{figure}
+\centerfit{
+\begin{forest}
+sm edges
+[V\feattab{\textsc{subcat} \eliste,\\ 
+           \textsc{inher$|$slash} \eliste},s sep+=1em % increase the distance because otherwise we
+                                % are in the roof
+	[NP{[\loc \ibox{1} \textit{acc}]}
+		[diesen Mann;这个 男人,roof]]
+%		[diesen Mann;this man,roof]]
+	[V\feattab{\textsc{subcat} \sliste{},\\
+                   \textsc{inher$|$slash} \sliste{ \ibox{1} },\\
+                   \textsc{to-bind$|$slash} \sliste{ \ibox{1} } }
+		[V{[\subcat \sliste{ \ibox{2} }]},  l sep=2\baselineskip
+			[V{[\subcat \sliste{ \ibox{3}, \ibox{4} }]},edge
+                          label={node[midway,right]{V1-LR}}, tier=trace
+				[kennt;认识]]]
+%				[kennt;knows]]]
+		[\ibox{2} V\feattab{\textsc{subcat} \sliste{}, %\\
+                                    \textsc{inher$|$slash} \sliste{ \ibox{1} } }
+			[\ibox{4} \feattab{\textsc{loc} \ibox{1},\\
+                                           \textsc{inher$|$slash} \sliste{ \ibox{1} } }, tier=trace
+				[\trace]]
+			[V{[\subcat \sliste{ \ibox{4} }]},tier=trace
+				[\ibox{3} NP{[\textit{nom}]}
+					[jeder;每个人]]
+%					[jeder;everyone]]
+				[V{[\subcat \sliste{ \ibox{3}, \ibox{4} }]}
+					[\trace]]]]]]
+\end{forest}
+}
+\caption{\label{Abbildung-Diesen-Mann-kennt-jeder}针对动词首位语序的结合了动词移位分析的“Diesen Mann kennt jeder.”（每个人都认识这个男人。）的分析}
+%\caption{\label{Abbildung-Diesen-Mann-kennt-jeder}Analysis of \emph{Diesen Mann kennt jeder.} `Everyone knows this man.' combined with %the verb movement analysis for verb-initial order}
+\end{figure}%
+%
+kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语迹相组合。提取的语迹表示我们例子中的宾格宾语。宾格宾语在动词\iboxb{4}的\subcatlc 中有所描述。按照动词移位的机制，kennt的词汇项最初包括的配价信息（\sliste{ \ibox{3}, \ibox{4} }）在动词语迹中有所表示。动词语迹的投射与提取语迹的组合跟非前置的论元具有相同的方式。提取语迹的\slashvc 被传递到树上，并且通过中心语"=补足语模式而完成。
+%The verb movement trace for \emph{kennt} `knows' is combined with a nominative NP and an extraction trace.
+%The extraction trace stands for the accusative object in our example. The accusative object is
+%described in the \subcatl of the verb \iboxb{4}. Following the mechanism for verb movement, the valence information that was originally %contained
+%in the entry for \emph{kennt} (\sliste{ \ibox{3}, \ibox{4} }) is present on the verb trace. The combination of the projection of the verb trace with
+%the extraction trace works in exactly the same way as for non-fronted arguments. The \slashv of the extraction trace is passed up the tree
+%and bound off by the Head"=Filler Schema.
+
+（\ref{le-spur-acc-o-kennen}）\isc{语迹!提取语迹|(}\is{trace!extraction trace|(}为语迹提供了词汇项，它可以用作kennen（认识）的宾格宾语。正如动词移位的分析，没有必要在词库中包括许多具有不同属性的提取语迹。一个更为普遍的词汇项将满足如下条件，如（\mex{1}）中的例子所示：
+%(\ref{le-spur-acc-o-kennen})\is{trace!extraction trace|(} provides the lexical entry for a trace
+%that can function as the accusative object of \emph{kennen} `to know'. As with the analysis of verb movement, it is not necessary to have %numerous extraction traces with differing properties 
+%listed in the lexicon. A more general entry such as the one in (\mex{1}) will suffice:
+
+\eas
+\label{le-extraktionsspur}
+提取语迹：\\
+%Extraction trace: \\
+\ms[word]{
+ phon & \phonliste{} \\[1mm]
+ synsem & \ms{ loc   & \ibox{1}\\
+               nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
+                                                %extra & \sliste{} \\
+                             to-bind$|$slash & \eliste
+                           }
+             }
+}
+\zs
+这与这样的事实是有关系的，中心语可以令人满意地决定它所带论元的\textsc{local} 属性，而且也可以决定它需组合的语迹的局部属性。中心语的\subcatlc 中的元素和语迹的\synsemc 值是相等的，而这个语迹的信息又是和\textsc{slash}所关联的前置的元素的信息是相等的，这样就确保了前场中实现的元素符合中心语\subcatlc 中的描写。前置的状语也做同样的处理：因为通过\textsc{slash}特征使得前场内成分的\localvc 与语迹的\localvc 是一致的，那么就有足够的关于语迹的属性信息。\isc{语迹!提取语迹|)}\is{trace!extraction trace|)}
+%This has to do with the fact that the head can satisfactorily determine the \textsc{local} properties of its arguments and therefore also the
+%local properties of the traces that it combines with. The identification of the object in the \subcatl of the head with the \synsemv of the trace 
+%coupled with the identification of the information in \textsc{slash} with information about the fronted element serves to ensure that the only %elements
+%that can be realized in the prefield are those that fit the description in the \subcatl of the head. The same holds for fronted adjuncts: since the %\localv of the constituent 
+%in the prefield is identified with the \localv of the trace via the \textsc{slash} feature, there is then sufficient information available about the %properties
+%of the trace.\is{trace!extraction trace|)}
+
+上述分析的核心观点可以总结如下：关于语迹的局部属性的信息属于语迹本身，然后出现在所有支配它的结点上，直到它到达了填充语。这一分析可以为所谓的提取路径标记\isc{提取路径标记}\is{extraction path marking}语言提供解释，这些语言的某些特定成分是否发生屈折变化取决于与这些成分相组合的成分是否在长距离依存中被提取出一些成分。\citet*{BMS2001a}将\label{page-Irish-complementizers}爱尔兰语\il{Irish}、Chamorro语\il{Chamorro}、Palauan语\il{Palauan}、冰岛语\il{Icelandic}、Kikuyu语\il{Kikuyu}、Ewe语\il{Ewe}、Thompson Salish语\il{Thompson Salish}、Moore语\il{Moore}、法语\il{French}、西班牙语\il{Spanish}和依地语\il{Yiddish}这类语言作为例子，并且提供了相应的参考信息。由于在HPSG的分析中，信息是逐步传递的，所有参与到长距离依存的结点可以接触到那个依存关系里的成分。
+%The central points of the preceding analysis can be summarized as follows: information about the local properties of a trace is contained in %the trace
+%itself and then present on all nodes dominating it until one reaches the filler. This analysis can
+%offer an explanation for so"=called extraction path marking languages\is{extraction path marking} where 
+%certain elements show inflection depending on whether they are combined with a constituent out of which something has been extracted in a %long"=distance dependency.
+%\citet*{BMS2001a} cite\label{page-Irish-complementizers}  Irish\il{Irish},
+%Chamorro\il{Chamorro}, Palauan\il{Palauan}, Icelandic\il{Icelandic}, Kikuyu\il{Kikuyu},
+%Ewe\il{Ewe}, Thompson Salish\il{Thompson Salish}, Moore\il{Moore}, French\il{French}, Spanish\il{Spanish}, and Yiddish\il{Yiddish} as %examples of such languages and provide corresponding references.
+%Since information is passed on step"=by"=step in HPSG analyses, all nodes intervening in a long"=distance dependency can access the %elements
+%in that dependency.%
+\isc{长距离依存|)}\is{long"=distance dependency|)}
+
+\section{新的进展与理论变体}
+%\section{New developments and theoretical variants}
+
+本节讨论\ref{Abschnitt-Arg-St}的配价信息表示的修订与完善，并且简短地提到了HPSG理论的重要变体，即\ref{sec-linearization-HPSG}的基于语序线性化的HPSG。
+%This section discusses refinements of the representation of valence information in
+%Subsection~\ref{Abschnitt-Arg-St} and briefly mentions an important variant of HPSG, namely
+%Linearization"=based HPSG in Subsection~\ref{sec-linearization-HPSG}.
+
+\subsection{限定语、补足语与论元结构}
+%\subsection{Specifier, complements and argument structure}
+\label{Abschnitt-Arg-St}
+\label{Abschnitt-Spr}
+
+在本章中，\subcatc 被认为是唯一的配价特征。这对应于\citew[\S~1--8]{ps2}的理论主张。对于组成成分的组合，还需要至少一个额外的配价特征和一个对应的模式。这个额外的特征叫做限定语（\textsc{specifier}，\textsc{spr}），它被用来表示英语\citep[\S~9]{ps2}和德语\citep[\S~9.3]{MuellerLehrbuch1}语法中限定词与名词的组合。一般认为，名词选择它的限定词。对于名词Zerstörung（毁坏）来说，我们有如下的\catvc：
+%In this chapter, \subcat was assumed as the only valence feature. This corresponds to the state of theory in
+%\citew[Chapter~1--8]{ps2}. It has turned out to be desirable to assume at least one additional valence feature and a
+%corresponding schema for the combination of constituents. This additional feature is called \textsc{specifier}
+%(\textsc{spr})\isfeat{spr} and is used in grammars of English \citep[Chapter~9]{ps2} and German
+%\citep[Section~9.3]{MuellerLehrbuch1} for the combination of a determiner with a noun. It is assumed that the noun selects
+%its determiner. For the noun \emph{Zerstörung} `destruction', we have the following \catv:
+\ea
+\ms{ head & \ms[noun]{ initial & \upshape $+$
+                     }\\
+     spr & \sliste{ Det }\\
+           subcat & \sliste{ NP[\gen], PP[\type{durch}] }~\\[1mm]
+         }
+\z
+模式~\ref{schema-spr-h}可以像中心语"=论元模式那样来将名词和限定语相组合。
+%Schema~\ref{schema-spr-h} can be used just like the Head"=Argument Schema for the combination
+%of noun and determiner.
+\begin{schema}[限定语-中心语模式]\isc{程式!限定语-中心语-}\is{Schema!Specifier"=Head"=}
+%\begin{schema}[Specifier-Head Schema]\is{Schema!Specifier"=Head"=}
+\label{schema-spr-h}
+~\\
+\type{head-specifier"=phrase}\istype{head"=specifier"=phrase} \impl\\*
+\onems{
+      synsem$|$loc$|$cat$|$spr \ibox{1} \\
+      head-dtr$|$synsem$|$loc$|$cat  \ms{ spr    & \ibox{1} $\oplus$ \sliste{ \ibox{2} } \\
+                                          subcat & \eliste \\
+                                        }\\
+      non-head-dtrs \sliste{ [\synsem \ibox{2} ]}\\
+      }
+\end{schema}
+应用限定语模式对（\mex{1}）中NP的分析如图\ref{Abbildung-die-Zerstorung}所示。
+%应用限定语模式对（\mex{1}）中NP的分析如图\vref{Abbildung-die-Zerstorung}所示。
+%The analysis of the NP in (\mex{1}) with the Specifier Schema is shown in 
+%Figure~\vref{Abbildung-die-Zerstorung}.
+\ea
+\gll die Zerstörung der Stadt durch die Soldaten\\
+	 \textsc{det} 毁灭 \textsc{prep}.\textsc{det} 城市 \textsc{prep} \textsc{det} 士兵\\
+%	 the destruction of.the city by the soldiers\\
+\z
+\begin{figure}
+\centerfit{
+\begin{forest}
+sm edges
+[N\feattab{\spr \sliste{  },\\
+           \subcat \sliste{  } }
+	[\ibox{1} Det
+		[die;\textsc{det}]]
+%		[die;the]]
+			[N\feattab{\spr \sliste{ \ibox{1} },\\
+                   \subcat \sliste{  } }
+		[N\feattab{\spr \sliste{ \ibox{1} },\\
+                   \subcat \sliste{ \ibox{2} } }
+			[N\feattab{\spr \sliste{ \ibox{1} },\\
+                                   \subcat \sliste{ \ibox{2}, \ibox{3} } }
+				[Zerstörung;毁灭]]
+%				[Zerstörung;destruction]]
+			[\ibox{3} NP{[\type{gen}]}
+				[der Stadt; \textsc{det} 城市,roof]]]
+%				[der Stadt; of the city,roof]]]
+		[\ibox{2} PP{[\type{durch}]}
+			[durch die Soldaten; \textsc{prep} \textsc{det}士兵,roof]]]]
+%			[durch die Soldaten; by the soldiers,roof]]]]
+\end{forest}}
+\caption{带有配价特征\sprc 的NP分析}\label{Abbildung-die-Zerstorung} 
+%\caption{NP analysis with valence features \spr}\label{Abbildung-die-Zerstorung} 
+\end{figure}%
+根据\ref{Abschnitt-LP-Regeln-HPSG}讨论的语序线性化规则，可以保证名词在补足语之前，因为名词的\initialvc 是`$+$'。（\mex{1}）中的LP"=规则规定了限定词位于名词的左边。
+%Following the linearization rules discussed in Section~\ref{Abschnitt-LP-Regeln-HPSG}, it is ensured that the noun occurs before the %complements as the
+%\initialv of the noun is `$+$'. The LP"=rule in (\mex{1}) leads to the determiner being ordered to the left of the noun.
+\ea
+限定语 $<$ 中心语
+%specifier $<$ head
+\z
+%
+%
+在英语语法中，\sprc 特征也用来表示动词对主语的选择\citep*[\S~4.3]{SWB2003a}。在（\mex{1}）这样的句子中，动词首先与它的所有补足语相组合（在较新的工作中\subcatc 和\compsc 中的成分），然后在第二步应用\ref{schema-spr-h}模式将主语组合进来。
+%In grammars of English, the \sprf is also used for the selection of the subject of verbs \citep*[Section~4.3]{SWB2003a}.
+%In a sentence such as (\mex{1}), the verb is first combined with all its complements (the elements in the \subcat or
+%\comps in newer works) and is then combined with the subject in a second step by applying Schema~\ref{schema-spr-h}.
+\ea
+\gll Max likes ice cream.\\
+Max 喜欢 冰 奶油\\
+\glt `Max喜欢冰淇淋。'
+\z
+正如我们在\ref{Abschnitt-HPSG-lokale-Umstellung}看到的，在定式句子的分析中按照相同的配价列表来表示主语和论元是有意义的。按照这种方式，我们可以捕捉到这样的事实，动词与其论元组合的顺序不是固定的。虽然假设主语由\sprc 选择也能反映动词与其论元组合顺序不固定这一现象，但是置换现象以同样的方式影响所有论元，这一点无法通过基于\sprc 的分析反映。进而，主语的提取在英语这类语言中是不可能的，但是在德语中是可能的（相关参考资料和测试例子请参阅第\pageref{page-extraction-out-of-subjects}页）。我们可以通过假定英语中主语是通过\sprc 来选择的，而\sprlc 中成分的提取是被禁止的这样的观点来说明他们的不同之处。因为德语中主语是表示在\compslc 上的，这样就可以捕捉到他们与带有可能提取的宾语共存的事实。
+%As we have seen in Section~\ref{Abschnitt-HPSG-lokale-Umstellung}, it makes sense to represent subjects and arguments in the same %valence list
+%for the analysis of finite sentences. In this way, the fact can be captured that the order in which a verb is combined with its arguments is not
+%fixed. While the different orders could also be captured by assuming that the subject is selected
+%via \spr, the fact that scrambling is a phenomenon that affects all arguments in the same way would
+%not be covered in a \spr"=based analysis. Furthermore, the extraction out of subjects is impossible
+%in languages like English, but it is possible in German (for references and attested examples see p.\,\pageref{page-extraction-out-of-%subjects}). This difference can be captured by assuming
+%that subjects are selected via \spr in English and that extraction out of elements in the \sprl is
+%prohibited. Since subjects in German are represented on the \compsl, the fact that they pattern with
+%the objects in terms of possible extractions is captured.
+
+\citew[\S~9]{ps2}提出的进一步的扩展是引入一个额外的列表，它在较新的研究中叫做\argst\isfeat{arg-st}。\argstc 表示论元结构。\argstlc 对应于我们在本章遇到的\subcatlc。它包括中心语的论元，它们按照旁格等级来确定顺序。这个列表中的成分连接到中心语的语义内容中的论元角色（请参阅\ref{Abschnitt-HPSG-Semantik}）。约束理论应用于\argstlc。这一层次的表达可能对大部分语言来说都是一样的：每一种语言都有语义谓词和语义论元。大多数语言利用在选择中发挥作用的句法范畴，所以既有句法选择，也有语义选择。\footnote{%
+\citet{KM2012a}指出，奥奈达语\il{Oneida}（北易洛魁语\il{Iroquoian}）的分析没有囊括句法配价的表示。如果这个分析是正确的，句法论元结构就不具有语言共性了，而是大部分语言的特征而已。
+}
+语言之间的区别在于这些论元是如何实现的。在英语中，配价列表中的第一个元素匹配到\sprlc 上，而剩余的论元匹配到\subcatc （和近期工作中所说的\compslc）上。在德语中，动词的\sprlc 一直是空的。（\mex{1}）表示了德语和英语中相关的例子。
+%A further expansion from \citew[Chapter~9]{ps2} is the introduction of an additional list that is
+%called \argst\isfeat{arg-st} in newer works. \argst stands for Argument Structure. The \argstl
+%corresponds to what we encountered as \subcatl in this chapter.  It contains the arguments of a head
+%in an order corresponding to the Obliqueness Hierarchy. The elements of the list are linked to
+%argument roles in the semantic content of the head (see Section~\ref{Abschnitt-HPSG-Semantik}). Binding Theory operates on the \argstl. %This level of
+%representation is probably the same for most languages: in every language there are semantic predicates and
+%semantic arguments. Most languages make use of syntactic categories that play a role in
+%selection, so there is both syntactic and semantic selection.\footnote{%
+%  \citet{KM2012a} argue for an analysis of Oneida\il{Oneida} (a Northern Iroquoian\il{Iroquoian} language) that does not
+%  include a representation of syntactic valence. If this analysis is correct, syntactic argument
+%  structure would not be universal, but would be characteristic for a large number of languages.
+%}
+%Languages differ with regard to how these arguments are realized.  In English, the first
+%element in the valence list is mapped to the \sprl and the remaining arguments to the \subcat (or
+%\compsl in more recent work). In German, the \sprl of verbs remains empty. (\mex{1}) shows some relevant examples for
+%German and English.
+
+%\begin{figure}[htb]
+\eal
+\label{ex-schlagen-beat}
+\ex
+\onems{
+phon \phonliste{ schlag }\\[2mm]
+synsem$|$loc \ms{ cat & \ms{ head   & verb\\
+                             spr    & \eliste \\
+                             subcat & \ibox{1} \\
+                             arg-st & \ibox{1} \sliste{ NP[\type{str}]\ind{2}, NP[\type{str}]\ind{3} }
+                           }\\
+                  cont & \ms{
+                         ind & \ibox{4} event\\
+                         rels & \sliste{ \ms[schlagen]{
+                                         event   & \ibox{4}\\
+                                         agent   & \ibox{2}\\
+                                         patient & \ibox{3}
+                                        }
+                                      }
+                         }
+                }
+}
+\ex 
+\onems{
+phon \phonliste{ beat }\\[2mm]
+synsem$|$loc \ms{ cat & \ms{ head   & verb\\
+                             spr    & \sliste{ \ibox{1} } \\
+                             subcat & \ibox{2} \\
+                             arg-st & \sliste{ \ibox{1} NP[\type{str}]\ind{3}} $\oplus$ \ibox{2} \sliste{ NP[\type{str}]\ind{4} }
+                           }\\
+                  cont & \ms{
+                         ind & \ibox{5} event\\
+                         rels & \sliste{ \ms[beat]{
+                                         event   & \ibox{5}\\
+                                         agent   & \ibox{3}\\
+                                         patient & \ibox{4}
+                                        }
+                                      }
+                         }
+                }
+}
+\zl
+%\vspace{-\baselineskip}
+%\end{figure}%
+
+\noindent
+我们可以将\argstlc 视为等同于\gbc 理论的深层结构\isc{深层结构}\is{Deep Structure}：语义角色按照这个列表来指派。区别在于这里没有经历转换过程\isc{转换}\is{transformation}的有序树。这样，有关所有的语言是从VO还是OV的语序生成而来的问题就变成无关的了。
+%One can view the \argstl as the equivalent to Deep Structure\is{Deep Structure} in \gbt:
+%semantic roles are assigned with reference to this list. The difference is that there is no ordered tree
+%that undergoes transformations\is{transformation}. The question of whether all languages can be derived from either VO or OV order
+%therefore becomes irrelevant. 
+
+\subsection{基于线性顺序的HPSG理论}
+%\subsection{Linearization"=based HPSG}
+\label{sec-linearization-HPSG}
+
+本章介绍的模式将邻接的成分组合起来。这里，有关邻接的假设可以被忽略，而非连续成分可以被允准。允许非连续成分的HPSG变体通常叫做基于语序线性化的HPSG理论（Linearization"=based HPSG）。最早的形式化体系是由Mike \citet{Reape91,Reape92a,Reape94a}开发的。支持线性方法的学者有\citet{Kathol95a,Kathol2000a,DS99a,RS99a,Crysmann2003c,BS2004a,Sato:06cluk,Wetta2011a}。我也提出了基于线性的分析\citep{Mueller99a,Mueller2002b}，并在Reape思想的基础上实现了大规模的语法片段\citep{Babel}。基于线性的方法对于德语句子结构的分析与GPSG采用的方法是十分相似的，因为它认为动词、论元和附接语是相同线性范畴的成员，由此可以按照任意顺序来排列。比如说，动词可以位于论元和附接语的前面或后面。所以说，在动词位于末位的位置上没有空成分是十分必要的。如果我们允许在动词位置的分析中不带空成分的话，那么就不清楚明显的多重前置该怎么处理了，尽管这些数据可以在本章提出的方法中被直接地获得。整个问题在\citew{MuellerGS}中有更为详细的讨论。我在这里不对Reape的形式化进行解释，但是会在\ref{sec-discontinuous-constituents-HPSG}中讨论，那里我们将对依存语法中非连续、非投射的结构与基于线性的HPSG理论进行对比。明显的多重前置以及他们对简单的基于线性的方法提出的挑战将在\ref{sec-dg-multiple-frontings}进行讨论。
+%The schemata that were presented in this chapter combine adjacent constituents. The assumption of
+%adjacency can be dropped and discontinuous constituents maybe permitted. Variants of HPSG that allow
+%for discontinuous constituents are usually referred to as \emph{Linearization"=based HPSG}. The
+%first formalization was developed by Mike \citet{Reape91,Reape92a,Reape94a}. Proponents of linearization
+%approaches are for instance
+%\citet{Kathol95a,Kathol2000a,DS99a,RS99a,Crysmann2003c,BS2004a,Sato:06cluk,Wetta2011a}. I also
+%suggested linearization"=based analyses \citep{Mueller99a,Mueller2002b} and implemented a
+%large"=scale grammar fragment based on Reape's ideas \citep{Babel}. Linearization"=based approaches
+%to the German sentence structure are similar to the GPSG approach in that it is assumed that verb
+%and arguments and adjuncts are members of the same linearization domain and hence may be realized in
+%any order. For instance, the verb may precede arguments and adjuncts or follow them. Hence, no empty element for the verb in
+%final position is necessary. While this allows for grammars without empty elements for the analysis of the verb
+%position, it is unclear how examples with apparent multiple frontings can be accounted for, while
+%such data can be captured directly in the proposal suggested in this chapter. The
+%whole issue is discussed in more detail in \citew{MuellerGS}. I will not explain Reape's
+%formalization here, but defer its discussion until Section~\ref{sec-discontinuous-constituents-HPSG}, where the discontinuous, %non"=projective
+%structures of some Dependency Grammars are compared to linearization"=based HPSG
+%approaches. Apparent multiple frontings and the problems they pose for simple linearization"=based
+%approaches are discussed in Section~\ref{sec-dg-multiple-frontings}.
+
+
+\section{总结}
+%\section{Summary and classification}
+
+在HPSG中，特征描写被用来为语言对象的所有属性建立模型：根、词、词汇规则和支配模式都用相同的形式工具来描写。与GPSG\indexgpsgc 和LFG\indexlfgc 不同的是，这里没有独立的短语结构规则。由此，尽管HPSG代表中心语驱动的短语结构语法，这里并没有短语结构语法。在HPSG的实现中，短语结构的支撑通常用来提高处理的效率。但是，这并不属于理论的一部分，而且在语言学上也不是必需的。
+%In HPSG, feature descriptions are used to model all properties of linguistic objects: roots, words, lexical rules and dominance schemata are
+%all described using the same formal tools. Unlike GPSG\indexgpsg and LFG\indexlfg, there are no separate phrase structure rules. Thus, %although
+%HPSG stands for Head"=Driven Phrase Structure Grammar, it is not a phrase structure grammar. In HPSG implementations, a phrase %structure backbone
+%is often used to increase the efficiency of processing. However, this is not part of the theory and
+%linguistically not necessary.
+
+HPSG与范畴语法的不同之处在于\indexcgc，它假定了更多的特征，也在于特征组合的方式在理论中起到了重要的作用。
+%HPSG differs from Categorial Grammar\indexcg in that it assumes considerably more features and also in that the way in which features are %grouped plays
+%an important role for the theory.
+
+在HPSG中，长距离依存\isc{长距离依存}\is{long"=distance dependency}并没有像范畴语法那样用组合规则（composition）来分析，而是跟GPSG一样利用树间的信息渗透。按照这样的方式，我们可以分析\ref{Abschnitt-Ratte-CG}讨论的那些随迁结构（pied-piping constructions），这些结构中每个关系连词只有一个词汇项，而且相关的局部属性与指示代词的属性是相同的。（\mex{1}）中的关系小句被分析为一个定式小句，其中PP被提取出来： 
+%Long"=distance dependencies\is{long"=distance dependency} are not analyzed using function composition as in Categorial Grammar, but %instead
+%as in GPSG by appealing to the percolation of information in the tree. In this way, it is possible to analyze pied-piping constructions such as %those
+%discussed in Section~\ref{Abschnitt-Ratte-CG} with just one lexical item per relative pronoun, whose relevant local properties are identical to %those of the
+%demonstrative pronoun. The relative clause in (\mex{1}) would be analyzed as a finite clause from which a PP has been extracted:
+\ea
+\gll der Mann, [\sub{RS} [\sub{PP} an den] [\sub{S/PP} wir gedacht haben]]\\
+     \textsc{det} 男人   {}        {}        \textsc{prep} 谁  {}          我们 想 \textsc{aux}\\
+\glt `我们想起的那个男人'
+%     the man   {}        {}        on who  {}          we  thought have\\
+%\glt `the man we thought of'
+\z
+对于关系小句来说，我们要求第一个子结点包括一个关系代词。正如第\pageref{Beispiel-Minister}页的英语例子，这个代词事实上可以嵌套的非常深。关于an den（谁的）包括一个关系代词的信息的事实通过明确\textsc{nonloc$|$""inher$|$""rel}的值而表现在关系代词den的词汇项中。非局部特征原则将信息向上传递，这样有关关系代词的信息就包括在短语an den的表示中了。当关系小句完成组合的时候（\citealp[\S~5]{ps2}；\citealp{Sag97a}），这个信息就完成使命了。与范畴语法的处理方式不同，我们在分析（\mex{0}）和（\mex{1}）的时候可以为den设置同一个词项，因为关系代词并不需要知道它能出现的上下文。
+%For relative clauses, it is required that the first daughter contains a relative pronoun. This can, as shown in the English examples on page~
+%\pageref{Beispiel-Minister},
+%be in fact very deeply embedded. Information about the fact that \emph{an den} `of whom' contains a relative pronoun is provided in the %lexical entry for the relative
+%pronoun \emph{den} by specifying the value of \textsc{nonloc$|$""inher$|$""rel}.
+%The Nonlocal Feature Principle passes this information on upwards so that the information about the relative pronoun is contained in the %representation
+%of the phrase \emph{an den}. This information is bound off when the relative clause is put together (\citealp[Chapter~5]{ps2}; 
+%\citealp{Sag97a}).
+%It is possible to use the same lexical entry for \emph{den} in the analyses of both (\mex{0}) and
+%(\mex{1}) as -- unlike in Categorial Grammar -- the relative pronoun does not have to know anything about the contexts in which it can be %used.
+\ea
+\gll der Mann, [\sub{RS} [\sub{NP} den] [\sub{S/NP} wir kennen]]\\
+	 \textsc{det} 男人 {} {} \textsc{conj} {} 我们 认识\\
+\glt `我们认识的那个男人'
+%	 the man {} {} that {} we know\\
+%\glt `the man that we know'
+\z
+\begin{sloppypar}
+\noindent
+任何想要表示这里所述分析的理论必须要提供某种机制以使得在复杂短语中有关关系代词的信息是可获取的。如果在我们的理论中有这样一个机制，正如LFG和HPSG中的那样\indexlfgc，那么我们也可以将之用于长距离依存的分析。这样，诸如LFG和HPSG的理论在描述工具方面与其他理论相比就会显得有些吝啬，尤其是在针对关系短语的分析中。
+%Any theory that wants to maintain the analysis sketched here will have to have some mechanism to make information available about the %relative pronoun
+%in a complex phrase. If we have such a mechanism in our theory -- as is the case in LFG\indexlfg and HPSG -- then we can also use it for the %analysis
+%of long"=distance dependencies. Theories such as LFG and HPSG are therefore more parsimonious with their descriptive tools than other %theories when it comes to
+%the analysis of relative phrases.
+\end{sloppypar}
+
+在HPSG的第一个十年历史中（\citealp*{ps,ps2,NNP94a-ed-not-crossreferenced}），HPSG与范畴语法是非常相似的，即使这里已经提到了一些区别，这是因为它是一个强势的基于词汇的理论。短语的句法构造与语义内容都是由中心语决定的（所以叫做中心语驱动的）。一旦遇到无法直接进行中心语驱动的分析，因为所讨论的短语中没有中心语，那么通常的做法就是假定空中心语\isc{空成分}\is{empty
+  element}。一个例子就是\citet[\S~5]{ps2}中关系小句的分析。由于空中心语可以被指派给任意句法配价和任意的语义（关于这一点的讨论，请参阅第\ref{Abschnitt-Diskussion-leere-Elemente}章），我们并没有好的理由来解释人们为什么要假定空的中心语，比如说这个空位置可以在其他语境中得到实现。但是，为服务于理论假设而提出的空成分并不是这样（即空成分并不能在其它语境中出现）。基于此，\citet{Sag97a}提出了不用任何空成分的关系小句的分析。正如（\mex{-1}）和（\mex{0}）草拟的分析一样，关系小句是直接由分句组合而成的，以构成关系小句。对于英语中可观察到的不同类型的关系小句，Sag提出了不同的支配规则。他的分析偏离了强势的词汇主义：在\citew{ps2}中，只有六条支配模式，而在\citew{GSag2000a-u}中有23条。
+%In the first decade of HPSG history (\citealp*{ps,ps2,NNP94a-ed-not-crossreferenced}), despite the differences already mentioned here, %HPSG was still very similar to Categorial Grammar
+%in that it was a strongly lexicalized theory. The syntactic make-up and semantic content of a phrase was determined by the head (hence the %term \emph{head-driven}).
+%In cases where head-driven analyses were not straight-forwardly possible, because no head could be identified in the phrase in question, %then it was commonplace to
+%assume empty heads\is{empty element}. An example of this is the analysis of relative clauses in \citet[Chapter~5]{ps2}.
+%Since an empty head can be assigned any syntactic valence and an arbitrary semantics (for discussion
+%of this point, see Chapter~\ref{Abschnitt-Diskussion-leere-Elemente}), one has not really explained
+%anything as one needs very good reasons for assuming an empty head, for example that this empty
+%position can be realized in other contexts. This is, however, not the case for empty heads that are only proposed in order to save theoretical %assumptions. Therefore, \citet{Sag97a} developed
+%an analysis of relative clauses without any empty elements. As in the analyses sketched for (\mex{-1}) and (\mex{0}), the relative phrases are %combined directly
+%with the partial clause in order to form the relative clause. For the various observable types of relative clauses in English, Sag proposes %different dominance rules.
+%His analysis constitutes a departure from strong lexicalism: in \citew{ps2}, there are six dominance schemata, whereas there are 23 in 
+%\citew{GSag2000a-u}. 
+
+在最近的会议论文集中，也可以看到对于短语模式进行区分的倾向。提出的观点从对空元素的删除到激进地采取短语的分析都有。\footnote{
+更多讨论，请参阅\citew{Mueller2007d}和\ref{Abschnitt-Diskussion-Haugereid}。
+}
+%The tendency to a differentiation of phrasal schemata can also be observed in the proceedings of
+%recent conferences. The proposals range from the elimination of empty elements to radically phrasal analyses 
+%\citep{Haugereid2007a,Haugereid2009a}.\footnote{
+%	For discussion, see  \citew{Mueller2007d} and Section~\ref{Abschnitt-Diskussion-Haugereid}.
+%}
+
+即使倾向于短语的分析会导致一些有问题的分析，事实上仍有一些语法的部分是需要短语分析的（请参阅\ref{Abschnitt-Phrasale-Konstruktionen}）。对于HPSG来说，这意味着它不再是中心语驱动的，这样就既不是中心语驱动的，也不是短语结构语法。
+%Even if this tendency towards phrasal analyses may result in some problematic analyses, it is indeed the case that there are areas of %grammar where
+%phrasal analyses are required (see Section~\ref{Abschnitt-Phrasale-Konstruktionen}). For HPSG, this
+%means that it is no longer entirely head-driven and is therefore neither Head-Driven nor Phrase Structure Grammar.
+
+HPSG利用了类型特征描写来描述语言对象。概括可以通过带有多重承继的体系来表示。承继关系在构式语法\indexcxgc 中也起到了重要的作用。在诸如GPSG\indexgpsgc、范畴语法\indexcgc  和TAG\indextagc 中，它并不是理论解释的一部分。在实现中，宏语\isc{宏语}\is{macro}（macros）通常用来表示共现的特征值偶对\citep*{DKK2004a}。按照假定的构架，这类宏语不适合短语的描写，因为，在诸如GPSG\indexgpsgc 和LFG\indexlfgc 的理论中，短语结构规则的表达是不同于其他特征值偶对的（但是，请参阅\citew*{ADT2008a,ADT2013a}用于c"=结构标记的宏和承继关系）。进而，在类型和宏之间还有更深的区别，这些区别具有更为正式的本质：在类型系统的，可以在一定条件下从具体特征和具体值的存在中推导出具体结构的类型。对于宏来说，并不是这样，因为它们只是简称。不过，由这个区别引起的语法分析的后果是微不足道的。
+%HPSG makes use of typed feature descriptions to describe linguistic objects. Generalizations can be expressed by means of hierarchies with %multiple inheritance.
+%Inheritance also plays an important role in Construction Grammar\indexcxg. In theories such as GPSG\indexgpsg, Categorial Grammar%\indexcg and TAG\indextag, it
+%does not form part of theoretical explanations. In implementations, macros\is{macro} (abbreviations) are often used for co"=occurring %feature"=value pairs
+%\citep*{DKK2004a}. Depending on the architecture assumed, such macros are not suitable for the description of phrases since, in theories %such as GPSG\indexgpsg
+%and LFG\indexlfg, phrase structure rules are represented differently from other feature"=value pairs (however, see
+%\citew*{ADT2008a,ADT2013a} for macros and inheritance used for c"=structure annotations). Furthermore, there are further differences %between types and macros, which are of a
+%more formal nature: in a typed system, it is possible under certain conditions to infer the type of a particular structure from the presence
+%of certain features and of certain values. With macros, this is not the case as they are only abbreviations. The consequences for linguistic %analyses made by this differences are, however, minimal.
+
+HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换关系。在上世纪80年代，有一些GB的表示变体被提出来，即他们认为没有D"=结构\isc{D-结构}\is{D"=structure}，S"=结构\isc{S-结构}\is{S"=structure}也不是从D"=结构通过同时对移位成分的原始位置进行标记而创造出来的。相反，有人直接假定带有语迹的S"=结构，而且连S"=结构到逻辑形式\isc{逻辑形式}\is{Logical Form
+  (LF)}的映射也被放弃了（\citealp{Koster78b-u}；\citealp[\S~1.4]{Haider93a}；\citealp[\page 14]{Frey93a}）。这个观点对应于HPSG理论中的观点，而且一个框架内的许多分析都可以翻译到对方的理论中。
+%HPSG differs from \gbt and later variants in that it does not assume transformations. In the 80s, representational variants of GB were %proposed, that is,
+%it was assumed that there was no D"=structure\is{D"=structure} from which an S"=structure\is{S"=structure} is created by simultaneous %marking of the original position of moved elements.
+%Instead, one assumed the S"=structure with traces straight away and the assumption that there were further movements in the mapping of %S"=structure to Logical
+%Form\is{Logical Form (LF)} was also abandoned (\citealp{Koster78b-u}; \citealp[Section~1.4]{Haider93a};
+%\citealp[\page 14]{Frey93a}). This view corresponds to the view in HPSG and many of the analyses in one framework can be translated into %the other.
+
+在\gbtc 中，术语主语\isc{主语}\is{subject}和宾语\isc{宾语}\is{object}没有起到直接的作用：我们可以用这些术语来进行描述，但是主语和宾语并没有根据特征或相似的机制来标记。无论如何，我们也是可以做出区分的，因为主语和宾语通常都实现在树中不同的位置上（主语位于IP的限定语位置上，而宾语作为动词的补足语）。在HPSG理论中，主语和宾语也不是理论的原始对象。因为配价列表是有序的，然而，这就意味着可以将\argstc 成分与语法功能联系起来：如果有一个主语，这发生在配价列表的第一个位置上，然后宾语紧随其后。\footnote{
+当构成复杂谓词时，宾语出现在第一个位置上。请参阅\citew[\page 157]{Mueller2002b}关于带有erlauben（允许）这类动词的长被动\isc{被动!长被动}\is{passive!long}分析。通常来说具有下面的条件：主语是第一个带有结构格的论元。
+} 
+%In \gbt, the terms subject\is{subject} and object\is{object} do not play a direct role: one can use
+%these terms descriptively, but subjects and objects are not marked by features or similar
+%devices. Nevertheless it is possible to make the distinction since subjects and objects are usually
+%realized in different positions in the trees (the subject in specifier position of IP and the object as the complement of the verb). In HPSG, %subject and object
+%are also not primitives of the theory. Since valence lists (or \argst lists) are ordered, however,
+%this means that it is possible to associate the \argst elements to grammatical functions:
+%if there is a subject, this occurs in the first position of the valence list and objects follow.\footnote{
+%	When forming complex predicates, an object can occur in first position. See \citew[\page
+%          157]{Mueller2002b} for the long passive\is{passive!long} with verbs such as \emph{erlauben}
+%          `allow'. In general, the following holds: the subject is the first argument with structural case.%
+%} 
+对于基于转换语法的（\mex{1}b）的分析来说，目标是为了连接（\mex{1}a）中的基本语序和（\mex{1}b）中的派生语序。一旦我们构造出了基本语法，那么什么是主语什么是宾语就非常清楚了。所以说，应用到（\mex{1}a）中的基础结构的转换是需要被反转的。
+%For the analysis of (\mex{1}b)  in a transformation-based grammar, the aim is to connect the base order in (\mex{1}a) and the derived order in %(\mex{1}b).
+%Once one has recreated the base order, then it is clear what is the subject and what is the object. Therefore, transformations applied to the %base
+%structure in (\mex{1}a) have to be reversed.
+\eal
+\ex 
+\gll {}[weil] jeder diesen Mann kennt\\
+	 {}\spacebr{}因为 每人 这 男人 认识\\
+\glt `因为每个人都认识这个男人'
+%	 {}\spacebr{}because everyone this man knows\\
+%\glt `because everyone knows this man'
+\ex 
+\gll {}[weil] diesen Mann jeder kennt\\
+	 {}\spacebr{}因为 这 男人 每人 认识\\
+%	 {}\spacebr{}because this man everyone knows\\
+\zl
+在HPSG和其他无转换的模型中，目标是为了将按照（\mex{0}b）中的顺序排列的论元指派到配价列表中的描写上。配价列表（或者新方法中的\argstc ）对应于GB的深层结构（Deep Structure）\isc{深层结构}\is{Deep Structure}。不同之处在于，中心语本身没有被包括进论元结构中，而这就是D"=结构的情况。
+%In HPSG and also in other transformation-less models, the aim is to assign arguments in the order in (\mex{0}b) to descriptions
+%in the valence list. The valence list (or \argst in newer approaches) corresponds in a sense to Deep Structure\is{Deep Structure} in GB.
+%The difference is that the head itself is not included in the argument structure, whereas this is the case with D"=structure.
+
+\citet{Bender2008a}\label{Seite-Bender-Wambaya}已经说明了如何借助中心语的论元结构来分析非构型语言（如Wambaya语）中的语言现象。在Wambaya语中，通常在英语或德语中算作是成分的词语可以非连续地出现，也就是说，一个在语义上属于名词短语并且与名词短语其余成分性\isc{性}\is{gender}、数\isc{数}\is{number}、格\isc{格}\is{case}一致的形容词可能跟名词短语的其余成分不相邻出现。\citet{Nordlinger98a-u}在LFG\indexlfgc 的框架内分析相关语言现象。在她的分析中，成分的不同部分指向句子的f"=结构，并且直接保证了名词短语的所有部分都具有相同的格。Bender采用了HPSG的一个变体，其中在论元与其中心语组合后，其配价信息没有从配价列表中移除，而这个信息仍在配价列表中，并且朝向中心语的最大投射向上传递（\citealp{Meurers99b}；\citealp{Prze99}；\citealp[\S~17.4]{MuellerLehrbuch1}）。\citet[\page 560]{Higginbotham85a}和\citet{Winkler97a}提出了GB理论相似的观点。通过对完整配价信息的投射，它在整个句子中都是可获得的，并且非连续的成分可以指向它（如通过\textsc{mod}），而且可以构建出各自的限制。\footnote{
+也请参阅\citew{Mueller2008a}关于德语和英语中描写性谓词\isc{描写性谓词}\is{depictive predicate}的分析，他们分别指向中心语的实现的和未实现的论元列表。这一分析也可以在\ref{sec-locality}中得到解释。
+}  
+%\citet{Bender2008a}\label{Seite-Bender-Wambaya} has shown how one can analyze phenomena from non"=configurational languages such %as Wambaya\il{Wambaya}
+%by referring to the argument structure of a head. In Wambaya, words that would normally be counted as constituents in English or German %can occur discontinuously, that
+%is an adjective that semantically belongs to a noun phrase and shares the same case\is{case}, number\is{number} and gender\is{gender} %values with other parts of the noun
+%phrase can occur in a position in the sentence that is not adjacent to the remaining noun phrase. \citet{Nordlinger98a-u} has analyzed the %relevant data in LFG\indexlfg. In her analysis, the various parts
+%of the constituent refer to the f"=structure of the sentence and thus indirectly ensure that all parts of the noun phrase have the same case.
+%Bender adopts a variant of HPSG where valence information is not removed from the valence list after an argument has been combined with %its head, but rather
+%this information remains in the valence list and is passed up towards the maximal projection of the head (\citealp{Meurers99b}; 
+%\citealp{Prze99};
+%\citealp[Section~17.4]{MuellerLehrbuch1}). Similar proposals were made in GB by \citet[\page 560]{Higginbotham85a} and \citet{Winkler97a}. 
+%By projecting the complete valence information, it remains accessible in the entire sentence and discontinuous constituents can refer to it (\eg %via \textsc{mod})
+%and the respective constraints can be formulated.\footnote{
+%	See also \citew{Mueller2008a} for an analysis of depictive predicates\is{depictive predicate} in German and English\il{English} that makes %reference to the list of
+%	realized or unrealized arguments of a head, respectively. This analysis is also explained in Section~\ref{sec-locality}.
+%}  
+在这个分析中， HPSG中的论元结构对应于LFG中的f"=结构。LFG\indexlfgc 的扩展的中心语范畴\isc{中心语范畴!扩展的中心语范畴}\is{head domain!extended}也可以在HPSG中来模拟，其中多重中心语可以共享相同的f"=结构。为此，我们可以利用函数组合\isc{函数组合}\is{function composition}，因为它在有关范畴语法\indexcgc 那一章的内容中表示出来了（请参阅第\ref{Kategorialgrammatik-Komposition}章）。这点被译成HPSG理论的确切方式限于篇幅就不在这里解释了。读者可以参考\citet{HN94a}的原始论文，以及\citew[\S~15]{MuellerLehrbuch1}中的解释。
+%In this analysis, the argument structure in HPSG corresponds to f"=structure in LFG. The extended head domains\is{head domain!extended} %of LFG\indexlfg, where
+%multiple heads can share the same f"=structure, can also be modeled in HPSG. To this end, one can utilize function composition\is{function %composition}
+%as it was presented in the chapter on Categorial Grammar\indexcg (see Chapter~\ref{Kategorialgrammatik-Komposition}). The exact way in %which this is
+%translated into HPSG cannot be explained here due to space restrictions. The reader is referred to the original works by \citet{HN94a} and the
+%explanation in \citew[Chapter~15]{MuellerLehrbuch1}.
+
+配价信息在HPSG理论中发挥了重要的作用。动词的词汇项在原则上预先裁定了该词汇项可以出现的结构的集合。应用词汇规则，有可能将一个词汇项与其他词汇项联系起来。这些可以用在结构的其他集合中。所以我们可以看到在可能的结构的集合中建立联系的词汇规则的功能。词汇规则对应于转换语法中的转换。这点在\ref{Abschnitt-leere-Elemente-LRs-Transformations}有更为详细的讨论。词汇规则的效果也可以通过空成分来取得。这也将成为\ref{Abschnitt-leere-Elemente-LRs-Transformations}要讨论的内容。
+%Valence information plays an important role in HPSG. The lexical item of a verb in principle
+%predetermines the set of structures in which the item can occur.
+%Using lexical rules, it is possible to relate one lexical item to other lexical items. These can be
+%used in other sets of structures. So one can see the functionality of lexical rules in establishing
+%a relation between sets of possible structures. Lexical rules correspond to transformations in Transformational Grammar. This point is %discussed in more detail in 
+%Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}. The effect of lexical rules can also be achieved with empty elements. This will %also be
+%the matter of discussion in Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}.
+
+在GPSG中，元规则被用来允准那些为词汇中心语创造额外配价模式的规则。原则上，元规则也可以用于没有词汇中心语的规则。这点被\citet{Flickinger83a-u}和\citet[\page 59]{GKPS85a}通过特殊的限制而排除了。\citet*[\page 265]{FPW85a}指出这类限制是不必要的，如果有人应用词汇规则而不是元规则的话，因为前者只能用于词汇中心语。
+%In GPSG, metarules were used to license rules that created additional valence patterns for lexical heads. In principle, metarules could also be %applied
+%to rules without a lexical head. This is explicitly ruled out by \citet{Flickinger83a-u} and
+%\citet[\page 59]{GKPS85a} using a  special constraint.
+%\citet*[\page 265]{FPW85a} pointed out that this kind of constraint is unnecessary if one uses lexical rules rather than metarules since the %former can only
+%be applied to lexical heads.
+
+对于HPSG和Stabler\aimention{Edward P. Stabler}的最简语法\indexmgc 的比较，请参阅\ref{Abschnitt-MG}。
+%For a comparison of HPSG and Stabler's\aimention{Edward P. Stabler} Minimalist Grammars\indexmg, see
+%Section~\ref{Abschnitt-MG}.%
+\isc{中心语驱动的短语结构语法|)}\is{Head-Driven Phrase Structure Grammar (HPSG)|)}
+
+
+\section*{思考题}
+%\section*{Comprehension questions}
+
+\begin{enumerate}
+\item 在HPSG中，句法树的地位是什么?
+\item 在例（\mex{1}）的分析中，格指派是如何发生的？?
+%\item What status do syntactic trees have in HPSG?
+%\item How does case assignment take place in the analysis of example (\mex{1})?
+\ea
+\gll Dem Mann wurde ein Buch geschenkt.\\
+	 \textsc{det}.\dat{} 男人 \textsc{aux} \textsc{art}.\nom{} 书 给\\
+\glt `这个男人被给了一本书。'
+%	 the.\dat{} man was a.\nom{} book given\\
+%\glt `The man was given a book.'
+\z
+\item 什么是联接（linking），它在HPSG中是如何表示的？
+%\item What is \emph{linking} and how is it accounted for in HPSG?
+\end{enumerate}
+
+
+\section*{练习题}
+%\section*{Exercises}
+
+\begin{enumerate}
+\item 请给出（\mex{1}）的特征描写，dass不用分析。
+%\item Give a feature description for (\mex{1}) ignoring \emph{dass}.
+\ea
+\gll {}[dass] Max lacht\\
+	 {}\spacebr{}\textsc{conj} Max 笑\\
+%	 {}\spacebr{}that Max laughs\\
+\z
+\item \ref{Abschnitt-HPSG-Adjunkte}中有关名词和所修饰形容词的组合分析只是一个初步的分析。比如说，没有解释我们如何能够确定形容词和名词在格上保持一致。请思考一下如何扩展这个分析，这样就可以分析（\mex{1}a）中的形容词名词组合了，而不是（\mex{1}b）中的对象：
+%\item The analysis of the combination of a noun with a modifying adjective in Section~\ref{Abschnitt-HPSG-Adjunkte} was just a sketch of an %analysis.
+%It is, for example, not explained how one can ensure that the adjective and noun agree in case. Consider how it would be possible to expand %such an
+%analysis so that the adjective"=noun combination in (\mex{1}a) can be analyzed, but not the one in (\mex{1}b):
+\eal
+\ex[]{
+\gll eines interessanten Mannes\\
+	 \textsc{art}.\gen{} 有趣的.\gen{} 男人.\gen{}\\
+%	 an.\gen{} interesting.\gen{} man.\gen{}\\
+}
+\ex[*]{ 
+\gll eines interessanter Mannes\\
+ \textsc{art}.\gen{} 有趣的.\nom{} 男人.\gen{}\\
+% an.\gen{} interesting.\nom{} man.\gen{}\\
+}
+\zl
+
+\end{enumerate}
+
+\section*{延伸阅读}
+%\section*{Further reading}
+
+这里，理论各部分的表示跟其他理论一样都是相对来说比较简短的。对于HPSG理论更为全面的介绍，包括特征构架的动机，请参阅\citew{MuellerLehrbuch1}。\nocite{Mueller99a,Mueller2002b}特别是，这里简略说明了被动的分析。更为全面的分析包括非宾格动词、形容词分词、情态不及物动词、不同的被动变体以及长被动\isc{被动!长被动}\is{passive!long}，这些可以参考\citew[\S~3]{Mueller2002b}和\citew[\S~17]{MuellerLehrbuch1}。
+%Here, the presentation of the individual parts of the theory was -- as with other theories -- kept relatively short. For a more comprehensive
+%introduction to HPSG, including motivation of the feature geometry, see \citew{MuellerLehrbuch1}.\nocite{Mueller99a,Mueller2002b}
+%In particular, the analysis of the passive was sketched in brief here. The entire story including the analysis of unaccusative verbs, adjectival %participles,
+%modal infinitives as well as diverse passive variants and the long passive\is{passive!long} can be found in 
+%\citew[Chapter~3]{Mueller2002b} and \citew[Chapter~17]{MuellerLehrbuch1}.
+
+HPSG理论的综述可以参考\citew{LM2006a}、\citew{PK2006a-u}、\citew{Bildhauer2014a-u}和\citew{MuellerHPSGHandbook}。
+%Overviews of HPSG can be found in \citew{LM2006a}, \citew{PK2006a-u}, \citew{Bildhauer2014a-u} and \citew{MuellerHPSGHandbook}.
+
+% lulu DONE
+% wsun DONE
+%      <!-- Local IspellDict: en_US-w_accents -->

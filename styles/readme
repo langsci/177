@@ -1,0 +1,6 @@
+This LaTeX2e package provides a command to typeset letters with the
+ogonek diacritic mark; they are used in Polish and Lithuanian. The
+command is named \k in accordance with the \k command available in
+LaTeX2e for T1 encoding and DC fonts; however, it can be used also
+with other font encodings, especially OT1 and CM fonts. For Polish
+the best results are obtained with the special Polish PL fonts.

@@ -1,0 +1,103 @@
+%%
+%% This is file `ctex-fontset-founder.def',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% ctex.dtx  (with options: `fontset,founder')
+%% 
+%%     Copyright (C) 2003--2016
+%%     CTEX.ORG and any individual authors listed in the documentation.
+%% ------------------------------------------------------------------------------
+%% 
+%%     This work may be distributed and/or modified under the
+%%     conditions of the LaTeX Project Public License, either
+%%     version 1.3c of this license or (at your option) any later
+%%     version. This version of this license is in
+%%        http://www.latex-project.org/lppl/lppl-1-3c.txt
+%%     and the latest version of this license is in
+%%        http://www.latex-project.org/lppl.txt
+%%     and version 1.3 or later is part of all distributions of
+%%     LaTeX version 2005/12/01 or later.
+%% 
+%%     This work has the LPPL maintenance status `maintained'.
+%% 
+%%     The Current Maintainers of this work are Leo Liu, Qing Lee and Liam Huang.
+%% 
+%% ------------------------------------------------------------------------------
+%% 
+\GetIdInfo$Id: ctex.dtx f12457f 2016-05-16 00:55:34 +0800 Qing Lee <sobenlee@gmail.com> $
+  {Founder fonts definition (CTEX)}
+\ProvidesExplFile{ctex-fontset-founder.def}
+  {\ExplFileDate}{2.4.2}{\ExplFileDescription}
+\sys_if_engine_pdftex:TF
+  {
+    \ctex_zhmap_case:nnn
+      {
+        \setCJKmainfont
+          [ BoldFont = FZXBSK.TTF , ItalicFont = FZKTK.TTF ] { FZSSK.TTF }
+        \setCJKsansfont [ BoldFont = FZHTK.TTF ] { FZXH1K.TTF }
+        \setCJKmonofont { FZFSK.TTF }
+        \setCJKfamilyfont { zhsong } [ BoldFont = FZXBSK.TTF ] { FZSSK.TTF }
+        \setCJKfamilyfont { zhhei }  { FZHTK.TTF }
+        \setCJKfamilyfont { zhkai }  { FZKTK.TTF }
+        \setCJKfamilyfont { zhfs }   { FZFSK.TTF }
+        \setCJKfamilyfont { zhli }   { FZLSK.TTF }
+        \setCJKfamilyfont { zhyou } [ BoldFont = FZY3K.TTF ] { FZY1K.TTF }
+        \ctex_punct_set:n { founder }
+        \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
+        \ctex_punct_map_family:nn { \CJKsfdefault } { zhheil }
+        \ctex_punct_map_family:nn { \CJKttdefault } { zhfs }
+        \ctex_punct_map_itshape:nn { \CJKrmdefault } { zhkai }
+        \ctex_punct_map_bfseries:nn { \CJKrmdefault , zhsong } { zhsongb }
+        \ctex_punct_map_bfseries:nn { \CJKsfdefault } { zhhei }
+        \ctex_punct_map_bfseries:nn { zhyou } { zhyoub }
+      }
+      {
+        \ctex_load_zhmap:nnnn { rm } { zhhei } { zhfs } { zhfounderfonts }
+        \ctex_punct_set:n { founder }
+        \ctex_punct_map_family:nn { \CJKrmdefault } { zhsong }
+        \ctex_punct_map_bfseries:nn { \CJKrmdefault } { zhhei }
+        \ctex_punct_map_itshape:nn { \CJKrmdefault } { zhkai }
+      }
+      { \ctex_fontset_error:n { founder } }
+  }
+  {
+    \sys_if_engine_uptex:TF
+      {
+        \ctex_set_upfonts:nnnnnn
+          { FZSSK.TTF } { FZXBSK.TTF } { FZKTK.TTF }
+          { FZXH1K.TTF } { FZHTK.TTF }
+          { FZFSK.TTF }
+        \ctex_set_upfamily:nnn { zhsong } { upzhserif } { upzhserifb }
+        \ctex_set_upfamily:nnn { zhhei } { upzhsans } { upzhsansb }
+        \ctex_set_upfamily:nnn { zhfs } { upzhmono} {}
+        \ctex_set_upfamily:nnn { zhkai } { upzhserifit } {}
+        \ctex_set_upfamily:nnn { zhli } { upschrm } {}
+        \ctex_set_upmap:nnn { upstsl } { FZLSK.TTF } {}
+        \ctex_set_upfamily:nnn { zhyou } { upschgt } {}
+        \ctex_set_upmap:nnn { upstht } { FZY1K.TTF } {}
+      }
+      {
+        \setCJKmainfont
+          [ BoldFont = FZXiaoBiaoSong-B05 , ItalicFont = FZKai-Z03 ] { FZShuSong-Z01 }
+        \setCJKsansfont [ BoldFont = FZHei-B01 ]
+          { \sys_if_engine_xetex:TF { 方正细黑一_GBK } { FZXH1K--GBK1-0 } }
+        \setCJKmonofont { FZFangSong-Z02 }
+        \setCJKfamilyfont { zhsong } [ BoldFont = FZXiaoBiaoSong-B05 ] { FZShuSong-Z01 }
+        \setCJKfamilyfont { zhhei }  { FZHei-B01 }
+        \setCJKfamilyfont { zhkai }  { FZKai-Z03 }
+        \setCJKfamilyfont { zhfs }   { FZFangSong-Z02 }
+        \setCJKfamilyfont { zhli }   { FZLiShu-S01 }
+        \setCJKfamilyfont { zhyou } [ BoldFont = FZZhunYuan-M02 ] { FZXiYuan-M01 }
+      }
+  }
+\NewDocumentCommand \songti   { } { \CJKfamily { zhsong } }
+\NewDocumentCommand \heiti    { } { \CJKfamily { zhhei } }
+\NewDocumentCommand \fangsong { } { \CJKfamily { zhfs } }
+\NewDocumentCommand \kaishu   { } { \CJKfamily { zhkai } }
+\NewDocumentCommand \lishu    { } { \CJKfamily { zhli } }
+\NewDocumentCommand \youyuan  { } { \CJKfamily { zhyou } }
+%% 
+%%
+%% End of file `ctex-fontset-founder.def'.

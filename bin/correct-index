@@ -1,0 +1,99 @@
+#!/bin/tcsh -f
+
+# korrektur der Indexeintr"age in Fu"snoten
+
+# M\"ock -> M"ock
+# M\newumlaut ock -> M"ock
+# \pit -> \it
+# \it~ -> \it
+
+
+#printf "\n\n"
+#grep "\\active" subind.idx autind.idx
+#printf "\n\n"
+
+
+sed -e 's/\\it  /\\it /g'        \
+    -e 's/\\sc  /\\sc /g'        \
+    -e 's/{\\"a}/"a/g'               \
+    -e 's/{\\"o}/"o/g'               \
+    -e 's/{\\"u}/"u/g'               \
+    -e 's/{\\"A}/"A/g'               \
+    -e 's/{\\"O}/"O/g'               \
+    -e 's/{\\"U}/"U/g'               \
+    -e 's/\\"/"/g'               \
+    -e 's/\\newumlaut /"/g'               \
+    -e 's/\\active@dq  \\dq@prtct{A}/"A/g'             \
+    -e 's/\\active@dq  \\dq@prtct{O}/"O/g'             \
+    -e 's/\\active@dq  \\dq@prtct{U}/"U/g'             \
+    -e 's/\\active@dq  \\dq@prtct{a}/"a/g'             \
+    -e 's/\\active@dq  \\dq@prtct{o}/"o/g'             \
+    -e 's/\ö/"o/g'             \
+    -e 's/\\active@dq  \\dq@prtct{u}/"u/g'             \
+    -e 's/\ü/"u/g'             \
+    -e 's/\\active@dq  \\dq@prtct{-}/"-/g'             \
+    -e 's/\\active@dq  \\dq@prtct{c}/"c/g'             \
+    -e 's/\\active@dq  \\dq@prtct{|}/"-/g'             \
+    -e 's/\\active@dq  \\dq@prtct{=}/"=/g'             \
+    -e 's/\\active@dq  \\dq@prtct{s}/"s/g'             \
+    -e 's/{\ss }/"s/g'                                 \
+    -e 's/\\discretionary {-}{}{}/\\-/g'               \
+    -e 's/\\unhbox \\voidb@x \\hbox /\\mbox/g'            \
+    -e 's/\\pit /\\it /g'       \
+       subind.idx >subind.idx.neu
+
+mv -f subind.idx.neu subind.idx
+
+sed -e 's/\\it  /\\it /g'        \
+    -e 's/\\sc  /\\sc /g'        \
+    -e 's/{\\"a}/"a/g'               \
+    -e 's/{\\"o}/"o/g'               \
+    -e 's/{\\"u}/"u/g'               \
+    -e 's/{\\"A}/"A/g'               \
+    -e 's/{\\"O}/"O/g'               \
+    -e 's/{\\"U}/"U/g'               \
+    -e 's/\\"/"/g'               \
+    -e 's/\\newumlaut /"/g'               \
+    -e 's/\\active@dq  \\dq@prtct{A}/"A/g'             \
+    -e 's/\\active@dq  \\dq@prtct{O}/"O/g'             \
+    -e 's/\\active@dq  \\dq@prtct{U}/"U/g'             \
+    -e 's/\\active@dq  \\dq@prtct{a}/"a/g'             \
+    -e 's/\\active@dq  \\dq@prtct{o}/"o/g'             \
+    -e 's/\\active@dq  \\dq@prtct{u}/"u/g'             \
+    -e 's/\\active@dq  \\dq@prtct{-}/"-/g'             \
+    -e 's/\\active@dq  \\dq@prtct{=}/"=/g'             \
+    -e 's/\\active@dq  \\dq@prtct{c}/"c/g'             \
+    -e 's/\\active@dq  \\dq@prtct{|}/"-/g'             \
+    -e 's/\\active@dq  \\dq@prtct{s}/"s/g'             \
+    -e 's/\\discretionary {-}{}{}/\\-/g'               \
+    -e 's/{\\ss }/"s/g'                                 \
+    -e 's/\\pit /\\it /g'       \
+       wordind.idx >wordind.idx.neu
+
+mv -f wordind.idx.neu wordind.idx
+
+sed -e 's/\\it  /\\it /g'        \
+    -e 's/\\sc  /\\sc /g'        \
+    -e 's/{\\"a}/"a/g'               \
+    -e 's/{\\"o}/"o/g'               \
+    -e 's/{\\"u}/"u/g'               \
+    -e 's/{\\"A}/"A/g'               \
+    -e 's/{\\"O}/"O/g'               \
+    -e 's/{\\"U}/"U/g'               \
+    -e 's/\\"/"/g'               \
+    -e 's/{\\r {a}}/\r{a}/g'               \
+    -e 's/\\newumlaut /"/g'               \
+    -e 's/\\active@dq  \\dq@prtct{A}/"A/g'             \
+    -e 's/\\active@dq  \\dq@prtct{O}/"O/g'             \
+    -e 's/\\active@dq  \\dq@prtct{U}/"U/g'             \
+    -e 's/\\active@dq  \\dq@prtct{a}/"a/g'             \
+    -e 's/\\active@dq  \\dq@prtct{o}/"o/g'             \
+    -e 's/\\active@dq  \\dq@prtct{u}/"u/g'             \
+    -e 's/\\active@dq  \\dq@prtct{s}/"s/g'             \
+    -e 's/\\active@dq  \\dq@prtct{=}/"=/g'             \
+    -e 's/\\pit /\\it /g'       \
+    -e 's/\\v /\\v/g'       \
+       autind.idx >autind.idx.neu
+
+mv -f autind.idx.neu autind.idx
+
