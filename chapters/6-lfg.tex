@@ -152,7 +152,7 @@ f-结构意为功能结构。
 \begin{tabular}[t]{@{}lp{26em}@{}} 
 \lsptoprule
 \textsc{adj}
-\isfeat{adj}: & 附接语 \\ 
+\isfeat{adj}: & 附加语 \\ 
 %
 \textsc{topic}
 \isfeat{topic}: & 语段的话题\\ 
@@ -604,12 +604,12 @@ $\relation{yawn}(\relation{david})$ & $y_\sigma$ &
  \citet{Asudeh04a-u}着重讨论了这些问题
 \isc{粘着语义学|)}\is{glue semantics|)}。
 
-\subsection{附接语}
+\subsection{附加语}
 \label{Abschnitt-LFG-Adjunkte}
 
-附接语\isc{附接语}\is{adjuncts}并不被中心词选择。\textsc{adj}
+附加语\isc{附加语}\is{adjuncts}并不被中心词选择。\textsc{adj}
 \isfeat{adj}这一语法功能是非管辖语法功能。
-不同于语法功能只能实现一次的论元，一个句子可以包括多个附接语。
+不同于语法功能只能实现一次的论元，一个句子可以包括多个附加语。
 在一个f-结构中，\textsc{adj}特征的取值不能是一个单一的结构而应该是一个集合。
 例如，（\mex{1}a）的f-结构包括一个\textsc{adj}集合，这个集合中有两个元素：
 yesterday（昨天）和at noon（在中午）。
@@ -633,14 +633,14 @@ yesterday（昨天）和at noon（在中午）。
 }
 \zl
 %
-针对附接语的c-结构的标注要求附接语是其父结点的\textsc{adj}集合的一部分：
+针对附加语的c-结构的标注要求附加语是其父结点的\textsc{adj}集合的一部分：
 \ea
 \phraserule{V$'$}{
 \rulenode{V$'$\\* \up~=~\down}
 \rulenode{PP\\*\hbox {$\downarrow$\kern .2em} $\in$ (\up\ \adj)}}
 \z
-将附接语表示为一个集合不足以表示包括域（s\textsc{cop}e）信息的附接语，如第\pageref{bsp-absichtlich-nicht-anal}页中的例句（\ref{bsp-absichtlich-nicht-anal}）中所涉及的否定。
-为了确定域关系，我们必须参照附接语的在句子中的先后顺序，这就涉及了c-结构信息。
+将附加语表示为一个集合不足以表示包括域（s\textsc{cop}e）信息的附加语，如第\pageref{bsp-absichtlich-nicht-anal}页中的例句（\ref{bsp-absichtlich-nicht-anal}）中所涉及的否定。
+为了确定域关系，我们必须参照附加语的在句子中的先后顺序，这就涉及了c-结构信息。
 想了解更多的关于语序序列化的限制，可以参考 \citew{ZK95b}\isc{说明语}\is{adjunct}。
 
 \section{被动}
@@ -988,8 +988,8 @@ wen（谁）并不是glauben（会见）的宾语，因此并不在glauben的f-�
 \z
 
 \noindent
-Berman提出一种分析，在这一分析中，动词并不会和它的论元及附接语同时结合，就像GPSG\indexgpsgc 里分析的那样。
-她的分析走向另一个极端，她假设动词并不是和附接语或者论元结合，而是直接形成动词短语。
+Berman提出一种分析，在这一分析中，动词并不会和它的论元及附加语同时结合，就像GPSG\indexgpsgc 里分析的那样。
+她的分析走向另一个极端，她假设动词并不是和附加语或者论元结合，而是直接形成动词短语。
 相关的规则如（\mex{1}）所示：
 \ea
 \label{LFG-v-vp}
@@ -1011,7 +1011,7 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 \z
 这里的|\isc{$\vert$}\is{$\vert$}表示析取（disjunction\isc{析取}\is{disjunction}），也就是说，NP既可以是相应f-结构的主语也可以是宾语。
 因为VP既出现在（\mex{0}）中所示规则的左边也出现在其右边，它可以多次进行应用。
-而这个规则并不完整。例如，我们还必须解释介词型宾语、小句型论元、形容词性论元和附接语。
+而这个规则并不完整。例如，我们还必须解释介词型宾语、小句型论元、形容词性论元和附加语。
 参见第\pageref{fn-zp}页的脚注\ref{fn-zp}。
 
 图\vref{Abb-SOV-LFG}展示了（\mex{1}a）的分析。 
@@ -1221,10 +1221,10 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{df})}XP} & C$
  & &  (\upsp \textsc{df}) & (\upsp \textsc{comp* obj})\\
 \end{tabular}
 \z
-在德语中，和宾语一样，几乎任意一个成分（如主语，句子型补足语，附接语）都可以前置。 
+在德语中，和宾语一样，几乎任意一个成分（如主语、句子型补足语、附加语）都可以前置。 
 而相应的c"=结构规则如（\mex{1}）所示：\footnote{\label{fn-zp}%
   在（\mex{1}）中， \citet{Berman96a-u}使用的是ZP而不是XP（\mex{1}）。
-  她形式化了ZP的各种短语结构规则，在这些规则中可以将ZP替换为NP、PP、AP以及各种各样的附接语。
+  她形式化了ZP的各种短语结构规则，在这些规则中可以将ZP替换为NP、PP、AP以及各种各样的附加语。
   按照Berman的分析，ZP可以和中间动词结合。
   为了阐述方便，在\ref{Abschnitt-LFG-Umstellung}中，
   我对在VP规则（\ref{lfg-vp-regel}）中使用ZP符号持保留态度，选择直接使用NP。

@@ -571,7 +571,7 @@ NP[\type{nom}]是复杂特征描写的缩写。模式~\ref{schema-bin-prel}将�
 %\subsection{Linearization rules}
 \label{Abschnitt-LP-Regeln-HPSG}
 
-支配模式并没有说明任何跟子结点顺序有关的问题\indexgpsgc。正如在GPSG中，语序规则被分开处理。语序规则可以借助子结点的属性，它们在模式中的功能（中心语\isc{中心语}\is{head}、论元\isc{论元}\is{argument}、附接语\isc{附接语}\is{adjunct} \ldots）或者两者都有。
+支配模式并没有说明任何跟子结点顺序有关的问题\indexgpsgc。正如在GPSG中，语序规则被分开处理。语序规则可以借助子结点的属性，它们在模式中的功能（中心语\isc{中心语}\is{head}、论元\isc{论元}\is{argument}、附加语\isc{附加语}\is{adjunct} \ldots）或者两者都有。
 %Dominance schemata do not say anything\indexgpsg about the order of the daughters. As in GPSG, linearization rules are specified %separately.
 %Linearization rules can make reference to the properties of daughters, their function in a schema (head\is{head}, argument\is{argument},
 %adjunct\is{adjunct}, \ldots) or both.
@@ -790,7 +790,7 @@ sm edges
 %\subsection{Inheritance hierarchies and generalizations}
 \label{Abschnitt-Vererbung-HPSG}
 
-截至目前，我们已经看到了支配模式的一个例子，在接下来的章节中会有更多的内容，比如说中心语"=附接语结构的模式，以及长距离依存问题的解决。中心语特征原则是一个普遍性的原则，所有模式所允准的结构必须满足其要求。正如上面所提及的，所有的结构都必须有一个中心语。在形式上，这可以通过将句法结构分成带有中心语和不带中心语两类来进行区分，并且将类型\type{headed"=phrase}赋予到那些具有中心语的结构上。类型\type{head"=argument"=phrase}（第\pageref{schema-bin-prel}页上的模式\ref{schema-bin-prel}的描写类型）是\type{headed"=phrase}的一个子类型。某个类型x的对象总是具有x的上位类型对象的所有属性。回想\ref{sec-formalismus-typen}所举的例子：类型\textit{female person}的宾语具有类型\textit{person}的所有属性。进而，类型\type{female person}的宾语具有额外的、不跟\type{person}的其他子类型共享的更为具体的属性。
+截至目前，我们已经看到了支配模式的一个例子，在接下来的章节中会有更多的内容，比如说中心语"=附加语结构的模式，以及长距离依存问题的解决。中心语特征原则是一个普遍性的原则，所有模式所允准的结构必须满足其要求。正如上面所提及的，所有的结构都必须有一个中心语。在形式上，这可以通过将句法结构分成带有中心语和不带中心语两类来进行区分，并且将类型\type{headed"=phrase}赋予到那些具有中心语的结构上。类型\type{head"=argument"=phrase}（第\pageref{schema-bin-prel}页上的模式\ref{schema-bin-prel}的描写类型）是\type{headed"=phrase}的一个子类型。某个类型x的对象总是具有x的上位类型对象的所有属性。回想\ref{sec-formalismus-typen}所举的例子：类型\textit{female person}的宾语具有类型\textit{person}的所有属性。进而，类型\type{female person}的宾语具有额外的、不跟\type{person}的其他子类型共享的更为具体的属性。
 %Up to now, we have seen one example of a dominance schema and more will follow in the coming sections, \eg schemata for head"=adjunct %structures as well
 %as for the binding off of long"=distance dependencies. The Head Feature Principle is a general
 %principle which must be met by all structures licensed by these schemata. As mentioned above, it must be met by all structures with a head. %Formally, this can be captured by categorizing syntactic structures into those with and those without
@@ -1081,11 +1081,11 @@ GB、LFG和TAG这些理论和HPSG与CxG这些理论的一个重要差别在于�
 % \citet*{CFPS2005a} and to Section~\ref{Abschnitt-leere-Elemente-Semantik} in the discussion chapter.
 \isc{语义学}\is{semantics}
 
-\subsection{附接语}
+\subsection{附加语}
 %\subsection{Adjuncts}
 \label{Abschnitt-HPSG-Adjunkte}\label{sec-adjuncts-hpsg}
 
-与中心语通过\subcatc 来选择论元类似的是\isc{附接语|(}\is{adjunct|(}，附接语也可以通过使用特征（\textsc{modified}）来选择他们的中心语\isfeat{mod}。修饰名词和关系小句的形容词和介词短语选择一个几乎完整的名词性投射，即一个名词只需要与限定词相组合以构成一个完整的NP。（\mex{1}）显示了每个\type{synsem}对象的描写。与\xbarc 理论中（请参阅\ref{sec-xbar}）类似的符号\nbarc 表示这个特征描写的缩写形式。
+与中心语通过\subcatc 来选择论元类似的是\isc{附加语|(}\is{adjunct|(}，附加语也可以通过使用特征（\textsc{modified}）来选择他们的中心语\isfeat{mod}。修饰名词和关系小句的形容词和介词短语选择一个几乎完整的名词性投射，即一个名词只需要与限定词相组合以构成一个完整的NP。（\mex{1}）显示了每个\type{synsem}对象的描写。与\xbarc 理论中（请参阅\ref{sec-xbar}）类似的符号\nbarc 表示这个特征描写的缩写形式。
 %Analogous\is{adjunct|(} to the selection of arguments by heads via \subcat, adjuncts can also select their heads using a feature 
 %(\textsc{modified})\isfeat{mod}.
 %Adjectives, prepositional phrases that modify nouns, and relative clauses select an almost complete nominal projection, that is, a noun that %only still needs to
@@ -1139,7 +1139,7 @@ treues（忠诚的）的\cat 值：\\
 dem König treues （对国王的忠诚）构成了一个形容词短语，它修饰Mädchen（女孩儿）这个词。
 %\emph{dem König treues} `loyal to the king' forms an adjective phrase, which modifies \emph{Mädchen}.
 
-与属于\textsc{cat}的选择性特征\subcatc 不同的是，\textsc{mod} 是一个中心语特征。原因是选择修饰中心语的特征必须在附接语的最大投射中出现。\nbarc{}-短语dem König treues（对国王的忠诚）必须包括在整个AP的表达式中，就像它在词汇层面的（\ref{le-interessantes}）中的形容词的词汇项中出现一样。形容词短语dem König treues具有跟基本形容词interessantes （有趣的）一样的句法属性。
+与属于\textsc{cat}的选择性特征\subcatc 不同的是，\textsc{mod} 是一个中心语特征。原因是选择修饰中心语的特征必须在附加语的最大投射中出现。\nbarc{}-短语dem König treues（对国王的忠诚）必须包括在整个AP的表达式中，就像它在词汇层面的（\ref{le-interessantes}）中的形容词的词汇项中出现一样。形容词短语dem König treues具有跟基本形容词interessantes （有趣的）一样的句法属性。
 %Unlike the selectional feature \subcat that belongs to the features under \textsc{cat}, \textsc{mod} is a head feature.
 %The reason for this is that the feature that selects the modifying head has to be present on the maximal projection of the adjunct. The  \nbar{}-%modifying property of the adjective
 %phrase \emph{dem König treues} `loyal to the king' has to be included in the representation of the entire AP just as it is present in the lexical %entry for adjectives in (\ref{le-interessantes})
@@ -1159,8 +1159,8 @@ dem König treues的\catvc：\\
 %Since \textsc{mod} is a head feature, the Head Feature Principle (see page~\pageref{prinzip-hfp}) ensures that the \modv of the entire %projection is identical
 %to the \modv of the lexical entry for \emph{treues} `loyal'.
 
-不同于假设修饰语选择中心语，我们可以把中心语所有可能的附接语的描写都纳入到中心语中。这一观点由 \citet[\page 161]{ps}提出。 \citet[\S~1.9]{ps2}对前面的分析进行了修订，因为不能说明修饰语的语义。\footnote{%
-不过，可以参考 \citew*{BMS2001a}。 \citew*{BMS2001a}提出了一个整合的分析，其中附接语可以选择中心语，附接语也可以被中心语所选择。最简递归语义是支持这一分析的语义理论\indexmrsc。应用这种语义分析方法，就可以避免由 \citet*{ps}带来的修饰语的语义问题。
+不同于假设修饰语选择中心语，我们可以把中心语所有可能的附加语的描写都纳入到中心语中。这一观点由 \citet[\page 161]{ps}提出。 \citet[\S~1.9]{ps2}对前面的分析进行了修订，因为不能说明修饰语的语义。\footnote{%
+不过，可以参考 \citew*{BMS2001a}。 \citew*{BMS2001a}提出了一个整合的分析，其中附加语可以选择中心语，附加语也可以被中心语所选择。最简递归语义是支持这一分析的语义理论\indexmrsc。应用这种语义分析方法，就可以避免由 \citet*{ps}带来的修饰语的语义问题。
 }
 %As an alternative to the selection of the head by the modifier, one could assume a description of all possible adjuncts on the head itself. This %was suggested by
 % \citet[\page 161]{ps}.  \citet[Section~1.9]{ps2} revised the earlier analysis since the semantics of
@@ -1170,7 +1170,7 @@ dem König treues的\catvc：\\
 %		arising for  \citet*{ps} with regard to the semantics of modifiers are avoided.
 %}
 
-图\vref{fig-ha-selektion}表示了中心语"=附接语结构中的选择信息。
+图\vref{fig-ha-selektion}表示了中心语"=附加语结构中的选择信息。
 %Figure~\vref{fig-ha-selektion} demonstrates selection in head"=adjunct structures.
 \begin{figure}
 \centerline{%
@@ -1184,15 +1184,15 @@ sm edges
 		[Buch;书]]]
 %		[Buch;book]]]
 \end{forest}}
-\caption{\label{fig-ha-selektion}中心语"=附接语结构（选择）}
+\caption{\label{fig-ha-selektion}中心语"=附加语结构（选择）}
 %\caption{\label{fig-ha-selektion}Head"=adjunct structure (selection)}
 \end{figure}%
 
-中心语"=附接语结构是由模式~\ref{ha-schema-prel}\isc{范式!中心语-附接语范式}\is{schema!head"=adjunct}所允准的。\istype{head"=adjunct"=phrase}
+中心语"=附加语结构是由模式~\ref{ha-schema-prel}\isc{范式!中心语-附加语范式}\is{schema!head"=adjunct}所允准的。\istype{head"=adjunct"=phrase}
 %Head"=adjunct structures are licensed by the Schema~\ref{ha-schema-prel}\is{schema!head"=adjunct}.\istype{head"=adjunct"=phrase}
 %\begin{figure}
 %\begin{samepage}
-\begin{schema}[中心语-附接语模式]
+\begin{schema}[中心语-附加语模式]
 %\begin{schema}[Head-Adjunct Schema]
 \label{ha-schema-prel}
 ~\\
@@ -1208,7 +1208,7 @@ non-head"=dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 %\end{samepage}
 %\vspace{-\baselineskip}\end{figure}%
 
-附接语\iboxb{1}的选择性特征的值与中心语子结点的\synsemc 值是相同的。这样就可以确保中心语子结点具有附接语所确定的属性。非中心语子结点的\subcatvc 是空列表，这也就是为什么只有完全饱和的附接语允许出现在中心语"=附接语结构中。这样，诸如（\mex{1}b）的短语就被规则排除出去了：
+附加语\iboxb{1}的选择性特征的值与中心语子结点的\synsemc 值是相同的。这样就可以确保中心语子结点具有附加语所确定的属性。非中心语子结点的\subcatvc 是空列表，这也就是为什么只有完全饱和的附加语允许出现在中心语"=附加语结构中。这样，诸如（\mex{1}b）的短语就被规则排除出去了：
 %The value of the selectional feature on the adjunct \iboxb{1} is identified with the \synsemv of the head daughter, thereby ensuring that the %head
 %daughter has the properties specified by the adjunct. The  \subcatv of the non"=head daughter is the
 %empty list, which is why only completely saturated adjuncts are allowed in head"=adjunct structures. Phrases such as (\mex{1}b) are %therefore correctly ruled out:
@@ -1255,11 +1255,11 @@ subcat & \sliste{ }
 %This representation corresponds to that of the adjective \emph{interessantes} `interesting' and can -- ignoring the position of the PP -- also be %used in the same way:
 %the PP modifies a \nbar.
 
-那些只能用作论元，不能修饰任何成分的中心语具有\type{none}的\modvc 值。这样，他们就不会出现在中心语附接语结构中的非中心语子结点的位置上了，因为中心语子结点的MOD值需要与中心语子结点的\synsemc 值兼容。
+那些只能用作论元，不能修饰任何成分的中心语具有\type{none}的\modvc 值。这样，他们就不会出现在中心语附加语结构中的非中心语子结点的位置上了，因为中心语子结点的MOD值需要与中心语子结点的\synsemc 值兼容。
 %Heads that can only be used as arguments but do not modify anything have a \modv of \type{none}.
 %They can therefore not occur in the position of the non"=head daughter in head"=adjunct structures since the \modv of the non"=head %daughter has to be compatible
 %with the \synsemv of the head daughter.
-\isc{附接语|)}\is{adjunct|)}
+\isc{附加语|)}\is{adjunct|)}
 
 \section{被动}
 %\section{Passive}
@@ -1996,7 +1996,7 @@ synsem$|$loc   \ibox{1} \ms{ cat$|$head$|$dsl   & \ibox{1}\\
 \label{sec-HPSG-lokale-Umstellung}
 \label{Abschnitt-HPSG-lokale-Umstellung}
 
-针对中场的语序分析有许多种可能性\isc{组成成分位置|(}\is{constituent position|(}：我们可以假定一个\gpsgc 中的平铺结构\citep{Kasper94a}、或者假定一个二叉结构，并且允许论元按照任意语序来填充。 \citet{Kathol2001a}和 \citet{Mueller99a,Mueller2002b,Mueller2004b}提出了一个折衷的看法：带有特殊列表的二叉结构，这个列表包括属于一个中心语的论元和附接语。论元和附接语在这些列表内部按照自由语序排列。请参阅 \citew{Reape94a}和本书的\ref{sec-discontinuous-constituents-HPSG}有关这些方法的形式化表示。所有这些平铺分析和折衷分析都被证明是错误的（请参阅\citealp{Mueller2005c,Mueller2004e}和\citealp[Section~9.5.1]{MuellerLehrbuch1}），由此，我只讨论二叉结构的分析。
+针对中场的语序分析有许多种可能性\isc{组成成分位置|(}\is{constituent position|(}：我们可以假定一个\gpsgc 中的平铺结构\citep{Kasper94a}、或者假定一个二叉结构，并且允许论元按照任意语序来填充。 \citet{Kathol2001a}和 \citet{Mueller99a,Mueller2002b,Mueller2004b}提出了一个折衷的看法：带有特殊列表的二叉结构，这个列表包括属于一个中心语的论元和附加语。论元和附加语在这些列表内部按照自由语序排列。请参阅 \citew{Reape94a}和本书的\ref{sec-discontinuous-constituents-HPSG}有关这些方法的形式化表示。所有这些平铺分析和折衷分析都被证明是错误的（请参阅\citealp{Mueller2005c,Mueller2004e}和\citealp[Section~9.5.1]{MuellerLehrbuch1}），由此，我只讨论二叉结构的分析。
 %There are several possibilities for\is{constituent position|(} the analysis of constituent order in the middle field: one can assume completely flat %structures
 %as in \gpsg \citep{Kasper94a}, or instead assume binary branching structures and allow for arguments to be saturated in any order.
 %A compromise was proposed by  \citet{Kathol2001a} and  \citet{Mueller99a,Mueller2002b,Mueller2004b}:
@@ -2684,7 +2684,7 @@ synsem$|$loc \ms{ cat & \ms{ head   & verb\\
 %\subsection{Linearization"=based HPSG}
 \label{sec-linearization-HPSG}
 
-本章介绍的模式将邻接的成分组合起来。这里，有关邻接的假设可以被忽略，而非连续成分可以被允准。允许非连续成分的HPSG变体通常叫做基于语序线性化的HPSG理论（Linearization"=based HPSG）。最早的形式化体系是由Mike  \citet{Reape91,Reape92a,Reape94a}开发的。支持线性方法的学者有 \citet{Kathol95a,Kathol2000a,DS99a,RS99a,Crysmann2003c,BS2004a,Sato:06cluk,Wetta2011a}。我也提出了基于线性的分析\citep{Mueller99a,Mueller2002b}，并在Reape思想的基础上实现了大规模的语法片段\citep{Babel}。基于线性的方法对于德语句子结构的分析与GPSG采用的方法是十分相似的，因为它认为动词、论元和附接语是相同线性范畴的成员，由此可以按照任意顺序来排列。比如说，动词可以位于论元和附接语的前面或后面。所以说，在动词位于末位的位置上没有空成分是十分必要的。如果我们允许在动词位置的分析中不带空成分的话，那么就不清楚明显的多重前置该怎么处理了，尽管这些数据可以在本章提出的方法中被直接地获得。整个问题在 \citew{MuellerGS}中有更为详细的讨论。我在这里不对Reape的形式化进行解释，但是会在\ref{sec-discontinuous-constituents-HPSG}中讨论，那里我们将对依存语法中非连续、非投射的结构与基于线性的HPSG理论进行对比。明显的多重前置以及他们对简单的基于线性的方法提出的挑战将在\ref{sec-dg-multiple-frontings}进行讨论。
+本章介绍的模式将邻接的成分组合起来。这里，有关邻接的假设可以被忽略，而非连续成分可以被允准。允许非连续成分的HPSG变体通常叫做基于语序线性化的HPSG理论（Linearization"=based HPSG）。最早的形式化体系是由Mike  \citet{Reape91,Reape92a,Reape94a}开发的。支持线性方法的学者有 \citet{Kathol95a,Kathol2000a,DS99a,RS99a,Crysmann2003c,BS2004a,Sato:06cluk,Wetta2011a}。我也提出了基于线性的分析\citep{Mueller99a,Mueller2002b}，并在Reape思想的基础上实现了大规模的语法片段\citep{Babel}。基于线性的方法对于德语句子结构的分析与GPSG采用的方法是十分相似的，因为它认为动词、论元和附加语是相同线性范畴的成员，由此可以按照任意顺序来排列。比如说，动词可以位于论元和附加语的前面或后面。所以说，在动词位于末位的位置上没有空成分是十分必要的。如果我们允许在动词位置的分析中不带空成分的话，那么就不清楚明显的多重前置该怎么处理了，尽管这些数据可以在本章提出的方法中被直接地获得。整个问题在 \citew{MuellerGS}中有更为详细的讨论。我在这里不对Reape的形式化进行解释，但是会在\ref{sec-discontinuous-constituents-HPSG}中讨论，那里我们将对依存语法中非连续、非投射的结构与基于线性的HPSG理论进行对比。明显的多重前置以及他们对简单的基于线性的方法提出的挑战将在\ref{sec-dg-multiple-frontings}进行讨论。
 %The schemata that were presented in this chapter combine adjacent constituents. The assumption of
 %adjacency can be dropped and discontinuous constituents maybe permitted. Variants of HPSG that allow
 %for discontinuous constituents are usually referred to as \emph{Linearization"=based HPSG}. The

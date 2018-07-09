@@ -149,7 +149,7 @@ Edeltraud  \citet{Werner93a-u}, 哈雷-维滕贝格。
 %so.
 %% \todostefan{S: also because it is closer to semantics and clearly lexicalized (see Kahane 2000, introduction to TAL, written before the swing)
 %% and it is easier to evaluate (see UAS and LAS)}
-支持基于短语成分模型的句法学家会关心以下一些区别：二叉的分支结构还是平铺模型，附接语是高附加性还是低附加性，空成分的有无等等，并且会对这些问题进行激烈的讨论。与之相对，话语中的依存关系是比较清楚的。由此，我们可以很容易地保持标注的一致性，并在这些标注的语料上训练统计剖析器。
+支持基于短语成分模型的句法学家会关心以下一些区别：二叉的分支结构还是平铺模型，附加语是高附加性还是低附加性，空成分的有无等等，并且会对这些问题进行激烈的讨论。与之相对，话语中的依存关系是比较清楚的。由此，我们可以很容易地保持标注的一致性，并在这些标注的语料上训练统计剖析器。
 %While
 %syntacticians working in constituency"=based models may assume binary branching or flat models, high
 %or low attachment of adjuncts, empty elements or no empty elements and argue fiercely about this,
@@ -469,10 +469,10 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %% Junktive: quantitative Veränderung des Satzes (z.B. durch Konjunktionen)
 %% Translative: qualitative Veränderung des Satzes durch (semantisch) „leere“ Wörter (Überführung einer Kategorie in eine andere)
 
-\subsection{附接语}
+\subsection{附加语}
 %\subsection{Adjuncts}
 
-\tes 使用的另一个隐喻是“小戏”。一个事件的核心参与者是行动元（actants）\isc{行动元}\is{actant} ，除此之外就是背景，即舞台，一般的布置。行动元这个概念在其他理论中是论元，而描述为舞台的实体被叫做场景（circumstants）。这些场景是修饰语和在本书介绍的其他理论中通常所说的附接语。在依存关系的表示中，依存语法的论元和附接语之间没有太大的区别。图\vref{fig-the-child-often-reads-the-book-slowly}表示了（\mex{1}）的分析：
+\tes 使用的另一个隐喻是“小戏”。一个事件的核心参与者是行动元（actants）\isc{行动元}\is{actant} ，除此之外就是背景，即舞台，一般的布置。行动元这个概念在其他理论中是论元，而描述为舞台的实体被叫做场景（circumstants）。这些场景是修饰语和在本书介绍的其他理论中通常所说的附加语。在依存关系的表示中，依存语法的论元和附加语之间没有太大的区别。图\vref{fig-the-child-often-reads-the-book-slowly}表示了（\mex{1}）的分析：
 %Another metaphor that was used by \tes is the drama metaphor. The core participants of an event are
 %the \emph{actants}\is{actant} and apart from this there is the background, the stage, the general setting. The actants
 %are the arguments in other theories and the stage-describing entities are called
@@ -505,7 +505,7 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %\caption{\label{fig-the-child-often-reads-the-book-slowly}Analysis of \emph{The child often reads
 %    the book slowly.}}
 \end{figure}%
-依存关系的标注使用了 \citet{Engel77}提出来的描写不同依存关系的技术手段：附接语用一条从附接语结点向上的额外的线来表示（也请参阅\citealp{Eroms2000a}）。另一种区分论元/附接语，或者行动元/场景元的区分的方法是作为论元和附接语的地位的明确的区别。所以我们可以使用针对附接语和论元的明确标记，就像在前面标记语法功能一样。德语语法和配价辞典经常使用标签E和A来分别表示Ergänzung和Angabe。
+依存关系的标注使用了 \citet{Engel77}提出来的描写不同依存关系的技术手段：附加语用一条从附加语结点向上的额外的线来表示（也请参阅\citealp{Eroms2000a}）。另一种区分论元/附加语，或者行动元/场景元的区分的方法是作为论元和附加语的地位的明确的区别。所以我们可以使用针对附加语和论元的明确标记，就像在前面标记语法功能一样。德语语法和配价辞典经常使用标签E和A来分别表示Ergänzung和Angabe。
 %The dependency annotation uses a technical device suggested by  \citet{Engel77} to depict
 %different dependency relations: adjuncts are marked with an additional line upwards from the adjunct
 %node (see also \citealp{Eroms2000a}). An alternative way to specify the argument/adjunct, or rather the actant/circumstant distinction, is of course an %explicit
@@ -662,9 +662,9 @@ dg edges
 % \citealp[\page 258]{AF2010a}).
 % \citet{Welke2003a-u} and  \citet{Fillmore2003a-u} discuss the assignment of semantic roles in
 %overview articles on Dependency Grammar. 
-考虑到依存语法是一个基于词汇的框架，所有关于论元连接的词汇化方法都可以被采用。但是，论元联接\isc{联接}\is{linking}与语义角色\isc{语义角色}\is{semantic role}指派只是当自然语言表达需要指派意义时亟需解决的一小部分问题。附接语和量词的辖域的问题是需要被解决的，而且很清楚的是没有考虑到线性语序的表示依存关系的依存图是不够的。一个没有排序的依存图将语法功能指派给中心语的从属词，并且它在很多方面都类似于\lfgc 的f"=结构。\footnote{%
+考虑到依存语法是一个基于词汇的框架，所有关于论元连接的词汇化方法都可以被采用。但是，论元联接\isc{联接}\is{linking}与语义角色\isc{语义角色}\is{semantic role}指派只是当自然语言表达需要指派意义时亟需解决的一小部分问题。附加语和量词的辖域的问题是需要被解决的，而且很清楚的是没有考虑到线性语序的表示依存关系的依存图是不够的。一个没有排序的依存图将语法功能指派给中心语的从属词，并且它在很多方面都类似于\lfgc 的f"=结构。\footnote{%
 Tim Osborne（p.\,c.\ 2015）提醒我，所有的情况下并不是这样的：比如说非谓词性介词没有在f"=结构中显示，但是他们必然出现在依存图中。
-} 对于第\pageref{ex-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{ex-david-devoured-a-sandwich-at-noon-yesterday}）这类句子，这里重复为（\mex{1}），我们得到第\pageref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}）中的f"=结构。这个f"=结构包括一个主语（David）、一个宾语（a sandwich），以及带有两个成分的附接语的集合（at noon和yesterday）。
+} 对于第\pageref{ex-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{ex-david-devoured-a-sandwich-at-noon-yesterday}）这类句子，这里重复为（\mex{1}），我们得到第\pageref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}）中的f"=结构。这个f"=结构包括一个主语（David）、一个宾语（a sandwich），以及带有两个成分的附加语的集合（at noon和yesterday）。
 %Given that Dependency Grammar is a lexical framework, all
 %lexical approaches to argument linking\is{linking} can be adopted. However, argument linking and semantic
 %role\is{semantic role} assignment are just a small part of the problem that has to be solved when natural language
@@ -934,7 +934,7 @@ dg edges
 %\caption{\label{fig-vi-dg}Analysis of \emph{Kennt jeder diesen Mann?} `Does everybody know this
 %    man?'}
 \end{figure}%
-关于带有论元和附接语的动词的正确的语序由线性约束条件来保证，这些条件与各自的空间位置是相关的。请参阅\ref{sec-dg-linearization}和\ref{sec-linearization-problems-dg}更多有关语序次序化的细节问题。
+关于带有论元和附加语的动词的正确的语序由线性约束条件来保证，这些条件与各自的空间位置是相关的。请参阅\ref{sec-dg-linearization}和\ref{sec-linearization-problems-dg}更多有关语序次序化的细节问题。
 %The correct ordering of the verb with respect to its arguments and adjuncts is ensured by
 %linearization constraints that refer to the respective topological fields. See Section~\ref{sec-dg-linearization} and
 %Section~\ref{sec-linearization-problems-dg} for further details on linearization.
@@ -1596,7 +1596,7 @@ all girls and boys这个句子的图看起来太奇怪了，因为限定词和�
 %coordination is \emph{and}, as it embeds the meaning of \emph{John} and the meaning of
 %\emph{Mary}: \relation{and}(\relation{John},~\relation{Mary}).
 
-这类联结也适用于动词的并列。但是，也不是没有问题的，因为附接语的辖域可以覆盖到离它最近的连词，或者是整个并列结构。例如下面 \citet[\page 217]{Levine2003a}中的句子：
+这类联结也适用于动词的并列。但是，也不是没有问题的，因为附加语的辖域可以覆盖到离它最近的连词，或者是整个并列结构。例如下面 \citet[\page 217]{Levine2003a}中的句子：
 %Such junctions are also assumed for the coordination of verbs. This is, however, not without problems,
 %since adjuncts can have scope over the conjunct that is closest to them or over the whole
 %coordination. An example is the following sentence from  \citet[\page 217]{Levine2003a}:
@@ -1605,7 +1605,7 @@ all girls and boys这个句子的图看起来太奇怪了，因为限定词和�
 Robin 来 进 找到 一 椅子 坐 下 和 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \mytrans{Robin进来，找到了一把椅子，坐下来，并在三十秒内就把她的靴子脱下来了。}
 \z
-附接语in exactly thirty seconds flat可以指向（\mex{1}a）中的whipped off her logging boots，或者像（\mex{1}b)）中那样覆盖所有三个连词：
+附加语in exactly thirty seconds flat可以指向（\mex{1}a）中的whipped off her logging boots，或者像（\mex{1}b)）中那样覆盖所有三个连词：
 %The adjunct \emph{in exactly thirty seconds flat} can refer either to \emph{whipped off her logging
 %  boots} as in (\mex{1}a) or scope over all three conjuncts together as in (\mex{1}b):
 \eal
@@ -1628,7 +1628,7 @@ and Robin pulled off her logging boots in exactly thirty seconds flat.\\
 Robin 进 来 在 确定地 三十 秒 干脆 和 Robin 找到 一 椅子 在 确定地 三十 秒 干脆 和 Robin 拿 开 她的 测井 靴子 在 确定地 三十 秒 干脆\\
 \mytrans{Robin在三十秒内进来，在三十秒内找到了一把椅子，并在三十秒内把她的靴子脱下来了。}
 \z
-当附接语分别指向每个连词的，而不是如（\ref{ex-Robin-flat-VP}）中由动词短语表示的指向一个累积的事件的时候，就会得到（\mex{0}）中的解读。
+当附加语分别指向每个连词的，而不是如（\ref{ex-Robin-flat-VP}）中由动词短语表示的指向一个累积的事件的时候，就会得到（\mex{0}）中的解读。
 %The reading in (\mex{0}) results when an adjunct refers to each conjunct individually rather then referring to a
 %cumulative event that is expressed by a verb phrase as in (\ref{ex-Robin-flat-VP}).
 \begin{figure}
@@ -1678,7 +1678,7 @@ dg edges
 %\caption{\label{fig-dg-adjunct-attachment-right}Analysis of verb coordination involving the connection relation}
 \end{figure}%
 
- \citet[\page 217]{Levine2003a}讨论了连接到 \citet*{BMS2001a}提出的提取\isc{提取}\is{extraction}的\hpsgc 分析的这些句子。Bouma, Malouf \& Sag提出了，附接语作为中心语的从属语而从词汇的角度被引入。因为附接语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确得到语义组成成分的方式，即使句法并不对应于语义依存关系（请参阅\citealp{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义是更简单的。
+ \citet[\page 217]{Levine2003a}讨论了连接到 \citet*{BMS2001a}提出的提取\isc{提取}\is{extraction}的\hpsgc 分析的这些句子。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确得到语义组成成分的方式，即使句法并不对应于语义依存关系（请参阅\citealp{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义是更简单的。
 % \citet[\page 217]{Levine2003a} discusses these sentences in connection to the \hpsg analysis of
 %extraction\is{extraction} by  \citet*{BMS2001a}. Bouma, Malouf \& Sag suggest an analysis in which adjuncts are
 %introduced lexically as dependents of a certain head. Since adjuncts are introduced lexically, the
@@ -1949,7 +1949,7 @@ word tier
 %     that he the book often not reads\\
 %\mytrans{It is often that he does not read the book.}
 \zl
-这三个例子的情况是，只有（\mex{0}a）是有歧义的。即使（\mex{0}c）具有相同的语序，只要考虑到oft（经常）和nicht（不），这个句子就不是歧义的。所以，附接语的前置是歧义的原因。（\mex{0}a）的依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg}所示。
+这三个例子的情况是，只有（\mex{0}a）是有歧义的。即使（\mex{0}c）具有相同的语序，只要考虑到oft（经常）和nicht（不），这个句子就不是歧义的。所以，附加语的前置是歧义的原因。（\mex{0}a）的依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg}所示。
 %The point about the three examples is that only (\mex{0}a) is ambiguous. Even though (\mex{0}c) has
 %the same order as far as \emph{oft} `often' and \emph{nicht} `not' are concerned, the sentence is
 %not ambiguous. So it is the fronting of an adjunct that is the reason for the ambiguity. The
@@ -1976,7 +1976,7 @@ dg edges
 %same, only differing in serialization. Therefore, differences in scope could not be derived from the
 %dependencies and complicated statements like (\mex{1}) would be necessary:
 \ea
-如果从属语在\vfc 中次序化了，它可以跨域，而且位于它所从属的中心语的所有其他附接语下面。
+如果从属语在\vfc 中次序化了，它可以跨域，而且位于它所从属的中心语的所有其他附加语下面。
 %If a dependent is linearized in the \vf it can both scope over and under all other adjuncts of the
 %head it is a dependent of.
 \z
@@ -2037,7 +2037,7 @@ dg edges
   [N, name=n [Mörder;杀人犯]]]
 \draw (n.south)--(det.north);
 \end{forest}
-\caption{\label{dg-alleged-murderer}覆盖全域的附接语作为中心语所得到结果的分析}
+\caption{\label{dg-alleged-murderer}覆盖全域的附加语作为中心语所得到结果的分析}
 %\caption{\label{dg-alleged-murderer}Analysis that would result if one considered all scope-bearing adjuncts
  % to be heads}
 \end{figure}%
@@ -2081,7 +2081,7 @@ Eroms还提出了一个分析，其中否定是一个词的部分（``Wortteilä
 %attaches is the whole verbal complex \emph{singen darf} `sing may', that is, a complex object consisting of two
 %words.
 
-这就给我们留下了图\ref{fig-oft-liest-er-das-buch-nicht-dg}中的分析的一个问题，因为我们针对不同解释的两个可能的附接语实现形式只有一个结构。这不是通过将两个可能的线性顺序简单地作为另一种语序的分析所能得到的。
+这就给我们留下了图\ref{fig-oft-liest-er-das-buch-nicht-dg}中的分析的一个问题，因为我们针对不同解释的两个可能的附加语实现形式只有一个结构。这不是通过将两个可能的线性顺序简单地作为另一种语序的分析所能得到的。
 %This leaves us with the analysis provided in Figure~\ref{fig-oft-liest-er-das-buch-nicht-dg} and
 %hence with a problem since we have one structure with two possible adjunct realizations that
 %correspond to different readings. This is not predicted by an analysis that treats the two possible
@@ -2505,8 +2505,8 @@ X是中心语的范畴，Y1、Y2和Y3是中心语的从属语，而且“\textas
 %which the head is inserted.
 }
 
-经典的短语结构语法和依存语法的一个重要的区别是短语结构规则给子结点强加了特定的语序。也就是说，（\mex{0}）中的V规则暗示了第一个名词性投射、动词和第二个名词性投射必须按照规则表明的语序来出现。当然，这个语序限制可以松一些，正如GPSG中所作的。这基本上允准了规则右手边任意顺序的子结点。剩下的问题是附接语的整合。由于附接语也依存于中心语（请参阅图\vref{fig-the-child-often-reads-the-book-slowly}），可以提出一条规则来允准论元外的任意多的附接语。由此，（\mex{0}）中的V规则应该变成（\mex{1}）中的形式：\footnote{%
-请参阅第\pageref{adv-metarule}页中\gpsgc 的相似规则，并且参考德语的HPSG理论的分析 \citet{Kasper94a}，它提出了完全的平铺结构并且整合进了任意数量的附接语。
+经典的短语结构语法和依存语法的一个重要的区别是短语结构规则给子结点强加了特定的语序。也就是说，（\mex{0}）中的V规则暗示了第一个名词性投射、动词和第二个名词性投射必须按照规则表明的语序来出现。当然，这个语序限制可以松一些，正如GPSG中所作的。这基本上允准了规则右手边任意顺序的子结点。剩下的问题是附加语的整合。由于附加语也依存于中心语（请参阅图\vref{fig-the-child-often-reads-the-book-slowly}），可以提出一条规则来允准论元外的任意多的附加语。由此，（\mex{0}）中的V规则应该变成（\mex{1}）中的形式：\footnote{%
+请参阅第\pageref{adv-metarule}页中\gpsgc 的相似规则，并且参考德语的HPSG理论的分析 \citet{Kasper94a}，它提出了完全的平铺结构并且整合进了任意数量的附加语。
 }
 %One important difference between classical phrase structure grammars and Dependency Grammars is that the
 %phrase structure rules impose a certain order on the daughters. That is, the V rule in (\mex{0})
@@ -3187,7 +3187,7 @@ lexical & \ms{ cont & \\
 %Principle\is{principle!Generalized Head Feature} that projects all properties of
 %the head daughter to the mother by default.
 %
-本节的结论是，短语结构语法和依存语法的唯一理论区别在于中间结构是如何假设的：是否存在没有主语的VP呢？附接语附加成分是否有中间结点呢？在没有涵盖了语义表示的全部可行的方案下回答这些问题是十分困难的。那些可行的方法，如Hudson和Hellwig的方法，提出了中间表达式，它使得这些方法跟基于短语结构的方法十分相似。如果我们将全部可行的依存语法的变体的结构与短语结构语法相比较的话，很清楚的是，依存语法更为简单这个观点是不受欢迎的。这个观点适用于图\ref{fig-wg-small-children-are-playing-outside-abbreviated}中的紧缩的范式的表示，但是它并不适用于全部可行的分析。
+本节的结论是，短语结构语法和依存语法的唯一理论区别在于中间结构是如何假设的：是否存在没有主语的VP呢？附加语附加成分是否有中间结点呢？在没有涵盖了语义表示的全部可行的方案下回答这些问题是十分困难的。那些可行的方法，如Hudson和Hellwig的方法，提出了中间表达式，它使得这些方法跟基于短语结构的方法十分相似。如果我们将全部可行的依存语法的变体的结构与短语结构语法相比较的话，很清楚的是，依存语法更为简单这个观点是不受欢迎的。这个观点适用于图\ref{fig-wg-small-children-are-playing-outside-abbreviated}中的紧缩的范式的表示，但是它并不适用于全部可行的分析。
 %The conclusion of this section is that the only principled difference between phrase structure grammars and Dependency Grammar is the question of %how much intermediate structure is assumed: is there a VP without the subject? Are there intermediate nodes for adjunct attachment? It is difficult to %decide these questions in the absence of fully worked out proposals that include semantic representations. Those proposals that are worked out -- like %Hudson's and Hellwig's -- assume intermediate representations, which makes these approaches rather similar to phrase structure-based approaches. If %one compares the structures of these fully worked out variants of Dependency Grammar with phrase structure grammars, it becomes clear that the %claim that Dependency Grammars are simpler is unwarranted. This claim holds for compacted schematic representations like Figure~\ref{fig-wg-small-%children-are-playing-outside-abbreviated} but it does not hold for fully worked out analyses.
 %% \subsection{Extraction and coordination}
 %% \label{sec-dg-coordination}

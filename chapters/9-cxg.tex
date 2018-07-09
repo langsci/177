@@ -314,10 +314,10 @@ val & \menge{ \textrm{ [ \textsc{sem} \{ A \} ] }}\\[2mm]\hline
 %MRS. As the fundamentals of MRS have already been discussed in Section~\ref{Abschnitt-HPSG-Semantik}, I will not repeat
 %them here. For more on MRS, see Section~\ref{Abschnitt-leere-Elemente-Semantik}.
 
-\subsection{附接语}
+\subsection{附加语}
 %\subsection{Adjuncts}
 
-为了\isc{附接语|(}\is{adjunct|(}描述中心语与修饰语的组合，Kay和Fillmore假设了与之前讨论过的动词短语构式类似的其他短语构式，并且创建了中心语与修饰语之间的关系。Kay和Fillmore认为附接语也对父节点的\textsc{val}值有贡献。原则上，\textsc{val}只是句法树中所有非中心语子节点的集合。\isc{附接语|)}\is{adjunct|)}
+为了\isc{附加语|(}\is{adjunct|(}描述中心语与修饰语的组合，Kay和Fillmore假设了与之前讨论过的动词短语构式类似的其他短语构式，并且创建了中心语与修饰语之间的关系。Kay和Fillmore认为附加语也对父节点的\textsc{val}值有贡献。原则上，\textsc{val}只是句法树中所有非中心语子节点的集合。\isc{附加语|)}\is{adjunct|)}
 %For\is{adjunct|(} the combination of heads and modifiers, Kay and Fillmore assume further phrasal constructions that
 %are similar to the verb phrase constructions discussed above and create a relation between a head and a modifier.
 %Kay and Fillmore assume that adjuncts also contribute something to the \textsc{val} value of the mother node.
@@ -733,7 +733,7 @@ CxG不同的变体对抽象构式的性质有不同的假设。在范畴语法�
 \ea
 S $\to$ V, NP, NP
 \z
-这里有一个问题，那就是在德语中附接语可以出现在任意两个论元中间。在GPSG中，附接语用元规则引入。在CxG的形式变体中，使用词汇规则而不是元规则。\footnote{\label{fn-allostructions}%
+这里有一个问题，那就是在德语中附加语可以出现在任意两个论元中间。在GPSG中，附加语用元规则引入。在CxG的形式变体中，使用词汇规则而不是元规则。\footnote{\label{fn-allostructions}%
    \citet[\page 116]{Goldberg2014a}提到了一种类似于元规则的装置，并且参考了 \citew{Cappelle2006a}。元规则和Cappelle以及Goldberg所想象的CxG变体的差异在于在CxG中相互连接的两个构式并没有说明哪一个是基础的哪一个是派生的。两个构式之间存在相互关系。%
 } 如果不想扩展形式化体系以包含元规则，那么有三个选择：
 %Here, we have the problem that adjuncts in German can occur between any of the arguments. In GPSG, adjuncts are introduced by metarules.
@@ -746,20 +746,20 @@ S $\to$ V, NP, NP
 %} If one does not wish to expand the formalism to include metarules,
 %then there are three options remaining:
 \begin{itemize}
-\item 附接语放在词库中\citep*{NB94,BMS2001a}并且在句法层上处理为论元；
-\item 构式总是包含槽以便于容纳任意数量的附接语；
+\item 附加语放在词库中\citep*{NB94,BMS2001a}并且在句法层上处理为论元；
+\item 构式总是包含槽以便于容纳任意数量的附加语；
 \item 构式可以是非连续的\isc{成分!非连续|(}\is{constituent!discontinuous|(}
 %\item Adjuncts are introduced in the lexicon \citep*{NB94,BMS2001a} and treated as arguments in the syntax,
 %\item Constructions always have slots available for an arbitrary number of adjuncts, or
 %\item Constructions can be discontinuous\is{constituent!discontinuous|(}
 \end{itemize}
- \citet{Kasper94a}在HPSG框架里提出了第一个类型的分析：附接语与论元在一个扁平的结构中与中心词组合。这对应（\mex{1}）中的统制规则，但是统制规则没有说明附接语的位置。
+ \citet{Kasper94a}在HPSG框架里提出了第一个类型的分析：附加语与论元在一个扁平的结构中与中心词组合。这对应（\mex{1}）中的统制规则，但是统制规则没有说明附加语的位置。
 % \citet{Kasper94a} has proposed an analysis of the first type in HPSG: adjuncts and arguments are combined with the head in a flat structure.
 %This corresponds to the dominance rule in (\mex{1}), where the position of adjuncts is not stated by the dominance rule.
 \ea
 S $\to$ V, NP, NP, Adj*
 \z
-如果我们想得到整个结构的意义，就需要将初始构式（上面例子中的及物构式）与每一个附接语的语义组合起来。这种组合的计算量并不小而且需要关联限制（小的计算机程序），如果有概念上更加简洁的方式来描述某一特定现象的话，应该避免这种处理方式。
+如果我们想得到整个结构的意义，就需要将初始构式（上面例子中的及物构式）与每一个附加语的语义组合起来。这种组合的计算量并不小而且需要关联限制（小的计算机程序），如果有概念上更加简洁的方式来描述某一特定现象的话，应该避免这种处理方式。
 %If we want to say something about the meaning of the entire construction, then one has to combine the original construction (transitive, in the above example)
 %with the semantics contributed by each of the adjuncts. These computations are not trivial and require relational constraints (small computer programs), which
 %should be avoided if there are conceptually simpler solutions for describing a particular phenomenon.
@@ -776,7 +776,7 @@ S $\to$ V, NP, NP, Adj*
 %	 gives the man tomorrow the woman under the bridge the money\\
 %\mytrans{Is the man going to give the woman the money under the bridge tomorrow?}
 \z
-构式实现为非连续形式并且附接语插入到空位中。在这种分析方式中，仍然需要解释量词以及附接语的辖域\isc{辖域}\is{s\textsc{cop}e}是如何确定的。虽然这是可能的，但是这种方式并不明显而且至今没有在任何CxG方法中实现出来。对于允许不连续成分方法的进一步论述可以参看第~\ref{sec-discontinuous-constituents-HPSG}节。\isc{成分!非连续|)}\is{constituent!discontinuous|)}\isc{动词位置|)}\is{verb position|)}
+构式实现为非连续形式并且附加语插入到空位中。在这种分析方式中，仍然需要解释量词以及附加语的辖域\isc{辖域}\is{s\textsc{cop}e}是如何确定的。虽然这是可能的，但是这种方式并不明显而且至今没有在任何CxG方法中实现出来。对于允许不连续成分方法的进一步论述可以参看第~\ref{sec-discontinuous-constituents-HPSG}节。\isc{成分!非连续|)}\is{constituent!discontinuous|)}\isc{动词位置|)}\is{verb position|)}
 %The construction has been realized discontinuously and the adjuncts are inserted into the gaps.
 %In this kind of approach, one still has to explain how the s\textsc{cop}e\is{s\textsc{cop}e} of quantifiers and adjuncts is determined.
 %While this may be possible, the solution is not obvious and has not been worked out in any of the
@@ -802,7 +802,7 @@ S $\to$ V, NP, NP, Adj*
 \section{长距离依存}
 %\section{Long"=distance dependencies}
 
-\mbox{} \citet[\S~3.10]{KF99a}在他们的论文中讨论了\isc{长距离依存|(}\is{long"=distance dependency|(}长距离依存。因为论元的数目在动词短语构式中并没有说明，所以动词的论元可能不是局域性出现的。正如前面章节提到的LFG\indexlfgc（LFG）和GPSG的分析\indexgpsgc，在分析长距离依存的时候不假设空成分\isc{空成分}\is{empty element}。在允准整个句子的左孤立构式（Left Isolation Construction）中，有一个左子节点和一个右子节点。左子节点对应着从右子节点提取出来的任意成分。前置成分与其缺失的位置之间的关系用VAL算子来表示。VAL提供一个语言学对象的价的集合中的所有元素以及这些元素的价的集合中的所有元素等。因此可以获得任意深度嵌套的论元或附接语子节点，并且识别有一个开放价槽的前面的成分。\footnote{%
+\mbox{} \citet[\S~3.10]{KF99a}在他们的论文中讨论了\isc{长距离依存|(}\is{long"=distance dependency|(}长距离依存。因为论元的数目在动词短语构式中并没有说明，所以动词的论元可能不是局域性出现的。正如前面章节提到的LFG\indexlfgc（LFG）和GPSG的分析\indexgpsgc，在分析长距离依存的时候不假设空成分\isc{空成分}\is{empty element}。在允准整个句子的左孤立构式（Left Isolation Construction）中，有一个左子节点和一个右子节点。左子节点对应着从右子节点提取出来的任意成分。前置成分与其缺失的位置之间的关系用VAL算子来表示。VAL提供一个语言学对象的价的集合中的所有元素以及这些元素的价的集合中的所有元素等。因此可以获得任意深度嵌套的论元或附加语子节点，并且识别有一个开放价槽的前面的成分。\footnote{%
    需要再次注意，在Kay \& Fillmore的论文中将这一方案形式化是有问题的。由Andreas Kathol提供的VAL形式化好像要像HPSG那样预设集合的形式化，但是Fillmore \& Kay论文的其余部分假设了一个不同的形式化方法，这种形式化方法前后不一致。参看\ref{sec-formal-bcg}。
  }这一分析对应于 \citet{KZ89a}基于功能不确定性\isc{功能不确定性}\is{functional uncertainty}的LFG分析。%
 \isc{长距离依存|)}\is{long"=distance dependency|)}
@@ -1301,7 +1301,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %and embedded clauses, which would make this version of the lexical theory rather unattractive, since
 %we would need two lexical items for the respective verb.
 
-（\ref{ex-look-as-if-butter}）非常有意思，因为在这里X所指熟语之外的成分是一个附接语。如果这样的案例存在的话，\xargc 机制就明显存在不足，因为\xargc 不能从附接语投射而来。但是，正如 \citet{KSF2015a}所指出的那样X不一定非得是与主句中一个成分同指的代词。他们提供了以下例子：
+（\ref{ex-look-as-if-butter}）非常有意思，因为在这里X所指熟语之外的成分是一个附加语。如果这样的案例存在的话，\xargc 机制就明显存在不足，因为\xargc 不能从附加语投射而来。但是，正如 \citet{KSF2015a}所指出的那样X不一定非得是与主句中一个成分同指的代词。他们提供了以下例子：
 %(\ref{ex-look-as-if-butter}) is especially interesting, since here the X that refers to material
 %outside the idiom is in an adjunct. If such cases existed, the \xarg mechanism would be clearly
 %insufficient since \xarg is not projected from adjuncts. However, as  \citet{KSF2015a} point out the
@@ -2349,7 +2349,7 @@ evokes & \liste{ \ms[right-triangle]{
 %     beat   him dead or alive\\
 %\mytrans{Beat him when he is dead or while he is alive!}
 \z
-所以，问题是（\ref{ex-schlag-den-mann-tot}） 含有一个意义不需要激活修复机制：schlug（击打）应用于一个及物构式而tot是一个附接语（参看\citealp{Winkler97a}）。但是， （\ref{ex-schlag-den-mann-tot}） 更加可能的一个分析是结果分析，在这种分析中价框架通过一个旁格元素得到扩展。所以，这意味着我们必须允许合并操作独立于其他可能的操作。正如 \citet[\page 320]{SvT2011a}指出的那样，如果合并不能自由使用，像（\mex{1}a）这种话段就不被允许，当然（\mex{1}b） 也是这样。
+所以，问题是（\ref{ex-schlag-den-mann-tot}） 含有一个意义不需要激活修复机制：schlug（击打）应用于一个及物构式而tot是一个附加语（参看\citealp{Winkler97a}）。但是， （\ref{ex-schlag-den-mann-tot}） 更加可能的一个分析是结果分析，在这种分析中价框架通过一个旁格元素得到扩展。所以，这意味着我们必须允许合并操作独立于其他可能的操作。正如 \citet[\page 320]{SvT2011a}指出的那样，如果合并不能自由使用，像（\mex{1}a）这种话段就不被允许，当然（\mex{1}b） 也是这样。
 %So, the problem is that (\ref{ex-schlag-den-mann-tot}) has a reading which does not require the invocation of the repair mechanism: \emph{schlug} `beat' is used with the transitive
 %construction and \emph{tot} is an adjunct (see \citealp{Winkler97a}). However, the more likely analysis of (\ref{ex-schlag-den-mann-tot}) is the one
 %with the resultative analysis, in which the valence frame is extended by an oblique element. So this
@@ -2907,7 +2907,7 @@ approach.}
 % \citew{Boas2003a} and in a reply to  \citet{Boas2014a}. See  \citew[655--656]{Mueller2005a},
 % \citew[Chapter~20]{MuellerLehrbuch1}, and  \citew[Footnote~15]{MWArgStReply}.
 
-关于FCG对于非局部依存分析的结论是有些实际缺陷可以很容易修复或者一些假设可以简单地抛弃（do作为宾语标记的角色，英语最前面的位置是话题），一些实际缺点（并列，允许一些带有不连续成分的不合法话语），当分析扩展到其他语言时遇到的一些实际问题（德语附接语的辖域），分析的简约性实际上不具有可比性，因为没有给出关于连续性的限制（或者至少没有发表）。如果FCG对于连续性限制的形式化证明即便是与 \citet{Reape2000a}提出的\footnote{%
+关于FCG对于非局部依存分析的结论是有些实际缺陷可以很容易修复或者一些假设可以简单地抛弃（do作为宾语标记的角色，英语最前面的位置是话题），一些实际缺点（并列，允许一些带有不连续成分的不合法话语），当分析扩展到其他语言时遇到的一些实际问题（德语附加语的辖域），分析的简约性实际上不具有可比性，因为没有给出关于连续性的限制（或者至少没有发表）。如果FCG对于连续性限制的形式化证明即便是与 \citet{Reape2000a}提出的\footnote{%
   参见 \citew{KP95a}对于外置基于线性化的分析。这一分析在Babel系统中得到了实现\citep{Babel}。见\citet{Mueller99g} 对于非连续性的限制。基于线性化的分析方法被认为不能分析德语中非常明显的多重前置\citep{Mueller2005d,MuellerGS} ，所以基于线性化的方法被更加传统的只是允许连续成分的理论变体所取代。
 }基于线性化的HPSG对于非局部依存（提取和外置）分析所需要的解释一半复杂的话，那么基于\slaschc 的分析更好。
 %The conclusion about the FCG analysis of nonlocal dependencies is that there are some empirical

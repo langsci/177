@@ -184,7 +184,7 @@ np & $\epsilon$\\
 %compared to (\mex{-1}) despite the grammars licensing the same sequences of symbols. The fact that
 %an NP argument can be omitted is not expressed directly in (\mex{0}) but instead is implicitly contained in two rules. 
 
-如果将这一程序应用于第\ref{Kapitel-HPSG}章中的HPSG\indexhpsgc 语法，那么语迹就不会有一个像NP一样的具体范畴。语迹只会与一个非中心语子节点兼容。正如例（\mex{1}）所示，附接语、论元和动词复杂成分的一部分都可以被提取。
+如果将这一程序应用于第\ref{Kapitel-HPSG}章中的HPSG\indexhpsgc 语法，那么语迹就不会有一个像NP一样的具体范畴。语迹只会与一个非中心语子节点兼容。正如例（\mex{1}）所示，附加语、论元和动词复杂成分的一部分都可以被提取。
 %If one applies this procedure to the HPSG\indexhpsg grammar in Chapter~\ref{Kapitel-HPSG}, then the
 %trace does not have a specific category such as NP. The trace simply has to be compatible with a
 %non"=head daughter. As the examples in (\mex{1}) show, adjuncts, arguments and parts of verbal
@@ -212,7 +212,7 @@ np & $\epsilon$\\
 \zl
 
 \noindent
-相关成分在一个特定模式（中心语-论元模式、中心语-附接语模式、谓词复杂形式模式）中与它们的中心语组合。最前面两个模式可以参见第\ref{Kapitel-HPSG}章；谓词复杂图式的具体动因见 Müller （\citeyear[\S~2]{Mueller2002b}；\citeyear[\S~15]{MuellerLehrbuch1}）。如果想要不使用语迹，那么需要描述附接语、论元和谓词复杂形式的部分前置需要另外的模式。图~\vref{Abbildung-Kopf+Spur}给出了中心语与语迹结合的例子。图~\vref{Abbildung-Kopf-ohne-Spur}展示了没有语迹的分析。
+相关成分在一个特定模式（中心语-论元模式、中心语-附加语模式、谓词复杂形式模式）中与它们的中心语组合。最前面两个模式可以参见第\ref{Kapitel-HPSG}章；谓词复杂图式的具体动因见 Müller （\citeyear[\S~2]{Mueller2002b}；\citeyear[\S~15]{MuellerLehrbuch1}）。如果想要不使用语迹，那么需要描述附加语、论元和谓词复杂形式的部分前置需要另外的模式。图~\vref{Abbildung-Kopf+Spur}给出了中心语与语迹结合的例子。图~\vref{Abbildung-Kopf-ohne-Spur}展示了没有语迹的分析。
 %The relevant elements are combined with their head in a specific schema (Head"=Argument Schema, Head"=Adjunct Schema,
 %Predicate Complex Schema). See Chapter~\ref{Kapitel-HPSG} for the first two schemata; the Predicate Complex Schema is
 %motivated in detail in Müller (\citeyear[Chapter~2]{Mueller2002b};
@@ -348,7 +348,7 @@ sm edges, for tree={l sep= 5ex}
 %\mytrans{He is sleeping.}
 \ex 
 \gll Jetzt$_i$ [schlaf$_j$ t$_i$ t$_j$]!\\
-	 现在 \spacebr{}睡觉\\   \jambox{(提取语迹 (附接语)  $+$ 动词语迹)}
+	 现在 \spacebr{}睡觉\\   \jambox{(提取语迹 (附加语)  $+$ 动词语迹)}
 \mytrans{现在去睡觉！}
 %\gll Jetzt$_i$ [schlaf$_j$ t$_i$ t$_j$]!\\
 %	 now \spacebr{}sleep\\   \jambox{(Extraction trace (adjunct)  $+$ verb trace)}
@@ -366,7 +366,7 @@ sm edges, for tree={l sep= 5ex}
 %three new schemata for Head"=Argument structures. Using these schemata, it then becomes possible to analyze
 %the sentences in (\mex{0}).
 
-为了描述（\mex{1}）和（\mex{2}）中的例子，需要另外6条模式，因为这三个新语迹都可以作为中心语出现在中心语"=论元结构 （\mex{1}）和中心语"=附接语结构（\mex{2}）中：
+为了描述（\mex{1}）和（\mex{2}）中的例子，需要另外6条模式，因为这三个新语迹都可以作为中心语出现在中心语"=论元结构 （\mex{1}）和中心语"=附加语结构（\mex{2}）中：
 %Six further schemata are required for the examples in (\mex{1}) and (\mex{2}) since the three new traces can each occur
 %as heads in Head"=Argument structures (\mex{1}) and Head"=Adjunct structures (\mex{2}):
 \eal
@@ -534,7 +534,7 @@ no word baseline
 \caption{\label{Abbildung-wieder-oeffnen-Stechow}句法结构中的分解}
 %\caption{\label{Abbildung-wieder-oeffnen-Stechow}Decomposition in syntactic structures}
 \end{figure}%
-Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范畴!功能性的!AgrO}\is{category!functional!AgrO}是为了描述巴斯克语等语言中主宾语的一致\isc{一致!宾语}\is{agreement!object}而提出的，现在也用于分析德语（见\ref{Abschnitt-neues-GB}）。名词短语必须从VoiceP\isc{范畴!功能性的!态}\is{category!functional!Voice}移位到Agrs和AgrO中心语的指定语位置以便获得格指派。T\isc{范畴!功能性的!时}\is{category!functional!T}代表时，并且对应\gbtc 中的Infl（见\ref{sec-GB-CP-IP-System-English}和\ref{sec-CP-TP-vP-VP}）。重要的是，存在一个Voice中心语和一个offen（打开）的分离表征作为其自身短语的中心语。在图中，Voice$'$下面的所有成分都对应动词öffnen。通过假设一个表示致使意义的Voice中心语，就可以在句法层面推导出两种意义：在wieder（再次）取窄辖域时，副词附接到XP，并且其辖域高于open（X）。在wieder取宽辖域时，副词附加到VoiceP上或者更高的短语上，所以其辖域高于CAUSE(BECOME(open(x)))。
+Agrs\isc{范畴!功能性的!AgrS}\is{category!functional!AgrS}和AgrO\isc{范畴!功能性的!AgrO}\is{category!functional!AgrO}是为了描述巴斯克语等语言中主宾语的一致\isc{一致!宾语}\is{agreement!object}而提出的，现在也用于分析德语（见\ref{Abschnitt-neues-GB}）。名词短语必须从VoiceP\isc{范畴!功能性的!态}\is{category!functional!Voice}移位到Agrs和AgrO中心语的指定语位置以便获得格指派。T\isc{范畴!功能性的!时}\is{category!functional!T}代表时，并且对应\gbtc 中的Infl（见\ref{sec-GB-CP-IP-System-English}和\ref{sec-CP-TP-vP-VP}）。重要的是，存在一个Voice中心语和一个offen（打开）的分离表征作为其自身短语的中心语。在图中，Voice$'$下面的所有成分都对应动词öffnen。通过假设一个表示致使意义的Voice中心语，就可以在句法层面推导出两种意义：在wieder（再次）取窄辖域时，副词附加到XP，并且其辖域高于open（X）。在wieder取宽辖域时，副词附加到VoiceP上或者更高的短语上，所以其辖域高于CAUSE(BECOME(open(x)))。
 %AgrS\is{category!functional!AgrS} and AgrO\is{category!functional!AgrO} are functional heads
 %proposed for subject and object agreement\is{agreement!object} in languages like Basque\il{Basque} and
 %have been adopted for German (see Section~\ref{Abschnitt-neues-GB}). Noun phrases have to be moved from the VoiceP\is{category!functional!Voice} into the specifier
@@ -855,13 +855,13 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
 %\section{Transformations, lexical rules, and empty elements}
 \label{Abschnitt-leere-Elemente-LRs-Transformations}
 
-在\isc{空成分|(}\is{empty element|(}\isc{词汇规则|(}\is{lexical rule|(}\isc{转换|(}\is{transformation|(}TAG框架内对被动\isc{被动}\is{passive}的讨论中，我们已经清楚的是词汇规则对应特定的转换式，即那些与一个词项有关的转换式（词汇管辖的转换式，\citealp{Dowty78a}；关于转换式和词汇规则的讨论，可以参见 \citew{Bresnan78a}和 \citew{BK82a}）。在TAG\indextagc 各自的变体中，词汇规则在一个词项的主动句法树和被动句法树之间建立联系。主动句法树和被动句法树都可以通过附接进行扩展。
+在\isc{空成分|(}\is{empty element|(}\isc{词汇规则|(}\is{lexical rule|(}\isc{转换|(}\is{transformation|(}TAG框架内对被动\isc{被动}\is{passive}的讨论中，我们已经清楚的是词汇规则对应特定的转换式，即那些与一个词项有关的转换式（词汇管辖的转换式，\citealp{Dowty78a}；关于转换式和词汇规则的讨论，可以参见 \citew{Bresnan78a}和 \citew{BK82a}）。在TAG\indextagc 各自的变体中，词汇规则在一个词项的主动句法树和被动句法树之间建立联系。主动句法树和被动句法树都可以通过附加进行扩展。
 %In\is{empty element|(}\is{lexical rule|(}\is{transformation|(} the discussion of the passive\is{passive} in the framework of TAG, it became clear that lexical rules
 %correspond to particular transformations, namely those which have some relation to a lexical item (lexically governed transformations, \citealp{Dowty78a}; 
 %for the discussion of transformations and lexical rules, see  \citew{Bresnan78a} and  \citew{BK82a}). In the respective variants of TAG\indextag, lexical rules establish a relation
 %between a lexical item for an active tree with a lexical item of a passive tree. Both the active and passive tree can be extended by adjunction.
 
-在范畴语法\indexcgc 等理论中，情况是一样的：因为一个功能符预期去寻找其论元的方向在英语这种语言中是固定的，所以词项代表整个句法树。只有附接语的附加没有在词项中说明。附接语可以出现在句法树的什么位置取决于附接语的属性。在\ref{Abschnitt-CG-lokale-Umstellung}中，我们已经看到处理自由成分序列的语言的方案。如果组合的方向没有在词库中确定，那么词项就可以出现在多个树中。如果我们对比用于这类词项的词汇规则和转换，我们也看到在不同句法树集合中产生关系的词汇规则。
+在范畴语法\indexcgc 等理论中，情况是一样的：因为一个功能符预期去寻找其论元的方向在英语这种语言中是固定的，所以词项代表整个句法树。只有附加语的附加没有在词项中说明。附加语可以出现在句法树的什么位置取决于附加语的属性。在\ref{Abschnitt-CG-lokale-Umstellung}中，我们已经看到处理自由成分序列的语言的方案。如果组合的方向没有在词库中确定，那么词项就可以出现在多个树中。如果我们对比用于这类词项的词汇规则和转换，我们也看到在不同句法树集合中产生关系的词汇规则。
 %In theories such as Categorial Grammar\indexcg, the situation is similar: since the direction in which a functor expects to find its argument is fixed
 %for languages such as English, the lexical item stands for an entire tree. Only the attachment of
 %adjuncts is not yet specified in lexical items. The positions in the
@@ -870,7 +870,7 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义——重�
 %can occur in a number of trees. If we compare lexical rules that can be applied to this kind of lexical items with transformations, we see that lexical rules create relations
 %between different sets of trees.
 
-在HPSG\hpsgc 分析\indexhpsgc 中，工作方式相似：词汇规则将价属性不同的词项互相联系起来。在英语\il{英语}\il{English}的HPSG语法中，通常有一个模式允准一个VP，该VP包括动词和其所有补语；还有一个模式将主语和这一VP连接起来\citep[\page 39]{ps2}。在定式动词的词项中，已经确定了句法树最后的样子。与在范畴语法中一样，HPSG中的附接语可以与多种中间投射组合。基于在特定语法中使用的统制模式，词项会决定词项能够出现的成分结构和允许出现的多重结构。在第\ref{Kapitel-HPSG}章提出的德语语法中，可以使用双及物动词词项来分析六种不同的序列，即，词项可以 -- 不考虑附接语 -- 出现在六种动词居末的结构中。两种序列可以用被动词项来分析，该词项只有两个论元。正如在范畴语法中一样，被允准的结构的集合与其它被允准结构的集合相互联系。在HPSG理论和构式语法中，曾努力用其它机制来代替词汇规则，因为词汇规则“的地位是含糊的，并且与其它分析的互动是存在争议的”\citep*[\page 19]{BMS2001a}。 \citet{BMS2001a} 为提取提出了一个分析，这一分析不是将具有不同价列表的词项连接起来，而是在同一个词项中一个列表的次集合和另外一个列表之间建立联系。两种分析方法的结果分别见（\mex{1}）和（\mex{2}）：
+在HPSG\hpsgc 分析\indexhpsgc 中，工作方式相似：词汇规则将价属性不同的词项互相联系起来。在英语\il{英语}\il{English}的HPSG语法中，通常有一个模式允准一个VP，该VP包括动词和其所有补语；还有一个模式将主语和这一VP连接起来\citep[\page 39]{ps2}。在定式动词的词项中，已经确定了句法树最后的样子。与在范畴语法中一样，HPSG中的附加语可以与多种中间投射组合。基于在特定语法中使用的统制模式，词项会决定词项能够出现的成分结构和允许出现的多重结构。在第\ref{Kapitel-HPSG}章提出的德语语法中，可以使用双及物动词词项来分析六种不同的序列，即，词项可以 -- 不考虑附加语 -- 出现在六种动词居末的结构中。两种序列可以用被动词项来分析，该词项只有两个论元。正如在范畴语法中一样，被允准的结构的集合与其它被允准结构的集合相互联系。在HPSG理论和构式语法中，曾努力用其它机制来代替词汇规则，因为词汇规则“的地位是含糊的，并且与其它分析的互动是存在争议的”\citep*[\page 19]{BMS2001a}。 \citet{BMS2001a} 为提取提出了一个分析，这一分析不是将具有不同价列表的词项连接起来，而是在同一个词项中一个列表的次集合和另外一个列表之间建立联系。两种分析方法的结果分别见（\mex{1}）和（\mex{2}）：
 %In \hpsg analyses\indexhpsg, this works in a similar way: lexical rules relate lexical items with differing valence properties to each other. In HPSG grammars of English\il{English},
 %there is normally a schema that licenses a VP containing the verb and all its complements as well as a schema that connects the subject to the VP 
 %\citep[\page 39]{ps2}. In the lexical items for finite verbs, it is already determined what the tree will look like in the end. As in Categorial Grammar, adjuncts in HPSG can

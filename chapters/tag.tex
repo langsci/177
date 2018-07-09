@@ -82,7 +82,7 @@ tag
 \end{figure}%
 %
 待插入论元的结点用特殊标记进行标识（laugh树中的NP$\downarrow$\isc{$\downarrow$}\is{$\downarrow$}）。
-作为附接语插入的结点也用特殊标记进行标识（always树中的VP$^*$\isc{*}\is{*}）。
+作为附加语插入的结点也用特殊标记进行标识（always树中的VP$^*$\isc{*}\is{*}）。
 如果语法中的每一个基本树都至少含有一个词的话，则称之为词汇化树邻接语法（{Lexicalized Tree Adjoining Grammar}，简称LTAG）。
 \isc{价|)}\is{valence|)} 
 
@@ -121,11 +121,11 @@ tag
 在这个例子中，John的子树就插入到了相应的位置。
 \isc{替换|)}\is{substitution|)}
 
-\subsection{附接语}
+\subsection{附加语}
 
 图\vref{abb-Adjunktion}
-\isc{附接|(}\is{adjunction|(}
-\isc{附接语|(}\is{adjunct|(}展示了always的附接树（adjunction tree）是如何被使用的。
+\isc{附加|(}\is{adjunction|(}
+\isc{附加语|(}\is{adjunct|(}展示了always的附加树（adjunction tree）是如何被使用的。
 
 %
 \begin{figure}
@@ -163,11 +163,11 @@ tag
 				[laughs;笑]]]]]
 \end{forest}
 }
-\caption{\label{abb-Adjunktion}附接}
+\caption{\label{abb-Adjunktion}附加}
 \end{figure}%
-附接树可以插入其它的树中。在插入时，目标结点（和标有`*'的结点一样的范畴）被附接树替换。
-\isc{附接语|)}\is{adjunction|)}
-\isc{附接|)}\is{adjunct|)}
+附加树可以插入其它的树中。在插入时，目标结点（和标有`*'的结点一样的范畴）被附加树替换。
+\isc{附加语|)}\is{adjunction|)}
+\isc{附加|)}\is{adjunct|)}
 
 TAG和我们之前在第\ref{Kapitel-PSG}章遇到的简单短语结构语法有一个显著不同，即树的范围扩大了：例如，laugh树中有一个不是动词兄弟结点的NP结点。在短语结构语法（当然包括了GB\indexgbc 和GPSG\indexgpsgc，因为这两个理论或多或少都依赖于短语结构语法）中，我们只能描写深度为一的子树。对于laughs的子树而言，相应的规则如（\mex{1}）所示：
 \ea
@@ -182,7 +182,7 @@ V  & $\to$ laughs\\
 扩展的局部域在分析习语时有着重要作用（参见\ref{Abschnitt-Diskussion-Lokalitaet}）。
 
 TAG和其它的语法理论不同的地方在于它允许结构被再次打散。
-基于这种方式，我们可以使用附接操作向一个给定的树中不断添加新成分，其结果是原本邻接于一处的组成成分在最终所构造出来的树中相隔可以任意远。
+基于这种方式，我们可以使用附加操作向一个给定的树中不断添加新成分，其结果是原本邻接于一处的组成成分在最终所构造出来的树中相隔可以任意远。
 我们将在\ref{TAG-Fernabh}中看到，这个性质对于脱离移位去分析长距离依存非常重要。
 
 \subsection{语义}
@@ -466,7 +466,7 @@ tag
 %					[versprach;promised]]]]]]
 \end{forest}
 }
-\caption{针对语序NP$_2^2$ NP$_2^1$ NP$_1^1$ NP$_1^2$ V$_{2}$V$_{1}$的分析：附接操作施加于最低的S结点}\label{Abbildung-TAG-Permutation-one}
+\caption{针对语序NP$_2^2$ NP$_2^1$ NP$_1^1$ NP$_1^2$ V$_{2}$V$_{1}$的分析：附加操作施加于最低的S结点}\label{Abbildung-TAG-Permutation-one}
 \end{figure}%
 %
 \begin{figure}
@@ -497,7 +497,7 @@ tag
 %				[versprach;promised]]]]]
 \end{forest}
 }
-\caption{针对语序NP$_2^2$ NP$_1^1$ NP$_1^2$ NP$_2^1$ V$_{2}$V$_{1}$的分析：附接操作施加于NP$_2^2$与NP$_2^1$之间的S结点}\label{Abbildung-TAG-Permutation-two}
+\caption{针对语序NP$_2^2$ NP$_1^1$ NP$_1^2$ NP$_2^1$ V$_{2}$V$_{1}$的分析：附加操作施加于NP$_2^2$与NP$_2^1$之间的S结点}\label{Abbildung-TAG-Permutation-two}
 \end{figure}%
 
 \noindent
@@ -567,7 +567,7 @@ tag
 %					[versprach;promised]]]]]]
 \end{forest}
 }
-\caption{\label{Abbildung-TAG-Permutation3}针对语序NP$_1^1$ NP$_2^2$ NP$_1^2$ NP$_2^1$ V$_{2}$V$_{1}$的分析：附接操作作用于NP$_2^2$与NP$_2^1$之间的S结点}
+\caption{\label{Abbildung-TAG-Permutation3}针对语序NP$_1^1$ NP$_2^2$ NP$_1^2$ NP$_2^1$ V$_{2}$V$_{1}$的分析：附加操作作用于NP$_2^2$与NP$_2^1$之间的S结点}
 \end{figure}%
 
 
@@ -681,7 +681,7 @@ tag
 \caption{\label{abb-nld-TAG}TAG中的长距离依存分析}
 \end{figure}%
 WH COMP NP likes \_$_i$的树属于likes的树族，因此包含在词典之中。
-tell可以附接到这个树上，因为tell的这个树可以插入到who that Bill likes \_$_i$这棵树的中间位置。
+tell可以附加到这个树上，因为tell的这个树可以插入到who that Bill likes \_$_i$这棵树的中间位置。
 这样一个插入性的操作可以重复很多次，所以在像（\mex{1}）这样的句子中，who可以跨越多个小句边界移动到很远的位置：
 \ea 
 \gll Who$_i$ did John tell Sam that Mary said that Bill likes \_$_i$?\\
@@ -695,8 +695,8 @@ tell可以附接到这个树上，因为tell的这个树可以插入到who that 
      谁  \textsc{comp} Bill 喜欢\\
 }
 \z
-这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附接操作。
-\isc{附接!附接的必要性|(}\is{adjunction!obligatory|(}
+这一点必须通过TAG语法得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附加操作。
+\isc{附加!附加的必要性|(}\is{adjunction!obligatory|(}
 \il{English|)}
 \isc{长距离依存|)}\is{long"=distance dependency|)} 
 
@@ -805,10 +805,10 @@ tag
 
 在一棵完整的树中，所有的顶结构都需要和其所对应的底结构一致。在这种组合方式下，只有主语为第三人称单数形式的句子才能使用所给定的laughs的子树，也就是说动词的一致性特征（agreement feature）必须和主语一致。
 
-对于附接语来说，待插入成分的顶结构必须和附接树的顶结构合一，而底结构必须和附接树上的标有`*'的结点（所谓的底部结点（foot node）
+对于附加语来说，待插入成分的顶结构必须和附加树的顶结构合一，而底结构必须和附加树上的标有`*'的结点（所谓的底部结点（foot node）
 \isc{底部结点}\is{foot node}）的底结构合一。
 
-目前所讨论的基本树只包含顶结构部分和底结构部分匹配的那些结点。FTAG允许一种特殊的变体，即某些结点可以声明在这些结点的位置必须进行附接操作，只有这样，其推导才是良形式（well-formed）的。
+目前所讨论的基本树只包含顶结构部分和底结构部分匹配的那些结点。FTAG允许一种特殊的变体，即某些结点可以声明在这些结点的位置必须进行附加操作，只有这样，其推导才是良形式（well-formed）的。
 图\vref{Obl-Adjunktion-FTAG}展示了laughing的树，这棵树上的VP结点的两个结构中的\textsc{mode}特征的值不一致。
 \begin{figure}
 \centerline{%
@@ -876,9 +876,9 @@ tag
 %% \begin{tikzpicture}[overlay,remember picture,out=0,in=220]
 %% \draw[->, dashed] (vpone) to (vptwo);
 %% \end{tikzpicture}
-\caption{\label{Obl-Adjunktion-FTAG}FTAG中的强制附接}
+\caption{\label{Obl-Adjunktion-FTAG}FTAG中的强制附加}
 \end{figure}%
-为了将这棵树组成一个完整结构，必须添加另外一棵树以便将VP结点的两个部分分隔开来。这需要借助一棵附接树（如图\ref{Obl-Adjunktion-FTAG}中的附接树）来实现。附接树的最高位置的VP结点和laughing中VP结点，二者各自的顶结构需要合一。附接树中标有`*'号的结点和laughing中VP结点，二者的底结构合一。其结果如图\vref{Obl-Adjunktion-FTAG-Ergebnis}所示。
+为了将这棵树组成一个完整结构，必须添加另外一棵树以便将VP结点的两个部分分隔开来。这需要借助一棵附加树（如图\ref{Obl-Adjunktion-FTAG}中的附加树）来实现。附加树的最高位置的VP结点和laughing中VP结点，二者各自的顶结构需要合一。附加树中标有`*'号的结点和laughing中VP结点，二者的底结构合一。其结果如图\vref{Obl-Adjunktion-FTAG-Ergebnis}所示。
 \begin{figure}
 %%% is laughing tree:
 \centerline{%
@@ -927,16 +927,16 @@ tag
         }} [laughing\\\rule{0pt}{10pt}笑]]]]]
 \end{forest}
 }
-  \caption{\label{Obl-Adjunktion-FTAG-Ergebnis}FTAG中强制附接的结果}
+  \caption{\label{Obl-Adjunktion-FTAG-Ergebnis}FTAG中强制附加的结果}
 \end{figure}%
 
-推导到最后所得到的那棵树，需要将所有结点各自的顶结构与底结构进行合一。图\ref{Obl-Adjunktion-FTAG-Ergebnis}中树的最高的VP结点的顶结构和底结构的\textsc{agr}特征值需要合一。正因为这个原因，只有和附接树中的\textsc{agr}特征取值一样的NP树才能插入当前树中的NP槽中。
+推导到最后所得到的那棵树，需要将所有结点各自的顶结构与底结构进行合一。图\ref{Obl-Adjunktion-FTAG-Ergebnis}中树的最高的VP结点的顶结构和底结构的\textsc{agr}特征值需要合一。正因为这个原因，只有和附加树中的\textsc{agr}特征取值一样的NP树才能插入当前树中的NP槽中。
 %此处只能意义，原文若探究字面意义，不仅不通顺，还算是写错了。
 
-这个例子展示了，我们在处理长距离依存时曾经采用过的强制附接
-\isc{附接!附接的必要性}\is{adjunction!obligatory}机制可以通过令顶结构和底结构特征取值不一致来实现。
+这个例子展示了，我们在处理长距离依存时曾经采用过的强制附加
+\isc{附加!附加的必要性}\is{adjunction!obligatory}机制可以通过令顶结构和底结构特征取值不一致来实现。
 如果一棵树中存在不兼容的顶结构与底结构，这棵树就不能是最终的导出树。%又一个错误
-这意味着至少需要再进行一次附接操作才能得到良形式的树。
+这意味着至少需要再进行一次附加操作才能得到良形式的树。
 \isc{树邻接语法（TAG）!基于特征结构的树邻接语法（FTAG）|)}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}
 
 \subsection{V"=TAG}
@@ -1038,7 +1038,7 @@ V"=TAG
 带有NP的树的次序并没有被限制，因而这些NP间的任意排列都是被允准的。\pagebreak
 
 这个地方有意思的是这种方法和 \citet[\S~2.1.3]{Berman96a-u}在LFG\indexlfgc 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
-在Berman的分析中，动词直接投射（project）并形成VP，然后附接上论元。
+在Berman的分析中，动词直接投射（project）并形成VP，然后附加上论元。
 
 和本书中讨论的其它分析不同的是：不管动词位置如何，导出树中总是有一个空成分。
 \isc{空成分}\is{empty element} 
@@ -1122,7 +1122,7 @@ NP$_2$ NP$_4$ NP$_3$ NP$_1$ V$_{4}$V$_{3}$V$_{2}$V$_{1}$
 德语中只有很少几个这样的动词。尽管 \citet{JBR2000a}在（\ref{Beispiel-Joshi-NP4}）中构造的例子满足了这些要求，这仍然过于异常。
 想在新闻文本中找到这样的例子，可能性极低，这一点十分清楚。这可能是因为只有很罕见的一些情境中，才能联想到这样的话语。
 更进一步说，所有的控制动词（除了helfen（帮助））都需要一个带有zu的不定式，
-并且也可以以内在并不一致的方式实现出来，也就是说通过包含一个外置的不定式附接语去除动词复合体。
+并且也可以以内在并不一致的方式实现出来，也就是说通过包含一个外置的不定式附加语去除动词复合体。
 我们已经提到过，一个有合作精神的说话者/写者愿意用一个不那么复杂的构式，而这将进一步降低这种句子出现的可能性。
 
 请注意，TL-MCLTAG并不限制一个句子中能出现多少个动词。这套理论本身允许任意多的动词。因此我们需要像其他语法理论一样需要在语言运用的限制上做假设，以此解释为何我们完全找不到带有五个甚至更多个动词的动词复合体。TL-MCLTAG可以预测进行论元语序重列的可能性。
@@ -1232,7 +1232,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 
 \section{总结与分类}
 
-总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于长距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语可以和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附接操作来实现的，附接是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 伴随likes的最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）需要它们自己各自的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则
+总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于长距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语可以和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附加操作来实现的，附加是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 伴随likes的最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）需要它们自己各自的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则
 \isc{词汇规则}\is{lexical rule}联系在一起。这些词汇规则将一棵特定的树影射为其它的树。通过这种方式，可以从一个表示主动形式的树推出表示被动形式的树。这些词汇规则可以和转换语法中的转换规则
 \isc{转换}\is{transformation}进行类比。 但必须强调一点，每个树中都有词汇元素，这使得整个语法和自由的转换相比更加受限。
 
@@ -1280,7 +1280,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
  \citet[\S~6]{Rambow94a}展示了一个基于自动机的语言运用理论。他将这种理论应用到德语上并表示可以解释在对多个动词的论元进行重列加工时所遇到的困难。 
 \isc{树邻接语法（TAG）|)}\is{Tree Adjoining Grammar (TAG)|)}
 
- \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附接到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为mutmaßlichen Mörder（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
+ \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附加到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为mutmaßlichen Mörder（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
 }
 
 %      <!-- Local IspellDict: en_US-w_accents -->
