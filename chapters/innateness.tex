@@ -2040,7 +2040,7 @@ L$_1$ = V$^* - x_1$, L$_2$ = V$^* - x_2$, L$_3$ = V$^* - x_3$, \ldots
 %sequence with the shortest length that has not yet been seen. If the sequence in question occurs later, then this hypothesis
 %is revised accordingly. In this way, one will eventually arrive at the correct language.
 
-如果我们将必须从中选择的V$^*$语言的集合进行扩展，那么我们的学习过程就不再起作用了，因为，如果V$^*$是目标语，那么猜想最终会得到错误的结果。如果有一个能够学会这种语言类型的程序，那么它就必须在一些输入后正确地识别出V$^*$。让我们假定，这个输入是x$_k$。学习的过程如何能够告诉我们在这点上，我们要找的语言不是V$^* - x_j$（$j \neq k$）？如果x$_k$导致人们猜出了错误的语法V$^*$，那么随后的每个输入会跟正确结果（V$^* - x_j$）和错误结果（V$^*$）都兼容。因为我们只有正向的数据，没有输入允许我们在这些假说之间进行区分，并且给出我们找到的所寻找的语言的超集信息。Gold指出，没有一种形式语言理论（比如说，正则文法\isc{正则语言}\is{regular language}、上下文无关文法\isc{上下文无关文法}\is{context"=free
+如果我们将必须从中选择的V$^*$语言的集合进行扩展，那么我们的学习过程就不再起作用了，因为，如果V$^*$是目标语，那么猜想最终会得到错误的结果。如果有一个能够学会这种语言类型的程序，那么它就必须在一些输入后正确地识别出V$^*$。让我们假定，这个输入是x$_k$。学习的过程如何能够告诉我们在这点上，我们要找的语言不是V$^* - x_j$（$j \neq k$）？如果x$_k$导致人们猜出了错误的语法V$^*$，那么随后的每个输入会跟正确结果（V$^* - x_j$）和错误结果（V$^*$）都兼容。因为我们只有正向的数据，没有数据输入允许我们在这些假说之间进行区分，并且给出我们找到的所寻找的语言的超集信息。Gold指出，没有一种形式语言理论（比如说，正则文法\isc{正则语言}\is{regular language}、上下文无关文法\isc{上下文无关文法}\is{context"=free
 grammar}和上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}）假定的语法类型可以在有一些例句的文本的输入后按照有限的步骤识别出来。这对包括所有有限语言和至少一种无限语言的所有类型来说都是正确的。如果正向证据和负向证据\isc{负向证据}\is{negative
 evidence}都被用来学习，而不是文本的话，情况会有不同。
 %If we expand the set of languages from which we have to choose by V$^*$, then our learning process will no longer work since, if
