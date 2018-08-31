@@ -57,7 +57,7 @@ SOURCE=gt.bib \
 	zhmakeindex -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
 
-stable: grammatical-theory.pdf
+stable.pdf: grammatical-theory.pdf
 	cp grammatical-theory.pdf stable.pdf
 
 
