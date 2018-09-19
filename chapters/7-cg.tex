@@ -547,10 +547,14 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 \subsection{类型提升}
 
 通过类型提升
-\isc{类型提升|(}\is{type raising|(}规则，范畴np可以变形为范畴s/(s\bs np)。
-如果我们将这个新范畴与s\bs np进行组合，其结果和我们用np与s\bs np按照前向应用组合一致（\ref{vorwaertsapplikation}）。 
+\isc{类型提升|(}\is{type raising|(}规则，范畴np可以变形为范畴(s/(s\bs np))。
+如果我们将这个新范畴与(s\bs np)进行组合，其结果和我们用（\ref{vorwaertsapplikation}）中的前向应用规则将np与(s\bs np)相组合的结果一致。 
 （\mex{1}a）是将名词短语和动词短语（缺失了左边名词短语的句子）进行组合的示例。
 经过类型提升的名词短语和动词短语的组合如（\mex{1}b）所示。
+%\addlines[-1]
+%The category np can be transformed into the category (s/(s\bs np)) by \emph{type raising}\is{type raising}. If we combine this category with (s\bs np), then we
+%get the same result as if we had combined np and (s\bs np) with the forward application rule in (\ref{vorwaertsapplikation}). (\mex{1}a) shows the combination of an NP
+%with a VP (a sentence missing an NP to its left). The combination of the type"=raised NP with the VP is given in (\mex{1}b).
 \eal
 \ex np $*$ s\bs np = s 
 \ex s/(s\bs np) $*$ s\bs np = s
