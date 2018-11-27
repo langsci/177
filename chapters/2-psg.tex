@@ -638,7 +638,7 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 %     Xaver sleeps\\
 %\mytrans{Xaver is sleeping.}
 %\zl
-所以说，我们可以抽象出\relation{sleep}的任意一种具体用法。相反，以（\ref{sleep-max}）中的\relation{max}为例，我们用变量（如$x$）来表示。这个$x$可以在指定的句子中被替换为\relation{paul}、\relation{mio}或\relation{xaver}。为了保证我们能在给定的含义中接触到这些变量，我们在它们前面写上$\lambda$。这样，schläft（睡觉）的含义可以表示如下：
+所以说，我们可以抽象出\relation{sleep}的任意一种具体用法。相反，以（\ref{sleep-max}）中的\relation{max}为例，我们用变量（如$x$）来表示。这个$x$可以在指定的句子中被替换为\relation{paul}、\relation{mio}或\relation{xaver}。为了保证我们能在指定的含义中接触到这些变量，我们在它们前面写上$\lambda$。这样，schläft（睡觉）的含义可以表示如下：
 % new English text of second edition:
 %% We can therefore abstract away from any specific use of \relation{sleep} and instead of, for example, \relation{max} in (\ref{sleep-max}), we
 %% use a variable (\eg $x$). This $x$ can then be replaced by \relation{paul}, \relation{mio} or \relation{xaver} in a given sentence. To allow us
@@ -1711,7 +1711,7 @@ sm edges
 %\caption{\label{Abbildung-AP}English adjective phrases}
 \end{figure}%
 
-正如在\ref{sec-PSG-Merkmale}中所显示的，我们可以对具体的短语结构规则进行扩展，并最终得到更具有普遍性的规则。按照这一方式，诸如人称、数和性这些属性不再按照范畴符号来进行编码，而是采用更为简单的符号，如NP、Det和N。我们只需要明确那些在给定规则的语境中相关的特征的值。我们可以进一步抽象为：与其采用明确的范畴符号，如词范畴的N、V、P和A，以及短语范畴的NP、VP、PP和AP，不如简单地采用词类的变量，并用X和XP来表示。
+正如在\ref{sec-PSG-Merkmale}中所显示的，我们可以对具体的短语结构规则进行扩展，并最终得到更具有普遍性的规则。按照这一方式，诸如人称、数和性这些属性不再按照范畴符号来进行编码，而是采用更为简单的符号，如NP、Det和N。我们只需要明确那些在特定规则的语境中相关的特征的值。我们可以进一步抽象为：与其采用明确的范畴符号，如词范畴的N、V、P和A，以及短语范畴的NP、VP、PP和AP，不如简单地采用词类的变量，并用X和XP来表示。
 %As was shown in Section~\ref{sec-PSG-Merkmale}, it is possible to generalize over very specific
 %phrase structure rules and thereby arrive at more general rules. In this way, properties such as
 %person, number and gender are no longer encoded in the category symbols, but rather only simple
