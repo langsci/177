@@ -2606,7 +2606,7 @@ John \textsc{aux} 安排 \textsc{det} 会议 \textsc{prep} 星期三\\
 \zl
 %
 我们将例（\mex{0}a）转换为（\mex{0}b）中的Prolog谓词表达式。s后的表达式[First$|$L0]对应的字符串需要被处理。`$|$'"=操作符将列表分为开头和其他剩余部分。First是最先处理的词，L0则包含其他词。在例（\mex{-1}a）的分析中，第一个词是has，L0是John scheduled the meeting for
-Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_verb(First)），而且如果是的话，那么就需要证明L0序列由一个名词短语开头。因为John是一个NP，这样就是成功的。L1是分析L0后所剩下的L0的子集，也就是scheduled the meeting for Wednesday。这组词随后跟助动词（First）相组合，现在就需要检查剩下的这组词has scheduled the meeting for Wednesday是否由VP开头。事实是这样的，而且剩下的列表L是空的。最后，这个句子被成功地处理了。
+Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_verb(First)），而且如果是的话，那么就需要证明L0序列由一个名词短语开头。因为John是一个NP，这样就是成功的。L1是分析L0后所剩下的L0的子集，也就是scheduled the meeting for Wednesday。这组词随后跟助动词（First）相组合，现在就需要检查剩下的这组词has scheduled the meeting for Wednesday是否由VP开头。事实正是如此，而且剩下的列表L是空的。最后，这个句子被成功地处理了。
 %The rule in (\mex{0}a) is translated into the Prolog predicate in (\mex{0}b). The expression [First$|$L0] after the s corresponds to the string, which
 %is to be processed. The `$|$'"=operator divides the list into a beginning and a rest. \emph{First} is the first word to be processed
 %and L0 contains all other words. In the analysis of (\mex{-1}a), First is \emph{has} and L0 is \emph{John scheduled the meeting for Wednesday}.
