@@ -73,7 +73,7 @@ Joseph Bayer（康斯坦斯）、
 \subsection{基本框架}
 %\subsection{Basic architecture}
 
-乔姆斯基提出，只有两条操作（规则）用来整合语言：外部合并与内部合并。外部合并是指将像the和book这类要素组合起来，从而得到一个复杂的短语。内部合并指组成成分的移位。它应用于一个语言对象，并且从这个语言对象中取出一部分，并将之链接到对应对象的左边。外部合并与内部合并的应用可以按照任意顺序来实现。比如说，两个对象可以按照外部合并组合起来，然后一个合并项通过应用内部合并而移动到左边。得到的对象可以再与其他对象进行外部的合并，并且继续合并。如例（\mex{1}）所示：
+乔姆斯基提出，只有两条操作（规则）用来整合语言：外部合并与内部合并。外部合并是指将像the和book这类要素组合起来，从而得到一个复杂的短语。内部合并指组成成分的移位。它应用于一个语言对象，并且从这个语言对象中取出一部分，并将之链接到对应对象的左边。外部合并与内部合并的应用可以按照任意顺序来实现。比如说，两个对象可以按照外部合并组合起来，然后一个合并项通过应用内部合并而移动到左边。得到的对象可以再与其他对象进行外部的合并，并且继续合并。如例（\mex{1}）中的限定词短语（Determiner Phrase，DP）所示：
 %Chomsky assumes that there are just two operations (rules) for combining linguistic objects:
 %External and Internal Merge. External Merge simply combines two elements like \emph{the} and
 %\emph{book} and results in a complex phrase. Internal Merge is used to account for movement of
@@ -81,14 +81,14 @@ Joseph Bayer（康斯坦斯）、
 %adjoins it to the left of the respective object. The application of External Merge and Internal
 %Merge can apply in any order. For instance, two objects can be combined with External Merge and then
 %one of the combined items is moved to the left by applying Internal Merge. The resulting object can
-%be externally merged with another object and so on. As an example consider the NP in (\mex{1}):
+%be externally merged with another object and so on. As an example consider the Determiner Phrase (DP) in (\mex{1}):
 \ea
 \gll the          man who            we know\\
      \textsc{det} 男人 \textsc{rel} 我们 认识\\
 \mytrans{我们认识的那个男人}
 \z
-为了得到这个NP，动词know与它的宾语who通过外部合并到一起。在下面讨论的几个中间过程的合并之后，know who将与we合并，最后who通过内部合并移到左边，得到了who we know。这个关系小句还可以通过外部合并与man组合在一起，并且继续进行下去。
-%To derive this NP the verb \emph{know} is externally merged with its object \emph{who}. After
+为了得到这个DP，动词know与它的宾语who通过外部合并到一起。在下面讨论的几个中间过程的合并之后，know who将与we合并，最后who通过内部合并移到左边，得到了who we know。这个关系小句还可以通过外部合并与man组合在一起，并且继续进行下去。
+%To derive this DP the verb \emph{know} is externally merged with its object \emph{who}. After
 %several intermediate merges that will be discussed below, \emph{know who} will be merged with
 %\emph{we} and finally the \emph{who} is moved to the left by Internal Merge, resulting in \emph{who
 %  we know}. This relative clause can be externally merged with \emph{man} and so on.
@@ -187,12 +187,11 @@ baseline
 \caption{\label{fig-letters-to-peter-minimalism}不可预测特征的配价表征}
 %\caption{\label{fig-letters-to-peter-minimalism}Valence representation via uninterpretable features}
 \end{figure}%
-letters的P特征是不可预测的，这点由P前面的小u表示。letters的P特征的不可预测性可以通过to Peter的P特征来进行核查。所有核查过的特征就被自动删除了\isc{特征!特征删除}\is{feature!deletion}。在图中，删除通过将特征突显而得到表示。像例（\mex{1}）的字符串被作为完整的推导被规则排除了，因为P的N特征没有被核查。这一情况如图\vref{fig-letters-to-minimalism}所示。
+letters的P特征是不可预测的，这点由P前面的小u表示。letters的P特征的不可预测性可以通过to Peter的P特征来进行核查。所有核查过的特征就被自动删除了\isc{特征!特征删除}\is{feature!deletion}。him属于范畴D，这是因为它可以出现在完整的名词性短语会出现的相同的位置上，这里被认为是DPs。在图中，删除通过将特征突显而得到表示。像例（\mex{1}）的字符串被作为完整的推导被规则排除了，因为P的N特征没有被核查。这一情况如图\vref{fig-letters-to-minimalism}所示。
 %The fact that the P feature of \emph{letters} is uninterpretable is represented by the little
 %\emph{u} in front of the P. The uninterpretable P feature of \emph{letters} can be checked against
-%the P feature of \emph{to Peter}. All checked features are said to delete\is{feature!deletion} automatically. The
-%deletion is marked by striking the features out in the figures. Strings like (\mex{1}) are ruled out as complete derivations since
-%the N feature of P is not checked. This situation is shown in Figure~\vref{fig-letters-to-minimalism}.
+%the P feature of \emph{to Peter}. \emph{him} is assumed to be of category D since it can appear in the
+% same places as full nominal phrases, which are assumed to be DPs here. All checked features are said to delete\is{feature!deletion} %automatically. The deletion is marked by striking the features out in the figures. Strings like (\mex{1}) are ruled out as complete %derivations since the N feature of P is not checked. This situation is shown in Figure~\vref{fig-letters-to-minimalism}.
 \ea[*]{
 \gll letters to\\
 信 \textsc{prep}\\
@@ -214,9 +213,9 @@ baseline
 %\emph{crash} since the conceptual system could not make sense of the N feature that is still present
 %at the P node.
 
-%选择性特征是原子式的，这就是说，在GB和本书中介绍的其他理论中，介词不能选择NP[\type{acc}]，除非这个NP[\type{acc}]是原子式的。这样，一个附加的机制就在选择特征之外来核查其他特征。这个机制叫做一致关系（Agree）\isc{一致关系|(}\is{Agree|(}。
-%Selectional features are atomic, that is, the preposition cannot select an NP[\type{acc}] as in GB
-%and the other theories in this book unless NP[\type{acc}] is assumed to be atomic. Therefore, an
+选择性特征是原子式的，这就是说，在GB和本书中介绍的其他理论中，介词不能选择DP[\type{acc}]，除非这个DP[\type{acc}]是原子式的。这样，一个附加的机制就在选择特征之外来核查其他特征。这个机制叫做一致关系（Agree）\isc{一致关系|(}\is{Agree|(}。
+%Selectional features are atomic, that is, the preposition cannot select an DP[\type{acc}] as in GB
+%and the other theories in this book unless DP[\type{acc}] is assumed to be atomic. Therefore, an
 %additional mechanism is assumed that can check other features in addition to selectional
 %features. This mechanism is called \emph{Agree}\is{Agree|(}.
 \eal
@@ -353,9 +352,9 @@ b. & 包括 B
 %b. & contains B
 \end{tabular}
 \z
-在图\vref{fig-ditransitives-options}左边和中间的树中，并没有所期待的c-统制：在最左边的树中，所有的NP互相c-统制，在中间的树中，Benjamin c-统制himself，而不是其他成分。
+在图\vref{fig-ditransitives-options}左边和中间的树中，并没有所期待的c-统制：在最左边的树中，所有的DP互相c-统制，在中间的树中，Benjamin c-统制himself，而不是其他成分。
 %In the trees to the left and in the middle of Figure~\vref{fig-ditransitives-options} the c-command
-%relations are not as desired: in the left-most tree both NPs c-command each other and in the middle
+%relations are not as desired: in the left-most tree both DPs c-command each other and in the middle
 %one \emph{Benjamin} c-commands \emph{himself} rather than the other way round.
 \begin{figure}
 \scalebox{.82}{%
@@ -552,7 +551,7 @@ baseline
 %\caption{\label{fig-Anna-will-read-the-book-minimalism}Analysis of \emph{Anna will read the book.}
 %  involving a modal and movement of the subject from \textit{v} to T}
 \end{figure}%
-DP“the book”是read的宾语，然后核查read的D特征。小\emph{v}选择了主语Anna因为T有着强势的D特征（由星号`*'\isc{*}\is{*}标记），Anna一定不能在\vPc 内部，但是会移动到TP的限定语位置上。
+限定词短语（DP）the book是read的宾语，然后核查read的D特征。小\emph{v}选择了主语Anna因为T有着强势的D特征（由星号`*'\isc{*}\is{*}标记），Anna一定不能在\vPc 内部，但是会移动到TP的限定语位置上。
 %The DP \emph{the book} is the object of \emph{read} and checks the D feature of
 %\emph{read}. \littlev selects for the subject \emph{Anna}. Since T has a strong D feature (marked by
 %an asterisk `*'\is{*}), \emph{Anna} must not remain inside of the \vP but moves on to the specifier position of TP.
@@ -709,7 +708,7 @@ baseline
 %  for of \emph{Anna reads the book.}}
 \end{figure}%
 Anna和the book这两个DP开始是没有赋值的不可解读的格特征：[\textit{u}case：]。这些特征被赋值为T和\textit{v}。一般认为，只有一个特征通过合并得到核查，所以这可以是T上的D特征，并为其他可能的核对机制留下格特征：一致（Agree）。一致可以用来核对子结点的特征，也可以核对树上较远距离的特征。第一个结点需要c-统制跟它具有一致关系的结点。c-统制大概是指：一个结点在上，然后任意多结点在下。所以\textit{v} c-统制VP、V和DP“the book”，以及所有该DP内部的结点。由于一致可以给c-统制的结点赋值，\textit{v}上的宾格可以给DP“the book”的格特征赋值。
-%The two NPs \emph{Anna} and \emph{the book} start out with unvalued uninterpretable case features:
+%The two DPs \emph{Anna} and \emph{the book} start out with unvalued uninterpretable case features:
 %[\textit{u}case:].\todostefan{Does read move? Where is the tense feature checked?} The features get
 %valued by T and \textit{v}. It is assumed that only one feature is checked by Merge, so this would
 %be the D feature on T, leaving the case feature for the other available checking mechanism:
@@ -1298,16 +1297,16 @@ AgrN\isc{范畴!功能范畴!AgrN}\is{category!functional!AgrN}、AgrV\isc{范�
 %seems to contradict this.%\pagebreak
 
 组成成分序列最终是可见的是由左向移位推导而成的。\footnote{\label{fn-Kayne-Extraposition}%
-这也适用于外置\isc{外置}\is{extraposition}，即德语中将成分移到后场。通常这会被分析为右向移位， \citet[\S~9]{Kayne94a-u}将它分析为把所有其他成分向左移动。Kayne认为（i.b）是通过移动一部分的NP来从（i.a）推导而来的：
+这也适用于外置\isc{外置}\is{extraposition}，即德语中将成分移到后场。通常这会被分析为右向移位， \citet[\S~9]{Kayne94a-u}将它分析为把所有其他成分向左移动。Kayne认为（i.b）是通过移动DP的一部分而从（i.a）推导而来的：
 \eal
 \ex 
-\gll just walked into the           room [\sub{NP} someone who we don't know].\\
+\gll just walked into the           room [\sub{DP} someone who we don't know].\\
      刚   走      进   \textsc{det}  房间 {}         某人     \textsc{rel}  我们 \textsc{aux}.不 认识\\
-\mytrans{刚走进房间[\sub{NP} 我们不认识的某人]}
+\mytrans{刚走进房间[\sub{DP} 我们不认识的某人]}
 \ex 
-\gll Someone$_i$ just walked into the         room [\sub{NP} \_$_i$ who we don't know].\\
+\gll Someone$_i$ just walked into the         room [\sub{DP} \_$_i$ who we don't know].\\
      某人         刚   走     进   \textsc{det} 房间 {}        {}     \textsc{rel} 我们 \textsc{aux}.不 认识\\
-\mytrans{某人刚走进房间[\sub{NP} \_$_i$ 我们不认识的]}
+\mytrans{某人刚走进房间[\sub{DP} \_$_i$ 我们不认识的]}
 \zl
 （i.a）一定是某种推导出的中间表示，否则英语就不会是SV(O)，而是V(O)S。
 由此，（i.a）是通过将VP\emph{just walked into the room}前置由（ii）推导出来的。
@@ -1323,10 +1322,10 @@ AgrN\isc{范畴!功能范畴!AgrN}\is{category!functional!AgrN}、AgrV\isc{范�
 %	This also counts for extraposition\is{extraposition}, that is, the movement of constituents into the postfield
 %	in German. Whereas this would normally be analyzed as rightward"=movement,  \citet[Chapter~9]{Kayne94a-u} analyzes
 %	it as movement of everything else to the left. Kayne assumes that (i.b) is derived from (i.a) by moving part of the 
-%	NP:
+%	DP:
 %\eal
-%%\ex just walked into the room [\sub{NP} someone who we don't know].
-%\ex Someone$_i$ just walked into the room [\sub{NP} \_$_i$ who we don't know].
+%%\ex just walked into the room [\sub{DP} someone who we don't know].
+%\ex Someone$_i$ just walked into the room [\sub{DP} \_$_i$ who we don't know].
 %\zl
 %(i.a) must have to be some kind of derived intermediate representation, otherwise English would not be SV(O) underlyingly but rather V(O)S.
 %(i.a) is therefore derived from (ii) by fronting the VP \emph{just walked into the room}.
@@ -1582,12 +1581,12 @@ sm edges without translation
 %\subsubsection{Locality of selection and functional projections}
 
 应用功能性中心语来表示语序会带来另一个问题。在经典的CP/IP"=系统和这里讨论的所有其他理论中，一个范畴代表带有同样分布的一类宾语，即NP（或DP）表示代词和复杂名词短语。中心语选择哪些带有一定范畴的短语。在
-CP/IP"=系统中，I选择了一个VP和一个NP，而C选择了一个IP。在较新的分析中，这类选择机制并不能简单地奏效。因为例（\mex{1}b）中已经有移位了，我们需要在das Buch dem Mann zu
+CP/IP"=系统中，I选择了一个VP和一个DP/NP，而C选择了一个IP。在较新的分析中，这类选择机制并不能简单地奏效。因为例（\mex{1}b）中已经有移位了，我们需要在das Buch dem Mann zu
 geben（这个人要给的这本书）这句话中处理TopP或FocP。由此，um不能简单地选择非定式IP，而是分别选择TopP、FocP或IP。需要确定的是，TopPs和FocPs标记了包含其中的动词的形式，因为um只能与zu"=不定式相搭配。
 %Another problem arises from the use of functional heads to encode linear order. In the classic
 %CP/IP"=system and all other theories discussed here, a category stands for a class of objects with
 %the same distribution, that is, NP (or DP) stands for pronouns and complex noun phrases. Heads
-%select phrases with a certain category. In the CP/IP"=system, I selects a VP and an NP, whereas C
+%select phrases with a certain category. In the CP/IP"=system, I selects a VP and an DP/NP, whereas C
 %selects an IP. In newer analyses, this kind of selectional mechanism does not work as easily. Since
 %movement has taken place in (\mex{1}b), we are dealing with a TopP or FocP in \emph{das Buch dem
 %  Mann zu geben} `the book the man to give'.  Therefore, \emph{um} cannot simply select an
@@ -1798,7 +1797,7 @@ Ken 能够 \textsc{aux} 不 听 \textsc{det} 新闻\\
 %structure. Chomsky notices that this could result in deviant structures, but
 %claims that this concern is unproblematic and ignores it. 
 % However, if the label is responsible for
-% the distribution of a phrase, it is unclear what blocks the occurrence of \emph{about him} in NP positions: 
+% the distribution of a phrase, it is unclear what blocks the occurrence of \emph{about him} in DP positions: 
 % \ea[*]{
 % I help about him.
 % }
@@ -1920,7 +1919,7 @@ Chomsky在他的\citeyear{Chomsky2013a}这篇论文中给出了两个词汇项�
 \ex\label{ex-coord-b} {}[\sub{$\gamma$} Z [\sub{$\alpha$} Conj [\sub{$\beta$} Z W]]
 \zl
 由于$\beta$中的Z只是一个拷贝，它并不能表示标签，而且$\beta$可以获得W这个标签。并且要求Z和$\alpha$相组合，Conj不能是标签，所以完整结构的标签是Z。\footnote{%
-正如Bob Borsley（p.c.\,2013）跟我指出的，这种方法对于两个用and连接的单一名词短语的并列来说会得出错误的结论，因为并列的结果是一个复数NP，而不是像第一个并列成分的单一个体。HPSG之类的理论可以通过将特征集中起来表示这一特点，这些特征在并列结构中共享（句法特征和非域内特征，请看 \citew[\page 202]{ps2}）。
+正如Bob Borsley（p.c.\,2013）跟我指出的，这种方法对于两个用and连接的单一名词短语的并列来说会得出错误的结论，因为并列的结果是一个复数DP，而不是像第一个并列成分的单一个体。HPSG之类的理论可以通过将特征集中起来表示这一特点，这些特征在并列结构中共享（句法特征和非域内特征，请看 \citew[\page 202]{ps2}）。
 
 进而，整个分析并不能解释为什么（i.b）被规则排除出去了。
 \eal
@@ -1943,7 +1942,7 @@ Chomsky在他的\citeyear{Chomsky2013a}这篇论文中给出了两个词汇项�
 %of W. It is stipulated for the combination of Z and $\alpha$ that Conj cannot be the label and hence
 %the label of the complete structure is Z.\footnote{%
 %    As Bob Borsley (p.c.\,2013) pointed out to me, this makes wrong predictions for coordinations of
-%    two singular noun phrases with \emph{and}, since the result of the coordination is a plural NP
+%    two singular noun phrases with \emph{and}, since the result of the coordination is a plural DP
 %    and not a singular one like the first conjunct. Theories like HPSG can capture this by grouping
 %    features in bundles that can be shared in coordinated structures (syntactic features and
 %    nonlocal features, see  \citew[\page 202]{ps2}).
@@ -2111,7 +2110,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 %  which the category of the relative phrase is projected, but he does not have a solution for
 %  nonmatching free relative clauses (p.\,187). The same is true for Citko's analysis, in which an
 %  internally merged XP can provide the label.
-  但是，一旦空中心语在分析中被批准使用，\pref{Label1}到\pref{ex-what-you-wrote}的应用就是不需要的了，因为应用可以导致针对\pref{ex-i-read-what-you-wrote}的两个分析：一个是空名词性中心语，一个是被直接标记为NP的\pref{ex-what-you-wrote}。有人可能会指出，在许多可能的推导式中，最为精简的会胜出，但是转移派生限制\isc{转移派生限制}\is{transderivational constraint}的假设会得到不想要的结果\citep[\S~5]{Pullum2013a}。\isc{关系从句!自由关系从句|)}\is{relative clause!free|)}
+  但是，一旦空中心语在分析中被批准使用，\pref{Label1}到\pref{ex-what-you-wrote}的应用就是不需要的了，因为应用可以导致针对\pref{ex-i-read-what-you-wrote}的两个分析：一个是空名词性中心语，一个是被直接标记为DP的\pref{ex-what-you-wrote}。有人可能会指出，在许多可能的推导式中，最为精简的会胜出，但是转移派生限制\isc{转移派生限制}\is{transderivational constraint}的假设会得到不想要的结果\citep[\S~5]{Pullum2013a}。\isc{关系从句!自由关系从句|)}\is{relative clause!free|)}
 %  Many other proposals for labeling or, rather, non-labeling exist. For instance, some Minimalists want to eliminate labeling altogether and argue for
 %  a label-free syntax. As was pointed out by  \citet*{OPG2011a}, such analyses bring Minimalism closer to
 %  Dependency Grammar. It is unclear how any of these models could deal with non-matching free
@@ -2129,7 +2128,7 @@ Thomas Gsella, taz, \zhdate{1997/2/12}，第20页。
 %} However, once empty heads are countenanced in the analysis, the application of
 %\pref{Label1} to \pref{ex-what-you-wrote} is undesirable since the application would result in
 %two analyses for \pref{ex-i-read-what-you-wrote}: one with the empty nominal head and one in which
-%\pref{ex-what-you-wrote} is labeled as NP directly. One might argue that in the case of several possible derivations, the most
+%\pref{ex-what-you-wrote} is labeled as DP directly. One might argue that in the case of several possible derivations, the most
 %economical one wins, but the assumption of transderivational constraints\is{transderivational constraint} leads to undesired
 %consequences \citep[Section~5]{Pullum2013a}.\is{relative clause!free|)}
 
@@ -2365,8 +2364,8 @@ Hobbs 吹口哨 \textsc{det} 相同 调子 和 哼 \textsc{det} 相同 调子\\
 %analysis discussed above, which would result in the problems with the specifier/complement
 %status just discussed. 
 
-进而，Abeillé指出，在中心语后置的语言中，如韩语和日语中，NP并列在基于合并的分析中是有困难的。\pmex{1}是一个日语的例子。
-%Furthermore, Abeillé has pointed out that NP coordinations in head-final languages like Korean and
+进而，Abeillé指出，在中心语后置的语言中，如韩语和日语中，NP/DP并列在基于合并的分析中是有困难的。\pmex{1}是一个日语的例子。
+%Furthermore, Abeillé has pointed out that NP/DP coordinations in head-final languages like Korean and
 %Japanese present difficulties for Merge-based analyses. \pmex{1} shows a Japanese example.
 \ea
 \label{coordination-head-final}
@@ -2587,13 +2586,13 @@ praises是一个带有两个=D特征的二元动词。这就意味着有两个�
 %is deleted and the result of the application of Internal Merge is \emph{who Marie praises}.
 
 Stabler他自己在未发表的著作 \citet[\page 124]{Veenstra98a}中提出了这\label{Seite-leeres-Objekt}一分析存在一个问题：
-它对单价动词\isc{动词!单价动词|(}\is{verb!monovalent|(}的处理是不正确的。如果动词与NP组合，按照\pref{Definition-EM}中有关外部合并的定义，就会将NP看作是补足语\footnote{%
+它对单价动词\isc{动词!单价动词|(}\is{verb!monovalent|(}的处理是不正确的。如果动词与DP组合，按照\pref{Definition-EM}中有关外部合并的定义，就会将DP看作是补足语\footnote{%
 再与\ref{Abschnitt-Spezfikatoren-MP}中Chomsky关于限定语和补足语的定义相比较。
 }，并将其排到中心语的右边。与 \pref{ex-max-sleeps-a}中的句子的分析相反，我们会得到\pmexb{1}中的字符串的分析。
 %This\label{Seite-leeres-Objekt} analysis has a problem that was pointed out by Stabler himself in unpublished work cited by
 % \citet[\page 124]{Veenstra98a}: it makes incorrect predictions in the case of monovalent verbs\is{verb!monovalent|(}. If
-%a verb is combined with an NP, the definition of External Merge in \pref{Definition-EM}
-%treats this NP as a complement\footnote{%
+%a verb is combined with an DP, the definition of External Merge in \pref{Definition-EM}
+%treats this DP as a complement\footnote{%
 %Compare also Chomsky's definition of specifier and complement in Section~\ref{Abschnitt-Spezfikatoren-MP}.
 %} and serializes it to the right of the head. Instead of analyses of sentences like \pref{ex-max-sleeps-a} one
 %gets analyses of strings like \pmexb{1}.
@@ -2603,7 +2602,7 @@ Stabler他自己在未发表的著作 \citet[\page 124]{Veenstra98a}中提出了
 %%      fail to derive \pref{ex-max-sleeps-a} since \emph{Max} would be treated as a complement rather
 %%      than a subject that can be moved to the specifier of TP.
 %% }
-%% Aber kann das NP-Objekt nicht dann bewegt werden?
+%% Aber kann das DP-Objekt nicht dann bewegt werden?
 
 %% Andreas: 05.10.2015
 %% die Derivation müsste deswegen nicht gehen, weil 'Max' zweimal Kasus
