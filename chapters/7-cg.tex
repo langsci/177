@@ -56,7 +56,7 @@
 \ea
 \label{LE-CG}
 \begin{tabular}[t]{@{}l@{\hspace{1cm}}l}
-规则                              & 词典中的范畴\\
+规则                              & 词库中的范畴\\
 vp $\to$ v(ditrans) np~np         & (vp/np)/np  \\
 vp $\to$ v(trans) np              & vp/np  \\
 vp $\to$ v(np\_and\_pp) np~pp(to) & (vp/pp)/np  \\
@@ -77,10 +77,10 @@ X/Y $*$ Y = X
 \isc{函子}\is{functor}，而Y为函子的“变元”
 \isc{变元}\is{argument}。
 
-和GB理论一样，范畴语法中配价信息只在词典中出现一次。
-在GPSG\indexgpsgc 中，配价信息同时体现在句法规则和词典项的\textsc{subcat}特征中。
+和GB理论一样，范畴语法中配价信息只在词库中出现一次。
+在GPSG\indexgpsgc 中，配价信息同时体现在句法规则和词条的\textsc{subcat}特征中。
 
-图\vref{abb-cg-transitives-Verb}展示了一个及物动词的词典项是如何和它的宾语组合的。
+图\vref{abb-cg-transitives-Verb}展示了一个及物动词的词条是如何和它的宾语组合的。
 \begin{figure}
 \centerline{%
 \deriv{2}{
@@ -122,7 +122,7 @@ sn edges
 \is{/|)}
 
 观察（\ref{LE-CG}）中的词汇项，我们可以清楚看到范畴v是不存在的。
-词典仅仅决定一个词汇项与什么样的论元结合以得到什么结果。
+词库仅仅决定一个词条与什么样的论元结合以得到什么结果。
 而符号vp也可以删去：一个（英语中的）vp是在其左侧提供一个名词短语便可以形成一个完整句子的语言成分。
 这
 \isc{$\backslash$}\is{$\backslash$|(}通过s$\backslash$np进行表示。
@@ -468,9 +468,9 @@ isst & er  & ihn & \_\\
  \citet{KW91a}提出了一种可以避免这种问题的方法（参见\ref{Abschnitt-Verbstellung-HPSG}）。
 这里，他们假定存在一个前置动词，这个动词选择语迹的一个投射。
 如果副词只是在后置位置和动词结合，那么morgen和isst er ihn会被排除在外。
-如果我们假定第一个出现的动词是函子，那就有可能捕捉补语化标记成分（complementizers）
-\isc{标补语}\is{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
-和补语化标记成分之间的差别仅仅在于其需要动词语迹的一个投射，而补语化标记成分需要显式动词的投射。
+如果我们假定第一个出现的动词是函子，那就有可能捕捉到标句词（complementizers）
+\isc{标句词}\is{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
+和标补语之间的差别仅仅在于其需要动词语迹的一个投射，而补语化标记成分需要显式动词的投射。
 \eal
 \ex 
 \gll dass [er ihn isst]\\
@@ -747,10 +747,10 @@ Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，
 \label{Abschnitt-Relativsaetze-CG}\label{Abschnitt-Ratte-CG}\label{sec-pied-piping-cg}
 
 组合范畴语法的操作扩展了标准范畴语法的规则系统，增强了规则的灵活性，甚至是一些一般并不被视为组成成分的词串也可以得到范畴分析。
-这对于分析并列结构是一个好处（参见\ref{Abschnitt-Koordination}）。此外， \citet{Steedman91a}讨论认为韵律数据
+这对于分析并列结构是有好处的（参见\ref{Abschnitt-Koordination}）。此外， \citet{Steedman91a}讨论认为韵律数据
 \isc{韵律}\is{prosody}也支持把这些字符串处理成组成成分。
 在短语结构规则中，我们用GPSG的机制去把短语中的关系代词的信息在句法树上进行向上传递。
-这些技术并没有被CG采用，这一点导致了大量的服务于话题化的重新次范畴化的规则，并且造成了对关系从句中的随迁（pied-piping）构式的描写不够充分。
+这些技术并没有被CG采用，这一点造成了需要大量的服务于话题化的重新次范畴化的规则，并且造成了对关系从句中的随迁（pied-piping）构式的描写不够充分。
 我们已经在\ref{Abschnitt-UDC-KG}讨论了话题化的问题，因此此处我仅简要解释关系小句的问题。
 
  \citet[\page 614]{SB2006a-u}使用下面的关系小句（\mex{1}）阐述了长距离依存的一种分析：
@@ -820,7 +820,7 @@ Manny和says，然后是Manny says和Anna married都可以通过前向组合进�
 完整的名词短语the middle of the sermon是介词in的补足语。
 在（\mex{0}a）中以whose为关系小句的中心词值得商榷。
 （\mex{0}b）中的关系代词嵌入得更深。
- \citet[\page 50]{Steedman97a}针对who、whom和which给了下列词汇项描写：
+ \citet[\page 50]{Steedman97a}针对who、whom和which给出了下列词汇项描写：
 \eal
 \label{le-relpron-Steedman}
 \settowidth\jamwidth{(komplexe extrahierte NP-Relativphrase)}
@@ -894,7 +894,7 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 
 此外，关系小句包含一个关系代词以及一个缺少关系短语的句子，这一点被忽视了。
 我们在GPSG\indexgpsgc 框架下进行的分析是，在关系短语中是否存在一个关系代词的信息会在句法树上向上传递，直到关系短语层。
-关系小句可以分析为这样的一个组合，组合的一个成分是一个存在一个缺口（gap）的句子，而另一个成分则是关系短语。
+关系小句可以分析为这样的一个组合，组合的一个成分是一个存在一个缺口（gap）的句子，另一个成分是关系短语。
 相关的基于GB理论和HPSG/CxG理论的讨论，可以参阅\ref{Abschnitt-Relativ-Interrogativsaetze}。 
 \isc{范畴语法|)}\is{Categorial Grammar (CG)|)}
 
