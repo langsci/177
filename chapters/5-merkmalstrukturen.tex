@@ -13,12 +13,12 @@
 %\chapter{Feature descriptions}
 \label{chap-feature-descriptions}
 
-在上一章，我们谈到了可以用来描写语言对象的特征"=值偶对。本章中，我们将介绍在LFG、HPSG、构式语法、范畴语法、TAG（甚至是最简方案理论的某些形式化\citep{Veenstra98a}）等理论中发挥重要作用的特征描写。本章将为后面的章节打下一些基础。
+在上一章，我们谈到了可以用来描写语言对象的特征"=值偶对。本章中，我们将介绍在LFG、HPSG、构式语法、范畴语法、TAG（甚至是最简方案的某些形式化理论\citep{Veenstra98a}）中发挥重要作用的特征描写。本章将为后面的章节打下一些基础。
 %In the previous chapter, we talked about sets of feature"=value pairs, which can be used to describe linguistic objects. In this chapter, we will %introduce
 %feature descriptions which play a role in theories such as LFG, HPSG, Construction Grammar, versions of Categorial Grammar and TAG (and %even some
 %formalizations of Minimalist theories \citep{Veenstra98a}). This chapter will therefore lay some of the groundwork for the chapters to follow.
 
-特征结构是可以模拟语言对象属性的复杂实体。大部分使用特征描写的语言学家只描写指定的特征结构中的部分属性。我们将在\ref{sec-modelle-theorien}详细解释模型与描写之间的差异。
+特征结构是可以模拟语言对象属性的复杂实体。语言学家们多半只用特征描写来描写特征结构的某些部分。我们将在\ref{sec-modelle-theorien}详细解释模型与描写之间的差异。
 %Feature structures are complex entities which can model properties of a linguistic object. 
 %Linguists mostly work with feature descriptions which describe only parts of a given feature
 %structure. The difference between models and descriptions will be explained
@@ -40,7 +40,7 @@
 %\item \emph{attribute-value matrix} (AVM)\is{attribute"=value matrix (AVM)}
 %\item \emph{feature matrix}
 \end{itemize}
-接下来，为了保证本书的形式部分尽可能地简短，我将只讨论必要的细节。我推荐感兴趣的读者参考 \citet{Shieber86a}、 \citet[第2章]{ps}、 \citet{Johnson88}、 \citet{Carpenter92a}、 \citet{King94a}和 \citet{Richter2004a-u}。Shieber的著作对合一语法的介绍浅显易懂。King和Richter介绍了HPSG的重要理论基础，这对于在数学方面没有打下良好基础的读者来说是较为容易理解的。尽管如此，认识到这些文献以及相应的理论是建立在坚实的基础上的是非常重要的。
+接下来，为了保证本书的形式部分尽可能地简短，我将只讨论必要的细节。我推荐感兴趣的读者参考 \citet{Shieber86a}、 \citet[第2章]{ps}、 \citet{Johnson88}、 \citet{Carpenter92a}、 \citet{King94a}和 \citet{Richter2004a-u}。Shieber的著作对合一语法的介绍浅显易懂。King和Richter介绍了HPSG的重要理论基础，这对于在数学方面没有打下良好基础的读者来说是较为容易理解的。尽管如此，知道这些文献的存在，并且了解相应理论建立的基础是非常重要的。
 %In what follows, I will restrict the discussion to the absolutely necessary details in order to keep the formal part of the book as short as %possible. I refer
 %the interested reader to  \citet{Shieber86a},  \citet[Chapter~2]{ps},  \citet{Johnson88},  \citet{Carpenter92a},
 % \citet{King94a} and  \citet{Richter2004a-u}. Shieber's book is an accessible introduction to Unification Grammars. The works by King and %Richter, which introduce important
@@ -50,7 +50,7 @@
 \section{特征描写}
 %\section{Feature descriptions}
 
-当\isc{特征描写|(}\is{feature description|(}描写语言符号时，我们必须要说明属性的信息。对于名词而言，它有格、性、数和人称的特征。以“男人”这个词为例，这些特征的值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写形式：
+当\isc{特征描写|(}\is{feature description|(}描写语言符号时，我们必须要对它们的属性进行说明。对于名词而言，它们有格、性、数和人称的特征。以“男人”这个词为例，属性特征的取值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写：
 %When\is{feature description|(} describing linguistic signs, we have to say something about their properties. For a noun, we can say that it has %case, gender, number and person features.
 %For a word such as  \emph{Mannes} `man', we can say that these features have the values \emph{genitive}, \emph{masculine}, %\emph{singular} and \emph{3}.
 %If we were to write these as a list of feature"=value pairs, we would arrive at the following feature description:
@@ -137,11 +137,11 @@
 女儿-3  & \ldots\\
 }
 \z
-我们想要设定多少个特征呢？限制是什么？\textsc{女儿"=32}的值会是什么呢？
+我们想要设定多少个特征呢？数量的限制是什么？\textsc{女儿"=32}的值会是什么呢？
 %How many features do we want to assume? Where is the limit?
 %What would the value of \textsc{daughter"=32} be?
 
-在这一点上，我们有必要使用列表\isc{列表}\is{list}。列表用尖括号表示。任意数量的元素可以出现在这些尖括号中。特殊的情况是在这些括号中没有元素。一个没有元素的列表被叫做空列表（empty list）。下例中，Max Meier有一个女儿叫做Clara，而她没有女儿。
+就此例而言，用列表\isc{列表}\is{list}更为合理。列表用尖括号表示。任意数量的元素可以出现在这些尖括号中。特殊的情况是在这些括号中没有元素。一个没有元素的列表被叫做空列表（empty list）。下例中，Max Meier有一个女儿叫做Clara，而她没有女儿。
 %For this case, it makes much more sense to use a list\is{list}. Lists are indicated with angle brackets. Any number of elements can occur %between
 %these brackets. A special case is when no element occurs between the brackets. A list with no
 %elements is also called \emph{empty list}. In the following example,
@@ -163,12 +163,12 @@
 } }\\   
 }
 \z
-现在，我们还剩下与儿子有关的问题。是否应该加上一个儿子的列表？我们希望区分儿子和女儿吗？显然，孩子的性别是一个重要的属性，但是宾语本身有属性，因为每个人都有性别。由此，（\mex{1}）中的描述更为合适。
+现在，我们还剩下与儿子有关的问题。是否应该加上一个儿子的列表？我们希望区分儿子和女儿吗？显然，孩子的性别是一个重要的属性，这些是客体本身的属性，因为每个人都有性别。由此，（\mex{1}）中的描述更为合适。
 %Now, we are left with the question of sons. Should we add another list for sons? Do we want to differentiate between sons and daughters?
 %It is certainly the case that the gender of the children is an important property, but these are
 %properties of the objects themselves, since every person has a gender. The description in (\mex{1}) therefore offers a more adequate %representation.
 
-%\begin{figure}[tb]
+\begin{figure}[tb]
 \ea
 \ms{
 名    & max\\
@@ -189,8 +189,8 @@
 }
 \z
 \vspace{-\baselineskip}
-%\end{figure}%
-到这儿，有人可能会问为什么父母没有用列表表示。事实上，我们在语言学的研究中也发现了类似的问题：如何能最好地整理手头工作的信息？有人可能会提出将父母的描写按照不同的特征来表示，并指出这样的表示可以说明一个母亲或者父亲，而不用在列表中搜索各自的描写。
+\end{figure}%
+到这儿，有人可能会问为什么父母没有用列表表示。事实上，我们在语言学的研究中也发现了类似的问题：如何针对现在的任务来对信息进行最有效的表示？有人可能会提出用单独的特征来描写父母，并指出这样的表示可以说明一个母亲或者父亲，而不用在列表中搜索各自的描写。
 %At this point, one could ask why the parents are not included in a list as well. In fact, we find similar questions also
 %in linguistic works: how is information best organized for the job at hand? One could argue for the
 %representation of descriptions of the parents under separate features, by pointing out that with
@@ -211,7 +211,7 @@
 %\section{Types}
 \label{sec-formalismus-typen}
 
-在\isc{类型|(}\is{type|(}上一节中，我们介绍了包括特征"=值偶对的特征描述，并且说明了有必要在特征上赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型是说的哪些特征可以或者必须属于一个具体的结构。前面讲到的描写表示了类型\type{人}的对象。
+在\isc{类型|(}\is{type|(}上一节中，我们介绍了包括特征"=值偶对的特征描述，并且说明了应该允许特征被赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型说的是哪些特征可以或者必须属于一个具体的结构。前面讲到的描写是关于属于类型“\type{人}”的某一客体的。
 %In\is{type|(} the previous section, we introduced feature descriptions consisting of feature"=value pairs and showed that it makes sense to %allow for
 %complex values for features. In this section, feature descriptions will be augmented to include types. Feature descriptions which are assigned %a type
 %are also called \emph{typed feature descriptions}. Types say something about which features can or must belong to a 
@@ -230,7 +230,7 @@
 %类型用斜体表示。
 %Types are written in \textit{italics}. 
 
-类型的具体化决定了所模拟的对象具有什么样的属性。这样一个理论才能描写这些属性。诸如\textsc{工作电压}这样的属性与类型\textit{人}是无关的。如果我们知道一个给定对象的类型，那么我们也会知道该对象一定具有一定的属性，即使我们还不知道这些属性具体的值。这样，（\mex{1}）仍是对Max Meier的描写，即使它并不包括任何有关Max的生日信息：
+类型的具体化决定了所模拟的对象具有什么样的属性。这样一个理论才能描写这些属性。诸如“\textsc{工作电压}”这样的属性与类型“\textit{人}”是无关的。如果我们知道一个给定对象的类型，那么我们也会知道该对象一定具有某些属性，即使我们还不知道这些属性具体的值。这样，（\mex{1}）仍是对Max Meier的描写，即使它并不包括任何有关Max的生日信息：
 %The specification of a type determines which properties a modelled object has. It is then only
 %possible for a theory to say something about these properties.
 %Properties such as \textsc{operating voltage} are not relevant for objects of the type \textit{person}. If we know the type of a given object, then %we
@@ -243,7 +243,7 @@
 性别 & 男
 }
 \z
-但是，我们知道Max Meier一定是在某天出生的，因为这是对类型\textit{人}的描述。对于（\mex{0}）这类结构来说，“Max的生日是什么？”这个问题是有意义的，而“Max有哪种工作电压？”这个问题就是无意义的。如果我们知道一个对象是属于类型\textit{人}的，那么就会有如下的基本结构：
+但是，我们知道Max Meier一定是在某天出生的，因为这是对类型“\textit{人}”的描述。对于（\mex{0}）这类结构来说，“Max的生日是什么？”这个问题是有意义的，而“Max有哪种工作电压？”这个问题就是无意义的。如果我们知道一个对象是属于类型“\textit{人}”的，那么就会有如下的基本结构：
 %We know, however, that Max Meier must have been born on some day since this is a description of the type \textit{person}.
 %The question \emph{What is Max' date of birth?} makes sense for a structure such as (\mex{0}) in a way that the question
 %\emph{Which operating voltage does Max have?} does not. If we know that an object is of the type \textit{person}, then we have
@@ -259,9 +259,9 @@
 子女    & 人的列表~
 }
 \z
-在（\mex{0}）和（\mex{-1}）中，\textsc{名}这类特征的值也是类型。
+在（\mex{0}）和（\mex{-1}）中，“\textsc{名}”这类特征的值也是类型。
 %在（\mex{0}）和（\mex{-1}）中，\textsc{名}这类特征的值用斜体表示。这些值也是类型。
-但是，他们与\type{人}这类特征不同，因为它们没有次类特征。这些特征叫做原子式（atomic）\isc{类型!原子式}\is{type!atomic}。
+但是，他们与“\type{人}”这类特征不同，因为它们没有次类特征。这些特征叫做“原子式”（atomic）\isc{类型!原子式}\is{type!atomic}。
 %In (\mex{0}) and (\mex{-1}), the values of features such as \textsc{名} are in italics. These values are also types. They are different from
 %types such as \type{person}, however, as no features belong to them. These kinds of types are called \emph{atomic}\is{type!atomic}.
 
@@ -281,16 +281,16 @@
 子女    & 人的列表~   
 }
 \z
-在这点上，我们应该自问是否需要\textsc{性别}这个特征。必要信息已经在\type{女人}这个类型中显示出来了。
-下面的问题和语言本体分析是相关的：特定的信息是由特定的特征表示的？还是仅存储在一个类型而没有一个独立的特征与之对应？
-这两个方面的差异是巨大的，因为通过类型模拟的信息的事实没有直接通过结构共享而获得，这点在\ref{sec-strukturteilung}有所讨论。
+在这点上，我们应该自问是否真的需要“\textsc{性别}”这个特征，因为必要信息已经在“\type{女人}”这个类型中显示出来了。
+下面两个问题会在语言分析的讨论中重现：特定的信息是由特定的特征表示的？还是仅存储在一个类型而没有一个独立的特征与之对应？
+两种选择的差异主要体现为通过类型模拟的信息的事实没有直接通过结构共享而获得。这点在\ref{sec-strukturteilung}中有所讨论。
 %At this point, we could ask ourselves if we really need the feature \textsc{gender}. The necessary information is already represented in the %type \type{woman}.
 %The question if specific information is represented by special features or whether it is stored in a type without a corresponding individual %feature will
 %surface again in the discussion of linguistic analyses.
 %Both alternatives differ mostly in the fact that the information which is modelled by types is not
 %immediately accessible for structure sharing, which is discussed in Section~\ref{sec-strukturteilung}.
 
-%类型层级体系\label{Seite-Typhierarchie}在捕捉语言学的一般性特征方面发挥了重要的作用，这就是为什么类型层级体系和约束与信息的承继需要在后面的例子中进行解释。我们可以将类型层级体系看成是一种有效的组织信息的方式。在百科辞典中，个体之间是相互联系的，比如说猴子和老师这两个词条的联系在于二者都指向哺乳动物。针对哺乳动物的描写同样也适用于从属于它的概念中。同样，如果我们希望描写不同的电子设备，我们可以应用图\vref{fig-electric-appliance}中的层级体系。
+类型层级体系\label{Seite-Typhierarchie}在捕捉语言学的一般性特征方面发挥了重要的作用，这就是为什么类型层级体系和约束与信息的承继需要在后面的例子中进行解释。我们可以将类型层级体系看成是一种有效的组织信息的方式。在百科辞典中，个体之间是相互联系的，比如说猴子和老师这两个词条的联系在于二者都指向哺乳动物。针对哺乳动物的描写同样也适用于从属于它的概念中。同样，如果我们希望描写不同的电子设备，我们可以应用图\vref{fig-electric-appliance}中的层级体系。
 %Type hierarchies\label{Seite-Typhierarchie} play an important role in capturing linguistic generalizations, which is why type hierarchies and
 %the inheritance of constraints and information will be explained with reference to a further example in what follows. One can think of type %hierarchies as an effective
 %way of organizing information. In an encyclopedia, the individual entries are linked in such a way
@@ -341,7 +341,7 @@
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
 %\caption{\label{fig-electric-appliance}Non"=linguistic example of multiple inheritance}
 \end{figure}%
-图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有此类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的子类型，那么我们就可以说这是多重承继（multiple inheritance）\isc{承继!多重承继}\is{inheritance!multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多的具体次类型，相应地可以有具体的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
+图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\isc{承继!多重承继}\is{inheritance!multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多的具体次类型，相应地可以有具体的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
 %The most general type \type{electrical device} is the highest in Figure~\ref{fig-electric-appliance}. Electrical devices have certain properties, 
 %\eg 
 %a power supply with a certain power consumption. All subtypes of  \type{electrical device} ``inherit'' this property. In this way, \type{printing %device} and
@@ -359,7 +359,7 @@
 %The objects that are modeled always have a maximally specific type. In the example above, this means that we can have objects of the type %\type{laser printer} and \type{negative scanner}
 %but not of the type \type{printing device}. This is due to the fact that \type{printing device} is not maximally specific since this type has two %subtypes.
 
-带有多重承继的类型层级体系是表达语言一般化的重要手段。在这些层级的最高点出现的词或短语的类型对应于语言学对象的约束条件，这对于所有语言中的语言对象来说都是合理的。这种一般类型的子类型可以具体到某些语言或语言类型。
+带有多重承继的类型层级体系是表达语言一般化的重要手段。在这些层级的最高点出现的词或短语的类型对应于语言对象的约束条件，这对于所有语言中的语言对象来说都是合理的。这种一般类型的子类型可以具体到某些语言或语言类型。
 %Type hierarchies with multiple inheritance are an important means for expressing linguistic generalizations %\citep*{FPW85a,Flickinger87,Sag97a}. Types of words or phrases which
 %occur at the very top of these hierarchies correspond to constraints on linguistic objects, which are valid for linguistic objects in all languages. %Subtypes of such general types
 %can be specific to certain languages or language classes.%
@@ -368,7 +368,7 @@
 \section{析取}
 %\section{Disjunction}
 
-如果有人想表达一个具体物体具有不同属性的事实可以用析取\isc{析取|(}\is{disjunction|(}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow还是Barbanow）”。在特征描写中，这个“还是”表示为`$\vee$'\isc{$\vee$}\is{$\vee$}。
+如果有人想表达一个具体物体具有不同属性的事实，可以用析取\isc{析取|(}\is{disjunction|(}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow还是Barbanow）”。在特征描写中，这个“还是”表示为`$\vee$'\isc{$\vee$}\is{$\vee$}。
 %Disjunctions\is{disjunction|(} can be used if one wishes to express the fact that a particular object can have various different properties. If one %were to organize a class reunion
 %twenty years after leaving school and could not recall the exact names of some former classmates, it would be possible to search the web for %``Julia (Warbanow or Barbanow)''. In
 %feature descriptions, this ``or'' is expressed by a `$\vee$'\is{$\vee$}.
@@ -407,7 +407,7 @@
 %\section{Structure sharing}
 \label{sec-strukturteilung}
 
-结构共享\isc{结构共享|(}\is{structure sharing|(}是形式化中重要的一部分。它用来表示结构中某些相同的部分。关于值的统一性的语言学方面的例子就是一致关系\isc{主谓一致}\is{agreement}。在例（\mex{1}）的句子中，名词短语的数的值必须与动词保持一致：
+结构共享\isc{结构共享|(}\is{structure sharing|(}是形式化中重要的一部分。它用来表示结构中某些部分是相同的。关于值的同一性，语言学方面的例子就是一致关系\isc{主谓一致}\is{agreement}。在例（\mex{1}）的句子中，名词短语的数的值必须与动词保持一致：
 %Structure sharing\is{structure sharing|(} is an important part of the formalism. It serves to express the notion that certain parts of a structure %are identical. A linguistic
 %example for the identity of values is agreement\is{agreement}. In sentences such as (\mex{1}), the number value of the noun phrase has to be %identical to that of the verb:
 
@@ -438,7 +438,7 @@
 %The identity of values is indicated by boxes containing numbers. The boxes can also be viewed as
 %variables.
 
-当我们描述对象时，我们可以说明值相等或相同。关于值的同一性的说明是更为强势的。让我们用下面的Max的父亲和母亲的孩子们的信息的例子来进行说明：
+当我们描述对象时，我们可以声称值相等或相同。关于值的同一性的声称是更为强势的。让我们用下面的Max的父亲和母亲的孩子们的信息的例子来进行说明：
 %When describing objects we can make claims about equal values or claims about identical values.
 %A claim about the identity of values is stronger. Let us take the following feature description containing
 %information about the children that Max's father and mother have as an example:
@@ -463,7 +463,7 @@
              }
 }
 \z
-请注意\textsc{父亲$|$子女}和\textsc{母亲$|$子女}的路径下面，我们找到一个包括名为Klaus的人的描述。有关该特征描述是Peter和Anna的一个孩子还是两个孩子的问题是无法回答的。当然，我们是在分析前面关系中的两个不同的孩子，只不过他们碰巧都叫做Klaus。
+请注意“\textsc{父亲$|$子女}”和“\textsc{母亲$|$子女}”的路径下面，我们找到一个包括名为Klaus的人的描述。有关该特征描述是Peter和Anna的一个孩子还是两个孩子的问题是无法回答的。当然，我们是在分析前面配偶关系中的两个不同的孩子，只不过他们碰巧都叫作Klaus。
 %Notice that under the paths \textsc{father$|$children} and \textsc{mother$|$children}, we find a
 %list containing a description of a person with the first name Klaus. The question of whether the
 %feature description is of one or two children of Peter and Anna cannot be answered. It is certainly
@@ -494,7 +494,7 @@
 \z
 \vspace{-\baselineskip}
 \end{figure}%
-在例（\mex{0}）中，Klaus是父母双亲的独生子女。出现在\iboxt{1}之后的所有括号内的信息在所有的位置上都是等同出现的。我们可以把\iboxt{1}看作是一个指针或坐标，它指向只被描写过一次的结构。还有一个问题没有得到回答：Max呢？Max也是他父母的一个孩子，也应该出现在他父母所有的孩子的列表之中。在（\mex{0}）中有两个点，其所在的地方有三个点。这些省略符号表示Peter Meier和Anna Meier的其他孩子的信息。我们的世界知识告诉我们他们必须有同一个叫做Max Meier的孩子。在下一节，我们会看到这是如何进行形式化表达的。
+在例（\mex{0}）中，Klaus是父母双亲的独生子女。出现在\iboxt{1}之后的所有括号内的信息在两个位置上都是等同出现的。我们可以把\iboxt{1}看作是一个指针或坐标，它指向只被描写过一次的结构。还有一个问题没有得到回答：Max呢？Max也是他父母的一个孩子，也应该出现在他父母所有的孩子的列表之中。在（\mex{0}）中有两个点，其所在的地方有三个点。这些省略符号表示Peter Meier和Anna Meier的其他孩子的信息。我们的世界知识告诉我们他们必须有同一个叫做Max Meier的孩子。在下一节，我们会看到这是如何进行形式化表达的。
 %In (\mex{0}), Klaus is a single child that belongs to both parents. Everything inside the brackets which immediately follow \iboxt{1} is equally present in both
 %positions. One can think of \iboxt{1} as a pointer or reference to a structure which has only been described once. One question still remains %open: what about Max?
 %Max is also a child of his parents and should therefore also occur in a list of the children of his parents. There are two points in (\mex{0}) %where there are three
@@ -506,7 +506,9 @@
 %\section{Cyclic structures}
 \label{sec-cyclic-fd}
 
-我们\isc{循环!特征描写中的循环|(}\is{cycle!in feature description|(}引入了结构共享来表示Max的父母都有一个叫做Klaus儿子的事实。但是，将Max分别放在他的父母的孩子列表之中是不够的。我们还想捕捉到这样的事实，即在这些列表中出现的每一个Max都是同一个Max，而且，我们想要确保被描写的孩子与描写的整体对象是一致的。否则，描写就会允许这样的情况，Max的父母可以有第二个叫做Max的孩子。例（\mex{1}）\vpageref{bsp-avm-zyklen}中给出的描述可以正确地捕捉所有的事实。
+我们\isc{循环!特征描写中的循环|(}\is{cycle!in feature description|(}引入了结构共享来表示Max的父母都有一个叫做Klaus儿子的事实。但是，将Max分别放在他的父母的孩子列表之中是不够的。我们还想捕捉到这样的事实：即在这些列表中出现的每一个Max都是同一个Max，而且，我们想要确保被描写的孩子与描写的整体对象是一致的。否则，描写就会允许这样的情况，Max的父母可以有第二个叫做Max的孩子。例（\mex{1}）
+%\vpageref{bsp-avm-zyklen}
+中给出的描述可以正确地捕捉所有的事实。
 %We\is{cycle!in feature description|(} have introduced structure sharing in order to be able to express
 %the fact that Max's parents both have a son Klaus together. It would not be enough to list Max in
 %the child"=lists of his parents separately. We want to capture the fact that it is the same Max which
@@ -551,7 +553,7 @@
 \label{sec-unification}
 
 \mbox{}\isc{合一|(}\is{unification|(}%
-语言规则在特征描写的帮助下可以写成与HPSG和构式语法中的词汇项完全相同的格式。对于短语中可以用作子结点的一个词或者较大的短语实体来说，这个词或者短语必须具有语法规则中与子结点们的描写相兼容的属性。如果这种兼容性存在的话，那么我们可以说各自的对象是可以合一的（unifiable）。\footnote{%
+在特征描写的帮助下，语言规则可以写成与HPSG和构式语法中的词汇项完全相同的格式。对于短语中可以用作子结点的一个词或者较大的短语实体来说，这个词或者短语必须具有语法规则中与子结点们的描写相兼容的属性。如果这种兼容性存在的话，那么我们可以说各自的对象是可以合一的（unifiable）。\footnote{%
   合一（unification）这个概念需要小心使用，它只在语言学理论的形式化基础的某些假说下才是合适的。非正式的情况下，这一术语经常用于没有在技术上界定合一的形式化系统中。在HPSG中，它大部分是指对两个描写的约束导向一个单一的描写。我们在这里想直观说明的是，所描写的对象需要同时满足所有描写的约束条件（约束满足）。因为合一（unification）这个术语应用范围较广，本节也采用这一概念。在后面的理论讨论中，除了基于合一的方法，我们不会再使用该术语。相反，这里给出的约束满足（constraint satisfaction）这个概念在后面的章节中发挥了重要的作用。
 }
 %Grammatical rules\todostefan{Read Ristad} are written exactly like lexical entries in HPSG and Construction Grammar and are done so with %the help of feature descriptions.
@@ -569,7 +571,7 @@
 如果我们将两个描写合一，可以得到包含这两个描写的信息，而没有额外信息的描写结果。
 %If one unifies two descriptions, the result is a description which contains information from both descriptions but no additional information.
 
-合一的工作原理可以通过描写人的特征描写来进行说明。我们可以想象Bettina Kant去私家侦探Max Müller那里，她想找一个人。通常来说，到私家侦探办公室的人只有他们想找的人的一部分描写信息，比如说性别、头发颜色或者出生日期。也许还会知道那个人的汽车的登记号码。
+合一的工作原理可以通过人的特征描写来进行说明。我们可以想象Bettina Kant去私家侦探Max Müller那里找一个人。通常来说，到私家侦探办公室的人只带来了想找的人的一部分描写信息，比如说性别、头发颜色或者出生日期。也许还会知道那个人的汽车的登记号码。
 %The way unification works can be demonstrated with feature descriptions describing people. One can imagine that Bettina Kant goes to the %private detective
 %Max Müller and wants to find a specific person. Normally, those who go to a detective's office only come with a partial description of the %person they
 %are looking for, \eg the gender, hair color or date of birth. Perhaps even the registration number of the car belonging to the person is known.
@@ -603,7 +605,7 @@
 发色  & 金色
 }
 \z
-Katharina Meier还可以有其他侦探不知道的属性。重要的是侦探所知的属性与委托人要寻找的属性是一致的。此外，侦探使用可靠的信息而不是制造出有关寻找对象的任何信息是非常重要的。（\mex{-1}a）中搜查的合一与（\mex{0}）中侦探可获得的信息实际上是（\mex{0}），而不是（\mex{1}），如下所示：
+Katharina Meier还可以有侦探不知道的其他属性。重要的是侦探所知的属性与委托人要寻找的属性是一致的。此外，侦探使用可靠的信息而不是制造出有关寻找对象的任何信息是非常重要的。（\mex{-1}a）中搜查的信息与（\mex{0}）中侦探获得的信息的合一是（\mex{0}），而不是（\mex{1}）。
 %Katharina Meier could also have other properties unknown to the detective. The important thing is that the properties known to the detective %match those
 %that the client is looking for. Furthermore, it is important that the detective uses reliable information and does not make up any information %about the sought
 %object. The unification of the search in (\mex{-1}a) and the information accessible to the detective in (\mex{0}) is in fact (\mex{0}) and not 
@@ -625,7 +627,7 @@ Katharina Meier还可以有其他侦探不知道的属性。重要的是侦探�
 %called Katharina Meier with otherwise identical properties. With this invented information, we might
 %exclude one or more possible candidates. 
 
-也有可能，我们的侦探Max Müller在他的文件中没有发色的信息。他的文件可以包括如下这些信息：
+也有可能，我们的侦探Max Müller在他的文件中没有关于发色的信息。他的文件可以包括如下这些信息：
 %It is possible that our detective Max Müller does not have any information about hair color in his
 %files. His files could contain the following information:
 \ea
