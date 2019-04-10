@@ -1,6 +1,7 @@
 %% -*- coding:utf-8 -*-
 
-\chapter{生成能力与语言形式描述}
+\chapter{生成能力与语法形式描述}
+%\chapter{Generative capacity and grammar formalisms}
 \label{sec-generative-capacity}
 
 前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citealp{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致的语言。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
@@ -96,28 +97,28 @@
 \eal
 \ex 
 \gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
-     \spacebr{}\textsc{prep} \textsc{det} 剩下的.剩余的 成分 好像 \spacebr{}\textsc{det} 决定因素 {} \textsc{det} 最少 分类.问题 \textsc{prep}.\textsc{inf}.扔\\
+     \spacebr{}……中的 \textsc{det} 剩下的.剩余的 成分 好像 \spacebr{}\textsc{det} 决定因素 {} \textsc{det} 最少 分类.问题 抛.出.\textsc{inf}\\
 \footnotetext{%
       在 \citew[\page 102]{Engel70a}的正文中。
 }
 \mytrans{在剩余成分中，决定因素在分类方面提出的问题最少。}
 \ex\label{bsp-von-den-gefangenen} 
 \gll {}[Von den Gefangenen]$_i$ hatte eigentlich [keine \_$_i$] die Nacht der Bomben überleben sollen.\footnotemark\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} 罪犯 \textsc{aux} \textsc{adv} \spacebr{}没有一个 {} \textsc{det} 夜晚 \textsc{det} 爆炸 存活 应该\\
+	 {}\spacebr{}……中的 \textsc{det} 罪犯 \textsc{aux} 其实 \spacebr{}没有一个 {} \textsc{det} 夜晚 \textsc{det} 爆炸 存活 应该.\textsc{inf}\\
 \footnotetext{%
         Bernhard Schlink, \emph{Der Vorleser}, Diogenes Taschenbuch 22953, Zürich: Diogenes Verlag, 1997，第102页。
     }
 \mytrans{所有罪犯都不应该从那晚的爆炸中存活下来。}
 \ex 
 \gll {}[Von der HVA]$_i$ hielten sich [etwa 120 Leute \_$_i$] dort in ihren Gebäuden auf.\footnotemark\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} HVA 容纳 \refl{} \spacebr{}大约 120 人 {} 那里 \textsc{prep} 他们的 建筑 \prt{}\\
+	 {}\spacebr{}来自……的 \textsc{det} HVA 容纳 \refl{} \spacebr{}大约 120 人 {} 那里 \textsc{prep} 他们的 建筑 \prt{}\\
 \footnotetext{%
        Spiegel，1999年3月，第42页。
      }
 \mytrans{大约120名来自HVA的人都待在他们的房子里。}
 \ex 
 \gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} \textsc{prep} \textsc{det} 包厢\\
+	 {}\spacebr{}来自 \textsc{det} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} 在……里 \textsc{det} 包厢\\
 \footnotetext{%
         Frankfurter Rundschau, 摘自 \citew[\page 52]{deKuthy2001a}。
       }
@@ -125,7 +126,7 @@
 %Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
 \ex 
 \gll {}[Aus der Fraktion]$_i$ stimmten ihm [viele \_$_i$] zu darin, dass die Kaufkraft der Bürger gepäppelt werden müsse, nicht die gute Laune der Wirtschaft.\footnotemark\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} 派系 同意 他 \spacebr{}很多 {} \prt{} 那里.\textsc{prep} \textsc{comp} \textsc{det} 购买.能力 \textsc{det} 市民 增加 变得 应该 \textsc{neg} \textsc{det} 好的 氛围 \textsc{det} 经济\\
+	 {}\spacebr{}来自 \textsc{det} 派系 同意 他 \spacebr{}很多 {} \prt{} 在这点上} \textsc{comp} \textsc{det} 购买.能力 \textsc{det} 市民 增加 变得 应该 \textsc{neg} \textsc{det} 好的 氛围 \textsc{det} 经济\\
 \footnotetext{%
         taz, \zhdate{2003/10/16}，第5页。%  taz Themen des Tages 282 Zeilen, ULRIKE WINKELMANN S. 5
 }
@@ -133,7 +134,7 @@
 \ex\label{bsp-von-erzbischof-bilder} 
 \gll {}[Vom Erzbischof Carl Theodor Freiherr von Dalberg]$_i$ gibt es beispielsweise [ein Bild \_$_i$]
         im Stadtarchiv.\footnotemark\\
-	{}\spacebr{}\textsc{prep} 大主教 Carl Theodor Freiherr \textsc{prep} Dalberg 有 \expl{} 例如 \spacebr{}一 图画 {} \textsc{prep}.\textsc{det} 城市.档案\\
+	{}\spacebr{}从.\textsc{det} 大主教 Carl Theodor Freiherr 来自 Dalberg 有 \expl{} 例如 \spacebr{}一 图画 {} 在.\textsc{det} 城市.档案\\
 \footnotetext{%
         Frankfurter Rundschau, 摘自 \citew[\page 7]{deKuthy2002a}。
 }
@@ -141,24 +142,23 @@
 \ex 
 \gll {}[Gegen die wegen Ehebruchs zum Tod durch Steinigen verurteilte Amina Lawal]$_i$ hat gestern in Nigeria
     [der zweite Berufungsprozess \_$_i$] begonnen.\footnotemark\\
-	{}\spacebr{}\textsc{prep} \textsc{det} 因为.\textsc{prep} 私通 \textsc{prep}.\textsc{det} 死亡 \textsc{prep} 石刑 判处 Amina Lawal \textsc{aux} 昨天 \textsc{prep} Nigeria \spacebr{}\textsc{det} 第二 上诉.过程 {} 开始\\
+	{}\spacebr{}对 \textsc{det} 因为.\textsc{prep} 私通 为了.\textsc{det} 死亡 通过 石刑 判处 Amina Lawal \textsc{aux} 昨天 在 Nigeria \spacebr{}\textsc{det} 第二 上诉.过程 {} 开始\\
 \footnotetext{%
         taz, \zhdate{2003/08/28}，第2页。
     }
 \mytrans{控诉Amina Lawal的第二次上诉昨天开始，他因为私通而被判处石刑。}
 \ex 
 \gll {}[Gegen                  diese        Kahlschlagspolitik]$_i$ finden derzeit bundesweit                     [Proteste und Streiks \_$_i$ ] statt.\footnotemark\\
-     {}\spacebr{}\textsc{prep} \textsc{det} 秃的.打.政治    发生   现在 \spacebr{}全国 \spacebr{}抗议 和 罢工 {} {} \prt{}\\
+     {}\spacebr{}对 \textsc{det} 秃的.打.政治    发生   现在 \spacebr{}全国 \spacebr{}抗议 和 罢工 {} {} \prt{}\\
 \footnotetext{%
         Streikaufruf, Universität Bremen, \zhdate{2003/12/03}，第1页。
     }
 \mytrans{此时，有遍及全国的抗议和罢工来反对破坏性政治。}
 \ex 
 \gll {}[Von den beiden, die hinzugestoßen sind], hat [einer        \_$_i$ ] eine Hacke, der andere einen Handkarren.\footnotemark\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} 两个 \textsc{rel} 参加 \textsc{cop} \textsc{aux} \spacebr{}一 {}    {}  一 镐   \textsc{det} 另外的 \textsc{det} 手推车\\
+	 {}\spacebr{}……中的 \textsc{det} 两个 \textsc{rel} 参加 \textsc{cop} \textsc{aux} \spacebr{}一 {}    {}  一 镐   \textsc{det} 另外的 \textsc{det} 手推车\\
 \footnotetext{%
-        Haruki Murakami, \emph{Hard-boiled Wonderland und das Ende der Welt}, suhrkamp taschenbuch, 3197, 2000,
-        Translation by Annelie Ortmanns and Jürgen Stalph, 第414页。
+        Haruki Murakami，《世界尽头与冷酷仙境》（\emph{Hard-boiled Wonderland und das Ende der Welt}），suhrkamp平装书，3197，2000，由Annelie Ortmanns和Jürgen Stalph翻译，第414页。
 }
 \mytrans{两个参与者，其中一个有镐，一个有手推车。}
 % Funktionsverbgefüge
@@ -172,30 +172,30 @@
 %}
 \ex 
 \gll ein Plan, [gegen den]$_i$ sich nun [ein Proteststurm \_$_i$ ] erhebt\footnotemark\\
-     一 计划 \spacebr{}\textsc{prep} \textsc{rel} \refl{} 现在 \spacebr{}一 抗议.风暴 {} {} 升起\\
+     一 计划 \spacebr{}反对 \textsc{rel} \refl{} 现在 \spacebr{}一 抗议.风暴 {} {} 升起\\
 \footnotetext{%
   taz, \zhdate{2004/12/30}，第6页。
 }
 \mytrans{一场反对计划的抗议风暴形成了。}
 \ex 
 \gll {}Dagegen$_i$ jedoch regt sich jetzt [Widerstand \_$_i$ ]: [\ldots]\footnotemark\\
-	{}\textsc{pron}.\textsc{prep} 但是 出台 \refl{} 现在 \spacebr{}反对 {}\\
+	{}这个.反对 但是 出台 \refl{} 现在 \spacebr{}反对 {}\\
 \footnotetext{%
   taz, \zhdate{2005/09/02}，第18页。%
 }
 \mytrans{但是，对于这件事的反抗正在升级。}
 \ex
 \gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
-	 {}\spacebr{}\textsc{prep} \textsc{det} 骑行.专业.场景 知道 他 \spacebr{}没有人 {} {} 今后\\
+	 {}\spacebr{}在……中 \textsc{det} 骑行.专业.场景 知道 他 \spacebr{}没有人 {} {} 今后\\
 \footnotetext{%
   taz, \zhdate{2005/07/04}，第5页。
 }
 % Nobody from the professional cycling scene has heard of him anymore.
-\mytrans{专业骑行圈中再也没人听说过他。'}todostefan{check
+\mytrans{专业骑行圈中再也没人听说过他。'}\todostefan{check
   once taz archive gets online again}
 \ex 
 \gll {}[Über das chinesische Programm der Deutschen Welle] tobt dieser Tage [ein heftiger Streit \_$_i$ ].\footnotemark\\
-     \spacebr{}\textsc{prep} \textsc{det} 中国的 项目 \textsc{det} 德国 电波 肆虐 这些 天 \spacebr{}一 强烈的 争论\\
+     \spacebr{}关于 \textsc{det} 中国的 项目 \textsc{det} 德国 电波 肆虐 这些 天 \spacebr{}一 强烈的 争论\\
 \footnotetext{%
  taz, \zhdate{2008/10/21}，第12页。
 }
@@ -320,7 +320,7 @@
 
 %\noindent
 %This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
-    我们的语法与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\isc{能力!生成能力|)}\is{capacity!generative|)}\isc{复杂类型|)}\is{complexity class|)}
+    我们的这个情况与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法形式还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\isc{能力!生成能力|)}\is{capacity!generative|)}\isc{复杂类型|)}\is{complexity class|)}
 %We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
 %the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
 %for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on
