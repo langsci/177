@@ -61,7 +61,7 @@
 %     Paths
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\fontpath}{}
+\newcommand{\fontpath}{./langsci/fonts/}
 \newcommand{\logopath}{}
 \newcommand{\seriesinfopath}{}
 \newcommand{\localepath}{}
@@ -795,8 +795,8 @@
 \else % use standard fonts
     \setsansfont[
 	  %Ligatures={TeX,Common},		% not supported by ttf
-	  Scale=MatchLowercase,
 	  Path=\fontpath,
+	  Scale=MatchLowercase,  
 	  BoldFont = Arimo-Bold.ttf ,
 	  ItalicFont = Arimo-Italic.ttf ,
 	  BoldItalicFont = Arimo-BoldItalic.ttf
