@@ -61,7 +61,7 @@
 %     Paths
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\fontpath}{./langsci/fonts/}
+\newcommand{\fontpath}{}
 \newcommand{\logopath}{}
 \newcommand{\seriesinfopath}{}
 \newcommand{\localepath}{}
