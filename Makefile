@@ -166,8 +166,9 @@ public: grammatical-theory.pdf
 	cp -p $?                      /Users/stefan/public_html/Pub/grammatical-theory.pdf
 
 
-commit:
-	svn commit -m "published version to the web"
+commit-stable: stable.pdf
+	git commit -m "automatic creation of stable.pdf" stable.pdf
+	git push -u origin
 
 o-public: o-public-lehrbuch 
 #o-public-bib
