@@ -26,13 +26,13 @@
 \section{为什么要研究句法？}
 \label{sec-wozu-syntax}
 
-所有的语言表达都有意义。据此，我们研究形式与意义的结合体\citep{Saussure16a}\nocite{Saussure16a-Fr}。例如，tree（树）这个词的字形与其相应的语音形式被赋予了\relation{tree}的含义。较大的语言单位可以由相对较小的单位构成：词与词可以一起构成词组并且这些词组可以继而构成句子。
+所有的语言表达都有意义。据此，我们研究形式与意义的结合体\citep{Saussure16a}\nocite{Saussure16a-Fr}。例如，tree（树）这个词的书写形式与其相应的语音形式被赋予了\relation{tree}的含义。较大的语言单位可以由相对较小的单位构成：词与词可以一起构成词组并且这些词组可以继而构成句子。
 %%Every linguistic expression we utter has a meaning. We are therefore dealing with
 %what has been referred to as form-meaning pairs \citep{Saussure16a}\nocite{Saussure16a-Fr}. A word %such as \emph{tree} in its specific orthographical form or in its corresponding phonetic form is assigned the
 %meaning \relation{tree}. Larger linguistic units can be built up out of smaller ones: words can be
 %joined together to form phrases and these in turn can form sentences. 
 
-接下来的问题是：我们需要一个形式化的系统来表述这些句子的结构吗？如同上面tree（树）的例子，若我们用形式与意义的对儿来表述完整的句子，难道不够吗？
+接下来的问题是：我们需要一个形式化的系统来表述这些句子的结构吗？若我们就像对上面tree这个词所做的那样，用形式与意义的对儿来表述完整的句子，这样做还不够吗？
 %The question which now arises is the following: do we need a formal system which can assign a
 %structure to these sentences? Would it not be sufficient to formulate a pairing of form and meaning for %complete sentences just as we did for the word \emph{tree} above?  
 
@@ -56,11 +56,11 @@
       \mytrans{[一个句子是一个句子]是一个句子。}
 \ex\label{einbettung-dass-Saetze}
 \gll that Max thinks that Julius knows that Otto claims that Karl suspects that Richard confirms that Friederike is laughing\\
-      \textsc{comp} Max 认为 \textsc{comp} Julius 知道 \textsc{comp} Otto 声称 \textsc{comp} Carl 怀疑 \textsc{comp} Richard 承认 \textsc{comp} Friederike \textsc{aux} 笑\\
-      \mytrans{Max认为Julius知道Otto声称Karl怀疑Richard承认Friederike在笑。}
+      \textsc{comp} 马克思 认为 \textsc{comp} 尤利乌斯 知道 \textsc{comp} 奥托 声称 \textsc{comp} 卡尔 怀疑 \textsc{comp} 里夏德 承认 \textsc{comp} 弗里德里克 \textsc{aux} 笑\\
+      \mytrans{马克思认为尤利乌斯知道奥托声称卡尔怀疑里夏德承认弗里德里克在笑。}
 \zl
 
-例（\mex{0}b）是对a sentence is a sentence这组词的说明，即它是一个句子。我们也可以按照（\mex{0}b）的方式来扩展句子，将这一整句话也看作是一句话。（\mex{0}c）是将Friederike is laughing跟that、Richard和confirms组合起来构成了一个新句子that Richard confirms that Friederike is laughing”。按照同样的方式，我们还可以将that、Karl和suspects扩展进来。由此，我们就可以将一个不太复杂的句子嵌套进来构成一个非常复杂的句子。这样就可以一句句地嵌套下去。（\mex{0}c）这类句子类似于“俄罗斯套娃”\isc{俄罗斯套娃}（matryoshka\is{matryoshka}）：每个娃娃都由一个套一个的不同颜色的更小的娃娃构成。（\mex{0}c）中的句子也是以同样的方式构成的，即它们都由更小的成分，而且是由不同的名词和动词组成。我们可以用方括号很清楚地表示出来，如下所示：
+例（\mex{0}b）是对a sentence is a sentence这组词的说明，即它是一个句子。我们也可以按照（\mex{0}b）的方式来扩展句子，将这一整句话也看作是一句话。（\mex{0}c）是将Friederike is laughing跟that、Richard和confirms组合起来构成了一个新句子that Richard confirms that Friederike is laughing。按照同样的方式，我们还可以将that、Karl和suspects扩展进来。由此，我们就可以将一个不太复杂的句子嵌套进来构成一个非常复杂的句子。这样就可以一句句地嵌套下去。（\mex{0}c）这类句子类似于“俄罗斯套娃”\isc{俄罗斯套娃}（matryoshka\is{matryoshka}）：每个娃娃都由一个套一个的不同颜色的更小的娃娃构成。（\mex{0}c）中的句子也是以同样的方式构成的，即它们都由更小的成分，而且是由不同的名词和动词组成。我们可以用方括号把它们很清楚地表示出来，如下所示：
 %In (\mex{0}b), something is being said about the group of words \emph{a sentence is a sentence},
 %namely that it is a sentence. One can, of course, claim the same for the whole sentence in
 %(\mex{0}b) and extend the sentence once again with \emph{is a sentence}. The sentence in (\mex{0}c)
@@ -76,13 +76,13 @@
 \ea
 \label{ex-that-max-thinks-that-recursion}
 \gll that          Max thinks [that                 Julius knows [that Otto claims [that Karl suspects [that Richard confirms [that Friederike is laughing]]]]]\\
-     \textsc{comp} Max 认为    \spacebr\textsc{comp} Julius 知道  \spacebr\textsc{comp} Otto 声称 \spacebr\textsc{comp} Carl 怀疑 \spacebr\textsc{comp} Richard 承认 \spacebr\textsc{comp} Friederike \textsc{aux} 笑\\
+     \textsc{comp} 马克思 认为    \spacebr\textsc{comp} 尤利乌斯 知道  \spacebr\textsc{comp} 奥托 声称 \spacebr\textsc{comp} 卡尔 怀疑 \spacebr\textsc{comp} 里夏德 承认 \spacebr\textsc{comp} 弗里德里克 \textsc{aux} 笑\\
 \z
 
 \noindent
 %We can build incredibly long and complex sentences in the ways that were demonstrated in (\mex{-1}).
 我们可以像例（\mex{-1}）一样通过扩展的方式构建出又长又复杂的句子。\footnote{%
-也有学者认为我们有能力构建出无限长的句子（\citealp*[\page 117]{NKN2001a}；\citealp[\page 3]{KS2008a-u}；Dan Everett在 \citew{OW2012a}中的\zhtime{25:19}），乔姆斯基也这样认为\citep[\page 341]{Leiss2003a}。但这是不正确的，因为每个句子必然要在某个节点结束。即使是在乔姆斯基传统下发展起来的形式语言也没有无限长的句子。不过，有些形式语法可以描述出一系列无限地包含着定式句子的情况。（\citealp[\page 13]{Chomsky57a}）也可以参看 \citew{PS2010a}和\ref{Abschnitt-Rekursion}中关于语法的递归性\isc{递归}\is{recursion}和语言无限论的观点。
+也有学者认为我们有能力构建出无限长的句子（\citealp*[\page 117]{NKN2001a}；\citealp[\page 3]{KS2008a-u}；Dan Everett在 \citew{OW2012a}这个片子中的\zhtime{25:19}），乔姆斯基也这样认为\citep[\page 341]{Leiss2003a}。但这是不正确的，因为每个句子必然要在某个节点结束。即使是在乔姆斯基传统下发展起来的形式语言也没有无限长的句子。不过，有些形式语法可以描述出一系列无限地包含着定式句子的情况。（\citealp[\page 13]{Chomsky57a}）也可以参看 \citew{PS2010a}和\ref{Abschnitt-Rekursion}中关于语法的递归性\isc{递归}\is{recursion}和语言无限论的观点。
 }
  %It is sometimes claimed that we are capable of constructing infinitely long sentences (\citealp*[\page
  %117]{NKN2001a}; \citealp[\page 3]{KS2008a-u}; Dan Everett in  \citew{OW2012a} at 25:19) or that %Chomsky made such claims \citep[\page 341]{Leiss2003a}. This is, however, not correct since every %sentence
@@ -92,7 +92,7 @@
 
 %vanTrijp2013a:110 express new conceptualizations in an infinite number of ways
 
-对于这些组合来说，我们很难轻易地说截止到哪里是我们的语言可以接受的（\citealp[\page 208]{Harris57a}；\citealp[\page 23]{Chomsky57a}）。同样，如果认为这些复杂的句子被当作一个复杂的单位储存在大脑中，这样的观点也是难以令人信服的。虽然心理语言学的实验显示，高频词语或固定搭配往往以复杂单位的形式储存在大脑中，但是这与例（\mex{-1}）所示的情况是不同的。再者，我们能够造出我们从未听过、说过或者写过的话语。这些话语一定是有结构的，一定会有可以一遍一遍重复的模式。作为人类，我们有能力将简单的成分构成复杂的句子，也可以将复杂的话语分解出它们的组成成分。目前，也有神经科学相关的研究可以证明，人类具有利用规则将词构成更大单位的能力。\citep[\page 170]{Pulvermueller2010a}
+对于这些组合来说，我们很难轻易地说截止到哪里是我们的语言可以接受的（\citealp[\page 208]{Harris57a}；\citealp[\page 23]{Chomsky57a}）。同样，如果认为这些复杂的句子被当作一个复杂的单位储存在大脑中，这样的观点也是难以令人信服的。虽然心理语言学的实验显示，高频词语或固定搭配往往以复杂单位的形式储存在大脑中，但是这与例（\mex{-1}）所示的情况是不同的。再者，我们能够造出我们从未听过、说过或者写过的话。这些话一定是有结构的，一定会有可以一遍一遍重复的模式。作为人类，我们有能力将简单的成分构成复杂的句子，也可以将复杂的话语分解出它们的组成成分。目前，也有神经科学相关的研究可以证明，人类具有利用规则将词构成更大单位的能力。\citep[\page 170]{Pulvermueller2010a}
 %It would be arbitrary to establish some cut-off point up to which such combinations can
 %be considered to belong to our language (\citealp[\page 208]{Harris57a}; \citealp[\page 23]{Chomsky57a}). 
 %It is also implausible to claim that such complex sentences are stored in our brains as a single complex
@@ -104,7 +104,7 @@
 %are able to build such complex structures out of simpler ones and, vice-versa, to break down 
 %complex utterances into their component parts. Evidence for humans' ability to make use of rules for %combining words into larger units has now also been provided by research in neuroscience \citep[\page %170]{Pulvermueller2010a}.
 
-这些规则被违反时，反而更能证明我们是按照规则来组织语言材料的。儿童是通过他们能够接触到的语言输入来习得\isc{习得}\is{acquisition}语言规则的。在这样做的同时，他们可以说出他们以前从没听过的话语：
+这些规则被违反时，反而更能证明我们是按照规则来组织语言材料的。儿童通过他们能够接触到的语言输入来习得\isc{习得}\is{acquisition}语言规则。在这样做的同时，他们可以说出他们以前从没听过的话：
 %It becomes particularly evident that we combine linguistic material in a rule-governed way when
 %these rules are violated. Children acquire\is{acquisition} linguistic rules by generalizing from
 %the input available to them. In doing so, they produce some utterances which they could not
@@ -114,14 +114,14 @@
 \settowidth\jamwidth{（Friederike, 2；6）}
 \gll Ich festhalte die. \\
     % I \particle.hold them\\\jambox{(Friederike, 2;6)}\\
-     我 紧-握 他们\\\jambox{（Friederike, 2；6）}
+     我 紧-握 他们\\\jambox{（弗里德里克，2岁6个月大）}
 \glt 想说：\quotetrans{我紧紧地握住了。}
 \z
-Friederike说这句话的时候，正在习得德语句子中定式动词（finite verb）位置的规则，即定式动词位于第二位。但是，她在这句话中将整个动词放在了第二位，其中就包括可分前缀fest（紧）。正确的用法应该是将这个可分前缀放在小句的末尾。
+弗里德里克（Friederike）说出这句话的时候，正处于习得德语定式动词（finite verb）的占位规则（即定式动词位于第二位）的阶段。但是，她在说这句话时将整个动词放在了第二位，其中就包括可分前缀fest（紧）。正确的用法应该是将这个可分前缀放在小句的末尾。
 %Friederike, who was learning German, was at the stage of acquiring the rule for the position of the finite
 %verb (namely, second position). What she did here, however, was to place the whole verb, including a
 %separable particle \emph{fest} `tight', in the second position although the particle should be realized at the %end of the clause (\emph{Ich halte die fest.}).
-如果我们不希望语言仅仅是由一个个形式意义对儿构成的列表，那么必然需要某种过程，该过程使得复杂话语的意义可以从小成分的意义推导而来。句法就是用来揭示词汇组合的方式和话语的结构的。比如说，主谓一致\isc{主谓一致}\is{agreement}的知识有助于我们解释下面的德语句子：
+如果我们不希望语言仅仅是由一个个形式意义对儿构成的列表，那么必然需要某种过程，该过程使得复杂话语的意义可以从更小的成分的意义推导而来。句法就是用来揭示词汇组合的方式和话语的结构的。比如说，主谓一致\isc{主谓一致}\is{agreement}的知识有助于我们解释下面的德语句子：
 %If we do not wish to assume that language is merely a list of pairings of form and meaning, then
 %there must be some process whereby the meaning of complex utterances can be obtained from the
 %meanings of the smaller components of those utterances. Syntax reveals something about the way in which %the words involved can be combined, something about the structure of an utterance. For instance,
