@@ -19,7 +19,7 @@
 %and \emph{gibt} `gives' is a verb\is{verb}.
 \ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
 \gll weil er das Buch dem Mann gibt\\
-	 因为 他 \textsc{det} 书 \textsc{det} 人 给\\
+	 因为 他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 人 给\\
 \mytrans{因为他给人这本书}
 \z
 %\ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
@@ -27,7 +27,7 @@
 %	 because he the book the man gives\\
 %\mytrans{because he gives the man the book}
 %\z
-在\ref{konstituententests}中，我们介绍成分测试的若干方法。采用这些方法，我们可以判断出das Buch（这本书）和dem Mann（这个人）这两组字符串分别构成了一个成分。那么这些成分需要特定的符号来指称他们。因为在这些短语中，名词起到了重要的作用，它们就叫做“名词短语”（noun phrase）或简称为NP。因为代词er（他）也可以出现在完整的名词短语所在的位置中，所以代词也应归入NP这一类别中。
+在\ref{konstituententests}中，我们介绍成分测试的若干方法。采用这些方法，我们可以判断出das Buch（这本书）和dem Mann（这个人）这两组字符串各构成了一个成分。这些成分继而就需要特定的符号来指称他们。因为在这些短语中，名词起到了重要的作用，我们就把它们叫做“名词短语”（noun phrase）或简称为NP。因为代词er（他）也可以出现在完整的名词短语所在的位置上，所以代词也应归入NP这一类别。
 %Using the constituency tests we introduced in Section~\ref{konstituententests}, we can show that
 %individual words as well as the strings \emph{das Buch} `the book' and \emph{dem Mann} `the man',
 %form constituents. These get then assigned certain symbols. Since nouns form an important part of
@@ -68,13 +68,13 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 {V} & {$\to$ gibt}\\
 \end{tabular}
 \z
-由此，我们将NP $\to$\isc{$\to$}\is{$\to$} Det N这一规则解读为一个名词短语，这个名词短语被赋予了NP这个符号，它包括一个限定词（D）和一个名词（N）。
+据此，我们将NP $\to$\isc{$\to$}\is{$\to$} Det N这一规则解读为一个名词短语，这个名词短语被赋予了NP这个符号，它包括一个限定词（D）和一个名词（N）。
 %We can therefore interpret a rule such as NP $\to$\is{$\to$} Det N as meaning that a noun phrase, that is, something which is assigned the symbol NP, can consist
 %of a determiner (Det) and a noun (N).
 
 对于例（\mex{-1}）这个句子，我们可以应用（\mex{0}）中的文法并按照如下的方式来分析：
 首先，我们选取句中的第一个词，然后看是否有规则来说明该词出现在规则的右边。如果有，那么我们就用规则左边的符号来替换它。这一过程可以参考%\vpageref*{bsp-anwendung-grammatik}
-（\mex{1}）中的第2—4，6—7和9行的推导过程。比如说，第二行中er被NP代替。如果在规则的右边有两个以上的符号，那么这些符号都被左边的符号所代替。这一过程可以参考第5、8和10行。例如，在第5行和第8行中，Det和N被重写为NP。
+（\mex{1}）中的第2—4，6—7和9行的推导过程。比如说，第二行中er被NP代替。如果在规则的右边有两个以上的符号，那么这些符号都被左边的符号所替代。这一过程可以参考第5、8和10行。例如，在第5行和第8行中，Det和N被重写为NP。
 %We can analyze the sentence in (\mex{-1}) using the grammar in (\mex{0}) in the following way:
 %first, we take the first word in the sentence and check if there is a rule in which this word occurs on the right"=hand
 %side of the rule. If this is the case, then we replace the word with the symbol on the left"=hand side of the rule. This happens
@@ -110,7 +110,7 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 %from S to the string \emph{er dem Mann das Buch gibt} `he the man the book gives'.
 %We can say that this grammar licenses (or generates)\label{Seite-generiert} a set of sentences.\is{Generative Grammar}
 
-例（\mex{0}）中的推导过程也可以表示为一棵树，如~\vref{er-das-buch-dem-mann-gibt-flat}所示。
+例（\mex{0}）中的推导过程也可以表示为一棵树，如\vref{er-das-buch-dem-mann-gibt-flat}所示。
 %例（\mex{0}）中的推导过程可以表示为一棵树，如\chinesevref{图}{er-das-buch-dem-mann-gibt-flat}所示。
 %The derivation in (\mex{0}) can also be represented as a tree. This is shown by Figure~\vref{er-das-buch-dem-mann-gibt-flat}.
 % \clearpage
@@ -173,13 +173,13 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
      {}         {}       他  {}        {}       \textsc{det}  {}      书    {}        {}       \textsc{det}  {}       人     {}      给\\  
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
 \z
-无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这是与具体的结构没有太多关系的。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
+无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这与具体的结构没有太多关系。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
 %Nevertheless, it is the grammatical rules which are actually important since these represent grammatical knowledge which is independent of specific structures.
 %In this way, we can use the grammar in (\ref{bsp-grammatik-psg}) to parse or generate the sentence
 %in (\mex{1}), which differs from (\ref{bsp-weil-er-das-buch-dem-mann-gibt}) in the order of objects: 
 \ea
 \gll {}[weil] er dem Mann das Buch gibt\\
-	 {}\spacebr{}因为 他.\nom{} \textsc{det}.\dat{} 人 \textsc{det}.\acc{} 书 给\\
+	 {}\spacebr{}因为 他.\nom{} \textsc{art}.\textsc{def}.\dat{} 人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
 \mytrans{因为他给这个人这本书}
 \z
 %\ea
@@ -190,7 +190,7 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
 与例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）相比，这句话中用来替代限定词和名词的规则采用了不同的顺序。具体来说，这里并不是用das（这）来替代第一个Det，也不是用Buch（书）来替代第一个名词，而是用dem（这）来替代第一个Det，并用Mann（人）替代第一个名词。
 %The rules for replacing determiners and nouns are simply applied in a different order than in (\ref{bsp-weil-er-das-buch-dem-mann-gibt}). Rather than replacing the first Det with \emph{das} %`the' and the first noun with \emph{Buch} `book', the first Det is replaced with \emph{dem} `the' and the first noun with \emph{Mann}.
 
-在此，我需要指出的是，（\ref{bsp-grammatik-psg}）中的文法并不是针对（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）中的例句的唯一一套文法。实际上，对于这类句子（参看练习\ref{ua-psg-eins}）而言，还有无限\label{page-unendlich-viele-grammatiken}可能的文法。另一套文法如例（\mex{1}）所示：
+在此，我需要指出的是，（\ref{bsp-grammatik-psg}）中的文法并不是针对（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）中的例句的唯一一套文法。实际上，对于这类句子（参见练习\ref{ua-psg-eins}）而言，还有无限\label{page-unendlich-viele-grammatiken}可能的文法。另一套文法如例（\mex{1}）所示：
 %At this juncture, I should point out that the grammar in (\ref{bsp-grammatik-psg}) is not the only possible grammar for the example sentence in
 %(\ref{bsp-weil-er-das-buch-dem-mann-gibt}). There is an infinite\label{page-unendlich-viele-grammatiken} number of possible grammars which could
 %be used to analyze these kinds of sentences (see exercise \ref{ua-psg-eins}). Another possible grammar is given in (\mex{1}):
@@ -221,11 +221,11 @@ sm edges
   [NP [er;他] ]
   [V
     [NP
-      [Det [das;\textsc{det}] ]
+      [Det [das;\textsc{art}.\textsc{def}] ]
       [N [Buch;书] ] ]
     [V
       [NP
-        [Det [dem;\textsc{det}] ]
+        [Det [dem;\textsc{art}.\textsc{def}] ]
         [N [Mann;人] ] ]
       [V [gibt;给] ] ] ] ]
 \end{forest}
@@ -235,7 +235,7 @@ sm edges
 %  binary branching structure}
 \end{figure}%
 
-实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{det}的宾格形式），那么就会生成不合乎语法的句子，如例（\mex{1}b--d）所示：\footnote{%
+实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{art}.\textsc{def}的宾格形式），那么就会生成不合语法的句子，如例（\mex{1}b--d）所示：\footnote{%
 应用（\ref{psg-binaer}）中的文法，我们还会遇到别的问题，即我们无法确定什么时候话语是完整的，因为符号V被用来表示V和NP的所有组合。由此，我们也可以用这个文法来分析（i）中的句子：
 %Both the grammar in (\mex{0}) and (\ref{bsp-grammatik-psg}) are too imprecise.
 %If we adopt additional lexical entries for \emph{ich} `I' and \emph{den} `the' (accusative) in our grammar, then we would incorrectly
@@ -246,11 +246,11 @@ sm edges
 \eal
 \ex[*]{
 \gll der Mann erwartet\\
-     \textsc{det} 人 希望\\
+     \textsc{art}.\textsc{def} 人 希望\\
 }
 \ex[*]{
 \gll des        Mannes     er        das Buch dem Mann gibt\\
-     \textsc{det}.\gen{} 人.\gen{} 他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
+     \textsc{art}.\textsc{def}.\gen{} 人.\gen{} 他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
 }
 \zl
 动词所带的论元数量应该在文法中显示出来。在下面的章节中，我们将介绍动词对论元的选择（价）在不同的语法理论中是如何表述的。
@@ -260,20 +260,20 @@ sm edges
 \eal
 \ex[]{
 \gll er        das Buch        dem Mann       gibt\\
-     他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
+     他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
 \mytrans{他把书给这个人。}
 }
 \ex[*]{
 \gll ich      das Buch        dem Mann       gibt\\
-     我.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\dat{} 人 给\\
+     我.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
 }
 \ex[*]{
 \gll er        das        Buch den        Mann gibt\\
-     他.\nom{} \textsc{det}.\acc{} 书 \textsc{det}.\acc{} 人 给\\
+     他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\acc{} 人 给\\
 }
 \ex[*]{
 \gll er        den        Buch       dem Mann gibt\\
-     他.\nom{} \textsc{det}.\mas{} 书(\neu) \textsc{det} 人  给\\
+     他.\nom{} \textsc{art}.\textsc{def}.\mas{} 书(\neu) \textsc{art}.\textsc{def} 人  给\\
 }
 \zl
 例（\mex{0}b）违反了主谓一致原则\isc{主谓一致|(}\is{agreement|(} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
@@ -350,16 +350,16 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 }
 \ex[*]{
 \gll Er schläft das Buch.\\
-	 他 睡觉 \textsc{det} 书\\
+	 他 睡觉 \textsc{art}.\textsc{def} 书\\
 }
 \ex[]{
 \gll Er kennt das Buch.\\
-	 他 认识 \textsc{det} 书\\
-\mytrans{他认识这本书。}
+	 他 知道 \textsc{art}.\textsc{def} 书\\
+\mytrans{他知道这本书。}
 }
 \ex[*]{
 \gll Er kennt.\\
-	 他 认识\\
+	 他 知道\\
 }
 \zl
 %\eal
@@ -397,16 +397,16 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \eal\settowidth\jamwidth{（屈折类型）}
 \ex 
 \gll der Mann, die Frau, das Buch\\
-	 \textsc{det}.\mas{} 人(\mas) \textsc{det}.\fem{} 女人(\fem) \textsc{det}.\neu{} 书(\neu)\\\jambox{（性）}
+	 \textsc{art}.\textsc{def}.\mas{} 人(\mas) \textsc{art}.\textsc{def}.\fem{} 女人(\fem) \textsc{art}.\textsc{def}.\neu{} 书(\neu)\\\jambox{（性）}
 \ex 
 \gll das Buch, die Bücher\\
-	 \textsc{det} 书.\sg{} \textsc{det} 书.\pl\\\jambox{（数）}
+	 \textsc{art}.\textsc{def} 书.\sg{} \textsc{art}.\textsc{def} 书.\pl\\\jambox{（数）}
 \ex 
 \gll des Buches, dem Buch\\
-	 \textsc{det}.\gen{} 书.\gen{} \textsc{det}.\dat{} 书\\\jambox{（格）}
+	 \textsc{art}.\textsc{def}.\gen{} 书.\gen{} \textsc{art}.\textsc{def}.\dat{} 书\\\jambox{（格）}
 \ex\isc{屈折类型}\is{inflectional class} 
 \gll ein Beamter, der Beamte\\
-	 一 公务员 \textsc{det} 公务员\\\jambox{（屈折类型）}
+	 一 公务员 \textsc{art}.\textsc{def} 公务员\\\jambox{（屈折类型）}
 \zl
 %\eal\settowidth\jamwidth{(Inflectional class)}
 %\ex 
@@ -458,7 +458,7 @@ NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 %\section{Expanding PSG with features}
 \label{sec-PSG-Merkmale}
 
-短语结构语法如果只用原子式的符号是有问题的，因为他们无法描写一些特定的扩展形式。语言学家能够辨识出NP\_3\_sg\_nom指的是名词短语，因为这里面包括字母NP。但是，在形式化的术语中，这个符号与文法中的其他任意一个符号是一样的。我们并不能找到可以用来指代NP的所有符号的共同特征。进而，非结构化的符号无法正确描述这样的事实，即例（\mex{0}）中的规则是有共同点的。在形式化的术语中，规则之间的唯一共性在于规则左边有一个符号，而右边有两个。
+短语结构语法如果只用原子式的符号是有问题的，因为它们无法描写一些特定的扩展形式。语言学家能够辨识出NP\_3\_sg\_nom是指名词短语，因为这里包括字母NP。但是，在形式化的术语中，这个符号与文法中的其他任意一个符号是一样的。我们并不能找到可以用来指代NP的所有符号的共同特征。进而，非结构化的符号无法正确描述这样的事实，即例（\mex{0}）中的规则是有共同点的。在形式化的术语中，规则之间的唯一共性在于规则左边有一个符号，而右边有两个。
 %Phrase structure grammars which only use atomic symbols are problematic as they cannot capture certain generalizations.
 %We as linguists can recognize that NP\_3\_sg\_nom stands for a noun phrase because it contains the letters NP. 
 %However, in formal terms this symbol is just like any other symbol in the grammar and we cannot capture the commonalities
@@ -466,7 +466,7 @@ NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 %all have something in common. In formal terms, the only thing that the rules have in common is that there is one symbol on the
 %left"=hand side of the rule and two on the right.
 
-我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以采用一条附加的特征来表示性，另一条特征来表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{%
+我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以用一条附加的特征表示性，并用另一条特征表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{%
 第\ref{chap-feature-descriptions}章介绍了属性值结构。这些结构总是包括一对属性名称和属性值。在这样的情况下，值的顺序就不重要了，因为每个值都是独一无二的，并由相应的特征名称来指定。因为我们在（\mex{0}）这样的格式中没有属性名称，所以值的顺序是重要的。
 }
 %We can solve this problem by introducing features which are assigned to category symbols and therefore allow for the values of
@@ -507,7 +507,7 @@ Det(mas,sg,nom)  & $\to$ des\\
 \z
 
 \noindent
-（\ref{ditrans-ps-regeln}）中的规则可以如例（\mex{1}）所示，归并到一条范式中：
+（\ref{ditrans-ps-regeln}）中的规则可以归并到一条范式中，如例（\mex{1}）所示：
 %The rules in (\ref{ditrans-ps-regeln})  can be collapsed into a single schema as in (\mex{1}):
 \ea
 \label{ditrans-schema}
@@ -518,7 +518,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
    &       & V({Per1},{Num1},ditransitive)\\
 \end{tabular}
 \z
-Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP来说，这些特征的值是无关的。这些NP的格也是明确的。
+对动词和主语的Per1和Num1的识别确保了它们具有主谓一致关系。对于其他NP来说，这些特征的值是无关的。这些NP的格也是明确的。
 %The identification of Per1 and Num1 on the verb and on the subject ensures that there is subject"=verb agreement.
 %For the other NPs, the values of these features are irrelevant. The case of these NPs is explicitly determined.
 \isc{短语结构语法|)}\is{phrase structure grammar|)}
@@ -562,7 +562,7 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 \ex\label{Bsp-schlafen-max} 
 \relation{schlafen}(\relation{max})
 \zl
-这里，我们假定\relation{schlafen}表示了schläft（睡觉）的含义。我们用初始符号来表示我们处理的是词义而不是实在的词。乍看上去，我们用\relation{schlafen}来表示（\mex{1}a）的意义并没有太大的变化，因为它只不过是动词schläft（睡觉）的另一种形式。但是，我们有必要集中在一个单一的动词形式上，因为屈折变化与意义是无关的。我们可以通过比较例（\mex{1}a）和（\mex{1}b）中的句子来对此进行分析：
+这里，我们假定\relation{schlafen}表示了schläft（睡觉）的含义。我们用初始符号来表示我们处理的是词义而不是实在的词。初看上去，我们用\relation{schlafen}表示（\mex{1}a）的意义并没有太大的变化，因为它只不过是动词schläft（睡觉）的另一种形式。但是，我们有必要集中在一个单一的动词形式上，因为屈折变化与意义是无关的。我们可以通过比较例（\mex{1}a）和（\mex{1}b）中的句子来对此进行分析：
 %Here, we are assuming \relation{schlafen} to be the meaning of  \emph{schläft} `sleeps'. We use prime symbols to indicate
 %that we are dealing with word meanings and not actual words. At first glance, it may not seem that we have really gained anything
 %by using \relation{schlafen} to represent the meaning of (\mex{0}a), since it is just another form of the verb \emph{schläft} `sleeps'.
@@ -639,7 +639,7 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 %     Xaver sleeps\\
 %\mytrans{Xaver is sleeping.}
 %\zl
-所以说，我们可以抽象出\relation{sleep}的任意一种具体用法。相反，以（\ref{sleep-max}）中的\relation{max}为例，我们用变量（如$x$）来表示。这个$x$可以在指定的句子中被替换为\relation{paul}、\relation{mio}或\relation{xaver}。为了保证我们能在指定的含义中接触到这些变量，我们在它们前面写上$\lambda$。这样，schläft（睡觉）的含义可以表示如下：
+所以说，我们可以抽象出\relation{sleep}的任意一种具体用法。相反，以（\ref{sleep-max}）中的\relation{max}为例，我们用变量（如$x$）来表示。这个$x$可以在指定的句子中被替换为\relation{paul}、\relation{mio}或\relation{xaver}。为了让我们能在指定的含义中表示这些变量，我们在它们前面写上$\lambda$。这样，schläft（睡觉）的含义可以表示如下：
 % new English text of second edition:
 %% We can therefore abstract away from any specific use of \relation{sleep} and instead of, for example, \relation{max} in (\ref{sleep-max}), we
 %% use a variable (\eg $x$). This $x$ can then be replaced by \relation{paul}, \relation{mio} or \relation{xaver} in a given sentence. To allow us
@@ -653,7 +653,7 @@ Per1和Num1在动词和主语中的实现保证了主谓一致。对于其他NP�
 $\lambda x~\relation{sleep}(x)$
 \z
 %
-从（\ref{sleep-max}）到（\mex{0}）的步骤叫做“$\lambda$"=抽象”（lambda abstraction）\isc{lambda-抽象@$\lambda$-抽象}\is{lambda"=abstraction@$\lambda$"=abstraction}。（\mex{0}）这个表达式与它的论元的意义整合过程是按照下面的方式进行的：我们去除$\lambda$和相应的变量，然后将变量的所有实例替换为论元的意义。如果我们将（\mex{0}）和（\mex{1}）中的\relation{max}整合在一起，我们就会得到（\ref{Bsp-schlafen-max}）中的含义。
+从（\ref{sleep-max}）到（\mex{0}）的步骤叫做“$\lambda$"=抽象”（lambda abstraction）\isc{lambda-抽象@$\lambda$-抽象}\is{lambda"=abstraction@$\lambda$"=abstraction}。（\mex{0}）这个表达式与它的论元的意义的整合过程是按照下面的方式进行的：我们去除$\lambda$和相应的变量，然后将变量的所有实例替换为论元的意义。如果我们将（\mex{0}）和（\mex{1}）中的\relation{max}整合在一起，我们就会得到（\ref{Bsp-schlafen-max}）的含义。
 %The step from (\ref{sleep-max}) to (\mex{0}) is referred to as \emph{lambda abstraction}\is{lambda"=abstraction@$\lambda$"=abstraction}.
 %The combination of the expression (\mex{0}) with the meaning of its arguments happens in the following way: we remove the $\lambda$ and the 
 %corresponding variable and then replace all instances of the variable with the meaning of the
@@ -682,7 +682,7 @@ mag（喜欢）的$\lambda$"=抽象如例（\mex{1}）所示：
 \ea
 $\lambda y \lambda x~\relation{like}(x, y)$
 \z
-需要注意的是，第一个$\lambda$总是需要用在第一位的。变量$y$对应于mögen的宾语。对于英语这种语言来说，宾语和动词一起构成动词短语（VP），并且这个VP是与主语相搭配的。
+需要注意的是，第一个$\lambda$总是需要用在第一位。变量$y$对应于mögen的宾语。对于英语这种语言来说，宾语和动词一起构成动词短语（VP），并且这个VP与主语相搭配。
 德语与英语不同的地方在于，德语在语序方面允许更大的自由度。造成形式意义匹配的问题在不同的理论中有不同的解决方案。我们将在下面的章节中来说明具体的解决方案。
 %Note that it is always the first $\lambda$ that has to be used first. The variable $y$ corresponds
 %to the object of \emph{mögen}. For languages like English it is assumed that the object forms a verb
@@ -701,7 +701,7 @@ $\lambda y \lambda x~\relation{like}(x, y)$
 \zl
 
 \noindent
-这一意义可以反过来与主语相整合，进而我们得到（\mex{1}a），以及通过$\beta$"=约归后的（\mex{1}b）：
+这一意义可以反过来与主语整合，进而得到（\mex{1}a），以及通过$\beta$"=约归后的（\mex{1}b）：
 %This meaning can in turn be combined with the subject and we then get (\mex{1}a) and (\mex{1}b) after $\beta$"=reduction:
 \eal
 \ex $\lambda x~\relation{like}(x, \relation{lotte}) \relation{max}$
@@ -710,7 +710,7 @@ $\lambda y \lambda x~\relation{like}(x, y)$
 
 \begin{sloppypar}
 \noindent
-在介绍完$\lambda$-演算后，我们将组合性语义整合进我们的短语结构中就比较简单了。动词跟主语组合的规则需要进一步扩展，以囊括进动词的语义贡献、主语的语义贡献，以及二者组合（整个句子）后的语义所占据的位置。
+在介绍完$\lambda$-演算后，我们将组合性语义整合进我们的短语结构中就比较简单了。动词跟主语组合的规则需要进一步扩展，以囊括进动词的语义贡献、主语的语义贡献，以及二者组合后（整个句子）的语义所占据的位置。
   完整的语义是按照正确顺序排列的个体语义的组合。由此，我们可以将（\mex{1}a）中的简单规则转化为（\mex{1}b）：
 %After introducing lambda calculus, integrating the composition of meaning into our phrase structure rules is simple. A rule for the
 %combination of a verb with its subject has to be expanded to include positions for the semantic contribution of the verb, the semantic
@@ -736,7 +736,7 @@ V$'$表示V的意义，NP$'$表示NP（nom）的意义。V$'$ NP$'$ 表示V$'$�
 \ea
 S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 \z
-动词（V$'$）的意义首先与宾语（NP2$'$）的意义组合，然后跟主语（NP1$'$）的意义组合。
+动词（V$'$）的意义首先跟宾语（NP2$'$）的意义组合，然后跟主语（NP1$'$）的意义组合。
 %The meaning of the verb (V$'$) is first combined with the meaning of the object (NP2$'$) and then with the meaning of the subject (NP1$'$). 
 
 在这一点，我们可以看到上述的短语结构规则有几条不同的语义规则。按照这一方式来分析语言的理论假说叫做“规则对应假说”（rule"=to"=rule hypothesis）\isc{规则对应假说}\is{rule"=to"=rule hypothesis}\citep[\page 184]{Bach76a}。针对语言表达式的意义的推导过程将在\ref{Sec-GPSG-Sem}中详细展开。
@@ -771,22 +771,22 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 	 一 女人 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine Frau aus Stuttgart\\
-	 一 女人 \textsc{prep} 斯图加特\\
+	 一 女人 从……来 斯图加特\\
 \ex 
 \gll eine kluge Frau\\
 	 一 聪明 女人\\
 \ex 
 \gll eine Frau aus Stuttgart, die wir kennen\\
-	 一 女人 \textsc{prep} 斯图加特 \textsc{rel} 我们 认识\\
+	 一 女人 从……来 斯图加特 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart\\
-	 一 聪明 女人 \textsc{prep} 斯图加特\\
+	 一 聪明 女人 从……来 斯图加特\\
 \ex 
 \gll eine kluge Frau, die wir kennen\\
 	 一 聪明 女人 \textsc{rel} 我们 认识\\
 \ex 
 \gll eine kluge Frau aus Stuttgart, die wir kennen\\
-	 一 聪明 女人 \textsc{prep} 斯图加特 \textsc{rel} 我们 认识\\
+	 一 聪明 女人 从……来 斯图加特 \textsc{rel} 我们 认识\\
 \zl
 %\eal
 %\label{Beispiele-NP-Adjunkte}
@@ -823,8 +823,8 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 %refers to. Whereas (\mex{0}a) refers to a being which has the property of being a woman, the referent of (\mex{0}b) must
 %also have the property of being known to us.
 
-前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的一条规则。\footnote{%
-参看 \citew[\page 238]{Eisenberg2004a}中有关名词短语中平铺结构的假说。
+前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的规则。\footnote{%
+参见 \citew[\page 238]{Eisenberg2004a}中有关名词短语平铺结构的假说。
 }$^,$\footnote{%
 当然，还有诸如性和数的其他特征也应该在这一节里讨论。但是，为了降低解释的难度，我们暂不考虑这些问题。
 }
@@ -862,7 +862,7 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 \ea 
 NP $\to$ Det A A N
 \z
-在名词短语中，总是有可能增加形容词的数量。而给这些形容词制定一个上限是相当武断的。即使我们选择如下的简称，仍是有问题的：
+在名词短语中，总是有可能增加形容词的数量。而给这些形容词制定一个上限是相当武断的。即使我们选择如下的缩写形式，仍是有问题的：
 %It is always possible to increase the number of adjectives in a noun phrase and setting an upper limit for
 %adjectives would be entirely arbitrary. Even if we opt for the following abbreviation, there are still problems:
 
@@ -885,7 +885,7 @@ NP $\to$ Det A* N
 %	 all  \spacebr{}\spacebr{}skillful children and  \spacebr{}smart women\\
 %\mytrans{all the skillful children and smart women}	 
 \z
-如果我们假设并列涉及到具有相同句法属性的两个或两个以上的字符串的组合的话，那么我们就需要认为形容词和名词构成了一个成分。
+如果我们假设并列需要把具有相同句法属性的两个或两个以上的字符串相组合的话，那么我们就不得不认为形容词和名词构成了一个成分。
 %If we assume that coordination involves the combination of two or more word strings with the same syntactic properties, then we would have to assume
 %that the adjective and noun form a unit.
 
@@ -993,8 +993,8 @@ sm edges
 \eal
 \ex 
 \gll dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt\\
-     \textsc{comp} Peter \textsc{det} 人 \textsc{det} 书 给 和 Maria \textsc{det} 女人 \textsc{det} 唱片 给\\
-\mytrans{Peters给这个人这本书，并且Maria给这个女人这张唱片}
+     \textsc{comp} Peter \textsc{art}.\textsc{def} 人 \textsc{art}.\textsc{def} 书 给 和 Maria \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 唱片 给\\
+\mytrans{Peter给这个人这本书，并且Maria给这个女人这张唱片}
 %	 that Peter the man the book gives and Maria the woman the record gives\\
 %\mytrans{that Peters gives the book to the man and Maria the record to the woman}
 \ex 
@@ -1020,7 +1020,7 @@ sm edges
 \ex\label{xbar-PP-Adjunkt-an-N} \nbar $\to$ \nbar PP
 \ex \nbar $\to$ \nbar relative clause
 \zl
-有了这些规则和（\ref{NP-Regeln}）的那些规则，我们就可以设想PP和关系小句的规则，并用它们来分析（\ref{Beispiele-NP-Adjunkte}）中的例子。
+有了这些规则和（\ref{NP-Regeln}）中的那些规则，我们就可以设想PP和关系小句的规则，并用它们来分析（\ref{Beispiele-NP-Adjunkte}）中的例子。
 %With these rules and those in (\ref{NP-Regeln}), it is possible -- assuming the corresponding rules for PPs and
 %relative clauses -- to analyze all the examples in (\ref{Beispiele-NP-Adjunkte}).
 
@@ -1033,19 +1033,19 @@ sm edges
 \label{Beispiele-NP-relationale-Nomina}
 \ex 
 \gll der Vater von Peter\\
-	 \textsc{det} 爸爸 \textsc{prep} Peter\\
+	 \textsc{art}.\textsc{def} 爸爸 ……的 彼得\\
 \mytrans{Peter的爸爸}
 %	 the father of Peter\\
 %\mytrans{Peter's father}
 \ex 
 \gll das Bild vom Gleimtunnel\\
-	 \textsc{det} 照片 \textsc{prep}.\textsc{det} 格莱姆隧道\\
+	 \textsc{art}.\textsc{def} 照片 ……的.\textsc{art}.\textsc{def} 格莱姆隧道\\
 \mytrans{格莱姆隧道的照片}
 %	 the picture of.the Gleimtunnel\\
 %\mytrans{the picture of the Gleimtunnel}
 \ex 
 \gll das Kommen des Installateurs\\
-	 \textsc{det} 来 \textsc{det} 水管工\\
+	 \textsc{art}.\textsc{def} 来 \textsc{art}.\textsc{def} 水管工\\
 \mytrans{水管工的检查}
 %	 the coming of.the plumber\\
 %\mytrans{the plumber's visit}
@@ -1066,28 +1066,28 @@ sm edges
 \begin{forest}
 sm edges
 [NP
- [Det [das;\textsc{det}] ]
+ [Det [das;\textsc{art}.\textsc{def}] ]
  [\nbar
    [N [Bild;照片] ]
-   [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道,roof ] ] ] ]
+   [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道,roof ] ] ] ]
 \end{forest}%
 \hspace{2em}%
 \begin{forest}
 sm edges
 [NP
-  [Det [das;\textsc{det}] ]
+  [Det [das;\textsc{art}.\textsc{def}] ]
   [\nbar
     [\nbar
       [N [Bild;照片] ]
-      [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道,roof ] ] ] 
-    [PP [im Gropiusbau;\textsc{prep}.\textsc{det} 格罗皮乌斯博物馆,roof ] ] ] ]
+      [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道,roof ] ] ] 
+    [PP [im Gropiusbau;在.\textsc{art}.\textsc{def} 格罗皮乌斯博物馆,roof ] ] ] ]
 \end{forest}}
 \caption{\label{Abbildung-NP-mit-PP-Argument}名词与位于右侧的作为附加语的PP补足语vom Gleimtunnel的组合}
 %\caption{\label{Abbildung-NP-mit-PP-Argument}Combination of a noun with PP complement
 %  \emph{vom Gleimtunnel} to the right with an adjunct PP}
 \end{figure}%
 
-除了上述讨论的NP结构，还有限定语或名词缺失的结构。名词可以通过省略而被删除。（\mex{1}）给出了名词短语的一个例子，其中名词不需要一个补足语，从而被省略了。例（\mex{2}）说明了名词只有一个限定语，而且名词的补足语保留，名词本身被省略了。下划线表明了名词正常应该出现的位置。
+除了上述讨论的NP结构，还有限定语或名词缺失的结构。名词可以通过省略而被删除。（\mex{1}）给出了名词短语的一个例子，其中名词不需要补足语，从而被省略了。例（\mex{2}）说明了名词只有一个限定语，而且名词的补足语保留，名词本身被省略了。下划线表明了名词通常应该出现的位置。
 %In addition to the previously discussed NP structures, there are other structures where the determiner or noun is missing.
 %Nouns can be omitted via ellipsis. (\mex{1}) gives an example of noun phrases, where a noun that does not require a complement
 %has been omitted. The examples in (\mex{2}) show NPs in which only one determiner and complement of the noun has been realized,
@@ -1105,7 +1105,7 @@ sm edges
 
 \ex 
 \gll eine kluge \_ aus Hamburg\\
-	 一 聪明 {} \textsc{prep} 汉堡\\
+	 一 聪明 {} 从……来 汉堡\\
 \mytrans{一位从汉堡来的聪明的\_}
 \ex 
 \gll eine kluge \_, die alle kennen\\
@@ -1117,15 +1117,15 @@ sm edges
 \label{ex-nounless-np-relational-noun}
 \ex 
 \gll (Nein, nicht der Vater von Klaus), der \_ von Peter war gemeint.\\
-	\spacebr{}不 不  \textsc{det} 爸爸 \textsc{prep} Klaus \textsc{det} {} \textsc{prep} Peter \passivepst{} 指的是\\
+	\spacebr{}不 不  \textsc{art}.\textsc{def} 爸爸 ……的 Klaus \textsc{art}.\textsc{def} {} ……的 Peter \passivepst{} 指的是\\
 \mytrans{不，指的不是Klaus的爸爸，而是Peter的\_。}
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
-	 \spacebr{}不 不  \textsc{det} 图片 \textsc{prep} \textsc{det} 公路 \textsc{det} {} \textsc{prep}.\textsc{det} 格莱姆隧道 \textsc{cop} 印象深刻\\
+	 \spacebr{}不 不  \textsc{art}.\textsc{def} 图片 ……的 \textsc{art}.\textsc{def} 公路 \textsc{art}.\textsc{def} {} ……的.\\textsc{art}.\textsc{def} 格莱姆隧道 \textsc{cop} 印象深刻\\
 \mytrans{不，不是公路的照片让人印象深刻，而是格莱姆隧道的\_。}
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
-	 \spacebr{}不 不  \textsc{det} 来 \textsc{det} 木匠 \textsc{det} {} \textsc{det} 水管工 \textsc{cop} 重要\\
+	 \spacebr{}不 不  \textsc{art}.\textsc{def} 来 \textsc{art}.\textsc{def} 木匠 \textsc{art}.\textsc{def} {} \textsc{art}.\textsc{def} 水管工 \textsc{cop} 重要\\
 \mytrans{不，木匠来不重要，水管工\_很重要。}
 \zl
 %\eal
@@ -1165,7 +1165,7 @@ sm edges
 %\mytrans{No, it isn't the visit of the carpenter, but rather the visit of the plumber that is important.}
 %\zl
 在英语中，代词one必须用在相应的位置上，\footnote{%
-参看 \citet[\S~4.12]{FLGR2012a} ，在英语中这些例子没有代词one。
+参见 \citet[\S~4.12]{FLGR2012a} ，在英语中这些例子没有代词one。
 } 但是德语中，名词\isc{名词}\is{noun}就被简单地省略了。
 %In English, the pronoun
 %\emph{one} must often be used in the corresponding position,\footnote{%
@@ -1202,10 +1202,10 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-  [Det [das;\textsc{det}] ]
+  [Det [das;\textsc{art}.\textsc{def}] ]
   [\nbar
     [N [\trace] ]
-    [PP [vom Gleimtunnel;\textsc{prep}.\textsc{det} 格莱姆隧道, roof] ] ] ]
+    [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道, roof] ] ] ]
 \end{forest}
 \hfill%
 \mbox{}
@@ -1219,7 +1219,7 @@ sm edges
 %can occur in the same sentences. The empty noun box also behaves like one with a genuine noun. If we
 %do not open the empty box, we will not be able to ascertain the difference to a filled box. 
 
-我们不仅可以在名词短语中省略名词，在某些语境中，限定词也可以不出现。例（\mex{1}）显示了复数\isc{复数}\is{plural}的名词短语：
+我们不仅可以在名词短语中省略名词，在某些语境中，限定词也可以不出现。例（\mex{1}）展示了复数\isc{复数}\is{plural}的名词短语：
 %It is not only possible to omit the noun from noun phrases, but the determiner can also remain unrealized in certain contexts.
 %(\mex{1}) shows noun phrases in plural\is{plural}:
 \eal
@@ -1316,19 +1316,19 @@ sm edges
 \eal
 \ex 
 \gll der seiner Frau treue Mann\\
-	 \textsc{det} 他的.\dat{} 妻子 忠诚 男人\\
+	 \textsc{art}.\textsc{def} 他的.\dat{} 妻子 忠诚 男人\\
 \mytrans{忠于妻子的男人}
 \ex 
 \gll der auf seinen Sohn stolze Mann\\
-	 \textsc{det} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
+	 \textsc{art}.\textsc{def} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
 \mytrans{以儿子为骄傲的男人}
 \ex 
 \gll der seine Frau liebende Mann\\
-	 \textsc{det} 他的.\acc{} 女人 爱 男人\\
+	 \textsc{art}.\textsc{def} 他的.\acc{} 女人 爱 男人\\
 \mytrans{爱妻子的男人}
 \ex 
 \gll der von seiner Frau geliebte Mann\\
-     \textsc{det} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
+     \textsc{art}.\textsc{def} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
 \mytrans{被妻子爱的男人}	 
 \zl
 %\eal
@@ -1362,7 +1362,7 @@ sm edges
 \ex AP $\to$ PP A
 \ex AP $\to$ A
 \zl
-就目前我们提出的规则而言，还有两点不如意的结果。就是例（\mex{0}c）和例（\ref{NP-Regeln-Nbar-N}）中不带补足语的形容词或名词的规则，重复一下，如例（\mex{1}）：
+就目前我们提出的规则而言，还有两点不如意的结果。就是例（\mex{0}c）和例（\ref{NP-Regeln-Nbar-N}）（重复表示为例（\mex{1}））中不带补足语的形容词或名词的规则：
 %There are two imperfections resulting from the rules we have developed thus far. These are the rules for adjectives
 %or nouns without complements in (\mex{0}c) as well as (\ref{NP-Regeln-Nbar-N}) -- repeated here as (\mex{1}):
 \ea
@@ -1443,19 +1443,19 @@ PP $\to$ P NP
 \eal
 \ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
 \gll {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\\
-	 {}\spacebr{}\spacebr{}一 步 \textsc{prep} \textsc{det} 深渊 保留 他 站\\
+	 {}\spacebr{}\spacebr{}一 步 在……前 \textsc{art}.\textsc{def} 深渊 保留 他 站\\
 \mytrans{他在离深渊一步之遥的地方站住了。}
 \ex 
 \gll {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.\\
-	 {}\spacebr{}\spacebr{}短暂 \textsc{prep} \textsc{det}  起飞 坏 \textsc{det} 空调 出来\\
+	 {}\spacebr{}\spacebr{}短暂 在……后 \textsc{art}.\textsc{def} 起飞 坏 \textsc{art}.\textsc{def} 空调 出来\\
 \mytrans{起飞后不久，空调就停止工作了。}
 \ex 
 \gll {}[[Schräg] hinter der Scheune] ist ein Weiher.\\
-	 {}\spacebr{}\spacebr{}斜 \textsc{prep} \textsc{det} 谷仓 \textsc{cop} 一 池塘\\
+	 {}\spacebr{}\spacebr{}斜 在……对面 \textsc{art}.\textsc{def} 谷仓 \textsc{cop} 一 池塘\\
 \mytrans{在谷仓的斜对面有一个池塘。}
 \ex 
 \gll {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.\\
-	 {}\spacebr{}\spacebr{}中间 \textsc{prep}.\textsc{det} 丛林 碰到 \textsc{det} 研究人员 \textsc{prep} 一 古老 寺庙\\
+	 {}\spacebr{}\spacebr{}中间 在……中.\textsc{art}.\textsc{def} 丛林 碰到 \textsc{art}.\textsc{def} 研究人员 \textsc{prep} 一 古老 寺庙\\
 \mytrans{在丛林当中，研究者碰到了一栋古老的寺庙。}
 \zl
 %\eal
@@ -1489,12 +1489,12 @@ PP $\to$ P NP
 \eal
 \ex[*]{
 \gll [\sub{PP} einen Schritt [\sub{PP} kurz [\sub{PP} vor dem Abgrund]]]\\
-	 {} 一 步 {} 短 {} \textsc{prep} \textsc{det}  深渊\\
+	 {} 一 步 {} 短 {} 在……前  \textsc{art}.\textsc{def}  深渊\\
 	 %	 {} one step {} shortly {} before the abyss\\
 }
 \ex[*]{
 \gll [\sub{PP} kurz [\sub{PP} einen Schritt [\sub{PP} vor dem Abgrund]]]\\
-	 {} 短 {} 一 步 {} \textsc{prep} \textsc{det}  深渊\\
+	 {} 短 {} 一 步 {} 在……前  \textsc{art}.\textsc{def}  深渊\\
 %	 {} shortly {} one step {} before the abyss\\
 }
 \zl
@@ -1518,7 +1518,7 @@ PP $\to$ P NP
 %of an example with an adjective in the first position following the rules in (\mex{0}b) and (\mex{0}d):
 \ea
 \gll vor dem Abgrund\\
-	 \textsc{prep} \textsc{det} 深渊\\
+	 在……前  \textsc{art}.\textsc{def} 深渊\\
 \mytrans{在深渊前}
 %	 before the abyss\\
 %\mytrans{in front of the abyss}
@@ -1529,8 +1529,8 @@ PP $\to$ P NP
 sm edges
 [PP
   [\pbar
-    [P [vor;\textsc{prep}] ]
-    [NP [dem Abgrund;\textsc{det} 深渊, roof] ] ] ]
+    [P [vor;在……前] ]
+    [NP [dem Abgrund;\textsc{art}.\textsc{def} 深渊, roof] ] ] ]
 \end{forest}
 \hfill
 \begin{forest}
@@ -1538,8 +1538,8 @@ sm edges
 [PP
   [AP [kurz;短暂,roof] ]
   [\pbar
-    [P [vor;\textsc{prep}] ]
-    [NP [dem Abgrund;\textsc{det} 深渊,roof] ] ] ]
+    [P [vor;在……前] ]
+    [NP [dem Abgrund;\textsc{art}.\textsc{def} 深渊,roof] ] ] ]
 \end{forest}
 %% \begin{tikzpicture}
 %% \tikzset{level 1+/.style={level distance=2\baselineskip}}
@@ -1565,7 +1565,7 @@ sm edges
 %\caption{\label{Abbildung-PP}Prepositional phrases with and without measurement}
 \end{figure}%
 
-有读者可能对图\ref{Abbildung-PP}有疑问，为什么左图中没有表示空量度的短语？这与图\ref{Abbildung-NP-ohne-Det}中所示的空限定词是相似的。图\ref{Abbildung-NP-ohne-Det}中的空限定词是指没有限定词的名词短语与有限定词的名词短语表示的意义是一样的。通常由可见的限定词表示的意义以某种方式整合进名词短语的结构之中了。如果我们在空限定词中没有表示这层意思的话，将会导致有关语义整合的更为复杂的问题：我们只是需要了解\ref{sec-PSG-Semantik}表示的机制，而且这些信息是比较普遍的。意义是由这些词本身决定的，而不是由规则决定的。如果我们假设在图\ref{Abbildung-PP}中左边的那棵树那样有一条一元的规则，而不是空限定词的话，那么这个一元规则就应该提供限定词的语义。有些学者提出了这种分析。更多的有关空成分的内容参看第\ref{Abschnitt-Diskussion-leere-Elemente}章。
+有读者可能对图\ref{Abbildung-PP}有疑问，为什么左图中没有表示空量度的短语？这与图\ref{Abbildung-NP-ohne-Det}中所示的空限定词是相似的。图\ref{Abbildung-NP-ohne-Det}中使用空限定词的原因是没有限定词的名词短语与有限定词的名词短语表示的意义是一样的。通常由可见的限定词表示的意义必须以某种方式整合进名词短语的结构之中。如果我们在空限定词中没有表示这层意义的话，将会导致跟语义整合有关的更为复杂的问题：我们只是需要了解\ref{sec-PSG-Semantik}表示的机制，而且这些信息是比较普遍的。意义是由这些词本身决定的，而不是由规则决定的。如果我们假设在图\ref{Abbildung-PP}中左边的那棵树那样有一条一元的规则，而不是空限定词的话，那么这个一元规则就应该提供限定词的语义。有些学者提出了这种分析。更多的有关空成分的内容参见第\ref{Abschnitt-Diskussion-leere-Elemente}章。
 %At this point, the attentive reader is probably wondering why there is no empty measurement phrase in
 %the left figure of Figure~\ref{Abbildung-PP}, which one might expect in analogy to the empty determiner in Figure~\ref{Abbildung-NP-ohne-Det}.
 %The reason for the empty determiner in Figure~\ref{Abbildung-NP-ohne-Det} is that the entire noun phrase
@@ -1589,7 +1589,7 @@ sm edges
 %\section{\xbart}
 \label{sec-xbar}
 
-如果我们回顾前面章节\isc{X 理论@\xbar 理论|(}\is{X theory@\xbar theory|(}中介绍的规则，我们会发现中心语永远和他们的补足语相组合，以构成一个新的成分（\mex{1}a、b），然后再与其它成分（\mex{1}c、d）相组合：
+如果我们回顾前面章节\isc{X 理论@\xbar 理论|(}\is{X theory@\xbar theory|(}中介绍的规则，我们会发现中心语总是跟它们的补足语组合，以构成一个新的成分（\mex{1}a、b），然后再与其它成分（\mex{1}c、d）相组合：
 %If\is{X theory@\xbar theory|(}  we look again at the rules that we have formulated in the previous section, we see that heads are always 
 %combined with their complements to form a new constituent (\mex{1}a,b), which can then be combined with further constituents (\mex{1}c,d):
 
@@ -1712,7 +1712,7 @@ sm edges
 %\caption{\label{Abbildung-AP}English adjective phrases}
 \end{figure}%
 
-正如在\ref{sec-PSG-Merkmale}中所显示的，我们可以对具体的短语结构规则进行扩展，并最终得到更具有普遍性的规则。按照这一方式，诸如人称、数和性这些属性不再按照范畴符号来进行编码，而是采用更为简单的符号，如NP、Det和N。我们只需要明确那些在特定规则的语境中相关的特征的值。我们可以进一步抽象为：与其采用明确的范畴符号，如词范畴的N、V、P和A，以及短语范畴的NP、VP、PP和AP，不如简单地采用词类的变量，并用X和XP来表示。
+正如在\ref{sec-PSG-Merkmale}中所显示的，我们可以对具体的短语结构规则进行扩展，并最终得到更具有普遍性的规则。按照这一方式，诸如人称、数和性这些属性不再按照范畴符号来进行编码，而是采用更为简单的符号，如NP、Det和N。我们只需要明确那些在特定规则的语境中相关的特征的值。我们可以进一步将其抽象为：与其采用明确的范畴符号，如词范畴的N、V、P和A，以及短语范畴的NP、VP、PP和AP，不如简单地采用词类的变量，并用X和XP来表示。
 %As was shown in Section~\ref{sec-PSG-Merkmale}, it is possible to generalize over very specific
 %phrase structure rules and thereby arrive at more general rules. In this way, properties such as
 %person, number and gender are no longer encoded in the category symbols, but rather only simple
@@ -1748,7 +1748,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 \end{tabular}
 \z
 
-任何一个词类都可以替代X（如V、A或P）。在上面的规则中，没有横杠的X表示一个词汇项。如果想把横杠明确地显示出来，就需要写成\xnullc。正如（\ref{Regel-mit-Variablen}）中的规则所示，我们并没有明确指定限定词或名词的格的值，而是简单地要求在规则右边的值与之相符，（\mex{0}）中的规则要求规则右边（X 或 \xbarc）的元素的词类与规则左边（\xbarc 或 $\overline{\overline{\mbox{X}}}$）的元素的词类是一致的。
+任何一个词类都可以替代X（如V、A或P）。在上面的规则中，没有横杠的X表示一个词汇项。如果想把横杠明确地表示出来，就需要写成\xnullc。正如（\ref{Regel-mit-Variablen}）中的规则所示，我们并没有明确指定限定词或名词的格的值，而是简单地要求在规则右边的值与之相符，（\mex{0}）中的规则要求规则右边（X 或 \xbarc）的元素的词类与规则左边（\xbarc 或 $\overline{\overline{\mbox{X}}}$）的元素的词类是一致的。
 %Any word class can replace X (\eg V, A or P). The X without the bar stands for a lexical item in
 %the above rules. If one wants to make the bar level explicit, then it is possible to write \xnull. 
 %Just as with the rule in (\ref{Regel-mit-Variablen}), where we did not specify the case value of the
@@ -1757,7 +1757,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 %of the rule (X or \xbar) matches that of the element on the left"=hand side of the rule (\xbar or
 %$\overline{\overline{\mbox{X}}}$).
 
-一个词汇项能跟它的补足语\isc{补足语}\is{complement}相组合。最后一条规则中的`*'\isc{*}\is{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语相组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isc{附加语}\is{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个指定语\isc{指定语}\is{specifier}和\xbarc。在有些理论中，句子中的主语和NP中的限定词都是指定语。进而，形容词短语中的程度修饰词和介词短语中的方式指示词也被算作是指定语。
+词汇项可以跟它的补足语\isc{补足语}\is{complement}组合。最后一条规则中的`*'\isc{*}\is{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isc{附加语}\is{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个指定语\isc{指定语}\is{specifier}和\xbarc。在有些理论中，句子中的主语（\citealp{Haider95b-u,Haider97a}；\citealp[\S~3.2.2]{Berman2003a}）和NP中的限定词\citep[\page 210]{Chomsky70a}都是指定语。进而，形容词短语中的程度修饰词\citep[\page 210]{Chomsky70a}和介词短语中的方式指示词也被算作是指定语。
 %A lexical element can be combined with all its complements\is{complement}. The `*'\is{*} in the last rule stands for
 %an unlimited amount of repetitions of the symbol it follows. A special case is zero"fold occurrence of complements. There is no
 %PP complement of \emph{Bild} `picture' present in \emph{das Bild} `the picture' and thus N becomes \nbar. The result of the
@@ -1814,7 +1814,7 @@ sm edges
 
 图\ref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美丽图片）的分析。
 %图\vref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎%的美丽图片）的分析。
-图\ref{Abb-das-schoene-Bild-von-Paris}中的NP结构和图\ref{Abbildung-AP}中的树形图都是最小产出结构的例子。图\ref{Abb-das-schoene-Bild-von-Paris}中左边的树形图也是没有附加语的结构的一个例子。图\ref{Abb-das-schoene-Bild-von-Paris}中的右手结构是最大产出结构的一个例子：指定语、附加语和补足语都是齐全的。
+图\ref{Abb-das-schoene-Bild-von-Paris}中的NP结构和图\ref{Abbildung-AP}中的树形图都是最小产出结构的例子。图\ref{Abb-das-schoene-Bild-von-Paris}中左边的树形图也是没有附加语结构的一个例子。图\ref{Abb-das-schoene-Bild-von-Paris}中右边的结构是最大产出结构的一个例子：指定语、附加语和补足语都是齐全的。
 %Figure~\vref{Abb-das-schoene-Bild-von-Paris} shows the analysis of the NP structures \emph{das Bild} `the picture'
 %and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'. The NP structures in Figure~\ref{Abb-das-schoene-Bild-von-Paris}
 %and the tree for \emph{proud} in Figure~\ref{Abbildung-AP} show examples of minimally populated structures.
@@ -1829,7 +1829,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;\textsc{det}] ] ] ]
+      [Det [das;\textsc{art}.\textsc{def}] ] ] ]
   [\nbar
     [N [Bild;图片] ] ] ]
 \end{forest}
@@ -1839,7 +1839,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;\textsc{det}] ] ] ]
+      [Det [das;\textsc{art}.\textsc{def}] ] ] ]
   [\nbar
     [AP
       [\abar
@@ -1848,7 +1848,7 @@ sm edges
       [N [Bild;图片] ]
       [PP 
         [\pbar
-          [P [von;\textsc{prep}] ]
+          [P [von;……的] ]
           [NP
             [\nbar
               [N [Paris;巴黎] ] ] ] ] ] ] ] ]
@@ -1861,7 +1861,7 @@ sm edges
 \end{figure}%
 
 图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
-有的\xbarc 理论并不认为限定词有复杂的结构，请看 \citew{Muysken82a}。
+有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
 }
 %The analysis given in Figure~\ref{Abb-das-schoene-Bild-von-Paris} assumes that all non"=heads in a rule are
 %phrases. One therefore has to assume that there is a determiner phrase even if the determiner is not combined with other elements.
@@ -1874,13 +1874,13 @@ sm edges
 \eal
 \ex 
 \gll das Paris der dreißiger Jahre\\
-	 \textsc{det} 巴黎 \textsc{det} 三十 年\\
+	 \textsc{art}.\textsc{def} 巴黎 \textsc{art}.\textsc{def} 三十 年\\
 \mytrans{30年代的巴黎}
 %	 the Paris of.the thirty years\\
 %\mytrans{30's Paris}
 \ex 
 \gll die Maria aus Hamburg\\
-	 \textsc{det} Maria \textsc{prep} 汉堡\\
+	 \textsc{art}.\textsc{def} Maria 从……来 汉堡\\
 \mytrans{来自汉堡的Maria}
 %	 the Maria from Hamburg\\
 %\mytrans{Maria from Hamburg}
@@ -1906,14 +1906,14 @@ sm edges
 %\bigskip
 \questions{
 \begin{enumerate}
-\item 为什么只用原子式范畴的短语结构语法不足以描写自然语言呢？
+\item 为什么只用原子式范畴的短语结构语法不足以描写自然语言？
 \item 让我们来看一下（\ref{psg-binaer}）中的文法，为了分析到例（\mex{1}）中的符号V，我们应该采取哪些（替换符号的）步骤？
 %\item Why are phrase structure grammars that use only atomic categories inadequate for the description of natural languages?
 %\item Assuming the grammar in (\ref{psg-binaer}), state which steps (replacing symbols) one has to take to get to the symbol 
 %	 V in the sentence (\mex{1}).
 \ea
 \gll er das Buch dem Mann gibt\\
-	 他 \textsc{det} 书 \textsc{det} 人 给\\
+	 他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 人 给\\
 \mytrans{他给这个人这本书。}
 %	 he the book the man gives\\
 %\mytrans{He gives the book to the man.}
@@ -1928,6 +1928,7 @@ sm edges
 \gll Ulrike kennt Hans.\\
 %	 Ulrike knows Hans\\
 	 Ulrike 认识 Hans\\
+\mytrans{Ulrike认识Hans。}
 \ex 
 \gll Joshi freut sich.\\
 	 Joshi 高兴 \refl{}\\
@@ -1985,7 +1986,7 @@ NP $\to$ Modifier* books Modifier*
 \mytrans{有趣的书}
 \ex 
 \gll interesting books from Stuttgart\\
-有趣 书 \textsc{prep} 斯图加特\\
+有趣 书 从……来 斯图加特\\
 \mytrans{斯图加特的有趣的书}
 \zl
 
@@ -1999,15 +2000,15 @@ NP $\to$ Modifier* books Modifier*
 \eal
 \ex 
 \gll Examine the plight of the very poor.\\
-检查 \textsc{det} 困境 \textsc{prep} \textsc{det} 非常 穷\\
+检查 \textsc{art}.\textsc{def} 困境 ……的 \textsc{art}.\textsc{def} 非常 穷\\
 \mytrans{了解穷人的困境}
 \ex 
 \gll Their outfits range from the flamboyant to the functional.\\
-他们的 套装 范围 \textsc{prep} \textsc{det} 华丽 \textsc{prep} \textsc{det} 功能性\\
+他们的 套装 范围 从 \textsc{art}.\textsc{def} 华丽 到 \textsc{art}.\textsc{def} 功能性\\
 \mytrans{他们的套装从华丽的到功能性的都有。}
 \ex 
 \gll The unimaginable happened.\\
-\textsc{det} 不可想象的 发生\\
+\textsc{art}.\textsc{def} 不可想象的 发生\\
 \mytrans{不可思议的事情发生了。}
 \zl
 例（\mex{1}）说明了对应于其结构的短语结构规则：
@@ -2031,21 +2032,21 @@ NP $\to$ Det Adj
 %\item Why can \xbart not account for German adjective phrases without additional assumptions? (This
 %  task is for (native) speakers of German only.)
 
-\item 请写出能够分析例（\mex{1}）中的句子，并且能排除例（\mex{2}）的句子的短语结构文法。
+\item 请写出能够分析例（\mex{1}）中的句子，并且能排除例（\mex{2}）中的句子的短语结构文法。
 %\item Come up with a phrase structure grammar that can be used to analyze the sentence in (\mex{1}), but also
 %rules out the sentences in (\mex{2}).
 
       \eal
       \ex[]{
       \gll Der Mann hilft der Frau.\\
-            \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人\\
+            \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人\\
       \mytrans{这个男人帮助这个女人。}
       %           the.\nom{} man helps the.\dat{} woman\\
       %\mytrans{The man helps the woman.}
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
-                 他.\nom{} 给 她.\dat{} \textsc{det} 书\\
+                 他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def} 书\\
       \mytrans{他给她这本书。}
 %           he.\nom{} gives her.\dat{} the book\\
 %      \mytrans{He gives her the book.}
@@ -2064,12 +2065,12 @@ NP $\to$ Det Adj
       \eal
       \ex[*]{
       \gll  Der Mann hilft er.\\
-		    \textsc{det}.\nom{} 人 帮助 他.\nom{}\\
+		    \textsc{art}.\textsc{def}.\nom{} 人 帮助 他.\nom{}\\
 		   % the.\nom{} man helps he.\nom{}\\
       }
       \ex[*]{
       \gll  Er gibt ihr den Buch.\\
-            他.\nom{} 给 她.\dat{} \textsc{det}.\mas{} 书.\neu{}\\
+            他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\mas{} 书.\neu{}\\
            %he.\nom{} gives her.\dat{} the.\mas{} book.\neu{}\\
       }
       \zl
@@ -2080,25 +2081,25 @@ NP $\to$ Det Adj
 \eal
 \ex 
 \gll Der Mann hilft der Frau jetzt.\\
-     \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 现在\\
+     \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人 现在\\
 \mytrans{这个男人在帮助这个女人。}
 %     the.\nom{} man helps the.\dat{} woman now\\
 %\mytrans{The man helps the woman now.}
 \ex 
 \gll Der Mann hilft der Frau neben dem Bushäuschen.\\
-     \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人 \textsc{prep} \textsc{det} 公交车候车亭\\
+     \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人 在……旁 \textsc{art}.\textsc{def} 公交车候车亭\\
 \mytrans{这个男人帮助公交车候车亭旁边的那个女人。}
 %     the.\nom{} man helps the.\dat{} woman next.to the bus.shelter\\
 %\mytrans{The man helps the woman next to the bus shelter.}
 \ex 
 \gll Er gibt ihr das Buch jetzt.\\
-     他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 现在\\
+     他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书 现在\\
 \mytrans{他现在给她这本书。}
 %     he.\nom{} gives her.\dat{} the.\acc{} book now\\
 %\glt 'He gives her the book now.'
 \ex 
 \gll Er gibt ihr das Buch neben dem Bushäuschen.\\
-     他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书 \textsc{prep} \textsc{det} 公交车候车亭\\
+     他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书 在……旁 \textsc{art}.\textsc{def} 公交车候车亭\\
 \mytrans{他给她公交车候车亭旁的那本书。}
 %     he.\nom{} gives her.\dat{} the.\acc{} book next.to the bus.shelter\\
 %\mytrans{He gives her the book next to the bus shelter.}
@@ -2110,7 +2111,7 @@ NP $\to$ Det Adj
 %\mytrans{He is waiting for a miracle now.}
 \ex 
 \gll Er wartet neben dem Bushäuschen auf ein Wunder.\\
-      他.\nom{} 等 \textsc{prep} \textsc{det}.\dat{} 公交车候车亭 \textsc{prep} 一 奇迹\\
+      他.\nom{} 等 在……旁 \textsc{art}.\textsc{def}.\dat{} 公交车候车亭 \textsc{prep} 一 奇迹\\
 \mytrans{他在等公交车候车亭旁的奇迹发生。}
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
 %\mytrans{He is waiting for a miracle next to the bus shelter.}
@@ -2123,7 +2124,7 @@ NP $\to$ Det Adj
 %})
 并测试你的语法。SWI-Prolog还有在线版本，你可以不用安装就可以直接输入你的语法。\footnote{%
   \url{https://swish.swi-prolog.org/}，2018年2月20日。
-}详细的使用说明参考定子句文法（Definite Clause Grammar，DCG）\isc{定子句文法}\is{Definite Clause Grammar (DCG)}的英文维基百科条目\footnote{%
+}详细的使用说明参考定子句文法（Definite Clause Grammar，简称DCG）\isc{定子句文法}\is{Definite Clause Grammar (DCG)}的英文维基百科条目\footnote{%
 \url{https://en.wikipedia.org/wiki/Definite_clause_grammar}，2018年2月20日。
 }。
 %and try out your grammar. SWI-Prolog also comes with an online version where you can input your %grammar
@@ -2144,7 +2145,7 @@ NP $\to$ Det Adj
 在短语结构语法中加入特征的扩展最早是由 \citet{Harman63a}在1963年提出的。
 %The expansion of phrase structure grammars to include features was proposed as early as 1963 by  \citet{Harman63a}.
 
-本章所讨论的有关名词短语的短语结构语法覆盖了名词短语句法的大部分内容，但是仍不能解释某些特定的NP结构。而且，练习（\ref{uebung-np-empty}）也说明了目前文法的一些问题。 \citew{Netter98a}和 \citew{Kiss2005a}在HPSG理论框架下讨论了这一问题，并提出了解决方案。
+本章所讨论的有关名词短语的短语结构语法覆盖了名词短语句法的大部分内容，但是仍不能解释某些特定的NP结构。而且，练习（\ref{uebung-np-empty}）也说明了目前文法的一些问题。\citew{Netter98a}和 \citew{Kiss2005a}在HPSG理论框架下讨论了这一问题，并提出了解决方案。
 %The phrase structure grammar for noun phrases discussed in this chapter covers a large part of the syntax
 %of noun phrases but cannot explain certain NP structures. Furthermore, it has the problem, which exercise~\ref{uebung-np-empty}
 %is designed to show. A discussion of these phenomena and a solution in the framework of HPSG can be found in  \citew{Netter98a} and  \citew{Kiss2005a}.
