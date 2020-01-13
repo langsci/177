@@ -1,0 +1,2843 @@
+%% -*- coding:utf-8 -*-
+
+\chapter{转换语法--管辖与约束理论}
+%\chapter{Transformational Grammar -- Government \& Binding}
+\label{Kapitel-GB}\label{chap-GB}\label{chap-gb}
+
+转换语法（Transformational Grammar）\isc{转换语法|(}\is{Transformational Grammar|(} 和它的后续理论
+（如管辖与约束理论、最简方案）是由Noam Chomsky在波士顿的麻省理工大学提出来的
+\citep{Chomsky57a,Chomsky65a,Chomsky75a,Chomsky81a,Chomsky86b,Chomsky95a-u}。Manfred \citet{Bierwisch63}最早将乔姆斯基的想法应用到德语的分析中。在六十年代，最有代表性的组织是德意志民主
+共和国（GDR）科学研究院的结构语法研究小组（Arbeitsstelle Strukturelle Grammatik）。相关历史可以参考
+\citew{Bierwisch92} 和 \citew{Vater2010a}。除了Bierwisch的研究，下面这些专注于研究德语或者有关乔姆斯基理论的著作也是值得关注的： \citew{Fanselow87a}、 \citew{FF87}、 \citew{SS88a}、 \citew{Grewendorf88a}、 \citew{Haider93a}和 \citew{Sternefeld2006a-u}。
+%Transformational Grammar\is{Transformational Grammar|(} and its subsequent incarnations (such as Government and Binding Theory
+%and Minimalism) were developed by Noam Chomsky at MIT in Boston \citep{Chomsky57a,Chomsky65a,Chomsky75a,Chomsky81a,Chomsky86b,Chomsky95a-u}.
+%Manfred  \citet{Bierwisch63} was the first to implement Chomsky's ideas for German. In the 60s, the decisive impulse came from the 
+%\emph{Arbeitsstelle Strukturelle Grammatik} `Workgroup for Structural Grammar', which was part of the Academy of Science of the GDR. See
+%\citealp{Bierwisch92} and \citealp{Vater2010a} for a historic overview.
+%As well as Bierwisch's work, the following books focusing on German or the Chomskyan research
+%program in general should also be mentioned:  \citew{Fanselow87a},  \citew{FF87},  \citew{SS88a},
+% \citew{Grewendorf88a},  \citew{Haider93a},  \citew{Sternefeld2006a-u}.
+
+针对乔姆斯基理论的不同应用通常被归入到生成语法（Generative Grammar）\index{Generative Grammar}的名头下面。这个术语之所以叫做生成语法，是因为Chomsky提出的短语结构语法和其扩充的理论框架可以生成合乎语法的表达式（见第\pageref{Seite-generiert}页）。这样生成的一组句子在形式上构成了一种语言，我们可以通过检查一个特定的句子是否是由给定的文法生成的句子集合中的一部分来判断该句子是否属于该语言。从这个意义来看，简单的短语结构语法与相应的形式化理论、广义短语结构语法（GPSG）、词汇功能语法（LFG）、中心词驱动的短语结构语法（HPSG）和构式语法（Construction
+Grammar，CxG）都属于生成理论。近年来，以形式化为基础的理论不断涌现，如LFG、HPSG和CxG，前述的语法理论现在被称为模型论（model"=theoretic）\isc{模型论文法}\is{model"=theoretic grammar} ，而不是生成枚举（generative"=enumerative）理论\footnote{%
+模型论的方法总是基于约束的，所以说模型论（model"=thoretic）和基于约束（constraint"=based）这两个术语有时被当作同义词使用。}（请参阅第\ref{Abschnitt-Generativ-Modelltheoretisch}章的讨论）。在1965年，乔姆斯基这样来界定生成语法（Generative Grammar）这个概念（也可以参考\citealp[\page 162]{Chomsky95a-u}）：
+%The different implementations of Chomskyan theories are often grouped under the heading \emph{Generative Grammar}\index{Generative Grammar}.
+%This term comes from the fact that phrase structure grammars and the augmented frameworks that were suggested by Chomsky can generate
+%sets of well"=formed expressions (see p.\,\pageref{Seite-generiert}). It is such a set of sentences that constitutes a language (in the formal
+%sense) and one can test if a sentence forms part of a language by checking if a particular sentence is in the set of sentences generated
+%by a given grammar. In this sense, simple phrase structure grammars and, with corresponding formal assumptions, GPSG, LFG, 
+%HPSG and Construction Grammar (CxG) are generative theories.
+%In recent years, a different view of the formal basis of theories such as LFG, HPSG and CxG has
+%emerged such that the aforementioned theories are now \emph{model theoretic}
+%theories\is{model"=theoretic grammar} rather than generative"=enumerative ones\footnote{%
+%Model theoretic approaches are always constraint"=based and the terms \emph{model theoretic} and \emph{constraint"=based} are 
+%sometimes used synonymously. 
+%} (See Chapter~\ref{Abschnitt-Generativ-Modelltheoretisch} for discussion). In 1965, Chomsky defined the term \emph{Generative Grammar}
+%in the following way (see also \citealp[\page 162]{Chomsky95a-u}):
+\begin{quotation}
+一种语言的语法应该是对理想的听者--说者的内在能力的描写。进而，如果这种语法足够明晰——换言之，如果它不依赖于读者的智力，而只是给出一个明确的分析的话——我们就可以将之称为“生成语法”（generative
+  grammar）。\citep[\page 4]{Chomsky65a}\footnote{%
+A grammar of a language purports to be a description of the ideal speaker-hearer's intrinsic
+competence. If the grammar is, furthermore, perfectly explicit\,--\,in other words, if it does not
+rely on the intelligence of the understanding reader but rather provides an explicit analysis of
+his contribution\,--\,we may call it (somewhat redundantly) a \emph{generative
+  grammar}. }
+\end{quotation}
+
+按照这一定义，本书讨论的所有语法理论都应该被看作是生成语法。为了进一步区分，书中有时会用主流生成语法（Mainstream Generative Grammar，简称MGG）\isc{主流生成语法}\is{Mainstream
+  Generative Grammar}这一概念\citep[\page 3]{CJ2005a}来表示乔姆斯基式模型。在这一章，我将阐述一个发展成熟且影响深远的乔姆斯基式语法，即管辖与约束（\gbc）理论。有关乔姆斯基的最简方案的最新内容将在第\ref{chapter-mp}章具体说明。
+%In this sense, all grammatical theories discussed in this book would be viewed as generative grammars.
+%To differentiate further, sometimes the term \emph{Mainstream Generative Grammar}\is{Mainstream
+%  Generative Grammar} (MGG) is used \citep[\page 3]{CJ2005a} for Chomskyan models.
+%In this chapter, I will discuss a well"=developed and very influential version of Chomskyan
+%grammar, \gbt. More recent developments following Chomsky's Minimalist Program are dealt with in Chapter~\ref{chapter-mp}.
+
+\section{表示形式概述}
+%\section{General remarks on the representational format}
+\label{Abschnitt-GB-allgemein}
+
+这一节说明本章的主要内容。在\ref{Abschnitt-Transformationen}，我将介绍转换的概念。\ref{Abschnitt-GB-Paramater}介绍有关语言习得假设的背景信息，语言习得假设在很大程度上影响了转换理论。
+\ref{Abschnitt-T-Modell}介绍所谓的T模型，即\gbtc （简称GB）的基本架构。\ref{Abschnitt-X-Bar}介绍\gbc 中用到的\xbartc 的特殊形式，\ref{sec-GB-CP-IP-System-English}展示了\xbarc 理论的这个版本是如何应用在英语中的。
+有关英语句子分析的讨论是理解德语句子分析的前提条件，因为在\gbc 框架下的许多分析都是模仿英语的分析进行的。\ref{sec-German-clause}介绍针对德语小句的分析，这些分析方法参考了\ref{sec-GB-CP-IP-System-English}中对英语的分析。
+%This section provides an overview of general assumptions. I introduce the concept of transformations
+%in Section~\ref{Abschnitt-Transformationen}. Section~\ref{Abschnitt-GB-Paramater} provides
+%background information about assumptions regarding language acquisition, which shaped the theory
+%considerably, Section~\ref{Abschnitt-T-Modell} introduces the so"=called T model, the basic
+%architecture of \gbt. Section~\ref{Abschnitt-X-Bar} introduces the \xbart in the specific form used in \gb
+%and Section~\ref{sec-GB-CP-IP-System-English} shows how this version of the \xbart can be applied to English. The discussion of
+%the analysis of English sentences is an important prerequisite for the understanding of the analysis
+%of German, since many analyses in the \gb framework are modeled in parallel to the analyses of
+%English. Section~\ref{sec-German-clause} introduces the analysis of German clauses in a parallel way
+%to what has been done for English in Section~\ref{sec-GB-CP-IP-System-English}.
+
+\subsection{转换}
+%\subsection{Transformations}
+\label{Abschnitt-Transformationen}
+
+在前一章\isc{转换|(}\is{transformation|(}，我介绍了简单的短语结构语法。\citet[\S~5]{Chomsky57a}批判了这种重写文法，因为——按照他的说法——我们无法捕捉到主动句和被动句之间的关系，也无法解释句中成分为何有多种不同的排序方式。
+当然，我们可以在短语结构语法中赋予主动句和被动句不同的规则。例如，我们可以将一组主被动规则给不及物动词（\mex{1}），一组规则给及物动词（\mex{2}），再有一组规则给双及物动词（\mex{3}）。但是这样仍然无法充分地说明为什么同样的现象会发生在例（\mex{1}）--（\mex{3}）的句对儿中：
+%In the previous\is{transformation|(} chapter, I introduced simple phrase structure
+%grammars.  \citet[Chapter~5]{Chomsky57a} criticized this kind of rewrite grammars since -- in his
+%opinion -- it is not clear how one can capture the relationship between active and passive sentences or
+%the various ordering possibilities of constituents in a sentence. While it is of course possible to
+%formulate different rules for active and passive sentences in a phrase structure grammar (\eg one
+%pair of rules for intransitive (\mex{1}), one for transitive (\mex{2}) and one for ditransitive verbs (\mex{3})), it would
+%not adequately capture the fact that the same phenomenon occurs in the example pairs in (\mex{1})--(\mex{3}):
+\eal
+\label{ex-transformations-intr}
+\ex 
+\gll weil dort noch jemand arbeitet\\
+     因为 那儿 仍 有人 工作\\
+\mytrans{因为有人还在那儿工作}
+%     because there still somebody works\\
+%\mytrans{because somebody is still working there}
+\ex 
+\gll weil dort noch gearbeitet wurde\\
+     因为 那儿 仍 工作 \passivepst{}\\
+\mytrans{因为那里的工作还在进行中}	 
+%     because there still worked was\\
+%\mytrans{because work was still being done there}	 
+\zl
+\eal
+\ex 
+\gll weil er den Weltmeister schlägt\\
+	 因为 他 \textsc{art}.\textsc{def} 世界冠军 击败\\
+\mytrans{因为他击败世界冠军了}
+%	 because he the world.champion beats\\
+%\mytrans{because he beats the world champion}
+\ex 
+\gll weil der Weltmeister geschlagen wurde\\
+	 因为 \textsc{art}.\textsc{def} 世界冠军 击败 \passivepst{}\\
+\mytrans{因为世界冠军被击败了}
+%	 because the world.champion beaten was\\
+%\mytrans{because the world champion was beaten}
+\zl
+\eal
+\label{ex-transformations-ditr}
+\ex 
+\gll weil der Mann der Frau den Schlüssel stiehlt\\
+	 因为 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 钥匙 偷\\
+\mytrans{因为这个男人正在从这个女人这儿偷钥匙}
+%	 because the man the woman the key steals\\
+%\mytrans{because the man is stealing the key from the woman}
+\ex 
+\gll weil der Frau der Schlüssel gestohlen wurde\\
+	 因为 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 钥匙 偷 \passivepst{}\\
+\mytrans{因为这把钥匙从这个女人这里被偷走了}
+%	 because the woman the key stolen was\\
+%\mytrans{because the key was stolen from the woman}
+\zl
+
+\noindent
+\citet[\page 43]{Chomsky57a}提出了一个在主动句和被动句之间创建联系的转换过程。他认为，英语\il{English}的被动式变换有着下面的形式，如（\mex{1}）所示：
+% \citet[\page 43]{Chomsky57a} suggests a transformation that creates a connection between active and
+%passive sentences. The passive transformation for English\il{English} that he suggested has the form in (\mex{1}):
+\ea
+\begin{tabular}[t]{@{}l@{~}l@{~}l@{~}l}
+NP& V &NP & $\to$ 3 [\sub{\textsc{aux}} be] 2en [\sub{PP} [\sub{P} by] 1]\\
+1 & 2 &3\\
+\end{tabular}
+\z
+这条转换规则将左侧符号构成的树形图对应到右侧符号构成的树形图上。相应地，规则右部的数字标号1、2和3分别对应规则左侧的相应数字标号。\emph{en} 表示构成分词（seen、been，还有loved）的语素。图\ref{fig-Passivtransformation}展示了例（\mex{1}a）和例（\mex{1}b）的树形图。
+%This transformational rule maps a tree with the symbols on the left"=hand side of the rule onto a tree with the symbols on the
+%right"=hand side of the rule. Accordingly, 1, 2 and 3 on the right of the rule correspond to symbols, which are under the numbers on the
+%left"=hand side. \emph{en} stands for the morpheme which forms the participle (\emph{seen}, \emph{been}, \ldots, but also \emph{loved}).
+%Both trees for (\mex{1}a,b) are shown in Figure~\ref{fig-Passivtransformation}.
+
+\eal
+\ex 
+\gll John loves Mary.\\
+     John 爱 Mary\\
+\mytrans{John爱Mary。}
+\ex 
+\gll Mary is loved by John.\\
+     Mary \passiveprs{} 爱 \textsc{prep} John\\
+\mytrans{Mary正被John爱着。}
+\zl
+\begin{figure}
+\hfill
+\begin{forest}
+sm edges
+[S, for tree={parent anchor=south, child anchor=north}
+  [NP [John;John] ]
+  [VP
+    [V [loves;爱] ]
+    [NP [Mary;Mary] ] 
+  ]]
+\end{forest}
+\hspace{1em}
+\raisebox{6\baselineskip}{$\leadsto$}
+\hspace{1em}
+  \begin{forest}
+  sm edges
+  [S, for tree={parent anchor=south, child anchor=north}
+  	[NP[Mary;Mary]]
+	[VP
+	[Aux[is;\passiveprs, tier=word]]
+	[V[loved;爱, tier=word]]
+	[PP
+	[P[by;\textsc{prep}, tier=word]]
+	[NP[John;John, tier=word]]]]]
+\end{forest}
+\hfill\mbox{}
+\caption{\label{fig-Passivtransformation}被动式变换的应用}
+%\caption{\label{fig-Passivtransformation}Application of passive transformation}
+\end{figure}%
+转换规则左侧的符号不必同属于树形图中的同一分支，也就是说它们可以是不同父结点下的子结点，如图\ref{fig-Passivtransformation}所示。
+%The symbols on the left of transformational rules do not necessarily have to be in a local tree, that is, they can be daughters of different mothers
+%as in Figure~\ref{fig-Passivtransformation}.
+
+重写文法按照属性的不同可以分为四个复杂性等级\isc{复杂性等级}\is{complexity class}。最简单的文法被分到第3类，而最复杂的叫做0型。目前所介绍的所谓的上下文无关文法（context"=free grammar）\isc{上下文无关文法}\is{context-free grammar}叫做2型文法。允许符号被任意其他符号所替换的转换文法叫做0型文法\citep{PR73a-u}。\label{page-TG-Typ0}针对自然语言复杂度的研究表明最复杂的0型文法对于自然语言来说太复杂了。按照这一观点，假设需要针对语言知识进行受限的形式化演算\citep[\page 62]{Chomsky65a}，那么我们就需要限制转换的形式与潜在能力。\footnote{%
+    有关形式语言的能力的更多内容，请参阅第\ref{sec-generative-capacity}章。
+} 
+%Rewrite grammars were divided into four complexity classes\is{complexity class} based on the properties they
+%have. The simplest grammars are assigned to the class 3, whereas the most complex are of Type-0. The so"=called 
+%context"=free grammars\is{context-free grammar} we have dealt with thus far are of Type-2. Transformational grammars which allow symbols to
+%be replaced by arbitrary other symbols are of Type-0 \citep{PR73a-u}.\label{page-TG-Typ0} Research on the complexity
+%of natural languages shows that the highest complexity level (Type-0) is too complex for natural language. It follows from this
+%-- assuming that one wants to have a restrictive formal apparatus for the description of grammatical knowledge \citep[\page 62]{Chomsky65a} -- that
+%the form and potential power of transformations has to be restricted.\footnote{%
+%	For more on the power of formal languages, see Chapter~\ref{sec-generative-capacity}.
+%} 
+针对转换语法的早期版本的另一个批评是，由于缺乏限制，转换规则之间的相互关系是不够清楚的。而且，有些转换规则会删除语言材料这点也是有问题的（参见\citealp[\S~3.1.4]{Klenk2003a}）。基于上述原因，新的理论被提出来，如管辖与约束理论\citep{Chomsky81a}。在这个模型下，语法规则的形式受到严格的限制（请参阅\ref{Abschnitt-X-Bar}）。通过转换而移动的元素仍然在它们原始的位置上，这样就使得原始位置是可获得的，这也就为语义解释提供了可能。此外，也有更具普遍性的原则来限制转换的\isc{转换|)}\is{transformation|)}过程。
+%Another criticism of early versions of transformational grammar was that, due to a lack of restrictions, the way in which transformations interact was not clear. 
+%Furthermore, there were problems associated with transformations which delete material (see
+%\citealp[Section~3.1.4]{Klenk2003a})\todostefan{provide English ref}. For this reason, new theoretical approaches such 
+%as Government \& Binding \citep{Chomsky81a} were developed. In this model, the form that grammatical rules can take is restricted (see Section~\ref{Abschnitt-%X-Bar}). Elements
+%moved by transformations are still represented in their original position, which makes them
+%recoverable at the original position and hence the necessary information is available for semantic interpretation. 
+%There are also more general principles, which serve to restrict transformations\is{transformation|)}.
+
+在了解了\gbtc 中有关语言习得模型的一些基本观点后，我们将进一步考察短语结构规则、转换和限制。
+%After some initial remarks on the model assumed for language acquisition in \gbt, we will take a closer look at phrase structure rules,
+%transformations and constraints.
+
+\subsection{有关语言习得的假说：原则与参数理论}
+%\subsection{The hypothesis regarding language acquisition: Principles \& Parameters}
+\label{Abschnitt-GB-Paramater}
+
+\citet[Section~I.8]{Chomsky65a}\isc{原则 \& 参数|(}\is{Principles \&
+Parameters|(}认为，语言知识一定是天生的，他认为语言系统如此复杂，我们不可能仅凭一般的认知规律、依靠有限的语言输入而习得一门语言（参见\ref{Abschnitt-PSA}）。如果不能仅仅通过与周围环境的互动而习得语言的话，那么至少我们的部分语言能力是内置的。到底哪些部分是天生的，以及人类是否真有一套语言的内在机制这几个问题是富有争议的。在过去的几十年中，学界对于这一问题的看法也出现了很多的变化。有关这一议题的代表性著作有 \citew{Pinker94a}、 \citew{Tomasello95a}、 \citew{Wunderlich2004a}、 \citew*{HCF2002a}和 \citew{Chomsky2007a}。更多内容可以参考第\ref{chap-innateness}章。
+% \citet[Section~I.8]{Chomsky65a}\is{Principles \& Parameters|(} assumes that linguistic knowledge must be innate since the language system is,
+%in his opinion, so complex that it would be impossible to learn a language from the given input using more general cognitive principles alone
+%(see also Section~\ref{Abschnitt-PSA}). If it is not possible to learn language solely through interaction with our environment, then at least part of
+%our language ability must be innate. The question of exactly what is innate and if humans actually have an innate capacity for language remains
+%controversial and the various positions on the question have changed over the course of the last decades. Some notable works on this topic are  \citew{Pinker94a}, 
+% \citew{Tomasello95a},  \citew{Wunderlich2004a},  \citew*{HCF2002a} and  \citew{Chomsky2007a}. For more on this discussion, see Chapter~\ref{chap-innateness}.
+
+\citet{Chomsky81a}还假定，存在语言结构不能违反的普遍的、内在的原则。这些原则是参数化的，即不只有一个选项。参数\isc{参数!中心语位置}\is{parameter!head position}\isc{参数}\is{parameter}设置在不同语言中可以是不同的。如下面例（\mex{1}）中的参数化原则：
+% \citet{Chomsky81a} also assumes that there are general, innate principles which linguistic structure cannot violate. These principles are parametrized, that is,
+%there are options. Parameter\is{parameter!head position}\is{parameter} settings can differ between languages.
+%An example for a parametrized principle is shown in (\mex{1}):
+\ea
+原则：中心语出现在补足语的前面还是后面，这取决于参数\textsc{position}的值。
+%Principle: A head occurs before or after its complement(s) depending
+%on the value of the parameter \textsc{position}.
+%Prinzip: Ein Kopf steht in Abhängigkeit vom Parameter \textsc{stellung}
+%vor oder nach seinen Komplementen.
+\z
+原则与参数（Principles \& Parameters，简称P\&P）模型认为，语言习得的一个重要部分是从语言输入中提取足够的信息来设置参数。\citet[\page 8]{Chomsky2000a-u}用拨动开关来比喻参数的设置。有关P\&P模型中语言习得的不同假说的详细讨论请见\ref{sec-acquisition}。英语\il{English}使用者必须要学习的是，他们的语言中中心语出现在补足语的前面，而日语\il{Japanese}使用者必须要学会的是，中心语位于补足语的后面，如下面的例（\mex{1}）所示：
+%The Principles \& Parameters model (P\&P model) assumes that a significant part of language acquisition consists of extracting enough information
+%from the linguistic input in order to be able to set parameters.  \citet[\page 8]{Chomsky2000a-u} compares the setting of parameters to
+%flipping a switch. For a detailed discussion of the various assumptions about language acquisition in the P\&P"=model, see
+%Chapter~\ref{sec-acquisition}. Speakers of English\il{English} have to learn that heads occur before their
+%complements in their language, whereas a speaker of Japanese\il{Japanese} has to learn that heads follow their complements. (\mex{1}) gives the 
+%respective examples:
+\eal
+\label{Bsp-Kopfstellungsparameter}
+\ex 
+\gll be showing pictures of himself\\
+     \textsc{aux} 展示.\text{ptcp} 图片 \textsc{prep} 他自己\\
+     \mytrans{展示他自己的图片}
+\ex
+\gll zibun -no syasin-o mise-te iru\\
+%     \refl{}  from picture     showing be\\
+       \refl{}  \textsc{postp} 图片 展示.\text{ptcp} \textsc{aux}\\
+       \mytrans{展示他自己的图片}
+\zl
+可见，日语动词、名词和形容词短语是相应的英语短语的镜像结构。我们在（\mex{1}）中进行了简单的总结，并且给出语序参数的参数值：
+%As one can see, the Japanese verb, noun and prepositional phrases are a mirror image of the corresponding phrases in English.
+%(\mex{1}) provides a summary and shows the parametric value for the position parameter:
+\ea
+\begin{tabular}[t]{@{}lll@{}}
+%Language                & Observation                      & Parameter: head initial\\
+语言					& 事实					& 参数：中心语在前\\
+英语\il{English}   & 中心语位于补足语之前     & $+$\\
+日语\il{Japanese} & 中心语位于补足语之后      & $-$\\
+\end{tabular}
+\z
+
+在过去的几十年中，根据特定的参数来研究语言之间的差异已经成为语言研究的一个重要方向，并且在跨语言的比较研究中取得了丰厚的成果。
+%Investigating languages based on their differences with regard to certain assumed parameters has proven to be a very
+%fruitful line of research in the last few decades and has resulted in an abundance of comparative cross"=linguistic studies.
+
+在介绍完有关语言习得的内容之后，下面我们将讨论\gbtc 的基本观点。
+%After these introductory comments on language acquisition, the following sections will discuss the basic assumptions of \gbt.%
+\isc{原则 \& 参数|)}\is{Principles \& Parameters|)}
+
+\subsection{T模型}
+%\subsection{The T model}
+\label{Abschnitt-T-Modell}
+
+Chomsky\isc{T模型|(}\is{T model|(}指出，简单的短语结构语法不足以分析某些句子之间的关联，譬如主被动句之间的关系。在短语结构语法中，我们需要分别给不及物动词、及物动词和双及物动词制定主动和被动规则，请看上面（\ref{ex-transformations-intr}）--（\ref{ex-transformations-ditr}）的讨论。事实上，短语结构语法无法描述被动式中主要论元受到了抑制的情况。所以，Chomsky提出还有一个潜在的结构，即所谓的深层结构（Deep Structure）\isc{深层结构}\is{Deep Structure|see{D"=Structure}}\isc{D-结构}\is{D"=structure}，其他结构都是由它推导出来的。在下面的章节中，我们将讨论T模型的构造。
+%Chomsky\is{T model|(}
+%criticized simple PSGs for not being able to adequately capture certain correlations. An example of this is the relationship between
+%active and passive sentences. In phrase structure grammars, one would have to formulate active and passive rules for intransitive,
+%transitive and ditransitive verbs (see the discussion of
+%(\ref{ex-transformations-intr})--(\ref{ex-transformations-ditr}) above). The fact that the passive
+%can otherwise be consistently described as the suppression of the most prominent argument is not
+%captured by phrase structure rules. Chomsky therefore assumes that there is an underlying structure,
+%the so"=called \emph{Deep Structure}\is{Deep Structure|see{D"=Structure}}\is{D"=structure}, and that
+%other structures are derived from this.  The general architecture of the so-called T~model is discussed in the following subsections.
+
+\subsubsection{深层结构与表层结构}
+%\subsubsection{D-structure and S-structure}
+
+在推导出新结构的时候，深层结构的某些部分可以被删除或者移动。我们可以以此解释主动句和被动句之间的关系。通过对结构的这种操作——即转换，我们可以从原始的深层结构推导出一个新的结构，即表层结构（Surface Structure）\isc{表层结构}\is{Surface Structure|see{S"=structure}}\isc{S-结构}\is{S"=structure}。在该理论的有些版本中，表层结构并不是句中词语的实际使用情况的镜像，所以有时采用S"=结构这一术语来避免误解。
+%During the derivation of new structures, parts of the Deep Structure can be deleted or moved. In
+%this way, one can explain the relationship between active and passive sentences. As the result of
+%this kind of manipulation of structures, also called transformations, one derives a new
+%structure, the  \emph{Surface Structure}\is{Surface Structure|see{S"=structure}}\is{S"=structure},
+%from the original Deep Structure. Since the Surface Structure does not actually mirror the actual
+%use of words in a sentence in some versions of the theory, the term \emph{S"=structure} is sometimes
+%used instead as to avoid misunderstandings. 
+\ea
+\begin{tabular}[t]{@{}l@{~=~}l@{}}
+表层结构 & S"=结构\\
+深层结构 & D"=结构\\
+%\emph{Surface Structure} & S-structure\\
+%\emph{Deep Structure} & D"=structure\\
+\end{tabular}
+\z
+\noindent
+图\vref{Abb-T-Modell}给出了管辖与约束理论的整体框架：短语结构规则和词库允准了D"=结构，而D"=结构通过转换进而推导出S"=结构。
+%Figure~\vref{Abb-T-Modell} gives an overview of the GB architecture: phrase structure
+%rules and the lexicon license the D"=structure from which the S"=structure is derived by means of transformations.
+\begin{figure}
+\centering
+\begin{forest}
+for tree = {edge={->},l=4\baselineskip}
+[D-结构
+     [S-结构,edge label={node[midway,right]{移位 $\alpha$}} 
+            [删除规则{,}\\过滤{,} 音系规则
+                    [语音形式（PF）]]
+            [照应规则{,}\\量化和控制规则
+                    [逻辑形式（LF）]]]]
+    \end{forest}
+%\begin{forest}
+%for tree = {edge={->},l=4\baselineskip}
+%[D-structure
+%     [S-structure,edge label={node[midway,right]{move $\alpha$}} 
+%            [Deletion rules{,}\\Filter{,} phonol.\ rules
+%                    [Phonetic\\Form (PF)]]
+ %           [Anaphoric rules{,}\\rules of quantification and control
+%                    [Logical\\Form (LF)]]]]
+%    \end{forest}        
+\caption{\label{Abb-T-Modell}T模型}
+%\caption{\label{Abb-T-Modell}The T~model}
+\end{figure}%
+S"=结构演化出语音形式（Phonetic Form，简称PF）\isc{语音形式（PF）}\is{Phonetic Form (PF)} 和逻辑形式（Logical Form，简称LF）\isc{逻辑形式（LF）}\is{Logical Form (LF)}。这一模型被称为T模型（T-model），或Y模型（Y-model），这是因为D"=结构、S"=结构、PF和LF共同构成了一个倒T（或Y）型。我们将详细讲解其中每一个成分。
+%S"=structure feeds into Phonetic Form (PF)\is{Phonetic Form (PF)} and Logical Form (LF)\is{Logical Form (LF)}.
+%The model is referred to as the \emph{T-model} (or Y-model)
+%because D"=structure, S"=structure, PF and LF form an upside"=down T (or Y). We will
+%look at each of these individual components in more detail.
+
+我们可以应用短语结构规则来描述个体元素之间的关系（比如说，词和短语有时也是词的一部分）。这些规则的格式遵循\xbarc 句法（请参阅\ref{sec-xbar}）。词库与\xbarc 句法允准的结构一起构成了D"=结构的基础。那么，D"=结构就是由词库中的具体词形成的选择栅（=~配价类型\isc{价!类型}\is{valence!classes}）的句法表征。
+%Using phrase structure rules, one can describe the relationships between individual elements (for
+%instance words and phrases, sometimes also parts of words). The format for these rules
+%is \xbar syntax (see Section~\ref{sec-xbar}). The lexicon\is{lexicon|(}, together with the structure licensed by \xbar syntax,
+%forms the basis for D"=structure. D"=structure is then a syntactic representation of the selectional grid (=~valence classes\is{valence!classes})
+%of individual word forms in the lexicon. 
+
+词库包括每个词的词汇项，每个词汇项包含有关形态音位结构、句法特征和选择属性等信息。我们将在\ref{Abschnitt-GB-Lexikon}详细解释这些内容。根据确切的理论假说，形态\isc{形态}\is{morphology}也被看作是词库的部分。但是，屈折形态\isc{屈折形态}\is{inflection}更多是与句法相关的。词库是针对具体词形的语义解释的一个接口。\isc{词库}\is{lexicon}
+%The lexicon contains a lexical entry for every word which comprises information about morphophonological structure, syntactic features
+%and selectional properties. This will be explained in more detail in Section~\ref{Abschnitt-GB-Lexikon}. Depending on one's exact theoretical
+%assumptions, morphology\is{morphology} is viewed as part of the lexicon. Inflectional morphology\is{inflection} is, however, mostly consigned
+%to the realm of syntax. The lexicon is an interface for semantic interpretation of individual word forms.\is{lexicon}
+
+组成成分在表层结构的位置并不一定是它们在D"=结构中的位置。比如说，带有双及物动词的句子就有如下几种转换式：
+%The surface position in which constituents are realized is not necessarily the position they have in
+%D"=structure. For example, a sentence with a ditransitive verb has the following ordering variants:
+\eal
+\ex 
+\gll {}[dass] der Mann der Frau das Buch gibt\\
+	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def}.\nom{}  男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
+\mytrans{这个男人给这个女人这本书}
+%	 {}\spacebr{}that the.\nom{} man the.\dat{} woman the.\acc{} book gives\\
+%\mytrans{that the man gives the woman the book}
+\ex 
+\gll Gibt der Mann der Frau das Buch?\\
+	 给 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书\\
+\mytrans{这个男人给这个女人这本书吗？}
+%	 gives the.\nom{} man the.\dat{} woman the.\acc{} book\\
+%\mytrans{Does the man give the woman the book?}
+\ex 
+\gll Der Mann gibt der Frau das Buch.\\
+	 \textsc{art}.\textsc{def}.\nom{} 男人 给 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书\\
+\mytrans{这个男人给这个女人这本书。}
+%	 the.\nom{} man gives the.\dat{} woman the.\acc{} book\\
+%\mytrans{The man gives the woman the book.}
+\zl
+针对上述移位过程，我们提出下列转换规则：（\mex{0}b）是通过将（\mex{0}a）中的动词前置而生成的，（\mex{0}c）是通过将（\mex{0}b）中的主格名词短语提前而得到的。在\gbtc 中，只有一种非常普遍的转换：移位~$\alpha$\isc{移位~$\alpha$}\is{Move~$\alpha$} = “在任何地方移动任何成分!”。而到底什么是可以移动的，移到哪里，以及出于何种原因被移动都是由原则所决定的。这类原则有题元准则（Theta"=Criterion）和格鉴别式（Case Filter），详见下面。
+%The following transformational rules for the movements above are assumed: (\mex{0}b) is derived from (\mex{0}a) by fronting the verb, 
+%and (\mex{0}c) is derived from (\mex{0}b) by fronting the nominative noun phrase. In \gbt, there is only one very general transformation:
+%Move~$\alpha$\is{Move~$\alpha$} = ``Move anything anywhere!''. The nature of what exactly can be moved where and for which reason is determined
+%by principles. Examples of such principles are the Theta"=Criterion and the Case Filter, which will be
+%dealt with below.
+
+谓词及其论元之间的关系是由词项决定的，这点在语义解读的所有表征层面上都是可及的。基于这一原因，我们用语迹（trace）标记出移动成分的原本位置。这就意味着，前置的gibt（给）的原始位置在例（\mex{1}b）中有所标示。相应的标记叫做语迹（trace）\isc{语迹}\is{trace}或空位（gap）\isc{空位}\is{gap}。这类空范畴初看起来难以理解，但是我们早在\ref{sec-psg-np} （第\pageref{np-epsilon}页）就介绍了名词结构中的空语类。
+%The relations between a predicate and its arguments that are determined by the lexical entries have to be accessible for semantic interpretation at all 
+%representational levels. For this reason, the base position of a moved element is marked with a
+%trace. This means, for instance, that the position in which the
+%fronted \emph{gibt} `gives' originated is indicated in (\mex{1}b). The respective marking is
+%referred to as a \emph{trace}\is{trace} or a \emph{gap}\is{gap}. Such empty elements may be
+%frightening when one encounters them first, but I already motivated the assumption
+%of empty elements in nominal structures in Section~\ref{sec-psg-np}  (page~\pageref{np-epsilon}). 
+\eal
+\ex 
+\gll {}[dass] der Mann der Frau das Buch gibt\\
+	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
+\mytrans{这个男人给这个女人这本书}
+%	 {}\spacebr{}that the man the woman the book gives\\
+%\mytrans{that the man gives the woman the book}
+\ex 
+\gll Gibt$_i$ der Mann der Frau das Buch \_$_i$?\\
+	 给 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书\\
+\mytrans{这个男人给这个女人这本书了吗？}
+%	 gives the man the woman the book\\
+%\mytrans{Does the man give the woman the book?}
+\ex 
+\gll {}[Der Mann]$_j$ gibt$_i$ \_$_j$ der Frau das Buch \_$_i$.\\
+	 {}\spacebr{}\textsc{art}.\textsc{def}.\nom{} 男人 给 {} \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书\\
+\mytrans{这个男人给这个女人这本书。}
+%	 {}\spacebr{}the man gives {} the woman the book\\
+%\mytrans{The man gives the woman the book.}
+\zl
+例（\mex{0}c）是由（\mex{0}a）经过两步移位推导出的，这也就是为什么（\mex{0}c）中有两个空语迹。这些语迹用下标来表示，来区分所移动的成分。下标与所移动的成分具有对应关系。有时，\emph{e}（表示“空”）或者\emph{t}（表示“语迹”）也用来表示语迹。
+ %(\mex{0}c) is derived from (\mex{0}a) by means of two movements, which is why there are two traces in (\mex{0}c). The traces are marked with
+%indices so it is possible to distinguish the moved constituents. The corresponding indices are then present on the moved constituents. Sometimes,
+%\emph{e} (for \emph{empty}) or \emph{t} (for \emph{trace}) is used to represent traces.
+
+由D"=结构推导而来的S"=结构是类表层结构，但是它们与实际话语的结构并不完全相同。
+%The S"=structure derived from the D"=structure is a surface"=like structure but should not be equated with the structure of actual utterances.
+\isc{T模型|)}\is{T model|)}
+
+\subsubsection{语音形式}
+%\subsubsection{Phonetic Form}
+
+%https://en.wikipedia.org/wiki/Phonetic_Form
+语音操作表现在语音形式（Phonetic Form，简称PF）\isc{语音形式（PF）|(}\is{Phonetic Form (PF)|(}这一层。PF负责生成实际发声的形式。比如说，wanna这个简称就发生在PF层\citep[\page 20--21]{Chomsky81a}。
+%Phonological operations are represented at\is{Phonetic Form (PF)|(} the level of Phonetic Form (PF). PF is responsible for creating the form which
+%is actually pronounced. For example, so"=called \emph{wanna}"=contraction takes place at PF \citep[\page 20--21]{Chomsky81a}.
+\eal
+\ex 
+\gll The students want to visit Paris.\\
+	\textsc{art}.\textsc{def} 学生 想要 \textsc{inf} 访问 巴黎\\
+\mytrans{这些学生想要访问巴黎。}
+\ex 
+\gll The students wanna visit Paris.\\
+	\textsc{art}.\textsc{def} 学生 想要 访问 巴黎\\
+\mytrans{这些学生想要访问巴黎。}
+\zl
+例（\mex{0}）中的简称\isc{简称}\is{contraction}是由（\mex{1}）中可选的规则允准的：
+%The contraction\is{contraction} in (\mex{0}) is licensed by the optional rule in (\mex{1}):
+\ea
+want $+$ to $\to$ wanna
+\z
+\isc{语音形式（PF）|)}\is{Phonetic Form (PF)|)}
+
+\subsubsection{逻辑形式}
+%\subsubsection{Logical Form}
+
+逻辑形式（Logical Form，简称LF）\isc{逻辑形式（LF）|(}\is{Logical Form (LF)|(}是介于句子的S"=结构及其语义解释之间的句法层。LF层处理的语言现象包括代词的照应关系、量化和控制。
+%Logical Form\is{Logical Form (LF)|(} is the syntactic level which mediates between S"=structure and the semantic interpretation of
+%a sentence. Some of the phenomena which are dealt with by LF are anaphoric reference of pronouns, quantification and control. 
+
+在解决指代依赖的问题中，句法因素\label{Seite-Bindungstheorie}起到了重要的作用。\gbtc 的一个重要部分是约束理论（Binding Theory）\isc{约束理论}\is{Binding Theory}，该理论用来解释代词可以或必须指称的对象，以及什么时候可以用或者必须用反身代词。（\mex{1}）是人称代词和反身代词的例子：
+%Syntactic factors\label{Seite-Bindungstheorie} play a role in resolving anaphoric dependencies.
+%An important component of \gbt is Binding Theory\is{Binding Theory}, which seeks to explain what a
+%pronoun can or must refer to and when a reflexive pronoun can or must be used. 
+%(\mex{1}) gives some examples of both personal and reflexive pronouns:
+\eal
+\ex 
+\gll Peter kauft einen Tisch. Er gefällt ihm.\\
+	 Peter 买 一 桌子.\mas{} 他 喜欢 他\\
+\mytrans{Peter在买一个桌子。他喜欢它/他。}
+%	 Peter buys a table.\mas{} he likes him\\
+%\mytrans{Peter is buying a table. He likes it/him.}
+\ex 
+\gll Peter kauft eine Tasche. Er gefällt ihm.\\
+	 Peter 买 一 包.\fem{} 他 喜欢 他\\
+\mytrans{Peter在买一个包。他喜欢它/他。}
+%	 Peter buys a bag.\fem{} he likes him\\
+%\mytrans{Peter is buying a bag. He likes it/him.}
+\ex 
+\gll Peter kauft eine Tasche. Er gefällt sich.\\
+	 Peter 买 一 包.\fem{} 他 喜欢 他自己\\
+\mytrans{Peter在买一个包。他喜欢他自己。}
+%	 Peter buys a bag.\fem{} he likes himself\\
+%\mytrans{Peter is buying a bag. He likes himself.}
+\zl
+% TODO: 这里英文使用也有问题，也许Mueller的德语也不怎么正确
+在第一个例子中，er（他）可以指代Peter、桌子或者上文中提及的其他东西或其他人。ihm（它/他）可以指代Peter或者上下文中的某人。根据常识，这里限于指代桌子。在第二个例子中，er（他）不能指代Tasche（包），因为Tasche是阴性的，而er是阳性的。只有当ihm（他）不指代彼得的时候，er（他）才可以指Peter。而ihm则指称更大范围上下文中的某个人。这与例（\mex{0}c）是不同的。在（\mex{0}c）中，er（他）和sich（他自己）必须指向同一个对象。这是因为像sich这样的反身代词的所指受限于某个特定的局部域之内。管约论主要负责描述这些限制条件。
+%In the first example, \emph{er} `he' can refer to either Peter, the table or something/someone else that was previously mentioned
+%in the context. \emph{ihm} `him' can refer to Peter or someone in the context. Reference to the table is restricted by world knowledge.
+%In the second example, \emph{er} `he' cannot refer to \emph{Tasche} `bag' since \emph{Tasche} is feminine and \emph{er} is masculine.
+%\emph{er} `he' can refer to Peter only if \emph{ihm} `him' does not refer to Peter. \emph{ihm} would otherwise have to refer to a person
+%in the wider context. This is different in (\mex{0}c). In (\mex{0}c), \emph{er} `he' and \emph{sich} `himself' must refer to the same
+%object. This is due to the fact that the reference of reflexives such as \emph{sich} is restricted to a particular local domain. Binding Theory
+%attempts to capture these restrictions.
+
+LF对于量化词辖域来说也是重要的，比如说（\mex{1}a）有两种解读，如（\mex{1}b）和（\mex{1}c）所示。
+%LF is also important for quantifier s\textsc{cop}e. Sentences such as (\mex{1}a) have two readings. These are given in (\mex{1}b) and (\mex{1}c).
+
+\eal
+\label{Beispiel-Every-man-loves-a-woman}
+\ex 
+\gll Every man loves a woman.\\
+每个 男人 爱 一 女人\\
+\mytrans{每个男人都爱着一个女人。}
+\ex $\forall x \exists y (man(x) \to (woman(y) \wedge love(x,y)))$
+\ex $\exists y \forall x (man(x) \to (woman(y) \wedge love(x,y)))$
+\zl
+符号$\forall$\isc{$\forall$}\is{$\forall$}表示全称量词（universal quantifier）\isc{量词!全称量词}\is{quantifier!universal} ，而$\exists$\isc{$\exists$}\is{$\exists$}表示存在量词（existential
+quantifier）\isc{量词!存在量词}\is{quantifier!existential}。第一个公式是指对于每一个男人来说，都有一个他爱的女人，当然他们爱的可以是不同的女人。第二种解读是所有男人都爱同一个女人。至于什么时候会造成这种歧义以及哪种意义什么时候是可能的，取决于给定话语的句法属性。LF层对于像a和every这样的限定词的意义来说很重要。
+%The symbol $\forall$\is{$\forall$} stands for a \emph{universal quantifier}\is{quantifier!universal} and $\exists$\is{$\exists$} stands for an
+%\emph{existential quantifier}\is{quantifier!existential}. The first formula corresponds to the reading that for every man, there is a woman who he loves
+%and in fact, these can be different women. Under the second reading, there is exactly one woman such that all men love her. The question of when such an
+%ambiguity arises and which reading is possible when depends on the syntactic properties of the given utterance. LF is the level which is important for the
+%meaning of determiners such as \emph{a} and \emph{every}.
+
+控制理论（Control Theory）\isc{控制理论}\is{Control Theory}也跟LF密切相关。控制理论主要探讨如例（\mex{1}）中的不定式主语的语义角色是如何实现的问题。
+%Control Theory\is{Control Theory} is also specified with reference to LF. Control Theory deals with the question of how the semantic role of the infinitive
+%subject in sentences such as (\mex{1}) is filled.
+\eal
+\ex 
+\gll Der Professor schlägt dem Studenten vor, die Klausur noch mal zu~~~~~~ schreiben.\\
+	 \textsc{art}.\textsc{def} 教授 建议 \textsc{art}.\textsc{def} 学生 \textsc{part} \textsc{art}.\textsc{def} 考试 再 一次 \textsc{inf} 写\\
+\mytrans{教授建议学生再参加一次考试。}
+%	 the professor suggests the student \textsc{part} the test once again to write\\
+%\mytrans{The professor advises the student to take the test again.}
+\ex 
+\gll Der Professor schlägt dem Studenten vor, die Klausur nicht zu bewerten.\\
+	 \textsc{art}.\textsc{def} 教授 建议 \textsc{art}.\textsc{def} 学生 \textsc{part} \textsc{art}.\textsc{def} 考试 不 \textsc{inf} 打分\\
+\mytrans{教授建议学生这次考试不打分。}
+%	 the professor suggests the student \textsc{part} the test not to grade\\
+%\mytrans{The professor suggests to the student not to grade the test.}
+\ex 
+\gll Der Professor schlägt dem Studenten vor, gemeinsam ins Kino zu gehen.\hspace{-3pt}\\
+	 \textsc{art}.\textsc{def} 教授 建议 \textsc{art}.\textsc{def} 学生 \textsc{part} 一起 进入 电影院 \textsc{inf} 去\\
+\mytrans{教授建议学生一起去电影院。}
+%	 the professor suggests the student \textsc{part} together into cinema to go\\
+%\mytrans{The professor suggests to the student to go to the cinema together.}
+\zl
+\isc{逻辑形式（LF）|)}\is{Logical Form (LF)|)}
+
+\subsubsection{词库}
+%\subsubsection{The lexicon}
+\label{Abschnitt-GB-Lexikon}
+词的意义告诉我们它们需要与某种语义角色的词结合——如“发出动作的人”或“受到影响的事物”——来生成更多复杂的短语。例如，动词beat在语义上实际需要两个论元。（\mex{1}a）中动词beat的语义表征表示为（\mex{1}b）中的形式：
+%The meaning of words tells us that they have to be combined with certain roles like ``acting person'' or ``affected thing'' when creating more complex phrases.
+%For example, the fact that the verb \emph{beat} needs two arguments belongs to its semantic
+%contribution. The semantic representation of the contribution of the verb \emph{beat} in (\mex{1}a)
+%is given in (\mex{1}b): 
+\eal
+\ex 
+\gll Judit beats the grandmaster.\\
+Judit 击败 \textsc{art}.\textsc{def} 大师\\
+\mytrans{Judit击败大师。}
+\ex \relation{beat}(x,y)
+\zl
+\noindent
+将中心语按照配价类型进行分类的过程也叫做次范畴化（subcategorization）\isc{次范畴化}\is{subcategorization}：\label{Seite-Subkategoriesierung}beat可以次范畴化为选择一个主语和一个宾语。该术语是基于这样的事实，中心语已经按照它的词类（动词、名词、形容词等）被分类，并进一步根据配价信息分成小类（如不及物动词或及物动词）。有时会用“X次范畴化Y”（\emph{X subcategorizes for Y} ）这种表述，它表示“X选择Y”（\emph{X selects Y}）。beat被看作是谓词\isc{谓词}\is{predicate} ，因为\relation{beat}是逻辑谓词。主语和宾语都是谓词的论元\is{argument}。有一系列术语用来描述这些选择性的必有元素的集合，如论元结构（argument structure）\isc{论元结构}\is{argument structure}、配价框架（valence frame）\isc{配价框架}\is{valence frame}、次范畴框架（subcategorization frame）\isc{次范畴框架}\is{subcategorization frame}，以及题元栅（thematic grid）\isc{题元栅}\is{thematic
+grid}，或称$\theta$-栅\isc{$\theta$-栅}\is{theta-grid@$\theta$-grid}。
+%Dividing heads into valence classes is also referred to as \emph{subcategorization}\is{subcategorization}:\label{Seite-Subkategoriesierung} 
+%\emph{beat} is subcategorized for a subject and an object.
+%This term comes from the fact that a head is already categorized with regard to its
+%part of speech (verb, noun, adjective, \ldots) and then further sub"-classes (\eg intransitive or
+%transitive verb) are formed with regard to valence information. Sometimes the phrase \emph{X subcategorizes for Y} is used, which means \emph{X selects Y}.
+% or even \emph{X governs Y}. Martin: government ist in GB was anderes.
+%\emph{beat} is referred to as the predicate\is{predicate} since 
+%\relation{beat} is the logical predicate.
+%The subject and object are the arguments\is{argument} of the predicate. There are several terms used
+%to describe the set of selectional requirements such
+%as \emph{argument structure}\is{argument structure}, \emph{valence frames}\is{valence frame},
+%\emph{subcategorization frame}\is{subcategorization frame}, \emph{thematic grid}\is{thematic grid}
+%and \emph{theta"=grid} or $\theta$-grid\is{theta-grid@$\theta$-grid}. 
+%\todostefan{ich habe hier einige uebersetzungen erstmal weggelassen, weil ich mir nicht sicher bin wie die richtige uebersetzung ist.}
+%Subjekt und Objekt sind die Argumente\is{Argument} des Prädikats. Spricht man von der Gesamtheit
+%der Selektionsanforderungen, verwendet man Begriffe wie Argumentstruktur\is{Argumentstruktur}, Valenzrahmen\is{Valenz!-rahmen},
+%Selektionsraster\is{Selektion!-sraster}, Subkategorisierungsrahmen\is{Subkategorisierung!-srahmen}, thematisches Raster\is{Raster!thematisches} 
+%oder Theta-Raster = $\theta$-Raster\is{theta-Raster@$\theta$-Raster}
+%(\emph{thematic grid}, \emph{theta-grid}). 
+
+附加语\isc{附加语}\is{adjunct}修饰语义上的谓词，并且当语义部分被强调的时候，它们也被称为修饰语（modifier）\isc{修饰语}\is{modifier}。在谓词的论元结构中没有附加语。
+%Adjuncts\is{adjunct} modify semantic predicates and when the semantic aspect is emphasized they are
+%also called \emph{modifiers}\is{modifier}. Adjuncts are not present in the argument structure
+%of predicates.
+
+按照GB的理论假说，论元出现在小句的特定位置上，即所谓的论元位置\isc{论元!论元位置}\is{argument!position} ，\egc 一个\xnullc 成分的子结点（请见\ref{sec-xbar}）。$\theta$"=准则（也叫做题元准则）\isc{$\theta$-准则@$\theta$-准则}\is{theta-criterion@Theta"=Criterion}规定论元位置上的成分必须被赋予一个语义角色（semantic role）\isc{语义角色}\is{semantic role}，也叫做$\theta$"=角色（theta"=role）\isc{$\theta$-角色@$\theta$-角色}\is{theta-role@$\theta$-role}。而且，每一个角色都只能被指派一次\citep[\page 36]{Chomsky81a}：
+%Following GB assumptions, arguments occur in specific positions in the clause -- in so"=called argument positions\is{argument!position} (\eg the sister of 
+%an \xnull element, see Section~\ref{sec-xbar}). The Theta"=Criterion\is{theta-criterion@Theta"=Criterion} states that elements in argument positions have to be %assigned
+%a semantic role\is{semantic role} -- a so"=called theta"=role\is{theta-role@$\theta$-role} -- and
+%each role can be assigned only once \citep[\page 36]{Chomsky81a}: 
+\begin{principle-break}[$\theta$"=准则]\label{theta-Kriterium}
+%\begin{principle-break}[Theta"=Criterion]\label{theta-Kriterium}
+\begin{itemize}
+\item 每个题元角色只指派给一个论元位置。
+\item 一个论元位置内的任何短语只能充当一个题元角色。
+%\item Each theta"=role is assigned to exactly one argument position
+%\item Every phrase in an argument position receives exactly one theta"=role.
+\end{itemize}
+\end{principle-break}
+\noindent
+%
+%冯志伟（2011）（http://blog.sina.com.cn/s/blog_72d083c70100pvg2.html）将题元准则翻译为：
+%每个主目必须，而且只许，充当一个题元；
+%每个题元必须，而且只许，由一个主目充当。
+
+中心语的论元成分是有主次之分的，也就是说，我们可以区分出高阶论元和低阶论元。动词和形容词的最高阶论元占有特殊的地位。因为GB认为，这些最高阶论元通常（在某些语言的语法中总是）在动词短语或形容词短语之外的位置实现，它们通常被叫做外部论元（external argument）\isc{论元!外语论元}\is{argument!external}。剩下的论元出现在动词短语和形容词短语内部的位置上。
+  这类论元叫做内部论元（internal argument）\isc{论元!内部论元}\is{argument!internal} 或补足语（complements）\isc{补足语}\is{complement}。对于简单句来说，这通常意味着主语是外部论元。
+%The arguments of a head are ordered, that is, one can differentiate between higher- and lower"=ranked arguments. The highest"=ranked
+%argument of verbs and adjectives has a special status. Since GB assumes that it is often (and always in some languages) realized in a position
+%outside of the verb or adjective phrase, it is often referred to as the \emph{external argument}\is{argument!external}. The remaining
+%arguments occur in positions inside of the verb or adjective phrase. These kind of arguments are dubbed 
+%\emph{internal arguments}\is{argument!internal} or \emph{complements}\is{complement}. For simple sentences, this often means that the subject
+%is the external argument.
+
+当我们讨论论元类型的时候，我们可以指认出三类题元角色：
+%When discussing types of arguments, one can identify three classes of theta"=roles:
+\begin{itemize}
+\item 第一类：施事\isc{施事}\is{agent}（发出动作的个体）、行动或感受的触发者（刺激），以及具有某种属性的个体
+\item 第二类：感事\isc{感事}\is{experiencer}（感受的个体）、从某方面获益的人（受益者\isc{受益者}\is{beneficiary}）（或者相反：受到某种伤害的人），以及领有者（所有者，或者即将拥有某物的人，或者相反的情况：失去或者缺少某物的人）
+\item 第三类：受事\isc{受事}\is{patient} （受到影响的人或物）、客体\isc{客体}\is{theme}
+%\item Class 1: agent\is{agent} (acting individual), the cause of an action or feeling (stimulus), holder of a certain property
+%\item Class 2: experiencer\is{experiencer} (perceiving individual), the person profiting from something (beneficiary\is{beneficiary})
+%(or the opposite: the person affected by some kind of damage), possessor (owner or soon"=to"=be owner of something, or the opposite:
+%someone who has lost or is lacking something) 
+%\item Class 3: patient\is{patient} (affected person or thing), theme\is{theme}
+\end{itemize}
+如果一个动词需要指派这些题元角色，那么第一类通常具有最高级别，而第三类是最低的。不过令人遗憾的是，现有文献中对动词论元被指派的语义角色的分析非常不一致。\citet{Dowty91a}针对这一问题作出了讨论，并提出应该应用原型角色。如果一个论元具有足够多的Dowty所定义的施事的原型特征（如有生性\isc{有生的}\is{animacy}、自主性），那么该论元就被指派给原型施事。
+%If a verb has several theta"=roles of this kind to assign, Class~1 normally has the highest rank, whereas Class~3 has the lowest.
+%Unfortunately, the assignment of semantic roles to actual arguments of verbs has received a rather inconsistent treatment in the 
+%literature. This problem has been discussed by  \citet{Dowty91a}, who suggests using proto"=roles. An argument is assigned the
+%proto"=agent role if it has sufficiently many of the properties that were identified by Dowty as prototypical properties of agents (\eg animacy\is{animacy}, %volitionality).%
+\nocite{Gruber65a-u,Fillmore68,Fillmore71a-u,Jackendoff72a-u,Dowty91a}
+
+心理词库应该包括这样的词条（lexical entries），即该词条具有这个词在合乎语法的使用中所具备的特定句法属性。比如说下列的一些属性：
+%The mental lexicon contains \emph{lexical entries} with the specific properties of syntactic words needed to use that word grammatically.
+%Some of these properties are the following:
+\begin{itemize}
+\item 形式
+\item 意义（语义）
+\item 语法属性：句法词类$+$形态句法特征  
+\item $\theta$"=栅
+%\item form
+%\item meaning (semantics)
+%\item grammatical features: syntactic word class $+$ morphosyntactic features   
+%\item theta"=grid
+\end{itemize}
+
+\noindent
+（\mex{1}）给出了一个词条的例子：
+%(\mex{1}) shows an example of a lexical entry:
+\ea
+\raisebox{1.2ex}{%
+\begin{tabular}[t]{|l|ll|}
+\hline
+形式    & hilft（帮助）&\\\hline
+语义 & \relation{helfen}     &\\\hline
+语法特征  & \multicolumn{2}{l|}{动词,}\\
+                       & \multicolumn{2}{l|}{第三人称单数直陈式现在时主动态}\\\hline\hline
+
+%\setlength{\arrayrulewidth}{9pt}
+$\theta$"=栅                &&\\\hline
+$\theta$"=角色                & \underline{施事} & 受益者\\[2mm]\hline
+语法特性 &                   & 与格\\\hline
+%form     & \emph{hilft} `helps'&\\\hline
+%semantics & \relation{helfen}     &\\\hline
+%grammatical features  & \multicolumn{2}{l|}{verb,}\\
+%                       & \multicolumn{2}{l|}{3rd person singular indicative present active}\\\hline\hline
+%
+%\setlength{\arrayrulewidth}{9pt}
+%theta"=grid                &&\\\hline
+%theta"=roles                & \underline{agent} & beneficiary\\[2mm]\hline
+%grammatical particularities &                   & dative\\\hline
+\end{tabular}}
+\z
+将语义角色和特定句法要求对应起来的过程（如，受益者=与格）也叫做联接（linking）\isc{联接}\is{linking}。
+%Assigning semantic roles to specific syntactic requirements (beneficiary = dative) is also called \emph{linking}.\is{linking}
+
+按照论元的主次顺序可以对其进行排序：最高阶论元位于最左边的位置上。以helfen为例，最高阶论元就是外部论元（external argument）\isc{论元!外部论元}\is{argument!external}，所以施事下面用下划线表示。对于所谓的非宾格动词\isc{动词!非宾格动词}\is{verb!unaccusative}而言，\footnote{%
+有关非宾格动词的讨论请参阅 \citew{Perlmutter78}。作格动词（ergative verb）\isc{动词!作格动词}\is{verb!ergative}也是常见的术语，尽管用词不够准确。有关乔姆斯基理论框架下非宾格动词的早期研究请参阅 \citew{Burzio81-u,Burzio86a-u-gekauft}，有关德语的相关研究请参阅 \citew{Grewendorf89a}。此外，有关这些术语的用法以及历史上的评介请参阅 \citew{Pullum88a}。
+}
+最高阶论元并不是外部论元。所以在相应的词条中没有用下划线表示。
+%Arguments are ordered according to their ranking: the highest argument is furthest left. In the case
+%of \emph{helfen}, the highest argument is the external argument\is{external argument}, which is why the agent is underlined. With so"=called unaccusative %verbs,\is{verb!unaccusative}\footnote{%
+%See  \citew{Perlmutter78} for a discussion of unaccusative verbs. The term \emph{ergative verb}\is{verb!ergative} is also common, albeit
+%a misnomer. See  \citew{Burzio81-u,Burzio86a-u-gekauft} for the earliest work on unaccusatives in the Chomskyan framework and 
+% \citew{Grewendorf89a} for German. Also, see  \citew{Pullum88a} on the usage of these terms and for a historical evaluation.
+%}
+%the highest argument is not treated as the external argument. It would therefore not be underlined in the corresponding lexical entry.
+
+\subsection{\xbartc}
+%\subsection{\xbart}
+\label{Abschnitt-X-Bar}
+
+在GB理论\is{X theory@\xbar theory|(}中，所有由核心语法\isc{核心语法}\is{core grammar}\footnote{%
+\citet[\page 7--8]{Chomsky81a}}将语言区分成常规区域和边缘区域，常规区域是指那些由语法决定的，基于基因自然习得的那部分固定的语言知识，而边缘区域是指语言中不规则的部分，\egc 熟语\emph{to pull the wool over sb.'s eyes}（掩人耳目）。请参阅\ref{Abschnitt-musterbasiert}。
+}
+允准的句法结构都适用于\xbar 范式（请见\ref{sec-xbar}）。\footnote{%
+\citet[\page 210]{Chomsky70a}允许违背\xbarc 范式的语法规则。但是，更为普遍的看法是语言完全应用\xbarc 的结构。
+}
+在\isc{X理论@\xbarc 理论|(}\is{X theory@\xbar theory|(}下面的章节中，我将对其提出的句法范畴和有关语法规则的解释方面的基本论断进行评价。
+%In\is{X theory@\xbar theory|(} GB, it is assumed that all syntactic structures licensed by the core grammar\is{core grammar}\footnote{%
+%  \citet[\page 7--8]{Chomsky81a} distinguishes between a regular area of language that is determined by a grammar that
+% can be acquired using genetically determined language"=specific knowledge and a periphery\is{periphery}, to which irregular parts
+% of language such as idioms (\eg \emph{to pull the wool over sb.'s eyes}) belong. See Section~\ref{Abschnitt-musterbasiert}.
+%}
+%correspond to the \xbar schema (see Section~\ref{sec-xbar}).\footnote{%
+%    \citet[\page 210]{Chomsky70a} allows for grammatical rules that deviate from the \xbar schema.
+%   It is, however, common practice to assume that languages exclusively use \xbar structures.
+%}
+%In the following sections, I will comment on the syntactic categories assumed and the basic assumptions with regard to
+%the interpretation of grammatical rules. 
+
+\subsubsection{句法范畴}
+%\subsubsection{Syntactic categories}
+\label{GB-syntaktische-categoryn}
+
+
+在\xbarc 范式中，能用变量X表示的范畴可以分为词汇范畴\isc{范畴!词汇范畴}\is{category!lexical}和功能范畴\isc{范畴!功能范畴}\is{category!functional}。这大体上跟开放和封闭的词汇类型的区别有关。下面是词汇范畴：
+%The categories which can be used for the variable X in the \xbar schema are divided into lexical\is{category!lexical} and functional\is{category!functional}
+%categories. This correlates roughly with the difference between open and closed word classes. The following are lexical categories: 
+\begin{itemize}
+\item V = 动词\isc{动词}\is{verb}
+\item N = 名词\isc{名词}\is{noun}
+\item A = 形容词\isc{形容词}\is{adjective}
+\item P = 前置词\isc{前置词}\is{preposition}/后置词
+\item Adv = 副词\isc{副词}\is{adverb}
+%\item V = verb\is{verb}
+%\item N = noun\is{noun}
+%\item A = adjective\is{adjective}
+%\item P = preposition\is{preposition}/postposition
+%\item Adv = adverb\is{adverb}
+\end{itemize}
+词汇范畴可以用二元特征和交叉分类来表示：\footnote{%
+有关N、A和V的交叉分类，请参阅 \citew[\page 199]{Chomsky70a}，有关额外包含P，但是具有不同的特征分布的交叉分类请参阅 \citew[\S~3.2]{Jackendoff77a}。
+}
+%Lexical categories can be represented using binary features and a cross"=classification:\footnote{%
+%   See  \citew[\page 199]{Chomsky70a} for a cross"=classification of N, A and V, and 
+%    \citew[Section~3.2]{Jackendoff77a} for a cross"=classification that additionally includes P but has a different feature assignment.
+%} 
+%\LATER{ \citet{Wunderlich96a} 对这种特征分解观点进行了评论}
+%\LATER{ \citet{Wunderlich96a} has criticized this feature decomposition}
+\begin{table}[H]
+\centerline
+{\renewcommand{\arraystretch}{1.5}%
+\begin{tabular}[t]{ccc}
+\lsptoprule
+ & $-$V & $+$V \\
+\midrule
+$-$N & P = [ $-$N, $-$V ] &  V = [ $-$N, $+$V ] \\
+  $+$N & N = [ $+$N, $-$V ]    &  A = [ $+$N, $+$V ]\\
+\lspbottomrule
+\end{tabular}}
+\caption{\label{Tabelle-Merkmalszerlegung-Wortarten}应用二元特征的四种词汇范畴表征}
+%\caption{\label{Tabelle-Merkmalszerlegung-Wortarten}Representation of four lexical categories using two binary features}
+\end{table}%
+
+\noindent
+由于副词被看作是不及物介词\label{Seite-Adverbien-PP}，所以也被囊括进上面的表格中了。
+%Adverbs are viewed as intransitive prepositions\label{Seite-Adverbien-PP} and are therefore captured by the decomposition in the
+%table above.
+
+应用这一交叉分类，我们就有可能归纳出普遍的规律。比如说，我们可以这样简单地指称形容词和动词：所有带有 [~+V~]的词汇范畴要么是形容词，要么就是动词。此外，我们也可以说带有[~+N~] 的范畴（即名词和形容词）都可以有格属性。
+%Using this cross"=classification, it is possible to formulate generalizations. One can, for example, simply refer to adjectives and
+%verbs: all lexical categories which are [~+V~] are either adjectives or verbs. Furthermore, one can
+%say of [~+N~] categories (nouns and adjectives) that they can bear case. 
+
+除此之外，有些作者尝试将表\ref{Tabelle-Merkmalszerlegung-Wortarten}中的中心语位置与特征值联系起来，如 \citew[\page 52]{Grewendorf88a}、\citew[\page 124]{Haftka96a}和G.\ \citew[\page 238]{GMueller2011a}。在德语的带有介词和名词的结构中，其中心语位于补足语之前：
+%Apart from this, some authors have tried to associate the head position with the feature values in Table~\ref{Tabelle-Merkmalszerlegung-Wortarten} (see \eg %\citealp[\page 52]{Grewendorf88a};
+%\citealp[\page 124]{Haftka96a}; G.\ \citealp[\page 238]{GMueller2011a}). With prepositions and nouns,
+%the head precedes the complement in German:
+\eal
+\ex
+\gll \emph{für} Marie\\
+	 对 Marie\\
+	 %for Marie\\
+\ex 
+\gll \emph{Bild} von Maria\\
+	 图片 ……的 Maria\\
+	 %picture of Maria\\
+\zl
+带有形容词和动词的结构中，其中心语位于后面：
+%With adjectives and verbs, the head is final:
+\eal
+\ex 
+\gll dem König \emph{treu}\\
+     \textsc{art}.\textsc{def} 国王 忠诚\\
+\mytrans{对国王忠诚}
+%     the king loyal\\
+%\mytrans{Loyal to the king}
+\ex 
+\gll der [dem Kind \emph{helfende}] Mann\\
+     \textsc{art}.\textsc{def} \spacebr\textsc{art}.\textsc{def} 孩子 帮助 男人\\
+\mytrans{帮助这个孩子的男人}
+%     the the child helping man\\
+%\mytrans{the man helping the child}
+\ex 
+\gll dem Mann \emph{helfen}\\
+      \textsc{art}.\textsc{def} 男人 帮助\\
+\mytrans{帮助这个男人}
+%     the man help\\
+%\mytrans{help the man}
+\zl
+以上数据说明，词汇范畴带[~+V~]时，中心语在后，而词汇范畴带[~$-$V~]时，中心语在前。不过，这条规律是有问题的，因为德语还有后置词。这些成分跟前置词很像，不是动词性的，但是它们出现在所支配的NP的后面：
+%This data seems to suggest that the head is final with [~+V~] categories and initial with [~$-$V~] categories. Unfortunately, this
+%generalization runs into the problem that there are also postpositions in German. These are, like
+%prepositions, not verbal, but do occur after the NP they require: 
+\eal
+\ex 
+\gll des Geldes \emph{wegen}\\
+     \textsc{art}.\textsc{def} 钱 为了\\
+\mytrans{为了钱）}
+%     the money because\\
+%\mytrans{because of the money}
+\ex 
+\gll die Nacht \emph{über}\\
+     \textsc{art}.\textsc{def} 晚上 在……期间\\
+\mytrans{在晚上}
+%     the night during\\
+%\mytrans{during the night}
+\zl
+所以说，我们要么必须发明一个新范畴，要么放弃用二元范畴特征来描述排序方面的限制。如果我们要把后置词看作是一个新范畴，我们就必须假定还有一个二元特征。\footnote{%
+Martin Haspelmath\aimention{Martin Haspelmath}指出，我们可以提出这样一条规则，将中心语后的论元成分移位到中心语前的位置上（请参阅\citew[\page 89]{Riemsdijk78a}有关转换方法的讨论）。这与德语形容词的前置论元的句法表达是一致的：
+\eal
+\ex
+\gll auf seinen Sohn stolz\\
+     \textsc{prep}  他的 儿子 骄傲\\
+\mytrans{为他的儿子而骄傲}
+\ex 
+\gll stolz auf seinen Sohn\\
+     骄傲 \textsc{prep} 他的 儿子\\
+\zl
+但是需要注意的是，这里的情况与后置词并不相同，所有带前置宾语的形容词都允准两种语序，而介词不是这样的。大部分的介词不允许它们的宾语出现在它们前面。而对于一些后置词来说，它们特有的特征是，其所支配的论元位于左侧。
+} 
+%Therefore, one must either invent a new category, or abandon the attempt to use binary category features to describe ordering restrictions.
+%If one were to place postpositions in a new category, it would be necessary to assume another binary
+%feature.\footnote{%
+%Martin Haspelmath\aimention{Martin Haspelmath} has pointed out that one could assume a rule that moves a
+%post-head argument into a pre-head position (see \citealp[\page 89]{Riemsdijk78a} for the discussion
+%of a transformational solution). This would be parallel to the realization of
+%prepositional arguments of adjectives in German:
+%\eal
+%\ex
+%\gll auf seinen Sohn stolz\\
+%     on  his son proud\\
+%\mytrans{proud of his son}
+%\ex 
+%\gll stolz auf seinen Sohn\\
+%     proud of his son\\
+%\zl
+%But note that the situation is different with postpositions here, while all adjectives that take
+%prepositional objects allow for both orders, this is not the case for prepositions. Most
+%prepositions do not allow their object to occur before them. It is an idiosyncratic feature of some
+%postpositions that they want to have their argument to the left.%
+%} 
+由于这一二元特征可以有否定或肯定的特征值，这样就构成了另外四个范畴。因此一共有八个可能的特征组合，而其中有一些组合不属于任何一个合理的范畴。
+%Since this feature can have either a negative or a positive value, one would then have four
+%additional categories. There are then eight possible feature combinations, some of which would not
+%correspond to any plausible category.
+
+对于功能范畴来说，GB并没有提出交叉分类的方法。它一般会提出下列几种范畴：
+%For functional categories, GB does not propose a cross"=classification. Usually, the following categories are assumed:
+\begin{table}[H]
+\begin{tabular}{lp{65ex}@{}}
+C   & 标补语\isc{范畴!功能范畴!C}\is{category!functional!C} （小句连接成分，如dass）\\
+I   & 定式\isc{范畴!功能范畴!I}\is{category!functional!I} （也就是时态和情态）；\\
+    & 早期文献中也写作Infl （屈折变化），\\
+    & 近期文献中写作T（时态）\isc{范畴!功能范畴!T}\is{category!functional!T} \\
+D   & 限定词\isc{范畴!功能范畴!D}\is{category!functional!D} （冠词、指示代词）\\
+%C   & Complementizer\is{category!functional!C} (subordinating conjunctions such as \emph{dass} `that')\\
+%I   & Finiteness\is{category!functional!I} (as well as Tense and Mood);\\
+%    & also Infl in earlier work (inflection),\\
+%    & T in more recent work (Tense)\is{category!functional!T} \\
+%D   & Determiner\is{category!functional!D} (article, demonstrative)\\
+\end{tabular}
+\end{table}%
+
+\subsubsection{假设与规则}
+%\subsubsection{Assumptions and rules}
+
+在GB中，所有的规则都应该采用\ref{sec-xbar}中讨论的\xbarc 形式。在其他理论中，采用\xbarc 形式的规则跟不采用这种形式的规则一起使用。如果按照严格的\xbartc，就会得到短语的向心性（endocentricity）\isc{向心构式}\is{endocentricity}假说：每个短语都有一个中心语，而且每个中心语都是短语的一部分（用更为技术化的语言来说：每个中心语都投射\isc{投射}\is{projection}到一个短语上）。
+%In GB, it is assumed that all rules must follow the \xbar format discussed in Section~\ref{sec-xbar}. In other theories, rules which correspond
+%to the \xbar format are used along other rules which do not. If the strict version of \xbart is
+%assumed, this comes with the assumption of \emph{endocentricity}\is{endocentricity}: every phrase
+%has a head and every head is part of a phrase (put more technically: every head
+%projects\is{projection} to a
+%phrase). 
+
+此外，正如短语结构语法所指出的，树结构的分支之间不能交叉（Non-Tangling Condition）\isc{非交叉条件}\is{Non-Tangling Condition}。这个观点被本书的大部分理论采纳。但是，树邻接语法\indextagc、中心语驱动的短语结构语法\indexhpsgc、构式语法\indexcxgc 和依存语法\indexdgc 的一些变体允许分支间交叉，并由此构成非连续\isc{成分!非连续成分}\is{constituent!discontinuous}成分（\citealp*{BJR91a,Reape94a,BC2005a}；\citealp[\page 261]{Heringer96a-u}；\citealp[\S~9.6.2]{Eroms2000a}）。
+%Furthermore, as with phrase structure grammars, it is assumed that the branches of tree structures
+%cannot cross (\emph{Non-Tangling Condition}\is{Non-Tangling Condition}). This assumption is made by
+%the majority of theories discussed in this book. There are, however, some variants of TAG\indextag,
+%HPSG\indexhpsg, Construction Grammar\indexcxg, and Dependency Grammar\indexdg which allow crossing branches and therefore
+%discontinuous\is{constituent!discontinuous} constituents
+%(\citealp*{BJR91a,Reape94a,BC2005a}; \citealp[\page 261]{Heringer96a-u}; \citealp[Section~9.6.2]{Eroms2000a}).
+
+在\xbartc 中，通常认为至多有两个投射层（X$'$和X$''$）。但是，在主流的生成语法的一些版本和其他理论中，允许三层甚至是更多层\citep{Jackendoff77a,Uszkoreit87a}。在这一章，我会按照标准说法认为有两个投射层，这样，短语就至少有三个层次：
+%In \xbart, one normally assumes that there are at most two projection levels (X$'$ and X$''$). However, there are some versions of Mainstream
+%Generative Grammar and other theories which allow three or more levels \citep{Jackendoff77a,Uszkoreit87a}. In this chapter, I follow the
+%standard assumption that there are two projection levels, that is, phrases have at least three levels:
+
+\begin{itemize}
+\item X$^0$ = 中心语
+\item X$'$ = 中间投射（\xbar ，读作：X bar）
+\item XP = 最高投射（=~X$''$ = $\overline{\overline{\mbox{X}}}$），也叫做最大投射（maximal projection）\isc{投射!最大投射}\is{projection!maximal} 
+%\item X$^0$ = head
+%\item X$'$ = intermediate projection (\xbar, read: X bar) 
+%\item XP = highest projection (=~X$''$ = $\overline{\overline{\mbox{X}}}$), also called \emph{maximal projection}\is{projection!maximal} 
+\end{itemize}
+\isc{X理论@\xbarc 理论|)}\is{X theory@\xbar theory|)}
+
+\subsection{英语中的CP和IP}
+%\subsection{CP and IP in English}
+\label{Abschnitt-GB-CP-IP-System-Englisch}\label{sec-GB-CP-IP-System-English}
+
+主流生成语法的大部分著作都深受之前分析英语文献的影响。如果想真正理解德语和其他语言的GB分析，我们需要首先理解其对英语的分析。基于这个原因，本节重在介绍这部分内容。在英语的词汇功能语法中，也有CP/IP系统。由此，下一节也为了解第\ref{Kapitel-LFG}章有关词汇功能语法的一些基础理论打下了基础。
+%Most work in Mainstream Generative Grammar is heavily influenced by previous publications dealing with English. If one wants to understand GB analyses of
+%German and other languages, it is important to first understand the analyses of English and, for this reason, this will be the focus of this section.
+%The CP/IP system is also assumed in LFG grammars of English and thus the following section also provides a foundation for understanding some of the
+%fundamentals of LFG presented in Chapter~\ref{Kapitel-LFG}.
+
+在早期著作中，（\mex{1}a）和（\mex{1}b）中的规则被用来分析英语句子\citep[\page 19]{Chomsky81a}。
+%In earlier work, the rules in (\mex{1}a) and (\mex{1}b) were proposed for English sentences \citep[\page 19]{Chomsky81a}.
+
+\eal
+\ex S $\to$ NP VP
+\ex S $\to$ NP Infl VP
+\zl
+
+Infl表示屈折变化（Inflection），就像插入结构中的屈折词缀一样。在早期文献中，用符号\textsc{aux}来指代Infl，因为助动词跟屈折词缀获得了相同的分析。图\vref{Abb-Old-School-Hilfsverb}展示了应用（\mex{0}b）中的规则对带有助动词的句子的个案分析。
+%Infl stands for \emph{Inflection} as inflectional affixes are inserted at this position in the
+%structure. The symbol \textsc{aux} was also used instead
+%of Infl in earlier work, since auxiliary verbs are treated in the same way as inflectional
+%affixes. Figure~\vref{Abb-Old-School-Hilfsverb} shows a sample 
+%analysis of a sentence with an auxiliary, which uses the rule in (\mex{0}b). 
+%
+\begin{figure}
+\begin{floatrow}
+\ffigbox{%
+\begin{forest}
+sm edges
+[S
+  [NP
+  	[Ann; Ann,roof]]
+  [INFL
+  	[will; 将]]
+  [VP
+  	[V$'$
+		[V$^0$[read; 读]]
+		[NP[the newspaper; \textsc{art}.\textsc{def} 报纸, roof]]]]]
+\end{forest}
+}{\caption{\label{Abb-Old-School-Hilfsverb}
+     采用 \citet[\page 19]{Chomsky81a}提出的方法分析带有助动词的句子}}
+%{\caption{\label{Abb-Old-School-Hilfsverb}Sentence with an auxiliary verb following
+%     \citet[\page 19]{Chomsky81a}}}
+\ffigbox{%
+\begin{forest}
+sm edges
+[IP
+  [NP
+  	[Ann; Ann,roof]]
+  [I$'$
+  	[I$^0$
+  		[will; 将]]
+	[VP
+  	[V$'$
+		[V$^0$[read; 读]]
+		[NP[the newspaper; \textsc{art}.\textsc{def} 报纸, roof]]]]]]
+\end{forest}}
+{\caption{\label{Abb-GB-Hilfsverb}CP/IP系统中带有助动词的句子}}
+%{\caption{\label{Abb-GB-Hilfsverb}Sentence with auxiliary verb in the CP/IP system}}
+\end{floatrow}
+\end{figure}%
+
+动词跟它的补足语一起构成一个结构单元：VP。VP的成分性质得到了一些成分测试的支持，并进一步根据它们的定位限制来区分出主语和宾语。
+%Together with its complements, the verb forms a structural unit: the VP. The constituent status of
+%the VP is supported by several constituent tests and further differences
+%between subjects and objects regarding their positional restrictions.
+
+（\mex{0}）中的规则并没有遵循\xbarc 范式，因为在规则的右边和左边没有具有相同范畴的符号，也就是说，没有中心语。为了把（\mex{0}）这类规则整合进总体理论，\citet[\page 3]{Chomsky86b}开发了一个规则系统，该系统中动词短语（VP）上面有两个层次，它也叫做CP/""IP系统\isc{范畴!功能范畴!I|(}\is{category!functional!I|(}。CP表示标补语短语（Complementizer Phrase）。CP的中心语可以是一个标补语。在我们深入探讨CP之前，我会讨论这个新系统中的IP的一个例子。图\ref{Abb-GB-Hilfsverb}显示了在\inullc 位置上是助动词的IP。
+%图\vref{Abb-GB-Hilfsverb}显示了在\inull 位置里带助词的IP。
+正如我们能看到的，这个是与\xbarc 模式相符的结构：\inullc 是一个中心语，它带有VP作它的补足语，从而构成I$'$。主语\isc{主语}\is{subject}是IP的指定语\isc{指定语}\is{specifier}。
+%The rules in (\mex{0}) do not follow the \xbar template since there is no symbol on the right"=hand side of the rule with the same
+%category as one on the left"=hand side, that is, there is no head. In order to integrate rules like
+%(\mex{0}) into the general theory,  \citet[\page 3]{Chomsky86b} developed a rule system with
+%two layers above the verb phrase (VP), namely the CP/""IP system\is{category!functional!I|(}. CP stands for \emph{Complementizer Phrase}.
+%The head of a CP can be a complementizer. Before we look at CPs in more detail, I will discuss an example of an IP in this new system. 
+%Figure~\vref{Abb-GB-Hilfsverb} shows an IP with an auxiliary in the \inull position. As we can see, this corresponds to the structure of
+%the \xbar template: \inull is a head, which takes the VP as its complement and thereby forms I$'$. The subject\is{subject} is the specifier\is{specifier} 
+%of the IP.
+%
+%% \begin{figure}
+%% \centerline{%
+%% \begin{forest}
+%% sm edges
+%% [IP
+%%   [NP
+%%   	[Ann]]
+%%   [I$'$
+%%   	[I$^0$
+%%   		[will]]
+%% 	[VP
+%%   	[V$'$
+%% 		[V$^0$[read]]
+%% 		[NP[the newspaper, roof]]]]]]
+%% \end{forest}}
+%% \caption{\label{Abb-GB-Hilfsverb}English sentence with auxiliary verb in the CP/IP system}
+%% \end{figure}%
+% nach vorn verschoben
+% Wie man sieht, entspricht die Struktur dem \xbars: \inull ist ein Kopf, der die VP als Komplement
+% nimmt und eine I$'$ bildet. Das Subjekt\is{Subjekt} ist der Spezifikator\is{Spezifikator} der IP.
+% %Die Hilfsverben stehen in \inull (=~Aux). Satzadverbien können zwischen Hilfsverb und Vollverb stehen.
+
+（\mex{1}）中的句子被分析为标补语短语（CP），标补语是中心语：
+%The sentences in (\mex{1}) are analyzed as complementizer phrases (CPs), the complementizer is the head:
+
+\eal
+\ex 
+\gll that Ann will read the newspaper\\
+      \textsc{comp} Ann 将 读 \textsc{art}.\textsc{def} 报纸\\
+\ex\label{ex-that-ann-reads-the-newspaper}
+\gll that Ann reads the newspaper\\
+      \textsc{comp} Ann 读 \textsc{art}.\textsc{def} 报纸\\
+\zl
+在像（\mex{0}）的句子中，CP没有指定语。图\ref{Abb-GB-Englisch-CP}显示了（\mex{0}a）的分析。
+%图\vref{Abb-GB-Englisch-CP}展示了（\mex{0}a）的分析。
+%In sentences such as (\mex{0}), the CPs do not have a specifier. Figure~\vref{Abb-GB-Englisch-CP} shows the analysis
+%of (\mex{0}a). 
+\begin{figure}
+% node labels for moving elements will be typeset by the \tmove command
+% here we have to provide invisible boxes to get the line drawing right.
+%\centerline{%
+\begin{floatrow}
+\ffigbox{
+\begin{forest}
+sm edges
+[CP
+[C$'$
+	[C$^0$[that; \textsc{comp}]]
+	[IP
+		[NP[Ann; Ann,roof]]
+		[I$'$
+			[I$^0$[will; 将]]
+			[VP
+				[V$'$
+					[V$^0$[read; 读]]
+					[NP[the newspaper; \textsc{art}.\textsc{def} 报纸, roof]]]]]]]]
+\end{forest}}{\caption{\label{Abb-GB-Englisch-CP}标补语短语}}
+%{\caption{\label{Abb-GB-Englisch-CP}Complementizer phrase}}
+\ffigbox{%
+\begin{forest}
+sm edges
+[CP
+[C$'$
+	[C$^0$[will$_k$; 将$_k$]]
+	[IP
+		[NP[Ann; Ann,roof]]
+		[I$'$
+			[I$^0$[\trace$_k$]]
+			[VP
+				[V$'$
+					[V$^0$[read; 读]]
+					[NP[the newspaper; \textsc{art}.\textsc{def} 报纸, roof]]]]]]]]
+\end{forest}
+}{\caption{是非问句}\label{Abb-GB-Ja-Nein}}
+%{\caption{Polar question}\label{Abb-GB-Ja-Nein}}
+\end{floatrow}
+\end{figure}%
+
+如（\mex{1}）中的那些英语是非问句\label{Seite-GB-Entscheidungsfragen-Englisch}是通过将助动词\isc{助动词倒装}\is{auxiliary inversion}前移到主语前构成的。
+%Yes/no-questions\label{Seite-GB-Entscheidungsfragen-Englisch} in English such as those in (\mex{1}) are formed by moving the auxiliary verb\is{auxiliary %inversion} in front of the subject.
+\ea
+\gll Will Ann read the newspaper?\\
+      将 Ann 读 \textsc{art}.\textsc{def} 报纸\\
+\z
+让我们来假设，问句的结构与带有标补语的句子的结构是一致的。这就意味着问句也是CP。但是，它与（\mex{-1}）中的句子不同，这里并没有从属连词。在问句的D"=结构中，\cnullc 位置是空的，而且助动词随后被移到这个位置上。图\vref{Abb-GB-Ja-Nein}是对（\mex{0}）的分析。
+%Let us assume that the structure of questions corresponds to the structure of sentences with complementizers. This means that questions are also
+%CPs. Unlike the sentences in (\mex{-1}), however, there is no subordinating conjunction. In the D"=structure of questions, the \cnull position is
+%empty and the auxiliary verb is later moved to this position. Figure~\vref{Abb-GB-Ja-Nein} shows an analysis of (\mex{0}).
+%% \begin{figure}
+%% \centerline{%
+%% \scalebox{.99}{%
+%% \begin{forest}
+%% sm edges
+%% [CP
+%% [C$'$
+%% 	[C$^0$[will$_k$]]
+%% 	[IP
+%% 		[NP[Ann]]
+%% 		[I$'$
+%% 			[I$^0$[\trace$_k$]]
+%% 			[VP
+%% 				[V$'$
+%% 					[V$^0$[read]]
+%% 					[NP[the newspaper, roof]]]]]]]]
+%% \end{forest}
+%% }
+%% }
+%% \caption{\label{Abb-GB-Ja-Nein}English polar question}
+%% \end{figure}%
+\begin{figure}
+\begin{floatrow}
+\ffigbox{%
+\begin{forest}
+sm edges
+[CP
+[NP$_i$[what; 什么,roof]]
+[C$'$
+	[C$^0$[will$_k$; 将$_k$]]
+	[IP
+		[NP[Ann; Ann,roof]]
+		[I$'$
+			[I$^0$[\trace$_k$]]
+			[VP
+				[V$'$
+					[V$^0$[read; 读]]
+					[NP[\trace$_i$]]]]]]]]
+\end{forest}
+}{\caption{\emph{wh}"=问句}\label{Abb-GB-Wh}}
+%}{\caption{\emph{wh}"=question}\label{Abb-GB-Wh}}
+\ffigbox{%
+\begin{forest}
+sm edges
+[IP
+	[NP[Ann; Ann,roof]]
+	[I$'$
+		[I$^0$[-s;-\textsc{3sg}]]
+		[VP
+			[V$'$
+				[V$^0$[read-;读-]]
+				[NP[the newspaper; \textsc{det} 报纸, roof]]]]]]
+\end{forest}}{
+\caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}没有助动词的句子}}
+%\caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}Sentence without auxiliary}}
+\end{floatrow}
+\end{figure}%
+助动词的原始位置被标记为语迹\_$_k$，这与被移动的助动词的标记是相同的。\isc{助动词倒装}\is{auxiliary inversion}
+%The original position of the auxiliary is marked by the trace \_$_k$, which is coindexed with the moved auxiliary.\is{auxiliary inversion}
+
+
+\emph{wh}-问句是由助动词前一个成分的额外移位构成的；也就是移到CP的指定语位置上。图\vref{Abb-GB-Wh}是对（\mex{1}）的分析：
+%\emph{wh}-questions are formed by the additional movement of a constituent in front of the
+%auxiliary; that is into the specifier position of the CP. 
+%Figure~\vref{Abb-GB-Wh} shows the analysis of (\mex{1}): 
+\ea
+\gll What will Ann read?\\
+      什么 将 Ann 读\\
+\z
+%
+%% \begin{figure}
+%% \centerline{%
+%% \begin{forest}
+%% sm edges
+%% [CP
+%% [NP[what$_i$]]
+%% [C$'$
+%% 	[C$^0$[will$_k$]]
+%% 	[IP
+%% 		[NP[Ann,roof]]
+%% 		[I$'$
+%% 			[I$^0$[\trace$_k$]]
+%% 			[VP
+%% 				[V$'$
+%% 					[V$^0$[read]]
+%% 					[NP[\trace$_i$]]]]]]]]
+%% \end{forest}
+%% }
+%% \caption{\label{Abb-GB-Wh}English \emph{wh}"=question}
+%% \end{figure}%
+如前所述，read的宾语的移位由语迹来表明。当我们构建句义的时候，这是非常重要的。动词指派给它的宾语位置上的成分以语义角色。因此，我们不得不能够“重建”这样的事实，即what（什么）实际上源自这个位置。这一点可以由what与其语迹的下标重合而得到保证。
+%As before, the movement of the object of \emph{read} is indicated by a trace. This is important when constructing the meaning of
+%the sentence. The verb assigns some semantic role to the element in its object position. Therefore,
+%one has to be able to ``reconstruct'' the fact that \emph{what} actually originates in this position. This is ensured by coindexation of the trace with \emph{what}.\il{English|)}
+
+直到现在，我们还没有讨论不含助动词的句子，如例（\ref{ex-that-ann-reads-the-newspaper}）。为了分析这类句子，我们必须要假定屈折词缀在\inullc 位置上，如图\vref{Abb-GB-englischer-Satz-ohne-Hilfsverb}所示。
+%Until now, I have not yet discussed sentences without auxiliaries such as (\ref{ex-that-ann-reads-the-newspaper}). In order to analyze this kind of sentences, %one has to assume that the
+%inflectional affix is present in the \inull position. An example analysis is given in Figure~\vref{Abb-GB-englischer-Satz-ohne-Hilfsverb}.
+%% \begin{figure}
+%% \centerline{%
+%% \begin{forest}
+%% sm edges
+%% [IP
+%% 	[NP[Ann,roof]]
+%% 	[I$'$
+%% 		[I$^0$[-s]]
+%% 		[VP
+%% 			[V$'$
+%% 				[V$^0$[read-]]
+%% 				[NP[the newspaper, roof]]]]]]
+%% \end{forest}}
+%% \caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}English sentence without auxiliary}
+%% \end{figure}%
+因为屈折词缀出现在动词前，所以也需要一些移位操作。由于理论内部的原因，我们不希望提出向树的下方移位的操作，所以动词必须移到词缀处，而不是反过来。
+%Since the inflectional affix precedes the verb, some kind of movement operation still needs to take place.
+%For theory"=internal reasons, one does not wish to assume movement operations to positions lower in the
+%tree, hence the verb has to move to the affix and not the other way around.
+%% \begin{itemize}
+%% \item Die {D"=Struktur} ist die Phrasenstruktur,\\
+%% die sich aus den Theta-Rastern der beteiligten \bf{lexikalischen Einheiten} ergibt.
+%% \item Die {S-Struktur} berücksichtigt
+%% zusätzlich die Anforderungen der {functionaln categoryn}.
+%
+%% Besonders wichtig:\\
+%% functional categoryn können {Bewegungen} auslösen. 
+%% \end{itemize}
+
+看完这些针对英语句子的分析方法，我们来看德语。
+%Following this excursus on the analysis of English sentences, we can now turn to German.
+
+\subsection{德语小句的结构}
+%\subsection{The structure of the German clause}
+\label{sec-German-clause}
+
+很多学者都采用了CP/IP模型来分析德语。\footnote{%
+对于没有IP的GB分析，请参阅 \citew{BK89a}、 \citew[\page 157]{Hoehle91}、 \citew{Haider93a,Haider97a}和 \citew[Section~IV.3]{Sternefeld2006a-u}。Haider认为I的功能被整合进动词中。在LFG中，英语有IP（\citealp[\S~6.2]{Bresnan2001a}；\citealp[\S~3.2.1]{Dalrymple2001a-u}），而德语没有\citep[\S~3.2.3.2]{Berman2003a}。而在HPSG中，根本就没有IP。
+} 
+%The CP/IP model has been adopted by many scholars for the analysis of German.\footnote{%
+%  For GB analyses without IP, see  \citew{BK89a},  \citew[\page 157]{Hoehle91},
+%   \citew{Haider93a,Haider97a} and  \citew[Section~IV.3]{Sternefeld2006a-u}. Haider assumes
+%  that the function of I is integrated into the verb. In LFG\indexlfg, an IP is assumed for English
+%  (\citealp[Section~6.2]{Bresnan2001a}; \citealp[Section~3.2.1]{Dalrymple2001a-u}), but not for German \citep[Section~3.2.3.2]{Berman2003a}.
+%  In HPSG\indexhpsg, no IP is assumed.
+%} 
+范畴C、I和V，与它们的指定语位置一起，可以联接到空间位置的分布中\isc{空间位置分布}\is{topology}，如图\vref{Abb-GB-Topo}所示。
+%The categories C, I and V, together with their specifier positions, can be linked to the
+%topological\is{topology} fields as shown in Figure~\vref{Abb-GB-Topo}.
+
+\begin{figure}
+    \centering
+        \begin{forest}
+            sn edges original,empty nodes
+            [CP
+              [{}
+                [XP,terminus
+                  [SpecCP\\前场, name=p1
+%               [SpecCP\\prefield, name=p1
+                  ]
+                ]
+              ]
+              [C$'$
+                    [{}
+                      [C$^0$, terminus
+                        [C$^0$\\左SB, name=c0
+%                     [C$^0$\\left SB, name=c0
+                        ]
+                      ]
+                    ]
+                    [IP
+                      [{}
+                        [XP, terminus
+                          [{IP (无I、V)\\中场}
+%                          [{IP (without I, V)\\middle field}
+                            [SpecIP\\主语位置, set me left, name=specip
+%                            [SpecIP\\subject position, set me left, name=specip
+                            ]
+                            [VP内短语\\\strut, name=p3
+%                            [phrases inside\\the VP, name=p3
+                            ]
+                          ]
+                        ]
+                      ]
+                      [I$'$
+                              [VP, name=vp
+                                [V, name=v0, terminus, no path, anchor=east
+                                  [{V, I\\右SB}, name=p2, set me left
+%                                  [{V, I\\right SB}, name=p2, set me left
+                                  ]
+                                ]
+                              ]
+                              [{}
+                                    [I, terminus, name=io
+                                    ]
+                              ]
+                      ]
+                    ]
+              ]
+            ]
+            \draw [thick]
+              (p1.north west) rectangle (io.east |- p3.south);
+            \draw
+              ($(c0.north east)!1/2!(specip.west |- c0.north east)$) coordinate (p6) -- (p6 |- p3.south)
+              ($(p1.north east)!1/2!(c0.north west)$) coordinate (p4) -- (p3.south -| p4)
+              ($(specip.north east)!1/2!(p3.north west)$) coordinate (p5) -- (p3.south -| p5)
+              ($(p2.north west)!1/2!(p2.north west -| p3.east)$) coordinate (p7) -- (p3.south -| p7)
+              (p6 |- p2.south) -- (p2.south -| p7)
+              (vp.south) -- (v0.center -| p3.west) -- (v0.west)
+              (v0.east) -- +(4.5pt,0) -- (vp.south)
+              ;
+        \end{forest}
+\isc{场!前场}\is{field!pre-}\isc{场!后场}\is{field!middle-}\isc{句子架构}\is{sentence bracket}
+\caption{\label{Abb-GB-Topo}CP、IP和VP以及德语的空间位置模型}
+%\caption{\label{Abb-GB-Topo}CP, IP and VP and the topological model of German}
+\end{figure}%
+%% \begin{itemize}
+%% \item Zuordnung zum Vorfeld dadurch motiviert, dass im Bairischen
+%%       zusätzlich zur w/d-Phrase ein Komplementierer auf"|treten kann.
+%% \item außerdem theorieinterne Gründe (Phrasenposition vs.\ Kopfposition)
+%% \item Diese Zuordnung schafft allerdings empirische Probleme:
+%%       \begin{itemize}
+%%       \item Komplementierer kann mit w-Phrase koordiniert werden \citep{Reis85} %S. 301
+%%       \item w/d-Phrasen verhalten sich in Bezug auf Verum-Fokus genauso wie Komplementierer
+%%       \item w/d-Phrasen können in Dialekten wie Komplementierer flektiert werden
+%%       \end{itemize}
+%% \end{itemize}
+需要注意的是，SpecCP和SpecIP并不是范畴符号。它们在语法中不跟重写规则一同出现。相反，它们只是表示树上的某个位置。
+%Note that SpecCP and SpecIP are not category symbols. They do not occur in grammars with rewrite rules. Instead, they simply describe
+%positions in the tree.%
+\isc{范畴!功能范畴!I|)}\is{category!functional!I|)}
+
+如图\ref{Abb-GB-Topo}所示，动词的最高层论元（简单句的主语）具有特殊的地位。
+我们自然而然地认为主语总是出现在VP的外面，因而它被称作外部论元。\isc{论元!外部论元}\is{argument!external}VP本身没有指定语。但是，近期的一些文献认为主语在VP的指定语位置生成\citep{FS86a-u,KS91a-u}。在一些语言中，它被认为是移到了VP之外的位置上。在其他语言中，比如说德语，至少要在一定的条件下才是这样的（比如有定性，请参阅\citealp{Diesing92a}）。这里，我将采用经典的GB分析，即认为主语位于VP之外。所有不是主语的论元都是V的补足语，它们在VP内部实现，也就是说，它们是内部论元。如果动词只需要一个补足语，那么按照\xbarc 范式，这就是中心语V$^0$的兄弟结点和V$'$的子结点。非宾格宾语是原型补足语。
+%As shown in Figure~\ref{Abb-GB-Topo}, it is assumed that the highest argument of the verb (the subject in simple sentences) 
+%has a special status. It is taken for granted that the subject always occurs outside of the VP, which is why it is referred
+%to as the external argument.\is{argument!external} The VP itself does not have a specifier. In more recent work, however, the subject
+%is generated in the specifier of the VP \citep{FS86a-u,KS91a-u}. In some languages, it is assumed that it moves to a position
+%outside of the VP. In other languages such as German, this is the case at least under certain conditions (\eg definiteness, see
+%\citealp{Diesing92a}). I am presenting the classical GB analysis here, where the subject is outside the VP. All arguments other than
+%the subject are complements of the V, that are realized within the VP, that is, they are internal arguments. If the verb requires just one complement, then this is %the
+%sister of the head V$^0$ and the daughter of V$'$ according to the \xbar schema. The accusative object is the prototypical complement.
+
+按照\xbarc 模式，附加语\isc{附加语|(}\is{adjunct|(}是V$'$的补足语上面的分支。带有一个附加语的VP的分析请见图\vref{GB-Adjunkte}。
+%Following the \xbar template, adjuncts\is{adjunct|(} branch off above the complements of V$'$. The analysis of a VP
+%with an adjunct is shown in Figure~\vref{GB-Adjunkte}.
+\ea
+\gll weil der Mann morgen den Jungen trifft\\
+	 因为 \textsc{art}.\textsc{def} 男人 明天 \textsc{art}.\textsc{def} 男孩 见面\\
+\mytrans{因为这个男人明天要见这个男孩}
+%	 because the man tomorrow the boy meets\\
+%\mytrans{because the man is meeting the boy tomorrow}
+\z
+
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[VP
+[V$'$
+	[AdvP[morgen;明天,roof]]
+	[V$'$
+		[NP[den Jungen;\textsc{art}.\textsc{def} 男孩, roof]]
+		[V[triff-;见面]]]]]
+\end{forest}}
+\caption{\label{GB-Adjunkte}GB理论中附加语的分析}
+%\caption{\label{GB-Adjunkte}Analysis of adjuncts in \gbt}
+\end{figure}%
+\isc{附加语|)}\is{adjunct|)}
+
+\section{动词位置}
+%\section{Verb position}
+\label{Abschnitt-Verbstellung-GB}\label{sec-verb-position-gb}
+
+在德语中，VP和IP的中心语位置位于它们的补足语右边，\vnullc 和\inullc 属于句子的右边界。主语和其他成分（补足语和附加语）都出现在\vnullc 和\inullc 的左边，并且构成中场。一般认为，德语——至少从D"=结构来看——是一个SOV型的语言（=~这种语言的基本语序是主语--宾语--动词）。将德语作为一种SOV型语言进行分析几乎跟转换语法一样古老。它最早是由 \citet*[\page34]{Bierwisch63}提出的。\footnote{%
+Bierwisch认为是 \citet{Fourquet57a}最早提出了底层动词末位假设。我们可以在 \citew[\page117--135]{Fourquet70a}中找到由Bierwisch援引的法语手稿的德语译文。其他观点请参考 \citew{Bach62a}、 \citew{Reis74a}、 \citew{Koster75a}和 \citew[\S~1]{Thiersch78a}。有关德语具有隐含的SOV模式的观点也在GPSG\citep[\page110]{Jacobs86a}、LFG \citep[\S~2.1.4]{Berman96a-u} 和HPSG的文献（\citealp*{KW91a}；\citealp{Oliva92a}；\citealp*{Netter92}；
+\citealp*{Kiss93}；\citealp*{Frank94}；\citealp*{Kiss95a}；\citealp{Feldhaus97}；\citealp{Meurers2000b}；\citealp{Mueller2005c,MuellerGS}）中有所提及。
+}
+与德语不同的是，其他日耳曼语言，如丹麦语\il{Danish}、英语\il{English}，以及罗曼语如法语\il{French}都是SVO型语言，而威尔士语\il{Welsh}、阿拉伯语\il{Arabic}是VSO型的语言。大约40\,\%的语言都属于SOV型的语言，35\,\%左右是SVO型的\citep{wals-81}。
+%In German, the position of the heads of VP and IP (\vnull and \inull) are to the right of their
+%complements and \vnull and \inull form part of the right sentence bracket.
+%The subject and all other constituents (complements and adjuncts) all occur to the left of \vnull
+%and \inull and form the middle field. It is assumed
+%that German -- at least in terms of D"=structure -- is an SOV language (=~ a language with the base order Subject--Object--Verb).
+%The analysis of German as an SOV language is almost as old as Transformational Grammar itself. It was originally proposed by
+% \citet*[\page34]{Bierwisch63}.\footnote{%
+%	Bierwisch attributes the assumption of an underlying verb"=final order to  \citet{Fourquet57a}. A German translation of the
+%	French manuscript cited by Bierwisch can be found in  \citew[\page117--135]{Fourquet70a}. For other proposals, see  \citew{Bach62a},
+% \citew{Reis74a},  \citew{Koster75a} and  \citew[Chapter~1]{Thiersch78a}. Analyses which assume that
+%German has an underlying SOV pattern were also suggested in \gpsg \citep[\page110]{Jacobs86a}, 
+%LFG \citep[Section~2.1.4]{Berman96a-u} and HPSG   (\citealp*{KW91a}; \citealp{Oliva92a}; \citealp*{Netter92};   
+%\citealp*{Kiss93}; \citealp*{Frank94}; \citealp*{Kiss95a}; \citealp{Feldhaus97};
+%\citealp{Meurers2000b}; \citealp{Mueller2005c,MuellerGS}). 
+%}
+%Unlike German, Germanic languages like Danish\il{Danish}, English\il{English} and Romance languages
+%like French\il{French} are SVO languages, whereas Welsh\il{Welsh} and Arabic\il{Arabic}
+%are VSO languages. Around 40\,\% of all languages belong to the SOV languages, around 35\,\% are
+%SVO \citep{wals-81}.
+% 41,03 SOV
+% 35,4  SVO
+%  6,9  VSO
+
+有关基本语序中动词位于末位的观点是受到下面数据的启发：\footnote{%
+针对第1点和第2点，请参阅 \citew[\page34--36]{Bierwisch63}。针对第\ref{SOV-Skopus}点，请参阅 \citew[\S~2.3]{Netter92}。
+}
+%The assumption of verb"=final order\label{page-verbletzt} as the base order is motivated by the following observations:\footnote{%
+%	For points 1 and 2, see  \citew[\page34--36]{Bierwisch63}. For point~\ref{SOV-Skopus} see  \citew[Section~2.3]{Netter92}.%
+%}
+
+% Ich glaube, über Deutsch würde man sagen, dass Prominenz rechts in der phonologischen Phrase ist,
+% aber nicht ausschließlich durch Längung markiert, sondern vor allem durch pitch. Demnach wäre
+% deutsch wieder irgendwie dazwischen... Außerdem kommt bei Deutsch (wie bei Englisch) noch
+% Deakzentuierung von Gegebenem dazu, da kann Prominenz auch mal nicht-final sein. Oder man sagt,
+% dass in diesen Fällen dann automatisch immer die phonologische Phrase zuende ist, dann ist der
+% Akzent wieder final. Caroline Féry hat dazu Papiere. Diese Deakzentuierung gibt es im Spanischen
+% (und ich denke auch im Italienischen) nicht in dieser Art. Japanisch weiß ich nicht.
+%
+% Viele Grüße,
+% Felix
+%
+%
+%  Am 30.09.11 21:00, schrieb Stefan Müller:
+% >
+% > Habe gerade folgendes gefunden:
+% >
+% >> Interestingly, because head-final languages (\eg Turkish and
+% >> Japanese) mark prominence in phonological phrases initially through
+% >> pitch and intensity and head-initial languages (\eg Italian and
+% >> English) mark prominence in phonological phrases finally through
+% >> duration (Nespor et al., 2008),
+% >
+% >
+% > Wie macht das Deutsche das und ist es dann also head-final oder
+% > -initial. Das wollte ich ja schon immer mal wissen ...
+% >
+% > Viele Grüße
+% >
+% >     Stefan
+
+\begin{enumerate}
+\item 可分动词前缀与动词构成一个紧密的单元。
+%\item Verb particles form a close unit with the verb.
+\eal
+\ex 
+\gll weil er morgen an-fängt\\
+     因为 他 明天 \textsc{part}-开始\\
+\mytrans{因为他明天开始}
+%     because he tomorrow \textsc{part}-starts\\
+%\mytrans{because he is starting tomorrow}
+\ex 
+\gll Er fängt morgen an.\\
+	 他 开始 明天 \textsc{part}\\
+\mytrans{他明天开始。}
+%	 he starts tomorrow \textsc{part}\\
+%\mytrans{He is starting tomorrow.}
+\zl
+这一单元只能用在动词末位的结构中，这也说明了这一结构反映了基本语序的事实。
+%This unit can only be seen in verb"=final structures, which speaks for the fact that this structure reflects the base order.\pagebreak
+
+通过逆生法（back-formation）而由名词推导出的动词\isc{逆生法}\is{back-formation}（如\emph{uraufführen}（首演））通常不能再切分，这样就无法构成动词第二顺位（V2）的小句（这一观点由 \citet{Hoehle91b}在未发表的文章中首次提出。正式出版的文献首见于 \citew[\page 62]{Haider93a}）：
+%Verbs which are derived from a noun by back-formation\is{back-formation} (\eg \emph{uraufführen} 
+%`to perform something for the first time'), can often not be divided into their component parts and
+%V2 clauses are therefore ruled out (This was first mentioned by  \citet{Hoehle91b} in unpublished
+%work. The first published source is  \citew[\page 62]{Haider93a}):
+\eal
+\ex[]{
+\gll weil sie das Stück heute ur-auf-führen\\
+     因为 他们 \textsc{art}.\textsc{def} 戏剧 今天 \textsc{pref}-\textsc{part}-引导\\
+\mytrans{因为他们今天首次演出这部剧}
+%	 because they the play today \textsc{pref}-\textsc{part}-lead\\
+%\mytrans{because they are performing the play for the first time today}
+}
+\ex[*]{
+\gll Sie ur-auf-führen heute das Stück.\\
+     他们 \textsc{pref}-\textsc{part}-引导 今天 \textsc{art}.\textsc{def} 戏剧\\
+   %  they \textsc{pref}-\textsc{part}-lead today the play\\
+}
+\ex[*]{
+\gll Sie führen heute das Stück ur-auf.\\
+     他们 引导 今天 \textsc{art}.\textsc{def} 戏剧 \textsc{pref}-\textsc{part}\\
+  %   they lead today the play \textsc{pref}-\textsc{part}\\
+}
+\zl
+以上例子说明，对于这类动词来说，只有一个可能的位置。这个语序就被认为是基本语序。
+%The examples show that there is only one possible position for this kind of verb. This order is the one that is assumed to be the base order.
+\item 在非定式小句和带连词的定式从句中动词都处于动词末位（我不考虑外位语的可能性）：
+%\item Verbs in non"=finite clauses and in finite subordinate clauses with a conjunction are
+%always in final position (I am ignoring the possibility of extraposing constituents):
+\eal
+\ex 
+\gll Der Clown versucht, Kurt-Martin die Ware zu geben.\\
+     \textsc{art}.\textsc{def} 小丑 尝试 Kurt-Martin \textsc{art}.\textsc{def} 商品 \textsc{inf} 给\\
+\mytrans{小丑正在试着给Kurt-Martin这些商品。}
+%     the clown tries Kurt-Martin the goods to give\\
+%\mytrans{The clown is trying to give Kurt-Martin the goods.}
+\ex 
+\gll dass der Clown Kurt-Martin die Ware gibt\\
+	 \textsc{comp} \textsc{art}.\textsc{def} 小丑 Kurt-Martin \textsc{art}.\textsc{def} 商品 给\\
+\mytrans{小丑给Kurt-Martin这些商品}
+%	 that the clown Kurt-Martin the goods gives\\
+%\mytrans{that the clown gives Kurt-Martin the goods}
+\zl
+
+\item 如果我们将德语中的动词位置与丹麦语\il{Danish}（丹麦语跟英语一样是SVO型的语言）中的动词位置相比较的话，我们可以清楚地看到德语动词聚集在句子的末尾，而丹麦语中它们出现在宾语的前面 \citep[\page 146]{Oersnes2009b}：
+%\item If one compares the position of the verb in German with Danish\il{Danish} (Danish is an SVO language
+%like English), then one can clearly see that the verbs in German form a cluster at the end of the sentence,
+%whereas they occur before any objects in Danish \citep[\page 146]{Oersnes2009b}:
+\eal
+\ex 
+\gll dass er ihn gesehen$_3$ haben$_2$ muss$_1$\\
+	 \textsc{comp} 他 他 看见 \textsc{aux} 必须\\
+%	 that he him seen have must\\
+\ex 
+\gll at han må$_1$ have$_2$ set$_3$ ham\\
+     \textsc{comp} 他 必须 \textsc{aux} 看见 他\\
+\mytrans{他必须看见他}
+ %    that he must have seen him\\
+%\mytrans{that he must have seen him}
+\zl
+\item\label{SOV-Skopus}\isc{辖域|(}\is{s\textsc{cop}e|(} 在（\ref{bsp-absichtlich-nicht-anal}）中，副词的辖域取决于它们的语序：位于最左边的副词辖域囊括其后的两个成分。\footnote{%
+在这里，我们需要指出的是，左边修饰语的辖域包括其右边的这条规则也是有例外的。\citet*[\page47]{Kasper94a}讨论了（i）中的例子，这些例子出自 \citet*[\page137]{BV72}。
+%\item\label{SOV-Skopus}\is{s\textsc{cop}e|(} The s\textsc{cop}e relations of the adverbs in (\ref{bsp-absichtlich-nicht-anal}) depend on their order:
+%the left"=most adverb has s\textsc{cop}e over the two following elements.\footnote{%
+%At this point, it should be mentioned that there seem to be exceptions from the rule that modifiers to the left take s\textsc{cop}e over those to
+%their right.  \citet*[\page47]{Kasper94a} discusses examples such as (i), which go back to  \citet*[\page137]{BV72}.
+\eal
+\label{bsp-peter-liest-gut-wegen}
+\ex 
+\gll Peter liest gut wegen der Nachhilfestunden.\\
+	 Peter 阅读 好 因为 \textsc{art}.\textsc{def} 辅导班\\
+%	 Peter reads well because.of the tutoring\\
+\ex 
+\gll Peter liest wegen der Nachhilfestunden gut.\\
+	 Peter 阅读 因为 \textsc{art}.\textsc{def} 辅导班 好\\
+\mytrans{多亏上了辅导班，Peter能读得不错。}
+%	 Peter reads because.of the tutoring well\\
+%\mytrans{Peter can read well thanks to the tutoring.}
+\zl
+% Kiss95b:212
+	正如 \citet[\S~6]{Koster75a}和 \citet*[\page67]{Reis80a} 指出的，这些并不是特别可信的反例，因为这些例子中右边句子的边界没有被填满。所以，这些例子不一定是中场内重新排序的正常例子，而相反地涉及到外置\isc{外置}\is{extraposition}的PP。正如科斯特和赖斯所指出的，如果我们能够把右边界填上，并且不把致使的附加语外置的话，这些例子是不合语法的：
+%	As  \citet[Section~6]{Koster75a} and  \citet*[\page67]{Reis80a} have shown, these are not particularly convincing counter"=examples
+%	as the right sentence bracket is not filled in these examples and therefore the examples are
+%        not necessarily instances of normal reordering inside of the middle field, but could instead
+%        involve extraposition\is{extraposition} of the PP.
+%	As noted by Koster and Reis, these examples become ungrammatical if one fills the right bracket and does not extrapose the causal adjunct:
+\eal
+\ex[*]{
+\gll Hans hat gut  wegen      der Nachhilfestunden gelesen.\\
+     Hans \textsc{aux} 好 因为 \textsc{art}.\textsc{def} 辅导班 阅读\\
+   %  Hans has well because.of the tutoring read\\
+}
+\ex[]{
+\gll Hans hat gut gelesen wegen der Nachhilfestunden.\\
+	 Hans \textsc{aux} 好 阅读 因为 \textsc{art}.\textsc{def} 辅导班\\
+\mytrans{Hans因为上辅导班而一直读得很好。}
+%	 Hans has well read because.of the tutoring\\
+%\mytrans{Hans has been reading well because of the tutoring.}
+}
+\zl
+但是，下面的例子选自 \citet[\page 383]{Crysmann2004a} ，即使右边界被填充了，我们还是可以得到这样的语序，位于右边的附加语的辖域囊括了左边的成分：
+%However, the following example from  \citet[\page 383]{Crysmann2004a} shows that, even with the right bracket occupied, one can still have an
+%order where an adjunct to the right has s\textsc{cop}e over one to the left:
+\ea
+\gll Da muß es schon erhebliche Probleme mit der Ausrüstung gegeben haben, da wegen schlechten
+  Wetters ein Reinhold Messmer niemals aufgäbe.\\
+  这儿 必须 \expl{} 已经 严重 问题 \textsc{prep} \textsc{art}.\textsc{def} 设备 有 \textsc{aux} 因为 由于 坏 天气 一 Reinhold Messmer 从不
+  放弃\\
+ \mytrans{一定是设备出现了严重的问题，因为像Reinhold Messmer这样的人不会仅仅因为天气不好就放弃了。}
+%\ex Stefan  ist wohl deshalb krank geworden, weil er äußerst hart wegen der Konferenz in Bremen gearbeitet hat.
+\z
+尽管如此，这并不能改变什么。不管动词的位置在哪儿，（\ref{bsp-absichtlich-nicht-anal}）和（\ref{bsp-absichtlich-nicht-anal-v1}）中的相关例子具有同样的含义。语义组合的方式可以在Crysmann的分析中按照同样的方式来实现。
+%Nevertheless, this does not change anything regarding the fact that the corresponding cases in (\ref{bsp-absichtlich-nicht-anal}) 
+%and (\ref{bsp-absichtlich-nicht-anal-v1}) have the same meaning regardless of the position of the verb. The general means of semantic
+%composition may well have to be implemented in the same way as in Crysmann's analysis.%
+}
+这点可以通过下面提出的结构中得到解释：
+%This was explained by assuming the following structure:
+\eal
+\label{bsp-absichtlich-nicht-anal}
+\ex 
+\gll weil er [absichtlich [nicht lacht]]\\
+	 因为 他 \spacebr{}故意 \spacebr{}不 笑\\
+\mytrans{因为他故意不笑}
+%	 because he \spacebr{}intentionally \spacebr{}not laughs\\
+%\mytrans{because he is intentionally not laughing}
+\ex 
+\gll weil er [nicht [absichtlich lacht]]\\
+     因为 他 \spacebr{}不 \spacebr{}故意 笑\\
+\mytrans{因为他不是故意在笑}
+%     because he \spacebr{}not \spacebr{}intentionally laughs\\
+%\mytrans{because he is not laughing intentionally}
+\zl
+值得一提的是，辖域关系并不受到动词位置的影响。如果我们假设动词第二顺位的句子具有如（\mex{0}）中的底层结构，那么这一事实就不需要再深入解释了。（\mex{1}）显示了（\mex{0}）推导出的S"=结构：
+%It is interesting to note that s\textsc{cop}e relations are not affected by verb position. If one assumes that sentences with verb"=second
+%order have the underlying structure in (\mex{0}), then this fact requires no further explanation. (\mex{1}) shows
+%the derived S"=structure for (\mex{0}):
+\eal
+\label{bsp-absichtlich-nicht-anal-v1}
+\ex 
+\gll Er lacht$_i$ [absichtlich [nicht \_$_i$]].\\
+     他 笑 \spacebr{}故意 \spacebr{}不\\
+\mytrans{他故意不笑。}
+%     he laughs \spacebr{}intentionally \spacebr{}not\\
+%\mytrans{He is intentionally not laughing.}
+\ex 
+\gll Er lacht$_i$  [nicht [absichtlich \_$_i$]].\\
+     他 笑 \spacebr{}不 \spacebr{}故意\\
+\mytrans{他不是故意在笑。}
+%     he laughs \spacebr{}not \spacebr{}intentionally\\
+%\mytrans{He is not laughing intentionally.}
+\zl\isc{辖域}\is{s\textsc{cop}e}
+%\item Verum-Fokus
+\nocite{Hoehle88a,Hoehle97a}
+\end{enumerate}\isc{动词末位语言}\is{verb"=final language}
+%% Nebeneffekt der SOV-Struktur: Je enger
+%% sich ein Satzglied auf das Verb bezieht, desto näher steht es an der rechten Satzklammer und auch
+%% dann, wenn das Verb wegbewegt wurde.
+
+\noindent
+在简单介绍了动词末位语序的分析之后，我现在详细说明德语的CP/IP分析。\cnullc 对应于句子的左边界，并且可以按照两个不同的方式来填充：与英语一样，在由连词引导的从句中，从句连词（标补语\isc{标补语}\is{complementizer}）占据\cnullc 的位置。动词留在句子的右边界，如例（\mex{1}）所示。
+%After motivating and briefly sketching the analysis of verb"=final order, I will now look 
+%at the CP/IP analysis of German in more detail. \cnull corresponds to the left sentence bracket and can be filled
+%in two different ways: in subordinate clauses introduced by a conjunction, the subordinating conjunction (the
+%complementizer\is{complementizer}) occupies \cnull as in English. The verb remains in the right
+%sentence bracket, as illustrated by (\mex{1}).
+\ea 
+\gll dass jeder diesen Mann kennt\\
+      \textsc{comp} 每个人 这 人 认识\\
+\mytrans{每个人都认识这个人}
+%     that everybody this man knows\\
+%\mytrans{that everybody knows this man}
+\z
+（\mex{0}）的分析如图\vref{Abb-GB-Komplementierer}所示。
+%Figure~\vref{Abb-GB-Komplementierer} gives an analysis of (\mex{0}).
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[CP
+[C$'$
+	[C$^0$[dass;\textsc{comp}]]
+	[IP
+		[NP [jeder;每人,roof]]
+		[I$'$
+			[VP
+				[V$'$
+					[NP[diesen Mann;这个 男人, roof]]
+					[V$^0$[\trace$_j$]]]]
+			[I$^0$[kenn-$_j$ -t;认识- -\textsc{3sg}]]]]]]
+\end{forest}
+\caption{\label{Abb-GB-Komplementierer}在\cnullc 中带有标补语的句子}
+%\caption{\label{Abb-GB-Komplementierer}Sentence with a complemen\-ti\-zer in \cnull}
+%% \ffigbox{%
+%% \scalebox{.9}{%
+%% \begin{forest}
+%% sm edges
+%% [CP
+%% [C$'$
+%% 	[C$^0$[(kenn-$_j$ -t)$_k$;knows]]
+%% 	[IP
+%% 		[NP [jeder;everybody]]
+%% 		[I$'$
+%% 			[VP
+%% 				[V$'$
+%% 					[NP [diesen Mann; this man, roof]]
+%% 					[V$^0$[\trace$_j$]]]]
+%% 			[I$^0$ [\trace$_k$]]]]]]
+%% \end{forest}}
+%% }{\caption{\label{Abb-GB-Verberststellung}Verb position in GB}}
+%% \end{floatrow}
+\end{figure}%
+在动词首位和动词二位的小句中，定式动词通过\inullc 位置移动到了\cnullc：\vnullc $\to$  \inullc $\to$ \cnullc。图\ref{Abb-GB-Verberststellung}显示了例（\mex{1}）的分析：
+%在动词首位和动词二位的小句中，定式动词通过\inull 位置移动到了\cnull ：\vnull $\to$  \inull $\to$ \cnull。图\vref{Abb-%GB-Verberststellung}显示了例（\mex{1}）的分析：
+%In verb"=first and verb"=second clauses, the finite verb is moved to \cnull via the \inull position:
+%\vnull $\to$  \inull $\to$ \cnull.  Figure~\vref{Abb-GB-Verberststellung} shows the analysis of (\mex{1}):
+\ea
+\gll Kennt jeder diesen Mann?\\
+	 认识 每个人 这 人\\
+\mytrans{每个人都认识这个人吗？}
+%	 knows everybody this man\\
+%\mytrans{Does everybody know this man?}
+\z
+\begin{figure}
+\centerline{%
+\begin{forest}
+sm edges
+[CP
+[C$'$
+	[C$^0$[(kenn-$_j$ -t)$_k$;认识- -\textsc{3sg}]]
+	[IP
+		[NP [jeder;每人,roof]]
+		[I$'$
+			[VP
+				[V$'$
+					[NP [diesen Mann; 这个 男人, roof]]
+					[V$^0$[\trace$_j$]]]]
+			[I$^0$ [\trace$_k$]]]]]]
+\end{forest}
+}
+\caption{\label{Abb-GB-Verberststellung}GB中的动词位置}
+%\caption{\label{Abb-GB-Verberststellung}Verb position in GB}
+\end{figure}%
+在例（\mex{0}）的D"=结构中，\cnullc 位置是空的。因为这个位置上没有标补语，动词可以移到这里。\isc{动词位置}\is{verb position}
+%The \cnull position is empty in the D"=structure of (\mex{0}). Since it is not occupied by a complementizer, the
+%verb can move there.\is{verb position}
+
+\section{长距离依存}
+%\section{Long"=distance dependencies}
+
+在德语的陈述句\isc{陈述句}\is{declarative clause}中，SpecCP位置\isc{长距离依存|(}\is{long"=distance dependency|(}\isc{动词位置!第二位}\is{verb position!-second-}对应于前场，并可以由任何XP成分来充当。这样，我们可以通过将成分移到动词前面这种方式，来从例（\mex{1}）推导出例（\mex{2}）的句子：
+%The\is{long"=distance dependency|(}\is{verb position!-second-} SpecCP position corresponds to the prefield and can
+%be filled by any XP in declarative clauses\is{declarative clause} in German. In this way, one can derive the
+%sentences in (\mex{2}) from (\mex{1}) by moving a constituent in front of the verb:
+\ea
+\gll Gibt der Mann dem Kind jetzt den Mantel?\\
+     给 \textsc{art}.\textsc{def}.\nom{} 人 \textsc{art}.\textsc{def}.\dat{} 孩子 现在 \textsc{art}.\textsc{def}.\acc{} 大衣\\
+\mytrans{这个人现在要把大衣给孩子了吗？}
+%     gives the.\nom{} man the.\dat{} child now the.\acc{} coat\\
+%\mytrans{Is the man going to give the child the coat now?}
+\z
+
+\eal
+\ex 
+\gll Der Mann gibt dem Kind jetzt den Mantel.\\
+      \textsc{art}.\textsc{def}.\nom{} 人 给 \textsc{art}.\textsc{def}.\dat{} 孩子 现在 \textsc{art}.\textsc{def}.\acc{} 大衣\\
+\mytrans{这个人正在给孩子这件大衣。}
+%     the.\nom{} man gives the.\dat{} child now the.\acc{} coat\\
+%\mytrans{The man is giving the child the coat now.}
+\ex 
+\gll Dem Kind gibt der Mann jetzt den Mantel.\\
+     \textsc{art}.\textsc{def}.\dat{} 孩子 给 \textsc{art}.\textsc{def}.\nom{} 人 现在 \textsc{art}.\textsc{def}.\acc{} 大衣\\
+%     the.\dat{} child gives the.\nom{} man now the.\acc{} coat\\
+\ex 
+\gll Den Mantel gibt der Mann dem Kind jetzt.\\
+	 \textsc{art}.\textsc{def}.\acc{} 大衣 给 \textsc{art}.\textsc{def}.\nom{} 人 \textsc{art}.\textsc{def}.\dat{} 孩子 现在\\
+%	 the.\acc{} coat gives the.\nom{} man the.\dat{} child now\\
+\ex 
+\gll Jetzt gibt der Mann dem Kind den Mantel.\\
+	 现在 给 \textsc{art}.\textsc{def}.\nom{} 人 \textsc{art}.\textsc{def}.\dat{} 孩子 \textsc{art}.\textsc{def}.\acc{} 大衣\\
+%	 now gives the.\nom{} man the.\dat{} child the.\acc{} coat\\
+\zl
+由于任何成分都可以移到定式动词的前面，德语在类型学上被看作是一种动词位于第二位的语言（V2）\isc{动词二位语言}\is{verb"=second language}。所以说，这是一种以SOV为基本语序的动词位于第二位的语言。英语是不具有V2属性的SVO型语言，而丹麦语则是以SOV为基本语序的动词位于第二位的语言（有关丹麦语的研究请参阅\citew{Oersnes2009b}）。
+%Since any constituent can be placed in front of the finite verb, German is treated typologically as one of the
+%verb"=second languages\is{verb"=second language} (V2). Thus, it is a verb"=second language with SOV base order.
+%English, on the other hand, is an SVO language without the V2 property, whereas Danish is a V2 language with SVO
+%as its base order (see \citealp{Oersnes2009b} for Danish).
+
+图\vref{Abb-GB-Vorfeldbesetzung}显示了由图\ref{Abb-GB-Verberststellung}推导出来的结构。
+%Figure~\vref{Abb-GB-Vorfeldbesetzung} shows the structure derived from Figure~\ref{Abb-GB-Verberststellung}.
+\begin{figure}
+\centering
+\begin{forest}
+sm edges
+[CP
+[NP [diesen Mann$_i$;这个男人, roof]]
+[C$'$
+	[C$^0$[(kenn-$_j$ -t)$_k$; 认识- -\textsc{3sg}]]
+	[IP
+		[NP [jeder;每人,roof]]
+		[I$'$
+			[VP
+				[V$'$
+					[NP[\trace$_i$]]
+					[V$^0$[\trace$_j$]]]]
+			[I$^0$ [\trace$_k$]]]]]]
+\end{forest}
+\caption{\label{Abb-GB-Vorfeldbesetzung}\gbtc 中的前置}
+%\caption{\label{Abb-GB-Vorfeldbesetzung}Fronting in \gbt}
+\end{figure}%
+决定短语移动的关键因素是句子的信息结构（information structure）\isc{信息结构}\is{information structure}。具体来说，与前述和其他已知信息相关联的内容放在最左端（最好在前场），而新信息一般出现在右边。在陈述句中前置到前场的操作一般叫做话题化（topicalization）\label{Seite-Topikalisierung}\isc{话题化}\is{topicalization}。但是，这一术语不够准确，因为焦点\isc{焦点}\is{focus}（非正式定义：所要表达的成分）也可以出现在前场。此外，虚指代词\isc{代词!虚指代词}\is{pronoun!expletive}可以出现在那里，而这些成分是无指的，所以它们并不能联系到前述的或已知的信息。据此，虚指成分永远不能作话题。
+%The crucial factor for deciding which phrase to move is the \emph{information structure}\is{information structure}
+%of the sentence. That is, material connected to previously mentioned or otherwise"=known information is 
+%placed further left (preferably in the prefield) and new information tends to occur to the right. Fronting to the
+%prefield in declarative clauses is often referred to as
+%\emph{topicalization}\label{Seite-Topikalisierung}\is{topicalization}. But this is rather a
+%misnomer, since the focus\is{focus} (informally: the constituent being asked for) can also occur in the prefield. Furthermore, %expletive
+%pronouns\is{pronoun!expletive} can occur there and these are non"=referential and as such cannot be
+%linked to preceding or known information, hence expletives can never be topics.
+
+基于转换的分析也可以用来解释所谓的长距离依存（long"=distance dependencies），即跨越几个短语边界的依存关系：
+%Transformation"=based analyses also work for so"=called \emph{long"=distance dependencies}, that is, dependencies
+%crossing several phrase boundaries:
+\eal
+\label{bsp-Fernabhaengigkeit}
+\ex\label{bsp-um-zwei-millionen}
+\gll {}[Um zwei Millionen Mark]$_i$ soll er versucht haben, [eine Versicherung \_$_i$ zu betrügen].\footnotemark\\
+     {}\spacebr{}大约 两 百万 德国马克 应该 他 试图 \textsc{aux} \spacebr{}一 保险公司 {} \textsc{inf} 欺骗\\
+%     {}\spacebr{}around 两 million 德国.马克 应该 he tried have \spacebr{}an 保险.company {} to deceive\\
+\footnotetext{%
+         《日报》（\emph{taz}），\zhdate{2001/5/4}，第20页。
+}
+%\footnotetext{%
+%         taz, \zhdate{2001/5/4}, p.\,20.
+%}
+\mytrans{他显然试图从保险公司那里骗取两百万德国马克。}
+%\mytrans{He apparently tried to cheat an insurance company out of two million Deutsche Marks.}
+\ex
+\gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
+     \spacebr{}谁 相信 他 \textsc{comp} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 从……来 尼罗河\\
+%     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
+\footnotetext{%
+        《明镜周刊》（ \emph{Spiegel}），1999年8月，第18页。
+%        Spiegel, 8/1999, p.\,18.
+}
+\mytrans{\,``他以为他是谁呀？''，一个尼罗河来的政客嚷道。}
+%\mytrans{\,``Who does he think he is?'', a politician from the Nile exclaimed.}
+\ex\label{ex-wen-glaubst-du-dass}
+\gll Wen$_i$ glaubst du, daß ich \_$_i$ gesehen habe?\footnotemark\\
+     谁 认为 你 \textsc{comp} 我 {} 看见 \textsc{aux}\\
+%     who believe you that I {} seen have\\
+\footnotetext{%
+     \citew[\page84]{Scherpenisse86a}。
+    }
+\mytrans{你认为我看见谁了？}
+%\mytrans{Who do you think I saw?}
+\ex 
+\gll {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer,~~~~~~~~~~~~~~~~~~~~~ [~[~Angriffe~\_$_i$] zu lancieren].\footnotemark\\
+	 {}\spacebr{}反对 他 落下 \textsc{expl} \textsc{art}.\textsc{def} 共和党人们 但是 更难 \hspaceThis{[~[~}攻击 \textsc{inf} 发起\\
+\footnotetext{%
+  《日报》（\emph{taz}），\zhdate{2008/2/8}，第9页。
+%  taz, 08.02.2008, p.\,9.
+}
+\mytrans{但是，共和党们更难对他发起攻击。}
+%\mytrans{It is, however, more difficult for the Republicans to launch attacks against him.}
+\zl
+在（\mex{0}）的例子中，前场中的成分都是来自于嵌套更深的短语。在GB中，跨越句子界限的长距离依存是一步一步推导出来的\citep[\page 75--79]{Grewendorf88a}，也就是说，在（\ref{ex-wen-glaubst-du-dass}）的分析中，疑问代词被移动到dass引导的从句的限定语位置，然后从那里移到主句的限定语位置上。这是因为移位受到的某些限制必须在局部进行核查。
+%The elements in the prefield in the examples in (\mex{0}) all originate from more deeply embedded phrases. In GB,
+%it is assumed that long"=distance dependencies across sentence boundaries are derived in steps 
+%\citep[\page 75--79]{Grewendorf88a}, that is, in the analysis of (\ref{ex-wen-glaubst-du-dass}), the interrogative
+%pronoun is moved to the specifier position of the \emph{dass}"=clause and is moved from there to the specifier of
+%the matrix clause.\todostefan{Gianina: Shouldn't then (37c) indicate this trace in fromt of dass?} The reason for this is that %there are certain restrictions on movement which must be checked
+%locally.%
+\isc{长距离依存|)}\is{long"=distance dependency|)}
+
+\section{被动}
+%\section{Passive}
+\label{Abschnitt-GB-Passiv}\label{sec-passive-gb}
+
+在介绍\ref{sec-case-assignment}的被动\isc{被动}\is{passive}分析前，第一小节将详细说明结构格\isc{格!结构格|(}\is{case!structural|(}与词汇格\isc{格!词汇格|(}\is{case!lexical|(}的区别。
+%Before\is{passive} I turn to the analysis of the passive in Section~\ref{sec-case-assignment}, the first subsection will elaborate %on the differences
+%between structural\is{case!structural|(} and lexical\is{case!lexical|(} case.
+
+\subsection{结构格与词汇格}
+%\subsection{Structural and lexical case}
+\label{Abschnitt-struktureller-Kasus}
+
+有些需要进行格标记的论元，其格属性取决于论元中心语的句法环境。
+这些论元被称为具有结构格（structural case）的论元。而没有结构格的带格标记论元带有词汇格（lexical case）。\footnote{%
+另外，还有一致格（agreeing case）\isc{格!一致格}\is{case!agreement} （请见第\pageref{page-Kasuskongruenz}页）和语义格（semantic case）。一致格一般出现在谓词中。这个格属性也随着相应的结构发生变化，但是这个变化是由于先行语发生格变而造成的。语义格取决于某些短语的句法功能（\egc 第四格时间状语）。此外，与宾语的词汇格类似的是，语义格并不受到句法环境的影响而发生变化。对于这一小节将讨论到的被动分析而言，只有结构格和词汇格与本节内容有关。
+}
+%The case of many case-marked arguments is dependent on the syntactic environment in which the head
+%of the argument is realized. These arguments are referred to as arguments with \emph{structural case}. Case"=marked arguments, which
+%do not bear structural case, are said to have \emph{lexical case}.\footnote{%
+%Furthermore, there is a so"=called \emph{agreeing case}\is{case!agreement} (see page~\pageref{page-Kasuskongruenz}) and \emph{semantic case}. Agreeing %case is
+%found in predicatives. This case also changes depending on the structure involved, but the change is
+%due to the antecedent element changing its case. Semantic case depends on the function of certain
+%phrases (\eg temporal accusative adverbials). Furthermore, as with lexical case of objects, semantic case does not change
+%depending on the syntactic environment. For the analysis of the passive, which will be discussed in this section, only
+%structural and lexical case will be relevant.}
+
+下面是结构格的例子：\footnote{%
+我们来比较 \citew*[\page 200]{HM94a}。
+
+例（\mex{1}b）是所谓的AcI\isc{动词!AcI|uu}\is{verb!AcI|uu} 结构。AcI是“Accusativus cum infinitivo”的缩写，它表示 “不定式宾格”。所嵌套动词kommen（这里表示“来”）的逻辑主语变成了主动词lassen（让）的宾格宾语。AcI"=动词包括感官动词\isc{动词!感官动词}\is{verb!perception}，如hören（听）、sehen（看）和lassen（让）。
+}
+%The following are examples of structural case:\footnote{%
+   %     Compare  \citew*[\page 200]{HM94a}.
+
+	%	(\mex{1}b) is a so"=called AcI\is{verb!AcI|uu} construction. AcI stands for \emph{Accusativus cum infinitivo}, which means ``accusative
+	%	with infinitive''. The logical subject of the embedded verb (\emph{kommen} `to come'
+          %      in this case) becomes the accusative object of the matrix verb \emph{lassen} `to let'.
+		%Examples for AcI"=verbs are perception verbs\is{verb!perception} such as \emph{hören} `to hear' and \emph{sehen} `to see'
+		%as well as \emph{lassen} `to let'.
+%}
+\eal
+\ex 
+\gll Der Installateur kommt.\\
+	 \textsc{art}.\textsc{def}.\nom{} 水管工 来\\
+\mytrans{水管工要来。}
+\ex 
+\gll Der Mann lässt den Installateur kommen.\\
+	 \textsc{art}.\textsc{def} 人 让 \textsc{art}.\textsc{def}.\acc{} 水管工 来\\
+\mytrans{这个人让水管工来。}
+\ex 
+\gll das Kommen des Installateurs\\
+	 \textsc{art}.\textsc{def} 来 \textsc{art}.\textsc{def}.\gen{} 水管工\\
+\mytrans{水管工的拜访}
+\zl
+在第一个例子中，主语带主格\isc{格!主格}\is{case!nominative}，而在第二个例子中，Installateur（水管工）带宾格\isc{格!宾格}\is{case!accusative}，在第三个例子中，它则紧跟名词化结构\isc{名词化结构}\is{nominalization}后面带属格\isc{格!属格}\is{case!genitive}。宾语的宾格通常是结构格。这个格在被动化后\isc{被动}\is{passive}变成主格：
+%In the first example, the subject is in the nominative case\is{case!nominative}, whereas \emph{Installateur} `plumber' is
+%in accusative\is{case!accusative} in the second example and even in the genitive\is{case!genitive} in the third following nominalization.\is{nominalization}
+%The accusative case of objects is normally structural case. This case becomes nominative under passivization\is{passive}:
+\eal
+\ex 
+\gll Karl schlägt den Weltmeister.\\
+     Karl 打败 \textsc{art}.\textsc{def}.\acc{} 世界冠军\\
+\mytrans{Karl打败了世界冠军。}
+\ex 
+\gll Der Weltmeister wird geschlagen.\\
+     \textsc{art}.\textsc{def}.\nom{} 世界冠军 \passiveprs{} 打败\\
+\mytrans{世界冠军被打败了。}
+\zl
+
+\noindent
+与宾格不同的是，由动词管辖的属格\isc{格!属格}\is{case!genitive}是一个词汇格。当动词被动化之后，属格宾语的格是不变的。
+%Unlike the accusative, the genitive\is{case!genitive} governed by a verb is a lexical case. The case of a genitive object does not change when
+%the verb is passivized.
+\eal
+\ex
+\gll Wir gedenken der Opfer.\\
+     我们 纪念 \textsc{art}.\textsc{def}.\gen{} 受害者\\
+\ex 
+\gll Der Opfer wird gedacht.\\
+     \textsc{art}.\textsc{def}.\gen{} 受害者 \passiveprs{} 纪念\\
+\mytrans{受害者被纪念。}
+\zl
+例（\mex{0}b）是所谓非人称被动\isc{被动!非人称被动}\is{passive!impersonal}的一个例子。例（\mex{-1}b）中宾格宾语变成了主语，与之不同的是，例（\mex{0}b）中没有主语\isc{主语}\is{subject}。请见\ref{Abschnitt-Subjekt}。
+%(\mex{0}b) is an example of the so"=called \emph{impersonal passive}\is{passive!impersonal}. Unlike example (\mex{-1}b), where the accusative
+%object became the subject\is{subject}, there is no subject in (\mex{0}b). See Section~\ref{Abschnitt-Subjekt}.
+
+同样，与格宾语\isc{格!与格|(}\is{case!dative|(}也没有变化：
+%Similarly, there is no change in case with dative objects\is{case!dative|(}:
+\eal
+\ex 
+\gll Der Mann hat ihm geholfen.\\
+     \textsc{art}.\textsc{def} 人 \textsc{aux} 他.\dat{} 帮助\\
+\mytrans{这个人帮助了他。}
+\ex 
+\gll Ihm wird geholfen.\\
+     他.\dat{} \passiveprs{} 帮助\\
+\mytrans{他被帮助了。}
+\zl
+与格应该被看作是词汇格，还是在动词结构环境中的一些或者所有与格都应该被看作是结构格，这个问题存在争议。限于篇幅，我不在这里展开讨论，有兴趣的读者可以参考 \citew{MuellerLehrbuch1}中第14章的内容。接下来，我将按照 \citet[\page 20]{Haider86}的假设，认为与格实际上是一个词汇格。\isc{格!词汇格}\is{case!lexical} 
+%It still remains controversial as to whether all datives should be treated as lexical or whether some or all of the datives in verbal environments should be treated as %instances of structural case.
+%For reasons of space, I will not recount this discussion but instead refer the interested reader to Chapter~14 of  \citew{MuellerLehrbuch1}.
+%In what follows, I assume -- like  \citet[\page 20]{Haider86} -- that the dative is in fact a lexical case.\is{case!lexical} 
+
+\subsection{格指派与格过滤}
+%\subsection{Case assignment and the Case Filter}
+\label{sec-case-assignment}
+
+在GB中，主语从（定式的）I\isc{范畴!功能范畴!I}\is{category!functional!I}位置得到格，而其他论元的格来自于V（\citealp[\page 50]{Chomsky81a}；\citealp[\page
+26]{Haider84b}; \citealp[\page 71--73]{FF87}）。
+%In GB, it is assumed that the subject receives case from (finite) I\is{category!functional!I} and
+%that the case of the remaining arguments comes from
+%V (\citealp[\page 50]{Chomsky81a}; \citealp[\page
+%26]{Haider84b}; \citealp[\page 71--73]{FF87}). 
+\begin{principle-break}[格指派原则]\label{Kasusprinzip-GB}
+%\begin{principle-break}[Case Principle]\label{Kasusprinzip-GB}
+\begin{itemize}
+% hier stand `seinem', aber in den Abbildungen gibt es zwei Komplemente
+\item V将宾格（accusative）指派给它的补足语，如果这个补足语带结构格的话。 
+\item 当动词为定式动词时，INFL将格指派给主语。 
+%\item V assigns objective case (accusative) to its complement if it bears structural case.
+%\item When finite, INFL assigns case to the subject.
+\end{itemize}
+\end{principle-break}
+
+格过滤\isc{格!格过滤}\is{case!filter}原则过滤掉那些没有将格指派到NP的结构。
+%The Case Filter\is{case!filter} rules out structures where case has not been assigned to an NP.
+
+图\vref{Abb-GB-Aktiv}说明了例（\mex{1}a）中的格指派原则。\footnote{%
+上图并不符合\xbarc 理论的标准范式，因为der Frau（这个女人）是一个与V$'$相组合的补足语。在标准的\xbarc 理论中，所有的补足语都与\vnullc 相组合。这对于双及物动词\isc{动词!双及物动词}\is{verb!ditransitive}结构来说是有问题的，因为我们要将它们处理为二分结构（参阅 \citew{Larson88a}有关双宾语结构的分析）。此外，在下图中，为了清晰起见，动词被留在了\vnullc 的位置上。为了创造出合规的S"=结构，动词必须要移动到\inullc 位置的时态词缀处。%
+}
+%Figure~\vref{Abb-GB-Aktiv} shows the Case Principle in action with the example in 
+%(\mex{1}a).\footnote{%
+%The figure does not correspond to \xbar theory in its classic form, since \emph{der Frau} `the woman' 
+%is a complement which is combined with V$'$.  In classical \xbar theory, all complements have to be combined
+%with \vnull. This leads to a problem in ditransitive\is{verb!ditransitive} structures since the structures have to be binary (see  \citew{Larson88a} for a treatment of %double object constructions).
+%Furthermore, in the following figures the verb has been left in \vnull for reasons of clarity. In order
+%to create a well"=formed S"=structure, the verb would have to move to its affix in \inull.%
+%}
+\eal
+\ex 
+\gll {}[dass] der Mann der Frau den Jungen zeigt\\
+     \spacebr{}\textsc{comp} \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 男孩 展示\\
+\mytrans{这个男人将这个男孩展示给这个女人}
+\ex 
+\gll{}[dass] der Junge der Frau gezeigt wird\\
+      \spacebr{}\textsc{comp} \textsc{art}.\textsc{def} 男孩.\nom{} \textsc{art}.\textsc{def}.\dat{} 女人 展示 \passiveprs{}\\
+\mytrans{这个男孩被展示给这个女人}
+\zl
+\begin{figure}
+\hfill
+\begin{forest}
+sm edges
+[IP
+  [NP, name=subject [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
+  [I$'$
+	[VP
+		[V$'$
+			[NP, name=dobject [der Frau;\textsc{art}.\textsc{def} 女人, roof]]
+			[V$'$
+				[NP,   name=aobject [den Jungen;\textsc{art}.\textsc{def} 男孩, roof]]
+				[V$^0$,name=verb    [zeig-;展示-]]]]]
+	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]]
+\draw[->,dotted] (Infl.north) .. controls (3.5,-0.5) and (-1.5,-.1) .. ($(subject.north)+(-.1,.1)$);
+\draw[->]        (verb.north) .. controls (2.9,-3.8) and (-.4,.5) .. ($(subject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.8,-3.3) and (0,-3.7) .. ($(dobject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.0,-4.5) and (1.6,-5.0) .. ($(aobject.north)+(0,.1)$);
+%\draw (-4,-7) to[grid with coordinates] (4,0.5);
+\end{forest} \hspace{1cm}
+\begin{tabular}[b]{ll@{}}
+\tikz[baseline]\draw[dotted](0,1ex)--(1,1ex);&格\\
+\tikz[baseline]\draw(0,1ex)--(1,1ex);&$\theta$"=角色\\
+\tikz[baseline]\draw[dashed](0,1ex)--(1,1ex);&格和$\theta$"=角色
+%\tikz[baseline]\draw[dotted](0,1ex)--(1,1ex);&just case\\
+%\tikz[baseline]\draw(0,1ex)--(1,1ex);&just theta"=role\\
+%\tikz[baseline]\draw[dashed](0,1ex)--(1,1ex);&case and theta"=role
+\\
+\\
+\end{tabular}
+\caption{\label{Abb-GB-Aktiv}主动句中的格与题元角色指派}
+%\caption{\label{Abb-GB-Aktiv}Case and theta-role assignment in active clauses}
+\end{figure}%
+%
+被动在形态上要求主语不出现，并且有结构化的宾格。主动句中的宾格宾语在被动式中仅会在它的原始生成位置获得一个语义角色，但是它不能得到格。所以，它就必须移动到可以被指派格的位置上\citep[\page 124]{Chomsky81a}。图\vref{Abb-GB-Passiv} 说明了对于例（\mex{0}b）而言，这一过程是如何进行的。
+%The passive morphology blocks the subject and absorbs the structural accusative. The object that would get accusative in the active
+%receives only a semantic role in its base position in the passive, but it does not get case the
+%absorbed case. Therefore, it has to move to a position where case can be assigned to it 
+%\citep[\page 124]{Chomsky81a}. Figure~\vref{Abb-GB-Passiv} shows how this works for example
+%(\mex{0}b).
+\begin{figure}
+\hfill
+\begin{forest}
+sm edges
+[IP
+[NP, name=subject [der Junge$_i$;\textsc{art}.\textsc{def} 男孩,roof]]
+[I$'$
+	[VP
+		[V$'$
+			[NP, name=dobject [der Frau;\textsc{art}.\textsc{def} 女人, roof]]
+			[V$'$
+				[NP,   name=aobject [\_$_i$]]
+				[V$^0$,name=verb [gezeigt wir-;展示 \passive, roof]]]]]
+	[I$^0$, name=Infl [-\/d;-\textsc{prs.3s}]]]]
+\draw[->,dotted] (Infl.north) .. controls (2.6,-.25)   and (-1.4,-.25) .. ($(subject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.2,-3.8) and (0,-3.4) .. ($(dobject.north)+(0,.1)$);
+\draw[->]        (verb.north) .. controls (2.0,-4.8) and (1.2,-4.6) .. ($(aobject.north)+(0,.1)$);
+%\draw (-3,-7) to[grid with coordinates] (4,0.5);
+\end{forest}\hspace{1cm}
+\begin{tabular}[b]{ll@{}}
+\tikz[baseline]\draw[dotted](0,1ex)--(1,1ex);&只有格\\
+\tikz[baseline]\draw(0,1ex)--(1,1ex);&只有$\theta$"=角色\\
+\tikz[baseline]\draw[dashed](0,1ex)--(1,1ex);&格和$\theta$"=角色
+%\tikz[baseline]\draw[dotted](0,1ex)--(1,1ex);&just case\\
+%\tikz[baseline]\draw(0,1ex)--(1,1ex);&just theta"=role\\
+%\tikz[baseline]\draw[dashed](0,1ex)--(1,1ex);&case and theta"=role
+\\
+\\
+\end{tabular}
+\caption{\label{Abb-GB-Passiv}被动句中的格与题元角色指派}
+%\caption{\label{Abb-GB-Passiv}Case and theta-role assignment in passive clauses}
+\end{figure}%
+
+这种基于移位的分析适合于英语\il{English}，因为底层的宾语总是要移动的：
+%This movement"=based analysis works well for English\il{English} since the underlying object always has to m
+\gll The          mother gove:
+\eala
+\ex[]{ve [the girl] [a cookie].\\
+     \textsc{art}.\textsc{def} 妈妈    给   \spacebr\textsc{art}.\textsc{def} 女孩 \spacebr{}一 饼干\\
+\mytrans{妈妈给这个女孩饼干。}
+}
+\ex[]{
+{}\gll [The girl]              was          given [a cookie]               (by the mother).\\
+      \spacebr\textsc{art}.\textsc{def} 女孩 \passivepst{} 给    \spacebr{}一 饼干 \hspaceThis{(}\textsc{prep} \textsc{art}.\textsc{def} 妈妈\\
+\mytrans{这个女孩从妈妈那里得到了饼干。}
+}
+\ex[*]{
+\gll It    was          given [the girl] [a cookie].\\
+     \expl{} \passivepst{} 给    \spacebr\textsc{art}.\textsc{def} 女孩 \spacebr{}一 饼干\\
+}
+\zl
+%
+例（\mex{0}c）说明了在主语位置上填上虚指代词是不可行的，所以宾语必须要移位。但是 \citet[\S~4.4.3]{Lenerz77} 指出，这类移位在德语中并不是必需的：
+%(\mex{0}c) shows that filling the subject position with an expletive is not possible, so the object
+%really has to move. However,  \citet[Section~4.4.3]{Lenerz77} showed that such a movement is not obligatory in German:
+
+\eal
+\label{ex-passive-German-no-movement}
+\ex 
+\gll weil das Mädchen dem Jungen den Ball schenkte\\
+     因为 \textsc{art}.\textsc{def}.\nom{} 女孩 \textsc{art}.\textsc{def}.\dat{} 男孩 \textsc{art}.\textsc{def}.\acc{} 球 给\\
+\mytrans{因为这个女孩将球给了这个男孩儿}
+\ex 
+\gll weil dem Jungen der Ball geschenkt wurde\\
+	 因为 \textsc{art}.\textsc{def}.\dat{} 男孩 \textsc{art}.\textsc{def}.\nom{} 球 给 \passivepst{}\\
+\mytrans{因为这个球被送给了这个男孩}
+\ex 
+\gll weil der Ball dem Jungen geschenkt wurde\\
+     因为 \textsc{art}.\textsc{def}.\nom{} 球 \textsc{art}.\textsc{def}.\dat{} 男孩 给 \passivepst{}\\
+\zl
+跟例（\mex{0}c）相比，例（\mex{0}b）是没有标记的顺序。例（\mex{0}b）中的der Ball（球）与例（\mex{0}a）中的den Ball出现在相同的位置上。也就是说，移位并不是必需的。只有格是不同的。但是，例（\mex{0}c）相对于（\mex{0}b）而言，它在某种程度上是有标记的。我们提出的诸如（\mex{0}b）的分析中包括了抽象的移位过程：这些成分虽然保留在他们的位置上，但是跟主语位置有联系，并从那里得到格信息。\citet[\page 1311]{Grewendorf93}认为，在诸如例（\mex{0}b）的主语位置上有一个空的虚指代词\isc{空成分}\is{empty element}\isc{代词!虚指代词}\is{pronoun!expletive}，而且在诸如例（\mex{1}）的无人称被动句的主语位置上也有一个空的虚指代词\isc{被动!非人称被动}\is{passive!impersonal}：\footnote{%
+请参阅 \citew[\page 11--12]{Koster86a}有关荷兰语\il{Dutch}的平行分析，还有 \citew{Lohnstein2014a}基于移位的分析，即对于无人称被动而言，它也包括一个空的虚指代词。
+}
+%In comparison to (\mex{0}c), (\mex{0}b) is the unmarked order. \emph{der Ball} `the ball' in (\mex{0}b) occurs
+%in the same position as \emph{den Ball} in (\mex{0}a), that is, no movement is necessary. Only the case differs.
+%(\mex{0}c) is, however, somewhat marked in comparison to (\mex{0}b). The analysis which has been proposed for
+%cases such as (\mex{0}b) involves abstract movement: the elements stay in their positions, but are connected to
+%the subject position and receive their case information from there.  \citet[\page 1311]{Grewendorf93}
+%assumes that there is an empty expletive pronoun\is{empty element}\is{pronoun!expletive}
+%in the subject position of sentences such as (\mex{0}b) as well as in the subject position of sentences with an
+%impersonal passive\is{passive!impersonal} such as (\mex{1}):\footnote{%
+%	See  \citew[\page 11--12]{Koster86a} for a parallel analysis for Dutch\il{Dutch} as well as 
+%	 \citew{Lohnstein2014a} for a movement"=based account of the passive that also involves an
+   %     empty expletive for the analysis of the impersonal passive.
+%}\todostefan{Gianina: to difficult to parse}
+\ea
+\gll weil heute nicht gearbeitet wird\\
+     因为 今天 不 工作 \passiveprs{}\\
+\mytrans{因为今天不工作}
+\z
+空的虚指代词是指我们看不到也听不到且不含任何语义的成分。对于这类空成分的讨论，可以参考\ref{Abschnitt-UG-EPP}和第\ref{Abschnitt-Diskussion-leere-Elemente}章。
+%A silent expletive pronoun is something that one cannot see or hear and that does not carry any meaning. For discussion of 
+%this kind of empty elements, see Section~\ref{Abschnitt-UG-EPP} and Chapter~\ref{Abschnitt-Diskussion-leere-Elemente}.
+
+在下面的章节中，我将介绍被动的另一种分析方法，这种方法不涉及与论元位置相关联的空范畴，并且试图按照一种更为普遍和从跨语言角度来讲更为一致的方式（如对于最主要论元的压制）来分析被动。
+%In the following chapters, I describe alternative treatments of the passive that do without mechanisms such as
+%empty elements that are connected to argument positions and seek to describe the passive in a more
+%general, cross"=linguistically consistent manner as the suppression of the most prominent argument.
+
+接下来我们需要回答的问题是为什么宾格宾语没有从动词那里得到格指派。对于这一问题的解释可追溯到 \citet[\page 178--185]{Burzio86a-u-gekauft}提出的布尔兹欧定律（Burzio's Generalization）。\isc{布尔兹欧定律}\is{Burzio's Generalization}\footnote{%
+布尔兹欧定律的早期表述是：一个动词指派宾格，当且仅当它指派给它的主语一个语义角色。这个假说在以下两个方面来看都是有问题的。在（i）中，动词并没有指派给主语语义角色，但还是出现了宾格：
+\ea
+\gll Mich friert.\\
+     我.\acc{} 冻\\
+\mytrans{我冻极了。}
+\z
+因此，我们必须要区分结构宾格和词汇宾格，并相应地修改布尔兹欧定律。再来考虑诸如begegnen（遇见）这样的动词，这些动词说明上述充要条件的充分性也是有问题的。begegnen有主语，但是它仍然不能指派宾格，而是与格：
+\ea
+\gll Peter begegnete einem Mann.\\
+     Peter 遇见 一.\dat{} 人\\
+\mytrans{Peter遇见了个人。}
+\z
+
+请参阅 \citew{Haider99a}和 \citew[\page 89]{Webelhuth95a}，以及这里针对布尔兹欧定律的其他问题的参考文献。
+}
+%A further question which needs to be answered is why the accusative object does not receive case from the verb.
+%This is captured by a constraint, which goes back to  \citet[\page 178--185]{Burzio86a-u-gekauft} and is therefore
+%referred to as \emph{Burzio's Generalization}.\is{Burzio's Generalization}\footnote{%
+%Burzio's original formulation was equivalent to the following: a verb assigns accusative if and only if it assigns
+%a semantic role to its subject.
+%This claim is problematic from both sides. In (i), the verb does not assign a semantic role to the subject, however
+%there is nevertheless accusative case:
+%\ea
+%\gll Mich friert.\\
+%	 me.\acc{} freezes\\
+%\mytrans{I am freezing.}
+%\z
+%One therefore has to differentiate between structural and lexical accusative and modify Burzio's Generalization
+%accordingly. The existence of verbs like \emph{begegnen} `to bump into' is problematic for the other side of
+%the implication. \emph{begegnen} has a subject but still does not assign accusative but rather
+%dative:
+%\ea
+%\gll Peter begegnete einem Mann.\\
+%     Peter met a.\dat{} man\\
+%\mytrans{Peter met a man.}
+%\z
+%% verschwinden is unaccusative and hence takes an object as argument.
+%%
+%%  \citet[\page 185]{Burzio86a-u-gekauft} assumes that one"=place intransitive verbs have the potential to assign
+%% accusative. He supports this claim by pointing out the existence of the resultative
+%% constructions\is{resultative construction}, in which additional accusatives can be realized, as \eg
+%% in (iii):
+%% \ea
+%% He talked my head off.
+%% \z
+%% However, there are also verbs such as \emph{verschwinden} `to disappear' which never assign
+%% accusative, not even in such constructions.
+
+%See  \citew{Haider99a} and  \citew[\page 89]{Webelhuth95a} as well as the references cited there for further problems
+%with Burzio's Generalization.
+%}
+\ea
+布尔兹欧定律（改进后）：\\
+没有外部论元的动词不能指派（结构）宾格。
+\z
+%\ea
+%Burzio's Generalization (modified):\\
+%If V does not have an external argument, then it does not assign (structural) accusative case.
+%\z
+
+\noindent
+%\interfootnotelinepenalty=100%
+\citet[\page 12]{Koster86a}指出，英语\il{English}中的被动不能由格理论推导出来，因为如果允许英语、德语和荷兰语\il{Dutch}中存在空的虚指主语，那么就会出现（\mex{1}）中的分析，这里np是一个空的虚指成分：
+% \citet[\page 12]{Koster86a} has pointed out that the passive in English\il{English} cannot be derived by Case
+%Theory since if one allowed empty expletive subjects for English as well as German and Dutch\il{Dutch}, then it would be possible
+%to have analyses such as the following in (\mex{1}) where np is an empty expletive:
+\ea
+\gll np was read the book.\\
+np \passivepst{} 读 \textsc{art}.\textsc{def} 书\\
+\z
+相反，Koster提出，英语中的主语要么受制于其他成分（即非虚指成分），要么在词汇上被填充，即由可见的成分填充。这样，例（\mex{0}）的结构就被排除了，并且我们可以保证the book需要被移至定式动词的前面，以使得主语位置被填充上。
+%Koster rather assumes that subjects in English are either bound by other elements (that is, non"=expletive) or lexically filled, that
+%is, filled by visible material.
+%Therefore, the structure in (\mex{0}) would be ruled out and it would be ensured that \emph{the book} would have to be placed in front
+%of the finite verb so that the subject position is filled.
+\isc{被动}\is{passive}
+
+\section{局部语序重列}
+%\section{Local reordering}
+\label{sec-GB-lokale-Umstellung}
+
+原则上，位于中场的论元几乎可以按照任意的顺序排列，如例（\mex{1}）所示：
+%Arguments in the middle field can, in principle, occur in an almost arbitrary order. (\mex{1}) exemplifies this:
+\eal
+\label{ex-gb-umstellung}
+\ex 
+\gll {}[weil] der Mann der Frau das Buch gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 给\\
+\mytrans{因为这个男人给这个女人这本书}
+%     \spacebr{}because the man the woman the book gives\\
+%\mytrans{because the man gives the book to the woman}
+\ex 
+\gll {}[weil] der Mann das Buch der Frau gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 女人 给\\
+  %\spacebr{}because the man the book the woman gives\\
+\ex\label{ex-das-buch-der-mann-der-frau-gibt} 
+\gll {}[weil] das Buch der Mann der Frau gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 给\\
+ % \spacebr{}because the book the man the woman gives\\
+\ex 
+\gll {}[weil] das Buch der Frau der Mann gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 男人 给\\
+    % \spacebr{}because the book the woman the man gives\\
+\ex 
+\gll {}[weil] der Frau der Mann das Buch gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 书 给\\
+  %   \spacebr{}because the woman the man the book gives\\
+\ex 
+\gll {}[weil] der Frau das Buch der Mann gibt\\
+     \spacebr{}因为 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 给\\
+   %  \spacebr{}because the woman the book the man gives\\
+\zl
+
+\noindent
+在例（\mex{0}b--f）中，组成成分具有不同的重音，而且跟例（\mex{0}a）相比，每个句子能够出现的语境更加受限\citep{Hoehle82}。由此，例（\mex{0}a）的语序被称作是中性语序（neutral order）\isc{中性语序}\is{neutral order} 或无标记语序（unmarked order）\isc{语序!无标记语序}\is{order!unmarked}。
+%In (\mex{0}b--f), the constituents receive different stress and the number of contexts in which each
+%sentence can be uttered is more restricted than in (\mex{0}a) \citep{Hoehle82}. The order in (\mex{0}a)
+%is therefore referred to as the \emph{neutral order}\is{neutral order} or \emph{unmarked order}\is{order!unmarked}.
+
+为了分析这些语序，我们提出了两条建议：第一条建议是假定（\mex{0}b--f）中的五种语序是通过\movea \citep{Frey93a}从一个底层的语序推导出来的。举例来说，对（\ref{ex-das-buch-der-mann-der-frau-gibt}）的分析如图\vref{fig-das-buch-der-mann-der-frau-gibt-movement}所示。
+%Two proposals have been made for analyzing these orders: the first suggestion assumes that the five orderings in (\mex{0}b--f) are derived from
+%a single underlying order by means of \movea \citep{Frey93a}. As an example, the analysis of
+%(\ref{ex-das-buch-der-mann-der-frau-gibt}) is given in Figure~\vref{fig-das-buch-der-mann-der-frau-gibt-movement}.
+\begin{figure}
+\begin{forest}
+sm edges
+[IP
+  [{NP[acc]$_i$} [das Buch;\textsc{art}.\textsc{def} 书, roof]]
+  [IP
+    [{NP[nom]} [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
+    [I$'$
+ 	[VP
+		[V$'$
+			[{NP[dat]} [der Frau;\textsc{art}.\textsc{def} 女人, roof]]
+			[V$'$
+				[NP   [\trace$_i$]]
+				[V$^0$  [gib-;给-]]]]]
+	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]] ]
+\end{forest}
+\caption{作为IP附加语的局部语序重列分析}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
+%\caption{Analysis of local reordering as adjunction to IP}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
+\end{figure}%
+% removed "accusative" due to typesetting reasons
+宾语das Buch（书）被移到了左边，并且连接到最高点的IP上。
+%The object \emph{das Buch} `the book' is moved to the left and adjoined to the topmost IP.
+
+\isc{辖域|(}\is{scope|(}%
+一个通常用来支持这一分析观点的理由是，实际上在重新排序的句子中存在的辖域歧义在基本语序的句子中是不存在的。对于这种歧义的解释是基于这样的假设，即量词的辖域可以从它们在表层结构的位置上推导出来，也可以从它们在深层结构的位置上推导出来。如果它们在表层结构和深层结构中的位置是一致的，也就是说没有任何的移位，那么就只有一种解读的可能性。但是，如果发生了移位，那么就有两种可能的解读方式\citep[\page 185]{Frey93a}：
+%An argument that has often been used to support this analysis is the fact that scope ambiguities
+%exist in sentences with reorderings which are not present in sentences in the base order. The explanation of such ambiguities comes from the assumption that the scope of quantifiers
+%can be derived from their position in the surface structure as well as their position in the deep structure. If the position in both the surface
+%and deep structure are the same, that is, when there has not been any movement, then there is only one reading possible. If movement has taken place,
+%however, then there are two possible readings \citep[\page ]{Frey93a}:
+\eal
+\ex 
+\gll Es ist nicht der Fall, daß er mindestens einem Verleger fast jedes Gedicht anbot.\\
+     \textsc{expl} \textsc{cop} 不 \textsc{art}.\textsc{def} 事实 \textsc{comp} 他 至少 一 出版社 几乎 每 诗 提供\\
+\mytrans{事实并不是他给至少一家出版社提供了几乎每一首诗。}
+%     it is not the case that he at.least one publisher almost every poem offered\\
+%\mytrans{It is not the case that he offered at least one publisher almost every poem.}
+\ex 
+\gll Es ist nicht der Fall, daß er fast jedes Gedicht$_i$ mindestens einem Verleger \_$_i$ anbot.\\
+      \textsc{expl} \textsc{cop} 不 \textsc{art}.\textsc{def} 事实 \textsc{comp} 他 几乎 每 诗 至少 一 出版社 {} 提供\\
+\mytrans{事实并不是他给至少一家出版社提供了几乎每一首诗。}
+%	 it is not the case that he almost every poem at.least one publisher {} offered\\
+%\mytrans{It is not the case that he offered almost every poem to at least one publisher.}
+\zl
+
+\noindent
+有些观点认为语迹会带来诸如对于句子有不同解读的问题，事实上，这些问题是不存在的（请参阅\citealp[\page 146]{Kiss2001a}和\citealp[\S~2.6]{Fanselow2001a}）。以（\mex{1}）的例子来说，可以将mindestens einem Verleger（至少一个出版商）在\_$_i$位置上进行解释，这样就可以得到后面的解读，即fast jedes Gedicht（几乎每一首诗）的辖域涵盖了mindestens einem Verleger（至少一个出版商）。但是，这样的解读是不存在的。
+%It turns out that approaches assuming traces run into problems as they predict certain readings for sentences with multiple traces which
+%do not exist (see \citealp[\page 146]{Kiss2001a} and \citealp[Section~2.6]{Fanselow2001a}). 
+%For instance in an example such as (\mex{1}), it should be possible to interpret \emph{mindestens einem Verleger} `at least one publisher' at
+%the position of \_$_i$, which would lead to a reading where \emph{fast jedes Gedicht} `almost every poem' has scope over \emph{mindestens einem Verleger} 
+%`at least one publisher'. However, this reading does not exist.
+\ea
+\gll Ich glaube, dass mindestens einem Verleger$_i$ fast jedes Gedicht$_j$ nur dieser Dichter \_$_i$ \_$_j$ angeboten hat.\\
+	 我 相信 \textsc{comp} 至少 一 出版社 几乎 每 诗 只有 这 诗人 {} {} 提供 \textsc{aux}\\
+\mytrans{我想，只有这位诗人为至少一家出版社提供了几乎每一首诗。}
+%	 I believe that at.least one publisher almost every poem only this poet {} {} offered has\\
+%\mytrans{I think that only this poet offered almost every poem to at least one publisher.}
+\z
+
+\citet[\page 308]{SE2002a}讨论了日语\il{Japanese}中的相关例子，他们将之归功于Kazuko 
+Yatsushiro\aimention{Kazuko Yatsushiro}。他们提出了这样一个分析，其中第一步是将宾格宾语提到主语的前面。然后，与格宾语放在它的前面，接下来，第三步移位是，再次移动宾格宾语。最后一步既可以构成S"=结构\footnote{%
+   这些作者是在最简方案下提出这些理论的。这就意味着没有严格意义上的S"=结构。我只是将他们的分析翻译为这里所使用的术语。
+}，也可以构成音位形式。对于后者来说，这种移位没有任何语义效应。这种分析虽然可以预测出正确的、可行的解读，但它却需要带有中间步骤的额外的移位操作。
+% \citet[\page 308]{SE2002a} discuss analogous examples from Japanese\il{Japanese}, which they credit to Kazuko 
+%Yatsushiro\aimention{Kazuko Yatsushiro}. They develop an analysis where the first step is to move the accusative object in front of the subject.
+%Then, the dative object is placed in front of that and then, in a third movement, the accusative is moved once more. The last movement can
+%take place to construct either the S"=structure\footnote{%
+%	The authors are working in the Minimalist framework. This means there is no longer S"=structure strictly speaking. I
+%	have simply translated the analysis into the terms used here.
+%}
+%or as a movement to construct the phonological form. In the latter case, this movement will not have any semantic effects.
+%While this analysis can predict the correct available readings, it does require a number of additional movement operations with intermediate steps.
+\isc{辖域|)}\is{scope|)}
+
+与移位分析相对的另外一种分析方法是基础生成（base generation）\isc{基础生成}\is{base generation}：由短语结构规则允准生成的最初结构叫做基础结构（base）。基础生成论的一个变体认为动词一次与一个论元相组合，而且每个$\theta$"=角色在各自的中心语"=论元配置中得到指派。其中，与动词相组合的论元的顺序不是固定的，这就意味着（\ref{ex-gb-umstellung}）中所有的顺序可以不通过任何转换而直接生成。\footnote{%
+我们将这个与第\pageref{psg-binaer}页（\ref{psg-binaer}）中的语法相比较。在该语法中，一个V和一个NP相结合构成一个新的V。由于在短语结构规则中没有提及论元的格，NPs可以按照任意顺序来与动词相组合。
+}GB中的这类观点由 \citet{Fanselow2001a}提出。\footnote{%
+基础生成分析在HPSG\indexhpsgc 框架下是一种自然分析。它是由Gunji\nocite{Gunji86a}在1986年提出来分析日语\il{Japanese}的，我们会在\ref{sec-HPSG-lokale-Umstellung}来详细讨论这一方法。\citet[\page 313--314]{SE2002a}声称，他们认为句法是派生的，即有一系列句法树需要被推导出来。我认为事实上这是不大可能的。比如说，\citet{Kiss2001a}提出的分析就说明了辖域问题可以在基于约束的理论中得到很好的解释。
+}
+有关组成成分的位置的不同观点，请参阅 \citew{Fanselow93a}。\isc{成分序列}\is{constituent order}
+%The alternative to a movement analysis is so"=called \emph{base generation}\is{base generation}: the starting structure generated by phrase structure
+%rules is referred to as the \emph{base}. One variant of base generation assumes that the verb is
+%combined with one argument at a time and each $\theta$"=role is assigned in the respective head"=argument configuration. The order in which
+%arguments are combined with the verb is not specified, which means that all of the orders in (\ref{ex-gb-umstellung}) can be
+%generated directly without any transformations.\footnote{%
+% Compare this to the grammar in (\ref{psg-binaer}) on page~\pageref{psg-binaer}. This grammar
+% combines a V and an NP to form a new V. Since nothing is said about the case of the argument in the
+% phrase structure rule, the NPs can be combined with the verb in any order.
+%} This kind of analysis has
+%been proposed for GB by  \citet{Fanselow2001a}.\footnote{%
+%	The base generation analysis is the natural analysis in the HPSG\indexhpsg framework. It has already been developed by Gunji\nocite{Gunji86a}
+%	in 1986 for Japanese\il{Japanese} and will be discussed in more detail in Section~\ref{sec-HPSG-lokale-Umstellung}.  \citet[\page 313--314]{SE2002a}
+%	claim that they show that syntax has to be derivational, that is, a sequence of syntactic
+%       trees has to be derived. I am of the opinion that this cannot generally be shown to be the
+%        case. There is, for example, an analysis by  \citet{Kiss2001a} which shows that scope
+%        phenomena can be explained well by constraint"=based approaches.
+%}
+%For the discussion of different approaches to describing constituent position, see 
+% \citew{Fanselow93a}.\is{constituent order|)}
+
+
+\section{总结与归类}
+%\section{Summary and classification}
+\label{sec-summary-gb}
+
+GB和最简方案（参阅第\ref{chap-mp}章）中的一些重要文献在语言的共性与个性方面都有一些新的发现。下面，我将重点分析德语句法。
+%Works in GB and some contributions to the Minimalist Program (see Chapter~\ref{chap-mp}) have led to a number of new discoveries in both %language"=specific and cross"=linguistic research. In
+%the following, I will focus on some aspects of German syntax.
+
+在转换语法中，由 \citet*[\page34]{Bierwisch63}、\citet{Reis74a}、 \citet{Koster75a}、\citet[\S~1]{Thiersch78a}和 \citet{denBesten83a}发展形成的动词移位的分析已经成为几乎所有语法模型（除了构式语法\indexcxgc 和依存语法\indexdgc）的标准分析了。
+%The analysis of verb movement developed in Transformational Grammar by  \citet*[\page34]{Bierwisch63},  \citet{Reis74a},
+% \citet{Koster75a},  \citet[Chapter~1]{Thiersch78a} and  \citet{denBesten83a} has become the standard analysis in almost
+%all grammar models (possibly with the exception of Construction Grammar\indexcxg and Dependency Grammar\indexdg).
+
+\citet{Lenerz77}有关成分序列的分析影响了其他理论框架下的分析（GPSG和HPSG中的线性规则可以追溯到Lenerz的分析）。Hai\-der\citeyearpar{Haider84b,Haider85,Haider85b,Haider86,Haider90a,Haider93a}有关成分序列、格和被动的研究对德语的LFG和HPSG分析产生了重要的影响。
+%The work by  \citet{Lenerz77} on constituent order has influenced analyses in other frameworks
+%(the linearization rules in GPSG and HPSG go back to Lenerz' descriptions). Hai\-der's work on constituent order,
+%case and passive \citeyearpar{Haider84b,Haider85,Haider85b,Haider86,Haider90a,Haider93a} has had a significant influence on LFG
+%and HPSG analyses of German.
+
+句法配置\isc{构型}\is{configurationality}方面的整个讨论都是非常重要的，比如说德语中定式动词的主语是在VP内部还是外部（例如\citealp*{Haider82,Grewendorf83a,Kratzer84a,Kratzer96a,Webelhuth85a,%
+Sternefeld85b,%
+Scherpenisse86a,%S. 31, Chapter~4
+Fanselow87a,Grewendorf88a,Duerscheid89a,Webelhuth90,%
+Oppenrieder91a,%
+Wilder91a,Haider93a,Grewendorf93,%
+Frey93a,%
+%Duerscheid89a:60
+Lenerz94a,%
+Meinunger2000a%S. 30
+}），以及德语的非宾格动词\isc{动词!非宾格动词}\is{verb!unaccusative}是在GB的圈子中首次得到了详细的讨论\citep{Grewendorf89a,Fanselow92}。Fanselow和Frey有关成分序列的分析，特别是有关信息结构的研究，在相当程度上提高了德语句法的研究水平\citep{Fanselow88,Fanselow90,Fanselow93a,Fanselow2000a,Fanselow2001a,Fanselow2003d,Fanselow2003a,Fanselow2004a,Frey2000a-u,Frey2001a,Frey2004a,Frey2005a}。
+不定式结构、复杂谓词结构和部分前置都在GB/MP框架下得到了详细讨论与成功的分析（\citealp{Bierwisch63,Evers75a,Haider82,Haider86c,Haider90b,Haider91,Haider93a,Grewendorf83a,Grewendorf87a,Grewendorf88a,denBesten85b,Sternefeld85b,Fanselow87a,Fanselow2002a,SS88a,BK89a}；G.\,\citealp{GMueller96a,GMueller98a,VS98a}）。
+在第二谓词方面，特别值得一提的是 \citet{Winkler97a}的研究。
+%The entire configurationality discussion\is{configurationality}, that is, whether it is better to assume that the 
+%subject of finite verbs in German is inside or outside the VP, was important
+%(for instance \citealp*{Haider82,Grewendorf83a,Kratzer84a,Kratzer96a,Webelhuth85a,%
+%Sternefeld85b,%
+%Scherpenisse86a,%S. 31, Chapter~4
+%Fanselow87a,Grewendorf88a,Duerscheid89a,Webelhuth90,%
+%Oppenrieder91a,%
+%Wilder91a,Haider93a,Grewendorf93,%
+%Frey93a,%
+%Duerscheid89a:60
+%Lenerz94a,%
+%Meinunger2000a%S. 30
+%}) and German unaccusative verbs\is{verb!unaccusative} received their first detailed discussion in GB circles 
+%\citep{Grewendorf89a,Fanselow92}. The works by Fanselow and Frey on constituent order, in 
+%particular with regard to information structure, have advanced German syntax quite considerably
+%\citep{Fanselow88,Fanselow90,Fanselow93a,Fanselow2000a,Fanselow2001a,Fanselow2003d,Fanselow2003a,Fanselow2004a,Frey2000a-%u,Frey2001a,Frey2004a,Frey2005a}.
+%Infinitive constructions, complex predicates and partial fronting have also received detailed and successful treatments
+%in the GB/MP frameworks
+%(\citealp{Bierwisch63,Evers75a,Haider82,Haider86c,Haider90b,Haider91,Haider93a,Grewendorf83a,Grewendorf87a,Grewendorf88a,denBesten85b,Sternefeld85b%,Fanselow87a,Fanselow2002a,SS88a,BK89a}; G.\,\citealp{GMueller96a,GMueller98a,VS98a}).
+%,WL2001a,Wurmbrand2001a-u}). 
+%In the area of secondary predication, the work by  \citet{Winkler97a} is particularly noteworthy.
+
+以上有关语法的不同理论方面的著作并不全面（与我个人的研究兴趣密切相关），而且大部分是关于德语的。当然，对于其他语言和现象来说，还有其他有价值的文献，只不过我们不在这里一一列出了。
+%This list of works from subdisciplines of grammar is somewhat arbitrary (it corresponds more or less to my own
+%research interests) and is very much focused on German. There are, of course, a wealth of other articles on other
+%languages and phenomena, which should be recognized without having to be individually listed here.
+
+在这一节剩下的部分，我将重点讨论两点：原则与参数理论下语言习得的模型与乔姆斯基语言学派的形式化的程度（特别是近几十年的研究成果及其影响）。其中有些内容还会在第\ref{part-discussion}部分再次提及。
+%In the remainder of this section, I will critically discuss two points: the model of language acquisition of the Principles
+%\& Parameters framework and the degree of formalization inside Chomskyan linguistics (in particular the last few decades
+%and the consequences this has). Some of these points will be mentioned again in Part~\ref{part-discussion}. 
+
+\subsection{有关语言习得的解释}
+%\subsection{Explaining language acquisition}
+\label{sec-acquisition-gb}
+
+乔姆斯基学派语法研究的一个重要目标就是解释语言习得。在GB中，我们假定一套非常简单的规则，它可以适用于所有的语言（\xbartc），以及适用于所有语言的普遍原则，但是对于个别语言和语言类型来说还可以进行参数调整。一个参数被认为与多个现象相联系。原则与参数模型尤其硕果累累，它在解释语言之间的共性与个性时得到了一系列有趣的研究成果。在语言习得方面，参数是由语言输入所决定的这一观点倍受争议，因为它与观察到的事实不一致：在设定参数后，学习者应该立刻掌握语言的某些方面。 \citet[\page
+  146]{Chomsky86}应用开关的比喻来进行说明，要么开启，要么关闭。正如他们所设想的，语言中的很多方面都由参数锁定，设定一个参数会对给定学习者的语法的其余部分产生重要的影响。但是，儿童的语言行为并不像我们所期待的那样会根据参数而突然发生改变（\citealp[\page
+  731]{Bloom93a}; \citealp[\page 6]{Haider93a}; \citealp[\page 3]{Abney96a};
+\citealp[\S~9.1]{AW98a}; \citealp{Tomasello2000a,Tomasello2003a};
+\citealp{Newmeyer2005a}）\NOTE{Seite}。此外，我们无法证明某个参数跟不同的语法现象之间存在联系。更多的内容，请参考第\ref{chap-acquisition}章。
+%One of the aims of Chomskyan research on grammar is to explain language acquisition. In GB, one
+%assumed a very simple set of rules, which was the same for all languages (\xbart), as well as
+%general principles that hold for all languages, but which could be parametrized for individual
+%languages or language classes. It was assumed that a parameter was relevant for multiple phenomena.
+%The Principles \& Parameters model was particularly fruitful and led to a number of interesting
+%studies in which commonalities and differences between languages were uncovered. From the point of
+%view of language acquisition, the idea of a parameter which is set according to the input has often
+%been cricitized as it cannot be reconciled with observable facts: after setting a parameter, a
+%learner should have immediately mastered certain aspects of that language.  \citet[\page
+%  146]{Chomsky86} uses the metaphor of switches which can be flipped one way or the other. As it is
+%assumed that various areas of grammar are affected by parameters, setting one parameter should have
+%a significant effect on the rest of the grammar of a given learner.  However, the linguistic
+%behavior of children does not change in an abrupt fashion as would be expected (\citealp[\page
+%  731]{Bloom93a}; \citealp[\page 6]{Haider93a}; \citealp[\page 3]{Abney96a};
+%\citealp[Section~9.1]{AW98a}; \citealp{Tomasello2000a,Tomasello2003a};
+%\citealp{Newmeyer2005a})\NOTE{Seite}.  Furthermore, it has not been possible to prove that there is
+%a correlation between a certain parameter and various grammatical phenomena. For more on this, see
+%Chapter~\ref{chap-acquisition}.
+
+无论如何，原则与参数模型对于跨语言的研究仍然引人关注。每一种理论都必须解释为什么英语\il{English}中动词在宾语前面，而在日语\il{Japanese}中它则在宾语后面。我们可以将这个差异看作是一个参数，并将语言进行相应的分类，但是这是否与语言认知确实有关还是存在很大疑问的。\isc{语言习得}\is{language acquisition}
+%The Principles \& Parameters model nevertheless remains interesting for cross"=linguistic
+%research. Every theory has to explain why the verb precedes its objects in English\il{English} and follows them in 
+%Japanese\il{Japanese}. One can name this difference a parameter and then classify languages
+%accordingly, but whether this is actually relevant for language acquisition is being increasingly called in question.\is{language acquisition|)}
+
+\subsection{形式化}
+%\subsection{Formalization}
+\label{sec-formalization-gb}
+
+Bierwisch在他发表于1963年的有关转换语法的文章中指出：\footnote{%
+Es ist also sehr wohl möglich, daß mit den formulierten Regeln Sätze erzeugt werden können,
+die auch in einer nicht vorausgesehenen Weise aus der Menge der grammatisch richtigen Sätze herausfallen,
+die also durch Eigenschaften gegen die Grammatikalität verstoßen, die wir nicht wissentlich aus
+der Untersuchung ausgeschlossen haben. Das ist der Sinn der Feststellung, daß eine Grammatik
+eine Hypothese über die Struktur einer Sprache ist. Eine systematische Überprüfung der Implikationen
+einer für natürliche Sprachen angemessenen Grammatik ist sicherlich eine mit Hand nicht mehr
+zu bewältigende Auf"|gabe. Sie könnte vorgenommen werden, indem die Grammatik als Rechenprogramm in einem
+Elektronenrechner realisiert wird, so daß überprüft werden kann, in welchem Maße das Resultat
+von der zu beschreibenden Sprache abweicht.}
+%In his 1963 work on Transformational Grammar, Bierwisch writes the following:\footnote{%
+%Es ist also sehr wohl möglich, daß mit den formulierten Regeln Sätze erzeugt werden können,
+%die auch in einer nicht vorausgesehenen Weise aus der Menge der grammatisch richtigen Sätze herausfallen,
+%die also durch Eigenschaften gegen die Grammatikalität verstoßen, die wir nicht wissentlich aus
+%der Untersuchung ausgeschlossen haben. Das ist der Sinn der Feststellung, daß eine Grammatik
+%eine Hypothese über die Struktur einer Sprache ist. Eine systematische Überprüfung der Implikationen
+%einer für natürliche Sprachen angemessenen Grammatik ist sicherlich eine mit Hand nicht mehr
+%zu bewältigende Auf"|gabe. Sie könnte vorgenommen werden, indem die Grammatik als Rechenprogramm in einem
+%Elektronenrechner realisiert wird, so daß überprüft werden kann, in welchem Maße das Resultat
+%von der zu beschreibenden Sprache abweicht.}
+\begin{quotation}
+很有可能的是，由我们构造的规则所生成的句子出乎意料地是不合乎语法的，也就是说，它们由于某些我们在检验中没有特意排除的属性而不合语法。这就意味着，语法是对一种语言的结构的假说。对于自然语言的语法的合格性的系统诊断显然不能再由人工来解决。这一任务可以由计算机按照计算任务来进行实现，这样就可以对所描述语言派生出的结果进行检验。\citep*[\page 163]{Bierwisch63}\footnote{%
+It is very possible that the rules that we formulated generate
+sentences which are outside of the set of grammatical sentences in an
+unpredictable way, that is, they violate grammaticality due to
+properties that we did not deliberately exclude in our examination. This
+is meant by the statement that a grammar is a hypothesis about the
+structure of a language. A systematic check of the implications of a
+grammar that is appropriate for natural languages is surely a task that
+cannot be done by hand any more. This task could be solved by
+implementing the grammar as a calculating task on a computer so that it
+becomes possible to verify to which degree the result deviates from the
+language to be described.}
+\end{quotation}
+Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请参阅 \citew{Grewendorf89a}和 \citew{Fanselow92}。除了对于这些现象的分析，还提出了可能的短语成分位置的限制条件\citep{Lenerz77}，格指派分析\citep*{YMJ87,Meurers99b,Prze99}，动词性复杂结构\isc{动词性复杂结构}\is{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
+\citealp{Meurers99c}; \citealp{Mueller99a,Mueller2002b}; \citealp{deKuthy2002a}）。所有这些现象都是彼此联系的！
+%Bierwisch's claim is even more valid in light of the empirical progress made in the last decades. For example,
+% \citet{Ross67} identified restrictions for movement and long"=distance dependencies and  \citet{Perlmutter78} discovered
+%unaccusative verbs in the 70s. For German, see  \citew{Grewendorf89a} and  \citew{Fanselow92}.
+%Apart from analyses of these phenomena, restrictions on possible constituent positions have been developed
+%\citep{Lenerz77}, as well as analyses of case assignment \citep*{YMJ87,Meurers99b,Prze99} and theories of
+%verbal complexes\is{verbal complex} and the fronting of parts of phrases  (\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
+%\citealp{Meurers99c}; \citealp{Mueller99a,Mueller2002b}; \citealp{deKuthy2002a}). All these
+%phenomena interact!
+
+再来看另一段引文：
+%Consider another quote:
+\begin{quotation}
+早期语言学研究的目标之一，也是计算语言学中语言学部分的核心目标，是开发出能够为英语中的每一句话，或尽可能每一句话，指派一个合理的句法结构的语法。在理论语言学中，这一目标现如今并不重要。特别是在管辖约束理论中，为了追求语法的深层原则早就抛弃了大规模的语法片段。问题在于，不管我们分析小规模语法片段分析得有多深，我们都无法知道识别正确分析这一问题到底有多难。大的语法片段不仅仅是小语法片段的倍数\,--\,当我们开始研究大片段的时候，就已经有质的变化了。当语法能够适应的结构增加，需要被排除的句子的剖析结构也显著地增加。\citep[\page 20]{Abney96a}\footnote{%
+A goal of earlier linguistic work, and one that is still a central goal of the
+linguistic work that goes on in computational linguistics, is to develop grammars
+that assign a reasonable syntactic structure to every sentence of English,
+or as nearly every sentence as possible. This is not a goal that is currently much
+in fashion in theoretical linguistics. Especially in Government-Binding theory
+(GB), the development of large fragments has long since been abandoned in
+favor of the pursuit of deep principles of grammar.
+The scope of the problem of identifying the correct parse cannot be appreciated
+by examining behavior on small fragments, however deeply analyzed.
+Large fragments are not just small fragments several times over\,--\,there is a
+qualitative change when one begins studying large fragments. As the range of
+constructions that the grammar accommodates increases, the number of undesired parses for sentences increases dramatically.
+}
+\end{quotation}
+
+所以，正如Bierwisch和Abney所指出的，我们想要建立一个能够解释人类语言的大规模片段的合理理论并非易事。但是理论语言学家所要实现的更多：他们的目标是构建出能够完美地解释所有语言的限制条件，或者至少对某些语言类型来说是这样的。这样的话，我们就需要对不仅仅是一种语言，而是对多种语言的交互关系有一个整体的认识。这个任务太难了，以至于个体的研究者不能胜任。在这点上，计算机可以提供帮助，因为它们可以立即指出理论中不一致的地方。在去掉这些不一致之后，计算机实现程序可以用来系统地分析测试数据或者语料库，进而检验理论在实证上是否合理（Müller,
+  \citeyear[\S~22]{Mueller99a}; \citeyear{MuellerCoreGram}; \citeyear{MuellerKernigkeit}; \citealp{OF98}; \citealp{Bender2008c}, 参见\ref{sec-formal}）。
+%So, as Bierwisch and Abney point out, developing a sound theory of a large fragment of a human
+%language is a really demanding task. But what we aim for as theoretical linguists is much more: the aim is to formulate restrictions which ideally hold for all languages or at least
+%for certain language classes. It follows from this, that one has to have an overview of the interaction of various phenomena in
+%not just one but several languages. This task is so complex that individual researchers cannot manage it. This is
+%the point at which computer implementations become helpful as they immediately flag inconsistencies in a theory. 
+%After removing these inconsistencies, computer implementations can be used to systematically analyze test data
+%or corpora and thereby check the empirical adequacy of the theory
+%(Müller, \citeyear[Chapter~22]{Mueller99a}; \citeyear{MuellerCoreGram}; \citeyear{MuellerKernigkeit}; \citealp{OF98}; \citealp{Bender2008c}, see Section~\ref{sec-formal}).
+
+在Chomsky第一篇重要著作发表的50多年后，很显然目前并没有基于转换语法分析的大规模语法片段。毫无疑问，Chomsky对语言的形式化作出了重要的贡献，并且他开发出了重要的形式基础理论，这些方面与计算机科学\isc{计算机科学}\is{computer science}和理论计算语言学中有关形式语言\isc{语言!形式语言}\is{language!formal}的理论仍是密切相关的\citep{Chomsky59a-u}。但是，在1981年，他已经开始反对刻板的形式化了：
+%More than 50 years after the first important published work by Chomsky, it is apparent that there has not been
+%one large"=scale implemented grammatical fragment on the basis of Transformational Grammar analyses. Chomsky
+%has certainly contributed to the formalization of linguistics and developed important formal foundations which
+%are still relevant in the theory of formal languages\is{language!formal} in computer science\is{computer science} and
+%in theoretical computational linguistics \citep{Chomsky59a-u}. However, in 1981, he had already turned his back on rigid
+%formalization:
+\begin{quotation}
+%It is this point of view that lies behind the rough distinction between leading ideas and execution, 
+%and that motivates much of what follows. 
+我想我们实际上开始得到语法的一些基本原则，这些原则也许处于合适的抽象层面上。同时，我们有必要对它们进行检验，并且通过开发十分具体的机制来测试他们在事实方面的充分性。然后，我们应该尽量区分开具有前瞻性思想的讨论与选取了具体实现形式的讨论。\citep*[\page 2--3]{Chomsky81a}\footnote{%
+I think that we are, in fact, beginning to approach a grasp of certain 
+basic principles of grammar at what may be the appropriate level of abstraction. At the same time, 
+it is necessary to investigate them and determine their empirical adequacy by developing quite specific mechanisms.
+We should, then, try to distinguish as clearly as we can between discussion that bears on leading ideas and
+discussion that bears on the choice of specific realizations of them.}
+\end{quotation}
+此观点在写给《自然语言与语言学理论》（\emph{Natural Language and Linguistic Theory}）的一封信中更为明确：
+%This is made explicit in a letter to \emph{Natural Language and Linguistic Theory}:
+\begin{quotation}
+即使在数学中，我们所理解的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解水平都至关重要。没有理由认为，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，但如果能证明的确如此，自然是好的。目前，据我所知，我们有着活跃的互动与令人激动的进展，但是没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}\footnote{%
+Even in mathematics, the concept of formalization in our sense was not
+developed until a century ago, when it became important for advancing research
+and understanding. I know of no reason to suppose that linguistics is so much
+more advanced than 19th century mathematics or contemporary molecular
+biology that pursuit of Pullum's injunction would be helpful, but if that can be
+shown, fine. For the present, there is lively interchange and exciting progress
+without any sign, to my knowledge, of problems related to the level of formality
+of ongoing work. }
+\end{quotation}
+这种与严格意义上的形式化的背离导致在主流生成语法下相当多的文献中有时会出现不一致的观点，这些观点导致我们很难将不同文献的观点整合起来。比如说管辖\isc{管辖}\is{government}这个核心概念就有几种不同的界定（概述请参阅\citealp{AS83a} \footnote{%
+进一步的定义可在  \citew{AL84a-u}中找到。不过，这与 \citet[\page 104--106]{PP86a}中的早期版本是一致的。%
+}）。
+%This departure from rigid formalization has led to there being a large number of publications inside
+%Mainstream Generative Grammar with sometimes incompatible assumptions to the point where it is no longer clear
+%how one can combine the insights of the various publications. 
+%An example of this is the fact that the central notion of government\is{government} has several different definitions
+%(see \citealp{AS83a} for an overview\footnote{%
+%A further definition can be found in  \citew{AL84a-u}. This is, however, equivalent to an earlier version as shown
+%by  \citet[\page 104--106]{PP86a}.%
+%}).
+
+这种情况从80年代开始就不断受到争议，而且有时GPSG的支持者提出的批评更为尖锐（\citealp*[\page 6]{GKPS85a}；\citealp{Pullum85a,Pullum89b}；\citealp[\page 48]{Pullum91b}；\citealp{KP90a}）。
+%This situation has been cricitized repeatedly since the 80s and sometimes very harshly by proponents of GPSG 
+%(\citealp*[\page 6]{GKPS85a};
+%\citealp{Pullum85a,Pullum89b}; \citealp[\page 48]{Pullum91b}; \citealp{KP90a}). 
+
+主流生成语法内部这种缺乏精确和细节的研究\footnote{%
+	请参阅 \citew[\page 550]{Kuhns86a}、 \citew[\page 508]{CL92a}、 \citew[\page262]{KT91a}、 \citew[\page
+  3]{Kolb97a}和 \citew[\page 580]{Freidin97a-u}，以及针对后者的 \citew[\page 25, 47]{Veenstra98a}、 \citew[\page 888]{LLJ2000b}和
+   \citew[\page 397, 399, 400]{Stabler2010a}。 
+}，以及对基本假设的不断修订\footnote{%
+	参考 \citew[\page 4]{Kolb97a}、 \citew{Fanselow2009a} 和第\pageref{Zitat-Stabler}页引用Stabler的话。
+} 导致他们的研究成果极少能够应用到计算机实现中。有一些实现系统是基于转换语法、GB理论、MP模型或借鉴了主流的生成语法思想的\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,%
+FG2012a% 
+}\footnote{%
+  请参阅 \citew{FC94a}将统计方法整合进GB理论中的研究。
+}。但是，这些实现系统通常不用转换或者很大程度上与提出的理论假设不一致。例如， \citet[\page 102--104]{Marcus80a-u}和
+ \citet[\page 5]{Stabler87a}应用特别的规则来描述助动词倒装\isc{助动词倒装}\is{auxiliary inversion}的问题。\footnote{%
+   \citet{NF86a-u,NF87a-u}指出，Marcus的剖析器只能剖析上下文无关的语言。由于自然语言更为复杂（见第\ref{sec-generative-capacity}章），而且相应复杂度的语法可以在目前的转换语法的框架内被允准，Marcus的剖析器既不是对乔姆斯基式理论的充分实现，也不是分析自然语言整体的一个软件。
+}
+%The lack of precision and working out of the details\footnote{%
+%	See \eg  \citew[\page 550]{Kuhns86a},  \citew[\page 508]{CL92a},  \citew[\page262]{KT91a},  \citew[\page
+%  3]{Kolb97a} and  \citew[\page 580]{Freidin97a-u},  \citew[\page 25, 47]{Veenstra98a},  \citew[\page 888]{LLJ2000b} and
+ %  \citew[\page 397, 399, 400]{Stabler2010a} for the latter. 
+%} and the frequent modification of basic assumptions\footnote{%
+%	See \eg  \citew[\page 4]{Kolb97a},  \citew{Fanselow2009a} and the quote from Stabler on page~\pageref{Zitat-Stabler}.
+%} has led to insights gained by Mainstream Generative Grammar rarely being translated into computer implementations.
+%There are some implementations that are based on Transformational Grammar/GB/MP models or borrow ideas from Mainstream
+%Generative Grammar
+%\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-%u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,%
+%FG2012a% 
+%},\footnote{%
+%  See  \citew{FC94a} for a combination of a GB approach with statistical methods.
+%}
+%but these implementations often do not use transformations or differ greatly from the theoretical assumptions of the
+%publications. For example,  \citet[\page 102--104]{Marcus80a-u} and
+% \citet[\page 5]{Stabler87a} use special purpose rules for auxiliary inversion\is{auxiliary inversion}.\footnote{%
+%   \citet{NF86a-u,NF87a-u} has shown that Marcus' parser can only parse context"=free languages. Since natural languages
+%  are of a greater complexity (see Chapter~\ref{sec-generative-capacity}) and grammars of corresponding complexity
+%  are allowed by current versions of Transformational Grammar, Marcus' parser can be neither an adequate implementation of
+%  the Chomskyan theory in question nor a piece of software for analyzing natural language in general.
+%}
+为了分析例（\mex{1}a）这个句子，这些规则将John和has的顺序颠倒，这样就得到了例（\mex{1}b）中的顺序，这句话就可以应用非转换结构的规则来剖析。
+%These rules reverse the order of \emph{John} and \emph{has} for the analysis of sentences such as (\mex{1}a) so that we get the order in
+ % (\mex{1}b), which is then parsed with the rules for non"=inverted structures.
+\eal
+\ex 
+\gll Has John scheduled the meeting for Wednesday?\\
+\textsc{aux} John 安排 \textsc{art}.\textsc{def} 会议 \textsc{prep} 星期三\\
+\mytrans{John安排了星期三的会了吗？}
+\ex 
+\gll John has scheduled the meeting for Wednesday?\\
+John \textsc{aux} 安排 \textsc{art}.\textsc{def} 会议 \textsc{prep} 星期三\\
+\mytrans{John安排了星期三的会了吗？}
+\zl
+这些针对助动词倒装的规则非常明确和清晰地指称助动词的范畴。然而，这些规则与GB理论下提出的分析没有丝毫关系。正如我们在\ref{Abschnitt-GB-CP-IP-System-Englisch}看到的，我们并没有针对助动词倒装提出特别的转换规则。助动词倒装是由更为普遍的转换\movealphac 和相关的限制原则而实现的。用规则明确的构成来表示“助动词”这个范畴并不是没有问题的，这点我们在Stabler受到GB启发提出的短语结构语法中可以清晰地看出来：
+%These rules for auxiliary inversion are very specific and explicitly reference the category of the auxiliary. This does not correspond
+%to the analyses proposed in GB in any way. As we have seen in
+%Section~\ref{Abschnitt-GB-CP-IP-System-Englisch}, there are no special transformational rules for auxiliary inversion. Auxiliary inversion is carried out by the %more general transformation \movealpha and
+%the associated restrictive principles. It is not unproblematic that the explicit formulation of the rule refers to the category \emph{auxiliary}
+%as is clear when one views Stabler's GB"=inspired phrase structure grammar: 
+\eal
+\ex\label{Regel-Aux-inv-Stabler} s $\to$ switch(aux\_verb,np), vp.
+\ex s([First$|$L0],L,X0,X) :- \begin{tabular}[t]{@{}l@{}}
+                              aux\_verb(First),\\
+                              np(L0,L1,X0,X1),\\
+                              vp([First$|$L1],L,X1,X).\\
+                              \end{tabular}
+\zl
+%
+我们将例（\mex{0}a）转换为（\mex{0}b）中的Prolog谓词表达式。s后的表达式[First$|$L0]对应的字符串需要被处理。`$|$'"=操作符将列表分为开头和其他剩余部分。First是最先处理的词，L0则包含其他词。在例（\mex{-1}a）的分析中，第一个词是has，L0是John scheduled the meeting for
+Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_verb(First)），如果是的话，那么就需要证明L0序列由一个名词短语开头。因为John是一个NP，这样处理就是成功的。L1是分析L0后所剩下的L0的子集，也就是scheduled the meeting for Wednesday。这组词随后跟助动词（First）相组合，现在就需要检查剩下的这组词has scheduled the meeting for Wednesday是否由VP开头。事实正是如此，而且剩下的列表L是空的。这样，这个句子被成功地处理了。
+%The rule in (\mex{0}a) is translated into the Prolog predicate in (\mex{0}b). The expression [First$|$L0] after the s corresponds to the string, which
+%is to be processed. The `$|$'"=operator divides the list into a beginning and a rest. \emph{First} is the first word to be processed
+%and L0 contains all other words. In the analysis of (\mex{-1}a), First is \emph{has} and L0 is \emph{John scheduled the meeting for Wednesday}.
+%In the Prolog clause, it is then checked whether First is an auxiliary (aux\_verb(First)) and if
+%this is the case, then it will be tried to prove that the list L0 begins with a noun phrase. Since \emph{John} is an NP, this is successful. L1 is the sublist of L0 %which remains after the analysis of L0, that is
+%\emph{scheduled the meeting for Wednesday}. This list is then combined with the auxiliary (First) and now it will be checked whether the resulting
+%list \emph{has scheduled the meeting for Wednesday} begins with a VP. This is the case and the remaining list L is empty. As a result, the
+%sentence has been successfully processed.
+
+这一分析的问题在于只有一个词在词典中进行了核查。诸如（\mex{1}）这样的句子\footnote{%
+  \url{http://www.cooperativegrocer.coop/articles/index.php?id=595}。\zhdate{2010/3/28}。
+}就无法分析了：\footnote{%
+  关于词汇成分并列应为语言学理论的一个选项的讨论，请参阅 \citew{Abeille2006a}。
+} 
+%The problem with this analysis is that exactly one word is checked in the lexicon. Sentences such as (\mex{1}) can not be analyzed:\footnote{%
+%  For a discussion that shows that the coordination of lexical elements has to be an option in linguistic theories, see  \citew{Abeille2006a}.
+%} 
+\ea
+\gll Could or should we pool our capital with that of other co-ops to address the needs of a regional
+``neighborhood''?\\
+可以 或 应该 我们 合作 我们的 资本 跟 \textsc{comp} ……的 其他的 合作者 \textsc{inf} 应对 \textsc{art}.\textsc{def} 需求 ……的 一 区域的 \hspaceThis{``}邻居\\
+\mytrans{我们是可以还是应该将我们的资金与其他合作者的资金一起用来解决区域性的“邻居”的需求？}
+
+\z
+在这类句子中，两个情态动词并列在一起\isc{并列}\is{coordination}。它们之后构成了一个\xzeroc，根据GB的分析，它们可以一起移动。如果我们想将这些案例按照Stabler那样简单地处理，我们就需要将要被处理的词的列表分为两个无限的子集，并且检查第一组词是否包含一个助动词或者几个并列的助动词。我们需要一个递归的谓词性助动词，它们可以在一定程度上核查could or should这个词语序列是否是合格的助动词序列。这并不应通过指定一个特殊的谓词来实现，而是需要通过管理助动词并列的句法规则来实现。与（\mex{-1}a）相对的另一条规则可以是（\mex{1}），这条规则用在像GPSG\citep[\page 62]{GKPS85a}、LFG\citep[\page 491]{Falk84a-u}、一些HPSG的分析（\citealp[\page 36]{GSag2000a-u}）和构式语法中\citep{Fillmore99a}：
+%In this kind of sentence, two modal verbs have been coordinated\is{coordination}. They then form an \xzero and -- following GB analyses -- can be
+%moved together. If one wanted to treat these cases as Stabler does for the simplest case, then we would need to divide the list of words to be
+%processed into two unlimited sub"=lists and check whether the first list contains an auxiliary or several coordinated auxiliaries. We would
+%require a recursive predicate aux\_verbs which somehow checks whether the sequence \emph{could or should} is a well"=formed sequence of 
+%auxiliaries. This should not be done by a special predicate but rather by syntactic rules responsible for the coordination of auxiliaries.
+%The alternative to a rule such as (\mex{-1}a) would be the one in (\mex{1}), which is the one that
+%is used in theories like GPSG \citep[\page 62]{GKPS85a}, LFG \citep[\page 491]{Falk84a-u}, some HPSG analyses
+%(\citealp[\page 36]{GSag2000a-u}), and Construction Grammar
+%\citep{Fillmore99a}:%% \footnote{%
+%%   \citealp[\page 42]{ps2} Pollard \& Sag suggest a general schema that combines a head with all its arguments in one
+%%   go. This general schema also combines v(aux+), np, and vp directly and hence accounts for
+%%   auxiliary inversion without any movement transformation.
+%% }
+\ea
+s $\to$ v(aux+), np, vp.
+\z
+这条规则对于例（\mex{-1}）这类并列语料来说是没有问题的，因为多个助动词的并列可以构成v(aux+)这个范畴的对象（更多有关并列的研究请参阅\ref{Abschnitt-Koordination}）。如果倒装需要一个像（\ref{Regel-Aux-inv-Stabler}）的特殊规则来操作的话，那么就不清楚为什么我们不能简单地应用（\mex{0}）中不含转换的规则。
+%This rule would have no problems with coordination data like (\mex{-1}) as coordination of multiple auxiliaries would produce an object with the
+%category v(aux+) (for more on coordination see Section~\ref{Abschnitt-Koordination}). If inversion
+%makes it necessary to stipulate a special rule like (\ref{Regel-Aux-inv-Stabler}), then it is not clear why one could not simply use the transformation"=less rule in %(\mex{0}).
+
+在MITRE系统\citep{ZFHW65a}中，有针对表层结构的具体语法，这一表层结构是从深层结构通过将转换反向应用推导出来的，也就是说，不用一个文法来创造深层结构，然后转换为其他结构，而是采用两个文法。由语法分析程序决定的深层结构被用来当作转换成分的输入，因为这是唯一能够确保表层结构确实能由基本结构推导出来的方法\citep[\page 10]{Kay2011a}。
+%In the MITRE system \citep{ZFHW65a}, there was a special grammar for the surface structure, from which the deep structure was derived via
+%reverse application of transformations, that is, instead of using one grammar to create deep structures which are then transformed into
+%other structures, one required two grammars. The deep structures that were determined by the parser
+%were used as input to a transformational component since this was the only way to ensure that
+%the surface structures can actually be derived from the base structure \citep[\page 10]{Kay2011a}.
+
+这章还讨论了其他与基于转换的分析不同的应用实现。比如说，\citet[\page 265, \S~4]{KT91a}得出这样的结论，一个陈述的、基于约束的方法对于GB来说比一个推导的方法更为有效。\citet{Johnson89a}提出了推导式剖析方法（Parsing as Deduction）\isc{推导式剖析方法}\is{Parsing as Deduction}，该方法重建了GB的子理论（\xbartc、
+$Theta$"=理论\isc{$Theta$"=理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}、格语法 \ldots\ldots）作为逻辑表达式。\footnote{%
+请参考 \citew[\page 511]{CL92a}和 \citew[\page 38]{FC94a}有关其他基于约束的推导式剖析方法。
+}
+%There are other implementations discussed in this chapter that differ from transformation"=based analyses. For example,  \citet[\page 265, Section~4]{KT91a}
+%arrive at the conclusion that a declarative, constraint"=based approach to GB is more appropriate than a derivational one.  \citet{Johnson89a}
+%suggests a \emph{Parsing as Deduction} approach\is{Parsing as Deduction} which reformulates sub"=theories of GB (\xbart,
+%Theta"=Theory\is{theta-theory@$\theta$-Theory}, Case Theory, \ldots) as logical expressions.\footnote{%
+%	See  \citew[\page 511]{CL92a} and  \citew[\page 38]{FC94a} for another constraint"=based Parsing-as-Deduction approach.
+%}
+这些方法可以在逻辑的基础上各自独立地应用。在约翰逊的分析中，\gbtc 被看作是基于约束的系统。更多普遍性的约束条件从S"=结构和D"=结构的限制条件中抽取出来，之后这些约束条件就可以直接用于剖析了。这就意味着转换并不是直接由剖析器实现的。如约翰逊所指出的，他所模拟的语言片段是较为小规模的。比如说，它没有针对wh"=移位的描述（第114页）。
+%These can be used independently of each other in a logical proof. In Johnson's analysis, \gbt is understood as a constraint"=based system. 
+%More general restrictions are extracted from the restrictions on S"= and D"=structure which can then be used directly for parsing. This means that 
+%transformations are not directly carried out by the parser. As noted by Johnson, the language fragment he models is very small. It contains no
+%description of \emph{wh}"=movement, for example (p.\,114). 
+
+在GB和语障论（GB之后的理论，请参阅  \citealp{Chomsky86b}）传统下的最详细的应用实现可能就是斯特布勒的Prolog实现了\citeyearpar{Stabler92a-u}。Stabler的成就自然是十分显著的，但是他在书里也这样声称：Stabler必须简化语障（Barriers）理论中没有明确说明的很多事情（比如说在对\xbarc 理论形式化的时候，应用特征"=值偶对，这是借鉴了GPSG理论\indexgpsgc），而且有些假设不能有效地形式化，并被简单地忽略了（更多细节请参阅\citealp{Briscoe97a}）。
+%Probably the most detailed implementation in the tradition of GB and Barriers -- the theoretical
+%stage after GB (see \citealp{Chomsky86b}) -- is Stabler's Prolog implementation
+%\citeyearpar{Stabler92a-u}. Stabler's achievement is certainly impressive, but his book confirms what has been claimed thus far: Stabler has to simply stipulate %many
+%things which are not explicitly mentioned in \emph{Barriers} (\eg using feature"=value pairs when
+%formalizing \xbar theory, a practice that was borrowed from GPSG\indexgpsg) and some assumptions
+%cannot be properly formalized and are simply ignored (see \citealp{Briscoe97a} for details). 
+
+满足一定要求的GB分析\label{Seite-Representationelle-GB}可以被重建，这样他们就不用转换了。这些不用转换的方法也叫做基于表征的模型（representational model）\isc{表征模型}\is{representational
+  model}，而基于转换的方法叫做基于推导的模型（derivational model）\isc{推导}\is{derivation}。对于表征分析来说，只有表层结构有语迹，但是这些结构都没有通过转换与深层结构联系起来（请参考 % \citew{McCawley68a}; Pullum2007a:3 sagt, dass das nicht MTS ist
+Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u}; 
+%\citealp[\page 66, Fußnote~4]{Bierwisch83a}; 
+\citealp{KT91a}; \citealp[\S~1.4]{Haider93a}; 
+\citealp[\page 14]{Frey93a}; \citealp[\page 87--88, 177--178]{Lohnstein93a-u}; \citealp[\page 38]{FC94a}; \citealp[\page 58]{Veenstra98a}）。
+%GB analyses\label{Seite-Representationelle-GB} which fulfill certain requirements can be reformulated so that they no longer make use of transformations.
+%These transformation"=less approaches are also called \emph{representational}\is{representational model}, whereas the transformation"=based approaches are %referred to as
+%\emph{derivational}\is{derivation}. For representational analyses, there are only surface structures augmented by traces but none of these structures is %connected
+%to an underlying structure by means of transformations (see \eg % \citew{McCawley68a}; Pullum2007a:3 sagt, dass das nicht MTS ist
+%Koster \citeyear[\page ]{Koster78b-u}; \citeyear[\page 235]{Koster87a-u}; 
+%\citealp[\page 66, Fußnote~4]{Bierwisch83a}; 
+%\citealp{KT91a}; \citealp[Section~1.4]{Haider93a}; 
+%\citealp[\page 14]{Frey93a}; \citealp[\page 87--88, 177--178]{Lohnstein93a-u}; \citealp[\page 38]{FC94a}; \citealp[\page 58]{Veenstra98a}).
+这些分析可以按照相应的HPSG分析来进行计算处理的实现（请见第\ref{Kapitel-HPSG}章），实际上我们有对德语动词位置的分析的例子。\footnote{%
+这说明了ten Hacken将HPSG与GB和LFG对立起来\citep[\S~4.3]{TenHacken2007a}，并将这些理论框架归为不同的研究范式完全是错误的。在他的分类中，ten Hacken主要参考了HPSG假设的理论模型的形式化方法。但是，LFG也是一个理论模型的形式化理论\citep{Kaplan95a}。而且，GB也有一个理论模型的变体\citep{Rogers98a-u}。更多的内容，请参考第\ref{Abschnitt-Generativ-Modelltheoretisch}章。
+}
+%These analyses can be implemented in the same way as corresponding HPSG analyses\indexhpsg (see
+%Chapter~\ref{Kapitel-HPSG}) as computer-processable fragments and this has in fact been carried out
+%for example for the analysis of verb position in German.\footnote{%
+%	This shows that ten Hacken's contrasting of HPSG with GB and LFG \citep[Section~4.3]{TenHacken2007a}
+ %       and the classification of these frameworks as belonging to different research paradigms is
+ %       completely mistaken. In his classification, ten Hacken refers mainly to the model"=theoretic
+ %       approach that HPSG assumes. However, LFG also has a model"=theoretic formalization
+  %      \citep{Kaplan95a}. Furthermore, there is also a model"=theoretic variant of GB
+%	\citep{Rogers98a-u}. For further discussion, see Chapter~\ref{Abschnitt-Generativ-Modelltheoretisch}. 
+%}
+但是，这类应用分析与GB分析在基本框架和一些小但重要的方面，比如说如何处理长距离依存和并列的相互作用是不同的\citep{Gazdar81}。有关转换语法内移位分析的讨论分类，请看 \citew{Borsley2012a}。
+%However, such implemented analyses differ from GB analyses with regard to their basic architecture and in small, but important details such as how one deals %with
+%the interaction of long"=distance dependencies and coordination \citep{Gazdar81}. For a critical discussion and classification of movement analyses
+%in Transformational Grammar, see  \citew{Borsley2012a}. 
+
+在上面富有争议的概述内容之后，我要加一条评论以避免可能的误解：我并不要求所有的语言学工作都是纯粹形式化的。这对于一篇三十来页的文章来说是不可能的。而且，我并不认为所有的语言学家都应该做形式化的工作，并且将他们的分析应用于计算模型之中。不过，总要有人做形式化的细节工作，而且这些基础的理论假设也应该在我们共同的研究领域内在相当充分的时间内被接受和采纳。
+%Following this somewhat critical overview, I want to add a comment in order to avoid being misunderstood:
+%I do not demand that all linguistic work shall be completely formalized. There is simply
+%no space for this in a, say, thirty page essay. Furthermore, I do not believe that all linguists
+%should carry out formal work and implement their analyses as computational models. However, there
+%has to be \emph{somebody} who works out the formal details and these basic theoretical assumptions
+%should be accepted and adopted for a sufficient amount of time by the research community in
+%question.
+
+%\section*{思考题}
+%\section*{Comprehension questions}
+
+%\bigskip
+\questions{
+\begin{enumerate}
+\item 请举例说明功能范畴与词汇范畴。
+\item 如何用二元特征来表示词汇范畴？这样做有什么好处？
+%\item Give some examples of functional and lexical categories.
+%\item How can one represent lexical categories with binary features and what advantages does this have?
+\end{enumerate}
+}
+
+%\section*{练习题}
+%\section*{Exercises}
+\exercises{
+\begin{enumerate}
+\item 请画出下列句子的句法树：
+%\item Draw syntactic trees for the following examples:
+\eal
+\ex 
+\gll dass die Frau den Mann liebt\\
+     \textsc{comp} \textsc{art}.\textsc{def}.\nom{} 女人 \textsc{art}.\textsc{def}.\acc{} 男人 爱\\
+\mytrans{这个女人爱这个男人}
+%     that the.\nom{} woman the.\acc{} man loves\\
+%\mytrans{that the woman loves the man}
+\ex 
+\gll dass der Mann geliebt wird\\
+     \textsc{comp} \textsc{art}.\textsc{def}.\nom{} 男人 爱 \passiveprs{}\\
+\mytrans{这个男人被人爱}
+%     that the.\nom{} man loved is\\
+%\mytrans{that the man is loved}
+\ex 
+\gll Der Mann wird geliebt.\\
+     \textsc{art}.\textsc{def}.\nom{} 男人 \passiveprs{} 爱\\
+\mytrans{这个男人被人爱。}
+%     the.\nom{} man is loved\\
+%\mytrans{The man is loved.}
+\ex 
+\gll dass der Mann der Frau hilft\\
+     \textsc{comp} \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 帮助\\
+\mytrans{这个男人帮助这个女人}
+%     that the.\nom{} man the.\dat{} woman helps\\
+%\mytrans{that the man helps the woman}
+\ex 
+\gll Der Mann hilft der Frau.\\
+     \textsc{art}.\textsc{def} 男人.\nom{} 帮助 \textsc{art}.\textsc{def}.\dat{} 女人\\
+\mytrans{这个男人正在帮助这个女人。}
+%     the man.\nom{} helps the.\dat{} woman\\
+%\mytrans{The man is helping the woman.}
+\zl
+\hspace{+2em}请这样分析被动句：作为主语的名词短语是从宾语的位置移动而来的，也就是说，主语并不是一个空的虚指代词。
+%For the passive sentences, use the analysis where the subject noun phrase is moved from the object position, that is, the analysis
+%without an empty expletive as the subject.
+\end{enumerate}
+}
+
+%\section*{延伸阅读}
+%\section*{Further reading}
+
+\furtherreading{
+从\ref{Abschnitt-GB-allgemein}到\ref{sec-GB-lokale-Umstellung}，我参考了Peter Gallmann\aimention{Peter Gallmann} 2003中的文献材料 \citep{Gallmann2003a}。但是，我在很多地方做了调整。对于其中的任何错误与不足，我个人负全部责任。有关Peter Gallmann的文献材料，请见\url{http://www.syntax-theorie.de}。
+%For Sections~\ref{Abschnitt-GB-allgemein}--\ref{sec-GB-lokale-Umstellung}, I used material from Peter Gallmann\aimention{Peter Gallmann}
+%from 2003 \citep{Gallmann2003a}. This has been modified, however, at various points. I am solely responsible for any mistakes or inadequacies.
+%For current materials by Peter Gallmann, see \url{http://www.syntax-theorie.de}. 
+
+在《句法分析视点》（\emph{Syntaktische Analyseperspektiven}）这本书中，\citet{Lohnstein2014a}展示了GB理论的一个变体，它与本章所讨论的问题有一些相关性（CP/IP和基于移位的被动式分析）。这本书里的不同章节是由主张不同理论的学者针对同一篇新闻报道的分析而写的。这对于希望对不同理论进行比较的读者来说是特别有意思的研究。
+%In the book \emph{Syntaktische Analyseperspektiven},  \citet{Lohnstein2014a} presents a variant of GB
+%which more or less corresponds to what is discussed
+%in this chapter (CP/IP, movement"=based analysis of the passive). The chapters in said book have been written by proponents of various theories
+%and all analyze the same newspaper article. This book is extremely interesting for all those who wish to compare the various theories out there.
+
+ \citew{Haegeman94a-u}是有关GB理论的一本综合性导论。对于可以阅读德语的读者来说，可以看看 \citew{FF87}、 \citew{SS88a}和 \citew{Grewendorf88a}这几本教科书，因为他们也提到了本书所提及的一些现象。
+% \citew{Haegeman94a-u} is a comprehensive introduction to GB. Those who do read German may consider
+%the textbooks by  \citew{FF87},  \citew{SS88a} and  \citew{Grewendorf88a} since they are also
+%addressing the phenomena that are covered in this book.
+
+在Chomsky的很多著作中，他将没有转换的方法叫做“符号层面的变体”。这是不合适的，因为没有转换的分析可以对基于转换的方法做出不同的预测（比如说，跟并列和提取相关的方面，可以参考\ref{Abschnitt-Einordnung-GPSG}有关GPSG的讨论）。在 \citew{Gazdar81b}中，我们可以找到有关GB和GPSG相比较的内容，以及将GPSG的类型作为转换语法的一个显著变体，这方面的代表有Noam Chomsky、Gerald Gazdar和Henry Thompson）\aimention{Henry S. Thompson}。
+%In many of his publications, Chomsky discusses alternative, transformation"=less approaches as ``notational variants''.
+%This is not appropriate, as analyses without transformations can make different predictions to
+%transformation"=based approaches (\eg with respect to coordination
+%and extraction. See Section~\ref{Abschnitt-Einordnung-GPSG} for a discussion of GPSG in this respect). In  \citew{Gazdar81b}, one can find a comparison
+%of GB and GPSG\indexgpsg as well as a discussion of the classification of GPSG as a notational variant of Transformational Grammar with contributions
+%from Noam Chomsky, Gerald Gazdar and Henry Thompson\aimention{Henry S. Thompson}.
+
+\citet{Borsley99a-u}和 \citet{KS2008a-u}出版了英语的GB和HPSG教材。对于转换语法和LFG的比较，请参阅 \citew{BK82a}。\citew{Kuhn2007a}将现代推导分析与基于约束的LFG和HPSG进行了比较分析。 \citet{Borsley2012a}比较了HPSG理论下的长距离依存和GB与最简方案下基于移位的分析。 Borsley讨论了四种对于基于移位的方法而言有问题的现象：没有填充的提取、多重空位的提取（请看本书第\pageref{ex-atb-minimalism}页的脚注\ref{ex-atb-minimalism}和第\pageref{ex-atb-gazdar}页的脚注\ref{ex-atb-gazdar}）、填充与空位不匹配的提取以及没有空位的提取。
+% \citet{Borsley99a-u} and  \citet{KS2008a-u} have parallel textbooks for GB and HPSG\indexhpsg in English. For the comparison of Transformational Grammar
+%and LFG, see  \citew{BK82a}.  \citew{Kuhn2007a} offers a comparison of modern derivational analyses with constraint"=based LFG\indexlfg and HPSG %approaches.
+% \citet{Borsley2012a} contrasts analyses of long"=distance dependencies in HPSG with movement"=based analyses as in GB/Minimalism. Borsley discusses
+%four types of data which are problematic for movement"=based approaches: extraction without fillers,
+%extraction with multiple gaps (see also the discussion of (\ref{ex-atb-minimalism}) on
+%p.\,\pageref{ex-atb-minimalism} and of (\ref{ex-atb-gazdar}) on p.\,\pageref{ex-atb-gazdar} of this
+%book), extractions where fillers and gaps do not match and extraction without gaps.
+}
+
+% wsun DONE
+% Lulu DONE
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "grammatiktheorie-2"
+%%% End: 
+
+
+
+%      <!-- Local IspellDict: en_US-w_accents -->
+
+
+% 29:36
+
+% 1:04:00 Sport-Teams und Autoritäten
+
+% 1:30:00
+
+% 2:19:23
+
+% 2:31:56
+
+
