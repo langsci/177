@@ -5,7 +5,7 @@
 \label{Abschnitt-Diskussion-Performanz}\label{chap-competence-performance}
 
 \begin{sloppypar}
-很多语法理论都假设语言能力\nocite{VL2006a}与语言运用\isc{语言能力|(}\is{competence|(}\isc{语言运用|(}\is{performance|(}之间的差异\citep[\S~1.1]{Chomsky65a}，我们已经在\ref{Abschnitt-Kompetenz-Performanz-TAG}中讨论如何在TAG中分析置换和动词性复杂短语时谈论过。语言能力理论致力于描述语言学知识，而语言运用理论致力于解释语言知识是如何使用的以及在语言产生和理解过程中为什么会产生错误。在语言能力/语言运用讨论中的一个经典例子是中心自我嵌套\isc{自嵌套}\is{self"=embedding}问题。 \citet[\page 286]{CM63a}讨论了如下递归性\isc{递归}\is{recursion}嵌套关系小句\isc{关系小句}\is{relative clause}的例子：
+很多语法理论都假设语言能力\nocite{VL2006a}与语言运用\isc{语言能力|(}\is{competence|(}\isc{语言运用|(}\is{performance|(}之间的差异\citep[\S~1.1]{Chomsky65a}，我们已经在\ref{Abschnitt-Kompetenz-Performanz-TAG}中讨论了这一问题，即如何在TAG中分析杂序和动词性复杂结构。语言能力理论致力于描述语言学知识，而语言运用理论致力于解释语言知识是如何使用的以及在语言产生和理解过程中为什么会产生错误。在语言能力/语言运用讨论中的一个经典例子是中心内嵌\isc{内嵌}\is{self"=embedding}问题。 \citet[\page 286]{CM63a}讨论了如下递归性\isc{递归}\is{recursion}嵌套关系小句\isc{关系小句}\is{relative clause}的例子：
 %The distinction\nocite{VL2006a} between competence and performance\is{competence|(}\is{performance|(}
 %\citep[Section~1.1]{Chomsky65a}, which is assumed by several theories of grammar, was already
 %discussed in Section~\ref{Abschnitt-Kompetenz-Performanz-TAG} about the analysis of scrambling and
@@ -18,7 +18,7 @@
 \end{sloppypar}
 \ea
 \gll (the rat (the cat (the dog chased) killed) ate the malt)\\
-     \hspaceThis{(}\textsc{det} 老鼠 \hspaceThis{(}\textsc{det} 猫 \hspaceThis{(}\textsc{det} 狗 追逐 杀死 吃 \textsc{det} 麦芽\\
+     \hspaceThis{(}\textsc{art}.\textsc{def} 老鼠 \hspaceThis{(}\textsc{art}.\textsc{def} 猫 \hspaceThis{(}\textsc{art}.\textsc{def} 狗 追逐 杀死 吃 \textsc{art}.\textsc{def} 麦芽\\
 \mytrans{那只狗追逐的那只猫杀死了的那只老鼠吃了麦芽。}
 %(the rat (the cat (the dog chased) killed) ate the malt)
 \z
@@ -27,22 +27,22 @@
 \eal
 \ex 
 \gll dass der Hund bellt, der die Katze jagt, die die Maus kennt, die im Keller lebt\\
-    \textsc{comp} \textsc{det} 狗.\mas{} 叫 \textsc{rel}.\mas{} \textsc{det} 猫 追逐 \textsc{rel}.\fem{} \textsc{det} 老鼠 知道 \textsc{rel}.\fem{} \textsc{prep}.\textsc{det} 地下室 居住\\
+    \textsc{comp} \textsc{art}.\textsc{def} 狗.\mas{} 叫 \textsc{rel}.\mas{} \textsc{art}.\textsc{def} 猫 追逐 \textsc{rel}.\fem{} \textsc{art}.\textsc{def} 老鼠 知道 \textsc{rel}.\fem{} \textsc{prep}.\textsc{art}.\textsc{def} 地下室 居住\\
 \mytrans{那只追逐那只知道那只住在地下室的老鼠的狗正在叫}
 %\gll dass der Hund bellt, der die Katze jagt, die die Maus kennt, die im Keller lebt\\
 %     that the dog.\mas{} barks that.\mas{} the cat chases that.\fem{} the mouse knows who in.the basement lives\\
 %\mytrans{that the dog that chases the cat that knows the mouse who is living in the basement is barking}
 \ex\label{Bsp-Selbsteinbettung} 
 \gll dass          der          Hund, [$_1$ der                 die       Katze, [$_2$ die                 die         Maus, [$_3$ die                 im                          Keller lebt,  $_3$] kennt, $_2$] jagt $_1$] bellt\\
-     \textsc{comp} \textsc{det} 狗     {}   \textsc{rel}.\mas{} \textsc{det} 猫 {}     \textsc{rel}.\fem{} \textsc{det} 老鼠   {}   \textsc{rel}.\fem{} \textsc{prep}.\textsc{det} 地下室 居住 {} 知道 {} 追逐 {} 叫\\
+     \textsc{comp} \textsc{art}.\textsc{def} 狗     {}   \textsc{rel}.\mas{} \textsc{art}.\textsc{def} 猫 {}     \textsc{rel}.\fem{} \textsc{art}.\textsc{def} 老鼠   {}   \textsc{rel}.\fem{} \textsc{prep}.\textsc{art}.\textsc{def} 地下室 居住 {} 知道 {} 追逐 {} 叫\\
 %\gll dass er Hund, [$_1$ der die Katze, [$_2$ die die Maus, [$_3$ die im Keller lebt,  $_3$] kennt, $_2$] jagt $_1$] bellt\\
 %     that the dog {} that the cat {} that the mouse      {}    who in.the basement lives {} knows {} chases {} barks\\
 \zl
 %
 例（\mex{-1}）和 （\mex{0}b）中的例子对于大多数人来说都是完全无法理解的。若将上述两句中的元素稍加重组，我们可能得以理解这个句子的意义。 \footnote{%
- （\mex{0}a） 中的句子可以按照用于产生该句的模式继续延长。例如，可以加上die unter Treppe lebte, die meine Freunde repariert（住在我朋友所修楼梯间的猫）。这说明依赖于同一个中心的元素的成分应该限定在七个以内这一限制\citep[\page 322]{Leiss2003a}不会限制一个语法产生或允准的句子集合是有限的。在（\mex{0}a）中，一个中心语最多有两个依存成分。关系小句的外置允许听话者将材料分组为可以处理和分解的语言块，这会降低语言处理时的认知负担。  
+ （\mex{0}a） 中的句子可以按照用于产生该句的模式继续延长。例如，可以加上die unter Treppe lebte, die meine Freunde repariert（住在我朋友所修楼梯间的猫）。这说明依赖于同一个中心语的成分数量应该限定在七个以内这一限制\citep[\page 322]{Leiss2003a}不会将由语法生成或允准的句子集限制为有限的。在（\mex{0}a）中，一个中心语最多有两个依存成分。关系小句的外置允许听话者将材料分组为可处理和可还原的语块，这会降低语言处理时的认知负担。  
 正如 \citet[\page 322]{Leiss2003a}所主张的那样，这意味着将依存成分限制在七个之内并没导致递归的停止（``Ver\-end\-lichung von Rekursivität\isc{递归}\is{recursion}''） 。Leiss主张Miller不能采用其关于短时记忆的观点，因为他是在转换语法\isc{转换语法}\is{Transformational Grammar}框架内而不是在\dgc 框架内进行工作的。这一讨论显示了依存扮演着重要角色，但是线性顺序也对处理有重要作用。
-}对于类似（\mex{0}b）中的句子，通常认为它们在我们的语法能力处理范围之内，也就是说，我们拥有用以分析这些句子结构的知识，虽然处理类似 （\mex{0}b） 中的句子不仅仅需要我们大脑具有独立于语言的能力。为了成功处理（\mex{0}b），我们必须记住前五个名词短语和有关句子进一步进程的对应假设，并且只有当动词出现时才能开始组合句法材料。我们的大脑处理这一任务会崩溃掉。在分析 （\mex{0}a）时则不会遇到这些问题，因为可以立即开始将名词短语组合成为一个更大的单位。
+}对于类似于（\mex{0}b）中的句子，通常认为它们在我们的语法能力处理范围之内，也就是说，我们拥有用以分析这些句子结构的知识，不过处理类似 （\mex{0}b） 中的句子超过了我们大脑的与语言无关的能力。为了成功处理（\mex{0}b），我们必须记住前五个名词短语和有关句子进一步发展的对应假设，并且只有当动词出现时才能开始组合句法材料。我们的大脑处理这一任务时会崩溃掉。在分析 （\mex{0}a）时则不会遇到这些问题，因为可以立即开始将名词短语组合成为一个更大的单位。
 %The examples in (\mex{-1}) and (\mex{0}b) are entirely incomprehensible for most people.
 %If one rearranges the material somewhat, it is possible to process the sentences and assign a
 %meaning to them.\footnote{%
@@ -69,7 +69,7 @@
 %Our brains become overwhelmed by this task. These problems do not arise when analyzing (\mex{0}a) as it is possible
 %to immediately begin to integrate the noun phrases into a larger unit.
 
-但是，我们的大脑可以处理关系小句的中心自我嵌套的某种建构方式。Hans Uszkoreit\aimention{Hans Uszkoreit}（p.\,c.\ 2009）给出了以下例子：
+但是，关系小句的中心内嵌可以按照这样的方式来构建，以使得我们的大脑可以处理它们。Hans Uszkoreit\aimention{Hans Uszkoreit}（p.\,c.\ 2009）给出了以下例子：
 %Nevertheless, center self"=embedding of relative clauses can also be constructed in such a way that our brains can handle them. Hans
 %Uszkoreit\aimention{Hans Uszkoreit} (p.\,c.\ 2009)
 % ??? lecture notes?
@@ -78,8 +78,8 @@
 \label{Bsp-Selbsteinbettung-Uszkoreit}
 \gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$~die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
 lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr einem Parkplatz weichen.\\
-\textsc{det} 长椅 {} \textsc{prep} 那 当时 \textsc{det} 老.人 \textsc{det} 村庄 {} \textsc{rel} 所有 儿童 \hspaceThis{[$_3$~}\textsc{rel} 经过 {} 友好地 目光 给 {}
-长 小时 安静的 彼此相邻 坐 {} 必须 \textsc{prep}.\textsc{det} 上一个 年 一 停车场 让道\\
+\textsc{art}.\textsc{def} 长椅 {} \textsc{prep} 那 当时 \textsc{art}.\textsc{def} 老.人 \textsc{art}.\textsc{def} 村庄 {} \textsc{rel} 所有 儿童 \hspaceThis{[$_3$~}\textsc{rel} 经过 {} 友好地 目光 给 {}
+长 小时 安静的 彼此相邻 坐 {} 必须 \textsc{prep}.\textsc{art}.\textsc{def} 上一个 年 一 停车场 让道\\
 \mytrans{村子里的那些本来安静地彼此相邻的、供老居民们互相友好地照看所有经过的孩子的长椅们在去年不得不给停车场让道了。}
 %\gll Die Bänke, [$_1$ auf denen damals die Alten des Dorfes, [$_2$ die allen Kindern, [$_3$ die vorbeikamen $_3$], freundliche Blicke zuwarfen $_2$], 
 %lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr einem~~~~~~~~ Parkplatz weichen.\\
@@ -88,13 +88,13 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 %\glt `The benches on which the older residents of the village, who used to give friendly glances to all the children who came by, used to sit silently next to one 
 %another for hours had to give way to a car park last year.'
 \z
-因此，不能在语法知识描述中包含：关系小句不允许自嵌套，如 （\ref{Bsp-Selbsteinbettung}）  所示；因为如果是这样的话，就会将 （\ref{Bsp-Selbsteinbettung-Uszkoreit}）所示的句子也排除在外。
+因此，不能在语法知识描述中规定关系小句不允许自嵌套，如 （\ref{Bsp-Selbsteinbettung}）  所示；因为如果是这样的话，就会将 （\ref{Bsp-Selbsteinbettung-Uszkoreit}）所示的句子也排除在外。
 %Therefore, one does not wish to include in the description of our grammatical knowledge that
 %relative clauses are not allowed to be included inside each other as in (\ref{Bsp-Selbsteinbettung})  
 %as this would also rule out (\ref{Bsp-Selbsteinbettung-Uszkoreit}).
 
-我们很容易接受以下事实：我们的大脑无法处理超过一定程度复杂性的结构，并且对应的话语就会变得无法接受。下面例子展示的对立显得更加有吸引力：\footnote{%
-参看 \citew[\page 227]{GT99a}。 \citet[\page 178]{Frazier85a-u}将此类句子的发现归功于Janet Fodor\aimention{Janet Dean Fodor}。
+我们很容易接受以下事实：我们的大脑无法处理超过一定复杂度的结构，并且相应的语句就会变得无法接受。下面例子中的对比更为明显：\footnote{%
+参见\citew[\page 227]{GT99a}。 \citet[\page 178]{Frazier85a-u}将此类句子的发现归功于Janet Fodor\aimention{Janet Dean Fodor}。
 }
 %We can easily accept the fact that our brains are not able to process structures past a certain degree of complexity and also that corresponding utterances then become unacceptable.
 %The contrast in the following examples is far more fascinating:\footnote{%
@@ -104,12 +104,12 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 \eal
 \ex[\#]{
 \gll The         patient [ who           the         nurse [ who          the           clinic had       hired ] admitted ] met Jack.\\
-    \textsc{det} 病人    {} \textsc{rel} \textsc{det} 护士  {} \textsc{rel} \textsc{det} 诊所 \textsc{aux} 雇佣  {} 允许     {} 遇见 Jack\\
+    \textsc{art}.\textsc{def} 病人    {} \textsc{rel} \textsc{art}.\textsc{def} 护士  {} \textsc{rel} \textsc{art}.\textsc{def} 诊所 \textsc{aux} 雇佣  {} 允许     {} 遇见 Jack\\
 %The patient [ who the nurse [ who the clinic had hired ] admitted ] met Jack.
 }
 \ex[*]{
 \gll The patient who the nurse who the clinic had hired met Jack.\\
-    \textsc{det} 病人 \textsc{rel} \textsc{det} 护士 \textsc{rel} \textsc{det} 诊所 \textsc{aux} 雇佣 遇见  Jack\\
+    \textsc{art}.\textsc{def} 病人 \textsc{rel} \textsc{art}.\textsc{def} 护士 \textsc{rel} \textsc{art}.\textsc{def} 诊所 \textsc{aux} 雇佣 遇见  Jack\\
 %The patient who the nurse who the clinic had hired met Jack.
 }
 \zl
@@ -120,7 +120,7 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 %some way make the claim that previously heard words are forgotten as soon as new words are heard and
 %a particular degree of complexity is exceeded (\citealp[\page 178]{Frazier85a-u}; \citealp{GT99a}). 
 
-与发展出将（\ref{Bsp-Selbsteinbettung}）和（\mex{0}a）认定为不可接受，将（\ref{Bsp-Selbsteinbettung-Uszkoreit}）和（\mex{0}b）认定为可以接受的语法理论不同，已经开发出可以平等地允准（\ref{Bsp-Selbsteinbettung}）、（\ref{Bsp-Selbsteinbettung-Uszkoreit}）和（\mex{0}a）（语言能力模型）的描述，并且额外研究了话语处理的方式来探寻我们的大脑可以处理哪些类型的结构，不能处理哪些类型的结构。这一研究的结果就是语言运用模型（例如，可参见 \citew{Gibson98a}）。这并不排除存在语言特定的差异影响语言处理。例如， \citet*{VSLK2010a}已经展示了德语的中心自我嵌套结构中出现的效应与 （\mex{0}）中的英语对应案例所出现的效应存在差异：因为动词末位结构在德语中高频出现，所以德语母语者可以更好地将关于将要出现动词的预测储存在工作记忆中（第558页）。
+与将（\ref{Bsp-Selbsteinbettung}）和（\mex{0}a）认定为不可接受，将（\ref{Bsp-Selbsteinbettung-Uszkoreit}）和（\mex{0}b）认定为可以接受的语法理论不同的是，已经提出的描述可以同样允准（\ref{Bsp-Selbsteinbettung}）、（\ref{Bsp-Selbsteinbettung-Uszkoreit}）和（\mex{0}a）（语言能力模型），并且还研究了语句的处理方式，以探寻我们的大脑可以处理哪种结构，不能处理哪种结构。这一研究的结果就是语言运用模型（例如，可参见 \citew{Gibson98a}）。这并不排除存在语言特定的差异影响语言处理。例如， \citet*{VSLK2010a}已经展示了德语的中心自我嵌套结构中出现的效应与 （\mex{0}）中的英语对应案例所出现的效应存在差异：因为动词末位结构在德语中高频出现，所以德语母语者可以更好地将关于将要出现动词的预测储存在工作记忆中（第558页）。
 %Instead of developing grammatical theories that treat (\ref{Bsp-Selbsteinbettung}) and (\mex{0}a) as
 %unacceptable and (\ref{Bsp-Selbsteinbettung-Uszkoreit}) and (\mex{0}b) as acceptable, descriptions
 %have been developed that equally allow (\ref{Bsp-Selbsteinbettung}),
@@ -139,7 +139,7 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 
 在构式语法\indexcxgc 中，是否存在语言能力与语言运用的差异这一问题正在激烈争论当中（见\ref{sec-performance-cxg}）。 \citet*{FSCK99a}也提供了一个模型-虽然原因不同-在这一模型中语法属性能严重影响处理属性。前面所述的作者从事优选论工作并且展示了他们提出的优选论限制能够解释句法分析的优先性。优选论\indexotc 本身不是一个语法理论而更像是一个元理论。这一理论假设由一个成分GEN可以产生一个候选项集合。另外一个成分EVAL从这一集合中选择最优候选者。GEN包含我们本书中论述的一个生成语法。通常情况下，假设GP/MP变体\indexgbc  或者LFG\indexlfgc 作为基本语法。如果假设了一个转换理论，就会自动遇到复杂性的推导理论\isc{复杂性的推导理论（DTC）}\is{Derivational Theory of Complexity (DTC)}的问题，这一问题我们会在下面的章节中遇到。如果希望发展优选句法分析模型，必须向前述作者那样参考GB的表征变体。
 }
-如果我们想提出一种能直接反映我们认知能力的句法理论，那么就需要一个与特定语言能力模型对应的语言运用模型。在下面两个小节中，我会详细说明 \citet{SW2011a}的一些论述来支持基于限制的理论，比如GPSG、LFG和HPSG。
+如果我们想提出一种能直接反映我们认知能力的句法理论，那么就需要一个与特定语言能力模型对应的语言运用模型。在下面两个小节中，我会详细说明 \citet{SW2011a}的一些论述来支持基于约束的理论，比如GPSG、LFG和HPSG。
 %Theories in the framework of Categorial Grammar\is{Categorial Grammar (CG)},
 %GB\indexgb, \lfg, \gpsg and \hpsg are theories about our linguistic competence.\footnote{%
 %  For an approach where the parser is equated with UG, see  \citew[Section~3.4]{AC86a}.
@@ -165,13 +165,13 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 %\section{The derivational theory of complexity}
 \label{sec-dtc}
 
- \citet{SW2011a}讨论的第一个问题就是复杂性的推导理论。在\isc{复杂性的推导理论（DTC）|(}\is{Derivational Theory of Complexity (DTC)|(}\isc{转换|(}\is{transformation|(}转换语法早期，假设转换在认知上是真实存在的，也就是说，可以衡量转换所消耗的资源。如果分析一个句子时需要的转换越多，那么人类处理起来就越困难。相对应的理论被称为复杂性的推导理论（DTC）并且早期的实验似乎也证实了这一点\citep{MMK64a,SP65a,CO66a}，所以乔姆斯基在1968年仍假设复杂性的推导理论实际上是正确的\citep[\page 249--250]{Chomsky76b-u}。 \footnote{%
-在转换语法的文献中，转换后来被看作是一个隐喻概念（\citealp[\page 170]{Lohnstein2014a}；\citealp[Footnote~4]{Chomsky2001a-u}中也有类似观点）。也就是说，不再假设转换有心理语言学上的现实性。在《语段推导》（\emph{Derivation by phase}）和《论语段》（\emph{On phases}）中，乔姆斯基再一次谈及了类似于计算和记忆\isc{记忆}\is{memory}负担等处理的方面（Chomsky \citeyear[\page 11, 12,15]{Chomsky2001a-u}；\citeyear[\page 3, 12]{Chomsky2007a}；\citeyear[\page 138, 145, 146, 155]{Chomsky2008a}）。也可以参见 \citew[\page 440]{Marantz2005a}和 \citew{Richards2015a}。
+ \citet{SW2011a}讨论的第一个问题就是复杂性的推导理论。在\isc{复杂性的推导理论（DTC）|(}\is{Derivational Theory of Complexity (DTC)|(}\isc{转换|(}\is{transformation|(}转换语法早期，假设转换在认知上是真实存在的，也就是说，可以衡量转换所消耗的资源。如果分析一个句子时需要的转换越多，那么人类处理起来就越困难。相对应的理论被称为复杂性的推导理论（Derivational Theory of Complexity，简称DTC）并且早期的实验似乎也证实了这一点\citep{MMK64a,SP65a,CO66a}，所以乔姆斯基在1968年仍假设复杂性的推导理论实际上是正确的\citep[\page 249--250]{Chomsky76b-u}。 \footnote{%
+在转换语法的文献中，转换后来被看作是一个隐喻概念（\citealp[\page 170]{Lohnstein2014a}；\citealp[脚注4]{Chomsky2001a-u}中也有类似观点）。也就是说，不再假设转换有心理语言学上的现实性。在《语段推导》（\emph{Derivation by phase}）和《论语段》（\emph{On phases}）中，乔姆斯基再一次谈及了类似于计算和记忆\isc{记忆}\is{memory}负担等处理的方面（Chomsky \citeyear[\page 11, 12,15]{Chomsky2001a-u}；\citeyear[\page 3, 12]{Chomsky2007a}；\citeyear[\page 138, 145, 146, 155]{Chomsky2008a}）。也可以参见 \citew[\page 440]{Marantz2005a}和 \citew{Richards2015a}。
 
-结构构件操作起始于词继之以转换，正如最简方案所提出的那样，这对心理语言学层面上的句子分析是不合理的。更多关于逐步处理的知识可以参见 \citew{Labelle2007a}和本书\ref{Abschnitt-Inkrementelle-Verarbeitung}。
+结构构件操作起始于词继之以转换，正如最简方案所提出的那样，这对心理语言学层面上的句子分析是不合理的。更多关于渐进式处理的知识可以参见 \citew{Labelle2007a}和本书\ref{Abschnitt-Inkrementelle-Verarbeitung}。
 
- \citet[\page 6]{Chomsky2007a}（著于《论语段》之后）好像接受了基于限制的观点。他写道：“一个基于合并的系统涉及并行操作”，并用证据对比了话段的分析，并且明确提到了语言能力/语言运用的差异。 %
-} 但是几年之后，大部分心理语言学家拒绝了DTC。有关反对DTC理论的几个实验的讨论可以参见 \citew*[\page 320--328]{FBG74a-u}。DTC无法做出正确预测的一系列现象是省略\isc{省略}\is{ellipsis}构式，例如\citep*[\page 324]{FBG74a-u}：在省略构式中，话语的一些特定部分被省略或被助动词代替。在基于转换的方法中，假设（\mex{1}b） 是从（\mex{1}a）通过删除\isc{删除}\is{deletion}swims派生而来，而（\mex{1}c）则是由（\mex{1}b）通过插入do得来。
+ \citet[\page 6]{Chomsky2007a}（著于《论语段》之后）好像接受了基于约束的观点。他写道：“一个基于合并的系统涉及并行操作”，并用证据对比了语句的分析，并且明确提到了语言能力/语言运用的差异。 %
+} 但是几年之后，大部分心理语言学家否定了DTC。有关反对DTC理论的几个实验的讨论可以参见 \citew*[\page 320--328]{FBG74a-u}。DTC无法做出正确预测的一系列现象是省略\isc{省略}\is{ellipsis}构式，例如\citet*[\page 324]{FBG74a-u}：在省略构式中，话语的一些特定部分被省略或被助动词代替。在基于转换的方法中，假设（\mex{1}b） 是从（\mex{1}a）通过删除\isc{删除}\is{deletion}swims派生而来，而（\mex{1}c）则是由（\mex{1}b）通过插入do得来。
 %The first point discussed by  \citet{SW2011a} is the Derivational Theory of Complexity.
 %In\is{Derivational Theory of Complexity (DTC)|(}\is{transformation|(}  the early days of Transformational Grammar,
 %it was assumed that transformations were cognitively real, that is, it is possible to measure the consumption of resources
@@ -215,11 +215,11 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 %\ex John swims faster than Bob.
 \ex 
 \gll John swims faster than Bob does.\\
-    John 游泳 更快 \textsc{conj} Bob \textsc{prep}\\
+    John 游泳 更快 \textsc{conj} Bob \textsc{aux}\\
 \mytrans{John比Bob游得更快。}
 %\ex John swims faster than Bob does.
 \zl
-DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间更多，因为分析（\mex{0}b）首先需要建立（\mex{0}a）中的结构然后删除swims。这一预测并未得到验证。
+DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花的时间更多，因为分析（\mex{0}b）首先需要建立（\mex{0}a）中的结构然后删除swims。这一预测并未得到验证。
 %The DTC predicts that (\mex{0}b) should require more time to process than (\mex{0}a),
 %since the analysis of (\mex{0}b) first requires to build up the structure in (\mex{0}a) and then delete \emph{swims}. This prediction was not confirmed.
 
@@ -230,33 +230,33 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \eal
 \ex 
 \gll John phoned up the girl.\\
-    John 打电话 \textsc{part} \textsc{det} 女孩\\
+    John 打电话 \textsc{part} \textsc{art}.\textsc{def} 女孩\\
 \mytrans{John给那个女孩打电话。}
 %\ex John phoned up the girl.
 \ex 
 \gll John phoned the girl up.\\
-    John 打电话 \textsc{det} 女孩 \textsc{part}\\
+    John 打电话 \textsc{art}.\textsc{def} 女孩 \textsc{part}\\
 \mytrans{John给那个女孩打电话。}
 %\ex John phoned the girl up.
 \zl
 \eal
 \ex 
 \gll The bus driver was nervous after the wreck.\\
-    \textsc{det} 公共汽车 司机 \textsc{cop} 紧张 \textsc{prep} \textsc{det} 车祸\\
+    \textsc{art}.\textsc{def} 公共汽车 司机 \textsc{cop} 紧张 \textsc{prep} \textsc{art}.\textsc{def} 车祸\\
 \mytrans{公共汽车司机在车祸之后很紧张。}
 %\ex The bus driver was nervous after the wreck.
 \ex 
 \gll The bus driver was fired after the wreck.\\
-    \textsc{det} 公共汽车 司机 \passivepst{} 解雇 \textsc{prep} \textsc{det} 车祸\\
+    \textsc{art}.\textsc{def} 公共汽车 司机 \passivepst{} 解雇 \textsc{prep} \textsc{art}.\textsc{def} 车祸\\
 \mytrans{公共汽车司机在车祸之后被解雇了。}
 %\ex The bus driver was fired after the wreck.
 \zl
-在（\mex{-1}）中，我们将域内小品词\isc{动词!小词}\is{verb!particle}和宾语重新排序。（\mex{0}b）包含了一个被动句，按照转换语法的假设，被动句从一个主动句\isc{被动}\is{passive}派生而来。如果我们将该句子与一个带有一个形容词的同等长度的句子相比，像（\mex{0}a），被动句应该更加难以处理，但是，事实并不是这样。
+在（\mex{-1}）中，我们将小品词\isc{动词!小词}\is{verb!particle}和宾语在域内重新排序。（\mex{0}b）包含了一个被动句，按照转换语法的假设，被动句从主动句\isc{被动}\is{passive}派生而来。如果我们将该句子与一个带有一个形容词的同等长度的句子相比，像（\mex{0}a），被动句应该更加难以处理，但是，事实并不是这样。
 %In (\mex{-1}), we are dealing with local reordering of the particle\is{verb!particle} and the object. (\mex{0}b) contains a passive clause that
 %should be derived from an active clause\is{passive} under Transformational Grammar assumptions. If we compare this sentence with an equally long sentence
 %with an adjective, like (\mex{0}a), the passive clause should be more difficult to process. This is, however, not the case.
 
-我们需要给Sag~\& Wasow的观点增加两个限制：如果有实验数据证明在一个特定分析中DTC作出了错误的预测，这并不一定意味着DTC遭到了推翻。因为我们可以为这一现象提供一个不同的分析。例如，与采用一个转换式删除成分相反，在分析省略构式时还可以假设空成分直接插入一个结构而不删除任何成分（参看第~\pageref{np-epsilon}页有关为德语中包含名词省略的结构假设一个空名词中心语的内容）。那么（\mex{-2}）中的数据就与讨论无关了。 
+我们需要给Sag~\& Wasow的观点增加两个条件：如果有实验数据证明在一个特定分析中DTC作出了错误的预测，这并不一定意味着DTC被证明是错误的。因为我们可以尝试这一现象进行不同的分析。例如，在分析省略构式时，不用分析为删除导致的转换，还可以假设空成分直接插入结构而不删除任何成分（参见第\pageref{np-epsilon}页有关为德语中包含名词省略的结构假设一个空名词中心语的内容）。那么（\mex{-2}）中的数据就与讨论无关了。 
 \footnote{%
  \citet[\S~1, \S~7]{CJ2005a}认为应该将省略视为一个语义或语用现象而不是一个句法现象。 
 } 但是，像（\mex{-1}b）中的语序重列和（\mex{0}b）中的被动形式都是通常使用转换来解释的现象。
@@ -270,7 +270,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %} 
 %However, reordering such as (\mex{-1}b) and the passive in (\mex{0}b) are the kinds of phenomena that are typically explained using transformations.
 
-第二个限制有关分析时的一个表征变体问题：经常有人说转换只是一个简单的隐喻（Jackendoff \citeyear[\page 22--23]{Jackendoff2000a}；\citeyear[\page 5, 20]{Jackendoff2007a}）：例如，我们看到用转换语法分析的提取现象不如\hpsgc。表~\vref{Abbildung-zyklisch-Perkolation}展示了\gbc 理论中循环移位\isc{循环!转换}\is{cycle!transformational}与对应的\hpsgc 分析的对比。
+第二个条件涉及表征变体的分析：经常有人说转换只是一种隐喻（Jackendoff \citeyear[\page 22--23]{Jackendoff2000a}；\citeyear[\page 5, 20]{Jackendoff2007a}）：例如，我们看到用转换语法分析的提取现象类似于\hpsgc 中的分析。表\vref{Abbildung-zyklisch-Perkolation}展示了\gbc 理论中循环移位\isc{循环!转换}\is{cycle!transformational}与对应的\hpsgc 分析的对比。
 %The second qualification pertains to analyses for which there is a representational variant: it is often said that transformations are simply
 %metaphors (Jackendoff \citeyear[\page
 %22--23]{Jackendoff2000a}; \citeyear[\page 5, 20]{Jackendoff2007a}): for example, we have seen that extractions with a transformational grammar yield structures that
@@ -323,11 +323,11 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \mytrans{Chris，我们认为Anna声称David见到过。}
 %Chris$_i$, we think [\sub{CP/NP} Anna claims [\sub{CP/NP} that David saw \_$_i$]].\jambox{(HPSG)}
 \zl
-在HPSG中，相似的效应是通过结构共享\isc{结构共享}\is{structure sharing}实现的。长距离依存的信息不是储存在限定语结点而是储存在投射父结点自身上。在\ref{Abschnitt-Eleminierung-leerer-Elemente}中，我会讨论各种能把空成分排除出语法的方法。如果我们将这些技术应用于类似于图~\ref{Abbildung-zyklisch-Perkolation}中的GB结构，那么在我们得到的结构中，丢失成分的信息就整合进入了父结点（CP）上，而且SpecCP的位置没有填满。这大致对应于图~\ref{Abbildung-zyklisch-Perkolation}中的HPSG结构。\footnote{%
-在图~\ref{Abbildung-zyklisch-Perkolation}中，在句法上还省略了从C’到CP的右分支，因此C直接与VP/NP组合形成CP/NP。%
+在HPSG中，相似的效应是通过结构共享\isc{结构共享}\is{structure sharing}实现的。长距离依存的信息不是储存在限定语结点而是储存在投射父结点自身上。在\ref{Abschnitt-Eleminierung-leerer-Elemente}中，我会讨论各种能把空成分排除出语法的方法。如果我们将这些技术应用于类似于图~\ref{Abbildung-zyklisch-Perkolation}中的GB结构，那么在我们得到的结构中，丢失成分的信息就整合到父结点（CP）上，而且SpecCP的位置没有填满。这大致对应于图~\ref{Abbildung-zyklisch-Perkolation}中的HPSG结构。\footnote{%
+图~\ref{Abbildung-zyklisch-Perkolation}中，右边的树还省略了从C’到CP的一元分支，因此C直接与VP/NP组合形成CP/NP。%
 }
 由此推知，有一类现象可用转换加以分析，但在对比非转换方法时却未料到其在语言运用上存在实际差异。
-但是，需要特别注意的是，我们在处理图~\ref{Abbildung-zyklisch-Perkolation}中的左"=分支中的S结构。一旦假设这一结构是通过从其他结构中移出成分而派生来的，方法上的等价性就消失了。\isc{转换|)}\is{transformation|)}\isc{复杂性的推导理论（DTC）|)}\is{Derivational Theory of Complexity (DTC)|)}
+但是，需要特别注意的是，我们处理的是图\ref{Abbildung-zyklisch-Perkolation}中左边的树中的S"=结构（表层结构）。一旦假设这一结构是通过从其他结构中移出成分而派生来的，方法上的等价性就消失了。\isc{转换|)}\is{transformation|)}\isc{复杂性的推导理论（DTC）|)}\is{Derivational Theory of Complexity (DTC)|)}
 
 %In HPSG, the same effect is achieved by structure sharing\is{structure sharing}. Information about a long"=distance dependency
 %is not located in the specifier node but rather in the mother node of the projection itself. In Section~\ref{Abschnitt-Eleminierung-leerer-Elemente},
@@ -346,11 +346,11 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %that this is derived by moving constituents out of other structures, this equivalence of approaches disappears.
 %\is{transformation|)}\is{Derivational Theory of Complexity (DTC)|)}
 
-\section{逐步处理}
+\section{渐进式处理}
 %\section{Incremental processing}
 \label{Abschnitt-Inkrementelle-Verarbeitung}
 
- \citet{SW2011a} 提到的下一个重要观点，是语言的理解和处理都是逐步发生的。一旦我们开始听见或读到哪怕是第一个单词，我们就开始赋予其意义并产生结构。以同样的方式，我们有时在还没有想好整个话语的时候就开始说话了。这体现在说话同时伴随的打断和自我修正\citep{CW98a,CFT2002a}。处理口语对话时， \citet{TSKES96a}表明，一旦我们听到一个单词的一部分我们就可以处理它（也可以参见\citealp{Marslen-Wilson75a}）。这一研究的作者做了一个实验，在实验中，实验参与者被要求从一个网格中挑出特定的物体并且重新组合它们。借助眼动仪，Tanehaus和同事证明了，如果单词开头的语音序列是没有歧义的，会比那些开头语音能够出现在多个单词中的单词识别得更早。一个例子是，candle和candy的组成：candy和candle都是以can开头，所以一听到这一语音序列说话者并不能决定选择是哪一个词项。所以，与那些单词开头语音序列不会出现在其他单词中的单词相比，这些单词就会出现一些延迟。\citep[\page 1633]{TSKES95a}
+ \citet{SW2011a} 提到的下一个重要观点，是语言的理解和处理都是渐进发生的。一旦我们开始听见或读到哪怕是第一个单词，我们就开始赋予其意义并产生结构。以同样的方式，我们有时在还没有想好整句话的时候就开始说话了。这体现在说话同时伴随的打断和自我修正\citep{CW98a,CFT2002a}。处理口语对话时， \citet{TSKES96a}表明，一旦我们听到一个单词的一部分我们就可以处理它（也可以参见\citealp{Marslen-Wilson75a}）。这一研究的作者做了一个实验，在实验中，实验参与者被要求从一个网格中挑出特定的物体并且重新组合它们。借助眼动仪，Tanehaus和同事证明了，如果单词开头的语音序列是没有歧义的，会比那些开头语音能够出现在多个单词中的单词识别得更早。一个例子是，candle和candy的组成：candy和candle都是以can开头，所以一听到这一语音序列说话者并不能决定选择是哪一个词项。所以，与那些单词开头语音序列不会出现在其他单词中的单词相比，这些单词的处理就会出现一些延迟。\citep[\page 1633]{TSKES95a}
 %The next important point mentioned by  \citet{SW2011a} is the fact that both comprehension and production of language take places incrementally.
 %As soon as we hear or read even the beginning of a word, we begin to assign meaning and to create structure.
 %In the same way, we sometimes start talking before we have finished planning the entire utterance.
@@ -365,13 +365,13 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %was a slight delay in accessing the lexical entry when compared to words where the objects in question did not contain the same segment at the
 %start of the word \citep[\page 1633]{TSKES95a}.
 
-如果在指令中用到复杂名词短语（Touch the starred yellow square），相比于无歧义的识别，参与者的注视所谈论对象的时间会晚250ms。这就意味着，如果那里只有一个带星星的对象，那么他们会在听到“带星”的时候就看它。在那里既有黄色方块和圆形的时候，他们只有在处理完“方”这一词之后才会看方块\citep[\page 1632]{TSKES95a}。注视的计划和激发需要持续200ms。从这一现象就可以得出结论，听话者一旦获得充足的信息就直接组装单词，他们产生足够的结构来获取一个表达（潜在）的意义并作出相应反应。这一发现与以下模型不相容：假设人一定要听完一个完整的名词短语甚至是一个更加复杂的完整话语才能得到一个短语/话语的所有意义。特别是，最简方案\indexmpc 的分析，它假设只有整个短语或者所谓的语段\isc{语段}\is{phase}\footnote{%
+如果在指令中用到复杂名词短语Touch the starred yellow square，跟无歧义的识别相比，参与者的注视所谈论对象的时间会晚250ms。这就意味着，如果那里只有一个带星星的对象，那么他们会在听到“带星”的时候就看它。在那里既有黄色方块和圆形的时候，他们只有在处理完“方”这一词之后才会看方块\citep[\page 1632]{TSKES95a}。注视的计划和激发需要持续200ms。从这一现象就可以得出结论，听话者一旦获得充足的信息就直接组装单词，他们产生足够的结构来获取一个表达（潜在）的意义并作出相应反应。这一发现与以下模型不相容：假设人一定要听完一个完整的名词短语甚至是一个更加复杂的完整话语才能得到一个短语/语句的所有意义。特别是，最简方案\indexmpc 的分析，它假设只有整个短语或者所谓的语段\isc{语段}\is{phase}\footnote{%
      通常只有CP和VP被当做语段。
-}才能被理解（参见\citealp{Chomsky99a}，以及\citealp[\page 441]{Marantz2005a}，他明确赞成MP\indexmpc，反对范畴语法\indexcgc），这样从心理语言学的角度来看就是不完备的。\footnote{%
+}才能被理解（参见\citet{Chomsky99a}，以及\citet[\page 441]{Marantz2005a}，他明确赞成MP\indexmpc，反对范畴语法\indexcgc），这样从心理语言学的角度来看就是不完备的。\footnote{%
 % 74
- \citet[\page 729--730]{Sternefeld2006a-u}指出，在最简方案理论中，不可解释特征的普遍假设是完全站不住脚的。Chomsky假设在派生过程中有一些特征一定要被删除，因为这些特征只是对句法有作用。如果不被检查，派生就会在与语义接口处失败。依据这一假设，NP在这些理论假设下是无法得到理解的，因为它们包含一系列与语义不相关的特征，并且必须因此被删除（见这本书的\ref{sec-features-minimalism}和\citealp{Richards2015a}）。正如我们所见，这些理论与这些事实不相兼容。
+ \citet[\page 729--730]{Sternefeld2006a-u}指出，在最简方案理论中，不可解释特征的普遍假设是完全站不住脚的。Chomsky假设在派生过程中有一些特征一定要被删除，因为这些特征只是对句法起作用。如果不被检查，派生就会在与语义接口处失败。依据这一假设，NP在这些理论假设下是无法得到理解的，因为它们包含一系列与语义不相关的特征，并且必须因此被删除（见这本书的\ref{sec-features-minimalism}和\citet{Richards2015a}）。正如我们所见，这些理论与这些事实不相兼容。
 }$^,$\footnote{%
-有时候会声称现在的最简方案更加适于解释生成而不是理解（分析）。但是这些模型对于生成和分析一样无效。原因是该理论假设存在一个句法部分产生结构，然后被移送到接口部分。但是，这并不是生成的真实过程。通常，说话者知道他们想说什么（至少知道一部分），也就是说，他们以语义为开端。
+有时候会声称现在的最简方案更加适于解释生成而不是理解（分析）。但是这些模型对于生成和分析一样无效。原因是该理论假设，有一个句法部件生成结构，然后被移送到接口部分。但是，这并不是生成的真实过程。通常，说话者知道他们想说什么（至少知道一部分），也就是说，他们以语义为开端。
 }
 %If complex noun phrases were used in the instructions (\emph{Touch the starred yellow
 %  square}), the participants' gaze fell on the object in question 250ms after it was unambiguously identifiable.
@@ -410,7 +410,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %The eye"=tracking studies carried out by  \citet{TSKES96a} have shown that taking this kind of information into account
 %results in objects being identified more quickly.
 
-相似地， \citet{ATAF2004a}也使用眼动仪的研究显示，如果交谈者用um或者uh打断他们的谈话，听话者倾向于注视之前没有提到的对象。这一现象可以回溯到以下假设：听话者认为描述前面没有提到的对象会比描述已经谈论过的对象更为复杂。说话者可以通过使用um或uh为自己提供更多的时间。
+相似地， \citet{ATAF2004a}也使用了眼动仪的研究显示，如果交谈者用um或者uh打断他们的谈话，听话者倾向于注视之前没有提到的对象。这一现象可以回溯到以下假设：听话者认为描述前面没有提到的对象会比描述已经谈论过的对象更为复杂。说话者可以通过使用um或uh为自己提供更多的时间。
 %Similarly,  \citet{ATAF2004a} have shown, also using eye"=tracking studies, that hearers tend to direct their gaze
 %to previously unmentioned objects if the interlocutor interrupts their speech with \emph{um} or \emph{uh}.
 %This can be traced back to the assumption that hearers assume that describing previously unmentioned objects is more
@@ -418,7 +418,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %by using \emph{um}
 %or \emph{uh}.
 
-上述那些例子都为以下方法提供了证据，该方法假设在处理语言时，来自所有现有渠道的信息都会使用，而且一旦可用就立即使用，而不是一定等到整个话语或整个短语被构建之后。实验研究因此证明，语言知识的严格模块化\isc{模块性}\is{modularity}组织一定会遭到反对。这一假设的支持者假设一个模块的输出可以充当另一模块的输入，而既有模块不用接触那一模块的内部状态或过程。例如，形态模块可以为句法提供输入，然后再被语义模块处理。语言知识这一组织方式的经常被引用的证据就是所谓的花园幽径句，例如 （\mex{1}）：
+上述那些例子都为以下方法提供了证据，该方法假设在处理语言时，来自所有现有渠道的信息都会使用，而且一旦可用就立即使用，而不是一定等到整个话语或整个短语被构建之后。实验研究因此证明，语言知识的严格模块化\isc{模块性}\is{modularity}组织一定会遭到反对。这一假设的支持者假设一个模块的输出可以充当另一模块的输入，而既有模块不用接触那一模块的内部状态或过程。例如，形态模块可以为句法提供输入，然后再被语义模块处理。语言知识的这种组织形式的一个常被引用的证据就是所谓的花园幽径句，例如 （\mex{1}）：
 %Examples such as those above constitute evidence for approaches that assume that when processing language, information from all available
 %channels is used and that this information is also used as soon as it is available and not only after the structure of the entire utterance or
 %complete phrase has been constructed.
@@ -432,11 +432,11 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \eal
 \ex\label{bsp-horse-past-barn} 
 \gll The horse raced past the barn fell.\\
-    \textsc{det} 马 跑 \textsc{prep} \textsc{det} 谷仓 倒下\\
+    \textsc{art}.\textsc{def} 马 跑 \textsc{prep} \textsc{art}.\textsc{def} 谷仓 倒下\\
 %The horse raced past the barn fell.
 \ex 
 \gll The boat floated down the river sank.\\
-    \textsc{det} 小船 漂浮 \textsc{prep} \textsc{det} 河 沉\\
+    \textsc{art}.\textsc{def} 小船 漂浮 \textsc{prep} \textsc{art}.\textsc{def} 河 沉\\
 %\ex The boat floated down the river sank.
 \zl
 大部分英语母语者在处理这些句子的时候都很费劲，因为当他们为（\mex{1}a）和 （\mex{1}b）构建一个完整结构的时候，他们的句法分析被引入了一个花园路径；也只有在构建完整结构之后才发现另外一个动词不能被整合进入这一结构。
@@ -446,12 +446,12 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \eal
 \ex 
 \gll The horse raced past the barn.\\
-    \textsc{det} 马 跑 \textsc{prep} \textsc{det} 谷仓\\
+    \textsc{art}.\textsc{def} 马 跑 \textsc{prep} \textsc{art}.\textsc{def} 谷仓\\
 \mytrans{那匹马跑过了谷仓。}
 %\ex The horse raced past the barn.
 \ex 
 \gll The boat floated down the river.\\
-    \textsc{det} 船 漂浮 \textsc{prep} \textsc{det} 河\\
+    \textsc{art}.\textsc{def} 船 漂浮 \textsc{prep} \textsc{art}.\textsc{def} 河\\
 \mytrans{那条船沉入了河水。}
 %\ex The boat floated down the river.
 \zl
@@ -462,16 +462,16 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \eal
 \ex 
 \gll The horse that was raced past the barn fell.\\
-    \textsc{det} 马 \textsc{rel} \textsc{cop} 跑 \textsc{prep} \textsc{det} 谷仓 倒下\\
-\mytrans{被赶过谷仓的马跌倒了。}
+    \textsc{art}.\textsc{def} 马 \textsc{rel} \textsc{cop} 跑 \textsc{prep} \textsc{art}.\textsc{def} 谷仓 倒下\\
+\mytrans{跑过谷仓的马跌倒了。}
 %\ex The horse that was raced past the barn fell.
 \ex 
 \gll The boat that was floated down the river sank.\\
-    \textsc{det} 船 \textsc{rel} \textsc{cop} 漂浮 \textsc{prep} \textsc{det} 河 沉\\
+    \textsc{art}.\textsc{def} 船 \textsc{rel} \textsc{cop} 漂浮 \textsc{prep} \textsc{art}.\textsc{def} 河 沉\\
 \mytrans{沿河水顺流而下的船沉没了。}
 %\ex The boat that was floated down the river sank.
 \zl
-解释这些案例分析失败的原因时可以假设，通过VP和NP构建的一个句子独立于其他限制。但是，正如 \citet{CS85a}和其他人所显示的那样，有一些数据使得这一解释显得不太合理：如果（\ref{bsp-horse-past-barn}）是在一个相关的语境中说出，分析者就不会被误导。在 （\mex{1}）中，有很多马涉及讨论，并且每一个NP都用一个关系从句清楚地区分。听话者就会准备一个关系从句并且可以处理简化的关系从句而不被引入花园路径，对于说话也是一样。
+解释这些案例分析失败的原因时可以假设，通过VP和NP构建的句子独立于其他限制。但是，正如 \citet{CS85a}和其他人所显示的那样，有一些数据使得这一解释显得不太合理：如果（\ref{bsp-horse-past-barn}）是在一个相关的语境中说出的，分析者就不会被误导。在 （\mex{1}）中，正在讨论很多匹马，并且每一个NP都用一个关系从句清楚地区分。听话者就会做好了分析关系从句的准备，并且可以处理简化了的关系从句而不被引入花园路径，对于说话也是一样。
 %The failure of the parser in these cases was explained by assuming that syntactic processing
 %such as constructing a sentence from NP and VP take place independently of the processing of other constraints.
 %As  \citet{CS85a} and others have shown, yet there are data that make this explanation seem less plausible: 
@@ -481,14 +481,14 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %without being led down the garden path, so to speak.
 \ea
 \gll The horse that they raced around the track held up fine. The horse that was raced down the road faltered a bit. And the horse raced past the barn fell.\\
-    \textsc{det} 马 \textsc{rel} 他们 跑 \textsc{prep} \textsc{det} 轨道 握住 \textsc{prep} 好 \textsc{det} 马 \textsc{rel} \textsc{cop} 跑 \textsc{prep} \textsc{det} 路 颤抖 一 点儿 而且 \textsc{det} 马 跑 \textsc{prep} \textsc{det}  谷仓 跌倒\\
+    \textsc{art}.\textsc{def} 马 \textsc{rel} 他们 跑 \textsc{prep} \textsc{art}.\textsc{def} 轨道 握住 \textsc{prep} 好 \textsc{art}.\textsc{def} 马 \textsc{rel} \textsc{cop} 跑 \textsc{prep} \textsc{art}.\textsc{def} 路 颤抖 一 点儿 而且 \textsc{art}.\textsc{def} 马 跑 \textsc{prep} \textsc{art}.\textsc{def}  谷仓 跌倒\\
 \mytrans{沿着跑道跑的马跑得很好。沿着小路跑的马跑得有点不稳。而跑过谷仓的马跌倒了。}
 %The horse that they raced around the track held up fine. The horse that was raced down
 %    the road faltered a bit. And the horse raced past the barn fell.
 \z
 
 \noindent
-通过更换词汇材料，也可以调整（\ref{bsp-horse-past-barn}）以以确保在无需增加额外语境的情况下顺利处理该句。我们需要选择一种词汇材料以排除将名词解释为简化的关系从句中的动词主语这一可能性。据此，（\mex{1}）中的evidence指称一个无生名词。因此它不可能是examined的一个施事。因此，在分析这一句子的时候，evidence绝对不可能被分析为examined的施事\citep{SW2011a}。
+通过更换词汇材料，也可以调整（\ref{bsp-horse-past-barn}）以确保在无需增加额外语境的情况下顺利处理该句。我们需要选择一种词汇材料以排除将名词解释为简化的关系从句中的动词主语这一可能性。据此，（\mex{1}）中的evidence指称一个无生名词。因此它不可能是examined的施事。因此，在分析这个句子的时候，evidence绝对不可能被分析为examined的施事\citep{SW2011a}。
 %By exchanging lexical material, it is also possible to modify (\ref{bsp-horse-past-barn}) in such way as to
 %ensure that processing is unproblematic without having to add additional context. It is necessary
 %to choose the material so that the interpretation of the noun as the subject of verb in the reduced
@@ -498,11 +498,11 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %\citep{SW2011a}.\todostefan{Trueswell, Ferreira and Clifton zitieren  \citet{TTG94a,FC86a}}
 \ea
 \gll The evidence examined by the judge turned out to be unreliable.\\
-    \textsc{det} 证据 检查 \textsc{prep} \textsc{det} 法官 转变 \textsc{part} \textsc{inf} \textsc{cop}  不可信\\
+    \textsc{art}.\textsc{def} 证据 检查 \textsc{prep} \textsc{art}.\textsc{def} 法官 转变 \textsc{part} \textsc{inf} \textsc{cop}  不可信\\
 \mytrans{经法官检查的证据变得不可信了。}
 %The evidence examined by the judge turned out to be unreliable.
 \z
-因为，处理是逐步进行的，所以有时假设实现语法需要立即为之前听到的材料建立一个成分结构\citep{AS82a,Hausser92a-u}。每当一个词语与前面的材料形成一个单位，这一观点的支持者就要为其假设一个结构：
+因为，处理是渐进地进行的，所以有时假设实现语法需要立即为之前听到的材料建立一个成分结构\citep{AS82a,Hausser92a-u}。每当一个词语与前面的材料形成一个单位，这一观点的支持者就要为其假设一个结构：
 %Since processing proceeds incrementally, it is sometimes assumed that realistic grammars should be obliged to immediately assign a constituent structure to previously heard
 %material \citep{AS82a,Hausser92a-u}.
 %Proponents of this view would assume a structure for the following sentence where every word forms a constituent with the
@@ -510,15 +510,15 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 
 \ea
 \gll {}[[[[[[[[[[[[[[Das britische] Finanzministerium] stellt] dem] angeschlagenen] Bankensystem] des] Landes] mindestens] 200] Milliarden] Pfund] zur]~~~~~~~~~ Verfügung].\\
-{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\textsc{det} 英国的 财政部 提供 \textsc{det}
-残废的 银行.系统 \textsc{det} 国家 至少 200 十亿 英镑 \textsc{prep}.\textsc{det} 使用\\
+{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\textsc{art}.\textsc{def} 英国的 财政部 提供 \textsc{art}.\textsc{def}
+残废的 银行.系统 \textsc{art}.\textsc{def} 国家 至少 200 十亿 英镑 \textsc{prep}.\textsc{art}.\textsc{def} 使用\\
 \mytrans{英国国库为这个瘫痪的银行系统至少要留出2000亿英镑。}
 %\gll {}[[[[[[[[[[[[[[Das britische] Finanzministerium] stellt] dem] angeschlagenen] Bankensystem] des] Landes] mindestens] 200] Milliarden] Pfund] zur]~~~~~~~~~ Verfügung].\\
 %{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}\spacebr{}the British treasury provides the
 %crippled banking.system of.the country at.least 200 billion pounds to use\\
 %\glt 'The British Treasury is making at least 200 billion pounds available to the crippled banking system.'
 \z
-但是， \citet{Pulman85a}、 \citet{Stabler91a}和 \citet[\page 301--308]{SJ93a}都表示，可以使用我们在第~\ref{Kapitel-PSG}章中遇到的那种短语结构语法来逐步建立语义结构。这意味着，在（\mex{0}）中词串das britiche（\textsc{det} 英国的）的部分语义表征就可以计算而不必非得假设两个单词组成一个单位。因此，就不一定需要一种允准单词直接组合的语法。另外，  \citew{SJ93a}指出，从纯技术的角度来看，同步处理比异步处理花销更大，因为同步处理为了同步化需要另外的机制，但是异步处理一旦信息存在就进行逆行处理（第297--298页）。Shieber和Johnson并没有说明这一点是否也适用于句法和语义信息的同步/异步处理。逐步处理和Steedman的范畴语法\indexcgc 和TAG\indextagc 的对比，可以参见 \citew{SJ93a}。
+但是， \citet{Pulman85a}、 \citet{Stabler91a}和 \citet[\page 301--308]{SJ93a}都表示，可以使用我们在第\ref{Kapitel-PSG}章中遇到的那种短语结构语法来渐进地建立语义结构。这意味着，在（\mex{0}）中词串das britiche（\textsc{art}.\textsc{def} 英国的）的部分语义表征就可以计算了，而不必非得假设两个单词组成一个单位。因此，不一定需要一种允准单词直接组合的语法。另外，  \citew{SJ93a}指出，从纯技术的角度来看，同步处理比异步处理成本更高，因为同步处理为了同步化需要另外的机制，但是异步处理一旦信息存在就进行逆行处理（第297--298页）。Shieber和Johnson并没有说明这一点是否也适用于句法和语义信息的同步/异步处理。渐进式处理和Steedman的范畴语法\indexcgc 和TAG\indextagc 的对比，可以参见 \citew{SJ93a}。
 % \citet{Pulman85a},  \citet{Stabler91a} and  \citet[\page 301--308]{SJ93a} have shown, however, that it is possible to build semantic structures incrementally,
 %using the kind of phrase structure grammars we encountered in Chapter~\ref{Kapitel-PSG}. This means that a partial semantic representation for the
 %string \emph{das britische} `the British' can be computed without having to assume that the two words form a constituent in (\mex{0}).
@@ -528,7 +528,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %becomes available (p.\,297--298). Shieber and Johnson do not clarify whether this also applies to synchronous/""asynchronous processing of syntactic and semantic
 %information. See  \citew{SJ93a} for incremental processing and for a comparison of Steedman's Categorial Grammar\indexcg and TAG\indextag.
 
-从现有的讨论中，我们可以得出什么结论？是否有进一步非数据可以帮助确定一个理论应该具有什么属性以保障在心理语言学层面的有效性？ \citet*{SWB2003a}和 \citet{SW2011a,SW2015a}列出了以下一个跟语言运用兼容的语言能力语法应该具有的属性：\footnote{%
+从现有的讨论中，我们可以得出什么结论？是否有进一步的数据可以帮助确定一个理论应该具有什么属性以保障在心理语言学层面的有效性？ \citet*{SWB2003a}和 \citet{SW2011a,SW2015a}列出了以下几个跟语言运用兼容的语言能力语法应该具有的属性：\footnote{%
 也可以参见 \citew{Jackendoff2007a}对一个基于规则的、面向表层的语言学理论的语言运用模型的思考。  
 }
 %What kind of conclusions can we draw from the data we have previously discussed? Are there further data that can help to determine the kinds
@@ -538,11 +538,11 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %  theory.
 %}
 \begin{itemize}
-\item 面向表层
+\item 表层导向
 %\item surface"=oriented
 \item 模型理论并且因此是基于约束的
 %\item model"=theoretic and therefore constraint"=based
-\item 基于符号的组织
+\item 基于语符的组织
 %\item sign-based organization
 \item 严格的词汇主义
 %\item strictly lexicalist
@@ -552,15 +552,15 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 
 \noindent
 像CG\indexcgc、GPSG\indexgpsgc、LFG\indexlfgc、HPSG\indexhpsgc、CxG\indexcxgc 和TAG\indextagc 等方法都是基于表层结构的，因为他们不假设基础结构，其他结构通过转换从基础结构派生而来。但是，转换方法需要另外的假设。\footnote{%
-	 \citew{Phillips2003a}提出了转换方法中的一个例外。Phillips认为与省略\isc{省略}\is{ellipsis}、并列\isc{并列}\is{coordination}和前置相关的结构都是逐步构建的。这些成分是在后面通过转换重新排序的。例如，在分析（i）时，词串Wallace saw Gromit in组成一个成分，其中in由一个包含标签P（P）的结点统制。这一结点在后续的步骤中转换成一个PP（第43--44页）。
+	 \citew{Phillips2003a}提出了转换方法中的一个例外。Phillips认为与省略\isc{省略}\is{ellipsis}、并列\isc{并列}\is{coordination}和前置相关的结构都是渐进地构建的。这些成分是在后面通过转换重新排序的。例如，在分析（i）时，词串Wallace saw Gromit in组成一个成分，其中in由一个包含标签P（P）的结点统制。这个结点在后续的步骤中转换成一个PP（第43--44页）。
 \ea
 \gll Wallace saw Gromit in the kitchen.\\
-    Wallace 看 Gromit \textsc{prep} \textsc{det} 厨房\\
+    Wallace 看 Gromit 在 \textsc{art}.\textsc{def} 厨房\\
 \mytrans{Wallace看到Gromit在厨房。}
 %Wallace saw Gromit in the kitchen.
 \z
-虽然这一方法是基于转换的，但是这里这种转换是非常奇怪的，并且与其它理论变体都不相同。特别是，在进行转换时，成分的改变违背了 \citet{Chomsky2008a}提出的结构保持\isc{结构保持}\is{Structure Preservation}和无干扰条件\isc{无干扰条件（NTC）}\is{No Tampering Condition (NTC)}。另外，像Wallace saw Gromit in这种不完整词串组成一个成分的条件并不完全清楚。%
-}这一点会在下面简单论述。在第~\ref{Abschnitt-GB-CP-IP-System-Englisch}节中，我们遇到了如下对英语疑问句的分析：
+虽然这一方法是基于转换的，但是这里这种转换是非常奇怪的，并且与其它理论变体都不相同。特别是，在进行转换时，成分的改变违背了 \citet{Chomsky2008a}提出的结构保存（原则）\isc{结构保存}\is{Structure Preservation}和无干扰条件\isc{无干扰条件（NTC）}\is{No Tampering Condition (NTC)}。另外，我们并不完全清楚像Wallace saw Gromit in这种不完整词串组成一个成分的条件。%
+}这一点会在下面简单论述。在\ref{Abschnitt-GB-CP-IP-System-Englisch}中，我们遇到了如下对英语疑问句的分析：
 %Approaches such as CG\indexcg, GPSG\indexgpsg, LFG\indexlfg, HPSG\indexhpsg, CxG\indexcxg and TAG\indextag are surface"=oriented
 %since they do not assume a base structure from which other structures are derived via transformations. Transformational\is{transformation}
 %approaches, however, require additional assumptions.\footnote{%
@@ -605,13 +605,13 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %The first transformation creates the order in (\mex{0}b) from (\mex{0}a), and the second creates (\mex{-1}) from 
 %(\mex{0}b).
 
-当听话人处理 （\mex{-1}）中的句子时，他从听到第一个单词起就开始构建结构。但是，转换只有在听到整个话语之后才会开始。当然，也可以假设听话人处理表层结构。但是，正如我们所见，因为他们早就开始将语义知识纳入话语，所以这就完全回避了我们需要一个深层结构的原因。
+当听话人处理 （\mex{-1}）中的句子时，他从听到第一个单词起就开始构建结构。但是，转换只有在听到整个话语之后才会开始。当然，也可以假设听话人处理表层结构。但是，正如我们所见，因为他们早就开始将语义知识纳入语句，这就引出了我们到底需要一个什么样的深层结构的问题。
 %When a hearer processes the sentence in (\mex{-1}), he begins to build structure as soon as he hears the first word.
 %Transformations can, however, only be carried out when the entire utterance has been heard.
 %One can, of course, assume that hearers process surface structures. However, since  -- as we have seen -- they begin to access semantic knowledge
 %early into an utterance, this begs the question of what we need a deep structure for at all.
 
-在类似于（\mex{-1}）这种分析中，深层结构是多余的，因为相关信息可以从语迹中重构。文献中（见\pageref{Seite-Representationelle-GB}页）也提到了GB方案中对应的解决方案。它们与基于表层的要求相符。Chomsky（\citeyear[\page 181]{Chomsky81a}；\citeyear[\page 49]{Chomsky86b}）和 \citet[\page 59--60]{LS92a-u}提出了一种语迹可以删除的分析。在这些分析中，深层结构无法直接从表层结构中重构，所以需要转换来连接二者。如果我们假设转换在话语分析中是“在线的”，那么这就意味着听话人不得不在其工作记忆中保存由其前面所听到材料推导的结构和可能的转换式列表。在基于限制的语法中，我们不需要考虑那些潜在的将要出现转换步骤的假设，因为只有一个表层结构可以直接处理。现在，仍然不清楚是否可以在实践上区分这些模型。但是对于需要大量移位的最简方案（例如，参见第~\pageref{Abbildung-Remnant-Movement-Satzstruktur}页上的图~\ref{Abbildung-Remnant-Movement-Satzstruktur}）来说，很清楚这是不可行的，因为需要大量的储存空间来指称这些移位假设，而我们知道人类的这种短期记忆能力十分有限。
+在类似于（\mex{-1}）这种分析中，深层结构是多余的，因为相关信息可以从语迹中重构。文献中（见\pageref{Seite-Representationelle-GB}页）也提到了GB方案中对应的解决方案。它们与基于表层的要求相符。Chomsky（\citeyear[\page 181]{Chomsky81a}；\citeyear[\page 49]{Chomsky86b}）和 \citet[\page 59--60]{LS92a-u}提出了一种语迹可以删除的分析。在这些分析中，深层结构无法直接从表层结构中重构，所以需要转换来连接二者。如果我们假设转换在话语分析中是“在线的”，那么这就意味着听话人不得不在其工作记忆中保存由其前面所听到材料推导的结构和可能的转换式列表。在基于约束的语法中，我们不需要考虑那些潜在的将要出现转换步骤的假设，因为只有一个表层结构可以直接处理。现在，仍然不清楚是否可以在经验上区分出这些模型。但是对于需要大量移位的最简方案（例如，参见第~\pageref{Abbildung-Remnant-Movement-Satzstruktur}页上的图~\ref{Abbildung-Remnant-Movement-Satzstruktur}）来说，很清楚这是不可行的，因为需要大量的储存空间来指称这些移位假设，而我们知道人类的这种短期记忆能力十分有限。
 %In analyses such as those of (\mex{-1}), deep structure is superfluous since the relevant information can be reconstructed
 %from the traces. Corresponding variants of GB have been proposed in the literature (see page~\pageref{Seite-Representationelle-GB}).
 %They are compatible with the requirement of being surface"=oriented.
@@ -629,8 +629,8 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %they are unrealistic since storage space is required to manage the hypotheses regarding such
 %movements and we know that such short-term memory is very limited in humans.
 
- \citet[\page 27]{FC96a-u}认为基于转换的语言能力语法不如带有提前-编译好规则或者模板（这些规则或模板可以运用后面的句法分析）的语法。所以，派生自UG的原理是用于句法分析的而不是直接用于UG的公理的。 \citet{Johnson89a}最早也设计了一个运用来自GB分支理论限制的句法分析系统。这意味着虽然他确实假设D结构、S结构、LF和PF等表征层面，但是他将相关限制（\xbartc，Theta理论\isc{theta理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}，格理论……）指定为可以重新组织的逻辑条件，然后可以通过一个不同的但是逻辑上等价的顺序进行评价并且用于结构构建。\footnote{%
- \citet[\S~15.7]{Stabler92a-u}也考虑了一个基于限制的观点，但得出的结论是句法分析以及其它语言学任务需要用语言能力理论的结构层。这也给DTC提出了问题。
+ \citet[\page 27]{FC96a-u}认为基于转换的语言能力语法不如带有提前-编译好规则或者模板（这些规则或模板可以运用后面的句法分析）的语法。所以，派生自UG的原理是用于句法分析的而不是直接用于UG的公理的。 \citet{Johnson89a}最早也设计了一个运用来自GB分支理论约束的句法分析系统。这意味着虽然他确实假设D结构、S结构、LF和PF等表征层面，但是他将相关的约束（\xbartc，Theta理论\isc{theta理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}，格理论……）指定为可以重新组织的逻辑条件，然后可以通过一个不同的但是逻辑上等价的顺序进行评估并且用于结构构建。\footnote{%
+ \citet[\S~15.7]{Stabler92a-u}也考察了基于约束的观点，但得出的结论是句法分析以及其它语言学任务需要用语言能力理论的结构层。这也给DTC提出了问题。
 }
  \citet[\page 6]{Chomsky2007a}也对比了人的分析与通过求证进行的分析，在这种分析中，求证的每一步都可以用不同的顺序进行。这一观点在处理语言时并没有假设语法表征各层面的现实性，但是简单假设了当涉及习得\isc{习得}\is{acquisition}时原则和结构会起作用。正如我们所见，我们是否需要UG去解释语言习得还没有得到有利于基于UG方法的答案。相反，现有证据似乎都指向对UG不利的方面。但是，即便是内在语言知识确实存在，那么存在一个问题，为什么人类会将内在语言知识表征为借助转换而连接的多个结构，而这些结构在处理语言时很明显不会为人类（特别是学习者）提供好处。使用更少技术手段（例如，不用转换）来表示这些知识的方法更加受到青睐。有关这一点的更多知识，可以参见 \citew[\page 615]{Kuhn2007a}。
 % \citet[\page 27]{FC96a-u} assume that a transformation"=based competence grammar yields a grammar with pre"=compiled
@@ -655,7 +655,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 %Approaches that can represent this knowledge using fewer technical means, \eg without
 %transformations, are therefore preferable. For more on this point, see  \citew[\page 615]{Kuhn2007a}.
 
-要求使用基于约束的语法可以得到逐步处理和从前面已经听到的材料推导出将要出现的成分的能力的支持。\cite{Stabler91a}已经指出Steedman的\aimention{Mark J. Steedman}关于逐步处理语法的观点是错误的，并且相反开始支持语法的模块化。Stabler已经发展出一个基于约束的语法，其中句法和语义知识可以在任何时候获取。他将句法结构和附加于句法结构的语义表征模式化为结合的限制，并且提出了一个基于句法语义知识可得部分来处理结构的处理系统。Stabler反对那些假设一定要在语义限制之前使用所有句法限制的语言运用模型。如果放弃了这一模块性的严格观点，那么我们就得到了类似于（\mex{1}）的形式：
+要求使用基于约束的语法可以得到渐进式处理，以及从前面已经听到的材料中推导出将要出现的成分的能力的支持。\cite{Stabler91a}已经指出Steedman的\aimention{Mark J. Steedman}关于渐进式处理的语法的观点是错误的，并且相反开始支持语法的模块化观点。Stabler已经发展出一个基于约束的语法，其中句法和语义知识可以在任何时候获取。他将句法结构和附加于句法结构的语义表征模式化为结合的约束，并且提出了一个基于句法语义知识可得部分来处理结构的处理系统。Stabler反对那些假设一定要在语义约束之前使用所有句法约束的语言运用模型。如果放弃了这一模块性的严格观点，那么我们就得到了类似于（\mex{1}）的形式：
 %The requirement for constraint"=based grammars is supported by incremental processing and also by
 %the ability to deduce what will follow from previously heard material. \cite{Stabler91a} has pointed
 %out that Steedman's\aimention{Mark J. Steedman} argumentation with regard to incrementally
@@ -671,7 +671,7 @@ DTC理论预测，处理（\mex{0}b）应该比处理（\mex{0}a）花得时间�
 \ea
 (Syn$_1$ $\wedge$ Syn$_2$ $\wedge$ \ldots $\wedge$ Syn$_n$) $\wedge$ (Sem$_1$ $\wedge$ Sem$_2$ $\wedge$ \ldots $\wedge$ Sem$_n$)
 \z
-Syn$_1$--Syn$_n$代表句法规则或者约束，Sem$_1$--Sem$_n$代表语义规则或约束。如果有人想的话，可以把括号内的表达当做模块。由于我们可以任意地对结合的表达式进行重新排序，所以可以假设语言运用模型，首先从句法模块使用一些规则，当提供了充足的信息，再使用来自于语义模块的相应规则。处理顺序因此可以是（\mex{1}），例如：
+Syn$_1$--Syn$_n$代表句法规则或约束，Sem$_1$--Sem$_n$代表语义规则或约束。如果有人想的话，可以把括号内的表达式当做模块。由于我们可以任意地对连接的表达式进行重新排序，所以可以假设语言运用模型，首先从句法模块使用一些规则，当提供了充足的信息，再使用来自于语义模块的相应规则。处理顺序因此可以是（\mex{1}），例如：
 %Syn$_1$--Syn$_n$ stand for syntactic rules or constraints and Sem$_1$--Sem$_n$ stand for semantic rules or constraints.
 %If one so desires, the expressions in brackets can be referred to as modules. Since it is possible
 %to randomly reorder conjoined expressions, one can imagine performance models that first apply some
@@ -683,7 +683,7 @@ Syn$_2$ $\wedge$ Sem$_1$ $\wedge$ Syn$_1$ $\wedge$ \ldots $\wedge$ Syn$_n$ $\wed
 
 \noindent
 如果同意模块\isc{模块}\is{module}观，那么像HPSG或CxG也有一个模块化结构。在 \citet{ps}的HPSG变体提出的表征以及基于符号的构式语法中（见\ref{sec-SbCxG}），\textsc{syn}的取值可以对应于句法模块，\textsc{sem}的取值对应于语义模块，\textsc{phon}的取值对应于音系模块。如果想要移除词项/支配规则的其他相应部分，那么就会剩下准确对应所谈表征层面的理论部分。\footnote{%
-在最简方案的近期理论中，分析中包含越来越多的形态的、句法的、语义的和信息结构的信息（见\ref{Abschnitt-MP-funktionale-Projektionen}）。虽然也有人建议使用特征"=值偶对\citep[\page 290--291]{SE2002a}，像GPSG\indexgpsgc、LFG\indexlfgc、HPSG\indexhpsgc、CxG\indexcxgc 以及CG\indexcgc 和TAG\indextagc 变体的那种严格的信息结构化还没有出现。这意味着存在句法层、音系形式和逻辑形式层，但是这些层面的相关信息是句法的非结构化的部分，混乱分布在句法树上的。  
+在最简方案的近期理论中，分析中包含越来越多形态的、句法的、语义的和信息结构的信息（见\ref{Abschnitt-MP-funktionale-Projektionen}）。虽然也有人建议使用特征"=值偶对\citep[\page 290--291]{SE2002a}，像GPSG\indexgpsgc、LFG\indexlfgc、HPSG\indexhpsgc、CxG\indexcxgc 以及CG\indexcgc 和TAG\indextagc 变体的那种严格的信息结构化还没有出现。这意味着存在句法层、音系形式和逻辑形式层，但是这些层面的相关信息是混乱地分布在句法树上的，句法的非结构化的部分。  
 } \citew{Jackendoff2000a}赞成这种形式的模块性，它包含着音系、句法、语义和来自于认知其他方面的模块的接口。假设这些模块的好处，以及怎样实际验证这些模块，对于我来说都还不清楚。关于模块概念的批评，可以参见 \citew[\page 22,27]{Jackendoff2000a}。关于接口和HPSG\indexhpsgc、LFG\indexlfgc 等理论中的模块化的更多信息，可以参见 \citew{Kuhn2007a}。
 %If one subscribes to this view of modularity\is{module}, then theories such as HPSG or CxG also have a modular structure.
 %In the representation assumed in the HPSG variant of  \citet{ps} and Sign-Based CxG (see Section~\ref{sec-SbCxG}),
@@ -702,7 +702,7 @@ Syn$_2$ $\wedge$ Sem$_1$ $\wedge$ Syn$_1$ $\wedge$ \ldots $\wedge$ Syn$_n$ $\wed
 %Exactly what there is to be gained from assuming these modules and how these could be proved empirically remains somewhat unclear to me. For skepticism with regard to the very concept of modules, see
 % \citew[\page 22,27]{Jackendoff2000a}. For more on interfaces and modularization in theories such as LFG\indexlfg and HPSG\indexhpsg, see  \citew{Kuhn2007a}.
 
-另外， \citet[\page 53--54]{SW2015a}指出，在从话语或语境里获得充足信息前，听话者经常不会明确语义的解读。在处理话语自身或环境时经常在获得充足信息之前会让语义解释不完全赋值。他们不会过早认定某一特定意义而进入花园路径或回溯到其他语义。有些理论恰当描述了不完全赋值语义学变体的使用。有关不完全赋值语义的具体例子可见\ref{sec-MRS-wieder}。
+另外， \citet[\page 53--54]{SW2015a}指出，在从语句本身或语境里获得充足信息前，听话者经常不会明确语义的解读。在处理话语自身或环境时经常在获得充足信息之前会让语义解释不完全赋值。他们不会过早认定某一特定意义而进入花园路径或回溯到其他语义。有些理论恰当描述了不完全赋值语义学变体的使用。有关不完全赋值语义的具体例子可见\ref{sec-MRS-wieder}。
 %Furthermore,  \citet[\page 53--54]{SW2015a} argue that listeners often leave semantic
 %interpretation underspecified until enough information is present either in the utterance itself or
 % the context. They do not commit to a certain reading early and run into garden paths or backtrack
