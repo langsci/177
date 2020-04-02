@@ -1,10 +1,10 @@
 %% -*- coding:utf-8 -*-
 
-\chapter{生成能力与语法形式描述}
+\chapter{生成能力与语法的形式化}
 %\chapter{Generative capacity and grammar formalisms}
 \label{sec-generative-capacity}
 
-前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。所以，大家放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参看第~\pageref{page-TG-Typ0}页）。GPSG只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citealp{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想目标是不是寻找一种描述语言其生成能力与其描述对象完全一致的语言。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用了过于有力的数学工具，而断言这些物理学理论不够完备，这种断言则是非常奇怪的。\footnote{% 
+前面\isc{能力!生成能力|(}\is{capacity!generative|(}\isc{复杂类型|(}\is{complexity class|(}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isc{正则语言}\is{regular language}（3型），比正则语言更复杂的是上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isc{上下文相关文法}\is{context"=sensitive grammar}（1型），最复杂的是无限制语法\isc{无限制语法}\is{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。由此放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参见第~\pageref{page-TG-Typ0}页）。GPSG只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citet{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想的目标是不是要寻找一种描述性的语言，这种语言与其所描述的对象具有完全相同的能力。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用的数学工具过于强大，而断言这些物理学理论不够完备，这种断言是非常奇怪的。\footnote{% 
 如果物理学家要求形式描述来约束理论的话：\\
 \begin{tabular}{@{}l@{~}p{10.8cm}}
 编辑：     & 爱因斯坦教授，我恐怕不能接收你在广义相对论方面的论文。\\
@@ -12,7 +12,7 @@
 编辑：     & 不，但是我们注意到你的微分方程式是用集合论中的一阶语言表达的。这是一个完全不受限制的形式描述！为什么这样做呢？你本可以写出任意集合微分方程式的！ \citep{Pollard96a}
 \end{tabular}
 }
-不应该是描述语言约束理论，而应该是理论包含必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b}所持的观点。也可以参看 \citew[\S~4]{Berwick82a-u}和 \citew[\S~8]{KB82a-u}对于LFG的论述以及 \citew[\S~3.5]{Johnson88}对于LFG中离线句法分析能力限制\isc{离线句法分析能力限制}\is{Off-Line Parsability}（Off-Line Parsability Constraint）的论述和对于属性"=值语法的总体论述。
+不是描述性语言应该约束理论，而是理论包含了必须适用于研究对象的限制。这是 \citet[\page 277, 280]{Chomsky81b}所持的观点。也可以参见 \citew[\S~4]{Berwick82a-u}和 \citew[\S~8]{KB82a-u}对于LFG的论述以及 \citew[\S~3.5]{Johnson88}对于LFG中离线句法分析能力限制\isc{离线句法分析能力限制}\is{Off-Line Parsability}（Off-Line Parsability Constraint）的论述和对于属性—值语法的总体论述。
 %In\is{capacity!generative|(}\is{complexity class|(} several of the preceding chapters,
 %the complexity hierarchy for formal languages was mentioned. The simplest languages are so"=called regular languages\is{regular language} (Type-3),
 %they are followed by those described as context"=free grammars\is{context"=free grammar} (Type-2), then those grammars which are 
@@ -49,7 +49,7 @@
 % \citew[Section~4]{Berwick82a-u},
 % \citew[Section~8]{KB82a-u} on LFG and  \citew[Section~3.5]{Johnson88} on the \emph{Off-Line Parsability Constraint}\is{Off-Line Parsability}
 %in LFG and attribute"=value grammars in general.
-    当然，在条件允许的情况下选择复杂性最低的语法也有技术方面的原因：我们知道对于计算机来说处理复杂性较低的语法更加容易。要获知一个任务的复杂性，就需要确定相关计算的所谓“最坏情况”，即确定一个程序在最差情况下使用某种语法处理一定长度输入时需要多长时间。但是，我们不禁提出这样一个问题：最差情况对确定任务复杂性是否真的有用。例如，一些允许非连续成分的语法在最差情况下比那些只允许连续字符串组合的常规短语结构语法表现更差\citep[\S~8]{Reape91}。正如我在 \citew{Mueller2004b}所指出的那样：从单词出发构建更大单位的句法分析器\isc{句法分析器}\is{parser}（一个自底向上的句法分析器在处理假设动词移位分析的语法时，比处理假设非连续成分的语法更为低效。这与动词语迹没有语音形式有关，由于动词语迹没有语音形式所以句法分析器需要借助另外的手段来定位它们。因此，需要假设动词语迹可以出现在字符串的任意位置，并且在大多数情况下这些语迹对于完整输入的分析不起任何作用。因为动词语迹没有指定其价（valence）信息，所以能与句子中任意成分进行组合，这造成了很大的计算负担。相反，如果允许不连续成分，那么就可以放弃使用动词语迹，计算负担因此降低了。但是，使用非连续成分的分析最终因为语言学原因被放弃了\citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS}。尽管如此，研究两种语法的句法分析行为仍然具有价值。因为这种研究显示最差情况对确定任务复杂性并非总是有效。
+当然，在条件允许的情况下选择复杂性最低的语法也有技术方面的原因：我们知道对于计算机来说处理复杂性较低的语法更加容易。要获知一个任务的复杂性，就需要确定相关计算的所谓“最坏情况”，即确定一个程序在最差情况下使用某种语法处理一定长度输入时需要多长时间。但是，我们不禁提出这样一个问题：最差情况对确定任务复杂性是否真的有用。例如，一些允许非连续成分的语法在最差情况下比那些只允许连续字符串组合的常规短语结构语法表现更差\citep[\S~8]{Reape91}。正如我在 \citew{Mueller2004b}所指出的那样：从单词出发构建更大单位的句法分析器\isc{句法分析器}\is{parser}（一个自底向上的句法分析器在处理假设动词移位分析的语法时，比处理假设非连续成分的语法更为低效。这与动词语迹没有语音形式有关，由于动词语迹没有语音形式所以句法分析器需要借助其它机制来锁定它们。因此，需要假设动词语迹可以出现在字符串的任意位置，并且在大多数情况下这些语迹对于完整输入的分析不起任何作用。因为动词语迹没有指定其价（valence）信息，所以能与句子中任意成分进行组合，这造成了很大的计算负担。相反，如果允许不连续成分，那么就可以放弃使用动词语迹，计算负担因此降低了。但是，使用非连续成分的分析最终因为语言学原因被放弃了\citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS}。尽管如此，研究两种语法的句法分析行为仍然具有价值。因为这种研究显示最差情况对确定任务复杂性并非总是有效。
 %There is of course a technical reason to look for a grammar with the lowest level of complexity possible:
 %we know that it is easier for computers to process grammars with lower complexity than more
 %complex grammars. To get an idea about the complexity of a task, the so"=called `worst case' for the
@@ -68,7 +68,7 @@
 %In the end, the analysis using discontinuous constituents was eventually discarded for linguistic reasons \citep{Mueller2005c,Mueller2005d,MuellerLehrbuch1,MuellerGS},
 %however, the investigation of the parsing behavior of both grammars is still interesting as it shows that worst case properties are not always
 %informative.
-    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性： \citet[\S~3.2]{GM2007a}认为Stabler提出的增加了后附加（late adjunction）和外置的最简语法\indexmgc（参看\ref{Abschnitt-MG}）比弱上下文相关文法的生成力更强。如果一种语法禁止从附加语位置提取成分\isc{提取!从附加语位置}\is{extraction!from adjuncts}（\citealp[\page46]{FG2002a}）并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参看第~\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文相关文法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从指定语位置提取成分的语法也是弱上下文相关文法。
+    下面我将讨论另外一个例子来说明特定语言的限制会限制语法的复杂性： \citet[\S~3.2]{GM2007a}认为Stabler提出的增加了后附加（late adjunction）和外置的最简语法\indexmgc（参见\ref{Abschnitt-MG}）比弱上下文相关文法的生成力更强。如果一种语法禁止从附加语位置提取成分\isc{提取!从附加语位置}\is{extraction!from adjuncts}（\citealp[\page46]{FG2002a}）并且认同最短移位限制\isc{最短移位限制}\is{Shortest Move Constraint (SMC)}（参见第\pageref{Fn-SMC}页脚注~\ref{Fn-SMC}），那么该语法就是弱上下文相关文法\citep[\page 178]{GM2007a}。包含最短移位限制并限制从限定语位置提取成分的语法也是弱上下文相关文法。
 %I will discuss another example of the fact that language"=specific restrictions can restrict the complexity of a grammar:
 % \citet[Section~3.2]{GM2007a} assume that Stabler's Minimalist Grammars\indexmg (see
 %Section~\ref{Abschnitt-MG}) with extensions for late adjunction and extraposition are actually more powerful than mildly context"=sensitive.
@@ -76,7 +76,7 @@
 %46]{FG2002a}) and also assumes the Shortest Move Constraint\is{Shortest Move Constraint (SMC)} (see footnote~\ref{Fn-SMC} on page~\pageref{Fn-SMC}), then one arrives at a grammar that is mildly"=context sensitive
 %\citep[\page 178]{GM2007a}.
 %The same is true of grammars with the Shortest Move Constraint and a constraint for extraction from specifiers.
-    是否能从指定语位置提取成分取决于所讨论的语法的组织。在一些语法中，所有论元都充当指定语\isc{指定语}\is{specifier}（\citealp[\page 120--123]{Kratzer96a}，也可以参看第~\pageref{Abbildung-Kratzer}页的图~\ref{Abbildung-Kratzer}）。在这些语法中，禁止从指定语位置提取成分意味着提取论元是不可能的。当然，总体来说这是不对的。通常情况下，主语被当作指定语（\citealp[\page 44]{FG2002a}也这样认为）。主语经常被认为是阻碍提取的岛（参看\citealp[\page 35, \page 41]{Grewendorf89a}、G.\ Müller \citeyear[\page 220]{GMueller96b}、\citeyear[\page 32, \page 163]{GMueller98a}、\citealp[\page 98]{Sabel99a}和\citealp[\page 422]{Fanselow2001a}）。但是，一些\label{page-extraction-out-of-subjects}研究者发现在德语中可以从主语位置提取成分（参看 \citealp[\page 25]{Duerscheid89a}、\citealp*[\page 173]{Haider93a}、\citealp{Pafel93b-u}、\citealp[\page 27]{Fortmann96a-u}、\citealp[\page 320]{Suchsland97a}、\citealp[\page 87]{VS98a}、\citealp[\page 2066]{Ballweg97a}、\citealp[\page 100--101]{Mueller99a}、\citealp[\page 7]{deKuthy2002a}）。下面是经过验证的例子：
+是否能从限定语位置提取成分取决于所讨论的语法的组织。在一些语法中，所有论元都可充当限定语\isc{限定语}\is{specifier}（\citealp[\page 120--123]{Kratzer96a}，也可以参见第\pageref{Abbildung-Kratzer}页的图\ref{Abbildung-Kratzer}）。在这些语法中，禁止从限定语位置提取成分意味着提取论元是不可能的。当然，总体来说这是不对的。通常情况下，主语被当作限定语（\citealp[\page 44]{FG2002a}也这样认为）。主语经常被认为是阻碍提取的岛（参见\citealp[\page 35, \page 41]{Grewendorf89a}、G.\ Müller \citeyear[\page 220]{GMueller96b}、\citeyear[\page 32, \page 163]{GMueller98a}、\citealp[\page 98]{Sabel99a}和\citealp[\page 422]{Fanselow2001a}）。但是，有些\label{page-extraction-out-of-subjects}研究者发现在德语中可以从主语位置提取成分（参见 \citealp[\page 25]{Duerscheid89a}、\citealp*[\page 173]{Haider93a}、\citealp{Pafel93b-u}、\citealp[\page 27]{Fortmann96a-u}、\citealp[\page 320]{Suchsland97a}、\citealp[\page 87]{VS98a}、\citealp[\page 2066]{Ballweg97a}、\citealp[\page 100--101]{Mueller99a}、\citealp[\page 7]{deKuthy2002a}）。下面是经过验证的例子：
 %Whether extraction takes place from a specifier or not depends on the organization of the particular grammar in question.
 %In some grammars, all arguments are specifiers\is{specifier} (\citealp[\page 120--123]{Kratzer96a}, also see
 %Figure~\ref{Abbildung-Kratzer} on page~\pageref{Abbildung-Kratzer}). A ban on extraction\is{extraction!from specifier} from
@@ -97,66 +97,66 @@
 \eal
 \ex 
 \gll {}[Von den übrigbleibenden Elementen]$_i$ scheinen [die Determinantien \_$_i$] die wenigsten Klassifizierungsprobleme aufzuwerfen.\footnotemark\\
-     \spacebr{}……中的 \textsc{det} 剩下的.剩余的 成分 好像 \spacebr{}\textsc{det} 决定因素 {} \textsc{det} 最少 分类.问题 抛.出.\textsc{inf}\\
+     \spacebr{}……中的 \textsc{art}.\textsc{def} 剩下的.剩余的 成分 好像 \spacebr{}\textsc{art}.\textsc{def} 决定因素 {} \textsc{art}.\textsc{def} 最少 分类.问题 出.\textsc{inf}.抛\\
 \footnotetext{%
       在 \citew[\page 102]{Engel70a}的正文中。
 }
 \mytrans{在剩余成分中，决定因素在分类方面提出的问题最少。}
 \ex\label{bsp-von-den-gefangenen} 
 \gll {}[Von den Gefangenen]$_i$ hatte eigentlich [keine \_$_i$] die Nacht der Bomben überleben sollen.\footnotemark\\
-	 {}\spacebr{}……中的 \textsc{det} 罪犯 \textsc{aux} 其实 \spacebr{}没有一个 {} \textsc{det} 夜晚 \textsc{det} 爆炸 存活 应该.\textsc{inf}\\
+	 {}\spacebr{}……中的 \textsc{art}.\textsc{def} 罪犯 \textsc{aux} 其实 \spacebr{}没有一个 {} \textsc{art}.\textsc{def} 夜晚 \textsc{art}.\textsc{def} 爆炸 存活 应该.\textsc{inf}\\
 \footnotetext{%
         本哈德 $\cdot$ 施林克（Bernhard Schlink）, 《朗读者》（\emph{Der Vorleser}），第欧根尼平装书 22953, 苏黎世：第欧根尼出版社，1997年，第102页。
     }
 \mytrans{所有罪犯都不应该从那晚的爆炸中存活下来。}
 \ex 
 \gll {}[Von der HVA]$_i$ hielten sich [etwa 120 Leute \_$_i$] dort in ihren Gebäuden auf.\footnotemark\\
-	 {}\spacebr{}来自……的 \textsc{det} HVA 容纳 \refl{} \spacebr{}大约 120 人 {} 那里 \textsc{prep} 他们的 建筑 \prt{}\\
+	 {}\spacebr{}来自……的 \textsc{art}.\textsc{def} HVA 容纳 \refl{} \spacebr{}大约 120 人 {} 那里 \textsc{prep} 他们的 建筑 \prt{}\\
 \footnotetext{%
-       《镜报》（Spiegel），1999年第3卷，第42页。
+       《镜报》（\emph{Spiegel}），1999年第3卷，第42页。
      }
 \mytrans{大约120名来自HVA的人都待在他们的房子里。}
 \ex 
 \gll {}[Aus dem "`Englischen Theater"']$_i$ stehen [zwei Modelle \_$_i$] in den Vitrinen.\footnotemark\hspace{-3pt}\\
-	 {}\spacebr{}来自 \textsc{det} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} 在……里 \textsc{det} 包厢\\
+	 {}\spacebr{}来自 \textsc{art}.\textsc{def} \hspaceThis{"`}英语 剧场 站 \spacebr{}两个 模特 {} 在……里 \textsc{art}.\textsc{def} 包厢\\
 \footnotetext{%
-        《法兰克福评论》（Frankfurter Rundschau），摘自 \citew[\page 52]{deKuthy2001a}。
+        《法兰克福评论报》（\emph{Frankfurter Rundschau}），摘自 \citew[\page 52]{deKuthy2001a}。
       }
 \mytrans{来自`英语剧场'的两个模特都在包厢里。}
 %Auch er fühlt sich nicht nur daheim im Saarland, sondern bei der Mehrheit der Bevölkerung aufgehoben. "Hier im politischen Berlin ist man manchmal isoliert", gibt Schreiner zu. Dennoch besteht er darauf: 
 \ex 
 \gll {}[Aus der Fraktion]$_i$ stimmten ihm [viele \_$_i$] zu darin, dass die Kaufkraft der Bürger gepäppelt werden müsse, nicht die gute Laune der Wirtschaft.\footnotemark\\
-	 {}\spacebr{}来自 \textsc{det} 派系 同意 他 \spacebr{}很多 {} \prt{} 在这点上 \textsc{comp} \textsc{det} 购买.能力 \textsc{det} 市民 增加 变得 应该 \textsc{neg} \textsc{det} 好的 氛围 \textsc{det} 经济\\
+	 {}\spacebr{}来自 \textsc{art}.\textsc{def} 派系 同意 他 \spacebr{}很多 {} \prt{} 在这点上 \textsc{comp} \textsc{art}.\textsc{def} 购买.能力 \textsc{art}.\textsc{def} 市民 增加 变得 应该 \textsc{neg} \textsc{art}.\textsc{def} 好的 情绪 \textsc{art}.\textsc{def} 经济\\
 \footnotetext{%
-        《日报》（taz），\zhdate{2003/10/16}，第5页。%  taz Themen des Tages 282 Zeilen, ULRIKE WINKELMANN S. 5
+        《日报》（\emph{taz}），\zhdate{2003/10/16}，第5页。%  taz Themen des Tages 282 Zeilen, ULRIKE WINKELMANN S. 5
 }
-\mytrans{很多派系都同意他的观点，即应该提升市民的购买能力，而非经济氛围。}
+\mytrans{很多派系都同意他的观点，即应该提升市民的购买能力，而非经济情绪。}
 \ex\label{bsp-von-erzbischof-bilder} 
 \gll {}[Vom Erzbischof Carl Theodor Freiherr von Dalberg]$_i$ gibt es beispielsweise [ein Bild \_$_i$]
         im Stadtarchiv.\footnotemark\\
-	{}\spacebr{}从.\textsc{det} 大主教 Carl Theodor Freiherr 来自 Dalberg 有 \expl{} 例如 \spacebr{}一 图画 {} 在.\textsc{det} 城市.档案\\
+	{}\spacebr{}从.\textsc{art}.\textsc{def} 大主教 Carl Theodor Freiherr 来自 Dalberg 给 \expl{} 例如 \spacebr{}一 图画 {} 在.\textsc{art}.\textsc{def} 城市.档案\\
 \footnotetext{%
-        《法兰克福评论》（Frankfurter Rundschau），摘自 \citew[\page 7]{deKuthy2002a}。
+        《法兰克福评论报》（\emph{Frankfurter Rundschau}），摘自 \citew[\page 7]{deKuthy2002a}。
 }
 \mytrans{例如，在城市档案馆中，有一幅来自Dalberg的大主教Carl Theodor Freiherr的画像。}
 \ex 
 \gll {}[Gegen die wegen Ehebruchs zum Tod durch Steinigen verurteilte Amina Lawal]$_i$ hat gestern in Nigeria
     [der zweite Berufungsprozess \_$_i$] begonnen.\footnotemark\\
-	{}\spacebr{}对 \textsc{det} 因为.\textsc{prep} 私通 为了.\textsc{det} 死亡 通过 石刑 判处 Amina Lawal \textsc{aux} 昨天 在 Nigeria \spacebr{}\textsc{det} 第二 上诉.过程 {} 开始\\
+	{}\spacebr{}反对 \textsc{art}.\textsc{def} 因为.\textsc{prep} 私通 为了.\textsc{art}.\textsc{def} 死亡 通过 石刑 判处 Amina Lawal \textsc{aux} 昨天 在 Nigeria \spacebr{}\textsc{art}.\textsc{def} 第二 上诉.过程 {} 开始\\
 \footnotetext{%
-        《日报》（taz），\zhdate{2003/08/28}，第2页。
+        《日报》（\emph{taz}），\zhdate{2003/08/28}，第2页。
     }
-\mytrans{控诉Amina Lawal的第二次上诉昨天开始，他因为私通而被判处石刑。}
+\mytrans{控诉Amina Lawal的第二次上诉昨天开始，她因为私通而被判处石刑。}
 \ex 
 \gll {}[Gegen                  diese        Kahlschlagspolitik]$_i$ finden derzeit bundesweit                     [Proteste und Streiks \_$_i$ ] statt.\footnotemark\\
-     {}\spacebr{}对 \textsc{det} 秃的.打.政治    发生   现在 \spacebr{}全国 \spacebr{}抗议 和 罢工 {} {} \prt{}\\
+     {}\spacebr{}反对 \textsc{art}.\textsc{def} 秃的.打.政治    发生   现在 \spacebr{}全国 \spacebr{}抗议 和 罢工 {} {} \prt{}\\
 \footnotetext{%
-        《罢工号召》（Streikaufruf），不来梅大学（Universität Bremen），\zhdate{2003/12/03}，第1页。
+        《罢工号召》（\emph{Streikaufruf}），不莱梅大学（Universität Bremen），\zhdate{2003/12/03}，第1页。
     }
 \mytrans{此时，有遍及全国的抗议和罢工来反对破坏性政治。}
 \ex 
 \gll {}[Von den beiden, die hinzugestoßen sind], hat [einer        \_$_i$ ] eine Hacke, der andere einen Handkarren.\footnotemark\\
-	 {}\spacebr{}……中的 \textsc{det} 两个 \textsc{rel} 参加 \textsc{cop} \textsc{aux} \spacebr{}一 {}    {}  一 镐   \textsc{det} 另外的 \textsc{det} 手推车\\
+	 {}\spacebr{}……中的 \textsc{art}.\textsc{def} 两个 \textsc{rel} 参加 \textsc{cop} \textsc{aux} \spacebr{}一 {}    {}  一 镐   \textsc{art}.\textsc{def} 另外的 \textsc{art}.\textsc{def} 手推车\\
 \footnotetext{%
         村上春树（Haruki Murakami），《世界尽头与冷酷仙境》（\emph{Hard-boiled Wonderland und das Ende der Welt}），Annelie Ortmanns和Jürgen Stalph译，苏尔坎普出版社平装书 3197，2000年，第414页。
 }
@@ -174,37 +174,37 @@
 \gll ein Plan, [gegen den]$_i$ sich nun [ein Proteststurm \_$_i$ ] erhebt\footnotemark\\
      一 计划 \spacebr{}反对 \textsc{rel} \refl{} 现在 \spacebr{}一 抗议.风暴 {} {} 升起\\
 \footnotetext{%
-  《日报》（taz），\zhdate{2004/12/30}，第6页。
+  《日报》（\emph{taz}），\zhdate{2004/12/30}，第6页。
 }
 \mytrans{一场反对计划的抗议风暴形成了。}
 \ex 
 \gll {}Dagegen$_i$ jedoch regt sich jetzt [Widerstand \_$_i$ ]: [\ldots]\footnotemark\\
 	{}这个.反对 但是 出台 \refl{} 现在 \spacebr{}反对 {}\\
 \footnotetext{%
-  《日报》（taz），\zhdate{2005/09/02}，第18页。%
+  《日报》（\emph{taz}），\zhdate{2005/09/02}，第18页。%
 }
 \mytrans{但是，对于这件事的反抗正在升级。}
 \ex
 \gll {}[Aus der Radprofiszene]$_i$ kennt ihn [keiner \_$_i$ ] mehr.\footnotemark\\
-	 {}\spacebr{}在……中 \textsc{det} 骑行.专业.场景 知道 他 \spacebr{}没有人 {} {} 今后\\
+	 {}\spacebr{}在……中 \textsc{art}.\textsc{def} 骑行.专业.场景 知道 他 \spacebr{}没有人 {} {} 今后\\
 \footnotetext{%
- 《日报》（taz），\zhdate{2005/07/04}，第5页。
+ 《日报》（\emph{taz}），\zhdate{2005/07/04}，第5页。
 }
 % Nobody from the professional cycling scene has heard of him anymore.
 \mytrans{专业骑行圈中再也没人听说过他。'}\todostefan{check
   once taz archive gets online again}
 \ex 
 \gll {}[Über das chinesische Programm der Deutschen Welle] tobt dieser Tage [ein heftiger Streit \_$_i$ ].\footnotemark\\
-     \spacebr{}关于 \textsc{det} 中国的 项目 \textsc{det} 德国 电波 肆虐 这些 天 \spacebr{}一 强烈的 争论\\
+     \spacebr{}关于 \textsc{art}.\textsc{def} 中国的 项目 \textsc{art}.\textsc{def} 德国 电波 肆虐 这些 天 \spacebr{}一 强烈的 争论\\
 \footnotetext{%
- 《日报》（taz），\zhdate{2008/10/21}，第12页。
+ 《日报》（\emph{taz}），\zhdate{2008/10/21}，第12页。
 }
 \mytrans{最近，《德国之声》的中文节目引起了很多争议。}
 \zl
 \end{sloppypar}
 
 \noindent
-这意味着禁止从指定语位置提取成分对于德语来说并不适用。因此，对于所有语言来说禁止从指定语\isc{指定语}\is{specifier}位置提取成分\isc{提取!从指定语提取}\is{extraction!from specifier}也不对。
+这意味着禁止从限定语位置提取成分对于德语来说并不适用。因此，对于所有语言来说禁止从限定语\isc{限定语}\is{specifier}位置提取成分\isc{提取!从限定语提取}\is{extraction!from specifier}也不对。
 
 
 %\begin{sloppypar}
@@ -320,7 +320,7 @@
 
 %\noindent
 %This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
-    我们的这个情况与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法形式还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从指定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\isc{能力!生成能力|)}\is{capacity!generative|)}\isc{复杂类型|)}\is{complexity class|)}
+我们的这个情况与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法形式还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从限定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\isc{能力!生成能力|)}\is{capacity!generative|)}\isc{复杂类型|)}\is{complexity class|)}
 %We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
 %the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
 %for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on
