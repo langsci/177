@@ -26,7 +26,7 @@
 
 
 \begin{enumerate}
-\item 任何一种语法都有可能提出生成不必要结构的符号和规则，或者只是简单地从未使用过的符号和规则，因为规则的右手边没有能够使用的词或短语。比如说，如果我们在文法中加入下面的规则，我们需要一个仍能分析这个语言的相同片段的更为复杂的文法。
+\item 任何一种文法都有可能提出额外的符号和规则，可能是会生成多余的结构，或者是根本没用过，因为规则的右手边没有能够使用的词或短语。比如说，如果我们在文法中加入下面的规则，我们需要一个仍能分析这个相同的语言片段的更为复杂的文法。
 %\item For any grammar, it is possible to assume additional symbols and rules that create unnecessary structure or are simply
 %never used because there are no words or phrases that could be used on the right"=hand side of the rule. If we were to add
 %the following rule to our grammar, for example, we would have a more complex grammar that can still analyze the same fragment
@@ -36,11 +36,11 @@ Tralala $\to$ Trulla Trololo
 \z
 % \item Stellen Sie Überlegungen dazu an, wie man ermitteln kann, welche der unendlich vielen Grammatiken
 %       die beste ist bzw.\ welche der Grammatiken die besten sind.
-\item 一般认为，有着最少规则的文法是最好的。这样，我们可以拒绝那些像（\mex{0}）一样包括不必要规则的文法。
+\item 一般认为，有着最少规则的文法是最好的。这样，我们可以拒用那些像（\mex{0}）一样包括不必要规则的文法。
 %\item In general, it is assumed that the grammar with the fewest rules is the best one. Therefore, we can reject grammars that
 %contain unnecessary rules such as (\mex{0}).
 
-我们需要牢记，文法理论的目的是什么。如果我们的目标是为了描写人类的语言能力，那么有着更多规则的文法就比那些具有较少规则的文法好。这是因为心理语言学的研究显示我们的大脑易储存高频的单位，而且并不是每次都由他们的个别部分构成，尽管我们当然有能力这么做。
+我们需要牢记，文法理论的目的是什么。如果我们的目标是为了描写人类的语言能力，那么有着更多规则的文法就比那些具有较少规则的文法要好。这是因为心理语言学的研究显示我们的大脑易储存高频的单位，而且并不是每次都由他们的个别部分构成，尽管我们当然有能力这么做。
 %One should bear in mind what the aim of a theory of grammar is. If our goal is to describe the human
 %language capacity, then a grammar with more rules could be better than other grammars with less
 %rules. This is because psycholinguistic research has shown that highly"=frequent units are simply
@@ -73,7 +73,7 @@ sm edges
 %     I believe that sleeps\\
 }
 \z
-这个问题可以使用一个特征来解决，这个特征决定了\nbar 的左边界是否是空的。至少带一个形容词的可见的Ns和\nbar 具有“--” 值，其他的是“+”。空限定语就只能跟具有“--” 值的\nbar{}s 相、组合。见 \citew{Netter94}。
+这个问题可以使用一个特征来解决，这个特征决定了\nbar 的左边界是否是空的。至少带一个形容词的可见的Ns和\nbar 具有“--” 值，其他的是“+”。空限定语就只能跟具有“--” 值的\nbar{}s 相组合。参见 \citew{Netter94}。
 %This problem can be solved using a feature that determines whether the left periphery of the \nbar is empty.
 %Visible Ns and \nbar with at least an adjective would have the value `--' and all others `+'. Empty determiners
 %could then only be combined with \nbar{}s that have the value `--'. See  \citew{Netter94}.
@@ -87,16 +87,16 @@ sm edges
      有趣的 书\\
 %     interesting books\\
 \z
-不过，如果形容词跟相NPs组合，仍需要解释（\mex{1}）为什么是不合乎语法的。
+不过，如果形容词跟名词短语组合，仍需要解释（\mex{1}）为什么是不合乎语法的。
 %If adjectives are combined with NPs, however, it still has to be explained why (\mex{1}) is ungrammatical.
 \ea[*]{
 \gll interessante die Bücher\\
-     有趣的 \textsc{det} 书\\
+     有趣的 \textsc{art}.\textsc{def} 书\\
 %     interesting the books\\
 }
 \z
 
-有关这个话题的详细讨论，见 \citew[Section~6.6.2]{MuellerLehrbuch1}。\nocite{MuellerLehrbuch1}
+有关这个话题的详细讨论，见 \citew[\S~6.6.2]{MuellerLehrbuch1}。\nocite{MuellerLehrbuch1}
 %For a detailed discussions of this topic, see  \citew[Section~6.6.2]{MuellerLehrbuch1}.\nocite{MuellerLehrbuch1}
 
 \item %% Überlegen Sie, warum es auch nicht sinnvoll ist, die folgende Regel für Nomina wie \emph{Bücher} anzunehmen:
@@ -113,11 +113,11 @@ sm edges
 %     interesting \spacebr{}essays and books\\
 \ex 
 \gll interessante [Aufsätze und Bücher aus Stuttgart]\\
-     有趣的 \spacebr{}文章 和 书 \textsc{prep} 斯图加特\\
+     有趣的 \spacebr{}文章 和 书 来自 斯图加特\\
 %     interesting \spacebr{}essays and books from Stuttgart\\
 \zl
-由于形容词只能跟名词直接组合，这些短语就是无法分析的。Bücher（书）或Bücher aus Stuttgart（来自斯图加特的书）就是完整NPs了。因为一般认为并列成分要求具有相同的句法范畴，所以Aufsätze（文章）就应该是一个NP。Aufsätze und Bücher（文章和书）和Aufsätze und Bücher aus
-  Stuttgart（来自斯图加特的文章和书）也应该是NPs，这样还是没有解释为什么形容词跟这个名词组合。因为（\mex{-1}）的关系，我们必须排除那些认为完整NPs跟形容词组合的分析。
+由于形容词只能跟名词直接组合，这些短语就是无法分析的。Bücher（书）或Bücher aus Stuttgart（来自斯图加特的书）就是完整的名词短语了。因为一般认为并列成分要求具有相同的句法范畴，所以Aufsätze（文章）就应该是一个名词短语。Aufsätze und Bücher（文章和书）和Aufsätze und Bücher aus
+  Stuttgart（来自斯图加特的文章和书）也应该是名词短语，这样还是没有解释为什么形容词跟这个名词组合。因为（\mex{-1}）的关系，我们必须排除那些假定完整的名词短语跟形容词组合的分析。
 %Since adjectives can only be combined directly with nouns, these phrases cannot be analyzed. 
  %\emph{Bücher} `books' or \emph{Bücher aus Stuttgart} `books from Stuttgart' would be complete NPs.
 % Since it is assumed that coordinated elements always have the same syntactic category, then \emph{Aufsätze} `essays'
@@ -125,10 +125,10 @@ sm edges
 %  Stuttgart} would then also be NPs and it remains unexplained how an adjective can be combined with this NP.
 %Because of (\mex{-1}), we must rule out analyses that assume that full NPs combine with adjectives.
 
-关于空成分的概括性论述见第~\ref{chap-empty}章。
+关于空成分的概括性论述见第\ref{chap-empty}章。
 %See Chapter~\ref{chap-empty} for a general discussion of empty elements.
 
-\item 如果某个冠词或者任何一个冠词都要跟一个形容词组合以构成一个完整的NP，就没有地儿给后置修饰语了，如修饰属格、PPs和关系从句的修饰语。对于PPs和关系从句来说，分析认为这些后置修饰语附加在完整NPs上\citep{Kiss2005a}，但是修饰性属格通常附加在更小的单位上。但是即使我们承认后置修饰语附加在完整NPs上，我们无法解释形容词的重叠，以及依存于省略名词的论元。
+\item 如果某个冠词或者任何一个冠词都要跟一个形容词组合以构成一个完整的名词短语，就没有地儿给后置修饰语了，如修饰属格、介词短语和关系从句的修饰语。对于介词短语和关系从句来说，分析认为这些后置修饰语附加在完整的名词短语上\citep{Kiss2005a}，但是修饰性属格通常附加在更小的单位上。但是即使我们承认后置修饰语附加在完整的名词短语上，我们无法解释形容词的重叠，以及依存于省略名词的论元。
 %\item 
 % NP $\to$ the Adj
 %If a specific determiner or just any determiner were to be combined with an adjective to form a
@@ -152,12 +152,12 @@ sm edges
 %occurs between the complement and the adjective:
 \ea
 \gll der auf seinen Sohn sehr stolze Vater\\
-	 \textsc{det} \textsc{prep} 他的 儿子 非常 骄傲 父亲\\
+	 \textsc{art}.\textsc{def} \textsc{prep} 他的 儿子 非常 骄傲 父亲\\
 \mytrans{对儿子感到非常骄傲的父亲}
 %	 the on his son very proud father\\
 %\mytrans{the father very proud of his son}
 \z
-我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于他们的限定语前面。有关这类重新排序的描写，请参考第~\ref{Kapitel-GB}章。第~\ref{sec-Diskussion-X-Bar}节是关于\xbar "=理论的讨论。
+我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于他们的限定语前面。有关这类重新排序的描写，请参考第\ref{Kapitel-GB}章。\ref{sec-Diskussion-X-Bar}是关于\xbar "=理论的讨论。
 %One would either have to allow for specifiers to be combined with their heads before complements or allow crossing lines in trees. Another assumption
 %could be that German is like English, however then adjectival complements would have to be obligatorily reordered before their specifier. For
 %a description of this kind of reordering, see Chapter~\ref{Kapitel-GB}. See Section~\ref{sec-Diskussion-X-Bar} for a discussion of \xbar"=Theory.
@@ -167,14 +167,14 @@ sm edges
       \eal
       \ex[]{
       \gll Der Mann hilft der Frau.\\
-           \textsc{det}.\nom{} 男人 帮助 \textsc{det}.\dat{} 女人\\
+           \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人\\
       \mytrans{这个男人帮助这个女人。}
 %           the.\nom{} man helps the.\dat{} woman\\
 %      \mytrans{The man helps the woman.}
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
-           他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书\\
+           他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书\\
       \mytrans{他给她这本书。}
 %           he.\nom{} gives her.\dat{} the.\acc{} book\\
 %      \mytrans{He gives her the book.}
@@ -193,12 +193,12 @@ sm edges
       \eal
       \ex[*]{
         \gll Der Mann hilft er.\\
-             \textsc{det}.\nom{} 男人 帮助 他.\nom{}\\
+             \textsc{art}.\textsc{def}.\nom{} 男人 帮助 他.\nom{}\\
 %             the.\nom{} man helps he.\nom{}\\
       }
       \ex[*]{
        \gll Er gibt ihr den Buch.\\
-	    他.\nom{} 给 她.\dat{} \textsc{det}.\acc{} 书\\
+	    他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书\\
 %	    he.\nom{} gives her.\dat the.\acc{} book\\
       }
       \zl
@@ -253,12 +253,12 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
 	[IP
-		[NP [die Frau;\textsc{det} 女人,roof]]
+		[NP [die Frau;\textsc{art}.\textsc{def} 女人,roof]]
 %		[NP [die Frau;the woman,roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[den Mann;\textsc{det} 男人, roof]]
+					[NP[den Mann;\textsc{art}.\textsc{def} 男人, roof]]
 %					[NP[den Mann;the man, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$[lieb-$_j$ -t;爱- -\textsc{3sg}]]]]]]
@@ -277,7 +277,7 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
         [IP
-           [NP, [der Mann$_i$;\textsc{det} 男人,roof]]
+           [NP, [der Mann$_i$;\textsc{art}.\textsc{def} 男人,roof]]
 %        [NP, [der Mann$_i$;the man, roof]]
         [I$'$
 	   [VP
@@ -297,7 +297,7 @@ sm edges
 \begin{forest}
 sm edges
 [CP
-   [NP, [der Mann$_i$;\textsc{det} 男人, roof]]
+   [NP, [der Mann$_i$;\textsc{art}.\textsc{def} 男人, roof]]
 %    [NP, [der Mann$_i$;the man, roof]]
    [C$'$
 	[C$^0$[ (wir-$_j$ -d)$_k$;\passive{} -\textsc{prs.3s}]]
@@ -326,12 +326,12 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
 	[IP
-		[NP [der Mann;\textsc{det} 男人, roof]]
+		[NP [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
 %		[NP [der Mann;the man, roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[der Frau;\textsc{det} 女人, roof]]
+					[NP[der Frau;\textsc{art}.\textsc{def} 女人, roof]]
 %					[NP[der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$[hilf-$_j$ -t;帮助- -\textsc{3sg}]]]]]]
@@ -346,7 +346,7 @@ sm edges
 \begin{forest}
 sm edges
 [CP
-[NP [der Mann$_i$;\textsc{det} 男人, roof]]
+[NP [der Mann$_i$;\textsc{art}.\textsc{def} 男人, roof]]
 %[NP [der Mann$_i$;the man, roof]]
 [C$'$
 	[C$^0$ [(hilf-$_j$ -t)$_k$;帮助- -\textsc{3sg}]]
@@ -356,7 +356,7 @@ sm edges
 		[I$'$
 			[VP
 				[V$'$
-					[NP [der Frau;\textsc{det} 女人, roof]]
+					[NP [der Frau;\textsc{art}.\textsc{def} 女人, roof]]
 %					[NP [der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$ [\trace$_k$]]]]]]
@@ -375,20 +375,20 @@ sm edges
 \label{Aufgabe-GPSG-Grammatik}
 \ex 
 \gll {}[dass] der Mann ihn liest\\
-	 {}\spacebr{}\textsc{comp} \textsc{det} 男人 它 读\\
+	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def} 男人 它 读\\
 \mytrans{这个男人读它}
 %	 {}\spacebr{}that the man it reads\\
 %\mytrans{that the man reads it}
 \ex 
 \gll {}[dass] ihn der Mann liest\\
-	{}\spacebr{}\textsc{comp} 它 \textsc{det} 男人 读\\
+	{}\spacebr{}\textsc{comp} 它 \textsc{art}.\textsc{def} 男人 读\\
 \mytrans{这个男人读它}
 %	{}\spacebr{}that it the man reads\\
 %\mytrans{that the man reads it}
 %\ex {}[dass] er gelesen wurde
 \ex\label{Aufgabe-GPSG-Grammatik-extraction}
 \gll Der Mann liest ihn.\\
-     \textsc{det} 男人 读 它\\
+     \textsc{art}.\textsc{def} 男人 读 它\\
 \mytrans{这个男人读它。}
 %     the man reads it\\
 %\mytrans{The man reads it.}
@@ -411,7 +411,7 @@ sm edges
 \zl
 
 \noindent
-规则（\mex{-1}b，c）对应于我们在第~\ref{sec-psg-np}节讲到的\xbar-规则。他们跟这些规则的不同之处在于没有在规则的右边给出中心语的词类。词类是通过中心语特征原则决定的。中心语的词类跟规则左边成分的词类保持一致，即它必须是（\mex{-1}b，c）中的N。它也从中心语特征原则得出，整个NP具有跟中心语一样的格，这样就不必在上面的规则中额外提及了。27是一个次范畴。这个数字是任意的。
+规则（\mex{-1}b，c）对应于我们在\ref{sec-psg-np}讲到的\xbar—规则。他们跟这些规则的不同之处在于没有在规则的右边给出中心语的词类。词类是通过中心语特征原则决定的。中心语的词类跟规则左边成分的词类保持一致，即它必须是（\mex{-1}b，c）中的N。它也从中心语特征原则得出，整个NP具有跟中心语一样的格，这样就不必在上面的规则中额外提及了。27是一个次范畴。这个数字是任意的。
 %The rules (\mex{-1}b,c) correspond to \xbar-rules that we encountered in Section~\ref{sec-psg-np}. They only differ from these rules
 %in that the part of speech of the head is not given on the right"=hand side of the rule. The part of speech is determined by
 %the Head Feature Convention. The part of speech of the head is identical to that on the left"=hand
@@ -451,7 +451,7 @@ V3/N2[\textsc{case} nom]  $\to$ H[6],  N2[\textsc{case} acc]
 \ea
 V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 \z
-下面的线性规则确保$+$\textsc{top}-成分前置于它缺失的句子：
+下面的线性规则确保$+$\textsc{top}—成分前置于它缺失的句子：
 %The following linearization rule ensures that the $+$\textsc{top}-constituent precedes the sentence in which it is missing:
 \ea
 {}[+\textsc{top}] $<$ X
@@ -465,7 +465,7 @@ V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 \begin{forest}
 sm edges
 [{V3[+\textsc{fin}, $+$\textsc{mc}]}
-   [{N2[nom, $+$\textsc{top}]} [der Mann;\textsc{det} 男人, roof]]
+   [{N2[nom, $+$\textsc{top}]} [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
    [{V3[+\textsc{mc}]/N2[nom]}
      [{V[6, $+$\textsc{mc}]} [liest;读]]
      [{N2[acc]} [ihn;他]]]]
@@ -580,7 +580,7 @@ last & \ibox{1}\\
 }
 \z
 
-与（\mex{-1}）列表的表示不同，这个列表末尾的\textsc{rest}值不是\type{e\_list}，而是\type{list}。这就有可能通过在它结束的指针处加上另一个列表来对它进行扩展。（\mex{0}）和（\mex{1}a）的联结是（\mex{1}b)）。
+与（\mex{-1}）列表的表示不同，这个列表末尾的\textsc{rest}值不是\type{e\_list}，而是\type{list}。这就有可能通过在它结束的指针处加上另一个列表来对它进行扩展。（\mex{0}）和（\mex{1}a）的联结是（\mex{1}b）。
 %Unlike the list representation in (\mex{-1}), the \textsc{rest} value of the end of the list is not \type{e\_list}, but rather
 %simply \type{list}. It is then possible to extend a list by adding another list to the point where it ends. The concatenation of 
 %(\mex{0}) and (\mex{1}a) is (\mex{1}b).
@@ -638,17 +638,17 @@ last & \ibox{2}\\
 %\item In the sentence (\mex{1}), the object of \emph{verschlingen} `devour' is in the prefield.
 \ea
 \gll Den Apfel verschlingt David.\\
-	 \textsc{det}.\acc{} 苹果 吞 David.\nom\\
+	 \textsc{art}.\textsc{def}.\acc{} 苹果 吞 David.\nom\\
 \mytrans{David在狼吞虎咽地吃苹果。}
 %	 the.\acc{} apple devours David.\nom\\
 %\mytrans{David is devouring the apple.}
 \z
-该分析是图~\vref{Abb-Verbstellung-LFG}中的分析和第~\ref{Abschnitt-NLA-LFG}节所示的长距离依存分析的组合。宾语不在VP内部实现，而是在前场实现。
+该分析是图\vref{Abb-Verbstellung-LFG}中的分析和\ref{Abschnitt-NLA-LFG}所示的长距离依存分析的组合。宾语不在VP内部实现，而是在前场实现。
 %The analysis is a combination of the analysis in Figure~\vref{Abb-Verbstellung-LFG} and the analysis of long"=distance
 %dependencies that was presented in Section~\ref{Abschnitt-NLA-LFG}. The object is not realized inside the VP, but rather
 %in the prefield.
 
-必要的c"=结构规则如（\mex{1}）所示：
+必要的c—结构规则如（\mex{1}）所示：
 %The necessary c"=structure rules are given in (\mex{1}):
 \eal
 \ex 
@@ -675,8 +675,8 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\up \textsc{df})}XP} & C$'$
 \zl
 
 \noindent
-这些规则允准了这里所述例子的两个f"=结构：其中一个NP，即den
-  Apfel（苹果），是话题，另一个NP是焦点。图~\ref{Abbildung-V2-LFG}显示了前场中话题化成分的分析。
+这些规则允准了这里所述例子的两个f—结构：其中一个NP，即den
+  Apfel（苹果），是话题，另一个NP是焦点。图\ref{Abbildung-V2-LFG}显示了前场中话题化成分的分析。
 %These rules allow two f"=structures for the example in question: one in which the NP \emph{den
 %  Apfel} `the apple' is the topic and another in which this NP is the focus. Figure~\ref{Abbildung-V2-LFG} 
 %shows the analysis with a topicalized constituent in the prefield.\todostefan{Dreieck für den Apfel}
@@ -702,7 +702,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\up \textsc{df})}XP} & C$'$
 \centerline{%
 \deriv{7}{
 the   & children  & in  & the      & room                 & laugh & loudly\\
-\textsc{det}   & \textrm{孩子们}  & \textsc{prep}  & \textsc{det}    & \textrm{房间}   & \textrm{笑} & \textrm{大声}\\
+\textsc{art}.\textsc{def}   & \textrm{孩子们}  & \textsc{prep}  & \textsc{art}.\textsc{def}    & \textrm{房间}   & \textrm{笑} & \textrm{大声}\\
 \hr   & \hr       & \hr & \hr      & \hr                    & \hr     & \hr \\
 %
 %
@@ -728,7 +728,7 @@ np/n  & n       & (n\bs n)/np & np/n & n                & s\bs np  & (s\bs np)\b
 %    the room laugh loudly.}}
 \end{figure}%
 
-\item the picture of Mary的分析如图~\vref{Abbildung-CG-das-Bild-von-Maria}所示。n/pp对应于\nnull，n对应于\nbar ，而np对应于NP。
+\item the picture of Mary的分析如图\vref{Abbildung-CG-das-Bild-von-Maria}所示。n/pp对应于\nnull，n对应于\nbar ，而np对应于NP。
 %\item The analysis of \emph{the picture of Mary} is given in
 %  Figure~\vref{Abbildung-CG-das-Bild-von-Maria}. n/pp corresponds to \nnull, n corresponds to \nbar
 %  and np corresponds to NP.
@@ -736,7 +736,7 @@ np/n  & n       & (n\bs n)/np & np/n & n                & s\bs np  & (s\bs np)\b
 \centerline{%
 \deriv{4}{
 the & picture & of & Mary\\
-\textsc{det} & \textrm{照片}  & \textsc{prep} & Mary\\
+\textsc{art}.\textsc{def} & \textrm{照片}  & \textsc{prep} & Mary\\
 \hr   & \hr     & \hr        & \hr\\
 np/n  & n/pp    & pp/np      & np\\
 %
@@ -938,11 +938,11 @@ dg edges
 \section{树邻接语法}
 %\section{Tree Adjoining Grammar}
 
-（\mex{1}）的分析需要图~\vref{TAG-Elementarbaeume-dem-Koenig-treue}中的基本树。
+（\mex{1}）的分析需要图\vref{TAG-Elementarbaeume-dem-Koenig-treue}中的基本树。
 %The elementary trees in Figure~\vref{TAG-Elementarbaeume-dem-Koenig-treue} are needed for the analysis of (\mex{1}).
 \ea
 \gll der        dem        König treue Diener\\
-     \textsc{det}.\nom{} \textsc{det}.\dat{} 国王  忠诚 仆人\\
+     \textsc{art}.\textsc{def}.\nom{} \textsc{art}.\textsc{def}.\dat{} 国王  忠诚 仆人\\
 \mytrans{对国王忠诚的仆人}
 %     the.\nom{} the.\dat{} king  loyal servant\\
 %\mytrans{the servant loyal to the king}
@@ -953,14 +953,14 @@ dg edges
 \scalebox{.9}{
 \begin{forest}
 tag
-[Det [der;\textsc{det}]]
+[Det [der;\textsc{art}.\textsc{def}]]
 \end{forest}
 }
 \hfill
 \scalebox{.9}{
 \begin{forest}
 tag
-[Det [dem;\textsc{det}]]
+[Det [dem;\textsc{art}.\textsc{def}]]
 \end{forest}
 }
 \hfill
@@ -1005,7 +1005,7 @@ tag
 \end{figure}%
 
 \noindent
-通过在替换节点König（国王）替换dem的树，我们会得到一个完整的NP。然后，这就可以插进treue（忠诚的）的替换节点中。相似地， der的树可以跟Diener的树组合。然后，我们就得到图~\vref{TAG-substituiert}中的两棵树了。
+通过在替换结点König（国王）替换dem的树，我们会得到一个完整的NP。然后，这就可以插进treue（忠诚的）的替换结点中。相似地， der的树可以跟Diener的树组合。然后，我们就得到图\vref{TAG-substituiert}中的两棵树了。
 %By substituting the tree for \emph{dem} `the' in the substitution node of \emph{König} `king', one then arrives at a full NP.
 %This can then be inserted into the substitution node of \emph{treue} `loyal'. Similarly, the tree
 %for \emph{der} `the' can be combined with the one for \emph{Diener}. One then has both of the trees in Figure~\vref{TAG-substituiert}.
@@ -1019,7 +1019,7 @@ tag
   [AP
     [A$'$
       [NP
-        [Det [dem;\textsc{det}]]
+        [Det [dem;\textsc{art}.\textsc{def}]]
         [N$'$
           [N [König;国王]]]]
       [A [treue;忠诚]]]]
@@ -1032,7 +1032,7 @@ tag
 \begin{forest}
 tag
   [NP
-     [Det [der;\textsc{det}]]
+     [Det [der;\textsc{art}.\textsc{def}]]
      [N$'$
         [N [Diener;仆人]]]]
 \end{forest}
@@ -1041,7 +1041,7 @@ tag
 \caption{\label{TAG-substituiert}替换后的der dem König treue和der Diener树}
 %\caption{\label{TAG-substituiert}Trees for \emph{der dem König treue} and \emph{der Diener} after substitution}
 \end{figure}%
-形容词树可以连接到der Diener的N$'$"=n节点上，并得到图~\vref{TAG-Baeume-nach-Adjunktion}中的结构。
+形容词树可以连接到der Diener的N$'$"=n结点上，并得到图\vref{TAG-Baeume-nach-Adjunktion}中的结构。
 %The adjective tree can then be adjoined to the N$'$"=node of \emph{der Diener}, which yields the structure in Figure~\vref{TAG-Baeume-nach-Adjunktion}.
 \begin{figure}
 \centering
@@ -1049,12 +1049,12 @@ tag
 \begin{forest}
 tag
   [NP
-     [Det [der;\textsc{det}]]
+     [Det [der;\textsc{art}.\textsc{def}]]
      [N$'$
        [AP
          [A$'$
            [NP
-             [Det [dem;\textsc{det}]]
+             [Det [dem;\textsc{art}.\textsc{def}]]
              [N$'$
                [N [König;国王]]]]
            [A [treue;忠诚]]]]
@@ -1062,7 +1062,7 @@ tag
          [N [Diener;仆人]]]]]
 \end{forest}
 %}
-\caption{\label{TAG-Baeume-nach-Adjunktion}连接到N$'$"=节点的结果}
+\caption{\label{TAG-Baeume-nach-Adjunktion}连接到N$'$"=结点的结果}
 %\caption{\label{TAG-Baeume-nach-Adjunktion}Result of adjunction of the AP to the N$'$"=node}
 \end{figure}%
 
