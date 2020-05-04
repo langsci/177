@@ -43,7 +43,6 @@ SOURCE=gt.bib \
 	xelatex -no-pdf -interaction=nonstopmode $* 
 	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $*
-	correct-index
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.adx
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldx
