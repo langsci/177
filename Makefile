@@ -214,17 +214,31 @@ source:
 	tar chzvf ~/Downloads/gt.tgz *.tex styles/*.sty LSP/
 
 
+#housekeeping	
 clean:
-	rm -f *.bak *~ *.log *.blg *.bbl *.aux *.toc *.cut *.out *.tmp *.tpm *.adx *.idx *.ilg *.ind \
-	*.and *.glg *.glo *.gls *.657pk *.adx.hyp *.bbl.old *.ldx *.lnd *.rdx *.sdx *.snd *.scd *.wdx \
-	*.wdv *.xdv chapters/*.aux *.for *.aux.copy *-blx.bib *.auxlock *.bcf *.mw *.run.xml
-	rm -f chapters/*~ chapters/*.aux
+	rm -f *.bak *~ *.backup \
+	*.adx *.and *.idx *.ind *.ldx *.lnd *.sdx *.snd *.rdx *.rnd *.wdx *.wnd \
+	*.log *.blg *.bcf *.aux.copy *.auxlock *.ilg \
+	*.aux *.toc *.cut *.out *.tpm *.bbl *-blx.bib *_tmp.bib \
+	*.glg *.glo *.gls *.wrd *.wdv *.xdv *.mw *.clr \
+	*.run.xml \
+	chapters/*.aux chapters/*.auxlock chapters/*.aux.copy chapters/*.old chapters/*~ chapters/*.bak chapters/*.backup chapters/*.blg\
+	chapters/*.log chapters/*.out chapters/*.mw chapters/*.ldx  chapters/*.bbl chapters/*.bcf chapters/*.run.xml\
+	chapters/*.blg chapters/*.idx chapters/*.sdx chapters/*.run.xml chapters/*.adx chapters/*.ldx\
+	langsci/*/*.aux langsci/*/*~ langsci/*/*.bak langsci/*/*.backup \
+	cuts.txt
+
+cleanfor: # These files are precious, as it takes a long time to produce them all.
+	rm -f *.for *.for.tmp chapters/*.for chapters/*.for.tmp hpsg-handbook.for.dir/*
+
+realclean: clean
+	rm -f *.dvi *.ps *.pdf chapters/*.pdf
+
+brutal-clean: realclean cleanfor
 
 check-clean:
 	rm -f *.bak *~ *.log *.blg complex-draft.dvi
 
-realclean: clean
-	rm -f *.dvi *.ps *.pdf
 
 
 
