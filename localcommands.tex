@@ -1,3 +1,6 @@
+\newcommand{\lsptoprule}{\midrule\toprule}
+\newcommand{\lspbottomrule}{\bottomrule\midrule}
+
 % requires amsmath for \text
 \newcommand\mathdash{\text{\normalfont -}}
 
@@ -72,29 +75,29 @@
 \let\mc=\multicolumn
 
 
-%\exewidth{\exnrfont (34)}
-% should be set up for the whole series in langsci.cls
-\renewcommand{\fnexfont}{\footnotesize\upshape}
-%\let\oldglt\glt
-%\def\glt{\oldglt\justify}
-%\def\glt{\nopagebreak\vskip.17\baselineskip\transfont\parindent0ex}
+% %\exewidth{\exnrfont (34)}
+% % should be set up for the whole series in langsci.cls
+% \renewcommand{\fnexfont}{\footnotesize\upshape}
+% %\let\oldglt\glt
+% %\def\glt{\oldglt\justify}
+% %\def\glt{\nopagebreak\vskip.17\baselineskip\transfont\parindent0ex}
 
-\makeatletter
-\def\ea{\ifnum\@xnumdepth=0\begin{exe}\else\begin{xlist}[iv.]\fi\ex}
-\def\eal{\begin{exe}\exnrfont\ex\begin{xlist}[iv.]}
+% \makeatletter
+% \def\ea{\ifnum\@xnumdepth=0\begin{exe}\else\begin{xlist}[iv.]\fi\ex}
+% \def\eal{\begin{exe}\exnrfont\ex\begin{xlist}[iv.]}
 
-\def\gll%                  % Introduces 2-line text-and-gloss.
-    {
-%\raggedright%
-        \bgroup
-     \ifx\@gsingle1%           conditionally force single spacing (hpk/MC)
-	 \def\baselinestretch{1}\@selfnt\fi
-%        \vskip\baselineskip\def\baselinestretch{1}%
-%        \@selfnt\vskip-\baselineskip\fi%
-    \bgroup
-    \twosent
-   }
-\makeatother
+% \def\gll%                  % Introduces 2-line text-and-gloss.
+%     {
+% %\raggedright%
+%         \bgroup
+%      \ifx\@gsingle1%           conditionally force single spacing (hpk/MC)
+% 	 \def\baselinestretch{1}\@selfnt\fi
+% %        \vskip\baselineskip\def\baselinestretch{1}%
+% %        \@selfnt\vskip-\baselineskip\fi%
+%     \bgroup
+%     \twosent
+%    }
+% \makeatother
 
 
 % to set the MRSes for scope underspecification

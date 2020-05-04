@@ -66,6 +66,8 @@
 \setlength{\parindent}{2em}
 % the indented space should be two characters.
 
+\newcommand{\fontpath}{./fonts/}
+
 % quotes should be in simkai（楷体）
 \newCJKfontfamily[\fontpath/halfish simkai]\simkai{KaiTi}[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]
 
@@ -215,7 +217,7 @@ Unter den Linden 6\\
 本书由柏林自由大学存储和编目 \\[3ex]
 %Storage and cataloguing done by FU Berlin \\[3ex]  
 
-\IfFileExists{\logopath/FULogo_sw_CMYK.pdf}{\includegraphics[width=5cm]{\logopath/FULogo_sw_CMYK.pdf}}{FU-Logo} \\[3ex]
+\includestoragelogo\\[3ex]
 
 \vfill
 
