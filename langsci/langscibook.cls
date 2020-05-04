@@ -1235,6 +1235,7 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 
 \usepackage{datetime}
 \usepackage{scrlayer-scrpage}
+%\usepackage{scrpage2}
 \ohead{\headmark}
 \ihead{}
 \cfoot{}
