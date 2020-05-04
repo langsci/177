@@ -1,26 +1,10 @@
-%\usepackage{bigfoot}
 
 
 % http://tex.stackexchange.com/questions/38607/no-room-for-a-new-dimen
 \usepackage{etex}\reserveinserts{28}
 
-% http://tex.stackexchange.com/questions/229500/tikzmark-and-xelatex
-% temporary fix, remove later
-%\newcount\pdftexversion \pdftexversion140 \def\pgfsysdriver{pgfsys-dvipdfm.def} \usepackage{tikz} \usetikzlibrary{tikzmark}
-
-%\usepackage[section]{placeins}
 
 \usepackage{eurosym} % should go once Berthold fixes unicode
-
-
-% http://tex.stackexchange.com/questions/284097/subscript-like-math-but-without-the-minus-sign?noredirect=1#comment685345_284097
-% for subscripts
-\usepackage{amsmath}
-%\usepackage{unicode-math} breaks the CCG derivations, the horizontal lines are too high
-
-
-% \justify to switch of \raggedright in translations
-%\usepackage{ragged2e}
 
 % Haitao Liu
 \usepackage{xeCJK}
@@ -65,7 +49,7 @@
 
 \usepackage{./styles/oneline}
 
-\usepackage{langsci/langsci-lgr}
+\usepackage{./langsci/langsci-lgr}
 
 \usepackage{graphicx}
 
@@ -104,8 +88,8 @@
 % It breaks the dependency grammar trees in forest.
 \usepackage{langsci/langsci-forest-setup}
 
-\tikzset{external/prefix={germanic.for.dir/}}
-\forestset{external/master=germanic}
+\tikzset{external/prefix={grammatical-theory.for.dir/}}
+\forestset{external/master=grammatical-theory}
 
 \usepackage{./styles/forest-externalizetikz}
 
@@ -135,7 +119,7 @@ styles/eng-date,styles/my-theorems}
 \setcounter{secnumdepth}{4}
 
 
-\usepackage{./styles/dgmacros,pst-tree,styles/trees,styles/dalrymple} % Mary Dalrymples macros
+\usepackage{./styles/dgmacros,pst-tree,./styles/trees,./styles/dalrymple} % Mary Dalrymples macros
 
 %\nodemargin5pt%\treelinewidth2pt\arrowwidth6pt\arrowlength10pt
 \psset{nodesep=5pt} %,linewidth=0.8pt,arrowscale=2}
