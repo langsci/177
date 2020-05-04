@@ -56,14 +56,14 @@
 
 \usepackage{bookmark}
 
-\usepackage{styles/my-ccg-ohne-colortbl}
+\usepackage{./styles/my-ccg-ohne-colortbl}
 
 %\usepackage{langsci/jambox}
 
 % This has side effects on my-ccg commands do no know why
 %\usepackage{langsci/langsci-optional}
 
-\usepackage{styles/oneline}
+\usepackage{./styles/oneline}
 
 \usepackage{langsci/langsci-lgr}
 
@@ -76,10 +76,10 @@
 
 
 
-\usepackage{styles/ogonek}        % For Ewa Dabrowska
+\usepackage{./styles/ogonek}        % For Ewa Dabrowska
 
 
-\usepackage{styles/mycommands}% \spacebr
+\usepackage{./styles/mycommands}% \spacebr
 
 
 % still needed
@@ -96,13 +96,18 @@
 %\renewcommand{\xbar}{X̅\xspace}
 
 
-%\usepackage[external,linguistics]{styles/forest/forest}
+%\usepackage[external,linguistics]{./styles/forest/forest}
 
 
 % for reasons I do not understand this cannot be moved further down and 
 % the loading of forest further down cannot be removed. St. Mü. 26.01.2017
 % It breaks the dependency grammar trees in forest.
 \usepackage{langsci/langsci-forest-setup}
+
+\tikzset{external/prefix={germanic.for.dir/}}
+\forestset{external/master=germanic}
+
+\usepackage{./styles/forest-externalizetikz}
 
 
 \forestset{
@@ -119,7 +124,7 @@
 % has to be loaded after forest-setup because of incompatibilities with the dg-style.
 \usepackage{german}\selectlanguage{USenglish}
 
-\usepackage{styles/merkmalstruktur,styles/abbrev-chinese,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,
+\usepackage{./styles/merkmalstruktur,styles/abbrev-chinese,styles/makros.2e,styles/my-xspace,styles/article-ex,styles/additional-langsci-index-shortcuts,
 styles/eng-date,styles/my-theorems}
 
 % loaded in macros.2e \usepackage[english]{varioref}
@@ -130,7 +135,7 @@ styles/eng-date,styles/my-theorems}
 \setcounter{secnumdepth}{4}
 
 
-\usepackage{styles/dgmacros,pst-tree,styles/trees,styles/dalrymple} % Mary Dalrymples macros
+\usepackage{./styles/dgmacros,pst-tree,styles/trees,styles/dalrymple} % Mary Dalrymples macros
 
 %\nodemargin5pt%\treelinewidth2pt\arrowwidth6pt\arrowlength10pt
 \psset{nodesep=5pt} %,linewidth=0.8pt,arrowscale=2}
@@ -145,16 +150,16 @@ styles/eng-date,styles/my-theorems}
 \usepackage[export]{adjustbox}
 
 % draw a grid for getting the coordinates
-\usepackage{styles/tikz-grid}
+\usepackage{./styles/tikz-grid}
 
 % for offsets in trees
 \newlength{\offset}
 \newlength{\offsetup}
 
 \ifxetex
-\usepackage{styles/eng-hyp-utf8}
+\usepackage{./styles/eng-hyp-utf8}
 \else
-\usepackage{styles/eng-hyp}
+\usepackage{./styles/eng-hyp}
 \fi
 
 \usepackage{appendix}
