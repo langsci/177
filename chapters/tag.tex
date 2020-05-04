@@ -177,7 +177,7 @@ V  & $\to$ laughs\\
 
 TAG和其它语法理论不同的地方在于它允许结构被再次打散。
 基于这种方式，我们可以使用附加操作在一个给定的树中不断添加新成分，其结果是原本邻接于一处的组成成分在最终所构造出来的树中可以相隔任意远。
-我们将在\ref{TAG-Fernabh}中看到，这个特性对于脱离移位去分析远距离依存非常重要。
+我们将在\ref{TAG-Fernabh}中看到，这个特性对于脱离移位去分析长距离依存非常重要。
 
 \subsection{语义}
 
@@ -582,11 +582,11 @@ tag
 \isc{多重承继}\is{inheritance!multiple|)}
 \isc{被动|)}\is{passive|)}
 
-\section{远距离依存}
+\section{长距离依存}
 \label{TAG-Fernabh}
 
 \il{English|(}
-\isc{远距离依存}\is{long"=distance dependency|(}TAG的远距离依存分析可以凭借其提供的标准工具——简单树可以插入到其它树的中间——进行分析。
+\isc{长距离依存}\is{long"=distance dependency|(}TAG的长距离依存分析可以凭借其提供的标准工具——简单树可以插入到其它树的中间——进行分析。
 图\vref{abb-nld-TAG}是（\mex{1}）分析的一个实例：
 \ea
 \gll Who$_i$ did John tell Sam that Bill likes \_$_i$?\\
@@ -663,7 +663,7 @@ tag
 %% \hspace{1ex}
 %% $\leadsto$
 %}
-\caption{\label{abb-nld-TAG}TAG中的远距离依存分析}
+\caption{\label{abb-nld-TAG}TAG中的长距离依存分析}
 \end{figure}%
 WH COMP NP likes \_$_i$的树属于likes的树族，因此包含在词典之中。
 tell可以附加到这个树上，因为tell的这个树可以插入到who that Bill likes \_$_i$这棵树的中间位置。
@@ -683,7 +683,7 @@ tell可以附加到这个树上，因为tell的这个树可以插入到who that 
 这一点必须在TAG语法中得到体现。在TAG中，额外OA符号可以用来标记一棵树的不完整性。如果一棵树包含了做了OA标识的结点，那么我们必须在这个结点处施加一次附加操作。
 \isc{附加!附加的必要性|(}\is{adjunction!obligatory|(}
 \il{English|)}
-\isc{远距离依存|)}\is{long"=distance dependency|)} 
+\isc{长距离依存|)}\is{long"=distance dependency|)} 
 
 \section{新的发展和理论变体}
 
@@ -918,7 +918,7 @@ tag
 推导到最后所得到的那棵树，需要将所有结点各自的顶结构与底结构进行合一。图\ref{Obl-Adjunktion-FTAG-Ergebnis}中树的最高的VP结点其顶结构和底结构的\textsc{agr}特征值需要合一。正因为这个原因，只有和附加树中的\textsc{agr}特征取值一样的NP树才能插入当前树中的NP槽中。
 %此处只能意义，原文若探究字面意义，不仅不通顺，还算是写错了。
 
-这个例子展示了，我们在处理远距离依存时曾经采用过的强制附加\isc{附加!附加的必要性}\is{adjunction!obligatory}机制可以通过令顶结构和底结构特征取值不一致来实现。
+这个例子展示了，我们在处理长距离依存时曾经采用过的强制附加\isc{附加!附加的必要性}\is{adjunction!obligatory}机制可以通过令顶结构和底结构特征取值不一致来实现。
 如果一棵树中存在不兼容的顶结构与底结构，这棵树就不能是最终的导出树。%又一个错误
 这意味着至少需要再进行一次附加操作才能得到合乎语法的树。
 \isc{树邻接语法（TAG）!基于特征结构的树邻接语法（FTAG）|)}\is{Tree Adjoining Grammar (TAG)!Feature Structure"=Based (FTAG)|)}
@@ -1212,7 +1212,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 
 \section{总结与分类}
 
-总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应于像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于远距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附加操作来实现的，附加是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 likes所在的每一个最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）都要有它们自己的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则\isc{词汇规则}\is{lexical rule}联系在一起。这些词汇规则将一棵特定的树映射为其它的树。通过这种方式，可以从一个表示主动形式的树推出表示被动形式的树。这些词汇规则可以和转换语法中的转换规则\isc{转换}\is{transformation}进行类比。 但必须强调一点，每个树中都有词汇元素，这使得整个语法和自由的转换相比更加受限。
+总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应于像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于长距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附加操作来实现的，附加是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 likes所在的每一个最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）都要有它们自己的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则\isc{词汇规则}\is{lexical rule}联系在一起。这些词汇规则将一棵特定的树映射为其它的树。通过这种方式，可以从一个表示主动形式的树推出表示被动形式的树。这些词汇规则可以和转换语法中的转换规则\isc{转换}\is{transformation}进行类比。 但必须强调一点，每个树中都有词汇元素，这使得整个语法和自由的转换相比更加受限。
 
 和GB以及含有空成分的LFG、CG、HPSG变体的一个有意思的不同之处是这里介绍的TAG变体\footnote{%
   参见 \citew{Rambow94a}和 \citew[\page 194]{Kallmeyer2005a-u}，以了解词典中带有空成分的TAG分析。
@@ -1227,7 +1227,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 %\bigskip
 \questions{
 \begin{enumerate}
-\item TAG是如何分析远距离依存的？在分析远距离依存的时候是否需要空成分？
+\item TAG是如何分析长距离依存的？在分析长距离依存的时候是否需要空成分？
 \item 是否有可能通过标准的TAG过程来分析多个动词的论元的语序重列问题？
 \end{enumerate} 
 }
