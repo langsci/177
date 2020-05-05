@@ -61,6 +61,19 @@
 % for Chinese style of table of contents
 %\titlecontents{\chapter}
 
+
+% scrbook does the trick
+% \renewcaptionname{USenglish}{\contentsname}{目~~~~录}
+% % for Chinese style of titles of chapters and sections.
+% \renewcaptionname{USenglish}{\partname}{第\thepart{}部分}  
+% \def\thepart{\zhdig{part}}
+% %\pagenumbering {zhnum}
+% \renewcaptionname{USenglish}{\chaptername}{第\zhnum{chapter}章}  
+% \renewcaptionname{USenglish}{\appendixname}{附录}
+% \appto\appendix{
+% \renewcaptionname{USenglish}{\chaptername}{\appendixname\thechapter} 
+
+
 \usepackage{indentfirst}
 % In Chinese, each paragraph should be indented.
 \setlength{\parindent}{2em}
