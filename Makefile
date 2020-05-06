@@ -179,6 +179,16 @@ commit-stable: stable.pdf
 	git commit -m "automatic creation of stable.pdf" stable.pdf
 	git push -u origin
 
+trees:
+	xelatex -shell-escape grammatical-theory
+	xelatex -shell-escape trees
+
+forest-commit:
+	git add grammatical-theory.for.dir/*.pdf
+	git commit -m "forest trees" grammatical-theory.for.dir/*.pdf grammatical-theory.for
+	git push -u origin
+
+
 o-public: o-public-lehrbuch 
 #o-public-bib
 

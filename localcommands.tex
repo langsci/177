@@ -330,3 +330,9 @@ frbox/.style={
 %% Ich weiß, dass TeX theoretisch erkennen kann, ob das folgende Objekt ein Text-Absatz oder eine Abbildung / andere Box ist. Leider bin ich TeX-mäßig noch nicht weit genug, solche Dinge zu programmieren.
 
 %% Eine manuelle Lösung ist es, ein \vspace*{-\baselineskip} vor der jeweiligen Box einzufügen. Das kannst Du auch generisch lösen, wenn Du Deine Befehle in localcommands.tex entsprechend anpasst.
+
+
+% I moved these definitions here (from 3-minimalism.tex) because of extraction of trees
+% not used in Chinese edition \edef\innerxsep{\noexpand\hspace*{\pgfkeysvalueof{/pgf/inner xsep}}}%
+\newlength\mytextheight
+\settototalheight{\mytextheight}{XpX$^0$X$'$}

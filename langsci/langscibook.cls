@@ -276,7 +276,7 @@
 %     Packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usepackage{morewrites} %more helper files to write to
+%\usepackage{morewrites} %more helper files to write to
 \usepackage{etex}
 \reserveinserts{18}
 \usepackage{xstring}
