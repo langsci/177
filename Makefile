@@ -1,5 +1,13 @@
 LSP-STYLES=~/Documents/Dienstlich/Projekte/OALI/Git-HUB/latex/langsci/
 
+# if you do not have a ~/bin/ directory already, do
+# mkdir ~/bin
+# and move zhmakeindex there
+ZHMAKEINDEX-PATH=~/bin/
+
+
+
+
 all: grammatical-theory.pdf
 
 
@@ -53,12 +61,14 @@ SOURCE=gt.bib \
 	makeindex -gs index.format-plus -o $*.and $*.adx
 	makeindex -gs index.format -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.snd $*.sdx
-	zhmakeindex -o $*.scd $*.scx
+	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
 
 stable.pdf: grammatical-theory.pdf
 	cp grammatical-theory.pdf stable.pdf
 
+test-zhmakeindex: 
+	$(ZHMAKEINDEX-PATH)zhmakeindex -o grammatical-theory.scd grammatical-theory.scx
 
 proofreading: proofreading.pdf
 
