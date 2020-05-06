@@ -74,6 +74,24 @@
 % \renewcaptionname{USenglish}{\chaptername}{\appendixname\thechapter} 
 
 
+\renewcaptionname{USenglish}{\contentsname}{目~~~~录}
+\renewcaptionname{USenglish}{\appendixname}{附录}
+
+% https://tex.stackexchange.com/a/542570/18561
+
+\renewcommand*{\partformat}{第\zhdig{part}部分\hspace{20pt}}
+\renewcommand*{\partheadmidvskip}{}
+\renewcommand*{\chapterformat}{第\zhnum{chapter}章\hspace{20pt}}
+\renewcommand*{\raggedchapter}{\centering}
+\renewcommand*{\sectionformat}{\thesection\hspace{10pt}}
+
+\addtokomafont{disposition}{\rmfamily}
+\setkomafont{partnumber}{\Large}
+\setkomafont{part}{\Large}
+\setkomafont{chapter}{\Large}
+\setkomafont{section}{\large}
+
+
 \usepackage{indentfirst}
 % In Chinese, each paragraph should be indented.
 \setlength{\parindent}{2em}
