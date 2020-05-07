@@ -276,7 +276,7 @@
 %     Packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\usepackage{morewrites} %more helper files to write to
+\usepackage{morewrites} %more helper files to write to
 \usepackage{etex}
 \reserveinserts{18}
 \usepackage{xstring}
@@ -1529,35 +1529,49 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 \renewcommand{\dblfloatpagefraction}{0.7}	% require fuller float pages
 
 \usepackage{setspace}
-\usepackage{caption}
-% \captionsetup{labelfont=bf}
-\captionsetup{%
-font={%
-stretch=.8%
-,small%
-},%
-width=.8\textwidth
-}
+% \usepackage{caption}
+% % \captionsetup{labelfont=bf}
+% \captionsetup{%
+% font={%
+% stretch=.8%
+% ,small%
+% },%
+% width=.8\textwidth
+% }
 
-\setcapindent{0pt}
+% \setcapindent{0pt}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Appendices
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\appto\appendix{%
-	%% format of the appendix title page
-	\renewcommand*{\chapterformat}{%
-		\mbox{\chapapp~\thechapter\autodot:\enskip}%
+% \appto\appendix{
+% 	format of the appendix title page
+% 	\renewcommand*{\chapterformat}{
+% 		\mbox{\chapapp~\thechapter\autodot:\enskip}
+% 	}
+% 	format of the TOC entry
+% 	\renewcommand{\addchaptertocentry}[2]{
+% 		\ifstr{#1}{}{
+% 		\addtocentrydefault{chapter}{}{#2}
+% 		}{
+% 		\addtocentrydefault{chapter}{}{\chapapp~#1: #2}
+% 		}
+% 	}
+% }
+\appto\appendix{
+%	format of the appendix title page
+	\renewcommand*{\chapterformat}{
+		\mbox{\chapapp~\thechapter\hspace{20pt}}
 	}
-	%% format of the TOC entry
+%	format of the TOC entry
 	\renewcommand{\addchaptertocentry}[2]{
-		\ifstr{#1}{}{%
-		\addtocentrydefault{chapter}{}{#2}%
-		}{%
-		\addtocentrydefault{chapter}{}{\chapapp~#1: #2}%
-		}%
+		\ifstr{#1}{}{
+		\addtocentrydefault{chapter}{}{#2}
+		}{
+		\addtocentrydefault{chapter}{}{\chapapp~#1 #2}
+		}
 	}
 }
 

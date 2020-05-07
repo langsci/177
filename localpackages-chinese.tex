@@ -12,15 +12,15 @@
 %\usepackage{titlesec}  
 \AtBeginDocument{
 
-% for Chinese style of titles of chapters and sections.
-\renewcommand{\partname}{第\thepart{}部分}  
+% % for Chinese style of titles of chapters and sections.
+% \renewcommand{\partname}{第\thepart{}部分}  
 \def\thepart{\zhdig{part}}
-%\pagenumbering {zhnum}
-\renewcommand{\chaptername}{第\zhnum{chapter}章}  
-\renewcommand{\appendixname}{附录}
-\appto\appendix{
-\renewcommand{\chaptername}{\appendixname\thechapter} 
-}
+% %\pagenumbering {zhnum}
+% \renewcommand{\chaptername}{第\zhnum{chapter}章}  
+% \renewcommand{\appendixname}{附录}
+% \appto\appendix{
+% \renewcommand{\chaptername}{\appendixname\thechapter} 
+% }
 %\renewcommand{\chapterautorefname}{第\zhnum{chapter}章}%
 
 % for Chinese style of pages. 15.4.2019
@@ -84,6 +84,13 @@
 \renewcommand*{\chapterformat}{第\zhnum{chapter}章\hspace{20pt}}
 \renewcommand*{\raggedchapter}{\centering}
 \renewcommand*{\sectionformat}{\thesection\hspace{10pt}}
+%\renewcommand*{\appendixformat}{\appendixname\thechapter\hspace{10pt}}
+
+\appto\appendix{
+% \renewcommand{\chaptername}{\appendixname\thechapter}
+\def\thechapter{\Alph{chapter}} 
+}
+
 
 \addtokomafont{disposition}{\rmfamily}
 \setkomafont{partnumber}{\Large}
