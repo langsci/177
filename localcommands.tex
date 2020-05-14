@@ -332,7 +332,22 @@ frbox/.style={
 %% Eine manuelle Lösung ist es, ein \vspace*{-\baselineskip} vor der jeweiligen Box einzufügen. Das kannst Du auch generisch lösen, wenn Du Deine Befehle in localcommands.tex entsprechend anpasst.
 
 
+
+% get rrid of these morewrite messages:
+% https://tex.stackexchange.com/questions/419489/suppressing-messages-to-standard-output-from-package-morewrites/419494#419494
+\ExplSyntaxOn
+\cs_set_protected:Npn \__morewrites_shipout_ii:
+  {
+    \__morewrites_before_shipout:
+    \__morewrites_tex_shipout:w \tex_box:D \g__morewrites_shipout_box
+    \edef\tmp{\interactionmode\the\interactionmode\space}\batchmode\__morewrites_after_shipout:\tmp
+  }
+\ExplSyntaxOff
+
+
 % I moved these definitions here (from 3-minimalism.tex) because of extraction of trees
 % not used in Chinese edition \edef\innerxsep{\noexpand\hspace*{\pgfkeysvalueof{/pgf/inner xsep}}}%
 \newlength\mytextheight
 \settototalheight{\mytextheight}{XpX$^0$X$'$}
+
+
