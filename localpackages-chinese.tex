@@ -107,7 +107,16 @@
 \newcommand{\fontpath}{./fonts/}
 
 % quotes should be in simkai（楷体）
-\newCJKfontfamily[\fontpath/halfish simkai]\simkai{KaiTi}[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]
+% simkai is MicroSoft
+%\newCJKfontfamily[\fontpath/halfish simkai]\simkai{KaiTi}[Mapping=tex-text,Ligatures=Common,Scale=MatchUppercase]
+
+% quotes should be in FZKTJW
+% Lulu Wang, 15.05.2020
+% FZKTJW.TTF by the FounderType, the url is as follows and the font is in the attached file.
+% https://www.foundertype.com/index.php/FindFont/searchFont?keyword=楷体
+%
+% The FounderType is created by a large group originated from Peking University. There are four types that are free for commercial publishing and personal designing. FZKTJW.TFF is one of these free types.
+\newCJKfontfamily[\fontpath/]\simkai{FZKai-Z03S}[Mapping=tex-text,Scale=MatchUppercase]
 
 % indentation of the whole quotation is 2em like the paragraph indentation
 % St. Mü. 22.04.2018

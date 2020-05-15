@@ -19,7 +19,7 @@
                 ,newtxmath
 %                ,nonflat
                 %,showindex
-		  ]{./langsci/langscibook}   
+		  ]{langscibook}   
 
 
 \usepackage{ifthen}
@@ -46,20 +46,6 @@
 \input{localcommands.tex}
 \input{localhyphenation}
 
-
-
-\usepackage{./styles/forest-externalizetikz}
-
-% if you want externalize graphics, compile files in chapters directly
-\forestset{external/readonly}
-% you may switch this off in the final run since eternalization may cut off overlays.
-% this has also to be switched off when ou extract trees
-\tikzexternalize
-
-% Enable this to extract "forest" and forest-externalized "tikzpicture" environments.
-%\forestset{external/extract=extracted-trees}
-% 
-% To externalize, compile "trees.tex" after extraction.
 
 
 
