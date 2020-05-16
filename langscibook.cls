@@ -48,7 +48,7 @@
 %   \_ Miscellaneous
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{langscibook}[2020/02/12 Language Science Press]
+\ProvidesClass{langscibook}[2020/02/12 Language Science Press HPSG-Handbook]
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %    Early load packages
@@ -60,8 +60,10 @@
 \WarningsOff[microtype]
 \WarningFilter{microtype}{Unknown slot}
 \WarningFilter{scrbook}{package incompatibility}
+\WarningFilter{todonotes}{The length}
+\WarningFilter{biblatex}{'babel/polyglossia'}
 \hbadness=99999 % get rid of underfull box warnings
-\typeout{Warnings are disabled in langscibook.cls for underfull boxes, hyperref, tocstyle, microtype and scrbook package incompatibility}
+\typeout{Warnings are disabled in langscibook.cls for underfull boxes, hyperref, tocstyle, microtype and scrbook package incompatibility, todonotes length and babel/polyglossia csquotes}
 \usepackage{etoolbox}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -477,8 +479,11 @@
   \lsSchmutztitel}
   %%%%%%%%%%%%%%%%%%%%
   \AtEndDocument{
-        \lsPageStyleEmpty
-        \null\newpage\thispagestyle{empty} % add a final blank page
+    \lsPageStyleEmpty
+    \null\newpage\thispagestyle{empty} % add a final blank page
+	%% Back page:
+    {\lsBackPage}
+    \null\newpage\thispagestyle{empty}
   }
 \fi
 
@@ -750,6 +755,26 @@
     BoldSlantedFeatures = {FakeSlant=0.25},
     SmallCapsFeatures = {FakeSlant=0},
     ]{LibertinusSerif-Regular.otf}
+    
+    %%Fonts for Chinese typesetting. If booklanguage=chinese, then 
+    %%xeCJK is loaded, which provides the font commands below.
+    \ifx\lsBookLanguage\lsBookLanguageChinese
+    \setCJKmainfont[
+%       Path=\fontpath,
+      BoldFont = SourceHanSerifSC-Semibold.otf
+      ]
+      {SourceHanSerifSC-Regular.otf}
+
+    \setCJKsansfont[
+%       Path=\fontpath,
+      BoldFont = SourceHanSansSC-Bold.otf
+      ]
+      {SourceHanSansSC-Regular.otf}
+      
+      %% Settings for Punctuation
+      \xeCJKsetup{CheckFullRight=true}
+      \xeCJKsetup{PunctStyle=CCT}      
+    \fi
 
     %% Deprecated:
     \iflsNewtxmath		% some users have problems when installing newtxmath
@@ -1235,7 +1260,6 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 
 \usepackage{datetime}
 \usepackage{scrlayer-scrpage}
-%\usepackage{scrpage2}
 \ohead{\headmark}
 \ihead{}
 \cfoot{}
@@ -1369,21 +1393,24 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 \iflsNoBabel
 	\else
 	\iflsBabelShorthands
-		\ifx\lsBookLanguage\lsBookLanguageEnglish
-		  \usepackage[ngerman,\lsBookLanguage]{babel}
-		  \addto\extrasenglish{\languageshorthands{german}\useshorthands{"}}
-	  \fi
+	    \ifx\lsBookLanguage\lsBookLanguageEnglish
+	            \usepackage[ngerman,main=\lsBookLanguage]{babel}
+				\addto\extrasenglish{\languageshorthands{german}\useshorthands{"}}
+	        \fi
 		\ifx\lsBookLanguage\lsBookLanguageFrench
-      \usepackage[ngerman,\lsBookLanguage]{babel}
-			\addto\extrasfrench{\languageshorthands{german}\useshorthands{"}}
-    \fi
-    \ifx\lsBookLanguage\lsBookLanguageGerman
-      \usepackage[ngerman]{babel}% ngerman provides better hyphenation than german.
-    \fi
+                    \usepackage[ngerman,main=\lsBookLanguage]{babel}
+					\addto\extrasfrench{\languageshorthands{german}\useshorthands{"}}
+                \fi
+		\ifx\lsBookLanguage\lsBookLanguageGerman
+                    \usepackage[ngerman]{babel}
+                \fi
 		\ifx\lsBookLanguage\lsBookLanguagePortuguese
-      \usepackage[ngerman,\lsBookLanguage]{babel}
-			\addto\extrasportuges{\languageshorthands{german}\useshorthands{"}}
-    \fi
+                    \usepackage[ngerman,main=\lsBookLanguage]{babel}
+                    \addto\extrasportuges{\languageshorthands{german}\useshorthands{"}}
+                \fi
+		\ifx\lsBookLanguage\lsBookLanguageChinese
+		        \usepackage{xeCJK}%Chinese doesn't load babel, but xeCJK.
+				\fi
 	\else
 		\usepackage[\lsBookLanguage]{babel}
 	\fi
@@ -1405,8 +1432,6 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 	mincrossrefs=99,
 	maxcitenames=2,
 	isbn=false,
-	url=false,
-	eprint=false,
 	autolang=hyphen,
 	\iflsResetCapitals
         language=english,
@@ -1546,32 +1571,18 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 %    Appendices
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \appto\appendix{
-% 	format of the appendix title page
-% 	\renewcommand*{\chapterformat}{
-% 		\mbox{\chapapp~\thechapter\autodot:\enskip}
-% 	}
-% 	format of the TOC entry
-% 	\renewcommand{\addchaptertocentry}[2]{
-% 		\ifstr{#1}{}{
-% 		\addtocentrydefault{chapter}{}{#2}
-% 		}{
-% 		\addtocentrydefault{chapter}{}{\chapapp~#1: #2}
-% 		}
-% 	}
-% }
-\appto\appendix{
-%	format of the appendix title page
-	\renewcommand*{\chapterformat}{
-		\mbox{\chapapp~\thechapter\hspace{20pt}}
+\appto\appendix{%
+	%% format of the appendix title page
+	\renewcommand*{\chapterformat}{%
+		\mbox{\chapapp~\thechapter\autodot:\enskip}%
 	}
-%	format of the TOC entry
+	%% format of the TOC entry
 	\renewcommand{\addchaptertocentry}[2]{
-		\ifstr{#1}{}{
-		\addtocentrydefault{chapter}{}{#2}
-		}{
-		\addtocentrydefault{chapter}{}{\chapapp~#1 #2}
-		}
+		\ifstr{#1}{}{%
+		\addtocentrydefault{chapter}{}{#2}%
+		}{%
+		\addtocentrydefault{chapter}{}{\chapapp~#1: #2}%
+		}%
 	}
 }
 
@@ -1629,16 +1640,14 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
   \fi
 }
 
-\AtBeginDocument{% 
-% FK 16-Jan-19: It is unclear why this was set. It conflicts with TikZ externalisation.
-% SZ 28-Apr-20: Fixed in another way, by "\tikzifexternalizing".
+% \AtBeginDocument{% FK 16-Jan-19: It is unclear why this was set. It conflicts with TikZ externalisation.
 	\makeindex
 	\newindex{lan}{ldx}{lnd}{\lsLanguageIndexTitle}
 	\newindex{sbj}{sdx}{snd}{\lsSubjectIndexTitle}
-        \tikzifexternalizing{\expandafter\newindex}{\expandafter\renewindex}{default}{adx}{and}{\lsNameIndexTitle} %biblatex can only deal with the default index
+	\renewindex{default}{adx}{and}{\lsNameIndexTitle} %biblatex can only deal with the default index
 % 	\newindex{wrd}{wdx}{wnd}{Expression index}
 % 	\newindex{rwrd}{rdx}{rnd}{Reverse expression index}
-}
+% }
 
 \indexproofstyle{\setlength{\overfullrule}{0pt}\raggedright\footnotesize}
 
@@ -1863,10 +1872,6 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 	\renewcommand{\lsCollectionPaperCitationText}{\fullciteFooter{#1footer}}
 
 	\include{#1}%
-        % The copy of .aux is needed for Forest's externalization.
-        \ifdefined\forest
-          \forest@file@copy{#1.aux}{#1.aux.copy}%
-        \fi
         \if@partsw\relax\else% This switch controls whether the included chapter is in the range of \includeonly. It's from source2e.
           \addtocounter{page}{-1}
 	  \edef\lsCollectionPaperLastPage{\thepage}	% \lsCollectionPaperFirstPage is defined in \lsPaper
@@ -2063,6 +2068,24 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
   \renewcommand{\figref}[1]{Figura~\ref{#1}}
 \fi
 
+\ifx\lsBookLanguage\lsBookLanguageChinese
+\renewcommand{\sectionname}{节}  
+\renewcommand{\figurename}{图}  
+\renewcommand{\tablename}{表}
+\renewcommand{\contentsname}{目\hspace{1em}录}
+\renewcommand{\appendixname}{附录}
+%   \renewcommand{\chapref}[1]{}
+%   \renewcommand{\partref}[1]{}
+\renewcommand{\tabref}[1]{表~\ref{#1}}
+\renewcommand{\figref}[1]{图~\ref{#1}}
+\renewcommand{\sectref}[1]{节~\ref{#1}}
+\renewcommand*{\partformat}{第\zhdig{part}部分\hspace{20pt}}
+\renewcommand*{\partheadmidvskip}{}
+\renewcommand*{\chapterformat}{第\zhnum{chapter}章\hspace{20pt}}
+\renewcommand*{\raggedchapter}{\centering}
+\renewcommand*{\sectionformat}{\thesection\hspace{10pt}}
+\fi
+
 \newcommand{\lsIndexTitle}{Index}
 \newcommand{\lsLanguageIndexTitle}{Language index}	% This can be changed according to the language.
 \newcommand{\lsSubjectIndexTitle}{Subject index}
@@ -2112,6 +2135,16 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 \renewcommand{\lsAbbreviationsTitle}{\colorbox{red}{Translation info for Abbv missing}}
 \renewcommand{\lsReferencesTitle}{portugese}
 % \IfFileExists{{\localepath langsci-hyphenation-pt}}{\input{\localepath langsci-hyphenation-pt}}{}
+\fi
+
+\ifx\lsBookLanguage\lsBookLanguageChinese
+\renewcommand{\lsIndexTitle}{索~引}
+\renewcommand{\lsNameIndexTitle}{}
+\renewcommand{\lsSubjectIndexTitle}{}
+\renewcommand{\lsLanguageIndexTitle}{}
+\renewcommand{\lsPrefaceTitle}{前言}
+\renewcommand{\lsAcknowledgementTitle}{致谢}
+\renewcommand{\lsAbbreviationsTitle}{\colorbox{red}{Translation info for Abbv missing}}
 \fi
 
 
