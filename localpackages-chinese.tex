@@ -3,6 +3,20 @@
 % general stuff for grammar theory is in localpackages.tex
 % everything that is specific to Chinese is in here.
 
+% Haitao Liu
+\usepackage{xeCJK}
+\setCJKmainfont{SimSun}
+
+%\xeCJKsetup{AllowBreakBetweenPuncts=false}
+
+% this avoids a linebreak between dot and footnote: ....。\footnote
+\xeCJKsetup{CheckFullRight=true}
+
+%\xeCJKsetup{PunctStyle=plain}
+%\xeCJKsetup{PunctStyle=kaiming}
+\xeCJKsetup{PunctStyle=CCT}
+
+
 %% below are added by Lulu for the Chinese version of the book
 \usepackage{zhnumber}
 % to type­set Chinese representations of numbers.  
@@ -185,6 +199,12 @@
 %\newcommand{\lsSeriesTitle}{Textbooks in Language Sciences}
 \AtBeginDocument{
 \renewcommand{\lsSeriesTitle}{语言科学系列教材}
+}
+
+% well that comma is wrong
+\renewcommand{\AdditionalFontImprint}[1]{
+  \edef\fontstemp{\lsAdditionalFontsImprint}
+  \renewcommand{\lsAdditionalFontsImprint}{\fontstemp、#1}
 }
 
 \renewcommand{\lsImpressum}{
