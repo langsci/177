@@ -574,21 +574,26 @@
             }
 \fi
 \ifx\lsSeries\tbls
-	\newcommand{\lsSeriesTitle}{Textbooks in Language Sciences}
+	\newcommand{\lsSeriesTitle}{语言科学系列教材}
+%	\newcommand{\lsSeriesTitle}{Textbooks in Language Sciences}
 	\newcommand{\lsSeriesColor}{lsYellow}
 	\renewcommand{\lsISSN}{2364-6209}
 	\renewcommand{\lsSeriesText}{%
-             {\large Textbooks in Language Sciences}
+             {\large 语言科学系列教材}
+%             {\large Textbooks in Language Sciences}
+                          
+             \bigskip
+             
+             编者：Stefan Müller、Martin Haspelmath\\
+             编委会：Claude Hagège、Marianne Mithun、Anatol Stefanowitsch、Foong Ha Yap
+%             Editors: Stefan Müller, Martin Haspelmath\\
+%             Editorial Board: Claude Hagège, Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap
              
              \bigskip
              
-             Editors: Stefan Müller, Martin Haspelmath\\
-             Editorial Board: Claude Hagège, Marianne Mithun, Anatol Stefanowitsch, Foong Ha Yap
-             
-             \bigskip
-             
-             In this series:
-             
+             本系列包括：
+%             In this series:
+                          
              \begin{enumerate}
              \item Müller, Stefan. Grammatical theory: From transformational grammar to constraint-based approaches.
              \item Schäfer, Roland. Einführung in die grammatische Beschreibung des Deutschen.
