@@ -191,7 +191,7 @@
   {\lsYear}. %
   \textit{\@title}\if\@subtitle\empty\else: \textit{\@subtitle}\fi\ %
   (\lsSeriesTitle). %
-  柏林：语言科学出版社
+  柏林：语言科学出版社.
 %  Berlin: Language Science Press.
 }
 
@@ -207,7 +207,147 @@
   \renewcommand{\lsAdditionalFontsImprint}{\fontstemp、#1}
 }
 
+
+
 \renewcommand{\lsImpressum}{
+\thispagestyle{empty}
+\raggedright
+
+\lsImpressumCitationText
+
+\vfill
+
+本书可在以下网址获取： \\
+%This title can be downloaded at:\\
+\url{\lsURL}
+
+© \lsYear, \iflsCollection the authors\else\@author\fi
+
+\newcommand{\ccby}{CC-BY}
+\newcommand{\ccbynd}{CC-BY-ND}
+\ifx\lsCopyright\ccby
+本书的发表采用知识共享署名4.0许可协议（CC BY 4.0）授权：
+%Published under the Creative Commons Attribution 4.0 Licence (CC BY 4.0):
+http://creativecommons.org/licenses/by/4.0/ \includegraphics[height=.75em]{ccby.pdf}
+\else
+\ifx\lsCopyright\ccbynd
+本书的发表采用知识共享署名—禁止演绎4.0许可协议（CC BY-ND 4.0）授权：
+%Published under the Creative Commons Attribution-NoDerivatives 4.0 Licence (CC BY-ND 4.0):
+http://creativecommons.org/licenses/by-nd/4.0/ \includegraphics[height=.75em]{ccbynd.pdf}
+\else
+Published under the Creative Commons Attribution-ShareAlike 4.0 Licence (CC BY-SA 4.0):
+http://creativecommons.org/licenses/by-sa/4.0/ \includegraphics[height=.75em]{ccbysa.pdf}
+\fi
+\fi
+
+{\lsImpressumExtra}
+
+\ifx\lsSeries\sidl
+Indexed in EBSCO\smallskip
+\fi
+
+
+
+\begin{tabular}{@{}l@{~}l}
+ISBN: &
+\IfStrEq{\lsISBNdigital}{000-0-000000-00-0}{%no digital ISBN, issue warning
+  \color{red}no digital ISBN
+}{%digital ISBN present, write ISBN
+  \lsISBNdigital~(完整电子版)
+%  \lsISBNdigital~(Digital)
+}
+\\
+\IfStrEq{\lsISBNhardcover}{000-0-000000-00-0}{ %hardcover ISBN not present
+}{%hardcover ISBN present, write ISBN
+  &\lsISBNhardcover~(精装)\\
+%  &\lsISBNhardcover~(Hardcover)\\
+}
+
+\IfStrEq{\lsISBNsoftcover}{000-0-000000-00-0}{ %softcover ISBN not present
+  \IfStrEq{\lsISBNhardcover}{000-0-000000-00-0}{ %neither hardcover nor softcover, issue warning
+    \color{red} no print ISBNs!
+  }{%hardcover present, no warning
+  }
+}{%only softcover present, write ISBN
+  &\lsISBNsoftcover~(简装)\\
+%  &\lsISBNsoftcover~(Softcover)\\
+}
+\end{tabular}
+
+\IfStrEq{\lsISSNprint}{??}   % \IfStrEq from xstring
+  {}
+  {ISSN (print): \lsISSNprint\\
+   ISSN (electronic): \lsISSNelectronic\\}
+\IfStrEq{\lsISSN}{??}
+  {}
+  {ISSN: \lsISSN}
+
+
+\IfStrEq{\lsBookDOI}{??}
+  {{\color{red} no DOI}}
+  {DOI: \href{https://doi.org/\lsBookDOI}{\nolinkurl{\lsBookDOI}}}\\
+\IfStrEq{\lsID}{000}{\color{red} ID not assigned!}{%
+\githubtext\\
+\paperhivetext
+}%
+\bigskip
+
+封面设计： 
+%Cover and concept of design:
+Ulrike Harbort \\
+\if\@translator\empty\else
+译者：
+%Translator:
+\@translator \\
+\fi
+\if\@typesetter\empty\else
+排版：
+%Typesetting:
+\@typesetter \\
+\fi
+\if\@illustrator\empty\else
+插图：
+\\Illustration:
+\@illustrator \\
+\fi
+\if\@proofreader\empty\else
+校对：
+%Proofreading:
+\@proofreader \\
+\fi
+\if\@openreviewer\empty\else
+公开评审：
+%Open reviewing:
+\@openreviewer \\
+\fi
+字体：Linux Libertine、Arimo、DejaVu Sans Mono\lsAdditionalFontsImprint\\
+%Fonts: Libertinus, Arimo, DejaVu Sans Mono\lsAdditionalFontsImprint\\
+排版软件：\XeLaTeX
+%Typesetting software: \XeLaTeX
+
+\bigskip
+
+\publisherstreetaddress\\
+\publisherurl
+
+\vfill
+
+本书由柏林自由大学存储和编目 \\[3ex]
+%Storage and cataloguing done by \storageinstitution\\[3ex]
+
+\includestoragelogo\\[3ex]
+
+
+% \vfill
+
+% \noindent
+% \lsp has no responsibility for the persistence or accuracy of URLs for
+% external or third-party Internet websites referred to in this
+% publication, and does not guarantee that any content on such websites
+% is, or will remain, accurate or appropriate.
+}
+
+\newcommand{\unusedlsImpressum}{
 \raggedright
 
 \lsImpressumCitationText
@@ -292,8 +432,8 @@ Ulrike Harbort \\
 
 %语言科学出版社\\
 Language Science Press\\
-Unter den Linden 6\\
-10099 Berlin, Germany\\
+Grünberger Str. 16\\
+10243 Berlin, Germany\\
 \href{http://langsci-press.org}{langsci-press.org}
 
 \vfill
