@@ -121,11 +121,11 @@ sm edges
 [S
   [NP [er;他] ]
   [NP
-    [Det [das;\textsc{det}] ]
+    [Det [das;\textsc{art}.\textsc{def}] ]
     [N [Buch;书] ] 
   ]
   [NP
-    [Det [dem;\textsc{det}] ]
+    [Det [dem;\textsc{art}.\textsc{def}] ]
     [N [Mann;人] ] 
   ]
   [V [gibt;给] ]
@@ -170,7 +170,7 @@ node）\isc{结点!父结点}\is{node!mother}。NP结点和V结点是“兄弟�
 %such as (\mex{1}).
 \ea
 \gll {}[\sub{S} [\sub{NP} er] [\sub{NP} [\sub{Det} das] [\sub{N} Buch]]  [\sub{NP} [\sub{Det} dem] [\sub{N} Mann]] [\sub{V} gibt]]\\
-     {}         {}       他  {}        {}       \textsc{det}  {}      书    {}        {}       \textsc{det}  {}       人     {}      给\\  
+     {}         {}       他  {}        {}       \textsc{art}.\textsc{def}  {}      书    {}        {}       \textsc{art}.\textsc{def}  {}       人     {}      给\\  
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
 \z
 无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这与具体的结构没有太多关系。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
@@ -562,7 +562,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 \ex\label{Bsp-schlafen-max} 
 \relation{schlafen}(\relation{max})
 \zl
-这里，我们假定\relation{schlafen}表示了schläft（睡觉）的含义。我们用初始符号来表示我们处理的是词义而不是实在的词。初看上去，我们用\relation{schlafen}表示（\mex{1}a）的意义并没有太大的变化，因为它只不过是动词schläft（睡觉）的另一种形式。但是，我们有必要集中在一个单一的动词形式上，因为屈折变化与意义是无关的。我们可以通过比较例（\mex{1}a）和（\mex{1}b）中的句子来对此进行分析：
+这里，我们假定\relation{schlafen}表示了schläft（睡觉）的含义。我们用初始符号来表示我们处理的是词义而不是实在的词。初看上去，我们用\relation{schlafen}表示（\mex{1}a）的意义并没有太大的变化，因为它只不过是动词schläft（睡觉）的另一种形式。但是，我们有必要将其集中在一个动词形式上，因为屈折变化与意义是无关的。我们可以通过比较例（\mex{1}a）和（\mex{1}b）中的句子来对此进行分析：
 %Here, we are assuming \relation{schlafen} to be the meaning of  \emph{schläft} `sleeps'. We use prime symbols to indicate
 %that we are dealing with word meanings and not actual words. At first glance, it may not seem that we have really gained anything
 %by using \relation{schlafen} to represent the meaning of (\mex{0}a), since it is just another form of the verb \emph{schläft} `sleeps'.
@@ -739,7 +739,7 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 动词（V$'$）的意义首先跟宾语（NP2$'$）的意义组合，然后跟主语（NP1$'$）的意义组合。
 %The meaning of the verb (V$'$) is first combined with the meaning of the object (NP2$'$) and then with the meaning of the subject (NP1$'$). 
 
-在这一点，我们可以看到上述的短语结构规则有几条不同的语义规则。按照这一方式来分析语言的理论假说叫做“规则对应假说”（rule"=to"=rule hypothesis）\isc{规则对应假说}\is{rule"=to"=rule hypothesis}\citep[\page 184]{Bach76a}。针对语言表达式的意义的推导过程将在\ref{Sec-GPSG-Sem}中详细展开。
+在这一点上，我们可以看到上述的短语结构规则有几条不同的语义规则。按照这一方式来分析语言的理论假说叫做“规则对应假说”（rule"=to"=rule hypothesis）\isc{规则对应假说}\is{rule"=to"=rule hypothesis}\citep[\page 184]{Bach76a}。针对语言表达式的意义的推导过程将在\ref{Sec-GPSG-Sem}中详细展开。
 %At this point, we can see that there are several distinct semantic rules for the phrase structure rules above. The hypothesis that we should analyze language
 %in this way is called the \emph{rule"=to"=rule hypothesis}\is{rule"=to"=rule hypothesis}
 %\citep[\page 184]{Bach76a}. A more general process for deriving the
@@ -1121,7 +1121,7 @@ sm edges
 \mytrans{不，指的不是Klaus的爸爸，而是Peter的\_。}
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
-	 \spacebr{}不 不  \textsc{art}.\textsc{def} 图片 ……的 \textsc{art}.\textsc{def} 公路 \textsc{art}.\textsc{def} {} ……的.\\textsc{art}.\textsc{def} 格莱姆隧道 \textsc{cop} 印象深刻\\
+	 \spacebr{}不 不  \textsc{art}.\textsc{def} 图片 ……的 \textsc{art}.\textsc{def} 公路 \textsc{art}.\textsc{def} {} ……的.\textsc{art}.\textsc{def} 格莱姆隧道 \textsc{cop} 印象深刻\\
 \mytrans{不，不是公路的照片让人印象深刻，而是格莱姆隧道的\_。}
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
@@ -1757,7 +1757,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 %of the rule (X or \xbar) matches that of the element on the left"=hand side of the rule (\xbar or
 %$\overline{\overline{\mbox{X}}}$).
 
-词汇项可以跟它的补足语\isc{补足语}\is{complement}组合。最后一条规则中的`*'\isc{*}\is{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isc{附加语}\is{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个指定语\isc{指定语}\is{specifier}和\xbarc。在有些理论中，句子中的主语（\citealp{Haider95b-u,Haider97a}；\citealp[\S~3.2.2]{Berman2003a}）和NP中的限定词\citep[\page 210]{Chomsky70a}都是指定语。进而，形容词短语中的程度修饰词\citep[\page 210]{Chomsky70a}和介词短语中的方式指示词也被算作是指定语。
+词汇项可以跟它的补足语\isc{补足语}\is{complement}组合。最后一条规则中的`*'\isc{*}\is{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isc{附加语}\is{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个限定语\isc{限定语}\is{specifier}和\xbarc。在有些理论中，句子中的主语（\citealp{Haider95b-u,Haider97a}；\citealp[\S~3.2.2]{Berman2003a}）和NP中的限定词\citep[\page 210]{Chomsky70a}都是限定语。进而，形容词短语中的程度修饰词\citep[\page 210]{Chomsky70a}和介词短语中的方式指示词也被算作是限定语。
 %A lexical element can be combined with all its complements\is{complement}. The `*'\is{*} in the last rule stands for
 %an unlimited amount of repetitions of the symbol it follows. A special case is zero"fold occurrence of complements. There is no
 %PP complement of \emph{Bild} `picture' present in \emph{das Bild} `the picture' and thus N becomes \nbar. The result of the
@@ -1771,7 +1771,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 %210]{Chomsky70a} are specifiers. Furthermore, degree modifiers \citep[\page
 %210]{Chomsky70a} in adjective phrases and measurement indicators in prepositional phrases are also counted as specifiers.
 
-非中心语的位置只能满足最大投射，所以补足语、附加语和指定语总是有两个横杠。
+非中心语的位置只能满足最大投射，所以补足语、附加语和限定语总是有两个横杠。
 图\ref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
 %图\vref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
 %Non"=head positions can only host maximal projections and therefore complements, adjuncts and specifiers always have two bars. 
@@ -1789,7 +1789,7 @@ sm edges
 %sm edges
 %for tree={parent anchor=south, child anchor=north,align=center,base=bottom}
 [XP
-  [指定语（specifier）]
+  [限定语（specifier）]
 %  [specifier]
   [\xbar
     [附加语（adjunct）]
@@ -1803,7 +1803,7 @@ sm edges
 %\caption{\label{Abb-GB-Min-Max}Minimal and maximal structure of phrases}
 \end{figure}%
 
-有些范畴没有指定语或者只有一个。附加语也是可选的，所以，并不是所有结构都包括带有附加语子结点的\xbarc。除了右手边图上的分支所示的，带附加语的XP和中心语"=附加语\isc{附加语!中心语-附加语}\is{adjunct!head}有时也是成立的。在（\ref{psg-xbar-schema}）中，只有一条规则是针对中心语在补足语之前的情况，当然，补足语在中心语之前的顺序也是可能的，如图\ref{Abb-GB-Min-Max}所示。
+有些范畴没有限定语或者只有一个。附加语也是可选的，所以，并不是所有结构都包括带有附加语子结点的\xbarc。除了右手边图上的分支所示的，带附加语的XP和中心语"=附加语\isc{附加语!中心语-附加语}\is{adjunct!head}有时也是成立的。在（\ref{psg-xbar-schema}）中，只有一条规则是针对中心语在补足语之前的情况，当然，补足语在中心语之前的顺序也是可能的，如图\ref{Abb-GB-Min-Max}所示。
 %Some categories do not have a specifier or have the option of having one. Adjuncts are optional and therefore
 %not all structures have to contain an \xbar with an adjunct daughter.
 % In addition to the branching shown in the right"=hand figure, adjuncts to
@@ -1814,7 +1814,7 @@ sm edges
 
 图\ref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美丽图片）的分析。
 %图\vref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎%的美丽图片）的分析。
-图\ref{Abb-das-schoene-Bild-von-Paris}中的NP结构和图\ref{Abbildung-AP}中的树形图都是最小产出结构的例子。图\ref{Abb-das-schoene-Bild-von-Paris}中左边的树形图也是没有附加语结构的一个例子。图\ref{Abb-das-schoene-Bild-von-Paris}中右边的结构是最大产出结构的一个例子：指定语、附加语和补足语都是齐全的。
+图\ref{Abb-das-schoene-Bild-von-Paris}中的NP结构和图\ref{Abbildung-AP}中的树形图都是最小产出结构的例子。图\ref{Abb-das-schoene-Bild-von-Paris}中左边的树形图也是没有附加语结构的一个例子。图\ref{Abb-das-schoene-Bild-von-Paris}中右边的结构是最大产出结构的一个例子：限定语、附加语和补足语都是齐全的。
 %Figure~\vref{Abb-das-schoene-Bild-von-Paris} shows the analysis of the NP structures \emph{das Bild} `the picture'
 %and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'. The NP structures in Figure~\ref{Abb-das-schoene-Bild-von-Paris}
 %and the tree for \emph{proud} in Figure~\ref{Abbildung-AP} show examples of minimally populated structures.
