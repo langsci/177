@@ -548,21 +548,86 @@ Grünberger Str. 16\\
 \newcommand{\passiveimp}{\passive.\textsc{imp}}
 
 
+% loaded in langscibook.cls
+% \usepackage{amsthm}
 
-\usepackage{theorem}
+\newcommand{\rot}[1]{{\color{lsRed}#1}}
 
-\newtheorem{mydefinition}{Def.}
-\newtheorem{prinzip}{Prinzip}
-\newtheorem{principle}{Principle}
+\makeatletter
+\def\thmheadprinciple#1#2#3{%
+  \thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}%
+  \thmnote{ {\the\thm@notefont（\rot{#3}）}}}
+\makeatother
 
-{\theoremstyle{break}
-\newtheorem{schema}{Schema}
-\newtheorem{mydefinition-break}[mydefinition]{Def.}
-\newtheorem{prinzip-break}[prinzip]{Prinzip}
+\newtheoremstyle{break}% Name
+  {}% space above
+  {}% space below
+  {}%\itshape}% body font
+  {}% indent
+  {\bfseries}% head font
+  {}% punctuation after head
+  { }% space after head (has to be space or dimension!)
+  {\thmheadprinciple{#1}{#2}{#3}}% head spec
+
+\theoremstyle{break}
+
+% should be in a different style, but the style without break is not defined yet.
+\newtheorem{principle}{原则}
+
+% principle-break uses the same counter as principle
 \newtheorem{principle-break}[principle]{原则}
-%\newtheorem{principle-break}[principle]{Principle}
-\newtheorem{ref-regel}{Reflexivierungsregel}
-\newtheorem{fest}{Feststellung}
-}
+\newtheorem{schema}{Schema}
 
+% since all the theories are different, we start counting from scratch for every chapter.
+% Thanks to Antonio MyP for pointing this out.
+
+\makeatletter
+\@addtoreset{principle}{chapter}
+\@addtoreset{schema}{chapter}
+\makeatother
+
+
+
+%{\theoremstyle{break}
+%\newtheorem{principle-break}[principle]{原则}
+%}
+
+
+% \usepackage{theorem}
+
+% \newtheorem{principle}{Principle}
+
+% {\theoremstyle{break}
+% \newtheorem{schema}{Schema}
+% \newtheorem{principle-break}[principle]{Principle}
+% }
+ 
+
+
+
+% \usepackage{ntheorem}
+
+% \makeatletter
+% \newtheoremstyle{plain-brackets}%
+%    {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\theorem@separator]}%
+%    {\item[\hskip\labelsep \theorem@headerfont ##1\ ##2\ {[##3]}\theorem@separator]}
+
+% % \newtheoremstyle{break-brackets}%
+% %   {\item[\rlap{\vbox{\hbox{\hskip\labelsep \theorem@headerfont
+% %           ##1\ ##2\theorem@separator}\hbox{\strut}}}]}%
+% %   {\item[\rlap{\vbox{\hbox{\hskip\labelsep \theorem@headerfont
+% %           ##1\ ##2\ {[##3]}\theorem@separator}\hbox{\strut}}}]}
+% \makeatother
+
+% % \theoremstyle{plain-brackets}
+% % \newtheorem{principle-break}{tralelalaPrinciple}
+
+% %\theoremstyle{break-brackets}
+% %\newtheorem{principleB}{Principle}
+
+
+% \theoremstyle{plain-brackets}
+
+% \newtheorem{principle-break}{Principle}
+% \newtheorem{schema}{Schema}
 

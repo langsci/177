@@ -673,6 +673,8 @@
 \usepackage{amssymb} % has to be loaded before other stuff
 \usepackage{amsmath} % has to be loaded before mathspec/unicode-math
 
+\usepackage{amsthm}
+
 \iflsMinimal\else % The minimal mode skips font loading
     \iflsNewtxmath\else
     %% There is a known problem in the interplay between \binom, unicode-math, and OTF
