@@ -88,7 +88,7 @@ LFG假设多层表征。\footnote{%
 其中最重要的是c-结构\isc{c-结构}\is{c"=structure}和f-结构\isc{f-结构}\is{f"=structure}。c-结构是成分结构，需要被某个具体的短语结构语法允准。
 对于适合用\xbarc~理论分析的语言，该短语结构语法即为\xbarc~理论。
 f-结构意为功能结构。
-功能结构包括了谓词的信息，以及一个具体的结构成分中出现的语法功能（主语、宾语等）的信息。
+功能结构包括谓词的信息，以及一个具体的结构成分中出现的语法功能（主语、宾语等）的信息。
 在不同表征层面之间需要设立它们的映射关系。
 
 \subsection{功能结构}
@@ -237,10 +237,10 @@ $f$: \lfgms{ pred  & {\small `SNEEZE\arglist{\lfgsubj}'}\\
 \z
 
 \noindent
-需注意的是（\mex{-1}b）同样也可以描写许多包含其它特征的其它结构。
+需注意的是，（\mex{-1}b）同样也可以描写许多包含其他特征的其他结构。
 在所有这些包括了功能结构的新结构中，我们仅仅关心那些包含特征描写所提供的信息的最简结构（minimal structures）。
 
-（\mex{1}）展示了c-结构中的结点是如何和f-结构联系起来的：
+（\mex{1}）展示了c-结构中的结点是如何跟f-结构联系起来的：
 
 \ea
 %\ex David sneezed。
@@ -389,9 +389,9 @@ f-结构需同时满足两个合格性的条件：它们必须同时完备（com
 \subsection{c-结构与f-结构之间的关系的限制}  
 
 为了得到f-结构，可以给c-结构中的符号\isc{c-结构}\is{c"=structure|(}分配语法限制标注。
-令`\up'\isc{$\uparrow$}\is{$\uparrow$}指示c-结构中的直接支配某结点的结点（即父结点）所对应的f-结构，`$\downarrow$'\isc{$\downarrow$}\is{$\downarrow$}指示当前结点所对应的f-结构。
-`\up~=~\down'是一个普遍被采用的限制标注。
-这个限制声明了父结点的f-结构和当前结点的f-结构同一。
+令“\up”\isc{$\uparrow$}\is{$\uparrow$}指示c-结构中的直接支配某结点的结点（即父结点）所对应的f-结构，“$\downarrow$”\isc{$\downarrow$}\is{$\downarrow$}指示当前结点所对应的f-结构。
+“\up~=~\down”是一个普遍被采用的限制标注。
+这个限制声明了父结点的f-结构与当前结点的f-结构同一。
 
 \ea
 V$'$ $\to$ \begin{tabular}[t]{@{}r@{~=~}l@{}}
@@ -400,7 +400,7 @@ V$'$ $\to$ \begin{tabular}[t]{@{}r@{~=~}l@{}}
            父结点的f-结构 & 自身f-结构\\
            \end{tabular}
 \z
-`\up~=~\down'标注置于一个结构的中心词\isc{中心语}\is{head}之下。
+“\up~=~\down”标注置于一个结构的中心词\isc{中心语}\is{head}之下。
 
 在（\mex{0}）中，
 经过标注的c-结构所允准的短语可做如下表示：
@@ -456,7 +456,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
 \label{glue-semantics}
 
 依据 \citet[\page 90--92]{Dalrymple2006a}，粘着语义学（glue semantics）\isc{粘着语义学|(}\is{glue semantics|(}是LFG的一个主流语义分析方法（\citealp*{DLS93a-u}；\citealp[\S~8]{Dalrymple2001a-u}）。
-另有一些基于Kamp的语篇章表示结构 \citep{KR93a}的分析方法\citep{FR83b,FR83a}。
+另有一些基于Kamp的话语表征结构 \citep{KR93a}的分析方法\citep{FR83b,FR83a}。
 
 接下来我们将讨论粘着语义学的一些细节\footnote{%
 %The following section is a translation of the corresponding section in   \citew{Dalrymple2006a}。
@@ -475,7 +475,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
 这直接对应于一个词在一个表达里的使用：词一次性服务于整个语义解释。
 词既不能在语义解释中被忽略掉，也不可以在不同的部分多次贡献自己的力量。
 句子Peter knocked twice.（Peter敲了两次）的意义并不等同于Peter knocked（Peter敲）。
-词twice（两次）的语义必须被囊括到整个句子的完整语义中。
+词twice（两次）的语义必须被囊括进整个句子的完整语义中。
 类似地，其句义也不同于Peter knocked twice twice.（Peter敲了两次两次），因为词twice的语义不可以被使用两次。
 
 （\mex{1}b）展示了例句（\mex{1}a）的句法及语义分析：
@@ -562,7 +562,7 @@ David yawned的f-结构以及其中的David和yawned的语义构建器如（\mex
 我们必须假定一些规则才能精确地确定（\mex{0}）中语义构建器右部（即粘着部分）和其左部（即语义部分）之间的关系。
 对于像（\mex{0}）中\BF{David}这样简单的、不包括逻辑蕴涵的语义构建器来说，
 左部的语义等同于右侧的语义结构的语义。
-而像\BF{yawn}这样的语义构建器，它们在左部包含一个$\lambda$"-表达式，它们必须同其它的表达式通过
+而像\BF{yawn}这样的语义构建器，它们在左部包含一个$\lambda$"-表达式，它们必须同其他的表达式通过
 函数应用（functional application，详见\ref{sec-PSG-Semantik}）组合在一起。
 而右部的线性蕴涵合并也必须同步进行。
 （\mex{1}）展示了这样的一个合并过程。
@@ -599,7 +599,7 @@ $\relation{yawn}(\relation{david})$ & $y_\sigma$ &
 %
 %\noindent 
 
-\citet{Dalrymple99a-ed}讨论了针对量化\isc{量化}\is{quantification}、修饰和其它现象的粘着语义分析。 
+\citet{Dalrymple99a-ed}讨论了针对量化\isc{量化}\is{quantification}、修饰和其他现象的粘着语义分析。 
 在针对语段中包含过多或过少语义资源的情形中，所讨论的这些方法会出现问题。
  \citet{Asudeh04a-u}着重讨论了这些问题
 \isc{粘着语义学|)}\is{glue semantics|)}。
@@ -641,7 +641,7 @@ yesterday（昨天）和at noon（在中午）。
 \z
 将附加语表示为一个集合不足以表示包括域（\textsc{scope}）信息的附加语，如第\pageref{bsp-absichtlich-nicht-anal}页中的例（\ref{bsp-absichtlich-nicht-anal}）中所涉及的否定。
 为了确定域关系，我们必须参照附加语在句子中的先后顺序，这就涉及了c-结构信息。
-想了解更多的关于语序序列化的限制，可以参考 \citew{ZK95b}\isc{说明语}\is{adjunct}。
+想了解更多的关于语序线性化的限制，可以参考 \citew{ZK95b}\isc{说明语}\is{adjunct}。
 
 \section{被动}
 \label{Abschnitt-LFG-Passiv}
@@ -752,7 +752,7 @@ Bresnan注意到，和动词的被动式一样，也有被动形式的形容词�
 如果我们假定词汇完整性，那么我们必须在词汇里去推导形容词。
 如果动词的被动的生成不取决于词汇加工过程，而是一个短语结构，那么形式的同一性仍然得不到解释。\isc{形态}\is{morphology}\todostefan{wieso?}
 
-在LFG中，语法功能\isc{语法功能}\is{grammatical function}是基础要素，换句话说它们不是通过句法树中的位置推导出来（如Subject = SpecIP）。
+在LFG中，语法功能\isc{语法功能}\is{grammatical function}是基础要素，换句话说它们不是通过句法树中的位置推导出来的（如Subject = SpecIP）。
 词（经过了完整屈折变化的词）决定了它的论元的语法功能。此外，语法功能还存在一个层级结构。
 在分词形成的过程中，层级最高的动词性论元被抑制。
 层级第二高的论元向上移动，进而会被实现为\textsc{subject}而不是\textsc{object}。
@@ -780,7 +780,7 @@ Bresnan注意到，和动词的被动式一样，也有被动形式的形容词�
 \isc{受事}\is{patient}
 \isc{客体}\is{theme} $>$ 方位格。
 在相应的被称之为a-结构\isc{a-结构}\is{a"=structure}的表示体系中，受事类型会被标记为不受限（[$-$r]）。
-第二受事类型的角色会被标记为宾语的（[+o]），而所有的其它角色都会被标记为非宾语的（[$-$o]）。
+第二受事类型的角色会被标记为宾语的（[+o]），而所有的其他角色都会被标记为非宾语的（[$-$o]）。
 对于德语及物动词schlagen（击打）而言，我们有如下分析：
 \ea
 \begin{tabular}[t]{@{}llll@{}}
@@ -947,7 +947,7 @@ C$'$被下面的一个特殊规则所允准：
   如果我们没有为{\small GOV}赋值，则带{\small OBL}$-$的格既可以是主格也可以是宾格。
   因为下面的讨论并没有使用到这种局部声明的好处，我接下来并没有使用特征分解而是直接使用格信息。
 }$^,$\footnote{%
-  作为一种替代性分析，也可以从格中推导出一个名词短语的语法功能（\citealp[\page 37]{Berman2003a}的德语分析；\citealp[\page 187, \page 201]{Bresnan2001a}的德语和俄语分析\il{Russian}）。
+  作为一种替代性分析，也可以从格中推导出一个名词短语的语法功能（\citet[\page 37]{Berman2003a}的德语分析；\citet[\page 187, \page 201]{Bresnan2001a}的德语和俄语分析\il{Russian}）。
 
 \ea
 \label{Kasus-Implikation-Berman}
@@ -1013,14 +1013,14 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 \phraserule{VP}{
 \rulenode{(V)\\* \up~=~\down}}
 \z
-乍一看来，这种分析非常奇怪，显然一个像devour一样的动词，它自身的分布与它和它论元加和之后的分布是并不相同的。
+乍一看来，这种分析非常奇怪，显然一个像devour一样的动词，它自身的分布与它和它的论元加和之后的分布是并不相同的。
 但是，我们应当回想一下保留下来的针对f-结构一致性与完备性的限制，它们仍然起作用，进而这个理论仍然不会做出错误的（针对语言现象的）预测。
 %}% footnote breaks
 % this bracket belonges to \interfootnotelinepenalty=10%
 
 因为动词可以出现在初始位置，它在（\mex{0}）规则里被标记为可选（见\ref{Abschnitt-Verbstellung-LFG}）。
 
-下面的规则可以用以进一步组合动词和它的主语或者宾语。
+下面的规则可以用来进一步组合动词和它的主语或者宾语。
 \ea
 \label{lfg-vp-regel}
 \phraserule{VP}{
@@ -1064,7 +1064,7 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 如果它被删去，则VP为空。
 这样一来，（\ref{lfg-vp-regel}）中的VP规则则允许其右侧有一个空的VP。
 这个VP同样可以被删去，尽管规则（\ref{lfg-vp-regel}）中并没有做可选的标记。
-也就是说，结合语法中其它的可与之交互的规则，相应的VP变成可选的。\isc{成分序列|)}\is{constituent order|)}  
+也就是说，结合语法中其他的可与之交互的规则，相应的VP变成可选的。\isc{成分序列|)}\is{constituent order|)}  
 
 \section{长距离依存和功能多变性}
 \label{Abschnitt-NLA-LFG}
@@ -1084,7 +1084,7 @@ Chris 我们 认为 \textsc{comp} David  看见\\
 另外，它应该有一个语篇功能（discourse function）：
 即对它在该结构中所承担的信息结构层面的身份的强调（主句中的话题（\textsc{topic}））。
 在LFG中，话题和焦点（\textsc{focus}）是语法化的语篇功能（进一步说，\textsc{subj}被视为默认的语篇功能）。
-只有语法化的语篇功能才能在f-结构中进行表示，也就是说，那些被特定的句法机制创造出来的并且和句法其它部分相交互的部分。
+只有语法化的语篇功能才能在f-结构中进行表示，也就是说，那些被特定的句法机制创造出来的并且和句法其他部分相交互的部分。
 
 不同于论元功能，语篇功能\textsc{topic}\isfeat{topic}\isc{话题}\is{topic}和\textsc{focus}
 \isfeat{focus}\isc{焦点}\is{focus}都不是次范畴的内容，因此并不受完备性和一致性的约束。
@@ -1211,7 +1211,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{topic})}XP} &
 这意味着语篇和语法功能的同一性关系尚待确定，这种性质称为功能不确定性（functional uncertainty\isc{功能不确定性}\is{functional uncertainty}），见 \citew{KZ89a}。
 
 在第\pageref{bsp-fronted-focus}页的针对例（\ref{bsp-fronted-focus}）和（\ref{bsp-fronted-topic}）的讨论中，
-我们知道在英语中并不是只有\textsc{topic}才能放到CP的指定语的位置，\focus 也可以。
+我们知道在英语中并不是只有\textsc{topic}才能放到CP的限定语的位置，\focus 也可以。
 我们可以在LFG等式中采用析取符号来表示这种条件：
 
 \ea
@@ -1254,12 +1254,12 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{df})}XP} & C$
  & &  (\upsp \textsc{df}) & (\upsp \textsc{comp* gf})\\
 \end{tabular}
 \z
-这里，\textsc{gf}是语法功能的析取，可以出现在前域中。 
+这里，\textsc{gf}是语法功能的析取，可以出现在前场中。 
 \isc{长距离依存}\is{long"=distance dependency|)}
 
 \section{总结与分类}
 
-LFG是一种基于限制的理论，采用了特征描写和短语结构规则。
+LFG是一种基于约束的理论，采用了特征描写和短语结构规则。
 语法功能被视为理论的原子概念，这一点也将LFG与本书中所介绍的其他理论区别开来。
 语法功能并不是像GB那样通过结构关系来进行定义的。
 LFG是一种词汇主义理论。像GPSG一样，LFG不需要转换。
