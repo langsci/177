@@ -3,7 +3,7 @@
 %\chapter{Dependency Grammar}
 \label{Kapitel-DG}
 
-依存语法是本书介绍的历史最悠久的语法理论。它的现代版本是由法国语言学家Lucien Tesnière（1893--1954）进一步发展而来的。他的奠基性著作《结构句法基础》（\emph{Eléments de syntaxe structurale}）于1938年完成，这是在Ajdukiewicz发表范畴语法的论文的三年后\citeyearpar{Ajdukiewicz35a-u}，但是真正的出版被推迟到1959年，也就是在他去世五年后\nocite{Tesniere59a-u}。因为配价是依存语法的核心，它有时也叫做配价语法。Tesnière的思想在今天广为流传。几乎所有的现代理论都有配价和依存的概念\citep[\page 262--263, 284]{AF2010a}。
+依存语法是本书介绍的历史最悠久的语法理论。它的现代版本由法国语言学家Lucien Tesnière（1893--1954）进一步发展而来。他的奠基性著作《结构句法基础》（\emph{Eléments de syntaxe structurale}）于1938年完成，这是在Ajdukiewicz发表范畴语法的论文的三年后\citeyearpar{Ajdukiewicz35a-u}，但是真正的出版被推迟到1959年，也就是在他去世五年后\nocite{Tesniere59a-u}。因为配价是依存语法的核心，它有时也叫做配价语法。Tesnière的思想在今天广为流传。几乎所有的现代理论都有配价和依存的概念\citep[\page 262--263, 284]{AF2010a}。
 %Dependency Grammar is the oldest framework described in this book. Its modern version was developed by %the
 %French linguist Lucien Tesnière (1893--1954). His foundational work \emph{Eléments de syntaxe
 %  structurale} `Elements of structural syntax' was basically finished in 1938 only three years after
@@ -14,7 +14,7 @@
 %almost all of the current theories \citep[\page 262--263, 284]{AF2010a}.
 % zitieren Schmidt
 
-尽管有一些研究英语的文献\citep{Anderson71a-u,Hudson84a-u}，依存语法在欧洲中部更为流行，尤其是在德国\citep[\page 56--57]{Engel96a}。 \citet[\page 250]{AF2010a}指出了一个可能的原因：\tes 的原著直到最近才有英译本\citep{Tesniere2015a-not-crossreferenced}，但是德语译本都已经有35年了\citep{Tesniere80a-u}。由于依存语法的重点在于依存关系，而不是成分的线性顺序，通常认为它更适于分析自由语序的语言，这也是它在斯拉夫语\il{Slavic}的研究中比较流行的一个原因：从1960年开始的以Sgall、Hajičová和Panevova为代表的新布拉格学派\isc{新布拉格学派}\is{New Prague School}深入发展了依存语法（全面的信息请参考\citealp{HS2003a-u}）。Igor\,A.\ Meľčuk和A.\,K.\ Žolkovskij在1960年的苏联开始研究一个叫做\mttc 的模型，它也被用于机器翻译项目中\citep{Melcuk64a-u,Melcuk81a,Melcuk88a-u,Kahane2003a-u}。1970年，\mel 离开了苏联，前往加拿大，现在蒙特利尔工作。
+尽管有一些研究英语的文献\citep{Anderson71a-u,Hudson84a-u}，依存语法在欧洲中部更为流行，尤其是在德国\citep[\page 56--57]{Engel96a}。 \citet[\page 250]{AF2010a}指出了一个可能的原因：\tes 的原著直到最近才有英译本\citep{Tesniere2015a-not-crossreferenced}，但是德语译本都已经有35年了\citep{Tesniere80a-u}。由于依存语法的重点在于依存关系，而不是成分的线性顺序，通常认为它更适于分析自由语序的语言，这也是它在斯拉夫语\il{Slavic}的研究中比较流行的一个原因：从1960年开始的以Sgall、Hajičová和Panevova为代表的新布拉格学派\isc{新布拉格学派}\is{New Prague School}深入发展了依存语法（全面的信息请参考\citet{HS2003a-u}）。Igor\,A.\ Meľčuk和A.\,K.\ Žolkovskij在1960年的苏联开始研究一个叫做\mttc 的模型，它也被用于机器翻译项目中\citep{Melcuk64a-u,Melcuk81a,Melcuk88a-u,Kahane2003a-u}。1970年，\mel 离开了苏联，前往加拿大，现在蒙特利尔工作。
 %Although there is some work on English \citep{Anderson71a-u,Hudson84a-u}, Dependency Grammar is most popular in central Europe and especially %so in Germany \citep[\page
 %  56--57]{Engel96a}.  \citet[\page 250]{AF2010a} identified a possible reason for this: \tes's
 %original work was not available in English until very recently \citep{Tesniere2015a-not-crossreferenced}, but there has
@@ -82,7 +82,7 @@ Edeltraud  \citet{Werner93a-u}，哈雷-维滕贝格。
 %  A conference on \mtt has taken place biannually since 2003.
 %}
 
-依存语法很早就被用于计算项目。Meľčuk在苏联研究机器翻译，而David G.\ Hays在美国研究机器翻译。Jürgen Kunze在东德的德国科学院任计算语言学主席，他从1960年也开始机器翻译的研究。 \citew{Kunze75a-u}这本书讲述了语言学研究的形式化背景。还有许多研究者从1973年到1986年在萨尔布吕肯的合作研究中心100－电子语言学研究（SFB 100, Elektronische Sprachforschung）工作。这个研究中心的主要内容也是机器翻译。这些工程研究了俄语\il{Russian}到德语、法语\il{French}到德语、英语\il{English}到德语以及世界语到德语的翻译。对于这一范围内萨尔布吕肯的工作，请参阅 \citew{Klein71a-u}、 \citew{Rothkegel76a-u}和 \citew{Weissgerber83a-u}。 \citet{MIF85a}在一个分析日语和生成英语的工程中使用了依存语法。Richard Hudson从1980年开始研究基于依存语法框架的词语法\indexwgc\citep{Hudson84a-u,Hudson2007a-u} ，而Sleator和Temperly从1990年开始研究链语法\isc{链语法}\is{Link Grammar}\citep{ST91a-u,GLS95a-u}。Fred Karlsson的约束语法\citeyearpar{Karlsson90a-u}被应用于许多语言（可用的大规模的语法片段有丹麦语\il{Danish}、葡萄牙语\il{Portuguese}、西班牙语\il{Spanish}、英语\il{English}、瑞典语\il{Swedish}、挪威语\il{Norwegian}、法语\il{French}、德语\il{German}、世界语\il{Esperanto}、意大利语\il{Italian}和荷兰语\il{Dutch}）和学校的教学、语料库标注\isc{语料库标注}\is{corpus annotation}和机器翻译\isc{机器翻译}\is{machine translation}中。在项目网站上可以观看在线的演示视频。\footnote{%
+依存语法很早就被用于计算项目。Meľčuk在苏联研究机器翻译，而David G.\ Hays在美国研究机器翻译。Jürgen Kunze在东德的德国科学院任计算语言学主席，他从1960年也开始机器翻译的研究。 \citew{Kunze75a-u}这本书讲述了语言学研究的形式化背景。还有许多研究者从1973年到1986年在萨尔布吕肯的合作研究中心100－电子语言学研究（SFB 100, Elektronische Sprachforschung）工作。这个研究中心的主要内容也是机器翻译。这些工程研究了俄语\il{Russian}到德语、法语\il{French}到德语、英语\il{English}到德语以及世界语到德语的翻译。对于这一范围内萨尔布吕肯的工作，参见 \citew{Klein71a-u}、 \citew{Rothkegel76a-u}和 \citew{Weissgerber83a-u}。 \citet{MIF85a}在一个分析日语和生成英语的工程中使用了依存语法。Richard Hudson从1980年开始研究基于依存语法框架的词语法\indexwgc\citep{Hudson84a-u,Hudson2007a-u} ，而Sleator和Temperly从1990年开始研究链语法\isc{链语法}\is{Link Grammar}\citep{ST91a-u,GLS95a-u}。Fred Karlsson的约束语法\citeyearpar{Karlsson90a-u}被应用于许多语言（可用的大规模的语法片段有丹麦语\il{Danish}、葡萄牙语\il{Portuguese}、西班牙语\il{Spanish}、英语\il{English}、瑞典语\il{Swedish}、挪威语\il{Norwegian}、法语\il{French}、德语\il{German}、世界语\il{Esperanto}、意大利语\il{Italian}和荷兰语\il{Dutch}）和学校的教学、语料库标注\isc{语料库标注}\is{corpus annotation}和机器翻译\isc{机器翻译}\is{machine translation}中。在项目网站上可以观看在线的演示视频。\footnote{%
   \url{http://beta.visl.sdu.dk/constraint_grammar}. \zhdate{2015/07/24}.
 }
 
@@ -323,7 +323,7 @@ Jingyang Jiang and Haitao Liu*. The Effects of Sentence Length on Dependency Dis
 dg edges
 [V
   [N
-    [D [the;\textsc{det}] ]
+    [D [the;\textsc{art}.\textsc{def}] ]
      [child;孩子] ]
   [reads;读]
   [N
@@ -335,7 +335,7 @@ dg edges
 %\caption{\label{fig-the-child-reads-the-book-dg}Analysis of \emph{The child reads a book.}}
 \end{figure}%
 
-这通过在表示动词的结点和表示各自名词的结点之间的依存关系来描述。名词本身需要一个限定词，它是分别通过the和a的依存关系来表示的。需要注意的是，这里展示的分析对应于HPSG中假定的NP分析，即名词选择它的限定词（见\ref{Abschnitt-Spr}节）。不过，需要指出的是，NP与DP分析哪一个更合理？这个问题在依存语法社团中也展开了讨论（\citealp[\page 90]{Hudson84a-u}；\citealp{vanLangendonck94a,Hudson2004a}）。请参阅 \citet{Engel77}关于N作为中心语的分析以及 \citet[\page 31]{Welke2011a-u}有关限定词作为中心语的分析。
+这通过在表示动词的结点和表示各自名词的结点之间的依存关系来描述。名词本身需要一个限定词，它分别通过the和a的依存关系来表示。需要注意的是，这里展示的分析对应于HPSG中假定的NP分析，即名词选择它的限定词（见\ref{Abschnitt-Spr}）。不过，需要指出的是，NP与DP分析哪一个更合理？这个问题在依存语法社团中也展开了讨论（\citealp[\page 90]{Hudson84a-u}；\citealp{vanLangendonck94a,Hudson2004a}）。参见 \citet{Engel77}关于N作为中心语的分析以及 \citet[\page 31]{Welke2011a-u}有关限定词作为中心语的分析。
 %This is depicted by the dependency links between the node representing the verb and the
 %nodes representing the respective nouns. The nouns themselves require a determiner, which again is shown by the dependency
 %links to \emph{the} and \emph{a} respectively. Note that the analysis presented here corresponds to
@@ -353,10 +353,10 @@ dg edges
 %The verb is the head of the clause and the nouns are called \emph{dependents}. Alternative terms
 %for head and dependent are \emph{nucleus}\is{nucleus} and \emph{satellite}\is{satellite}, respectively. 
 
-依存语法的变体——词语法（word grammar）\indexwgc 使用另外一种描写依存关系的方法\citep{Hudson2007a-u}，如图\vref{fig-the-child-reads-the-book-dg-sentence}所示。
+依存语法的变体——词语法（word grammar）\indexwgc ——使用另外一种描写依存关系的方法\citep{Hudson2007a-u}，如图\vref{fig-the-child-reads-the-book-dg-sentence}所示。
 %An alternative way to depict the dependencies, which is used in the Dependency Grammar variant Word Grammar\indexwg \citep{Hudson2007a-u}, is %provided in Figure~\vref{fig-the-child-reads-the-book-dg-sentence}.
 % moved this on top of the figure
-这张图显示了语法功能，而不是词类信息，但是除此以外，它与图\ref{fig-the-child-reads-the-book-dg}是一致的。图\ref{fig-the-child-reads-the-book-dg}中的最高结点被标记为图\ref{fig-the-child-reads-the-book-dg-sentence}中的\textsc{root}箭头。向下的关系是由箭头的方法来预测的。
+这张图显示了语法功能，而不是词类信息，但是除此以外，它与图\ref{fig-the-child-reads-the-book-dg}是一致的。图\ref{fig-the-child-reads-the-book-dg}中的最高结点被标记为图\ref{fig-the-child-reads-the-book-dg-sentence}中的\textsc{root}箭头。向下的关系由箭头的方法来预测。
 %This graph displays the grammatical functions rather than information about part of speech, but apart
 %from this it is equivalent to the representation in Figure~\ref{fig-the-child-reads-the-book-dg}. The highest node in Figure~\ref{fig-the-child-reads-the-%book-dg} is labeled with the \textsc{root}
 %arrow in Figure~\ref{fig-the-child-reads-the-book-dg-sentence}. Downward links are indicated by the direction of the arrows.
@@ -400,7 +400,7 @@ sm edges
 \caption{\label{fig-the-child-reads-the-book-dg-words}The child reads a book.的分析的另一种表示形式}
 %\caption{\label{fig-the-child-reads-the-book-dg-words}Alternative presentation of the analysis of \emph{The child reads a book.}}
 \end{figure}%
-由于我们对从属词上的结的依存关系有清晰的可视化表示，我们就不用箭头来表示这个信息了。但是，有些依存语法的变体，比如说\wg{}，使用了相互依存关系。由此，比如说，有些理论认为在his child的分析中，his依存于child，而且child依存于his。如果必须要描述这种相互依存的关系，则需要对所有的依存关系使用箭头或者有些层级树中的依存关系用下划线表示，而其他依存关系用箭头表示。
+由于我们对从属词上的结的依存关系有清晰的可视化表示，我们就不用箭头来表示这个信息了。但是，有些依存语法的变体，比如说词语法，使用了相互依存关系。由此，比如说，有些理论认为在his child的分析中，his依存于child，而且child依存于his。如果必须要描述这种相互依存的关系，则需要对所有的依存关系使用箭头或者有些层级树中的依存关系用下划线表示，而其他依存关系用箭头表示。
 %Since we have a clear visualization of the dependency relation that represents the nucleus
 %above the dependents, we do not need to use arrows to encode this information. However, some
 %variants of Dependency Grammar -- for instance \wg{} -- use mutual dependencies. So for instance, some
@@ -414,7 +414,7 @@ sm edges
 %and~\ref{fig-the-child-reads-the-book-dg-words}, grammatical function labels could be added to
 %Figure~\ref{fig-the-child-reads-the-book-dg}, and word order can be added to Figure~\ref{fig-the-child-reads-the-book-dg-words}.
 
-上图描述了中心语与各自的从属词之间的依存关系。这可以更形式化地表示为一条$n$-ary规则\label{page-rule-format-dg}，该规则与第\ref{Kapitel-PSG}章讨论的短语结构规则是十分类似的（\citealp[\page 305]{Gaifman65a}；\citealp[\page 513]{Hays64a-u}；\citealp[\page 61]{Baumgaertner70a}；\citealp[\S~4.1]{Heringer96a-u}）。比如说，Baumgärtner提出了（\mex{1}）中的一般规则格式：
+上图描述了中心语与各自的从属词之间的依存关系。这可以更形式化地表示为一条$n$-ary规则\label{page-rule-format-dg}，该规则与第\ref{Kapitel-PSG}章讨论的短语结构规则十分类似（\citealp[\page 305]{Gaifman65a}；\citealp[\page 513]{Hays64a-u}；\citealp[\page 61]{Baumgaertner70a}；\citealp[\S~4.1]{Heringer96a-u}）。比如说，Baumgärtner提出了（\mex{1}）中的一般规则格式：
 %The above figures depict the dependency relation that holds between a head and the respective
 %dependents. This can be written down more formally as an $n$-ary rule\label{page-rule-format-dg} that is similar to phrase
 %structure rules that were discussed in Chapter~\ref{Kapitel-PSG} (\citealp[\page 305]{Gaifman65a}; \citealp[\page 513]{Hays64a-u}; \citealp[\page 61]
@@ -422,7 +422,7 @@ sm edges
 \ea
 $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 < i \leq n$
 \z
-（\mex{0}）中的星号对应范畴$\chi$中的词。在我们的例子中，$\chi$可以是V，“$*$”的位置可以由\emph{reads}表示，而且$\varphi_1$和$\varphi_3$可以是N。（\mex{1}a）中的规则跟（\mex{1}b）中关于限定词—名词组合的规则一起，可以允准图\ref{fig-the-child-reads-the-book-dg}中的依存树。
+（\mex{0}）中的星号对应于范畴$\chi$中的词。在我们的例子中，$\chi$可以是V，“$*$”的位置可以由\emph{reads}表示，而且$\varphi_1$和$\varphi_3$可以是N。（\mex{1}a）中的规则跟（\mex{1}b）中关于限定词--名词组合的规则一起，可以允准图\ref{fig-the-child-reads-the-book-dg}中的依存树。
 %The asterisk in (\mex{0}) corresponds to the word of the category $\chi$. In our example, $\chi$
 %would be V, the position of the `$*$' would be taken by \emph{reads}, and $\varphi_1$ and
 %$\varphi_3$ would be N. Together with the rule in (\mex{1}b) for the determiner-noun combination, the rule in (\mex{1}a) would license
@@ -505,7 +505,7 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %\caption{\label{fig-the-child-often-reads-the-book-slowly}Analysis of \emph{The child often reads
 %    the book slowly.}}
 \end{figure}%
-依存关系的标注使用了 \citet{Engel77}提出来的描写不同依存关系的技术手段：附加语用一条从附加语结点向上的额外的线来表示（也请参阅\citealp{Eroms2000a}）。另一种区分论元/附加语，或者行动元/场景元的方法是针对是论元还是附加语的性质的明确区分。所以我们可以使用针对附加语和论元的明确标记，就像在前面标记语法功能一样。德语语法和配价词典经常使用标签E和A来分别表示Ergänzung（补足语）和Angabe（说明语）。
+依存关系的标注使用了 \citet{Engel77}提出来的描写不同依存关系的技术手段：附加语用一条从附加语结点向上的额外的线来表示（也参见\citealp{Eroms2000a}）。另一种区分论元/附加语，或者行动元/场景元的方法是针对是论元还是附加语的性质的明确区分。所以我们可以使用针对附加语和论元的明确标记，就像在前面标记语法功能一样。德语语法和配价词典经常使用标签E和A来分别表示Ergänzung（补足语）和Angabe（说明语）。
 %The dependency annotation uses a technical device suggested by  \citet{Engel77} to depict
 %different dependency relations: adjuncts are marked with an additional line upwards from the adjunct
 %node (see also \citealp{Eroms2000a}). An alternative way to specify the argument/adjunct, or rather the actant/circumstant distinction, is of course an %explicit
@@ -514,7 +514,7 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %use the labels E and A for \emph{Ergänzung} and \emph{Angabe}, respectively.
 
 
-\subsection{语序次序化}
+\subsection{语序线性化}
 %\subsection{Linearization}
 \label{sec-dg-linearization}
 
@@ -586,8 +586,8 @@ Die korrekte Stellung ergibt sich dann zum Teil aus oberflächensyntaktischen Re
 im Vorfeld des Konstativsatzes steht immer genau ein Element; das finite Verb steht an zweiter
 Stelle) [\ldots]
 }$^,$\footnote{%
-   \citet[\page 81]{Engel70a}针对\vfc 中只有一个成分的说法提出了反例。相关的例子将在\ref{sec-dg-multiple-frontings}讨论。
-} 进而，还有关于语用属性的线性规则，比如说旧信息位于新信息之前。另一条规则保证了弱代词被置于前场或中场的开头。这一线性顺序的概念在经验与概念上都是有问题的，我们会在\ref{sec-linearization-problems-dg}再来讨论。这里需要指出的是，只处理依存关系的方法允许中心语和它的从属词的非连续的实现形式。没有进一步的约束的话，依存语法也会面对在\ref{sec-ECG}的\pageref{ex-dass-die-frauen-tueren-oeffnen-disc}页中已经讨论过的有关嵌套构式语法以及\ref{sec-fcg-nld}中有关流体构式语法的问题。其中，一个论元可以打断另一个论元，如图\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}所示。
+   \citet[\page 81]{Engel70a}针对\vfc 中只有一个成分的说法提出了反例。相关的例子将在\ref{sec-dg-multiple-frontings}中讨论。
+} 进而，还有关于语用属性的线性规则，比如说旧信息位于新信息之前。另一条规则保证了弱代词被置于前场或中场的开头。这一线性顺序的概念在经验与概念上都是有问题的，我们会在\ref{sec-linearization-problems-dg}再来讨论。这里需要指出的是，只处理依存关系的方法允许中心语和它的从属词的非连续的实现形式。没有进一步的约束的话，依存语法也会面对在\ref{sec-ECG}中的第\pageref{ex-dass-die-frauen-tueren-oeffnen-disc}页中已经讨论过的有关嵌套构式语法以及\ref{sec-fcg-nld}中有关动变构式语法的问题。其中，一个论元可以打断另一个论元，如图\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}所示。
 %According to  \citet[\page 50]{Engel2014a}, the correct order is enforced by surface syntactic rules as for
 %instance the rules that states that there is always exactly one element in the Vorfeld in
 %declarative main clauses and that the finite verb is in second position.\footnote{\label{fn-Engel-linearization}%
@@ -612,7 +612,7 @@ Stelle) [\ldots]
 dg edges
 [V
   [N
-    [D,no edge,name=die [die;\textsc{det}] ]
+    [D,no edge,name=die [die;\textsc{art}.\textsc{def}] ]
      [Frauen;女人] ]
 %    [D,no edge,name=die [die;the] ]
 %     [Frauen;women] ]
@@ -630,8 +630,8 @@ dg edges
 %\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-dg}Unwanted analysis of \emph{dass die Frauen Türen
 %    öffnen} `that the women open doors'}
 \end{figure}%
-为了排除语言中的这种不可能的线性排列，有时会认为分析需要是可投射的\isc{可投射性}\is{projectivity}，即如图\ref{fig-dass-die-Frauen-Tueren-oeffnen-dg}中交叉的树枝是不被允许的。这实际上重新将直接成分的概念引入了框架中，因为这就意味着中心语的所有从属词都必须在中心语周边实现，除非故意使用特殊的机制（请参阅\ref{sec-nld-dg}关于非局部依存的例子）。\footnote{\label{fn-projective-dg-vs-constituents}%
-尽管这可以得到短语结构语法中所谓的单位（unit），但这里也是有区别的：在短语结构语法中，单位具有功能标签（如NP），这在依存语法中是不同的。在依存语法中，我们只指出中心语的标签（如图\ref{fig-the-child-often-reads-the-book-slowly}中属于child的N）或者直接指出中心词（如图\ref{fig-the-child-reads-the-book-dg-words}中的词child）。所以在依存语法的表示中有更少的结点（不过请参阅\ref{sec-dg-is-simpler}的讨论）。
+为了排除语言中的这种不可能的线性排列，有时会认为分析需要是可投射的\isc{可投射性}\is{projectivity}，即如图\ref{fig-dass-die-Frauen-Tueren-oeffnen-dg}中交叉的树枝是不被允许的。这实际上重新将直接成分的概念引入了框架中，因为这就意味着中心语的所有从属词都必须在中心语周边实现，除非故意使用特殊的机制（参见\ref{sec-nld-dg}关于非局部依存的例子）。\footnote{\label{fn-projective-dg-vs-constituents}%
+尽管这可以得到短语结构语法中所谓的单位（unit），但这里也是有区别的：在短语结构语法中，单位具有功能标签（如NP），这在依存语法中是不同的。在依存语法中，我们只指出中心语的标签（如图\ref{fig-the-child-often-reads-the-book-slowly}中属于child的N）或者直接指出中心词（如图\ref{fig-the-child-reads-the-book-dg-words}中的词child）。所以在依存语法的表示中有更少的结点（不过参见\ref{sec-dg-is-simpler}的讨论）。
 }有些作者明确地使用短语结构部件来构成成分的线性约束\citep{GK2001a,Hellwig2003a}。
 %In order to exclude such linearizations in languages in which they are impossible, it is sometimes assumed that analyses have to be projective
 %\is{projectivity},
@@ -663,7 +663,7 @@ dg edges
 % \citet{Welke2003a-u} and  \citet{Fillmore2003a-u} discuss the assignment of semantic roles in
 %overview articles on Dependency Grammar. 
 考虑到依存语法是一个基于词汇的框架，所有关于论元连接的词汇化方法都可以被采用。但是，论元联接\isc{联接}\is{linking}与语义角色\isc{语义角色}\is{semantic role}指派只是当自然语言表达需要指派意义时亟需解决的一小部分问题。附加语和量词的辖域的问题是需要被解决的，而且很清楚的是没有考虑到用线性语序表示依存关系的依存图是不够的。一个没有排序的依存图将语法功能指派给中心语的从属词，并且它在很多方面都类似于\lfgc 的f"=结构。\footnote{%
-Tim Osborne（p.\,c.\ 2015）提醒我，并非所有情况都是这样的：比如说非谓词性介词没有在f"=结构中显示，但是他们必然出现在依存图中。
+Tim Osborne（个人交流 \, 2015）提醒我，并非所有情况都是这样的：比如说非谓词性介词没有在f"=结构中显示，但是它们必然出现在依存图中。
 } 对于第\pageref{ex-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{ex-david-devoured-a-sandwich-at-noon-yesterday}）这类句子，这里重复为（\mex{1}），我们得到第\pageref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}页的（\ref{fstruc-david-devoured-a-sandwich-at-noon-yesterday}）中的f"=结构。这个f"=结构包括一个主语（David）、一个宾语（a sandwich），以及带有两个成分的附加语的集合（at noon和yesterday）。
 %Given that Dependency Grammar is a lexical framework, all
 %lexical approaches to argument linking\is{linking} can be adopted. However, argument linking and semantic
@@ -689,13 +689,13 @@ Tim Osborne（p.\,c.\ 2015）提醒我，并非所有情况都是这样的：比
 David 吞食 一 三明治 在 中午 昨天\\
 \mytrans{David昨天中午狼吞虎咽地吃光了一个三明治。}
 \z
-这就是未排序的依存图中的编码形式。由于这个平行特征， \citet[\page 308]{Broeker2003a-u}针对依存语法也提出了粘着语义学就不足为奇了\isc{粘着语义学}\is{glue semantics}（\citealp*{DLS93a-u}；\citealp[\S~8]{Dalrymple2001a-u}）。我们在\ref{glue-semantics}已经介绍过粘着语义学。
+这就是未排序的依存图中的编码形式。由于这个平行特征， \citet[\page 308]{Broeker2003a-u}针对依存语法也提出了粘着语义学就不足为奇了\isc{粘着语义学}\is{glue semantics}（\citealp*{DLS93a-u}；\citealp[\S~8]{Dalrymple2001a-u}）。我们在\ref{glue-semantics}中已经介绍过粘着语义学。
 %This is exactly what is encoded in an unordered dependency graph. Because of this parallel it comes
 %as no surprise that  \citet[\page 308]{Broeker2003a-u} suggested to use glue semantics\is{glue semantics}
 %(\citealp*{DLS93a-u}; \citealp[Chapter~8]{Dalrymple2001a-u}) for Dependency
 %Grammar as well. Glue semantics was already introduced in Section~\ref{glue-semantics}.
 
-依存语法的有些变体对语义有明确的处理。一个例子是\mttc \citep{Melcuk88a-u}。另一个例子是词语法（Hudson \citeyear[\S~7]{Hudson91a-u}；\citeyear[\S~5]{Hudson2007a-u}）。我们不在这里介绍这些理论的概念。需要指出的是，像Hudson的词语法这类理论对线性顺序是十分严格的，而且并不认为（\ref{ex-gestern-war-ich-bei-tom}）中的所有句子都具有相同的依存结构（请参阅\ref{sec-nld-dg}）。词语法更接近于短语结构语法，并且具有跟基于成分的理论相同的成分序列与语义的互动关系。
+依存语法的有些变体对语义有明确的处理。一个例子是\mttc \citep{Melcuk88a-u}。另一个例子是词语法（Hudson \citeyear[\S~7]{Hudson91a-u}；\citeyear[\S~5]{Hudson2007a-u}）。我们不在这里介绍这些理论的概念。需要指出的是，像Hudson的词语法这类理论对线性顺序是十分严格的，而且并不认为（\ref{ex-gestern-war-ich-bei-tom}）中的所有句子都具有相同的依存结构（参见\ref{sec-nld-dg}）。词语法更接近于短语结构语法，并且具有跟基于成分的理论相同的成分序列与语义的互动关系。
 %There are some variants of Dependency Grammar that have explicit treatments of
 %semantics. One example is \mtt \citep{Melcuk88a-u}. Word Grammar is another one
 %(Hudson \citeyear[Chapter~7]{Hudson91a-u}; \citeyear[Chapter~5]{Hudson2007a-u}). The notations of
@@ -754,7 +754,7 @@ dg edges
 %\caption{\label{fig-passive-dg}Analysis of [\emph{dass}] \emph{der Weltmeister geschlagen wird}
 %  `that the world champion is (being) beaten' parallel to the analyses provided by  \citet[\page 53--54]{Engel2014a}}
 \end{figure}%
-这张图是针对被动结构的直觉上的描述。对于人称被动来说，其形式化很有可能会落实到词汇规则上。请参阅 \citew[\page 629--630]{Hellwig2003a}关于英语中被动分析的词汇规则的明确建议。
+这张图是针对被动结构的直觉上的描述。对于人称被动来说，其形式化很有可能会落实到词汇规则上。参见 \citew[\page 629--630]{Hellwig2003a}关于英语中被动分析的词汇规则的明确建议。
 % This figure is an intuitive depiction of what is going on in passive constructions. A formalization would
 % probably amount to a lexical rule for the personal passive. See  \citew[\page
 %   629--630]{Hellwig2003a} for an explicit suggestion of a lexical rule for the analysis of the
@@ -780,7 +780,7 @@ dg edges
 %     because the.\pl.\nom{} cars to repair tried were\\
 %\mytrans{because it was tried to repair the cars}
 \zl
-这里，zu reparieren的宾语与助动词wurde（单数）和wurden（复数）保持一致，这个宾语是嵌套在两层深的动词的宾语。但是，关于如何分析这些远被动的问题在Engel的系统中是有待解决的问题，而且这个问题的解决方法可能会包含HPSG中应用的机制：zu reparieren的论元被提升到统治动词versucht上，被动应用于这个动词，并将宾语转化为主语，这是通过助词提升的。这就解释了zu reparieren（修理）的隐含宾语与wurde（单数）之间的一致关系。 \citet{Hudson97a}在词语法的框架下提出了德语的动词性补足语的分析，这个分析包括了他所谓的概化提升（generalized raising）的过程。他指出，主语和补足语一起提升到了统治中心语中。请注意，这种包括概化提升的分析可以直接对（i）这类句子进行分析，因为宾语将依存于与主语相同的中心语上，即hat（\textsc{aux}），由此可以放在主语前。
+这里，zu reparieren的宾语与助动词wurde（单数）和wurden（复数）保持一致，这个宾语是嵌套在两层深的动词的宾语。但是，关于如何分析这些远被动的问题在Engel的系统中是有待解决的问题，而且这个问题的解决方法可能会包含HPSG中应用的机制：zu reparieren的论元被提升到统制动词versucht上，被动应用于这个动词，并将宾语转化为主语，这是通过助动词提升的。这就解释了zu reparieren（修理）的隐含宾语与wurde（单数）之间的一致关系。 \citet{Hudson97a}在词语法的框架下提出了德语的动词性补足语的分析，这个分析包括了他所谓的概化提升（generalized raising）的过程。他指出，主语和补足语一起提升到了统制中心语中。请注意，这种包括概化提升的分析可以直接对（i）这类句子进行分析，因为宾语将依存于与主语相同的中心语上，即hat（\textsc{aux}），由此可以放在主语前。
 %Here the object of \emph{zu reparieren}, which is the object of a verb which is embedded two levels deep,
 %agrees with the auxiliaries \emph{wurde} `was' and \emph{wurden} `were'. However, the question how to analyze these remote
 %passives is open in Engel's system anyway and the solution of this problem would probably involve the mechanism
@@ -801,7 +801,7 @@ dg edges
 %     yesterday has self the player injured\\
 %\mytrans{The player injured himself yesterday.}
 \z
-关于Groß \& Osborne对（\ref{ex-gestern-hat-sich-der-spieler-verletzt}）的讨论，请参阅第\pageref{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising}页。
+关于Groß \& Osborne对（\ref{ex-gestern-hat-sich-der-spieler-verletzt}）的讨论，参见第\pageref{fig-gestern-hat-sich-der-spieler-verletzt-dg-rising}页。
 %For a discussion of Groß \& Osborne's account of (\ref{ex-gestern-hat-sich-der-spieler-verletzt}) see page~\pageref{fig-gestern-hat-sich-der-spieler-%verletzt-dg-rising}.
 } 
  \citet{Hudson90a-u}、 \citet[\S~5.3]{Eroms2000a}和 \citet{GO2009a}认为主语依存于助动词，而不是主动词。
@@ -819,7 +819,7 @@ dg edges
 %
 %de Marneffe, M.-C., Manning D. (2008). Stanford typed dependencies manual. Technical report, Stanford University.
 %
-这需要范畴语法（请参阅\ref{Kategorialgrammatik-Komposition}）和HPSG语法\citep{HN94a}中较为普遍的论元转换。更合适的分析是将分词的主语当作助词的主语，如图\vref{fig-passive-subj-raised-dg}所示。\isc{被动|)}\is{passive|)}
+这需要范畴语法（参见\ref{Kategorialgrammatik-Komposition}）和HPSG语法\citep{HN94a}中较为普遍的论元转换。更合适的分析是将分词的主语当作助动词的主语，如图\vref{fig-passive-subj-raised-dg}所示。\isc{被动|)}\is{passive|)}
 %This requires some argument transfer as it is common in \cg (see
 %Section~\ref{Kategorialgrammatik-Komposition}) and%
 %\hpsg \citep{HN94a}. The adapted analysis that
@@ -840,7 +840,7 @@ dg edges
 %    [geschlagen;beaten] ] 
 %  [wird;is]]
 \end{forest}
-\caption{\label{fig-passive-subj-raised-dg}带有主语作为助词从属词的[dass] der Weltmeister geschlagen wird
+\caption{\label{fig-passive-subj-raised-dg}带有主语作为助动词从属词的[dass] der Weltmeister geschlagen wird
 （世界冠军被打了）的分析}
 %\caption{\label{fig-passive-subj-raised-dg}Analysis of [\emph{dass}] \emph{der Weltmeister geschlagen wird}
 %  `that the world champion is (being) beaten' with the subject as dependent of the auxiliary}
@@ -850,9 +850,9 @@ dg edges
 %\section{Verb position}
 
 在许多德语的依存语法的著作中，并没有处理线性顺序问题，而且作者只关注依存关系。动词及其论元之间的依存关系基本上等同于动词位于首位与动词位于末位的句子。如果我们比较图\ref{fig-vl-dg}和图\ref{fig-vi-dg}中给出的例（\mex{1}）的依存图的话，我们会看到只有动词的位置是不同的，但是依存关系就如他们应当的那样是相同的。\footnote{%
- \citet{Eroms2000a}用词性Pro来表示jeder（每人）这类代词。如果词类的信息在选择中发挥了重要的作用，这就使得管辖名词性表达的中心语的所有配价框架的析取的区分是十分必要的，因为他们要么跟带有内部结构的NP，要么跟带有介词的NP相组合。通过对代词赋予范畴N，我们可以避免这个析取的具体化的问题。代词跟名词的区别在于它的价（当名词需要限定词时，它是完全满足的），而不是它的词性。 \citet[\page 259]{EH2003a}使用符号N\_pro来表示代词。如果pro-部分被理解为带有词性的特殊属性对象，这就跟我们上面讲到的内容不一致了：中心语就可以选择N了。如果N\_pro和N被看作是不同的原子符号，问题还是存在的。
+ \citet{Eroms2000a}用词性Pro来表示jeder（每人）这类代词。如果词类的信息在选择中发挥了重要的作用，这就使得管辖名词性表达的中心语的所有配价框架的析取的区分是十分必要的，因为他们要么跟带有内部结构的NP，要么跟带有介词的NP组合。通过对代词赋予范畴N，我们可以避免这个析取的具体化的问题。代词跟名词的区别在于它的价（当名词需要限定词时，它是完全满足的），而不是它的词性。 \citet[\page 259]{EH2003a}使用符号N\_pro来表示代词。如果pro-部分被理解为带有词性的特殊属性对象，这就跟我们上面讲到的内容不一致了：中心语就可以选择N了。如果N\_pro和N被看作是不同的原子符号，问题还是存在的。
 
-使用N而不是Pron作为代词的词性，这在依存语法的其他版本中是标准的表示，例如词语法 (\citealp[\page 167]{Hudson90a-u}；\citealp[\page 190]{Hudson2007a-u})。也请参阅第\pageref{fn-np-pron-ps-rule}页的脚注\ref{fn-np-pron-ps-rule}关于短语结构语法中代词和NP的区别。
+使用N而不是Pron作为代词的词性，这在依存语法的其他版本中是标准的表示，例如词语法 (\citealp[\page 167]{Hudson90a-u}；\citealp[\page 190]{Hudson2007a-u})。也参见第\pageref{fn-np-pron-ps-rule}页的脚注\ref{fn-np-pron-ps-rule}关于短语结构语法中代词和NP的区别。
 }
 %In many Dependency Grammar publications on German, linearization issues are not dealt with and
 %authors just focus on the dependency relations. The dependency relations between a verb
@@ -934,7 +934,7 @@ dg edges
 %\caption{\label{fig-vi-dg}Analysis of \emph{Kennt jeder diesen Mann?} `Does everybody know this
 %    man?'}
 \end{figure}%
-带有论元和附加语的动词的正确语序由线性约束条件来保证，这些条件与各自的空间位置有关。请参阅\ref{sec-dg-linearization}和\ref{sec-linearization-problems-dg}更多有关语序次序化的细节问题。
+带有论元和附加语的动词的正确语序由线性约束条件来保证，这些条件与各自的空间位置有关。参见\ref{sec-dg-linearization}和\ref{sec-linearization-problems-dg}更多有关语序线性化的细节问题。
 %The correct ordering of the verb with respect to its arguments and adjuncts is ensured by
 %linearization constraints that refer to the respective topological fields. See Section~\ref{sec-dg-linearization} and
 %Section~\ref{sec-linearization-problems-dg} for further details on linearization.
@@ -989,7 +989,7 @@ dg edges
 %\section{Long"=distance dependencies}
 \label{sec-nld-dg}
 
-在\isc{长距离依存|(}\is{long"=Distance dependency|(}依存语法中有许多方法来分析非局部依存关系。最简单的方法我们已经在前面的章节中看到了。许多分析只关注依存关系，并且认为位于第二位的动词只是一种可能的语序次序化的方式（\citealp[\S~9.6.2]{Eroms2000a}；\citealp{GO2009a}）。图\vref{fig-diesen-mann-kennt-jeder-dg}展示了针对例（\mex{1}）的分析：
+在\isc{长距离依存|(}\is{long"=Distance dependency|(}依存语法中有许多方法来分析非局部依存关系。最简单的方法我们已经在前面的章节中看到了。许多分析只关注依存关系，并且认为位于第二位的动词只是一种可能的语序线性化的方式（\citealp[\S~9.6.2]{Eroms2000a}；\citealp{GO2009a}）。图\vref{fig-diesen-mann-kennt-jeder-dg}展示了针对例（\mex{1}）的分析：
 %There\is{long"=Distance dependency|(} are several possibilities to analyze nonlocal dependencies in Dependency
 %Grammar. The easiest one is the one we have already seen in the previous sections. Many analyses just focus on the dependency relations
 %and assume that the order with the verb in second position is just one of the possible
@@ -1075,7 +1075,7 @@ dg edges
 %  `Who do you think I saw?'}
 \end{figure}%%
 这张图与我们之前看到的很多图不同，它不具有可投射性\isc{可投射性}\is{projectivity}。这意味着有交叉：对于wen（谁）的V\sub{prt}和N之间的联接与联接glaubst（认为）和du（你）以及他们的范畴符号的连线有交叉。根据设想的依存语法的版本，这可以被看作是一个问题，或者不是。让我们来看一下两个选项：如果图\ref{fig-wen-glaubst-du-dass-dg}中给出的类型的非联系性被允许用在Heringer和Eroms的语法中（\citealp[\page 261]{Heringer96a-u}；\citealp[\S~9.6.2]{Eroms2000a}），\footnote{%
-但是，作者提到了将提取的成分向更高的结点提升的可能性。请参阅 \citew[\page 260]{EH2003a}。
+但是，作者提到了将提取的成分向更高的结点提升的可能性。参见 \citew[\page 260]{EH2003a}。
 }这就需要语法中有一些可以排除那些不合乎语法的非连续体。比如说，图\vref{fig-wen-glaubst-ich-du-dass-dg}中针对例（\mex{1}）的分析就应该被排除。
 %This graph differs from most graphs we have seen before in not being projective\is{projectivity}. This means that
 %there are crossing lines: the connection between V\sub{prt} and the N for \emph{wen} `who' crosses
@@ -1153,7 +1153,7 @@ dg edges
 接下来，我会用 \citet{GO2009a}提出的有关这类分析的例子。Groß \& Osborne用图\vref{fig-wen-glaubst-du-dass-dg-rising}中的虚线描述了重新组织的依存关系。\footnote{%
  \citet[\page 260]{EH2003a}提出了类似的分析，但是没有说明任何形式化的细节。
 }$^,$\footnote{%
-需要注意的是， \citet{GO2009a}并没有针对简单和复杂的动词位于第二位的句子做出一个统一的分析。也就是说，对于可以解释为局部重新排序的情况，他们提出了没有提升的分析。他们对例（\ref{ex-Diesen-Mann-kent-jeder-dg}）的分析如图\ref{fig-diesen-mann-kennt-jeder-dg}所示。这就导致了\ref{sec-linearization-problems-dg}讨论过的问题。
+需要注意的是， \citet{GO2009a}并没有针对简单和复杂的动词位于第二位的句子做出一个统一的分析。也就是说，对于可以解释为局部重新排序的情况，他们提出了没有提升的分析。他们对例（\ref{ex-Diesen-Mann-kent-jeder-dg}）的分析如图\ref{fig-diesen-mann-kennt-jeder-dg}所示。这就导致了\ref{sec-linearization-problems-dg}中讨论过的问题。
 }
 %In what follows, I use the analysis by  \citet{GO2009a} as an example for such analyses. Groß \& Osborne depict the reorganized dependencies with a %dashed line as in
 %Figure~\vref{fig-wen-glaubst-du-dass-dg-rising}.\footnote{%
@@ -1192,15 +1192,15 @@ dg edges
 %\caption{\label{fig-wen-glaubst-du-dass-dg-rising}Projective analysis of \emph{Wen glaubst du, dass
 %    ich gesehen habe?} `Who do you think I saw?' involving rising}
 \end{figure}%%
-依存关系（V\sub{prt}）的源头被标记为一个g和一个从属词，这个从属词通过虚线连接到他上升\isc{上升}\is{rising}（最高的V）的结点上。除了在局部实现gesehen（看见）的宾格从属词之外，关于缺失成分的信息也传递到了更高的结点上并在那里得到实现。
+依存关系的源头（V\sub{prt}）被标记为一个g和一个从属词，这个从属词通过虚线连接到它上升\isc{上升}\is{rising}的结点上（最高的V）。除了在局部实现gesehen（看见）的宾格从属词之外，关于缺失成分的信息也传递到了更高的结点上并在那里得到实现。
 %The origin of the dependency (V\sub{prt}) is marked with a \emph{g} and the dependent is connected
 %to the node to which it has risen\is{rising} (the topmost V) by a dashed line. Instead of realizing the accusative dependent of \emph{gesehen}
 %`seen' locally, information about the missing element is transferred to a higher node and
 %realized there. 
 
- \citet{GO2009a}的分析并不是十分准确。这里有一个$g$和一条虚线，但是句子可能会包括多重非局部的依存关系。比如说，例（\mex{1}）中，在关系小句den wir alle begrüßt haben（我们都打过招呼的那个人）和die noch niemand hier
+ \citet{GO2009a}的分析并不十分准确。这里有一个$g$和一条虚线，但是句子可能会包括多重非局部的依存关系。比如说，例（\mex{1}）中，在关系小句den wir alle begrüßt haben（我们都打过招呼的那个人）和die noch niemand hier
   gesehen hat（还没有人在这见过的那个人）中有一个非局部的依存关系：关系代词在关系小句内被前置。短语dem Mann, den wir alle kennen（我们都认识的那个人）是gegeben（给）的前置的与格宾语，而且die noch niemand hier gesehen
-  hat（还没有人在这见过的那个人）是从Frau （女人）作为中心语的NP中外置而来的。
+  hat（还没有人在这见过的那个人）从Frau （女人）作为中心语的NP中外置而来。
 %The analysis of  \citet{GO2009a} is not very precise. There is a $g$ and there is a dashed line, but
 %sentences may involve multiple nonlocal dependencies. In (\mex{1}) for instance, there is a nonlocal dependency
 %in the relative clauses \emph{den wir alle begrüßt haben} `who we all greeted have' and \emph{die noch niemand hier
@@ -1273,7 +1273,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %\caption{\label{fig-wen-glaubst-du-dass-wg}Projective analysis of \emph{Wen glaubst du, dass
 %    ich gesehen habe?} `Who do you think I saw?' in Word Grammar involving multiple dependencies}
 \end{figure}%
-词上的连线是通常对主语、宾语和其他论元的依存连线（r是“共享成分”（sharer）的缩写，它指动词性补足语，l代表“小句补足语”（clausal complement）），在词下的连线是针对提取成分的连线（x$<$）。从gesehen（看见）连到wen（谁）是特殊的，因为它既是一个宾语连线也是一个提取连线（x$<$o）。这个连线是对图\ref{fig-wen-glaubst-du-dass-dg-rising}中由虚线标记的小$g$和N的明确的说明。除了图\ref{fig-wen-glaubst-du-dass-dg-rising}中的情况，图\ref{fig-wen-glaubst-du-dass-wg}也有一个从dass（\textsc{comp}）到wen（谁）的提取连线。我们可以用Engel、Eroms和Gross \& Osborne的图形表示法来表示词语法的依存关系：我们可以简单地从V$_{prt}$结点和从属词结点上加虚线到统治wen（谁）的N结点。
+词上的连线是通常对主语、宾语和其他论元的依存连线（r是“共享成分”（sharer）的缩写，它指动词性补足语，l代表“小句补足语”（clausal complement）），在词下的连线是针对提取成分的连线（x$<$）。从gesehen（看见）连到wen（谁）是特殊的，因为它既是一个宾语连线也是一个提取连线（x$<$o）。这个连线是对图\ref{fig-wen-glaubst-du-dass-dg-rising}中由虚线标记的小$g$和N的明确的说明。除了图\ref{fig-wen-glaubst-du-dass-dg-rising}中的情况，图\ref{fig-wen-glaubst-du-dass-wg}也有一个从dass（\textsc{comp}）到wen（谁）的提取连线。我们可以用Engel、Eroms和Gross \& Osborne的图形表示法来表示词语法的依存关系：我们可以简单地从V$_{prt}$结点和从属词结点上加虚线到统制wen（谁）的N结点。
 %The links above the words are the usual dependency links for subjects (s) and objects (o) and other
 %arguments (r is an abbreviation for \emph{sharer}, which refers to verbal complements, l stands for
 %\emph{clausal complement}) and the links below the words are links for extractees (x$<$). The link from \emph{gesehen}
@@ -1286,7 +1286,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %lines from the V$_{prt}$ node and from the Subjunction node to the N node dominating \emph{wen}
 %`who'.
 
-尽管这看上去比较简单，但是我想指出的是，词语法还应用了其他原则来满足合乎语法的结构。在下面，我来解释无缠绕原则（No-tangling Principle）、不孤单原则（No-dangling Principle）和句子—根原则（Sentence-root Principle）。
+尽管这看上去比较简单，但是我想指出的是，词语法还应用了其他原则来满足合乎语法的结构。在下面，我来解释无缠绕原则（No-tangling Principle）、不孤单原则（No-dangling Principle）和句子--根原则（Sentence-root Principle）。
 %While this looks simple, I want to add that Word Grammar employs further principles that have to be
 %fulfilled by well"=formed  structures. In the following I explain the \emph{No-tangling Principle},
 %the \emph{No-dangling Principle} and the \emph{Sentence-root Principle}.
@@ -1302,7 +1302,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %Every word must have a parent.
 \end{principle}
 
-\begin{principle}[句子—根原则]
+\begin{principle}[句子--根原则]
 %\begin{principle}[The Sentence-root Principle]
 在每一个非复合句中，只有一个词，它的父结点不是一个词，而是一个上下文的成分。
 %In every non-compound sentence there is just one word whose parent
@@ -1310,7 +1310,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 \end{principle}
 
 \noindent
-非缠绕原则保证了没有交叉的依存线，即它保证了结构是可投射的\citep[\page 23]{Hudson2000a}。因为非局部依存关系是通过具体的依存机制确立的，有人想排除非可投射的分析。这一原则也排除了（\mex{1}b），这里green（绿色）依存于peas（豌豆），但是并不邻接于peas（豌豆）。由于on（\textsc{prep}）选择了peas（豌豆），从on（\textsc{prep}）到peas（豌豆）的箭头就会与从peas（豌豆）到green（绿色）的箭头交叉。
+非缠绕原则保证了没有交叉的依存线，即它保证了结构是可投射的\citep[\page 23]{Hudson2000a}。因为非局部依存关系通过具体的依存机制而确立，有人想排除非可投射的分析。这一原则也排除了（\mex{1}b），这里green（绿色）依存于peas（豌豆），但是并不邻接于peas（豌豆）。由于on（\textsc{prep}）选择了peas（豌豆），从on（\textsc{prep}）到peas（豌豆）的箭头就会与从peas（豌豆）到green（绿色）的箭头交叉。
 %The No-tangling Principle ensures that there are no crossing dependency lines, that is, it ensures
 %that structures are projective \citep[\page 23]{Hudson2000a}. Since non-local dependency relations are established via the
 %specific dependency mechanism, one wants to rule out the non"=projective analysis. This principle
@@ -1328,12 +1328,12 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 他 生存 绿色 \textsc{prep} 豌豆\\
 }
 \zl
-不孤单原则确保了没有单独的词组连接到结构的主要部分上。没有这条规则，（\mex{0}b）就会被分析为孤立的（green（绿色））\citep[\page 23]{Hudson2000a}。
+不孤单原则确保了没有单独的词群连接到结构的主要部分上。没有这条规则的话，（\mex{0}b）就可以按照green（绿色）这个孤立的词来分析 \citep[\page 23]{Hudson2000a}。
 %The No-dangling Principle makes sure that there are no isolated word groups that are not connected to the main part
 %of the structure. Without this principle (\mex{0}b) could be analyzed with the isolated word
 %\emph{green} \citep[\page 23]{Hudson2000a}.
 
-句子—根原则需要用来排除那些不止有一个最高成分的结构。glaubst（认为）是图\ref{fig-wen-glaubst-du-dass-wg}中的根。没有其他词统制并选择了它。这个原则确保了没有其他的根。所以这个原则排除了那些短语中的所有成分都是根的情况，因为如果不这样的话，不孤单原则就会失去效力，因为它会被微不足道地实现\citep[\page 25]{Hudson2000a}。
+句子--根原则需要用来排除那些不止有一个最高成分的结构。glaubst（认为）是图\ref{fig-wen-glaubst-du-dass-wg}中的根。没有其他词统制并选择了它。这个原则确保了没有其他的根。所以这个原则排除了那些短语中的所有成分都是根的情况，因为如果不这样的话，不孤单原则就会失去效力，因为它会被微不足道地实现\citep[\page 25]{Hudson2000a}。
 %The Sentence-root Principle is needed to rule out structures with more than one highest
 %element. \emph{glaubst} `believe' is the root in Figure~\ref{fig-wen-glaubst-du-dass-wg}. There is
 %no other word that dominates it and selects for it. The principle makes sure that there is no other
@@ -1346,7 +1346,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %the three principles do not have to be stipulated. So, for example, \lfg and \hpsg
 %do not need these three principles.
 
-需要注意的是， \citet[\page 16]{Hudson97a}认为\vfc 中的成分被提取出来了，即使是像（\ref{ex-Diesen-Mann-kent-jeder-dg}）这样简单的句子。我将在\ref{sec-linearization-problems-dg}说明为什么我认为这样的分析比那些分析更好，那些分析认为像例（\ref{ex-Diesen-Mann-kent-jeder-dg}）这样的简单句只是对应于动词位于首位或动词位于末位的语序变体。
+需要注意的是， \citet[\page 16]{Hudson97a}认为\vfc 中的成分被提取出来了，即使是像（\ref{ex-Diesen-Mann-kent-jeder-dg}）这样简单的句子。我将在\ref{sec-linearization-problems-dg}中说明为什么我认为这样的分析比那些分析更好，那些分析认为像例（\ref{ex-Diesen-Mann-kent-jeder-dg}）这样的简单句只是对应于动词位于首位或动词位于末位的语序变体。
 %Note that  \citet[\page 16]{Hudson97a} assumes that the element in the \vf is extracted even for simple
 %sentences like (\ref{ex-Diesen-Mann-kent-jeder-dg}). I will show in Section~\ref{sec-linearization-problems-dg} why I think that
 %this analysis has to be preferred over analyses assuming that simple sentences like
@@ -1367,7 +1367,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 \label{sec-tesniere-pos}
 
 正如在导言中提到的，\tes 是依存语法历史上的核心人物，因为他第一次开发了形式化模型\citep{Tesniere59a-u,Tesniere80a-u,Tesniere2015a-not-crossreferenced}。现今有许多依存语法的版本，而且大部分都用其他语言中使用的词类标签（N、P、A、V、Adv、Conj，……）。\tes 的词类系统包括四个主要的范畴：名词、动词、形容词和副词。这些范畴的标签来自于世界语中\il{Esperanto}的词尾，即分别是O、I、A和E。这些范畴按照语义来界定，如表\ref{table-pos-tesniere}所示。\footnote{%
-正如 \citet[\page 77]{Weber97a}指出的，这个范畴不是没有问题的：根据什么说Angst（害怕）是一个实体呢？为什么glauben（认为）是一个具体的过程？也请参阅 \citet[\S~3.4]{Klein71a-u}关于schlagen（击打）和Schlag（击打）以及类似例子的讨论。即使我们认为Schlag是通过转移到范畴O而从\stem{schlag}实际的过程生成的， 这样的O表示实体的假设也是有问题的。
+正如 \citet[\page 77]{Weber97a}指出的，这个范畴不是没有问题的：根据什么说Angst（害怕）是一个实体呢？为什么glauben（认为）是一个具体的过程？也参见 \citet[\S~3.4]{Klein71a-u}关于schlagen（击打）和Schlag（击打）以及类似例子的讨论。即使我们认为Schlag通过转用而从\stem{schlag}的具体过程生成到范畴O，这样的O表示实体的假设也是有问题的。
 }
 %As mentioned in the introduction, \tes is a central figure in the history of Dependency Grammar
 %as it was him who developed the first formal model \citep{Tesniere59a-u,Tesniere80a-u,Tesniere2015a-not-crossreferenced}. There are many versions
@@ -1445,7 +1445,7 @@ Hudson证明了词语法\indexwgc 中多重依存关系的使用对应于HPSG\in
 %% his symbols. However, the grammatical function `adverbial´ is inappropriate for the adjective in (i),
 %% rather it should be called a predicative element.
 %% } 
-而且，这个范畴的集合中没有连词、限定词和介词。对于这些成分与他们的从属词的组合来说，\tes 使用了特殊的组合性关系：联结和转移。我们将在下面介绍这些概念。
+而且，这个范畴的集合中没有连词、限定词和介词。对于这些成分与他们的从属词的组合来说，\tes 使用了特殊的组合性关系：联结和转用。我们将在下面介绍这些概念。
 %Furthermore,
 %conjunctions, determiners, and prepositions are missing from this set of categories. For the
 %combination of these elements with their dependents \tes used special combinatoric relations:
@@ -1506,8 +1506,8 @@ dg edges
 %Both nouns are connected to the dominating verb and both nouns dominate the same determiner.
 
 对并列的另一种分析方法是将连词看作是中心词，并列的成分看作是它的从属词。\footnote{%
-我这里不用\tes 的范畴标签，这样读者就不用将I翻译成V，以及O翻译成N。}
-这个方法的唯一问题是连词的范畴。它不能是Conj，因为支配动词不选择Conj，而是N。这里可以使用的方法基本上与范畴语法中使用的是一样的（请参阅\ref{sec-coordination-cg}）：范畴语法中连词的范畴是（X\bs X）/X。我们有一个函数，它带有同样范畴的两个论元，这个组合的结果是一个跟这两个论元具有相同范畴的对象。要把这个方法翻译到依存语法中，我们就会得到图\vref{fig-dg-coordination-with-conjunction-as-head}中描述的分析，而不是图\ref{fig-dg-junction}和图\ref{fig-dg-junction-all-girls-and-boys}中的分析。
+我这里不用\tes 的范畴标签，这样读者就不用将I翻译成V、O翻译成N了。}
+这个方法的唯一问题是连词的范畴。它不能是Conj，因为支配动词不选择Conj，而是N。这里可以使用的方法基本上与范畴语法中使用的是一样的（参见\ref{sec-coordination-cg}）：范畴语法中连词的范畴是（X\bs X）/X。我们有一个函数，它带有同样范畴的两个论元，这个组合的结果是一个跟这两个论元具有相同范畴的对象。要把这个方法翻译到依存语法中，我们就会得到图\vref{fig-dg-coordination-with-conjunction-as-head}中描述的分析，而不是图\ref{fig-dg-junction}和图\ref{fig-dg-junction-all-girls-and-boys}中的分析。
 %An alternative to such a special treatment of coordination would be to treat the conjunction as the
 %head and the conjuncts as its dependents.\footnote{%
 %I did not use \tes's category labels here to spare the
@@ -1559,8 +1559,8 @@ dg edges
 %have the category (NP\bs Det) in an analysis in which the noun is the head and the determiner is the
 %dependent.
 
-需要注意的是，这两种方法都需要给主语—动词的一致关系提供解释\isc{主谓一致}\is{agreement}。\tes 最开始的分析假定了动词和连词之间有两种依存关系。\footnote{%
- \citet[\page 467]{Eroms2000a}指出了这个一致性问题，并描述了事实。在他的分析中，他将第一个连词连接到统治中心语上，尽管看起来更合适的做法应该是假定一个内在构造的并列结构，然后连接到更高层的连词上。
+需要注意的是，这两种方法都需要给主语--动词的一致关系提供解释\isc{主谓一致}\is{agreement}。\tes 最开始的分析假定了动词和连词之间有两种依存关系。\footnote{%
+ \citet[\page 467]{Eroms2000a}指出了这个一致性问题，并描述了事实。在他的分析中，他将第一个连词连接到统制中心语上，尽管看起来更合适的做法应该是假定一个内在构造的并列结构，然后连接到更高层的连词上。
 }因为连词是单数的，动词是复数的，在这个方法中根据依存关系得到的模型无法模拟一致关系。
 %Note that both approaches have to come up with an explanation of subject--verb agreement\is{agreement}. \tes's
 %original analysis assumes two dependencies between the verb and the individual conjuncts.\footnote{%
@@ -1575,8 +1575,8 @@ dg edges
 %If the second analysis finds ways of specifying the agreement properties
 %of the coordination in the conjunction, the agreement facts can be accounted for without problems.
 
-与图\ref{fig-dg-coordination-with-conjunction-as-head}中描述的中心语方法相比的另一种方法是没有中心语的。在基于短语结构的框架下分析的几篇文章提出了没有中心语的并列结构的分析。这类分析也在依存语法中被提及\citep{Hudson88a,Kahane97a}。 \citet{Hudson88a}和其他作出了相似假设的学者提出了一个针对并列的短语结构成分：
-两个名词和连词被组合在一起构成一个更大的对象，它具有与任何一个组合词语不相对应的属性。
+与图\ref{fig-dg-coordination-with-conjunction-as-head}中描述的中心语方法相比的另一种方法没有中心语。在基于短语结构的框架下分析的几篇文章提出了没有中心语的并列结构的分析。这类分析也在依存语法中被提及\citep{Hudson88a,Kahane97a}。 \citet{Hudson88a}和其他作出了相似假设的学者提出了一个针对并列的短语结构成分：
+两个名词和连词被组合在一起构成一个更大的对象，它具有与任何一个组合的词语不对应的属性。
 %The alternative to a headed approach as depicted in Figure~\ref{fig-dg-coordination-with-conjunction-as-head} is an unheaded one. Several authors
 %working in phrase structure"=based frameworks suggested analyses of coordination without a
 %head. Such analyses are also assumed in Dependency Grammar
@@ -1678,7 +1678,7 @@ dg edges
 %\caption{\label{fig-dg-adjunct-attachment-right}Analysis of verb coordination involving the connection relation}
 \end{figure}%
 
- \citet[\page 217]{Levine2003a}讨论了这些句子，他们跟 \citet*{BMS2001a}提出的\hpsgc 式的提取\isc{提取}\is{extraction}分析有关。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入的想法。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确的语义组成成分的方式，即使句法并不对应于语义依存关系（请参阅\citealp{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义是更简单的。
+ \citet[\page 217]{Levine2003a}讨论了这些句子，他们跟 \citet*{BMS2001a}提出的\hpsgc 式的提取\isc{提取}\is{extraction}分析有关。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入的想法。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确的语义组成成分的方式，即使句法并不对应于语义依存关系（参见\citet{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义更简单。
 % \citet[\page 217]{Levine2003a} discusses these sentences in connection to the \hpsg analysis of
 %extraction\is{extraction} by  \citet*{BMS2001a}. Bouma, Malouf \& Sag suggest an analysis in which adjuncts are
 %introduced lexically as dependents of a certain head. Since adjuncts are introduced lexically, the
@@ -1716,7 +1716,7 @@ dg edges
 %          [das\\das]
        [Liebe (O)\\爱\hspaceThis{(O)}
 %            [Liebe (O)\\love\hspaceThis{(O)}
-         [der\\\textsc{det}]]] ] ] 
+         [der\\\textsc{art}.\textsc{def}]]] ] ] 
 %              [der\\the]]] ] ]
 \end{forest}
 %% \begin{forest}
@@ -1729,7 +1729,7 @@ dg edges
 %\caption{\label{fig-transfer-in-das-traumboot}Transfer with an example adapted from
 %   \citew[\page 83]{Weber97a}}
 \end{figure}%
-介词in引发了范畴的变化：由于Traumboot（梦船）是一个O（名词），介词与名词的组合是一个E。这个例子说明了\tes 使用了语法范畴来对语法功能进行编码。在HPSG这样的理论中，有一个清晰的区别：一方面，这里有关词性的信息，另一方面，也有作为修饰语和谓语的成分的函项。修饰语函项被编码为修饰性特征\textsc{mod}，它是独立于词性的。由此，这就可以有修饰性和非修饰性的形容词、修饰性和非修饰性的介词短语，以及修饰性和非修饰性的名词短语等。对于手边的例子，我们可以假设一个带有方向性语义的介词选择了NP。介词是带有填充了\modvc 的PP的中心语。
+介词in引发了范畴的变化：由于Traumboot（梦船）是一个O（名词），介词与名词的组合是一个E。这个例子说明了\tes 使用了语法范畴来对语法功能进行编码。在HPSG这样的理论中，有一个清晰的区别：一方面，这里有词性的信息，另一方面，也有作为修饰语和谓语的成分的函项。修饰语函项被编码为修饰性特征\textsc{mod}，它独立于词性。由此，这就可以有修饰性和非修饰性的形容词、修饰性和非修饰性的介词短语，以及修饰性和非修饰性的名词短语等。对于手边的例子，我们可以假设一个带有方向性语义的介词选择了NP。介词是带有填充了\modvc 的PP的中心语。
 %The preposition \emph{in} causes a category change: while \emph{Traumboot} `dream boat' is an O (noun), the
 %combination of the preposition and the noun is an E. The example shows that \tes used the
 %grammatical category to encode grammatical functions. In theories like HPSG there is a clear
@@ -1740,7 +1740,7 @@ dg edges
 %non-modifying noun phrases and so on. For the example at hand, one would assume a preposition with
 %directional semantics that selects for an NP. The preposition is the head of a PP with a filled \modv.
 
-使用转用的另一个方面是形态学。比如说，法语\il{French}frappant（惊人的）的派生是通过词根frapp加上后缀\suffix{ant}构成的，如图\vref{fig-transfer-frappant}所示。
+使用转用的另一个方面是形态学。比如说，法语\il{French}frappant（惊人的）的派生通过词根frapp加上后缀\suffix{ant}构成，如图\vref{fig-transfer-frappant}所示。
 %Another area in which transfer is used is morphology. For instance, the derivation of French\il{French}
 %\emph{frappant} `striking' by suffixation of \suffix{ant} to the verb stem \emph{frapp} is shown in
 %Figure~\vref{fig-transfer-frappant}.
@@ -1764,7 +1764,7 @@ dg edges
 %\caption{\label{fig-transfer-frappant}Transfer in morphology and its reconceptualization as
 %  normal dependency}
 \end{figure}%
-这类转用可以被看作是普通连接关系，如果词缀被看作是中心语的话。在实现形态学和构式形态学领域的形态学家反对这类基于语素的分析，因为他们在会话中包括了很多空成分，如动词play到名词play的转化（请参阅图\vref{fig-transfer-play}）。
+这类转用可以被看作是普通连接关系，如果词缀被看作是中心语的话。在实现形态学和构式形态学领域的形态学家反对这类基于语素的分析，因为他们在会话中包括了很多空成分，如动词play到名词play的转化（参见图\vref{fig-transfer-play}）。
 %Such transfers can be subsumed under the general connection relation if the affix is treated as
 %the head. Morphologists working in realizational morphology and construction morphology argue
 %against such morpheme"=based analyses since they involve a lot of empty elements for conversions as
@@ -1784,11 +1784,11 @@ dg edges
         [\trace] ]
     \end{forest}
 \hfill\mbox{}
-\caption{\label{fig-transfer-play}作为从I（动词）到O（实体）的转用和范畴N作为中心语的空成分的依存关系的转移}
+\caption{\label{fig-transfer-play}作为从I（动词）到O（实体）的转化和范畴N作为中心语的空成分的依存关系的转移}
 %\caption{\label{fig-transfer-play}Conversion as transfer from I (verb) to O (substantive)
 %  and as dependency with an empty element of the category N as head}
 \end{figure}%
-由此，词汇规则被用来表示HPSG这类理论中的派生与对话。HPSG的词汇规则基本上等同于一元分支规则（请参阅第\pageref{passiv-lr-mit-dtr}页有关\ref{passiv-lr-mit-dtr}的讨论和第\ref{Abschnitt-leere-Elemente-LRs-Transformations}节）。词缀整合进词汇规则或者整合进区分项的形态形式的功能实现都是由词汇规则允准的。
+由此，词汇规则被用来表示HPSG这类理论中的派生与转化。HPSG的词汇规则基本上等同于一元分支规则（参见第\pageref{passiv-lr-mit-dtr}页的有关（\ref{passiv-lr-mit-dtr}）的讨论和\ref{Abschnitt-leere-Elemente-LRs-Transformations}）。词缀整合进词汇规则或者整合进区分项的形态形式的功能实现都是由词汇规则允准的。
 %Consequently, lexical rules are assumed for derivations and conversions in theories like HPSG. HPSG lexical rules are basically equivalent to
 %unary branching rules (see the discussion of (\ref{passiv-lr-mit-dtr}) on
 %page~\pageref{passiv-lr-mit-dtr} and
@@ -1798,8 +1798,8 @@ dg edges
 总结一下，这里所说的转用是指
 %Concluding it can be said that transfer corresponds to 
 \begin{itemize}
-\item 如果一个词或者短语与另一个词相组合，那么就应用二叉的短语结构规则，
-\item 如果一个短语没有通过任意一个额外的成分而转换到另一个范畴中，那么就应用一元的短语结构规则或者带有空中心语的二叉的短语结构规则，或者
+\item 如果一个词或者短语与另一个词组合，那么就应用二叉的短语结构规则，
+\item 如果一个短语没有通过任意一个额外的成分而转化到另一个范畴中，那么就应用一元的短语结构规则或者带有空中心语的二叉的短语结构规则，或者
 \item 如果一个词或词根匹配到一个词或者词根上，那么就应用一个（一元）的词汇规则。
 %\item binary"=branching phrase structure rules,
 %if a word or phrase is combined with another word, 
@@ -1807,8 +1807,8 @@ dg edges
 %  a phrase is converted to another category without any additional element present or
 %\item a (unary) lexical rule if a word or stem is mapped to a word or a stem.
 \end{itemize}
-关于\tes 的转用规则和短语成分规则的关系的进一步讨论请参阅 \citet[\S~4.9.1--4.9.2]{KO2015a}。Kahane
-\& Osborne指出，转用规则可以用来模拟离心结构，即那些没有中心语的结构。更多有关无中心语的构式内容请参阅\ref{sec-headless-constructions-dg}。
+关于\tes 的转用规则和短语成分规则的关系的进一步讨论参见 \citet[\S~4.9.1--4.9.2]{KO2015a}。Kahane
+\& Osborne指出，转用规则可以用来模拟离心结构，即那些没有中心语的结构。更多有关无中心语的构式内容参见\ref{sec-headless-constructions-dg}。
 %For further discussion of the relation between \tes's transfer rules and constituency rules see
 % \citew[Section~4.9.1--4.9.2]{KO2015a}. Osborne \& Kahane point out that transfer rules can be used
 %to model exocentric constructions, that is, constructions in which there is no single part that
@@ -1855,7 +1855,7 @@ word tier
 %\caption{\label{fig-tesniere-scope}\tes's way of representing scope and the comparison with phrase structure"=based analyses by  \citet[\page lix]%{KO2015a}}
 \end{figure}%
 %<HERE>
-在red和cars之间的组合B对应于右手边图中的B结点，而且red cars和that you saw yesterday的组合A对应于A结点。所以说，在短语结构语法中被清晰表示并指派了名称的对象在\tes 的分析中是没有名字的，但是由于测谎仪的假说，它可以指向这些组合。\isc{测谎仪}\is{polygraph}也请参阅图\ref{fig-small-children-are-playing-outside}的讨论，它显示出了Hudson为了模拟语义关系而提出的额外结点。
+在red和cars之间的组合B对应于右手边图中的B结点，而且red cars和that you saw yesterday的组合A对应于A结点。所以说，在短语结构语法中被清晰表示并指派了名称的对象在\tes 的分析中没有名字，但是由于多图假说，它可以指向这些组合。\isc{多图|)}\is{polygraph|)}也参见图\ref{fig-small-children-are-playing-outside}的讨论，它显示出了Hudson为了模拟语义关系而提出的额外结点。
 %The combination B between \emph{red} and \emph{cars} corresponds to the B node in the right-hand figure and the
 %combination A of \emph{red cars} and \emph{that you saw yesterday} corresponds to the A node. So,
 %what is made explicit and is assigned a name in phrase structure grammars remains nameless in \tes's
@@ -1894,7 +1894,7 @@ word tier
 %
 % Es muss einen Valenzträger geben.
 
-依存语法的支持者们强调的一点是依存语法比短语结构语法简单多了，因为它们有更少的结点，而且一般的概念更容易被捕捉到（比如说\citealp[\S~3.2, \S~7]{Osborne2014a-u}）。这是事实：依存语法适用于导论课程中语法的讲解。但是，正如 \citet[\page 285]{SR2012a}在一篇具有普般性的讨论中所指出的，简单句法的代价是复杂语义及其他成分的缺失。所以说，除了依存句法中描述的依存结构，人们还需要其他层面的信息。一个层面就是语义层，另一个是线性顺序。考虑到线性顺序，依存语法有两个选项：假设连续的成分，即可投射结构或者允许非连续成分。这些选项将在后面的章节中讨论。\ref{sec-dependency-vs-constituency}比较了依存语法和短语结构语法。它也指出了非可投射结构可以在HPSG这类理论中被模拟。语义的整合在\ref{sec-dg-daughters-mothers}进行了讨论，而且逐渐清楚的是，一旦考虑到其他层面，依存语法就不一定比短语结构语法简单了。
+依存语法的支持者们强调的一点是依存语法比短语结构语法简单多了，因为它们有更少的结点，而且一般的概念更容易被捕捉到（比如说\citet[\S~3.2, \S~7]{Osborne2014a-u}）。这是事实：依存语法适用于导论课程中语法的讲解。但是，正如 \citet[\page 285]{SR2012a}在一篇相当具有普遍性的讨论中所指出的，简单句法的代价是复杂语义及其他成分的缺失。所以说，除了依存句法中描述的依存结构，人们还需要其他层面的信息。一个层面就是语义层，另一个是线性顺序。考虑到线性顺序，依存语法有两个选项：假设连续的成分，即可投射结构或者允许非连续成分。这些选项将在后面的章节中讨论。\ref{sec-dependency-vs-constituency}比较了依存语法和短语结构语法。它也指出了非可投射结构可以在HPSG这类理论中被模拟。语义的整合在\ref{sec-dg-daughters-mothers}中进行了讨论，而且逐渐清楚的是，一旦考虑到其他层面，依存语法就不一定比短语结构语法简单了。
 %Proponents of Dependency Grammar emphasize the point that Dependency Grammar is much simpler than
 %phrase structure grammars, since there are fewer nodes and the general concept is more easy to
 %grasp (see for instance \citealp[Section~3.2, Section~7]{Osborne2014a-u}). This is indeed true: Dependency Grammar is well-suited for teaching %grammar in
@@ -1910,12 +1910,12 @@ word tier
 %The integration of semantics is discussed in Section~\ref{sec-dg-daughters-mothers} and it will become clear that once other
 %levels are taken into account, Dependency Grammars are not necessarily simpler than phrase structure grammars.
 
-\subsection{次序化}
+\subsection{线性化}
 %\subsection{Linearization}
 \label{sec-linearization-problems-dg}
 \label{sec-dg-multiple-frontings}
 
-我们在这一章看到了许多次序化的方法。许多人只提出了依存图和根据拓扑模型建立的一些次序化方法。正如在\ref{sec-nld-dg}所讨论的，允许中心语及其从属语的非连续排列好像打开了潘多拉的盒子。我已经讨论了 \citet{Kunze68a-u}、 \citet{Hudson97a,Hudson2000a}、 \citet*{KNR98a}和 \citet{GO2009a}提出的非局部依存的分析。
+我们在这一章看到了许多线性化的方法。许多人只提出了依存图和根据拓扑模型建立的一些线性化方法。正如在\ref{sec-nld-dg}所讨论的，允许中心语及其从属语的非连续排列好像打开了潘多拉的盒子。我已经讨论了 \citet{Kunze68a-u}、 \citet{Hudson97a,Hudson2000a}、 \citet*{KNR98a}和 \citet{GO2009a}提出的非局部依存的分析。
 %We have seen several approaches to linearization in this chapter. Many just assume a dependency
 %graph and some linearization according to the topological fields model. As has been argued in
 %Section~\ref{sec-nld-dg}, allowing discontinuous serialization of a head and its dependents opens up
@@ -1950,7 +1950,7 @@ word tier
 %     that he the book often not reads\\
 %\mytrans{It is often that he does not read the book.}
 \zl
-这三个例子的情况是，只有（\mex{0}a）是有歧义的。即使（\mex{0}c）具有相同的语序，只要考虑到oft（经常）和nicht（不），这个句子就不是歧义的。所以，附加语的前置是歧义的原因。（\mex{0}a）的依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg}所示。
+这三个例子的情况是，只有（\mex{0}a）有歧义。即使（\mex{0}c）具有相同的语序，只要考虑到oft（经常）和nicht（不），这个句子就不是歧义的。所以，附加语的前置是歧义的原因。（\mex{0}a）的依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg}所示。
 %The point about the three examples is that only (\mex{0}a) is ambiguous. Even though (\mex{0}c) has
 %the same order as far as \emph{oft} `often' and \emph{nicht} `not' are concerned, the sentence is
 %not ambiguous. So it is the fronting of an adjunct that is the reason for the ambiguity. The
@@ -1972,17 +1972,17 @@ dg edges
 %\caption{\label{fig-oft-liest-er-das-buch-nicht-dg}Dependency graph for \emph{Oft liest er das Buch
 %    nicht.} `He does not read the book often.'}
 \end{figure}%
-当然，（\mex{0}b）和（\mex{0}c）的依存关系不是不同的。图是相同的，只有语序序列是不同的。所以说，辖域的不同不能从依存关系中推导出来，而且像（\mex{1}）的复杂声明是必要的：
+当然，（\mex{0}b）和（\mex{0}c）的依存关系并非不同。图相同，只有语序序列不同。所以说，辖域的不同不能从依存关系中推导出来，而且像（\mex{1}）的复杂声明是必要的：
 %Of course the dependencies for (\mex{0}b) and (\mex{0}c) do not differ. The graphs would be the
 %same, only differing in serialization. Therefore, differences in scope could not be derived from the
 %dependencies and complicated statements like (\mex{1}) would be necessary:
 \ea
-如果从属语在\vfc 中次序化了，它可以跨域，而且位于它所从属的中心语的所有其他附加语下面。
+如果从属语在\vfc 中线性化了，它可以跨域，而且位于它所从属的中心语的所有其他附加语下面。
 %If a dependent is linearized in the \vf it can both scope over and under all other adjuncts of the
 %head it is a dependent of.
 \z
  \citet[\page 320]{Eroms85a}提出了否定的分析，其中否定被当作中心语来处理；也就是说，例（\mex{1}）中的句子具有图\vref{dg-adv-head}中的结构。\footnote{%
-但是请参阅 \citew[\S~11.2.3]{Eroms2000a}。
+但是参见 \citew[\S~11.2.3]{Eroms2000a}。
 }
 % \citet[\page 320]{Eroms85a} proposes an analysis of negation in which the negation is treated as the head;
 %that is, the sentence in (\mex{1}) has the structure in Figure~\vref{dg-adv-head}.\footnote{%
@@ -2012,7 +2012,7 @@ dg edges
 %The necessary separation between the syntactic dependencies and the linear order is extensively discussed in the beginning of TEsnière's book.
 
 这个分析对应于最简方案\indexmpc 中的NegP\isc{范畴!功能范畴!Neg}\is{category!functional!Neg}，而且它有相同的问题：整个宾语的范畴是Adv，但是它应该是V。这是一个问题，因为更高层的谓词可以选择V，而不是Adv。\footnote{%
-请参阅下面（\ref{ex-dass-er-nicht-singen-darf}）中嵌套句的分析。
+参见下面（\ref{ex-dass-er-nicht-singen-darf}）中嵌套句的分析。
 }
 %This analysis is equivalent to analyses in the Minimalist Program\indexmp assuming a NegP\is{category!functional!Neg} and it
 %has the same problem: the category of the whole object is Adv, but it should be V. This is a problem
@@ -2071,10 +2071,10 @@ dg edges
       [darf;允许]]]]
 \draw (v.south)--(n.north);
 \end{forest}
-\caption{\label{dg-nicht-singen-darf}否定作为中心语的假说所得到结果的分析}
+\caption{\label{dg-nicht-singen-darf}否定作为中心语的假说所得到的分析}
 %\caption{\label{dg-nicht-singen-darf}Analysis that results if one assumes the negation to be a head}
 \end{figure}%
-Eroms还提出了一个分析，其中否定是一个词的一部分（``Wortteiläquivalent''）。但是，这里没有任何用处，因为首先否定和动词在（\ref{ex-oft-liest-er-das-buch-nicht}）中的动词二位的语境中是不相邻的，而且即使在（\ref{ex-dass-er-nicht-singen-darf}）中的动词末位的语境中也是不相邻的。Eroms不得不假设，依附到否定的宾语是整个动词的复杂形式singen darf（唱歌允许），即包括两个词的复杂宾语。
+Eroms还提出了一个分析，其中否定是一个词的一部分（Wortteiläquivalent）。但是，这里没有任何用处，因为首先否定和动词在（\ref{ex-oft-liest-er-das-buch-nicht}）中的动词二位的语境中是不相邻的，而且即使在（\ref{ex-dass-er-nicht-singen-darf}）中的动词末位的语境中也是不相邻的。Eroms不得不假设，依附到否定的宾语是整个动词的复杂形式singen darf（唱歌允许），即包括两个词的复杂宾语。
 %Eroms also considers an analysis in which the negation is a word part (`Wortteiläquivalent'). This
 %does, however, not help here since first the negation and the verb are not adjacent in V2 contexts like
 %(\ref{ex-oft-liest-er-das-buch-nicht}) and even in verb"=final contexts like
@@ -2089,7 +2089,7 @@ Eroms还提出了一个分析，其中否定是一个词的一部分（``Worttei
 %linearizations simply as alternative orderings.
 % Eroms 2000: 159 nicht is an adjunct, später dann Ergänzungskanten
 
-Thomas Groß（p.\,c.\ 2013）提出了一个分析，其中oft并不依存于动词，而是依存于否定。这对应于短语结构方法中的成分否定。依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg-constituent-negation}的左手边所示。
+Thomas Groß（个人交流 \, 2013）提出了一个分析，其中oft并不依存于动词，而是依存于否定。这对应于短语结构方法中的成分否定。依存图如图\vref{fig-oft-liest-er-das-buch-nicht-dg-constituent-negation}的左手边所示。
 %Thomas Groß (p.\,c.\ 2013) suggested an analysis in which \emph{oft} does not depend on the verb but
 %on the negation. This corresponds to constituent negation in phrase structure approaches. The
 %dependency graph is shown on the left-hand side in Figure~\vref{fig-oft-liest-er-das-buch-nicht-dg-constituent-negation}.
@@ -2124,7 +2124,7 @@ dg edges
 %\caption{\label{fig-oft-liest-er-das-buch-nicht-dg-constituent-negation}Dependency graph for \emph{Oft liest er das Buch
 %    nicht.} `He does not read the book often.' according to Groß and verb-final variant}
 \end{figure}%
-右手边的图显示了相应的动词末位句子的图。对应于成分否定的解读可以通过对比的表述进行说明。但是在（\mex{1}a）中，只有oft（经常）是被否定的，oft gelesen（经常读）是在（\mex{1}b）的否定辖域中。
+右手边的图显示了相应的动词末位句子的图。对应于成分否定的解读可以通过对比的表述进行说明。但是在（\mex{1}a）中，只有oft（经常）被否定，oft gelesen（经常读）位于（\mex{1}b）的否定辖域中。
 %The figure on the right-hand side shows the graph for the corresponding verb-final sentence. The
 %reading corresponding to constituent negation can be illustrated with contrastive
 %expressions. While in (\mex{1}a) it is only \emph{oft} `often' which is negated, it is \emph{oft
@@ -2228,8 +2228,8 @@ dg edges
 \end{figure}%
 
 这类明显的多重前置\isc{前置!显性多重前置}\is{fronting!apparent multiple}并不局限于NP。从属词的不同类型可以在\vfc 中被替换。针对数据的进一步讨论可以参考 \citew{Mueller2003b}。还有“多重前置和信息结构”这个研究项目收集了很多其他的数据\citep{Bildhauer2011a}。任何单独基于依存关系的理论以及不允许空成分的理论被迫放弃了动词二位（动词位于第二位）的语言分析中较为常见的限制。相较而言，像\gbc 的分析和那些假定空的动词中心语的\hpsgc
-变体可以假设，这一动词中心语的一个投射占据了\vfc 的位置。这就解释了为什么\vfc 中的材料看上去像包括一个可见动词的动词性中心语：这个“前场”（Vorfelds）内部有结构区分。它们可以有一个填充的“后场”，还有一个填充到句子右边界的助词。更多的数据、讨论和分析请参阅 \citew{Mueller2005d,MuellerGS}。在Gross \& Osborne的框架\citeyearpar{GO2009a}中的同等的分析可以是图\vref{fig-dem-saft-eine-kraeftige-farbe-empty-dg}中所示的图，但是需要注意的是 \citet[\page 73]{GO2009a}明确地反对空成分，而且在任何情况下就为了处理多重前置而提出一个空成分是十分奇怪的。\footnote{%
-我在允许非连续成分的基于次序化的HPSG变体中提出了这样一个空成分\citep{Mueller2002c}，但是后来进行了修改，这样只有连续成分是被允准的，动词位置被处理为中心语移位，以及动词移位分析中使用的包括相同空的动词中心语的多重前置\citep{Mueller2005d,MuellerGS}。
+变体可以假设，这一动词中心语的一个投射占据了\vfc 的位置。这就解释了为什么\vfc 中的材料看上去像包括一个可见动词的动词性中心语：这个“前场”（Vorfelds）内部有结构区分。它们可以有一个填充的“后场”，还有一个填充到句子右边界的助词。更多的数据、讨论和分析参见 \citew{Mueller2005d,MuellerGS}。在Gross \& Osborne的框架\citeyearpar{GO2009a}中的同等的分析可以是图\vref{fig-dem-saft-eine-kraeftige-farbe-empty-dg}中所示的图，但是需要注意的是， \citet[\page 73]{GO2009a}明确地反对空成分，而且在任何情况下就为了处理多重前置而提出一个空成分是十分奇怪的。\footnote{%
+我在允许非连续成分的基于线性化的HPSG变体中提出了这样一个空成分\citep{Mueller2002c}，但是后来进行了修改，这样只有连续成分被允准，动词位置被处理为中心语移位，以及动词移位分析中使用的包括相同的空动词性中心语的多重前置\citep{Mueller2005d,MuellerGS}。
 }
 %Such apparent multiple frontings\is{fronting!apparent multiple} are not restricted to NPs. Various types of dependents can be
 %placed in the \vf. An extensive discussion of the data is provided in  \citew{Mueller2003b}. Additional data
@@ -2288,7 +2288,7 @@ dg edges
 %\mytrans{However, the Kendoka do not intend to target the senior citizens sector with their member recruitment strategy.}%
 \label{bsp-gezielt-mitglieder}
 \footnotetext{%
-        《日报》（taz）, \zhdate{1999/07/07}，第18页。摘自 \citew{Mueller2002c}。
+        《日报》（\emph{taz}）, \zhdate{1999/07/07}，第18页。摘自 \citew{Mueller2002c}。
 %        taz, 07.07.1999, p.\,18. Quoted from  \citew{Mueller2002c}.
       }
 \ex 
@@ -2317,7 +2317,7 @@ dg edges
 %If such dependencies are permitted it is really difficult to constrain them. The details cannot be
 %discussed here, but the reader is referred to  \citew{Mueller2005d,MuellerGS}.
 
-还需要指出的是，Engel有关德语句子的线性序列的说明\citeyearpar[\page 50]{Engel2014a}，即指向定式动词前的一个成分（请参阅脚注\ref{fn-Engel-linearization}）是十分不准确的。我们只能猜测词element想要表达什么意思。一个解释是它是基于成分语法的经典论断的连续成分。另一种解释是，一个中心语和一些从属语（没有必要是所有它的从属语）的连续实现。这一解释可以允许图\vref{fig-ein-junger-Kerl-stand-da}中描述的例（\mex{1}）的非连续成分的外置\isc{外置}\is{extraposition}分析。
+还需要指出的是，Engel\citeyearpar[\page 50]{Engel2014a}有关德语句子的线性序列的说明，即指向定式动词前的一个成分（参见脚注\ref{fn-Engel-linearization}）十分不准确。我们只能猜测词element想要表达什么意思。一个解释是它是基于成分语法的经典论断的连续成分。另一种解释是，一个中心语和一些从属语（没有必要是所有它的从属语）的连续实现。这一解释可以允许图\vref{fig-ein-junger-Kerl-stand-da}中描述的例（\mex{1}）的非连续成分的外置\isc{外置}\is{extraposition}分析。
 %Note also that Engel's statement regarding the linear order in German sentences \citeyearpar[\page
  % 50]{Engel2014a} referring to one element in front of the finite verb (see footnote~\ref{fn-Engel-linearization}) is very imprecise. One can only guess %what is
 %intended by the word \emph{element}. One interpretation is that it is a continuous constituent in the classical sense of
@@ -2331,8 +2331,7 @@ dg edges
 %     a young guy stood there with long blond hair that his face framed\\
 %\mytrans{A young guy was standing there with long blond hair that framed his face} 
 \footnotetext{%
-	Charles Bukowski, \emph{Der Mann mit der Ledertasche}（《带皮包的男人》）。
-      慕尼黑：德国平装书出版社，1994年，第201页，由Hans Hermann翻译。
+	查尔斯 $\cdot$ 布考斯基（Charles Bukowski），《带皮包的男人》（\emph{Der Mann mit der Ledertasche}），慕尼黑：德国平装书出版社，1994年，第201页，由Hans Hermann翻译。
 %	Charles Bukowski, \emph{Der Mann mit der Ledertasche}.
 %        München: Deutscher Taschenbuch Verlag, 1994, p.\,201,
 %	translation by Hans Hermann.
@@ -2367,7 +2366,7 @@ dg edges
 %continuously.
 %% \todostefan{S: see also  \citew{GK2001a},  \citew{DD2001a-u}}\todostefan{DH: Word Grammar
 %%   has both extraction and extraposition}
- \citet{KP95a}在\hpsgc 的框架下展开了外置的分析。也请参阅 \citew[Section~13.3]{Mueller99a}。我在下一节将讨论HPSG中这种次序化分析的基本机制。\LATER{Add a note on the right roof
+ \citet{KP95a}在\hpsgc 的框架下展开了外置的分析。也参见 \citew[\S~13.3]{Mueller99a}。我在下一节将讨论HPSG中这种线性化分析的基本机制。\LATER{Add a note on the right roof
   constraint and multiple extrapositions/or extrapositions from embedded clauses in the vorfeld}
 % \citet{KP95a} developed such an analysis of extraposition in the framework of
 %\hpsg. See also  \citew[Section~13.3]{Mueller99a}. I discuss the basic mechanisms for such
@@ -2379,7 +2378,7 @@ dg edges
 \label{sec-dependency-vs-constituency}
 % Agel/Fischer 2010: 284 Nachteil PSG: Kopf muss ausgezeichnet werden.
 
-本章探讨依存语法和短语结构语法之间的关系。我首先指出，可投射的依存语法可以译成短语结构语法（\ref{sec-dg-psg-translation}）。然后，我将讨论带有非可投射的依存语法，并且说明他们是如何在基于次序化的HPSG理论中来表示的（\ref{sec-discontinuous-constituents-HPSG}）。\ref{sec-dg-daughters-mothers}讨论了基于短语结构的理论中提出的额外结点，而且\ref{sec-headless-constructions-dg}讨论了无中心语的结构，这对于所有的依存语法都是一个问题。
+本章探讨依存语法和短语结构语法之间的关系。我首先指出，可投射的依存语法可以译成短语结构语法（\ref{sec-dg-psg-translation}）。然后，我将讨论带有非可投射的依存语法，并且说明他们是如何在基于线性化的HPSG理论中来表示的（\ref{sec-discontinuous-constituents-HPSG}）。\ref{sec-dg-daughters-mothers}讨论了基于短语结构的理论中提出的额外结点，而且\ref{sec-headless-constructions-dg}讨论了无中心语的结构，这对于所有的依存语法都是一个问题。
 %This section deals with the relation between Dependency Grammars and phrase structure grammars. I
 %first show that projective Dependency Grammars can be translated into phrase structure grammars
 %(Section~\ref{sec-dg-psg-translation}).
@@ -2393,7 +2392,7 @@ dg edges
 
 \label{sec-dg-psg-translation}
 
-正如 \citet{Gaifman65a}、 \citet[\page 234]{Covington90a}、 \citet{Oliva2003a}和 \citet[\page 1093]{Hellwig2006a}\todostefan{S:  \citew{Robinson70a-u}}所指出的，某些可投射性中心语的短语结构语法可以通过将中心语移动到上一层来取代统治的结点以变成依存语法。所以在一个NP结构中，N变换到了NP的位置上，而且所有其他联系保持不变。如图\vref{fig-a-book-psg-dg}所示。
+正如 \citet{Gaifman65a}、 \citet[\page 234]{Covington90a}、 \citet{Oliva2003a}和 \citet[\page 1093]{Hellwig2006a}\todostefan{S:  \citew{Robinson70a-u}}所指出的，某些可投射性中心语的短语结构语法可以通过将中心语移动到上一层来取代统制的结点以变成依存语法。所以在一个NP结构中，N变换到了NP的位置上，而且所有其他联系保持不变。如图\vref{fig-a-book-psg-dg}所示。
 %As noted by  \citet{Gaifman65a},  \citet[\page 234]{Covington90a},  \citet{Oliva2003a} and  \citet[\page
  % 1093]{Hellwig2006a},\todostefan{S:  \citew{Robinson70a-u}} certain projective headed phrase structure grammars can be turned into
 %Dependency Grammars by moving the head one level up to replace the dominating node. So in an NP
@@ -2426,7 +2425,7 @@ dg edges
 %involve more elaborate structure. For instance, the rule S $\to$ NP, VP cannot be translated into a
 %dependency rule, since NP and VP are both complex categories.
 
-接下来，我想说明图\vref{fig-the-child-reads-the-book-dg}中的依存图是如何重新表示为允准一个相似树的中心语的短语结构规则，即如图\vref{fig-the-child-reads-a-book-psg}所示。
+接下来，我想说明图\vref{fig-the-child-reads-the-book-dg}中的依存图如何重新表示为允准一个相似树的中心语的短语结构规则，即如图\vref{fig-the-child-reads-a-book-psg}所示。
 %In what follows, I want to show how the dependency graph in Figure~\vref{fig-the-child-reads-the-book-dg} can be recast as headed phrase
 %structure rules that license a similar tree, namely the one in Figure~\vref{fig-the-child-reads-a-book-psg}.
 % Hellwig2006a: 1084, 1093
@@ -2448,7 +2447,7 @@ sm edges
 %\caption{\label{fig-the-child-reads-a-book-psg}Analysis of \emph{The child reads a book.} in a
 %  phrase structure with flat rules}
 \end{figure}%
-为了保证两张图最大程度的相似，我没有使用NP和VP的标签。NP和VP中的P这个部分是指可投射性的满足，并且经常在图中被忽略。请参阅第\ref{chap-HPSG}章有关HPSG的内容，比如说，允准了例（\mex{1}）中给出的树的语法再次忽略了配价信息。
+为了保证两张图最大程度的相似，我没有使用NP和VP的标签。NP和VP中的P这个部分指可投射性的满足，并且经常在图中被忽略。参见第\ref{chap-HPSG}章有关HPSG的内容，比如说，允准了例（\mex{1}）中给出的树的语法再次忽略了配价信息。
 %I did not use the labels NP and VP to keep the two figures maximally similar. The P part of NP and
 %VP refers to the saturation of a projection and is often ignored in figures. See Chapter~\ref{chap-HPSG} on HPSG, for example.
 %The grammar that licenses the tree is given in (\mex{1}), again ignoring valence
@@ -2488,7 +2487,7 @@ sm edges
 {D}  & {$\to$ a}\\
 \end{tabular}
 \z
-词汇化（Lexicalized）是指每一部分由语法允准的树都包括一个词汇成分。（\mex{0}）中的语法允准了图\ref{fig-the-child-reads-the-book-dg}中的树。\footnote{\label{fn-flat-dg-rules}%
+词汇化（Lexicalized）指每一部分由语法允准的树都包括一个词汇成分。（\mex{0}）中的语法允准了图\ref{fig-the-child-reads-the-book-dg}中的树。\footnote{\label{fn-flat-dg-rules}%
 正如在第\pageref{page-rule-format-dg}页所提到的， \citet[\page 305]{Gaifman65a}、 \citet[\page 513]{Hays64a-u}、 \citet[\page 57]{Baumgaertner70a}和 \citet[\page 37]{Heringer96a-u}针对依存规则提出了一条普遍的规则，即它有一个特殊的标记（分别为“*”和“\textasciitilde”）替代了（\mex{0}）中的词汇词。Heringer的规则具有（\mex{1}）中的形式：
 %}
 %\emph{Lexicalized}  means that every partial tree licensed by a grammar rule contains a lexical element.
@@ -2506,8 +2505,8 @@ X是中心语的范畴，Y1、Y2和Y3是中心语的从属语，而且“\textas
 %which the head is inserted.
 }
 
-经典的短语结构语法和依存语法的一个重要的区别是短语结构规则给子结点强加了特定的语序。也就是说，（\mex{0}）中的V规则暗示了第一个名词性投射、动词和第二个名词性投射必须按照规则表明的语序来出现。当然，这个语序限制可以松一些，正如GPSG中所做的。这基本上允准了规则右手边出现任意顺序的子结点。剩下的问题是附加语的整合。由于附加语也依存于中心语（请参阅图\vref{fig-the-child-often-reads-the-book-slowly}），可以提出一条规则来允准论元外的任意多的附加语。由此，（\mex{0}）中的V规则应该变成（\mex{1}）中的形式：\footnote{%
-请参阅第\pageref{adv-metarule}页中\gpsgc 的相似规则，并且参考德语的HPSG理论的分析 \citep{Kasper94a}，它提出了完全的平铺结构并且整合进了任意数量的附加语。
+经典的短语结构语法和依存语法的一个重要区别在于短语结构规则给子结点强加了特定的语序。也就是说，（\mex{0}）中的V规则暗示了第一个名词性投射、动词和第二个名词性投射必须按照规则表明的语序来出现。当然，这个语序限制可以松一些，正如GPSG中所做的。这基本上允准了规则右手边出现任意顺序的子结点。剩下的问题是附加语的整合。由于附加语也依存于中心语（参见图\vref{fig-the-child-often-reads-the-book-slowly}），可以提出一条规则来允准论元外的任意多的附加语。由此，（\mex{0}）中的V规则应该变成（\mex{1}）中的形式：\footnote{%
+参见第\pageref{adv-metarule}页中\gpsgc 的相似规则，并且参考德语的HPSG理论的分析 \citep{Kasper94a}，它提出了完全的平铺结构并且整合进了任意数量的附加语。
 }
 %One important difference between classical phrase structure grammars and Dependency Grammars is that the
 %phrase structure rules impose a certain order on the daughters. That is, the V rule in (\mex{0})
@@ -2527,8 +2526,8 @@ V $\to$ N reads N Adv*
 \z 
 
 这种广义短语结构等同于可投射的依存语法。\footnote{\label{fn-dg-binary-branching}%
-Sylvain Kahane（p.\,c.\, 2015）指出，二元性对于依存语法来说是非常重要的，因为主语只有一条规则，宾语只有一条规则，以及其他（比如说\citet{Kahane2009a}，这是在HPSG理论的形式框架下的依存语法的实现）。不过，我没有想到有任何原因需要反对平铺结构。比如说， \citet[\page 364]{GSag2000a-u}在HPSG理论中提出了主语助动词转换的平铺结构。在这类平铺规则中，限定语/主语和其他补足语在同一个目标下与动词组合在一起。这也适用于两个以上配价特征的语法功能范畴，如主语、直接宾语、间接宾语。也请参阅关于平铺规则的脚注\ref{fn-flat-dg-rules}。
-}但是，正如我们看到的，一些研究人员对非连续的成分允许了交叉边的存在。接着，我来说明依存语法是如何在HPSG理论中被形式化的。
+Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来说非常重要，因为主语只有一条规则，宾语只有一条规则，以及其他（比如说\citet{Kahane2009a}，这是在HPSG理论的形式框架下的依存语法的实现）。不过，我没有想到有任何原因需要反对平铺结构。比如说， \citet[\page 364]{GSag2000a-u}在HPSG理论中提出了主语助动词转换的平铺结构。在这类平铺规则中，限定语/主语和其他补足语在同一个目标下与动词组合在一起。这也适用于两个以上配价特征的语法功能范畴，如主语、直接宾语、间接宾语。也参见关于平铺规则的脚注\ref{fn-flat-dg-rules}。
+}但是，正如我们看到的，有些研究人员对非连续的成分允许了交叉边的存在。接着，我来说明依存语法如何在HPSG理论中被形式化。
 %Such generalized phrase structures would give us the equivalent of projective Dependency
 %Grammars.\footnote{\label{fn-dg-binary-branching}%
 %Sylvain Kahane (p.\,c.\, 2015) states that binarity is important for Dependency Grammars, since
@@ -2600,7 +2599,7 @@ synsem & \ldots\\
 dom  & \sliste{ \ibox{1} } \\
 }
 \z
-（\mex{0}）里的描述初看起来有些奇怪，因为它是循环的\isc{循环!特征描写中的循环}\is{cycle!in feature description}，不过它可被理解为gibt将它自己归入到次序化域中出现的元素。
+（\mex{0}）里的描述初看起来有些奇怪，因为它是循环的\isc{循环!特征描写中的循环}\is{cycle!in feature description}，不过它可被理解为gibt将它自己归入到线性化域中出现的元素。
 %The description in (\mex{0}) may seem strange at first glance, since it is cyclic\is{cycle!in
 %  feature description}, but it can be understood as
 %a statement saying that \emph{gibt} contributes itself to the items that occur in linearization domains.
@@ -2620,7 +2619,7 @@ dom  & \sliste{ \ibox{1} } \\
 %elements. Since the order of the \textsc{domain} elements corresponds to their surface order, this is
 %the obvious way to determine the \phonv of the whole linguistic object. 
 
-图\vref{fig-the-child-reads-the-book-reape-binary}显示了这一机制是如何应用到带有非连续成分的二叉结构中的。
+图\vref{fig-the-child-reads-the-book-reape-binary}显示了这一机制如何应用到带有非连续成分的二叉结构中。
 %Figure~\vref{fig-the-child-reads-the-book-reape-binary} shows how this machinery can be used to license binary
 %branching structures with discontinuous constituents.
 \begin{figure}
@@ -2644,7 +2643,7 @@ sm edges
 \caption{\label{fig-the-child-reads-the-book-reape-binary}带有二叉结构和非连续成分的dass der Frau ein Mann das Buch gibt（一个男人给这个女人这本书）的分析}}
 %roof\caption{\label{fig-the-child-reads-the-book-reape-binary}Analysis of \emph{dass der Frau ein Mann das Buch gibt} `that a man gives the woman %the book' with binary branching structures and discontinuous constituents}}
 \end{figure}%%
-由逗号分开的词或词的序列表示不同的域的对象，即\phonliste{ das, Buch }包括两个对象das和Buch，而且\phonliste{ das Buch, gibt }包括了两个对象das Buch和gibt。这里需要指出的很重要的是，跟中心语组合的论元按照宾语、与格、主格的语序排列，尽管短语序列域内成分是按照与格、主格和宾格的顺序排列的，而不是人们所期望的主格、与格、宾格。这是可能的，因为使用了shuffle 算法的\domvc 的计算的形成可以描写非连续成分。der Frau das Buch gibt（给这本书的这个女人）的结点是非连续的：ein Mann（一个男人）插入了der Frau（这个女人）和das Buch（这本书）的域内。这在图\vref{fig-the-child-reads-the-book-reape-binary-discont}中更为明显，它有着一个对应于他们语序的NP的次序化。
+由逗号分开的词或词的序列表示不同的域的对象，即\phonliste{ das, Buch }包括两个对象das和Buch，而且\phonliste{ das Buch, gibt }包括了两个对象das Buch和gibt。这里需要指出的很重要的是，跟中心语组合的论元按照宾语、与格、主格的语序排列，尽管短语序列域内成分按照与格、主格和宾格的顺序排列，而不是人们所期望的主格、与格、宾格。这是可能的，因为使用了shuffle 算法的\domvc 的计算的形成可以描写非连续成分。der Frau das Buch gibt（给这本书的这个女人）的结点是非连续的：ein Mann（一个男人）插入了der Frau（这个女人）和das Buch（这本书）的域内。这在图\vref{fig-the-child-reads-the-book-reape-binary-discont}中更为明显，它有着一个对应于它们语序的NP的序列化过程。
 %Words or word sequences that are separated by commas stand for separate domain objects, that is,
 %\phonliste{ das, Buch } contains the two objects \emph{das} and \emph{Buch} and \phonliste{ das
 %  Buch, gibt } contains the two objects \emph{das Buch} and \emph{gibt}.
@@ -2682,7 +2681,7 @@ sm edges
 % \caption{\label{fig-the-child-reads-the-book-reape-binary-discont}Analysis of \emph{dass der Frau ein Mann das Buch gibt} `that a man gives the woman the book' with binary branching structures and discontinuous constituents % showing the discontinuity}
 \end{figure}% 
 
-这种二元的分叉结构被 \citet{Kathol95a,Kathol2000a}和 \citet{Mueller95c,Babel,Mueller99a,Mueller2002b}用于对德语的分析，但是正如我们在本章中看到的，依存语法提出了平铺的表示（但是请参阅第\pageref{fn-dg-binary-branching}页的脚注\ref{fn-dg-binary-branching}）。模式\ref{schema-flat-prel}允准了中心语的所有论元一次性实现的结构。\footnote{我在这里提出，所有论元都被囊括进词汇中心语的\subcatlc 中，而其上什么都没有。我们也可以假设几个配价特征，进而得到一个平铺结构。比如说， \citet[\page 339]{Borsley89}提出了英语\il{English}的助动词转换和威尔士语\il{Welsh}中动词位于首位的模式，它们指向主语和补足语的配价特征，并在同一平铺结构中实现所有的成分。}
+这种二元的分叉结构被 \citet{Kathol95a,Kathol2000a}和 \citet{Mueller95c,Babel,Mueller99a,Mueller2002b}用于德语的分析，但是正如我们在本章中看到的，依存语法提出了平铺的表示（但是参见第\pageref{fn-dg-binary-branching}页的脚注\ref{fn-dg-binary-branching}）。模式\ref{schema-flat-prel}允准了中心语的所有论元一次性实现的结构。\footnote{我在这里提出，所有论元都被囊括进词汇中心语的\subcatlc 中，而其上什么都没有。我们也可以假设几个配价特征，进而得到一个平铺结构。比如说， \citet[\page 339]{Borsley89}提出了英语\il{English}的助动词转换和威尔士语\il{Welsh}中动词位于首位的模式，它们指向主语和补足语的配价特征，并在同一平铺结构中实现所有的成分。}
 %Such binary branching structures were assumed for the analysis of German by  \citet{Kathol95a,Kathol2000a} and %% \citet{Mueller95c,Babel,Mueller99a,Mueller2002b}, but as we have seen throughout this chapter, Dependency Grammar assumes flat representations %(but see Footnote~\ref{fn-dg-binary-branching} on page~\pageref{fn-dg-binary-branching}). Schema~\ref{schema-flat-prel} licenses structures in which all %arguments of a head are realized in one go.\footnote{I assume here that all arguments are contained in the \subcatl of a
 %lexical head, but nothing hinges on that. One could also assume several valence features and
 %nevertheless get a flat structure. For instance,  \citet[\page 339]{Borsley89} suggests a schema for auxiliary inversion in English\il{English} and verb-%initial sentences in Welsh\il{Welsh} that refers to both the valence feature for subjects and for complements and realizes all elements in a flat structure.}
@@ -2697,7 +2696,7 @@ sm edges
       }
 \end{schema}
 为了简化表达，我认为\subcatlc 包括了完整符号的描述。所以说，整个列表可以等同于非中心语子结点的列表。\footnote{%
-除了这一假设，我们需要一个将类型\type{synsem}的描写的列表匹配到类型\type{sign}的描写的列表的关系性限制。更多细节请参阅 \citew[\page 198]{Meurers99b}。
+除了这一假设，我们需要一个将类型\type{synsem}的描写的列表匹配到类型\type{sign}的描写的列表的关系性限制。更多细节参见 \citew[\page 198]{Meurers99b}。
 }
 %To keep the presentation simple, I assume that the \subcatl contains descriptions of complete
 %signs. Therefore the whole list can be identified with the list of non-head daughters.\footnote{%
@@ -2760,13 +2759,13 @@ sm edges
 \draw (Türen.south)--(die.north);
 \end{forest}
 }
-\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}使用Reape式短语成分域的dass die Frauen Türen öffnen（这个女人开门）不合适分析}
+\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}使用Reape式短语成分域的dass die Frauen Türen öffnen（这个女人开门）的不合适分析}
 %\caption{\label{fig-dass-die-Frauen-Tueren-oeffnen-domains}Unwanted analysis of “dass die Frauen Türen %öffnen” `that the women open doors' using Reape-style constituent order domains}
 \end{figure}%
 很明显，我们不需要这样的不一致性。由此，我们需要有保证一致性的限制条件。一个限制条件就是要求具有投射性，这样就对应于我们上面讨论的短语结构语法。
 %It is clear that such discontinuity is unwanted and hence one has to have restrictions that enforce %continuity. One possible restriction is to require projectivity and hence equivalence to phrase %structure grammars in the sense that was discussed above.
 %
-关于成分/""依存关系对于分析自然语言哪一个是首要/必须的这个问题是存在争议的： \citet{Hudson80a}和 \citet{Engel96a}认为依存关系是充分的，这被大部分依存语法学家所认可（根据\citealp{Engel96a}）， \citet{Leiss2003a}认为不是这样的。为了解决这个问题，我们来看一些例子：
+关于成分/""依存关系对于分析自然语言哪一个是首要/必要的这个问题是存在争议的： \citet{Hudson80a}和 \citet{Engel96a}认为依存关系是充分的，这被大部分依存语法学家所认可（根据\citet{Engel96a}）， \citet{Leiss2003a}认为不是这样的。为了解决这个问题，我们来看一些例子：
 %There is some dispute going on about the question of whether constituency/""dependency is
 %primary/necessary to analyze natural language: while % \citet[\page 83]{Korhonen77a}, 
 % \citet{Hudson80a} and  \citet{Engel96a} claim that dependency is
@@ -2816,7 +2815,7 @@ dg edges
 %    klärt nicht, ob Klaus spielt.} `That Peter comes does not resolve the question of whether Klaus
 %  plays.' can be derived from the semantic representation.}
 \end{figure}%
-但是需要注意的是这对于普通的情况是不适用的。比如说（\mex{1}）中的例子：
+但是需要注意的是，这对于普通的情况并不适用。比如说（\mex{1}）中的例子：
 %But note that this does not hold in the general case. Take for instance the example in (\mex{1}):
 \ea
 \gll Dass Peter kommt, klärt nicht, ob Klaus kommt.\\
@@ -2866,7 +2865,7 @@ Dass Peter kommt, klärt nicht, ob Klaus kommt.（Peter来并不能说明Klaus�
 %  \emph{Dass Peter kommt, klärt nicht, ob Klaus kommt.} `That Peter comes does not resolve the
 %  question of whether Klaus comes.' is not unambiguously determined by semantics.}
 \end{figure}%
-我在依存链中使用了错误的kommt，但是这是次序化的问题，而且不同于依存关系。一旦有人考虑到次序化的问题，图~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}中的依存图就被排除了，这是因为ob（是否）并不前置于它的动词性依存成分kommt（来）。但是这个解释并不适用于图~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}中的例子。这里，所有的依存成分都被正确地线性排列；只是die和Türen的非连续性是不合适的。如果要求die和Türen是连续的，我们基本上要求成分归位（请看第~\pageref{fn-projective-dg-vs-constituents}页的脚注~\ref{fn-projective-dg-vs-constituents}）。相似地，有关连续性的没有任何限制的非投射性分析允准例（\mex{1}b）中的语词杂拌（word salad）：
+我在依存链中使用了错误的kommt，但是这是线性化的问题，而且不同于依存关系。一旦有人考虑到线性化的问题，图~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective}中的依存图就被排除了，这是因为ob（是否）并不前置于它的动词性依存成分kommt（来）。但是这个解释并不适用于图~\vref{fig-dass-die-Frauen-Tueren-oeffnen-dg}中的例子。这里，所有的依存成分都被正确地线性排列；只是die和Türen的非连续性并不合适。如果要求die和Türen是连续的，我们基本上要求成分归位（参见第\pageref{fn-projective-dg-vs-constituents}页的脚注~\ref{fn-projective-dg-vs-constituents}）。相似地，有关连续性的没有任何限制的非投射性分析允准例（\mex{1}b）中的语词杂拌（word salad）：
 %I used the wrong \emph{kommt} in the dependency chains, but this is an issue of linearization and is
 %independent of dependency. As soon as one takes linearization information into account, the %dependency graph in Figure~\ref{fig-dass-peter-kommt-klaert-nicht-ob-non-projective} is ruled out %since \emph{ob} `whether' does not precede its verbal dependent \emph{kommt} `comes'. But this %explanation does not work for the example in Figure~\vref{fig-dass-die-Frauen-Tueren-oeffnen-%dg}. Here, all dependents are linearized correctly; it is just the discontinuity of \emph{die} and 
 %\emph{Türen} that is inappropriate. If it is required that \emph{die} and \emph{Türen} are %continuous, we have basically let constituents back in (see Footnote~\ref{fn-projective-dg-vs-%constituents} on page~\pageref{fn-projective-dg-vs-constituents}). 
@@ -2939,9 +2938,9 @@ dg edges
 %  \emph{Deshalb klärt dass ob Peter Klaus kommt spielt.} `Therefore resolves that whether Peter
 %  Klaus comes plays' which is admitted by non-projective Dependency Grammars that do not restrict discontinuity}
 \end{figure}%
-正如在第~\ref{sec-fcg-nld}节有关流变构式语法的非局部依存的分析中所解释的\indexfcgc，像英语和德语这类语言的语法必须按照这种方式来限制小句，除了向左前置的例外情况，它们都是连续的。我们可以在 \citew[\page 192]{Hudson80a}中找到类似的观点。Hudson也证明了，一个成分可以在英语\il{English}中前置，只要它的所有依存成分跟它一起前置（第184页）。这个“带有它的所有依存成分的成分”
+正如在\ref{sec-fcg-nld}中有关动变构式语法的非局部依存的分析中所解释的\indexfcgc，像英语和德语这类语言的语法必须按照这种方式来限制小句，除了向左前置的例外情况，它们都是连续的。我们可以在 \citew[\page 192]{Hudson80a}中找到类似的观点。Hudson也证明了，一个成分可以在英语\il{English}中前置，只要它的所有依存成分跟它一起前置（第184页）。这个“带有它的所有依存成分的成分”
 就是基于组成成分的语法中的组成成分。区别在于，这个对象并没有一个明确的名字，并且不被看作是大部分依存语法中包含中心词和它的依存成分的不同实体。\footnote{%
-不过，请参考 \citet{Hellwig2003a}的观点，即是有表示整个组成成分，而不仅仅是词的中心语的语言对象。 
+不过，请参考 \citet{Hellwig2003a}的观点，即有表示整个组成成分的语言学对象，而不仅仅是词的中心语。 
 }
 %As was explained in Section~\ref{sec-fcg-nld} on the analysis of nonlocal dependencies in Fluid
 %Construction Grammar\indexfcg, a grammar of languages like English and German has to %constrain the clauses in such a way that they are
@@ -2972,7 +2971,7 @@ dg edges
 正如 \citet{Oliva2003a}指出的，依存语法和HPSG理论的相似之处仅限于\headvsc。
 %As  \citet{Oliva2003a} points out, the equivalence of Dependency Grammar and HPSG only holds up as far as \headvs are concerned.
 %\todostefan{S: many DG have several level of representations. You cannot compare HSG wioth %only one level of MTT. MTT has 7 level of %representations.} 
-也就是，对应于HPSG理论中的\headvsc 的依存图的结点标签。但是，还有像\contc 这种表示语义的和\slaschc 这种表示非局部依存关系的额外特征。这些值通常在词汇中心语和它的短语投射之间有不同之处。为了说明这一情况，让我们看一下短语a book。词汇和完整短语的语义如（\mex{1}）所示：\footnote{lambda表达式的内容请参阅\ref{sec-PSG-Semantik}。}
+也就是，对应于HPSG理论中的\headvsc 的依存图的结点标签。但是，还有像\contc 这种表示语义的和\slaschc 这种表示非局部依存关系的额外特征。这些值通常在词汇中心语和它的短语投射之间有不同之处。为了说明这个情况，让我们看一下短语a book。词汇和完整短语的语义如（\mex{1}）所示：\footnote{lambda表达式的内容参见\ref{sec-PSG-Semantik}。}
 %That is, the node labels in dependency graphs correspond to the \headvs in
 %an HPSG. There are, however, additional features like \cont for the semantics and \slasch for
 %nonlocal dependencies. These values usually differ between a lexical head and its phrasal
@@ -2984,7 +2983,7 @@ dg edges
 \ex \emph{book}: $\lambda y\;(\relation{book}(y))$
 \ex \emph{a book}: $\lambda Q \exists x (\relation{book}(x) \wedge Q(x))$
 \zl
-现在，依存语法标记的问题是没有能够联系到a book的语义的NP结点（请参阅第\pageref{fig-a-book-psg-dg}页的图\ref{fig-a-book-psg-dg}），树中出现的唯一事物是词汇N的结点：book的结点。\footnote{\citet[\page 391--392]{Hudson2003a}\indexwgc 对此清楚地表述：“在依存分析中，从属词修饰中心语词的意义，所以后者带有整个短语的意义。例如，在\emph{long books about linguistics}中，由于从属词的修饰效应，词books表示‘关于语言学的长篇著作’。”对于这个观点的具体实现请参阅图\vref{fig-wg-small-children-are-playing-outside}。另一种观点是在\mttc 中假定不同的表示层次\citep{Melcuk81a}。实际上，HPSG理论中的\contvc 也是一个不同的表示层。但是，这个表示层跟建立起来的其他结构是同步的。}不过，这不是一个大问题：词汇属性可以表示为作为不同特征值的最高结点的部分。那么，依存图中的N结点会有\contvc，它对应于完整短语的语义贡献以及对应于短语的词汇中心语的贡献的\textsc{lex-cont}值。所以对于a book来说，我们会得到下面的表达式：
+现在，依存语法标记的问题是没有能够联系到a book的语义的NP结点（参见第\pageref{fig-a-book-psg-dg}页的图\ref{fig-a-book-psg-dg}），树中出现的唯一事物是词汇N的结点：book的结点。\footnote{\citet[\page 391--392]{Hudson2003a}\indexwgc 对此清楚地表述：“在依存分析中，从属词修饰中心语词的意义，所以后者带有整个短语的意义。例如，在long books about linguistics中，由于从属词的修饰效应，词books表示‘关于语言学的长篇著作’。”对于这个观点的具体实现参见图\vref{fig-wg-small-children-are-playing-outside}。另一种观点是在\mttc 中假定不同的表示层次\citep{Melcuk81a}。实际上，HPSG理论中的\contvc 也是一个不同的表示层。但是，这个表示层跟建立起来的其他结构是同步的。}不过，这不是一个大问题：词汇属性可以表示为作为不同特征值的最高结点的部分。那么，依存图中的N结点会有\contvc，它对应于完整短语的语义贡献以及对应于短语的词汇中心语的贡献的\textsc{lex-cont}值。所以对于a book来说，我们会得到下面的表达式：
 %Now, the problem for the Dependency Grammar notation is that there is no NP node that could be
 %associated with the semantics of \emph{a book} (see Figure~\ref{fig-a-book-psg-dg} on page~\pageref{fig-a-book-psg-dg}), the only thing present in the %tree is a node for the
 %lexical N: the node for \emph{book}.\footnote{\citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the %dependents modify the head word's meaning, so the latter carries the meaning of the whole phrase. For example, in  \emph{long books about %linguistics}, the word \emph{books} means `long books about linguistics' thanks to the modifying effect of the dependents.'' For a concrete %implementation of this idea see Figure~\vref{fig-wg-small-children-are-playing-outside}.An alternative is to assume different representational levels as in %\mtt \citep{Melcuk81a}. In fact the \contv in HPSG is also a different representational level. However, this representational level is in sync  with the other %structure that is build.} This is not a big problem, however: the lexical properties can be represented as part of the highest node as the value of a %separate feature. The N node in a dependency graph would then have a \contv that corresponds to the semantic contribution of the complete phrase %and a \textsc{lex-cont} value that corresponds to the contribution of the lexical head of the phrase. So for \emph{a book} we would get the following %representation:
@@ -3052,7 +3051,7 @@ lexical-cont & $\lambda y\;(\relation{book}(y))$
 %% the determiner requirement as satisfied and the N node in the right figure would still have an
 %% unsatisfied determiner requirement. Let us assume that such a feature 
 %
-现在，词汇中心与其投射之间还有更多的不同特征。一个特征是\slaschc， 它用来表示HPSG理论中的非局部依存关系，并能在 \citet{GO2009a}方法中用来建立提升的元素和中心语之间的关系。当然，我们可以再次应用相同的策略。这样，我们会得到特征\textsc{lexical-slash}。但是，我们可以改进这种分析方法，而且词汇项的特征可以组织在一条路径下。这样，一般的架构如（\mex{1}）所示：
+现在，词汇中心与其投射之间还有更多的不同特征。一个特征是\slaschc， 它用来表示HPSG理论中的非局部依存关系，并能在 \citet{GO2009a}的方法中用来建立提升的元素和中心语之间的关系。当然，我们可以再次应用相同的策略。这样，我们会得到特征\textsc{lexical-slash}。但是，我们可以改进这种分析方法，而且词汇项的特征可以组织在一条路径下。这样，一般的架构如（\mex{1}）所示：
 %Now, there are probably further features in which lexical heads differ from their projections. 
 %One such feature would be \slasch, which is used for nonlocal dependencies in HPSG and could be used to establish the relation between the risen %element and the head in an approach à la  \citet{GO2009a}. Of course we can apply the same trick again. We would then have a feature \textsc{lexical-%slash}. But this could be improved and the features of the lexical item could be grouped under one path. The general skeleton would then be (\mex{1}):
 \ea
@@ -3067,7 +3066,7 @@ lexical & \ms{ cont & \\
 %But if we rename \textsc{lexical} to \textsc{head-dtr}, we basically get the HPSG
 %representation. 
 %
- \citet[\page 602]{Hellwig2003a}证明了他的依存语法的特殊版本叫做依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}，他认为统制中心语选择了带有他们所有的子结点的完整结点。这些结点的属性与他们的中心语不同（第604页）。他们实际上是成分。所以这个依存语法的非常明晰和形式化的变体与HPSG理论十分相似，正如Hellwig他自己证明的（第603页）。Hudson的词语法也是明晰表示的，正如下面所示的，它与HPSG理论也是十分相似的。图\vref{fig-wg-small-children-are-playing-outside}中的表示是图\vref{fig-wg-small-children-are-playing-outside-abbreviated}表示的简缩版的详细描写。
+ \citet[\page 602]{Hellwig2003a}证明了他的依存语法的特殊版本叫做依存合一语法\isc{依存合一语法}\is{Dependency Unification Grammar (DUG)}，他认为统制中心语选择了带有他们所有的子结点的完整结点。这些结点的属性与他们的中心语不同（第604页）。他们实际上是成分。所以这个依存语法的非常明晰和形式化的变体与HPSG理论十分相似，正如Hellwig他自己证明的（第603页）。Hudson的词语法也是明晰表示的，正如下面所示，它与HPSG理论也是十分相似的。图\vref{fig-wg-small-children-are-playing-outside}中的表示是图\vref{fig-wg-small-children-are-playing-outside-abbreviated}表示的简缩版的详细描写。
 % \citet[\page 602]{Hellwig2003a} states that his special version of Dependency Grammar,
 %which he calls Dependency Unification Grammar\is{Dependency Unification Grammar (DUG)}, assumes that
 %governing heads select complete nodes with all their daughters. These nodes may differ in their
@@ -3129,7 +3128,7 @@ lexical & \ms{ cont & \\
 \caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}根据 \citet[\page 105]{Hudson2017a}的Small children were  playing outside.的简略分析}
 %\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of \emph{Small children were  playing outside.} according to  \citet{Hudson2017a}}
 \end{figure}%
-在第一个图中显示的是两个结点的组合得到一个新结点。例如，playing和outside的组合得到playing$'$，small和children的组合得到children$'$，而且children$'$和playing$'$的组合得到playing$''$。were和playing$''$的组合得到were$'$，以及 children$''$和were$'$的组合得到were$''$。唯一剩下需要解释的是为什么有一个结点children，它不是两个结点的组合（即children$''$）的结果。顶点与底部的连线表示缺省的承继关系\isc{承继!缺省承继}\is{inheritance!default}。即，上层结点继承了缺省的底层结点的所有属性。缺省的可以被覆盖，即上层结点的信息会与统制结点的信息不同。这就使得按照语义的组合性的操作成为可能：两个结点组合的结果的那个结点的语义是两个组合的结点的意义的组合。再来看children，children$'$具有必须邻接到playing的属性，但是因为这个结构是一个升位结构，其中children提升到了were的主语位置上，这个属性被children的一个新的实例覆盖了，即children$''$。
+在第一个图中显示的是两个结点的组合以得到一个新结点。例如，playing和outside的组合得到playing$'$，small和children的组合得到children$'$，而且children$'$和playing$'$的组合得到playing$''$。were和playing$''$的组合得到were$'$，以及 children$''$和were$'$的组合得到were$''$。唯一剩下需要解释的是为什么有一个结点children，它不是两个结点的组合（即children$''$）的结果。顶点与底部的连线表示缺省的承继关系\isc{承继!缺省承继}\is{inheritance!default}。即，上层结点继承了缺省的底层结点的所有属性。缺省的可以被覆盖，即上层结点的信息会与统制结点的信息不同。这就使得按照语义的组合性的操作成为可能：两个结点组合的结果的那个结点的语义是两个组合的结点的意义的组合。再来看children，children$'$具有必须邻接到playing的属性，但是因为这个结构是一个升位结构，其中children提升到了were的主语位置上，这个属性被children的一个新的实例覆盖了，即children$''$。
 %What is shown in the first diagram is that a combination of two nodes results in a new node. For
 %instance, the combination of \emph{playing} and \emph{outside} yields \emph{playing}$'$, the
 %combination of \emph{small} and \emph{children} yields \emph{children}$'$, and the combination of
@@ -3146,7 +3145,7 @@ lexical & \ms{ cont & \\
 %structure is a raising structure in which \emph{children} is raised to the subject of \emph{were},
 %this property is overwritten in a new instance of \emph{children}, namely \emph{children}$''$.
 %
-这里有趣的是我们几乎得到了一个名词性短语结构树，如果我们通过句法范畴替换图\ref{fig-wg-small-children-are-playing-outside}中的图的词的话。这个替换的结果如图\vref{fig-small-children-are-playing-outside}所示。
+这里有趣的是我们几乎得到了一个名词性短语结构树，如果我们通过句法范畴替换图\ref{fig-wg-small-children-are-playing-outside}中表格中的词的话。这个替换的结果如图\vref{fig-small-children-are-playing-outside}所示。
 %The interesting point now is that we get almost a normal phrase structure tree if we replace the words in the diagram in
 %Figure~\ref{fig-wg-small-children-are-playing-outside} by syntactic categories. The result of the
 %replacement is shown in Figure~\vref{fig-small-children-are-playing-outside}.
@@ -3172,7 +3171,7 @@ lexical & \ms{ cont & \\
 %\caption{\label{fig-small-children-are-playing-outside}Analysis of \emph{Small children are
 %   playing outside.} with category symbols}
 \end{figure}%
-这张图（由虚线标记）中唯一不同的地方是N$'$与V{[ing]}$'$相组合，而且N$'$的母结点，即N$''$，与V{[fin]}$'$相组合。正如上面解释的，这依赖于词语法中升位的分析，它包括提升的项目和它的中心语之间的多重依存关系。在图\ref{fig-small-children-are-playing-outside}中有两个N结点（N$'$和N$''$），而且在图\ref{fig-wg-small-children-are-playing-outside}中有children的两个实例。除了这个，这个结构对应于HPSG语法可以允准的成分。Hudson范式中的在底部用线连接到顶端的结点与使用默认承继的子结点是相关的。这对于使用默认承继关系的HPSG的许多版本来说也是非常相似的。比如说， \citet[\page
+这张图（由虚线标记）中唯一不同的地方是N$'$与V{[ing]}$'$组合，而且N$'$的母结点，即N$''$，与V{[fin]}$'$组合。正如上面解释的，这依赖于词语法中升位的分析，它包括提升的项目和它的中心语之间的多重依存关系。在图\ref{fig-small-children-are-playing-outside}中有两个N结点（N$'$和N$''$），而且在图\ref{fig-wg-small-children-are-playing-outside}中有children的两个实例。除了这个，这个结构对应于HPSG语法可以允准的成分。Hudson范式中的在底部用线连接到顶端的结点与使用默认承继的子结点是相关的。这对于使用默认承继关系的HPSG的许多版本来说也是非常相似的。比如说， \citet[\page
 33]{GSag2000a-u}使用了广义中心语特征原则\isc{原则!广义中心语特征原则}\is{principle!Generalized Head Feature}，它默认将中心语子结点的所有特征投射到母结点上。
 %The only thing unusual in this graph (marked by dashed lines) is that N$'$ is combined with V{[\emph{ing}]}$'$ and the mother
 %of N$'$, namely N$''$, is combined with V{[\emph{fin}]}$'$. As explained
@@ -3188,7 +3187,7 @@ lexical & \ms{ cont & \\
 %Principle\is{principle!Generalized Head Feature} that projects all properties of
 %the head daughter to the mother by default.
 %
-本节的结论是，短语结构语法和依存语法的唯一理论区别在于中间结构是如何假设的：是否存在没有主语的VP呢？附加语附加成分是否有中间结点呢？在没有涵盖了语义表示的全部可行的方案下回答这些问题是十分困难的。那些可行的方法，如Hudson和Hellwig的方法，提出了中间表达式，它使得这些方法跟基于短语结构的方法十分相似。如果我们将全部可行的依存语法的变体的结构与短语结构语法相比较的话，很清楚的是，依存语法更为简单这个观点是不受欢迎的。这个观点适用于图\ref{fig-wg-small-children-are-playing-outside-abbreviated}中的紧缩的范式的表示，但是它并不适用于全部可行的分析。
+本节的结论是，短语结构语法和依存语法的唯一理论区别在于中间结构是如何假设的：是否存在没有主语的VP呢？附加语附加成分是否有中间结点呢？在没有涵盖了语义表示的全部可行的方案下回答这些问题是十分困难的。那些可行的方法，如Hudson和Hellwig的方法，提出了中间表达式，它使得这些方法跟基于短语结构的方法十分相似。如果我们将全部可行的依存语法的变体的结构与短语结构语法相比较的话，很清楚的是，依存语法更为简单这个观点是不受欢迎的。这个观点适用于图\ref{fig-wg-small-children-are-playing-outside-abbreviated}中的紧缩范式的表示，但是它并不适用于全部可行的分析。
 %The conclusion of this section is that the only principled difference between phrase structure grammars and Dependency Grammar is the question of %how much intermediate structure is assumed: is there a VP without the subject? Are there intermediate nodes for adjunct attachment? It is difficult to %decide these questions in the absence of fully worked out proposals that include semantic representations. Those proposals that are worked out -- like %Hudson's and Hellwig's -- assume intermediate representations, which makes these approaches rather similar to phrase structure-based approaches. If %one compares the structures of these fully worked out variants of Dependency Grammar with phrase structure grammars, it becomes clear that the %claim that Dependency Grammars are simpler is unwarranted. This claim holds for compacted schematic representations like Figure~\ref{fig-wg-small-%children-are-playing-outside-abbreviated} but it does not hold for fully worked out analyses.
 %% \subsection{Extraction and coordination}
 %% \label{sec-dg-coordination}
@@ -3217,7 +3216,7 @@ lexical & \ms{ cont & \\
      \hspaceThis{(}\textsc{prep} 他的 帽子 \textsc{prep} 他的 眼睛\\
 \mytrans{他的帽子遮住了眼睛}
 \zl
-他认为，术语形容词（adjective）和名词（noun）应该属于术语实体（substantive），它包括这两个术语。然后他指出“如果一条规则需要覆盖传统上指称为带或者不带中心语的名词短语，它只被称作‘名词’，而且这可以自动允准要么是实体要么是形容词作为中心语的结构。”（第195页）但是，这里需要提出的问题是，像the rich这样的实体性短语具有怎样的内部依存结构。连接这些项目的唯一方式看起来是假定限定词依存于形容词。但是这可以允准像the rich man的短语的两个结构：一个是限定词依存于形容词，另一个是它依存于名词。所以，词性的未分析不能解决这个问题。当然，所有无中心语的结构的所有问题都可以通过假定空成分来解决。\footnote{请参阅\ref{sec-psg-np}关于名词短语的短语结构语法中的空中心语的假设。}在\hpsgc 的关系小句的分析中是这样做的\citep[\S~5]{ps2}。英语和德语的关系小句包括一个短语，它包括一个关系词和一个句子，其中关系短语是缺失的。Pollard\& Sag提出了空关系代词，它选择关系小句以及带有空位的小句\citep[\page 216--217]{ps2}。相似的分析可以在依存语法中找到（\citealp[\page  291]{Eroms2000a}）。\footnote{%
+他认为，术语形容词（adjective）和名词（noun）应该属于术语实体（substantive），它包括这两个术语。然后他指出“如果一条规则需要覆盖传统上指称为带或者不带中心语的名词短语，它只被称作‘名词’，而且这可以自动允准要么是实体要么是形容词作为中心语的结构。”（第195页）但是，这里需要提出的问题是，像the rich这样的实体性短语具有怎样的内部依存结构。连接这些项目的唯一方式看起来是假定限定词依存于形容词。但是这可以允准像the rich man的短语的两个结构：一个是限定词依存于形容词，另一个是它依存于名词。所以，词性的未分析不能解决这个问题。当然，所有无中心语的结构的所有问题都可以通过假定空成分来解决。\footnote{参见\ref{sec-psg-np}关于名词短语的短语结构语法中的空中心语的假设。}在\hpsgc 的关系小句的分析中是这样做的\citep[\S~5]{ps2}。英语和德语的关系小句包括一个短语，它包括一个关系词和一个句子，其中关系短语是缺失的。Pollard\& Sag提出了空关系代词，它选择关系小句以及带有空位的小句\citep[\page 216--217]{ps2}。相似的分析可以在依存语法中找到（\citealp[\page  291]{Eroms2000a}）。\footnote{%
 依存语法表示通常有一个\stem{d}成分作为关系小句的中心语。但是，由于关系代词也出现在小句中，而且由于\stem{d}没有被两次发音，假定一个额外的\stem{d}中心语基本上就是假定一个空的中心语。
 %
 另一个选择是假定具有多重功能的词汇：所以说，一个关系代词可以既是一个中心语，也同时是一个从属语（\citealp[\S 246, §8--11]{Tesniere2015a-not-crossreferenced}；\citealp[\page xlvi]{KO2015a}；\citealp[\page  129--130]{Kahane2009a}）。至少Kahane的分析是\ref{Abschnitt-Relativsaetze-CG}讨论的范畴语法分析的一个例子，而且它具有相同的问题：如果关系代词是中心语，它选择了缺失关系代词的小句，不容易看到这个分析是如何扩展到（i）中的抽吸过程\isc{抽吸过程}\is{pied-piping}的，其中被提取的成分是一个包括关系代词，而不是代词本身的完整短语。
@@ -3240,8 +3239,8 @@ lexical & \ms{ cont & \\
 %\zlast
 %}
 现在，另一种分析空成分的方法是短语构式。\footnote{%
-请参阅第\ref{Abschnitt-Diskussion-leere-Elemente}章关于空成分的一般分析和\ref{Abschnitt-Relativ-Interrogativsaetze}关于关系小句的特殊分析。
-}\cite{Sag97a}研究了英语的关系小句，他提出了关系小句的短语式分析，其中关系短语和从中提取出的小句构成一个新短语。 \citet{Babel}提出了一个相似的分析，并且记录在 \citew[\S~10]{Mueller99a}中。正如\ref{Abschnitt-Relativsaetze-CG}所讨论的，认为关系短语中的关系代词或者其他成分作为整个关系小句的中心语是不可行的，而且认为动词作为整个小句的中心语也是不可行的（请Sag见谅），因为关系小句修饰\nbar{}s，（定式）动词通常不是这样投射的。
+参见第\ref{Abschnitt-Diskussion-leere-Elemente}章关于空成分的一般分析和\ref{Abschnitt-Relativ-Interrogativsaetze}关于关系小句的特殊分析。
+}\cite{Sag97a}研究了英语的关系小句，他提出了关系小句的短语式分析，其中关系短语和从中提取出的小句构成一个新短语。 \citet{Babel}提出了一个相似的分析，并且记录在 \citew[\S~10]{Mueller99a}中。正如\ref{Abschnitt-Relativsaetze-CG}所讨论的，认为关系短语中的关系代词或者其他成分作为整个关系小句的中心语并不可行，而且认为动词作为整个小句的中心语也不可行（请Sag见谅），因为关系小句修饰\nbar{}s，（定式）动词通常不这样投射。
 %Now, the alternative to empty elements are phrasal constructions.\footnote{%
 %See Chapter~\ref{Abschnitt-Diskussion-leere-Elemente} on empty elements in general and
 %Subsection~\ref{Abschnitt-Relativ-Interrogativsaetze} on relative clauses in particular.
@@ -3311,7 +3310,7 @@ dg edges
 \caption{\label{fig-n-p-n}带有空中心语的N-P-N构式的依存语法分析}
 %\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty head}
 \end{figure}%
-空N的词汇项是非常特殊的，因为没有相似的非空的词汇名词，即没有名词选了两个光杆N和一个P。
+空N的词汇项非常特殊，因为没有相似的非空的词汇名词，即没有名词选了两个光杆N和一个P。
 %The lexical item for the empty N would be very special, since there are no similar non-empty lexical
 %nouns, that is, there is no noun that selects for two bare Ns and a P.
 %% Note that the N-P-N construction is special in that Ns are combined rather than NPs. This means that
@@ -3338,14 +3337,14 @@ N (P N)+
 %same preposition and noun or nominal phrase. Of course one could assume that P and N form some sort of constituent, but still one would have to %make sure that the right preposition is used and that the noun or nominal projection has the right phonology. Another possibility would be to assume %that the second N in N-P-N can be an N-P-N and thereby allow recursion in the pattern. But if one follows this approach it is getting really difficult to %check the constraint that the involved Ns should
 %have the same or at least similar phonologies.
 %
-解决这些问题的一种方式当然可以是假定这里具有特殊的机制来指派一个新的范畴到一个或几个成分上。这在本质上可以是一个非中心语的短语结构规则，而且这是\tes 所提出的：转用规则（请参阅\ref{sec-transfer-dg}）。但是，这当然是存粹的依存语法向混合模型的一个扩展。\isc{构式!N-P-N|)}\is{construction!N-P-N|)}
+解决这些问题的一种方式当然可以是假定这里具有特殊的机制来指派一个新的范畴到一个或几个成分上。这在本质上可以是一个非中心语的短语结构规则，而且这是\tes 提出的：转用规则（参见\ref{sec-transfer-dg}）。但是，这当然是存粹的依存语法向混合模型的一个扩展。\isc{构式!N-P-N|)}\is{construction!N-P-N|)}
 %One way out of these problems would of course be to assume that there are special combinatorial
 %mechanisms that assign a new category to one or several elements. This would basically be an
 %unheaded phrase structure rule and this is what \tes suggested: transfer rules (see
 %Section~\ref{sec-transfer-dg}). But this is of course an extension of pure Dependency Grammar
 %towards a mixed model.\is{construction!N-P-N|)}
 %
-请参阅\ref{sec-why-phrasal}有关深入问题的讨论，它对纯粹的基于选择的语法来说可能是有问题的。
+参见\ref{sec-why-phrasal}有关更进一步的问题的讨论，它对纯粹的基于选择的语法来说可能是有问题的。
 %See Section~\ref{sec-why-phrasal} for the discussion of further cases which are probably problematic for purely selection"=based grammars.
 %
 
@@ -3386,7 +3385,7 @@ N (P N)+
 %\section*{Further reading}
 \furtherreading{
 %
-在第\ref{chap-GB}章的延伸阅读部分，我推荐了\emph{Syntaktische Analyseperspektiven}（《句法分析的不同视角》）这本书。该书的各个章节是由不同理论的支持者所著，并且分析了相同的新闻语料。这本书还有 \citet{Engel2014a}写的一章，他提出了他的依存语法的版本，即从属动词语法（Dependent Verb Grammar）。
+在第\ref{chap-GB}章的延伸阅读部分，我推荐了《句法分析的不同视角》（\emph{Syntaktische Analyseperspektiven}）这本书。该书的各个章节是由不同理论的支持者所著，并且分析了相同的新闻语料。这本书还有 \citet{Engel2014a}写的一章，他提出了他的依存语法的版本，即从属动词语法（Dependent Verb Grammar）。
 %In the section on further reading in Chapter~\ref{chap-GB}, I referred to the book called
 %\emph{Syntaktische Analyseperspektiven} `Syntactic perspectives on analyses'. The chapters in this book have been written by proponents of various %theories and all analyze the same newspaper article. The book also contains a chapter by  \citet{Engel2014a}, assuming his version of Dependency %Grammar, namely \emph{Dependent Verb Grammar}.
 %
