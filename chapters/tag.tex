@@ -16,11 +16,11 @@
 %Viola: \todostefan{leaves a little oder much - something wie als nettes Understatement im Deutschen passt hier leider nicht :-)}
 
 从表示力来看，TAG和它的一些扩展性变体相对精确地展现了人类在理解和处理语言的时候做了什么，这也是这种语法理论能够吸引大量研究人员注意的主要原因。为了便于和上下文无关文法\isc{上下文无关文法}\is{context"=free grammar}（2-型语言）形成对应，广义短语结构语法\indexgpsgc 在设计之初就对表示能力施加了很多限制，即便如此，事实上，GPSG在这方面仍然有很多问题\citep{Shieber85a,Culy85a}\footnote{%
-  参阅 \citet{Pullum86a}以了解关于复杂性的讨论，参阅G.\  \citew{GMueller2011a}以了解针对德语的非上下文无关性的讨论，
+  参见 \citet{Pullum86a}以了解关于复杂性的讨论，参见G.\  \citew{GMueller2011a}以了解针对德语的非上下文无关性的讨论，
   这种分析和Culy分析N-P-N构式的工作具有一定的相似性。（见\ref{Abschnitt-NPN-Konstruktion}）%
    }。像HPSG\indexhpsgc 和CxG\indexcxgc 这样的语法理论可以产生/描写所谓的0-型语言，相较于目前我们所假设的自然语言的复杂度，其描写能力过强。
-目前通行的观点认为自然语言的复杂度位于上下文无关\isc{复杂类型}\is{complexity class}\isc{上下文无关文法}\is{context"=free grammar}和上下文相关\isc{上下文相关文法}\is{context"=sensitive grammar}（1-型）语言之间。这一类型被称为“弱上下文相关”（mildly context sensitive）。\isc{弱上下文相关}\is{mildly context"=sensitive grammar}有些TAG变体属于这一语言类型，有种观点认为他们恰好产生出自然语言中的结构，不多也不少。
-欲了解更多有关复杂度的讨论，可以参见\ref{Abschnitt-Kompetenz-Performanz-TAG}和\ref{sec-generative-capacity}。
+目前通行的观点认为自然语言的复杂度位于上下文无关\isc{复杂类型}\is{complexity class}\isc{上下文无关文法}\is{context"=free grammar}和上下文相关\isc{上下文相关文法}\is{context"=sensitive grammar}（1-型）语言之间。这一类型被称为“弱上下文相关”（mildly context sensitive）。\isc{弱上下文相关}\is{mildly context"=sensitive grammar}有些TAG变体属于这一语言类型，有种观点认为它们恰好产生出自然语言中的结构，不多也不少。
+欲了解更多有关复杂度的讨论，可以参见\ref{Abschnitt-Kompetenz-Performanz-TAG}和第\ref{sec-generative-capacity}章。
 
 有各种各样的系统可以处理TAG语法\citep*{DHSSX2000a-u,PKMLD2008a-u,KLMPDE2008a-u,Koller2017a-u}。
 研究人员针对下列语言也开发了或大或小的TAG语法片段：
@@ -111,7 +111,7 @@ tag
 }
 \caption{\label{abb-Substitution}替换}
 \end{figure}%
-其它的子树必须插入待替换结点，如laughs子树中的NP结点。
+其他的子树必须插入待替换结点，如laughs子树中的NP结点。
 在这个例子中，John的子树就插入到了相应的位置。
 \isc{替换|)}\is{substitution|)}
 
@@ -159,7 +159,7 @@ tag
 }
 \caption{\label{abb-Adjunktion}附加}
 \end{figure}%
-附加树可以插入其它的树中。在插入时，目标结点（和标有`*'的结点一样的范畴）被附加树替换。
+附加树可以插入其他的树中。在插入时，目标结点（和标有“*”的结点一样的范畴）被附加树替换。
 \isc{附加语|)}\is{adjunction|)}
 \isc{附加|)}\is{adjunct|)}
 
@@ -175,13 +175,13 @@ V  & $\to$ laughs\\
 \isc{定域}\is{locality}。
 扩展的局部域在分析熟语时有着重要作用（见\ref{Abschnitt-Diskussion-Lokalitaet}）。
 
-TAG和其它语法理论不同的地方在于它允许结构被再次打散。
+TAG和其他语法理论不同的地方在于它允许结构被再次打散。
 基于这种方式，我们可以使用附加操作在一个给定的树中不断添加新成分，其结果是原本邻接于一处的组成成分在最终所构造出来的树中可以相隔任意远。
 我们将在\ref{TAG-Fernabh}中看到，这个特性对于脱离移位去分析长距离依存非常重要。
 
 \subsection{语义}
 
-基于TAG，处理句法语义接口有不同的方法。
+基于TAG来处理句法语义接口有不同的方法。
 既可以给树中的每一个结点都分配一个语义表征，也可以选择给每一棵基本树分配一个语义表征。
 语义的构建过程利用的不是句法结构本身的信息，而是关于句法结构是如何构造出来的信息。
 这种方法首先由 \citet{CK98a}提出，而后 \citet{KJ2003a}继续研究了这种思路。
@@ -361,7 +361,7 @@ LP$^\alpha_2$ = \{ \}
 %\mytrans{because somebody promised him to read the book}
 \mytrans{因为有人向他保证读这本书}
 \z
-在（\mex{0}）中, das Buch（这本书）是zu lesen（读）的宾语，ihm（他）和jemand（有个人）分别是
+在（\mex{0}）中, das Buch（这本书）是zu lesen（读）的宾语，ihm（他）和jemand（有个人）分别
 依存于versprochen（保证）和hat（\textsc{aux}）。这些例子可以用 \citet{Joshi87b}提出来的LD/LP"=TAG进
 行分析，也可以用自由序TAG（Free Order TAG，简称FO"=TAG\isc{TAG!自由语序树邻接语法（FO-TAG）}\is{TAG!Free Order (FO"=TAG)})\citep*[\page 21]{BJR91a}进行分析，二者都允许表示依存关系的边交叉。\isc{投射性}\is{projectivity}
 
@@ -422,10 +422,10 @@ tag, baseline
 \isc{PRO}\is{PRO}来实现。PRO像\emph{e}一样，是一个语音形式为空的代词性范畴
 \isc{PRO}\is{empty element!PRO|see{PRO}}，它同样源自GB理论。
 图\ref{Abbildung-Kontrollverben-TAG}左侧的树在论元的一般位置上包括了语迹，而在树的更高层的位置上包括了相关的NP槽。
-和其它理论相比，一个有趣的区别在于这些语迹\isc{空成分}\is{empty element}只存在于树上。
+和其他理论相比，一个有趣的区别在于这些语迹\isc{空成分}\is{empty element}只存在于树上。
 它们并没有单独的词典中的词汇项与之相对应，词典里的词汇项均只包含有语音形式的词及其基本树。
 
-versprach（保证）的树可以被插入到zu überführen（起诉）树中的任意一个S结点，从而得到图\ref{Abbildung-TAG-Permutation-one}和\ref{Abbildung-TAG-Permutation-two}中的树。
+versprach（保证）的树可以被插入到zu überführen（起诉）树中的任意一个S结点上，从而得到图\ref{Abbildung-TAG-Permutation-one}和\ref{Abbildung-TAG-Permutation-two}中的树。
 %\thefiguresref{Abbildung-TAG-Permutation-one}{Abbildung-TAG-Permutation-two}.
 \begin{figure}
 \centerline{%
@@ -563,7 +563,7 @@ tag
 \isc{多成分树邻接语法}\is{Multi-Component TAG}
 \isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|)}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|)} 
 %Andere Varianten, die andere Konstituentenanordnungen zulassen sind V-TAG
-其它允准上述结构成分语序的TAG变体包括V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a}和TT-MC-TAG\citep{Lichte2007a}。\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\isc{成分序列|)}\is{constituent order|)}
+其他允准上述结构成分语序的TAG变体包括V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}\citep{Rambow94a}和TT-MC-TAG\citep{Lichte2007a}。\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}\isc{成分序列|)}\is{constituent order|)}
 
 \section{动词位置}
 
@@ -575,10 +575,10 @@ tag
 类似转换生成语法中的转换机制，我们可以设计一种分析方法来处理被动\isc{被动|(}\is{passive|(}：我们假设这样的词汇规则，它们将每一个词汇项的主动形式基本树变成相应的被动形式基本树\citep[\page 50--51]{KJ85a}，这里的主动形式的词汇项指那些包含了主动形式的相应基本树的词汇项。
 
  \citet[\page 55]{KJ85a}提出了另一种方法以替代这种基于转换的分析，能够更好地处理被称之为“提升”
-\isc{提升}\is{raising}的语言现象。他们的分析假定动词的论元都位列于次范畴化（subcategorization）表中。如果一个动词匹配了某棵树相应的子类框架表，这个动词就可以进入到这棵树中。对应第\pageref{pass-lr-mlr}页讨论过的HPSG的词汇规则，Kroch和Joshi形式化得到了一条（TAG）词汇规则：该规则的输入端明确地提及一个宾格宾语。Kroch和Joshi针对非人称被动提出了一种复杂的分析，在不及物动词里没有实现出来的宾语，他们将其处理为语义为空的角色（第56页）。
+\isc{提升}\is{raising}的语言现象。他们的分析假定动词的论元都位列于次范畴化（subcategorization）表中。如果一个动词匹配了某棵树相应的子类框架表，这个动词就可以进入到这棵树中。对应于第\pageref{pass-lr-mlr}页讨论过的HPSG的词汇规则，Kroch和Joshi形式化得到了一条（TAG）词汇规则：该规则的输入端明确地提及一个宾格宾语。Kroch和Joshi针对非人称被动提出了一种复杂的分析，在不及物动词里没有实现出来的宾语，他们将其处理为语义为空的角色（第56页）。
 这样的一种使用抽象的辅助实体的方式事实上是可以避免的：我们可以采纳始于 \citet{Haider86}的HPSG\indexhpsgc 分析，我们在\ref{Abschnitt-HPSG-Passiv}中讨论过这种分析。
 
-也有人提议\isc{多重承继}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citealp{Candito96a}及其扩展分析——\citealp*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
+也有人提议\isc{多重承继}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citet{Candito96a}及其扩展分析——\citet*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
 \isc{多重承继}\is{inheritance!multiple|)}
 \isc{被动|)}\is{passive|)}
 
@@ -586,8 +586,8 @@ tag
 \label{TAG-Fernabh}
 
 \il{English|(}
-\isc{长距离依存}\is{long"=distance dependency|(}TAG的长距离依存分析可以凭借其提供的标准工具——简单树可以插入到其它树的中间——进行分析。
-图\vref{abb-nld-TAG}是（\mex{1}）分析的一个实例：
+\isc{长距离依存}\is{long"=distance dependency|(}TAG的长距离依存分析可以凭借其提供的标准工具——简单树可以插入到其他树的中间——进行分析。
+图\vref{abb-nld-TAG}是（\mex{1}）的分析的一个实例：
 \ea
 \gll Who$_i$ did John tell Sam that Bill likes \_$_i$?\\
      谁 \textsc{aux} John 告诉 Sam \textsc{comp} Bill 喜欢 \\
@@ -1024,7 +1024,7 @@ V"=TAG
 这里有意思的是这种方法和 \citet[\S~2.1.3]{Berman96a-u}在LFG\indexlfgc 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
 在Berman的分析中，动词直接投射（project）并形成VP，然后附加上论元。
 
-有一点跟本书讨论的其它分析不同的是：不管动词位置如何，导出树中总是有一个空成分。
+有一点跟本书讨论的其他分析不同的是：不管动词位置如何，导出树中总是有一个空成分。
 \isc{空成分}\is{empty element} 
 \isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）|)}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)|)}
 
@@ -1032,7 +1032,7 @@ V"=TAG
 %\subsection{The competence"=performance distinction and the generative capacity of tree"=local MC"=LTAG}
 \label{Abschnitt-Kompetenz-Performanz-TAG}
 
-本书中\isc{语言能力|(}\is{competence|(}\isc{语言运用|(}\is{performance|(}讨论的很多理论都区分语言能力（competence）和语言运用（performance）\citep[\S~I.1]{Chomsky65a}。我们假定语言能力理论描写语言知识，而语言运用理论应该解释语言知识如何被使用以及为什么我们在使用和理解语言的过程中会产生错误等问题。参见\S \ref{chap-competence-performance}以了解更多的内容。 
+本书中\isc{语言能力|(}\is{competence|(}\isc{语言运用|(}\is{performance|(}讨论的很多理论都区分语言能力（competence）和语言运用（performance）\citep[\S~I.1]{Chomsky65a}。我们假定语言能力理论描写语言知识，而语言运用理论应该解释语言知识如何被使用以及为什么我们在使用和理解语言的过程中会产生错误等问题。参见第\ref{chap-competence-performance}章以了解更多的内容。 
 
  \citet*{JBR2000a}讨论了如（\mex{1}b）所示的关系从句的中心自嵌入问题（center self embedding），他们遵循 \citet[\page 286]{CM63a}的假定：这种嵌入最多只可能有三级的这一事实不应该在语法中进行描写，而应该归属于听者的加工问题，而这与语法的描写能力无关。
 \eal
@@ -1062,7 +1062,7 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 \mytrans{村子里的那些本来安静地彼此相邻的、供老居民们互相友好地照看所有经过的孩子的长椅们在去年不得不给停车场让道了。}
 %\mytrans{The benches on which the older residents of the village, who used to give friendly glances to all the children who came by, used to sit silently next %to one another had to give way to a car park last year.}
 \z
-参见 \citew{Gibson98a}以了解其它的会影响语言加工的因素。
+参见 \citew{Gibson98a}以了解其他的会影响语言加工的因素。
 
  \citet{JBR2000a}讨论了动词性复杂结构中的论元语序重列问题。他们所关注的模式如（\mex{1}）所示：
 \ea
@@ -1080,7 +1080,7 @@ NP$_2$ NP$_3$ NP$_1$ V$_{3}$V$_{2}$V$_{1}$
      \textsc{comp} 他     \textsc{art}.\textsc{def} 书 没有人 \textsc{inf} 读 保证 被允许 \\
 \mytrans{不允许任何人答应他读那本书}
 \z
-因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG，或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说这种例子不像关系从句的例子可以有两种选择，也就是说，缺乏这种模式可以被解释为一种语言运用的现象或者是语言能力的现象。
+因此，他们提出扩展TAG，即所谓的树本地化多元成分LTAG（tree"=local multi"=component LTAG，简称为树本地化MC"=LTAG或TL-MCTAG），参见\ref{Abschnitt-MC-TAG}的讨论。他们证明了基于正确的语义，TL-MCTAG可以分析（\mex{0}）但不能分析（\mex{1}）。他们声称在德语中不能出现这些语序，并且论证说这种例子不像关系从句的例子可以有两种选择，也就是说，缺乏这种模式可以被解释为一种语言运用的现象或者是语言能力的现象。
 \ea
 \label{ex-mc-ltag-fails}
 NP$_2$ NP$_4$ NP$_3$ NP$_1$ V$_{4}$V$_{3}$V$_{2}$V$_{1}$
@@ -1184,7 +1184,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \mytrans{因为他想让那个男人帮助那个男孩记得他的朋友} 
 \z
 另一个策略是控制动词对有生和无生宾语的选择，通过论元的生命度来辅助解释。
-我构造了一个例子，在这个例子中，在深层位置嵌入的谓词是一个形容词而非动词。谓语leer fischen（钓光了）是一个结果构式，这个构式需要和动词性复杂结构进行类比分析\citep[\S~5]{Mueller2002b}。
+我构造了一个例子，在这个例子中，在深层位置嵌入的谓词是一个形容词而非动词。谓语leer fischen（钓光了）是一个动结构式，这个构式需要和动词性复杂结构进行类比分析\citep[\S~5]{Mueller2002b}。
 \ea
 \gll weil niemand$_1$ [den Mann]$_2$ [der Frau]$_3$ [diesen Teich]$_4$  leer$_4$ fischen$_3$ helfen$_2$ sah$_1$\\
 %     because nobody.\nom{} \spacebr{}the.\acc{} man \spacebr{}the.\dat{} woman \spacebr{}this.\acc{} pond empty fish help saw\\
@@ -1194,14 +1194,14 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 \z
 阅读句子的时候带有相应的停顿可以使得句子的意义得到理解。有生的名词短语格可以被无歧义地标记格，我们的词汇知识可以帮助我们将diesen Teich（这个池塘）解释为leer（空）的论元。 
 
-（\mex{0}）中的句子可以通过一个适当的TL-MCLTAG进行分析，也可以通过动词性复杂结构或结果构式的论元组合进行分析。（\mex{1}）中的句子是对应于（\ref{ex-mc-ltag-fails}）的模式并且类似（\mex{0}）的例子：
+（\mex{0}）中的句子可以通过一个适当的TL-MCLTAG进行分析，也可以通过动词性复杂结构或动结构式的论元组合进行分析。（\mex{1}）中的句子是对应于（\ref{ex-mc-ltag-fails}）的模式并且类似于（\mex{0}）的例子：
 \ea
 \gll weil [der Frau]$_2$ [diesen Teich]$_4$ [den Mann]$_3$ niemand$_1$ leer$_4$ fischen$_3$ helfen$_2$ sah$_1$\\
 % because \spacebr{}the.\dat{} woman \spacebr{}this.\acc{} pond \spacebr{}the.\acc{} man nobody.\nom{} empty fish help saw\\
   因为 \spacebr{}\textsc{art}.\textsc{def}.\dat{} 女人 \spacebr{}这个.\acc{} 池塘 \spacebr{}\textsc{art}.\textsc{def}.\acc{} 男人 没有人.\nom{} 空 钓鱼 帮助 看见 \\
 \mytrans{因为没有人看见那个男人帮助那个女人把池塘里的鱼钓光了}
 \z
-（\mex{0}）比（\mex{-1}）的形式标记更多，不过总是针对局部重列的现象（Gisbert Fanselow\aimention{Gisbert Fanselow}, p.\,c.\ 2006）。
+（\mex{0}）比（\mex{-1}）的形式标记更多，不过总是针对局部重列的现象（Gisbert Fanselow\aimention{Gisbert Fanselow}, 个人交流 \, 2006）。
 这个句子不应该被语法排除掉。导致这些标记的因素和简单动词论元的标记性是一样的。TL-MCLTAG无法正确地分析如（\mex{0}）中的例子，这说明这种TAG变体并不适合分析自然语言。
 
 什么应该被视为语言能力？什么应该被视为语言运用？不同的TAG研究者有不同的意见。如 \citet[\page 15]{Rambow94a}论证认为我们不应该排除那些语法或语法形式模型无法处理的语序重列。在第六章，他提出一个语言应用的理论，解释了为什么位于中场的动词的论元语序重列问题比较难以处理。因此，我们应该选择像V-TAG\isc{树邻接语法（TAG）!矢量树邻接语法（V-TAG）}\is{Tree Adjoining Grammar (TAG)!Vector (V-TAG)}或TT-MC-TAG\isc{树邻接语法（TAG）!树元组多成分树邻接语法（TT-MC-TAG）}\is{Tree Adjoining Grammar (TAG)!Tree Tuple MC-TAG (TT-MC-TAG)}这样的TAG变体\citep{Lichte2007a}，这些变体能够解释多种语序，然后可以使用语言运用模型来解释为什么句子可接受程度不同。
@@ -1212,14 +1212,14 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 
 \section{总结与分类}
 
-总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应于像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于长距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附加操作来实现的，附加是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 likes所在的每一个最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）都要有它们自己的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则\isc{词汇规则}\is{lexical rule}联系在一起。这些词汇规则将一棵特定的树映射为其它的树。通过这种方式，可以从一个表示主动形式的树推出表示被动形式的树。这些词汇规则可以和转换语法中的转换规则\isc{转换}\is{transformation}进行类比。 但必须强调一点，每个树中都有词汇元素，这使得整个语法和自由的转换相比更加受限。
+总的来说，LTAG是词汇化的理论，也就是说每棵树上都至少有一个词汇元素；没有树会对应于像S $\to$ NP VP这样的规则，因为在这条规则中没有词出现。总有包含主语NP和VP的复杂的树。在VP内部会有必须的足够多的结构来确保树中包含动词。LTAG中的基本树总是包含中心词及其论元。对于及物动词，这意味着主语和宾语都必须成为基本树的成分。对于用于长距离依存分析的树，这也同样适用。正如图\ref{abb-nld-TAG}所示，宾语必须是树的一部分。宾语和动词之间可以间隔多个句子边界，这一点并没有在基本树中体现，也就是说，语法的递归性并没有在基本树中体现。相应的作用是通过附加操作来实现的，附加是指向树中间插入成分。用于抽取的基本树，如图\ref{abb-nld-TAG}所示，不同于用于解释普通SVO小句的基本树，如图\ref{Abbildung-Max-likes-Anouk}中的likes的基本树。 likes所在的每一个最小结构（如主语抽取、话题化、主语关系从句、宾语关系从句、被动等等）都要有它们自己的基本树\citep[\page 10]{KJ2003a}。不同的基本树通过词汇规则\isc{词汇规则}\is{lexical rule}联系在一起。这些词汇规则将一棵特定的树映射为其他的树。通过这种方式，可以从一个表示主动形式的树推出表示被动形式的树。这些词汇规则可以和转换语法中的转换规则\isc{转换}\is{transformation}进行类比。 但必须强调一点，每个树中都有词汇元素，这使得整个语法和自由的转换相比更加受限。
 
 和GB以及含有空成分的LFG、CG、HPSG变体的一个有意思的不同之处是这里介绍的TAG变体\footnote{%
   参见 \citew{Rambow94a}和 \citew[\page 194]{Kallmeyer2005a-u}，以了解词典中带有空成分的TAG分析。
 }，其词典中并不包含空成分。空成分可以出现在树中，树再作为一个整体出现在词典中。
 
 基本树的大小不受限制，这使得TAG在分析熟语的时候特别方便（见\ref{Abschnitt-Diskussion-Lokalitaet}）。
-因为递归从基本树中被排除掉了，因此在导出树（局域的扩展域\isc{定域}\is{locality}）中距离特别远的元素可以包含在同一个基本树中。
+因为递归从基本树中被排除掉了，因此在导出树（局域的扩展域\isc{局部}\is{locality}）中距离特别远的元素可以包含在同一个基本树中。
 
  \citet*{KKNV95a}论证了满足特定要求的HPSG语法可以转写为TAG语法。通过这种方式，我们可以得到一个计算复杂度\isc{生成能力}\is{capacity!generative}更明确的语法。HPSG语法一般都是0-型文法，而不同的TAG变体可以用来刻画从2-型语言到弱上下文相关语言\isc{弱上下文相关语言}\is{mildly context"=sensitive grammar}之间的不同语言\citep{Joshi85a-u}。 \citet*{YMTT2001a}提出了一个算法可以将FB"=LTAG语法翻译成弱上下文相关语言的HPSG文法。
 
