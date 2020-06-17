@@ -4,7 +4,7 @@
 %\chapter{Generative"=enumerative vs.\ model-theoretic approaches}
 \label{Abschnitt-Generativ-Modelltheoretisch}
 
-生成"=枚举方法\isc{模型论语法|(}\is{model"=theoretic grammar|(}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isc{生成语法}\is{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 给）。
+生成"=枚举方法\isc{模型论语法|(}\is{model"=theoretic grammar|(}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isc{生成语法}\is{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 \, 给）。
 %Generative"=enumerative\is{model"=theoretic grammar|(} approaches assume that a grammar generates a set of sequences of symbols (strings of words).
 %This is where the term Generative Grammar\is{Generative Grammar} comes from. Thus, it is possible to use the grammar on
 %page~\pageref{bsp-grammatik-psg}, repeated here as (\mex{1}), to derive the string \emph{er das Buch dem Mann gibt}
@@ -46,10 +46,10 @@
 \item Chomsky的最简语法
 %\item Chomsky's Minimalist Grammars
 \end{itemize}
-\lfg 最初设计目的也是生成语法。
+\lfg 最初的设计目的也是生成语法。
 %\lfg was also originally designed to be a generative grammar.
 
-与这些语法理论相对的是模型论或基于约束的方法（model-theoretic approaches，简称MTA）。MTAs为所描述语法的表达式制定合乎语法的条件。在\ref{sec-modelle-theorien}中，我们已经讨论过一种运用特征结构来刻画现象的模板理论方法。为了解释这一观点，我将讨论另外一个HPSG的例子：（\mex{1}）展示了kennst（知道）的词项。
+与这些语法理论相对的是模型论或基于约束的方法（model-theoretic approaches，简称MTA）。MTA为所描述语法的表达式制定合乎语法的条件。在\ref{sec-modelle-theorien}中，我们已经讨论过一种运用特征结构来刻画现象的模板理论方法。为了解释这一观点，我将讨论另外一个HPSG的例子：（\mex{1}）展示了kennst（知道）的词项。
 %The opposite of such theories of grammar are model-theoretic or constraint"=based approaches (MTA).
 %MTAs formulate well"=formedness conditions on the expressions that the grammar describes.
 %In Section~\ref{sec-modelle-theorien}, we already discussed a model"=theoretic approach for theories that use
@@ -83,7 +83,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \zs
 \vspace{-\baselineskip}
 \end{figure}
-（\mex{0}）的描述中，确保相关语言学符号的\phonvc 取值是\phonliste{ kennst } ，也就是说，\phonc 的取值是受到约束的。 （\mex{0}）中给定的特征有类似的限制：给出了\synsemvc。在\synsemc 中，\textsc{loc}和\nonlocvc 都有限制。在\textsc{cat}中，对于\headc 和\subcatc 都有各自的限制。\subcatc 的取值是对依存成分的描述列表。在这里特征描述是采用了简写的方式，实际上代表了同样包含特征"=值偶对的复杂特征描述。对于kenenst的第一个论元，类型\type{noun}需要一个\headvc，语义索引中的\textsc{per}取值必须是\type{second}，\textsc{num}的取值必须是\type{sg}。（\mex{0}）中的结构共享是一种特殊的限制。词项中没有说明的取值可以在类型系统给出的特征结构范围内取值。在（\mex{0}）中，主格NP和受格NP的\slashvc 取值都没给出。这意味着\slaschc 的取值可以是空列表也可以是非空列表。
+（\mex{0}）的描述中，确保相关语言学符号的\phonvc 取值是\phonliste{ kennst } ，也就是说，\phonc 的取值是受到约束的。 （\mex{0}）中给定的特征有类似的限制：给出了\synsemvc。在\synsemc 中，\textsc{loc}和\nonlocvc 都有限制。在\textsc{cat}中，对于\headc 和\subcatc 都有各自的限制。\subcatc 的取值是对依存成分的描述列表。在这里特征描述采用了简写的方式，实际上代表了同样包含特征"=值偶对的复杂特征描述。对于kenenst的第一个论元，类型\type{noun}需要一个\headvc，语义索引中的\textsc{per}取值必须是\type{second}，\textsc{num}的取值必须是\type{sg}。（\mex{0}）中的结构共享是一种特殊的限制。词项中没有说明的取值可以在类型系统给出的特征结构范围内取值。在（\mex{0}）中，主格NP和受格NP的\slashvc 取值都没给出。这意味着\slaschc 的取值可以是空列表也可以是非空列表。
 %In the description of (\mex{0}), it is ensured that the \phonv of the relevant linguistic sign is
 %\phonliste{ kennst }, that is, this value of \phon is constrained. There are parallel restrictions for the features given in (\mex{0}): the \synsemv
 %is given. In \synsem, there are restrictions on the \textsc{loc} and \nonlocv. In \textsc{cat}, there are
@@ -113,7 +113,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 %}
 
  \citet[\page 19--20]{PS2001a}和 \citet{Pullum2007a}列出了下面的模型论方法：\footnote{%
-可以参见 \citew{Pullum2007a}对模型论句法（MTS）的历史发展的述评和更多的参考文献。  
+可以参见 \citew{Pullum2007a}对模型论句法（Model Theoretic Syntax，简称MTS）的历史发展的述评和更多的参考文献。  
 }
 % \citet[\page 19--20]{PS2001a} and  \citet{Pullum2007a} list the following model"=theoretic approaches:\footnote{%
 %  See  \citew{Pullum2007a} for a historical overview of Model Theoretic Syntax (MTS) and for further references.
@@ -141,7 +141,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 %Minimalist\indexmp approaches \citep{Veenstra98a} can be formulated in model"=theoretic terms.
 
  \citet{PS2001a} 指出了这三种观点的多种差异。在下面的章节中，我会着重论述其中两种差异。 \footnote{%
-	在这里读者应该注意：关于生成"=枚举和MTRS模型应该怎样最好地被形式化有不同的意见，而且并非这里讨论的所有假设都与每一个形式化体系相互兼容。下面的章节只是宽泛地反映了重要的观点。%
+	在这里读者应该注意：关于生成"=枚举和MTS模型应该怎样最好地被形式化有不同的意见，而且这里讨论的所有假设并非都兼容于每一种形式化体系。下面的章节只是宽泛地反映了重要的观点。%
 }\ref{Abschnitt-MTS-ten-Hacken}解决了Hacken对于模型论观点的反驳。
 % \citet{PS2001a} point out various differences between these points of view. In the following sections, I will focus on two of these differences.\footnote{%
 %	The reader should take note here: there are differing views with regard to how generative"=enumerative and MTS models are best formalized and not
@@ -151,7 +151,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \section{分级的可接受性}
 %\section{Graded acceptability}
 
-生成"=枚举方法\isc{分级性|(}\is{gradability|(}与模型论方法的差异在于它们怎么处理不同程度的话语可接受性。在生成"=枚举方法中，一个特定的词串，要么是合乎形式的表达，要么不是。这就意味着无法直接描述偏离的程度：（\mex{1}）中的第一个句子是合乎语法的，而下面的三句都是不合乎语法的。
+生成"=枚举方法\isc{分级性|(}\is{gradability|(}与模型论方法的差异在于它们怎么处理不同程度的话语可接受性。在生成"=枚举方法中，一个特定的词串，要么是合乎形式的表达，要么不是。这就意味着无法直接描述偏离的程度：（\mex{1}）中的第一个句子是合乎语法的，而下面的三句都不合乎语法。
 %Generative"=enumerative\is{gradability|(} approaches differ from model"=theoretic approaches in how they deal with the varying degrees of acceptability
 %of utterances. In generative"=enumerative approaches, a particular string is either included in the set of well"=formed expressions or it is not.
 %This means that it is not straightforwardly possible to say something about the degree of deviance: the first sentence in (\mex{1}) is judged grammatical
@@ -203,7 +203,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 %\glt `Students stormed into the university canteen with flyers and a megaphone calling for everyone to come to a plenary meeting
 %in the glass hall. For many, the food stuck in their throats and they immediately joined them.'
 \z
-Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串距离函数（string distance function）来决定话段的相对可接受性。这个函数将不合语法的词串与合法表达相比较，并按照一定的标准给不合乎语法性打分，即1、2或3。但是，这一处理并不完备，因为在接受性上仍然存在很多细微的差异，而词串距离函数无法做出正确预测。这一问题以及计算这一函数的技术问题可以参见\citew[\page 29]{PS2001a}。
+Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串距离函数（string distance function）来决定话段的相对可接受性。这个函数将不合语法的词串与合法表达相比较，并按照一定的标准给不合乎语法性打分，即1、2或3。但是，这一处理并不完备，因为在接受性上仍然存在很多细微的差异，而词串距离函数无法做出正确预测。这个问题以及计算这一函数的技术问题可以参见\citew[\page 29]{PS2001a}。
 %Chomsky (\citeyear[Chapter~5]{Chomsky75a}; \citeyear{Chomsky64a}) tried to use a string distance function to determine the relative
 %acceptability of utterances. This function compares the string of an ungrammatical expression with that of a grammatical expression
 %and assigns an ungrammaticality score of 1, 2 or 3 according to certain criteria. This treatment is not adequate, however, as there
@@ -292,7 +292,7 @@ Ewan Klein\aimention{Ewan Klein}指出，可从简单推导出复杂表达的范
 %can be such that it is not possible to analyze it with type"=raising rules and composition
 %rules.
 
-无论如何，这一论据对于最简方案都是一种挑战，因为最简方案\isc{最简方案（MP）}\is{Minimalist Program (MP)}不可能允许the与这样的名词性成分相组合，即这一成分尚未通过合并从词语材料中构建而来。
+无论如何，这个论据对于最简方案都是一种挑战，因为最简方案\isc{最简方案（MP）}\is{Minimalist Program (MP)}不可能允许the与这样的名词性成分相组合，即这一成分尚未通过合并从词语材料中构建而来。
 %In any case, this argument holds for Minimalist\is{Minimalist Program (MP)} theories since it is not possible to have a combination
 %of \emph{the} with a nominal constituent if this constituent was not already built up from lexical
 %material by Merge.
@@ -352,7 +352,7 @@ Ten Hacken认为类似于例（\mex{1}）的例子都是有问题的：
 \ex 
 \gll How many cousins does Niels have?\\
 	\textsc{que} 很多 表亲 \textsc{aux} Niels 有\\
-\mytrans{Niels有多少表亲？}
+\mytrans{Niels有多少个表亲？}
 %\ex How many cousins does Niels have?
 \zl
 在复数用法中，不可能假设cousins是阴性或阳性，因为关系集合可以包含女性或男性。值得注意的是在英语中，（\mex{1}a）是合法的，但是在德语中要表达相似的意义需要强制使用（\mex{1}b）。
@@ -474,8 +474,8 @@ Keller.\\
 \eal
 \ex 
 \gll "`Farbe bringt die meiste Knete!"' verriet ein 14jähriges türkisches \emph{Mädchen}, \emph{die} die Mauerstückchen am      Nachmittag am Checkpoint Charlie an Japaner und US-Bürger verkauft.\footnotemark\\
-\hspaceThis{"`}颜色 带来 \deter~ 最多 钱 揭露 \deter~ 14-岁  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \textsc{art}.\textsc{def} 墙.碎片
-\textsc{prep}.\textsc{art}.\textsc{def} 下午 在 检查站 查理 \textsc{prep} 日本 和 美国-国民 卖\\  
+\hspaceThis{"`}颜色 带来 \textsc{art}.\textsc{def}~ 最多 钱 揭露 一~ 14-岁  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \textsc{art}.\textsc{def} 墙.碎片
+\textsc{prep}.\textsc{art}.\textsc{def} 下午 \textsc{prep}.\textsc{art}.\textsc{def} 检查站 查理 \textsc{prep} 日本 和 美国-国民 卖\\  
 \footnotetext{%
       《日报》（\emph{taz}）， \zhdate{1990/06/04}，第6页。
       }
