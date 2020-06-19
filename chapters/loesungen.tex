@@ -24,7 +24,6 @@
 \section{短语结构语法}
 %\section{Phrase structure grammars}
 
-
 \begin{enumerate}
 \item 任何一种文法都有可能提出额外的符号和规则，可能是会生成多余的结构，或者是根本没用过，因为规则的右手边没有能够使用的词或短语。比如说，如果我们在文法中加入下面的规则，我们需要一个仍能分析这个相同的语言片段的更为复杂的文法。
 %\item For any grammar, it is possible to assume additional symbols and rules that create unnecessary structure or are simply
@@ -40,15 +39,15 @@ Tralala $\to$ Trulla Trololo
 %\item In general, it is assumed that the grammar with the fewest rules is the best one. Therefore, we can reject grammars that
 %contain unnecessary rules such as (\mex{0}).
 
-我们需要牢记，文法理论的目的是什么。如果我们的目标是为了描写人类的语言能力，那么有着更多规则的文法就比那些具有较少规则的文法要好。这是因为心理语言学的研究显示我们的大脑易储存高频的单位，而且并不是每次都由他们的个别部分构成，尽管我们当然有能力这么做。
+\par\setlength\parindent{2em}
+我们需要牢记，文法理论的目的是什么。如果我们的目标是为了描写人类的语言能力，那么有着更多规则的文法就比那些具有较少规则的文法要好。这是因为心理语言学的研究显示我们的大脑易储存高频的单位，而且并不是每次都由它们的个别部分构成，尽管我们当然有能力这么做。
 %One should bear in mind what the aim of a theory of grammar is. If our goal is to describe the human
 %language capacity, then a grammar with more rules could be better than other grammars with less
 %rules. This is because psycholinguistic research has shown that highly"=frequent units are simply
 %stored in our brains and not built up from their individual parts each time, although we would of
 %course be able to do this.\todostefan{Quelle und Beispiel}
 
-
-\item 这里的问题是有可能生成一个完整的空名词短语（见图~\vref{Abbildung-leere-NP}）。
+\item 这里的问题是有可能生成一个完整的空名词短语（见图\vref{Abbildung-leere-NP}）。
 %\item The problem here is the fact that it is possible to derive a completely empty noun phrase
 % (see Figure~\vref{Abbildung-leere-NP}). 
 \begin{figure}
@@ -73,7 +72,8 @@ sm edges
 %     I believe that sleeps\\
 }
 \z
-这个问题可以使用一个特征来解决，这个特征决定了\nbar 的左边界是否是空的。至少带一个形容词的可见的Ns和\nbar 具有“--” 值，其他的是“+”。空限定语就只能跟具有“--” 值的\nbar{}s 相组合。参见 \citew{Netter94}。
+\par\setlength\parindent{2em}
+这个问题可以使用一个特征来解决，这个特征决定了\nbar 的左边界是否是空的。至少带一个形容词的可见的N和\nbar 具有“--” 值，其他的是“+”。空限定语就只能跟具有“--” 值的\nbar{}相组合。参见 \citew{Netter94}。
 %This problem can be solved using a feature that determines whether the left periphery of the \nbar is empty.
 %Visible Ns and \nbar with at least an adjective would have the value `--' and all others `+'. Empty determiners
 %could then only be combined with \nbar{}s that have the value `--'. See  \citew{Netter94}.
@@ -87,7 +87,8 @@ sm edges
      有趣的 书\\
 %     interesting books\\
 \z
-不过，如果形容词跟名词短语组合，仍需要解释（\mex{1}）为什么是不合乎语法的。
+\par\setlength\parindent{2em}
+不过，如果形容词跟名词短语组合，仍要解释例（\mex{1}）为什么是不合乎语法的。
 %If adjectives are combined with NPs, however, it still has to be explained why (\mex{1}) is ungrammatical.
 \ea[*]{
 \gll interessante die Bücher\\
@@ -95,7 +96,7 @@ sm edges
 %     interesting the books\\
 }
 \z
-
+\par\setlength\parindent{2em}
 有关这个话题的详细讨论，见 \citew[\S~6.6.2]{MuellerLehrbuch1}。\nocite{MuellerLehrbuch1}
 %For a detailed discussions of this topic, see  \citew[Section~6.6.2]{MuellerLehrbuch1}.\nocite{MuellerLehrbuch1}
 
@@ -116,6 +117,7 @@ sm edges
      有趣的 \spacebr{}文章 和 书 来自 斯图加特\\
 %     interesting \spacebr{}essays and books from Stuttgart\\
 \zl
+\par\setlength\parindent{2em}
 由于形容词只能跟名词直接组合，这些短语就是无法分析的。Bücher（书）或Bücher aus Stuttgart（来自斯图加特的书）就是完整的名词短语了。因为一般认为并列成分要求具有相同的句法范畴，所以Aufsätze（文章）就应该是一个名词短语。Aufsätze und Bücher（文章和书）和Aufsätze und Bücher aus
   Stuttgart（来自斯图加特的文章和书）也应该是名词短语，这样还是没有解释为什么形容词跟这个名词组合。因为（\mex{-1}）的关系，我们必须排除那些假定完整的名词短语跟形容词组合的分析。
 %Since adjectives can only be combined directly with nouns, these phrases cannot be analyzed. 
@@ -125,6 +127,7 @@ sm edges
 %  Stuttgart} would then also be NPs and it remains unexplained how an adjective can be combined with this NP.
 %Because of (\mex{-1}), we must rule out analyses that assume that full NPs combine with adjectives.
 
+\par\setlength\parindent{2em}
 关于空成分的概括性论述见第\ref{chap-empty}章。
 %See Chapter~\ref{chap-empty} for a general discussion of empty elements.
 
@@ -138,6 +141,7 @@ sm edges
 %smaller units. But even if one admits postnominal modifiers to attach to complete NPs, one cannot
 %account for the iteration of adjectives and for arguments that depend on the elided noun.
  
+\par\setlength\parindent{2em}
 所以，最简单的处理德语的方法就是提出空名词的假设。或者，我们可以假设形容词直接投射到\nbar 上。这个\nbar 就被形容词和后置形容词修饰。跟冠词组合构成一个完整的\nbar 。对于包括省略的关系名词短语来说，我们必须要假设vom Gleimtunnel（属于格莱姆隧道的）这样的论元投射到\nbar 上。\nbar 就可以进一步被修饰或者直接跟冠词组合。
 %So, the simplest way to \textsc{cop}e with the German data is the assumption of an empty noun. Alternatively
 %one could assume that an adjective is directly projected to an \nbar. This \nbar then can be
@@ -157,7 +161,8 @@ sm edges
 %	 the on his son very proud father\\
 %\mytrans{the father very proud of his son}
 \z
-我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于他们的限定语前面。有关这类重新排序的描写，请参考第\ref{Kapitel-GB}章。\ref{sec-Diskussion-X-Bar}是关于\xbar "=理论的讨论。
+\par\setlength\parindent{2em}
+我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于它们的限定语前面。有关这类重新排序的描写，参见第\ref{Kapitel-GB}章。\ref{sec-Diskussion-X-Bar}是关于\xbar "=理论的讨论。
 %One would either have to allow for specifiers to be combined with their heads before complements or allow crossing lines in trees. Another assumption
 %could be that German is like English, however then adjectival complements would have to be obligatorily reordered before their specifier. For
 %a description of this kind of reordering, see Chapter~\ref{Kapitel-GB}. See Section~\ref{sec-Diskussion-X-Bar} for a discussion of \xbar"=Theory.
@@ -202,7 +207,8 @@ sm edges
 %	    he.\nom{} gives her.\dat the.\acc{} book\\
       }
       \zl
-
+      
+\par\setlength\parindent{2em}
 为了排除后面两个句子，文法必须要包括格的信息。下面的文法就可以解决这个问题：
 %In order to rule out the last two sentences, the grammar has to contain information about case. The following grammar will do the job:
 \eal
@@ -395,7 +401,7 @@ sm edges
 \zl
 
 \noindent
-可以用（\mex{1}）的规则和（\mex{2}）中的词汇项分析（\mex{0}a,b）中的句子。
+（\mex{0}a,b）中的句子可以用（\mex{1}）中的规则和（\mex{2}）中的词汇项来分析。
 %It is possible to analyze the sentences in (\mex{0}a,b) using the rules in (\mex{1}) and the lexical entries in (\mex{2}).
 \eal
 \ex V3 $\to$ H[6], N2[\textsc{case} nom], N2[\textsc{case} acc] 
@@ -411,7 +417,7 @@ sm edges
 \zl
 
 \noindent
-规则（\mex{-1}b，c）对应于我们在\ref{sec-psg-np}讲到的\xbar—规则。他们跟这些规则的不同之处在于没有在规则的右边给出中心语的词类。词类是通过中心语特征原则决定的。中心语的词类跟规则左边成分的词类保持一致，即它必须是（\mex{-1}b，c）中的N。它也从中心语特征原则得出，整个NP具有跟中心语一样的格，这样就不必在上面的规则中额外提及了。27是一个次范畴。这个数字是任意的。
+规则（\mex{-1}b，c）对应于我们在\ref{sec-psg-np}中讲到的\xbar--规则。它们跟这些规则的不同之处在于没有在规则的右边给出中心语的词类。词类是通过中心语特征原则决定的。中心语的词类跟规则左边成分的词类保持一致，即它必须是（\mex{-1}b，c）中的N。它也从中心语特征原则得出，整个NP具有跟中心语一样的格，这样就不必在上面的规则中额外提及了。27是一个次范畴。这个数字是任意的。
 %The rules (\mex{-1}b,c) correspond to \xbar-rules that we encountered in Section~\ref{sec-psg-np}. They only differ from these rules
 %in that the part of speech of the head is not given on the right"=hand side of the rule. The part of speech is determined by
 %the Head Feature Convention. The part of speech of the head is identical to that on the left"=hand
@@ -427,39 +433,39 @@ V[+\textsc{mc}]  & X\\
 X       & V[$-$\textsc{mc}]\\
 \end{tabular}
 \z
+\par\setlength\parindent{2em}
 冠词前置于名词的事实通过下面的LP"=规则来实现：
 %The fact that the determiner precedes the noun is ensured by the following LP"=rule:
 \ea
 {}Det $<$ X
 \z
 %\pagebreak
-为了分析（\ref{Aufgabe-GPSG-Grammatik-extraction}），（\mex{1}）的提取元规则是必须的：
+\par\setlength\parindent{2em}
+为了分析（\ref{Aufgabe-GPSG-Grammatik-extraction}），（\mex{1}）中的提取元规则是必需的：
 %The Extraction Metarule in (\mex{1}) is required in order to analyze (\ref{Aufgabe-GPSG-Grammatik-extraction}):
 \ea
 V3  $\to$ W, X $\mapsto$\\
 V3/X  $\to$ W
 \z
-其中，这个元规则允准了针对（\mex{-4}a）的规则（\mex{1}）：
+其中，这条元规则允准了针对（\mex{-4}a）的规则（\mex{1}）：
 %Among others, this metarule licenses the rule in (\mex{1}) for (\mex{-4}a):
 \ea
 V3/N2[\textsc{case} nom]  $\to$ H[6],  N2[\textsc{case} acc] 
 \z
 
-\noindent
+%\noindent
+\par\setlength\parindent{2em}
 规则（\mex{1}）被用来描写长距离依存。
 %The rule in (\mex{1}) is used to bind off long"=distance dependencies.
 \ea
 V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 \z
-下面的线性规则确保$+$\textsc{top}—成分前置于它缺失的句子：
+\par\setlength\parindent{2em}
+下面的线性规则确保$+$\textsc{top}--成分位于缺少它的句子前面：
 %The following linearization rule ensures that the $+$\textsc{top}-constituent precedes the sentence in which it is missing:
 \ea
 {}[+\textsc{top}] $<$ X
 \z
-
-\noindent
-图~\vref{fig-der-mann-liest-ihn}展示了该语法允准的结构。
-%Figure~\vref{fig-der-mann-liest-ihn} shows the structure licensed by the grammar.
 \begin{figure}
 \centering
 \begin{forest}
@@ -473,7 +479,11 @@ sm edges
 \caption{\label{fig-der-mann-liest-ihn}Der Mann liest ihn.（这个男人读它。）的分析}
 %\caption{\label{fig-der-mann-liest-ihn}Analysis of \emph{Der Mann liest ihn.} `The man reads it.'}
 \end{figure}%
-总之，我们可以说允准（\ref{Aufgabe-GPSG-Grammatik}）句子的文法应该（至少）包括下面这几个部分：
+\noindent
+图\vref{fig-der-mann-liest-ihn}展示了该语法允准的结构。
+%Figure~\vref{fig-der-mann-liest-ihn} shows the structure licensed by the grammar.
+\par\setlength\parindent{2em}
+总之，我们可以说允准例（\ref{Aufgabe-GPSG-Grammatik}）中的句子的文法应该（至少）包括下面这几个部分：
 %In sum, one can say that the grammar that licenses the sentences in (\ref{Aufgabe-GPSG-Grammatik}) should have (at least) the following
 %parts:
 
@@ -548,7 +558,7 @@ typehierarchy
 \end{forest}
 \end{figure}%
 
-\item 列表\isc{列表}\is{list}可以通过包括开头和其余部分列表的递归结构来描写。其余成分可以是一个非空列表（\type{ne\_list}）或空列表（\type{e\_list}）。列表\relliste{ \type{a}, \type{b}, \type{c} } 可以按照下面这样表示：
+\item 列表\isc{列表}\is{list}可以通过包括列表开头和其余部分的递归结构来描写。其余成分可以是一个非空列表（\type{ne\_list}）或空列表（\type{e\_list}）。列表\relliste{ \type{a}, \type{b}, \type{c} } 可以按照下面这样表示：
 %\item Lists\is{list} can be described using recursive structures that consist of both a list beginning and a rest. The rest can either
 %be a non"=empty list (\type{ne\_list}) or the empty list (\type{e\_list}). The list \relliste{ \type{a}, \type{b}, \type{c} } can be represented as follows:
 \ea
@@ -580,7 +590,7 @@ last & \ibox{1}\\
 }
 \z
 
-与（\mex{-1}）列表的表示不同，这个列表末尾的\textsc{rest}值不是\type{e\_list}，而是\type{list}。这就有可能通过在它结束的指针处加上另一个列表来对它进行扩展。（\mex{0}）和（\mex{1}a）的联结是（\mex{1}b）。
+与（\mex{-1}）中的列表的表示不同，这个列表末尾的\textsc{rest}值不是\type{e\_list}，而是\type{list}。这就有可能通过在它结束的指针处加上另一个列表来对它进行扩展。（\mex{0}）和（\mex{1}a）的联结是（\mex{1}b）。
 %Unlike the list representation in (\mex{-1}), the \textsc{rest} value of the end of the list is not \type{e\_list}, but rather
 %simply \type{list}. It is then possible to extend a list by adding another list to the point where it ends. The concatenation of 
 %(\mex{0}) and (\mex{1}a) is (\mex{1}b).
@@ -612,8 +622,8 @@ last & \ibox{2}\\
 %%In order to combine the lists, the \textsc{list} value of the second list has to be identified with the {\sc
   %last} value of the first list. The \textsc{last} value of the resulting list then corresponds to the
 %  \textsc{last} value of the second list (\ibox{2} in the example.)
-
-有关不同列表的编码信息可以通过搜索关键词list、append和feature structure得到。在搜索结果中，我们可以找到解释不同列表的正在开发文法的网页。
+\par\setlength\parindent{2em}
+关于不同列表的编码信息可以通过搜索关键词list、append和feature structure得到。在搜索结果中，我们可以找到解释不同列表的正在开发文法的网页。
 %Information about the encoding of difference lists can be found by searching for the keywords  \emph{list}, \emph{append}, and
 %\emph{feature structure}. In the search results, one can find pages on developing grammars that explain
 %difference lists.
@@ -634,7 +644,7 @@ last & \ibox{2}\\
                         (\up\ \lfgtense) = \small PAST}
 \z
 
-\item 在例句（\mex{1}）中，verschlingen（吞）的宾语位于前场。
+\item 在例（\mex{1}）中，verschlingen（吞）的宾语位于前场。
 %\item In the sentence (\mex{1}), the object of \emph{verschlingen} `devour' is in the prefield.
 \ea
 \gll Den Apfel verschlingt David.\\
@@ -643,12 +653,13 @@ last & \ibox{2}\\
 %	 the.\acc{} apple devours David.\nom\\
 %\mytrans{David is devouring the apple.}
 \z
+\par\setlength\parindent{2em}
 该分析是图\vref{Abb-Verbstellung-LFG}中的分析和\ref{Abschnitt-NLA-LFG}所示的长距离依存分析的组合。宾语不在VP内部实现，而是在前场实现。
 %The analysis is a combination of the analysis in Figure~\vref{Abb-Verbstellung-LFG} and the analysis of long"=distance
 %dependencies that was presented in Section~\ref{Abschnitt-NLA-LFG}. The object is not realized inside the VP, but rather
 %in the prefield.
-
-必要的c—结构规则如（\mex{1}）所示：
+\par\setlength\parindent{2em}
+必要的c"=结构规则如（\mex{1}）所示：
 %The necessary c"=structure rules are given in (\mex{1}):
 \eal
 \ex 
@@ -675,8 +686,8 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\up \textsc{df})}XP} & C$'$
 \zl
 
 \noindent
-这些规则允准了这里所述例子的两个f—结构：其中一个NP，即den
-  Apfel（苹果），是话题，另一个NP是焦点。图\ref{Abbildung-V2-LFG}显示了前场中话题化成分的分析。
+这些规则允准了这里所述例子的两个f"=结构：其中一个NP，即den
+  Apfel（苹果），它是话题，另一个NP是焦点。图\ref{Abbildung-V2-LFG}显示了前场中话题化成分的分析。
 %These rules allow two f"=structures for the example in question: one in which the NP \emph{den
 %  Apfel} `the apple' is the topic and another in which this NP is the focus. Figure~\ref{Abbildung-V2-LFG} 
 %shows the analysis with a topicalized constituent in the prefield.\todostefan{Dreieck für den Apfel}
@@ -823,6 +834,7 @@ np/n  & n/pp    & pp/np      & np\\
 %     one.\gen{} interesting.\nom{} man.\gen{}\\
 }
 \zl
+\par\setlength\parindent{2em}
 （\mex{1}）说明了interessanten的\catvc 。 
 %(\mex{1}) shows the \catv of \emph{interessanten}.
 
@@ -836,13 +848,13 @@ np/n  & n/pp    & pp/np      & np\\
               subcat & \liste{} \\
 }
 \zs
-在\textsc{mod}下形容词的格值与\nbar 的格值的结构共享决定了名词和形容词的格值。由此，interessanten可以跟Mannes组合，但是不能跟Mann组合。类似地，interessanter只能跟主格的Mann组合，而不能跟属格的Mannes组合。
+在\textsc{mod}下形容词的格的取值与\nbar 的格的取值的结构共享决定了名词和形容词的格的取值。由此，interessanten可以跟Mannes组合，但是不能跟Mann组合。类似地，interessanter只能跟主格的Mann组合，而不能跟属格的Mannes组合。
 %The structure sharing of the case value of the adjective with the case value of the \nbar under \textsc{mod}
 %identifies the case values of the noun and the adjective. \emph{interessanten} can therefore be combined with 
 %\emph{Mannes}, but not with \emph{Mann}. Similarly, \emph{interessanter}
 %can only be combined with the nominative \emph{Mann}, but not with the genitive \emph{Mannes}. 
-
-对于名词短语内部一致关系的改进，请参考 \citew[Abschnitt~13.2]{MuellerLehrbuch1}。
+\par\setlength\parindent{2em}
+对于名词短语内部一致关系的改进，参见 \citew[\S~13.2]{MuellerLehrbuch1}。
 %For a refinement of the analysis of agreement inside the noun phrase, see  \citew[Abschnitt~13.2]
 %{MuellerLehrbuch1}.
 \end{enumerate}
@@ -852,7 +864,7 @@ np/n  & n/pp    & pp/np      & np\\
 %\section{Construction Grammar}
 
 熟语可以通过仔细阅读报纸来获得。稍微枯燥的方法是查找熟语词典，如“熟语与短语免费辞典”\footnote{%
-\url{http://idioms.thefreedictionary.com/}, \zhdate{2015/03/04}.
+\url{http://idioms.thefreedictionary.com/}，\zhdate{2015/03/04}。
 }。
 %Idioms can be found by reading the newspaper carefully. The less exciting method is to look them up a %dictionary of
 %idioms such as the Free Dictionary of Idioms and Phrases\footnote{%
@@ -898,7 +910,7 @@ dg edges
       [N [er;他]]
       [Adv, dg adjunct [morgen;明天]]
       [V [kommen;来]]
-      [wird;觉得]]]
+      [wird;将]]]
   [freut;高兴]
   [N [uns;我们]]]
 \end{forest}
@@ -1004,7 +1016,8 @@ tag
 %\caption{\label{TAG-Elementarbaeume-dem-Koenig-treue}Elementary trees for \emph{der dem König treue Diener}}
 \end{figure}%
 
-\noindent
+%\noindent
+\par\setlength\parindent{2em}
 通过在替换结点König（国王）替换dem的树，我们会得到一个完整的NP。然后，这就可以插进treue（忠诚的）的替换结点中。相似地， der的树可以跟Diener的树组合。然后，我们就得到图\vref{TAG-substituiert}中的两棵树了。
 %By substituting the tree for \emph{dem} `the' in the substitution node of \emph{König} `king', one then arrives at a full NP.
 %This can then be inserted into the substitution node of \emph{treue} `loyal'. Similarly, the tree
@@ -1038,9 +1051,10 @@ tag
 \end{forest}
 }
 \hfill\mbox{}
-\caption{\label{TAG-substituiert}替换后的der dem König treue和der Diener树}
+\caption{\label{TAG-substituiert}替换后的der dem König treue树和der Diener树}
 %\caption{\label{TAG-substituiert}Trees for \emph{der dem König treue} and \emph{der Diener} after substitution}
 \end{figure}%
+\par\setlength\parindent{2em}
 形容词树可以连接到der Diener的N$'$"=n结点上，并得到图\vref{TAG-Baeume-nach-Adjunktion}中的结构。
 %The adjective tree can then be adjoined to the N$'$"=node of \emph{der Diener}, which yields the structure in Figure~\vref{TAG-Baeume-nach-Adjunktion}.
 \begin{figure}
@@ -1062,7 +1076,7 @@ tag
          [N [Diener;仆人]]]]]
 \end{forest}
 %}
-\caption{\label{TAG-Baeume-nach-Adjunktion}连接到N$'$"=结点的结果}
+\caption{\label{TAG-Baeume-nach-Adjunktion}将AP附加到N$'$"=结点的结果}
 %\caption{\label{TAG-Baeume-nach-Adjunktion}Result of adjunction of the AP to the N$'$"=node}
 \end{figure}%
 
