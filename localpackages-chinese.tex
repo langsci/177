@@ -528,7 +528,8 @@ Grünberger Str. 16\\
 
 %\setCJKmainfont[Scale=MatchUppercase]{SourceHanSerifSC-Regular}
 
-
+% a font for Latin script that matches the font for Chinese
+%
 %\setmainfont{SourceSerifPro-Regular}\setCJKmainfont[Scale=MatchUppercase]{SourceHanSerifSC-Regular}
 
 % Download fonts at: https://github.com/adobe-fonts/source-han-serif
@@ -537,9 +538,13 @@ Grünberger Str. 16\\
 \setmainfont[BoldFont={SourceSerifPro-Bold},
              Path=\fontpath, 
              ItalicFont={SourceSerifPro-LightIt},
-             BoldItalicFont={SourceSerifPro-BoldIt}
+             BoldItalicFont={SourceSerifPro-BoldIt},
+%             SmallCapsFont={SourceHanSerifSC-Light}
+             SmallCapsFont={SourceHanSerifSC-Heavy}
              ]{SourceSerifPro-Light}
 \setCJKmainfont[Scale=MatchUppercase,
+                SmallCapsFont={SourceHanSerifSC-Light},
+%               SmallCapsFont={SourceHanSerifSC-Heavy},
                 Path=\fontpath]{SourceHanSerifSC-Regular}
 
 \newcommand{\passive}{被}
