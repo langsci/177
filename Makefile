@@ -150,14 +150,7 @@ commit-stable: stable.pdf
 	git commit -m "automatic creation of stable.pdf" stable.pdf
 	git push -u origin
 
-trees:
-	xelatex -shell-escape grammatical-theory
-	xelatex -shell-escape trees
 
-forest-commit:
-	git add grammatical-theory.for.dir/*.pdf
-	git commit -m "forest trees" grammatical-theory.for.dir/*.pdf grammatical-theory.for
-	git push -u origin
 
 
 o-public: o-public-lehrbuch 
@@ -203,6 +196,9 @@ $(PUB_FILE): ../../hpsg/make_bib_header ../../hpsg/make_bib_html_number  ../../h
 source: 
 	tar chzvf ~/Downloads/gt.tgz *.tex styles/*.sty LSP/
 
+memo-install:
+	cp -pr ~/Documents/Dienstlich/Projekte/memoize/memoize* .
+	cp -pr ~/Documents/Dienstlich/Projekte/memoize/nomemoize* .
 
 #housekeeping	
 clean:

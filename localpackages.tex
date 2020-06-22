@@ -67,19 +67,18 @@
 %\renewcommand{\xbar}{X̅\xspace}
 
 
-%\usepackage[external,linguistics]{./styles/forest/forest}
-
 
 % for reasons I do not understand this cannot be moved further down and 
 % the loading of forest further down cannot be removed. St. Mü. 26.01.2017
 % It breaks the dependency grammar trees in forest.
 \usepackage{langsci-forest-setup}
 
-\tikzset{external/prefix={grammatical-theory.for.dir/}}
-\forestset{external/master=grammatical-theory}
-
-%\usepackage{./styles/forest-externalizetikz}
-
+\usepackage{nomemoize} 
+\memoizeset{
+  memo filename prefix={chapters/hpsg-handbook.memo.dir/},
+  register=\todo{O{}+m},
+  prevent=\todo,
+}
 
 \forestset{
       terminus/.style={tier=word, for children={tier=tabular}, for tree={fit=band}, for descendants={no path, align=left, l sep=0pt}},

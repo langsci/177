@@ -33,46 +33,16 @@
 \tikzset{deparrow/.style={-Latex}}%,blue}}
 
 
-\usepackage[external,linguistics]{forest}
-\tikzset{
-  external/system call={xelatex \tikzexternalcheckshellescape -halt-on-error -interaction=batchmode -jobname "\image" "\texsource"},
-  external/up to date check=simple,
-}
+% externalization works with package memoize
+\usepackage[linguistics]{forest}
 %\usepackage{morewrites}
-
-
-% For setups where each \include creates an .aux file. When externalizing
-% graphics, read ".aux.copy" files instead.  We do this by redefining \@input
-% for the duration of "\begin{document}" --- this is where the .aux files are
-%   read.
-\AtEndPreamble{%
-  \tikzifexternalizing{%
-    \let\orig@input\@input
-    \def\@input#1{\orig@input{#1.copy}}
-  }{}%
-}
-\AtBeginDocument{%
-  \tikzifexternalizing{%
-    \let\@input\orig@input
-  }{}%
-}
-
-% After including a file with its own ".aux", this ".aux" file must be copied
-% to ".aux.copy".  I patched "\include" to do this, but if it turns out it does
-% more harm than good, just use "\forest@file@copy" manually wherever
-% necessary.
-\let\orig@include\include
-\def\include#1{%
- \orig@include{#1}%
- \forest@file@copy{#1.aux}{#1.aux.copy}% No worry, Forest tests for existence.
-}
 
 
 
 % specification for all trees, "default preamble" appends to existing specification.
 % The version with apostrophe replaces it.
 \forestset{default preamble'={
-    for tree={align=center,parent anchor=south, child anchor=north,anchor=north,base=bottom},   
+    for tree={align=center,parent anchor=south, child anchor=north,base=bottom,anchor=north},   
 % anchor=north was introduced to get alignments of AVMs right.
 % used to be anchor=north but this fails on trees in \ea \z examples, St. Mü. 02.05.2020 or may be not
 %
@@ -331,11 +301,8 @@ substitution/.style={edge={<-,dashed},l+=\baselineskip},
   edge from/.style={
     edge from'/.process=_O{#1}{#1.edge},
   },
-  % Identify two (adjacent, vertically aligned) nodes
-  forget@node@boundary/.code={%
-    \forestolet{positive@edge@#1}\relax
-    \forestolet{negative@edge@#1}\relax
-  },
+  % Identify two (adjacent, vertically aligned) nodes.  See the explanation of
+  % how this works in "type-hierarchies.tex"
   identify/.style={
     phantom,
     temptoksa/.option=#1.name,
@@ -352,6 +319,10 @@ substitution/.style={edge={<-,dashed},l+=\baselineskip},
       },
     },
     for nodewalk/.process=Rw1Ow1{temptoksa}{name=##1}{!u.name}{edge to={##1}},
+  },
+  forget@node@boundary/.code={%
+    \forestolet{positive@edge@#1}\relax
+    \forestolet{negative@edge@#1}\relax
   },
   % Uniformly spread any sequence of nodes
   spread/.style n args=4{
@@ -397,38 +368,39 @@ instance/.style={edge=dotted}
   },
 }
 
-% AVM helper
+% Type hierarchy (Saso 2020)
 \forestset{
-  avm/.style={
-    content format={%
-      \noexpand\avmoptions{#1}%
-      \noexpand\begin{avm}%
-        \forestoption{content}%
-      \noexpand\end{avm}%
+  type hierarchy/.style={
+    for tree={
+      anchor=base,
+      content format={\noexpand\type{\unexpanded{#1}\forestoption{content}}},
     },
+    % The \ldots should not be in italics, so we add \normalfont to the original definition. Saso 27.05.2020
+    TeX={
+      \let\origldots\ldots
+      \def\ldots{\normalfont\origldots}%
+    },
+    % Saso suggested the above rather than looking at the content, but we may use looking at the
+    % content for replacing "...":
+    delay={where content={...}{content=\normalfont\ldots}{}},
   },
+  % Partitions are typeset in small caps (\textsc) and put in boxes (draw).
+  partition/.style={
+    content format={\noexpand\textsc{\forestoption{content}}},
+    draw,
+  },
+  instance/.style={
+    gray,edge={gray,dashed},align=center
+  },
+  % if all leaves in the hierarchy are instances, we can declare this as follows:
+  % nodes which do not have children (n children=0) are drawn in gray and edges leading to them are dashed 
+  instances/.style={
+      for tree={
+      s sep=0,
+      if n children=0{
+        instance   % easier to maintain if we use the style than repeat the definition of the style
+      }{},
+  }},
 }
 
 
-% Temporary: an addition to forest
-\forestset{
-calign children/.style 2 args={calign primary child={#1}, calign secondary child={#2}},
-  calign/1/.style={calign=child, calign primary child=1},
-  calign/2/.style={calign=child, calign primary child=2},
-  calign/3/.style={calign=child, calign primary child=3},
-  calign/4/.style={calign=child, calign primary child=4},
-  calign/5/.style={calign=child, calign primary child=5},
-  calign/6/.style={calign=child, calign primary child=6},
-  calign/7/.style={calign=child, calign primary child=7},
-  calign/8/.style={calign=child, calign primary child=8},
-  calign/9/.style={calign=child, calign primary child=9},
-  calign/-1/.style={calign=child, calign primary child=-1},
-  calign/-2/.style={calign=child, calign primary child=-2},
-  calign/-3/.style={calign=child, calign primary child=-3},
-  calign/-4/.style={calign=child, calign primary child=-4},
-  calign/-5/.style={calign=child, calign primary child=-5},
-  calign/-6/.style={calign=child, calign primary child=-6},
-  calign/-7/.style={calign=child, calign primary child=-7},
-  calign/-8/.style={calign=child, calign primary child=-8},
-  calign/-9/.style={calign=child, calign primary child=-9},
-}

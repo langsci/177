@@ -824,12 +824,12 @@ head-dtr$|$synsem$|$loc$|$cat$|$head \ibox{1}\\
 \begin{figure}
 \centering
 \begin{forest}
-typehierarchy
-[\type{sign}
-  [\type{word}]
-  [\type{phrase} 
-    [\type{non-headed-phrase}]
-    [\type{headed-phrase} [\type{head-argument-phrase}]]]]
+type hierarchy
+[sign
+  [word]
+  [phrase
+    [non-headed-phrase]
+    [headed-phrase [head-argument-phrase]]]]
 \end{forest}
 \caption{\label{fig-type-sign}\type{sign}的类型层级：\type{headed"=phrase}的所有子类型都承袭了约束条件}
 %\caption{\label{fig-type-sign}Type hierarchy for \type{sign}: all subtypes of \type{headed"=phrase} inherit constraints}
