@@ -5,44 +5,15 @@ LSP-STYLES=~/Documents/Dienstlich/Projekte/OALI/Git-HUB/latex/langsci/
 # and move zhmakeindex there
 ZHMAKEINDEX-PATH=~/bin/
 
+SOURCE=gt.bib $(wildcard local*.tex) $(wildcard chapters/*.tex)	grammatical-theory.tex           \
+	grammatical-theory-include.tex   \
+	backmatter.tex 
 
+.SUFFIXES: .tex
 
 
 all: grammatical-theory.pdf
 
-
-SOURCE=gt.bib \
-	grammatical-theory.tex           \
-	grammatical-theory-include.tex   \
-	localmetadata.tex \
-	localcommands.tex \
-	localpackages.tex \
-	localpackages-chinese.tex \
-	backmatter.tex \
-	chapters/1-begriffe.tex\
-	chapters/2-psg.tex\
-	chapters/3-gb.tex \
-	chapters/3-minimalism.tex \
-	chapters/4-gpsg.tex \
-	chapters/5-merkmalstrukturen.tex \
-	chapters/6-lfg.tex \
-	chapters/7-cg.tex\
-	chapters/8-hpsg.tex \
-	chapters/9-cxg.tex \
-	chapters/dg.tex\
-	chapters/tag.tex\
-	chapters/innateness.tex\
-	chapters/acquisition.tex\
-	chapters/complexity.tex\
-	chapters/locality.tex\
-	chapters/phrasal.tex\
-	chapters/empty.tex\
-	chapters/recursion.tex\
-	chapters/conclusions.tex\
-	chapters/loesungen.tex\
-	chapters/versions.tex
-
-.SUFFIXES: .tex
 
 
 %.pdf: %.tex $(SOURCE)
