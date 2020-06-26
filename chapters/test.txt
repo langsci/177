@@ -1,0 +1,5 @@
+需要说明的是，语言学领域里术语纷杂，难以统一。造成这一现象的部分原因是，这些术语最早来源于对某些语言
+（\egc 拉丁语\il{拉丁语    Latin}、英语\il{英语 English}）的分析，而后又被用于描写其他语言。然而，这样做并不合适，因为有些语言与其他语言区别很大，加之语言本身也在不断地发展变化。基于以上原因，有些术语的用法发生了变化或者是创造出了新的术语。
+%Unfortunately, linguistics is a scientific field with a considerable amount of terminological chaos.
+%This is partly due to the fact that terminology originally defined for certain languages 
+%(\eg Latin\ilce{Latin}, English\ilce{English}) was later simply adopted for the description of other languages as %well. However, this is not always appropriate since languages differ from one another considerably and are %constantly changing.  Due to the problems caused by this, the terminology started to be used differently or %new terms %were invented. 

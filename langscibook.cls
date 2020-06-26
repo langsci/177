@@ -1645,6 +1645,7 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 % \AtBeginDocument{% FK 16-Jan-19: It is unclear why this was set. It conflicts with TikZ externalisation.
 	\makeindex
 	\newindex{lan}{ldx}{lnd}{\lsLanguageIndexTitle}
+	\newindex{lane}{ldxe}{lnde}{\lsLanguageIndexTitleEng}
 	\newindex{sbj}{sdx}{snd}{\lsSubjectIndexTitle}
 	\renewindex{default}{adx}{and}{\lsNameIndexTitle} %biblatex can only deal with the default index
 % 	\newindex{wrd}{wdx}{wnd}{Expression index}
@@ -1661,6 +1662,7 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 \newcommand{\footnoteindex}[2]{\index{#2|infn{#1}}}
 \newcommand{\footnoteindex@sbj}[2]{\index[sbj]{#2|infn{#1}}}
 \newcommand{\footnoteindex@lan}[2]{\index[lan]{#2|infn{#1}}}
+\newcommand{\footnoteindex@lane}[2]{\index[lane]{#2|infn{#1}}}
 \newcommand{\footnoteindex@wrd}[2]{\index[wrd]{#2|infn{#1}}}
 
 

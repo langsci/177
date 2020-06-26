@@ -25,15 +25,17 @@ all: grammatical-theory.pdf
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.adx
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldx
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldxe
 	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' *.adx
 	sed -i.backup 's/{\\O }/Oe/' *.adx
 	python3 fixindex.py
 	mv $*mod.adx $*.adx
 	makeindex -gs index.format-plus -o $*.and $*.adx
-	makeindex -gs index.format -o $*.lnd $*.ldx
+	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.lnd $*.ldx
+	makeindex -gs index.format -o $*.lnde $*.ldxe
 	makeindex -gs index.format -o $*.snd $*.sdx
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.scd $*.scx
-	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label|aux'
+	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label'
 
 stable.pdf: grammatical-theory.pdf
 	cp grammatical-theory.pdf stable.pdf

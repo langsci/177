@@ -643,10 +643,10 @@ Grünberger Str. 16\\
 % Subject index
 \newcommand{\isce}[2]{%
   \if@noftnote%
-    \index[sbj]{#1\hspace{2em}#2}%
+    \index[sbj]{#1\hspace{1em}#2}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1\hspace{2em}#2}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1\hspace{1em}#2}%
     %\indexftn{#1}{\value{footnotemark}}%
   \fi%
 }
@@ -654,10 +654,24 @@ Grünberger Str. 16\\
 % Language index
 \newcommand{\ilce}[2]{%
   \if@noftnote
-    \index[lan]{#1\hspace{2em}#2}%
+    \index[lan]{#1\hspace{1em}#2}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{2em}#2}%
+    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2}%
+  \fi%
+  \if@noftnote
+    \index[lane]{#2\hspace{1em}#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#2\hspace{1em}#1}%
+  \fi%
+}
+\newcommand{\ilcesub}[4]{%
+  \if@noftnote
+    \index[lan]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
   \fi%
 }
 \makeatother
