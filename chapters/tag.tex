@@ -19,7 +19,7 @@
   参见 \citet{Pullum86a}以了解关于复杂性的讨论，参见G.\  \citew{GMueller2011a}以了解针对德语的非上下文无关性的讨论，
   这种分析和Culy分析N-P-N构式的工作具有一定的相似性。（见\ref{Abschnitt-NPN-Konstruktion}）%
    }。像HPSG\indexhpsgc 和CxG\indexcxgc 这样的语法理论可以产生/描写所谓的0-型语言，相较于目前我们所假设的自然语言的复杂度，其描写能力过强。
-目前通行的观点认为自然语言的复杂度位于上下文无关\isc{复杂类型}\is{complexity class}\isc{上下文无关文法}\is{context"=free grammar}和上下文相关\isc{上下文相关文法}\is{context"=sensitive grammar}（1-型）语言之间。这一类型被称为“弱上下文相关”（mildly context sensitive）。\isc{弱上下文相关}\is{mildly context"=sensitive grammar}有些TAG变体属于这一语言类型，有种观点认为它们恰好产生出自然语言中的结构，不多也不少。
+目前通行的观点认为自然语言的复杂度位于上下文无关\isc{复杂类型}\is{complexity class}\isc{上下文无关文法}\is{context"=free grammar}和上下文相关\isc{上下文相关文法}\is{context"=sensitive grammar}（1-型）语言之间。这一类型被称为“弱上下文相关”（mildly context sensitive）。\isc{弱上下文相关文法}\is{mildly context"=sensitive grammar}有些TAG变体属于这一语言类型，有种观点认为它们恰好产生出自然语言中的结构，不多也不少。
 欲了解更多有关复杂度的讨论，可以参见\ref{Abschnitt-Kompetenz-Performanz-TAG}和第\ref{sec-generative-capacity}章。
 
 有各种各样的系统可以处理TAG语法\citep*{DHSSX2000a-u,PKMLD2008a-u,KLMPDE2008a-u,Koller2017a-u}。
@@ -363,7 +363,7 @@ LP$^\alpha_2$ = \{ \}
 \z
 在（\mex{0}）中, das Buch（这本书）是zu lesen（读）的宾语，ihm（他）和jemand（有个人）分别
 依存于versprochen（保证）和hat（\textsc{aux}）。这些例子可以用 \citet{Joshi87b}提出来的LD/LP"=TAG进
-行分析，也可以用自由序TAG（Free Order TAG，简称FO"=TAG\isc{TAG!自由语序树邻接语法（FO-TAG）}\is{TAG!Free Order (FO"=TAG)})\citep*[\page 21]{BJR91a}进行分析，二者都允许表示依存关系的边交叉。\isc{投射性}\is{projectivity}
+行分析，也可以用自由序TAG（Free Order TAG，简称FO"=TAG\isc{树邻接语法（TAG）!自由语序树邻接语法（FO-TAG）}\is{TAG!Free Order (FO"=TAG)})\citep*[\page 21]{BJR91a}进行分析，二者都允许表示依存关系的边交叉。\isc{可投射性}\is{projectivity}
 
 因为某些限制在FO"=TAG中不能很好地表示\citep[\page 48--50]{Rambow94a}，研究者又提出了多元成分TAG（Multi"=Component TAG，简称MC-TAG）。%
 \isc{多成分树邻接语法}\is{Multi-Component TAG}\isc{树邻接语法（TAG）!多成分树邻接语法（MC-TAG）|(}\is{Tree Adjoining Grammar (TAG)!Multi"=Component (MC-TAG)|(}
@@ -578,8 +578,8 @@ tag
 \isc{提升}\is{raising}的语言现象。他们的分析假定动词的论元都位列于次范畴化（subcategorization）表中。如果一个动词匹配了某棵树相应的子类框架表，这个动词就可以进入到这棵树中。对应于第\pageref{pass-lr-mlr}页讨论过的HPSG的词汇规则，Kroch和Joshi形式化得到了一条（TAG）词汇规则：该规则的输入端明确地提及一个宾格宾语。Kroch和Joshi针对非人称被动提出了一种复杂的分析，在不及物动词里没有实现出来的宾语，他们将其处理为语义为空的角色（第56页）。
 这样的一种使用抽象的辅助实体的方式事实上是可以避免的：我们可以采纳始于 \citet{Haider86}的HPSG\indexhpsgc 分析，我们在\ref{Abschnitt-HPSG-Passiv}中讨论过这种分析。
 
-也有人提议\isc{多重承继}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citet{Candito96a}及其扩展分析——\citet*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
-\isc{多重承继}\is{inheritance!multiple|)}
+也有人提议\isc{承继!多重|(}\is{inheritance!multiple|(}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citet{Candito96a}及其扩展分析——\citet*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
+\isc{承继!多重|)}\is{inheritance!multiple|)}
 \isc{被动|)}\is{passive|)}
 
 \section{长距离依存}
@@ -1219,9 +1219,9 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 }，其词典中并不包含空成分。空成分可以出现在树中，树再作为一个整体出现在词典中。
 
 基本树的大小不受限制，这使得TAG在分析熟语的时候特别方便（见\ref{Abschnitt-Diskussion-Lokalitaet}）。
-因为递归从基本树中被排除掉了，因此在导出树（局域的扩展域\isc{局部}\is{locality}）中距离特别远的元素可以包含在同一个基本树中。
+因为递归从基本树中被排除掉了，因此在导出树（局域的扩展域\isc{局部性}\is{locality}）中距离特别远的元素可以包含在同一个基本树中。
 
- \citet*{KKNV95a}论证了满足特定要求的HPSG语法可以转写为TAG语法。通过这种方式，我们可以得到一个计算复杂度\isc{生成能力}\is{capacity!generative}更明确的语法。HPSG语法一般都是0-型文法，而不同的TAG变体可以用来刻画从2-型语言到弱上下文相关语言\isc{弱上下文相关语言}\is{mildly context"=sensitive grammar}之间的不同语言\citep{Joshi85a-u}。 \citet*{YMTT2001a}提出了一个算法可以将FB"=LTAG语法翻译成弱上下文相关语言的HPSG文法。
+ \citet*{KKNV95a}论证了满足特定要求的HPSG语法可以转写为TAG语法。通过这种方式，我们可以得到一个计算复杂度\isc{生成能力}\is{capacity!generative}更明确的语法。HPSG语法一般都是0-型文法，而不同的TAG变体可以用来刻画从2-型语言到弱上下文相关文法\isc{弱上下文相关文法}\is{mildly context"=sensitive grammar}之间的不同语言\citep{Joshi85a-u}。 \citet*{YMTT2001a}提出了一个算法可以将FB"=LTAG语法翻译成弱上下文相关文法的HPSG文法。
 
 %\section*{思考题}
 %\bigskip

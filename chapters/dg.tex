@@ -514,7 +514,7 @@ $\chi \to \varphi_1 \ldots \varphi_i * \varphi_{i+2} \ldots \varphi_n, where~0 <
 %use the labels E and A for \emph{Ergänzung} and \emph{Angabe}, respectively.
 
 
-\subsection{语序线性化}
+\subsection{线性化}
 %\subsection{Linearization}
 \label{sec-dg-linearization}
 
@@ -2011,7 +2011,7 @@ dg edges
 %Moreover it is strange to propose a direct interface between semantics and word order. In mots DGs, semantics is lnked to an unordered dependency tree and this tree to the linear order.
 %The necessary separation between the syntactic dependencies and the linear order is extensively discussed in the beginning of TEsnière's book.
 
-这个分析对应于最简方案\indexmpc 中的NegP\isc{范畴!功能范畴!Neg}\is{category!functional!Neg}，而且它有相同的问题：整个宾语的范畴是Adv，但是它应该是V。这是一个问题，因为更高层的谓词可以选择V，而不是Adv。\footnote{%
+这个分析对应于最简方案\indexmpc 中的NegP\isc{范畴!功能!Neg}\is{category!functional!Neg}，而且它有相同的问题：整个宾语的范畴是Adv，但是它应该是V。这是一个问题，因为更高层的谓词可以选择V，而不是Adv。\footnote{%
 参见下面（\ref{ex-dass-er-nicht-singen-darf}）中嵌套句的分析。
 }
 %This analysis is equivalent to analyses in the Minimalist Program\indexmp assuming a NegP\is{category!functional!Neg} and it
@@ -2546,7 +2546,7 @@ Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来�
 %\subsubsection{Non-projective Dependency Grammars and phrase structure grammars with discontinuous constituents}
 \label{sec-discontinuous-constituents-HPSG}
 
-等同于非可投射的\isc{投射性|(}\is{projectivity|(}依存图的是短语结构语法中的非连续成分。接下来，我将给出基于短语结构理论的允许非连续结构的一个例子。因为，正如我将展示的，非连续性也可以进行模拟，短语结构语法和依存语法之间的区别归结于词的单位是否被给予了标签（比如说NP）。
+等同于非可投射的\isc{可投射性|(}\is{projectivity|(}依存图的是短语结构语法中的非连续成分。接下来，我将给出基于短语结构理论的允许非连续结构的一个例子。因为，正如我将展示的，非连续性也可以进行模拟，短语结构语法和依存语法之间的区别归结于词的单位是否被给予了标签（比如说NP）。
 %The equivalent to non-projective\is{projectivity|(} dependency graphs are discontinuous constituents in phrase
 %structure grammars. In what follows I want to provide one
 %example of a phrase structure"=based theory that permits discontinuous structures. Since, as I
@@ -2599,7 +2599,7 @@ synsem & \ldots\\
 dom  & \sliste{ \ibox{1} } \\
 }
 \z
-（\mex{0}）里的描述初看起来有些奇怪，因为它是循环的\isc{循环!特征描写中的循环}\is{cycle!in feature description}，不过它可被理解为gibt将它自己归入到线性化域中出现的元素。
+（\mex{0}）里的描述初看起来有些奇怪，因为它是循环的\isc{循环!特征描写中}\is{cycle!in feature description}，不过它可被理解为gibt将它自己归入到线性化域中出现的元素。
 %The description in (\mex{0}) may seem strange at first glance, since it is cyclic\is{cycle!in
 %  feature description}, but it can be understood as
 %a statement saying that \emph{gibt} contributes itself to the items that occur in linearization domains.
@@ -2961,7 +2961,7 @@ dg edges
 %constituents can be allowed for. However, there are issues that remained unaddressed so far: not %all
 %properties that a certain phrase has are identical to its lexical head and the differences have to
 %be represented somewhere. I will discuss this in the following subsection.
-\isc{投射性|)}\is{projectivity|)} 
+\isc{可投射性|)}\is{projectivity|)} 
 
 \subsubsection{在中心语和投射之间没有保持一致的特征}
 %\subsubsection{Features that are not identical between heads and projections}
@@ -3128,7 +3128,7 @@ lexical & \ms{ cont & \\
 \caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}根据 \citet[\page 105]{Hudson2017a}的Small children were  playing outside.的简略分析}
 %\caption{\label{fig-wg-small-children-are-playing-outside-abbreviated}Abbreviated analysis of \emph{Small children were  playing outside.} according to  \citet{Hudson2017a}}
 \end{figure}%
-在第一个图中显示的是两个结点的组合以得到一个新结点。例如，playing和outside的组合得到playing$'$，small和children的组合得到children$'$，而且children$'$和playing$'$的组合得到playing$''$。were和playing$''$的组合得到were$'$，以及 children$''$和were$'$的组合得到were$''$。唯一剩下需要解释的是为什么有一个结点children，它不是两个结点的组合（即children$''$）的结果。顶点与底部的连线表示缺省的承继关系\isc{承继!缺省承继}\is{inheritance!default}。即，上层结点继承了缺省的底层结点的所有属性。缺省的可以被覆盖，即上层结点的信息会与统制结点的信息不同。这就使得按照语义的组合性的操作成为可能：两个结点组合的结果的那个结点的语义是两个组合的结点的意义的组合。再来看children，children$'$具有必须邻接到playing的属性，但是因为这个结构是一个升位结构，其中children提升到了were的主语位置上，这个属性被children的一个新的实例覆盖了，即children$''$。
+在第一个图中显示的是两个结点的组合以得到一个新结点。例如，playing和outside的组合得到playing$'$，small和children的组合得到children$'$，而且children$'$和playing$'$的组合得到playing$''$。were和playing$''$的组合得到were$'$，以及 children$''$和were$'$的组合得到were$''$。唯一剩下需要解释的是为什么有一个结点children，它不是两个结点的组合（即children$''$）的结果。顶点与底部的连线表示缺省的承继关系\isc{承继!缺省}\is{inheritance!default}。即，上层结点继承了缺省的底层结点的所有属性。缺省的可以被覆盖，即上层结点的信息会与统制结点的信息不同。这就使得按照语义的组合性的操作成为可能：两个结点组合的结果的那个结点的语义是两个组合的结点的意义的组合。再来看children，children$'$具有必须邻接到playing的属性，但是因为这个结构是一个升位结构，其中children提升到了were的主语位置上，这个属性被children的一个新的实例覆盖了，即children$''$。
 %What is shown in the first diagram is that a combination of two nodes results in a new node. For
 %instance, the combination of \emph{playing} and \emph{outside} yields \emph{playing}$'$, the
 %combination of \emph{small} and \emph{children} yields \emph{children}$'$, and the combination of
@@ -3172,7 +3172,7 @@ lexical & \ms{ cont & \\
 %   playing outside.} with category symbols}
 \end{figure}%
 这张图（由虚线标记）中唯一不同的地方是N$'$与V{[ing]}$'$组合，而且N$'$的母结点，即N$''$，与V{[fin]}$'$组合。正如上面解释的，这依赖于词语法中升位的分析，它包括提升的项目和它的中心语之间的多重依存关系。在图\ref{fig-small-children-are-playing-outside}中有两个N结点（N$'$和N$''$），而且在图\ref{fig-wg-small-children-are-playing-outside}中有children的两个实例。除了这个，这个结构对应于HPSG语法可以允准的成分。Hudson范式中的在底部用线连接到顶端的结点与使用默认承继的子结点是相关的。这对于使用默认承继关系的HPSG的许多版本来说也是非常相似的。比如说， \citet[\page
-33]{GSag2000a-u}使用了广义中心语特征原则\isc{原则!广义中心语特征原则}\is{principle!Generalized Head Feature}，它默认将中心语子结点的所有特征投射到母结点上。
+33]{GSag2000a-u}使用了广义中心语特征原则\isc{原则!广义中心语特征}\is{principle!Generalized Head Feature}，它默认将中心语子结点的所有特征投射到母结点上。
 %The only thing unusual in this graph (marked by dashed lines) is that N$'$ is combined with V{[\emph{ing}]}$'$ and the mother
 %of N$'$, namely N$''$, is combined with V{[\emph{fin}]}$'$. As explained
 %above, this is due to the analysis of raising in Word Grammar,

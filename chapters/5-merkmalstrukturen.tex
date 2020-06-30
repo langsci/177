@@ -341,7 +341,7 @@
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
 %\caption{\label{fig-electric-appliance}Non"=linguistic example of multiple inheritance}
 \end{figure}%
-图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\isc{承继!多重承继}\is{inheritance!multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
+图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\isc{承继!多重}\is{inheritance!multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
 %The most general type \type{electrical device} is the highest in Figure~\ref{fig-electric-appliance}. Electrical devices have certain properties, 
 %\eg 
 %a power supply with a certain power consumption. All subtypes of  \type{electrical device} ``inherit'' this property. In this way, \type{printing %device} and
@@ -506,7 +506,7 @@
 %\section{Cyclic structures}
 \label{sec-cyclic-fd}
 
-我们\isc{循环!特征描写中的循环|(}\is{cycle!in feature description|(}引入了结构共享来表示Max的父母都有一个叫做Klaus的儿子的事实。但是，将Max分别放在他的父母的孩子列表之中是不够的。我们还想捕捉到这样的事实：即在这些列表中出现的每一个Max都是同一个Max，而且，我们想要确保被描写的孩子与描写的整体对象是一致的。否则，描写就会允许这样的情况，Max的父母可以有第二个叫做Max的孩子。例（\mex{1}）
+我们\isc{循环!特征描写中|(}\is{cycle!in feature description|(}引入了结构共享来表示Max的父母都有一个叫做Klaus的儿子的事实。但是，将Max分别放在他的父母的孩子列表之中是不够的。我们还想捕捉到这样的事实：即在这些列表中出现的每一个Max都是同一个Max，而且，我们想要确保被描写的孩子与描写的整体对象是一致的。否则，描写就会允许这样的情况，Max的父母可以有第二个叫做Max的孩子。例（\mex{1}）
 %\vpageref{bsp-avm-zyklen}
 中给出的描述可以正确地捕捉所有的事实。
 %We\is{cycle!in feature description|(} have introduced structure sharing in order to be able to express
@@ -546,7 +546,7 @@
 %	The dots here stand for the path to \iboxt{2} in the list which is the value of \textsc{children}. See Exercise~\ref{ua-liste}.%
 %}
 %can be potentially repeated an infinite number of times.
-\isc{循环!特征描写中的循环|)}\is{cycle!in feature description|)}
+\isc{循环!特征描写中|)}\is{cycle!in feature description|)}
 
 \section{合一}
 %\section{Unification}
