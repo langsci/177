@@ -674,10 +674,10 @@ Grünberger Str. 16\\
     \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
   \fi%
   \if@noftnote
-    \index[lane]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \index[lane]{#2\hspace{1em}#1!#4\hspace{1em}#3}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#2\hspace{1em}#1!#4\hspace{1em}#3}%
   \fi%
 }
 \makeatother
