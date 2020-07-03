@@ -50,7 +50,7 @@
 \section{特征描写}
 %\section{Feature descriptions}
 
-在\isc{特征描写|(}\is{feature description|(}描写语言符号时，我们必须要对它们的属性进行说明。对于名词而言，它们有格、性、数和人称的特征。以“男人”这个词为例，属性特征的取值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写：
+在\isce[|(]{特征描写}{feature description}描写语言符号时，我们必须要对它们的属性进行说明。对于名词而言，它们有格、性、数和人称的特征。以“男人”这个词为例，属性特征的取值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写：
 %When\is{feature description|(} describing linguistic signs, we have to say something about their properties. For a noun, we can say that it has %case, gender, number and person features.
 %For a word such as  \emph{Mannes} `man', we can say that these features have the values \emph{genitive}, \emph{masculine}, %\emph{singular} and \emph{3}.
 %If we were to write these as a list of feature"=value pairs, we would arrive at the following feature description:
@@ -101,7 +101,7 @@
 “\textsc{父亲}”特征的值是包含（\mex{-1}）中同样特征的特征描写。
 %The value of the \textsc{父亲} feature is another feature description containing the same features as (\mex{-1}).
 
-在特征描写中，路径（path）\isc{路径}\is{path}是指一个接一个的特征的序列。路径值（value of a path）是在路径末端的特征描写。由此，“\textsc{父亲$|$出生日期}”的值为“\zhdate{1960/05/10}”。
+在特征描写中，路径（path）\isce{路径}{path}是指一个接一个的特征的序列。路径值（value of a path）是在路径末端的特征描写。由此，“\textsc{父亲$|$出生日期}”的值为“\zhdate{1960/05/10}”。
 %In feature descriptions, a \emph{path}\is{path} is a sequence of features which immediately follow each other.
 %The \emph{value of a path} is the feature description at the end of the path. Therefore,
 %the value of \textsc{father$|$出生日期 } is \emph{10.05.1960}.
@@ -141,7 +141,7 @@
 %How many features do we want to assume? Where is the limit?
 %What would the value of \textsc{daughter"=32} be?
 
-就此例而言，用列表\isc{列表}\is{list}更为合理。列表用尖括号表示。任意数量的元素可以出现在这些尖括号中。特殊的情况是，在这些括号中并没有元素。一个没有元素的列表被叫做空列表（empty list）。下例中，Max Meier有一个女儿叫做Clara，而她没有女儿。
+就此例而言，用列表\isce{列表}{list}更为合理。列表用尖括号表示。任意数量的元素可以出现在这些尖括号中。特殊的情况是，在这些括号中并没有元素。一个没有元素的列表被叫做空列表（empty list）。下例中，Max Meier有一个女儿叫做Clara，而她没有女儿。
 %For this case, it makes much more sense to use a list\is{list}. Lists are indicated with angle brackets. Any number of elements can occur %between
 %these brackets. A special case is when no element occurs between the brackets. A list with no
 %elements is also called \emph{empty list}. In the following example,
@@ -197,7 +197,7 @@
 %such a representation it is possible to make certain claims about a mother or father without having to necessarily
 %search for the respective descriptions in a list.
 
-如果元素的序列是无关的，那么我们可以用集合\isc{集合}\is{set}，而不是列表。集合用弧形括号（curly brackets）表示。\footnote{%
+如果元素的序列是无关的，那么我们可以用集合\isce{集合}{set}，而不是列表。集合用弧形括号（curly brackets）表示。\footnote{%
 集合的定义需要很多技术指标。本书中，我只用集合来表示语义信息。这点用列表也可以做到，这就是为什么我在这里没有引入集合，而是使用了列表。
 }
 %If the order of the elements is irrelevant, then we could use sets\is{set} rather than lists.
@@ -211,7 +211,7 @@
 %\section{Types}
 \label{sec-formalismus-typen}
 
-在\isc{类型|(}\is{type|(}上一节，我们介绍了包括特征"=值偶对的特征描写，并且说明了应该允许特征被赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型说的是哪些特征可以或者必须属于一个具体的结构。前面讲到的描写是关于属于类型“\type{人}”的某一客体的。
+在\isce[|(]{类型}{type}上一节，我们介绍了包括特征"=值偶对的特征描写，并且说明了应该允许特征被赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型说的是哪些特征可以或者必须属于一个具体的结构。前面讲到的描写是关于属于类型“\type{人}”的某一客体的。
 %In\is{type|(} the previous section, we introduced feature descriptions consisting of feature"=value pairs and showed that it makes sense to %allow for
 %complex values for features. In this section, feature descriptions will be augmented to include types. Feature descriptions which are assigned %a type
 %are also called \emph{typed feature descriptions}. Types say something about which features can or must belong to a 
@@ -261,11 +261,11 @@
 \z
 在（\mex{0}）和（\mex{-1}）中，“\textsc{名}”这类特征的值也是类型。
 %在（\mex{0}）和（\mex{-1}）中，\textsc{名}这类特征的值用斜体表示。这些值也是类型。
-但是，他们与“\type{人}”这类特征不同，因为它们没有次类特征。这些特征叫做“原子式”（atomic）\isc{类型!原子式}\is{type!atomic}。
+但是，他们与“\type{人}”这类特征不同，因为它们没有次类特征。这些特征叫做“原子式”（atomic）\iscesub{类型}{type}{原子式}{atomic}。
 %In (\mex{0}) and (\mex{-1}), the values of features such as \textsc{名} are in italics. These values are also types. They are different from
 %types such as \type{person}, however, as no features belong to them. These kinds of types are called \emph{atomic}\is{type!atomic}.
 
-特征按照层级来进行组织\isc{类型层级体系|(}\is{type hierarchy|(}。
+特征按照层级来进行组织\isce[|(]{类型层级体系}{type hierarchy}。
 %Types are organized into hierarchies\is{type hierarchy|(}.
 对于“\textit{人}”来说，可以界定次类型“\textit{女人}”和“\textit{男人}”。这将测定出给定对象的性别。（\mex{1}）显示了类型“\textit{女人}”的特征结构，这与类型“\textit{男人}”的特征结构是相似的。
 %It is possible to define the subtypes  \textit{woman} and \textit{man} for  \textit{person}. These would determine the gender of a given object.
@@ -341,7 +341,7 @@
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
 %\caption{\label{fig-electric-appliance}Non"=linguistic example of multiple inheritance}
 \end{figure}%
-图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\isc{承继!多重}\is{inheritance!multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
+图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\iscesub{承继}{inheritance}{多重}{multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
 %The most general type \type{electrical device} is the highest in Figure~\ref{fig-electric-appliance}. Electrical devices have certain properties, 
 %\eg 
 %a power supply with a certain power consumption. All subtypes of  \type{electrical device} ``inherit'' this property. In this way, \type{printing %device} and
@@ -363,12 +363,12 @@
 %Type hierarchies with multiple inheritance are an important means for expressing linguistic generalizations %\citep*{FPW85a,Flickinger87,Sag97a}. Types of words or phrases which
 %occur at the very top of these hierarchies correspond to constraints on linguistic objects, which are valid for linguistic objects in all languages. %Subtypes of such general types
 %can be specific to certain languages or language classes.%
-\isc{类型|)}\is{type|)}\isc{类型层级体系|)}\is{type hierarchy|)}
+\isce[|)]{类型}{type}\isce[|)]{类型层级体系}{type hierarchy}
 
 \section{析取}
 %\section{Disjunction}
 
-如果有人想表达一个具体物体具有不同属性的事实，可以用析取\isc{析取|(}\is{disjunction|(}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow或者Barbanow）”。在特征描写中，这个“或者”表示为“$\vee$”\isc{$\vee$}\is{$\vee$}。
+如果有人想表达一个具体物体具有不同属性的事实，可以用析取\isce[|(]{析取}{disjunction}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow或者Barbanow）”。在特征描写中，这个“或者”表示为“$\vee$”\isc{$\vee$}\is{$\vee$}。
 %Disjunctions\is{disjunction|(} can be used if one wishes to express the fact that a particular object can have various different properties. If one %were to organize a class reunion
 %twenty years after leaving school and could not recall the exact names of some former classmates, it would be possible to search the web for %``Julia (Warbanow or Barbanow)''. In
 %feature descriptions, this ``or'' is expressed by a `$\vee$'\is{$\vee$}.
@@ -398,16 +398,16 @@
 % lastname & barbanow
 }
 \z
-因为我们将类型层级看作是一种表达的手段，我们有时可以不做特定的析取，而是用上级类型\isc{类型}\is{type}：以“打印机”$\vee$“复印机”为例，我们可以简单地写“打印设备”，如果我们按照图\vref{fig-electric-appliance}所示的类型层级的话。
+因为我们将类型层级看作是一种表达的手段，我们有时可以不做特定的析取，而是用上级类型\isce{类型}{type}：以“打印机”$\vee$“复印机”为例，我们可以简单地写“打印设备”，如果我们按照图\vref{fig-electric-appliance}所示的类型层级的话。
 %Since we have type hierarchies as a means of expression, we can sometimes do without disjunctive specification of values and instead state %the supertype\is{type}:
 %for \type{printer} $\vee$  \type{photocopier}, one can simply write \type{printing device} if one assumes the type hierarchy in Figure~\vref{fig-%electric-appliance}.%
-\isc{析取|)}\is{disjunction|)}
+\isce[|)]{析取}{disjunction}
 
 \section{结构共享}
 %\section{Structure sharing}
 \label{sec-strukturteilung}
 
-结构共享\isc{结构共享|(}\is{structure sharing|(}是形式化中重要的一部分。它用来表示结构中某些部分是相同的。关于值的同一性，语言学方面的例子就是一致关系\isc{主谓一致}\is{agreement}。在例（\mex{1}）的句子中，名词短语的数的值必须与动词保持一致：
+结构共享\isce[|(]{结构共享}{structure sharing}是形式化中重要的一部分。它用来表示结构中某些部分是相同的。关于值的同一性，语言学方面的例子就是一致关系\isce{主谓一致}{agreement}。在例（\mex{1}）的句子中，名词短语的数的值必须与动词保持一致：
 %Structure sharing\is{structure sharing|(} is an important part of the formalism. It serves to express the notion that certain parts of a structure %are identical. A linguistic
 %example for the identity of values is agreement\is{agreement}. In sentences such as (\mex{1}), the number value of the noun phrase has to be %identical to that of the verb:
 
@@ -500,7 +500,7 @@
 %Max is also a child of his parents and should therefore also occur in a list of the children of his parents. There are two points in (\mex{0}) %where there are three
 %dots. These ellipsis marks stand for information about the other children of Peter and Anna
 %Meier. Our world knowledge tells us that both of them must have the same child namely Max Meier himself. In the following section, we will %see how this can be expressed in formal terms.%
-\isc{结构共享|)}\is{structure sharing|)}
+\isce[|)]{结构共享}{structure sharing}
 
 \section{循环结构}
 %\section{Cyclic structures}
@@ -552,7 +552,7 @@
 %\section{Unification}
 \label{sec-unification}
 
-\mbox{}\isc{合一|(}\is{unification|(}%
+\mbox{}\isce[|(]{合一}{unification}%
 在特征描写的帮助下，语言规则可以写成与HPSG和构式语法中的词汇项完全相同的格式。对于短语中可以用作子结点的一个词或者较大的短语实体来说，这个词或者短语必须具有语法规则中与子结点的描写相兼容的属性。如果这种兼容性存在的话，那么我们可以说各自的对象是可以合一的（unifiable）。\footnote{%
   合一（unification）这个概念需要小心使用，它只在语言学理论的形式化基础的某些假说下才是合适的。非正式的情况下，这一术语经常用于没有在技术上界定合一的形式化系统中。在HPSG中，它大部分是指对两个描写的约束导向一个单一的描写。我们在这里想直观说明的是，所描写的对象需要同时满足所有描写的约束条件（约束满足）。因为合一（unification）这个术语应用范围较广，本节也采用这一概念。在后面的理论讨论中，除了基于合一的方法，我们不会再使用该术语。相反，这里给出的约束满足（constraint satisfaction）这个概念在后面的章节中发挥了重要的作用。
 }
@@ -642,13 +642,13 @@ Katharina Meier还可以有侦探不知道的其他属性。重要的是侦探�
 %These data are compatible with the search criteria. If we were to unify the descriptions in (\mex{-3}a) and (\mex{0}), we would get (\mex{-2}).
 %If we assume that the detective has done a good job, then Bettina Kant now knows that the person she is looking for has the properties of her
 %original search plus the newly discovered properties.
-\isc{合一|)}\is{unification|)}
+\isce[|)]{合一}{unification}
 
 \section{现象、模型和形式化理论}
 %\section{Phenomena, models and formal theories}
 \label{sec-modelle-theorien}
 
-在\isc{模型|(}\is{model|(}\isc{理论|(}\is{theory|(}\isc{现象|(}\is{phenomenon|(}\isc{特征结构|(}\is{feature structure|(}前面的章节中，我们介绍了带有类型的特征描写。这些特征描写描述了类型特征结构，这些结构模拟了观察到的语言结构。在类型的定义中，我们决定了应该被描写的语言对象的属性。类型层级体系与类型的定义也都叫做符号形式（signature）\isc{符号形式}\is{signature}。语法学家通常在特征描写中使用类型。这些描写包括语言对象必须具有的约束条件。如果没有约束，那么所有的符号形式中与具体化相容的值都是可能的值。例如，我们可以省略诸如Frau（女人）这一语言对象的格的描写，因为Frau可以出现在四种格中，如例（\mex{1}）所示：
+在\isce[|(]{模型}{model}\isce[|(]{理论}{theory}\isce[|(]{现象}{phenomenon}\isce[|(]{特征结构}{feature structure}前面的章节中，我们介绍了带有类型的特征描写。这些特征描写描述了类型特征结构，这些结构模拟了观察到的语言结构。在类型的定义中，我们决定了应该被描写的语言对象的属性。类型层级体系与类型的定义也都叫做符号形式（signature）\isce{符号形式}{signature}。语法学家通常在特征描写中使用类型。这些描写包括语言对象必须具有的约束条件。如果没有约束，那么所有的符号形式中与具体化相容的值都是可能的值。例如，我们可以省略诸如Frau（女人）这一语言对象的格的描写，因为Frau可以出现在四种格中，如例（\mex{1}）所示：
 %In\is{model|(}\is{theory|(}\is{phenomenon|(}\is{feature structure|(} the previous sections, we introduced feature descriptions with types. These %feature descriptions describe typed
 %feature structures, which are models of observable linguistic structures. In the definitions of types, one determines which properties of %linguistic objects should be described.
 %The type hierarchy together with type definitions is also referred to as a \emph{signature}\is{signature}.
@@ -921,7 +921,7 @@ Mann（男人）:\\*[2pt]
 模型是用来模拟语言现象的。进而，它必须由我们的理论所允准。理论决定了模型并且对可能的现象进行预测。
 %The model is designed to model linguistic phenomena. Furthermore, it must be licensed by our theory.
 %The theory determines the model and makes predictions with regard to possible phenomena.
-\isc{模型|)}\is{model|)}\isc{理论|)}\is{theory|)}\isc{现象|)}\is{Phenomenon|)}\isc{特征描写|)}\is{feature description|)}\isc{特征结构|)}\is{feature structure|)}
+\isce[|)]{模型}{model}\isce[|)]{理论}{theory}\isce[|)]{现象}{Phenomenon}\isce[|)]{特征描写}{feature description}\isce[|)]{特征结构}{feature structure}
 
 %\section*{思考题}
 %\section*{Comprehension questions}
@@ -987,7 +987,7 @@ Mann（男人）:\\*[2pt]
 \item\label{ua-liste}在本章，我们介绍了列表。这看起来好像是形式化的扩展，但是它并不是，因为可以将列表标记转化为只需要特征"=值偶对的标记。请思考如何做到这一点。
 %\item\label{ua-liste} In this chapter, we introduced lists. This may look like an extension of the formalism, but it is not as it is possible to
 %convert the list notation into a notation which only requires feature"=value pairs. Think about how one could do this.
-\item （附加练习）附加关系（append）\isc{关系!附加关系}\is{relation!\emph{append}}
+\item （附加练习）附加关系（append）\iscesub{关系}{relation}{附加关系}{\emph{append}}
   将在第\ref{Kapitel-HPSG}章发挥作用。该关系用来将两个列表组合成第三个列表。诸如附加（append）的关系约束实际上构成了形式化的一种扩展。使用关系约束可以将任意数量的特征值与其他值联系起来，即我们可以写出这样的程序，它根据其他值计算出具体的值。这就导致了一个问题，在语言学理论中我们是否需要如此强有力的描写工具，并且如果我们允许使用它们，我们将会承担什么样的复杂度的代价。可见，我们最好选择那些不需要关系约束的理论，而不是那些需要关系约束的理论（参见\citet[\S~20]{MuellerLehrbuch1}对相关理论的比较）。
 %\item (Additional exercise) The relation \emph{append}\is{relation!\emph{append}} will play a role in Chapter~\ref{Kapitel-HPSG}. This relation %serves to
 %combine two lists to form a third.
@@ -1014,7 +1014,7 @@ Mann（男人）:\\*[2pt]
 %at least part of these properties is important for work in computational linguistics and in
 %developing one's own analyses. For more information, I refer the interested reader to the following publications: 
 %
- \citet{Shieber86a}是对合一语法理论的简短介绍。它针对重要的语法类型给出了相对全面的综述，如DCG\isc{定子句文法}\is{Definite Clause Grammar (DCG)}、\lfgc、\gpsgc、HPSG、PATR-II\isc{PATR-II}\is{PATR-II}。
+ \citet{Shieber86a}是对合一语法理论的简短介绍。它针对重要的语法类型给出了相对全面的综述，如DCG\isce{定子句文法}{Definite Clause Grammar (DCG)}、\lfgc、\gpsgc、HPSG、PATR-II\isc{PATR-II}\is{PATR-II}。
 % \citet{Shieber86a} is a short introduction to the theory of Unification Grammar. It offers a relatively general overview followed by the %discussion of important grammar types
 %such as DCG\is{Definite Clause Grammar (DCG)}, \lfg, \gpsg,
 %HPSG, PATR-II\is{PATR-II}.

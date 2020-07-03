@@ -36,9 +36,9 @@
 \end{itemize}
 另外，\citet*[\page 15]{BCPW2007a}提到过一个针对古典阿拉伯语\ilce{阿拉伯语}{Arabic}的实现。
 
-有些处理范畴语法的系统增加了概率\isc{统计学}\is{statistics}模块，所以处理结果的鲁棒性很高\citep*{OB97a,CHS2002a-u}。
+有些处理范畴语法的系统增加了概率\isce{统计学}{statistics}模块，所以处理结果的鲁棒性很高\citep*{OB97a,CHS2002a-u}。
 有些系统采用了从（标注）语料中抽取词汇项的方法， \citet{Briscoe2000a}和 \citet{Villavicencio2002a}使用了一些统计信息，
-这些信息来自于他们建立在普遍语法\isc{普遍语法（UG）}\is{Universal Grammar (UG)}的语言获取模型\isc{语言习得}\is{language acquisition}。
+这些信息来自于他们建立在普遍语法\isc{普遍语法（UG）}\is{Universal Grammar (UG)}的语言获取模型\isce{语言习得}{language acquisition}。
 
 \section{表示形式概述}
 
@@ -49,8 +49,8 @@
 \subsection{配价信息的表示}
 \label{sec-forward-backward-application}
 
-在\isc{价|(}\is{valence|(}范畴语法中，复杂范畴替换了GPSG\indexgpsgc 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
-一些短语结构语法规则\isc{短语结构语法}\is{phrase structure grammar}可以用复杂范畴来替换：\isc{/|(}\is{/|(} 
+在\isce[|(]{价}{valence}范畴语法中，复杂范畴替换了GPSG\indexgpsgc 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
+一些短语结构语法规则\isce{短语结构语法}{phrase structure grammar}可以用复杂范畴来替换：\isc{/|(}\is{/|(} 
 
 \ea
 \label{LE-CG}
@@ -67,14 +67,14 @@ vp/np表示当前描写的语言单位需要一个名词短语用以形成一个
 \ea
 \label{vorwaertsapplikation}\label{forward-application}
 前向应用
-\isc{前向应用}\is{forward application}：\\
+\isce{前向应用}{forward application}：\\
 X/Y $*$ Y = X
 \z
 这条规则由两个范畴组成，其中之一为X/Y，意为向右寻找一个Y以便生成X，另一个则为X。
 这个组合的结果是一个完整的X，不再需要Y。
 称X/Y为“函子”
-\isc{函子}\is{functor}，而Y为函子的“变元”
-\isc{变元}\is{argument}。
+\isce{函子}{functor}，而Y为函子的“变元”
+\isce{变元}{argument}。
 
 和GB理论一样，范畴语法中配价信息只在词库中出现一次。
 在GPSG\indexgpsgc 中，配价信息同时体现在句法规则和词条的\textsc{subcat}特征中。
@@ -117,7 +117,7 @@ sn edges
 
 \noindent
 对于`/'，我们经常假设左向结合律
-\isc{左向结合律}\is{left associativity}，即(vp/pp)/np = vp/pp/np。
+\isce{左向结合律}{left associativity}，即(vp/pp)/np = vp/pp/np。
 \is{/|)}
 
 观察（\ref{LE-CG}）中的词汇项，我们可以清楚看到范畴v是不存在的。
@@ -125,10 +125,10 @@ sn edges
 而符号vp也可以删去：一个（英语中的）vp是在其左侧提供一个名词短语便可以形成一个完整句子的语言成分。
 这\isc{$\backslash$}\is{$\backslash$|(}通过s$\backslash$np进行表示。
 使用后向应用规则，可以计算得到如图\vref{abb-the-cat-chased-Mary}所示的推导
-\isc{价|)}\is{valence|)}。
+\isce[|)]{价}{valence}。
 \ea
 后向应用
-\isc{后向应用}\is{backward application}:\\
+\isce{后向应用}{backward application}:\\
 Y $*$ X$\backslash$Y = X 
 \z
 
@@ -178,7 +178,7 @@ s: eat'(x, apples')\bs np_{3S}:x\\
 }
 \z
 当组合一个函子和一个变元时，必须确保变元符合函子要求，也就是说二者必须可以合一
-\isc{合一}\is{unification}（参见\ref{sec-unification}以了解合一运算）。
+\isce{合一}{unification}（参见\ref{sec-unification}以了解合一运算）。
 np:y和np: \relation{apples}的合一结果为np: \relation{apples}，因为\relation{apples}比变量y更细化。
 除了在项np:y中出现，y也出现在动词的描写中(s: \relation{eat}(x, y)\bs np\sub{3S}:x)，因此动词论元的语义也得到了\relation{apples}这一语义解释。
 因此，组合的结果为：\relation{eat}(x, \relation{apples})\bs np$_{3S}$:x，如（\mex{0}）所示。
@@ -232,7 +232,7 @@ np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'
 \subsection{附加语}
 
 正如\ref{sec-intro-arg-adj}所讨论的
-\isc{说明语|(}\is{adjunct|(}，附加语是可选的。
+\isce[|(]{说明语}{adjunct}，附加语是可选的。
 在短语结构语法中很容易表示这种可选性，例如在产生式左端出现的元素（比如一个动词短语VP）也同时出现在产生式右端，而产生式右端还有一个额外的附加语。
 因为产生式左端的符号也在右端出现，这条规则可以被应用任意次数。
 （\mex{1}）是这样的一个例子：
@@ -279,11 +279,11 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 注意到将round和the garden组合之后，会得到副词的范畴——(s\bs np)\bs (s\bs np)。
 在GB理论中，副词和介词同样被置于单独的类中（参阅第\pageref{Seite-Adverbien-PP}页）。
 这个包罗万象的类可根据元素的配价信息进一步分为两个子类。
-\isc{说明语|)}\is{adjunct|)}
+\isce[|)]{说明语}{adjunct}
 
 \section{被动}
 
-在范畴语法中，被动\isc{被动|(}\is{passive|(}的分析采用了词汇规则（\citealp[\page412]{Dowty78a}；\citealp[\S~3.4]{Dowty2003a}）。
+在范畴语法中，被动\isce[|(]{被动}{passive}的分析采用了词汇规则（\citealp[\page412]{Dowty78a}；\citealp[\S~3.4]{Dowty2003a}）。
 （\mex{1}）是相关规则 \citep[\page 49]{Dowty2003a}：
 \ea
 \label{Lexikonregel-Passiv-CG}
@@ -346,21 +346,21 @@ gave（给）有范畴((s\bs np)/pp)/np，也就是说这个动词必须先结�
   Baldridge\aimention{Jason Baldridge}（个人交流 \, 2010）建议在被动的词汇规则里使用正则表达式。
  }
 或假设新的规则，如（\mex{0}b）。
-\isc{被动|)}\is{passive|)}\todostefan{NW:
+\isce[|)]{被动}{passive}\todostefan{NW:
      \citew{Dowty97a-u} head wrapping does this.<alert>}
 
 \section{动词位置}
 \label{sec-Verbstellung-CG-Steedman}
 
 \mbox{} \citet[\page 159]{Steedman2000a-u}
-\isc{动词位置|(}\is{verb position|(}针对荷兰语\ilce{荷兰语}{Dutch}提出一种变分支分析，具体而言，at（吃）有两个词汇项：一个所有论元均在其右侧的前置位置项和一个所有论元都在其左侧的占据后置位置的项。
+\isce[|(]{动词位置}{verb position}针对荷兰语\ilce{荷兰语}{Dutch}提出一种变分支分析，具体而言，at（吃）有两个词汇项：一个所有论元均在其右侧的前置位置项和一个所有论元都在其左侧的占据后置位置的项。
 
 \eal
 \ex at（吃）在动词后置位置：(s\sub{+SUB}$\backslash$np)$\backslash$np
 \ex at（吃）在动词前置位置：(s\sub{$-$SUB}/np)/np
 \zl
 Steedman利用\textsc{sub}特征来区分从句和非从句的句子。这两个词汇项通过词汇规则进行关联。
-\isc{词汇规则}\is{lexical rule}
+\isce{词汇规则}{lexical rule}
 
 在这里，我们应当注意到不同的名词短语在和动词结合时，它们的结合顺序是不同的。一般的顺序是：
 
@@ -466,7 +466,7 @@ isst & er  & ihn & \_\\
 这里，他们假定存在一个前置动词，这个动词选择语迹的一个投射。
 如果副词只是在后置位置和动词结合，那么morgen和isst er ihn会被排除在外。
 如果我们假定第一个出现的动词是函子，那就有可能捕捉到标补语（complementizers）
-\isc{标补语}\is{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
+\isce{标补语}{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
 和标补语之间的差别仅仅在于其需要动词语迹的一个投射，而标补语需要显式动词的投射。
 \eal
 \ex 
@@ -478,13 +478,13 @@ isst & er  & ihn & \_\\
 %     eats \spacebr{}he it\\
      吃 \spacebr{}他 它 \\
 \zl
-关于德语动词位置的这种描述反应了\ref{Abschnitt-Verbstellung-GB}\isc{动词位置|)}\is{verb position|)}中介绍的基于GB的分析。
+关于德语动词位置的这种描述反应了\ref{Abschnitt-Verbstellung-GB}\isce[|)]{动词位置}{verb position}中介绍的基于GB的分析。
 
 \section{局部语序重列}
 \label{Abschnitt-CG-lokale-Umstellung}
 
 到目前为止，
-\isc{成分序列|(}\is{constituent order|(}我们看到了函子与变元的各种组合：变元可以出现在函子左侧也可以出现在右侧。
+\isce[|(]{成分序列}{constituent order}我们看到了函子与变元的各种组合：变元可以出现在函子左侧也可以出现在右侧。
 而变元的消去总是按照固定的顺序：最右侧的变元最先与函子结合，如(s\bs np)/pp首先与PP结合，该结合的结果再与NP结合。 
 
 分析德语中的各种语序变化有很多可行的方法：
@@ -494,8 +494,8 @@ isst & er  & ihn & \_\\
 
 \citet{SB2006a-u}提出了一种新的分析。他们讨论了在不同语言中排列论元的各种可能。
 这就包含了那些语序自由的语言，也包括那些组合方向自由的语言。
-\isc{自由成分序列}\is{constituent order!free}
-\isc{固定成分序列}\is{constituent order!fixed}
+\isce{自由成分序列}{constituent order!free}
+\isce{固定成分序列}{constituent order!fixed}
 Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素可以按任意顺序删去，
 使用“$|$”\isc{$\vert$}\is{$\vert$}而不是“$\backslash$”\isc{$\backslash$}\is{$\backslash$}以及“/”\isc{/}\is{/}来指示组合方向的任意性。（\mex{1}）是一些实例原型：
 
@@ -515,7 +515,7 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 \label{Abschnitt-UDC-KG}\label{sce-nld-cg}
 
 \mbox{} \citet[\S~1.2.4]{Steedman89a}
-\isc{长距离依存}\is{long"=Distance dependency|(}针对长距离依存提出了一种新的分析，这种分析并不假借移位或是空语类。
+\isce{长距离依存}{long"=Distance dependency|(}针对长距离依存提出了一种新的分析，这种分析并不假借移位或是空语类。
 像（\mex{1}）中的例子，他假设Harry must have been eating和Harry devours的范畴都是s/np。\todostefan{CUP
   reviewer: No explanation of islands}
 \eal
@@ -532,14 +532,14 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 使用之前介绍的机制，我们无法将范畴s/np分配给词串Harry must have been eating和Harry devours，尽管直觉上Harry devours是一个缺少名词短语的句子。
 我们需要在范畴语法的基础上增加两个新的扩展：
 类型提升（type raising）
-\isc{类型提升}\is{type raising}和前向组构（forward composition)
-\isc{组构!前向}\is{composition!forward}/后向组构（backward composition）
-\isc{组构!后向}\is{composition!backward}。
+\isce{类型提升}{type raising}和前向组构（forward composition)
+\iscesub{组构}{composition}{前向}{forward}/后向组构（backward composition）
+\iscesub{组构}{composition}{后向}{backward}。
 接下来我们介绍这几个新增加的运算操作。
 
 \subsection{类型提升}
 
-通过类型提升\isc{类型提升|(}\is{type raising|(}规则，范畴np可以变形为范畴(s/(s\bs np))。
+通过类型提升\isce[|(]{类型提升}{type raising}规则，范畴np可以变形为范畴(s/(s\bs np))。
 如果我们将这个新范畴与(s\bs np)进行组合，该结果和我们用（\ref{vorwaertsapplikation}）中的前向应用规则将np与(s\bs np)相组合的结果一致。 
 （\mex{1}a）是将名词短语和动词短语（缺失了左边名词短语的句子）进行组合的示例。
 经过类型提升的名词短语和动词短语的组合如（\mex{1}b）所示。
@@ -557,13 +557,13 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 类型提升仅仅置反了选择的方向：（\mex{0}a）中的动词短语是一个函子而名词短语是变元，而在（\mex{0}b）中经过类型提升的名词短语是函子而动词短语是变元。
 这两种组合的结果是一样的。这种方向的选择乍一看是一个小技巧，但我们将会看到这个小技巧的大用处。
 在展示类型提升的强大分析能力之前，我们先介绍一下前向和后向组合。 
-\isc{类型提升|)}\is{type raising|)}
+\isce[|)]{类型提升}{type raising}
 
 \subsection{前向与后向组合}
 \label{Kategorialgrammatik-Komposition}
 
 （\mex{1}）
-\isc{组构|(}\is{composition|(}是前向和后向组合规则。
+\isce[|(]{组构}{composition}是前向和后向组合规则。
 \eal
 \ex\label{Regel-Vorwaertskomposition}
  前向组合
@@ -581,7 +581,7 @@ X/Y大致可以理解为“如果我找到一个Y，则我就是一个完整的X
 在组合规则中，X/Y和Y/Z组合。Y/Z意味着一个尚不完整独缺Z的一个Y。
 而对于Z的这种需求被延迟了：我们假装Y是完整的并且直接使用它，只不过一直记得它实际上是缺少成分的。
 因此，当我们组合X/Y和Y/Z时，我们自然得到一个缺少Z的X。 
-\isc{组构|)}\is{composition|)} 
+\isce[|)]{组构}{composition} 
 
 \subsection{长距离依存的分析}
 \label{Abschnitt-CG-UDC}
@@ -619,7 +619,7 @@ must是一个需要无标记不定式作为论元的动词，have需要一个分
 \ea
 \label{Regel-Topikalisierung}
 话题化
-\isc{话题化}\is{topicalization} ($\uparrow$\isc{$\uparrow$}\is{$\uparrow$}):\\
+\isce{话题化}{topicalization} ($\uparrow$\isc{$\uparrow$}\is{$\uparrow$}):\\
 X $\Rightarrow$ st/(s/X)\\
 其中，X $\in$ \{ np, pp, vp, ap, s$'$ \}
 \z
@@ -723,7 +723,7 @@ X/Y $*$ (Y/Z1)/Z2 = (X/Z1)/Z2
 \ea
 \label{Regel-Topikalisierung-zwei}
 针对n=2的话题化规则
-\isc{话题化}\is{topicalization} ($\uparrow\uparrow$\isc{$\uparrow\uparrow$}\is{$\uparrow\uparrow$}):\\
+\isce{话题化}{topicalization} ($\uparrow\uparrow$\isc{$\uparrow\uparrow$}\is{$\uparrow\uparrow$}):\\
 X2 $\Rightarrow$ (st/X1)/((s/X1)/X2)\\
 其中，X1, X2 $\in$ \{ NP, PP, VP, AP, S$'$ \}
 \z
@@ -733,7 +733,7 @@ X2 $\Rightarrow$ (st/X1)/((s/X1)/X2)\\
 则我们必须进一步扩展组合以及话题化规则。
 此外，我们还需要一个针对主语提取的话题化规则\citep[\page 405]{Pollard88a}。
 Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，当我们考虑这种简洁所表示的具体含义的时候仍然会回归到原始的规则。 
-\isc{长距离依存}\is{long"=distance dependency|)}
+\isce{长距离依存}{long"=distance dependency|)}
 
 \section{总结与分类}
 \label{Abschnitt-Relativsaetze-CG}\label{Abschnitt-Ratte-CG}\label{sec-pied-piping-cg}
@@ -791,7 +791,7 @@ say在结合了小句之后会形成一个VP，而这个VP在和一个NP组合�
 Manny和says，然后是Manny says和Anna married都可以通过前向组合进行合并，其结果是我们可以将Manny says Anna married分析为s/np。
 这个范畴和关系代词通过前向应用合并之后，我们可以得到n\bs n，而这正是一个后置名词性成分的修饰语的范畴。
 
-但是，当我们进一步尝试分析更复杂的随迁\isc{随迁}\is{pied-piping}现象——如（\mex{1}）——时，关系代词是中心词这个假设是有问题的。
+但是，当我们进一步尝试分析更复杂的随迁\isce{随迁}{pied-piping}现象——如（\mex{1}）——时，关系代词是中心词这个假设是有问题的。
 
 \eal
 \ex\label{Beispiel-Minister}
@@ -926,7 +926,7 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 Mark Steedman在一系列的专著和论文中讨论了范畴语法的一种变体——组合范畴语法 \citep{Steedman91a,Steedman2000a-u,SB2006a-u}。
 \end{sloppypar}
  \citet{Lobin2003a}比较了范畴语法和依存语法， \citet{PB93a}提出将依存语法与范畴语法相结合，得到了依存范畴语法（Dependency Categorial Grammar）
-\isc{依存范畴语法}\is{Dependency Categorial Grammar}。 
+\isce{依存范畴语法}{Dependency Categorial Grammar}。 
 
 基于范畴语法的框架， \citet{Briscoe2000a}和 \citet{Villavicencio2002a}讨论了基于普遍语法的语言习得模型。
 }

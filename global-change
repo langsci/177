@@ -9,7 +9,7 @@ echo $x
 #sed -e 's/\\end{figure}/\\end{figure}%/g'   $x >$x.neu
 #sed -e 's/(\\ibox{\([0-9]*\)})/\\iboxb{\1}/g'   $x >$x.neu
 #sed -e 's/ vform-/ \{\\sc vform}-/g'   $x >$x.neu
-perl -CIOED -p -e 's/\\il{(\p{Script_Extensions=Han}+)\s+(\p{ASCII}+)}/\\ilce{$1}{$2}/g' $x >$x.neu
+perl -CIOED -p -e 's/\\isc{(\p{Script_Extensions=Han}+)}\\is{(\p{ASCII}+)}/\\isce{$1}{$2}/g' $x >$x.neu
 end
 
 

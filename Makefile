@@ -37,11 +37,19 @@ all: grammatical-theory.pdf
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label'
 
+
 stable.pdf: grammatical-theory.pdf
 	cp grammatical-theory.pdf stable.pdf
 
 test-zhmakeindex: 
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o grammatical-theory.scd grammatical-theory.scx
+
+subject-index:
+	xelatex grammatical-theory.tex
+	makeindex -gs index.format -o grammatical-theory.snd grammatical-theory.sdx
+	$(ZHMAKEINDEX-PATH)zhmakeindex -o grammatical-theory.scd grammatical-theory.scx
+	xelatex grammatical-theory.tex
+
 
 proofreading: proofreading.pdf
 

@@ -183,6 +183,79 @@
   \fi%
 }
 
+% index commands adapted to include both English and Chinese
+\makeatletter
+% Subject index
+\newcommand{\isce}[3][]{%
+  \if@noftnote%
+    \index[sbj]{#2\hspace{1em}#3#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#3\hspace{1em}#2#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2#1}%
+  \fi%
+}
+\newcommand{\iscesub}[4]{%
+  \if@noftnote
+    \index[sbj]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+  \fi%
+}
+\newcommand{\iscesee}[4]{%
+  \index[sbj]{#1\hspace{1em}#3|see{#2\hspace{1em}#4}}%
+  \index[sbc]{#3\hspace{1em}#1|see{#4\hspace{1em}#2}}%
+}
+\makeatother
+\renewcommand{\is}[1]{}
+\renewcommand{\isc}[1]{}
+
+
+% Language index
+\newcommand{\ilce}[3][]{%
+  \if@noftnote
+    \index[lan]{#2\hspace{1em}#3#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#2\hspace{1em}#3#1}%
+  \fi%
+  \if@noftnote
+    \index[lane]{#3\hspace{1em}#2#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#3\hspace{1em}#2#1}%
+  \fi%
+}
+\newcommand{\ilcesub}[4]{%
+  \if@noftnote
+    \index[lan]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+  \fi%
+  \if@noftnote
+    \index[lane]{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+  \fi%
+}
+\makeatother
+
+
 \renewcommand{\lsImpressumCitationText}{
   \onlyAuthor
   \renewcommand{\newlineCover}{}
@@ -638,46 +711,3 @@ Grünberger Str. 16\\
 % \newtheorem{schema}{Schema}
 
 
-% index commands adapted to include both English and Chinese
-\makeatletter
-% Subject index
-\newcommand{\isce}[2]{%
-  \if@noftnote%
-    \index[sbj]{#1\hspace{1em}#2}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1\hspace{1em}#2}%
-    %\indexftn{#1}{\value{footnotemark}}%
-  \fi%
-}
-
-% Language index
-\newcommand{\ilce}[3][]{%
-  \if@noftnote
-    \index[lan]{#2\hspace{1em}#3#1}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#2\hspace{1em}#3#1}%
-  \fi%
-  \if@noftnote
-    \index[lane]{#3\hspace{1em}#2#1}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#3\hspace{1em}#2#1}%
-  \fi%
-}
-\newcommand{\ilcesub}[4]{%
-  \if@noftnote
-    \index[lan]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lan\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
-  \fi%
-  \if@noftnote
-    \index[lane]{#2\hspace{1em}#1!#4\hspace{1em}#3}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@lane\expandafter{\tempnumber}{#2\hspace{1em}#1!#4\hspace{1em}#3}%
-  \fi%
-}
-\makeatother

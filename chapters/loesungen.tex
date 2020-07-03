@@ -558,7 +558,7 @@ typehierarchy
 \end{forest}
 \end{figure}%
 
-\item 列表\isc{列表}\is{list}可以通过包括列表开头和其余部分的递归结构来描写。其余成分可以是一个非空列表（\type{ne\_list}）或空列表（\type{e\_list}）。列表\relliste{ \type{a}, \type{b}, \type{c} } 可以按照下面这样表示：
+\item 列表\isce{列表}{list}可以通过包括列表开头和其余部分的递归结构来描写。其余成分可以是一个非空列表（\type{ne\_list}）或空列表（\type{e\_list}）。列表\relliste{ \type{a}, \type{b}, \type{c} } 可以按照下面这样表示：
 %\item Lists\is{list} can be described using recursive structures that consist of both a list beginning and a rest. The rest can either
 %be a non"=empty list (\type{ne\_list}) or the empty list (\type{e\_list}). The list \relliste{ \type{a}, \type{b}, \type{c} } can be represented as follows:
 \ea
@@ -573,7 +573,7 @@ rest  & \ms[ne\_list]{
         }\\
 }
 \z
-\item 如果我们通过两个额外特征来扩展（\mex{0}）的数据结构，就有可能不用append。关键词是“差异表”（difference list）\isc{列表!差异表}\is{list!difference}。差异表包括一个列表和指向这个列表末端的指针。
+\item 如果我们通过两个额外特征来扩展（\mex{0}）的数据结构，就有可能不用append。关键词是“差异表”（difference list）\iscesub{列表}{list}{差异表}{difference}。差异表包括一个列表和指向这个列表末端的指针。
 %\item If we extend the data structure in (\mex{0}) by two additional features, it is possible to do without
 %  \emph{append}. The keyword is  \emph{difference list}\is{list!difference}. A difference list consists of a list
  % and a pointer to the end of the list.
