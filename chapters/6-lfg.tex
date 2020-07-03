@@ -85,7 +85,7 @@ Josef van Genabith在都柏林的团队目前正在研究如何从语料中自�
 LFG假设多层表征。\footnote{%
   本节中英语例句及其分析选自 \citet{Dalrymple2001a-u}和 \citet{Dalrymple2006a}。
 }
-其中最重要的是c-结构\isce{c-结构}{c-structure}和f-结构\isce{f-结构}{f-structure}。c-结构是成分结构，需要被某个具体的短语结构语法允准。
+其中最重要的是c-结构\isce{c-结构}{c-structure}和f-结构\isce[|(]{f-结构}{f-structure}。c-结构是成分结构，需要被某个具体的短语结构语法允准。
 对于适合用\xbarc~理论分析的语言，该短语结构语法即为\xbarc~理论。
 f-结构意为功能结构。
 功能结构包括谓词的信息，以及一个具体的结构成分中出现的语法功能（主语、宾语等）的信息。
@@ -388,7 +388,7 @@ f-结构需同时满足两个合格性的条件：它们必须同时完备（com
 
 \subsection{c-结构与f-结构之间的关系的限制}  
 
-为了得到f-结构，可以给c-结构中的符号\isce{c-结构}{c-structure|(}分配语法限制标注。
+为了得到f-结构，可以给c-结构中的符号\isce[|(]{c-结构}{c-structure}分配语法限制标注。
 令“\up”\isce{$\uparrow$}{$\uparrow$}指示c-结构中的直接支配某结点的结点（即父结点）所对应的f-结构，“$\downarrow$”\isce{$\downarrow$}{$\downarrow$}指示当前结点所对应的f-结构。
 “\up~=~\down”是一个普遍被采用的限制标注。
 这个限制声明了父结点的f-结构与当前结点的f-结构同一。
@@ -448,8 +448,8 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
                         tense & \lfgpast}}}
 \ltor{top}{d}
 \z 
-\isce{f-结构}{f-structure|)}
-\isce{c-结构}{c-structure|)}\ilce[|)]{英语}{English}
+\isce[|)]{f-结构}{f-structure}
+\isce[|)]{c-结构}{c-structure}\ilce[|)]{英语}{English}
 
 \subsection{语义}
 \label{lfg-semantics}
@@ -768,7 +768,7 @@ Bresnan注意到，和动词的被动式一样，也有被动形式的形容词�
 第二条规则规定：如果存在宾格形式的宾语，则其实现为主语。
 
 在后来的研究中，
-词汇映射理论（Lexical Mapping Theory）\isc{词汇映射理论（LMT）|(}\is{Lexical Mapping Theory (LMT)|(}\isce[|(]{联接}{linking}\label{page-LMT}成为语法功能的分配的主流理论
+词汇映射理论（Lexical Mapping Theory）\isce[|(]{词汇映射理论（LMT）}{Lexical Mapping Theory (LMT)}\isce[|(]{联接}{linking}\label{page-LMT}成为语法功能的分配的主流理论
 \LATER{\citep{Levin87a}}\citep{BresnanK89a-u}。 
 按照假定，题元角色\isce[|(]{语义角色}{semantic role}会按照一个普遍语法意义下的层级结构进行排序（\citealp{BresnanK89a-u}；\citealp[\page
 307]{Bresnan2001a}）： 施事
@@ -1069,7 +1069,7 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 \section{长距离依存和功能多变性}
 \label{Abschnitt-NLA-LFG}
 
-我们\isce{长距离依存}{long-distance dependency|(}已经知道了LFG可以解释被动、局部语序重列、不基于转换的动词位置的语言现象。
+我们\isce[|(]{长距离依存}{long-distance dependency}已经知道了LFG可以解释被动、局部语序重列、不基于转换的动词位置的语言现象。
 在第\ref{Kapitel-GPSG}章讨论GPSG时，我们已经看到了如何使用一个不基于转换的分析来处理长距离依存。
 在LFG中， \citet{KZ89a}提出了另外一种不基于转换的长距离依存分析，接下来，我们对这种分析展开讨论。
 
