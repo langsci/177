@@ -13,8 +13,8 @@
 %\chapter{Feature descriptions}
 \label{chap-feature-descriptions}
 
-在上一章，我们谈到了可以用来描写语言对象的特征"=值偶对。本章中，我们将介绍在词汇功能语法、中心语驱动的短语结构语法、构式语法、范畴语法、树邻接语法，甚至是最简方案的某些形式化理论\citep{Veenstra98a}中发挥重要作用的特征描写。本章将为后面的章节打下一些基础。
-%In the previous chapter, we talked about sets of feature"=value pairs, which can be used to describe linguistic objects. In this chapter, we will %introduce
+在上一章，我们谈到了可以用来描写语言对象的特征-值偶对。本章中，我们将介绍在词汇功能语法、中心语驱动的短语结构语法、构式语法、范畴语法、树邻接语法，甚至是最简方案的某些形式化理论\citep{Veenstra98a}中发挥重要作用的特征描写。本章将为后面的章节打下一些基础。
+%In the previous chapter, we talked about sets of feature-value pairs, which can be used to describe linguistic objects. In this chapter, we will %introduce
 %feature descriptions which play a role in theories such as LFG, HPSG, Construction Grammar, versions of Categorial Grammar and TAG (and %even some
 %formalizations of Minimalist theories \citep{Veenstra98a}). This chapter will therefore lay some of the groundwork for the chapters to follow.
 
@@ -27,17 +27,17 @@
 表示特征结构的其他术语有：
 %Alternative terms for feature structures are:
 \begin{itemize}
-\item 特征"=值结构\isc{特征-值结构}\is{feature"=value structure}
-\item 属性"=值结构\isc{属性-值结构}\is{attribute"=value structure}
-%\item feature"=value structure\is{feature"=value structure}
-%\item attribute"=value structure\is{attribute"=value structure}
+\item 特征-值结构\isc{特征-值结构}\is{feature-value structure}
+\item 属性-值结构\isc{属性-值结构}\is{attribute-value structure}
+%\item feature-value structure\is{feature-value structure}
+%\item attribute-value structure\is{attribute-value structure}
 \end{itemize}
 其他特征描写的术语有：
 %Other terms for feature description are the following:
 \begin{itemize}
-\item \emph{特征"=值矩阵}（AVM）\isc{特征-值矩阵}\is{attribute"=value matrix (AVM)}
+\item \emph{特征-值矩阵}（AVM）\isc{特征-值矩阵}\is{attribute-value matrix (AVM)}
 \item \emph{特征矩阵}
-%\item \emph{attribute-value matrix} (AVM)\is{attribute"=value matrix (AVM)}
+%\item \emph{attribute-value matrix} (AVM)\is{attribute-value matrix (AVM)}
 %\item \emph{feature matrix}
 \end{itemize}
 接下来，为了保证本书的形式部分尽可能地简短，我将只讨论必要的细节。我推荐感兴趣的读者参考 \citet{Shieber86a}、 \citet[\S~2]{ps}、 \citet{Johnson88}、 \citet{Carpenter92a}、 \citet{King94a}和 \citet{Richter2004a-u}。Shieber的著作对合一语法的介绍浅显易懂。King和Richter介绍了HPSG的重要理论基础，这对于在数学方面没有打下良好基础的读者来说是较为容易理解的。尽管如此，知道这些文献的存在，并且了解相应理论建立的基础是非常重要的。
@@ -50,10 +50,10 @@
 \section{特征描写}
 %\section{Feature descriptions}
 
-在\isce[|(]{特征描写}{feature description}描写语言符号时，我们必须要对它们的属性进行说明。对于名词而言，它们有格、性、数和人称的特征。以“男人”这个词为例，属性特征的取值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征"=值偶对的列表的话，我们就会得到下面的特征描写：
+在\isce[|(]{特征描写}{feature description}描写语言符号时，我们必须要对它们的属性进行说明。对于名词而言，它们有格、性、数和人称的特征。以“男人”这个词为例，属性特征的取值为“属格”、“阳性”、“单数”和“第三人称”。如果我们要将这些信息写成一个特征-值偶对的列表的话，我们就会得到下面的特征描写：
 %When\is{feature description|(} describing linguistic signs, we have to say something about their properties. For a noun, we can say that it has %case, gender, number and person features.
 %For a word such as  \emph{Mannes} `man', we can say that these features have the values \emph{genitive}, \emph{masculine}, %\emph{singular} and \emph{3}.
-%If we were to write these as a list of feature"=value pairs, we would arrive at the following feature description:
+%If we were to write these as a list of feature-value pairs, we would arrive at the following feature description:
 \eas
 “男人”的特征-值偶对：\\
 %Feature-value pair for \emph{Mannes}:\\
@@ -80,8 +80,8 @@
 出生日期  & \normalfont\zhdate{1985/10/10}\\
 }
 \z
-人与人之间的关系也可以在特征"=值偶对中表示。例如，Max Meier的父亲叫做Peter Meier这样的事实可以通过对（\mex{0}）的扩展来表示，如下所示：
-%People are related to other people -- a fact that can also be expressed in feature"=value pairs. For example, the fact that Max Meier has a %father
+人与人之间的关系也可以在特征-值偶对中表示。例如，Max Meier的父亲叫做Peter Meier这样的事实可以通过对（\mex{0}）的扩展来表示，如下所示：
+%People are related to other people -- a fact that can also be expressed in feature-value pairs. For example, the fact that Max Meier has a %father
 %called Peter Meier can be captured by expanding (\mex{0}) as follows: 
 \ea
 \ms{
@@ -137,9 +137,9 @@
 女儿-3  & \ldots\\
 }
 \z
-我们想要设定多少个特征呢？数量的限制是多少？“\textsc{女儿"=32}”的值会是什么呢？
+我们想要设定多少个特征呢？数量的限制是多少？“\textsc{女儿-32}”的值会是什么呢？
 %How many features do we want to assume? Where is the limit?
-%What would the value of \textsc{daughter"=32} be?
+%What would the value of \textsc{daughter-32} be?
 
 就此例而言，用列表\isce{列表}{list}更为合理。列表用尖括号表示。任意数量的元素可以出现在这些尖括号中。特殊的情况是，在这些括号中并没有元素。一个没有元素的列表被叫做空列表（empty list）。下例中，Max Meier有一个女儿叫做Clara，而她没有女儿。
 %For this case, it makes much more sense to use a list\is{list}. Lists are indicated with angle brackets. Any number of elements can occur %between
@@ -211,8 +211,8 @@
 %\section{Types}
 \label{sec-formalismus-typen}
 
-在\isce[|(]{类型}{type}上一节，我们介绍了包括特征"=值偶对的特征描写，并且说明了应该允许特征被赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型说的是哪些特征可以或者必须属于一个具体的结构。前面讲到的描写是关于属于类型“\type{人}”的某一客体的。
-%In\is{type|(} the previous section, we introduced feature descriptions consisting of feature"=value pairs and showed that it makes sense to %allow for
+在\isce[|(]{类型}{type}上一节，我们介绍了包括特征-值偶对的特征描写，并且说明了应该允许特征被赋予复杂的值。在本节，特征描写将扩大到包括类型。赋予了类型的特征描写也叫做类型特征描写。类型说的是哪些特征可以或者必须属于一个具体的结构。前面讲到的描写是关于属于类型“\type{人}”的某一客体的。
+%In\is{type|(} the previous section, we introduced feature descriptions consisting of feature-value pairs and showed that it makes sense to %allow for
 %complex values for features. In this section, feature descriptions will be augmented to include types. Feature descriptions which are assigned %a type
 %are also called \emph{typed feature descriptions}. Types say something about which features can or must belong to a 
 %particular structure. The description previously discussed describes an object of the type \type{person}.
@@ -339,7 +339,7 @@
      (scanner.south)--(other-sc.north);
 \end{tikzpicture}
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
-%\caption{\label{fig-electric-appliance}Non"=linguistic example of multiple inheritance}
+%\caption{\label{fig-electric-appliance}Non-linguistic example of multiple inheritance}
 \end{figure}%
 图中最高点是最为普遍的类型“电子设备”（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。“电子设备”的所有次类型都“承继”了这一属性。这样，“打印设备”和“扫描设备”也具有可供特定能量消耗的能力供给。“打印设备”可以制造信息，而“扫描设备”可以阅读信息。“复印机”既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和“复印机”之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\iscesub{承继}{inheritance}{多重}{multiple}。如果设备可以打印，但是不能扫描，它们就属于类型打印机（printer）。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说“激光打印机”。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用“底片扫描机”扫描的材料比它的上位类型“扫描机”具有更多的限制，因为底片扫描机只能扫描底片。
 %The most general type \type{electrical device} is the highest in Figure~\ref{fig-electric-appliance}. Electrical devices have certain properties, 
@@ -368,7 +368,7 @@
 \section{析取}
 %\section{Disjunction}
 
-如果有人想表达一个具体物体具有不同属性的事实，可以用析取\isce[|(]{析取}{disjunction}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow或者Barbanow）”。在特征描写中，这个“或者”表示为“$\vee$”\isc{$\vee$}\is{$\vee$}。
+如果有人想表达一个具体物体具有不同属性的事实，可以用析取\isce[|(]{析取}{disjunction}来表示。如果有人想组织一场毕业二十年的聚会，但是不记得一些老同学的名字了，可以在网络中搜索“Julia（Warbanow或者Barbanow）”。在特征描写中，这个“或者”表示为“$\vee$”\isce{$\vee$}{$\vee$}。
 %Disjunctions\is{disjunction|(} can be used if one wishes to express the fact that a particular object can have various different properties. If one %were to organize a class reunion
 %twenty years after leaving school and could not recall the exact names of some former classmates, it would be possible to search the web for %``Julia (Warbanow or Barbanow)''. In
 %feature descriptions, this ``or'' is expressed by a `$\vee$'\is{$\vee$}.
@@ -511,7 +511,7 @@
 中给出的描述可以正确地捕捉所有的事实。
 %We\is{cycle!in feature description|(} have introduced structure sharing in order to be able to express
 %the fact that Max's parents both have a son Klaus together. It would not be enough to list Max in
-%the child"=lists of his parents separately. We want to capture the fact that it is the same Max which
+%the child-lists of his parents separately. We want to capture the fact that it is the same Max which
 %appears in each of these lists and furthermore, we have to ensure that the child being described is
 %identical to the entire object being described. Otherwise, the description would permit a situation where Max's
 %parents could have a second child also called Max.  The description given in
@@ -565,7 +565,7 @@
 %	the constraints of two descriptions lead to a single description. What one wants to say here, intuitively, is that the objects described have to
 %	satisfy the constraints of both descriptions at the same time (\emph{constraint satisfaction}). Since the term \emph{unification} is so broadly-%used,
 %	it will also be used in this section. The term will not play a role in the remaining discussions of theories with the exception of
-%	explicitly unification"=based approaches. In contrast, the concept of constraint satisfaction presented here is very important for the %comprehension
+%	explicitly unification-based approaches. In contrast, the concept of constraint satisfaction presented here is very important for the %comprehension
 %	of the following chapters.%
 %}
 如果我们将两个描写合一，可以得到包含这两个描写的信息，而没有额外信息的描写结果。
@@ -675,9 +675,9 @@ Katharina Meier还可以有侦探不知道的其他属性。重要的是侦探�
      他 爱 \textsc{art}.\textsc{def}.\acc{} 女人\\\jambox{（宾格）}
 %      he loves the.\acc{} woman\\\jambox{(accusative)}
 \zl
-在给定的模型中，只有全部明确的表达式，即模型包括四种形式的Frau，每种形式带有一种不同的格。对于阳性名词Mann（男人）来说，我们可以在描写中给出格的信息，因为属格"=单数形式Mann-es与其他的单数形式是不同的，这可以在（\mex{0}）的例子中加入Mann看出来。例（\mex{1}）给出了Frau（女人）和Mann（男人）的特征描写：
+在给定的模型中，只有全部明确的表达式，即模型包括四种形式的Frau，每种形式带有一种不同的格。对于阳性名词Mann（男人）来说，我们可以在描写中给出格的信息，因为属格-单数形式Mann-es与其他的单数形式是不同的，这可以在（\mex{0}）的例子中加入Mann看出来。例（\mex{1}）给出了Frau（女人）和Mann（男人）的特征描写：
 %In a given model, there are only fully specified representations, that is, the model contains four forms of \emph{Frau}, each with a different %case.
-%For masculine nouns such as \emph{Mann} `man', one would have to say something about case in the description since the %genitive"=singular form \emph{Mann-es}
+%For masculine nouns such as \emph{Mann} `man', one would have to say something about case in the description since the %genitive-singular form \emph{Mann-es}
 %differs from other singular forms, which can be seen by adding \emph{Mann} into the examples in (\mex{0}). (\mex{1}) shows the feature %descriptions for
 %\emph{Frau} `woman' and \emph{Mann} `man':
 \eal
@@ -921,7 +921,7 @@ Mann（男人）:\\*[2pt]
 模型是用来模拟语言现象的。进而，它必须由我们的理论所允准。理论决定了模型并且对可能的现象进行预测。
 %The model is designed to model linguistic phenomena. Furthermore, it must be licensed by our theory.
 %The theory determines the model and makes predictions with regard to possible phenomena.
-\isce[|)]{模型}{model}\isce[|)]{理论}{theory}\isce[|)]{现象}{Phenomenon}\isce[|)]{特征描写}{feature description}\isce[|)]{特征结构}{feature structure}
+\isce[|)]{模型}{model}\isce[|)]{理论}{theory}\isce[|)]{现象}{phenomenon}\isce[|)]{特征描写}{feature description}\isce[|)]{特征结构}{feature structure}
 
 %\section*{思考题}
 %\section*{Comprehension questions}
@@ -984,9 +984,9 @@ Mann（男人）:\\*[2pt]
 %\item Come up with a type hierarchy for the word classes (\type{det}, \type{comp}, \type{noun}, \type{verb},
 %      \type{adj}, \type{prep}). Think about the ways in which one can organize the type hierachy so that one
 %	  can express the generalizations that where captured by the binary features in Table~\ref{Tabelle-Merkmalszerlegung-Wortarten} on page~%\pageref{Tabelle-Merkmalszerlegung-Wortarten}.
-\item\label{ua-liste}在本章，我们介绍了列表。这看起来好像是形式化的扩展，但是它并不是，因为可以将列表标记转化为只需要特征"=值偶对的标记。请思考如何做到这一点。
+\item\label{ua-liste}在本章，我们介绍了列表。这看起来好像是形式化的扩展，但是它并不是，因为可以将列表标记转化为只需要特征-值偶对的标记。请思考如何做到这一点。
 %\item\label{ua-liste} In this chapter, we introduced lists. This may look like an extension of the formalism, but it is not as it is possible to
-%convert the list notation into a notation which only requires feature"=value pairs. Think about how one could do this.
+%convert the list notation into a notation which only requires feature-value pairs. Think about how one could do this.
 \item （附加练习）附加关系（append）\iscesub{关系}{relation}{附加关系}{\emph{append}}
   将在第\ref{Kapitel-HPSG}章发挥作用。该关系用来将两个列表组合成第三个列表。诸如附加（append）的关系约束实际上构成了形式化的一种扩展。使用关系约束可以将任意数量的特征值与其他值联系起来，即我们可以写出这样的程序，它根据其他值计算出具体的值。这就导致了一个问题，在语言学理论中我们是否需要如此强有力的描写工具，并且如果我们允许使用它们，我们将会承担什么样的复杂度的代价。可见，我们最好选择那些不需要关系约束的理论，而不是那些需要关系约束的理论（参见\citet[\S~20]{MuellerLehrbuch1}对相关理论的比较）。
 %\item (Additional exercise) The relation \emph{append}\is{relation!\emph{append}} will play a role in Chapter~\ref{Kapitel-HPSG}. This relation %serves to
@@ -1009,12 +1009,12 @@ Mann（男人）:\\*[2pt]
 %\section*{Further reading}
 \furtherreading{
 本章为读者设计了简单易懂的有关类型特征结构的介绍。结构的数学属性、类型层级体系以及这些结构的组合性概率没有在这里进行详细说明，但是至少这些属性的一部分对于计算语言学的工作以及开发个人自己的分析来说都是非常重要的。更多的内容，我推荐感兴趣的读者阅读以下文献：
-%This chapter was designed to give the reader an easy"=to"=follow introduction to typed feature structures. The mathematical properties of the %structures, type hierarchies and the
+%This chapter was designed to give the reader an easy-to-follow introduction to typed feature structures. The mathematical properties of the %structures, type hierarchies and the
 %combinatorial possibilities of such structures could not be discussed in detail here, but knowledge of
 %at least part of these properties is important for work in computational linguistics and in
 %developing one's own analyses. For more information, I refer the interested reader to the following publications: 
 %
- \citet{Shieber86a}是对合一语法理论的简短介绍。它针对重要的语法类型给出了相对全面的综述，如DCG\isce{定子句文法}{Definite Clause Grammar (DCG)}、\lfgc、\gpsgc、HPSG、PATR-II\isc{PATR-II}\is{PATR-II}。
+ \citet{Shieber86a}是对合一语法理论的简短介绍。它针对重要的语法类型给出了相对全面的综述，如DCG\isce{定子句文法}{Definite Clause Grammar (DCG)}、\lfgc、\gpsgc、HPSG、PATR-II\isce{PATR-II}{PATR-II}。
 % \citet{Shieber86a} is a short introduction to the theory of Unification Grammar. It offers a relatively general overview followed by the %discussion of important grammar types
 %such as DCG\is{Definite Clause Grammar (DCG)}, \lfg, \gpsg,
 %HPSG, PATR-II\is{PATR-II}.
@@ -1022,9 +1022,9 @@ Mann（男人）:\\*[2pt]
  \citet{Johnson88}按照数学的精确形式描述了非类型特征结构的形式化。
 % \citet{Johnson88} describes the formalism of untyped feature structures in a mathematically precise way.
 %
- \citet{Carpenter92a}重点分析了类型特征结构在数学上的表示。由 \citet{King99a-u}开发的HPSG"=语法构成了 \citet{Richter2004a-u}的形式化的基础，该语法目前被看作是HPSG的标准形式化语法。
+ \citet{Carpenter92a}重点分析了类型特征结构在数学上的表示。由 \citet{King99a-u}开发的HPSG-语法构成了 \citet{Richter2004a-u}的形式化的基础，该语法目前被看作是HPSG的标准形式化语法。
 % \citet{Carpenter92a} goes into the detail about the mathematical aspects of typed feature structures. The formalism developed by 
-% \citet{King99a-u} for HPSG"=grammars forms the basis
+% \citet{King99a-u} for HPSG-grammars forms the basis
 %for the formalism by  \citet{Richter2004a-u}, which currently counts as the standard formalism for HPSG.
 }
 

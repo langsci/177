@@ -4,7 +4,7 @@
 \label{sec-recursion}
 
 正如\isce[|(]{递归}{recursion}本书第\pageref{ex-that-max-thinks-that-recursion}页所述，本书中所有的理论都可以解决语言中的自我嵌套问题。例（\ref{ex-that-max-thinks-that-recursion}）在这里重复为例（\mex{1}）：
-%Every\is{recursion|(} theory in this book can deal with self"=embedding in language as it was
+%Every\is{recursion|(} theory in this book can deal with self-embedding in language as it was
 %discussed on page~\pageref{ex-that-max-thinks-that-recursion}. The example
 %(\ref{ex-that-max-thinks-that-recursion}) is repeated here as (\mex{1}):
 \ea
@@ -22,12 +22,12 @@
 %effects are created by an adjunction operation that allows any amount of material to be inserted
 %into trees.  It is sometimes claimed that Construction Grammar\indexcxg cannot capture the existence
 %of recursive structure in natural language (\eg \citealp[\page 269]{Leiss2009a}).  This impression
-%is understandable since many analyses are extremely surface"=oriented. For example, one often talks
+%is understandable since many analyses are extremely surface-oriented. For example, one often talks
 %of a [Sbj TrVerb Obj] construction. However, the grammars in question also become recursive as soon
 %as they contain a sentence embedding or relative clause construction. A sentence embedding
 %construction could have the form [Sbj that-Verb that-S], where a that-Verb is one that can take
-%a sentential complement and that-S stands for the respective complement. A \emph{that}"=clause can then be inserted
-%into the that-S slot. Since this \emph{that}"=clause can also be the result of the application of
+%a sentential complement and that-S stands for the respective complement. A \emph{that}-clause can then be inserted
+%into the that-S slot. Since this \emph{that}-clause can also be the result of the application of
 %this construction, the grammar is able to produce recursive structures such as those in (\mex{1}):
 
 \ea
@@ -36,11 +36,11 @@
 \mytrans{Otto声称Karl怀疑Richard睡觉。}
 %Otto claims [\sub{that-S} that Karl suspects [\sub{that-S} that Richard sleeps]].
 \z
-在（\mex{0}）中，Karl suspects that Richard sleeps和整个句子都是[Sbj that-Verb that-S]构式的实例。整个句子因此包含一个嵌套的子部分，这一子部分也被同样的构式允准。例 （\mex{0}）也包含一个that-S范畴的成分，该成分嵌套在that-S中。关于构式语法中递归和自嵌套\isce{自嵌套}{self"=embedding}的更多信息，可以参见 \citew{Verhagen2010a}。
+在（\mex{0}）中，Karl suspects that Richard sleeps和整个句子都是[Sbj that-Verb that-S]构式的实例。整个句子因此包含一个嵌套的子部分，这一子部分也被同样的构式允准。例 （\mex{0}）也包含一个that-S范畴的成分，该成分嵌套在that-S中。关于构式语法中递归和自嵌套\isce{自嵌套}{self-embedding}的更多信息，可以参见 \citew{Verhagen2010a}。
 %In (\mex{0}), both \emph{Karl suspects that Richard sleeps} and the entire clause are instances of the [Sbj
 %that-Verb that-S] construction. The entire clause therefore contains an embedded subpart that is licensed by
 %the same construction as the clause itself. (\mex{0}) also contains a constituent of the category
-%\emph{that}-S that is embedded inside of \emph{that}-S. For more on recursion and self"=embedding\is{self"=embedding} in Construction Grammar, see  \citew{Verhagen2010a}.
+%\emph{that}-S that is embedded inside of \emph{that}-S. For more on recursion and self-embedding\is{self-embedding} in Construction Grammar, see  \citew{Verhagen2010a}.
 
 与之相似，每一个允许名词与一个属格\isce{属格}{genitive}名词短语组合的构式语法也允许递归结构。相关构式可以有[DetNNP[gen]]或[NNP[gen]]形式。[DetNNP[gen]]构式允准例（\mex{1}）所示的例子：
 %Similarly, every Construction Grammar that allows a noun to combine with a genitive\is{genitive} noun phrase also allows
@@ -54,11 +54,11 @@
 %	{} the collar {} of.the coat {} of.the chairwoman\\
 %\mytrans{the collar of the coat of the chairwoman}
 \z
- \citet{Jurafsky96a}和 \citet*{BLT2009a}使用概率上下文无关文法\isc{上下文无关文法!概率上下文无关文法（PCFG）}\is{context"=free grammar!probabilistic (PCFG)} （PCFG）来构建一个聚焦于心理语言学可行性和习得模拟的构式语法分析器。上下文无关文法处理例（\mex{0}） 所示的自我嵌套\isce{自嵌套}{self"=embedding}结构时没有问题，因此这类构式语法在处理自我嵌套时不会遇到任何问题。
-% \citet{Jurafsky96a} and  \citet*{BLT2009a} use probabilistic context"=free grammars\is{context"=free grammar!probabilistic (PCFG)} (PCFG) for a Construction Grammar parser
-%with a focus on psycholinguistic plausibility and modeling of acquisition. Context"=free grammars
-%have no problems with self"=embedding\is{self"=embedding} structures like those in (\mex{0}) and thus this kind
-%of Construction Grammar itself does not encounter any problems with self"=embedding.
+ \citet{Jurafsky96a}和 \citet*{BLT2009a}使用概率上下文无关文法\isc{上下文无关文法!概率上下文无关文法（PCFG）}\is{context-free grammar!probabilistic (PCFG)} （PCFG）来构建一个聚焦于心理语言学可行性和习得模拟的构式语法分析器。上下文无关文法处理例（\mex{0}） 所示的自我嵌套\isce{自嵌套}{self-embedding}结构时没有问题，因此这类构式语法在处理自我嵌套时不会遇到任何问题。
+% \citet{Jurafsky96a} and  \citet*{BLT2009a} use probabilistic context-free grammars\is{context-free grammar!probabilistic (PCFG)} (PCFG) for a Construction Grammar parser
+%with a focus on psycholinguistic plausibility and modeling of acquisition. Context-free grammars
+%have no problems with self-embedding\is{self-embedding} structures like those in (\mex{0}) and thus this kind
+%of Construction Grammar itself does not encounter any problems with self-embedding.
 
  \citet[\page 192]{Goldberg95a}认为英语\ilce{英语}{English}的动结构式\iscesub{构式}{construction}{动结}{resultative}有以下形式：
 % \citet[\page 192]{Goldberg95a} assumes that the resultative construction\is{construction!resultative} for English\il{English} has the following

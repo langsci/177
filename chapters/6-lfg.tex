@@ -85,7 +85,7 @@ Josef van Genabith在都柏林的团队目前正在研究如何从语料中自�
 LFG假设多层表征。\footnote{%
   本节中英语例句及其分析选自 \citet{Dalrymple2001a-u}和 \citet{Dalrymple2006a}。
 }
-其中最重要的是c-结构\isc{c-结构}\is{c"=structure}和f-结构\isc{f-结构}\is{f"=structure}。c-结构是成分结构，需要被某个具体的短语结构语法允准。
+其中最重要的是c-结构\isce{c-结构}{c-structure}和f-结构\isce{f-结构}{f-structure}。c-结构是成分结构，需要被某个具体的短语结构语法允准。
 对于适合用\xbarc~理论分析的语言，该短语结构语法即为\xbarc~理论。
 f-结构意为功能结构。
 功能结构包括谓词的信息，以及一个具体的结构成分中出现的语法功能（主语、宾语等）的信息。
@@ -143,7 +143,7 @@ f-结构意为功能结构。
 \end{tabular}
 \caption{\label{Tabelle-GOV}管辖语法功能}
 \end{table}\todostefan{\objtheta im Deutschen?}%
-\pred 的规约对应于GB理论中的题元格\isc{$\theta$-栅}\is{theta-grid@$\theta$-grid}。
+\pred 的规约对应于GB理论中的题元格\isce{$\theta$-栅}{theta-grid@$\theta$-grid}。
 中心词的配价\isce{价}{valence}信息也包含在\predvc 的规约信息中。
 
 表\vref{Tabelle-NGOV}介绍了非管辖语法功能。
@@ -381,15 +381,15 @@ f-结构需同时满足两个合格性的条件：它们必须同时完备（com
 
 \noindent
 完备性与一致性限制共同确保了仅有出现在\pred 声明中的论元被实现出来，且在\pred 声明中出现的全部论元都需要被实现出来。
-这两条限制合在一起对应于GB理论中的题元准则\isc{$\theta$-准则@$\theta$-准则}\is{theta-criterion@Theta"=Criterion}（详见第\pageref{theta-Kriterium}页）\footnote{%
+这两条限制合在一起对应于GB理论中的题元准则\isce{$\theta$-准则@$\theta$-准则}{theta-criterion@Theta-Criterion}（详见第\pageref{theta-Kriterium}页）\footnote{%
 了解更多的关于LFG中的谓词论元结构与基于题元准则的深层结构之间的区别，可参阅 \citew[\page xxvi--xxviii]{BK82a}。
 }。
 
 
 \subsection{c-结构与f-结构之间的关系的限制}  
 
-为了得到f-结构，可以给c-结构中的符号\isc{c-结构}\is{c"=structure|(}分配语法限制标注。
-令“\up”\isc{$\uparrow$}\is{$\uparrow$}指示c-结构中的直接支配某结点的结点（即父结点）所对应的f-结构，“$\downarrow$”\isc{$\downarrow$}\is{$\downarrow$}指示当前结点所对应的f-结构。
+为了得到f-结构，可以给c-结构中的符号\isce{c-结构}{c-structure|(}分配语法限制标注。
+令“\up”\isce{$\uparrow$}{$\uparrow$}指示c-结构中的直接支配某结点的结点（即父结点）所对应的f-结构，“$\downarrow$”\isce{$\downarrow$}{$\downarrow$}指示当前结点所对应的f-结构。
 “\up~=~\down”是一个普遍被采用的限制标注。
 这个限制声明了父结点的f-结构与当前结点的f-结构同一。
 
@@ -448,8 +448,8 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
                         tense & \lfgpast}}}
 \ltor{top}{d}
 \z 
-\isc{f-结构}\is{f"=structure|)}
-\isc{c-结构}\is{c"=structure|)}\ilce[|)]{英语}{English}
+\isce{f-结构}{f-structure|)}
+\isce{c-结构}{c-structure|)}\ilce[|)]{英语}{English}
 
 \subsection{语义}
 \label{lfg-semantics}
@@ -556,8 +556,8 @@ David yawned的f-结构以及其中的David和yawned的语义构建器如（\mex
 \noindent 
 标示为\BF{David}的语义构建器的左部为专有名词David的语义，即\relation{david}。
 而\BF{yawn}\linebreak{}这一语义构建器的左部为相对应的不及物动词的语义，即一个一元谓词$\lambda x. \relation{yawn}(x)$。
-%The left side of the meaning constructor marked by \BF{David} is the meaning of the proper name %\emph{David}, \relation{david} to be precise. The left"=hand side of the
-%meaning constructor \BF{yawn} is the meaning of the intransitive verb -- a one"=place predicate $%\lambda x. \relation{yawn}(x)$.
+%The left side of the meaning constructor marked by \BF{David} is the meaning of the proper name %\emph{David}, \relation{david} to be precise. The left-hand side of the
+%meaning constructor \BF{yawn} is the meaning of the intransitive verb -- a one-place predicate $%\lambda x. \relation{yawn}(x)$.
 
 我们必须假定一些规则才能精确地确定（\mex{0}）中语义构建器右部（即粘着部分）和其左部（即语义部分）之间的关系。
 对于像（\mex{0}）中\BF{David}这样简单的、不包括逻辑蕴涵的语义构建器来说，
@@ -703,9 +703,9 @@ for tree={parent anchor=south, child anchor=north,align=center,base=bottom}
 \end{pgfinterruptboundingbox}
 \end{forest}
 }
-\isc{范畴!功能!Neg}\is{category!functional!Neg}
-\isc{范畴!功能!T}\is{category!functional!T}
-\isc{范畴!功能!Agr}\is{category!functional!Agr}
+\isce{范畴!功能!Neg}{category!functional!Neg}
+\isce{范畴!功能!T}{category!functional!T}
+\isce{范畴!功能!Agr}{category!functional!Agr}
 \caption{\label{abb-Pollock}Pollock给出的针对Marie ne parlerait pas（Marie不说话）的分析，具体分析选自 \citet[\page 617]{Kuhn2007a}}
 \end{figure}%
 除了GB和最简方案之外，本书中讨论的所有理论均接受词汇完整性这一假设。
@@ -779,7 +779,7 @@ Bresnan注意到，和动词的被动式一样，也有被动形式的形容词�
 \isce{工具}{instrument} $>$ 受事/主题
 \isce{受事}{patient}
 \isce{客体}{theme} $>$ 方位格。
-在相应的被称之为a-结构\isc{a-结构}\is{a"=structure}的表示体系中，受事类型会被标记为不受限（[$-$r]）。
+在相应的被称之为a-结构\isce{a-结构}{a-structure}的表示体系中，受事类型会被标记为不受限（[$-$r]）。
 第二受事类型的角色会被标记为宾语的（[+o]），而所有的其他角色都会被标记为非宾语的（[$-$o]）。
 对于德语及物动词schlagen（击打）而言，我们有如下分析：
 \ea
@@ -795,7 +795,7 @@ a-结构 & \emph{schlagen} & $\langle$ x & y~~ $\rangle$\\
 \eal\label{lmt}
 \ex
 \begin{sloppypar}
-   主语"=映射"=原则：\isc{原则!主语-映射}\is{principle!Subject"=Mapping} 标记为[$-$o]的最优先的角色如果是a-结构中的初始成分，则它被映射为\lfgsubj，
+   主语-映射-原则：\isce{原则!主语-映射}{principle!Subject-Mapping} 标记为[$-$o]的最优先的角色如果是a-结构中的初始成分，则它被映射为\lfgsubj，
    否则，标记为[$-$r]的角色被映射为\lfgsubj。
 \end{sloppypar}
 \ex 论元角色与语法功能之间的对应关系如下表所示。未声明o与r取值的被认为是`+'：
@@ -882,9 +882,9 @@ a-结构 & \emph{helfen} & $\langle$ x & y~~ $\rangle$\\
 	% ZK        S|VP -> NP* (V') (S|VP)
 }
 %\footnote{
-%%	See \citew[\page 110]{Bresnan2001a} and \citew[Section~2.2]{Dalrymple2006a} for a corresponding rule with optional constituents %%%on the right"=hand side of the rule.
+%%	See \citew[\page 110]{Bresnan2001a} and \citew[Section~2.2]{Dalrymple2006a} for a corresponding rule with optional constituents %%%on the right-hand side of the rule.
 %	See \citew[\page 110]{Bresnan2001a}, \citet[\page 413]{ZK2002a} and \citew[\page 84]{Dalrymple2006a} for corresponding rules
-%	with optional constituents on the right"=hand side of the rule. \citet[\page 413]{ZK2002a} suggest a rule that
+%	with optional constituents on the right-hand side of the rule. \citet[\page 413]{ZK2002a} suggest a rule that
 %	is similar to (\mex{1}) for German.%
 %	% Bresnan S -> C*
 %	% Dalrymple V -> (V) (NP) PP*
@@ -920,7 +920,7 @@ C$'$被下面的一个特殊规则所允准：
 在LFG规则中，通常来说只对中心词这一个元素进行“\up~=~\down”标记。在（\mex{0}）中，有两个这样的元素，这也是为什么二者同时为其父结点的f-结构提供信息的原因。
 动词的中心词域被C扩展了。\lfgsubj 和\lfgobj 的信息来自于动词短语，而\pred 信息则来自于C。 
 \isc{中心语域!扩展|)}\is{head domain!extended|)}
-\isce{动词末位语言}{verb"=final language}
+\isce{动词末位语言}{verb-final language}
 
 \section{局部语序重列}
 \label{Abschnitt-LFG-Umstellung}
@@ -1027,7 +1027,7 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 \rulenode{NP\\* (\upsp \lfgsubj|\lfgobj|\objtheta) = \down}
 \rulenode{VP\\* \up~=~\down}}
 \z
-这里的|\isc{$\vert$}\is{$\vert$}表示析取（disjunction\isce{析取}{disjunction}），也就是说，NP既可以是相应f-结构的主语也可以是宾语。
+这里的|\isce{$\vert$}{$\vert$}表示析取（disjunction\isce{析取}{disjunction}），也就是说，NP既可以是相应f-结构的主语也可以是宾语。
 因为VP既出现在（\mex{0}）中所示规则的左边也出现在其右边，它可以多次进行应用。
 而这个规则并不完整。例如，我们还必须解释介词型宾语、小句型论元、形容词性论元和附加语。
 参见第\pageref{fn-zp}页的脚注\ref{fn-zp}。
@@ -1069,7 +1069,7 @@ Berman提出一种分析，在这一分析中，动词并不会和它的论元�
 \section{长距离依存和功能多变性}
 \label{Abschnitt-NLA-LFG}
 
-我们\isce{长距离依存}{long"=distance dependency|(}已经知道了LFG可以解释被动、局部语序重列、不基于转换的动词位置的语言现象。
+我们\isce{长距离依存}{long-distance dependency|(}已经知道了LFG可以解释被动、局部语序重列、不基于转换的动词位置的语言现象。
 在第\ref{Kapitel-GPSG}章讨论GPSG时，我们已经看到了如何使用一个不基于转换的分析来处理长距离依存。
 在LFG中， \citet{KZ89a}提出了另外一种不基于转换的长距离依存分析，接下来，我们对这种分析展开讨论。
 
@@ -1207,7 +1207,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{topic})}XP} &
 \z
 
 \noindent
-这里，*\isc{*}\is{*}表示\mbox{\small COMP}出现的次数不受限制。
+这里，*\isce{*}{*}表示\mbox{\small COMP}出现的次数不受限制。
 这意味着语篇和语法功能的同一性关系尚待确定，这种性质称为功能不确定性（functional uncertainty\isce{功能不确定性}{functional uncertainty}），见 \citew{KZ89a}。
 
 在第\pageref{bsp-fronted-focus}页的针对例（\ref{bsp-fronted-focus}）和（\ref{bsp-fronted-topic}）的讨论中，
@@ -1240,7 +1240,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{df})}XP} & C$
 \end{tabular}
 \z
 在德语中，和宾语一样，几乎任意一个成分（如主语、句子型补足语、附加语）都可以前置。 
-而相应的c"=结构规则如（\mex{1}）所示：\footnote{\label{fn-zp}%
+而相应的c-结构规则如（\mex{1}）所示：\footnote{\label{fn-zp}%
   在（\mex{1}）中， \citet{Berman96a-u}使用的是ZP而不是XP。
   她针对ZP提出了一系列短语结构规则，在这些规则中可以将ZP替换为NP、PP、AP以及各种各样的附加语。
   按照Berman的分析，ZP可以和中间动词结合。
@@ -1255,7 +1255,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\upsp \textsc{df})}XP} & C$
 \end{tabular}
 \z
 这里，\textsc{gf}是语法功能的析取，可以出现在前场中。 
-\isce{长距离依存}{long"=distance dependency|)}
+\isce{长距离依存}{long-distance dependency|)}
 
 \section{总结与分类}
 
@@ -1282,7 +1282,7 @@ LFG和诸如\hpsgc、\cxgc 的一些变体等理论不同之处在于特征结�
 因为这些发展，LFG和诸如HPSG和CxG的其他理论有趋同发展的趋势。
 
  \citet{Williams84a}比较了GB和LFG中的分析。
-他的研究表明很多分析本身是可以互相转化的：LFG中的f-结构的功能可以通过GB中的题元准则（Theta"=Criterion\isc{$\theta$-理论@$\theta$-理论}\is{theta-theory@$\theta$-Theory}\isc{$\theta$-准则@$\theta$-准则}\is{theta-criterion@Theta"=Criterion}）和格理论（Case Theory\isce{格}{case}\isce{格语法}{Case Theory}）进行分析处理。
+他的研究表明很多分析本身是可以互相转化的：LFG中的f-结构的功能可以通过GB中的题元准则（Theta-Criterion\isce{$\theta$-理论@$\theta$-理论}{theta-theory@$\theta$-Theory}\isce{$\theta$-准则@$\theta$-准则}{theta-criterion@Theta-Criterion}）和格理论（Case Theory\isce{格}{case}\isce{格语法}{Case Theory}）进行分析处理。
 LFG可以显性地区分主语和非主语。
 在GB中则是区分外部\iscesub{论元}{argument}{外部论元}{external}和内部\iscesub{论元}{argument}{内部论元}{internal}论元（参见\citealp[\S~1.2]{Williams84a}）。
 对于GB的一些变体来说，和HPSG\indexhpsgc 以及CxG\indexcxgc 类似，带有主语性质的论元（如果有的话）要做显性标记\citep{Haider86,HM94a,Mueller2003e,MR2001a}。

@@ -187,6 +187,19 @@
 \makeatletter
 % Subject index
 \newcommand{\isce}[3][]{%
+  % PRO PRO -> just one item is entered
+  \ifthenelse{\equal{#2}{#3}}{%
+  \if@noftnote%
+    \index[sbj]{#2#1}%
+    \index[sbc]{#2#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2#1}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#2#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
+  }{%
+  % else #2 and #3 differ -> two items are entered
   \if@noftnote%
     \index[sbj]{#2\hspace{1em}#3#1}%
     \else%
@@ -200,19 +213,20 @@
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2#1}%
   \fi%
+  }
 }
-\newcommand{\iscesub}[4]{%
+\newcommand{\iscesub}[5][]{%
   \if@noftnote
-    \index[sbj]{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#1\hspace{1em}#2!#3\hspace{1em}#4}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
   \fi%
   \if@noftnote
-    \index[sbc]{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+    \index[sbc]{#3\hspace{1em}#2!#5\hspace{1em}#4#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#2\hspace{1em}#1!#4\hspace{1em}#3}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2!#5\hspace{1em}#4#1}%
   \fi%
 }
 \newcommand{\iscesee}[4]{%
@@ -223,6 +237,8 @@
 \renewcommand{\is}[1]{}
 \renewcommand{\isc}[1]{}
 
+\newcommand{\iscesubsub}[7][]{%
+}
 
 % Language index
 \newcommand{\ilce}[3][]{%

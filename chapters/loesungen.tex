@@ -27,7 +27,7 @@
 \begin{enumerate}
 \item 任何一种文法都有可能提出额外的符号和规则，可能是会生成多余的结构，或者是根本没用过，因为规则的右手边没有能够使用的词或短语。比如说，如果我们在文法中加入下面的规则，我们需要一个仍能分析这个相同的语言片段的更为复杂的文法。
 %\item For any grammar, it is possible to assume additional symbols and rules that create unnecessary structure or are simply
-%never used because there are no words or phrases that could be used on the right"=hand side of the rule. If we were to add
+%never used because there are no words or phrases that could be used on the right-hand side of the rule. If we were to add
 %the following rule to our grammar, for example, we would have a more complex grammar that can still analyze the same fragment
 %of the language.
 \ea
@@ -43,7 +43,7 @@ Tralala $\to$ Trulla Trololo
 我们需要牢记，文法理论的目的是什么。如果我们的目标是为了描写人类的语言能力，那么有着更多规则的文法就比那些具有较少规则的文法要好。这是因为心理语言学的研究显示我们的大脑易储存高频的单位，而且并不是每次都由它们的个别部分构成，尽管我们当然有能力这么做。
 %One should bear in mind what the aim of a theory of grammar is. If our goal is to describe the human
 %language capacity, then a grammar with more rules could be better than other grammars with less
-%rules. This is because psycholinguistic research has shown that highly"=frequent units are simply
+%rules. This is because psycholinguistic research has shown that highly-frequent units are simply
 %stored in our brains and not built up from their individual parts each time, although we would of
 %course be able to do this.\todostefan{Quelle und Beispiel}
 
@@ -162,10 +162,10 @@ sm edges
 %\mytrans{the father very proud of his son}
 \z
 \par\setlength\parindent{2em}
-我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于它们的限定语前面。有关这类重新排序的描写，参见第\ref{Kapitel-GB}章。\ref{sec-Diskussion-X-Bar}是关于\xbar "=理论的讨论。
+我们要么允准限定语跟他们的中心语组合位于补足语前，要么允准树的交叉。另一个假设是德语像英语一样，不过形容词性补足语就需要强制地位于它们的限定语前面。有关这类重新排序的描写，参见第\ref{Kapitel-GB}章。\ref{sec-Diskussion-X-Bar}是关于\xbar -理论的讨论。
 %One would either have to allow for specifiers to be combined with their heads before complements or allow crossing lines in trees. Another assumption
 %could be that German is like English, however then adjectival complements would have to be obligatorily reordered before their specifier. For
-%a description of this kind of reordering, see Chapter~\ref{Kapitel-GB}. See Section~\ref{sec-Diskussion-X-Bar} for a discussion of \xbar"=Theory.
+%a description of this kind of reordering, see Chapter~\ref{Kapitel-GB}. See Section~\ref{sec-Diskussion-X-Bar} for a discussion of \xbar-Theory.
 
 \item 请写一段能够分析例（\mex{1}）中句子的短语结构文法，但是不要允准（\mex{2}）那样的词串。
 %\item Write a phrase structure grammar that can analyze the sentences in (\mex{1}), but does not allow the strings of words in (\mex{2}).
@@ -233,7 +233,7 @@ sm edges
 \ex p(auf,acc) $\to$ auf
 \zl
 
-% \item Installieren Sie ein Prolog"=System (\zb SWI"=Prolog\footnote{%
+% \item Installieren Sie ein Prolog-System (\zb SWI-Prolog\footnote{%
 % \url{http://www.swi-prolog.org/}
 % }) und probieren Sie Ihre Grammatik aus.
 \end{enumerate}
@@ -419,8 +419,8 @@ sm edges
 \noindent
 规则（\mex{-1}b，c）对应于我们在\ref{sec-psg-np}中讲到的\xbar--规则。它们跟这些规则的不同之处在于没有在规则的右边给出中心语的词类。词类是通过中心语特征原则决定的。中心语的词类跟规则左边成分的词类保持一致，即它必须是（\mex{-1}b，c）中的N。它也从中心语特征原则得出，整个NP具有跟中心语一样的格，这样就不必在上面的规则中额外提及了。27是一个次范畴。这个数字是任意的。
 %The rules (\mex{-1}b,c) correspond to \xbar-rules that we encountered in Section~\ref{sec-psg-np}. They only differ from these rules
-%in that the part of speech of the head is not given on the right"=hand side of the rule. The part of speech is determined by
-%the Head Feature Convention. The part of speech of the head is identical to that on the left"=hand
+%in that the part of speech of the head is not given on the right-hand side of the rule. The part of speech is determined by
+%the Head Feature Convention. The part of speech of the head is identical to that on the left-hand
 %side of the rule, that is, it must be N in (\mex{-1}b,c). It also follows from the Head Feature Convention that the
 %whole NP has the same case as the head and therefore does not have to be mentioned additionally in
 %the rule above. 27 is the \subcatv. This number is arbitrary. 
@@ -434,8 +434,8 @@ X       & V[$-$\textsc{mc}]\\
 \end{tabular}
 \z
 \par\setlength\parindent{2em}
-冠词前置于名词的事实通过下面的LP"=规则来实现：
-%The fact that the determiner precedes the noun is ensured by the following LP"=rule:
+冠词前置于名词的事实通过下面的LP-规则来实现：
+%The fact that the determiner precedes the noun is ensured by the following LP-rule:
 \ea
 {}Det $<$ X
 \z
@@ -456,7 +456,7 @@ V3/N2[\textsc{case} nom]  $\to$ H[6],  N2[\textsc{case} acc]
 %\noindent
 \par\setlength\parindent{2em}
 规则（\mex{1}）被用来描写长距离依存。
-%The rule in (\mex{1}) is used to bind off long"=distance dependencies.
+%The rule in (\mex{1}) is used to bind off long-distance dependencies.
 \ea
 V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 \z
@@ -560,7 +560,7 @@ typehierarchy
 
 \item 列表\isce{列表}{list}可以通过包括列表开头和其余部分的递归结构来描写。其余成分可以是一个非空列表（\type{ne\_list}）或空列表（\type{e\_list}）。列表\relliste{ \type{a}, \type{b}, \type{c} } 可以按照下面这样表示：
 %\item Lists\is{list} can be described using recursive structures that consist of both a list beginning and a rest. The rest can either
-%be a non"=empty list (\type{ne\_list}) or the empty list (\type{e\_list}). The list \relliste{ \type{a}, \type{b}, \type{c} } can be represented as follows:
+%be a non-empty list (\type{ne\_list}) or the empty list (\type{e\_list}). The list \relliste{ \type{a}, \type{b}, \type{c} } can be represented as follows:
 \ea
 \ms[ne\_list]{
 first & a\\
@@ -655,12 +655,12 @@ last & \ibox{2}\\
 \z
 \par\setlength\parindent{2em}
 该分析是图\vref{Abb-Verbstellung-LFG}中的分析和\ref{Abschnitt-NLA-LFG}所示的长距离依存分析的组合。宾语不在VP内部实现，而是在前场实现。
-%The analysis is a combination of the analysis in Figure~\vref{Abb-Verbstellung-LFG} and the analysis of long"=distance
+%The analysis is a combination of the analysis in Figure~\vref{Abb-Verbstellung-LFG} and the analysis of long-distance
 %dependencies that was presented in Section~\ref{Abschnitt-NLA-LFG}. The object is not realized inside the VP, but rather
 %in the prefield.
 \par\setlength\parindent{2em}
-必要的c"=结构规则如（\mex{1}）所示：
-%The necessary c"=structure rules are given in (\mex{1}):
+必要的c-结构规则如（\mex{1}）所示：
+%The necessary c-structure rules are given in (\mex{1}):
 \eal
 \ex 
 \phraserule{VP}{
@@ -686,9 +686,9 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\up \textsc{df})}XP} & C$'$
 \zl
 
 \noindent
-这些规则允准了这里所述例子的两个f"=结构：其中一个NP，即den
+这些规则允准了这里所述例子的两个f-结构：其中一个NP，即den
   Apfel（苹果），它是话题，另一个NP是焦点。图\ref{Abbildung-V2-LFG}显示了前场中话题化成分的分析。
-%These rules allow two f"=structures for the example in question: one in which the NP \emph{den
+%These rules allow two f-structures for the example in question: one in which the NP \emph{den
 %  Apfel} `the apple' is the topic and another in which this NP is the focus. Figure~\ref{Abbildung-V2-LFG} 
 %shows the analysis with a topicalized constituent in the prefield.\todostefan{Dreieck für den Apfel}
 
@@ -1055,8 +1055,8 @@ tag
 %\caption{\label{TAG-substituiert}Trees for \emph{der dem König treue} and \emph{der Diener} after substitution}
 \end{figure}%
 \par\setlength\parindent{2em}
-形容词树可以连接到der Diener的N$'$"=n结点上，并得到图\vref{TAG-Baeume-nach-Adjunktion}中的结构。
-%The adjective tree can then be adjoined to the N$'$"=node of \emph{der Diener}, which yields the structure in Figure~\vref{TAG-Baeume-nach-Adjunktion}.
+形容词树可以连接到der Diener的N$'$-n结点上，并得到图\vref{TAG-Baeume-nach-Adjunktion}中的结构。
+%The adjective tree can then be adjoined to the N$'$-node of \emph{der Diener}, which yields the structure in Figure~\vref{TAG-Baeume-nach-Adjunktion}.
 \begin{figure}
 \centering
 %\scalebox{.9}{
@@ -1076,8 +1076,8 @@ tag
          [N [Diener;仆人]]]]]
 \end{forest}
 %}
-\caption{\label{TAG-Baeume-nach-Adjunktion}将AP附加到N$'$"=结点的结果}
-%\caption{\label{TAG-Baeume-nach-Adjunktion}Result of adjunction of the AP to the N$'$"=node}
+\caption{\label{TAG-Baeume-nach-Adjunktion}将AP附加到N$'$-结点的结果}
+%\caption{\label{TAG-Baeume-nach-Adjunktion}Result of adjunction of the AP to the N$'$-node}
 \end{figure}%
 
 

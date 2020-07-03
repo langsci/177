@@ -44,7 +44,7 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 %Phrase structure grammars come with rules specifying which symbols are assigned to certain kinds of words and how these are combined to create more
 %complex units. A simple phrase structure grammar which can be used to analyze (\mex{0}) is given in (\mex{1}):\footnote{%
 %	I ignore the conjunction \emph{weil} `because' for now. Since the exact analysis of
-%        German verb"=first and verb"=second clauses requires a number of additional assumptions, we will restrict ourselves to verb"=final clauses in this chapter.
+%        German verb-first and verb-second clauses requires a number of additional assumptions, we will restrict ourselves to verb-final clauses in this chapter.
 %}$^,$\footnote{\label{fn-np-pron-ps-rule}%
 %	The rule NP $\to$ er may seem odd. We could assume the rule PersPron $\to$ er instead but then would have to posit a further rule which
 %	would specify that personal pronouns can replace full NPs: NP $\to$ PersPron. The rule in (\mex{1}) combines the two aforementioned rules and states
@@ -68,7 +68,7 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 {V} & {$\to$ gibt}\\
 \end{tabular}
 \z
-据此，我们将NP $\to$\isc{$\to$}\is{$\to$} Det N这一规则解读为一个名词短语，这个名词短语被赋予了NP这个符号，它包括一个限定词（D）和一个名词（N）。
+据此，我们将NP $\to$\isce{$\to$}{$\to$} Det N这一规则解读为一个名词短语，这个名词短语被赋予了NP这个符号，它包括一个限定词（D）和一个名词（N）。
 %We can therefore interpret a rule such as NP $\to$\is{$\to$} Det N as meaning that a noun phrase, that is, something which is assigned the symbol NP, can consist
 %of a determiner (Det) and a noun (N).
 
@@ -76,11 +76,11 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 首先，我们选取句中的第一个词，然后看是否有规则来说明该词出现在规则的右边。如果有，那么我们就用规则左边的符号来替换它。这一过程可以参考%\vpageref*{bsp-anwendung-grammatik}
 （\mex{1}）中的第2—4，6—7和9行的推导过程。比如说，第二行中er被NP代替。如果在规则的右边有两个以上的符号，那么这些符号都被左边的符号所替代。这一过程可以参考第5、8和10行。例如，在第5行和第8行中，Det和N被重写为NP。
 %We can analyze the sentence in (\mex{-1}) using the grammar in (\mex{0}) in the following way:
-%first, we take the first word in the sentence and check if there is a rule in which this word occurs on the right"=hand
-%side of the rule. If this is the case, then we replace the word with the symbol on the left"=hand side of the rule. This happens
+%first, we take the first word in the sentence and check if there is a rule in which this word occurs on the right-hand
+%side of the rule. If this is the case, then we replace the word with the symbol on the left-hand side of the rule. This happens
 %in lines 2--4, 6--7 and 9 of the derivation in (\mex{1})\vpageref*{bsp-anwendung-grammatik}. For
 %instance, in line~2 \emph{er} is replaced by NP.
-%If there are two or more symbols which occur together on the right"=hand side of a rule, then all
+%If there are two or more symbols which occur together on the right-hand side of a rule, then all
 %these words are replaced with the symbol on the left. This happens in lines 5, 8 and 10. For
 %instance, in line 5 and 8, Det and N are rewritten as NP.
 %\begin{figure}
@@ -277,7 +277,7 @@ sm edges
 }
 \zl
 例（\mex{0}b）违反了主谓一致原则\isce[|(]{主谓一致}{agreement} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
-%In (\mex{0}b), subject"=verb agreement\is{agreement|(} has been violated, in other words: \emph{ich} `I' and \emph{gibt} `gives' do not fit together.
+%In (\mex{0}b), subject-verb agreement\is{agreement|(} has been violated, in other words: \emph{ich} `I' and \emph{gibt} `gives' do not fit together.
 %(\mex{0}c) is ungrammatical because the case requirements of the verb have not been satisfied: \emph{gibt} `gives' requires a dative object. Finally, (\mex{0}d) is ungrammatical
 %because there is a lack of agreement between the determiner and the noun. It is not possible to combine \emph{den} `the', which is masculine and bears accusative case, 
 %and \emph{Buch} `book' because \emph{Buch} is neuter gender. For this reason, the gender properties
@@ -285,7 +285,7 @@ sm edges
 
 在下面的内容中，我们将思考如何防止我们的语法生成例（\mex{0}b--d）中的句子。如果我们想说明主谓一致关系，那么我们就需要说明德语中的六种格，并且动词必须与主语在人称（1、2、3）\isce{人称}{person} 和数（sg（单数）、pl（复数））\isce{数}{number}上保持一致\isce{主谓一致}{agreement}：
 %In the following, we will consider how we would have to change our grammar to stop it from licensing the sentences in (\mex{0}b--d).
-%If we want to capture subject"=verb agreement, then we have to cover the following six cases in German, as the verb has to agree with the
+%If we want to capture subject-verb agreement, then we have to cover the following six cases in German, as the verb has to agree with the
 %subject in both person\is{person} (1, 2, 3) and number\is{number} (sg, pl)\is{agreement}:
 \eal\jamwidth=8cm\relax%\settowidth\jamwidth{(3, sg)}
 \ex 
@@ -388,7 +388,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 为了说明例（\mex{1}）中的限定词与名词的一致关系，我们需要整合性\isce{性}{gender}（阴性、阳性、中性）、数\isce{数}{number}（单数、复数）、格\isce{格}{case}（主格、属格、与格、宾格），以及屈折类型（强、弱）的信息\footnote{%
 这些是形容词的屈折变化类型，它们也同样适用于某些名词，如Beamter（公务员）、Verwandter（亲戚）和Gesandter（公使）。有关形容词类型的更多信息请参考第\pageref{page-Flexionsklasse-Wunderlich}页。
 }。
-%In order to capture the determiner"=noun agreement in (\mex{1}), we have to incorporate information about gender\is{gender} (fem, mas, neu),
+%In order to capture the determiner-noun agreement in (\mex{1}), we have to incorporate information about gender\is{gender} (fem, mas, neu),
 %number\is{number} (sg, pl), case\is{case} (nom, gen, dat, acc) and the inflectional classes (strong, weak)\footnote{%
 %These are inflectional classes for adjectives which are also relevant for some nouns such as \emph{Beamter} `civil servant', 
 %\emph{Verwandter} `relative', \emph{Gesandter} `envoy'.
@@ -464,7 +464,7 @@ NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 %However, in formal terms this symbol is just like any other symbol in the grammar and we cannot capture the commonalities
 %of all the symbols used for NPs. Furthermore, unstructured symbols do not capture the fact that the rules in (\mex{0}) 
 %all have something in common. In formal terms, the only thing that the rules have in common is that there is one symbol on the
-%left"=hand side of the rule and two on the right.
+%left-hand side of the rule and two on the right.
 
 我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以用一条附加的特征表示性，并用另一条特征表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{%
 第\ref{chap-feature-descriptions}章介绍了属性值结构。这些结构总是包括一对属性名称和属性值。在这样的情况下，值的顺序就不重要了，因为每个值都是独一无二的，并由相应的特征名称来指定。因为我们在（\mex{0}）这样的格式中没有属性名称，所以值的顺序是重要的。
@@ -519,7 +519,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 \end{tabular}
 \z
 对动词和主语的Per1和Num1的识别确保了它们具有主谓一致关系。对于其他NP来说，这些特征的值是无关的。这些NP的格也是明确的。
-%The identification of Per1 and Num1 on the verb and on the subject ensures that there is subject"=verb agreement.
+%The identification of Per1 and Num1 on the verb and on the subject ensures that there is subject-verb agreement.
 %For the other NPs, the values of these features are irrelevant. The case of these NPs is explicitly determined.
 \isce[|)]{短语结构语法}{phrase structure grammar}
 
@@ -531,8 +531,8 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 但是，有必要提醒大家的是，我们是为了交流而使用语言的，也就是说，我们是针对某些场景、话题或者观点来交换信息。
 如果我们想准确地解释我们的语言能力，那么我们还要解释我们所说的话的意义。
 为了达到这一目标，我们就有必要理解句法结构，但是单是这样是不够的。而且，那些只关注句法结构的习得理论也是不全面的。
-由此，句法语义接口（syntax"=semantics interface）\isce{句法语义接口}{syntax"=semantics interface}问题的重要性尤为突出，每个语法理论都要说明句法和语义是如何互动的。
-在下面，我将讲解我们是如何将短语结构规则与语义信息相结合的。为了表示意义，我会用一阶谓词逻辑和$\lambda$-演算\isc{$\lambda$-演算}\is{$\lambda$"=calculus}。不过遗憾的是，我们无法介绍基础逻辑知识的详细信息，以帮助没有相关经验的读者来理解下面的内容，但是我们这里举的这些简单的例子应该可以为句法和语义的互动关系提供一些基本的认识，进而得到一个能够对它进行解释的语言学理论。
+由此，句法语义接口（syntax-semantics interface）\isce{句法语义接口}{syntax-semantics interface}问题的重要性尤为突出，每个语法理论都要说明句法和语义是如何互动的。
+在下面，我将讲解我们是如何将短语结构规则与语义信息相结合的。为了表示意义，我会用一阶谓词逻辑和$\lambda$-演算\isce{$\lambda$-演算}{$\lambda$-calculus}。不过遗憾的是，我们无法介绍基础逻辑知识的详细信息，以帮助没有相关经验的读者来理解下面的内容，但是我们这里举的这些简单的例子应该可以为句法和语义的互动关系提供一些基本的认识，进而得到一个能够对它进行解释的语言学理论。
 %In the introductory chapter and the previous sections, we have been dealing with syntactic aspects
 %of language and the focus will remain very much on syntax for the remainder of this book. It is,
 %however, important to remember that we use language to communicate, that is, to transfer information
@@ -540,11 +540,11 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 %language, then we also have to explain the meanings that our utterances have. To this end, it is
 %necessary to understand their syntactic structure, but this alone is not enough. Furthermore,
 %theories of language acquisition that only concern themselves with the acquisition of syntactic
-%constructions are also inadequate. The syntax"=semantics interface\is{syntax"=semantics interface}
+%constructions are also inadequate. The syntax-semantics interface\is{syntax-semantics interface}
 %is therefore important and every grammatical theory has to say something about how syntax and
 %semantics interact. In the following, I will show how we can combine phrase structure rules with
-%semantic information. To represent meanings, I will use first"=order predicate logic and
-%$\lambda$"=calculus\is{$\lambda$"=calculus}. Unfortunately, it is not possible to provide a detailed
+%semantic information. To represent meanings, I will use first-order predicate logic and
+%$\lambda$-calculus\is{$\lambda$-calculus}. Unfortunately, it is not possible to provide a detailed
 %discussion of the basics of logic so that even readers without prior knowledge can follow all the
 %details, but the simple examples discussed here should be enough to provide some initial
 %insights into how syntax and semantics interact and furthermore, how we can develop a linguistic
@@ -653,8 +653,8 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 $\lambda x~\relation{sleep}(x)$
 \z
 %
-从（\ref{sleep-max}）到（\mex{0}）的步骤叫做“$\lambda$"=抽象”（lambda abstraction）\isc{lambda-抽象@$\lambda$-抽象}\is{lambda"=abstraction@$\lambda$"=abstraction}。（\mex{0}）这个表达式与它的论元的意义的整合过程是按照下面的方式进行的：我们去除$\lambda$和相应的变量，然后将变量的所有实例替换为论元的意义。如果我们将（\mex{0}）和（\mex{1}）中的\relation{max}整合在一起，我们就会得到（\ref{Bsp-schlafen-max}）的含义。
-%The step from (\ref{sleep-max}) to (\mex{0}) is referred to as \emph{lambda abstraction}\is{lambda"=abstraction@$\lambda$"=abstraction}.
+从（\ref{sleep-max}）到（\mex{0}）的步骤叫做“$\lambda$-抽象”（lambda abstraction）\isce{lambda-抽象@$\lambda$-抽象}{lambda-abstraction@$\lambda$-abstraction}。（\mex{0}）这个表达式与它的论元的意义的整合过程是按照下面的方式进行的：我们去除$\lambda$和相应的变量，然后将变量的所有实例替换为论元的意义。如果我们将（\mex{0}）和（\mex{1}）中的\relation{max}整合在一起，我们就会得到（\ref{Bsp-schlafen-max}）的含义。
+%The step from (\ref{sleep-max}) to (\mex{0}) is referred to as \emph{lambda abstraction}\is{lambda-abstraction@$\lambda$-abstraction}.
 %The combination of the expression (\mex{0}) with the meaning of its arguments happens in the following way: we remove the $\lambda$ and the 
 %corresponding variable and then replace all instances of the variable with the meaning of the
 %argument. If we combine (\mex{0}) and \relation{max} as in (\mex{1}),
@@ -663,9 +663,9 @@ $\lambda x~\relation{sleep}(x)$
 $\lambda x~\relation{sleep}(x)$ \relation{max}
 \z
 %CAUTION:
-这一过程叫做$\beta$"=约归（$\beta$"=reduction）\isc{beta-约归@$\beta$-约归}\is{beta"=reduction@$\beta$"=reduction}或$\lambda$"=变换（$\lambda$"=conversion）\isc{lambda-变换@$\lambda$-变换}\is{lambda"=conversion@$\lambda$"=conversion}。为了深入说明这一概念，我们用及物动词的例子来分析。例（\mex{1}a）中的句子具有（\mex{1}b）所表示的含义：
-%The process is called $\beta$"=reduction\is{beta"=reduction@$\beta$"=reduction} or 
-%$\lambda$"=conversion\is{lambda"=conversion@$\lambda$"=conversion}. To show this further, let us consider an example with a transitive verb. The sentence
+这一过程叫做$\beta$-约归（$\beta$-reduction）\isce{beta-约归@$\beta$-约归}{beta-reduction@$\beta$-reduction}或$\lambda$-变换（$\lambda$-conversion）\isce{lambda-变换@$\lambda$-变换}{lambda-conversion@$\lambda$-conversion}。为了深入说明这一概念，我们用及物动词的例子来分析。例（\mex{1}a）中的句子具有（\mex{1}b）所表示的含义：
+%The process is called $\beta$-reduction\is{beta-reduction@$\beta$-reduction} or 
+%$\lambda$-conversion\is{lambda-conversion@$\lambda$-conversion}. To show this further, let us consider an example with a transitive verb. The sentence
 %in (\mex{1}a) has the meaning given in (\mex{1}b):
 \eal
 \ex\label{Bsp-Max-mag-Lotte} 
@@ -677,8 +677,8 @@ $\lambda x~\relation{sleep}(x)$ \relation{max}
 %\mytrans{Max likes Lotte.}
 \ex \relation{like}(\relation{max}, \relation{lotte})
 \zl
-mag（喜欢）的$\lambda$"=抽象如例（\mex{1}）所示：
-%The $\lambda$"=abstraction of \emph{mag} `likes' is shown in (\mex{1}):
+mag（喜欢）的$\lambda$-抽象如例（\mex{1}）所示：
+%The $\lambda$-abstraction of \emph{mag} `likes' is shown in (\mex{1}):
 \ea
 $\lambda y \lambda x~\relation{like}(x, y)$
 \z
@@ -691,9 +691,9 @@ $\lambda y \lambda x~\relation{like}(x, y)$
 %mappings are solved in different ways by different theories. The respective solutions will be
 %addressed in the following chapters.
 
-如果我们将（\mex{0}）中的表达式与其宾语Lotte整合在一起，我们会得到（\mex{1}a），然后通过$\beta$"=约归得到（\mex{1}b）：
+如果我们将（\mex{0}）中的表达式与其宾语Lotte整合在一起，我们会得到（\mex{1}a），然后通过$\beta$-约归得到（\mex{1}b）：
 %If we combine the representation in (\mex{0}) with that of the object \emph{Lotte}, we arrive at (\mex{1}a), and following
-%$\beta$"=reduction, (\mex{1}b):
+%$\beta$-reduction, (\mex{1}b):
 \eal
 \label{lambda-moegen}
 \ex $\lambda y \lambda x~\relation{like}(x, y) \relation{lotte}$
@@ -701,8 +701,8 @@ $\lambda y \lambda x~\relation{like}(x, y)$
 \zl
 
 \noindent
-这一意义可以反过来与主语整合，进而得到（\mex{1}a），以及通过$\beta$"=约归后的（\mex{1}b）：
-%This meaning can in turn be combined with the subject and we then get (\mex{1}a) and (\mex{1}b) after $\beta$"=reduction:
+这一意义可以反过来与主语整合，进而得到（\mex{1}a），以及通过$\beta$-约归后的（\mex{1}b）：
+%This meaning can in turn be combined with the subject and we then get (\mex{1}a) and (\mex{1}b) after $\beta$-reduction:
 \eal
 \ex $\lambda x~\relation{like}(x, \relation{lotte}) \relation{max}$
 \ex \relation{like}(\relation{max}, \relation{lotte})
@@ -721,10 +721,10 @@ $\lambda y \lambda x~\relation{like}(x, y)$
 \ex S $\to$ NP(nom) V
 \ex S(V$'$ NP$'$) $\to$ NP(nom, NP$'$) V(V$'$)
 \zl
-V$'$表示V的意义，NP$'$表示NP（nom）的意义。V$'$ NP$'$ 表示V$'$和NP$'$的组合性意义。当我们分析（\ref{Bsp-Max-schlaeft}）时，V$'$ 的意义是$\lambda x~\relation{sleep}(x)$，而NP$'$的意义是\relation{max}。V$'$ NP$'$的组合对应于（\mex{1}a），或者在$\beta$"=约归后对应于（\ref{Bsp-schlafen-max}）——这里重复表示为（\mex{1}b）：
+V$'$表示V的意义，NP$'$表示NP（nom）的意义。V$'$ NP$'$ 表示V$'$和NP$'$的组合性意义。当我们分析（\ref{Bsp-Max-schlaeft}）时，V$'$ 的意义是$\lambda x~\relation{sleep}(x)$，而NP$'$的意义是\relation{max}。V$'$ NP$'$的组合对应于（\mex{1}a），或者在$\beta$-约归后对应于（\ref{Bsp-schlafen-max}）——这里重复表示为（\mex{1}b）：
 %V$'$ stands for the meaning of V and NP$'$ for the meaning of the NP(nom). V$'$ NP$'$ stands for the combination of V$'$ and NP$'$. When analyzing
 %(\ref{Bsp-Max-schlaeft}), the meaning of V$'$ is $\lambda x~\relation{sleep}(x)$ and the meaning of NP$'$ is \relation{max}. The combination of V$'$ NP$'$
-%corresponds to (\mex{1}a) or after $\beta$"=reduction to (\ref{Bsp-schlafen-max}) -- repeated here as (\mex{1}b):
+%corresponds to (\mex{1}a) or after $\beta$-reduction to (\ref{Bsp-schlafen-max}) -- repeated here as (\mex{1}b):
 \eal
 \ex $\lambda x~\relation{sleep}(x) \relation{max}$
 \ex \relation{sleep}(\relation{max})
@@ -739,9 +739,9 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 动词（V$'$）的意义首先跟宾语（NP2$'$）的意义组合，然后跟主语（NP1$'$）的意义组合。
 %The meaning of the verb (V$'$) is first combined with the meaning of the object (NP2$'$) and then with the meaning of the subject (NP1$'$). 
 
-在这一点上，我们可以看到上述的短语结构规则有几条不同的语义规则。按照这一方式来分析语言的理论假说叫做“规则对规则假说”（rule"=to"=rule hypothesis）\isce{规则对规则假说}{rule"=to"=rule hypothesis}\citep[\page 184]{Bach76a}。针对语言表达式的意义的推导过程将在\ref{Sec-GPSG-Sem}中详细展开。
+在这一点上，我们可以看到上述的短语结构规则有几条不同的语义规则。按照这一方式来分析语言的理论假说叫做“规则对规则假说”（rule-to-rule hypothesis）\isce{规则对规则假说}{rule-to-rule hypothesis}\citep[\page 184]{Bach76a}。针对语言表达式的意义的推导过程将在\ref{Sec-GPSG-Sem}中详细展开。
 %At this point, we can see that there are several distinct semantic rules for the phrase structure rules above. The hypothesis that we should analyze language
-%in this way is called the \emph{rule"=to"=rule hypothesis}\is{rule"=to"=rule hypothesis}
+%in this way is called the \emph{rule-to-rule hypothesis}\is{rule-to-rule hypothesis}
 %\citep[\page 184]{Bach76a}. A more general process for deriving the
 %meaning of linguistic expression will be presented in Section~\ref{Sec-GPSG-Sem}.
 
@@ -869,7 +869,7 @@ NP $\to$ Det A A N
 \ea 
 NP $\to$ Det A* N
 \z
-例（\mex{0}）中的星号\isc{*}\is{*}表示任意的迭代次数。所以说，（\mex{0}）包括了没有形容词的规则，以及有一个、两个，或更多个形容词的规则。
+例（\mex{0}）中的星号\isce{*}{*}表示任意的迭代次数。所以说，（\mex{0}）包括了没有形容词的规则，以及有一个、两个，或更多个形容词的规则。
 %The asterisk\is{*} in (\mex{0}) stands for any number of iterations. Therefore, (\mex{0}) encompasses rules with no adjectives
 %as well as those with one, two or more.
 
@@ -904,7 +904,7 @@ NP $\to$ Det A* N
 \noindent
 这些规则说明了：一个名词短语包括一个限定词和一个名词性成分（\nbarc）。这个名词性成分包括一个形容词和一个名词性成分（\mex{0}b），或者只包括一个名词（\mex{0}c）。因为\nbarc 也位于（\mex{0}b）中规则的右边，所以我们可以多次应用这一规则，并且用它来说明诸如（\ref{Beispiel-alle-weitern-schlagkraeftigen-Argumente}）的带有多个形容词的名词短语。图\vref{Abbildung-Adjektive-in-NP} 给出了不带形容词的名词短语、带一个形容词的名词短语和带两个形容词的名词短语的结构。
 %These rules state the following: a noun phrase consists of a determiner and a nominal element (\nbar). This nominal element
-%can consist of an adjective and a nominal element (\mex{0}b), or just a noun (\mex{0}c). Since \nbar is also on the right"=hand side
+%can consist of an adjective and a nominal element (\mex{0}b), or just a noun (\mex{0}c). Since \nbar is also on the right-hand side
 %of the rule in (\mex{0}b), we can apply this rule multiple times and therefore account for noun phrases with multiple adjectives such as
 %(\ref{Beispiel-alle-weitern-schlagkraeftigen-Argumente}). Figure~\vref{Abbildung-Adjektive-in-NP} shows the structure of a noun phrase
 %without an adjective and that of a noun phrase with one or two adjectives.
@@ -966,7 +966,7 @@ sm edges
 %  klugen Frauen sind schön} `but all happy, smart women are beautiful' and a corresponding answer. The possibility
   %to have even more adjectives in noun phrases such as \emph{eine glückliche kluge Frau} `a happy, smart
  % woman'\todoandrew{Komma zwischen den Adjektiven?} is accounted
-  %for in our rule system in (\mex{-1}). In the rule (\ref{NP-Regeln-Adj}), \nbar occurs on the left as well as the right"=hand
+  %for in our rule system in (\mex{-1}). In the rule (\ref{NP-Regeln-Adj}), \nbar occurs on the left as well as the right-hand
   %side of the rule. This kind of rule is referred to as \emph{recursive}\is{recursion}.
 \isce[|)]{附加语}{adjunct}
 
@@ -998,10 +998,10 @@ sm edges
 %	 that Peter the man the book gives and Maria the woman the record gives\\
 %\mytrans{that Peters gives the book to the man and Maria the record to the woman}
 \ex 
-\gll be- und ent"=laden\\
-	 \prt{} 和 \prt{}"=装载\\
+\gll be- und ent-laden\\
+	 \prt{} 和 \prt{}-装载\\
 \mytrans{装载和卸载}
-%	 \prt{} and \prt{}"=load\\
+%	 \prt{} and \prt{}-load\\
 %\mytrans{load and unload}
 \zl
 % Dass in (\mex{-1}) wirklich keine normale symmetrische Koordination vorliegt, sieht man, wenn man
@@ -1027,7 +1027,7 @@ sm edges
 （\ref{NP-Regeln}c）说明了 \nbarc 有可能只带一个名词。但我们还没有讨论更为重要的规则：我们需要另一个规则来整合名词与它们所带的论元成分。如例（\mex{1}a--b）所示，这些名词有Vater（爸爸）、Sohn（儿子）和Bild（照片）这类“关系名词”（relational nouns）\iscesub{名词}{noun}{关系名词}{relational}。例（\mex{1}c）说明了动词与其所带论元的名词化过程：
 %(\ref{NP-Regeln}c) states that it is possible for \nbar to consist of a single noun. A further important rule has not yet been
 %discussed: we need another rule to combine nouns such as \emph{Vater} `father', \emph{Sohn} `son' or \emph{Bild} `picture', 
-%so"=called \emph{relational nouns}\is{noun!relational}, with their arguments. Examples of these can be found in (\mex{1}a--b).
+%so-called \emph{relational nouns}\is{noun!relational}, with their arguments. Examples of these can be found in (\mex{1}a--b).
 %(\mex{1}c) is an example of a nominalization of a verb with its argument:
 \eal
 \label{Beispiele-NP-relationale-Nomina}
@@ -1059,7 +1059,7 @@ sm edges
 \z
 %
 图\ref{Abbildung-NP-mit-PP-Argument}说明了带PP论元的两种结构。右边的树形图还包括一个额外的PP附加语，并由（\ref{xbar-PP-Adjunkt-an-N}）中的规则来允准。
-%Figure~\ref{Abbildung-NP-mit-PP-Argument} shows two structures with PP"=arguments. The tree on the right also contains an additional PP"=adjunct, which is licensed
+%Figure~\ref{Abbildung-NP-mit-PP-Argument} shows two structures with PP-arguments. The tree on the right also contains an additional PP-adjunct, which is licensed
 %by the rule in (\ref{xbar-PP-Adjunkt-an-N}).
 \begin{figure}
 \centerfit{%
@@ -1176,7 +1176,7 @@ sm edges
 %\todostefan{ich habe hier mit absicht ``often'' hinzugefügt, weil in den obengenannten beispielen
 %man nicht in allen Fällen ``one'' benutzen kann, vgl. (\mex{0}c)}
 在短语结构语法中，这就叫做“$\epsilon$生成式”（epsilon production）\isc{$\epsilon$生成式}\is{epsilon production}\isce{空成分}{empty element}。例（\mex{1}a）中，这些规则被一个空成分所替代。例（\mex{1}b）中的规则是与术语“$\epsilon$生成式”（epsilon production）相关的变量：
-%In phrase structure grammars, this can be described by a so"=called \emph{epsilon production}\is{epsilon production}\is{empty element}.
+%In phrase structure grammars, this can be described by a so-called \emph{epsilon production}\is{epsilon production}\is{empty element}.
 %These rules replace a symbol with nothing (\mex{1}a). The rule in (\mex{1}b) is an equivalent variant which is responsible for the term \emph{epsilon production}:
 \eal
 \label{np-epsilon}
@@ -1310,7 +1310,7 @@ sm edges
 
 针对我们目前提出的规则，有两点需要说明：截至目前，我一直在说形容词。但是，在名词前的位置上可以有非常复杂的形容词短语。这些可以是带补足语（\mex{1}a、b）的形容词或者是形容词性助词（\mex{1}c、d）：
 %It is necessary to add two further comments to the rules we have developed up to this point: up to now, I have
-%always spoken of adjectives. However, it is possible to have very complex adjective phrases in pre"=nominal position.
+%always spoken of adjectives. However, it is possible to have very complex adjective phrases in pre-nominal position.
 %These can be adjectives with complements (\mex{1}a,b) or adjectival participles (\mex{1}c,d):
 
 \eal
@@ -1433,9 +1433,9 @@ sm edges
 \label{Regel-PP-einfach}
 PP $\to$ P NP
 \z
-当然，这个规则也必须包括NP的格信息。为了方便，我在上面的NP"=规则和 AP"=规则中省略了格信息。
+当然，这个规则也必须包括NP的格信息。为了方便，我在上面的NP-规则和 AP-规则中省略了格信息。
 %This rule must, of course, also contain information about the case of the NP. I have omitted this for ease of exposition as I did
-%with the NP"=rules and AP"=rules above.
+%with the NP-rules and AP-rules above.
 
 下面（\mex{1}）中的语法选自《杜登语法》\citep[\S 1300]{Duden2005-Authors}，这里的介词短语界定了介词表示方式的语义，如下所示：
 %The Duden grammar \citep[\S 1300]{Duden2005-Authors} offers examples such as those in (\mex{1}), which show that certain prepositional phrases
@@ -1500,11 +1500,11 @@ PP $\to$ P NP
 \zl
 （\mex{-1}）中的所有规则被用来分析（\mex{0}）中的例子。由于在规则的左边和右边都有PP，我们可以按照我们所希望的任意顺序和次数来应用这些规则。
 %Both rules in (\mex{-1}) were used to analyze the examples in (\mex{0}). Since the symbol PP occurs on both the left 
-%and right"=hand side of the rules, we can apply the rules in any order and as many times as we like.
+%and right-hand side of the rules, we can apply the rules in any order and as many times as we like.
 % Fn: Semantik hilft nicht.
 
 为了避免产生这些不需要的副作用，我们可以修改前面提出的规则：
-%We can avoid this undesired side"=effect by reformulating the previously assumed rules:
+%We can avoid this undesired side-effect by reformulating the previously assumed rules:
 \eal
 \ex PP $\to$ NP \pbar
 \ex PP $\to$ AP \pbar
@@ -1580,7 +1580,7 @@ sm edges
 %more on empty elements.
 
 与没有限定词的NP不同的是，不带有关程度或方式的介词短语并不缺少任何意义的组成部分。所以说，我们没有必要假设有一个表示方式的空成分，并对整个PP有语义贡献。由此，（\ref{Regel-PP-P}）中的规则说明了介词短语包括\pbarc，即由P和NP构成。\isce[|)]{介词}{preposition}
-%Unlike determiner"=less NPs, prepositional phrases without an indication of degree or measurement do
+%Unlike determiner-less NPs, prepositional phrases without an indication of degree or measurement do
 %not lack any meaning component for composition. It is therefore not necessary to assume an empty indication of measurement, which
 %somehow contributes to the meaning of the entire PP. Hence, the rule in (\ref{Regel-PP-P}) states that a
 %prepositional phrase consists of \pbar, that is, a combination of P and NP.\is{preposition|)}
@@ -1589,7 +1589,7 @@ sm edges
 %\section{\xbart}
 \label{sec-xbar}
 
-如果我们回顾前面章节\isc{X-理论@\xbar-理论|(}\is{X-theory@\xbar-theory|(}中介绍的规则，我们会发现中心语总是跟它们的补足语组合，以构成一个新的成分（\mex{1}a、b），然后再与其它成分（\mex{1}c、d）相组合：
+如果我们回顾前面章节\isce{X-理论@\xbar-理论|(}{X-theory@\xbar-theory|(}中介绍的规则，我们会发现中心语总是跟它们的补足语组合，以构成一个新的成分（\mex{1}a、b），然后再与其它成分（\mex{1}c、d）相组合：
 %If\is{X theory@\xbar theory|(}  we look again at the rules that we have formulated in the previous section, we see that heads are always 
 %combined with their complements to form a new constituent (\mex{1}a,b), which can then be combined with further constituents (\mex{1}c,d):
 
@@ -1604,7 +1604,7 @@ sm edges
 研究英语\ilce{英语}{English}的语法学家发现，平行结构可以用来表示那些以形容词或动词作为中心语的短语。在这里，我先讨论形容词短语，之后在第\ref{Kapitel-GB}章讨论动词短语。与德语一样，英语中可以带补足语的形容词是有严格限制的，即这些带补足语的形容词短语在英语中不能出现在名词性成分之前。如下例（\mex{1}）所示：
 %Grammarians working on English\ilce{English} noticed that parallel structures can be used for phrases which have adjectives or verbs as their head.
 %I discuss adjective phrases at this point and postpone the discussion of verb phrases to Chapter~\ref{Kapitel-GB}. As in German, certain adjectives 
-%in English can take complements with the important restriction that adjective phrases with complements cannot realize these pre"=nominally in English. 
+%in English can take complements with the important restriction that adjective phrases with complements cannot realize these pre-nominally in English. 
 %(\mex{1}) gives some examples of adjective phrases:
 \eal
 \ex 
@@ -1721,8 +1721,8 @@ sm edges
 %further: instead of using explicit category symbols such as N, V, P and A for lexical categories and
 %NP, VP, PP and AP for phrasal categories, one can simply use a variable for the word class in question and speak of X and XP.
 
-这种抽象的方式就叫做\xbarc 理论 （或者X"=杠理论）。该理论由 \citet{Chomsky70a}提出，并由 \citet{Jackendoff77a}完善。这种形式的抽象规则在很多不同的理论中发挥了重要的作用。比如说：管辖与约束理论（第\ref{Kapitel-GB}章）、扩展的短语结构语法（第\ref{Kapitel-GPSG}章）和词汇功能语法（第\ref{Kapitel-LFG}章）。在中心语驱动的短语结构语法（第\ref{Kapitel-HPSG}章）中，\xbarc 理论也起到了重要的作用，但是并没有采纳\xbarc 范式的所有限制条件。
-%This form of abstraction can be found in so"=called \xbart (or X"=bar theory, the term \emph{bar}
+这种抽象的方式就叫做\xbarc 理论 （或者X-杠理论）。该理论由 \citet{Chomsky70a}提出，并由 \citet{Jackendoff77a}完善。这种形式的抽象规则在很多不同的理论中发挥了重要的作用。比如说：管辖与约束理论（第\ref{Kapitel-GB}章）、扩展的短语结构语法（第\ref{Kapitel-GPSG}章）和词汇功能语法（第\ref{Kapitel-LFG}章）。在中心语驱动的短语结构语法（第\ref{Kapitel-HPSG}章）中，\xbarc 理论也起到了重要的作用，但是并没有采纳\xbarc 范式的所有限制条件。
+%This form of abstraction can be found in so-called \xbart (or X-bar theory, the term \emph{bar}
 %refers to the line above the symbol), which was developed by  \citet{Chomsky70a} and refined by
 % \citet{Jackendoff77a}. This form of abstract rules plays an important role in many different
 %theories. For example: Government \& Binding\indexgb (Chapter~\ref{Kapitel-GB}), Generalized Phrase
@@ -1752,12 +1752,12 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 %Any word class can replace X (\eg V, A or P). The X without the bar stands for a lexical item in
 %the above rules. If one wants to make the bar level explicit, then it is possible to write \xnull. 
 %Just as with the rule in (\ref{Regel-mit-Variablen}), where we did not specify the case value of the
-%determiner or the noun but rather simply required that the values on the right"=hand side of the
-%rule match, the rules in (\mex{0}) require that the word class of an element on the right"=hand side
-%of the rule (X or \xbar) matches that of the element on the left"=hand side of the rule (\xbar or
+%determiner or the noun but rather simply required that the values on the right-hand side of the
+%rule match, the rules in (\mex{0}) require that the word class of an element on the right-hand side
+%of the rule (X or \xbar) matches that of the element on the left-hand side of the rule (\xbar or
 %$\overline{\overline{\mbox{X}}}$).
 
-词汇项可以跟它的补足语\isce{补足语}{complement}组合。最后一条规则中的“*”\isc{*}\is{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isce{附加语}{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个限定语\isce{限定语}{specifier}和\xbarc。在有些理论中，句子中的主语（\citealp{Haider95b-u,Haider97a}；\citealp[\S~3.2.2]{Berman2003a}）和NP中的限定词\citep[\page 210]{Chomsky70a}都是限定语。进而，形容词短语中的程度修饰词\citep[\page 210]{Chomsky70a}和介词短语中的方式指示词也被算作是限定语。
+词汇项可以跟它的补足语\isce{补足语}{complement}组合。最后一条规则中的“*”\isce{*}{*}表示它后面的符号可以不受限制地重复。一个特殊的情况是补足语的缺失。在das Bild（这张图片）中， Bild（图片）没有PP担当补足语，由此变成了\nbarc。词汇项及其补足语结合的结果是X的一个新的投射层：投射层1，并由一个横杠来表示。之后，\xbarc 可以跟附加语组合。这一过程发生在\xbarc 的左边或右边。这一组合过程的结果仍然是一个\xbarc，也就是说，将一个附加语\isce{附加语}{adjunct}组合进来并没有改变投射层。最大投射由两个横杠表示。我们也可以将XP写成带有两个横杠的X。一个XP包括一个限定语\isce{限定语}{specifier}和\xbarc。在有些理论中，句子中的主语（\citealp{Haider95b-u,Haider97a}；\citealp[\S~3.2.2]{Berman2003a}）和NP中的限定词\citep[\page 210]{Chomsky70a}都是限定语。进而，形容词短语中的程度修饰词\citep[\page 210]{Chomsky70a}和介词短语中的方式指示词也被算作是限定语。
 %A lexical element can be combined with all its complements\is{complement}. The `*'\is{*} in the last rule stands for
 %an unlimited amount of repetitions of the symbol it follows. A special case is zero"fold occurrence of complements. There is no
 %PP complement of \emph{Bild} `picture' present in \emph{das Bild} `the picture' and thus N becomes \nbar. The result of the
@@ -1774,7 +1774,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 非中心语的位置只能满足最大投射，所以补足语、附加语和限定语总是有两个横杠。
 图\ref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
 %图\vref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
-%Non"=head positions can only host maximal projections and therefore complements, adjuncts and specifiers always have two bars. 
+%Non-head positions can only host maximal projections and therefore complements, adjuncts and specifiers always have two bars. 
 %Figure~\vref{Abb-GB-Min-Max} gives an overview of the minimal and maximal structure of phrases.
 \begin{figure}
 \hfill
@@ -1803,11 +1803,11 @@ sm edges
 %\caption{\label{Abb-GB-Min-Max}Minimal and maximal structure of phrases}
 \end{figure}%
 
-有些范畴没有限定语或者只有一个。附加语也是可选的，所以，并不是所有结构都包括带有附加语子结点的\xbarc。除了右手边图上的分支所示的，带附加语的XP和中心语"=附加语\isc{附加语!中心语-附加语}\is{adjunct!head}有时也是成立的。在（\ref{psg-xbar-schema}）中，只有一条规则是针对中心语在补足语之前的情况，当然，补足语在中心语之前的顺序也是可能的，如图\ref{Abb-GB-Min-Max}所示。
+有些范畴没有限定语或者只有一个。附加语也是可选的，所以，并不是所有结构都包括带有附加语子结点的\xbarc。除了右手边图上的分支所示的，带附加语的XP和中心语-附加语\isce{附加语!中心语-附加语}{adjunct!head}有时也是成立的。在（\ref{psg-xbar-schema}）中，只有一条规则是针对中心语在补足语之前的情况，当然，补足语在中心语之前的顺序也是可能的，如图\ref{Abb-GB-Min-Max}所示。
 %Some categories do not have a specifier or have the option of having one. Adjuncts are optional and therefore
 %not all structures have to contain an \xbar with an adjunct daughter.
-% In addition to the branching shown in the right"=hand figure, adjuncts to
-%XP and head"=adjuncts\is{adjunct!head} are sometimes possible. There is only a single rule in (\ref{psg-xbar-schema})
+% In addition to the branching shown in the right-hand figure, adjuncts to
+%XP and head-adjuncts\is{adjunct!head} are sometimes possible. There is only a single rule in (\ref{psg-xbar-schema})
 %for cases in which a head precedes the complements, however an order in which the complement precedes the head is
 %of course also possible. 
 %This is shown in Figure~\ref{Abb-GB-Min-Max}.
@@ -1818,7 +1818,7 @@ sm edges
 %Figure~\vref{Abb-das-schoene-Bild-von-Paris} shows the analysis of the NP structures \emph{das Bild} `the picture'
 %and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'. The NP structures in Figure~\ref{Abb-das-schoene-Bild-von-Paris}
 %and the tree for \emph{proud} in Figure~\ref{Abbildung-AP} show examples of minimally populated structures.
-%The left tree in Figure~\ref{Abb-das-schoene-Bild-von-Paris} is also an example of a structure without an adjunct. The right"=hand structure
+%The left tree in Figure~\ref{Abb-das-schoene-Bild-von-Paris} is also an example of a structure without an adjunct. The right-hand structure
 %in Figure~\ref{Abb-das-schoene-Bild-von-Paris} is an example for the maximally populated structure:
 %specifier, adjunct, and complement are present.
 
@@ -1863,7 +1863,7 @@ sm edges
 图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
 }
-%The analysis given in Figure~\ref{Abb-das-schoene-Bild-von-Paris} assumes that all non"=heads in a rule are
+%The analysis given in Figure~\ref{Abb-das-schoene-Bild-von-Paris} assumes that all non-heads in a rule are
 %phrases. One therefore has to assume that there is a determiner phrase even if the determiner is not combined with other elements.
 %The unary branching of determiners is not elegant but it is consistent.\footnote{%
 %	For an alternative version of \xbar theory which does not assume elaborate structure for determiners see  \citew{Muysken82a}.
@@ -1894,11 +1894,11 @@ sm edges
 %unary rules for determiners, adjectives and nouns. 
 
 再者，\xbarc 理论的其他假说与本书所述的几种理论有着不同的看法。特别是，非中心语必须永远作为最大投射\iscesub{投射}{projection}{最大投射}{maximal}这条假设将被忽视。 \citet{Pullum85a}和 \citet{KP90a}认为，有些理论并不一定没有严格的\xbarc 理论的限制多。也可以参考\ref{sec-Diskussion-X-Bar}中的讨论。
-%Furthermore, other \xbar~theoretical assumptions will not be shared by several theories discussed in this book. In particular, the assumption that non"=heads always have
+%Furthermore, other \xbar~theoretical assumptions will not be shared by several theories discussed in this book. In particular, the assumption that non-heads always have
 %to be maximal projections\is{projection!maximal} will be disregarded.  \citet{Pullum85a} and
 % \citet{KP90a} have shown that the respective theories are not necessarily less restrictive
 %than theories which adopt a strict version of the \xbar theory. See also the discussion in Section~\ref{sec-Diskussion-X-Bar}.
-\isc{X-理论@\xbar-理论|)}\is{X-theory@\xbar-theory|)}
+\isce{X-理论@\xbar-理论|)}{X-theory@\xbar-theory|)}
 
 %\section*{思考题}
 %\section*{Comprehension questions}
@@ -2116,10 +2116,10 @@ NP $\to$ Det Adj
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
 %\mytrans{He is waiting for a miracle next to the bus shelter.}
 \zl
-\item 请安装Prolog系统（如SWI"=Prolog\footnote{%
+\item 请安装Prolog系统（如SWI-Prolog\footnote{%
 \url{http://www.swi-prolog.org} 
 }）
-%\item Install a Prolog system (\eg SWI"=Prolog\footnote{%
+%\item Install a Prolog system (\eg SWI-Prolog\footnote{%
 %\url{http://www.swi-prolog.org} 
 %})
 并测试你的语法。SWI-Prolog还有在线版本，你可以不用安装就可以直接输入你的语法。\footnote{%

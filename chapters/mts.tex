@@ -1,11 +1,11 @@
 %% -*- coding:utf-8 -*-
 
-\chapter{生成"=枚举方法 vs.\ 模型论方法}
-%\chapter{Generative"=enumerative vs.\ model-theoretic approaches}
+\chapter{生成-枚举方法 vs.\ 模型论方法}
+%\chapter{Generative-enumerative vs.\ model-theoretic approaches}
 \label{Abschnitt-Generativ-Modelltheoretisch}
 
-生成"=枚举方法\isce[|(]{模型论语法}{model"=theoretic grammar}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isce{生成语法}{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 \, 给）。
-%Generative"=enumerative\is{model"=theoretic grammar|(} approaches assume that a grammar generates a set of sequences of symbols (strings of words).
+生成-枚举方法\isce[|(]{模型论语法}{model-theoretic grammar}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isce{生成语法}{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 \, 给）。
+%Generative-enumerative\is{model-theoretic grammar|(} approaches assume that a grammar generates a set of sequences of symbols (strings of words).
 %This is where the term Generative Grammar\is{Generative Grammar} comes from. Thus, it is possible to use the grammar on
 %page~\pageref{bsp-grammatik-psg}, repeated here as (\mex{1}), to derive the string \emph{er das Buch dem Mann gibt}
 %`he the book the man gives'.
@@ -30,8 +30,8 @@
 %Beginning with the start symbol (S), symbols are replaced until one reaches a sequence of symbols only containing words.
 %The set of all strings derived in this way is the language described by the grammar.
 
-下面的方法都是生成"=枚举方法：
-%The following are classed as generative"=enumerative approaches:
+下面的方法都是生成-枚举方法：
+%The following are classed as generative-enumerative approaches:
 \begin{itemize}
 \item 所有的短语结构语法\isce{短语结构语法}{phrase structure grammar}
 %\item all phrase structure grammars\is{phrase structure grammar}
@@ -50,9 +50,9 @@
 %\lfg was also originally designed to be a generative grammar.
 
 与这些语法理论相对的是模型论或基于约束的方法（model-theoretic approaches，简称MTA）。MTA为所描述语法的表达式制定合乎语法的条件。在\ref{sec-modelle-theorien}中，我们已经讨论过一种运用特征结构来刻画现象的模板理论方法。为了解释这一观点，我将讨论另外一个HPSG的例子：（\mex{1}）展示了kennst（知道）的词项。
-%The opposite of such theories of grammar are model-theoretic or constraint"=based approaches (MTA).
-%MTAs formulate well"=formedness conditions on the expressions that the grammar describes.
-%In Section~\ref{sec-modelle-theorien}, we already discussed a model"=theoretic approach for theories that use
+%The opposite of such theories of grammar are model-theoretic or constraint-based approaches (MTA).
+%MTAs formulate well-formedness conditions on the expressions that the grammar describes.
+%In Section~\ref{sec-modelle-theorien}, we already discussed a model-theoretic approach for theories that use
 %feature structures to model phenomena. To illustrate this point, I will discuss another HPSG example:
 %(\mex{1}) shows the lexical item for \emph{kennst} `know'. %in second person singular.
 \begin{figure}
@@ -83,44 +83,44 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \zs
 \vspace{-\baselineskip}
 \end{figure}
-（\mex{0}）的描述中，确保相关语言学符号的\phonvc 取值是\phonliste{ kennst } ，也就是说，\phonc 的取值是受到约束的。 （\mex{0}）中给定的特征有类似的限制：给出了\synsemvc。在\synsemc 中，\textsc{loc}和\nonlocvc 都有限制。在\textsc{cat}中，对于\headc 和\subcatc 都有各自的限制。\subcatc 的取值是对依存成分的描述列表。在这里特征描述采用了简写的方式，实际上代表了同样包含特征"=值偶对的复杂特征描述。对于kenenst的第一个论元，类型\type{noun}需要一个\headvc，语义索引中的\textsc{per}取值必须是\type{second}，\textsc{num}的取值必须是\type{sg}。（\mex{0}）中的结构共享是一种特殊的限制。词项中没有说明的取值可以在类型系统给出的特征结构范围内取值。在（\mex{0}）中，主格NP和受格NP的\slashvc 取值都没给出。这意味着\slaschc 的取值可以是空列表也可以是非空列表。
+（\mex{0}）的描述中，确保相关语言学符号的\phonvc 取值是\phonliste{ kennst } ，也就是说，\phonc 的取值是受到约束的。 （\mex{0}）中给定的特征有类似的限制：给出了\synsemvc。在\synsemc 中，\textsc{loc}和\nonlocvc 都有限制。在\textsc{cat}中，对于\headc 和\subcatc 都有各自的限制。\subcatc 的取值是对依存成分的描述列表。在这里特征描述采用了简写的方式，实际上代表了同样包含特征-值偶对的复杂特征描述。对于kenenst的第一个论元，类型\type{noun}需要一个\headvc，语义索引中的\textsc{per}取值必须是\type{second}，\textsc{num}的取值必须是\type{sg}。（\mex{0}）中的结构共享是一种特殊的限制。词项中没有说明的取值可以在类型系统给出的特征结构范围内取值。在（\mex{0}）中，主格NP和受格NP的\slashvc 取值都没给出。这意味着\slaschc 的取值可以是空列表也可以是非空列表。
 %In the description of (\mex{0}), it is ensured that the \phonv of the relevant linguistic sign is
 %\phonliste{ kennst }, that is, this value of \phon is constrained. There are parallel restrictions for the features given in (\mex{0}): the \synsemv
 %is given. In \synsem, there are restrictions on the \textsc{loc} and \nonlocv. In \textsc{cat}, there are
 %individual restrictions for \head and \subcat. The value of \subcat is a list with descriptions of dependent
 %elements. The descriptions are given as abbreviations here, which actually stand for complex feature descriptions that also
-%consist of feature"=value pairs. For the first argument of \emph{kennst}, a \headv of type 
+%consist of feature-value pairs. For the first argument of \emph{kennst}, a \headv of type 
 %\type{noun} is required, the \textsc{per} value in the semantic index has to be \type{second} and the
 % \textsc{num} value has to be \type{sg}. The structure sharings in (\mex{0}) are a special kind of constraint. Values that
 % are not specified in the descriptions of lexical entries can vary in accordance with the feature geometry given by the type
 % system. In (\mex{0}), neither the \slashv of the nominative NP nor the one of the accusative NP is fixed. This means that \slasch can
-% either be an empty or non"=empty list.
+% either be an empty or non-empty list.
 
-（\mex{0}）中给出的对词项的约束与\type{phrase}类型进一步的约束发生互动。例如，在中心语"=论元结构中，非中心语子节点必须对应于中心语子节点\subcatlc 中的一个元素。
+（\mex{0}）中给出的对词项的约束与\type{phrase}类型进一步的约束发生互动。例如，在中心语-论元结构中，非中心语子节点必须对应于中心语子节点\subcatlc 中的一个元素。
 %The constraints in lexical items such as (\mex{0}) interact with further constraints that hold for the signs of type
-%\type{phrase}. For instance, in head"=argument structures, the non"=head daughter must correspond to an element from the \subcatl of
+%\type{phrase}. For instance, in head-argument structures, the non-head daughter must correspond to an element from the \subcatl of
 %the head daughter.
 
-生成"=枚举方法和模型论方法从不同侧面来观察同一个问题：生成方法只允许经由一套特定规则生成的语言现象，而模型论方法允许所有没有被约束条件所排除的语言现象。\footnote{%
-可以将这一差异比作一个古老的笑话：在独裁国家，所有不被允许的都是被禁止的，在民主国家，所有不被禁止的都是允许的，而在法国，所有被禁止的都是被允许的。生成"=枚举方法对应于独裁国家，模型论方法对应民主国家，而法国在语言学中没有对应。
+生成-枚举方法和模型论方法从不同侧面来观察同一个问题：生成方法只允许经由一套特定规则生成的语言现象，而模型论方法允许所有没有被约束条件所排除的语言现象。\footnote{%
+可以将这一差异比作一个古老的笑话：在独裁国家，所有不被允许的都是被禁止的，在民主国家，所有不被禁止的都是允许的，而在法国，所有被禁止的都是被允许的。生成-枚举方法对应于独裁国家，模型论方法对应民主国家，而法国在语言学中没有对应。
 }
-%Generative"=enumerative and model"=theoretic approaches view the same problem from different sides: the generative side only
-%allows what can be generated by a given set of rules, whereas the model"=theoretic approach allows everything that is not ruled out
+%Generative-enumerative and model-theoretic approaches view the same problem from different sides: the generative side only
+%allows what can be generated by a given set of rules, whereas the model-theoretic approach allows everything that is not ruled out
 %by constraints.\footnote{%
 %Compare this to an old joke: in dictatorships, everything that is not allowed is banned, in democracies, everything
-%that is not banned is allowed and in France, everything that is banned is allowed. Generative"=enumerative approaches correspond
-%to the dictatorships, model"=theoretic approaches are the democracies and France is something that has no correlate in linguistics.
+%that is not banned is allowed and in France, everything that is banned is allowed. Generative-enumerative approaches correspond
+%to the dictatorships, model-theoretic approaches are the democracies and France is something that has no correlate in linguistics.
 %}
 
  \citet[\page 19--20]{PS2001a}和 \citet{Pullum2007a}列出了下面的模型论方法：\footnote{%
 可以参见 \citew{Pullum2007a}对模型论句法（Model Theoretic Syntax，简称MTS）的历史发展的述评和更多的参考文献。  
 }
-% \citet[\page 19--20]{PS2001a} and  \citet{Pullum2007a} list the following model"=theoretic approaches:\footnote{%
+% \citet[\page 19--20]{PS2001a} and  \citet{Pullum2007a} list the following model-theoretic approaches:\footnote{%
 %  See  \citew{Pullum2007a} for a historical overview of Model Theoretic Syntax (MTS) and for further references.
 %}
 \begin{itemize}
 \item Lakoff\aimention{George Lakoff}提出的转换语法\isce{转换语法}{Transformational Grammar}的非程序性变体，这种理论为潜在的树序列制定了约束条件，
-%\item the non"=procedural variant of Transformational Grammar\is{Transformational Grammar} of Lakoff\aimention{George Lakoff}, that formulates
+%\item the non-procedural variant of Transformational Grammar\is{Transformational Grammar} of Lakoff\aimention{George Lakoff}, that formulates
 %constraints on potential tree sequences,
 \item Johnson和Postal针对关系语法的形式化研究\isce{关系语法}{Relational Grammar}\citeyearpar{JP80a-u}，
 %\item Johnson and Postal's formalization of Relational Grammar\is{Relational Grammar} \citeyearpar{JP80a-u}, 
@@ -130,7 +130,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
  根据\citet[\S~3.2]{Pullum2013a}，所谓的约束性等式（constraining equations）的模型论形式化分析似乎是有问题的。
 }以及
 %\item LFG\indexlfg in the formalization of  \citet{Kaplan95a}\footnote{%
-%  According to  \citet[Section~3.2]{Pullum2013a}, there seems to be a problem for model"=theoretic formalizations of so"=called
+%  According to  \citet[Section~3.2]{Pullum2013a}, there seems to be a problem for model-theoretic formalizations of so-called
 %  \emph{constraining equations}.
 %} and   
 \item  对\citet{King99a-u}进行形式化分析的HPSG\indexhpsgc 。
@@ -138,22 +138,22 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \end{itemize}
 范畴语法\indexcgc\citep{BvN94a-u}、树邻接语法\indextagc\citep{RVS94a-u}和最简方案\indexmpc\citep{Veenstra98a}都可以用模型论术语进行形式化。
 %Categorial Grammars\indexcg \citep{BvN94a-u}, TAG\indextag \citep{RVS94a-u} and
-%Minimalist\indexmp approaches \citep{Veenstra98a} can be formulated in model"=theoretic terms.
+%Minimalist\indexmp approaches \citep{Veenstra98a} can be formulated in model-theoretic terms.
 
  \citet{PS2001a} 指出了这三种观点的多种差异。在下面的章节中，我会着重论述其中两种差异。 \footnote{%
-	在这里读者应该注意：关于生成"=枚举和MTS模型应该怎样最好地被形式化有不同的意见，而且这里讨论的所有假设并非都兼容于每一种形式化体系。下面的章节只是宽泛地反映了重要的观点。%
+	在这里读者应该注意：关于生成-枚举和MTS模型应该怎样最好地被形式化有不同的意见，而且这里讨论的所有假设并非都兼容于每一种形式化体系。下面的章节只是宽泛地反映了重要的观点。%
 }\ref{Abschnitt-MTS-ten-Hacken}解决了Hacken对于模型论观点的反驳。
 % \citet{PS2001a} point out various differences between these points of view. In the following sections, I will focus on two of these differences.\footnote{%
-%	The reader should take note here: there are differing views with regard to how generative"=enumerative and MTS models are best formalized and not
+%	The reader should take note here: there are differing views with regard to how generative-enumerative and MTS models are best formalized and not
 %	all of the assumptions discussed here are compatible with every formalism. The following sections mirror the important points in the general discussion.%
-%} Section~\ref{Abschnitt-MTS-ten-Hacken} deals with ten Hacken's objection to the model"=theoretic view.
+%} Section~\ref{Abschnitt-MTS-ten-Hacken} deals with ten Hacken's objection to the model-theoretic view.
 
 \section{分级的可接受性}
 %\section{Graded acceptability}
 
-生成"=枚举方法\isce[|(]{分级性}{gradability}与模型论方法的差异在于它们怎么处理不同程度的话语可接受性。在生成"=枚举方法中，一个特定的词串，要么是合乎形式的表达，要么不是。这就意味着无法直接描述偏离的程度：（\mex{1}）中的第一个句子是合乎语法的，而下面的三句都不合乎语法。
-%Generative"=enumerative\is{gradability|(} approaches differ from model"=theoretic approaches in how they deal with the varying degrees of acceptability
-%of utterances. In generative"=enumerative approaches, a particular string is either included in the set of well"=formed expressions or it is not.
+生成-枚举方法\isce[|(]{分级性}{gradability}与模型论方法的差异在于它们怎么处理不同程度的话语可接受性。在生成-枚举方法中，一个特定的词串，要么是合乎形式的表达，要么不是。这就意味着无法直接描述偏离的程度：（\mex{1}）中的第一个句子是合乎语法的，而下面的三句都不合乎语法。
+%Generative-enumerative\is{gradability|(} approaches differ from model-theoretic approaches in how they deal with the varying degrees of acceptability
+%of utterances. In generative-enumerative approaches, a particular string is either included in the set of well-formed expressions or it is not.
 %This means that it is not straightforwardly possible to say something about the degree of deviance: the first sentence in (\mex{1}) is judged grammatical
 %and the following three are equally ungrammatical.
 \eal
@@ -207,28 +207,28 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串�
 %Chomsky (\citeyear[Chapter~5]{Chomsky75a}; \citeyear{Chomsky64a}) tried to use a string distance function to determine the relative
 %acceptability of utterances. This function compares the string of an ungrammatical expression with that of a grammatical expression
 %and assigns an ungrammaticality score of 1, 2 or 3 according to certain criteria. This treatment is not adequate, however, as there
-%are much more fine"=grained differences in acceptability and the string distance function also makes incorrect predictions.
+%are much more fine-grained differences in acceptability and the string distance function also makes incorrect predictions.
 %For examples of this and technical problems with calculating the function, see  \citew[\page 29]{PS2001a}.
 
 在模型论方法中，语法被理解为一个合法的条件系统。违反越多合法的条件，即产出越差的话语表达\citep[\page 26--27]{PS2001a}。在（\mex{-1}b）中，动词kennst词项的人称和数约束都被违反了。另外，在（\mex{-1}c）中，宾语的格要求也没有得到满足。在（\mex{-1}d）中，名词短语的线性化规则被违反了。
-%In model"=theoretic approaches, grammar is understood as a system of well"=formedness conditions. An expression becomes worse, the
-%more well"=formedness conditions it violates \citep[\page 26--27]{PS2001a}. In (\mex{-1}b), the person and number requirements of
+%In model-theoretic approaches, grammar is understood as a system of well-formedness conditions. An expression becomes worse, the
+%more well-formedness conditions it violates \citep[\page 26--27]{PS2001a}. In (\mex{-1}b), the person and number requirements of
 %the lexical item for the verb \emph{kennst} are violated. In addition, the case requirements for the object have not been fulfilled in
 %(\mex{-1}c). There is a further violation of a linearization rule for the noun phrase in (\mex{-1}d).
 
 合乎语法的条件可以解释为什么有的违反会比其他违反导致更加严重的异常结果。另外，语言运用因素在判断一个句子是否合法的时候也起作用（关于语言运用和语言能力之间的差异可以参见第\ref{Abschnitt-Diskussion-Performanz}章）。第\ref{Abschnitt-Diskussion-Performanz}章也会指出，与语言运用兼容的语法模型，能较好地使用基于限制的方法。如果我们将相关语法理论与语言运用模型组合，我们就可以解释语言运用因素导致的可接受性差异。\isce[|)]{分级性}{gradability}
-%Well"=formedness conditions can be weighted in such a way as to explain why certain violations lead to more severe deviations than
+%Well-formedness conditions can be weighted in such a way as to explain why certain violations lead to more severe deviations than
 %others. Furthermore, performance factors also play a role when judging sentences (for more on the distinction between performance
 %and competence, see Chapter~\ref{Abschnitt-Diskussion-Performanz}). As we will see in Chapter~\ref{Abschnitt-Diskussion-Performanz},
-%constraint"=based approaches work very well as performance"=compatible grammar models. If we combine the relevant grammatical theory
+%constraint-based approaches work very well as performance-compatible grammar models. If we combine the relevant grammatical theory
 %with performance models, we will arrive at explanations for graded acceptability differences owing to performance factors.
 %\is{gradability|)}
 
 \section{话语片段}
 %\section{Utterance fragments}
 
-\mbox{} \citet[\S~3.2]{PS2001a}指出生成"=枚举理论无法给句片分配结构。例如，词串and of the和词串the of and都没有结构，因为这两个序列作为语句来说都不合法，所以它们不是语法产生的序列集合中的成员。但是，and of the可以作为PPs的并列的一部分出现在类似于（\mex{1}）的句子中，并且这些例子有一定的结构，例如图\vref{fig-and-of-the}给出的例子。
-%\mbox{} \citet[Section~3.2]{PS2001a} point out that generative"=enumerative theories do not assign structure to fragments.
+\mbox{} \citet[\S~3.2]{PS2001a}指出生成-枚举理论无法给句片分配结构。例如，词串and of the和词串the of and都没有结构，因为这两个序列作为语句来说都不合法，所以它们不是语法产生的序列集合中的成员。但是，and of the可以作为PPs的并列的一部分出现在类似于（\mex{1}）的句子中，并且这些例子有一定的结构，例如图\vref{fig-and-of-the}给出的例子。
+%\mbox{} \citet[Section~3.2]{PS2001a} point out that generative-enumerative theories do not assign structure to fragments.
 %For instance, neither the string \emph{and of the} nor the string \emph{the of and} would receive a
 %structure since none of these sequences is well-formed as an utterance and they are therefore not elements of the set of sequences generated by the grammar. However, \emph{and of the}
 %can occur as part of the coordination of PPs in sentences such as (\mex{1}) and would therefore have some structure in these cases,
@@ -272,7 +272,7 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串�
 %   \citew[\page 32]{PS2001a}}
 \end{figure}%
 在基于约束的语法中，多种约束条件的互动使得the是NP的一部分，并且这个NP是of的论元，进而and与相关的PP组合。在对称的并列中，第一个连词与第二个连词有相同的句法属性，这就是为什么and of the的部分结构可以使得我们就连词的范畴得出结论，虽然它不是词串的一部分。
-%As a result of the interaction of various constraints in a constraint"=based grammar, it emerges that \emph{the}
+%As a result of the interaction of various constraints in a constraint-based grammar, it emerges that \emph{the}
 %is part of an NP and this NP is an argument of \emph{of} and furthermore \emph{and} is combined with the relevant
 %\emph{of}-PP. In symmetric coordination, the first conjunct has the same syntactic properties as the second, which
 %is why the partial structure of \emph{and of the} allows one to draw conclusions about the category of the conjunct
@@ -286,10 +286,10 @@ Ewan Klein\aimention{Ewan Klein}指出，可从简单推导出复杂表达的范
 %is common in some variants of Categorial Grammar, then the actual derivation is irrelevant. What matters is whether a
 %proof can be found or not. However, if one is interested in the derived structures, then the argument brought forward by Pullum and Scholz is still
 %valid. For some variants of Categorial Grammar that motivate the combination of constituents based on their prosodic\is{prosody}
-%and information"=structural properties \citep[Section~3]{Steedman91a}, the problem persists since fragments have
+%and information-structural properties \citep[Section~3]{Steedman91a}, the problem persists since fragments have
 %a structure independent of the structure of the entire utterance and independent of their
-%information"=structural properties within this complete structure. This structure of the fragment
-%can be such that it is not possible to analyze it with type"=raising rules and composition
+%information-structural properties within this complete structure. This structure of the fragment
+%can be such that it is not possible to analyze it with type-raising rules and composition
 %rules.
 
 无论如何，这个论据对于最简方案都是一种挑战，因为最简方案\isc{最简方案（MP）}\is{Minimalist Program (MP)}不可能允许the与这样的名词性成分相组合，即这一成分尚未通过合并从词语材料中构建而来。
@@ -298,13 +298,13 @@ Ewan Klein\aimention{Ewan Klein}指出，可从简单推导出复杂表达的范
 %material by Merge.
 
 \section{模型论方法的一个问题？}
-%\section{A problem for model"=theoretic approaches?}
+%\section{A problem for model-theoretic approaches?}
 \label{Abschnitt-MTS-ten-Hacken}
 
-\mbox{}\Citet[\page 237--238]{TenHacken2007a}讨论了HPSG\indexhpsgc 的形式化设想。在HPSG中，特征描述用于描写特征结构。特征结构一定要包含某一个特定类型结构的所有特征。另外，特征必须有一个最大化"=特指取值（见\ref{sec-modelle-theorien}）。Ten Hacken讨论了英语名词cousin的性别\isce[|(]{性}{gender}属性。在英语中，性别对于确定代词的正确约束是非常重要的（见第~\pageref{le-buch}页对于德语的论述）：
+\mbox{}\Citet[\page 237--238]{TenHacken2007a}讨论了HPSG\indexhpsgc 的形式化设想。在HPSG中，特征描述用于描写特征结构。特征结构一定要包含某一个特定类型结构的所有特征。另外，特征必须有一个最大化-特指取值（见\ref{sec-modelle-theorien}）。Ten Hacken讨论了英语名词cousin的性别\isce[|(]{性}{gender}属性。在英语中，性别对于确定代词的正确约束是非常重要的（见第~\pageref{le-buch}页对于德语的论述）：
 %\mbox{}\Citet[\page 237--238]{TenHacken2007a} discusses the formal assumptions of HPSG\indexhpsg. In HPSG, feature descriptions are used to describe feature
 %structures. Feature structures must contain all the features belonging to a structure of a certain
-%type. Additionally, the features have to have a maximally"=specific value (see
+%type. Additionally, the features have to have a maximally-specific value (see
 %Section~\ref{sec-modelle-theorien}). Ten Hacken discusses gender properties\is{gender|(} of the
 %English noun \emph{cousin}. In English, gender is important in order to ensure the correct binding
 %of pronouns (see page~\pageref{le-buch} for German): 
@@ -372,12 +372,12 @@ Ten Hacken认为类似于例（\mex{1}）的例子都是有问题的：
 %	 Niels and Odette are cousin.\mas{} and cousin.\fem\\
 \zl
 Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他的观点，这显示模型论分析不适合描述语言。
-%Ten Hacken concludes that the gender value has to remain unspecified and this shows, in his opinion, that model"=theoretic analyses
+%Ten Hacken concludes that the gender value has to remain unspecified and this shows, in his opinion, that model-theoretic analyses
 %are unsuited to describing language.
 
 如果我们思考一下Ten Hacken所观察的现象，我们就知道如何用模型论方法来解释这一现象：Ten Hacken声称，为cousin的复数形式指定性别值是没有意义的。按照模型论方法，这一点可以用两种方式来解决。第一种方法是假设复数形式的指称标引没有性别特征，另一种是可以为复数名词增加一个性别值。
-%If we consider what exactly ten Hacken noticed, then it becomes apparent how one can account for this in a model"=theoretic approach:
-%Ten Hacken claims that it does not make sense to specify a gender value for the plural form of \emph{cousin}. In a model"=theoretic approach, this can be captured
+%If we consider what exactly ten Hacken noticed, then it becomes apparent how one can account for this in a model-theoretic approach:
+%Ten Hacken claims that it does not make sense to specify a gender value for the plural form of \emph{cousin}. In a model-theoretic approach, this can be captured
 % in two ways. One can either assume that there are no gender features for referential indices in the
 %plural, or that one can add a gender value that plural nouns can have.
 
@@ -557,13 +557,13 @@ type hierarchy
 %the features.
 
 所以，虽然Ten Hacken所提的问题不是一个问题，但是仍有更偏向于技术本质的问题。我曾经在 \citew[\S~14.4]{Mueller99a}中提出过这种技术问题。我指出了当消解了双特征的取值（\textsc{flip}）时，会造成德语中动词复合短语的伪歧义\iscesub{歧义}{ambiguity}{伪歧义}{spurious}。我也指出如何通过在特定语境中对值进行复杂化的规定来避免这一问题。
-\isce[|)]{模型论语法}{model"=theoretic grammar}
+\isce[|)]{模型论语法}{model-theoretic grammar}
 %So, while ten Hacken's problem is a non-issue, there are certain problems of a more technical
 %nature. I have pointed out one such technical problem in  \citew[Section~14.4]{Mueller99a}. I show
 %that spurious ambiguities\is{ambiguity!spurious} arise for a particular analysis of verbal complexes in German when one
 %resolves the values of a binary feature (\textsc{flip}).  I also show how this problem can be
 %avoided by the complicated stipulation of a value in certain contexts.%
-%\is{model"=theoretic grammar|)}
+%\is{model-theoretic grammar|)}
 
 
 %      <!-- Local IspellDict: en_US-w_accents -->
