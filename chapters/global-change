@@ -11,14 +11,15 @@ echo $x
 #sed -e 's/ vform-/ \{\\sc vform}-/g'   $x >$x.neu
 #sed -e 's/"=/-/g'   $x >$x.neu
 #sed -e 's/\\isc{\([[:graph:]]*\)}\\is{\([[:graph:]]*\)}/\\isce{\1}{\2}/g'   $x >$x.neu
-sed -e 's/s\\textsc{cop}e}/scope/g'   $x >$x.neu
+#sed -e 's/s\\textsc{cop}e}/scope/g'   $x >$x.neu
 #perl -CIOED -p -e 's/\\il{(\p{Script_Extensions=Han}+)\s+(\p{ASCII}+)}/\\ilce{$1}{$2}/g' $x >$x.neu
 #perl -CIOED -p -e 's/\\isc{(\p{Script_Extensions=Han}+)}\\is{(\p{ASCII}+)}/\\isce{$1}{$2}/g' $x >$x.neu
 #perl -CIOED -p -e
 #'s/\\isc{(\p{Script_Extensions=Han}+)!(\p{Script_Extensions=Han}+)-}\\is{(\p{ASCII}+)!(\p{ASCII}+)-}/\\iscesub{$1}{$3}{$2-}{$4-}/g'
 #$x >$x.neu
 #perl -CIOED -p -e 's/\\isc{(\p{Script_Extensions=Han}+)\|\(}\\is{(\p{ASCII}+)\|\(}/\\isce[|(]{$1}{$2}/g' $x >$x.neu
-#perl -CIOED -p -e 's/\\isc{(\p{Script_Extensions=Han}+)\|\)}\\is{(\p{ASCII}+)\|\)}/\\isce[|)]{$1}{$2}/g' $x >$x.neu
+#perl -CIOED -p -e #'s/\\isc{(\p{Script_Extensions=Han}+)\|\)}\\is{(\p{ASCII}+)\|\)}/\\isce[|)]{$1}{$2}/g' $x >$x.neu
+perl -CIOED -p -e 's/\\isce{(\p{Script_Extensions=Han}+)!(\p{Script_Extensions=Han}+)!(\p{ASCII}+)}{(\p{ASCII}+)!(\p{ASCII}+)!(\p{ASCII}+)}/\\iscesubsub{$1}{$4}{$2}{$5}{$3}{$6}/g' $x >$x.neu
 end
 
 

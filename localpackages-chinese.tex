@@ -229,6 +229,23 @@
     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2!#5\hspace{1em}#4#1}%
   \fi%
 }
+
+
+\newcommand{\iscesubsub}[7][]{%
+  \if@noftnote
+    \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5!#6\hspace{1em}#7#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5!#6\hspace{1em}#7#1}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#3\hspace{1em}#2!#5\hspace{1em}#4!#7\hspace{1em}#6#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2!#5\hspace{1em}#4!#7\hspace{1em}#6#1}%
+  \fi%
+}
+
 \newcommand{\iscesee}[4]{%
   \index[sbj]{#1\hspace{1em}#3|see{#2\hspace{1em}#4}}%
   \index[sbc]{#3\hspace{1em}#1|see{#4\hspace{1em}#2}}%
@@ -237,8 +254,6 @@
 \renewcommand{\is}[1]{}
 \renewcommand{\isc}[1]{}
 
-\newcommand{\iscesubsub}[7][]{%
-}
 
 % Language index
 \newcommand{\ilce}[3][]{%
