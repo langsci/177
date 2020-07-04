@@ -208,14 +208,30 @@
     %\indexftn{#1}{\value{footnotemark}}%
   \fi%
   \if@noftnote
-    \index[sbc]{#3\hspace{1em}#2#1}%
+    \index[sbc]{#3@#3\hspace{1em}#2#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2#1}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2#1}%
   \fi%
   }
 }
 \newcommand{\iscesub}[5][]{%
+  % if the subterms are equal eg relation!$\bigcirc$
+  \ifthenelse{\equal{#4}{#5}}{%
+  \if@noftnote
+    \index[sbj]{#2\hspace{1em}#3!#4#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4#1}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#3@#3\hspace{1em}#2!#5@#5#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5#1}%
+  \fi%
+  }{%
+  % if they are not equal print them
   \if@noftnote
     \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
     \else%
@@ -223,15 +239,32 @@
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
   \fi%
   \if@noftnote
-    \index[sbc]{#3\hspace{1em}#2!#5\hspace{1em}#4#1}%
+    \index[sbc]{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2!#5\hspace{1em}#4#1}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4#1}%
   \fi%
+  }
 }
 
 
 \newcommand{\iscesubsub}[7][]{%
+ % if the subterms are equal eg category!functional!AgrO
+  \ifthenelse{\equal{#6}{#7}}{%
+  \if@noftnote
+    \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5!#6#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5!#6#1}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4!#6#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4!#6#1}%
+  \fi%
+  }{%
+  % else they are non-equal
   \if@noftnote
     \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5!#6\hspace{1em}#7#1}%
     \else%
@@ -239,11 +272,12 @@
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5!#6\hspace{1em}#7#1}%
   \fi%
   \if@noftnote
-    \index[sbc]{#3\hspace{1em}#2!#5\hspace{1em}#4!#7\hspace{1em}#6#1}%
+    \index[sbc]{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4!#7@#7\hspace{1em}#6#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3\hspace{1em}#2!#5\hspace{1em}#4!#7\hspace{1em}#6#1}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4!#7@#7\hspace{1em}#6#1}%
   \fi%
+  }
 }
 
 \newcommand{\iscesee}[4]{%
