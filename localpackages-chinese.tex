@@ -215,6 +215,30 @@
   \fi%
   }
 }
+
+% If you call the above command with an @ specification for sorting this causes havok, since the @
+% appears in the respective other language. So we have to pass it as a separate argument. I defined
+% a new command for this. St. Mü. 04.07.2020
+%\isce{theta-栅@$\theta$-栅}{theta-grid@$\theta$-grid}
+%\isceat[|(]{theta-栅}{$\theta$-栅}{theta-grid}{$\theta$-grid}
+\newcommand{\isceat}[5][]{%
+  % the case that the two items are identical does not appear
+  % else #2 and #3 differ -> two items are entered
+  \if@noftnote%
+    \index[sbj]{#2@#3\hspace{1em}#5#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2@#3\hspace{1em}#5#1}%
+    %\indexftn{#1}{\value{footnotemark}}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#4@#5\hspace{1em}#3#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#4@#5\hspace{1em}#3#1}%
+  \fi%
+}
+
 \newcommand{\iscesub}[5][]{%
   % if the subterms are equal eg relation!$\bigcirc$
   \ifthenelse{\equal{#4}{#5}}{%
@@ -246,6 +270,24 @@
   \fi%
   }
 }
+
+\newcommand{\iscesubat}[7][]{%
+  % the case that the two items are identical does not appear
+  % if they are not equal print them
+  \if@noftnote
+    \index[sbj]{#2\hspace{1em}#3!#4@#5\hspace{1em}#7#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4@#5\hspace{1em}#7#1}%
+  \fi%
+  \if@noftnote
+    \index[sbc]{#3@#3\hspace{1em}#2!#6@#7\hspace{1em}#5#1}%
+    \else%
+    \edef\tempnumber{\thefootnote}%
+    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#6@#7\hspace{1em}#5#1}%
+  \fi%
+}
+
 
 
 \newcommand{\iscesubsub}[7][]{%
