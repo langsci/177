@@ -513,7 +513,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 %have to state separately that utterances such as (\mex{-1}) require that both
 %conjuncts have the same valence and part of speech.\is{coordination|)}
 
-在介绍完特征向量之后，我们现在可以转向中心语-论元模式\isce{模式!中心语-论元}{schema!head-argument}的内容了：
+在介绍完特征向量之后，我们现在可以转向中心语-论元模式\iscesub{模式}{schema}{中心语-论元}{Head-Argument}的内容了：
 %After this general introduction of the feature geometry that is assumed here, we can now turn to the head-argument %schema\is{schema!head-argument}:
 \begin{schema}[中心语-论元模式（二叉结构，初级版本）]
 %\begin{schema}[Head-Argument Schema (binary branching, preliminary version)]
@@ -1189,7 +1189,7 @@ sm edges
 %\caption{\label{fig-ha-selektion}Head-adjunct structure (selection)}
 \end{figure}%
 
-中心语-附加语结构由模式~\ref{ha-schema-prel}\isce{模式!中心语-附加语}{schema!head-adjunct}所允准。\istype{head-adjunct-phrase}
+中心语-附加语结构由模式~\ref{ha-schema-prel}\iscesub{模式}{schema}{中心语-附加语}{Head-Adjunct}所允准。\istype{head-adjunct-phrase}
 %Head-adjunct structures are licensed by the Schema~\ref{ha-schema-prel}\is{schema!head-adjunct}.\istype{head-adjunct-phrase}
 %\begin{figure}
 %\begin{samepage}
@@ -1997,7 +1997,7 @@ synsem$|$loc   \ibox{1} \ms{ cat$|$head$|$dsl   & \ibox{1}\\
 \label{sec-HPSG-lokale-Umstellung}
 \label{Abschnitt-HPSG-lokale-Umstellung}
 
-针对中场的语序分析有多种可能性\isce[|(]{组成成分位置}{constituent position}：我们可以假定一个\gpsgc 中的平铺结构\citep{Kasper94a}；或者假定一个二叉结构，并且允许论元按照任意语序来填充。 \citet{Kathol2001a}和 \citet{Mueller99a,Mueller2002b,Mueller2004b}提出了一个折衷的看法：带有特殊列表的二叉结构，这个列表包括属于一个中心语的论元和附加语。论元和附加语在这些列表内部按照自由语序排列。参见 \citew{Reape94a}和本书的\ref{sec-discontinuous-constituents-HPSG}中有关这些方法的形式化表示。所有这些平铺分析和折衷分析都被证明是错误的（参见\citet{Mueller2005c,Mueller2004e}和\citet[\S~9.5.1]{MuellerLehrbuch1}），由此，我只讨论二叉结构的分析。
+针对中场的语序分析有多种可能性\isce[|(]{成分序列}{constituent order}：我们可以假定一个\gpsgc 中的平铺结构\citep{Kasper94a}；或者假定一个二叉结构，并且允许论元按照任意语序来填充。 \citet{Kathol2001a}和 \citet{Mueller99a,Mueller2002b,Mueller2004b}提出了一个折衷的看法：带有特殊列表的二叉结构，这个列表包括属于一个中心语的论元和附加语。论元和附加语在这些列表内部按照自由语序排列。参见 \citew{Reape94a}和本书的\ref{sec-discontinuous-constituents-HPSG}中有关这些方法的形式化表示。所有这些平铺分析和折衷分析都被证明是错误的（参见\citet{Mueller2005c,Mueller2004e}和\citet[\S~9.5.1]{MuellerLehrbuch1}），由此，我只讨论二叉结构的分析。
 %There are several possibilities for\is{constituent position|(} the analysis of constituent order in the middle field: one can assume completely flat %structures
 %as in \gpsg \citep{Kasper94a}, or instead assume binary branching structures and allow for arguments to be saturated in any order.
 %A compromise was proposed by  \citet{Kathol2001a} and  \citet{Mueller99a,Mueller2002b,Mueller2004b}:
@@ -2092,8 +2092,7 @@ sm edges
 %the \subcatl is divided into three parts using \emph{append}\is{relation!\emph{append}}: a list of arbitrary length \iboxb{1},
 %a list consisting of exactly one element (\sliste{ \ibox{2} }) and a further list of arbitrary length \iboxb{3}. The lists \ibox{1} and \ibox{3}
 %are combined and the result is the \subcatv of the mother node.
-具有固定语序的语言\iscesub{成分序列}{constituent order}{固定}{fixed}\isc{成分序列!自由}\is{constituent
-  order!free}（如英语）与德语这类语言不同，因为它们从一个方向开始释放论元（更多有关英语\ilce{英语}{English}的主语的内容，参见\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么是\ibox{1}，要么是\ibox{3}，总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是说，\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个分析与\ref{Abschnitt-Kaynesche-Modelle}中的Kayne式\aimention{Richard S. Kayne}的分析相比较，那儿的分析认为所有语言都是从基础语序 [specifier [head complement]]推导而来的（参见图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要在理论上付出相当多的努力来得到正确的语序。与之相对的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在它们所属的分支类型上是不同的。\footnote{%
+具有固定语序的语言\iscesub{成分序列}{constituent order}{固定}{fixed}\iscesub{成分序列}{consituent order}{自由}{free}（如英语）与德语这类语言不同，因为它们从一个方向开始释放论元（更多有关英语\ilce{英语}{English}的主语的内容，参见\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么是\ibox{1}，要么是\ibox{3}，总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是说，\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个分析与\ref{Abschnitt-Kaynesche-Modelle}中的Kayne式\aimention{Richard S. Kayne}的分析相比较，那儿的分析认为所有语言都是从基础语序 [specifier [head complement]]推导而来的（参见图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要在理论上付出相当多的努力来得到正确的语序。与之相对的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在它们所属的分支类型上是不同的。\footnote{%
 这并没有排除这样的事实，我们讨论的这个结构具有不同的属性，只要把它们的处理程度考虑进来的话。参见 \citew{Gibson98a,Hawkins99a}和第\ref{Abschnitt-Diskussion-Performanz}章。
 }$^,$\footnote{%
  \citet[\page
@@ -2389,7 +2388,7 @@ nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
 \begin{figure}
 \begin{schema}[中心语-填充语模式]
 %\begin{schema}[Head-Filler Schema]
-\label{hf-schemaa}\isce{模式!填充语-中心语}{schema!Filler-Head}
+\label{hf-schemaa}\isce{模式}{schema}{填充语-中心语}{Filler-Head}
 ~\\\samepage
 \type{head-filler-phrase}\istype{head-filler-phrase} \impl\\
 \onems{ 
@@ -2529,7 +2528,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 模式~\ref{schema-spr-h}可以像中心语-论元模式那样来将名词和限定语相组合。
 %Schema~\ref{schema-spr-h} can be used just like the Head-Argument Schema for the combination
 %of noun and determiner.
-\begin{schema}[限定语-中心语模式]\isce{模式!限定语-中心语}{Schema!Specifier-Head-}
+\begin{schema}[限定语-中心语模式]\isce{模式}{schema}{限定语-中心语}{Specifier-Head}
 %\begin{schema}[Specifier-Head Schema]\is{Schema!Specifier-Head-}
 \label{schema-spr-h}
 ~\\
