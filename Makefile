@@ -209,7 +209,7 @@ source:
 memo-install:
 	cp -pr ~/Documents/Dienstlich/Projekte/memoize/memoize* .
 	cp -pr ~/Documents/Dienstlich/Projekte/memoize/nomemoize* .
-
+	cp -pr ~/Documents/Dienstlich/Projekte/memoize/xparse-arglist.sty .
 #housekeeping	
 clean:
 	rm -f *.bak *~ *.backup \
@@ -224,13 +224,13 @@ clean:
 	langsci/*/*.aux langsci/*/*~ langsci/*/*.bak langsci/*/*.backup \
 	cuts.txt
 
-cleanfor: # These files are precious, as it takes a long time to produce them all.
-	rm -f *.for *.for.tmp chapters/*.for chapters/*.for.tmp hpsg-handbook.for.dir/*
-
 realclean: clean
 	rm -f *.dvi *.ps *.pdf chapters/*.pdf
 
-brutal-clean: realclean cleanfor
+cleanmemo:
+	rm -f *.mmz *.memo.dir/*
+
+brutal-clean: realclean cleanmemo
 
 check-clean:
 	rm -f *.bak *~ *.log *.blg complex-draft.dvi
