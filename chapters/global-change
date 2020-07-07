@@ -25,7 +25,7 @@ echo $x
 #sed -e 's/indexcxgc/indexcxg/g'   $x >$x.neu
 #sed -e 's/indexgpsgc/indexgpsg/g'   $x >$x.neu
 #sed -e 's/indexhpsgstopc/indexhpsgstop/g'   $x >$x.neu
-sed -e 's/indexsbcgc/indexsbcg/g'   $x >$x.neu
+sed -e 's/indexstagc/indexstag/g'   $x >$x.neu
 end
 
 
