@@ -187,7 +187,7 @@ sm edges
 %The symbols on the left of transformational rules do not necessarily have to be in a local tree, that is, they can be daughters of different mothers
 %as in Figure~\ref{fig-Passivtransformation}.
 
-重写文法按照属性的不同可以分为四个复杂性等级\isce{复杂性等级}{complexity class}。最简单的文法被分到第3类，而最复杂的叫做0型。目前所介绍的所谓的上下文无关文法（context-free grammar）\isce{上下文无关文法}{context-free grammar}叫做2型文法。允许符号被任意其他符号所替换的转换文法叫做0型文法\citep{PR73a-u}。\label{page-TG-Typ0}针对自然语言复杂度的研究表明最复杂的0型文法对于自然语言来说太复杂了。按照这一观点，假设需要针对语言知识进行受限的形式化演算\citep[\page 62]{Chomsky65a}，那么我们就需要限制转换的形式与潜在能力。\footnote{%
+重写文法按照属性的不同可以分为四种复杂性类\isce{复杂性类}{complexity class}。最简单的文法被分到第3类，而最复杂的叫做0型。目前所介绍的所谓的上下文无关文法（context-free grammar）\isce{上下文无关文法}{context-free grammar}叫做2型文法。允许符号被任意其他符号所替换的转换文法叫做0型文法\citep{PR73a-u}。\label{page-TG-Typ0}针对自然语言复杂度的研究表明最复杂的0型文法对于自然语言来说太复杂了。按照这一观点，假设需要针对语言知识进行受限的形式化演算\citep[\page 62]{Chomsky65a}，那么我们就需要限制转换的形式与潜在能力。\footnote{%
     有关形式语言的能力的更多内容，请参阅第\ref{sec-generative-capacity}章。
 } 
 %Rewrite grammars were divided into four complexity classes\is{complexity class} based on the properties they
@@ -348,7 +348,7 @@ S-结构演化出语音形式（Phonetic Form，简称PF）\isce{语音形式（
 %forms the basis for D-structure. D-structure is then a syntactic representation of the selectional grid (=~valence classes\is{valence!classes})
 %of individual word forms in the lexicon. 
 
-词库包括每个词的词汇项，每个词汇项包含有关形态音位结构、句法特征和选择属性等信息。我们将在\ref{Abschnitt-GB-Lexikon}详细解释这些内容。根据确切的理论假说，形态\isce{形态}{morphology}也被看作是词库的部分。但是，屈折形态\isce{屈折形态}{inflection}更多是与句法相关的。词库是针对具体词形的语义解释的一个接口。\isce{词库}{lexicon}
+词库包括每个词的词汇项，每个词汇项包含有关形态音位结构、句法特征和选择属性等信息。我们将在\ref{Abschnitt-GB-Lexikon}详细解释这些内容。根据确切的理论假说，形态\isce{形态}{morphology}也被看作是词库的部分。但是，屈折形态\isce{屈折}{inflection}更多是与句法相关的。词库是针对具体词形的语义解释的一个接口。\isce{词库}{lexicon}
 %The lexicon contains a lexical entry for every word which comprises information about morphophonological structure, syntactic features
 %and selectional properties. This will be explained in more detail in Section~\ref{Abschnitt-GB-Lexikon}. Depending on one's exact theoretical
 %assumptions, morphology\is{morphology} is viewed as part of the lexicon. Inflectional morphology\is{inflection} is, however, mostly consigned
@@ -714,7 +714,7 @@ $\theta$-角色                & \underline{施事} & 受益者\\[2mm]\hline
 \item V = 动词\isce{动词}{verb}
 \item N = 名词\isce{名词}{noun}
 \item A = 形容词\isce{形容词}{adjective}
-\item P = 前置词\isce{前置词}{preposition}/后置词
+\item P = 介词（前置词）\isce{介词}{preposition}/后置词
 \item Adv = 副词\isce{副词}{adverb}
 %\item V = verb\is{verb}
 %\item N = noun\is{noun}
@@ -1928,7 +1928,7 @@ sm edges
 %The Case Filter\is{case!filter} rules out structures where case has not been assigned to an NP.
 
 图\vref{Abb-GB-Aktiv}说明了例（\mex{1}a）中的格指派原则。\footnote{%
-上图并不符合\xbarc 理论的标准范式，因为der Frau（这个女人）是一个与V$'$相组合的补足语。在标准的\xbarc 理论中，所有的补足语都与\vnullc 组合。这对于双及物动词\iscesub{动词}{verb}{双及物动词}{ditransitive}结构来说是有问题的，因为我们要将它们处理为二分结构（参阅 \citew{Larson88a}有关双宾语结构的分析）。此外，在下图中，为了清晰起见，动词被留在了\vnullc 的位置上。为了创造出合规的S-结构，动词必须要移动到\inullc 位置的时态词缀处。%
+上图并不符合\xbarc 理论的标准范式，因为der Frau（这个女人）是一个与V$'$相组合的补足语。在标准的\xbarc 理论中，所有的补足语都与\vnullc 组合。这对于双及物动词\iscesub{动词}{verb}{双及物}{ditransitive}结构来说是有问题的，因为我们要将它们处理为二分结构（参阅 \citew{Larson88a}有关双宾语结构的分析）。此外，在下图中，为了清晰起见，动词被留在了\vnullc 的位置上。为了创造出合规的S-结构，动词必须要移动到\inullc 位置的时态词缀处。%
 }
 %Figure~\vref{Abb-GB-Aktiv} shows the Case Principle in action with the example in 
 %(\mex{1}a).\footnote{%
@@ -2451,7 +2451,7 @@ implementing the grammar as a calculating task on a computer so that it
 becomes possible to verify to which degree the result deviates from the
 language to be described.}
 \end{quotation}
-Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请参阅 \citew{Grewendorf89a}和 \citew{Fanselow92}。除了对于这些现象的分析，还提出了可能的短语成分位置的限制条件\citep{Lenerz77}，格指派分析\citep*{YMJ87,Meurers99b,Prze99}，复杂动词\isce{复杂动词}{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
+Bierwisch所说的这些观点在过去几十年经验主义的研究中显得尤为正确。比如说，\citet{Ross67}指明了移位和长距离依存所需的限制条件，\citet{Perlmutter78}在70年代发现了非宾格动词。德语的情况请参阅 \citew{Grewendorf89a}和 \citew{Fanselow92}。除了对于这些现象的分析，还提出了可能的短语成分位置的限制条件\citep{Lenerz77}，格指派分析\citep*{YMJ87,Meurers99b,Prze99}，动词性复杂体\isce{动词性复杂体}{verbal complex}的理论和短语中成分的前置问题（\citealp{Evers75a,Grewendorf88a,HN94a,Kiss95a}; G.\ \citealp{GMueller98a};
 \citealp{Meurers99c}; \citealp{Mueller99a,Mueller2002b}; \citealp{deKuthy2002a}）。所有这些现象都是彼此联系的！
 %Bierwisch's claim is even more valid in light of the empirical progress made in the last decades. For example,
 % \citet{Ross67} identified restrictions for movement and long-distance dependencies and  \citet{Perlmutter78} discovered
