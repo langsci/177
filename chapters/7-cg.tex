@@ -72,8 +72,8 @@ X/Y $*$ Y = X
 \z
 这条规则由两个范畴组成，其中之一为X/Y，意为向右寻找一个Y以便生成X，另一个则为X。
 这个组合的结果是一个完整的X，不再需要Y。
-称X/Y为“函子”
-\isce{函子}{functor}，而Y为函子的“变元”
+称X/Y为“函数”
+\isce{函数}{functor}，而Y为函数的“变元”
 \isce{变元}{argument}。
 
 和GB理论一样，范畴语法中配价信息只在词库中出现一次。
@@ -176,7 +176,7 @@ eats := (s: \relation{eat}(x, y)\bs np\sub{3S}:x)/np:y
 s: eat'(x, apples')\bs np_{3S}:x\\
 }
 \z
-当组合一个函子和一个变元时，必须确保变元符合函子要求，也就是说二者必须可以合一
+当组合一个函数和一个变元时，必须确保变元符合函数要求，也就是说二者必须可以合一
 \isce{合一}{unification}（参见\ref{sec-unification}以了解合一运算）。
 np:y和np: \relation{apples}的合一结果为np: \relation{apples}，因为\relation{apples}比变量y更细化。
 除了在项np:y中出现，y也出现在动词的描写中(s: \relation{eat}(x, y)\bs np\sub{3S}:x)，因此动词论元的语义也得到了\relation{apples}这一语义解释。
@@ -193,8 +193,8 @@ $\lambda y.\lambda x.\relation{eat}(x, y)$这样的语义表征可以跟apples�
 $\lambda y.\lambda x.eat'(x, y)$ \relation{apples}\\
 $\lambda x.eat'(x, apples')$
 \z
-这种$\lambda$表达式的约归称之为$\beta$-约归
-\isceat{beta-还原}{$\beta$-还原}{beta-reduction}{$\beta$-reduction}\label{Seite-beta-Reduktion}。
+这种$\lambda$表达式的归约称之为$\beta$-归约
+\isceat{beta-归约}{$\beta$-归约}{beta-reduction}{$\beta$-reduction}\label{Seite-beta-Reduktion}。
 
 如果采用（\mex{-1}）中的符号，组合规则则可以修改为如下形式：
 \ea
@@ -203,10 +203,10 @@ X/Y:f & Y:a & X: f a\\
 Y:a & X\bs Y:f & X: f a\\ 
 \end{tabular}
 \z
-在这样的规则中，论元（a）的语义写在函子的语义指谓之后。
-函子语义指谓的开放位置用$\lambda$符号进行表示。变元可以和第一个$\lambda$表达式按照$\beta$-约归进行结合。
+在这样的规则中，论元（a）的语义写在函数的语义指谓之后。
+函数语义指谓的开放位置用$\lambda$符号进行表示。变元可以和第一个$\lambda$表达式按照$\beta$-归约进行结合。
 
-图\vref{Abb-Semantik-CG}展示了一个含有及物动词的句子的推导。在前向应用和后向应用中，直接使用了$\beta$-约归。
+图\vref{Abb-Semantik-CG}展示了一个含有及物动词的句子的推导。在前向应用和后向应用中，直接使用了$\beta$-归约。
 \begin{figure}
 \centerline{%
 \deriv{3}{
@@ -231,7 +231,7 @@ np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'
 \subsection{附加语}
 
 正如\ref{sec-intro-arg-adj}所讨论的
-\isce[|(]{说明语}{adjunct}，附加语是可选的。
+\isce[|(]{附加语}{adjunct}，附加语是可选的。
 在短语结构语法中很容易表示这种可选性，例如在产生式左端出现的元素（比如一个动词短语VP）也同时出现在产生式右端，而产生式右端还有一个额外的附加语。
 因为产生式左端的符号也在右端出现，这条规则可以被应用任意次数。
 （\mex{1}）是这样的一个例子：
@@ -278,7 +278,7 @@ np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs
 注意到将round和the garden组合之后，会得到副词的范畴——(s\bs np)\bs (s\bs np)。
 在GB理论中，副词和介词同样被置于单独的类中（参阅第\pageref{Seite-Adverbien-PP}页）。
 这个包罗万象的类可根据元素的配价信息进一步分为两个子类。
-\isce[|)]{说明语}{adjunct}
+\isce[|)]{附加语}{adjunct}
 
 \section{被动}
 
@@ -464,7 +464,7 @@ isst & er  & ihn & \_\\
  \citet{KW91a}提出了一种可以避免这种问题的方法（参见\ref{Abschnitt-Verbstellung-HPSG}）。
 这里，他们假定存在一个前置动词，这个动词选择语迹的一个投射。
 如果副词只是在后置位置和动词结合，那么morgen和isst er ihn会被排除在外。
-如果我们假定第一个出现的动词是函子，那就有可能捕捉到标补语（complementizers）
+如果我们假定第一个出现的动词是函数，那就有可能捕捉到标补语（complementizers）
 \isce{标补语}{complementizer}和前置位置上的动词之间的这种平行性\citep{Hoehle97a}：出现在前置位置的定式动词
 和标补语之间的差别仅仅在于其需要动词语迹的一个投射，而标补语需要显式动词的投射。
 \eal
@@ -483,8 +483,8 @@ isst & er  & ihn & \_\\
 \label{Abschnitt-CG-lokale-Umstellung}
 
 到目前为止，
-\isce[|(]{成分序列}{constituent order}我们看到了函子与变元的各种组合：变元可以出现在函子左侧也可以出现在右侧。
-而变元的消去总是按照固定的顺序：最右侧的变元最先与函子结合，如(s\bs np)/pp首先与PP结合，该结合的结果再与NP结合。 
+\isce[|(]{成分序列}{constituent order}我们看到了函数与变元的各种组合：变元可以出现在函数左侧也可以出现在右侧。
+而变元的消去总是按照固定的顺序：最右侧的变元最先与函数结合，如(s\bs np)/pp首先与PP结合，该结合的结果再与NP结合。 
 
 分析德语中的各种语序变化有很多可行的方法：
  \citet{Uszkoreit86b}提出基于词来分析可能的语序；也就是说每一种可行的语序都对应一个词汇项。
@@ -493,8 +493,7 @@ isst & er  & ihn & \_\\
 
 \citet{SB2006a-u}提出了一种新的分析。他们讨论了在不同语言中排列论元的各种可能。
 这就包含了那些语序自由的语言，也包括那些组合方向自由的语言。
-\iscesub{成分序列}{constituent order}{自由}{free}
-\iscesub{成分序列}{constituent order}{固定}{fixed}
+\iscesub{成分序列}{constituent order}{自由}{free}\iscesub{成分序列}{constituent order}{固定}{fixed}
 Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素可以按任意顺序删去，
 使用“$|$”\isce{$\vert$}{$\vert$}而不是“$\backslash$”\isce{$\backslash$}{$\backslash$}以及“/”\isce{/}{/}来指示组合方向的任意性。（\mex{1}）是一些实例原型：
 
@@ -527,7 +526,7 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
      苹果 \textsc{rel} Harry 吞食 \\
 \mytrans{Harry正在吞食的苹果}
 \zl
-在（\mex{0}）的分析中，最前面的名词短语these apples和关系代词which都是函子，都以s/np为变元。
+在（\mex{0}）的分析中，最前面的名词短语these apples和关系代词which都是函数，都以s/np为变元。
 使用之前介绍的机制，我们无法将范畴s/np分配给词串Harry must have been eating和Harry devours，尽管直觉上Harry devours是一个缺少名词短语的句子。
 我们需要在范畴语法的基础上增加两个新的扩展：
 类型提升（type raising）
@@ -553,7 +552,7 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 在（\mex{0}a）中，一个动词或动词短语在左侧选择一个名词短语。
 在（\mex{0}b）中，一个名词短语经过类型提升之后，在右侧选择一个动词或动词短语，而这个动词或动词短语本身又在左侧选择一个名词短语。
 
-类型提升仅仅置反了选择的方向：（\mex{0}a）中的动词短语是一个函子而名词短语是变元，而在（\mex{0}b）中经过类型提升的名词短语是函子而动词短语是变元。
+类型提升仅仅置反了选择的方向：（\mex{0}a）中的动词短语是一个函数而名词短语是变元，而在（\mex{0}b）中经过类型提升的名词短语是函数而动词短语是变元。
 这两种组合的结果是一样的。这种方向的选择乍一看是一个小技巧，但我们将会看到这个小技巧的大用处。
 在展示类型提升的强大分析能力之前，我们先介绍一下前向和后向组合。 
 \isce[|)]{类型提升}{type raising}
@@ -609,7 +608,7 @@ must是一个需要无标记不定式作为论元的动词，have需要一个分
 在上图中，带有T的箭头表示类型提升，而带有B的箭头表示组合。
 组合的方向由箭头的方向表示。
 
-对于（\ref{Bsp-these-apples}）的分析，我们仍然需要一个规则才能够把句首的名词短语变成一个需要s/np的函子。
+对于（\ref{Bsp-these-apples}）的分析，我们仍然需要一个规则才能够把句首的名词短语变成一个需要s/np的函数。
 一般的类型提升不能处理这种情况，因为类型提升的结果是s/(s\bs np)。
 
  \citet[\page 217]{Steedman89a}建议使用（\mex{1}）中的规则：
@@ -705,7 +704,7 @@ Fido                 & we            & put        & downstairs\\
 \caption{\label{abb-CG-UDC-Ditrans}跨小句长距离依存的分析}
 \end{figure}%
 在这个分析中，我们无法用（\ref{Regel-Vorwaertskomposition}）中的规则去组合we和put，因为在这个分析中我们不能直接获取s\bs np：
-拆分((s\bs np)/pp)/np只能得到函子(s\bs np)/pp和变元np。
+拆分((s\bs np)/pp)/np只能得到函数(s\bs np)/pp和变元np。
 为了进一步处理这些情况，我们需要另一种组合规则：
 \ea
 针对n=2的前向组合规则 (> BB)\\
@@ -714,7 +713,7 @@ X/Y $*$ (Y/Z1)/Z2 = (X/Z1)/Z2
 在这个新规则之上，我们可以组合经过类型提升的we和put。而其结果为(s/pp)/np。
 （\ref{Regel-Topikalisierung}）中的话题化规则需要st的右侧有一个s/X。
 而这并非图\ref{abb-CG-UDC-Ditrans}所示的情形。
-对于名词短语Fido，我们需要一个函子类型的范畴以允准一个复杂的变元。
+对于名词短语Fido，我们需要一个函数类型的范畴以允准一个复杂的变元。
 （\mex{1}）给出了能够分析（\mex{-1}）的规则。
 
 \ea
@@ -756,7 +755,7 @@ Steedman假设关系代词的词汇信息为（\mex{1}）：
 (n$\backslash$n)/(s/np)
 \z
 这意味着，如果关系代词的右侧有一个句子，这个句子中缺少一个NP，则关系代词可以和这个句子合并成一个名词性修饰语(n$\backslash$n)。
-在这个分析中，关系代词是中心词（函子）。
+在这个分析中，关系代词是中心词（函数）。
 
 使用额外的类型提升和组合规则，带有关系小句的例子可以有如图\vref{abb-CG-Relativsatz}所示的分析。
 %
@@ -865,7 +864,7 @@ Morrill注意到我们需要假定新的词汇项以解释如（\mex{1}）中的
 \mytrans{其损失在经过如此多争论之后John最终必须赔偿的那个合同}
 \z
 上述现象可以通过增加词汇项描写来解决，另有一些其他现象也可以进行类似的处理。
-Morrill提出了一种不同的分析思路——增加函子和变元组合的方式。Morrill允许函子B \up
+Morrill提出了一种不同的分析思路——增加函数和变元组合的方式。Morrill允许函数B \up
 \isce{$\uparrow$}{$\uparrow$} A在封装了变元A之后产生B，或者是A $\downarrow$
 \isce{$\downarrow$}{$\downarrow$} B封装它的变元后产生B（见第190页）。
 即便是引入了新的操作，他仍然需要两条词汇项，如（\mex{1}）所示，来得到随迁（pied-piping）现象：
@@ -890,7 +889,7 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 %\bigskip
 \questions{
 \begin{enumerate}
-\item 指出图\ref{abb-cg-transitives-Verb}和图\ref{abb-the-cat-chased-Mary}中的函子与变元。
+\item 指出图\ref{abb-cg-transitives-Verb}和图\ref{abb-the-cat-chased-Mary}中的函数与变元。
 \item 你知道哪些组合性操作？
 \item 组合是用来做什么的？
 \end{enumerate}

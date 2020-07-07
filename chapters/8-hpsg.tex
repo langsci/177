@@ -47,7 +47,7 @@ Packard2015a-u% ACE http://moin.delph-in.net/AceTop
 %developed at the beginnings of the 1990s.  \citet{MelnikHandWritten}
 %compares LKB and TRALE. See also  \citew[Section~5.1]{MuellerCoreGram}.
 %}
-目前，Ann Copestake开发的LKB系统\isce{语言知识构建系统}{Linguistic Knowledge Builder (LKB)} 和Gerald Penn \citep*{MPR2002a-u,Penn2004a-u}开发的TRALE系统拥有最多的用户。DELPH-IN联盟\isce{DELPH-IN联盟}{DELPH-IN}（它的语法片段是基于LKB的）和许多TRALE用户\isce{TRALE系统}{TRALE}已经针对许多不同语言开发了许多小型语法和一些大规模的语法片段。下面列出的就是在不同系统中实现的语言：
+目前，Ann Copestake开发的LKB系统\isce{语言知识构建系统}{Linguistic Knowledge Builder (LKB)} 和Gerald Penn \citep*{MPR2002a-u,Penn2004a-u}开发的TRALE系统拥有最多的用户。DELPH-IN联盟\isce{DELPH-IN联盟}{DELPH-IN}（它的语法片段是基于LKB的）和许多TRALE用户\isce{TRALE}{TRALE}已经针对许多不同语言开发了许多小型语法和一些大规模的语法片段。下面列出的就是在不同系统中实现的语言：
 %Currently, the LKB system\is{Linguistic Knowledge Builder (LKB)} by Ann Copestake and the TRALE
 %system, that was developed by Gerald Penn \citep*{MPR2002a-u,Penn2004a-u}, have the most users. The
 %DELPH-IN consortium\is{DELPH-IN} -- whose grammar fragments are based on the LKB -- and various TRALE users\is{TRALE} have %developed many small and some
@@ -202,7 +202,7 @@ syntax-semantics & \ldots \ms[local]{ category  & \ms[category]{ head & \ms[noun
 % \citew[Chapter~6]{Crysmann2002a}, and  \citew{Bildhauer2008a} for phonology\is{phonology} in the
 %framework of HPSG. The details of the description in (\mex{0}) will be explained in the following sections.
 
-HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受到了其他理论框架理论发展的影响。针对配价信息和功能组合\isce{功能组合}{function composition}处理的函子参数结构借鉴自范畴语法\indexcgc。函子构成在对德语和汉语这类语言的复杂动词结构的分析中起到了重要的作用。直接支配\iscesub{支配}{dominance}{直接支配}{immediate}/线性次序\isce{线性次序}{linear precedence}\isce{ID/LP语法}{ID/LP grammar}模式（ID/LP模式，参见第\ref{sec-IDLP-intro}节）和长距离依存（参见\ref{sec-nld-gpsg}）的Slash机制来自GPSG\indexgpsgc。这里针对德语动词位置的分析受到管辖与约束理论\indexgbc 框架下开发的语法的启发（参见\ref{sec-verb-position-gb}）。
+HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受到了其他理论框架理论发展的影响。针对配价信息和函项组合\isce{函项组合}{function composition}处理的函数-变元结构借鉴自范畴语法\indexcgc。函项组合在对德语和汉语这类语言的复杂动词结构的分析中起到了重要的作用。直接支配\iscesub{支配}{dominance}{直接支配}{immediate}/线性次序\isce{线性次序}{linear precedence}\isce{ID/LP语法}{ID/LP grammar}模式（ID/LP模式，参见第\ref{sec-IDLP-intro}节）和长距离依存（参见\ref{sec-nld-gpsg}）的Slash机制来自GPSG\indexgpsgc。这里针对德语动词位置的分析受到管辖与约束理论\indexgbc 框架下开发的语法的启发（参见\ref{sec-verb-position-gb}）。
 %HPSG has adopted various insights from other theories and newer analyses have been influenced by developments in other theoretical %frameworks.
 %Functor-argument structures, the treatment of valence information and function
 %composition\is{function composition} have been adopted from
@@ -1080,7 +1080,7 @@ GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于�
 %(see page~\pageref{Beispiel-Every-man-loves-a-woman}) as well as deal with semantic embedding of predicates under other predicates. All %these
 %requirements are fulfilled by MRS. Due to space considerations, we cannot go into detail here. The reader is referred to the article by
 % \citet*{CFPS2005a} and to Section~\ref{Abschnitt-leere-Elemente-Semantik} in the discussion chapter.
-\isce{语义学}{semantics}
+\isce{语义}{semantics}
 
 \subsection{附加语}
 %\subsection{Adjuncts}
@@ -2370,7 +2370,7 @@ nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
 %The following principle is responsible for ensuring that \textsc{nonloc} information is passed up the tree.
 
 \begin{samepage}
-\iscesub{原则}{principle}{非局部}{nonlocal feature}
+\iscesub{原则}{principle}{非局部特征}{nonlocal feature}
 \begin{principle-break}[非局部特征原则]
 %\begin{principle-break}[Nonlocal Feature Principle]
 \label{Prinzip-der-Nichtlokalen-Merkmale}
@@ -2838,7 +2838,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %The difference is that the head itself is not included in the argument structure, whereas this is the case with D-structure.
 
  \citet{Bender2008a}\label{Seite-Bender-Wambaya}已经说明了如何借助中心语的论元结构来分析非构型语言（如万巴亚语\ilce{万巴亚语}{Wambaya}）。在万巴亚语中，通常在英语或德语中算作是成分的词语可以非连续地出现，也就是说，一个在语义上属于名词短语并且与名词短语其余成分性\isce{性}{gender}、数\isce{数}{number}、格\isce{格}{case}一致的形容词可能跟名词短语的其余成分不相邻出现。 \citet{Nordlinger98a-u}在LFG\indexlfgc 的框架内分析相关语言现象。在她的分析中，成分的不同部分指向句子的f-结构，并且直接保证了名词短语的所有部分都具有相同的格。Bender采用了HPSG的一个变体，在论元与其中心语组合后，其配价信息不仅没有从配价列表中移除，而且还向中心语的最大投射上传递（\citealp{Meurers99b}；\citealp{Prze99}；\citealp[\S~17.4]{MuellerLehrbuch1}）。 \citet[\page 560]{Higginbotham85a}和 \citet{Winkler97a}提出了跟GB理论相似的观点。通过对完整配价信息的投射，配价信息在整个句子中都是可获得的，并且非连续的成分可以指向它（如通过\textsc{mod}），而且可以构建出各自的限制。\footnote{%
-也参见 \citew{Mueller2008a}关于德语和英语\ilce{英语}{English}中描写性谓词\isce{描写性谓词}{depictive predicate}的分析，他们分别指向中心语的实现的和未实现的论元列表。这一分析也可以在\ref{sec-locality}中得到解释。
+也参见 \citew{Mueller2008a}关于德语和英语\ilce{英语}{English}中描述性谓词\isce{描述性谓词}{depictive predicate}的分析，他们分别指向中心语的实现的和未实现的论元列表。这一分析也可以在\ref{sec-locality}中得到解释。
 }  
 % \citet{Bender2008a}\label{Seite-Bender-Wambaya} has shown how one can analyze phenomena from non-configurational languages such %as Wambaya\il{Wambaya}
 %by referring to the argument structure of a head. In Wambaya, words that would normally be counted as constituents in English or German %can occur discontinuously, that

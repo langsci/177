@@ -4,7 +4,7 @@
 %\chapter{Generative capacity and grammar formalisms}
 \label{sec-generative-capacity}
 
-前面\iscesub[|(]{能力}{capacity}{生成能力}{generative}\isce[|(]{复杂类型}{complexity class}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isce{正则语言}{regular language}（3型），比正则语言更复杂的是上下文无关文法\isce{上下文无关文法}{context-free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isce{上下文相关文法}{context-sensitive grammar}（1型），最复杂的是无限制语法\isce{无限制语法}{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。由此放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参见第~\pageref{page-TG-Typ0}页）。GPSG只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citet{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isce{依存合一语法}{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想的目标是不是要寻找一种描述性的语言，这种语言与其所描述的对象具有完全相同的能力。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用的数学工具过于强大，而断言这些物理学理论不够完备，这种断言是非常奇怪的。\footnote{% 
+前面\iscesub[|(]{能力}{capacity}{生成能力}{generative}\isce[|(]{复杂性类}{complexity class}有几章曾提到过形式语言的复杂性等级。最简单的语言是所谓的正则语言\isce{正则语言}{regular language}（3型），比正则语言更复杂的是上下文无关文法\isce{上下文无关文法}{context-free grammar}（2型），比上下文无关文法更复杂的是上下文相关文法\isce{上下文相关文法}{context-sensitive grammar}（1型），最复杂的是无限制语法\isce{无限制语法}{unrestricted grammars}（0型）。无限制语法可以产生递归可枚举语言（recursively enumerable languages）。在提出理论时，大家都有意识地努力采用能与自然语言真实现象相符的形式手段。由此放弃了无限制转换语法（unrestricted Transformational Grammars），因为该语法的生成能力相当于0型语法（参见第~\pageref{page-TG-Typ0}页）。GPSG只能分析上下文无关语言，不能分析生成能力更强的语言。80年代中期，研究发现自然语言的复杂性高于上下文无关语言\citep{Shieber85a,Culy85a}。现在都认为弱上下文相关文法（mildly context sensitive grammars）足以分析自然语言。在树邻接语法\indextag （TAG）框架中工作的学者正致力于提出这种类型的树邻接语法\indextagc （TAG）方案。与此相似，研究发现Stabler最简语法（Minimalist Grammars）\indexmgc （参见\ref{Abschnitt-MG}和\citet{Stabler2001a,Stabler2010b}）的不同变体都有弱上下文相关能力\citep{Michaelis2001a-u}。Peter Hellwig的依存合一语法\isce{依存合一语法}{Dependency Unification Grammar (DUG)}也是弱上下文相关的\citep[\page 595]{Hellwig2003a}。现在的问题是：理想的目标是不是要寻找一种描述性的语言，这种语言与其所描述的对象具有完全相同的能力。Carl  \citet{Pollard96a}曾经说过，如果仅仅因为某些物理学理论采用的数学工具过于强大，而断言这些物理学理论不够完备，这种断言是非常奇怪的。\footnote{% 
 如果物理学家要求形式描述来约束理论的话：\\
 \begin{tabular}{@{}l@{~}p{10.8cm}}
 编辑：     & Einstein教授，我恐怕不能接收你在广义相对论方面的论文。\\
@@ -320,7 +320,7 @@ Einstein： & 为什么呢？难道方程式是错的？\\
 
 %\noindent
 %This means that a ban on extraction from specifiers cannot hold for German. As such, it cannot be true for all languages.
-我们的这个情况与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法形式还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从限定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\iscesub[|)]{能力}{capacity}{生成能力}{generative}\isce[|)]{复杂类型}{complexity class}
+我们的这个情况与允许不连续成分的语法相似：因为不能将禁止提取整合到语法形式描述中，所以语法形式还是比描述自然语言所需语法的生成能力强。但是，真实语法中的限制——在当前研究中，是相关语言中对从限定语位置提取成分的限制——能确保相应具体语言语法的生成能力与弱上下文相关文法相同。\iscesub[|)]{能力}{capacity}{生成能力}{generative}\isce[|)]{复杂性类}{complexity class}
 %We have a situation that is similar to the one with discontinuous constituents: since it is not possible to integrate
 %the ban on extraction discussed here into the grammar formalism, it is more powerful than what is required
 %for describing natural language. However, the restrictions in actual grammars -- in this case, the restrictions on

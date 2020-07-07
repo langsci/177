@@ -119,7 +119,7 @@ f-结构意为功能结构。
 在（\mex{0}b）中, 紧跟在devour后面的\lfgsubj{}和\lfgobj{}是整个结构中的\lfgsubj{}和\lfgobj{}。
 出于紧凑表征的原因，这种同一关系并不在结构中进行显性表示。
 }
-这些功能被称为可被管辖的语法功能（\emph{governable grammatical functions}）\iscesub{语法功能}{grammatical function}{check}{governable}\fixme。
+这些功能被称为可被管辖的语法功能（\emph{governable grammatical functions}）\iscesub{语法功能}{grammatical function}{可被管辖的}{governable}。
 表\ref{Tabelle-GOV}罗列了一些可被管辖的语法功能\citep{Dalrymple2006a}。
 \begin{table}
 \centering
@@ -566,7 +566,7 @@ David yawned的f-结构以及其中的David和yawned的语义构建器如（\mex
 函数应用（functional application，详见\ref{sec-PSG-Semantik}）组合在一起。
 而右部的线性蕴涵合并也必须同步进行。
 （\mex{1}）展示了这样的一个合并过程。
-在得到yawned和David之后，通过$\beta$-规约，
+在得到yawned和David之后，通过$\beta$-归约，
 我们得到了句子David yawned的合理的语义分析结果——$\relation{yawn}(\relation{david})$ 
 
 \ea
@@ -641,7 +641,7 @@ yesterday（昨天）和at noon（在中午）。
 \z
 将附加语表示为一个集合不足以表示包括域（\textsc{scope}）信息的附加语，如第\pageref{bsp-absichtlich-nicht-anal}页中的例（\ref{bsp-absichtlich-nicht-anal}）中所涉及的否定。
 为了确定域关系，我们必须参照附加语在句子中的先后顺序，这就涉及了c-结构信息。
-想了解更多的关于语序线性化的限制，可以参考 \citew{ZK95b}\isce{说明语}{adjunct}。
+想了解更多的关于语序线性化的限制，可以参考 \citew{ZK95b}\isce{附加语}{adjunct}。
 
 \section{被动}
 \label{Abschnitt-LFG-Passiv}
@@ -910,7 +910,7 @@ VP $\to$ NP* (V)
 %\noindent
 在了解了第\ref{Kapitel-PSG}章和第\ref{Kapitel-GPSG}章的短语结构规则后，允许动词短语确实看起来很不自然。
 然而这对于LFG来说并不是一个问题，因为分析一个给定的句子，我们只需要保证所有必须要的成分（也只有这些成分）都出现。 
-完备性\isce{完整性}{completeness}和一致性\isce{一致性}{coherence}的限制保证了这一点。究竟信息来自何方并不重要。
+完备性\isce{完备性}{completeness}和关联性\isce{关联性}{coherence}的限制保证了这一点。究竟信息来自何方并不重要。
 在图\ref{Abb-Verbstellung-LFG}中，动词信息并不来自于动词短语，而是C结点。
 C$'$被下面的一个特殊规则所允准：
 \ea
@@ -1266,7 +1266,7 @@ LFG是一种基于约束的理论，采用了特征描写和短语结构规则�
 LFG是一种词汇主义理论。像GPSG一样，LFG不需要转换。
 影响到论元结构的过程，如被动等，是通过词汇规则进行分析的。
 GPSG处理长距离依存是通过所谓的信息在句法树上向上传递进行的，而LFG使用功能不确定性：f-结构中的一个部分可以和其内嵌不定深度的另一个f-结构共享。
-一致性\isce{一致性}{coherence}和完备性\isce{完整性}{completeness}保证了长距离依存可以被正确处理，也就是说，它保证了一个前置的宾语并不会分配给
+关联性\isce{关联性}{coherence}和完备性\isce{完备性}{completeness}保证了长距离依存可以被正确处理，也就是说，它保证了一个前置的宾语并不会分配给
 一个已经有了宾语或者并不允准宾语的f-结构。
 
 尽管LFG包含一个短语结构模块，和其他语法模型相比，这个模块的作用要小一些。
@@ -1287,7 +1287,7 @@ LFG和诸如\hpsgc、\cxgc 的一些变体等理论不同之处在于特征结�
 LFG可以显性地区分主语和非主语。
 在GB中则是区分外部\iscesub{论元}{argument}{外部论元}{external}和内部\iscesub{论元}{argument}{内部论元}{internal}论元（参见\citealp[\S~1.2]{Williams84a}）。
 对于GB的一些变体来说，和HPSG\indexhpsgc 以及CxG\indexcxgc 类似，带有主语性质的论元（如果有的话）要做显性标记\citep{Haider86,HM94a,Mueller2003e,MR2001a}。
-这个特殊的论元被称为指定的论元（designated argument\iscesub{指派论元}{argument}{add Chinese, fix me}{designated}\fixme）。
+这个特殊的论元被称为指定的论元（designated argument\iscesub{论元}{argument}{指定论元}{designated}）。
 在不定式中，主语经常在不定式短语的内部缺失。
 尽管如此，没有表达出来的主语经常是和主句里的一个论元共指。
 

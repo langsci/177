@@ -154,7 +154,7 @@ sm edges
 \end{figure}%
 
 树中的符号叫做“结点”（node）\isce{结点}{node}。S直接支配NP结点和V结点\isce{支配}{dominance}。树中的其他结点也被支配，只不过不是受到S的直接支配\iscesub{支配}{dominance}{直接支配}{immediate}。如果我们想讨论结点之间的关系，我们通常会用亲属词来表示。在图\ref{er-das-buch-dem-mann-gibt-flat}中，S是三个NP结点和V结点的“父结点”（mother
-node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄弟结点”\iscesub{结点}{node}{兄弟结点}{sister}，因为他们有共同的父结点。如果一个结点有两个“子结点”\iscesub{结点}{node}{子结点}{daughter}，那么我们就会得到一个二叉\isce{二元}{binary}结构\iscesub{分支}{branching}{二叉}{binary}。如果只有一个子结点，则会得到一个单分支结构\iscesub{分支}{branching}{单叉}{unary}。如果有两个成分是直接相连的，我们就说它们具有“邻接性”（adjacent）\isce{邻接}{adjacency}。
+node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄弟结点”\iscesub{结点}{node}{兄弟结点}{sister}，因为他们有共同的父结点。如果一个结点有两个“子结点”\iscesub{结点}{node}{子结点}{daughter}，那么我们就会得到一个二叉\isce{二元}{binary}结构\iscesub{分支}{branching}{二叉}{binary}。如果只有一个子结点，则会得到一个单分支结构\iscesub{分支}{branching}{单叉}{unary}。如果有两个成分是直接相连的，我们就说它们是“相邻的”（adjacent）\isce{相邻}{adjacency}。
 %The symbols in the tree are called \emph{nodes}\is{node}. We say that S immediately dominates the NP nodes and the V node\is{dominance}.
 %The other nodes in the tree are also dominated, but not immediately dominated, by S\is{dominance!immediate}. If we want to talk about the
 %relationship between nodes, it is common to use kinship terms. In Figure~\ref{er-das-buch-dem-mann-gibt-flat}, S is the \emph{mother node}\is{node!mother}
@@ -276,14 +276,14 @@ sm edges
      他.\nom{} \textsc{art}.\textsc{def}.\mas{} 书(\neu) \textsc{art}.\textsc{def} 人  给\\
 }
 \zl
-例（\mex{0}b）违反了主谓一致原则\isce[|(]{主谓一致}{agreement} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
+例（\mex{0}b）违反了一致原则\isce[|(]{一致关系}{agreement} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
 %In (\mex{0}b), subject-verb agreement\is{agreement|(} has been violated, in other words: \emph{ich} `I' and \emph{gibt} `gives' do not fit together.
 %(\mex{0}c) is ungrammatical because the case requirements of the verb have not been satisfied: \emph{gibt} `gives' requires a dative object. Finally, (\mex{0}d) is ungrammatical
 %because there is a lack of agreement between the determiner and the noun. It is not possible to combine \emph{den} `the', which is masculine and bears accusative case, 
 %and \emph{Buch} `book' because \emph{Buch} is neuter gender. For this reason, the gender properties
 %of these two elements are not the same and the elements can therefore not be combined.
 
-在下面的内容中，我们将思考如何防止我们的语法生成例（\mex{0}b--d）中的句子。如果我们想说明主谓一致关系，那么我们就需要说明德语中的六种格，并且动词必须与主语在人称（1、2、3）\isce{人称}{person} 和数（sg（单数）、pl（复数））\isce{数}{number}上保持一致\isce{主谓一致}{agreement}：
+在下面的内容中，我们将思考如何防止我们的语法生成例（\mex{0}b--d）中的句子。如果我们想说明一致关系，那么我们就需要说明德语中的六种格，并且动词必须与主语在人称（1、2、3）\isce{人称}{person} 和数（sg（单数）、pl（复数））\isce{数}{number}上保持一致\isce{一致关系}{agreement}：
 %In the following, we will consider how we would have to change our grammar to stop it from licensing the sentences in (\mex{0}b--d).
 %If we want to capture subject-verb agreement, then we have to cover the following six cases in German, as the verb has to agree with the
 %subject in both person\is{person} (1, 2, 3) and number\is{number} (sg, pl)\is{agreement}:
@@ -448,7 +448,7 @@ NP\_3\_pl\_nom  & $\to$ Det\_mas\_pl\_nom & N\_mas\_pl\_nom \\
 NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 \end{tabular}
 \z
-例（\mex{0}）说明了主格名词短语的规则。我们还需要针对属格、与格和宾格的类似规则。这样，我们就需要24个符号来说明限定词（$3*2*4$），24个符号说明名词，以及24条规则，而不是一条规则。如果要考虑屈折类型的话，符号的数量和规则的数量都要翻倍。\isce[|)]{主谓一致}{agreement}
+例（\mex{0}）说明了主格名词短语的规则。我们还需要针对属格、与格和宾格的类似规则。这样，我们就需要24个符号来说明限定词（$3*2*4$），24个符号说明名词，以及24条规则，而不是一条规则。如果要考虑屈折类型的话，符号的数量和规则的数量都要翻倍。\isce[|)]{一致关系}{agreement}
 %(\mex{0}) shows the rules for nominative noun phrases. We would need analogous rules for genitive,
 %dative, and accusative. We would then require 24 symbols for determiners ($3*2*4$), 24 symbols for nouns and
 %24 rules rather than one. If inflection class is taken into account, the number of symbols and the
@@ -518,7 +518,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
    &       & V({Per1},{Num1},ditransitive)\\
 \end{tabular}
 \z
-对动词和主语的Per1和Num1的识别确保了它们具有主谓一致关系。对于其他NP来说，这些特征的值是无关的。这些NP的格也是明确的。
+对动词和主语的Per1和Num1的识别确保了它们具有一致关系。对于其他NP来说，这些特征的值是无关的。这些NP的格也是明确的。
 %The identification of Per1 and Num1 on the verb and on the subject ensures that there is subject-verb agreement.
 %For the other NPs, the values of these features are irrelevant. The case of these NPs is explicitly determined.
 \isce[|)]{短语结构语法}{phrase structure grammar}
@@ -663,7 +663,7 @@ $\lambda x~\relation{sleep}(x)$
 $\lambda x~\relation{sleep}(x)$ \relation{max}
 \z
 %CAUTION:
-这一过程叫做$\beta$-约归（$\beta$-reduction）\isceat{beta-约归}{$\beta$-约归}{beta-reduction}{$\beta$-reduction}或$\lambda$-变换（$\lambda$-conversion）\isceat{lambda-变换}{$\lambda$-变换}{lambda-conversion}{$\lambda$-conversion}。为了深入说明这一概念，我们用及物动词的例子来分析。例（\mex{1}a）中的句子具有（\mex{1}b）所表示的含义：
+这一过程叫做$\beta$-约归（$\beta$-reduction）\isceat{beta-归约}{$\beta$-归约}{beta-reduction}{$\beta$-reduction}或$\lambda$-变换（$\lambda$-conversion）\isceat{lambda-变换}{$\lambda$-变换}{lambda-conversion}{$\lambda$-conversion}。为了深入说明这一概念，我们用及物动词的例子来分析。例（\mex{1}a）中的句子具有（\mex{1}b）所表示的含义：
 %The process is called $\beta$-reduction\is{beta-reduction@$\beta$-reduction} or 
 %$\lambda$-conversion\is{lambda-conversion@$\lambda$-conversion}. To show this further, let us consider an example with a transitive verb. The sentence
 %in (\mex{1}a) has the meaning given in (\mex{1}b):
