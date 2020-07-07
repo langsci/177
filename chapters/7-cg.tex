@@ -49,7 +49,7 @@
 \subsection{配价信息的表示}
 \label{sec-forward-backward-application}
 
-在\isce[|(]{价}{valence}范畴语法中，复杂范畴替换了GPSG\indexgpsgc 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
+在\isce[|(]{价}{valence}范畴语法中，复杂范畴替换了GPSG\indexgpsg 中的\textsc{subcat}特征来确保一个中心词只能使用适合的句法规则。
 一些短语结构语法规则\isce{短语结构语法}{phrase structure grammar}可以用复杂范畴来替换：\isce[|(]{/}{/} 
 
 \ea
@@ -77,7 +77,7 @@ X/Y $*$ Y = X
 \isce{变元}{argument}。
 
 和GB理论一样，范畴语法中配价信息只在词库中出现一次。
-在GPSG\indexgpsgc 中，配价信息同时体现在句法规则和词条的\textsc{subcat}特征中。
+在GPSG\indexgpsg 中，配价信息同时体现在句法规则和词条的\textsc{subcat}特征中。
 
 图\vref{abb-cg-transitives-Verb}展示了一个及物动词的词条是如何与它的宾语组合的。
 \begin{figure}
@@ -401,7 +401,7 @@ isst & er  & ihn \\
 在图\ref{Abbildung-CG-der-Mann-der-Frau-das-Buch-gibt}中，动词首先和一个带有宾格的宾语结合，而在图\ref{Abbildung-CG-gibt-der-Mann-der-Frau-das-Buch}中，
 动词首先和主语结合。针对这种变分支分析也有反对意见，如 \citew{Netter92}和 \citew{Mueller2005c,MuellerGS}。
 
-\citet{Jacobs91a}提出了一种对应于GB\indexgbc 的动词移位的分析。他假定动词后置，换句话说，针对动词存在一个词汇项，该词汇项允准论元在动词左侧与之相结合。
+\citet{Jacobs91a}提出了一种对应于GB\indexgb 的动词移位的分析。他假定动词后置，换句话说，针对动词存在一个词汇项，该词汇项允准论元在动词左侧与之相结合。
 一个及物动词应该有如（\mex{1}a）中所示的范畴。
 而允准动词前置结构的是一个语迹，它出现在最后，而动词的论元以及动词本身出现在前置的位置上。
 （\mex{1}b）是动词语迹的范畴，它允许一个及物动词出现在前置位置：
@@ -432,7 +432,7 @@ isst & er  & ihn & \_\\
 }
 \caption{\label{Abbildung-CG-isst-der-junge-den-kuchen-jacobs}遵循 \citet{Jacobs91a}的动词前置句子的分析}
 \end{figure}%
-语迹是整个分析的中心词：它首先和宾格宾语结合，之后和主语结合。在最后一步，它和一个及物动词在句首位置结合。\footnote{在HPSG\indexhpsgc 中也有类似分析，参见 \citew{Netter92}。
+语迹是整个分析的中心词：它首先和宾格宾语结合，之后和主语结合。在最后一步，它和一个及物动词在句首位置结合。\footnote{在HPSG\indexhpsg 中也有类似分析，参见 \citew{Netter92}。
 } 
 这种分析存在一个问题：在（\mex{1}）中，动词isst（吃）以及er（他）和ihn（他/它）都是动词语迹的论元。
 \ea
@@ -507,7 +507,7 @@ Steedman和Baldridge介绍了一些表示范畴的惯例：花括号中的元素
 \end{tabular}
 \z
  \citet[\S 3.1]{Hoffmann95a-u}针对土耳其语\ilce{土耳其语}{Turkish}提出了一种类似日语的分析，这种分析的思想也可以用于分析德语的动词位置。
-这对应于\citet{Fanselow2001a}的GB/MP\indexgbc 分析，或是\ref{Abschnitt-HPSG-lokale-Umstellung}中的HPSG\indexhpsgc 的分析。
+这对应于\citet{Fanselow2001a}的GB/MP\indexgb 分析，或是\ref{Abschnitt-HPSG-lokale-Umstellung}中的HPSG\indexhpsg 的分析。
 \isce[|)]{成分序列}{constituent order}
 
 \section{长距离依存}
@@ -880,7 +880,7 @@ Morrill提出了一种不同的分析思路——增加函子和变元组合的�
 通过引入新的操作，Morrill减少了which的词汇项；但是问题仍然存在：他需要为出现在随迁（pied-piping）构式中的关系代词设立范畴。
 
 此外，关系小句包含一个关系代词以及一个缺少关系短语的句子，这一点被忽视了。
-我们在GPSG\indexgpsgc 框架下进行的分析是，在关系短语中是否存在一个关系代词的信息会在句法树上向上传递，直到关系短语层。
+我们在GPSG\indexgpsg 框架下进行的分析是，在关系短语中是否存在一个关系代词的信息会在句法树上向上传递，直到关系短语层。
 关系小句可以分析为这样的一个组合，组合的一个成分是一个存在一个缺口（gap）的句子，另一个成分是关系短语。
 相关的基于GB理论和HPSG/CxG理论的讨论，可以参阅\ref{Abschnitt-Relativ-Interrogativsaetze}。 
 \isce[|)]{范畴语法（CG）}{Categorial Grammar (CG)}

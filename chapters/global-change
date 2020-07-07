@@ -19,7 +19,13 @@ echo $x
 #$x >$x.neu
 #perl -CIOED -p -e 's/\\isc{(\p{Script_Extensions=Han}+)\|\(}\\is{(\p{ASCII}+)\|\(}/\\isce[|(]{$1}{$2}/g' $x >$x.neu
 #perl -CIOED -p -e #'s/\\isc{(\p{Script_Extensions=Han}+)\|\)}\\is{(\p{ASCII}+)\|\)}/\\isce[|)]{$1}{$2}/g' $x >$x.neu
-perl -CIOED -p -e 's/\\isce{(\p{Script_Extensions=Han}+)!(\p{Script_Extensions=Han}+)!(\p{ASCII}+)}{(\p{ASCII}+)!(\p{ASCII}+)!(\p{ASCII}+)}/\\iscesubsub{$1}{$4}{$2}{$5}{$3}{$6}/g' $x >$x.neu
+#perl -CIOED -p -e
+#'s/\\isce{(\p{Script_Extensions=Han}+)!(\p{Script_Extensions=Han}+)!(\p{ASCII}+)}{(\p{ASCII}+)!(\p{ASCII}+)!(\p{ASCII}+)}/\\iscesubsub{$1}{$4}{$2}{$5}{$3}{$6}/g'
+#$x >$x.neu
+#sed -e 's/indexcxgc/indexcxg/g'   $x >$x.neu
+#sed -e 's/indexgpsgc/indexgpsg/g'   $x >$x.neu
+#sed -e 's/indexhpsgstopc/indexhpsgstop/g'   $x >$x.neu
+sed -e 's/indexsbcgc/indexsbcg/g'   $x >$x.neu
 end
 
 

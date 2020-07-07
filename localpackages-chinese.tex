@@ -364,6 +364,12 @@
 }
 \makeatother
 
+\AtBeginDocument{
+\renewcommand{\isfeat}[1]{\isce{feature}{chinese word for feature}{#1}{#1}}
+\renewcommand{\isrel}[1]{\isce{relation}{chinese word for relation}{#1}{#1}}
+\renewcommand{\istype}[1]{\isce{type}{chinese word for type}{#1}{#1}}
+}
+
 
 \renewcommand{\lsImpressumCitationText}{
   \onlyAuthor
