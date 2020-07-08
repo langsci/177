@@ -33,8 +33,8 @@ all: grammatical-theory.pdf
 	makeindex -gs index.format-plus -o $*.and $*.adx
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.lnde $*.ldxe
-	makeindex -gs index.format -o $*.snd $*.sdx
-	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.scd $*.scx
+	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.snd $*.sdx
+	makeindex -gs index.format -o $*.scd $*.scx
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label'
 
 
