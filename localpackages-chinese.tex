@@ -329,7 +329,7 @@
 
 \newcommand{\iscesee}[4]{%
   \index[sbj]{#1\hspace{1em}#3|see{#2\hspace{1em}#4}}%
-  \index[sbc]{#3\hspace{1em}#1|see{#4\hspace{1em}#2}}%
+  \index[sbc]{#3@#3\hspace{1em}#1|see{#4\hspace{1em}#2}}%
 }
 
 
@@ -364,13 +364,14 @@
 }
 \makeatother
 
-\AtBeginDocument{
-\renewcommand{\isfeat}[1]{\isce{feature}{chinese word for feature}{#1}{#1}}
-\renewcommand{\isrel}[1]{\isce{relation}{chinese word for relation}{#1}{#1}}
-\renewcommand{\istype}[1]{\isce{type}{chinese word for type}{#1}{#1}}
-}
+\newcommand{\isfeat}[1]{\iscesub{特征}{feature}{\textsc{#1}}{\textsc{#1}}}
+\newcommand{\isrel}[1]{\iscesub{关系}{relation}{#1}{#1}}
+\newcommand{\istype}[1]{\iscesub{类型}{type}{\textit{#1}}{\textit{#1}}}
 
-\renewcommand{\see}[2]{\unskip 见 #1}
+\newcommand{\iw}[1]{}
+
+
+\renewcommand{\see}[2]{\unskip 见\hspace{1em} #1}
 
 \renewcommand{\lsImpressumCitationText}{
   \onlyAuthor

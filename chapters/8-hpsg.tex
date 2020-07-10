@@ -125,7 +125,7 @@ ML2009a,ML2013a,FSB2015a-u}
 %} and the network CoGETI\is{CoGETI} (Constraintbasierte Grammatik: Empirie, Theorie und Implementierung)\footnote{%
 %\url{http://wwwuser.gwdg.de/~cogeti/}. 13.11.2015. Supported by the DFG under the grant number HO3279/3-1.%
 %}. 
-上面列出的大部分语法片段由DELPH-IN的成员开发，其中有一些是基于语法矩阵（Grammar Matrix）的\isce{语法矩阵}{Grammar Matrix}。语法矩阵是为LKB开发的一个平台，它为语法编写者提供了一个类型学驱动的初始语法，该语法对应于所开发语言的属性\citep*{BFO2002a-u}。核心语法工程（the CoreGram project）\isce{核心语法}{CoreGram}\footnote{\url{https://hpsg.hu-berlin.de/Projects/CoreGram.html}。 \mytodayc。
+上面列出的大部分语法片段由DELPH-IN的成员开发，其中有一些是基于语法矩阵（Grammar Matrix）的\isce{语法矩阵}{Grammar Matrix}。语法矩阵是为LKB开发的一个平台，它为语法编写者提供了一个类型学驱动的初始语法，该语法对应于所开发语言的属性\citep*{BFO2002a-u}。核心语法工程（the CoreGram project）\isce{核心语法工程}{CoreGram}\footnote{\url{https://hpsg.hu-berlin.de/Projects/CoreGram.html}。 \mytodayc。
 }
 是一个在柏林自由大学开启的类似项目，目前该项目在柏林洪堡大学继续运行。它是针对德语\ilce{德语}{German}、丹麦语\ilce{丹麦语}{Danish}、波斯语\ilce{波斯语}{Persian}、马耳他语\ilce{马耳他语}{Maltese}、现代汉语\ilce{现代汉语}{Mandarin Chinese}、西班牙语\ilce{西班牙语}{Spanish}、法语\ilce{法语}{French}和依地语\ilce{依地语}{Yiddish}的语法开发项目，这些语言的语法都共享一个核心语法。针对所有语言的约束条件集中在一起，并且应用到所有的语法中。而且，还有针对特定语言类型的限制，这些限制统一表示并且根据各自的语法来应用。所以，虽然语法矩阵是供个人语法编写者使用、调试和修正语法的语法开发平台，而核心语法是真正地针对不同语言的语法开发的，这些语法同步地进行开发，并且同步地进行维护。有关核心语法的介绍可以参考 \citew{MuellerCoreGramBrief,MuellerCoreGram}。
 %Many of the grammar fragments that are listed above were developed by members of DELPH-IN and some
@@ -1314,7 +1314,7 @@ HPSG理论\isce[|(]{被动}{passive}遵循Bresnan的思想（参见\ref{Abschnit
 词汇规则将动词词根\footnote{%
 术语\emph{stem}包括词根（\stem{helf}，“帮助”）、派生词（\stem{besing}，“唱”）和复合词。这样词汇规则就可以用在像\stem{helf}的词根和诸如\stem{besing}的派生形式之中了。
 }作为它的输入，这就要求有一个主格论元、一个宾格论元以及其他可能的论元成分（如果\ibox{3}不是一个空列表的话），并且允准一个需要带有主格论元和\ibox{3}中可能论元成分的词汇项。\footnote{%
-该规则假定了双及物动词的论元是按照主格、宾语和与格的顺序排列的。本章中，我假设了主格、与格和宾格的顺序，这对应于德语论元的未标记语序。 \citet{Kiss2001a}指出，未标记语序的表示可以用来说明德语的辖域事实。而且，论元的顺序对应于英语的顺序，这在捕捉跨语言的共性方面具有优势。在早先的工作中，我认为语序是主格、宾格和与格这样排列的，因为这个顺序表示了凸显的层级体系，而这与德语语法的大部分方面都具有相关性。例子有：省略\isce{省略}{ellipsis} \citep{Klein85}、话题省略\iscesub{前场}{prefield}{省略}{ellipsis}\isce{话题脱落}{Topic Drop} \citep{Fries88b}、自由关系小句\iscesub{关系小句}{relative clause}{自由关系小句}{free} \citep{Bausewein90,Pittner95b,Mueller99b}、描述性次级谓词\isce{描述性谓词}{depictive predicate} \citep{Mueller2001c,Mueller2002b,Mueller2008a}、约束理论\isce{约束理论}{Binding Theory}（\citealp{Grewendorf85a}；Pollard \& Sag: \citeyear{PS92}，\citeyear[\S~6]{ps2}）。这一语序也对应于 \citet{KC77a}和 \citet{Pullum77a}提出的旁格层级体系\isce{旁格}{obliqueness}。为了说明这一层级体系，需要提出一个带有主格、宾格和与格语序的列表。
+该规则假定了双及物动词的论元是按照主格、宾语和与格的顺序排列的。本章中，我假设了主格、与格和宾格的顺序，这对应于德语论元的未标记语序。 \citet{Kiss2001a}指出，未标记语序的表示可以用来说明德语的辖域事实。而且，论元的顺序对应于英语的顺序，这在捕捉跨语言的共性方面具有优势。在早先的工作中，我认为语序是主格、宾格和与格这样排列的，因为这个顺序表示了凸显的层级体系，而这与德语语法的大部分方面都具有相关性。例子有：省略\isce{省略}{ellipsis} \citep{Klein85}、话题脱落\iscesub{前场}{prefield}{省略}{ellipsis}\isce{话题脱落}{Topic Drop} \citep{Fries88b}、自由关系小句\iscesub{关系小句}{relative clause}{自由关系小句}{free} \citep{Bausewein90,Pittner95b,Mueller99b}、描述性次级谓词\isce{描述性谓词}{depictive predicate} \citep{Mueller2001c,Mueller2002b,Mueller2008a}、约束理论\isce{约束理论}{Binding Theory}（\citealp{Grewendorf85a}；Pollard \& Sag: \citeyear{PS92}，\citeyear[\S~6]{ps2}）。这一语序也对应于 \citet{KC77a}和 \citet{Pullum77a}提出的旁格层级体系\isce{旁格}{obliqueness}。为了说明这一层级体系，需要提出一个带有主格、宾格和与格语序的列表。
 下面将要提出的被动规则与这两种论元语序都是相容的。
 } 该词汇规则的输入指定了输出词的\vformvc。这是非常重要的，因为助动词和核心动词必须一起出现。比如说，不能用完成分词来取代被动分词，因为在Kiss的理论中，它们的格是不同的。
 %This lexical rule takes a verb stem\footnote{%
@@ -2092,7 +2092,7 @@ sm edges
 %the \subcatl is divided into three parts using \emph{append}\is{relation!\emph{append}}: a list of arbitrary length \iboxb{1},
 %a list consisting of exactly one element (\sliste{ \ibox{2} }) and a further list of arbitrary length \iboxb{3}. The lists \ibox{1} and \ibox{3}
 %are combined and the result is the \subcatv of the mother node.
-具有固定语序的语言\iscesub{成分序列}{constituent order}{固定}{fixed}\iscesub{成分序列}{consituent order}{自由}{free}（如英语）与德语这类语言不同，因为它们从一个方向开始释放论元（更多有关英语\ilce{英语}{English}的主语的内容，参见\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么是\ibox{1}，要么是\ibox{3}，总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是说，\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个分析与\ref{Abschnitt-Kaynesche-Modelle}中的Kayne式\aimention{Richard S. Kayne}的分析相比较，那儿的分析认为所有语言都是从基础语序 [specifier [head complement]]推导而来的（参见图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要在理论上付出相当多的努力来得到正确的语序。与之相对的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在它们所属的分支类型上是不同的。\footnote{%
+具有固定语序的语言\iscesub{成分序列}{constituent order}{自由}{free}\iscesub{成分序列}{constituent order}{固定}{fixed}（如英语）与德语这类语言不同，因为它们从一个方向开始释放论元（更多有关英语\ilce{英语}{English}的主语的内容，参见\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么是\ibox{1}，要么是\ibox{3}，总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是说，\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个分析与\ref{Abschnitt-Kaynesche-Modelle}中的Kayne式\aimention{Richard S. Kayne}的分析相比较，那儿的分析认为所有语言都是从基础语序 [specifier [head complement]]推导而来的（参见图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要在理论上付出相当多的努力来得到正确的语序。与之相对的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在它们所属的分支类型上是不同的。\footnote{%
 这并没有排除这样的事实，我们讨论的这个结构具有不同的属性，只要把它们的处理程度考虑进来的话。参见 \citew{Gibson98a,Hawkins99a}和第\ref{Abschnitt-Diskussion-Performanz}章。
 }$^,$\footnote{%
  \citet[\page
@@ -2854,7 +2854,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %	See also  \citew{Mueller2008a} for an analysis of depictive predicates\is{depictive predicate} in German and English\il{English} that makes %reference to the list of
 %	realized or unrealized arguments of a head, respectively. This analysis is also explained in Section~\ref{sec-locality}.
 %}  
-在这个分析中， HPSG中的论元结构对应于LFG中的f-结构。LFG\indexlfg 的扩展的中心语域\iscesub{中心语域}{head domain}{扩展}{extended}也可以在HPSG中来模拟，其中多重中心语可以共享相同的f-结构。为此，我们可以使用函数组合\isce{函数组合}{function composition}，因为它在范畴语法\indexcg 那章中被提出来了（参见第\ref{Kategorialgrammatik-Komposition}章）。限于篇幅，这点被译成HPSG理论的确切方式就不在这里解释了。读者可以参考 \citet{HN94a}的原文，以及 \citew[\S~15]{MuellerLehrbuch1}的解释。
+在这个分析中， HPSG中的论元结构对应于LFG中的f-结构。LFG\indexlfg 的扩展的中心语域\iscesub{中心语域}{head domain}{扩展}{extended}也可以在HPSG中来模拟，其中多重中心语可以共享相同的f-结构。为此，我们可以使用函项组合\isce{函项组合}{function composition}，因为它在范畴语法\indexcg 那章中被提出来了（参见第\ref{Kategorialgrammatik-Komposition}章）。限于篇幅，这点被译成HPSG理论的确切方式就不在这里解释了。读者可以参考 \citet{HN94a}的原文，以及 \citew[\S~15]{MuellerLehrbuch1}的解释。
 %In this analysis, the argument structure in HPSG corresponds to f-structure in LFG. The extended head domains\is{head domain!extended} %of LFG\indexlfg, where
 %multiple heads can share the same f-structure, can also be modeled in HPSG. To this end, one can utilize function composition\is{function %composition}
 %as it was presented in the chapter on Categorial Grammar\indexcg (see Chapter~\ref{Kategorialgrammatik-Komposition}). The exact way in %which this is
