@@ -15,7 +15,7 @@
 }。
 %Viola: \todostefan{leaves a little oder much - something wie als nettes Understatement im Deutschen passt hier leider nicht :-)}
 
-从表示力来看，TAG和它的一些扩展性变体相对精确地展现了人类在理解和处理语言的时候做了什么，这也是这种语法理论能够吸引大量研究人员注意的主要原因。为了便于和上下文无关文法\isce{上下文无关文法}{context-free grammar}（2-型语言）形成对应，广义短语结构语法\indexgpsgc 在设计之初就对表示能力施加了很多限制，即便如此，事实上，GPSG在这方面仍然有很多问题\citep{Shieber85a,Culy85a}\footnote{%
+从表示力来看，TAG和它的一些扩展性变体相对精确地展现了人类在理解和处理语言的时候做了什么，这也是这种语法理论能够吸引大量研究人员注意的主要原因。为了便于和上下文无关文法\isce{上下文无关文法}{context-free grammar}（2-型语言）形成对应，广义短语结构语法\indexgpsg 在设计之初就对表示能力施加了很多限制，即便如此，事实上，GPSG在这方面仍然有很多问题\citep{Shieber85a,Culy85a}\footnote{%
   参见 \citet{Pullum86a}以了解关于复杂性的讨论，参见G.\  \citew{GMueller2011a}以了解针对德语的非上下文无关性的讨论，
   这种分析和Culy分析N-P-N构式的工作具有一定的相似性。（见\ref{Abschnitt-NPN-Konstruktion}）%
    }。像HPSG\indexhpsg 和CxG\indexcxg 这样的语法理论可以产生/描写所谓的0-型语言，相较于目前我们所假设的自然语言的复杂度，其描写能力过强。
@@ -163,7 +163,7 @@ tag
 \isce[|)]{附加}{adjunction}
 \isce[|)]{附加语}{adjunct}
 
-TAG和我们之前在第\ref{Kapitel-PSG}章遇到的简单短语结构语法有一个显著的不同，即树的范围扩大了：例如，laugh树中有一个非动词兄弟结点的NP结点。在短语结构语法（当然包括了GB\indexgb 和GPSG\indexgpsgc，因为这两个理论或多或少都依赖于短语结构语法）中，我们只能描写深度为一的子树。对于laughs的子树而言，相应的规则如（\mex{1}）所示：
+TAG和我们之前在第\ref{Kapitel-PSG}章遇到的简单短语结构语法有一个显著的不同，即树的范围扩大了：例如，laugh树中有一个非动词兄弟结点的NP结点。在短语结构语法（当然包括了GB\indexgb 和GPSG\indexgpsg，因为这两个理论或多或少都依赖于短语结构语法）中，我们只能描写深度为一的子树。对于laughs的子树而言，相应的规则如（\mex{1}）所示：
 \ea
 \begin{tabular}[t]{@{}l@{ }l}
 S  & $\to$ NP VP\\
@@ -346,7 +346,7 @@ LP$^\alpha_2$ = \{ \}
 \ex V NP$_1$ NP$_2$
 \ex V NP$_2$ NP$_1$ 
 \zl
-不考虑结构成分的层次性，即树中含有NP与VP一层，GPSG\indexgpsgc 的扁平句子规则所定义的全部语序都可以由上述TAG方法复现。
+不考虑结构成分的层次性，即树中含有NP与VP一层，GPSG\indexgpsg 的扁平句子规则所定义的全部语序都可以由上述TAG方法复现。
 因为支配关系包括了更大的局部域，这样的语法也称为LD/LP语法（local dominance/linear precedence），而非ID/LP语法（immediate dominance/linear precedence）\citep*{JSW90a-u}。
 
 \S \ref{sec-tag-allgemein}所介绍的简单的TAG变体无法处理被杂列的动词论元的语序问题，如（\mex{1}）。
@@ -1248,7 +1248,7 @@ Hoberg使用的是代词的所有格——ihr（她），而不是das（\textsc{
 %\section*{延伸阅读}
 \furtherreading{
 重要的论文有 \citew*{JLT75a-u}、 \citew{Joshi87a-u}和 \citew{JS97a}。很多更关心语言本体的读者并不会过多涉猎讨论TAG形式性质的论文。
- \citew{KJ85a}很好地总结了针对语言现象的分析。 针对TAG的语言学与计算语言学的论文可以在Abeill{\'e}和Rambow\nocite{AR2000a-ed-not-crossreferenced}所编辑的论文集中找到。 \citet{Rambow94a}比较了他的TAG变体（V-TAG\iscesub{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}）和Karttunen的激进词汇主义（Radical Lexicalism）方法、Uszkoreit的GPSG\indexgpsgc、组合范畴语法\indexcg, HPSG\indexhpsg 以及依存语法\indexdg。 
+ \citew{KJ85a}很好地总结了针对语言现象的分析。 针对TAG的语言学与计算语言学的论文可以在Abeill{\'e}和Rambow\nocite{AR2000a-ed-not-crossreferenced}所编辑的论文集中找到。 \citet{Rambow94a}比较了他的TAG变体（V-TAG\iscesub{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}）和Karttunen的激进词汇主义（Radical Lexicalism）方法、Uszkoreit的GPSG\indexgpsg、组合范畴语法\indexcg, HPSG\indexhpsg 以及依存语法\indexdg。 
 
  \citet{SJ93a}讨论了从心理语言学来说可行的加工模型，并且论证了基于TAG进行增量式句法分析的可行性。他们进一步提出了TAG的一种变体：同步TAG（synchronous TAG\indexstag）。在这种TAG变体中，一棵句法树有一棵语义树与之相对应。当构建句法结构的时候，语义结构也同步构建起来。这个同步构建的结构对应于GB理论中通过转换\isce{转换}{transformation}从表层结构中推导得到的逻辑形式（Logical Form\isce{逻辑形式（LF）}{Logical Form (LF)}）。
 
