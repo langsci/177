@@ -173,15 +173,15 @@
 }
 
 \newcommand{\footnoteindex@sbc}[2]{\index[sbc]{#2|infn{#1}}}
-\newcommand{\isc}[1]{%
-  \if@noftnote%
-    \index[sbc]{#1}%
-    \else%
-    \edef\tempnumber{\thefootnote}%
-    \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
-    %\indexftn{#1}{\value{footnotemark}}%
-  \fi%
-}
+% \newcommand{\isc}[1]{%
+%   \if@noftnote%
+%     \index[sbc]{#1}%
+%     \else%
+%     \edef\tempnumber{\thefootnote}%
+%     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#1}%
+%     %\indexftn{#1}{\value{footnotemark}}%
+%   \fi%
+% }
 
 % index commands adapted to include both English and Chinese
 \makeatletter
