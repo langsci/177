@@ -207,13 +207,13 @@
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3#1}%
     %\indexftn{#1}{\value{footnotemark}}%
   \fi%
-  \if@noftnote
+  \if@noftnote%
     \index[sbc]{#3@#3\hspace{1em}#2#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2#1}%
   \fi%
-  }
+  }%
 }
 
 % If you call the above command with an @ specification for sorting this causes havok, since the @
@@ -231,7 +231,7 @@
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2@#3\hspace{1em}#5#1}%
     %\indexftn{#1}{\value{footnotemark}}%
   \fi%
-  \if@noftnote
+  \if@noftnote%
     \index[sbc]{#4@#5\hspace{1em}#3#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
@@ -242,13 +242,13 @@
 \newcommand{\iscesub}[5][]{%
   % if the subterms are equal eg relation!$\bigcirc$
   \ifthenelse{\equal{#4}{#5}}{%
-  \if@noftnote
+  \if@noftnote%
     \index[sbj]{#2\hspace{1em}#3!#4#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4#1}%
   \fi%
-  \if@noftnote
+  \if@noftnote%
     \index[sbc]{#3@#3\hspace{1em}#2!#5@#5#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
@@ -256,19 +256,19 @@
   \fi%
   }{%
   % if they are not equal print them
-  \if@noftnote
+  \if@noftnote%
     \index[sbj]{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbj\expandafter{\tempnumber}{#2\hspace{1em}#3!#4\hspace{1em}#5#1}%
   \fi%
-  \if@noftnote
+  \if@noftnote%
     \index[sbc]{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4#1}%
     \else%
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4#1}%
   \fi%
-  }
+  }%
 }
 
 \newcommand{\iscesubsee}[6]{%
@@ -324,7 +324,7 @@
     \edef\tempnumber{\thefootnote}%
     \expandafter\footnoteindex@sbc\expandafter{\tempnumber}{#3@#3\hspace{1em}#2!#5@#5\hspace{1em}#4!#7@#7\hspace{1em}#6#1}%
   \fi%
-  }
+  }%
 }
 
 \newcommand{\iscesee}[4]{%
