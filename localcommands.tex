@@ -295,26 +295,31 @@ frbox/.style={
 
 
 \newcommand{\questions}[1]{%~\newline\vspace*{-10mm}
+\memoizeset{disable}%
 \tblssy{people}{\hspace{-2em} 思考题}{\setlist{leftmargin=*}#1}}
 %\tblssy{people}{Comprehension questions}{#1}}
 
 \newcommand{\exercises}[1]{
 \vspace*{-\baselineskip}%
+\memoizeset{disable}%
 \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}#1}}
 %\tblssy{pencil}{Exercises}{#1}}
 
 % if no questions precede the exercises do not do vspace
 \newcommand{\exercisesfirst}[1]{
 %\vspace*{-\baselineskip}%
+\memoizeset{disable}%
 \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}#1}}
 
 
 \newcommand{\furtherreading}[1]{%~\newline\vspace*{-10mm}
 \vspace*{-\baselineskip}%
+\memoizeset{disable}%
 \tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}#1}}
 
 \newcommand{\furtherreadingfirst}[1]{%~\newline\vspace*{-10mm}
 %\vspace*{-\baselineskip}%
+\memoizeset{disable}%
 \tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}#1}}
 
 
