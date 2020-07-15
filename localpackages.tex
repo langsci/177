@@ -73,12 +73,13 @@
 % It breaks the dependency grammar trees in forest.
 \usepackage{langsci-forest-setup}
 
-\usepackage{nomemoize} 
-\memoizeset{
-  memo filename prefix={grammatical-theory.memo.dir/},
-  register=\todo{O{}+m},
-  prevent=\todo,
-}
+% is loaded in grammatical-theory.tex and check-gt.tex to keep this customizable.
+% \usepackage{nomemoize} 
+% \memoizeset{
+%   memo filename prefix={grammatical-theory.memo.dir/},
+%   register=\todo{O{}+m},
+%   prevent=\todo,
+% }
 
 \forestset{
       terminus/.style={tier=word, for children={tier=tabular}, for tree={fit=band}, for descendants={no path, align=left, l sep=0pt}},

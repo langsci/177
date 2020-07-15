@@ -41,6 +41,13 @@
 \newcommand{\LATER}[1]{}
 
 
+\usepackage{memoize} 
+\memoizeset{
+  memo filename prefix={grammatical-theory.memo.dir/},
+  register=\todo{O{}+m},
+  prevent=\todo,
+}
+
 \input{localpackages-chinese.tex}
 \input{localmetadata.tex}
 \input{localpackages.tex}
