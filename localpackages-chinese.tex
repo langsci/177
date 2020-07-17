@@ -401,7 +401,7 @@
 %\renewcommand{\githubtext}{Source code available from \href{https://www.github.com/langsci/\lsID}{www.github.com/langsci/\lsID}}
 %\renewcommand{\paperhivetext}{Collaborative~reading:~\href{https://paperhive.org/documents/remote?type=langsci&id=\lsID}{paperhive.org/documents/remote?type=langsci\&id=\lsID}}
 
-
+\makeatletter
 \renewcommand{\lsImpressum}{
 \thispagestyle{empty}
 \raggedright
@@ -500,7 +500,7 @@ Ulrike Harbort \\
 \fi
 \if\@illustrator\empty\else
 插图：
-\\Illustration:
+%\\Illustration:
 \@illustrator \\
 \fi
 \if\@proofreader\empty\else
@@ -539,6 +539,7 @@ Ulrike Harbort \\
 % publication, and does not guarantee that any content on such websites
 % is, or will remain, accurate or appropriate.
 }
+\makeatother
 
 \newcommand{\unusedlsImpressum}{
 \raggedright
