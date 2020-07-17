@@ -754,10 +754,10 @@ Grünberger Str. 16\\
 \makeatletter
 \def\thmheadprinciple#1#2#3{%
   \thmname{#1}\thmnumber{\@ifnotempty{#1}{ }\@upn{#2}}%
-  \thmnote{ {\the\thm@notefont（\rot{#3}）}}}
+  \thmnote{ {\the\thm@notefont（#3）}}}
 \makeatother
 
-\newtheoremstyle{break}% Name
+\newtheoremstyle{cn-bracket}% Name
   {}% space above
   {}% space below
   {}%\itshape}% body font
@@ -767,10 +767,23 @@ Grünberger Str. 16\\
   { }% space after head (has to be space or dimension!)
   {\thmheadprinciple{#1}{#2}{#3}}% head spec
 
-\theoremstyle{break}
+\newtheoremstyle{cn-bracket-break}% Name
+  {}% space above
+  {}% space below
+  {}%\itshape}% body font
+  {}% indent
+  {\bfseries}% head font
+  {}% punctuation after head
+  {\newline}% space after head (has to be space or dimension!)
+  {\thmheadprinciple{#1}{#2}{#3}}% head spec
+
+
+\theoremstyle{cn-bracket}
 
 % should be in a different style, but the style without break is not defined yet.
 \newtheorem{principle}{原则}
+
+\theoremstyle{cn-bracket-break}
 
 % principle-break uses the same counter as principle
 \newtheorem{principle-break}[principle]{原则}

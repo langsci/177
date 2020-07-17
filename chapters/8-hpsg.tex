@@ -518,7 +518,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 \begin{schema}[中心语-论元模式（二叉结构，初级版本）]
 %\begin{schema}[Head-Argument Schema (binary branching, preliminary version)]
 \label{schema-bin-prel}
-~\\
+%~\\
 \type{head-argument-phrase}\istype{head-argument-phrase} \impl\\
 \onems{
       synsem$|$loc$|$cat$|$subcat \ibox{1} \\
@@ -733,9 +733,9 @@ GPSG\indexgpsg 的中心语特征规约\isce{中心语特征规约（HFC）}{Hea
 \zs
 中心语特征原则（Head Feature Principle）具有如下的形式：
 %The \emph{Head Feature Principle} takes the following form:
-\begin{principle-break}[中心语特征原则]\iscesub{原则}{principle}{中心语特征}{Head Feature}
+\begin{principle-break}[中心语特征原则]\iscesub{原则}{principle}{中心语特征}{Head Feature}%
+\label{prinzip-hfp}%
 %\begin{principle-break}[\emph{Head~Feature~Principle}]\is{principle!Head Feature}
-\label{prinzip-hfp}
 %In a structure with a head, the head features of the mother are identical to (share the same structure as) the head features
 %of the head daughter.
 任何中心语短语的\textsc{head}值与其中心语子结点的\textsc{head}值是结构共享的。
@@ -1196,7 +1196,7 @@ sm edges
 \begin{schema}[中心语-附加语模式]
 %\begin{schema}[Head-Adjunct Schema]
 \label{ha-schema-prel}
-~\\
+%~\\
 \type{head-adjunct-phrase} \impl\\
 \onems{ 
 head-dtr$|$synsem \ibox{1} \\[2mm]
@@ -1486,7 +1486,7 @@ lex-dtr \onems[stem]{
 %	and can therefore also explain the case systems of the languages discussed in their work, notably the complicated
 %	case system of Icelandic.\is{Icelandic}
 %}
-\begin{principle-break}[\hypertarget{case-p}{格原则}]
+\begin{principle}[\hypertarget{case-p}{格原则}]\mbox{}
 %\begin{principle-break}[\hypertarget{case-p}{Case Principle}]
 \label{case-p}
 \begin{itemize}
@@ -1498,7 +1498,7 @@ lex-dtr \onems[stem]{
 %\item All other elements in the list with structural case receive accusative.
 %\item In nominal environments, elements with structural case are assigned genitive\is{case!genitive}.
 \end{itemize}
-\end{principle-break}
+\end{principle}
 
 \noindent
 例（\mex{1}）给出了定式动词的原型配价列表：
@@ -2078,7 +2078,7 @@ sm edges
 \begin{schema}[中心语-论元模式（二叉结构）]
 %\begin{schema}[Head-Argument Schema (binary branching)]
 \label{schema-bin-prel2}
-~\\
+%~\\
 \type{head-argument-phrase}\istype{head-argument-phrase} \impl\\
 \onems{
       synsem$|$loc$|$cat$|$subcat \ibox{1} $\oplus$ \ibox{3}\\
@@ -2388,8 +2388,8 @@ nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
 \begin{figure}
 \begin{schema}[中心语-填充语模式]
 %\begin{schema}[Head-Filler Schema]
-\label{hf-schemaa}\isce{模式}{schema}{填充语-中心语}{Filler-Head}
-~\\\samepage
+\label{hf-schemaa}\iscesub{模式}{schema}{填充语-中心语}{Filler-Head}
+%~\\\samepage
 \type{head-filler-phrase}\istype{head-filler-phrase} \impl\\
 \onems{ 
 %synsem$|$nonloc$|$slash  \eliste\\
@@ -2528,10 +2528,10 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 模式~\ref{schema-spr-h}可以像中心语-论元模式那样来将名词和限定语相组合。
 %Schema~\ref{schema-spr-h} can be used just like the Head-Argument Schema for the combination
 %of noun and determiner.
-\begin{schema}[限定语-中心语模式]\isce{模式}{schema}{限定语-中心语}{Specifier-Head}
+\begin{schema}[限定语-中心语模式]\iscesub{模式}{schema}{限定语-中心语}{Specifier-Head}
 %\begin{schema}[Specifier-Head Schema]\is{Schema!Specifier-Head-}
 \label{schema-spr-h}
-~\\
+%~\\
 \type{head-specifier-phrase}\istype{head-specifier-phrase} \impl\\*
 \onems{
       synsem$|$loc$|$cat$|$spr \ibox{1} \\
