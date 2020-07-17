@@ -30,6 +30,7 @@ all: grammatical-theory.pdf
 	sed -i.backup 's/{\\O }/Oe/' *.adx
 	python3 fixindex.py
 	mv $*mod.adx $*.adx
+	sed -i.backup 's/\\MakeCapital //g' *.adx
 	makeindex -gs index.format-plus -o $*.and $*.adx
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.lnde $*.ldxe

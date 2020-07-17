@@ -152,6 +152,8 @@ sm edges
 %\caption{\label{er-das-buch-dem-mann-gibt-flat}Analysis of \emph{er das Buch dem Mann gibt} `he the
 %book the woman gives'}
 \end{figure}%
+\addlines
+\largerpage
 树中的符号叫做“结点”（node）\isce{结点}{node}。S直接支配NP结点和V结点\isce{支配}{dominance}。树中的其他结点也被支配，只不过不是受到S的直接支配\iscesub{支配}{dominance}{直接支配}{immediate}。如果我们想讨论结点之间的关系，我们通常会用亲属词来表示。在图\ref{er-das-buch-dem-mann-gibt-flat}中，S是三个NP结点和V结点的“父结点”（mother
 node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄弟结点”\iscesub{结点}{node}{兄弟结点}{sister}，因为他们有共同的父结点。如果一个结点有两个“子结点”\iscesub{结点}{node}{子结点}{daughter}，那么我们就会得到一个二叉\isce{二元}{binary}结构\iscesub{分支}{branching}{二叉}{binary}。如果只有一个子结点，则会得到一个单分支结构\iscesub{分支}{branching}{单叉}{unary}。如果有两个成分是直接相连的，我们就说它们是“相邻的”（adjacent）\isce{相邻}{adjacency}。
 %The symbols in the tree are called \emph{nodes}\is{node}. We say that S immediately dominates the NP nodes and the V node\is{dominance}.
@@ -1859,6 +1861,8 @@ sm edges
 %  and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'}
 \end{figure}%
 
+\addlines
+\largerpage
 图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
 }
@@ -1892,16 +1896,14 @@ sm edges
 %chapters, we will discuss approaches such as Categorial Grammar and HPSG, which do not assume
 %unary rules for determiners, adjectives and nouns. 
 
-再者，\xbarc 理论的其他假说与本书所述的几种理论有着不同的看法。特别是，非中心语必须永远作为最大投射\iscesub{投射}{projection}{最大投射}{maximal}这条假设将被忽视。 \citet{Pullum85a}和 \citet{KP90a}认为，有些理论并不一定没有严格的\xbarc 理论的限制多。也可以参考\ref{sec-Diskussion-X-Bar}中的讨论。
+再者，\xbarc 理论的其他假说与本书所述的几种理论有着不同的看法。特别是，非中心语必须永远作为最大投射\iscesub{投射}{projection}{最大投射}{maximal}这条假设将被忽视。 \citet{Pullum85a}和 \citet{KP90a}认为，有些理论并不一定没有严格的\xbarc 理论的限制多。也可以参考\ref{sec-Diskussion-X-Bar}中的讨论。%
+\isceat[|)]{X 理论}{\xbar 理论}{X theory}{\xbar theory}
 %Furthermore, other \xbar~theoretical assumptions will not be shared by several theories discussed in this book. In particular, the assumption that non-heads always have
 %to be maximal projections\is{projection!maximal} will be disregarded.  \citet{Pullum85a} and
 % \citet{KP90a} have shown that the respective theories are not necessarily less restrictive
 %than theories which adopt a strict version of the \xbar theory. See also the discussion in Section~\ref{sec-Diskussion-X-Bar}.
-\isceat[|)]{X 理论}{\xbar 理论}{X theory}{\xbar theory}
 
-%\section*{思考题}
-%\section*{Comprehension questions}
-
+\largerpage
 %\bigskip
 \questions{
 \begin{enumerate}
@@ -1934,12 +1936,9 @@ sm edges
 \mytrans{Joshi很高兴。}
 %	 Joshi is.happy \refl{}\\
 %\mytrans{Joshi is happy.}
-\zl
+\zllast
 \end{enumerate}
 }
-
-%\section*{练习题}
-%\section*{Exercises}
 
 \exercises{
 \begin{enumerate}
@@ -2077,6 +2076,9 @@ NP $\to$ Det Adj
 %\item Consider which additional rules would have to be added to the grammar you developed in the previous exercise
 %	  in order to be able to analyze the following sentences:
 
+%}
+
+%\greyboxrest{
 \eal
 \ex 
 \gll Der Mann hilft der Frau jetzt.\\
@@ -2136,9 +2138,6 @@ NP $\to$ Det Adj
 %}
 \end{enumerate}
 }
-
-%\section*{延伸阅读}
-%\section*{Further reading}
 
 \furtherreading{
 在短语结构语法中加入特征的扩展最早是由 \citet{Harman63a}在1963年提出的。

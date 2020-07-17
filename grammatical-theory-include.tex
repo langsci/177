@@ -1,16 +1,12 @@
 
-\bibliography{gt}
+% \bibliography{gt}
 
-% % fix, remove once forest is updated
-% \makeatletter
-% \apptocmd\forest@pgfmathhelper@attribute@dimen{\global\pgfmathunitsdeclaredtrue}{\typeout{patching succeeded}}{patching failed}
-% \apptocmd\forest@pgfmathhelper@register@dimen{\global\pgfmathunitsdeclaredtrue}{\typeout{patching succeeded}}{patching failed}
-% \makeatother 
 
-\begin{document}
-
-\frontmatter
+% \begin{document}
+\memoizeset{disable}
 \maketitle
+\frontmatter
+\memoizeset{enable}
 
 % Mit Widmung geht es auf S. 7 los
 %\thispagestyle{empty}~\newpage\setcounter{page}{7}% for printing 2up
