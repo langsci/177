@@ -207,10 +207,13 @@ $(PUB_FILE): ../../hpsg/make_bib_header ../../hpsg/make_bib_html_number  ../../h
 source: 
 	tar chzvf ~/Downloads/gt.tgz *.tex styles/*.sty LSP/
 
+
 memo-install:
 	cp -pr ~/Documents/Dienstlich/Projekte/memoize/memoize* .
 	cp -pr ~/Documents/Dienstlich/Projekte/memoize/nomemoize* .
 	cp -pr ~/Documents/Dienstlich/Projekte/memoize/xparse-arglist.sty .
+	cp -pr ~/Documents/Dienstlich/Projekte/memoize/memomanager.py .
+
 #housekeeping	
 clean:
 	rm -f *.bak *~ *.backup \
