@@ -5,7 +5,7 @@
 \label{Kapitel-PSG}
 \isce[|(]{短语结构语法}{phrase structure grammar}
 
-本章讨论短语结构语法，该语法在我们接下来要讲解的理论中起到了至关重要的作用。
+本章讨论短语结构语法，该语法在我们接下来要讲解的理论中起到了重要的作用。
 %This chapter deals with phase structure grammars (PSGs), which play an important role in several of the theories we will encounter in later chapters.
 
 \section{符号与重写规则}
@@ -308,7 +308,7 @@ sm edges
 \gll Sie schlafen.\\   
      他们 睡觉\\      \jambox{（3，pl）}
 \zl
-我们可以通过增加符号的数量来描述这些关系。我们用下面的符号来替换S $\to$ NP NP NP V：
+可以通过增加符号的数量来描述这些关系。我们用下面的规则来替换S $\to$ NP NP NP V：
 %It is possible to capture these relations with grammatical rules by increasing 
 %the number of symbols we use. Instead of the rule S $\to$ NP NP NP V, we can use
 %the following:
@@ -827,7 +827,7 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的规则。\footnote{%
 参见 \citew[\page 238]{Eisenberg2004a}中有关名词短语平铺结构的假说。
 }$^,$\footnote{%
-当然，还有诸如性和数的其他特征也应该在这一节里讨论。但是，为了降低解释的难度，我们暂不考虑这些问题。
+当然，还有诸如性和数的其他特征也应在本节讨论。但是，为了降低解释的难度，我们暂不考虑这些问题。
 }
 %Our previous rules for noun phrases simply combined a noun and a determiner and can therefore only be used to
 %analyze (\mex{0}a). The question we are facing now is how we can modify this rule or which additional rules we would
@@ -1241,6 +1241,7 @@ sm edges
 	 聪明 女人 \textsc{rel} 我们 认识\\
 %	 smart women who we know\\
 \zl
+
 如果名词是集合名词\iscesub{名词}{noun}{集合名词}{mass}的话，限定词在单数时可以被省略：
 %The determiner can also be omitted in singular if the noun denotes a mass noun\is{noun!mass}: 
 \eal
@@ -1265,6 +1266,7 @@ sm edges
 %	 fresh grain that just ground was\\
 %\mytrans{fresh grain that has just been ground}
 \zl
+
 最后，限定词和名词都可以被省略：
 %Finally, both the determiner and the noun can be omitted: 
 \eal
@@ -1281,6 +1283,7 @@ sm edges
 %	 there over stands fresh that just ground was\\
 %\mytrans{Over there is some fresh (grain) that has just been ground.}
 \zl
+
 图\vref{Abbildung-NP-ohne-Det}展示了相应的树形图。
 %Figure~\vref{Abbildung-NP-ohne-Det} shows the corresponding trees. 
 
@@ -1387,7 +1390,7 @@ sm edges
 \ex AP $\to$ kluge
 \ex \nbar $\to$ Mann
 \zl
-例（\mex{0}a）说明了kluge（聪明）与完整的形容词短语具有相同的属性。特别是，它不能带补足语。这与（\ref{bsp-grammatik-psg}）和（\ref{psg-binaer}）的语法中，代词er（他）作为一个NP的语类是一致的。
+例（\mex{0}a）说明了kluge（聪明）与完整的形容词短语具有相同的属性。特别是，它不能带补足语。这与（\ref{bsp-grammatik-psg}）和（\ref{psg-binaer}）的语法中，将代词er（他）归入NP的语类是一致的。
 %(\mex{0}a) states that \emph{kluge}  `smart' has the same properties as a full adjective phrase, in particular that it cannot be combined
 %with a complement. This is parallel to the categorization of the pronoun \emph{er} `he' as an NP in the grammars
 %(\ref{bsp-grammatik-psg}) and (\ref{psg-binaer}).
@@ -1749,7 +1752,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 \end{tabular}
 \z
 
-任何一个词类都可以替代X（如V、A或P）。在上面的规则中，没有横杠的X表示一个词汇项。如果想把横杠明确地表示出来，就需要写成\xnullc。正如（\ref{Regel-mit-Variablen}）中的规则所示，我们并没有明确指定限定词或名词的格的值，而是简单地要求在规则右边的值与之相符，（\mex{0}）中的规则要求规则右边（X 或 \xbarc）的元素的词类与规则左边（\xbarc 或 $\overline{\overline{\mbox{X}}}$）的元素的词类是一致的。
+任何一个词类都可以替代X（如V、A或P）。在上面的规则中，没有横杠的X表示一个词汇项。如果想把横杠明确地表示出来，就需要写成\xnullc。正如（\ref{Regel-mit-Variablen}）中的规则所示，我们并没有明确指定限定词或名词的格的值，而是简单地要求规则右边的值与之相符，（\mex{0}）中的规则要求规则右边（X 或 \xbarc）的元素的词类与其左边（\xbarc 或 $\overline{\overline{\mbox{X}}}$）的元素的词类是一致的。
 %Any word class can replace X (\eg V, A or P). The X without the bar stands for a lexical item in
 %the above rules. If one wants to make the bar level explicit, then it is possible to write \xnull. 
 %Just as with the rule in (\ref{Regel-mit-Variablen}), where we did not specify the case value of the
@@ -1772,8 +1775,7 @@ $\xbar \rightarrow$ \xbar~~$\overline{\overline{\mbox{adjunct}}}$            & \
 %210]{Chomsky70a} are specifiers. Furthermore, degree modifiers \citep[\page
 %210]{Chomsky70a} in adjective phrases and measurement indicators in prepositional phrases are also counted as specifiers.
 
-非中心语的位置只能满足最大投射，所以补足语、附加语和限定语总是有两个横杠。
-图\ref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
+非中心语的位置只能满足最大投射，所以补足语、附加语和限定语总是有两个横杠。图\ref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
 %图\vref{Abb-GB-Min-Max}显示了短语结构的最小结构和最大结构。
 %Non-head positions can only host maximal projections and therefore complements, adjuncts and specifiers always have two bars. 
 %Figure~\vref{Abb-GB-Min-Max} gives an overview of the minimal and maximal structure of phrases.
@@ -1813,7 +1815,7 @@ sm edges
 %of course also possible. 
 %This is shown in Figure~\ref{Abb-GB-Min-Max}.
 
-图\ref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美丽图片）的分析。
+图\ref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美图）的分析。
 %图\vref{Abb-das-schoene-Bild-von-Paris}显示了对NP结构das Bild（这张图片）和das schöne Bild von Paris（这张巴黎%的美丽图片）的分析。
 图\ref{Abb-das-schoene-Bild-von-Paris}中的NP结构和图\ref{Abbildung-AP}中的树形图都是最小产出结构的例子。图\ref{Abb-das-schoene-Bild-von-Paris}中左边的树形图也是没有附加语结构的一个例子。图\ref{Abb-das-schoene-Bild-von-Paris}中右边的结构是最大产出结构的一个例子：限定语、附加语和补足语都是齐全的。
 %Figure~\vref{Abb-das-schoene-Bild-von-Paris} shows the analysis of the NP structures \emph{das Bild} `the picture'
@@ -1856,12 +1858,12 @@ sm edges
 \end{forest}
 %
 \hfill\mbox{}
-\caption{\label{Abb-das-schoene-Bild-von-Paris}das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美丽图片）的\xbarc 分析}
+\caption{\label{Abb-das-schoene-Bild-von-Paris}das Bild（这张图片）和das schöne Bild von Paris（这张巴黎的美图）的\xbarc 分析}
 %\caption{\label{Abb-das-schoene-Bild-von-Paris}\xbar~analysis of \emph{das Bild} `the picture'
 %  and \emph{das schöne Bild von Paris} `the beautiful picture of Paris'}
 \end{figure}%
 
-\addlines
+%\addlines
 \largerpage
 图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
@@ -1951,7 +1953,7 @@ sm edges
 \item 请说明哪个文法或哪些文法是最好的？
 %\item Try to come up with some ways in which we can tell which of these possible grammars is or are the best?
 
-\item\label{uebung-np-empty} 在\ref{sec-psg-np}中，我们给出了名词短语的一部分句法。为什么说例（\mex{1}）中的规则是有问题的？
+\item\label{uebung-np-empty} 在\ref{sec-psg-np}中，我们给出了名词短语的一部分句法。为什么说（\mex{1}）中的规则有问题？
 %\item\label{uebung-np-empty} A fragment for noun phrase syntax was presented in Section~\ref{sec-psg-np}.
 %Why is the interaction of the rules in (\mex{1}) problematic?
 \eal
@@ -1961,7 +1963,7 @@ sm edges
 \ex N $\to$ $\epsilon$
 \zl
 
-\item 为什么在词典中把books标记为NP是不合适的？
+\item 为什么在词典中把books标记为NP不合适？
 %\item Why is it not a good idea to mark \emph{books} as NP in the lexicon?
 
 \item 为什么对于books这类名词来说，下面的规则并不适用？
@@ -2030,7 +2032,7 @@ NP $\to$ Det Adj
 %\item Why can \xbart not account for German adjective phrases without additional assumptions? (This
 %  task is for (native) speakers of German only.)
 
-\item 请写出能够分析例（\mex{1}）中的句子，并且能排除例（\mex{2}）中的句子的短语结构文法。
+\item 请写出能够分析（\mex{1}）中的句子，并且能排除（\mex{2}）中的句子的短语结构文法。
 %\item Come up with a phrase structure grammar that can be used to analyze the sentence in (\mex{1}), but also
 %rules out the sentences in (\mex{2}).
 
