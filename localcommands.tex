@@ -292,50 +292,43 @@ frbox/.style={
 
 \newcommand{\deter}{\textsc{det}{}\xspace}	%determiner LGR
 
-
+% The footnotes in mdframes are typeset like minipage footnotes.
+% We want to have 1, 2, 3, as numbers since a, b, c, are alien to Chinese.
+% https://tex.stackexchange.com/a/18500/18561
+\renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 
 \newcommand{\questions}[1]{~\newline\vspace*{-5mm}
-\memoizeset{disable}%
+{\memoizeset{disable}%
 \tblssy{people}{\hspace{-2em} 思考题}{\setlist{leftmargin=*}%
-\begin{extrafootnotes}
-#1%
-\end{extrafootnotes}}}
+#1}}}
 %\tblssy{people}{Comprehension questions}{#1}}
 
 \newcommand{\exercises}[1]{
 %\vspace*{-\baselineskip}%
-\memoizeset{disable}%
+{\memoizeset{disable}%
 \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
-\begin{extrafootnotes}
-#1%
-\end{extrafootnotes}}}
+#1}}}
 %\tblssy{pencil}{Exercises}{#1}}
 
 % if no questions precede the exercises do not do vspace
 \newcommand{\exercisesfirst}[1]{
 %\vspace*{-\baselineskip}%
-\memoizeset{disable}%
+{\memoizeset{disable}%
 \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
-\begin{extrafootnotes}
-#1%
-\end{extrafootnotes}}}
+#1}}}
 
 
 \newcommand{\furtherreading}[1]{%~\newline\vspace*{-10mm}
 %\vspace*{-\baselineskip}%
-\memoizeset{disable}%
+{\memoizeset{disable}%
 \tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}%
-\begin{extrafootnotes}%
-#1%
-\end{extrafootnotes}}}
+#1}}}
 
 \newcommand{\furtherreadingfirst}[1]{%~\newline\vspace*{-10mm}
 %\vspace*{-\baselineskip}%
-\memoizeset{disable}%
+{\memoizeset{disable}%
 \tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}%
-\begin{extrafootnotes}%
-#1%
-\end{extrafootnotes}}}
+#1}}}
 
 
 \newcommand{\greyboxrest}[1]{

@@ -846,13 +846,3 @@ Grünberger Str. 16\\
 
 \newcommand{\cndash}{\rule{0.2em}{0pt}\rule[0.35em]{1.6em}{0.05em}\rule{0.2em}{0pt}}
 
-
-
-% We do not want a, b, c, ... in footnotes in TBLS boxes.
-% Hence we define a different environment.
-
-\newenvironment{extrafootnotes}
-  {\par\edef\savedfootnotenumber{\number\value{footnote}}
-   \renewcommand{\thefootnote}{\arabic{footnote}}
-   \setcounter{footnote}{0}}
-  {\par\setcounter{footnote}{\savedfootnotenumber}}
