@@ -92,7 +92,7 @@ sm edges
 %If adjectives are combined with NPs, however, it still has to be explained why (\mex{1}) is ungrammatical.
 \ea[*]{
 \gll interessante die Bücher\\
-     有趣的 \textsc{art}.\textsc{def} 书\\
+     有趣的 \defart{} 书\\
 %     interesting the books\\
 }
 \z
@@ -156,7 +156,7 @@ sm edges
 %occurs between the complement and the adjective:
 \ea
 \gll der auf seinen Sohn sehr stolze Vater\\
-	 \textsc{art}.\textsc{def} \textsc{prep} 他的 儿子 非常 骄傲 父亲\\
+	 \defart{} \textsc{prep} 他的 儿子 非常 骄傲 父亲\\
 \mytrans{对儿子感到非常骄傲的父亲}
 %	 the on his son very proud father\\
 %\mytrans{the father very proud of his son}
@@ -172,14 +172,14 @@ sm edges
       \eal
       \ex[]{
       \gll Der Mann hilft der Frau.\\
-           \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人\\
+           \defart.\nom{} 男人 帮助 \defart.\dat{} 女人\\
       \mytrans{这个男人帮助这个女人。}
 %           the.\nom{} man helps the.\dat{} woman\\
 %      \mytrans{The man helps the woman.}
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
-           他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书\\
+           他.\nom{} 给 她.\dat{} \defart.\acc{} 书\\
       \mytrans{他给她这本书。}
 %           he.\nom{} gives her.\dat{} the.\acc{} book\\
 %      \mytrans{He gives her the book.}
@@ -198,12 +198,12 @@ sm edges
       \eal
       \ex[*]{
         \gll Der Mann hilft er.\\
-             \textsc{art}.\textsc{def}.\nom{} 男人 帮助 他.\nom{}\\
+             \defart.\nom{} 男人 帮助 他.\nom{}\\
 %             the.\nom{} man helps he.\nom{}\\
       }
       \ex[*]{
        \gll Er gibt ihr den Buch.\\
-	    他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书\\
+	    他.\nom{} 给 她.\dat{} \defart.\acc{} 书\\
 %	    he.\nom{} gives her.\dat the.\acc{} book\\
       }
       \zl
@@ -259,12 +259,12 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
 	[IP
-		[NP [die Frau;\textsc{art}.\textsc{def} 女人,roof]]
+		[NP [die Frau;\textsc{da} 女人,roof]]
 %		[NP [die Frau;the woman,roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[den Mann;\textsc{art}.\textsc{def} 男人, roof]]
+					[NP[den Mann;\textsc{da} 男人, roof]]
 %					[NP[den Mann;the man, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$[lieb-$_j$ -t;爱- -\textsc{3sg}]]]]]]
@@ -283,7 +283,7 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
         [IP
-           [NP, [der Mann$_i$;\textsc{art}.\textsc{def} 男人,roof]]
+           [NP, [der Mann$_i$;\textsc{da} 男人,roof]]
 %        [NP, [der Mann$_i$;the man, roof]]
         [I$'$
 	   [VP
@@ -303,7 +303,7 @@ sm edges
 \begin{forest}
 sm edges
 [CP
-   [NP, [der Mann$_i$;\textsc{art}.\textsc{def} 男人, roof]]
+   [NP, [der Mann$_i$;\textsc{da} 男人, roof]]
 %    [NP, [der Mann$_i$;the man, roof]]
    [C$'$
 	[C$^0$[ (wir-$_j$ -d)$_k$;\passive{} -\textsc{prs.3s}]]
@@ -332,12 +332,12 @@ sm edges
 	[C$^0$[dass;\textsc{comp}]]
 %	[C$^0$[dass;that]]
 	[IP
-		[NP [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
+		[NP [der Mann;\textsc{da} 男人, roof]]
 %		[NP [der Mann;the man, roof]]
 		[I$'$
 			[VP
 				[V$'$
-					[NP[der Frau;\textsc{art}.\textsc{def} 女人, roof]]
+					[NP[der Frau;\textsc{da} 女人, roof]]
 %					[NP[der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$[hilf-$_j$ -t;帮助- -\textsc{3sg}]]]]]]
@@ -352,7 +352,7 @@ sm edges
 \begin{forest}
 sm edges
 [CP
-[NP [der Mann$_i$;\textsc{art}.\textsc{def} 男人, roof]]
+[NP [der Mann$_i$;\textsc{da} 男人, roof]]
 %[NP [der Mann$_i$;the man, roof]]
 [C$'$
 	[C$^0$ [(hilf-$_j$ -t)$_k$;帮助- -\textsc{3sg}]]
@@ -362,7 +362,7 @@ sm edges
 		[I$'$
 			[VP
 				[V$'$
-					[NP [der Frau;\textsc{art}.\textsc{def} 女人, roof]]
+					[NP [der Frau;\textsc{da} 女人, roof]]
 %					[NP [der Frau;the woman, roof]]
 					[V$^0$[\trace$_j$]]]]
 			[I$^0$ [\trace$_k$]]]]]]
@@ -381,20 +381,20 @@ sm edges
 \label{Aufgabe-GPSG-Grammatik}
 \ex 
 \gll {}[dass] der Mann ihn liest\\
-	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def} 男人 它 读\\
+	 {}\spacebr{}\textsc{comp} \defart{} 男人 它 读\\
 \mytrans{这个男人读它}
 %	 {}\spacebr{}that the man it reads\\
 %\mytrans{that the man reads it}
 \ex 
 \gll {}[dass] ihn der Mann liest\\
-	{}\spacebr{}\textsc{comp} 它 \textsc{art}.\textsc{def} 男人 读\\
+	{}\spacebr{}\textsc{comp} 它 \defart{} 男人 读\\
 \mytrans{这个男人读它}
 %	{}\spacebr{}that it the man reads\\
 %\mytrans{that the man reads it}
 %\ex {}[dass] er gelesen wurde
 \ex\label{Aufgabe-GPSG-Grammatik-extraction}
 \gll Der Mann liest ihn.\\
-     \textsc{art}.\textsc{def} 男人 读 它\\
+     \defart{} 男人 读 它\\
 \mytrans{这个男人读它。}
 %     the man reads it\\
 %\mytrans{The man reads it.}
@@ -471,7 +471,7 @@ V3[+\textsc{fin}] $\to$ X[+\textsc{top}], V3[+\textsc{mc}]/X
 \begin{forest}
 sm edges
 [{V3[+\textsc{fin}, $+$\textsc{mc}]}
-   [{N2[nom, $+$\textsc{top}]} [der Mann;\textsc{art}.\textsc{def} 男人, roof]]
+   [{N2[nom, $+$\textsc{top}]} [der Mann;\textsc{da} 男人, roof]]
    [{V3[+\textsc{mc}]/N2[nom]}
      [{V[6, $+$\textsc{mc}]} [liest;读]]
      [{N2[acc]} [ihn;他]]]]
@@ -648,7 +648,7 @@ last & \ibox{2}\\
 %\item In the sentence (\mex{1}), the object of \emph{verschlingen} `devour' is in the prefield.
 \ea
 \gll Den Apfel verschlingt David.\\
-	 \textsc{art}.\textsc{def}.\acc{} 苹果 吞 David.\nom\\
+	 \defart.\acc{} 苹果 吞 David.\nom\\
 \mytrans{David在狼吞虎咽地吃苹果。}
 %	 the.\acc{} apple devours David.\nom\\
 %\mytrans{David is devouring the apple.}
@@ -713,7 +713,7 @@ CP & $\rightarrow$ & \multicolumn{2}{l}{\hspaceThis{(\up \textsc{df})}XP} & C$'$
 \centerline{%
 \deriv{7}{
 the   & children  & in  & the      & room                 & laugh & loudly\\
-\textsc{art}.\textsc{def}   & \textrm{孩子们}  & \textsc{prep}  & \textsc{art}.\textsc{def}    & \textrm{房间}   & \textrm{笑} & \textrm{大声}\\
+\defart{}   & \textrm{孩子们}  & \textsc{prep}  & \defart{}    & \textrm{房间}   & \textrm{笑} & \textrm{大声}\\
 \hr   & \hr       & \hr & \hr      & \hr                    & \hr     & \hr \\
 %
 %
@@ -747,7 +747,7 @@ np/n  & n       & (n\bs n)/np & np/n & n                & s\bs np  & (s\bs np)\b
 \centerline{%
 \deriv{4}{
 the & picture & of & Mary\\
-\textsc{art}.\textsc{def} & \textrm{照片}  & \textsc{prep} & Mary\\
+\defart{} & \textrm{照片}  & \textsc{prep} & Mary\\
 \hr   & \hr     & \hr        & \hr\\
 np/n  & n/pp    & pp/np      & np\\
 %
@@ -954,7 +954,7 @@ dg edges
 %The elementary trees in Figure~\vref{TAG-Elementarbaeume-dem-Koenig-treue} are needed for the analysis of (\mex{1}).
 \ea
 \gll der        dem        König treue Diener\\
-     \textsc{art}.\textsc{def}.\nom{} \textsc{art}.\textsc{def}.\dat{} 国王  忠诚 仆人\\
+     \defart.\nom{} \defart.\dat{} 国王  忠诚 仆人\\
 \mytrans{对国王忠诚的仆人}
 %     the.\nom{} the.\dat{} king  loyal servant\\
 %\mytrans{the servant loyal to the king}
@@ -965,14 +965,14 @@ dg edges
 \scalebox{.9}{
 \begin{forest}
 tag
-[Det [der;\textsc{art}.\textsc{def}]]
+[Det [der;\textsc{da}]]
 \end{forest}
 }
 \hfill
 \scalebox{.9}{
 \begin{forest}
 tag
-[Det [dem;\textsc{art}.\textsc{def}]]
+[Det [dem;\textsc{da}]]
 \end{forest}
 }
 \hfill
@@ -1032,7 +1032,7 @@ tag
   [AP
     [A$'$
       [NP
-        [Det [dem;\textsc{art}.\textsc{def}]]
+        [Det [dem;\textsc{da}]]
         [N$'$
           [N [König;国王]]]]
       [A [treue;忠诚]]]]
@@ -1045,7 +1045,7 @@ tag
 \begin{forest}
 tag
   [NP
-     [Det [der;\textsc{art}.\textsc{def}]]
+     [Det [der;\textsc{da}]]
      [N$'$
         [N [Diener;仆人]]]]
 \end{forest}
@@ -1063,12 +1063,12 @@ tag
 \begin{forest}
 tag
   [NP
-     [Det [der;\textsc{art}.\textsc{def}]]
+     [Det [der;\textsc{da}]]
      [N$'$
        [AP
          [A$'$
            [NP
-             [Det [dem;\textsc{art}.\textsc{def}]]
+             [Det [dem;\textsc{da}]]
              [N$'$
                [N [König;国王]]]]
            [A [treue;忠诚]]]]

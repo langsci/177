@@ -119,7 +119,7 @@ V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 %If we analyze the sentence in (\mex{1}) with the second rule in (\mex{-1}) and the second rule in (\mex{0}), then we arrive at the structure in %Figure~\vref{Abb-HFC}.
 \ea
 \gll Karl hat versucht, [den Kuchen aufzuessen].\\
-	Karl \textsc{aux} 尝试 \spacebr{}\textsc{art}.\textsc{def} 蛋糕 吃.INF.完\\
+	Karl \textsc{aux} 尝试 \spacebr{}\defart{} 蛋糕 吃.INF.完\\
 \mytrans{Karl想把蛋糕吃完。}
 %	Karl has tried \spacebr{}the cake to.eat.up\\
 %\mytrans{Karl tried to finish eating the cake.}
@@ -129,7 +129,7 @@ V[6, \textsc{vform} \emph{inf}]  & aufzuessen\\
 \begin{forest}
 sm edges
 [{V2[\vform \type{inf}]}
-  [N2 [den Kuchen;\textsc{art}.\textsc{def} 蛋糕,roof] ]
+  [N2 [den Kuchen;\textsc{da} 蛋糕,roof] ]
   [{V[6, \vform \type{inf}]} [aufzuessen;完.INF.吃] ] ]
 \end{forest}
 }
@@ -147,28 +147,28 @@ sm edges
 \label{Beispiel-GPSG-Kopfeigenschaften}
 \ex[]{
 \gll [Den Kuchen aufzuessen] hat er nicht gewagt.\\
-	\spacebr{}\textsc{art}.\textsc{def} 蛋糕 吃.INF.完 \textsc{aux} 他 不 敢\\
+	\spacebr{}\defart{} 蛋糕 吃.INF.完 \textsc{aux} 他 不 敢\\
 \mytrans{他不敢把蛋糕吃完。}
 %	\spacebr{}the cake to.eat.up has he not dared\\
 %\mytrans{He did not dare to finish eating the cake.}
 }
 \ex[*]{
 \gll [Den Kuchen aufzuessen] darf er nicht.\\
-\spacebr{}\textsc{art}.\textsc{def} 蛋糕 吃.INF.完 允许 他 不\\
+\spacebr{}\defart{} 蛋糕 吃.INF.完 允许 他 不\\
 %\spacebr{}the cake to.eat.up be.allowed.to he not\\
 }
 \glt 想说：\quotetrans{不让他把蛋糕吃完。}
 %\glt Intended: `He is not allowed to finish eating the cake.'
 \ex[*]{
 \gll [Den Kuchen aufessen] hat er nicht gewagt.\\
-	\spacebr{}\textsc{art}.\textsc{def} 蛋糕 吃.完 \textsc{aux} 他 不 敢\\
+	\spacebr{}\defart{} 蛋糕 吃.完 \textsc{aux} 他 不 敢\\
 \glt 想说：\quotetrans{他不敢吃完蛋糕。}
 %	\spacebr{}the cake eat.up has he not dared\\
 %\glt Intended: `He did not dare to finish eating the cake.'
 }
 \ex[]{
 \gll [Den Kuchen aufessen] darf er nicht.\\
-	\spacebr{}\textsc{art}.\textsc{def} 蛋糕 吃.完 允许 他 不\\
+	\spacebr{}\defart{} 蛋糕 吃.完 允许 他 不\\
 \mytrans{不让他把蛋糕吃完。}
 %	\spacebr{}the cake eaten.up be.allowed.to he not\\
 %\mytrans{He is not allowed to finish eating the cake.}
@@ -203,7 +203,7 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 %  is the head, it is also present at \nbar, following the Head Feature Convention.
 \ea
 \gll des Gespräch-s mit Maria über Klaus\\
-	 \textsc{art}.\textsc{def}.\gen{} 对话-\gen{} 跟 Maria 关于 Klaus\\
+	 \defart.\gen{} 对话-\gen{} 跟 Maria 关于 Klaus\\
 \mytrans{跟Maria有关Klaus的对话}
 %	 the.\gen{} conversation-\gen{} with Maria about Klaus\\
 %\mytrans{the conversation with Maria about Klaus}
@@ -226,29 +226,29 @@ N2表示NP，即在杠第二层的名词短语投射，而H1表示在杠第一�
 \label{bsp-GPSG-anordnung}
 \ex 
 \gll {}[weil] der Mann der Frau das Buch gibt\\
-     {}\spacebr{}因为 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
+     {}\spacebr{}因为 \defart.\nom{} 男人 \defart.\dat{} 女人 \defart.\acc{} 书 给\\
 \mytrans{因为这个男人把这本书给这个女人}
 %     {}\spacebr{}because the.\nom{} man the.\dat{} woman the.\acc{} book gives\\
 %\mytrans{because the man gives the book to the woman}
 \ex 
 \gll {}[weil] der Mann das Buch der Frau gibt\\
-     {}\spacebr{}因为 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 女人 给\\
+     {}\spacebr{}因为 \defart.\nom{} 男人 \defart.\acc{} 书 \defart.\dat{} 女人 给\\
 %     {}\spacebr{}because the.\nom{} man the.\acc{} book the.\dat{} woman gives\\
 \ex 
 \gll {}[weil] das Buch der Mann der Frau gibt\\
-{}\spacebr{}因为 \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\dat{} 女人 给\\
+{}\spacebr{}因为 \defart.\acc{} 书 \defart.\nom{} 男人 \defart.\dat{} 女人 给\\
 %{}\spacebr{}because the.\acc{} book the.\nom{} man the.\dat{} woman gives\\
 \ex 
 \gll {}[weil] das Buch der Frau der Mann gibt\\
-{}\spacebr{}因为 \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\nom{} 男人 给\\
+{}\spacebr{}因为 \defart.\acc{} 书 \defart.\dat{} 女人 \defart.\nom{} 男人 给\\
 %{}\spacebr{}because the.\acc{} book the.\dat{} woman the.\nom{} man gives\\
 \ex 
 \gll {}[weil] der Frau der Mann das Buch gibt\\
-{}\spacebr{}因为 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\nom{} 男人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
+{}\spacebr{}因为 \defart.\dat{} 女人 \defart.\nom{} 男人 \defart.\acc{} 书 给\\
 %{}\spacebr{}because the.\dat{} woman the.\nom{} man the.\acc{} book gives\\
 \ex 
 \gll {}[weil] der Frau das Buch der Mann gibt\\
-{}\spacebr{}因为 \textsc{art}.\textsc{def}.\dat{} 女人 \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\nom{} 男人 给\\
+{}\spacebr{}因为 \defart.\dat{} 女人 \defart.\acc{} 书 \defart.\nom{} 男人 给\\
 %{}\spacebr{}because the.\dat{} woman the.\acc{} book the.\nom{} man gives\\
 \zl
 
@@ -318,7 +318,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 \ea[*]{
 \label{bsp-der-frau-der-mann-gibt}
 \gll Der Frau der Mann gibt ein Buch.\\
-     \textsc{art}.\textsc{def} 女人.\dat{} \textsc{art}.\textsc{def}.\nom{} 男人 给 \textsc{art}.\textsc{def}.\acc{} 书\\
+     \defart{} 女人.\dat{} \defart.\nom{} 男人 给 \defart.\acc{} 书\\
 %     the woman.\dat{} the.\nom{} man gives the.\acc{} book\\
 }
 \z
@@ -381,13 +381,13 @@ V2  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc]  \\
 \eal
 \ex 
 \gll Er verspricht, [dem Mann das Buch zu geben].\\
-     他 承诺    \spacebr{}\textsc{art}.\textsc{def}.\dat{} 人 \textsc{art}.\textsc{def}.\acc{} 书 \textsc{inf} 给\\
+     他 承诺    \spacebr{}\defart.\dat{} 人 \defart.\acc{} 书 \textsc{inf} 给\\
 \mytrans{他承诺给这个人这本书。}
 %     he promises    \spacebr{}the.\dat{} man the.\acc{} book to give\\
 %\mytrans{He promises to give the man the book.}
 \ex 
 \gll Er verspricht, [das Buch dem Mann zu geben].\\
-	 他 承诺 \spacebr{}\textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 \textsc{inf} 给\\
+	 他 承诺 \spacebr{}\defart.\acc{} 书 \defart.\dat{} 人 \textsc{inf} 给\\
 \mytrans{他承诺把这本书给这个人。}
 %	 he promises \spacebr{}the.\acc{} book the.\dat{} man to give\\
 %\mytrans{He promises to give the book to the man.}
@@ -408,10 +408,10 @@ S $\to$ N2 V2
 \begin{forest}
 sm edges
 [S
-  [{N2[nom]} [der Mann;\textsc{art}.\textsc{def} 男人,roof] ]
+  [{N2[nom]} [der Mann;\textsc{da} 男人,roof] ]
   [V2
-    [{N2[dat]} [der Frau;\textsc{art}.\textsc{def} 女人,roof] ]
-    [{N2[acc]} [das Buch;\textsc{art}.\textsc{def} 书,roof] ] 
+    [{N2[dat]} [der Frau;\textsc{da} 女人,roof] ]
+    [{N2[acc]} [das Buch;\textsc{da} 书,roof] ] 
     [V [gibt;给] ] ] ]
 \end{forest}}
 \caption{\label{fig-gpsg-VP}德语的VP分析（在GPSG框架下并不合适）}
@@ -574,21 +574,21 @@ GPSG论著的作者们认为这一原则可以应用于大部分的GPSG规则，
 \eal
 \ex 
 \gll weil der Mann der Frau das Buch \emph{gestern} gab\\
-	 因为 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 昨天 给\\
+	 因为 \defart{} 男人 \defart{} 女人 \defart{} 书 昨天 给\\
 \mytrans{因为这个男人昨天把这本书给这个女人了}
 %	 because the man the woman the book yesterday gave\\
 %\mytrans{because the man gave the book to the woman yesterday}
 \ex 
 \gll weil der Mann der Frau \emph{gestern} das Buch gab\\
-	 因为 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 昨天 \textsc{art}.\textsc{def} 书 给\\
+	 因为 \defart{} 男人 \defart{} 女人 昨天 \defart{} 书 给\\
 %	 because the man the woman yesterday the book gave\\
 \ex 
 \gll weil der Mann \emph{gestern} der Frau das Buch gab\\
-	 因为 \textsc{art}.\textsc{def} 男人 昨天 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 给\\
+	 因为 \defart{} 男人 昨天 \defart{} 女人 \defart{} 书 给\\
 %	 because the man yesterday the woman the book gave\\
 \ex 
 \gll weil \emph{gestern} der Mann der Frau das Buch gab\\
-	 因为 昨天 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 给\\
+	 因为 昨天 \defart{} 男人 \defart{} 女人 \defart{} 书 给\\
 %	 because yesterday the man the woman the book gave\\
 \zl
 对于（\mex{0}）来说，我们需要如下的规则：
@@ -601,7 +601,7 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 %Of course, adjuncts can also occur between the arguments of verbs from other valence classes:
 \ea
 \gll weil (oft) die Frau (oft) dem Mann (oft) hilft\\
-	因为 \spacebr{}经常 \textsc{art}.\textsc{def} 女人 \spacebr{}经常 \textsc{art}.\textsc{def} 男人 \spacebr{}经常 帮助\\
+	因为 \spacebr{}经常 \defart{} 女人 \spacebr{}经常 \defart{} 男人 \spacebr{}经常 帮助\\
 \mytrans{因为这个女人经常帮助这个男人}
 %	because \spacebr{}often the woman \spacebr{}often the man \spacebr{}often helps\\
 %\mytrans{because the woman often helps the man}
@@ -610,7 +610,7 @@ V3  $\to$ H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} n
 %Furthermore, adjuncts can occur between the arguments of a VP:
 \ea
 \gll Der Mann hat versucht, der Frau heimlich das Buch zu geben.\\
-	\textsc{art}.\textsc{def} 男人 \textsc{aux} 尝试 \textsc{art}.\textsc{def} 女人 秘密地 \textsc{art}.\textsc{def} 书 \textsc{inf} 给\\
+	\defart{} 男人 \textsc{aux} 尝试 \defart{} 女人 秘密地 \defart{} 书 \textsc{inf} 给\\
 \mytrans{这个男人试着秘密地把这本书给这个女人。}
 %	the man has tried the woman secretly the book to give\\
 %\mytrans{The man tried to secretly give the book to the woman.}
@@ -747,13 +747,13 @@ V2  $\to$ W, AdvP*
 \eal
 \ex 
 \gll weil er ihm den Aufsatz gegeben hat\\
-      因为 他.\nom{} 他.\dat{} \textsc{art}.\textsc{def}.\acc{} 文章 给 \textsc{aux}\\
+      因为 他.\nom{} 他.\dat{} \defart.\acc{} 文章 给 \textsc{aux}\\
 \mytrans{因为他把这篇文章给他了}
 %     because he.\nom{} him.\dat{} the.\acc{} essay given has\\
 %\mytrans{because he has given him the essay}
 \ex 
 \gll weil ihm der Aufsatz gegeben wurde\\
-     因为 他.\dat{} \textsc{art}.\textsc{def}.\nom{} 文章 给 \passivepst\\
+     因为 他.\dat{} \defart.\nom{} 文章 给 \passivepst\\
 \mytrans{因为他被给了这篇文章}
 %     because him.\dat{} the.\nom{} essay given was\\
 %\mytrans{because he was given the essay}
@@ -822,12 +822,12 @@ VP[\textsc{pas}] $\to$ H[3], PP[\emph{to}], (PP[\emph{by}])\\
 \eal
 \ex
 \gll {} [\sub{S} The man [\sub{VP} devoured the carcass]].\\
-{} {} \textsc{art}.\textsc{def} 男人 {} 吞 \textsc{art}.\textsc{def} 骨架\\
+{} {} \defart{} 男人 {} 吞 \defart{} 骨架\\
 \mytrans{这个男人把骨架吞了。}
 %{} [\sub{S} The man [\sub{VP} devoured the carcass]].
 \ex
 \gll {} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].\\
-{} {} \textsc{art}.\textsc{def} 男人 {} 递 \textsc{art}.\textsc{def} 剑 \textsc{prep} Tracy\\
+{} {} \defart{} 男人 {} 递 \defart{} 剑 \textsc{prep} Tracy\\
 \mytrans{这个男人把剑递给Tracy。}
 %{} [\sub{S} The man [\sub{VP} handed the sword to Tracy]].
 \zl
@@ -841,12 +841,12 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 \eal
 \ex
 \gll {} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].\\
-{} {} \textsc{art}.\textsc{def} 骨架 \passivepst{} {} 吞 \hspaceThis{(}\textsc{prep} \textsc{art}.\textsc{def} 男人\\
+{} {} \defart{} 骨架 \passivepst{} {} 吞 \hspaceThis{(}\textsc{prep} \defart{} 男人\\
 \mytrans{这个骨架被（这个男人）吞了。}
 %{} [\sub{S} The carcass was [\sub{VP[\textsc{pas}]} devoured (by the man)]].
 \ex
 \gll {} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].\\
-{} {} \textsc{art}.\textsc{def} 剑 \passivepst{} {} 递 \textsc{prep} Tracy \hspaceThis{(}\textsc{prep} \textsc{art}.\textsc{def} 男人\\
+{} {} \defart{} 剑 \passivepst{} {} 递 \textsc{prep} Tracy \hspaceThis{(}\textsc{prep} \defart{} 男人\\
 \mytrans{这把剑被（这个男人）递给了Tracy。}
 %{} [\sub{S} The sword was [\sub{VP[\textsc{pas}]} handed to Tracy (by the man)]].
 \zl
@@ -941,13 +941,13 @@ GPSG的重要创新之一是它将长距离依存\isce[|(]{长距离依存}{long
 \eal
 \ex 
 \gll {}[dass] der Mann der Frau das Buch gibt\\
-	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书 给\\
+	 {}\spacebr{}\textsc{comp} \defart{} 男人 \defart{} 女人 \defart{} 书 给\\
 \mytrans{这个男人把这本书给这个女人}
 %	 {}\spacebr{}that the man the woman the book gives\\
 %\mytrans{that the man gives the book to the woman}
 \ex 
 \gll Gibt der Mann der Frau das Buch?\\
-	 给 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书\\
+	 给 \defart{} 男人 \defart{} 女人 \defart{} 书\\
 \mytrans{这个男人把这本书给这个女人了吗？}
 %	 gives the man the woman the book\\
 %\mytrans{Does the man give the book to the woman?}
@@ -957,13 +957,13 @@ GPSG的重要创新之一是它将长距离依存\isce[|(]{长距离依存}{long
 \eal
 \ex 
 \gll Der Mann gibt der Frau das Buch.\\
-     \textsc{art}.\textsc{def} 男人 给  \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书\\
+     \defart{} 男人 给  \defart{} 女人 \defart{} 书\\
 \mytrans{这个男人给这个女人这本书。}
 %     the man  gives the woman the book\\
 %\mytrans{The man gives the woman the book.}
 \ex 
 \gll Der Frau gibt der Mann das Buch.\\
-     \textsc{art}.\textsc{def} 女人 给 \textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 书\\
+     \defart{} 女人 给 \defart{} 男人 \defart{} 书\\
 \mytrans{这个女人给这个男人这本书。}
 %     the woman gives the man the book\\
 %\mytrans{The man gives the woman the book.}
@@ -1046,7 +1046,7 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 %}
 \ea
 \gll Dem Mann gibt er das Buch.\\
-     \textsc{art}.\textsc{def}.\dat{} 男人 给 他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书\\
+     \defart.\dat{} 男人 给 他.\nom{} \defart.\acc{} 书\\
 \mytrans{他给这个男人这本书。}
 %     the.\dat{} man gives he,\nom{} the.\acc{} book\\
 %\mytrans{He gives the man the book.}
@@ -1056,11 +1056,11 @@ V3[+\textsc{fin}] & N2[+\textsc{top}, \textsc{case} acc], & V3[+\textsc{mc}]/N2[
 \begin{forest}
 sm edges
 [{V3[+\textsc{fin}, $+$\textsc{mc}]}
-  [{N2[dat,+\textsc{top}]} [dem Mann;\textsc{art}.\textsc{def} 男人,roof] ]
+  [{N2[dat,+\textsc{top}]} [dem Mann;\textsc{da} 男人,roof] ]
   [{V3[+\textsc{mc}]/N2[dat]}
     [{V[8,+\textsc{mc}]} [gibt;给] ]
     [{N2[nom]} [er;他] ] 
-    [{N2[acc]} [das Buch;\textsc{art}.\textsc{def} 书, roof] ] ] ]
+    [{N2[acc]} [das Buch;\textsc{da} 书, roof] ] ] ]
 \end{forest}
 }
 \caption{\label{fig-nld-gpsg}GPSG中前置的分析}
@@ -1091,7 +1091,7 @@ sm edges
 %\mytrans{He apparently tried to cheat an insurance company out of two million Deutsche Marks.}
 \ex
 \gll "`Wer$_i$, glaubt er, daß er \_$_i$ ist?"' erregte sich ein Politiker vom Nil.\footnotemark\\
-    \spacebr{}谁 相信 他 \textsc{comp} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep}.\textsc{art}.\textsc{def} 尼罗河\\
+    \spacebr{}谁 相信 他 \textsc{comp} 他 {} \textsc{cop} 反驳 \textsc{refl} 一 政客 \textsc{prep}.\defart{} 尼罗河\\
 %     \spacebr{}who believes he that he {} is retort \textsc{refl} a politician from.the Nile\\
 \footnotetext{%
         《明镜周刊》（\emph{Spiegel}），1999年8月，第18页。
@@ -1110,7 +1110,7 @@ sm edges
 \ex
 {\raggedright
 \gll {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer, [~[~Angriffe~\_$_i$] zu lancieren].\footnotemark\\
-	 {}\spacebr{}反对 他 陷阱 \expl{} \textsc{art}.\textsc{def} 共和党人们 但是 更难
+	 {}\spacebr{}反对 他 陷阱 \expl{} \defart{} 共和党人们 但是 更难
          \hspaceThis{[~[~}攻击 \textsc{inf} 发起\\
 %	 {}\spacebr{}against him fall it the Republicans however more.difficult
 %         \hspaceThis{[~[~}attacks to launch\\
@@ -1196,21 +1196,21 @@ Principle}控制，它是指所有子结点的底部特征也在父结点上出�
 \ex
 []{ 
 \gll The          kennel which     Mary made and Fido sleeps in         has          been stolen.\\
-     \textsc{art}.\textsc{def} 狗窝 \textsc{rel} Mary 做   和  Fido 睡觉 在……里 \textsc{aux} \passive{} 偷\\	 \jambox{(= S/NP \& S/NP)}
+     \defart{} 狗窝 \textsc{rel} Mary 做   和  Fido 睡觉 在……里 \textsc{aux} \passive{} 偷\\	 \jambox{(= S/NP \& S/NP)}
 \mytrans{Mary做的那个Fido睡在里面的狗窝被偷了。}
 %[]{ The kennel     which Mary made and Fido sleeps in has been stolen.	 \jambox{(= S/NP %\& S/NP)}
 }
 \ex
 []{ 
 \gll The kennel in which Mary keeps drugs and Fido sleeps has been stolen.\hspace{-2pt}\\
-\textsc{art}.\textsc{def} 狗窝 在……里 \textsc{rel} Mary 放 药 和 Fido 睡觉 \textsc{aux} \passive{} 偷\\\jambox{(= S/PP \& S/PP)}
+\defart{} 狗窝 在……里 \textsc{rel} Mary 放 药 和 Fido 睡觉 \textsc{aux} \passive{} 偷\\\jambox{(= S/PP \& S/PP)}
 \mytrans{Mary放药的那个Fido睡在里面的狗窝被偷了。}
 %[]{ The kennel in which Mary keeps drugs and Fido sleeps has been stolen.	\jambox{(= %S/PP \& S/PP)}
 }
 \ex
 [*]{
 \gll The kennel (in) which Mary made and Fido sleeps has been stolen.\hspace{-2pt}\\
-\textsc{art}.\textsc{def} 狗窝 \hspaceThis{(}在……里 \textsc{rel} Mary 做 和 Fido 睡觉 \textsc{aux} \passive{} 偷\\\jambox{(= S/NP \& S/PP)}
+\defart{} 狗窝 \hspaceThis{(}在……里 \textsc{rel} Mary 做 和 Fido 睡觉 \textsc{aux} \passive{} 偷\\\jambox{(= S/NP \& S/PP)}
 %[*]{The kennel (in) which Mary made and Fido sleeps has been stolen.     \jambox{(= S/NP %\& S/PP)}
 }
 \zl
@@ -1397,20 +1397,20 @@ GPSG中配价的编码在几个方面是有问题的。例如，如何将词的�
 \eal
 \ex 
 \gll {}[dass] der Mann ihn liest\\
-	 {}\spacebr{}\textsc{comp} \textsc{art}.\textsc{def}.\nom{} 男人 它.\acc{} 读\\
+	 {}\spacebr{}\textsc{comp} \defart.\nom{} 男人 它.\acc{} 读\\
 \mytrans{这个男人在读它}
 %	 {}\spacebr{}that the.\nom{} man him.\acc{} reads\\
 %\mytrans{that the man reads it}
 \ex 
 \gll {}[dass] ihn der Mann liest\\
-	{}\spacebr{}\textsc{comp} 它.\acc{} \textsc{art}.\textsc{def}.\nom{} 男人 读\\
+	{}\spacebr{}\textsc{comp} 它.\acc{} \defart.\nom{} 男人 读\\
 \mytrans{这个男人在读它}
 %	{}\spacebr{}that him.\acc{} the.\nom{} man reads\\
 %\mytrans{that the man reads it}
 %\ex {}[dass] er gelesen wurde
 \ex 
 \gll Der Mann liest ihn.\\
-     \textsc{art}.\textsc{def}.\nom{} 男人 读 它.\acc\\
+     \defart.\nom{} 男人 读 它.\acc\\
 \mytrans{这个男人在读它。}
 %     the.\nom{} man reads him.\acc\\
 %\mytrans{The man reads it.}

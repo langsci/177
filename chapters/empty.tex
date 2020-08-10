@@ -121,7 +121,7 @@
 %construction such as (\mex{1}), then it is clear that a noun has been omitted:
 \ea
 \gll Ich nehme den roten Ball und du den blauen.\\
-	 我 拿 \textsc{art}.\textsc{def}.\acc{} 红的.\acc{} 球 并且 你 \textsc{art}.\textsc{def}.\acc{} 蓝.\acc{}\\
+	 我 拿 \defart.\acc{} 红的.\acc{} 球 并且 你 \defart.\acc{} 蓝.\acc{}\\
 \mytrans{我拿红色的球，你拿蓝色的。}
 %\gll Ich nehme den roten Ball und du den blauen.\\
 %	 I take the.\acc{} red.\acc{} ball and you the.\acc{} blue.\acc{}\\
@@ -193,19 +193,19 @@ np & $\epsilon$\\
 \eal
 \ex 
 \gll Er$_i$ liest t$_i$ die Berichte.\\
-	 他 读 {}    \textsc{art}.\textsc{def} 报告\\
+	 他 读 {}    \defart{} 报告\\
 %\gll Er$_i$ liest t$_i$ die Berichte.\\
 %	 he reads {}    the reports\\
 \ex 
 \gll Oft$_i$ liest er die Berichte t$_i$ nicht.\\
-	 经常 读 他 \textsc{art}.\textsc{def} 报告 {} \textsc{neg}\\
+	 经常 读 他 \defart{} 报告 {} \textsc{neg}\\
 \mytrans{他经常不看报告。}
 %\gll Oft$_i$ liest er die Berichte t$_i$ nicht.\\
 %	 often reads he the reports {} not\\
 %\mytrans{Often, he does not read the reports.}
 \ex 
 \gll Lesen$_i$ wird er die Berichte t$_i$ müssen.\\
-	 读书 将 他 \textsc{art}.\textsc{def} 报告 {} 必须\\
+	 读书 将 他 \defart{} 报告 {} 必须\\
 \mytrans{他得看这些报告。}
 %\gll Lesen$_i$ wird er die Berichte t$_i$ müssen.\\
 %	 read will he the reports {} must\\
@@ -272,19 +272,19 @@ sm edges
 \eal
 \ex 
 \gll Er$_i$ liest$_j$ t$_i$ die Berichte t$_j$.\\
-	 他 读 {}    \textsc{art}.\textsc{def} 报告\\
+	 他 读 {}    \defart{} 报告\\
 %\gll Er$_i$ liest$_j$ t$_i$ die Berichte t$_j$.\\
 %	 he reads {}    the reports\\
 \ex 
 \gll Oft$_i$ liest$_j$ er die Berichte t$_i$ nicht t$_j$.\\
-	经常 读 他 \textsc{art}.\textsc{def} 报告 {} \textsc{neg}\\
+	经常 读 他 \defart{} 报告 {} \textsc{neg}\\
 \mytrans{他经常不看这些报告。}
 %\gll Oft$_i$ liest$_j$ er die Berichte t$_i$ nicht t$_j$.\\
 %	 often reads he the reports {} not\\
 %\mytrans{Often, he does not read the reports.}
 \ex 
 \gll Lesen$_i$ wird$_j$ er die Berichte t$_i$ müssen t$_j$.\\
-	 读 将 他 \textsc{art}.\textsc{def} 报告 {} 必须\\
+	 读 将 他 \defart{} 报告 {} 必须\\
 \mytrans{他得看这些报告。}
 %\gll Lesen$_i$ wird$_j$ er die Berichte t$_i$ müssen t$_j$.\\
 %	 read will he the reports {} must\\
@@ -302,7 +302,7 @@ sm edges
                                     \textsc{head$|$dsl} \ibox{1},\\
                                     \subcat \ibox{2} }
    [{\ibox{3} NP[\type{acc}]}
-     [ die Berichte;\textsc{art}.\textsc{def} 报告, roof] ]
+     [ die Berichte;\textsc{da} 报告, roof] ]
    [V\ibox{1}\feattab{
                     \textsc{head$|$dsl} \ibox{1},\\
                     \subcat \ibox{2} $\oplus$ \sliste{ \ibox{3} NP[\type{acc}] }} 
@@ -323,7 +323,7 @@ sm edges, for tree={l sep= 5ex}
      \textsc{head$|$dsl} V[\subcat \ibox{2} $\oplus$ \sliste{ \ibox{3} NP[\type{acc}] }],\\
      \subcat \ibox{2}} 
    [{\ibox{3} NP[\type{acc}]}
-      [die Berichte;\textsc{art}.\textsc{def} 报告, roof]]]
+      [die Berichte;\textsc{da} 报告, roof]]]
 \end{forest}
 \caption{\label{Abbildung-Kopf-ohne-Verbspur}使用单分支投射对动词位置进行的分析}
 %\caption{\label{Abbildung-Kopf-ohne-Verbspur}Analysis of verb position using a unary projection}
@@ -374,7 +374,7 @@ sm edges, for tree={l sep= 5ex}
 \eal
 \ex 
 \gll Den Aufsatz$_i$ liest$_j$ [er t$_i$ t$_j$].\\
-	\textsc{art}.\textsc{def} 文章 读 \spacebr{}他\\
+	\defart{} 文章 读 \spacebr{}他\\
 \mytrans{他正在读这篇文章。}
 %\gll Den Aufsatz$_i$ liest$_j$ [er t$_i$ t$_j$].\\
 %	 the essay reads \spacebr{}he\\
@@ -397,7 +397,7 @@ sm edges, for tree={l sep= 5ex}
 \eal
 \ex 
 \gll Den Aufsatz$_i$ liest$_j$ er [nicht t$_i$ t$_j$].\\
-	\textsc{art}.\textsc{def} 文章 读 他 \spacebr{}\textsc{neg}\\
+	\defart{} 文章 读 他 \spacebr{}\textsc{neg}\\
 \mytrans{他现在没有读这篇文章。}
 %\gll Den Aufsatz$_i$ liest$_j$ er [nicht t$_i$ t$_j$].\\
 %	 the  reads he \spacebr{}not\\
@@ -480,7 +480,7 @@ V$'$ $\to$ $\epsilon$
 \ea
 \label{ex-alle-wieder}
 \gll dass Max alle Fenster wieder öffnete\\
-	 \textsc{comp} Max \textsc{art}.\textsc{def} 窗户 再次 打开\\
+	 \textsc{comp} Max \defart{} 窗户 再次 打开\\
 \mytrans{Max再次打开所有窗户这件事}
 %\gll dass Max alle Fenster wieder öffnete\\
 %	 that Max all windows again opened\\
@@ -555,7 +555,7 @@ Agrs\iscesubsub{范畴}{category}{功能}{functional}{AgrS}{AgrS}和AgrO\iscesub
 \ea
 \label{ex-wieder-alle}
 \gll dass Max wieder alle Fenster öffnete\\
-    \textsc{comp} Max 再次 \textsc{art}.\textsc{def} 窗户 打开\\
+    \textsc{comp} Max 再次 \defart{} 窗户 打开\\
 %\gll dass Max wieder alle Fenster öffnete\\
 %     that Max again all windows opened\\
 \z
@@ -581,7 +581,7 @@ Agrs\iscesubsub{范畴}{category}{功能}{functional}{AgrS}{AgrS}和AgrO\iscesub
 %Before we turn to (\ref{ex-alle-wieder}) and (\ref{ex-wieder-alle}), let us consider the simpler sentence in (\mex{1}):
 \ea
 \gll dass Max alle Fenster öffnete\\
-	 \textsc{comp} Max \textsc{art}.\textsc{def} 窗户 打开\\
+	 \textsc{comp} Max \defart{} 窗户 打开\\
 \mytrans{Max打开所有这些窗户}
 %\gll dass Max alle Fenster öffnete\\
 %	 that Max all windows opened\\
@@ -593,7 +593,7 @@ Agrs\iscesubsub{范畴}{category}{功能}{functional}{AgrS}{AgrS}和AgrO\iscesub
 %to force this reading if one rules out the first reading through contextual information \citep{Egg99a}:
 \ea
 \gll Erst war nur die Hälfte der Fenster im Bus auf, aber dann öffnete Max alle Fenster.\\
-     起初 \textsc{cop} 只有 \textsc{art}.\textsc{def} 一半 \textsc{art}.\textsc{def} 窗户 \textsc{prep}.\textsc{art}.\textsc{def} 公共汽车 打开 但是 然后 打开 Max 所有 窗户\\
+     起初 \textsc{cop} 只有 \defart{} 一半 \defart{} 窗户 \textsc{prep}.\defart{} 公共汽车 打开 但是 然后 打开 Max 所有 窗户\\
 \mytrans{起初，公共汽车上的窗户只有一半是打开的，但是Max后来打开了所有的窗户。}
 %\gll Erst war nur die Hälfte der Fenster im Bus auf, aber dann öffnete Max alle Fenster.\\
 %     first was only the half of.the windows in.the bus open but then opened Max all windows\\
@@ -945,7 +945,7 @@ Egg为例 （\ref{ex-wieder-alle}） 中的句子列出了以下意义⸺重写�
 %such as (\mex{1}), lexical rules have been proposed (\citealp{Verspoor97a}; \citealp{Wechsler97a}; \citealp{WN2001a}; \citealp[Chapter~5]{Mueller2002b}).
 \ea
 \gll [dass] Peter den Teich leer fischt\\
-	 \spacebr{}\textsc{comp} Peter \textsc{art}.\textsc{def} 池塘 空 钓\\
+	 \spacebr{}\textsc{comp} Peter \defart{} 池塘 空 钓\\
 \mytrans{Peter钓空了池塘}
 %\gll [dass] Peter den Teich leer fischt\\
 %	 \spacebr{}that Peter the pond empty fishes\\
@@ -963,7 +963,7 @@ sm edges
 		[Peter;Peter]]
 	[V{[\subcat \sliste{ NP[\type{nom}] }]}
 		[NP{[\type{acc}]}
-			[den Teich;\textsc{art}.\textsc{def} 池塘, roof]]
+			[den Teich;\textsc{da} 池塘, roof]]
 		[V{[\subcat \sliste{ NP[\type{nom}], NP[\type{acc}] } ]}
 			[Adj
 				[leer;空]]
@@ -994,7 +994,7 @@ sm edges
 		[Peter;Peter]]
 	[{V[\subcat \sliste{ NP[\type{nom}] }]}
 		[{NP[\type{acc}]}
-			[den Teich;\textsc{art}.\textsc{def} 池塘,roof]]
+			[den Teich;\textsc{da} 池塘,roof]]
 		[{V[\subcat \sliste{ NP{[\type{nom}]}, NP{[\type{acc}]} }]}
 			[Adj
 				[leer;空]]

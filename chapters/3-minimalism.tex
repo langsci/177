@@ -84,7 +84,7 @@ Chomsky提出，只用两条操作（规则）来整合语言：外部合并与�
 %be externally merged with another object and so on. As an example consider the Determiner Phrase (DP) in (\mex{1}):
 \ea
 \gll the          man who            we know\\
-     \textsc{art}.\textsc{def} 男人 \textsc{rel} 我们 认识\\
+     \defart{} 男人 \textsc{rel} 我们 认识\\
 \mytrans{我们认识的那个男人}
 \z
 为了得到这个DP，动词know与它的宾语who通过外部合并到一起。在下面讨论的几个中间过程的合并之后，know who将与we合并，最后who通过内部合并移到左边，得到了who we know。这个关系小句还可以通过外部合并与man组合在一起，并且继续进行下去。
@@ -322,11 +322,11 @@ baseline
 \eal
 \ex[*]{
 \gll Emily showed himself Benjamin in the mirror.\\
-     Emily 展示 他自己 Benjamin 在……中 \textsc{art}.\textsc{def} 镜子\\
+     Emily 展示 他自己 Benjamin 在……中 \defart{} 镜子\\
 }
 \ex[]{
 \gll Peter showed himself Benjamin in the mirror.\\
-     Peter 展示 他自己 Benjamin 在……中 \textsc{art}.\textsc{def} 镜子\\
+     Peter 展示 他自己 Benjamin 在……中 \defart{} 镜子\\
 \mytrans{Peter在镜子中给他自己看Benjamin。}
 }
 \zl
@@ -527,7 +527,7 @@ baseline
 %analysis of (\mex{1}):
 \ea
 \gll Anna will read the book.\\
-Anna 将 读 \textsc{art}.\textsc{def} 书\\
+Anna 将 读 \defart{} 书\\
 \mytrans{Anna将要读这本书。}
 \z
 \begin{figure}
@@ -545,7 +545,7 @@ baseline
          [\textit{read}\\读] [\textit{v}]]
        [VP
          [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
-         [DP [\textit{the book}\\\textsc{art}.\textsc{def} 书, roof]]]]]]]
+         [DP [\textit{the book}\\\defart{} 书, roof]]]]]]]
 \end{forest}
 \caption{\label{fig-Anna-will-read-the-book-minimalism}包括情态动词和从\textit{v}到T的主语移位的Anna will read the book的句子分析}
 %\caption{\label{fig-Anna-will-read-the-book-minimalism}Analysis of \emph{Anna will read the book.}
@@ -577,7 +577,7 @@ baseline
          [\textit{read}\\读] [\textit{v}]]
        [VP
          [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
-         [DP [\textit{the book}\\\textsc{art}.\textsc{def} 书, roof]]]]]]]]
+         [DP [\textit{the book}\\\defart{} 书, roof]]]]]]]]
 \end{forest}
   \caption{\label{fig-Anna-will-read-the-book-minimalism-CP}带有空C和小句类型特征Decl的CP的Anna will read the book的句子分析}
 %\caption{\label{fig-Anna-will-read-the-book-minimalism-CP}Analysis of \emph{Anna will read the book.}
@@ -683,7 +683,7 @@ baseline
 %approach, since it is compatible with the analysis of so-called unaccusative verbs and the passive. Figure~\vref{fig-Anna-reads-the-book-minimalism-TP} shows the TP for (\mex{1}):
 \ea
 \gll Anna reads the book.\\
-    Anna 读 \textsc{art}.\textsc{def}  书\\
+    Anna 读 \defart{}  书\\
 \mytrans{Anna读这本书。}
 \z
 \begin{figure}
@@ -701,7 +701,7 @@ baseline
          [\textit{read}\\读] [\textit{v} {[\st{acc}]}]]
        [VP
          [\phonliste{ read } {[V, \st{\textit{u}D}]}\\读\hspaceThis{[V, \st{\textit{u}D}]}]
-         [DP{[\st{acc}]} [\textit{the book}\\\textsc{art}.\textsc{def} 书, roof]]]]]]]
+         [DP{[\st{acc}]} [\textit{the book}\\\defart{} 书, roof]]]]]]]
 \end{forest}
 \caption{\label{fig-Anna-reads-the-book-minimalism-TP}T的格指派和Anna reads the book这句的TP中的\textit{v}}
 %\caption{\label{fig-Anna-reads-the-book-minimalism-TP}Case assignment by T and \textit{v} in the TP
@@ -873,12 +873,12 @@ Anna和the book这两个DP开始是没有赋值的不可解读的格特征：[\t
 \eal
 \ex[*]{
 \gll der getanzte Mann\\
-     \textsc{art}.\textsc{def} 跳舞 人\\
+     \defart{} 跳舞 人\\
 %     the danced man\\
 }
 \ex[]{
 \gll der gestorbene Mann\\
-     \textsc{art}.\textsc{def} 死 人\\
+     \defart{} 死 人\\
 \mytrans{这个死人}
 %     the died man\\
 %\mytrans{the dead man}
@@ -890,13 +890,13 @@ Anna和the book这两个DP开始是没有赋值的不可解读的格特征：[\t
 \eal
 \ex
 \gll dass der Mann das Buch gelesen hat\\
-     \textsc{comp} \textsc{art}.\textsc{def} 人  \textsc{art}.\textsc{def} 书 读 \textsc{aux}\\
+     \textsc{comp} \defart{} 人  \defart{} 书 读 \textsc{aux}\\
 \mytrans{这个人读这本书}
 %     that the man  the book read has\\
 %\mytrans{that the man read the book}
 \ex
 \gll das gelesene Buch\\
-     \textsc{art}.\textsc{def} 读 书\\
+     \defart{} 读 书\\
 %     the read book\\
 \zl
 现在的设想是gestorben（死）的论元看上去像宾语，而getanzt（跳舞）的论元像主语。如果形容词性被动式可以说明宾语，这就解释了为什么例（\mex{-1}b）是可能的，而例（\mex{-1}a）是不可能的。
@@ -1289,18 +1289,18 @@ AgrN\iscesubsub{范畴}{category}{功能}{functional}{AgrN}{AgrN}、AgrV\iscesub
 \eal
 \ex 
 \gll just walked into the           room [\sub{DP} someone who we don't know].\\
-     刚   走      进   \textsc{art}.\textsc{def}  房间 {}         某人     \textsc{rel}  我们 \textsc{aux}.不 认识\\
+     刚   走      进   \defart{}  房间 {}         某人     \textsc{rel}  我们 \textsc{aux}.不 认识\\
 \mytrans{刚走进房间[\sub{DP} 我们不认识的某人]}
 \ex 
 \gll Someone$_i$ just walked into the         room [\sub{DP} \_$_i$ who we don't know].\\
-     某人         刚   走     进   \textsc{art}.\textsc{def} 房间 {}        {}     \textsc{rel} 我们 \textsc{aux}.不 认识\\
+     某人         刚   走     进   \defart{} 房间 {}        {}     \textsc{rel} 我们 \textsc{aux}.不 认识\\
 \mytrans{某人刚走进房间[\sub{DP} \_$_i$ 我们不认识的]}
 \zl
 （i.a）一定是某种推导出的中间表示，否则英语就不会是SV(O)，而是V(O)S。
 由此，（i.a）是通过将just walked into the room这个VP前置而由（ii）推导出来的。
 \ea
 \gll Someone who we don't know just walked into the room\\
-某人 \textsc{rel} 我们 \textsc{aux}.不 认识 刚 走 进 \textsc{art}.\textsc{def} 房间\\
+某人 \textsc{rel} 我们 \textsc{aux}.不 认识 刚 走 进 \defart{} 房间\\
 \mytrans{我们不认知的某个人刚走进房间}
 \z
 需要承认的是，这类分析不能轻易地与语言运用模型组合（参见第\ref{Abschnitt-Diskussion-Performanz}章）。
@@ -1393,7 +1393,7 @@ where n children=0{delay=with translation}{}
 	[TopP
 		[DP$_j$ [diese Sonate;这 \, 奏鸣曲,tier=below,l=31\baselineskip]]
 		[SubjP
-			[DP$_i$ [der Mann;\textsc{art}.\textsc{def} 男人,tier=word]]
+			[DP$_i$ [der Mann;\textsc{da} 男人,tier=word]]
 			[ModP
 				[AdvP [wahrscheinlich;可能,l=20\baselineskip]]
 				[ObjP
@@ -1585,13 +1585,13 @@ geben（这个人要给的这本书）这句话中处理TopP或FocP。由此，u
 \eal
 \ex 
 \gll um dem Mann das Buch zu geben\\
-     \textsc{prep} \textsc{art}.\textsc{def} 人 \textsc{art}.\textsc{def} 书 \textsc{inf} 给\\
+     \textsc{prep} \defart{} 人 \defart{} 书 \textsc{inf} 给\\
 \mytrans{给那个人这本书}
 %     for the man the book to give\\
 %\mytrans{to give the man the book}
 \ex 
 \gll um das Buch dem Mann zu geben\\
-     \textsc{prep} \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 人 \textsc{inf} 给\\
+     \textsc{prep} \defart{} 书 \defart{} 人 \textsc{inf} 给\\
 \mytrans{把这本书给那个人}
 %     for the book the man to give\\
 %\mytrans{to give the book to the man}
@@ -1621,11 +1621,11 @@ geben（这个人要给的这本书）这句话中处理TopP或FocP。由此，u
 \eal
 \ex 
 \gll Ken could not have heard the news.\\
-Ken 能够 不 \textsc{aux} 听 \textsc{art}.\textsc{def} 新闻\\
+Ken 能够 不 \textsc{aux} 听 \defart{} 新闻\\
 \mytrans{Ken不可能听过这个新闻。}
 \ex 
 \gll Ken could have not heard the news.\\
-Ken 能够 \textsc{aux} 不 听 \textsc{art}.\textsc{def} 新闻\\
+Ken 能够 \textsc{aux} 不 听 \defart{} 新闻\\
 \mytrans{Ken可能没听过这个新闻。}
 \ex 
 \gll a [not unapproachable] figure\\
@@ -1633,7 +1633,7 @@ Ken 能够 \textsc{aux} 不 听 \textsc{art}.\textsc{def} 新闻\\
 \mytrans{一位不可接触的人物}
 \ex 
 \gll {}[Not always] has she seasoned the meat.\\
-{}\spacebr{}不 总是 \textsc{aux} 她 调味 \textsc{art}.\textsc{def} 肉\\
+{}\spacebr{}不 总是 \textsc{aux} 她 调味 \defart{} 肉\\
 \mytrans{她并不总是把肉调味。}
 \zl
 如果所有这些投射只是没有更多属性（有关动词形式、形容词词性、副词词性）的NegP，就无法说明它们不同的句法分布。否定明显只是更多普遍性问题的一个特殊情况，因为副词在传统意义上可以附加在形容词上构成形容词短语，而不是Chinque意义上的副词短语。如例（\mex{1}）中的副词oft（经常）修饰lachender（笑）构成了形容词短语oft lachender，这就像未被修饰的形容词助词lachender：它修饰Mann（人），并位于它前面。
@@ -1707,13 +1707,13 @@ Ken 能够 \textsc{aux} 不 听 \textsc{art}.\textsc{def} 新闻\\
 \eal
 \ex 
 \gll dass die Polizei gestern Linguisten verhaftete\\
-	 \textsc{comp} \textsc{art}.\textsc{def} 经常 昨天 语言学家 逮捕\\
+	 \textsc{comp} \defart{} 经常 昨天 语言学家 逮捕\\
 \mytrans{昨天警察逮捕了语言学家}
 %	 that the police yesterday linguists arrested\\
 %\mytrans{that the police arrested linguists yesterday}
 \ex 
 \gll dass die Polizei Linguisten gestern verhaftete\\
-	 \textsc{comp} \textsc{art}.\textsc{def} 警察 语言学家 昨天 逮捕\\
+	 \textsc{comp} \defart{} 警察 语言学家 昨天 逮捕\\
 \mytrans{昨天警察逮捕了语言学家}
 %	 that the police linguists yesterday arrested\\
 %\mytrans{that the police arrested linguists yesterday}
@@ -2036,7 +2036,7 @@ Chomsky关于自由关系小句的方法是有趣的，但是它并不能全方�
 }
 \ex 
 \gll {}[\emph{Wessen}      Birne]    noch halbwegs in der Fassung steckt, pflegt solcherlei Erloschene zu meiden;\footnotemark\\
-       \hspaceThis{[}谁的 灯泡/头 也  半路  在……中 \textsc{art}.\textsc{def} 插座  插      使用  这样      消逝    \textsc{inf} 避免\\
+       \hspaceThis{[}谁的 灯泡/头 也  半路  在……中 \defart{} 插座  插      使用  这样      消逝    \textsc{inf} 避免\\
 \mytrans{那些还有一半智慧的人想要避免这类空字符；}
 %       \hspaceThis{[}whose bulb/head yet  halfway  in the socket  is      uses  such       extinct    to avoid\\
 %\mytrans{Those who still have their wits half way about them tend to avoid such vacant characters;}
@@ -2046,7 +2046,7 @@ Chomsky关于自由关系小句的方法是有趣的，但是它并不能全方�
 }
 \ex 
 \gll {}[\emph{Wessen}     Schuhe] "`danach"'  besprenkelt sind, hat keinen Baum gefunden und war nicht zu einem Bogen in der Lage.\footnotemark\\
-       \hspaceThis{[}谁的  鞋      \hspaceThis{"`}此后 有斑点的    \passiveprs{}   \textsc{aux} 没有一个   树 找到    和 \textsc{cop} 不   \textsc{prep} 一     弓   在……上 \textsc{art}.\textsc{def} 位置\\
+       \hspaceThis{[}谁的  鞋      \hspaceThis{"`}此后 有斑点的    \passiveprs{}   \textsc{aux} 没有一个   树 找到    和 \textsc{cop} 不   \textsc{prep} 一     弓   在……上 \defart{} 位置\\
 \mytrans{那些后来鞋上有斑点的人既找不到树也不会尿成弧形。}
 %       \hspaceThis{[}whose    shoes   after.that speckled    are   has no     tree found    and was not   to a     bow   in the position\\
 %\mytrans{Those whose shoes are spattered afterwards couldn't find a tree and were incapable of peeing in an arc.}
@@ -2314,11 +2314,11 @@ Chomsky在他早期的研究中没有严格遵守线性化的思路，但是某�
 \eal
 \ex\label{ex-whistled-a} 
 \gll Hobbs whistled and hummed the same tune.\\
-Hobbs 吹口哨 和 哼 \textsc{art}.\textsc{def} 相同 调子\\
+Hobbs 吹口哨 和 哼 \defart{} 相同 调子\\
 \mytrans{Hobbs吹着口哨，并哼着相同的曲调。}
 \ex\label{ex-whistled-b} 
 \gll Hobbs whistled the same tune and hummed the same tune.\\
-Hobbs 吹口哨 \textsc{art}.\textsc{def} 相同 调子 和 哼 \textsc{art}.\textsc{def} 相同 调子\\
+Hobbs 吹口哨 \defart{} 相同 调子 和 哼 \defart{} 相同 调子\\
 \mytrans{Hobbs吹着相同的调子，并且哼着相同的调子。}
 \zl
 因为语义解读不能在语音形式层面看到像删除这样的处理 \citep[\S~3]{Chomsky95a-u}，语义之间的区别不能通过删除材料的分析而得到解释。
@@ -3037,7 +3037,7 @@ non-head-dtrs & \liste{ $\beta$ }\\
 %}
 \ea
 \gll Gelesen$_i$ hat$_j$ das Buch keiner \_$_i$ \_$_j$.\\
-        读 \textsc{aux} \textsc{art}.\textsc{def} 书 没有人\\
+        读 \textsc{aux} \defart{} 书 没有人\\
 %     read        has     the book nobody\\
 \z
 相反，Stabler被迫要假定\pmexb{1}中这样的分析（参见G.\ 
@@ -3048,11 +3048,11 @@ non-head-dtrs & \liste{ $\beta$ }\\
 \eal
 \ex 
 \gll {}Hat [das Buch]$_j$ [keiner [\sub{VP} \_$_j$ gelesen]].\\
-	{}\textsc{aux} \spacebr{}\textsc{art}.\textsc{def} 书 \spacebr{}没有人 \spacebr{}{} {} 读\\
+	{}\textsc{aux} \spacebr{}\defart{} 书 \spacebr{}没有人 \spacebr{}{} {} 读\\
 \mytrans{这本书没人读。}
 \ex 
 \gll {}[\sub{VP} \_$_j$ Gelesen]$_i$ hat [das Buch]$_j$ [keiner \_$_i$].\\
-	{}\spacebr{}{} {} 读 \textsc{aux} \spacebr{}\textsc{art}.\textsc{def} 书 \spacebr{}没有人\\
+	{}\spacebr{}{} {} 读 \textsc{aux} \spacebr{}\defart{} 书 \spacebr{}没有人\\
 \mytrans{这本书没人读。}
 \zl
  \citet[\page 281]{Haider93a}、% \citet[Abschnitt~]{deKuthy2002a}, 
@@ -3086,7 +3086,7 @@ non-head-dtrs & \liste{ $\beta$ }\\
 }
 \ex 
 \gll The          man who$_i$ [Mary loves \_$_i$] and [Sally hates \_$_i$] computed my tax.\\
-     \textsc{art}.\textsc{def} 男人 \textsc{rel} Mary 爱 {} 和 Sally 恨 {} 计算 我的 税\\
+     \defart{} 男人 \textsc{rel} Mary 爱 {} 和 Sally 恨 {} 计算 我的 税\\
 \mytrans{Mary喜爱但是Sally憎恨的这个男人计算了我的税。}
 \zl
  \citet{Gazdar81}针对GPSG解决了这一问题，而且该解决方案也被用在HPSG中。最简方案社团试着通过引进侧边移位\isce{侧边移位}{sideward movement}来解决这些问题\citep{Nunes2004a-u}，其中组成成分可以被插入子树中。所以例（\mex{0}a）中，Bagels从hates的宾语位置拷贝到like的宾语位置，然后两个拷贝都与前置成分相关。Kobele批评这些方法，因为它们过度生成，而且需要复杂的过滤。相反，他提出将GPSG式的\slaschc 机制引入到最简方案的理论中\citep{Kobele2008a}。
@@ -3231,10 +3231,10 @@ baseline
 %a determiner:
 \ea
 \gll vom Bus\\
-     \textsc{prep}.\textsc{art}.\textsc{def} 公交车\\
+     \textsc{prep}.\defart{} 公交车\\
 %     from.the bus\\
 \z
-在复杂描述可以用来描写依存关系的理论中，被依存的对象可以被部分满足。所以比如说HPSG中，像vom（\textsc{prep}.\textsc{art}.\textsc{def}）这个复合介词可以选择一个\nbarc ，它是一个缺少限定语的名词性投射：
+在复杂描述可以用来描写依存关系的理论中，被依存的对象可以被部分满足。所以比如说HPSG中，像vom（\textsc{prep}.\defart{}）这个复合介词可以选择一个\nbarc ，它是一个缺少限定语的名词性投射：
 %In theories in which complex descriptions can be used to describe dependants, the dependent may be
 %partly saturated. So for instance in HPSG, fused prepositions like \emph{vom} `from.the' can select an \nbar,
 %which is a nominal projection lacking a specifier:
@@ -3350,7 +3350,7 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 在 \citet[\S~9]{Veenstra98a}中有一个计数的词汇项。这个词汇项包括一个计数的集合，它包括功能中心语，可以用在某类句子中。比如说，Veenstra认为计数可以用在带有二价动词的句子和主语位于首位的句子、带有一价动词的嵌套句、带有一价动词的wh-疑问句，以及带有一价动词的极性疑问句。这一计数集合的一个成分对应于一个特别的句法配置以及在构式语法\indexcxg 思想下的短语构式。Veenstra的分析并不是在最简方案下找到的计数的概念的形式化。通常，它被认为是包含所有句子生成所需词汇项的计数。如（i）所示，复杂句可以包括带有不同句子类型的句子的组合：
 \ea
 \gll Der          Mann, der         behauptet hat,         dass          Maria gelacht hat,         steht neben        der          Palme, die im letzten Jahr gepflanzt wurde.\\
-     \textsc{art}.\textsc{def} 男人  \textsc{rel} 声称      \textsc{aux} \textsc{comp} Maria 大笑     \textsc{aux} 站   在……旁 \textsc{art}.\textsc{def} 棕榈树 \textsc{rel} \textsc{prep}.\textsc{art}.\textsc{def} 上次 年 种植 \passivepst{}\\
+     \defart{} 男人  \textsc{rel} 声称      \textsc{aux} \textsc{comp} Maria 大笑     \textsc{aux} 站   在……旁 \defart{} 棕榈树 \textsc{rel} \textsc{prep}.\defart{} 上次 年 种植 \passivepst{}\\
 %\glt `The man who claimed that Maria laughed is standing next to the palm tree that was planted
 %last year.'
 %\mytrans{The man who claimed that Maria laughed is standing next to the palm tree planted last year.}
@@ -3362,16 +3362,16 @@ Chomsky在最简方案中的主要目标是简化针对语言形式属性的理�
 \eal
 \ex 
 \gll the king will -s eat\\
-	\textsc{art}.\textsc{def} 国王 将 -\textsc{3sg} 吃\\
+	\defart{} 国王 将 -\textsc{3sg} 吃\\
 \ex 
 \gll the king have -s eat -en\\
-	\textsc{art}.\textsc{def} 国王 \textsc{aux} -\textsc{3sg} 吃 -\textsc{ptcp}\\
+	\defart{} 国王 \textsc{aux} -\textsc{3sg} 吃 -\textsc{ptcp}\\
 \ex 
 \gll the king be -s eat -ing\\
-	\textsc{art}.\textsc{def} 国王 \textsc{aux} -\textsc{3sg} 吃 -\textsc{ptcp}\\
+	\defart{} 国王 \textsc{aux} -\textsc{3sg} 吃 -\textsc{ptcp}\\
 \ex 
 \gll the king -s will -s have been eat -ing the pie\\
-	\textsc{art}.\textsc{def} 国王 -\textsc{3sg} 将 -\textsc{3sg} \textsc{aux} \textsc{aux} 吃 -\textsc{ptcp} \textsc{art}.\textsc{def} 派\\
+	\defart{} 国王 -\textsc{3sg} 将 -\textsc{3sg} \textsc{aux} \textsc{aux} 吃 -\textsc{ptcp} \defart{} 派\\
 \zllast
 }，没有对多重一致关系的处理\isce{一致关系}{agreement} \citep[\S~27.4.3]{Stabler2010b}，尤其是没有语义\isce{语义}{semantics}。PF和LF的过程也没有被模拟。\footnote{%
 	参见 \citet{SE2002a}有关PF和LF-移位以及拷贝部分删除的建议（第285页）。对于这一点的应用并不是微不足道的。

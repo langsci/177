@@ -136,7 +136,7 @@ Y $*$ X$\backslash$Y = X
 \centerline{%
 \deriv{4}{
 the  & cat & chased         & Mary\\
-\textsc{art}.\textsc{def}  & \textrm{猫} & \textrm{追}         & \textup{Mary}\\
+\defart{}  & \textrm{猫} & \textrm{追}         & \textup{Mary}\\
 \hr  & \hr & \hr            & \hr \\
 np/n & n   & (s\bs np)/np   & np\\
 \multicolumn{2}{@{}c}{\forwardapp} & \multicolumn{2}{c@{}}{\forwardapp}\\
@@ -257,7 +257,7 @@ np:\relation{jacob}  & (s\bs np)/np: \lambda y.\lambda x.eat'(x, y) & np:apples'
 \oneline{%
 \deriv{9}{
 The  & small & cat & chased       & Mary & quickly                & round                     & the & garden\\
-\textsc{art}.\textsc{def}  & \textrm{小} & \textrm{猫} & \textrm{追}       & \textup{Mary} & \textrm{迅速地}                & \textrm{绕着}                     & \textsc{art}.\textsc{def}  & \textrm{花园}\\
+\defart{}  & \textrm{小} & \textrm{猫} & \textrm{追}       & \textup{Mary} & \textrm{迅速地}                & \textrm{绕着}                     & \defart{}  & \textrm{花园}\\
 \hr  & \hr   & \hr & \hr          & \hr  & \hr                    & \hr                       & \hr & \hr\\
 np/n & n/n   & n   & (s\bs np)/np & np   & (s\bs np)\bs (s\bs np) & (s\bs np)\bs (s\bs np)/np & np/n & n\\
      & \multicolumn{2}{c}{\forwardapp} & \multicolumn{2}{c}{\forwardapp}\\
@@ -332,11 +332,11 @@ np   & (s\bs np)/\mathit{PstP} & \mathit{PstP}/np_{by} & np_{by}/np & np\\
 \eal
 \ex 
 \gll He gave the book to Mary.\\
-他 给 \textsc{art}.\textsc{def} 书 \textsc{prep} Mary\\
+他 给 \defart{} 书 \textsc{prep} Mary\\
 \mytrans{他把书给Mary。}
 \ex 
 \gll The book was given to Mary.\\
-\textsc{art}.\textsc{def} 书  \passivepst{} 给 \textsc{prep} Mary\\
+\defart{} 书  \passivepst{} 给 \textsc{prep} Mary\\
 \mytrans{书被交给Mary了。}
 \zl
 gave（给）有范畴((s\bs np)/pp)/np，也就是说这个动词必须先结合一个名词短语NP the book（那本书）和一个介词短语to Mary（给Mary），最后再组合一个主语。
@@ -743,7 +743,7 @@ Steedman针对上述讨论的规则提出了一种简洁的表示法，当然，
  \citet[\page 614]{SB2006a-u}使用下面的关系小句（\mex{1}）阐述了长距离依存的一种分析：
 \ea
 \gll the man  that Manny says Anna married \\
-     \textsc{art}.\textsc{def} 男人 \textsc{rel} Manny 说 Anna 结婚 \\
+     \defart{} 男人 \textsc{rel} Manny 说 Anna 结婚 \\
 \mytrans{Manny说Anna与之结婚的那个男人}
 \z
 这里的关系代词是married的宾语，但出现在了从句Anna married的外部。
@@ -793,11 +793,11 @@ Manny和says，然后是Manny says和Anna married都可以通过前向组合进�
 \ex\label{Beispiel-Minister}
 % TODO: Chinese translation
 \gll Here's the         minister [[in                         [the                  middle [of [whose sermon]]]] the dog barked]. \\
-     这里.\textsc{cop} \textsc{art}.\textsc{def} 牧师      \hspaceThis{[[}在 \spacebr \textsc{art}.\textsc{def} 中间     \spacebr\textsc{prep} \textsc{rel} 布道  \textsc{art}.\textsc{def} 狗 叫 \\
+     这里.\textsc{cop} \defart{} 牧师      \hspaceThis{[[}在 \spacebr \defart{} 中间     \spacebr\textsc{prep} \textsc{rel} 布道  \defart{} 狗 叫 \\
 \mytrans{这有一位牧师，在他布道的过程中有只狗在叫。}\footnote{\citew[\page 212]{ps2}。}
 \ex 
 \gll Reports [the                 height of           the           lettering on            the          covers of which] the government prescribes should be abolished.\\
-     报告     \spacebr \textsc{art}.\textsc{def} 高度   \textsc{prep}  \textsc{art}.\textsc{def} 印字       在……上  \textsc{art}.\textsc{def} 封面    \textsc{prep} \textsc{rel}  \textsc{art}.\textsc{def} 政府 规定 应该 \passive{} 废除 \\
+     报告     \spacebr \defart{} 高度   \textsc{prep}  \defart{} 印字       在……上  \defart{} 封面    \textsc{prep} \textsc{rel}  \defart{} 政府 规定 应该 \passive{} 废除 \\
 \mytrans{那些政府规定了封面上印字高度的报告应该被废弃。}\label{Ross-reports}\footnote{\citew[\page 109]{Ross67}。\nocite{Ross86a-u}}
 \zl
 在（\mex{0}）中, 关系代词嵌入了一个短语中，这个短语是从关系小句剩余部分中抽取出来的。
@@ -818,7 +818,7 @@ Manny和says，然后是Manny says和Anna married都可以通过前向组合进�
 \eal
 \ex 
 \gll a report the cover of which Keats (expects that Chapman) will design\\
-一 报告 \textsc{art}.\textsc{def} 封面 \textsc{prep} \textsc{rel} Keats \hspaceThis{(}期待 \textsc{comp} Chapman 将 设计\\
+一 报告 \defart{} 封面 \textsc{prep} \textsc{rel} Keats \hspaceThis{(}期待 \textsc{comp} Chapman 将 设计\\
 \mytrans{一个Keats（以为Chapman）会设计的报告的封面}
 \ex 
 \gll a subject on which Keats (expects that Chapman) will speak\\
@@ -834,7 +834,7 @@ Ross的例子（\ref{Ross-reports}）同样可以用（\mex{-1}c）进行分析�
 %TODO: 书中有的错误，少了一个[
 \ea
 \gll [reports    [the height of the lettering on the covers of]\sub{np/np} which]\sub{(n$\backslash$n)/(s/np)} the government prescribes\\
-     \spacebr{}报告 \spacebr\textsc{art}.\textsc{def} 高度 \textsc{prep} \textsc{art}.\textsc{def} 字体 \textsc{prep} \textsc{art}.\textsc{def} 封面 \textsc{prep} \textsc{rel} \textsc{art}.\textsc{def} 政府 规定\\
+     \spacebr{}报告 \spacebr\defart{} 高度 \textsc{prep} \defart{} 字体 \textsc{prep} \defart{} 封面 \textsc{prep} \textsc{rel} \defart{} 政府 规定\\
 \mytrans{报告了政府规定的封面上字体的高度}
 \z
 复杂表达式the height of the lettering on the covers of在应用了组合规则之后形成np/np，而剩下的分析同（\mex{-1}a）的分析。
@@ -843,7 +843,7 @@ Ross的例子（\ref{Ross-reports}）同样可以用（\mex{-1}c）进行分析�
 在这个新问题中，关系短语是从小句的中间进行提取的（参见\citealp[\page 410]{Pollard88a}）：
 \ea
 \gll Fido is the dog which we put downstairs. \\
-     Fido \textsc{cop} \textsc{art}.\textsc{def} 狗 \textsc{rel} 我们 放置 楼下 \\
+     Fido \textsc{cop} \defart{} 狗 \textsc{rel} 我们 放置 楼下 \\
 \mytrans{Fido是那条我们放到楼下的狗。}
 \z
 这里的问题和我们在话题化中遇到的问题很像：we put对应的范畴是(s/pp)/np而不是s/np，正因为这个原因我们无法直接将其与（\ref{le-Relativpronomen-CG}）中的关系代词进行组合。
@@ -860,7 +860,7 @@ Ross的例子（\ref{Ross-reports}）同样可以用（\mex{-1}c）进行分析�
 Morrill注意到我们需要假定新的词汇项以解释如（\mex{1}）中的现象：关系代词出现在相应短语的中间位置。
 \ea
 \gll the          contract [the                 loss of           which after so much wrangling] John would finally have to pay for \\
-     \textsc{art}.\textsc{def} 合同      \spacebr\textsc{art}.\textsc{def} 损失 \textsc{prep} \textsc{rel} 在……后 如此 多 争论 John 将 最终 \textsc{aux} \textsc{inf} 赔偿 \textsc{prep}\\
+     \defart{} 合同      \spacebr\defart{} 损失 \textsc{prep} \textsc{rel} 在……后 如此 多 争论 John 将 最终 \textsc{aux} \textsc{inf} 赔偿 \textsc{prep}\\
 \mytrans{其损失在经过如此多争论之后John最终必须赔偿的那个合同}
 \z
 上述现象可以通过增加词汇项描写来解决，另有一些其他现象也可以进行类似的处理。
@@ -902,13 +902,13 @@ Morrill提出了一种不同的分析思路⸺增加函数和变元组合的方�
 \item 分析下面的句子：
 \ea
 \gll The children in the room laugh loudly. \\
-     \textsc{art}.\textsc{def} 孩子们 在……里 \textsc{art}.\textsc{def} 房间 笑 大声\\
+     \defart{} 孩子们 在……里 \defart{} 房间 笑 大声\\
 \mytrans{那个房间里的孩子们笑得很大声。}
 \z
 \item\label{ue-Xbar-CG} 分析（\mex{1}）中的名词短语：
 \ea
 \gll the picture of Mary \\
-     \textsc{art}.\textsc{def} 照片 \textsc{prep} Mary \\
+     \defart{} 照片 \textsc{prep} Mary \\
 \mytrans{Mary的照片}
 \z
 比较你的分析结果和图\vref{Abbildung-NP-mit-PP-Argument}中的结构，思考\xbarc 句法中的范畴在范畴语法中是如何表示的。

@@ -25,7 +25,11 @@ echo $x
 #sed -e 's/indexcxgc/indexcxg/g'   $x >$x.neu
 #sed -e 's/indexgpsgc/indexgpsg/g'   $x >$x.neu
 #sed -e 's/indexhpsgstopc/indexhpsgstop/g'   $x >$x.neu
-sed -e 's/indexotc/indexot/g'   $x >$x.neu
+#sed -e 's/\\textsc{art}.\\textsc{def}/\\defart{}/g'   $x >$x.neu
+#sed -e 's/\\defart{}\./\\defart\./g'   $x >$x.neu
+#sed -e 's/\\defart{}]/\\textsc{da}]/g'   $x >$x.neu
+#sed -e 's/; \\defart{}]/; \\textsc{da}]/g'   $x >$x.neu
+sed -e 's/;\\defart{}/;\\textsc{da}/g'   $x >$x.neu
 end
 
 

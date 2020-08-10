@@ -19,7 +19,7 @@
 %and \emph{gibt} `gives' is a verb\is{verb}.
 \ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
 \gll weil er das Buch dem Mann gibt\\
-	 因为 他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 人 给\\
+	 因为 他 \defart{} 书 \defart{} 人 给\\
 \mytrans{因为他给人这本书}
 \z
 %\ea\label{bsp-weil-er-das-buch-dem-mann-gibt}
@@ -121,11 +121,11 @@ sm edges
 [S
   [NP [er;他] ]
   [NP
-    [Det [das;\textsc{art}.\textsc{def}] ]
+    [Det [das;\textsc{da}] ]
     [N [Buch;书] ] 
   ]
   [NP
-    [Det [dem;\textsc{art}.\textsc{def}] ]
+    [Det [dem;\textsc{da}] ]
     [N [Mann;人] ] 
   ]
   [V [gibt;给] ]
@@ -171,7 +171,7 @@ node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄�
 %such as (\mex{1}).
 \ea
 \gll {}[\sub{S} [\sub{NP} er] [\sub{NP} [\sub{Det} das] [\sub{N} Buch]]  [\sub{NP} [\sub{Det} dem] [\sub{N} Mann]] [\sub{V} gibt]]\\
-     {}         {}       他  {}        {}       \textsc{art}.\textsc{def}  {}      书    {}        {}       \textsc{art}.\textsc{def}  {}       人     {}      给\\  
+     {}         {}       他  {}        {}       \defart{}  {}      书    {}        {}       \defart{}  {}       人     {}      给\\  
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
 \z
 无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这与具体的结构没有太多关系。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
@@ -180,7 +180,7 @@ node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄�
 %in (\mex{1}), which differs from (\ref{bsp-weil-er-das-buch-dem-mann-gibt}) in the order of objects: 
 \ea
 \gll {}[weil] er dem Mann das Buch gibt\\
-	 {}\spacebr{}因为 他.\nom{} \textsc{art}.\textsc{def}.\dat{} 人 \textsc{art}.\textsc{def}.\acc{} 书 给\\
+	 {}\spacebr{}因为 他.\nom{} \defart.\dat{} 人 \defart.\acc{} 书 给\\
 \mytrans{因为他给这个人这本书}
 \z
 %\ea
@@ -222,11 +222,11 @@ sm edges
   [NP [er;他] ]
   [V
     [NP
-      [Det [das;\textsc{art}.\textsc{def}] ]
+      [Det [das;\textsc{da}] ]
       [N [Buch;书] ] ]
     [V
       [NP
-        [Det [dem;\textsc{art}.\textsc{def}] ]
+        [Det [dem;\textsc{da}] ]
         [N [Mann;人] ] ]
       [V [gibt;给] ] ] ] ]
 \end{forest}
@@ -236,7 +236,7 @@ sm edges
 %  binary branching structure}
 \end{figure}%
 
-实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\textsc{art}.\textsc{def}的宾格形式），那么就会生成不合语法的句子，如例（\mex{1}b--d）所示：\footnote{%
+实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\defart{}的宾格形式），那么就会生成不合语法的句子，如例（\mex{1}b--d）所示：\footnote{%
 应用（\ref{psg-binaer}）中的文法，我们还会遇到别的问题，即我们无法确定什么时候话语是完整的，因为符号V被用来表示V和NP的所有组合。由此，我们也可以用这个文法来分析（i）中的句子：
 %Both the grammar in (\mex{0}) and (\ref{bsp-grammatik-psg}) are too imprecise.
 %If we adopt additional lexical entries for \emph{ich} `I' and \emph{den} `the' (accusative) in our grammar, then we would incorrectly
@@ -247,11 +247,11 @@ sm edges
 \eal
 \ex[*]{
 \gll der Mann erwartet\\
-     \textsc{art}.\textsc{def} 人 希望\\
+     \defart{} 人 希望\\
 }
 \ex[*]{
 \gll des        Mannes     er        das Buch dem Mann gibt\\
-     \textsc{art}.\textsc{def}.\gen{} 人.\gen{} 他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
+     \defart.\gen{} 人.\gen{} 他.\nom{} \defart.\acc{} 书 \defart.\dat{} 人 给\\
 }
 \zl
 动词所带的论元数量应该在文法中显示出来。在下面的章节中，我们将介绍动词对论元的选择（价）在不同的语法理论中是如何表述的。
@@ -261,20 +261,20 @@ sm edges
 \eal
 \ex[]{
 \gll er        das Buch        dem Mann       gibt\\
-     他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
+     他.\nom{} \defart.\acc{} 书 \defart.\dat{} 人 给\\
 \mytrans{他把书给这个人。}
 }
 \ex[*]{
 \gll ich      das Buch        dem Mann       gibt\\
-     我.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\dat{} 人 给\\
+     我.\nom{} \defart.\acc{} 书 \defart.\dat{} 人 给\\
 }
 \ex[*]{
 \gll er        das        Buch den        Mann gibt\\
-     他.\nom{} \textsc{art}.\textsc{def}.\acc{} 书 \textsc{art}.\textsc{def}.\acc{} 人 给\\
+     他.\nom{} \defart.\acc{} 书 \defart.\acc{} 人 给\\
 }
 \ex[*]{
 \gll er        den        Buch       dem Mann gibt\\
-     他.\nom{} \textsc{art}.\textsc{def}.\mas{} 书(\neu) \textsc{art}.\textsc{def} 人  给\\
+     他.\nom{} \defart.\mas{} 书(\neu) \defart{} 人  给\\
 }
 \zl
 例（\mex{0}b）违反了一致原则\isce[|(]{一致关系}{agreement} ，具体来说：ich（我）和gibt（给）并不搭配。例（\mex{0}c）是不合乎语法的，因为没有满足动词对格的约束条件。最后，例（\mex{0}d）也是不合乎语法的，因为在限定词和名词之间缺少一致关系。我们不能将den（这）这个阳性的宾格成分与Buch（书）这个中性词搭配。基于上述原因，这两个成分的性属性不同，所以说，二者不能搭配。
@@ -351,11 +351,11 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 }
 \ex[*]{
 \gll Er schläft das Buch.\\
-	 他 睡觉 \textsc{art}.\textsc{def} 书\\
+	 他 睡觉 \defart{} 书\\
 }
 \ex[]{
 \gll Er kennt das Buch.\\
-	 他 知道 \textsc{art}.\textsc{def} 书\\
+	 他 知道 \defart{} 书\\
 \mytrans{他知道这本书。}
 }
 \ex[*]{
@@ -398,16 +398,16 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \eal\settowidth\jamwidth{（屈折类型）}
 \ex 
 \gll der Mann, die Frau, das Buch\\
-	 \textsc{art}.\textsc{def}.\mas{} 人(\mas) \textsc{art}.\textsc{def}.\fem{} 女人(\fem) \textsc{art}.\textsc{def}.\neu{} 书(\neu)\\\jambox{（性）}
+	 \defart.\mas{} 人(\mas) \defart.\fem{} 女人(\fem) \defart.\neu{} 书(\neu)\\\jambox{（性）}
 \ex 
 \gll das Buch, die Bücher\\
-	 \textsc{art}.\textsc{def} 书.\sg{} \textsc{art}.\textsc{def} 书.\pl\\\jambox{（数）}
+	 \defart{} 书.\sg{} \defart{} 书.\pl\\\jambox{（数）}
 \ex 
 \gll des Buches, dem Buch\\
-	 \textsc{art}.\textsc{def}.\gen{} 书.\gen{} \textsc{art}.\textsc{def}.\dat{} 书\\\jambox{（格）}
+	 \defart.\gen{} 书.\gen{} \defart.\dat{} 书\\\jambox{（格）}
 \ex\isce{屈折类型}{inflectional class} 
 \gll ein Beamter, der Beamte\\
-	 一 公务员 \textsc{art}.\textsc{def} 公务员\\\jambox{（屈折类型）}
+	 一 公务员 \defart{} 公务员\\\jambox{（屈折类型）}
 \zl
 %\eal\settowidth\jamwidth{(Inflectional class)}
 %\ex 
@@ -994,7 +994,7 @@ sm edges
 \eal
 \ex 
 \gll dass Peter dem Mann das Buch \st{gibt} und Maria der Frau die Schallplatte gibt\\
-     \textsc{comp} Peter \textsc{art}.\textsc{def} 人 \textsc{art}.\textsc{def} 书 给 和 Maria \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 唱片 给\\
+     \textsc{comp} Peter \defart{} 人 \defart{} 书 给 和 Maria \defart{} 女人 \defart{} 唱片 给\\
 \mytrans{Peter给这个人这本书，并且Maria给这个女人这张唱片}
 %	 that Peter the man the book gives and Maria the woman the record gives\\
 %\mytrans{that Peters gives the book to the man and Maria the record to the woman}
@@ -1034,19 +1034,19 @@ sm edges
 \label{Beispiele-NP-relationale-Nomina}
 \ex 
 \gll der Vater von Peter\\
-	 \textsc{art}.\textsc{def} 爸爸 ……的 彼得\\
+	 \defart{} 爸爸 ……的 彼得\\
 \mytrans{Peter的爸爸}
 %	 the father of Peter\\
 %\mytrans{Peter's father}
 \ex 
 \gll das Bild vom Gleimtunnel\\
-	 \textsc{art}.\textsc{def} 照片 ……的.\textsc{art}.\textsc{def} 格莱姆隧道\\
+	 \defart{} 照片 ……的.\defart{} 格莱姆隧道\\
 \mytrans{格莱姆隧道的照片}
 %	 the picture of.the Gleimtunnel\\
 %\mytrans{the picture of the Gleimtunnel}
 \ex 
 \gll das Kommen des Installateurs\\
-	 \textsc{art}.\textsc{def} 来 \textsc{art}.\textsc{def} 水管工\\
+	 \defart{} 来 \defart{} 水管工\\
 \mytrans{水管工的检查}
 %	 the coming of.the plumber\\
 %\mytrans{the plumber's visit}
@@ -1067,21 +1067,21 @@ sm edges
 \begin{forest}
 sm edges
 [NP
- [Det [das;\textsc{art}.\textsc{def}] ]
+ [Det [das;\textsc{da}] ]
  [\nbar
    [N [Bild;照片] ]
-   [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道,roof ] ] ] ]
+   [PP [vom Gleimtunnel;……的.\textsc{da} 格莱姆隧道,roof ] ] ] ]
 \end{forest}%
 \hspace{2em}%
 \begin{forest}
 sm edges
 [NP
-  [Det [das;\textsc{art}.\textsc{def}] ]
+  [Det [das;\textsc{da}] ]
   [\nbar
     [\nbar
       [N [Bild;照片] ]
-      [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道,roof ] ] ] 
-    [PP [im Gropiusbau;在.\textsc{art}.\textsc{def} 格罗皮乌斯博物馆,roof ] ] ] ]
+      [PP [vom Gleimtunnel;……的.\textsc{da} 格莱姆隧道,roof ] ] ] 
+    [PP [im Gropiusbau;在.\textsc{da} 格罗皮乌斯博物馆,roof ] ] ] ]
 \end{forest}}
 \caption{\label{Abbildung-NP-mit-PP-Argument}名词与位于右侧的作为附加语的PP补足语vom Gleimtunnel的组合}
 %\caption{\label{Abbildung-NP-mit-PP-Argument}Combination of a noun with PP complement
@@ -1118,15 +1118,15 @@ sm edges
 \label{ex-nounless-np-relational-noun}
 \ex 
 \gll (Nein, nicht der Vater von Klaus), der \_ von Peter war gemeint.\\
-	\spacebr{}不 不  \textsc{art}.\textsc{def} 爸爸 ……的 Klaus \textsc{art}.\textsc{def} {} ……的 Peter \passivepst{} 指的是\\
+	\spacebr{}不 不  \defart{} 爸爸 ……的 Klaus \defart{} {} ……的 Peter \passivepst{} 指的是\\
 \mytrans{不，指的不是Klaus的爸爸，而是Peter的\_。}
 \ex 
 \gll (Nein, nicht das Bild von der Stadtautobahn), das \_ vom Gleimtunnel war beeindruckend.\\
-	 \spacebr{}不 不  \textsc{art}.\textsc{def} 图片 ……的 \textsc{art}.\textsc{def} 公路 \textsc{art}.\textsc{def} {} ……的.\textsc{art}.\textsc{def} 格莱姆隧道 \textsc{cop} 印象深刻\\
+	 \spacebr{}不 不  \defart{} 图片 ……的 \defart{} 公路 \defart{} {} ……的.\defart{} 格莱姆隧道 \textsc{cop} 印象深刻\\
 \mytrans{不，不是公路的照片让人印象深刻，而是格莱姆隧道的\_。}
 \ex 
 \gll (Nein, nicht das Kommen des Tischlers), das \_ des Installateurs ist wichtig.\\
-	 \spacebr{}不 不  \textsc{art}.\textsc{def} 来 \textsc{art}.\textsc{def} 木匠 \textsc{art}.\textsc{def} {} \textsc{art}.\textsc{def} 水管工 \textsc{cop} 重要\\
+	 \spacebr{}不 不  \defart{} 来 \defart{} 木匠 \defart{} {} \defart{} 水管工 \textsc{cop} 重要\\
 \mytrans{不，木匠来不重要，水管工\_很重要。}
 \zl
 %\eal
@@ -1203,10 +1203,10 @@ sm edges
 \begin{forest}
 sm edges
 [NP
-  [Det [das;\textsc{art}.\textsc{def}] ]
+  [Det [das;\textsc{da}] ]
   [\nbar
     [N [\trace] ]
-    [PP [vom Gleimtunnel;……的.\textsc{art}.\textsc{def} 格莱姆隧道, roof] ] ] ]
+    [PP [vom Gleimtunnel;……的.\textsc{da} 格莱姆隧道, roof] ] ] ]
 \end{forest}
 \hfill%
 \mbox{}
@@ -1320,19 +1320,19 @@ sm edges
 \eal
 \ex 
 \gll der seiner Frau treue Mann\\
-	 \textsc{art}.\textsc{def} 他的.\dat{} 妻子 忠诚 男人\\
+	 \defart{} 他的.\dat{} 妻子 忠诚 男人\\
 \mytrans{忠于妻子的男人}
 \ex 
 \gll der auf seinen Sohn stolze Mann\\
-	 \textsc{art}.\textsc{def} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
+	 \defart{} \textsc{prep} 他的.\acc{} 儿子 骄傲 男人\\
 \mytrans{以儿子为骄傲的男人}
 \ex 
 \gll der seine Frau liebende Mann\\
-	 \textsc{art}.\textsc{def} 他的.\acc{} 女人 爱 男人\\
+	 \defart{} 他的.\acc{} 女人 爱 男人\\
 \mytrans{爱妻子的男人}
 \ex 
 \gll der von seiner Frau geliebte Mann\\
-     \textsc{art}.\textsc{def} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
+     \defart{} \textsc{prep} 他的.\dat{} 妻子 爱 男人\\
 \mytrans{被妻子爱的男人}	 
 \zl
 %\eal
@@ -1447,19 +1447,19 @@ PP $\to$ P NP
 \eal
 \ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
 \gll {}[[Einen Schritt] vor dem Abgrund] blieb er stehen.\\
-	 {}\spacebr{}\spacebr{}一 步 在……前 \textsc{art}.\textsc{def} 深渊 保留 他 站\\
+	 {}\spacebr{}\spacebr{}一 步 在……前 \defart{} 深渊 保留 他 站\\
 \mytrans{他在离深渊一步之遥的地方站住了。}
 \ex 
 \gll {}[[Kurz] nach dem Start] fiel die Klimaanlage aus.\\
-	 {}\spacebr{}\spacebr{}短暂 在……后 \textsc{art}.\textsc{def} 起飞 坏 \textsc{art}.\textsc{def} 空调 出来\\
+	 {}\spacebr{}\spacebr{}短暂 在……后 \defart{} 起飞 坏 \defart{} 空调 出来\\
 \mytrans{起飞后不久，空调就停止工作了。}
 \ex 
 \gll {}[[Schräg] hinter der Scheune] ist ein Weiher.\\
-	 {}\spacebr{}\spacebr{}斜 在……对面 \textsc{art}.\textsc{def} 谷仓 \textsc{cop} 一 池塘\\
+	 {}\spacebr{}\spacebr{}斜 在……对面 \defart{} 谷仓 \textsc{cop} 一 池塘\\
 \mytrans{在谷仓的斜对面有一个池塘。}
 \ex 
 \gll {}[[Mitten] im Urwald] stießen die Forscher auf einen alten Tempel.\\
-	 {}\spacebr{}\spacebr{}中间 在……中.\textsc{art}.\textsc{def} 丛林 碰到 \textsc{art}.\textsc{def} 研究人员 \textsc{prep} 一 古老 寺庙\\
+	 {}\spacebr{}\spacebr{}中间 在……中.\defart{} 丛林 碰到 \defart{} 研究人员 \textsc{prep} 一 古老 寺庙\\
 \mytrans{在丛林当中，研究者碰到了一栋古老的寺庙。}
 \zl
 %\eal
@@ -1493,12 +1493,12 @@ PP $\to$ P NP
 \eal
 \ex[*]{
 \gll [\sub{PP} einen Schritt [\sub{PP} kurz [\sub{PP} vor dem Abgrund]]]\\
-	 {} 一 步 {} 短 {} 在……前  \textsc{art}.\textsc{def}  深渊\\
+	 {} 一 步 {} 短 {} 在……前  \defart{}  深渊\\
 	 %	 {} one step {} shortly {} before the abyss\\
 }
 \ex[*]{
 \gll [\sub{PP} kurz [\sub{PP} einen Schritt [\sub{PP} vor dem Abgrund]]]\\
-	 {} 短 {} 一 步 {} 在……前  \textsc{art}.\textsc{def}  深渊\\
+	 {} 短 {} 一 步 {} 在……前  \defart{}  深渊\\
 %	 {} shortly {} one step {} before the abyss\\
 }
 \zl
@@ -1522,7 +1522,7 @@ PP $\to$ P NP
 %of an example with an adjective in the first position following the rules in (\mex{0}b) and (\mex{0}d):
 \ea
 \gll vor dem Abgrund\\
-	 在……前  \textsc{art}.\textsc{def} 深渊\\
+	 在……前  \defart{} 深渊\\
 \mytrans{在深渊前}
 %	 before the abyss\\
 %\mytrans{in front of the abyss}
@@ -1534,7 +1534,7 @@ sm edges
 [PP
   [\pbar
     [P [vor;在……前] ]
-    [NP [dem Abgrund;\textsc{art}.\textsc{def} 深渊, roof] ] ] ]
+    [NP [dem Abgrund;\textsc{da} 深渊, roof] ] ] ]
 \end{forest}
 \hfill
 \begin{forest}
@@ -1543,7 +1543,7 @@ sm edges
   [AP [kurz;短暂,roof] ]
   [\pbar
     [P [vor;在……前] ]
-    [NP [dem Abgrund;\textsc{art}.\textsc{def} 深渊,roof] ] ] ]
+    [NP [dem Abgrund;\textsc{da} 深渊,roof] ] ] ]
 \end{forest}
 %% \begin{tikzpicture}
 %% \tikzset{level 1+/.style={level distance=2\baselineskip}}
@@ -1832,7 +1832,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;\textsc{art}.\textsc{def}] ] ] ]
+      [Det [das;\textsc{da}] ] ] ]
   [\nbar
     [N [Bild;图片] ] ] ]
 \end{forest}
@@ -1842,7 +1842,7 @@ sm edges
 [NP
   [DetP
     [\detbar
-      [Det [das;\textsc{art}.\textsc{def}] ] ] ]
+      [Det [das;\textsc{da}] ] ] ]
   [\nbar
     [AP
       [\abar
@@ -1879,13 +1879,13 @@ sm edges
 \eal
 \ex 
 \gll das Paris der dreißiger Jahre\\
-	 \textsc{art}.\textsc{def} 巴黎 \textsc{art}.\textsc{def} 三十 年\\
+	 \defart{} 巴黎 \defart{} 三十 年\\
 \mytrans{30年代的巴黎}
 %	 the Paris of.the thirty years\\
 %\mytrans{30's Paris}
 \ex 
 \gll die Maria aus Hamburg\\
-	 \textsc{art}.\textsc{def} Maria 从……来 汉堡\\
+	 \defart{} Maria 从……来 汉堡\\
 \mytrans{来自汉堡的Maria}
 %	 the Maria from Hamburg\\
 %\mytrans{Maria from Hamburg}
@@ -1916,7 +1916,7 @@ sm edges
 %	 V in the sentence (\mex{1}).
 \ea
 \gll er das Buch dem Mann gibt\\
-	 他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 人 给\\
+	 他 \defart{} 书 \defart{} 人 给\\
 \mytrans{他给这个人这本书。}
 %	 he the book the man gives\\
 %\mytrans{He gives the book to the man.}
@@ -2000,15 +2000,15 @@ NP $\to$ Modifier* books Modifier*
 \eal
 \ex 
 \gll Examine the plight of the very poor.\\
-检查 \textsc{art}.\textsc{def} 困境 ……的 \textsc{art}.\textsc{def} 非常 穷\\
+检查 \defart{} 困境 ……的 \defart{} 非常 穷\\
 \mytrans{了解穷人的困境}
 \ex 
 \gll Their outfits range from the flamboyant to the functional.\\
-他们的 套装 范围 从 \textsc{art}.\textsc{def} 华丽 到 \textsc{art}.\textsc{def} 功能性\\
+他们的 套装 范围 从 \defart{} 华丽 到 \defart{} 功能性\\
 \mytrans{他们的套装从华丽的到功能性的都有。}
 \ex 
 \gll The unimaginable happened.\\
-\textsc{art}.\textsc{def} 不可想象的 发生\\
+\defart{} 不可想象的 发生\\
 \mytrans{不可思议的事情发生了。}
 \zl
 例（\mex{1}）说明了对应于其结构的短语结构规则：
@@ -2039,14 +2039,14 @@ NP $\to$ Det Adj
       \eal
       \ex[]{
       \gll Der Mann hilft der Frau.\\
-            \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人\\
+            \defart.\nom{} 男人 帮助 \defart.\dat{} 女人\\
       \mytrans{这个男人帮助这个女人。}
       %           the.\nom{} man helps the.\dat{} woman\\
       %\mytrans{The man helps the woman.}
       }
       \ex[]{
       \gll Er gibt ihr das Buch.\\
-                 他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def} 书\\
+                 他.\nom{} 给 她.\dat{} \defart{} 书\\
       \mytrans{他给她这本书。}
 %           he.\nom{} gives her.\dat{} the book\\
 %      \mytrans{He gives her the book.}
@@ -2065,12 +2065,12 @@ NP $\to$ Det Adj
       \eal
       \ex[*]{
       \gll  Der Mann hilft er.\\
-		    \textsc{art}.\textsc{def}.\nom{} 人 帮助 他.\nom{}\\
+		    \defart.\nom{} 人 帮助 他.\nom{}\\
 		   % the.\nom{} man helps he.\nom{}\\
       }
       \ex[*]{
       \gll  Er gibt ihr den Buch.\\
-            他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\mas{} 书.\neu{}\\
+            他.\nom{} 给 她.\dat{} \defart.\mas{} 书.\neu{}\\
            %he.\nom{} gives her.\dat{} the.\mas{} book.\neu{}\\
       }
       \zl
@@ -2084,25 +2084,25 @@ NP $\to$ Det Adj
 \eal
 \ex 
 \gll Der Mann hilft der Frau jetzt.\\
-     \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人 现在\\
+     \defart.\nom{} 男人 帮助 \defart.\dat{} 女人 现在\\
 \mytrans{这个男人在帮助这个女人。}
 %     the.\nom{} man helps the.\dat{} woman now\\
 %\mytrans{The man helps the woman now.}
 \ex 
 \gll Der Mann hilft der Frau neben dem Bushäuschen.\\
-     \textsc{art}.\textsc{def}.\nom{} 男人 帮助 \textsc{art}.\textsc{def}.\dat{} 女人 在……旁 \textsc{art}.\textsc{def} 公交车候车亭\\
+     \defart.\nom{} 男人 帮助 \defart.\dat{} 女人 在……旁 \defart{} 公交车候车亭\\
 \mytrans{这个男人帮助公交车候车亭旁边的那个女人。}
 %     the.\nom{} man helps the.\dat{} woman next.to the bus.shelter\\
 %\mytrans{The man helps the woman next to the bus shelter.}
 \ex 
 \gll Er gibt ihr das Buch jetzt.\\
-     他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书 现在\\
+     他.\nom{} 给 她.\dat{} \defart.\acc{} 书 现在\\
 \mytrans{他现在给她这本书。}
 %     he.\nom{} gives her.\dat{} the.\acc{} book now\\
 %\glt 'He gives her the book now.'
 \ex 
 \gll Er gibt ihr das Buch neben dem Bushäuschen.\\
-     他.\nom{} 给 她.\dat{} \textsc{art}.\textsc{def}.\acc{} 书 在……旁 \textsc{art}.\textsc{def} 公交车候车亭\\
+     他.\nom{} 给 她.\dat{} \defart.\acc{} 书 在……旁 \defart{} 公交车候车亭\\
 \mytrans{他给她公交车候车亭旁的那本书。}
 %     he.\nom{} gives her.\dat{} the.\acc{} book next.to the bus.shelter\\
 %\mytrans{He gives her the book next to the bus shelter.}
@@ -2114,7 +2114,7 @@ NP $\to$ Det Adj
 %\mytrans{He is waiting for a miracle now.}
 \ex 
 \gll Er wartet neben dem Bushäuschen auf ein Wunder.\\
-      他.\nom{} 等 在……旁 \textsc{art}.\textsc{def}.\dat{} 公交车候车亭 \textsc{prep} 一 奇迹\\
+      他.\nom{} 等 在……旁 \defart.\dat{} 公交车候车亭 \textsc{prep} 一 奇迹\\
 \mytrans{他在等公交车候车亭旁的奇迹发生。}
 %     he.\nom{} waits next.to the.\dat{} bus.shelter on a miracle\\
 %\mytrans{He is waiting for a miracle next to the bus shelter.}

@@ -242,7 +242,7 @@ HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受�
 \eal
 \ex[*]{
 \gll dass Peter das Buch schläft\\
-	 \textsc{comp} Peter \textsc{art}.\textsc{def} 书 睡觉\\
+	 \textsc{comp} Peter \defart{} 书 睡觉\\
 %	 that Peter the book sleeps\\
 }
 \ex[*]{
@@ -252,7 +252,7 @@ HPSG从其他理论中借鉴了许多不同的思路，而且近期的分析受�
 }
 \ex[*]{
 \gll dass Peter über den Mann erwartet\\
-	 \textsc{comp} Peter 关于 \textsc{art}.\textsc{def} 人 等待\\
+	 \textsc{comp} Peter 关于 \defart{} 人 等待\\
 %	 that Peter about the man expects\\
 }
 \zl
@@ -469,7 +469,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 \eal
 \ex 
 \gll {}[der Mann] und [die Frau]\\
-	 {}\spacebr{}\textsc{art}.\textsc{def} 男人 和 \spacebr{}\textsc{art}.\textsc{def} 女人\\
+	 {}\spacebr{}\defart{} 男人 和 \spacebr{}\defart{} 女人\\
 %	 {}\spacebr{}the man and \spacebr{}the woman\\
 \ex 
 \gll Er [kennt] und [liebt] diese Schallplatte.\\
@@ -607,12 +607,12 @@ Argument $<$ Head[\initial --]
 \eal
 \ex[]{
 \gll {}[in [den Schrank]]\\
-     \spacebr{}\textsc{prep} \spacebr{}\textsc{art}.\textsc{def} 壁橱\\
+     \spacebr{}\textsc{prep} \spacebr{}\defart{} 壁橱\\
 %     \spacebr{}in \spacebr{}the cupboard\\
 }
 \ex[*]{
 \gll {}[[den Schrank] in]\\
-     \hspaceThis{[[}\textsc{art}.\textsc{def} 壁橱 \textsc{prep}\\
+     \hspaceThis{[[}\defart{} 壁橱 \textsc{prep}\\
 %     \hspaceThis{[[}the cupboard in\\
 }
 \ex[]{
@@ -639,26 +639,26 @@ Argument $<$ Head[\initial --]
 \label{bsp-projektion-v-merkmale}
 \ex[]{
 \gll {}[Dem Mann helfen] will er nicht.\\
- {}\spacebr{}\textsc{art}.\textsc{def} 男人 帮助 想 他 不\\
+ {}\spacebr{}\defart{} 男人 帮助 想 他 不\\
 \mytrans{他不想帮助这个男人。}
 % {}\spacebr{}the man help wants he not\\
 %\mytrans{He doesn't want to help the man.}
 }
 \ex[]{
 \gll {}[Dem Mann geholfen] hat er nicht.\\
-{}\spacebr{}\textsc{art}.\textsc{def} 男人 帮助 \textsc{aux} 他 不\\
+{}\spacebr{}\defart{} 男人 帮助 \textsc{aux} 他 不\\
 \mytrans{他没帮助这个男人。}
 %{}\spacebr{}the man helped has he not\\
 %\mytrans{He hasn't helped the man.}
 }
 \ex[*]{
 \gll {}[Dem Mann geholfen] will er nicht.\\
-{}\spacebr{}\textsc{art}.\textsc{def} 男人 帮助 想 他 不\\
+{}\spacebr{}\defart{} 男人 帮助 想 他 不\\
 %{}\spacebr{}the man helped wants he not\\
 }
 \ex[*]{
 \gll{}[Dem Mann helfen] hat er nicht.\\
-{}\spacebr{}\textsc{art}.\textsc{def} 男人 帮助 \textsc{aux} 他 不\\
+{}\spacebr{}\defart{} 男人 帮助 \textsc{aux} 他 不\\
 %{}\spacebr{}the man help has he not\\
 }
 \zl
@@ -701,10 +701,10 @@ sm edges, for tree={l+=\baselineskip}
 		[er;他]]
 	[V{[\type{fin}, \subcat \sliste{ \ibox{1} }]}, name=fin2
 		[\ibox{2} NP{[\textit{dat}]}
-			[dem Mann;\textsc{art}.\textsc{def} 男人,roof]]
+			[dem Mann;\textsc{da} 男人,roof]]
 		[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2} }]}, name=fin3
 			[\ibox{3} NP{[\textit{acc}]}
-				[das Buch;\textsc{art}.\textsc{def} 书,roof]]
+				[das Buch;\textsc{da} 书,roof]]
 			[V{[\type{fin}, \subcat \sliste{ \ibox{1}, \ibox{2}, \ibox{3} }]}, name=fin4
 				[gibt;给]]]]]	
 tikz={\draw[<->] ($(fin1.south west)+(\offsetup,0)$) to ($(fin2.north west)+(\offset,0)$);
@@ -760,14 +760,14 @@ sm edges
              subcat & \sliste{ \ibox{2} }
              }
 		[\ibox{3} NP{[\textit{dat}]}
-			[dem Mann;\textsc{art}.\textsc{def} 男人, roof]]
+			[dem Mann;\textsc{da} 男人, roof]]
 %			[dem Mann;the man, roof]]
 		[\ms{
                                                                                    head & \ibox{1}\\
                                                                                    subcat & \sliste{ \ibox{2}, \ibox{3} }
                                                                                     }
 			[\ibox{4} NP{[\textit{acc}]}
-				[das Buch;\textsc{art}.\textsc{def} 书, roof]]
+				[das Buch;\textsc{da} 书, roof]]
 %				[das Buch;the book, roof]]
 			[\ms{
                                                                                    head & \ibox{1} \ms[verb]{
@@ -956,7 +956,7 @@ GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于�
 %`it' cannot refer to \emph{Frau} `woman'.
 \ea
 \gll Die Frau$_i$ kauft ein Buch$_j$. Sie$_i$ liest es$_j$.\\
-	  \textsc{art}.\textsc{def} 女人 买 一 书 她 读 它\\
+	  \defart{} 女人 买 一 书 她 读 它\\
 \mytrans{这个女人买了一本书。她在读它。}
 %	 the woman buys a book she reads it\\
 %\mytrans{The woman buys a book. She reads it.}
@@ -1120,7 +1120,7 @@ interessantes（有趣的）是一个形容词，它不带任何论元成分，�
 %have a dative NP in their \subcatl.
 \ea
 \gll ein dem König treues Mädchen\\
-	一 \textsc{art}.\textsc{def}.\dat{} 国王 忠诚的 女孩\\
+	一 \defart.\dat{} 国王 忠诚的 女孩\\
 \mytrans{对国王忠诚的女孩儿}
 %	a the.\dat{} king loyal girl\\
 %\mytrans{a girl loyal to the king}
@@ -1216,12 +1216,12 @@ non-head-dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 \eal
 \ex[]{
 \gll die Wurst in der Speisekammer\\
-     \textsc{art}.\textsc{def} 香肠 \textsc{prep} \textsc{art}.\textsc{def} 食品箱\\
+     \defart{} 香肠 \textsc{prep} \defart{} 食品箱\\
 %     the sausage in the pantry\\
 }
 \ex[*]{
 \gll die Wurst in\\
-	 \textsc{art}.\textsc{def} 香肠 \textsc{prep}\\
+	 \defart{} 香肠 \textsc{prep}\\
 %	 the sausage in\\
 }
 \zl
@@ -1349,19 +1349,19 @@ HPSG理论\isce[|(]{被动}{passive}遵循Bresnan的思想（参见\ref{Abschnit
 \eal
 \ex[]{
 \gll Der Mann hat den Weltmeister geschlagen.\\
-	   \textsc{art}.\textsc{def} 男人 \textsc{aux} \textsc{art}.\textsc{def} 世界.冠军 打\\
+	   \defart{} 男人 \textsc{aux} \defart{} 世界.冠军 打\\
 \mytrans{这个男人打了世界冠军。}
 %	 the man has the world.champion beaten\\
 %\mytrans{The man has beaten the world champion.}
 }
 \ex[*]{
 \gll Der Mann wird den Weltmeister geschlagen.\\
-	\textsc{art}.\textsc{def} 男人 \passiveprs{} \textsc{art}.\textsc{def} 世界.冠军 打\\
+	\defart{} 男人 \passiveprs{} \defart{} 世界.冠军 打\\
 %	 the man is the world.champion beaten\\
 }
 \ex[]{
 \gll Der Weltmeister wird geschlagen.\\
-	 \textsc{art}.\textsc{def} 世界.冠军 \passiveprs{} 打\\
+	 \defart{} 世界.冠军 \passiveprs{} 打\\
 \mytrans{世界冠军被人打了。}
 %	 the world.champion is beaten\\
 %\mytrans{The world champion is (being) beaten.}
@@ -1601,13 +1601,13 @@ d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, 
 \eal
 \ex 
 \gll Er hat den Weltmeister geschlagen.\\
-	 他 \textsc{aux} \textsc{art}.\textsc{def} 世界.冠军 打\\
+	 他 \textsc{aux} \defart{} 世界.冠军 打\\
 \mytrans{他把世界冠军打了。}
 %	 he has the world.champion beaten\\
 %\mytrans{He has beaten the world champion.}
 \ex 
 \gll Der Weltmeister wurde geschlagen.\\
-	 \textsc{art}.\textsc{def} 世界.冠军 \passivepst{} 打\\
+	 \defart{} 世界.冠军 \passivepst{} 打\\
 \mytrans{世界冠军被打了。}
 %	 the world.champion was beaten\\
 %\mytrans{The world champion was beaten.}
@@ -1773,7 +1773,7 @@ sm edges
 \eal
 \ex[]{
 \gll Gibt [der Mann der Frau das Buch \_$_{gibt}$]?\\
-	 给 \spacebr{}\textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书\\
+	 给 \spacebr{}\defart{} 男人 \defart{} 女人 \defart{} 书\\
 \mytrans{这个男人给这个女人书了吗？}
 %	 gives \spacebr{}the man the woman the book\\
 %\mytrans{Does the man give the woman the book?}
@@ -1781,7 +1781,7 @@ sm edges
 \ex[*]{
 \label{bsp-kennt-gibt}
 \gll Kennt [der Mann der Frau das Buch \_$_{gibt}$]?\\
-	 认识 \spacebr{}\textsc{art}.\textsc{def} 男人 \textsc{art}.\textsc{def} 女人 \textsc{art}.\textsc{def} 书\\
+	 认识 \spacebr{}\defart{} 男人 \defart{} 女人 \defart{} 书\\
 %	 knows \spacebr{}the man the woman the book\\
 }
 \zl
@@ -2225,19 +2225,19 @@ sm edges
 %\mytrans{On Sunday, a polar bear ate a man.}
 \ex 
 \gll Vielleicht hat der Schauspieler seinen Text vergessen.\\
-     也许    \textsc{aux} \textsc{art}.\textsc{def} 男演员 他的 台词 忘记\\
+     也许    \textsc{aux} \defart{} 男演员 他的 台词 忘记\\
 \mytrans{也许，这个男演员已经忘记他的台词了。}
 %     perhaps    has the actor his text forgotten\\
 %\mytrans{Perhaps, the actor has forgotton his text.}
 \ex 
 \gll Einem Schauspieler ist der Text entfallen.\\
-     一.\dat{} 男演员 \textsc{aux} \textsc{art}.\textsc{def}.\nom{} 台词 忘记\\
+     一.\dat{} 男演员 \textsc{aux} \defart.\nom{} 台词 忘记\\
 \mytrans{一位男演员忘记台词了。}
 %     a.\dat{} actor is the.\nom{} text forgotten\\
 %\mytrans{An actor forgot the text.}
 \ex
 \gll Einem Kind wurde das Fahrrad gestohlen.\\
-     一.\dat{} 孩子 \passivepst{} \textsc{art}.\textsc{def}.\nom{} 自行车 偷\\
+     一.\dat{} 孩子 \passivepst{} \defart.\nom{} 自行车 偷\\
 \mytrans{一辆自行车从一个孩子那里被偷走了。}
  %    a.\dat{} child was the.\nom{} bike stolen\\
 %\mytrans{A bike was stolen from a child.}
@@ -2273,19 +2273,19 @@ Fanselow认为信息结构的影响与中场的重新排序有关。所以通过
 %\mytrans{Did a polar bear eat a man on Sunday?}
 \ex 
 \gll Hat vielleicht der Schauspieler seinen Text vergessen?\\
-     \textsc{aux} 也许    \textsc{art}.\textsc{def} 男演员 他的 台词 忘记\\
+     \textsc{aux} 也许    \defart{} 男演员 他的 台词 忘记\\
 \mytrans{这位男演员忘记他的台词了吗？}
 %     has perhaps    the actor his text forgotten\\
 %\mytrans{Has the actor perhaps forgotton his text?}
 \ex 
 \gll Ist einem Schauspieler der Text entfallen?\\
-      \textsc{aux}  一.\dat{} 男演员     \textsc{art}.\textsc{def}.\nom{} 台词 忘记\\
+      \textsc{aux}  一.\dat{} 男演员     \defart.\nom{} 台词 忘记\\
 \mytrans{一个男演员忘记台词了吗？}
  %    is  a.\dat{} actor     the.\nom{} text forgotten\\
 %\mytrans{Did an actor forget the text?}
 \ex
 \gll Wurde einem Kind das Fahrrad gestohlen?\\
-     \passivepst{} 一.\dat{} 孩子 \textsc{art}.\textsc{def}.\nom{} 自行车 偷\\
+     \passivepst{} 一.\dat{} 孩子 \defart.\nom{} 自行车 偷\\
 \mytrans{有辆自行车从孩子那里偷走了吗？}
  %    was a.\dat{} child the.\nom{} bike stolen\\
 %\mytrans{Was a bike stolen from a child?}
@@ -2547,7 +2547,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 %Figure~\vref{Abbildung-die-Zerstorung}.
 \ea
 \gll die          Zerstörung der          Stadt durch         die Soldaten\\
-     \textsc{art}.\textsc{def} 毁灭        \textsc{art}.\textsc{def} 城市  \textsc{prep} \textsc{art}.\textsc{def} 士兵\\
+     \defart{} 毁灭        \defart{} 城市  \textsc{prep} \defart{} 士兵\\
 %	 the destruction of.the city by the soldiers\\
 \z
 \begin{figure}
@@ -2557,7 +2557,7 @@ sm edges
 [N\feattab{\spr \sliste{  },\\
            \subcat \sliste{  } }
 	[\ibox{1} Det
-		[die;\textsc{art}.\textsc{def}]]
+		[die;\textsc{da}]]
 %		[die;the]]
 			[N\feattab{\spr \sliste{ \ibox{1} },\\
                    \subcat \sliste{  } }
@@ -2568,10 +2568,10 @@ sm edges
 				[Zerstörung;毁灭]]
 %				[Zerstörung;destruction]]
 			[\ibox{3} NP{[\type{gen}]}
-				[der Stadt; \textsc{art}.\textsc{def} 城市,roof]]]
+				[der Stadt; \textsc{da} 城市,roof]]]
 %				[der Stadt; of the city,roof]]]
 		[\ibox{2} PP{[\type{durch}]}
-			[durch die Soldaten; \textsc{prep} \textsc{art}.\textsc{def} 士兵,roof]]]]
+			[durch die Soldaten; \textsc{prep} \textsc{da} 士兵,roof]]]]
 %			[durch die Soldaten; by the soldiers,roof]]]]
 \end{forest}}
 \caption{带有配价特征\sprc 的NP分析}\label{Abbildung-die-Zerstorung} 
@@ -2726,7 +2726,7 @@ HPSG与范畴语法的不同之处在于\indexcg，它假定了更多的特征�
 %demonstrative pronoun. The relative clause in (\mex{1}) would be analyzed as a finite clause from which a PP has been extracted:
 \ea
 \gll der Mann, [\sub{RS} [\sub{PP} an den] [\sub{S/PP} wir gedacht haben]]\\
-     \textsc{art}.\textsc{def} 男人   {}        {}        \textsc{prep} \textsc{rel}  {}          我们 想 \textsc{aux}\\
+     \defart{} 男人   {}        {}        \textsc{prep} \textsc{rel}  {}          我们 想 \textsc{aux}\\
 \mytrans{我们想起的那个男人}
 %     the man   {}        {}        on who  {}          we  thought have\\
 %\mytrans{the man we thought of}
@@ -2743,7 +2743,7 @@ HPSG与范畴语法的不同之处在于\indexcg，它假定了更多的特征�
 %(\mex{1}) as -- unlike in Categorial Grammar -- the relative pronoun does not have to know anything about the contexts in which it can be %used.
 \ea
 \gll der Mann, [\sub{RS} [\sub{NP} den] [\sub{S/NP} wir kennen]]\\
-	 \textsc{art}.\textsc{def}  男人 {} {} \textsc{rel} {} 我们 认识\\
+	 \defart{}  男人 {} {} \textsc{rel} {} 我们 认识\\
 \mytrans{我们认识的那个男人}
 %	 the man {} {} that {} we know\\
 %\mytrans{the man that we know}
@@ -2895,7 +2895,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %\item How does case assignment take place in the analysis of example (\mex{1})?
 \ea
 \gll Dem Mann wurde ein Buch geschenkt.\\
-	 \textsc{art}.\textsc{def}.\dat{} 男人 \passivepst{} 一.\nom{} 书 给\\
+	 \defart.\dat{} 男人 \passivepst{} 一.\nom{} 书 给\\
 \mytrans{这个男人被给了一本书。}
 %	 the.\dat{} man was a.\nom{} book given\\
 %\mytrans{The man was given a book.}

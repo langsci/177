@@ -4,7 +4,7 @@
 %\chapter{Generative-enumerative vs.\ model-theoretic approaches}
 \label{Abschnitt-Generativ-Modelltheoretisch}
 
-生成-枚举方法\isce[|(]{模型论语法}{model-theoretic grammar}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isce{生成语法}{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \textsc{art}.\textsc{def} 书 \textsc{art}.\textsc{def} 男人 \, 给）。
+生成-枚举方法\isce[|(]{模型论语法}{model-theoretic grammar}假设语法生成一个符号序列的集合（词串）。这就是生成语法\isce{生成语法}{Generative Grammar}这一术语的由来。所以，可以利用第~\pageref{bsp-grammatik-psg}页的语法，在这里重写为（\mex{1}），得出词串er das Buch dem Mann gibt（他 \defart{} 书 \defart{} 男人 \, 给）。
 %Generative-enumerative\is{model-theoretic grammar|(} approaches assume that a grammar generates a set of sequences of symbols (strings of words).
 %This is where the term Generative Grammar\is{Generative Grammar} comes from. Thus, it is possible to use the grammar on
 %page~\pageref{bsp-grammatik-psg}, repeated here as (\mex{1}), to derive the string \emph{er das Buch dem Mann gibt}
@@ -159,25 +159,25 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \eal
 \ex[]{
 \gll Du kennst diesen Aufsatz.\\
-	 你 知道.\textsc{2sg} \textsc{art}.\textsc{def}.\acc{} 文章\\
+	 你 知道.\textsc{2sg} \defart.\acc{} 文章\\
 %\gll Du kennst diesen Aufsatz.\\
 %	 you know.\textsc{2sg} this.\acc{} essay\\
 }
 \ex[*]{
 \gll Du kennen diesen Aufsatz.\\
-	你 知道.\textsc{3pl} \textsc{art}.\textsc{def}.\acc{} 文章\\
+	你 知道.\textsc{3pl} \defart.\acc{} 文章\\
 %\gll Du kennen diesen Aufsatz.\\
 %	you know.\textsc{3pl} this.\acc{} essay\\
 }
 \ex[*]{
 \gll Du kennen dieser Aufsatz.\\
-你 知道.\textsc{3pl} \textsc{art}.\textsc{def}.\nom{} 文章\\
+你 知道.\textsc{3pl} \defart.\nom{} 文章\\
 %\gll Du kennen dieser Aufsatz.\\
 %you know.\textsc{3pl} this.\nom{} essay\\
 }
 \ex[*]{
 \gll Du kennen Aufsatz dieser.\\
-你 知道.\textsc{3pl} 文章 \textsc{art}.\textsc{def}.\nom{}\\
+你 知道.\textsc{3pl} 文章 \defart.\nom{}\\
 %\gll Du kennen Aufsatz dieser.\\
 %you know.\textsc{3pl} essay this.\nom{}\\
 }
@@ -190,7 +190,7 @@ synsem \onems{ loc  \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 % the sentence in (\mex{1}) violates grammatical rules of German, but is nevertheless still interpretable.
 \ea
 \gll Studenten stürmen mit Flugblättern und Megafon die Mensa und rufen alle auf zur Vollversammlung in der Glashalle \emph{zum} \emph{kommen}. \emph{Vielen} bleibt das Essen im Mund stecken und \emph{kommen} \emph{sofort} \emph{mit}.\footnotemark\\
-学生 风暴 \textsc{prep} 传单 和 扩音器 \textsc{art}.\textsc{def} 餐馆 并且 号召 所有的 \textsc{prep} \textsc{prep}.\textsc{art}.\textsc{def} 全体.会议 \textsc{prep} \textsc{art}.\textsc{def} 玻璃.大厅 \textsc{prep}.\textsc{art}.\textsc{def} 来 很多.\dat{} 停留 \textsc{art}.\textsc{def} 食物 \textsc{prep}.\textsc{art}.\textsc{def} 嘴巴 塞 并且 来 立即 \textsc{part}\\
+学生 风暴 \textsc{prep} 传单 和 扩音器 \defart{} 餐馆 并且 号召 所有的 \textsc{prep} \textsc{prep}.\defart{} 全体.会议 \textsc{prep} \defart{} 玻璃.大厅 \textsc{prep}.\defart{} 来 很多.\dat{} 停留 \defart{} 食物 \textsc{prep}.\defart{} 嘴巴 塞 并且 来 立即 \textsc{part}\\
 \footnotetext{%
   《不莱梅罢工报》（\emph{Streikzeitung der Universität Brement}），\zhdate{2003/12/04}，第2页。强调部分是我加的。 
 }
@@ -235,7 +235,7 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串�
 %for example the one given in Figure~\vref{fig-and-of-the}.%
 \ea
 \gll That cat is afraid of the dog and of the parrot.\\
-	 那 猫 \textsc{cop} 害怕 \textsc{prep} \textsc{art}.\textsc{def} 狗 和 \textsc{prep} \textsc{art}.\textsc{def} 鹦鹉\\
+	 那 猫 \textsc{cop} 害怕 \textsc{prep} \defart{} 狗 和 \textsc{prep} \defart{} 鹦鹉\\
 \mytrans{那只猫害怕狗和鹦鹉。}
 %That cat is afraid of the dog and of the parrot.
 \z
@@ -264,7 +264,7 @@ Chomsky（\citeyear[\S~5]{Chomsky75a}；\citeyear{Chomsky64a}）尝试用词串�
     [PP
       [P [of\\\textsc{prep}]]
       [NP
-        [Det [the\\\textsc{art}.\textsc{def}]]
+        [Det [the\\\textsc{da}]]
         [\nbar]]]]]
 \end{forest}
 \caption{\label{fig-and-of-the} \citew[\page 32]{PS2001a}给出的and of the的结构}
@@ -311,12 +311,12 @@ Ewan Klein\aimention{Ewan Klein}指出，可从简单推导出复杂表达的范
 \eal
 \ex 
 \gll The man$_i$ sleeps. He$_i$ snores.\\
-	 \textsc{art}.\textsc{def} 男人 睡觉 他  打呼噜\\
+	 \defart{} 男人 睡觉 他  打呼噜\\
 \mytrans{那个男人睡觉。他打呼噜。}
 %\ex The man$_i$ sleeps. He$_i$ snores.
 \ex 
 \gll The woman$_i$ sleeps. He$_{*i}$ snores.\\
-	 \textsc{art}.\textsc{def} 女人 睡觉 他  打呼噜\\
+	 \defart{} 女人 睡觉 他  打呼噜\\
 \mytrans{那个女人睡觉。他打呼噜。}
 %\ex The woman$_i$ sleeps. He$_{*i}$ snores.
 \zl
@@ -393,7 +393,7 @@ Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他�
 %\ex Niels and Odette are cousins. They are very smart.
 \ex 
 \gll The cousins/brothers/sisters are standing over there. They are very smart.\\
-	\textsc{art}.\textsc{def} 表/兄弟/姐妹 \textsc{cop} 站 \textsc{prep} 那里 他们 \textsc{cop} 非常 聪明\\
+	\defart{} 表/兄弟/姐妹 \textsc{cop} 站 \textsc{prep} 那里 他们 \textsc{cop} 非常 聪明\\
 \mytrans{那些表/兄弟/姐妹正站在那边。他们非常聪明。}
 %\ex The cousins/brothers/sisters are standing over there. They are very smart.
 \zl
@@ -413,7 +413,7 @@ Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他�
 %component, and here the gender value is determined for each noun in the lexicon. For the binding of personal pronouns, there is no gender difference in German. 
 \ea
 \gll Die Schwestern / Brüder / Vereinsmitglieder / Geschwister stehen dort.~~~~~~ Sie lächeln.\\
-     \textsc{art}.\textsc{def} 姐妹.\fem{} {} 兄弟.\mas{} {} 俱乐部.成员.\neu{} {} 兄弟姐妹 站 那里 他们 笑\\
+     \defart{} 姐妹.\fem{} {} 兄弟.\mas{} {} 俱乐部.成员.\neu{} {} 兄弟姐妹 站 那里 他们 笑\\
 \mytrans{那些姐妹/兄弟/俱乐部成员/兄弟姐妹正站在那边。他们在笑。}
 %\gll Die Schwestern / Brüder / Vereinsmitglieder / Geschwister stehen dort.~~~~~~ Sie lächeln.\\
 %     the sisters.\fem{} {} brothers.\mas{} {} club.members.\neu{} {} siblings stand there they smile.\\
@@ -425,21 +425,21 @@ Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他�
 \label{Beispiel-einer-nach-dem-anderen}
 \ex
 \gll Die Fenster wurden eins nach dem anderen geschlossen.\\
-	 \textsc{art}.\textsc{def} 窗户.\neu{}  \passivepst{} 一.\neu{} \textsc{prep} \textsc{art}.\textsc{def} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
+	 \defart{} 窗户.\neu{}  \passivepst{} 一.\neu{} \textsc{prep} \defart{} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
 \mytrans{窗户被一个接一个地关上了。}
 %\gll Die Fenster wurden eins nach dem anderen geschlossen.\\
 %	 the windows.\neu{} were one.\neu{} after the other closed\\
 %\mytrans{The windows were closed one after the other.}
 \ex 
 \gll Die Türen wurden eine nach der anderen geschlossen.\\
-	\textsc{art}.\textsc{def} 门.\fem{} \passivepst{} 一.\fem{} \textsc{prep} \textsc{art}.\textsc{def} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
+	\defart{} 门.\fem{} \passivepst{} 一.\fem{} \textsc{prep} \defart{} 其他 \textsc{ptcp}.关.\textsc{ptcp}\\
 \mytrans{门被一个接一个地关上了。}
 %\gll Die Türen wurden eine nach der anderen geschlossen.\\
 %	the doors.\fem{} were one.\fem{} after the other closed\\
 %\mytrans{The doors were closed one after the other.}
 \ex 
 \gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
-	 \textsc{art}.\textsc{def} 门闩.\mas{} \passivepst{} 一.\mas{} \textsc{prep} \textsc{art}.\textsc{def} 其他 \textsc{inf}.\textsc{ptcp}.关.\textsc{ptcp}\\
+	 \defart{} 门闩.\mas{} \passivepst{} 一.\mas{} \textsc{prep} \defart{} 其他 \textsc{inf}.\textsc{ptcp}.关.\textsc{ptcp}\\
 \mytrans{门闩被一个接一个地关上了。}
 %\gll Die Riegel wurden einer nach dem anderen zugeschoben.\\
 %	 the bolts.\mas{} were one.\mas{} after the other closed\\
@@ -451,7 +451,7 @@ Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他�
 \eal
 \ex 
 \gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
-	 \textsc{art}.\textsc{def} 成员.\neu{} \textsc{art}.\textsc{def} 政治局 \passivepst{} 一.\neu{} {} 一.\mas{} \textsc{prep} \textsc{art}.\textsc{def} 其他 \textsc{prep} \textsc{art}.\textsc{def} 大厅 运送\\
+	 \defart{} 成员.\neu{} \defart{} 政治局 \passivepst{} 一.\neu{} {} 一.\mas{} \textsc{prep} \defart{} 其他 \textsc{prep} \defart{} 大厅 运送\\
 \mytrans{政治局的成员一个接一个地被排挤出去。}
 %\gll Die Mitglieder des Politbüros wurden eines / einer nach dem anderen aus dem Saal getragen.\\
 %	 the members.\neu{} of.the politburo were one.\neu{} {} one.\mas{} after the other out.of the hall carried\\
@@ -459,7 +459,7 @@ Ten Hacken得出结论，性别取值一定要保持是未指定的，按照他�
 \ex 
 \gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
 Keller.\\
-\textsc{art}.\textsc{def} 成员.\neu{} \textsc{art}.\textsc{def} 女子.跳舞.俱乐部 离开 一.\neu{} {} 一.\fem{} \textsc{prep} \textsc{art}.\textsc{def}.\neu{} {} \textsc{art}.\textsc{def}.\fem{} 其他 \textsc{prep}.\textsc{art}.\textsc{def} 保护 \textsc{art}.\textsc{def} 黑暗的 \textsc{art}.\textsc{def}
+\defart{} 成员.\neu{} \defart{} 女子.跳舞.俱乐部 离开 一.\neu{} {} 一.\fem{} \textsc{prep} \defart.\neu{} {} \defart.\fem{} 其他 \textsc{prep}.\defart{} 保护 \defart{} 黑暗的 \defart{}
 地下室\\
 \mytrans{女子舞蹈俱乐部的成员在黑暗的掩护下一个接一个地离开了地下室。}
 %\gll Die Mitglieder des Frauentanzklubs verließen eines / eine nach dem / der anderen im Schutze der Dunkelheit den
@@ -474,8 +474,8 @@ Keller.\\
 \eal
 \ex 
 \gll "`Farbe bringt die meiste Knete!"' verriet ein 14jähriges türkisches \emph{Mädchen}, \emph{die} die Mauerstückchen am      Nachmittag am Checkpoint Charlie an Japaner und US-Bürger verkauft.\footnotemark\\
-\hspaceThis{"`}颜色 带来 \textsc{art}.\textsc{def}~ 最多 钱 揭露 一~ 14-岁  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \textsc{art}.\textsc{def} 墙.碎片
-\textsc{prep}.\textsc{art}.\textsc{def} 下午 \textsc{prep}.\textsc{art}.\textsc{def} 检查站 查理 \textsc{prep} 日本 和 美国-国民 卖\\  
+\hspaceThis{"`}颜色 带来 \defart{}~ 最多 钱 揭露 一~ 14-岁  土耳其 女孩.\neu{} \textsc{rel}.\fem{} \defart{} 墙.碎片
+\textsc{prep}.\defart{} 下午 \textsc{prep}.\defart{} 检查站 查理 \textsc{prep} 日本 和 美国-国民 卖\\  
 \footnotetext{%
       《日报》（\emph{taz}）， \zhdate{1990/06/04}，第6页。
       }
@@ -492,7 +492,7 @@ Keller.\\
 \ex 
 {\raggedright
 \gll Es ist ein junges {\em Mädchen\/}, {\em die\/} auf der Suche nach CDs bei Bolzes reinschaut.\footnotemark\\
-	 他 \textsc{cop} 一 年轻的 女孩.\neu{} \textsc{rel}.\fem{} \textsc{prep} \textsc{art}.\textsc{def} 寻找 \textsc{prep} CDs \textsc{prep} Bolzes 进入.看\\
+	 他 \textsc{cop} 一 年轻的 女孩.\neu{} \textsc{rel}.\fem{} \textsc{prep} \defart{} 寻找 \textsc{prep} CDs \textsc{prep} Bolzes 进入.看\\
 \footnotetext{%
        《日报》（\emph{taz}），\zhdate{1996/03/13}，第11页。
       }
