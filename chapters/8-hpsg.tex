@@ -192,8 +192,7 @@ syntax-semantics & \ldots \ms[local]{ category  & \ms[category]{ head & \ms[noun
 \z
 %\vspace{-\baselineskip}
 %\end{figure}%
-
-我们可以看到这一特征描写包括词的语音、句法范畴和语义。为了简便，\textsc{phonology}(\phonc )的值大部分按照正字法来表示。在完整的理论中，\phonvc 是一个包括节律栅\isce{节律栅}{metrical grid}和轻重音\isce{轻重音}{accent}信息的复杂结构。参见 \citew{BK94b}、 \citew{Orgun96a}、 \citew{Hoehle99a-u}、 \citew{Walther99a-u}、 \citew[\S~6]{Crysmann2002a}和 \citew{Bildhauer2008a}在HPSG框架下关于语音学\isce{语音学}{phonology}的分析。针对（\mex{0}）中表示的详细信息将在下面的章节中给予解释。
+我们可以看到该特征描写包括词的语音、句法范畴和语义。为了简便，\textsc{phonology}(\phonc )的值大部分按照正字法来表示。在完整的理论中，\phonvc 是一个包括节律栅\isce{节律栅}{metrical grid}和轻重音\isce{轻重音}{accent}信息的复杂结构。参见 \citew{BK94b}、 \citew{Orgun96a}、 \citew{Hoehle99a-u}、 \citew{Walther99a-u}、 \citew[\S~6]{Crysmann2002a}和 \citew{Bildhauer2008a}在HPSG框架下关于语音学\isce{语音学}{phonology}的分析。针对（\mex{0}）中表示的详细信息将在下面的章节中给予解释。
 %One can see that this feature description contains information about the phonology, syntactic category and semantic content of the word
 %\emph{Grammatik}. To keep things simple, the value of \textsc{phonology} (\phon) is mostly given as
 %an orthographic representation. In fully fleshed-out
@@ -382,7 +381,7 @@ sm edges
 sm edges
 [NP
 	[Det
-		[dem;\textsc{art.def}]]
+		[dem;\textsc{da}]]
 %		[dem;the]]
 	[N
 		[Mann;男人]]]
@@ -526,6 +525,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
       non-head-dtrs \sliste{ [ \synsem \ibox{2} ] }
       }
 \end{schema}
+\noindent
 模式~\ref{schema-bin-prel}表明了具有类型\type{head-argument-phrase}的语言对象必须具有的属性。模式~\ref{schema-bin-prel}中的箭头\isce{\impl}{\impl}表示逻辑蕴涵\isce{蕴涵}{implication}，并不是我们在短语结构语法中所知的重写规则的箭头。“$\oplus$”\isce{附加关系}{$\oplus$} （附加关系\iscesub{关系}{relation}{附加关系}{\emph{append}}）是包括两个列表的关系。（\mex{1}）显示了包括两个元素的列表的可能分叉结构：
 %Schema~\ref{schema-bin-prel} states the properties a linguistic object of the type \type{head-argument-phrase} must have.
 %The arrow\is{\impl} in Schema~\ref{schema-bin-prel} stands for a logical implication\is{implication} and not for the arrow of rewrite rules
@@ -783,7 +783,7 @@ sm edges
 \end{figure}%
 
 %\noindent
-下一节将说明如何对该原则进行形式化，以及它是如何被整合进HPSG的理论框架之中的。
+下一节将说明如何对该原则进行形式化，以及它如何被整合进HPSG的理论框架中。
 %The following section will deal with how this principle is formalized as well as how it can be integrated into the architecture of HPSG.
 
 \subsection{承继层级体系与概括}
@@ -1208,7 +1208,7 @@ non-head-dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 \end{schema}
 %\end{samepage}
 %\vspace{-\baselineskip}\end{figure}%
-
+\noindent
 附加语\iboxb{1}的选择性特征的值与中心语子结点的\synsemc 值是相同的。这样就可以确保中心语子结点具有附加语所确定的属性。非中心语子结点的\subcatvc 是空列表，这也就是为什么只有完全饱和的附加语允许出现在中心语-附加语结构中。这样，诸如（\mex{1}b）的短语就被规则排除出去了：
 %The value of the selectional feature on the adjunct \iboxb{1} is identified with the \synsemv of the head daughter, thereby ensuring that the %head
 %daughter has the properties specified by the adjunct. The  \subcatv of the non-head daughter is the
@@ -1490,7 +1490,7 @@ lex-dtr \onems[stem]{
 %\begin{principle-break}[\hypertarget{case-p}{Case Principle}]
 \label{case-p}
 \begin{itemize}
-\item 在一个包括主语和补足语的动词中心语的列表中，第一个带有结构格的成分是主格。
+\item 在一个包括动词性中心语的主语和补足语的列表中，第一个带有结构格的成分是主格。
 \item 该列表中的所有其他带有结构格的成分是宾格。
 \item 在主格的上下文中，带有结构格的成分被赋予了属格。\iscesub{格}{case}{属格}{genitive}.
 %\item In a list containing the subject as well as complements of a verbal head, the first element with
@@ -1569,7 +1569,6 @@ d. & schenkt （给）:        & \subcat \sliste{ NP[\type{str}]$_j$, NP[\type{l
                         }
 }
 \zs
-
 这条词汇规则真正具备了我们在被动的预备理论的方面上所期待的功能：它抑制了带有结构格的最凸显的论元，即对应于主动句主语的论元。动词-助动词结构的标准分析认为主动词和助动词构成了一个动词性复杂结构\citep{HN94a,Pollard94a,Mueller99a,Mueller2002b,Meurers2000b,Kathol2000a}。嵌套的论元被助动词替代。在加入被动助动词分词后，我们可以得到如下的\subcatc 列表：
 %This lexical rule does exactly what we expect it to do from a pretheoretical perspective on the passive: it suppresses the most prominent %argument with structural case, that is, the argument
 %that corresponds to the subject in the active clause. The standard analysis of verb auxiliary
@@ -1594,7 +1593,7 @@ d. & geschenkt wird（被给）:        & \subcat \sliste{ NP[\type{ldat}]$_k$, 
 %If there is no NP with structural case, as in (\mex{0}c), the case remains as it was, that is,
 %lexically specified.
 
-我们在这儿无法得到完美的分析。不过，需要指出的是，与分词相同的词汇项被用于（\mex{1}）。
+我们在这儿无法得到完美的分析。但是应当注意的是，与分词相同的词汇项可用于（\mex{1}）。
 %We cannot go into the analysis of the perfect here. It should be noted, however, that the same lexical
 %item for the participle is
 %used for (\mex{1}).
@@ -1788,7 +1787,7 @@ sm edges
 
 \noindent
 在前面的讨论中，前置动词和动词语迹的依存关系通过同指来表示。在HPSG中，同指总是由结构共享来实现的。这样，位于首位的动词必须要求语迹确切地具有动词位于末位所应具有的那些属性。由此，必须共享的信息都是局部相关的句法和语义信息，即在\localc 下的所有信息。因为\phonc 不是\localc 特征的一部分，它没有被共享，这就是为什么语迹的\phonc 值和动词的值可以不同的原因。截至目前，该分析中有一个重要的细节缺失了：语迹的\localc 值不能与首位动词的要求直接结构共享，因为动词kennt只能选择语迹的投射的属性，而被选择的投射的\subcatlc 是空列表。这就导致（\ref{bsp-kennt-gibt}）的讨论中所指出的问题。由此，必须保证动词语迹的所有信息在它投射的最高点上是可获得的。这可以通过中心语特征的引入来获得，它的值与语迹的\localvc 是相同的。这个特征被称为\textsc{dsl}\isfeat{dsl}。正如在上面已经提及的，\textsc{dsl}表示双重斜杠（double slash）。它被这样称呼的原因是，它有一个跟\slashfc 相似的功能，我们可以在后面的章节中讲到这个功能。\footnote{%
-特征\dslc 是由 \citet*{Jacobson87}在范畴语法\indexcg 的框架下提出用来描写英语\ilce{英语}{English}倒装\isce{助动词倒装}{auxiliary inversion}的中心语移动的。 \citet{Borsley89}采用了这一观点，并将其译为HPSG的术语，这样就可以看到，在CP/IP系统的HPSG变体中，中心语移位是如何用\textsc{dsl}模拟的。\textsc{dsl}特征在HPSG的中心语移位过程中的引入由这样的事实驱动，与\ref{Abschnitt-Fernabhängigkeiten-HPSG}讨论的长距离依存\isce{长距离依存}{long-distance dependency}不同的是，这类移位是局部的。
+特征\dslc 是由 \citet*{Jacobson87}在范畴语法\indexcg 的框架下提出用来描写英语\ilce{英语}{English}倒装\isce{助动词倒装}{auxiliary inversion}的中心语移动的。 \citet{Borsley89}采用了这一观点，并将其译为HPSG的术语，这样就可以说明在CP/IP系统的HPSG变体中，中心语移位如何用\textsc{dsl}模拟。\textsc{dsl}特征在HPSG的中心语移位过程中的引入由这样的事实驱动，与\ref{Abschnitt-Fernabhängigkeiten-HPSG}讨论的长距离依存\isce{长距离依存}{long-distance dependency}不同的是，这类移位是局部的。
 这种将动词语迹作为中心语的部分的信息的渗透来自于 \citet{Oliva92a}。
 }
 （\mex{1}）显示了动词语迹的修订版本：
@@ -2087,11 +2086,13 @@ sm edges
 }
 \end{schema}
 \end{samepage}
+\noindent
 在第一版的中心语-论元模式中，总是\subcatlc 中的最后一个成分与中心语相组合，这里的\subcatlc 通过附加（append）被分成了三个部分\iscesub{关系}{relation}{附加关系}{\emph{append}}：一个任意长度的列表\iboxb{1}、一个只包括一个成分的列表（\sliste{ \ibox{2} }），以及另一个任意长度的列表\iboxb{3}。列表\ibox{1}和\ibox{3}被组合起来，其结果是父结点的\subcatvc。
 %Whereas in the first version of the Head-Argument Schema it was always the last element from the \subcatl that was combined with the %head,
 %the \subcatl is divided into three parts using \emph{append}\is{relation!\emph{append}}: a list of arbitrary length \iboxb{1},
 %a list consisting of exactly one element (\sliste{ \ibox{2} }) and a further list of arbitrary length \iboxb{3}. The lists \ibox{1} and \ibox{3}
 %are combined and the result is the \subcatv of the mother node.
+
 具有固定语序的语言\iscesub{成分序列}{constituent order}{自由}{free}\iscesub{成分序列}{constituent order}{固定}{fixed}（如英语）与德语这类语言不同，因为它们从一个方向开始释放论元（更多有关英语\ilce{英语}{English}的主语的内容，参见\ref{Abschnitt-Spr}），而自由语序的语言可以按照任意顺序将动词与论元相组合。在固定语序的语言中，要么是\ibox{1}，要么是\ibox{3}，总是空列表。由于德语结构没有受到与\ibox{1}或\ibox{3}相关的限制，也就是说，\ibox{1}和\ibox{3}要么是空列表，要么包括某些成分，这一直觉是指自由语序的语言比固定语序的语言具有更少的限制。我们可以将这个分析与\ref{Abschnitt-Kaynesche-Modelle}中的Kayne式\aimention{Richard S. Kayne}的分析相比较，那儿的分析认为所有语言都是从基础语序 [specifier [head complement]]推导而来的（参见图\vref{Abbildung-Remnant-Movement-Satzstruktur}关于德语作为SVO语言的分析\citep{Laenzlinger2004a}）。在这些分析中，像英语这种语言是最基本的情况，而自由语序的语言需要在理论上付出相当多的努力来得到正确的语序。与之相对的是，这里提出的分析需要更多理论上的限制，如果这个语言在它的成分排列上具有更多的限制的话。被允准结构的复杂度在HPSG理论的方法下并没有语言与语言之间的区别。语言只是在它们所属的分支类型上是不同的。\footnote{%
 这并没有排除这样的事实，我们讨论的这个结构具有不同的属性，只要把它们的处理程度考虑进来的话。参见 \citew{Gibson98a,Hawkins99a}和第\ref{Abschnitt-Diskussion-Performanz}章。
 }$^,$\footnote{%
@@ -2169,7 +2170,7 @@ sm edges
 sm edges
 [VP
 	[NP,name=np
-		[diesen Mann$_i$;这个 男人,roof]]
+		[diesen Mann$_i$;这个 \, 男人,roof]]
 %		[diesen Mann$_i$;this man,roof]]
 	[VP/NP,name=vpnp2
 		[V
@@ -2303,7 +2304,8 @@ Fanselow认为信息结构的影响与中场的重新排序有关。所以通过
 %	 {}\spacebr{}everybody knows {} this man\\
 %\mytrans{Everyone knows this man.}
 \z
-在介绍完基本思想后，我们现在来看技术上的细节：与我们在\ref{Abschnitt-Verbstellung-HPSG}中讨论的动词移位不同的是，成分移位是非局部的，这就是为什么两个移位类型按照不同的特征（\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}）来模拟的原因。\textsc{dsl}是一个中心语特征，而且跟其他所有中心语特征一样，投射到投射层的最高点（更多有关中心语特征原则的内容，参见第\pageref{prinzip-hfp}页）。另一方面，\slaschc 是一个属于\textsc{synsem|nonloc}下表示的\textsc{nonloc}特征的特征。\nonlocc 特征的值是带有特征\textsc{inherited}（或者简写为\textsc{inher}）和\textsc{to-bind}的结构。\textsc{inher}的值是一个结构，它包含长距离依存所涉及的元素的信息。（\mex{1}）给出了 \citet[\page 163]{ps2}提出的结构：\footnote{%
+
+介绍完基本思想后，我们来看技术上的细节：与\ref{Abschnitt-Verbstellung-HPSG}中讨论的动词移位不同的是，成分移位是非局部的，这就是为什么两个移位类型按照不同的特征（\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}）来模拟的原因。\textsc{dsl}是一个中心语特征，而且跟其他所有中心语特征一样，投射到投射层的最高点（更多有关中心语特征原则的内容，参见第\pageref{prinzip-hfp}页）。另一方面，\slaschc 是一个属于\textsc{synsem|nonloc}下表示的\textsc{nonloc}特征的特征。\nonlocc 特征的值是带有特征\textsc{inherited}（或者简写为\textsc{inher}）和\textsc{to-bind}的结构。\textsc{inher}的值是一个结构，它包含长距离依存所涉及的元素的信息。（\mex{1}）给出了 \citet[\page 163]{ps2}提出的结构：\footnote{%
 Pollard \& Sag认为，\textsc{que}、\textsc{rel}和\slaschc 的值是集合，而不是列表。集合背后的数学原理更为复杂，这就是为什么我在这里假定它是列表。
 }
 %After this rough characterization of the basic idea, we now turn to the technical details: unlike verb
@@ -2541,6 +2543,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
       non-head-dtrs \sliste{ [\synsem \ibox{2} ]}\\
       }
 \end{schema}
+\noindent
 应用限定语模式对（\mex{1}）中NP的分析如图\ref{Abbildung-die-Zerstorung}所示。
 %应用限定语模式对（\mex{1}）中NP的分析如图\vref{Abbildung-die-Zerstorung}所示。
 %The analysis of the NP in (\mex{1}) with the Specifier Schema is shown in 
@@ -2832,7 +2835,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 	 {}\spacebr{}因为 这 男人 每人 认识\\
 %	 {}\spacebr{}because this man everyone knows\\
 \zl
-在HPSG和其他无转换的模型中，目标是为了将按照（\mex{0}b）中的顺序排列的论元指派到配价列表中的描写上。配价列表（或者新方法中的\argstc）对应于GB的深层结构（Deep Structure）\isce{D-结构}{D-structure}。不同之处在于，中心语本身没有被包括进论元结构中，而这就是D-结构的情况。
+在HPSG和其他无转换的模型中，目标则是将按照（\mex{0}b）中的顺序排列的论元指派到配价列表的描写上。配价列表（或者新方法中的\argstc）对应于GB的深层结构（Deep Structure）\isce{D-结构}{D-structure}。不同的是，中心语本身没有被包括进论元结构中，而这就是D-结构的情况。
 %In HPSG and also in other transformation-less models, the aim is to assign arguments in the order in (\mex{0}b) to descriptions
 %in the valence list. The valence list (or \argst in newer approaches) corresponds in a sense to Deep Structure\is{Deep Structure} in GB.
 %The difference is that the head itself is not included in the argument structure, whereas this is the case with D-structure.
@@ -2890,7 +2893,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \questions{
 \begin{enumerate}
 \item 在HPSG中，句法树的地位是什么?
-\item 在例（\mex{1}）的分析中，格指派是如何发生的？?
+\item 在例（\mex{1}）的分析中，格指派是如何发生的？
 %\item What status do syntactic trees have in HPSG?
 %\item How does case assignment take place in the analysis of example (\mex{1})?
 \ea
