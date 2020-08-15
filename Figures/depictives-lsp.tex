@@ -1,54 +1,23 @@
 %% -*- coding:utf-8 -*-
-% \documentclass[ number=1
-%                 ,series=lnls,
-%                 ,isbn=978-3-944675-21-3,
-%                 ,url=http://langsci-press.org/catalog/book/14,
-% 	        ,output=long    % long|short|inprep              
-% 	        %,blackandwhite
-% 	        ,smallfont
-% 	        %,draftmode  
-%                 ,bibtex
-%                 ,copyright=CC-BY-ND
-% 		  ]{langscibook}                          
-
-\documentclass[output=book  %short    % long|short|inprep              
+\documentclass[ number=1
+                ,series=lnls,
+                ,isbn=978-3-944675-21-3,
+                ,url=http://langsci-press.org/catalog/book/14,
+	        ,output=long    % long|short|inprep              
 	        %,blackandwhite
 	        ,smallfont
-%	        ,draftmode
-%                ,openreview
-%                ,bibtex
-                ,newtxmath
-%                ,nonflat
-                %,showindex
-		  ]{langscibook}   
+	        %,draftmode  
+                ,bibtex
+                ,copyright=CC-BY-ND
+		  ]{../LSP/langsci}                          
 
-
-% compile with texlive 2017 and lualatex (ignore xelatex warning)
 
 %deceive the driver
-%\def\pdftexversion{140}
+\def\pdftexversion{140}
 %use the old driver for dvipdfm
-%\def\pgfsysdriver{pgfsys-dvipdfm.def} 
+\def\pgfsysdriver{pgfsys-dvipdfm.def} 
 
-\usepackage{ifthen}
-\provideboolean{draft}
-\setboolean{draft}{false}
-%\setboolean{draft}{true}
-
-\usepackage{etoolbox}
-\newtoggle{draft}
-\togglefalse{draft}
-%\toggletrue{draft}
-
-\input{../localpackages-chinese.tex}
-\input{../localmetadata.tex}
-\input{../localpackages.tex}
-\input{../localcommands.tex}
-\input{../localhyphenation}
-\input{../locallangscifixes}
-
-%\usepackage{langsci-forest-setup,./styles/abbrev,./styles/merkmalstruktur,./styles/makros.2e,./styles/oneline}
-
+\usepackage{forest,../LSP/lsp-styles/lsp-forest-setup,makros.2e}
 
 \usetikzlibrary{tikzmark}
 
@@ -58,13 +27,13 @@
 \thispagestyle{empty}
 \oneline{%
 \begin{forest}
-sm edges, for tree={l sep= 6ex}
+sn edges, for tree={l sep= 6ex}
 [V{[\subcat \sliste{ \spirit{1}, \spirit{2} }]}
 	[\ibox{1} NP{[\textit{nom}]}
 		[er;他]]
 	[V{[\subcat \sliste{ \ibox{1}, \spirit{2} } ]}
 		[\ibox{2} NP{[\textit{acc}]}
-			[die Äpfel;\textsc{art}.\textsc{def} 苹果,roof]]
+			[die Äpfel;\textsc{da} 苹果,triangle]]
 		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} } ]}
 			[\subnode{ap1}{AP}
 				[ungewaschen;没洗的]]
@@ -73,7 +42,7 @@ sm edges, for tree={l sep= 6ex}
 \end{forest}
 \hspace{1em}
 \begin{forest}
-sm edges, for tree={l sep= 6ex}
+sn edges, for tree={l sep= 6ex}
 [V{[\subcat \sliste{ \spirit{1}, \spirit{2} } ]}
 	[\ibox{1} NP{[\textit{nom}]}
 		[er;他]]
@@ -82,7 +51,7 @@ sm edges, for tree={l sep= 6ex}
 			[ungewaschen;没洗的]]
 		[V{[\subcat \sliste{ \subnode{arg21}{\ibox{1}}, \spirit{2} } ]}
 			[\ibox{2} NP{[\textit{acc}]}
-				[die Äpfel;\textsc{art}.\textsc{def} 苹果,roof]]
+				[die Äpfel;\textsc{da} 苹果,triangle]]
 			[V{[\subcat \sliste{ \ibox{1}, \ibox{2} } ]}
 				[isst;eats]]]]]
 \end{forest}
