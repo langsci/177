@@ -146,7 +146,18 @@ cover: grammatical-theory.pdf
 lsp-styles:
 	rsync -a $(LSP-STYLES) langsci
 
+# before calling this load nomemoize in grammatical theory
+# we need three runs to get the trees right ....
+memos1: cleanmemo
+	rm grammatical-theory.bbl; rm grammatical-theory.bcf
+	xelatex -no-pdf grammatical-theory
+	xelatex -no-pdf grammatical-theory
+	xelatex grammatical-theory
 
+memos2:
+	xelatex -shell-escape grammatical-theory
+	biber grammatical-theory
+	xelatex -shell-escape grammatical-theory
 
 
 public: grammatical-theory.pdf
