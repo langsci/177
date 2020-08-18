@@ -301,6 +301,7 @@ S $\to$ NP[\type{nom}], NP[\type{acc}], V[\type{nom\_acc}]
 \gll {}[dass] Peter schläft\label{Bsp-Peter-schlaeft}\\
 	{}\spacebr{}\textsc{comp} Peter 睡觉\\
 %	{}\spacebr{}that Peter sleeps\\
+\mytrans{Peter在睡觉}
 \ex 
 \gll {}[dass] Peter Maria erwartet\\
 	{}\spacebr{}\textsc{comp} Peter Maria 等待\\
@@ -470,14 +471,17 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 \gll {}[der Mann] und [die Frau]\\
 	 {}\spacebr{}\defart{} 男人 和 \spacebr{}\defart{} 女人\\
 %	 {}\spacebr{}the man and \spacebr{}the woman\\
+\mytrans{男人和女人}
 \ex 
 \gll Er [kennt] und [liebt] diese Schallplatte.\\
 	 他.\nom{} \spacebr{}认识 和 \spacebr{}爱 这.\acc{} 专辑\\
 %	 he.\nom{} \spacebr{}knows and \spacebr{}loves this.\acc{} record\\
+\mytrans{他认识并喜爱这张专辑。}
 \ex 
 \gll Er ist [dumm] und [arrogant].\\
-	他 \textsc{cop} \spacebr{}哑的 和 \spacebr{}傲慢\\
+	他 \textsc{cop} \spacebr{}蠢 和 \spacebr{}傲慢\\
 %	he is \spacebr{}dumb and \spacebr{}arrogant\\
+\mytrans{他又蠢又傲慢。}
 \zl
 （\mex{0}b）应该跟（\mex{1}）中的例子相比较。在（\mex{1}a）中，动词分别选择了一个宾格宾语和一个与格宾语，并且在（\mex{1}b）中，动词选择了一个宾格宾语和一个介词宾语：
 %(\mex{0}b) should be compared with the examples in (\mex{1}). In (\mex{1}a), the verbs select for an
@@ -609,6 +613,7 @@ Argument $<$ Head[\initial --]
 \gll {}[in [den Schrank]]\\
      \spacebr{}\textsc{prep} \spacebr{}\defart{} 壁橱\\
 %     \spacebr{}in \spacebr{}the cupboard\\
+\mytrans{在壁橱里}
 }
 \ex[*]{
 \gll {}[[den Schrank] in]\\
@@ -619,6 +624,7 @@ Argument $<$ Head[\initial --]
 \gll {}dass [er [ihn umfüllt]]\\
      {}\textsc{comp} \spacebr{}他 \spacebr{}它 倒\\
 %     {}that \spacebr{}he \spacebr{}it decants\\
+\mytrans{他倒它}
 }
 \ex[*]{
 \gll {}dass [er [umfüllt ihn]]\\
@@ -1218,6 +1224,7 @@ non-head-dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 \gll die Wurst in der Speisekammer\\
      \defart{} 香肠 \textsc{prep} \defart{} 食品箱\\
 %     the sausage in the pantry\\
+\mytrans{在食品箱中的香肠}
 }
 \ex[*]{
 \gll die Wurst in\\
@@ -1862,6 +1869,7 @@ synsem$|$loc \ibox{1} \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 \gll Karl kennt und liebt diese Schallplatte.\\
 	 Karl 认识 和 爱 这 专辑\\
 %	 Karl knows and loves this record\\
+\mytrans{Karl认识并喜爱这张专辑}
 \z
 这与词汇规则不能用于并列组合的结果有关系，它构成了一个复杂的句法对象。如果我们将词汇规则分别应用到每个动词上，那么我们会得到动词的不同类型，它们分别选择kennen（认识）和lieben（爱）的动词语迹。由于连词的\catvsc 在并列中互相指认，包括kennt和liebt的V1变体的并列可以被排除出去，因为被选择的VP的\dslvsc 包括各自动词的意义，而且是不兼容的\citep[\page 13]{Mueller2005c}。除了词汇规则，我们需要假定一个一元的句法规则，它被应用到短语kennt und liebt（认识和爱）上。正如我们看到的，这里假定的HPSG形式化的词汇规则对应于一元规则，这样（\mex{1}）和相应的句法规则的区别很大程度上是表达上的差异。
 %This has to do with the fact that the lexical rule cannot be applied to the result of coordination, which constitutes a complex syntactic object.
@@ -2014,6 +2022,7 @@ synsem$|$loc   \ibox{1} \ms{ cat$|$head$|$dsl   & \ibox{1}\\
 \gll {}[weil] jeder diesen Mann kennt\\
 	 {}\spacebr{}因为 每人 这 人 认识\\
 %	 {}\spacebr{}because everyone this man knows\\
+\mytrans{因为每个人都认识这个男人}
 \ex 
 \gll {}[weil] diesen Mann jeder kennt\\
 	 {}\spacebr{}因为 这 人 每人 认识\\
@@ -2552,6 +2561,7 @@ kennt（认识）的动词移位语迹跟一个名词性NP和一个提取的语�
 \gll die          Zerstörung der          Stadt durch         die Soldaten\\
      \defart{} 毁灭        \defart{} 城市  \textsc{prep} \defart{} 士兵\\
 %	 the destruction of.the city by the soldiers\\
+\mytrans{被士兵毁灭的城市}
 \z
 \begin{figure}
 \centerfit{
@@ -2834,6 +2844,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \gll {}[weil] diesen Mann jeder kennt\\
 	 {}\spacebr{}因为 这 男人 每人 认识\\
 %	 {}\spacebr{}because this man everyone knows\\
+\mytrans{因为每个人都认识这个男人}
 \zl
 在HPSG和其他无转换的模型中，目标则是将按照（\mex{0}b）中的顺序排列的论元指派到配价列表的描写上。配价列表（或者新方法中的\argstc）对应于GB的深层结构（Deep Structure）\isce{D-结构}{D-structure}。不同的是，中心语本身没有被包括进论元结构中，而这就是D-结构的情况。
 %In HPSG and also in other transformation-less models, the aim is to assign arguments in the order in (\mex{0}b) to descriptions
@@ -2918,6 +2929,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \gll {}[dass] Max lacht\\
 	 {}\spacebr{}\textsc{comp} Max 笑\\
 %	 {}\spacebr{}that Max laughs\\
+\mytrans{Max笑}
 \z
 \item \ref{Abschnitt-HPSG-Adjunkte}中有关名词和所修饰形容词的组合分析只是一个初步的分析。比如说，组合分析并没有解释我们如何能够确定形容词和名词在格上保持一致。请思考一下如何扩展这个分析，这样就可以分析（\mex{1}a）中的形容词名词组合了，而不是（\mex{1}b）中的对象：
 %\item The analysis of the combination of a noun with a modifying adjective in Section~\ref{Abschnitt-HPSG-Adjunkte} was just a sketch of an %analysis.
@@ -2928,6 +2940,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 \gll eines interessanten Mannes\\
 	 一.\gen{} 有趣的.\gen{} 男人.\gen{}\\
 %	 an.\gen{} interesting.\gen{} man.\gen{}\\
+\mytrans{一个有趣的男人}
 }
 \ex[*]{ 
 \gll eines interessanter Mannes\\
