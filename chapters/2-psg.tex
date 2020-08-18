@@ -102,7 +102,7 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 \end{tabular}
 \z
 %\vspace{-\baselineskip}\end{figure}%
-如例（\mex{0}）所示，我们从一串词开始，按照给定的短语结构文法，我们可以推导出句子的结构。我们也可以按照相反的方向来分析：从句子标号S开始，我们可以应用第9—1步，最后到词串。如要从文法中选择不同的规则来重写符号，我们可以用（\mex{-1}）中的文法来从S分析到字符串er dem Mann das Buch gibt（他男人书给）。我们可以说，该文法允准（或生成）\label{Seite-generiert}了一组句子。\isce{生成语法}{Generative Grammar}
+如例（\mex{0}）所示，我们从一串词开始，按照给定的短语结构文法，我们可以推导出句子的结构。我们也可以按照相反的方向来分析：从句子标号S开始，我们可以应用第9—1步，最后到词串。如要从文法中选择不同的规则来重写符号，我们可以用（\mex{-1}）中的文法来从S分析到字符串er dem Mann das Buch gibt（他给这个人这本书）。我们可以说，该文法允准（或生成）\label{Seite-generiert}了一组句子。\isce{生成语法}{Generative Grammar}
 %In (\mex{0}), we began with a string of words and it was shown that we can derive the structure of a sentence by applying the rules of
 %a given phrase structure grammar. We could have applied the same steps in reverse order: starting
 %with the sentence symbol S, we would have applied the steps~9--1 and arrived at the string of words.
@@ -110,7 +110,7 @@ NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$
 %from S to the string \emph{er dem Mann das Buch gibt} `he the man the book gives'.
 %We can say that this grammar licenses (or generates)\label{Seite-generiert} a set of sentences.\is{Generative Grammar}
 
-例（\mex{0}）中的推导过程也可以表示为一棵树，如\vref{er-das-buch-dem-mann-gibt-flat}所示。
+例（\mex{0}）中的推导过程也可以表示为一棵树，如图\vref{er-das-buch-dem-mann-gibt-flat}所示。
 %例（\mex{0}）中的推导过程可以表示为一棵树，如\chinesevref{图}{er-das-buch-dem-mann-gibt-flat}所示。
 %The derivation in (\mex{0}) can also be represented as a tree. This is shown by Figure~\vref{er-das-buch-dem-mann-gibt-flat}.
 % \clearpage
@@ -148,7 +148,7 @@ sm edges
 %%        [.V gibt\\gives ] ]
 %% \end{tikzpicture}
 }
-\caption{\label{er-das-buch-dem-mann-gibt-flat}er das Buch dem Mann gibt（他这本书这个人给）的分析}
+\caption{\label{er-das-buch-dem-mann-gibt-flat}er das Buch dem Mann gibt（他给这个人这本书）的分析}
 %\caption{\label{er-das-buch-dem-mann-gibt-flat}Analysis of \emph{er das Buch dem Mann gibt} `he the
 %book the woman gives'}
 \end{figure}%
@@ -173,6 +173,7 @@ node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄�
 \gll {}[\sub{S} [\sub{NP} er] [\sub{NP} [\sub{Det} das] [\sub{N} Buch]]  [\sub{NP} [\sub{Det} dem] [\sub{N} Mann]] [\sub{V} gibt]]\\
      {}         {}       他  {}        {}       \defart{}  {}      书    {}        {}       \defart{}  {}       人     {}      给\\  
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
+\mytrans{他给这个人这本书}
 \z
 无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这与具体的结构没有太多关系。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
 %Nevertheless, it is the grammatical rules which are actually important since these represent grammatical knowledge which is independent of specific structures.
@@ -231,7 +232,7 @@ sm edges
       [V [gibt;给] ] ] ] ]
 \end{forest}
 }
-\caption{\label{er-das-buch-dem-mann-gibt-bin}er das Buch dem Mann gibt（他这本书这个人给）的二叉树结构分析}
+\caption{\label{er-das-buch-dem-mann-gibt-bin}er das Buch dem Mann gibt的二叉树结构分析}
 %\caption{\label{er-das-buch-dem-mann-gibt-bin}Analysis of \emph{er das Buch dem Mann gibt} with a
 %  binary branching structure}
 \end{figure}%
@@ -399,15 +400,19 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 \ex 
 \gll der Mann, die Frau, das Buch\\
 	 \defart.\mas{} 人(\mas) \defart.\fem{} 女人(\fem) \defart.\neu{} 书(\neu)\\\jambox{（性）}
+	 \mytrans{男人，女人，书}
 \ex 
 \gll das Buch, die Bücher\\
 	 \defart{} 书.\sg{} \defart{} 书.\pl\\\jambox{（数）}
+	 \mytrans{书，书}
 \ex 
 \gll des Buches, dem Buch\\
 	 \defart.\gen{} 书.\gen{} \defart.\dat{} 书\\\jambox{（格）}
+	 \mytrans{书，书}
 \ex\isce{屈折类型}{inflectional class} 
 \gll ein Beamter, der Beamte\\
 	 一 公务员 \defart{} 公务员\\\jambox{（屈折类型）}
+	 \mytrans{一个公务员，这个公务员}
 \zl
 %\eal\settowidth\jamwidth{(Inflectional class)}
 %\ex 
@@ -767,27 +772,35 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 \ex 
 \gll eine Frau\\
 	 一 女人\\
+	 \mytrans{一个女人}
 \ex 
 \gll eine Frau, die wir kennen\\
 	 一 女人 \textsc{rel} 我们 认识\\
+	 \mytrans{我们认识的一个女人}
 \ex 
 \gll eine Frau aus Stuttgart\\
 	 一 女人 从……来 斯图加特\\
+	 \mytrans{从斯图加特来的一个女人}
 \ex 
 \gll eine kluge Frau\\
 	 一 聪明 女人\\
+	 \mytrans{一个聪明的女人}
 \ex 
 \gll eine Frau aus Stuttgart, die wir kennen\\
 	 一 女人 从……来 斯图加特 \textsc{rel} 我们 认识\\
+	 \mytrans{一个我们认识的从斯图加特来的女人}
 \ex 
 \gll eine kluge Frau aus Stuttgart\\
 	 一 聪明 女人 从……来 斯图加特\\
+	 \mytrans{一个从斯图加特来的聪明的女人}
 \ex 
 \gll eine kluge Frau, die wir kennen\\
 	 一 聪明 女人 \textsc{rel} 我们 认识\\
+	 \mytrans{一个我们认识的聪明的女人}
 \ex 
 \gll eine kluge Frau aus Stuttgart, die wir kennen\\
 	 一 聪明 女人 从……来 斯图加特 \textsc{rel} 我们 认识\\
+	 \mytrans{一个我们认识的从斯图加特来的聪明的女人}
 \zl
 %\eal
 %\label{Beispiele-NP-Adjunkte}
@@ -956,10 +969,12 @@ sm edges
 \gll A: Alle klugen Frauen sind unglücklich.\\
 \spacebr{} 所有 聪明 女人 \textsc{cop} 不开心\\
 %\spacebr{} all smart women are unhappy\\
+ \mytrans{所有聪明的女人都不开心。}
 
 \gll B: Nein, ich kenne eine glückliche kluge Frau.\\
 	\spacebr{} 不 我 认识 一 开心 聪明 女人\\
 %	\spacebr{} no I know a happy smart woman\\
+ \mytrans{我，我认识一个开心的聪明女人。}
 \z
 我们观察到，这段话可以加上Aber alle glücklichen
   klugen Frauen sind schön（但是所有开心和聪明的女人都是漂亮的），以及一个相应的回答。在我们的规则系统中，（\mex{-1}）也允许了在名词短语中增加更多形容词的情况，如eine glückliche kluge Frau（一个开心的、聪明的女人）。在规则（\ref{NP-Regeln-Adj}）中，\nbarc 既出现在规则的左边，也出现在规则的右边。这类规则被看作是“递归的”（recursive）\isce{递归}{recursion}。
@@ -980,6 +995,7 @@ sm edges
 \gll diese schlauen und diese neugierigen Frauen\\
 	 这些 聪明 和 这些 好奇 女人\\
 %	 these smart and these curious women\\
+ \mytrans{这些聪明和好奇的女人}
 \z
 这里，我们分析一个不同的结构。虽然有两个完整的NP并列\isce{并列}{coordination}在一起，但是第一个并列成分的一部分被删除了。
 %Here, we are dealing with a different structure, however. Two full NPs have been
@@ -988,6 +1004,7 @@ sm edges
 \gll diese schlauen \st{Frauen} und diese neugierigen Frauen\\
 	  这些 聪明 女人 和 这些 好奇 女人\\
 %	 these smart women and these curious women\\
+ \mytrans{这些聪明的女人和这些好奇的女人}
 \z
 我们也可以在句子，甚至是词层面发现类似的现象：
 %One can find similar phenomena at the sentence and even word level:
@@ -1228,18 +1245,22 @@ sm edges
 \gll Frauen\\
 	 女人\\
 %	 women\\
+ \mytrans{女人}
 \ex 
 \gll Frauen, die wir kennen\\
 	 女人 \textsc{rel} 我们 认识\\
 %	 women who we know\\
+ \mytrans{我们认识的女人}
 \ex 
 \gll kluge Frauen\\
 	 聪明 女人\\
 %	 smart women\\
+ \mytrans{聪明的女人}
 \ex 
 \gll kluge Frauen, die wir kennen\\
 	 聪明 女人 \textsc{rel} 我们 认识\\
 %	 smart women who we know\\
+ \mytrans{我们认识的聪明的女人}
 \zl
 
 如果名词是集合名词\iscesub{名词}{noun}{集合名词}{mass}的话，限定词在单数时可以被省略：
@@ -1249,6 +1270,7 @@ sm edges
 \gll Getreide\\
 	 粮食\\
 %	 grain\\
+ \mytrans{粮食}
 \ex 
 \gll Getreide, das gerade gemahlen wurde\\
 	 粮食 \textsc{rel} 刚 种 \passivepst{}\\
@@ -1259,6 +1281,7 @@ sm edges
 \gll frisches Getreide\\
 	 新鲜 粮食\\
 %	 fresh grain\\
+ \mytrans{新鲜的粮食}
 \ex 
 \gll frisches Getreide, das gerade gemahlen wurde\\
 	 新鲜 粮食 \textsc{rel} 刚刚 种 \passivepst{}\\
@@ -1403,11 +1426,13 @@ sm edges
 \gll {}[\sub{NP} einige [\sub{\nbar} kluge [\sub{\nbar} [\sub{\nbar} [\sub{N} Frauen ] und  [\sub{\nbar} [\sub{N} Männer ]]]]]]\\
 	 {}      一些   {}           聪明 {}          {}           {}       女人  {} 和 {} {}          男人\\
 %	 {}      some   {}           smart {}          {}           {}       women  {} and {} {}          men\\
+ \mytrans{一些聪明的女人和男人}
 \ex 
 \gll {}[\sub{NP} einige [\sub{\nbar} kluge [\sub{\nbar} [\sub{N} [\sub{N} Frauen ] und [\sub{N} Männer
 ]]]]]\\
 	{}       一些   {}           聪明 {}          {}       {}       女人  {} 和 {} 男人\\
 %	{}       some   {}           smart {}          {}       {}       women  {} and {} men\\
+ \mytrans{一些聪明的女人和男人}
 \zl
 %
 例（\mex{0}a）中，两个名词被投射到\nbarc，并且随后并列起来。属于同一范畴的两个成分并列的结果一定会是属于该范畴的一个新成分。在（\mex{0}a）的例子中，这也是\nbarc。这个成分随后与形容词和限定词相组合。在（\mex{0}b）中，名词本身是一个并列结构。并列的结果一定是跟其组成成分具有一样的范畴。在这个例子中，这个范畴是N。这个N变成\nbarc，然后与形容词相组合。如果不带补足语的名词被看作是\nbarc，而不是N，我们就不会遇到伪歧义（spurious ambiguities）\iscesub{歧义}{ambiguity}{伪歧义}{spurious}问题。例（\mex{1}）中的结构是唯一可能的分析结果。
@@ -1423,6 +1448,7 @@ sm edges
 ]]]]\\
       {}         一些    {}           聪明 {}          {}           女人  {}  和 {} 男人\\
 %      {}	some    {}           smart {}          {}           women  {}  and {} men\\
+ \mytrans{一些聪明的女人和男人}
 \z
 
 \subsection{介词短语}
@@ -1987,7 +2013,7 @@ NP $\to$ Modifier* books Modifier*
 \ex 
 \gll interesting books from Stuttgart\\
 有趣 书 从……来 斯图加特\\
-\mytrans{斯图加特的有趣的书}
+\mytrans{来自斯图加特的有趣的书}
 \zl
 
 请在你的回答中考虑到并列的语料。请假设对称的并列结构\isce{并列}{coordination}要求其并列的短语或词具有相同的句法属性。
