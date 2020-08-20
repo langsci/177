@@ -28,9 +28,9 @@ all: grammatical-theory.pdf
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldxe
 	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' *.adx
 	sed -i.backup 's/{\\O }/Oe/' *.adx
-	python3 fixindex.py
-	mv $*mod.adx $*.adx
 	sed -i.backup 's/\\MakeCapital //g' *.adx
+	python3 fixindex.py $*.adx
+	mv $*mod.adx $*.adx
 	makeindex -gs index.format-plus -o $*.and $*.adx
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o $*.lnd $*.ldx
 	makeindex -gs index.format -o $*.lnde $*.ldxe
@@ -154,8 +154,10 @@ memos1: cleanmemo
 	xelatex -no-pdf grammatical-theory
 	xelatex grammatical-theory
 
+# before calling this load memoize in grammatical theory
 memos2:
 	xelatex -shell-escape grammatical-theory
+	python3 memomanager.py split grammatical-theory.mmz
 	biber grammatical-theory
 	xelatex -shell-escape grammatical-theory
 
