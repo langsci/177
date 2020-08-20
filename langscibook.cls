@@ -1261,7 +1261,9 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{datetime}
-\usepackage{scrlayer-scrpage}
+%\usepackage{scrlayer-scrpage} % this makes the text too close to the page number if the page is
+%full (two extra lines)
+\usepackage{scrpage2}
 \ohead{\headmark}
 \ihead{}
 \cfoot{}
