@@ -41,15 +41,15 @@
 \newcommand{\LATER}[1]{}
 
 
-\usepackage{nomemoize} 
+\usepackage{memoize} 
 \memoizeset{
   memo filename prefix={grammatical-theory.memo.dir/},
   register=\todo{O{}+m},
   prevent=\todo,
 }
 
-\input{localpackages-chinese.tex}
 \input{localmetadata.tex}
+\input{localpackages-chinese.tex}
 \input{localpackages.tex}
 \input{localcommands.tex}
 \input{localhyphenation}

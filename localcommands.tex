@@ -297,53 +297,43 @@ frbox/.style={
 % https://tex.stackexchange.com/a/18500/18561
 \renewcommand{\thempfootnote}{\arabic{mpfootnote}}
 
-\newcommand{\questions}[1]{~\newline\vspace*{-5mm}
-{\memoizeset{disable}%
-\tblssy{people}{\hspace{-2em} 思考题}{\setlist{leftmargin=*}%
-#1}}}
+% \newcommand{\questions}[1]{~\newline\vspace*{-5mm}
+% {\memoizeset{disable}%
+% \tblssy{people}{\hspace{-2em} 思考题}{\setlist{leftmargin=*}%
+% #1}}}
 %\tblssy{people}{Comprehension questions}{#1}}
 
-\newcommand{\exercises}[1]{
-%\vspace*{-\baselineskip}%
-{\memoizeset{disable}%
-\tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
-#1}}}
+% \newcommand{\exercises}[1]{
+% %\vspace*{-\baselineskip}%
+% {\memoizeset{disable}%
+% \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
+% #1}}}
 %\tblssy{pencil}{Exercises}{#1}}
 
-% if no questions precede the exercises do not do vspace
-\newcommand{\exercisesfirst}[1]{
-%\vspace*{-\baselineskip}%
-{\memoizeset{disable}%
-\tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
-#1}}}
+% % if no questions precede the exercises do not do vspace
+% \newcommand{\exercisesfirst}[1]{
+% %\vspace*{-\baselineskip}%
+% {\memoizeset{disable}%
+% \tblssy{pencil}{\hspace{-2em} 练习题}{\setlist{leftmargin=*}
+% #1}}}
 
 
-\newcommand{\furtherreading}[1]{%~\newline\vspace*{-10mm}
-%\vspace*{-\baselineskip}%
-{\memoizeset{disable}%
-\tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}%
-#1}}}
-
-\newcommand{\furtherreadingfirst}[1]{%~\newline\vspace*{-10mm}
-%\vspace*{-\baselineskip}%
-{\memoizeset{disable}%
-\tblssy{book}{\hspace{-2em} 延伸阅读}{\hspace{2em}%
-#1}}}
 
 
-\newcommand{\greyboxrest}[1]{
-{\memoizeset{disable}%
-\begin{mdframed}[style=greyexercise]
-#1
-\end{mdframed}
-}}
+% Is tcolorbox used as backend?
+\ifbool{langsci@tbls@tcolorbox}{%
+\newcommand{\questions}[1]{{\memoizeset{disable}%
+%\begin{tblsfilledsymbol}{Comprehension questions}{people}#1\end{tblsfilledsymbol}}}
+\begin{tblsfilledsymbol}{思考题}{people}#1\end{tblsfilledsymbol}}}
 
-\mdfdefinestyle{greyexercisenologo}{%
-	everyline=true,ignorelastdescenders=true,
-	linewidth=0pt,backgroundcolor=\tblsboxcolor,
-	innerleftmargin=5mm, innerrightmargin=5mm, innerbottommargin=5mm, innertopmargin=5mm,
-	frametitleaboveskip=15mm, frametitlebelowskip=5mm,frametitlerule=false, repeatframetitle=false
-}
+\newcommand{\exercises}[1]{{\memoizeset{disable}%
+%\begin{tblsfilledsymbol}{Exercises}{pencil}#1\end{tblsfilledsymbol}}}
+\begin{tblsfilledsymbol}{练习题}{pencil}#1\end{tblsfilledsymbol}}}
+
+\newcommand{\furtherreading}[1]{{\memoizeset{disable}%
+%\begin{tblsfilledsymbol}{Further reading}{book}#1\end{tblsfilledsymbol}}}}{}
+\begin{tblsfilledsymbol}{延伸阅读}{book}#1\end{tblsfilledsymbol}}}}{}
+
 
 
 %% beim Layout bin ich davon ausgegangen, dass einer Box immer Text vorangeht und folgt. Das war zum Beispiel in Rolands Buch oft so. Ich würde vermuten, dass sich der nötige Abstand ändert, wenn man die Boxen nicht in Text-, sondern in der Umgebung anderer Boxen einbindet.
