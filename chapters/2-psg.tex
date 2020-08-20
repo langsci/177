@@ -35,8 +35,7 @@
 %NPs, for short. The pronoun \emph{er} `he' can occur in the same positions as full NPs and can
 %therefore also be assigned to the category NP.
 
-短语结构语法用一系列规则来说明符号是如何指派到某类词中，并且这些词是如何构成更复杂的单位的。如（\mex{1}）所示，这是用来分析例句（\mex{0}）的一个简单的短语结构语法：
-\footnote{%
+短语结构语法用一系列规则来说明符号是如何指派到某类词中，并且这些词是如何构成更复杂的单位的。如（\mex{1}）所示，这是用来分析例句（\mex{0}）的一个简单的短语结构语法：\footnote{%
 我们暂不分析weil（因为）。因为对于德语的动词位于第一位和动词位于第二位的小句的确切分析来说，我们还需要一些额外的假设，所以在这一章只讨论动词位于句末的小句。
 }$^,$\footnote{\label{fn-np-pron-ps-rule}%
 NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$ er这条规则来说明，但是这就需要另一条规则来说明能够代替整个NP的人称代词NP $\to$ PersPron。（\mex{1}）将前面两条规则整合成一条，并且说明er（他）出现在名词短语可以出现的位置上。
@@ -131,29 +130,13 @@ sm edges
   [V [gibt;给] ]
 ]
 \end{forest}
-%
-%% \begin{tikzpicture}
-%% \tikzset{level 1+/.style={level distance=3\baselineskip}}
-%% \tikzset{level 2+/.style={level distance=2\baselineskip}}
-%% \tikzset{frontier/.style={distance from root=8\baselineskip}}
-%% \tikzset{every leaf node/.append style={text depth=0pt}}
-%% \Tree[.S
-%%        [.NP er\\he ]
-%%        [.NP
-%%          [.Det das\\the ]
-%%          [.N Buch\\book ] ]
-%%        [.NP
-%%          [.Det der\\the ]
-%%          [.N Frau\\woman ] ]
-%%        [.V gibt\\gives ] ]
-%% \end{tikzpicture}
 }
 \caption{\label{er-das-buch-dem-mann-gibt-flat}er das Buch dem Mann gibt（他给这个人这本书）的分析}
 %\caption{\label{er-das-buch-dem-mann-gibt-flat}Analysis of \emph{er das Buch dem Mann gibt} `he the
 %book the woman gives'}
 \end{figure}%
-\addlines
-\largerpage
+\addlines[-1]
+%\largerpage
 树中的符号叫做“结点”（node）\isce{结点}{node}。S直接支配NP结点和V结点\isce{支配}{dominance}。树中的其他结点也被支配，只不过不是受到S的直接支配\iscesub{支配}{dominance}{直接支配}{immediate}。如果我们想讨论结点之间的关系，我们通常会用亲属词来表示。在图\ref{er-das-buch-dem-mann-gibt-flat}中，S是三个NP结点和V结点的“父结点”（mother
 node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄弟结点”\iscesub{结点}{node}{兄弟结点}{sister}，因为他们有共同的父结点。如果一个结点有两个“子结点”\iscesub{结点}{node}{子结点}{daughter}，那么我们就会得到一个二叉\isce{二元}{binary}结构\iscesub{分支}{branching}{二叉}{binary}。如果只有一个子结点，则会得到一个单分支结构\iscesub{分支}{branching}{单叉}{unary}。如果有两个成分是直接相连的，我们就说它们是“相邻的”（adjacent）\isce{相邻}{adjacency}。
 %The symbols in the tree are called \emph{nodes}\is{node}. We say that S immediately dominates the NP nodes and the V node\is{dominance}.
@@ -175,6 +158,8 @@ node）\iscesub{结点}{node}{父结点}{mother}。NP结点和V结点是“兄�
 %      {}         {}        he  {}        {}       the  {}       book    {}        {}       the  {}       man     {}      gives\\ 
 \mytrans{他给这个人这本书}
 \z
+
+\noindent
 无论采取哪种形式，文法规则是最重要的，因为这些规则表示了语法知识，这与具体的结构没有太多关系。这样，我们可以利用（\ref{bsp-grammatik-psg}）中的文法来剖析或生成例（\mex{1}），该句中的宾语顺序与前面例（\ref{bsp-weil-er-das-buch-dem-mann-gibt}）的不同：
 %Nevertheless, it is the grammatical rules which are actually important since these represent grammatical knowledge which is independent of specific structures.
 %In this way, we can use the grammar in (\ref{bsp-grammatik-psg}) to parse or generate the sentence
@@ -309,7 +294,7 @@ sm edges
 \gll Sie schlafen.\\   
      他们 睡觉\\      \jambox{（3，pl）}
 \zl
-\addlines[-1]
+%\addlines[-1]
 可以通过增加符号的数量来描述这些关系。我们用下面的规则来替换S $\to$ NP NP NP V：
 %It is possible to capture these relations with grammatical rules by increasing 
 %the number of symbols we use. Instead of the rule S $\to$ NP NP NP V, we can use
@@ -1202,7 +1187,7 @@ sm edges
 \ex N $\to$
 \ex N $\to$ $\epsilon$
 \zl 
-\addlines
+%\addlines
 
 \noindent
 相应的树形图如图\vref{Abbildung-NP-ohne-Nomen}所示。
@@ -1342,6 +1327,7 @@ sm edges
 %always spoken of adjectives. However, it is possible to have very complex adjective phrases in pre-nominal position.
 %These can be adjectives with complements (\mex{1}a,b) or adjectival participles (\mex{1}c,d):
 
+\largerpage
 \eal
 \ex 
 \gll der seiner Frau treue Mann\\
@@ -1892,7 +1878,7 @@ sm edges
 \end{figure}%
 
 %\addlines
-\largerpage
+%\largerpage
 图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
 }
@@ -1933,7 +1919,7 @@ sm edges
 % \citet{KP90a} have shown that the respective theories are not necessarily less restrictive
 %than theories which adopt a strict version of the \xbar theory. See also the discussion in Section~\ref{sec-Diskussion-X-Bar}.
 
-\largerpage
+%\largerpage
 %\bigskip
 \questions{
 \begin{enumerate}
