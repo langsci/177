@@ -24,6 +24,7 @@ BS2005b-u,BSagot2005a-u,%SxLFG
 Clement2009a-u,CK2001a-u% XLFG
 }。
 
+\largerpage
 以下是一些已经应用LFG语法片段（可能是不完整的）的语言：
 
 \begin{itemize}
@@ -65,6 +66,7 @@ Clement2009a-u,CK2001a-u% XLFG
 } \citep*{BKNS99a-ed,BDKMR02a-u}。 
 除了上述语法，一个针对北梭托语\ilce{北梭托语}{Northern Sotho}的语法也正在研发\citep{Faasz2010a-u}。
 
+\addlines
 很多LFG系统除了使用以语言学为准的语法，还使用了统计学方法\isce{统计学}{statistics}。
 这些统计模块首先有助于检索出一个句子最有可能的解释，它也可以提高语言处理的效率，以及增强系统的鲁棒性\citep{KRKMVC2004a-u,RKKCMJ2002a-u}。
 Josef van Genabith在都柏林的团队目前正在研究如何从语料中自动约归出LFG语法\citep{JGCCR99a-u,DBCGW2005a-u,CBFDRCW2005a-u,CG2006a-u,GWG2007a-u,CBDRGW2008a-u,SvG2009a-u}。
@@ -72,9 +74,6 @@ Josef van Genabith在都柏林的团队目前正在研究如何从语料中自�
 很多系统都提供在线测试功能，如：
 \begin{itemize}
 \item \url{http://iness.uib.no/xle-web/xle-web}
-
-% Statistik Dublin
-\item \url{http://lfg-demo.computing.dcu.ie/lfgparser.html}
 \item \url{http://www.xlfg.org/}
 \end{itemize}
 
@@ -121,6 +120,8 @@ f-结构意为功能结构。
 }
 这些功能被称为可被管辖的语法功能（\emph{governable grammatical functions}）\iscesub{语法功能}{grammatical function}{可被管辖的}{governable}。
 表\ref{Tabelle-GOV}罗列了一些可被管辖的语法功能\citep{Dalrymple2006a}。
+\pred 的规约对应于GB理论中的题元格\isceat{theta-栅}{$\theta$-栅}{theta-grid}{$\theta$-grid}。
+中心词的配价\isce{价}{valence}信息也包含在\predvc 的规约信息中。
 \begin{table}
 \centering
 \begin{tabular}[t]{@{}lp{26em}@{}} 
@@ -143,11 +144,11 @@ f-结构意为功能结构。
 \end{tabular}
 \caption{\label{Tabelle-GOV}管辖语法功能}
 \end{table}\todostefan{\objtheta im Deutschen?}%
-\pred 的规约对应于GB理论中的题元格\isceat{theta-栅}{$\theta$-栅}{theta-grid}{$\theta$-grid}。
-中心词的配价\isce{价}{valence}信息也包含在\predvc 的规约信息中。
+
+\pagebreak
 
 表\vref{Tabelle-NGOV}介绍了非管辖语法功能。
-\begin{table}
+\begin{table}[t]
 \centering
 \begin{tabular}[t]{@{}lp{26em}@{}} 
 \lsptoprule
@@ -248,9 +249,9 @@ $f$: \lfgms{ pred  & {\small `SNEEZE\arglist{\lfgsubj}'}\\
 %% \begin{tabular}[t]{@{}ll@{}}
 %% \begin{tabular}[t]{@{}cc@{}}
 %% \multicolumn{2}{c}{\rnode{ip}{IP}}\\[2ex]
-%% \rnode{b}{\rnode{np}{NP}}       & \rnode{i1}{I$'$}\\[2ex]
-%% \rnode{n1}{N$'$}     & \rnode{vp}{VP}\\[2ex]     
-%% \rnode{n}{N}         & \rnode{v1}{V$'$}\\[2ex]   
+%% \rnode{b}{\rnode{np}{NP}}       & \rnode{i1}{\hspaceThis{$'$}I$'$}\\[2ex]
+%% \rnode{n1}{\hspaceThis{$'$}N$'$}     & \rnode{vp}{VP}\\[2ex]     
+%% \rnode{n}{N}         & \rnode{v1}{\hspaceThis{$'$}V$'$}\\[2ex]   
 %% \rnode{David}{David} & \rnode{v}{V}\\[2ex]       
 %%                     & \rnode{sneezed}{sneezed}\\
 %% \end{tabular}
@@ -265,8 +266,8 @@ $f$: \lfgms{ pred  & {\small `SNEEZE\arglist{\lfgsubj}'}\\
 %% \Aput*{$\phi$}
 %% \end{tabular}
 \tree{IP}{%
-  \tree[b]{NP}{\tree{N$'$}{\tree{N}{\le{David\\David}}}}
-  \tree{I$'$}{\tree{VP}{\tree{V$'$}{\tree{V}{\le{sneezed\\打喷嚏}}}}}}%
+  \tree[b]{NP}{\tree{\hspaceThis{$'$}N$'$}{\tree{N}{\le{David\\David}}}}
+  \tree{\hspaceThis{$'$}I$'$}{\tree{VP}{\tree{\hspaceThis{$'$}V$'$}{\tree{V}{\le{sneezed\\打喷嚏}}}}}}%
 \hspace*{4em}%
 \raisebox{-2em}{\lfgms{
 pred & {\small `SNEEZE\arglist{\lfgsubj}}'\\
@@ -283,7 +284,7 @@ $\phi$指明了NP结点与其相对应的f-结构之间的映射关系，在图�
 
 \ea
 \begin{tabular}[t]{@{}c@{}}
-\rnode{a}{\rnode{v1}{V$'$}}\\[2em]
+\rnode{a}{\rnode{v1}{\hspaceThis{$'$}V$'$}}\\[2em]
 \rnode{b}{\rnode{v}{V}}\\[2em]
 \rnode{sneezed}{\begin{tabular}{@{}c@{}}sneezed\\打喷嚏\end{tabular}}\\
 \end{tabular}
@@ -308,11 +309,11 @@ IP、I$'$和I（亦包括VP）被映射到同一个f-结构上。
 }
 
 \ex {\tree[a]{IP}{%
-  \tree{NP}{\tree{N$'$}{%
+  \tree{NP}{\tree{\hspaceThis{$'$}N$'$}{%
     \tree{N}{\le{David\\David}}}}
-  \tree[b]{I$'$}{%
+  \tree[b]{\hspaceThis{$'$}I$'$}{%
     \tree[c]{I}{\le{is\\\textsc{aux}}}
-    \tree[d]{VP}{\tree[e]{V$'$}{\tree[f]{V}{\le{yawning\\打哈欠}}}}}}}%
+    \tree[d]{VP}{\tree[e]{\hspaceThis{$'$}V$'$}{\tree[f]{V}{\le{yawning\\打哈欠}}}}}}}%
 \hspace*{4em}%
 {\rnode{o}{\raisebox{-2em}{\lfgms{ pred & {\small `YAWN\arglist{\lfgsubj}'}\\
                                    tense & \lfgpres\\
@@ -405,7 +406,7 @@ V$'$ $\to$ \begin{tabular}[t]{@{}r@{~=~}l@{}}
 在（\mex{0}）中，
 经过标注的c-结构所允准的短语可做如下表示：
 \ea
-\talltree[a]{V$'$}{\le[b]{V}}%
+\talltree[a]{\hspaceThis{$'$}V$'$}{\le[b]{V}}%
 \hspace*{3em}%
 \rnode{d}{[\ ]}
 \ltor{a}{d}
@@ -424,7 +425,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
 亦即NP结点下方成分（\down）所对应的全部功能信息。
 可视化展示见（\mex{1}）：
 \ea
-\talltree[a]{V$'$}{\le[b]{V} \le[c]{NP}}%
+\talltree[a]{\hspaceThis{$'$}V$'$}{\le[b]{V} \le[c]{NP}}%
 \hspace*{3em}%
 \rnode{d}{\fd{\fdand{\feat{\lfgobj}{\rnode{e}{[\ ]}}}}}
 \ltor{a}{d}
@@ -489,7 +490,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
 \hspace*{-2em}
 {\ctree[ip]{IP}{%
   \tree[b]{NP}{\tree[n]{N}{\le{David\\David}}}
-  \tree[ii]{I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{yawned\\打哈欠}}}}}}%
+  \tree[ii]{\hspaceThis{$'$}I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{yawned\\打哈欠}}}}}}%
 \hspace*{3em}%
 {\fd{\rnode{s}{\fdand{\feat{\pred}{\small `YAWN\arglist{\subj}'}
            \feat{\subj}{\rnode{i}{\fdand{\feat{\pred}{\small `DAVID'}}}}}}}}%
@@ -504,7 +505,7 @@ NP对应的标注声明了其父结点所对应的f-结构中的\textsc{obj}，�
 %% \centerline{%
 %% {\ctree[ip]{IP}{%
 %%   \tree[b]{NP}{\tree[n]{N}{\le{David}}}
-%%   \tree[ii]{I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{yawned}}}}}}%
+%%   \tree[ii]{\hspaceThis{$'$}I$'$}{\tree[vp]{VP}{\tree[v]{V}{\le{yawned}}}}}}%
 %% \hspace*{3em}%
 %% {\rnode{s}{\lfgms{ pred & {\small `YAWN\arglist{\lfgsubj}'}\\
 %%                    subj & \rnode{i}{[ \textsc{pred} {\small `DAVID'} ]}}}}%
@@ -652,6 +653,7 @@ yesterday（昨天）和at noon（在中午）。
 \mbox{} \citet{BM95a}\isce[|(]{被动}{passive}\isce[|(]{形态}{morphology}主张将词视为构造句法结构的原子成分，即“词汇完整性”（lexical integrity）\isce{词汇完整性}{lexical integrity}\footnote{%
  进一步了解词汇完整性，可参阅 \citew[\page 84]{Anderson92a-u}。
 }。
+\addlines[2]
 
 句法规则无法创造新的词，也无法引用词的内部结构信息。每一个终结结点（即树上的每一个叶子结点）均为词。
 由此我们可以根据词汇完整性否定一些基于GB的分析，如 \citet{Pollock89a-u}提出的针对法语例句（\mex{1}）的分析（见表\vref{abb-Pollock}，该表选自\citealp[\page 617]{Kuhn2007a}）：
@@ -674,24 +676,24 @@ yesterday（昨天）和at noon（在中午）。
 for tree={parent anchor=south, child anchor=north,align=center,base=bottom}
 [AgrP
 	[Spec-AgrP,name=specagr]
-	[Agr$'$
+	[\hspaceThis{$'$}Agr$'$
 		[Agr
 			[\textit{-ait},name=ait]]
 		[NegP
 			[Spec-NegP
 				[\textit{pas},name=pas]]
-			[Neg$'$
+			[\hspaceThis{$'$}Neg$'$
 				[Neg
 					[\textit{ne},name=ne]]
 				[TP
 					[Spec-TP]
-					[T$'$
+					[\hspaceThis{$'$}T$'$
 						[T
 							[\textit{-er-},name=er]]
 						[VP
 							[Spec-VP
 								[\textit{Marie},name=marie]]
-							[V$'$
+							[\hspaceThis{$'$}V$'$
 								[V
 									[\textit{parl-},name=parl]]]]]]]]]]
 \begin{pgfinterruptboundingbox}% otherwise the picture gets larger due to the control points
@@ -894,6 +896,7 @@ a-结构 & \emph{helfen} & $\langle$ x & y~~ $\rangle$\\
 \label{Regel-LFG-VP-alles-optional}
 VP $\to$ NP* (V)
 \z
+\addlines
 动词短语的所有组成部分都是可选的，注意括号表示可以出现也可以不出现。Kleene星号\isce{Kleene星号}{Kleene star}\isce{*}{*}表示符号可以出现任意次。这也包括出现零次的情况。和GB的分析一致，动词在动词前置的小句中属于C范畴，而并不假设范畴I存在投射（\citealp{Haider93a,Haider95b-u,Haider97a}；\citealp[\S~IV.3]{Sternefeld2006a-u}），
 这是出于对德语语言事实的考量\citep[\S~3.2.2]{Berman2003a}。动词会从C范畴位置提供f-结构信息。
 图~\vref{Abb-Verbstellung-LFG}是 \citet[\page 41]{Berman2003a}中提出的分析的简化版本。
@@ -934,6 +937,7 @@ C$'$被下面的一个特殊规则所允准：
 \item 直接在短语规则中允准（详见Berman\citeyear[\S~2.1.3.1]{Berman96a-u}；\citeyear{Berman2003a}）
 \end{itemize}
 
+\enlargethispage*{5pt}
 \noindent
 如果我们假设语迹在给定结构的语义解释中是发挥作用的，则第一种分析和基于移动的GB分析有着一样的问题。
 在\ref{sec-GB-lokale-Umstellung}中，我们已经讨论过这些问题了。
@@ -1274,6 +1278,7 @@ GPSG处理长距离依存是通过所谓的信息在句法树上向上传递进�
 为了处理一些语言，研究人员甚至提出了一些连成分范畴都不确定的规则（参见\ref{sec-Diskussion-X-Bar}）。
 在这些语法中，f-结构、一致性、完备性共同保证了语法只能允准符合语法规则的结构。
 
+\addlines
 LFG和诸如\hpsgc、\cxgc 的一些变体等理论不同之处在于特征结构并没有被类型化。
 因此，无法对类型层级进行概括。
 直到最近几年，基于继承关系（inheritance hierarchies\isce{承继}{inheritance}）的知识层级化组织都不是理论分析的一部分。
@@ -1322,6 +1327,7 @@ LFG可以显性地区分主语和非主语。
 
 %\section*{练习题}
 
+\largerpage
 \exercises{
 \begin{enumerate}
 \item 给出kannte（“知道”的过去式）的词汇项描写。
