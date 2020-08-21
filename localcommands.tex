@@ -326,11 +326,11 @@ frbox/.style={
 \ifbool{langsci@tbls@tcolorbox}{%
 \newcommand{\questions}[1]{{\memoizeset{disable}%
 %\begin{tblsfilledsymbol}{Comprehension questions}{people}#1\end{tblsfilledsymbol}}}
-\begin{tblsfilledsymbol}{思考题}{people}#1\end{tblsfilledsymbol}}}
+\begin{tblsfilledsymbol}{思考题}{people}\setlist{leftmargin=*}#1\end{tblsfilledsymbol}}}
 
 \newcommand{\exercises}[1]{{\memoizeset{disable}%
 %\begin{tblsfilledsymbol}{Exercises}{pencil}#1\end{tblsfilledsymbol}}}
-\begin{tblsfilledsymbol}{练习题}{pencil}#1\end{tblsfilledsymbol}}}
+\begin{tblsfilledsymbol}{练习题}{pencil}\setlist{leftmargin=*}#1\end{tblsfilledsymbol}}}
 
 \newcommand{\furtherreading}[1]{{\memoizeset{disable}%
 %\begin{tblsfilledsymbol}{Further reading}{book}#1\end{tblsfilledsymbol}}}}{}
