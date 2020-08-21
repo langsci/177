@@ -4742,25 +4742,26 @@ G.\  \citet{GMueller2009a}曾经提出过一个更复杂的分析。Müller 将�
 \begin{figure}
 \centering
 \begin{forest}
+sm edges
 [CP
 	[C
-		[v $+$ APASS
-			[V, name=v1]
-			[v $+$ APASS
-				[$\varnothing$, name=zero, tier=word]]]
-		[C]]
+		[v $+$ APASS,tier=vC
+			[V, name=v1, tier=Vv]
+			[v $+$ APASS, tier=Vv
+				[$\varnothing$, name=zero]]]
+		[C,tier=vC]]
 	[vP
 		[PP$_2$
-			[in den Müll\\\textsc{prep} \defart{} 垃圾,tier=word,roof]]
+			[in den Müll\\\textsc{prep} \defart{} 垃圾,roof]]
 		[\hspaceThis{$'$}v$'$
 			[VP
 				[DP$_1$
 					[(mit) diesen Klamotten\\（\textsc{prep}）这 \, 衣服,roof]]
 				[\hspaceThis{$'$}V$'$
 					[t$_2$]
-					[t$_V$, tier=word]]]
+					[t$_V$]]]
 			[v
-				[t$_v$, tier=word]]]]]
+				[t$_v$]]]]]
 \draw (v1.south)--(zero.north);
 \end{forest}
 \caption{G.\, \citet{GMueller2009a}将In den Müll mit diesen Klamotten（在有这些衣服的垃圾箱中）分析为一个逆被动构式}\label{abb-in-den-Muell-Gereon}
