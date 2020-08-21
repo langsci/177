@@ -426,7 +426,9 @@ S-结构演化出语音形式（Phonetic Form，简称PF）\isce{语音形式（
 %https://en.wikipedia.org/wiki/Phonetic_Form
 语音操作表现在语音形式（Phonetic Form，简称PF）\isce[|(]{语音形式（PF）}{Phonetic Form (PF)}这一层。PF负责生成实际发声的形式。比如说，wanna这个简称就发生在PF层\citep[\page 20--21]{Chomsky81a}。
 %Phonological operations are represented at\is{Phonetic Form (PF)|(} the level of Phonetic Form (PF). PF is responsible for creating the form which
-%is actually pronounced. For example, so-called \emph{wanna}-contraction takes place at PF \citep[\page 20--21]{Chomsky81a}.
+%is actually pronounced. For example, so-called \emph{wanna}-contraction takes place at PF
+%\citep[\page 20--21]{Chomsky81a}.
+\addlines[2]
 \eal
 \ex 
 \gll The students want to visit Paris.\\
@@ -575,11 +577,13 @@ grid}，或称$\theta$-栅\isceat{theta-栅}{$\theta$-栅}{theta-grid}{$\theta$-
 %also called \emph{modifiers}\is{modifier}. Adjuncts are not present in the argument structure
 %of predicates.
 
+%\addlines[2]
 按照GB的理论假说，论元出现在小句的特定位置上，即所谓的论元位置\iscesub{论元}{argument}{论元位置}{position} ，\egc 一个\xnullc 成分的子结点（参见\ref{sec-xbar}）。$\theta$-准则（也叫做题元准则）\isceat{theta-准则}{$\theta$-准则}{theta-criterion}{Theta-Criterion}规定论元位置上的成分必须被赋予一个语义角色（semantic role）\isce{语义角色}{semantic role}，也叫做$\theta$-角色（theta-role）\isceat{theta-角色}{$\theta$-角色}{theta-role}{$\theta$-role}。而且，每一个角色都只能被指派一次\citep[\page 36]{Chomsky81a}：
 %Following GB assumptions, arguments occur in specific positions in the clause -- in so-called argument positions\is{argument!position} (\eg the sister of 
 %an \xnull element, see Section~\ref{sec-xbar}). The Theta-Criterion\is{theta-criterion@Theta-Criterion} states that elements in argument positions have to be %assigned
 %a semantic role\is{semantic role} -- a so-called theta-role\is{theta-role@$\theta$-role} -- and
 %each role can be assigned only once \citep[\page 36]{Chomsky81a}: 
+\pagebreak
 \begin{principle}[$\theta$-准则]\mbox{}\label{theta-Kriterium}
 %\begin{principle-break}[Theta-Criterion]\label{theta-Kriterium}
 \begin{itemize}
@@ -640,6 +644,7 @@ grid}，或称$\theta$-栅\isceat{theta-栅}{$\theta$-栅}{theta-grid}{$\theta$-
 \noindent
 （\mex{1}）给出了一个词条的例子：
 %(\mex{1}) shows an example of a lexical entry:
+%\begin{figure}
 \ea
 \raisebox{1.2ex}{%
 \begin{tabular}[t]{|l|ll|}
@@ -664,6 +669,8 @@ $\theta$-角色                & \underline{施事} & 受益者\\[2mm]\hline
 %grammatical particularities &                   & dative\\\hline
 \end{tabular}}
 \z
+%\vspace{-\baselineskip}
+%\end{figure}
 将语义角色和特定句法要求对应起来的过程（如，受益者=与格）也叫做联接（linking）\isce{联接}{linking}。
 %Assigning semantic roles to specific syntactic requirements (beneficiary = dative) is also called \emph{linking}.\is{linking}
 
@@ -731,17 +738,19 @@ $\theta$-角色                & \underline{施事} & 受益者\\[2mm]\hline
 %} 
 %\LATER{ \citet{Wunderlich96a} 对这种特征分解观点进行了评论}
 %\LATER{ \citet{Wunderlich96a} has criticized this feature decomposition}
-\begin{table}[H]
+\addlines[2]
+%\enlargethispage{3pt}
+\begin{table}%[H]
 \centerline
 {\renewcommand{\arraystretch}{1.5}%
-\begin{tabular}[t]{ccc}
+\scalebox{.9}{\begin{tabular}[t]{ccc}
 \lsptoprule
  & $-$V & $+$V \\
 \midrule
 $-$N & P = [ $-$N, $-$V ] &  V = [ $-$N, $+$V ] \\
   $+$N & N = [ $+$N, $-$V ]    &  A = [ $+$N, $+$V ]\\
 \lspbottomrule
-\end{tabular}}
+\end{tabular}}}
 \caption{\label{Tabelle-Merkmalszerlegung-Wortarten}应用二元特征的四种词汇范畴表征}
 %\caption{\label{Tabelle-Merkmalszerlegung-Wortarten}Representation of four lexical categories using two binary features}
 \end{table}%
@@ -811,6 +820,7 @@ $-$N & P = [ $-$N, $-$V ] &  V = [ $-$N, $+$V ] \\
 %     the night during\\
 %\mytrans{during the night}
 \zl
+%\pagebreak
 所以说，我们要么必须发明一个新范畴，要么放弃用二元范畴特征来描述排序方面的限制。如果我们要把后置词看作是一个新范畴，我们就必须假定还有一个二元特征。\footnote{%
 Martin Haspelmath\aimention{Martin Haspelmath}指出，我们可以提出这样一条规则，将中心语后的论元成分移位到中心语前的位置上（请参阅\citew[\page 89]{Riemsdijk78a}有关转换方法的讨论）。这与德语形容词的前置论元的句法表达是一致的：
 \eal
@@ -868,6 +878,7 @@ D   & 限定词\iscesubsub{范畴}{category}{功能}{functional}{D}{D} （冠词
 \end{tabular}
 \end{table}%
 
+%\largerpage[4]
 \subsubsection{假设与规则}
 %\subsubsection{Assumptions and rules}
 
@@ -906,6 +917,8 @@ D   & 限定词\iscesubsub{范畴}{category}{功能}{functional}{D}{D} （冠词
 %\subsection{CP and IP in English}
 \label{Abschnitt-GB-CP-IP-System-Englisch}\label{sec-GB-CP-IP-System-English}\ilce[|(]{英语}{English}
 
+%\largerpage[3]
+\enlargethispage*{2\baselineskip}
 主流生成语法的大部分著作都深受之前分析英语文献的影响。如果想真正理解德语和其他语言的GB分析，我们需要首先理解其对英语的分析。基于这个原因，本节重在介绍这部分内容。在英语的词汇功能语法中，也有CP/IP系统。由此，下一节也为了解第\ref{Kapitel-LFG}章有关词汇功能语法的一些基础理论打下了基础。
 %Most work in Mainstream Generative Grammar is heavily influenced by previous publications dealing with English. If one wants to understand GB analyses of
 %German and other languages, it is important to first understand the analyses of English and, for this reason, this will be the focus of this section.
@@ -927,6 +940,12 @@ Infl表示屈折变化（Inflection），就像插入结构中的屈折词缀一
 %affixes. Figure~\vref{Abb-Old-School-Hilfsverb} shows a sample 
 %analysis of a sentence with an auxiliary, which uses the rule in (\mex{0}b). 
 %
+动词跟它的补足语一起构成一个结构单元：VP。VP的成分性质得到了一些成分测试的支持，并进一步根据它们的定位限制来区分出主语和宾语。
+%Together with its complements, the verb forms a structural unit: the VP. The constituent status of
+%the VP is supported by several constituent tests and further differences
+%between subjects and objects regarding their positional restrictions.
+\pagebreak
+
 \begin{figure}
 \begin{floatrow}
 \ffigbox{%
@@ -939,7 +958,7 @@ sm edges
   	[will; 将]]
   [VP
   	[\hspaceThis{$'$}V$'$
-		[V$^0$[read; 读]]
+		[V[read; 读]]
 		[NP[the newspaper; \textsc{da} 报纸, roof]]]]]
 \end{forest}
 }{\caption{\label{Abb-Old-School-Hilfsverb}
@@ -953,11 +972,11 @@ sm edges
   [NP
   	[Ann; Ann,roof]]
   [\hspaceThis{$'$}I$'$
-  	[I$^0$
+  	[I
   		[will; 将]]
 	[VP
   	[\hspaceThis{$'$}V$'$
-		[V$^0$[read; 读]]
+		[V[read; 读]]
 		[NP[the newspaper; \textsc{da} 报纸, roof]]]]]]
 \end{forest}}
 {\caption{\label{Abb-GB-Hilfsverb}CP/IP系统中带有助动词的句子}}
@@ -965,7 +984,8 @@ sm edges
 \end{floatrow}
 \end{figure}%
 
-动词跟它的补足语一起构成一个结构单元：VP。VP的成分性质得到了一些成分测试的支持，并进一步根据它们的定位限制来区分出主语和宾语。
+% moved above for layout reasons
+%动词跟它的补足语一起构成一个结构单元：VP。VP的成分性质得到了一些成分测试的支持，并进一步根据它们的定位限制来区分出主语和宾语。
 %Together with its complements, the verb forms a structural unit: the VP. The constituent status of
 %the VP is supported by several constituent tests and further differences
 %between subjects and objects regarding their positional restrictions.
@@ -990,11 +1010,11 @@ sm edges
 %%   [NP
 %%   	[Ann]]
 %%   [\hspaceThis{$'$}I$'$
-%%   	[I$^0$
+%%   	[I
 %%   		[will]]
 %% 	[VP
 %%   	[\hspaceThis{$'$}V$'$
-%% 		[V$^0$[read]]
+%% 		[V[read]]
 %% 		[NP[the newspaper, roof]]]]]]
 %% \end{forest}}
 %% \caption{\label{Abb-GB-Hilfsverb}English sentence with auxiliary verb in the CP/IP system}
@@ -1007,6 +1027,7 @@ sm edges
 （\mex{1}）中的句子被分析为标补语短语（CP），标补语是中心语：
 %The sentences in (\mex{1}) are analyzed as complementizer phrases (CPs), the complementizer is the head:
 
+\largerpage
 \eal
 \ex 
 \gll that Ann will read the newspaper\\
@@ -1027,36 +1048,38 @@ sm edges
 %\centerline{%
 \begin{floatrow}
 \ffigbox{
+\scalebox{.95}{%
 \begin{forest}
 sm edges
 [CP
 [\hspaceThis{$'$}C$'$
-	[C$^0$[that; \textsc{comp}]]
+	[C[that; \textsc{comp}]]
 	[IP
 		[NP[Ann; Ann,roof]]
 		[\hspaceThis{$'$}I$'$
-			[I$^0$[will; 将]]
+			[I[will; 将]]
 			[VP
 				[\hspaceThis{$'$}V$'$
-					[V$^0$[read; 读]]
+					[V[read; 读]]
 					[NP[the newspaper; \textsc{da} 报纸, roof]]]]]]]]
-\end{forest}}{\caption{\label{Abb-GB-Englisch-CP}标补语短语}}
+\end{forest}}}{\caption{\label{Abb-GB-Englisch-CP}标补语短语}}
 %{\caption{\label{Abb-GB-Englisch-CP}Complementizer phrase}}
 \ffigbox{%
+\scalebox{.95}{%
 \begin{forest}
 sm edges
 [CP
 [\hspaceThis{$'$}C$'$
-	[C$^0$[will$_k$; 将$_k$]]
+	[C[will$_k$; 将$_k$]]
 	[IP
 		[NP[Ann; Ann,roof]]
 		[\hspaceThis{$'$}I$'$
-			[I$^0$[\trace$_k$]]
+			[I[\trace$_k$]]
 			[VP
 				[\hspaceThis{$'$}V$'$
-					[V$^0$[read; 读]]
+					[V[read; 读]]
 					[NP[the newspaper; \textsc{da} 报纸, roof]]]]]]]]
-\end{forest}
+\end{forest}}
 }{\caption{是非问句}\label{Abb-GB-Ja-Nein}}
 %{\caption{Polar question}\label{Abb-GB-Ja-Nein}}
 \end{floatrow}
@@ -1064,6 +1087,7 @@ sm edges
 
 如（\mex{1}）中的那些英语是非问句\label{Seite-GB-Entscheidungsfragen-Englisch}是通过将助动词\isce{助动词倒装}{auxiliary inversion}前移到主语前构成的。
 %Yes/no-questions\label{Seite-GB-Entscheidungsfragen-Englisch} in English such as those in (\mex{1}) are formed by moving the auxiliary verb\is{auxiliary %inversion} in front of the subject.
+\largerpage
 \ea
 \gll Will Ann read the newspaper?\\
       将 Ann 读 \defart{} 报纸\\
@@ -1079,14 +1103,14 @@ sm edges
 %% sm edges
 %% [CP
 %% [\hspaceThis{$'$}C$'$
-%% 	[C$^0$[will$_k$]]
+%% 	[C[will$_k$]]
 %% 	[IP
 %% 		[NP[Ann]]
 %% 		[\hspaceThis{$'$}I$'$
-%% 			[I$^0$[\trace$_k$]]
+%% 			[I[\trace$_k$]]
 %% 			[VP
 %% 				[\hspaceThis{$'$}V$'$
-%% 					[V$^0$[read]]
+%% 					[V[read]]
 %% 					[NP[the newspaper, roof]]]]]]]]
 %% \end{forest}
 %% }
@@ -1096,35 +1120,36 @@ sm edges
 \begin{figure}
 \begin{floatrow}
 \ffigbox{%
+\scalebox{.95}{%
 \begin{forest}
 sm edges
 [CP
 [NP$_i$[what; 什么,roof]]
 [\hspaceThis{$'$}C$'$
-	[C$^0$[will$_k$; 将$_k$]]
+	[C[will$_k$; 将$_k$]]
 	[IP
 		[NP[Ann; Ann,roof]]
 		[\hspaceThis{$'$}I$'$
-			[I$^0$[\trace$_k$]]
+			[I[\trace$_k$]]
 			[VP
 				[\hspaceThis{$'$}V$'$
-					[V$^0$[read; 读]]
+					[V[read; 读]]
 					[NP[\trace$_i$]]]]]]]]
-\end{forest}
+\end{forest}}
 }{\caption{\emph{wh}-问句}\label{Abb-GB-Wh}}
 %}{\caption{\emph{wh}-question}\label{Abb-GB-Wh}}
 \ffigbox{%
-\begin{forest}
+\scalebox{.95}{\begin{forest}
 sm edges
 [IP
 	[NP[Ann; Ann,roof]]
 	[\hspaceThis{$'$}I$'$
-		[I$^0$[-s;-\textsc{3sg}]]
+		[I[-s;-\textsc{3sg}]]
 		[VP
 			[\hspaceThis{$'$}V$'$
-				[V$^0$[read-;读-]]
+				[V[read-;读-]]
 				[NP[the newspaper; \textsc{da} 报纸, roof]]]]]]
-\end{forest}}{
+\end{forest}}}{
 \caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}没有助动词的句子}}
 %\caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}Sentence without auxiliary}}
 \end{floatrow}
@@ -1150,20 +1175,22 @@ sm edges
 %% [CP
 %% [NP[what$_i$]]
 %% [\hspaceThis{$'$}C$'$
-%% 	[C$^0$[will$_k$]]
+%% 	[C[will$_k$]]
 %% 	[IP
 %% 		[NP[Ann,roof]]
 %% 		[\hspaceThis{$'$}I$'$
-%% 			[I$^0$[\trace$_k$]]
+%% 			[I[\trace$_k$]]
 %% 			[VP
 %% 				[\hspaceThis{$'$}V$'$
-%% 					[V$^0$[read]]
+%% 					[V[read]]
 %% 					[NP[\trace$_i$]]]]]]]]
 %% \end{forest}
 %% }
 %% \caption{\label{Abb-GB-Wh}English \emph{wh}-question}
 %% \end{figure}%
 如前所述，read的宾语的移位由语迹来表明。当我们构建句义的时候，这是非常重要的。动词指派给它的宾语位置上的成分以语义角色。因此，我们不得不能够“重建”这样的事实，即what（什么）实际上源自这个位置。这一点可以由what与其语迹的下标重合而得到保证。\ilce[|)]{英语}{English}
+%\largerpage[3]
+%\enlargethispage*{4\baselineskip}
 %As before, the movement of the object of \emph{read} is indicated by a trace. This is important when constructing the meaning of
 %the sentence. The verb assigns some semantic role to the element in its object position. Therefore,
 %one has to be able to ``reconstruct'' the fact that \emph{what} actually originates in this position. This is ensured by coindexation of the trace with \emph{what}.\il{English|)}
@@ -1178,10 +1205,10 @@ sm edges
 %% [IP
 %% 	[NP[Ann,roof]]
 %% 	[\hspaceThis{$'$}I$'$
-%% 		[I$^0$[-s]]
+%% 		[I[-s]]
 %% 		[VP
 %% 			[\hspaceThis{$'$}V$'$
-%% 				[V$^0$[read-]]
+%% 				[V[read-]]
 %% 				[NP[the newspaper, roof]]]]]]
 %% \end{forest}}
 %% \caption{\label{Abb-GB-englischer-Satz-ohne-Hilfsverb}English sentence without auxiliary}
@@ -1220,6 +1247,7 @@ sm edges
 范畴C、I和V，与它们的限定语位置一起，可以联接到空间位置的分布中\isce{空间位置分布}{topology}，如图\vref{Abb-GB-Topo}所示。
 %The categories C, I and V, together with their specifier positions, can be linked to the
 %topological\is{topology} fields as shown in Figure~\vref{Abb-GB-Topo}.
+%\newpage
 
 \begin{figure}
     \centering
@@ -1235,9 +1263,9 @@ sm edges
               ]
               [\hspaceThis{$'$}C$'$
                     [{}
-                      [C$^0$, terminus
-                        [C$^0$\\左SB, name=c0
-%                     [C$^0$\\left SB, name=c0
+                      [C, terminus
+                        [C\\左SB, name=c0
+%                     [C\\left SB, name=c0
                         ]
                       ]
                     ]
@@ -1491,12 +1519,16 @@ Bierwisch认为是 \citet{Fourquet57a}最早提出了底层动词末位假设。
  %    that he must have seen him\\
 %\mytrans{that he must have seen him}
 \zl
-\item\label{SOV-Skopus}\isce[|(]{辖域}{scope} 在（\ref{bsp-absichtlich-nicht-anal}）中，副词的辖域取决于它们的语序：位于最左边的副词辖域囊括其后的两个成分。\footnote{%
+\item\label{SOV-Skopus}\isce[|(]{辖域}{scope} 在（\ref{bsp-absichtlich-nicht-anal}）中，
+副词的辖域取决于它们的语序：位于最左边的副词辖域囊括其后的两个成分。\footnote{%
 在这里，我们需要指出的是，左边修饰语的辖域包括其右边的这条规则也是有例外的。\citet*[\page47]{Kasper94a}讨论了（i）中的例子，这些例子出自 \citet*[\page137]{BV72}。
 %\item\label{SOV-Skopus}\is{s\textsc{cop}e|(} The s\textsc{cop}e relations of the adverbs in (\ref{bsp-absichtlich-nicht-anal}) depend on their order:
 %the left-most adverb has s\textsc{cop}e over the two following elements.\footnote{%
 %At this point, it should be mentioned that there seem to be exceptions from the rule that modifiers to the left take s\textsc{cop}e over those to
 %their right.  \citet*[\page47]{Kasper94a} discusses examples such as (i), which go back to  \citet*[\page137]{BV72}.
+% Since we are in an itemize we have to adapt the indentation of the labels in gb4e.
+%
+\setlength{\footexindent}{1.5em}
 \eal
 \label{bsp-peter-liest-gut-wegen}
 \ex 
@@ -1613,15 +1645,15 @@ Bierwisch认为是 \citet{Fourquet57a}最早提出了底层动词末位假设。
 sm edges
 [CP
 [\hspaceThis{$'$}C$'$
-	[C$^0$[dass;\textsc{comp}]]
+	[C[dass;\textsc{comp}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[\hspaceThis{$'$}I$'$
 			[VP
 				[\hspaceThis{$'$}V$'$
 					[NP[diesen Mann;这个 男人, roof]]
-					[V$^0$[\trace$_j$]]]]
-			[I$^0$[kenn-$_j$ -t;认识- -\textsc{3sg}]]]]]]
+					[V[\trace$_j$]]]]
+			[I[kenn-$_j$ -t;认识- -\textsc{3sg}]]]]]]
 \end{forest}
 \caption{\label{Abb-GB-Komplementierer}在\cnullc 中带有标补语的句子}
 %\caption{\label{Abb-GB-Komplementierer}Sentence with a complemen\-ti\-zer in \cnull}
@@ -1631,15 +1663,15 @@ sm edges
 %% sm edges
 %% [CP
 %% [\hspaceThis{$'$}C$'$
-%% 	[C$^0$[(kenn-$_j$ -t)$_k$;knows]]
+%% 	[C[(kenn-$_j$ -t)$_k$;knows]]
 %% 	[IP
 %% 		[NP [jeder;everybody]]
 %% 		[\hspaceThis{$'$}I$'$
 %% 			[VP
 %% 				[\hspaceThis{$'$}V$'$
 %% 					[NP [diesen Mann; this man, roof]]
-%% 					[V$^0$[\trace$_j$]]]]
-%% 			[I$^0$ [\trace$_k$]]]]]]
+%% 					[V[\trace$_j$]]]]
+%% 			[I [\trace$_k$]]]]]]
 %% \end{forest}}
 %% }{\caption{\label{Abb-GB-Verberststellung}Verb position in GB}}
 %% \end{floatrow}
@@ -1661,15 +1693,15 @@ sm edges
 sm edges
 [CP
 [\hspaceThis{$'$}C$'$
-	[C$^0$[(kenn-$_j$ -t)$_k$;认识- -\textsc{3sg}]]
+	[C[(kenn-$_j$ -t)$_k$;认识- -\textsc{3sg}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[\hspaceThis{$'$}I$'$
 			[VP
 				[\hspaceThis{$'$}V$'$
 					[NP [diesen Mann; 这个 男人, roof]]
-					[V$^0$[\trace$_j$]]]]
-			[I$^0$ [\trace$_k$]]]]]]
+					[V[\trace$_j$]]]]
+			[I [\trace$_k$]]]]]]
 \end{forest}
 }
 \caption{\label{Abb-GB-Verberststellung}GB中的动词位置}
@@ -1706,6 +1738,7 @@ sm edges
      \defart.\dat{} 孩子 给 \defart.\nom{} 人 现在 \defart.\acc{} 大衣\\
 %     the.\dat{} child gives the.\nom{} man now the.\acc{} coat\\
 \mytrans{这个人正在给孩子这件大衣。}
+%\addlines[2]
 \ex 
 \gll Den Mantel gibt der Mann dem Kind jetzt.\\
 	 \defart.\acc{} 大衣 给 \defart.\nom{} 人 \defart.\dat{} 孩子 现在\\
@@ -1732,15 +1765,15 @@ sm edges
 [CP
 [NP [diesen Mann$_i$;这个男人, roof]]
 [\hspaceThis{$'$}C$'$
-	[C$^0$[(kenn-$_j$ -t)$_k$; 认识- -\textsc{3sg}]]
+	[C[(kenn-$_j$ -t)$_k$; 认识- -\textsc{3sg}]]
 	[IP
 		[NP [jeder;每人,roof]]
 		[\hspaceThis{$'$}I$'$
 			[VP
 				[\hspaceThis{$'$}V$'$
 					[NP[\trace$_i$]]
-					[V$^0$[\trace$_j$]]]]
-			[I$^0$ [\trace$_k$]]]]]]
+					[V[\trace$_j$]]]]
+			[I [\trace$_k$]]]]]]
 \end{forest}
 \caption{\label{Abb-GB-Vorfeldbesetzung}\gbtc 中的前置}
 %\caption{\label{Abb-GB-Vorfeldbesetzung}Fronting in \gbt}
@@ -1798,6 +1831,7 @@ sm edges
   《日报》（\emph{taz}），\zhdate{2008/2/8}，第9页。
 %  taz, 08.02.2008, p.\,9.
 }
+\addlines
 \mytrans{但是，共和党们更难对他发起攻击。}
 %\mytrans{It is, however, more difficult for the Republicans to launch attacks against him.}
 \zl
@@ -1971,8 +2005,8 @@ sm edges
 			[NP, name=dobject [der Frau;\textsc{da} 女人, roof]]
 			[\hspaceThis{$'$}V$'$
 				[NP,   name=aobject [den Jungen;\textsc{da} 男孩, roof]]
-				[V$^0$,name=verb    [zeig-;展示-]]]]]
-	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]]
+				[V,name=verb    [zeig-;展示-]]]]]
+	[I, name=Infl [-t;-\textsc{3sg}]]]]
 \draw[->,dotted] (Infl.north) .. controls (3.5,-0.5) and (-1.5,-.1) .. ($(subject.north)+(-.1,.1)$);
 \draw[->]        (verb.north) .. controls (2.9,-3.8) and (-.4,.5) .. ($(subject.north)+(0,.1)$);
 \draw[->,dashed] (verb.north) .. controls (2.8,-3.3) and (0,-3.7) .. ($(dobject.north)+(0,.1)$);
@@ -2011,8 +2045,8 @@ sm edges
 			[NP, name=dobject [der Frau;\textsc{da} 女人, roof]]
 			[\hspaceThis{$'$}V$'$
 				[NP,   name=aobject [\_$_i$]]
-				[V$^0$,name=verb [gezeigt wir-;展示 \passive, roof]]]]]
-	[I$^0$, name=Infl [-\/d;-\textsc{prs.3s}]]]]
+				[V,name=verb [gezeigt wir-;展示 \passive, roof]]]]]
+	[I, name=Infl [-\/d;-\textsc{prs.3s}]]]]
 \draw[->,dotted] (Infl.north) .. controls (2.6,-.25)   and (-1.4,-.25) .. ($(subject.north)+(0,.1)$);
 \draw[->,dashed] (verb.north) .. controls (2.2,-3.8) and (0,-3.4) .. ($(dobject.north)+(0,.1)$);
 \draw[->]        (verb.north) .. controls (2.0,-4.8) and (1.2,-4.6) .. ($(aobject.north)+(0,.1)$);
@@ -2031,6 +2065,7 @@ sm edges
 \caption{\label{Abb-GB-Passiv}被动句中的格与题元角色指派}
 %\caption{\label{Abb-GB-Passiv}Case and theta-role assignment in passive clauses}
 \end{figure}%
+\newpage
 
 这种基于移位的分析适合于英语\ilce{英语}{English}，因为底层的宾语总是要移动的：
 %This movement-based analysis works well for English\il{English} since the underlying object always has to m
@@ -2241,8 +2276,8 @@ sm edges
 			[{NP[dat]} [der Frau;\textsc{da} 女人, roof]]
 			[\hspaceThis{$'$}V$'$
 				[NP   [\trace$_i$]]
-				[V$^0$  [gib-;给-]]]]]
-	[I$^0$, name=Infl [-t;-\textsc{3sg}]]]] ]
+				[V  [gib-;给-]]]]]
+	[I, name=Infl [-t;-\textsc{3sg}]]]] ]
 \end{forest}
 \caption{作为IP附加语的局部语序重列分析}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
 %\caption{Analysis of local reordering as adjunction to IP}\label{fig-das-buch-der-mann-der-frau-gibt-movement}
@@ -2398,11 +2433,11 @@ Meinunger2000a%S. 30
 %\subsection{Explaining language acquisition}
 \label{sec-acquisition-gb}
 
+%\addlines[2]
 乔姆斯基学派语法研究的一个重要目标就是解释语言习得。在GB中，我们假定一套非常简单的规则，它可以适用于所有的语言（\xbartc），以及适用于所有语言的普遍原则，但是对于个别语言和语言类型来说还可以进行参数调整。一个参数被认为与多个现象相联系。原则与参数模型尤其硕果累累，它在解释语言之间的共性与个性时得到了一系列有趣的研究成果。在语言习得方面，参数是由语言输入所决定的这一观点倍受争议，因为它与观察到的事实不一致：在设定参数后，学习者应该立刻掌握语言的某些方面。 \citet[\page
   146]{Chomsky86}应用开关的比喻来进行说明，要么开启，要么关闭。正如他们所设想的，语言中的很多方面都由参数锁定，设定一个参数会对给定学习者的语法的其余部分产生重要的影响。但是，儿童的语言行为并不像我们所期待的那样会根据参数而突然发生改变（\citealp[\page
   731]{Bloom93a}; \citealp[\page 6]{Haider93a}; \citealp[\page 3]{Abney96a};
-\citealp[\S~9.1]{AW98a}; \citealp{Tomasello2000a,Tomasello2003a};
-\citealp{Newmeyer2005a}）\NOTE{Seite}。此外，我们无法证明某个参数跟不同的语法现象之间存在联系。更多的内容，请参考第\ref{chap-acquisition}章。
+\citealp[\S~9.1]{AW98a}; \citealp{Tomasello2000a,Tomasello2003a}）。此外，我们无法证明某个参数跟不同的语法现象之间存在联系。更多的内容，请参考第\ref{chap-acquisition}章。
 %One of the aims of Chomskyan research on grammar is to explain language acquisition. In GB, one
 %assumed a very simple set of rules, which was the same for all languages (\xbart), as well as
 %general principles that hold for all languages, but which could be parametrized for individual
@@ -2524,9 +2559,11 @@ it is necessary to investigate them and determine their empirical adequacy by de
 We should, then, try to distinguish as clearly as we can between discussion that bears on leading ideas and
 discussion that bears on the choice of specific realizations of them.}
 \end{quotation}
+%\addlines
 此观点在写给《自然语言与语言学理论》（\emph{Natural Language and Linguistic Theory}）的一封信中更为明确：
 %This is made explicit in a letter to \emph{Natural Language and Linguistic Theory}:
 \begin{quotation}
+\addlines[-1]
 即使在数学中，我们所理解的形式化概念直到一个世纪之前都尚未提出，这一概念对提高研究和理解水平都至关重要。没有理由认为，语言学已经比19世纪的数学和支持Pullum的禁令有用的当代分子物理学更为先进了，但如果能证明的确如此，自然是好的。目前，据我所知，我们有着活跃的互动与令人激动的进展，但是没有任何迹象表明目前所进行的工作中有关于形式化层面的问题。 \citep[\page 146]{Chomsky90a}\footnote{%
 Even in mathematics, the concept of formalization in our sense was not
 developed until a century ago, when it became important for advancing research
