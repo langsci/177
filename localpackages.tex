@@ -172,6 +172,9 @@ styles/eng-date}
 
 
 \usepackage{langsci-tbls}
+\makeatletter
+  \tcbset{before upper = {\parindent=2em\@afterheading\@afterindentfalse}}
+\makeatother
 % do not need identation for enumerate since we are in a box anyway.
 \usepackage{enumitem}
 
