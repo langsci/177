@@ -961,6 +961,7 @@ GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于�
 %in determining reference or coreference.
 %For example, \emph{sie} `she' in (\mex{1}) can refer to \emph{Frau} `woman' but not to \emph{Buch} `book'. On the other hand, \emph{es} 
 %`it' cannot refer to \emph{Frau} `woman'.
+\addlines
 \ea
 \gll Die Frau$_i$ kauft ein Buch$_j$. Sie$_i$ liest es$_j$.\\
 	  \defart{} 女人 买 一 书 她 读 它\\
@@ -1236,6 +1237,7 @@ non-head-dtrs \sliste{ \onems{ synsem$|$loc$|$cat \ms{ head$|$mod & \ibox{1} \\
 例（\mex{0}a）需要进一步的解释。如（\mex{0}a）中使用的介词in具有下面的\catvc：
 %Example (\mex{0}a) requires some further explanation. The preposition \emph{in} (as used in (\mex{0}a)) has the following \catv:
 
+\addlines[2]
 \ea
 in的\catvc：\\
 %\catv of \emph{in}:\\
@@ -1383,7 +1385,8 @@ HPSG理论\isce[|(]{被动}{passive}遵循Bresnan的思想（参见\ref{Abschnit
 %in the passive rule, which makes sense as the passive rule is a meaning preserving rule. The \contvs
 %of the input and output are not mentioned in the rule and hence are identical. It is important here that the linking
 %information its retained. As an example consider the application of the rule to the verb stem
-%\stem{schlag} `beat': 
+%\stem{schlag} `beat':
+\addlines 
 \eal
 \label{lr-passiv-beispiel}
 \ex 
@@ -2641,10 +2644,12 @@ Max 喜欢 冰 奶油\\
 %\compsl in more recent work). In German, the \sprl of verbs remains empty. (\mex{1}) shows some relevant examples for
 %German and English.
 
+\addlines
 %\begin{figure}[htb]
 \eal
 \label{ex-schlagen-beat}
 \ex
+\scalebox{.95}{%
 \onems{
 phon \phonliste{ schlag }\\[2mm]
 synsem$|$loc \ms{ cat & \ms{ head   & verb\\
@@ -2662,8 +2667,9 @@ synsem$|$loc \ms{ cat & \ms{ head   & verb\\
                                       }
                          }
                 }
-}
+}}
 \ex 
+\scalebox{.95}{%
 \onems{
 phon \phonliste{ beat }\\[2mm]
 synsem$|$loc \ms{ cat & \ms{ head   & verb\\
@@ -2681,7 +2687,7 @@ synsem$|$loc \ms{ cat & \ms{ head   & verb\\
                                       }
                          }
                 }
-}
+}}
 \zl
 %\vspace{-\baselineskip}
 %\end{figure}%
@@ -2771,6 +2777,7 @@ HPSG与范畴语法的不同之处在于\indexcg，它假定了更多的特征�
 %the analysis of relative phrases.
 \end{sloppypar}
 
+\addlines[2]
 在HPSG的第一个十年中（\citealp*{ps,ps2,NNP94a-ed-not-crossreferenced}），HPSG与范畴语法是非常相似的，即使这里已经提到了一些区别，这是因为它是一个强势的基于词汇的理论。短语的句法构造与语义内容都是由中心语决定的（所以叫做中心语驱动的）。一旦遇到无法直接进行中心语驱动的分析，比如所讨论的短语中没有中心语，那么通常的做法就是假定空中心语\isce{空成分}{empty element}。一个例子就是 \citet[\S~5]{ps2}中关系小句的分析。由于空中心语可以被指派给任意句法配价和任意的语义（关于这一点的讨论，参见第\ref{Abschnitt-Diskussion-leere-Elemente}章），我们并没有好的理由来解释人们为什么要假定空的中心语，比如说这个空位置可以在其他语境中得到实现。但是，为服务于理论假设而提出的空成分并不是这样（即空成分并不能在其他语境中出现）。基于此， \citet{Sag97a}提出了不用任何空成分的关系小句的分析。正如（\mex{-1}）和（\mex{0}）草拟的分析一样，关系小句直接由分句组合而成，以构成关系小句。对于英语中可观察到的不同类型的关系小句，Sag提出了不同的支配规则。他的分析偏离了强势的词汇主义：在 \citew{ps2}中，只有六条支配模式，而在 \citew{GSag2000a-u}中有23条。
 %In the first decade of HPSG history (\citealp*{ps,ps2,NNP94a-ed-not-crossreferenced}), despite the differences already mentioned here, %HPSG was still very similar to Categorial Grammar
 %in that it was a strongly lexicalized theory. The syntactic make-up and semantic content of a phrase was determined by the head (hence the %term \emph{head-driven}).
@@ -2901,6 +2908,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %\section*{思考题}
 %\section*{Comprehension questions}
 
+\largerpage[2]
 %\bigskip
 \questions{
 \begin{enumerate}
