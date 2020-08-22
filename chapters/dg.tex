@@ -3184,14 +3184,14 @@ Hudson的词语法也是明晰表示的，正如下面所示，它与HPSG理论�
 \begin{forest}
   sm edges
   [V{[\emph{fin}]}$''$
-    [N$''$
-      [N$'$, tier=nbar, name=nbar, edge=dashed
+    [\hspaceThis{$''$}N$''$
+      [\hspaceThis{$'$}N$'$, tier=nbar, name=nbar, edge=dashed
         [Adj [small;小]]
         [N   [children;孩子们]] ] ]
-    [V{[\emph{fin}]}$'$
+    [\hspaceThis{$'$}V{[\emph{fin}]}$'$
       [V{[\emph{fin}]} [were;\textsc{aux}]]
-      [V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
-        [V{[\emph{ing}]}$'$, tier=nbar
+      [\hspaceThis{$''$}V{[\emph{ing}]}$''$, name=ving, l sep+=2ex
+        [\hspaceThis{$'$}V{[\emph{ing}]}$'$, tier=nbar
           [V{[\emph{ing}]} [playing;玩]]
           [Adv [outside;外面]] ] ] ]
   ]
