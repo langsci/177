@@ -22,6 +22,7 @@
 目前通行的观点认为自然语言的复杂度位于上下文无关\isce{复杂性类}{complexity class}\isce{上下文无关文法}{context-free grammar}和上下文相关\isce{上下文相关文法}{context-sensitive grammar}（1-型）语言之间。这一类型被称为“弱上下文相关”（mildly context sensitive）。\isce{弱上下文相关文法}{mildly context-sensitive grammar}有些TAG变体属于这一语言类型，有种观点认为它们恰好产生出自然语言中的结构，不多也不少。
 欲了解更多有关复杂度的讨论，可以参见\ref{Abschnitt-Kompetenz-Performanz-TAG}和第\ref{sec-generative-capacity}章。
 
+\largerpage
 有各种各样的系统可以处理TAG语法\citep*{DHSSX2000a-u,PKMLD2008a-u,KLMPDE2008a-u,Koller2017a-u}。
 研究人员针对下列语言也开发了或大或小的TAG语法片段：
 \begin{itemize}
@@ -34,7 +35,7 @@
 \item 越南语\ilce{越南语}{Vietnamese} \citep*{VietnameseTAG2008a}
 %\item Tagalog\il{Tagalog} \citep{MR2003a}
 \end{itemize}
- \citet{Candito96a}开发了一个可以表示元语法（meta grammar）的系统，它针对跨语言的概括性允许使用一个统一的规范。上述针对特定语言的语法，有一些是基于这个系统开发的。例如，\citet*{KSYJ2006a}从一个一般的元语法推导出了动词位于第二位语言（verb second languages）的语法。这其中就包括了第一个依地语（Yiddish\ilce{依地语}{Yiddish}）的TAG语法。
+\citet{Candito96a}开发了一个可以表示元语法（meta grammar）的系统，它针对跨语言的概括性允许使用一个统一的规范。上述针对特定语言的语法，有一些是基于这个系统开发的。例如，\citet*{KSYJ2006a}从一个一般的元语法推导出了动词位于第二位语言（verb second languages）的语法。这其中就包括了第一个依地语（Yiddish\ilce{依地语}{Yiddish}）的TAG语法。
 
  \citet{Resnik92a}研究了如何将TAG跟一个统计\isce{统计学}{statistics}模块耦合在一起。
 
@@ -112,14 +113,14 @@ tag
 \caption{\label{abb-Substitution}替换}
 \end{figure}%
 其他的子树必须插入待替换结点，如laughs子树中的NP结点。
-在这个例子中，John的子树就插入到了相应的位置。
+在这个例子中，John的子树就插入到了相应的位置。%
 \isce[|)]{替换}{substitution}
 
 \subsection{附加语}
 
 图\vref{abb-Adjunktion}
-\isce[|(]{附加}{adjunction}
-\isce[|(]{附加语}{adjunct}展示了如何使用always的附加树（adjunction tree）。
+\isce[|(]{附加}{adjunction}\isce[|(]{附加语}{adjunct}%
+展示了如何使用always的附加树（adjunction tree）。
 
 %
 \begin{figure}
@@ -159,9 +160,9 @@ tag
 }
 \caption{\label{abb-Adjunktion}附加}
 \end{figure}%
-附加树可以插入其他的树中。在插入时，目标结点（和标有“*”的结点一样的范畴）被附加树替换。
-\isce[|)]{附加}{adjunction}
-\isce[|)]{附加语}{adjunct}
+\addlines[2]
+附加树可以插入其他的树中。在插入时，目标结点（和标有“*”的结点一样的范畴）被附加树替换。%
+\isce[|)]{附加}{adjunction}\isce[|)]{附加语}{adjunct}
 
 TAG和我们之前在第\ref{Kapitel-PSG}章遇到的简单短语结构语法有一个显著的不同，即树的范围扩大了：例如，laugh树中有一个非动词兄弟结点的NP结点。在短语结构语法（当然包括了GB\indexgb 和GPSG\indexgpsg，因为这两个理论或多或少都依赖于短语结构语法）中，我们只能描写深度为一的子树。对于laughs的子树而言，相应的规则如（\mex{1}）所示：
 \ea
@@ -926,11 +927,12 @@ tag
 \subsection{V-TAG}
 \label{sec-vtag}
 
-V-TAG
-\iscesub[|(]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}是Owen \citet{Rambow94a}提出来的一种TAG变体，它同样包含了特征结构。
+\largerpage
+V-TAG\iscesub[|(]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}是Owen \citet{Rambow94a}提出来的一种TAG变体，它同样包含了特征结构。
 除此之外，和MC-TAG一样，它假定以基本树的集合作为分析单元。图\vref{Abbildung-Lexical-Set-geben-V-TAG}是双宾动词geben（给）的基本词汇描写。
 \begin{figure}
 \vspace{4\baselineskip}
+\scalebox{.85}{%
 \menge{ 
 \forestset{begin draw/.code={\begin{tikzpicture}[baseline=(current bounding box.center)]}}
     \hspace{1em}
@@ -956,7 +958,7 @@ V-TAG
             [$\epsilon$]]]
     \end{forest}
     \hspace{1em}
-}
+}}
 \vspace{.4\baselineskip}
   \caption{\label{Abbildung-Lexical-Set-geben-V-TAG}
     遵照 \citet[\page 6]{Rambow94a}的geben（给）在V-TAG中的词汇描写
@@ -966,6 +968,7 @@ V-TAG
 图\ref{Abbildung-Lexical-Set-geben-V-TAG}中的支配限制要求每棵树中位于低处的VP结点都支配了最右侧的树的最高处的VP结点。动词论元的顺序以及动词的位置并没有给定。唯一限定的是：带有NP的树的低处的VP，以及geben（给）的低处的VP要支配空成分的VP。有了这一树集合，我们可以推出论元顺序的任意一种排列。Rambow同时也展示了如何利用词汇项来分析动词性复杂结构。图\vref{Abbildung-zu-reparieren-versprochen-V-TAG}展示了由zu reparieren（修补）和versprochen（保证）组成的动词性复杂结构的树集描写，其中包含了支配关系限制。
 \begin{figure}
 \vspace{4\baselineskip}
+%\resizebox{.95\textwidth}{!}{%
 \oneline{%
 \menge{%
   \begin{forest}
@@ -1018,15 +1021,15 @@ V-TAG
 \vspace{2.5\baselineskip}
   \caption{\label{Abbildung-zu-reparieren-versprochen-V-TAG}V-TAG中的动词性复杂结构zu reparieren versprochen的分析}
 \end{figure}%%
+\addlines
 其中的两棵带有NP的树支配了versprochen，而另外两棵支配了zu reparieren。
 带有NP的树的次序并没有被限制，因而这些NP间的任意排列都是被允准的。%\pagebreak
 
 这里有意思的是这种方法和 \citet[\S~2.1.3]{Berman96a-u}在LFG\indexlfg 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
 在Berman的分析中，动词直接投射（project）并形成VP，然后附加上论元。
 
-有一点跟本书讨论的其他分析不同的是：不管动词位置如何，导出树中总是有一个空成分。
-\isce{空成分}{empty element} 
-\iscesub[|)]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}
+有一点跟本书讨论的其他分析不同的是：不管动词位置如何，导出树中总是有一个空成分。%
+\isce{空成分}{empty element}\iscesub[|)]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}
 
 \subsection{语言能力与语言运用的区分以及树本地化MC-LTAG的生成能力}
 %\subsection{The competence-performance distinction and the generative capacity of tree-local MC-LTAG}
@@ -1034,7 +1037,7 @@ V-TAG
 
 本书中\isce[|(]{语言能力}{competence}\isce[|(]{语言运用}{performance}讨论的很多理论都区分语言能力（competence）和语言运用（performance）\citep[\S~I.1]{Chomsky65a}。我们假定语言能力理论描写语言知识，而语言运用理论应该解释语言知识如何被使用以及为什么我们在使用和理解语言的过程中会产生错误等问题。参见第\ref{chap-competence-performance}章以了解更多的内容。 
 
- \citet*{JBR2000a}讨论了如（\mex{1}b）所示的关系从句的中心自嵌入问题（center self embedding），他们遵循 \citet[\page 286]{CM63a}的假定：这种嵌入最多只可能有三级的这一事实不应该在语法中进行描写，而应该归属于听者的加工问题，而这与语法的描写能力无关。
+\citet*{JBR2000a}讨论了如（\mex{1}b）所示的关系从句的中心自嵌入问题（center self embedding），他们遵循 \citet[\page 286]{CM63a}的假定：这种嵌入最多只可能有三级的这一事实不应该在语法中进行描写，而应该归属于听者的加工问题，而这与语法的描写能力无关。
 \eal
 \label{TAG-Beispiel-Performanz}
 \ex 
@@ -1050,6 +1053,8 @@ V-TAG
 \mytrans{追着那只捉老鼠的猫的那只狗在叫}
 \zl
 
+\largerpage[2]
+%\enlargethispage{8pt}
 \noindent
 这里有意思的是可以构建对于听者来说更为简单的中心嵌入（center embedding）的例子。基于这样的方式，我们可以构建一些可以被加工处理的具有更多中心嵌入的例子，从而说明了严格假定关系从句最多只能做两级中心嵌入的语法是错误的。以下是Hans Uszkoreit\aimention{Hans Uszkoreit}举的例子，它更容易被加工，因为所有被嵌入的关系从句都被隔离开来并且动词和更高层的小句也被隔离了。
 \ea
@@ -1064,7 +1069,7 @@ lange Stunden schweigend nebeneinander saßen $_1$], mussten im letzten Jahr ein
 \z
 参见 \citew{Gibson98a}以了解其他的会影响语言加工的因素。
 
- \citet{JBR2000a}讨论了动词性复杂结构中的论元语序重列问题。他们所关注的模式如（\mex{1}）所示：
+\citet{JBR2000a}讨论了动词性复杂结构中的论元语序重列问题。他们所关注的模式如（\mex{1}）所示：
 \ea
 $\sigma$(NP$_1$ NP$_2$ \ldots{} NP$_n$) V$_{n}$V$_{n-1}$ \ldots{} V$_{1}$
 \z
@@ -1207,9 +1212,8 @@ Hoberg使用的是代词的所有格⸺ihr（她），而不是das（\defart{}�
 
 什么应该被视为语言能力？什么应该被视为语言运用？不同的TAG研究者有不同的意见。如 \citet[\page 15]{Rambow94a}论证认为我们不应该排除那些语法或语法形式模型无法处理的语序重列。在第六章，他提出一个语言应用的理论，解释了为什么位于中场的动词的论元语序重列问题比较难以处理。因此，我们应该选择像V-TAG\iscesub{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}或TT-MC-TAG\iscesub{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{树元组多成分树邻接语法（TT-MC-TAG）}{Tree Tuple MC-TAG (TT-MC-TAG)}这样的TAG变体\citep{Lichte2007a}，这些变体能够解释多种语序，然后可以使用语言运用模型来解释为什么句子可接受程度不同。
 
-另一种寻找拥有最小表达能力的语法形式模型的思路是根本就不去限制形式模型的表达能力，而是去尽量限制语言学理论本身。在第\ref{sec-generative-capacity}章中，我们将展开更多的讨论。 
-\isce[|)]{语言能力}{competence}
-\isce[|)]{语言运用}{performance}
+另一种寻找拥有最小表达能力的语法形式模型的思路是根本就不去限制形式模型的表达能力，而是去尽量限制语言学理论本身。在第\ref{sec-generative-capacity}章中，我们将展开更多的讨论。%
+\isce[|)]{语言能力}{competence}\isce[|)]{语言运用}{performance}
 
 \section{总结与分类}
 
@@ -1247,6 +1251,7 @@ Hoberg使用的是代词的所有格⸺ihr（她），而不是das（\defart{}�
 }
 
 %\section*{延伸阅读}
+\largerpage[2]
 \furtherreading{
 重要的论文有 \citew*{JLT75a-u}、 \citew{Joshi87a-u}和 \citew{JS97a}。很多更关心语言本体的读者并不会过多涉猎讨论TAG形式性质的论文。
  \citew{KJ85a}很好地总结了针对语言现象的分析。 针对TAG的语言学与计算语言学的论文可以在Abeill{\'e}和Rambow\nocite{AR2000a-ed-not-crossreferenced}所编辑的论文集中找到。 \citet{Rambow94a}比较了他的TAG变体（V-TAG\iscesub{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}）和Karttunen的激进词汇主义（Radical Lexicalism）方法、Uszkoreit的GPSG\indexgpsg、组合范畴语法\indexcg, HPSG\indexhpsg 以及依存语法\indexdg。 
