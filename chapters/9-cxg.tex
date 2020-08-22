@@ -118,9 +118,7 @@ Fillmore、Kay、Jackendoff以及其他学者都指出：在很大程度上，�
 %took place in close collaboration with Ivan Sag. The result was a variant of HPSG known as Sign-Based Construction Grammar (SBCG) \citep{Sag2010b,Sag2012a}.
 %See Section~\ref{sec-SbCxG} for further discussion.
 
-John Bryant\aimention{John Bryant}、Nancy Chang\aimention{Nancy Chang}和Eva Mok\aimention{Eva Mok}已经为体验构式语法\footnote{%
-  参阅\url{http://www.icsi.berkeley.edu/~jbryant/old-analyzer.html}和 \citew{Bryant2003a-u}。
-}的实现开发了一个系统。Luc Steels正在致力于模拟语言演化\isce{语言演化}{language evolution}和语言习得\isce{语言习得}{language acquisition}\citep{Steels2003a}。Steels通过实验为交互人员的虚拟社团进行建模。除此之外，他还使用机器参与语言游戏的互动\citep{Steels2015a-u}。与他沟通时（个人交流 \, 2007），Steels表示让机器人最终学会说话还有很长的路要走，但是现在的状态已经很好了。在模拟语言习得时，Steels可以使用拥有视觉系统（照相机和图像处理）的机器人，也可以使用与音频信息配对的视觉信息。 \citew{SteelsFluid-ed-not-crossreferenced}和 \citew{SteelsComputational-ed-not-crossreferenced}记录了动变构式语法的实现过程。第二本书有跟德语相关的内容，其中，德语陈述句和w疑问句的实现通过空间位置来解释\citep{Micelli2012a}。很多关于FCG系统的文章和个案分析都可以在\url{http://www.fcg-net.org/}上面找到。 \citet{Jurafsky96a}为英语\ilce{英语}{English}开发了一个配有概率统计\isce{统计学}{statistics}组件的构式语法。他指出文献中讨论的很多语言运用\isce{语言运用}{performance}现象（参见第\ref{Abschnitt-Diskussion-Performanz}章关于语言能力/语言运用差异的论述）可以借助于短语构式的概率以及词语的配价属性来解释。 \citet*{BLT2009a}运用概率上下文无关文法\iscesub{上下文无关文法}{context-free grammar}{概率上下文无关文法（PCFG）}{probabilistic (PCFG)}来为两到三岁孩子的语法知识进行建模。
+John Bryant\aimention{John Bryant}、Nancy Chang\aimention{Nancy Chang}和Eva Mok\aimention{Eva Mok}已经为体验构式语法\citep{Bryant2003a-u}。的实现开发了一个系统。Luc Steels正在致力于模拟语言演化\isce{语言演化}{language evolution}和语言习得\isce{语言习得}{language acquisition}\citep{Steels2003a}。Steels通过实验为交互人员的虚拟社团进行建模。除此之外，他还使用机器参与语言游戏的互动\citep{Steels2015a-u}。与他沟通时（个人交流 \, 2007），Steels表示让机器人最终学会说话还有很长的路要走，但是现在的状态已经很好了。在模拟语言习得时，Steels可以使用拥有视觉系统（照相机和图像处理）的机器人，也可以使用与音频信息配对的视觉信息。 \citew{SteelsFluid-ed-not-crossreferenced}和 \citew{SteelsComputational-ed-not-crossreferenced}记录了动变构式语法的实现过程。第二本书有跟德语相关的内容，其中，德语陈述句和w疑问句的实现通过空间位置来解释\citep{Micelli2012a}。很多关于FCG系统的文章和个案分析都可以在\url{http://www.fcg-net.org/}上面找到。 \citet{Jurafsky96a}为英语\ilce{英语}{English}开发了一个配有概率统计\isce{统计学}{statistics}组件的构式语法。他指出文献中讨论的很多语言运用\isce{语言运用}{performance}现象（参见第\ref{Abschnitt-Diskussion-Performanz}章关于语言能力/语言运用差异的论述）可以借助于短语构式的概率以及词语的配价属性来解释。 \citet*{BLT2009a}运用概率上下文无关文法\iscesub{上下文无关文法}{context-free grammar}{概率上下文无关文法（PCFG）}{probabilistic (PCFG)}来为两到三岁孩子的语法知识进行建模。
 %John Bryant\aimention{John Bryant}, Nancy Chang\aimention{Nancy Chang}, Eva Mok\aimention{Eva Mok}
 %have developed a system for the implementation of Embodied Construction Grammar\footnote{%
 %  See \url{http://www.icsi.berkeley.edu/~jbryant/old-analyzer.html} and  \citew{Bryant2003a-u}.
@@ -337,7 +335,7 @@ val & \menge{ \textrm{ [ \textsc{sem} \{ A \} ] }}\\[2mm]\hline
 \begin{figure}
 \centering
 \begin{forest}
-typehierarchy
+type hierarchy
 [lexeme, for descendants={l sep+=5mm}
   [passive,name=passive,      [passive $\wedge$ read, name=pr]]
   [active, name=active,       [active $\wedge$  read,  name=ar]]
@@ -394,15 +392,17 @@ val & \menge{ \onems{ role \ms{ gf & obj \\
 }
 \ex 主语构式：\iscesub{构式}{construction}{主语}{subject}\\
 %\ex the \emph{Subject Construction}:\is{construction!subject}\\
+\scalebox{.95}{%
 \ms{
 syn & \ms{ cat & v\\
        }\\
 val & \menge{ \onems{ role \onems{ gf \type{subj} } }}\\
-}
+}}
 \ex 
 \begin{tabular}[t]{@{}l@{}}
 被动构式：\iscesub{构式}{construction}{被动}{passive}\\
 %the \emph{Passive Construction}:\is{construction!passive}\\
+\scalebox{.95}{%
 \ms{
 syn & \ms{ cat  & v\\
            form & PastPart\\
@@ -412,7 +412,7 @@ val & \menge{ \ms{ role & \ms{ gf & obl\\
                              }\\
                    syn  & {\upshape P[von]/}zero\\
                  }}\\
-}
+}}
 \end{tabular}
 \zl
 %% Diese Konstruktionen sind sehr nachlässig aufgeschrieben worden: Mal gibt es ein $\theta$-Merkmal,
@@ -429,9 +429,11 @@ val & \menge{ \ms{ role & \ms{ gf & obl\\
 
 我们以动词schlagen（打）为基础来说明（\mex{0}）中构式的互动：
 %The interaction of the constructions in (\mex{0}) will be explained on the basis of the verb \emph{schlagen} `to beat':
+\addlines
 \eas
 \stem{schlag}（打）的词条：\\
 %Lexical entry for \stem{schlag} `beat':\\
+\scalebox{.95}{%
 \ms{
 syn & \ms{ cat & v\\
        }\\
@@ -442,7 +444,7 @@ val & \menge{ \onems{ role \ms{ $\theta$ & agent\\
               \onems{ role \ms{ $\theta$ & patient\\
                               }\\
                     }}\\
-}
+}}
 \zs
 如果我们将词项与及物构式和主语构式组合，按照Fillmore、Kay、Michaelis和Ruppenhofer的分析，我们可以得到（\mex{1}a）。如果将词项与主语构式和被动构式相组合，就会得到（\mex{1}b）：\footnote{%
 	这需要对集合合一有一种特殊的理解，对于这种观点的批评可以参见\ref{sec-formal-bcg}。
@@ -459,6 +461,7 @@ val & \menge{ \onems{ role \ms{ $\theta$ & agent\\
 \begin{tabular}[t]{@{}l@{}}
 \stem{schlag} $+$ 主语构式和及物构式：\\
 %\stem{schlag} $+$ Subject and Transitive Construction:\\
+\scalebox{.95}{%
 \ms{
 syn & \ms{ cat & v\\
            voice & active\\
@@ -473,13 +476,14 @@ val & \menge{ \onems{ role \ms{ $\theta$ & agent\\
                                 da       & $-$\\
                               }\\
                     }}\\
-}
+}}
 \end{tabular}
 \ex
 \label{ex-schlagen-passive}
 \begin{tabular}[t]{@{}l@{}}
 \stem{schlag} $+$ 主语构式和被动构式：\\
 %\stem{schlag} $+$ Subject and Passive Construction:\\
+\scalebox{.95}{%
 \ms{
 syn & \ms{ cat & v\\
            form & PastPart\\
@@ -494,7 +498,7 @@ val & \menge{ \ms{ role & \ms{ $\theta$ & agent\\
                                 gf       & subj\\
                               }\\
                     }}\\
-}
+}}
 \end{tabular}
 \zl
 运用（\mex{0}）中的词项，可以分析（\mex{1}）中的句子：
@@ -638,6 +642,7 @@ val  \ibox{1}\\
 %morpheme-based morphological analysis that results in items with different valence properties when
 %the passivization morpheme is combined with a head \citep{Chomsky81a}.
 
+\addlines
 要讨论的另外一组有问题的数据来自于土耳其语的致使化\citep[\page 146]{Lewis67a-u}：
 %The second set of problematic data that will be discussed comes from causativization in Turkish \citep[\page 146]{Lewis67a-u}:
 \ea
@@ -1282,6 +1287,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %since if all heads project their argument structure, then it is possible to determine the properties of arguments of arguments by looking at the elements
 %present in the argument structure. Thus, the argument structure of \emph{wissen} `to know' in (\mex{1})
 %would contain the description of a \emph{dass} clause.
+\addlines
 \ea
 \gll Peter weiß, dass Klaus kommt.\\
 	 Peter 知道 \textsc{comp} Klaus 来\\
@@ -1297,7 +1303,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %the purpose of the new, more restrictive feature geometry was to rule out such nonlocal access to
 %arguments. 
 
- \citet[\S~6]{KSF2015a}提供了另外一种投射完全论元结构的方式：不是假设在像 （\ref{ex-idiom-non-nominative-external}）中那样的熟语构式中主语是\textsc{xarg}，他们假设宾格或与格论元是\xargc。这是一个有趣的提议，它可以解决正在讨论的案例，但是问题是，如果考虑到与其他现象的互动，数量是不是会增加。例如， \citet{BF99a}在解释英语\ilce{英语}{English}中的疑问句尾时运用\xargc。所以，如果发现英语熟语在嵌套句中需要一个非主语的\xargc，同时允许嵌套句中的熟语部分能与疑问标记共现作为一个整句出现，这就会产生冲突，我们就必须为root和嵌套句设置不同的\xargc，这会使得这一版本的词汇理论十分不吸引人，因为我们需要为每一个动词设置两个词项。
+\citet[\S~6]{KSF2015a}提供了另外一种投射完全论元结构的方式：不是假设在像 （\ref{ex-idiom-non-nominative-external}）中那样的熟语构式中主语是\textsc{xarg}，他们假设宾格或与格论元是\xargc。这是一个有趣的提议，它可以解决正在讨论的案例，但是问题是，如果考虑到与其他现象的互动，数量是不是会增加。例如， \citet{BF99a}在解释英语\ilce{英语}{English}中的疑问句尾时运用\xargc。所以，如果发现英语熟语在嵌套句中需要一个非主语的\xargc，同时允许嵌套句中的熟语部分能与疑问标记共现作为一个整句出现，这就会产生冲突，我们就必须为root和嵌套句设置不同的\xargc，这会使得这一版本的词汇理论十分不吸引人，因为我们需要为每一个动词设置两个词项。
 %An alternative to projecting the complete argument structure was suggested by
 % \citet[Section~6]{KSF2015a}: instead of assuming that the subject is the \textsc{xarg} in idiomatic
 %constructions like those in (\ref{ex-idiom-non-nominative-external}), they assume that the
@@ -1413,7 +1419,8 @@ dtrs \onems{ filler-dtr  \ms[word]{ synsem$|$loc & \ibox{1}
 %  commentary section, 10.12.2015.
 %}
 %\mytrans{I am utterly surprised when I read such nonsense.}
-%\pagebreak
+\addlines
+\largerpage
 \ex 
 \gll omg dieser xBluuR der nn ist wieder da ey nein ich glaub es tritt mich ein Pferd!!\footnotemark\\
     天哪 这个   XBluuR 他  {} \textsc{cop}  再次 这里 {} \textsc{neg} 我 相信 \expl{} 击打 我 一 马\\
@@ -1643,6 +1650,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 很多非局部依存解释面临的问题是前置的成分并不一定是单一的动词：
 %The problem for many accounts of nonlocal dependencies is that the fronted material is not necessarily a
 %single verb:
+\largerpage[2]
 \eal
 \label{bsp-erzaehlen-wird}
 \ex
@@ -1859,8 +1867,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %\subsection{Embodied Construction Grammar}
 \label{sec-ECG}
 
-体验构式语法由 \citet{BC2005a}提出，并且有一些德语的片段（fragmnts）是采用这种形式化方式的\citep{PMAZ2006a-u}。下面，我会用一个构式为例来简单说明这种形式化描写体系。（\mex{1}） 是“限定语-名词”构式：
-\footnote{%
+体验构式语法由 \citet{BC2005a}提出，并且有一些德语的片段（fragmnts）是采用这种形式化方式的\citep{PMAZ2006a-u}。下面，我会用一个构式为例来简单说明这种形式化描写体系。（\mex{1}） 是“限定语-名词”构式。\footnote{%
   与此类似的一个构式，可参见 \citew[\page 162]{BC2005a}。
 }
 %Embodied Construction Grammar was developed by  \citet{BC2005a}  and there are some implementations of fragments of German that use this
@@ -1868,7 +1875,8 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %(\mex{1}) gives the DetNoun construction:\footnote{%
 %  For a similar construction, see  \citew[\page 162]{BC2005a}.
 %}
-
+%
+\begin{figure}
 \eas
 \label{CxG-DetNoun}
 \raisebox{2mm}{%
@@ -1890,8 +1898,10 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 & \textbf{self}.m  & c.m\\\hline
 \end{tabular}}
 \zs
-
-\noindent
+\vspace{-\baselineskip}
+\end{figure}
+%
+%\noindent
 这一表征形式是旧版本的PATR-II语法\isce{PATR-II}{PATR-II}\citep*{SURT83a}：正如在PATR-II中，构式的子结点是有名称的。正如（\mex{0}）所示，（\mex{0}）包括c、d两个子结点。d是一个限定词，c是一个普通名词\iscesub{名词}{noun}{普通名词}{common}。可以通过对象\textbf{self}来指称该构式。构式（以及其子结点）都是用特征-值偶对来描写的。结构共享用路径等式\isce{路径等式}{path equation}来表示。例如，d.gender$\leftrightarrow$c.gender 表示限定语的性与名词的性是一致的。正如对特征有限制一样，对形式也有限制。d.f \textbf{before} c.f 表示限定语一定要出现在名词之前。 \citet{BC2005a} 区分了直接优先（用\textbf{meets}表示）和非直接优先（\textbf{before}）。在f下面表示的信息是书写（orthographic）形式（f.orth）。承继关系的表示方式与  \citet{KF99a}的表示方式一致，都是明显的表示出来。
 %This representational form is reminiscent of PATR-II grammars\is{PATR-II} \citep*{SURT83a}: as in PATR-II, the daughters of a construction
 %are given names. As such, (\mex{0}) contains the daughters c and d. d is a determiner and c is a common noun\is{noun!common}.
@@ -2070,7 +2080,8 @@ agent.f \textbf{before} action.f这一限制强制主语出现在动词前面，
 （\ref{CxG-Active-Ditransitive}） 中的主动及物构式可以从 （\mex{0}）中承继相关信息。
 %The Active-Ditransitive Construction in (\ref{CxG-Active-Ditransitive}) would then inherit the relevant information from (\mex{0}).
 
-除了（\ref{CxG-DetNoun}）中使用的描述方式，还有激活算子\isce[|(]{激活算子}{evokes operator}\citep[\page 151--152]{BC2005a}。一个有趣的例子是术语弦的表征：这一概念只能通过参照直角三角形来解释\citep[\S~5]{Langacker87a-u}。 \citet[\S~5]{Langacker87a-u}给出了以下形式化描述：\isce{弦}{hypotenuse}
+除了（\ref{CxG-DetNoun}）中使用的描述方式，还有激活算子\isce[|(]{激活算子}{evokes operator}\citep[\page 151--152]{BC2005a}。一个有趣的例子是术语弦的表征：这一概念只能通过参照直角三 角形来解释\citep[\S~5]{Langacker87a-u}。 \citet[\S~5]{Langacker87a-u}给出了以下形式化描述：\isce{弦}{hypotenuse}
+\addlines
 %In addition to the descriptive means used in (\ref{CxG-DetNoun}), there is the evokes operator\is{evokes operator|(} \citep[\page 151--152]{BC2005a}.
 %An interesting example is the representation of the term hypotenuse: this concept can only be explained by making reference to a right-angled
 %triangle \citep[Chapter~5]{Langacker87a-u}. 
@@ -2160,6 +2171,7 @@ evokes & \liste{ \ms[right-triangle]{
 \ea
 根据 \citet[\page 99]{vanTrijp2013a}的人名Kim：\\
 %The name \emph{Kim} according to  \citet[\page 99]{vanTrijp2013a}:\\
+\scalebox{.95}{%
 \begin{tikzpicture}
 \node (sem) {\fbox{
 \begin{tabular}[t]{l}
@@ -2178,7 +2190,7 @@ evokes & \liste{ \ms[right-triangle]{
 \end{tabular}
 }};
 \path[<->] (sem) edge (syn);
-\end{tikzpicture}
+\end{tikzpicture}}
 \z
 根据词项所应用的模式，首先被应用的是句法极（syntactic pole）或语义极（semantic pole）。第一个处理步骤是一个匹配的短语，在这个短语里核查语义极（服务于生成）或者句法极（服务于句法分析）是否与当前建立的结构匹配。经历合一测试之后，真正的合一，这里叫熔合（fusion），就被执行了。这一步骤完成后，另一极（句法服务于生成，语义服务于句法分析）就合并（merge）了。可参见图\vref{fig-matching-merging-trijp}。
 %Depending on the mode in which the lexical items are used, the syntactic pole or the semantic pole
@@ -2187,6 +2199,7 @@ evokes & \liste{ \ms[right-triangle]{
 %build so far. After this test for unification, the actual unification, which is called merging, is
 %carried out. After this step, the respective other pole (syntax for generation and semantics for
 %parsing) is merged. This is illustrated in Figure~\vref{fig-matching-merging-trijp}.
+\addlines
 
 \begin{figure}
 \includegraphics[width=.98\textwidth]{Figures/production-parsing-fcg.pdf}
@@ -2258,6 +2271,7 @@ evokes & \liste{ \ms[right-triangle]{
 %from  \citew[\page 122]{vanTrijp2011a}}
 \end{figure}%
 
+\enlargethispage*{13pt}
 注意如果采用这一方法，就需要每一个主动构式都有一个被动变体。对于那些允许被动构式和无人称构式组合的语言来说，必须假设一个及物-被动-无人称构式。正如 \citew[\S~2.6]{Mueller2006d}所说，德语中的自由与格（commodi/incommodi）可以加到几乎所有构式上去。它们跟与格被动构式互动，所以应该被当做论元。由此，对于动结构式，我们需要一个主动变体，一个被动变体，一个有与格论元的变体，一个有与格论元和与格被动的变体，一个中动变体。虽然，在技术上我们可以列举出所有这些模式，也可以想象我们可以把所有这些信息储存在我们的脑中，问题是这些列举是否真的反映了我们的语言学知识。如果一个新的构式产生了，比如说，德语中带有一个主格和两个与格的主动句式，我们难道不会想到该句式可以有被动形式吗？虽然在主动和被动构式之间建立联系的观点会预测该句式会有被动形式，但是实际上并没有这种可能。
 %Note that under such an approach, it is necessary to have a passive variant of every active
 %construction. For languages that allow for the combination of passive and impersonal constructions,
@@ -2776,6 +2790,8 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 %developed in the past \citep{Konieczny96a-u}, but developing both a grammar with large coverage and
 %the performance model that combines with it demands a lot of resources.
 
+\addlines[2]
+\enlargethispage*{23pt}
 \subsection{不连续性 vs.\ 主语-中心语和中心语-填充语模式}
 %\subsection{Discontinuity vs.\ Subject-Head and Head-Filler Schema}
 
@@ -2783,7 +2799,9 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 %I now turn to parsimony: van Trijp uses a subject-verb anchor construction that combines the subject
 %and the main verb. Because of examples like (\mex{1}) it must be possible to have discontinuous subject-verb constructions:
 除非情态动词和时态助词也被处理为主要动词（在英语中不应该这样处理），带有情态动词的构式应该是主语和主要动词不邻接的另外一种情况：
-%Unless modals and tense auxiliaries are treated as main verbs (which they should not in English), constructions with modals seem to be another case where the subject and the main verb are not %adjacent:
+%Unless modals and tense auxiliaries are treated as main verbs (which they should not in English),
+%constructions with modals seem to be another case where the subject and the main verb are not
+%%adjacent:
   \eal
   \ex 
 \gll Peter will read the book.\\
@@ -2796,7 +2814,8 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 \mytrans{Peter已经读过这本书了。}
 %Peter has read the book.
   \zllast
-} 
+}
+
 \ea
 \gll Peter often reads books.\\
      Peter 经常 读 书\\
@@ -2806,6 +2825,7 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 如果这种构式可以不连续，那么一定要确保 （\mex{1}b） 不是主语-动词构式的一个实例。
 %But if such constructions can be discontinuous one has to make sure that (\mex{1}b) cannot be an
 %instantiation of the subject-verb construction:
+
 \eal
 \ex[]{
 \gll The boy I think left.\\
@@ -2926,6 +2946,7 @@ approach.}
 % \citew{Boas2003a} and in a reply to  \citet{Boas2014a}. See  \citew[655--656]{Mueller2005a},
 % \citew[Chapter~20]{MuellerLehrbuch1}, and  \citew[Footnote~15]{MWArgStReply}.
 
+\addlines
 关于FCG对于非局部依存分析的结论是，有些经验上的缺陷可以很容易被修复或者有些假设可以简单地被抛弃（do作为宾语标记的角色，英语最前面的位置是话题），而有些经验上的缺陷（并列，允许一些带有不连续成分的不合法话语），当分析扩展到其他语言时遇到的有些经验上的问题（德语附加语的辖域），以及分析的简约性实际上不具有可比性，因为没有给出关于连续性的限制（或者至少没有发表）。如果FCG对于连续性限制的形式化证明即便是 \citet{Reape2000a}提出的基于线性化的HPSG对于非局部依存（提取和外置）分析所需要的解释一半复杂的话，\footnote{%
   参见 \citew{KP95a}对于外置基于线性化的分析。这一分析在Babel系统中得到了实现\citep{Babel}。非连续性的限制参见\citet{Mueller99g}。基于线性化的分析方法被认为不能分析德语中非常明显的多重前置\citep{Mueller2005d,MuellerGS} ，所以基于线性化的方法被更加传统的只是允许连续成分的理论变体所取代。
 }那么基于\slaschc 的分析更好。
@@ -3062,10 +3083,10 @@ HPSG和SBCG确实区分了语言能力/语言运用\citep{SW2011a}。HPSG理论�
 %to address one issue that van Trijp discusses. He claims that SBCG cannot be directly
 %implemented. On issues of complexity of constraint solving systems he quotes \citep[Section~4.2.2]{LM2006a}:
 \begin{quotation}
-HPSG在实际的实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是这一方法的缺点在于“语法的组织和形式化与语言学理论不一致”\citep[\S~4.2.2]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\footnote{%
+\hspace{-1em}HPSG在实际的实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是这一方法的缺点在于“语法的组织和形式化与语言学理论不一致”\citep[\S4.2.2]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\footnote{%
 Actual implementations of HPSG typically handle the problem by guiding the linguistic processor
-using a (rule-based) phrase structure backbone, but the disadvantage of this approach is that the ``organization and formulation of the grammar is different from
-that of the linguistic theory'' \citep[Section~4.2.2]{LM2006a}.}
+using a (rule-based) phrase structure backbone, but the disadvantage of this approach is that the
+``organization and formulation of the grammar is different from that of the linguistic theory'' \citep[Section~4.2.2]{LM2006a}.}
 \end{quotation}
 他得出结论：
 %He concludes:
@@ -3273,6 +3294,7 @@ dtrs   & \ibox{2}
 
 \subsubsubsection{理论物理学 vs.\ 达尔文进化论}
 
+\largerpage
 Van Trijp对比了SBCG和FCG，并且说SBCG遵循理论物理学⸺像乔姆斯基一样，而FCG遵循达尔文的科学模型⸺像Croft一样，差异在于SBCG针对所有语言作出了一些假设，而FCG并没有先验的假设。这两种理论都承认的基本假设是，我们处理的对象都最好用特征值偶对进行描述（这是细节）。FCG假设总是存在句法和语义极（这是该系统最基本的假设），而在HPSG/SBCG框架中的学者则假设如果语言存在特定现象，这些现象可以用相似的方式分析。例如，如果一种语言有非局部依存，那么这些现象可以通过\slaschc 机制进行分析。但是，这并不意味着有人相信所有语言的语法都有一个\slaschc 特征。并且实际上，甚至有的语言没有价特征\citep{KM2010a-u}，这对于FCG来说可能是一个问题，因为这一理论是基于句法极来实现匹配过程的。所以，就SBCG来讲，有极大的自由来选取在分析中起作用的特征，并且当然如果发现的一种语言能够提供证据的话，可以增加另外的特征和类型。Van Trijp所提供的约束中只有一个有可能过强的例子，这一例就是 \textsc{mother}特征所要求的局部限制。这个特征是说，在一个更非局部的环境中的所有相关的成分都要被显式传递。这一特征是服务于非局部依存（通过 \slaschc）和涉及到PP（通过\textsc{pform}或更加新近的使用\formc）中介词的形式信息。一些动词要求介词宾语并且限制介词的形式。例如，wait一定要确认其介词宾语一定要有for在里面。因为这一信息通常只能在介词中有，所以信息需要上传到PP层，以期可被支配动词直接选择。
 %Van Trijp compares SBCG and FCG and claims that SBCG follows the model of theoretical physics --
 %like Chomsky does --, while FCG adopts a Darwinian model of science -- like Croft does --, the difference
