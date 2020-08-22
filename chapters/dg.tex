@@ -311,6 +311,7 @@ Jingyang Jiang and Haitao Liu*. The Effects of Sentence Length on Dependency Dis
 %the nominal phrases it combines with to form a complete clause. In languages like English and
 %German, the verb determines the form of its dependents, for instance their case.
  
+\largerpage
 描述依存关系的一个方法如图\vref{fig-the-child-reads-the-book-dg}所示。
 %One way to depict dependencies is shown in Figure~\vref{fig-the-child-reads-the-book-dg}.
 % moved this on top of the figure
@@ -729,6 +730,7 @@ David 吞食 一 三明治 在 中午 昨天\\
 
 （\mex{1}）中的标准例子被分析为图\vref{fig-passive-dg}中所示的形式。
 %Our standard example in (\mex{1}) is analyzed as shown in Figure~\vref{fig-passive-dg}.
+\addlines
 \ea
 \gll [dass] der Weltmeister geschlagen wird\\
      \spacebr{}\textsc{comp} \defart{} 世界.冠军 击败 \passiveprs{}\\
@@ -897,6 +899,7 @@ dg edges
 
 \begin{figure}
 \centerline{
+\scalebox{.95}{%
 \begin{forest}
 dg edges
 [V
@@ -910,13 +913,15 @@ dg edges
 %    [D [diesen;this] ]
 %    [Mann;man] ]
 %  [kennt;knows] ]
-\end{forest}
+\end{forest}}
 }
 \caption{\label{fig-vl-dg}[dass] jeder diesen Mann kennt（每个人都认识这个男人）的分析}
 %\caption{\label{fig-vl-dg}Analysis of [\emph{dass}] \emph{jeder diesen Mann kennt} `that everybody knows this man'}
 \end{figure}%
+
 \begin{figure}
 \centerline{
+\scalebox{.95}{%
 \begin{forest}
 dg edges
 [V
@@ -930,7 +935,7 @@ dg edges
     [Mann;男人] ] ]
 %    [D [diesen;this] ]
 %    [Mann;man] ] ]
-\end{forest}
+\end{forest}}
 }
 \caption{\label{fig-vi-dg}Kennt jeder diesen Mann?（每个人都认识这个男人吗？）的分析}
 %\caption{\label{fig-vi-dg}Analysis of \emph{Kennt jeder diesen Mann?} `Does everybody know this
@@ -951,6 +956,7 @@ dg edges
 %% Gross und Osborne haben eine
 %%   Scrambling-Analyse für Perfektsätze, weil bei Ihnen das Subjekt vom Hilfsverb abhängt und das
 %%   Objekt vom Partizip.
+%\addlines[2]
 \eal
 \ex
 \gll [dass] jeder diesen Mann kennt\\
@@ -1209,6 +1215,7 @@ dg edges
 %  gesehen hat} `who yet nobody here seen has': the relative pronouns are fronted inside the relative clauses. The phrase \emph{dem Mann, den wir alle
 %  kennen} `the man who we all know' is the fronted dative object of \emph{gegeben} `given' and \emph{die noch niemand hier gesehen
 %  hat} `who yet nobody here seen has' is extraposed from the NP headed by \emph{Frau} `woman'.
+\addlines
 \ea
 \gll Dem Mann, den wir alle begrüßt haben, hat die Frau das Buch gegeben, die noch niemand hier gesehen hat.\\
      \defart{} 男人  \textsc{rel} 我们 都 打招呼 \textsc{aux}      \textsc{aux} \defart{} 女人 \defart{} 书 给 \textsc{rel} 但 没人 这里 看见 \textsc{aux}\\
@@ -1240,6 +1247,7 @@ Hudson证明了词语法\indexwg 中多重依存关系的使用对应于HPSG\ind
 %element is extracted. Figure~\vref{fig-wen-glaubst-du-dass-wg} shows the analysis of
 %(\ref{ex-wen-glaubst-du-dass-dg-two}) in \wg.
 \begin{figure}
+\scalebox{.95}{%
     \begin{forest}
       wg
       [,phantom
@@ -1269,7 +1277,7 @@ Hudson证明了词语法\indexwg 中多重依存关系的使用对应于HPSG\ind
     % underground = bellow the words
     \draw[deparrow] ([xshift= 0pt]gesehen.south) to[out=south, in=south] node[below] {x$<$o} ([xshift=-3pt]wen.south);
     \draw[deparrow] ([xshift= 0pt]dass.south)    to[out=south, in=south] node[below] {x$<$}  ([xshift= 0pt]wen.south);
-    \end{forest}
+    \end{forest}}
 \caption{\label{fig-wen-glaubst-du-dass-wg}词语法中带有多重依存关系的Wen glaubst du, dass
     ich gesehen habe?（你认为我看见了谁？）的可投射分析}
 %\caption{\label{fig-wen-glaubst-du-dass-wg}Projective analysis of \emph{Wen glaubst du, dass
@@ -1680,7 +1688,8 @@ dg edges
 %\caption{\label{fig-dg-adjunct-attachment-right}Analysis of verb coordination involving the connection relation}
 \end{figure}%
 
- \citet[\page 217]{Levine2003a}讨论了这些句子，他们跟 \citet*{BMS2001a}提出的\hpsgc 式的提取\isce{提取}{extraction}分析有关。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入的想法。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确的语义组成成分的方式，即使句法并不对应于语义依存关系（参见\citet{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义更简单。
+\addlines
+\citet[\page 217]{Levine2003a}讨论了这些句子，他们跟 \citet*{BMS2001a}提出的\hpsgc 式的提取\isce{提取}{extraction}分析有关。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入的想法。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确的语义组成成分的方式，即使句法并不对应于语义依存关系（参见\citet{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义更简单。
 % \citet[\page 217]{Levine2003a} discusses these sentences in connection to the \hpsg analysis of
 %extraction\is{extraction} by  \citet*{BMS2001a}. Bouma, Malouf \& Sag suggest an analysis in which adjuncts are
 %introduced lexically as dependents of a certain head. Since adjuncts are introduced lexically, the
@@ -1699,10 +1708,11 @@ dg edges
 %the major categories (for instance nouns) with words in minor categories (for instance
 %prepositions). In addition, transfers can transfer a word or phrase into another category without
 %any other word participating.
+\pagebreak
 
 图\ref{fig-transfer-in-das-traumboot}就是转用的一个例子。
 %Figure~\ref{fig-transfer-in-das-traumboot} shows an example of a transfer.
-\begin{figure}
+\begin{figure}[t]
 \begin{forest}
 [steigt (I)\\
  进入\hspaceThis{(I)}
@@ -1742,7 +1752,9 @@ dg edges
 %non-modifying noun phrases and so on. For the example at hand, one would assume a preposition with
 %directional semantics that selects for an NP. The preposition is the head of a PP with a filled \modv.
 
-使用转用的另一个方面是形态学。比如说，法语\ilce{法语}{French}frappant（惊人的）的派生通过词根frapp加上后缀\suffix{ant}构成，如图\vref{fig-transfer-frappant}所示。
+使用转用的另一个方面是形态学。比如说，法语\ilce{法语}{French}frappant（惊人的）的派生通过词根frapp加
+上后缀\suffix{ant}构成，如图\vref{fig-transfer-frappant}所示。
+\largerpage
 %Another area in which transfer is used is morphology. For instance, the derivation of French\il{French}
 %\emph{frappant} `striking' by suffixation of \suffix{ant} to the verb stem \emph{frapp} is shown in
 %Figure~\vref{fig-transfer-frappant}.
@@ -1796,6 +1808,7 @@ dg edges
 %page~\pageref{passiv-lr-mit-dtr} and
 %Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}). The affixes are integrated into the
 %lexical rules or into realization functions that specify the morphological form of the item that is licensed by the lexical rule.
+\pagebreak
 
 总结一下，这里所说的转用是指
 %Concluding it can be said that transfer corresponds to 
@@ -1957,7 +1970,7 @@ word tier
 %the same order as far as \emph{oft} `often' and \emph{nicht} `not' are concerned, the sentence is
 %not ambiguous. So it is the fronting of an adjunct that is the reason for the ambiguity. The
 %dependency graph for (\mex{0}a) is shown in Figure~\vref{fig-oft-liest-er-das-buch-nicht-dg}.
-\begin{figure}
+\begin{figure}[t]
 \centering
 \begin{forest}
 dg edges
@@ -2145,6 +2158,7 @@ dg edges
 %     he has the book not often read     but seldom bought\\
 %\mytrans{He did not read the book often but rather bought it seldom.}
 \zl
+\largerpage
 这两个解释对应于图\vref{fig-er-das-buch-nicht-oft-liest-psg}中的两个短语结构树。
 %These two readings correspond to the two phrase structure trees in Figure~\vref{fig-er-das-buch-nicht-oft-liest-psg}.
 \begin{figure}
@@ -2278,7 +2292,7 @@ dg edges
 %It is important to note that the issue is not solved by simply dropping the V2 constraint and
 %allowing dependents of the finite verb to be realized to its left, since the fronted constituents do
 %not necessarily depend on the finite verb as the examples in (\mex{1}) show:
-%\pagebreak
+\enlargethispage{10pt}
 \eal
 \ex
 \label{ex-mehrfach-vf-adv-acc}
@@ -2325,7 +2339,9 @@ dg edges
 %intended by the word \emph{element}. One interpretation is that it is a continuous constituent in the classical sense of
 %constituency-based grammars. An alternative would be that there is a continuous realization of a
 %head and some but not necessarily all of its dependents. This alternative would allow an analysis of extraposition\is{extraposition} with
-%discontinuous constituents of (\mex{1}) as it is depicted in Figure~\vref{fig-ein-junger-Kerl-stand-da}.
+%discontinuous constituents of (\mex{1}) as it is depicted in
+%Figure~\vref{fig-ein-junger-Kerl-stand-da}.
+\largerpage
 \ea
 \gll Ein junger Kerl stand da, mit langen blonden Haaren, die sein Gesicht einrahmten,   [\ldots]\footnotemark\\ 
      一 年轻 人 站 那儿 \textsc{prep} 长 金色 头发 \textsc{rel} 他的 脸 装框\\
@@ -2561,6 +2577,7 @@ Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来�
 %Reape uses a list called \textsc{domain} to represent the daughters of a sign in the order in
 %which they appear at the surface of an utterance. (\mex{1}) shows an example in which the \domv of a
 %headed-phrase is computed from the \domv of the head and the list of non-head daughters.
+
 \ea
 \type{headed-phrase} \impl
 \ms{
@@ -2569,6 +2586,7 @@ Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来�
   dom  & \ibox{1} $\bigcirc$ \ibox{2} \\
 }
 \z
+\addlines
 符号“$\bigcirc$”\isce{置乱关系}{$\bigcirc$}\iscesub{关系}{relation}{置乱关系}{$\bigcirc$}\isrel{shuffle}\label{rel-shuffle}表示shuffle（置乱关系）。shuffle（置乱关系）连接了A、B和C三个列表，当且仅当C包括了A和B中的所有成分，而且A中成分的语序和B中成分的语序保存在C中。（\mex{1}）分别显示了带有两个成分的两个集合的组合：
 %The symbol `$\bigcirc$'\is{$\bigcirc$}\is{relation!$\bigcirc$}\isrel{shuffle}\label{rel-shuffle}
 %stands for the \emph{shuffle} relation. \emph{shuffle} relates three lists A, B and C iff C
@@ -3089,7 +3107,7 @@ Hudson的词语法也是明晰表示的，正如下面所示，它与HPSG理论�
 %it is rather similar to HPSG. The representation in
 %Figure~\vref{fig-wg-small-children-are-playing-outside} is a detailed description of what the 
 %abbreviated version in Figure~\vref{fig-wg-small-children-are-playing-outside-abbreviated} stands for.
-\begin{figure}
+\begin{figure}[b]
 \begin{forest}
   wg
   [were
@@ -3120,7 +3138,7 @@ Hudson的词语法也是明晰表示的，正如下面所示，它与HPSG理论�
 %\caption{\label{fig-wg-small-children-are-playing-outside}Analysis of \emph{Small children were
 %    playing outside.} according to  \citet{Hudson2017a}}
 \end{figure}%
-\begin{figure}
+\begin{figure}[b]
 \begin{forest}
   wg
   [,phantom
@@ -3314,6 +3332,14 @@ Hudson的词语法也是明晰表示的，正如下面所示，它与HPSG理论�
 \zl
 当然，有方法可以模拟所有可以在短语结构的框架下（如GPSG、CxG、HPSG或者简便句法：一个空中心语）模拟的现象。图\vref{fig-n-p-n}显示了student after student的分析。
 %Of course there is a way to model all the phenomena that would be modeled by a phrasal construction in frameworks like GPSG, CxG, HPSG, or %Simpler Syntax: an empty head. Figure~\vref{fig-n-p-n} shows the analysis of \emph{student after student}.
+空N的词汇项非常特殊，因为没有相似的非空的词汇名词，即没有名词选了两个光杆N和一个P。
+%The lexical item for the empty N would be very special, since there are no similar non-empty lexical
+%nouns, that is, there is no noun that selects for two bare Ns and a P.
+%% Note that the N-P-N construction is special in that Ns are combined rather than NPs. This means that
+%% it must be possible that the selecting head selects for incomplete Ns. Hence, we have another
+%% property that differs between words and full phrases. Again this seems to make it necessary to
+%% distinguish between lexical and phrasal nodes (see Section~\ref{sec-dg-daughters-mothers}).
+%
 \begin{figure}
 \begin{forest}
 dg edges
@@ -3326,13 +3352,7 @@ dg edges
 \caption{\label{fig-n-p-n}带有空中心语的N-P-N构式的依存语法分析}
 %\caption{\label{fig-n-p-n}Dependency Grammar analysis of the N-P-N Construction with empty head}
 \end{figure}%
-空N的词汇项非常特殊，因为没有相似的非空的词汇名词，即没有名词选了两个光杆N和一个P。
-%The lexical item for the empty N would be very special, since there are no similar non-empty lexical
-%nouns, that is, there is no noun that selects for two bare Ns and a P.
-%% Note that the N-P-N construction is special in that Ns are combined rather than NPs. This means that
-%% it must be possible that the selecting head selects for incomplete Ns. Hence, we have another
-%% property that differs between words and full phrases. Again this seems to make it necessary to
-%% distinguish between lexical and phrasal nodes (see Section~\ref{sec-dg-daughters-mothers}).
+% moved before the figure
 %
 
  \citet{Bargmann2015a}指出了N-P-N构式的另一个使得事情更加复杂的方面。这个模式没有受限于两个名词。它可以是任意数量的：
@@ -3368,6 +3388,7 @@ N (P N)+
 %
 
 %\bigskip
+\largerpage
 \exercises{
 %\section*{练习题}
 %\section*{Exercises}
