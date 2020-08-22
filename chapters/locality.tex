@@ -45,6 +45,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
    &       & V({Per1},{Num1},ditransitive)\\
 \end{tabular}
 \z
+\addlines
 例如，因为NP没有内部结构，所以动词不能要求NP内部有一个关系小句。NP的内部属性对于外部不可见。但是，我们在第\ref{Kapitel-PSG}章看到，短语的一些属性必须对于外部可见。这就是写在框自身上的信息。对于名词短语，至少需要人称、数和格信息以便能说明它们与中心语的关系。在德语中，性的取值也很重要，因为副词短语，像einer nach dem anderen（一个接一个）必须与它所指称的名词的性\isce{性}{gender}是一致的（见第\pageref{Beispiel-einer-nach-dem-anderen}页的例（\ref{Beispiel-einer-nach-dem-anderen}））。除此之外，名词短语的长度信息也是必需的，用于确定它们在句子中的顺序。重的成分通常出现在较轻的成分之后，并经常会外置（参见Behaghel提出的“成分上升率”（Gesetz der wachsenden Glieder）\isce{成分上升率}{Gesetz der wachsenden Glieder}（\citeyear[\page 139]{Behaghel09}；\citeyear[\page 86]{Behaghel30}）。 
 %Since the symbols for NPs do not have any further internal structure, the verb cannot require that there has to be a relative
 %clause in an NP, for example. The internal properties of the NP are not visible to the outside.
@@ -79,6 +80,10 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 %assignment in infinitive constructions in which the case-assigning verb governs into the embedded
 %phrase and assigns case to the element in \mbox{SpecIP}. Figure~\ref{Abbildung-ECM} shows the
 %relevant structure taken from  \citew[\page 170]{Haegeman94a-u}.
+因为格指派原则（Case Principle）是以这一原则定义的，所以只有定式I可以给主语指派格（参见第\pageref{Kasusprinzip-GB}页），him并没有从I获得格指派。相反，他认为动词believe给内嵌的不定式主语指派了格。
+%Since the Case Principle is formulated in such a way that only finite I can assign case to the subject
+%(cf.\ page~\pageref{Kasusprinzip-GB}), \emph{him} does not receive case from I. Instead, it is assumed that
+%the verb \emph{believe} assigns case to the subject of the embedded infinitive.
 \begin{figure}
 \centering
 \scalebox{.98}{%
@@ -87,21 +92,21 @@ sm edges
 [IP
 	[NP
 		[John;John]]
-	[I$'$
+	[\hspaceThis{$'$}I$'$
 		[I
 			[-s;-\textsc{3sg}]]
 		[VP
-			[V$'$
+			[\hspaceThis{$'$}V$'$
 				[V
 					[believe;相信]]
 				[IP
 					[NP
 						[him;他]]
-					[I$'$
+					[\hspaceThis{$'$}I$'$
 						[I
 							[to;\textsc{inf}]]
 						[VP
-							[V$'$
+							[\hspaceThis{$'$}V$'$
 								[V
 									[be;\textsc{cop}]]
 								[NP
@@ -111,7 +116,8 @@ sm edges
 \caption{\label{Abbildung-ECM}带有例外格标记的AcI构式的分析}
 %\caption{\label{Abbildung-ECM}Analysis of the AcI construction with \emph{Exceptional Case Marking}}
 \end{figure}%
-因为格指派原则（Case Principle）是以这一原则定义的，所以只有定式I可以给主语指派格（参见第\pageref{Kasusprinzip-GB}页），him并没有从I获得格指派。相反，他认为动词believe给内嵌的不定式主语指派了格。
+% moved on top
+%因为格指派原则（Case Principle）是以这一原则定义的，所以只有定式I可以给主语指派格（参见第\pageref{Kasusprinzip-GB}页），him并没有从I获得格指派。相反，他认为动词believe给内嵌的不定式主语指派了格。
 %Since the Case Principle is formulated in such a way that only finite I can assign case to the subject
 %(cf.\ page~\pageref{Kasusprinzip-GB}), \emph{him} does not receive case from I. Instead, it is assumed that
 %the verb \emph{believe} assigns case to the subject of the embedded infinitive.
@@ -129,13 +135,13 @@ sm edges
 [VoiceP
 	[DP
 		[Mittie;Mittie]]
-	[Voice$'$
+	[\hspaceThis{$'$}Voice$'$
 		[Voice
 			[agent;施事]]
 		[VP
 			[DP
 				[the dog;\textsc{da} 狗,roof]]
-			[V$'$
+			[\hspaceThis{$'$}V$'$
 				[V
 					[feed;喂]]]]]]
 \end{forest}
@@ -169,6 +175,7 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 %In theories such as LFG\indexlfg and HPSG\indexhpsg, case assignment takes place locally in constructions
 %such as those in (\mex{1}):
 
+\addlines
 \eal
 \ex 
 \gll John believes him to be a liar.\\
@@ -298,6 +305,7 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 %} An example for this kind of theory is TAG. In TAG, one can specify trees of exactly the right size \citep{Abeille88a,AS89a}.
 %All the material that is fixed in an idiom is simply determined in the elementary tree. Figure\vref{Abbildung-kick-the-bucket-TAG} shows
 %the tree for \emph{kick the bucket} as it is used in (\mex{1}a).
+\addlines
 \eal
 \ex 
 \gll The cowboys kicked the bucket.\\
@@ -411,6 +419,7 @@ tag
 %is  in principle accessible, it is not accessed if this is not permitted. This was the approach taken by  \citet[\page
 %143--145]{ps}.
 
+\largerpage
 也\label{page-Bender-Wambaya-two}可以假设一种世界，其中所有的框盒都包含透明的部分，可以看到框盒中的部分内容。这就是LFG\indexlfg 采用的方法：所有嵌套层面的包括在f-结构\isce{f-结构}{f-structure}中的信息对内对外都可见。我们已经在第300页讨论了Nordlinger\citeyearpar{Nordlinger98a-u}使用LFG理论对于万巴亚语\ilce{万巴亚语}{Wambaya}进行的分析。在Wambaya语中，组成名词短语的词可以分布在整个句子中。例如，指向名词的一个形容词可以出现在离名词很远的地方。Nordlinger为刻画这一现象假设形容词可以在f-结构中修饰论元并且可以在性、数、格上与之保持一致。 \citet{Bender2008a}认为这个分析可以转化成HPSG\indexhpsg：不同于不再当论元与中心语组合之后就在父结点上表征它，将论元简单地标注为已经实现的允许我们将其保存在表征中 （\citealp{Meurers99b}；\citealp{Prze99}；\citealp[\S~17.4]{MuellerLehrbuch1}）。Detmar Meurers\aimention{Walt Detmar  Meurers} 通过一个购物清单来对比两种HPSG方法的不同工作方式：在 \citet{ps2}所采用的标准方法中，当找到相关物品时就将购物清单上对应的部分划掉。在其他情况下，列表上的相关项目被划掉。在购物结束后，就剩下一个标注了所买东西的列表，以及已购买的东西。
 %It\label{page-Bender-Wambaya-two} is also possible to assume a world in which all the boxes contain transparent areas where it is possible to see parts of their contents.
 %This is more or less the LFG world\indexlfg: the information about all levels of embedding contained in the f-structure\is{f-structure} is
@@ -430,6 +439,7 @@ tag
 %I have proposed the crossing-out analysis for depictive predicates\is{depictive predicate|(} in German and English 
 %\citep{Mueller2004c,Mueller2008a}. Depictive predicates say something about the state of a person or object during the event
 %expressed by a verb:
+
 \eal
 \ex 
 \gll Er sah sie nackt.\footnotemark\\
@@ -452,6 +462,7 @@ tag
 %the antecedent noun precedes the depictive predicate
 %\citep[\page 208]{Loetscher85}. Figure~\vref{anal-er-die-frau-nackt-sieht} shows analyses for the
 %sentences in (\mex{1}):
+\addlines[-1]
 \eal
 \ex 
 \gll dass er$_i$ die Äpfel$_j$ ungewaschen$_{i/j}$ isst\\
@@ -527,6 +538,7 @@ tag
 %Arguments that have been realized are still represented on the upper nodes, however, they are crossed-out and thereby marked as ``realized''.
 %In German, this preference for the antecedent noun can be captured by assuming a restriction that states that the antecedent noun must not yet have been
 %realized.
+\pagebreak
 
 在英语\ilce{英语}{English}中，普遍假设附加语与VP组合。
 %It is commonly assumed for English\il{English} that adjuncts are combined with a VP.
