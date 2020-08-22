@@ -755,8 +755,8 @@ conflict among the constructions.
 有人会说这些句子是否是并列VP的右结点提升现象（Right Node Raising，简称RNR）\citep{Bresnan74a-u, Abbott76a-u}： 
 \ea \label{rnr}
 \gll
-She $[$ offered  \_\_\_  $]$ and $[$ made me \_\_\_ $]$  a wonderful espresso. \\
-她 \spacebr{} 提供 {} \spacebr{} 并 \spacebr{} 做 我 {} \spacebr{} 一 极好的 浓咖啡\\
+She $[$ offered  \trace{}  $]$ and $[$ made me \trace{} $]$  a wonderful espresso. \\
+她  {}  提供      {}      {}  并  {}  做   我 {}      {}   一 极好的 浓咖啡\\
 \mytrans{她为我提供并做了一杯极好的浓咖啡。}
 \z
 但这是不对的。按照这个分析，第一个动词必须没有受益者或接受者宾语。但是，me（我）应该理解为“给予”和“制作”的接受者。第二，第二个宾语可以是一个非重读的代词，即She offered and made me it（她为我提供并制作），这在RNR中是不可能出现的。注意，offered and made（提供和制作）的意义不可能是伪--并列语义offered to make（提供为了制作）。这种意义只能出现在一些动词（例如try）的词干形式中。
@@ -821,6 +821,7 @@ She $[$ offered  \_\_\_  $]$ and $[$ made me \_\_\_ $]$  a wonderful espresso. \
 %on the conjuncts matches. This is an interesting suggestion but it requires the introduction of
 %valence representations into the phrasal approach that are not needed for other reasons than the analysis of
 %coordination. This seems to be an unwanted consequence of the phrasal analysis.
+\addlines[2]
     《理论语言学》（\emph{Theoretical Linguistics}）的一位审稿人正确地指出：（短语）论元结构构式方法的工作方式跟我们的词汇分析完全相同。我们的双及物词汇规则只是简单地被重新处理为“双及物论元结构构式”。该构式可以与baked（烤）组合，因此可以在跟gave（给）组合之前增加第三个论元。只要该论元结构构式方法与词汇规则方法的差异仅仅是表示方法的不同，那么当然它跟词汇规则是一样的。但是，论元结构构式方法的文献都将它作为与词汇规则极其不同的一种方法，在这种方法中构式通过承继层级组合而不是允许词汇规则在与其他词或短语组合之前先改变动词的论元结构。
 %A reviewer of Theoretical Linguistics correctly observes that a version of the (phrasal) ASC approach could work in the exactly same way as our lexical analysis.  
 %Our ditransitive lexical rule would simply be rechristened as a ``ditransitive ASC''.  This construction would combine with \emph{baked}, thus adding the
@@ -974,6 +975,7 @@ Naturv\aa rdsverket.\footnotemark\\
 %However, a problem for Marantz is that these two types of nouns can coordinate and share dependents (example
 %(\mex{1}a) is from  \citew[Section~7]{Wechsler2008a}): 
 
+\addlines[2]
 \eal
 \ex 
 \gll With nothing left after the soldier's [destruction and looting] of their home, they reboarded their coach and set out for the port of Calais.\\
@@ -1327,6 +1329,7 @@ for tree={fit=rectangle}
 
 %% They could assume allo-constructions and make both c-structures inherit from the same super construction.
 %%
+\addlines
     在转入下一节有关论元结构的极端不充分赋值方法之前，我想评论一下 \citet*{AGT2014a}最近的一篇文章。该文章讨论了用短语结构的方法引入同源宾语和受益格\isce[|(]{受益格}{benefactive}。后者的例子见（\mex{1}a）。
 %Before I turn to approaches with radical underspecification of argument structure in the next
 %section, I want to comment on a more recent paper by  \citet*{AGT2014a}. The authors discuss the
@@ -1591,7 +1594,8 @@ content  & kill(e, y) $\wedge$ agent(e, x)\\
 \subsection{小动词和熟语不对称性}
 \label{idiom-asym}
 
-\mbox{} \citet{Marantz84a}和 \citet{Kratzer96a}根据假定的熟语不对称性主张从（\mex{0}a）所示的论元结构提供施事。 \citet{Marantz84a}观察到虽然英语有很多熟语并且动词有很多特定的意义，但是在这些熟语中内部论元都是固定部分，外部论元都是可变部分，相反的情况很少见。换句话说，主语论元扮演角色的性质通常取决于宾语位置的填充项，但是相反却不成立。下面是\citet[\page 114]{Kratzer96a}举出的例子：
+%\addlines
+\citet{Marantz84a}和 \citet{Kratzer96a}根据假定的熟语不对称性主张从（\mex{0}a）所示的论元结构提供施事。 \citet{Marantz84a}观察到虽然英语有很多熟语并且动词有很多特定的意义，但是在这些熟语中内部论元都是固定部分，外部论元都是可变部分，相反的情况很少见。换句话说，主语论元扮演角色的性质通常取决于宾语位置的填充项，但是相反却不成立。下面是\citet[\page 114]{Kratzer96a}举出的例子：
 %\mbox{} \citet{Marantz84a} and  \citet{Kratzer96a} argued for severing the agent from the argument structure as in (\mex{0}a), on the basis of putative idiom asymmetries.
 % \citet{Marantz84a} observed that while English has many idioms and specialized meanings for verbs in
 %which the internal argument is the fixed part of the idiom and the external argument is free, the
@@ -2270,7 +2274,7 @@ functional heads, and I do not have anything to say about this issue here.
 %high-level problems that were mentioned in the previous subsections, but since it is worked out in
 %detail it is interesting to see its predictions.
 
-\mbox{} \citet{Haugereid2007a}在HPSG框架内，延续 \citet{Borer2005a-u}的思路提出了一种分析，在这种分析中，一个表达的意义取决于出现的论元。他认为有五种论元槽可以被指派意义角色\isce{语义角色}{semantic role}，语义角色如下：\todostefan{Das gibt irgendwie einen Bruch, weil das so Kleinkram ist.}
+\mbox{}\citet{Haugereid2007a}在HPSG框架内，延续 \citet{Borer2005a-u}的思路提出了一种分析，在这种分析中，一个表达的意义取决于出现的论元。他认为有五种论元槽可以被指派意义角色\isce{语义角色}{semantic role}，语义角色如下：\todostefan{Das gibt irgendwie einen Bruch, weil das so Kleinkram ist.}
 %\mbox{} \citet{Haugereid2007a}, working in the framework of HPSG, suggests an analysis along the lines of  \citet{Borer2005a-u} where the meaning of an expression is defined as depending
 %on the arguments that are present. He assumes that there are five argument slots that are assigned to semantic roles\is{semantic role}
 %as follows:\todostefan{Das gibt irgendwie einen Bruch, weil das so Kleinkram ist.}
@@ -3194,6 +3198,7 @@ DESIRE(&~{\mynode{b}{BILL$_2$},} & & & ~{}{\mynode{sw}{[SANDWICH; DEF]$_3$}})\\
 \subsection{小词动词及其受到短语结构构型的约束}
 \label{sec-particle-verbs-phrasal}
 
+\largerpage
 假设短语结构构型与语义匹配的方法存在一个普遍的问题，即构式可能出现在很多不同的环境中：构式的组成部分可能会涉及到派生形态（正如前面章节所谈到的）或者构式组成部分可能会涉及到成分分裂。后一种类型的一个例子是Booij（\citeyear[\S~2]{Booij2002a}；\citeyear{Booij2012a-u}）和 \citet{Blom2005a}（他们分别在构式语法\indexcxg 和词汇功能语法\indexlfg 框架内工作）用短语性分析来分析小词动词现象。研究荷兰语\ilce{荷兰语}{Dutch}的学者认为小词动词由短语构式（短语结构的一部分）允准，其中第一个槽由小词占据。
 %A general problem of approaches that assume phrase structure configurations paired with meaning is
 %that the construction may appear in different contexts: the construction parts may be involved in
@@ -3596,7 +3601,9 @@ tag
 % der zweite Satz wäre auch wahr, wenn es zwei Mädchen gäbe, von denen das eine an der Ecke steht und
 % das andere winkt.
 %
- \citet{Abeille2006a}已经证明，如果假设（\mex{0}）所示的那些并列例子总是涉及两个完整句子的并列，那么不可能概括所有的现象。也需要允许Steedman分析（也可以参见\ref{Abschnitt-Spezfikatoren-MP}）中使用的词汇并列。 \citet{SJ96a}提出了一种树邻接语法分析\indextag，其中结点可以在并列结构中共享。（\ref{Beispiel-he-knows-and-loves}）的分析可以见图\vref{Abbildung-He-knows-and-loves-this-record-TAG}。
+
+\noindent
+\citet{Abeille2006a}已经证明，如果假设（\mex{0}）所示的那些并列例子总是涉及两个完整句子的并列，那么不可能概括所有的现象。也需要允许Steedman分析（也可以参见\ref{Abschnitt-Spezfikatoren-MP}）中使用的词汇并列。 \citet{SJ96a}提出了一种树邻接语法分析\indextag，其中结点可以在并列结构中共享。（\ref{Beispiel-he-knows-and-loves}）的分析可以见图\vref{Abbildung-He-knows-and-loves-this-record-TAG}。
 % \citet{Abeille2006a} has shown that it is not possible to capture all the data if one assumes that cases of coordination such as  those in
 %(\mex{0}) always involve the coordination of two complete clauses. It is also necessary to allow for lexical coordination of the kind we saw
 %in Steedman's analysis (see also Section~\ref{Abschnitt-Spezfikatoren-MP}).
@@ -3607,7 +3614,7 @@ tag
 \centering
 \begin{forest}
 sm edges
-[\phantom{S}
+[S, phantom
   [S, no edge
 	[NP,name=np11
 		[he;他]]
@@ -3668,7 +3675,6 @@ sm edges
 %    loves this record.} in tree notation}
 \end{figure}%
 
-\noindent
 按照Goldberg的插入分析，也可以接受这种方法来分析并列。knows（知道）和loves（喜欢）可以首先被插入到并列构式中，然后结果再被插入到及物构式中。具体来说，knows and loves（知道并且喜欢）的语义如何跟及物构式的意义组合还不清楚，因为这个短语的意义有点像\relation{and}(\relation{know}(x, y), \relation{love}(x, y))，即一个复杂事件带有至少两个开放论元槽x和y（并且有可能，还有一个事件和一个世界变量，这取决于所运用的语义理论）。Goldberg可能会接受图\ref{Abbildung-He-knows-and-loves-this-record-TAG}所示的分析，来确保插入分析。
 %With Goldberg's plugging analysis one could also adopt this approach to coordination: here, \emph{knows}
 %and \emph{loves} would first be plugged into a coordination construction and the result would then be plugged into the transitive construction.
@@ -3684,7 +3690,7 @@ Croft一定必须采用TAG分析，因为动词已经出现在构式当中。对
 \centering
 \begin{forest}
 sm edges
-[\phantom{S}
+[S, phantom
   [S, no edge
 	[NP, name=np11
 		[he;他]]
@@ -3755,7 +3761,9 @@ sm edges
 
 \subsection{词汇规则 vs.\ 短语结构}
 \label{sec-lr-phrasal-psycho}
-\mbox{} \citet[\S~1.4.5]{Goldberg95a}使用来自心理语言学实验的证据来反对词汇方法使用词汇规则来说明论元结构的交替： \citet{CT88a}展示（\mex{1}）所示的带有真正词汇歧义的句子与包含具有相同核心语义的动词的句子具有不同的处理时间。
+
+%\addlines
+\citet[\S~1.4.5]{Goldberg95a}使用来自心理语言学实验的证据来反对词汇方法使用词汇规则来说明论元结构的交替： \citet{CT88a}展示（\mex{1}）所示的带有真正词汇歧义的句子与包含具有相同核心语义的动词的句子具有不同的处理时间。
 %\mbox{} \citet[Section~1.4.5]{Goldberg95a} uses evidence from psycholinguistic experiments to argue against lexical
 %approaches that use lexical rules to account for argument structure alternations:  \citet{CT88a}
 %showed that sentences with true lexical ambiguity like those in (\mex{1}) and sentences with two
@@ -3828,7 +3836,7 @@ b. & load (with): & C$_2$ $\wedge$ load(\ldots)\\
 %   experiment that corresponds to what is said here.%
 %}
 
- \citet[\page 107]{Goldberg95a}对于（\mex{1}）所示的处所变换式\isce{处所变换式}{locative alternation}反对使用基于词汇规则的方法，因为按照她的观点，基于词汇规则的方法必须假设其中一个词汇形式是更基础的形式。
+\citet[\page 107]{Goldberg95a}对于（\mex{1}）所示的处所变换式\isce{处所变换式}{locative alternation}反对使用基于词汇规则的方法，因为按照她的观点，基于词汇规则的方法必须假设其中一个词汇形式是更基础的形式。
 % \citet[\page 107]{Goldberg95a} argues against lexical rule-based approaches for locative
 %alternations\is{locative alternation} like (\mex{1}), since according to her such approaches have to assume that one of the verb forms has to be the more
 %basic form.
@@ -3920,6 +3928,7 @@ b. & load (with): & C$_2$ $\wedge$ load(\ldots)\\
 %various approaches to light verb constructions. (\mex{1}a) shows a typical light verb construction:
 %\emph{take} is a light verb that is combined with the nominal that provides the main
 %predication. 
+%\addlines[2]
 \eal
 \ex 
 \gll take a walk to the park\\
@@ -3983,7 +3992,7 @@ b. & load (with): & C$_2$ $\wedge$ load(\ldots)\\
 \label{sec-neuro-linguistics}
 
 %\subsection{Particle Verbs}
-\mbox{} \citet*{PCShandbookCxG}讨论了神经语言学事实并将其与CxG语法理论联系在一起。重要的发现是错误的词（词项）导致的大脑反应与不正确的词串（即句法组合）导致的大脑反应存在差异。这表明存在一个经验性的基础来决定这个问题。
+\mbox{}\citet*{PCShandbookCxG}讨论了神经语言学事实并将其与CxG语法理论联系在一起。重要的发现是错误的词（词项）导致的大脑反应与不正确的词串（即句法组合）导致的大脑反应存在差异。这表明存在一个经验性的基础来决定这个问题。
 %\mbox{} \citet*{PCShandbookCxG} discuss neurolinguistic facts and relate them to the CxG view of grammar
 %theory. One important finding is that deviant words (lexical items) cause brain responses that differ in polarity
 %from brain responses on incorrect strings of words, that is, syntactic combinations. This suggests
@@ -4057,6 +4066,7 @@ is free or allow for scrambling.
 %a representation in a linearization-based framework of the kind that was proposed by
 % \citet{Reape94a} and  \citet*[\page 244--248]{Kathol95a} and  \citet{Crysmann2002a} worked out such
 %analyses in detail. Kathol's lexical item for \emph{aufwachen} `to wake up' is given in (\mex{1}):
+%\addlines[2]
 \eas
 \label{le-aufwachen-Kathol}
 \mbox{aufwachen （根据\citealp[\page 246]{Kathol95a}）：}\\
@@ -4467,7 +4477,7 @@ sm edges
 
 \subsection{搭配构式}
 
-\mbox{} \citet[\S~5]{SG2009a}提出了一种插入分析：“如果词的意义与构式匹配，则词语出现在一个给定构式（提供的槽）中”。作者声称他们的“搭配构式分析已经从多个角度验证了插入分析”。 Stefanowitsch和Gries可以展示特定动词多半出现在特定构式中，而其他动词从不出现在相应构式中。例如，give（给）、tell（告诉）、send（寄送）、offer（提供）、show（展示）可以出现在双及物构式中，而make（制作）和do（做）则不能出现在该构式中，即就动词在语料库中出现的总频率来讲，它们比预期出现的频率低得多。就这一分布，作者写道：
+\mbox{}\citet[\S~5]{SG2009a}提出了一种插入分析：“如果词的意义与构式匹配，则词语出现在一个给定构式（提供的槽）中”。作者声称他们的“搭配构式分析已经从多个角度验证了插入分析”。 Stefanowitsch和Gries可以展示特定动词多半出现在特定构式中，而其他动词从不出现在相应构式中。例如，give（给）、tell（告诉）、send（寄送）、offer（提供）、show（展示）可以出现在双及物构式中，而make（制作）和do（做）则不能出现在该构式中，即就动词在语料库中出现的总频率来讲，它们比预期出现的频率低得多。就这一分布，作者写道：
 %\mbox{} \citet[Section~5]{SG2009a} assume a plugging analysis: ``words
 %  occur in (slots provided by) a given   construction if their meaning matches that of the
 %  construction''. The authors claim that their \emph{collostructional analysis has confirmed}
@@ -5089,7 +5099,7 @@ sm edges
 
 \subsection{关系小句和疑问小句}
 \label{Abschnitt-Relativ-Interrogativsaetze}
-\mbox{} \citet{Sag97a}\isce[|(]{关系小句}{relative clause}\isce[|(]{疑问小句}{interrogative clause}为\ilce[|(]{英语}{English}关系小句提出了一种短语分析， \citet{GSag2000a-u}也为疑问小句提供了一种短语分析。关系小句和疑问小句包含一个前置的短语和一个丢失前置短语的小句或动词短语。前置的短语包含一个关系代词或疑问代词。
+\mbox{}\citet{Sag97a}\isce[|(]{关系小句}{relative clause}\isce[|(]{疑问小句}{interrogative clause}为\ilce[|(]{英语}{English}关系小句提出了一种短语分析， \citet{GSag2000a-u}也为疑问小句提供了一种短语分析。关系小句和疑问小句包含一个前置的短语和一个丢失前置短语的小句或动词短语。前置的短语包含一个关系代词或疑问代词。
 %\mbox{} \citet{Sag97a}\is{relative clause|(}\is{interrogative clause|(}
 %develops a phrasal analysis of English\il{English|(} relative clauses as have  \citet{GSag2000a-u} for interrogative clauses.
 %Relative and interrogative clauses consist of a fronted phrase and a clause or a verb phrase missing the fronted phrase.
@@ -5296,7 +5306,7 @@ sm edges, for tree={fit=rectangle}
 \subsection{N-P-N构式}
 \label{Abschnitt-NPN-Konstruktion}
 
-\mbox{} \citet{Jackendoff2008a}\iscesub[|(]{构式}{construction}{N-P-N}{N-P-N}讨论了英语的N-P-N构式。这种构式的例子见（\mex{1}）：
+\mbox{}\citet{Jackendoff2008a}\iscesub[|(]{构式}{construction}{N-P-N}{N-P-N}讨论了英语的N-P-N构式。这种构式的例子见（\mex{1}）：
 %\mbox{} \citet{Jackendoff2008a}\is{construction!N-P-N|(} discusses the English N-P-N construction. Examples of this construction are given in (\mex{1}):
 \eal
 \ex 
