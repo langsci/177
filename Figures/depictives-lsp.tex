@@ -1,5 +1,6 @@
 %% -*- coding:utf-8 -*-
 \documentclass[ number=1
+                ,smallfont
                 ,series=lnls,
                 ,isbn=978-3-944675-21-3,
                 ,url=http://langsci-press.org/catalog/book/14,
@@ -9,40 +10,46 @@
 	        %,draftmode  
                 ,bibtex
                 ,copyright=CC-BY-ND
-		  ]{../LSP/langsci}                          
+		  ]{./langsci/langscibook}                          
 
+
+% compile with texlive 2020 and lualatex, also runs under texlive 2017 
 
 %deceive the driver
-\def\pdftexversion{140}
+%\def\pdftexversion{140}
 %use the old driver for dvipdfm
-\def\pgfsysdriver{pgfsys-dvipdfm.def} 
+%\def\pgfsysdriver{pgfsys-dvipdfm.def} 
 
-\usepackage{forest,../LSP/lsp-styles/lsp-forest-setup,makros.2e}
+\usepackage{langsci-forest-setup,abbrev,merkmalstruktur,makros.2e,oneline}
 
 \usetikzlibrary{tikzmark}
 
+\usepackage{luatexja-fontspec}
 
+\setmainjfont{SourceHanSerifSC-Regular}
+
+\newcommand{\lsSeriesText}{}
 
 \begin{document}
 \thispagestyle{empty}
 \oneline{%
 \begin{forest}
-sn edges, for tree={l sep= 6ex}
+sm edges, for tree={l sep= 6ex}
 [V{[\subcat \sliste{ \spirit{1}, \spirit{2} }]}
 	[\ibox{1} NP{[\textit{nom}]}
 		[er;他]]
 	[V{[\subcat \sliste{ \ibox{1}, \spirit{2} } ]}
 		[\ibox{2} NP{[\textit{acc}]}
-			[die Äpfel;\textsc{da} 苹果,triangle]]
+			[die Äpfel;\textsc{da} 苹果,roof]]
 		[V{[\subcat \sliste{ \ibox{1}, \ibox{2} } ]}
 			[\subnode{ap1}{AP}
 				[ungewaschen;没洗的]]
 			[V{[\subcat \sliste{ \subnode{arg11}{\ibox{1}}, \subnode{arg12}{\ibox{2}} }]}
-				[isst;eats]]]]]
+				[isst;吃]]]]]
 \end{forest}
 \hspace{1em}
 \begin{forest}
-sn edges, for tree={l sep= 6ex}
+sm edges, for tree={l sep= 6ex}
 [V{[\subcat \sliste{ \spirit{1}, \spirit{2} } ]}
 	[\ibox{1} NP{[\textit{nom}]}
 		[er;他]]
@@ -51,9 +58,9 @@ sn edges, for tree={l sep= 6ex}
 			[ungewaschen;没洗的]]
 		[V{[\subcat \sliste{ \subnode{arg21}{\ibox{1}}, \spirit{2} } ]}
 			[\ibox{2} NP{[\textit{acc}]}
-				[die Äpfel;\textsc{da} 苹果,triangle]]
+				[die Äpfel;\textsc{da} 苹果,roof]]
 			[V{[\subcat \sliste{ \ibox{1}, \ibox{2} } ]}
-				[isst;eats]]]]]
+				[isst;吃]]]]]
 \end{forest}
 % This has to be inside of the scaling
     %% \begin{tikzpicture}[overlay,remember picture]

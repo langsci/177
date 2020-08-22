@@ -1,24 +1,51 @@
-%% -*- coding:utf-8 -*-
-%% -*- coding:utf-8 -*-
-%% \documentclass[ number=1
-%%                 ,series=tbls,
-%% 	        %,blackandwhite
-%% 	        ,smallfont
-%%                 ,bibtex
-%% 	        %,draftmode  
-%% 		  ]{../langsci-2016-03-04-new/langscibook}                          
+\documentclass[ number=1
+                ,smallfont
+                ,series=lnls,
+                ,isbn=978-3-944675-21-3,
+                ,url=http://langsci-press.org/catalog/book/14,
+              ,output=long    % long|short|inprep              
+              %,blackandwhite
+              ,smallfont
+              %,draftmode  
+                ,bibtex
+                ,copyright=CC-BY-ND
+                ]{./langsci/langscibook}         
+           
 
-% This works with lualatex under texlive 2017
-    \documentclass{article}
+\usepackage{luatexja-fontspec}
 
-    \usepackage{libertine}\usepackage[libertine]{newtxmath}
+\setmainjfont{SourceHanSerifSC-Regular}
 
-    \usepackage{luatexja-fontspec}\setmainjfont{SimSun}
+\newcommand{\lsSeriesText}{}
 
 
-    \usepackage{langsci-forest-setup,german,makros.2e,abbrev,merkmalstruktur,dalrymple,my-xspace}
+    % \documentclass{article}
 
-    \usepackage{langsci-lgr}
+    % \usepackage{libertine}\usepackage[libertine]{newtxmath}
+
+    % \usepackage{luatexja-fontspec}\setmainjfont{SimSun}
+
+
+    \usepackage{langsci-forest-setup,german,abbrev,makros.2e,merkmalstruktur,dalrymple,my-xspace}
+
+\usetikzlibrary{tikzmark}
+
+% to set the MRSes for scope underspecification
+%http://tex.stackexchange.com/questions/218417/replacing-tree-dvips-connect-nodes-in-a-tabular-environment/218458#218458
+\usepackage{tcolorbox}
+\tcbuselibrary{skins}
+% for texlive 2015
+\newtcbox{\mybox}[1][]{empty,shrink tight,nobeforeafter,on line,before upper=\vphantom{gM},remember as=#1,top=2pt,bottom=2pt}
+
+% for texlive 2013
+%\newtcbox{\mybox}[1][]{enhanced,boxrule=0pt,colframe=white,colback=white,shrink tight,nobeforeafter,on line,before upper=\vphantom{gM},remember as=#1} %,top=3pt,bottom=3pt}
+                                %use shorten <=2pt,shorten >=2pt in the pictures.
+
+\newcommand{\mynode}[2]{\mybox[#1]{#2}}
+
+
+    \newcommand{\centtab}[1]{\begin{tabular}[t]{@{}c@{}}#1\end{tabular}}
+
 
 
     \begin{document}
