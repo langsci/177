@@ -1,5 +1,6 @@
 %% -*- coding:utf-8 -*-
 
+\largerpage[2]
 \section{局部性}
 %\section{Locality}
 \label{Abschnitt-Diskussion-Lokalitaet}\label{sec-locality}
@@ -45,7 +46,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
    &       & V({Per1},{Num1},ditransitive)\\
 \end{tabular}
 \z
-\addlines
+%\addlines
 例如，因为NP没有内部结构，所以动词不能要求NP内部有一个关系小句。NP的内部属性对于外部不可见。但是，我们在第\ref{Kapitel-PSG}章看到，短语的一些属性必须对于外部可见。这就是写在框自身上的信息。对于名词短语，至少需要人称、数和格信息以便能说明它们与中心语的关系。在德语中，性的取值也很重要，因为副词短语，像einer nach dem anderen（一个接一个）必须与它所指称的名词的性\isce{性}{gender}是一致的（见第\pageref{Beispiel-einer-nach-dem-anderen}页的例（\ref{Beispiel-einer-nach-dem-anderen}））。除此之外，名词短语的长度信息也是必需的，用于确定它们在句子中的顺序。重的成分通常出现在较轻的成分之后，并经常会外置（参见Behaghel提出的“成分上升率”（Gesetz der wachsenden Glieder）\isce{成分上升率}{Gesetz der wachsenden Glieder}（\citeyear[\page 139]{Behaghel09}；\citeyear[\page 86]{Behaghel30}）。 
 %Since the symbols for NPs do not have any further internal structure, the verb cannot require that there has to be a relative
 %clause in an NP, for example. The internal properties of the NP are not visible to the outside.
@@ -305,7 +306,6 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 %} An example for this kind of theory is TAG. In TAG, one can specify trees of exactly the right size \citep{Abeille88a,AS89a}.
 %All the material that is fixed in an idiom is simply determined in the elementary tree. Figure\vref{Abbildung-kick-the-bucket-TAG} shows
 %the tree for \emph{kick the bucket} as it is used in (\mex{1}a).
-\addlines
 \eal
 \ex 
 \gll The cowboys kicked the bucket.\\
@@ -323,8 +323,10 @@ Adger讨论depend这一类动词的PP论元并且注意到这些动词需要特�
 \mytrans{他大限已到。}
 %He kicked the proverbial bucket.
 \zl
+%\addlines
 \begin{figure}
 \centering
+\scalebox{.95}{%
 \begin{forest}
 tag
 [S
@@ -337,7 +339,7 @@ tag
 				[the;\textsc{da}]]
 			[N
 				[bucket;桶]]]]]
-\end{forest}
+\end{forest}}
 \caption{\label{Abbildung-kick-the-bucket-TAG}kick the bucket的基本树}
 %\caption{\label{Abbildung-kick-the-bucket-TAG}Elementary tree for \emph{kick the bucket}}
 \end{figure}%
@@ -387,6 +389,7 @@ tag
 % \citet[\page 7]{AS89a}. The ban on adjunction\is{adjunction!ban} is marked by a subscript NA.
 \begin{figure}
 \centering
+\scalebox{.95}{%
 \begin{forest}
 tag
 [S
@@ -401,11 +404,12 @@ tag
 			[NP$_{\mathrm{NA}}$
 				[N$_{\mathrm{NA}}$
 					[account;解释]]]]]]
-\end{forest}
+\end{forest}}
 \caption{\label{Abbildung-take-into-account-TAG}take into account的基本树}
 %\caption{\label{Abbildung-take-into-account-TAG}Elementary tree for \emph{take into account}}
 \end{figure}%
 
+%\largerpage[2]
 其他理论也存在的问题是所有确保局部性的努力是否都应该被放弃。在\ref{Abschnitt-Kopf}中我们讨论的框盒模型中，放弃局部性就意味着所有的框盒都是透明的。因为塑料框盒（plastic box）并不允许所有的光线通过，包含在多层盒子中的物体不如最外面的框盒中的物体看得清楚（功能不确定性\isce{功能不确定性}{functional uncertainty}路径更长）。这也等同于 \citet{KF99a}在CxG\indexcxg 框架中所提出的建议。Kay和Fillmore在父结点明确表征短语内部结构的所有信息，因此在他们的理论中完全没有局部性限制。原则上，可以赞成这一理论，就像第\ref{sec-generative-capacity}章所提出的那样。那里的论据主要是语法形式化体系的复杂性：语言描述中这种复杂性并不重要，重要的是学者用这种复杂性来干什么。以同样的方式，学者可以说某种信息在原则上是可及的，但是如果不允许这种信息就不可及。这就是 \citet[\page143--145]{ps}所采用的方法。
 %The question that also arises for other theories is whether the efforts that have been made to enforce locality should be abandoned altogether.
 %In our box model in Section~\ref{Abschnitt-Kopf}, this would mean that all boxes were transparent. Since plastic boxes do not allow
