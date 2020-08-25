@@ -35,7 +35,7 @@
 %NPs, for short. The pronoun \emph{er} `he' can occur in the same positions as full NPs and can
 %therefore also be assigned to the category NP.
 
-短语结构语法用一系列规则来说明符号是如何指派到某类词中，并且这些词是如何构成更复杂的单位的。如（\mex{1}）所示，这是用来分析例句（\mex{0}）的一个简单的短语结构语法：\footnote{%
+短语结构语法用一系列规则来说明符号是如何指派到某类词中，并且这些词是如何构成更复杂的单位的。如（\mex{1}）所示，这是用来分析例句（\mex{0}）的一个简单的短语结构语法：\dotfootnote{%
 我们暂不分析weil（因为）。因为对于德语的动词位于第一位和动词位于第二位的小句的确切分析来说，我们还需要一些额外的假设，所以在这一章只讨论动词位于句末的小句。
 }$^,$\footnote{\label{fn-np-pron-ps-rule}%
 NP $\to$ er 这条规则看起来有些奇怪。我们本可以用PersPron $\to$ er这条规则来说明，但是这就需要另一条规则来说明能够代替整个NP的人称代词NP $\to$ PersPron。（\mex{1}）将前面两条规则整合成一条，并且说明er（他）出现在名词短语可以出现的位置上。
@@ -222,11 +222,11 @@ sm edges
 %  binary branching structure}
 \end{figure}%
 
-实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\defart{}的宾格形式），那么就会生成不合语法的句子，如例（\mex{1}b--d）所示：\footnote{%
+实际上，（\mex{0}）和（\ref{bsp-grammatik-psg}）中的文法都不够精确。如果我们在文法中加入额外的词条，如ich（我）和den（\defart{}的宾格形式），那么就会生成不合语法的句子，如例（\mex{1}b--d）所示：\dotfootnote{%
 应用（\ref{psg-binaer}）中的文法，我们还会遇到别的问题，即我们无法确定什么时候话语是完整的，因为符号V被用来表示V和NP的所有组合。由此，我们也可以用这个文法来分析（i）中的句子：
 %Both the grammar in (\mex{0}) and (\ref{bsp-grammatik-psg}) are too imprecise.
 %If we adopt additional lexical entries for \emph{ich} `I' and \emph{den} `the' (accusative) in our grammar, then we would incorrectly
-%license the ungrammatical sentences in (\mex{1}b--d):\footnote{%
+%license the ungrammatical sentences in (\mex{1}b--d):\footnote\{%
 %	With the grammar in (\ref{psg-binaer}), we also have the additional problem that we cannot determine when an utterance is complete
 %	since the symbol V is used for all combinations of V and NP. Therefore, we can also analyze the sentence in (i) with this grammar:
   
@@ -414,7 +414,7 @@ S  & $\to$ NP\_3\_pl\_nom & NP\_dat & NP\_acc & V\_3\_pl\_nom\_dat\_acc\\
 %\gll ein Beamter, der Beamte\\
 %	 a civil.servant the civil.servant\\\jambox{(inflectional class)}
 %\zl
-我们不用NP $\to$ Det N这条规则，我们将要用到下面这些规则，如例（\mex{1}）所示：\footnote{%
+我们不用NP $\to$ Det N这条规则，我们将要用到下面这些规则，如例（\mex{1}）所示：\dotfootnote{%
 为了方便，这些规则没有包括屈折类型相关的信息。
 }  
 %Instead of the rule NP $\to$ Det N, we will have to use rules such as those in (\mex{1}):\footnote{%
@@ -458,7 +458,7 @@ NP\_3\_pl\_nom  & $\to$ Det\_neu\_pl\_nom & N\_neu\_pl\_nom \\[2mm]
 %all have something in common. In formal terms, the only thing that the rules have in common is that there is one symbol on the
 %left-hand side of the rule and two on the right.
 
-我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以用一条附加的特征表示性，并用另一条特征表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\footnote{%
+我们可以引进特征来解决这一问题。我们给范畴符号指派一些特征，并且允许我们的规则将这些特征的值包含进来。举例来说，我们可以假设范畴符号NP具有人称、数和格的特征。对于限定词和名词来说，我们可以用一条附加的特征表示性，并用另一条特征表示屈折类型。例（\mex{1}）给出了两条规则，并用括号分别表示出特征值：\dotfootnote{%
 第\ref{chap-feature-descriptions}章介绍了属性值结构。这些结构总是包括一对属性名称和属性值。在这样的情况下，值的顺序就不重要了，因为每个值都是独一无二的，并由相应的特征名称来指定。因为我们在（\mex{0}）这样的格式中没有属性名称，所以值的顺序是重要的。
 }
 %We can solve this problem by introducing features which are assigned to category symbols and therefore allow for the values of
@@ -582,7 +582,7 @@ S  & $\to$ & NP({Per1},{Num1},{nom}) \\
 %\zl
 
 \noindent
-为了提高可读性，我从现在开始在语义表示中使用谓词的英语释义。\footnote{%
+为了提高可读性，我从现在开始在语义表示中使用谓词的英语释义。\dotfootnote{%
 需要注意的是，我并不是说英语适合表示语言的语义关系与概念，其实它们也可以用其他语言来表示。
 }
 %To enhance readability I use English translations of the predicates in semantic representations
@@ -825,7 +825,7 @@ S(V$'$ NP2$'$ NP1$'$) $\to$ NP(nom, NP1$'$) V(V$'$) NP(acc, NP2$'$)
 %refers to. Whereas (\mex{0}a) refers to a being which has the property of being a woman, the referent of (\mex{0}b) must
 %also have the property of being known to us.
 
-前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的规则。\footnote{%
+前面的名词短语规则只是简单地将名词和限定词组合在一起，这样只能用来分析例（\mex{0}a）。我们现在面临的问题是如何修改这条规则，以适应于分析例（\mex{0}）中的其他名词短语。除了规则（\mex{1}a）之外，我们可以提出跟（\mex{1}b）一样的规则。\dotfootnote{%
 参见 \citew[\page 238]{Eisenberg2004a}中有关名词短语平铺结构的假说。
 }$^,$\footnote{%
 当然，还有诸如性和数的其他特征也应在本节讨论。但是，为了降低解释的难度，我们暂不考虑这些问题。
@@ -1457,8 +1457,8 @@ PP $\to$ P NP
 %This rule must, of course, also contain information about the case of the NP. I have omitted this for ease of exposition as I did
 %with the NP-rules and AP-rules above.
 
-下面（\mex{1}）中的语法选自《杜登语法》\citep[\S 1300]{Duden2005-Authors}，这里的介词短语界定了介词表示方式的语义，如下所示：
-%The Duden grammar \citep[\S 1300]{Duden2005-Authors} offers examples such as those in (\mex{1}), which show that certain prepositional phrases
+下面（\mex{1}）中的语法选自《杜登语法》\citep[\S~1300]{Duden2005-Authors}，这里的介词短语界定了介词表示方式的语义，如下所示：
+%The Duden grammar \citep[\S~1300]{Duden2005-Authors} offers examples such as those in (\mex{1}), which show that certain prepositional phrases
 %serve to further define the semantic contribution of the preposition by indicating some measurement, for example:
 \eal
 \ex\label{Beispiel-Schritt-vor-dem-Abgrund} 
@@ -1881,7 +1881,7 @@ sm edges
 
 %\addlines
 %\largerpage
-图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\footnote{%
+图\ref{Abb-das-schoene-Bild-von-Paris}中的分析说明了规则中的所有非中心语都是短语。这样，我们就需要认为这是一个限定短语，即使限定词没有跟其他元素相组合。限定词的一元结构并不好看，但是它是自足的。\dotfootnote{%
 有的\xbarc 理论并不认为限定词有复杂的结构，请参考 \citew{Muysken82a}。
 }
 %The analysis given in Figure~\ref{Abb-das-schoene-Bild-von-Paris} assumes that all non-heads in a rule are
@@ -2142,9 +2142,9 @@ NP $\to$ Det Adj
 %\item Install a Prolog system (\eg SWI-Prolog\footnote{%
 %\url{http://www.swi-prolog.org} 
 %})
-并测试你的语法。SWI-Prolog还有在线版本，你可以不用安装就可以直接输入你的语法。\footnote{%
+并测试你的语法。SWI-Prolog还有在线版本，你可以不用安装就可以直接输入你的语法。\dotfootnote{%
   \url{https://swish.swi-prolog.org/}，2018年2月20日。
-}详细的使用说明参考定子句文法（Definite Clause Grammar，简称DCG）\isce{定子句文法}{Definite Clause Grammar (DCG)}的英文维基百科条目\footnote{%
+} 详细的使用说明参考定子句文法（Definite Clause Grammar，简称DCG）\isce{定子句文法}{Definite Clause Grammar (DCG)}的英文维基百科条目\footnote{%
 \url{https://en.wikipedia.org/wiki/Definite_clause_grammar}，2018年2月20日。
 }。
 %and try out your grammar. SWI-Prolog also comes with an online version where you can input your %grammar

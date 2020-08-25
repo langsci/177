@@ -5,7 +5,6 @@
 
 本章旨在探讨两个问题：一是为什么要研究句法（\ref{sec-wozu-syntax}），二是为什么说形式化的表述是非常重要的（\ref{sec-formal}）。我们将在\ref{konstituententests}到\ref{sec-topo}的内容中介绍基本概念：\ref{konstituententests}讲解将语流切分成一个个小单位的准则。\ref{Abschnitt-Wortarten}展示词汇聚合的规律，其中我将重点介绍动词或形容词的分类标准。\ref{Abschnitt-Kopf}介绍中心语的概念，而有关论元和附加语的区别将在\ref{Abschnitt-Argument-Adjunkt}中展开。\ref{Abschnitt-GF}界定语法功能。\ref{Abschnitt-Toplogie}利用空间位置理论来分析德语这类语言中小句的空间位置。
 %The aim of this chapter is to explain why we actually study syntax
-%% \todostefan{M: Ich fände es gut, irgendwo die Termini "`theory"' und "`framework"' zu besprechen (und sei es nur in einer Fußnote). Letzterer wird viel verwendet, aber offenbar gar nicht speziell eingeführt. Und "`theory"' wird sowohl als Massennomen ("`grammatical theory"') als auch as Zählnomen ("`specific theories"') verwendet – das sind offenbar etwas verschiedene Bedeutungen. Ich habe ja behauptet, dass man Grammatiktheorie auch ohne (allgemeines) Framework machen kann (siehe Haspelmath 2010b, im Anhang), und da verwende ich die Termini natürlich nicht synonym (siehe §14.2.2-5 für eine knappe Diskussion der oft verwirrenden Termini framework, theory, description, analysis). }
 %(Section~\ref{sec-wozu-syntax}) and why it is important to formalize our findings
 %(Section~\ref{sec-formal}). Some basic terminology will be introduced in
 %Sections~\ref{konstituententests}--\ref{sec-topo}: Section~\ref{konstituententests}
@@ -36,7 +35,7 @@
 %The question which now arises is the following: do we need a formal system which can assign a
 %structure to these sentences? Would it not be sufficient to formulate a pairing of form and meaning for %complete sentences just as we did for the word \emph{tree} above?  
 
-理论上来说，这只适用于那些由有限词语序列构成的语言。如果我们假设句子的最大长度是有限的，词长是有限的，词语的数量也是有限的，那么句子的数量也应该是有限的。但是，即使我们能限制句子的长度，可以构成的句子数量也可能是极其庞大的。由此，我们真正需要回答的问题是：句子的最大长度是多少呢？举例来说，我们可以把下面的句子（\mex{1}）进行扩展：\footnote{
+理论上来说，这只适用于那些由有限词语序列构成的语言。如果我们假设句子的最大长度是有限的，词长是有限的，词语的数量也是有限的，那么句子的数量也应该是有限的。但是，即使我们能限制句子的长度，可以构成的句子数量也可能是极其庞大的。由此，我们真正需要回答的问题是：句子的最大长度是多少呢？举例来说，我们可以把下面的句子（\mex{1}）进行扩展：\dotfootnote{
 例句参照“莱比锡标注系统”（Leipzig Glossing Rules）注释。DA表示定冠词（definite article）。⸺译者}
 %That would, in principle, be possible if a language were just a finite list of word sequences.  If
 %we were to assume that there is a maximum length for sentences and a maximum length for words and
@@ -83,7 +82,7 @@
 
 \noindent
 %We can build incredibly long and complex sentences in the ways that were demonstrated in (\mex{-1}).
-我们可以像例（\mex{-1}）一样通过扩展的方式构建出又长又复杂的句子。\footnote{%
+我们可以像例（\mex{-1}）一样通过扩展的方式构建出又长又复杂的句子。\dotfootnote{%
 也有学者认为我们有能力构建出无限长的句子（\citealp*[\page 117]{NKN2001a}；\citealp[\page 3]{KS2008a-u}；Dan Everett在 \citew{OW2012a}这个片子中的25分19秒时这样说道），Chomsky也这样认为\citep[\page 341]{Leiss2003a}。但这是不正确的，因为每个句子必然要在某个节点结束。即使是在乔姆斯基传统下发展起来的形式语言也没有无限长的句子。不过，有些形式语法可以描述出一系列无限地包含着定式句子的情况。（\citealp[\page 13]{Chomsky57a}）也可以参见 \citew{PS2010a}和\ref{Abschnitt-Rekursion}中关于语法的递归性\isce{递归}{recursion}和语言无限论的观点。
 %It is sometimes claimed that we are capable of constructing infinitely long sentences (\citealp*[\page 117]{NKN2001a}; \citealp[\page 3]{KS2008a-u}; Dan Everett in  \citew{OW2012a} at 25:19) or that Chomsky made such claims %\citep[\page 341]{Leiss2003a}. This is, however, not correct since every sentence has to come to an end at some point. Even in the theory of formal languages developed in the Chomskyan tradition, there are no infinitely long %sentences. Rather, certain formal grammars can describe a set containing infinitely many finite sentences (\citealp[\page 13]{Chomsky57a}). See also  \citew{PS2010a} and Section~\ref{Abschnitt-Rekursion} on the issue of %recursion\is{recursion} in grammar and for claims about the infinite nature of language.
 }
@@ -400,15 +399,15 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 \mytrans{没有人认识这个女人}
   }
 \zl
-从另一个角度来看，keiner diese（没有人 这）在例（\mex{0}a）中是无法构成一个成分的。如果我们将keiner diese（没有人 这）整体移动的话，我们会得到不合格的句子：
+从另一个角度来看，keiner diese（没有人 这）在例（\mex{0}a）中是无法构成一个成分的。如果我们将keiner diese（没有人 这）整体移动的话，我们会得到不合格的句子：\dotfootnote{%
+在所有的例句中我都使用如下的符号：“*”\isce{*}{*}表示句子是不合乎语法的，“\#”\isce{\#}{\#}表示句子有着不同于常规用法的解读，最后“\S”\isce{\S}{\S}是指那些因语义或信息结构等方面的原因可以被解读的句子，比如说，主语必须是有生的，但是实际上我们提问的是非有生的主语，或者由于代词的使用，成分序列和已知信息的标记之间存在矛盾。}
 %On the other hand, it is not plausible to assume that \emph{keiner diese} `nobody this' forms a constituent %in (\mex{0}a). If we try to form other possible orderings by trying
 %to move \emph{keiner diese} `nobody this' as a whole, we see that this leads to unacceptable results:
-\footnote{%
-在所有的例句中我都使用如下的符号：“*”\isce{*}{*}表示句子是不合乎语法的，“\#”\isce{\#}{\#}表示句子有着不同于常规用法的解读，最后“\S”\isce{\S}{\S}是指那些因语义或信息结构等方面的原因可以被解读的句子，比如说，主语必须是有生的，但是实际上我们提问的是非有生的主语，或者由于代词的使用，成分序列和已知信息的标记之间存在矛盾。 }
 %  I use the following notational conventions for all examples: `*'\is{*} indicates that a sentence is %ungrammatical, `\#'\is{\#} denotes that the sentence has a reading which
  %differs from the intended one and finally  `\S'\is{\S} should be understood as a sentence which is deviant %for semantic or information-structural reasons, for example, because
  %the subject must be animate, but is in fact inanimate in the example in question, or because there is a %conflict between constituent order and the marking of given information through
  %the use of pronouns.%
+
  \eal
 \ex[*]{
 \gll  dass Frau keiner diese kennt\\
@@ -640,7 +639,7 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 一个成分充当。在定式动词前能否放置一组词被用来作为判断成分状态的明确标记，这种方法还用在了“句子成分”
 （Satzglied）这个术语的定义中。（Satzglied在德语语法中是指小句层面的句子成分）\citep[\page
   783]{Duden2005-Authors}。 \citew{Bussmann83a}提出了一个例子，而这个例子在 \citew{Bussmann90a}中已经
-找不到了：\footnote{%
+找不到了：\dotfootnote{%
 句子成分测试\isce{句子成分测试}{Satzglied}（Satzgliedtest，也写作Konstituententest）}
 %As\is{fronting|(} mentioned in the discussion of (\ref{bsp-v2}), the position in front of the finite verb is %normally occupied by a single constituent. The possibility for a given word sequence to be placed in front %of the finite verb is sometimes even used as a clear indicator of constituent status, and even used in the %definition of \emph{Satzglied}\footnote{\emph{Satzglied} is a special term used in grammars of German, %referring to a constituent on the clause level \citep[\page 783]{Duden2005-Authors}. An example of this is %taken from  \citew{Bussmann83a}, but is no longer present in  \citew{Bussmann90a}:\footnote{%
 %The original formulation is: \textbf{Satzgliedtest}\is{Satzglied} [Auch: Konstituententest]. Auf der $\to$ %Topikalisierung beruhendes Verfahren zur Analyse komplexer Konstituenten. Da bei Topikalisierung
@@ -765,11 +764,13 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 
 如果我们根据durch die Stadt（通过这个城市）能通过前置测试而将其看作是一个成分，那么我们必须承认例
 （\mex{1}）中的durch die Stadt（通过这个城市）也是一个成分。这么做的结果是，我们会低估“组成成
-分”（constituent）这个术语，因为组成成分测试的目的就是为了找到词串间的语义与语法联系。\footnote{%
+分”（constituent）这个术语，因为组成成分测试的目的就是为了找到词串间的语义与语法联系。\dotfootnote{%
 这些数据可以这样来解释，即假设一个空动词的中心语\iscesub{语迹}{trace}{动词}{verb}\isce{空成分}{empty element}位于定式动词的前面，继而保证了在定式动词前只有一个成分位于首位的要求。\citep{Mueller2005d,MuellerGS}无论如何，这类数据对于组成成分测试来说都是有问题的，因为这些测试专门用来区分例（\mex{1}）中的trocken（干的）、durch die Stadt（穿越这座城市），以及mit Sprachgeschichte（与语言历史）这类字符串是否是组成成分。}
 %If one were to classify \emph{trocken durch die Stadt} as a constituent due to it passing the fronting test, %then one would have to assume that \emph{trocken durch die Stadt} in (\mex{1}) is also a constituent. In %doing so, we would devalue the term \emph{constituent} as the whole point of constituent tests is to find %out which word strings have some semantic or syntactic relationship.\footnote{%
- % These data can be explained by assuming a silent verbal head\is{trace!verb}\is{empty element} %preceding the finite verb and thereby ensuring  that there is in fact just one constituent in initial position in %front of the finite verb \citep{Mueller2005d,MuellerGS}. Nevertheless, this kind of data are problematic for %constituent tests since these tests have been specifically designed to tease apart
- % whether strings such as \emph{trocken} and \emph{durch die Stadt} or \emph{wenig} and \emph{mit %Sprachgeschichte} in (\mex{1}) form a constituent.%}
+% These data can be explained by assuming a silent verbal head\is{trace!verb}\is{empty element} %preceding the finite verb and thereby ensuring  that there is in fact just one constituent in initial position in %front of the finite verb \citep{Mueller2005d,MuellerGS}. Nevertheless, this kind of data are problematic for %constituent tests since these tests have been specifically designed to tease apart
+% whether strings such as \emph{trocken} and \emph{durch die Stadt} or \emph{wenig} and \emph{mit
+% %Sprachgeschichte} in (\mex{1}) form a constituent.%}
+
 \eal
 \ex 
 \gll Man kommt am Wochenende auch mit der BVG trocken durch die Stadt.\\
@@ -828,18 +829,19 @@ of an analysis as clearly as its merits; only then can progress be made efficien
 初看上去，der Mann einen Esel（这个男人一头驴）和die Frau ein Pferd（这个女人一匹马）在例（\mex{0}）中是并列的。这是不是说der Mann einen Esel（这个男人一头驴）和die Frau ein Pferd（这个女人一匹马）分别构成一个组成成分呢？
 %At first glance, \emph{der Mann einen Esel} `the man a donkey' and \emph{die Frau ein Pferd} `the %woman a horse' in (\mex{0}) seem to be coordinated. Does this mean that \emph{der Mann einen Esel} %and \emph{die Frau ein Pferd} each form a constituent?
 
-正如利用其他成分测试方法所证明的那样，这个观点并不是像它看上去那样的。这组词不能作为一个单位来整体移动：\footnote{%
+正如利用其他成分测试方法所证明的那样，这个观点并不是像它看上去那样的。这组词不能作为一个单位来整体移动：\dotfootnote{%
 定式动词前的位置也叫作“前场”（Vorfeld）\iscesub{场}{field}{前-}{pre-}（参见\ref{Abschnitt-Toplogie}）。德语中，显性多重前置\iscesub{前置}{fronting}{显性多重前置}{apparent multiple}在某些情况下是可能的。请参考前面的内容，尤其是第\pageref{bsp-mehr-vf}页的例（\ref{bsp-mehr-vf}）。例（\mex{1}）也是一个例子，对于kaufen（买）这类动词来说，主语在前场的位置上是比较少见的，因为这种前置的结构与信息结构有关。我们也可以比较\citet{dKM2003a} 有关前置动词短语中主语的研究，以及\citet[\page 72]{BC2010a}有关显性多重前置的主语前置方面的研究。
 }
 %As other constituent tests show, this assumption is not plausible. This sequence of words cannot be %moved together as a unit:\footnote{%
 %	The area in front of the finite verb is also referred to as the \emph{Vorfeld}\is{Vorfeld}
-   %     `prefield' (see Section~\ref{Abschnitt-Toplogie}).
-	%Apparent multiple fronting\is{fronting!apparent multiple} is possible under certain circumstances in %German. See the previous section, especially the discussion of the examples
+%     `prefield' (see Section~\ref{Abschnitt-Toplogie}).
+%Apparent multiple fronting\is{fronting!apparent multiple} is possible under certain circumstances in %German. See the previous section, especially the discussion of the examples
 %	in (\ref{bsp-mehr-vf}) on page~\pageref{bsp-mehr-vf}. The example in (\mex{1}) is created in such a way that the subject is present in the prefield,
 %	which is not normally possible with verbs such as \emph{kaufen} `to buy' for reasons which have to do %with the information-structural properties of these
 %	kinds of fronting constructions. Compare also \citealp{dKM2003a} on subjects in fronted verb
-  %      phrases and \citealp[\page 72]{BC2010a} on frontings of subjects in apparent multiple frontings.
+%      phrases and \citealp[\page 72]{BC2010a} on frontings of subjects in apparent multiple frontings.
 %}
+
 \ea[*]{
 \gll Der Mann einen Esel kaufte deshalb.\\
      \defart{} 男人  一     驴子 买 所以\\
@@ -1230,9 +1232,8 @@ wegen（因为）通常被看作是前置词，尽管它也会出现在名词后
 %If adverbs and prepositions are not assigned to the same class, then adverbs are normally used as a kind %of ``left over'' category in the sense that all non-inflecting words which are neither prepositions, %conjunctions nor interjections are classed as adverbs. Sometimes this category for ``left overs'' is %subdivided: only words which can appear in front of the finite verb when used as a constituent are 
 %referred to as adverbs. Those words which cannot be fronted are dubbed \emph{particles}\is{particle}. %Particles themselves can be subdivided into various classes based on their function, \eg degree particles %and illocutionary particles. Since these functionally defined classes also contain adjectives, I will not make %this distinction and simply speak of \emph{adverbs}.
 
-我们已经将一些具有屈折变化的词归入不同的词类了。如果需要划分词类，我们可以利用图\vref{Abbildung-Wortarten}来判断，该图摘自德语杜登语法\citep[\page 133]{Duden2005-Authors}。\footnote{%
-《杜登语法》是德语正字法的官方文件。杜登语法虽然没有取得官方的地位，但是它也非常具有影响力，并且较多用于教学之中。在导言这部分内容中，我会经常引用这一重要文献。
-}
+我们已经将一些具有屈折变化的词归入不同的词类了。如果需要划分词类，我们可以利用图\vref{Abbildung-Wortarten}来判断，该图摘自德语杜登语法\citep[\page 133]{Duden2005-Authors}。\dotfootnote{%
+《杜登语法》是德语正字法的官方文件。杜登语法虽然没有取得官方的地位，但是它也非常具有影响力，并且较多用于教学之中。在导言这部分内容中，我会经常引用这一重要文献。}
 %We have already sorted a considerable number of inflectional words into word classes. When one is %faced with the task of classifying a particular word, one can use the decision diagram in Figure~
 %\vref{Abbildung-Wortarten}, which is taken from the Duden grammar of German \citep[\page 133]
 %{Duden2005-Authors}.\footnote{%
@@ -1354,8 +1355,8 @@ Mann（男人）这样的名词短语的词。而冠词通常与名词相组合�
 \mytrans{荒原狼第一次走进我们家向我姑母租房子时，恰巧我也在场。}
 \zl
 
-根据上面的决策树，如果它们没有屈折变化，则不能归入代词。 \citet[\page 277]{Eisenberg2004a} 指出wo（哪里）是一种“没有屈折变化的关系代词”（uninflected relative pronoun），并且指明这种描述与名词性的用法是不同的，因为名词是有屈折变化的成分。由此，他用“关系副词”\iscesub{副词}{adverb}{关系副词}{relative}（relative adverb）来指称它们（参见 \citew[\S 856, \S 857]{Duden2005-Authors}）。
-%If they are uninflected, then they cannot belong to the class of pronouns according to the decision tree %above.  \citet[\page 277]{Eisenberg2004a} notes that \emph{wo} `where' is a kind of \emph{uninflected %relative pronoun} (he uses quotation marks) and remarks that this term runs contrary to the exclusive use %of the term pronoun for nominal, that is, inflected, elements. He therefore uses the term \emph{relative %adverb}\is{adverb!relative} for them (see also  \citew[\S 856, \S 857]{Duden2005-Authors}).
+根据上面的决策树，如果它们没有屈折变化，则不能归入代词。 \citet[\page 277]{Eisenberg2004a} 指出wo（哪里）是一种“没有屈折变化的关系代词”（uninflected relative pronoun），并且指明这种描述与名词性的用法是不同的，因为名词是有屈折变化的成分。由此，他用“关系副词”\iscesub{副词}{adverb}{关系副词}{relative}（relative adverb）来指称它们（参见 \citew[\S~856, \S~857]{Duden2005-Authors}）。
+%If they are uninflected, then they cannot belong to the class of pronouns according to the decision tree %above.  \citet[\page 277]{Eisenberg2004a} notes that \emph{wo} `where' is a kind of \emph{uninflected %relative pronoun} (he uses quotation marks) and remarks that this term runs contrary to the exclusive use %of the term pronoun for nominal, that is, inflected, elements. He therefore uses the term \emph{relative %adverb}\is{adverb!relative} for them (see also  \citew[\S~856, \S~857]{Duden2005-Authors}).
 
 %\pagebreak
 同样也有与名词相联系的关系词dessen（他）和wessen（谁）的用法。
@@ -1857,7 +1858,7 @@ NP, acc, 3, sg\\[2mm]
 动词“管辖”\isce{管辖}{government}（govern）论元的格\isce{格}{case}属性。
 %The verb \emph{governs}\is{government} the case\is{case} of its arguments.
 
-介词短语中的介词和名词短语的格都由动词决定：\footnote{%
+介词短语中的介词和名词短语的格都由动词决定：\dotfootnote{%
 相关例子参见  \citew[\page 78]{Eisenberg94a}。
 }
 %The preposition and the case of the noun phrase in the prepositional phrase are both determined by the verb:
@@ -1986,7 +1987,7 @@ NP, acc, 3, sg\\[2mm]
 
 动词选择表示地点信息的短语，但是并没有对其有任何句法上的限制。这种地点限制很像我们前面讲的附加语通过
 语义进行限制的方式。如果我只考虑中心语和附加语组合的语义层面，那么我也会将附加语看作是“修饰
-语”\isce{修饰语}{modifier}（modifier）\footnote{%
+语”\isce{修饰语}{modifier}（modifier）\bracketfootnote{%
 参见\ref{sec-Adverbiale}中更多有关状语\isce{状语}{adverbial}的句法功能的内容。状语这个术语通常指与动词相关的成分。而修饰语是一个更为普遍的术语，通常还包括定语。}。
 %The verb selects a phrase with information about location, but does not place any syntactic
 %restrictions on its %type. This specification of location behaves semantically like the other
@@ -2001,8 +2002,9 @@ NP, acc, 3, sg\\[2mm]
 综上所述，我们可以说那些需要与中心语共现的句法成分是论元。并且，那些能够充当中心语的语义角色的句法成分也是论元。然而，这两类论元有时是可选的。
 %In conclusion, we can say that constituents that are required to occur with a certain head are arguments of that %head. Furthermore, constituents which fulfil a semantic role with regard to the head are also arguments. These  %kinds of arguments can, however, sometimes be optional.
 
-论元通常可以划分为主语\isce{主语}{subject}和补足语\isce{补足语}{complement}。\footnote{%
-有些学派认为补足语包括主语，即补足语的概念等同于论元（参见\citet[\page 342]{Gross2003a}）。有些学者将变位动词的主语看作是补足语（\citealp{Pollard90a-Eng}; \citealp[\page 376]{Eisenberg94b}）。}不是所有的中心语都需要主语（参见\citet[\S~3.2]{MuellerLehrbuch1}）。由此，中心语所带论元的数量也可以相当于中心语所带补足语的数量。\isce[|)]{论元}{argument}\isce[|)]{附加语}{adjunct}\isce[|)]{价}{valence}
+论元通常可以划分为主语\isce{主语}{subject}和补足语\isce{补足语}{complement}。\dotfootnote{%
+有些学派认为补足语包括主语，即补足语的概念等同于论元（参见\citet[\page 342]{Gross2003a}）。有些学者
+将变位动词的主语看作是补足语（\citealp{Pollard90a-Eng}; \citealp[\page 376]{Eisenberg94b}）。} 不是所有的中心语都需要主语（参见\citet[\S~3.2]{MuellerLehrbuch1}）。由此，中心语所带论元的数量也可以相当于中心语所带补足语的数量。\isce[|)]{论元}{argument}\isce[|)]{附加语}{adjunct}\isce[|)]{价}{valence}
 %Arguments are normally divided into subjects\is{subject} and complements\is{complement}.\footnote{%
   %In some schools the term complement is understood to include the subject, that is, the term
   %complement is equivalent to the term argument (see for instance \citealp[\page
@@ -2426,7 +2428,7 @@ NP, acc, 3, sg\\[2mm]
 %\emph{ein Lügner} `a liar' is an argument of the copula \emph{sein} `to be' and the depictive adjective in (\mex{0}b)
 %is an adjunct to \emph{isst} `eats'.
 
-对于名词性谓语\label{page-Kasuskongruenz}来说，格不是由中心语决定的，而是由其他成分决定的。\footnote{%
+对于名词性谓语\label{page-Kasuskongruenz}来说，格不是由中心语决定的，而是由其他成分决定的。\dotfootnote{%
 不同方言区的系词结构有所不同：在标准德语中系词sein（是）所带的名词短语总是主格，即使是嵌套在lassen（让）的下面也不发生变化。根据 \citet*[{\S}\,1259]{Duden95-Authors}，瑞士地区则经常能发现例（ii.a）中用作宾格的情况。
 \eal
 \ex 
@@ -2551,7 +2553,7 @@ NP, acc, 3, sg\\[2mm]
 
 Culicover和Jackendoff这里说的“及物”（transitive）是指带两个论元的动词。如果我们只把那些动词宾语可
 以变换为被动式主语的动词看作是及物动词，那么weigh（称重）和cost（花费）都不能算作是及物动词，这样
-Culicover和Jackendoff的观点就站不住脚了。\footnote{%
+Culicover和Jackendoff的观点就站不住脚了。\dotfootnote{%
 即使我们将及物动词看作是二位动词的话，他们的评论也是站不住脚的。如果我们认为动词至少带两个论元成分才能变换成被动式的话，那么我们也必须要认定所有带两个或两个以上论元的动词都可以变换成被动式。实际上，带多个论元这个属性只是一个充分条件，并不是唯一条件。}
 %Culicover and Jackendoff use \emph{transitive} in the sense of a verb requiring two arguments. If we only view %those verbs whose object becomes the subject of
 %a passive clause as transitive, then \emph{weigh} and \emph{cost} no longer count as transitive verbs and Culicover and Jackendoff's criticism no longer holds.\footnote{%
@@ -2850,7 +2852,7 @@ Karl      & \textsc{aux}    & Maria                                  & 认出\\%
 这里，我们要分析的是一个问句，所以niemand（没有人）不能被分析为位于前场，而应是位于中场。
 %Here we are dealing with a question and \emph{niemand} `nobody' in (\mex{0}a) should therefore not be %analyzed as in the prefield but rather the middle field.
 
-例（\mex{1}）中，前场、左边界和中场都有成分充当，而右边界是空的。\footnote{%
+例（\mex{1}）中，前场、左边界和中场都有成分充当，而右边界是空的。\dotfootnote{%
 这个句子需要对der（\defart{}）进行强调。der Frau, die er kennt（他认识的这个女人）与另一个或其他女人进行区分。}
 %In (\mex{1}), there are elements in the prefield, the left bracket and the middle field. The right
 %bracket is empty.\footnote{%
@@ -3006,7 +3008,7 @@ kennt（他认识的那个）这样的关系从句呢？它们构成了中场还
 %\emph{Vortrag} `talk' which is realized far away from it. Thus, if the relative phrase is assigned to the \vf, it is
 %possible to say that such nonlocal frontings always target the \vf.
 
-最后来看一下杜登语法\citep[§1347]{Duden2005-Authors}中应用的标准德语（大部分是南方方言）中的一些例子：
+最后来看一下杜登语法\citep[§~1347]{Duden2005-Authors}中应用的标准德语（大部分是南方方言）中的一些例子：
 %Finally, the Duden grammar \citep[§1347]{Duden2005-Authors} provides the following examples from non-%standard German (mainly southern dialects):
 \eal
 \ex 

@@ -281,9 +281,9 @@ gf   & $\neg$subj\\
 \subsection{价信息的表征}
 %\subsection{Representation of valence information}
 
-在Kay和Fillmore的体系中，价信息在集合（\textsc{val}\isfeat{val}）中表征。价原则（Valence Principle）规定局部填充语子结点一定要与父结点价集合中的一个元素一致。\footnote{%
+在Kay和Fillmore的体系中，价信息在集合（\textsc{val}\isfeat{val}）中表征。价原则（Valence Principle）规定局部填充语子结点一定要与父结点价集合中的一个元素一致。\dotfootnote{%
   在BCG中，集合的用法不同于HPSG。关于这一点的讨论可以参见\ref{sec-formal-bcg}。%
-}子集合原则（Subset Principle）规定中心语子结点的集合值是父结点对应集合的子集。这一方法正好与范畴语法\indexcg（Categorial Grammar）、中心词驱动的短语结构语法\indexhpsg（HPSG）采用的方法相反。在HPSG中，父结点的价列表更短，但是在现有的伯克利构式语法中父结点与中心语子结点的价列表至少是一样长的。
+} 子集合原则（Subset Principle）规定中心语子结点的集合值是父结点对应集合的子集。这一方法正好与范畴语法\indexcg（Categorial Grammar）、中心词驱动的短语结构语法\indexhpsg（HPSG）采用的方法相反。在HPSG中，父结点的价列表更短，但是在现有的伯克利构式语法中父结点与中心语子结点的价列表至少是一样长的。
 %In Kay and Fillmore, valence information is represented in a set (\textsc{val}\isfeat{val}). The Valence Principle states that local filler-daughters have to
 %be identified with an element in the valence set of the mother.\footnote{%
 %  Sets in BCG work differently from those used in HPSG. A discussion of this is deferred to Section~\ref{sec-formal-bcg}.%
@@ -449,7 +449,7 @@ val & \menge{ \onems{ role \ms{ $\theta$ & agent\\
                     }}\\
 }}
 \zs
-如果我们将词项与及物构式和主语构式组合，按照Fillmore、Kay、Michaelis和Ruppenhofer的分析，我们可以得到（\mex{1}a）。如果将词项与主语构式和被动构式相组合，就会得到（\mex{1}b）：\footnote{%
+如果我们将词项与及物构式和主语构式组合，按照Fillmore、Kay、Michaelis和Ruppenhofer的分析，我们可以得到（\mex{1}a）。如果将词项与主语构式和被动构式相组合，就会得到（\mex{1}b）：\dotfootnote{%
 	这需要对集合合一有一种特殊的理解，对于这种观点的批评可以参见\ref{sec-formal-bcg}。
 }
 %If we combine this lexical entry with the transitive and subject constructions, we arrive at
@@ -544,7 +544,7 @@ syn$|$cat v\\
 val  \ibox{1}\\
 } $\wedge$ \menge{ \onems{ role \onems{ gf \type{subj} } }} $\subset$ \ibox{1}
 \z
-（\mex{0}）中的限制表明一个中心词的价集合一定要包括一个语法功能是主语的元素。通过这些方法，可以压缩论元（通过将\textsc{syn}指派为\type{zero}），但是无法向schlagen（打）已经固定的论元集合中增加额外的论元。\footnote{%
+（\mex{0}）中的限制表明一个中心词的价集合一定要包括一个语法功能是主语的元素。通过这些方法，可以压缩论元（通过将\textsc{syn}指派为\type{zero}），但是无法向schlagen（打）已经固定的论元集合中增加额外的论元。\dotfootnote{%
 如果不像在HPSG中那样，要求schlagen（打）有两个论元，也可以像（\ref{ex-schlagen-transitive}）那样，给主要词项假设限制。然后就可以要求schlagen（打）在其价集合中至少有两个成员。这会让一切都变得复杂，另外也不清楚（\mex{0}）中所指的主语是不是（\ref{ex-schlagen-transitive}）中schlagen（打）词项描述中的一个论元。}
 %The restriction in (\mex{0}) states that the valence set of a head has to contain an element that has the grammatical function \emph{subj}.
 %By these means, it is possible to suppress arguments (by specifying \textsc{syn} as \type{zero}),
@@ -556,7 +556,7 @@ val  \ibox{1}\\
 %not be clear that the subject referred to in (\mex{0}) would be one of the arguments that are
 %referred to in the description of the lexical item for \emph{schlagen} in (\ref{ex-schlagen-transitive}). 
 %}
-对于像（\mex{1}）所示中动构式\isce[|(]{中动构式}{Middle Construction}的分析，基于承继的方法不能解决，因为没有合适的方法向价的集合中增加反身代词：\footnote{%
+对于像（\mex{1}）所示中动构式\isce[|(]{中动构式}{Middle Construction}的分析，基于承继的方法不能解决，因为没有合适的方法向价的集合中增加反身代词：\dotfootnote{%
 一个技术上可能的办法是：假设出现在中动构式中的动词在其价集中总是有一个反身代词。及物构式必须将反身代词的\textsc{syn}取值指定为\type{zero}，那么另外的反身代词就不能在及物构式中实现。中动构式将压缩主语，但是实现为宾语和反身代词。
 
 这一方法不能用于我们将要遇到的递归过程，例如土耳其语的致使化，除非有人希望假设配价集合是无穷的。
@@ -621,7 +621,7 @@ val  \ibox{1}\\
 %     war-\textsc{loc} shoot-\textsc{pass}-\textsc{pass}-\textsc{aor}\\
 %\mytrans{One is shot (by one) in war.}
 \zl
-\suffix{In}、\suffix{n}和\suffix{Il} 都是被动/去人称化语素的变体。\footnote{按照Özkara\-göz的观点，这些语言现象最好通过假设被动应用于一个被动化及物动词并产生一个无人称被动式来解释。这些被引作者将他们的语料分析为双被动化，但是 \citet{Blevins2003a}主张，这些例子以及来自其他语言的类似例子都是可以与人称被动式组合的无人称构式。}
+\suffix{In}、\suffix{n}和\suffix{Il} 都是被动/去人称化语素的变体。\dotfootnote{按照Özkara\-göz的观点，这些语言现象最好通过假设被动应用于一个被动化及物动词并产生一个无人称被动式来解释。这些被引作者将他们的语料分析为双被动化，但是 \citet{Blevins2003a}主张，这些例子以及来自其他语言的类似例子都是可以与人称被动式组合的无人称构式。}
 %\suffix{In}, \suffix{n}, and \suffix{Il} are allomorphs of the passive/impersonal morpheme.\footnote{According to
 %Özkara\-göz, the data is best captured by an analysis that assumes that the passive applies to a
 %passivized transitive verb and hence results in an impersonal passive. The cited authors discussed their data as instances of double passivization, but it was
@@ -684,7 +684,7 @@ val  \ibox{1}\\
 \section{动词位置}
 %\section{Verb position}
 
-到现在为止\isce[|(]{动词位置}{verb position}，我只知道一篇文章在CxG框架中处理德语中的句子结构。这就是Micelli \citeyearpar{Micelli2012a}的文章，在这篇文章里她描述了基于动变构式语法\indexfcg（Fluid Construction Grammar）的一个德语语法的计算机实现。这一语法片段仅限于描写陈述句的V2-小句和wh-疑问句。在她的分析中，中场构成一个成分，它包括两个成分（直接宾语和间接宾语）。\footnote{%
+到现在为止\isce[|(]{动词位置}{verb position}，我只知道一篇文章在CxG框架中处理德语中的句子结构。这就是Micelli \citeyearpar{Micelli2012a}的文章，在这篇文章里她描述了基于动变构式语法\indexfcg（Fluid Construction Grammar）的一个德语语法的计算机实现。这一语法片段仅限于描写陈述句的V2-小句和wh-疑问句。在她的分析中，中场构成一个成分，它包括两个成分（直接宾语和间接宾语）。\dotfootnote{%
   注意，在\ref{sec-constituents}中讨论的任何一种成分测试都不支持这种分析，并且本书中的其他理论也都没有假设\mf （中场）是一个成分。%
 } 句子右边界和后场都是空的。没有讨论长距离依存。前场只允许位于句子左边界的动词的论元出现。Micelli的工作是非常好的起点，但是当语法扩充时，她会如何修改，我们将拭目以待。
 %At present\is{verb position|(}, I only know of one article in the framework of CxG that has dealt with the sentence structure
@@ -736,7 +736,7 @@ CxG不同的变体对抽象构式的性质有不同的假设。在范畴语法�
 %  Buch} forms a VP although only three NPs have been combined. CxG has nothing like the theory of extended head domains that was presented in 
 %  Section~\ref{Abschnitt-Verbstellung-LFG}.
 
-那么，两个二叉结构的变体都被排除了，只剩下了扁平结构分析。基于符号的CxG，是HPSG的一个变体\citep[\page 486]{Sag2010b}，以及体验构式语法 \citep[\page 156]{BC2005a}允许直接支配\iscesub{支配}{dominance}{直接支配}{immediate}和线性次序\isce{线性次序}{linear precedence}的分离，所以可以为及物动词设置一个构式，这对应于（\mex{1}）所示的统制规则：\footnote{%
+那么，两个二叉结构的变体都被排除了，只剩下了扁平结构分析。基于符号的CxG，是HPSG的一个变体\citep[\page 486]{Sag2010b}，以及体验构式语法 \citep[\page 156]{BC2005a}允许直接支配\iscesub{支配}{dominance}{直接支配}{immediate}和线性次序\isce{线性次序}{linear precedence}的分离，所以可以为及物动词设置一个构式，这对应于（\mex{1}）所示的统制规则：\dotfootnote{%
 	原则上，这也是Micelli的分析，但是她假设中场构成一个独立的成分。%
 }
 %Thus, both variants with binary-branching structures are ruled out and only the analysis with flat branching structures remains.
@@ -748,7 +748,7 @@ CxG不同的变体对抽象构式的性质有不同的假设。在范畴语法�
 \ea
 S $\to$ V, NP, NP
 \z
-这里有一个问题，就是在德语中附加语可以出现在任意两个论元中间。在GPSG中，附加语用元规则引入。在CxG的形式变体中，使用词汇规则而不是元规则。\footnote{\label{fn-allostructions}%
+这里有一个问题，就是在德语中附加语可以出现在任意两个论元中间。在GPSG中，附加语用元规则引入。在CxG的形式变体中，使用词汇规则而不是元规则。\dotfootnote{\label{fn-allostructions}%
    \citet[\page 116]{Goldberg2014a}提到了一种类似于元规则的装置，并且参考了 \citew{Cappelle2006a}。元规则和Cappelle以及Goldberg所想象的CxG变体的差异在于，在CxG中相关的两个构式并没有说明哪一个是基础的、哪一个是派生的。两个构式之间存在相互关系。%
 } 如果不想为了引入元规则而对形式化体系进行扩展，那么有三个选择：
 %Here, we have the problem that adjuncts in German can occur between any of the arguments. In GPSG, adjuncts are introduced by metarules.
@@ -817,7 +817,7 @@ S $\to$ V, NP, NP, Adj*
 \section{长距离依存}
 %\section{Long-distance dependencies}
 
-\mbox{}\citet[\S~3.10]{KF99a}在他们的论文中讨论了\isce[|(]{长距离依存}{long-distance dependency}长距离依存。由于并没有在动词短语构式中说明论元的数目，所以说，动词的论元可能不是局部地出现的。正如前面章节提到的LFG\indexlfg 和GPSG的分析\indexgpsg，在分析长距离依存的时候不假设空成分\isce{空成分}{empty element}。在允准整个句子的左孤立构式（Left Isolation Construction）中，有一个左子结点和一个右子结点。左子结点对应着从右子结点提取出来的任意成分。前置成分与其缺失的位置之间的关系用VAL算子来表示。VAL提供一个语言学对象的价的集合中的所有元素以及这些元素的价的集合中的所有元素等。因此可以获得任意深度嵌套的论元或附加语子结点，并且识别出具有开放价槽的前置成分。\footnote{%
+\mbox{}\citet[\S~3.10]{KF99a}在他们的论文中讨论了\isce[|(]{长距离依存}{long-distance dependency}长距离依存。由于并没有在动词短语构式中说明论元的数目，所以说，动词的论元可能不是局部地出现的。正如前面章节提到的LFG\indexlfg 和GPSG的分析\indexgpsg，在分析长距离依存的时候不假设空成分\isce{空成分}{empty element}。在允准整个句子的左孤立构式（Left Isolation Construction）中，有一个左子结点和一个右子结点。左子结点对应着从右子结点提取出来的任意成分。前置成分与其缺失的位置之间的关系用VAL算子来表示。VAL提供一个语言学对象的价的集合中的所有元素以及这些元素的价的集合中的所有元素等。因此可以获得任意深度嵌套的论元或附加语子结点，并且识别出具有开放价槽的前置成分。\dotfootnote{%
    需要再次注意，在Kay \& Fillmore的论文中，他们将这一方案形式化是有问题的。由Andreas Kathol提供的VAL形式化好像要像HPSG那样预设集合的形式化，但是Fillmore \& Kay论文的其余部分假设了一个不同的形式化方法，这种形式化方法前后不一致。参见\ref{sec-formal-bcg}。
  }这一分析对应于 \citet{KZ89a}基于功能不确定性\isce{功能不确定性}{functional uncertainty}的LFG分析。%
 \isce[|)]{长距离依存}{long-distance dependency}
@@ -1091,7 +1091,7 @@ dtrs  \sliste{ \ibox{0} } $\oplus$ \ibox{A} \type{nelist} \\
 \zs
 
 \noindent
-\comps\isfeat{comps}的取值是中心语的补足语的列表（参见\ref{Abschnitt-Arg-St}）。与标准HPSG\indexhpsg 不同的是，价列表选择的不是\type{synsem}对象，而是符号。对于短语ate a pizza的分析见（\mex{1}）。\footnote{%
+\comps\isfeat{comps}的取值是中心语的补足语的列表（参见\ref{Abschnitt-Arg-St}）。与标准HPSG\indexhpsg 不同的是，价列表选择的不是\type{synsem}对象，而是符号。对于短语ate a pizza的分析见（\mex{1}）。\dotfootnote{%
   SBCG除了使用\phonfc 之外，还使用了\formfc，该特征用于描述语音信息，这一点和HPSG早期版本的做法一样\citep[\S~3.1, \S~3.6]{Sag2012a}。\formfc 经常在例子分析中出现。
 }
 %The value of \comps\isfeat{comps} is then a list of the complements of a head (see Section~\ref{Abschnitt-Arg-St}).
@@ -1130,7 +1130,7 @@ dtrs & \sliste{ \ibox{1}, \ibox{2} }
 \z
 %\vspace{-\baselineskip}
 %\end{figure}%
-与 \citet{ps2}这个版本的HPSG的不同之处在于，对于Sag, Wasow \& Bender来说，符号没有子结点，因而不能选择子结点。因此，\synsemfc\isfeat{synsem}就变得多余了（在 \citew*{SWB2003a}和 \citew{Sag2012a}中，\phonvc 和新引入的\formfc 都可以选择）。有助于形成一个复杂符号的语言对象的所有信息都在结构的外部表征。\textsc{mother}下面表征的符号的类型都是\type{phrase}，但是不包含任何子结点的信息。 （\mex{0}）中描述的对象自然也是不同于短语或词汇符号的其他类型，可以作为其子结点。我们需要做以下的扩展，然后语法才能运作\citep*[\page  478]{SWB2003a}：\footnote{%
+与 \citet{ps2}这个版本的HPSG的不同之处在于，对于Sag, Wasow \& Bender来说，符号没有子结点，因而不能选择子结点。因此，\synsemfc\isfeat{synsem}就变得多余了（在 \citew*{SWB2003a}和 \citew{Sag2012a}中，\phonvc 和新引入的\formfc 都可以选择）。有助于形成一个复杂符号的语言对象的所有信息都在结构的外部表征。\textsc{mother}下面表征的符号的类型都是\type{phrase}，但是不包含任何子结点的信息。 （\mex{0}）中描述的对象自然也是不同于短语或词汇符号的其他类型，可以作为其子结点。我们需要做以下的扩展，然后语法才能运作\citep*[\page  478]{SWB2003a}：\dotfootnote{%
 不那么形式化的版本由 \citet[\page 105]{Sag2012a}以一种符号原则\iscesub{原则}{principle}{符号}{Sign}的形式给出：“每一个符号都要被例项式地或构式地允准。当一个符号满足某一例项（listme）要求就是例项式地允准，当一个符号是某一合乎语法的结构的父结点时，该符号就以构式的方式允准。” 
 }
 %The difference to HPSG in the version of  \citet{ps2} is that for Sag, Wasow \& Bender, signs do not have
@@ -1479,9 +1479,9 @@ dtrs \onems{ filler-dtr  \ms[word]{ synsem$|$loc & \ibox{1}
 \subsubsubsection{构式的复杂允准}
 %\subsubsubsection{Complicated licensing of constructions}
   
-除了这些实际问题，对于（\ref{meta-construction-statemnet}）而言还有概念的问题：（\ref{meta-construction-statemnet}） 并不是类型化特征结构描述体系的一部分而是一个元表述。因此，使用\label{page-sbcg-formalization}的语法不能在常规形式化描述体系中描述。 \citet{Richter2004a-u}给出的形式化描述体系不能直接运用到SBCG中，这就意味着还需要制订出SBCG的形式化基础。\footnote{%
+除了这些实际问题，对于（\ref{meta-construction-statemnet}）而言还有概念的问题：（\ref{meta-construction-statemnet}） 并不是类型化特征结构描述体系的一部分而是一个元表述。因此，使用\label{page-sbcg-formalization}的语法不能在常规形式化描述体系中描述。 \citet{Richter2004a-u}给出的形式化描述体系不能直接运用到SBCG中，这就意味着还需要制订出SBCG的形式化基础。\dotfootnote{%
  这里需要注意一下，因为关于SBCG的形式化程度曾经有些误解：与本书中其他理论相比，SBCG的形式化体系是比较好的（well-foramlized）。例如，很容易想出一个SBCG语法片段的计算机实现程序。我自己在TRALE系统中就实现了一个。读者可以参见 \citet{Richter2004a-u}以了解这里谈论的更深的形式化是指什么。
-}另外，（\ref{meta-construction-statemnet}）最开始试图解决的问题，即使是引入新的特征结构和元表述，也没有得到解决。相反，问题被转移到另外一个层次，因为我们现在需要一个理论来规定什么是一个被允准的元规则，什么不是。因此，语法学家可以向元规则中增加一个条款以表明$\Phi$是一个合乎语法的结构，如果相关构式C的子结点是构式C$'$的\textsc{mother}的值是真的的话。我们也可以在元规则中规定构式C$'$的限制或者在对应的特征结构中说明个体取值。如果按照这种方式，局部性就被抛弃了，因为我们需要指称子结点的子结点。假定（\ref{meta-construction-statemnet}）这样的观点，理论代价变大了，但是解释力并没有增强。
+} 另外，（\ref{meta-construction-statemnet}）最开始试图解决的问题，即使是引入新的特征结构和元表述，也没有得到解决。相反，问题被转移到另外一个层次，因为我们现在需要一个理论来规定什么是一个被允准的元规则，什么不是。因此，语法学家可以向元规则中增加一个条款以表明$\Phi$是一个合乎语法的结构，如果相关构式C的子结点是构式C$'$的\textsc{mother}的值是真的的话。我们也可以在元规则中规定构式C$'$的限制或者在对应的特征结构中说明个体取值。如果按照这种方式，局部性就被抛弃了，因为我们需要指称子结点的子结点。假定（\ref{meta-construction-statemnet}）这样的观点，理论代价变大了，但是解释力并没有增强。
 %In addition to these empirical problems, there is a conceptual problem with (\ref{meta-construction-statemnet}):
 %(\ref{meta-construction-statemnet}) is not part of the formalism of typed feature structures but
 %rather a meta-statement.
@@ -1682,7 +1682,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %     his.\dat{}    daughter a.\acc{}   fairytale tell      will he.\nom\\
 \mytrans{他会给他的女儿讲一个童话故事。}
 \zl
-如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充语的取值可能是\lexc$-$。如果所有信息都像在SBCG中那样共享，这种方法是不可能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，即\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和\textsc{cntxt}（这些特征可参见\citet[\page 98]{Sag2012a}）\footnote{%
+如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充语的取值可能是\lexc$-$。如果所有信息都像在SBCG中那样共享，这种方法是不可能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，即\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和\textsc{cntxt}（这些特征可参见\citet[\page 98]{Sag2012a}）\bracketfootnote{%
  注意，这些结构共享是必需的。不能不指定论元结构列表中这些特征的取值。因为我们有一种模型-理论的观点，所以不指定取值会导致相应的结构有无限的歧义，因为这些结构可能有无数种实例。%  
 }，并且将这些特征分组的目的是避免多重单个结构共享，在多重单个结构共享中特征取值之间有系统性的联系。
 %If the local requirement of \emph{wird} would be shared between filler and gap, the sentences in
@@ -1842,7 +1842,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 \subsubsection{小结}
 %\subsubsection{Conclusion}
 
-因为元表述的概念问题和相对简单的绕开局部限制的方式，特征（\textsc{mother} vs.\ \synsemc）的重新安排没有带来任何好处。因为元-约束的引入使得语法变得更加复杂，我们应该反对这一变化。\footnote{%
+因为元表述的概念问题和相对简单的绕开局部限制的方式，特征（\textsc{mother} vs.\ \synsemc）的重新安排没有带来任何好处。因为元-约束的引入使得语法变得更加复杂，我们应该反对这一变化。\dotfootnote{%
   在 \citew[\page 253]{MuellerGTBuch2}中，我指出因为假设了\textsc{mother}特征，所以SBCG所用的特征数量比HPSG理论的其他变体多。正如 \citet{VanEynde2015a}所指出的那样，对于HPSG理论更晚近的变体来讲，情况不是这样的，因为这些变体需要\textsc{synsem}特征，但是如果假设了\textsc{mother}特征，就不需要\textsc{synsem}特征了。（Van Eynde要借助\textsc{local}特征，但是\textsc{local}特征已经被取消了，这是因为基于词汇的分析使得提取该特征变得多余了，参见\ref{sec-sbcg-local-feature}）。如果忽略\textsc{mother}特征，SBCG就与HPSG1987年的版本\citep{ps}一样了，HPSG的这一版本也使用\textsc{syn}和\textsc{sem}特征。在某种程度上由于\textsc{synsem}特征的作用，局部选择可能会丢失\citep[\page 149]{Sag2012a}。需要注意的是，被\textsc{synsem}特征强制的局部选择，也可以通过使用关系限制来避免（见Frank Richter和Manfred Sailer对于搭配的研究\citep{RS99b-u,SS2003a}）。所以原则上，我们在语法的这个领域也有版本说明。%
 } 特征框架中的其他变化（取消\localfc 和使用单个价特征）也是有问题的。但是，如果我们真的拒绝调整后的特征框架并且返回到以前使用的特征框架，那么\sbcgc 与构式化HPSG\citep{Sag97a}就几乎是无法区分的了。\isce{局部性}{locality}\isce{习语}{idiom}
 %Due to the conceptual problems with meta-statements and the relatively simple ways of getting
@@ -1870,7 +1870,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %\subsection{Embodied Construction Grammar}
 \label{sec-ECG}
 
-体验构式语法由 \citet{BC2005a}提出，并且有一些德语的片段（fragmnts）是采用这种形式化方式的\citep{PMAZ2006a-u}。下面，我会用一个构式为例来简单说明这种形式化描写体系。（\mex{1}） 是“限定语-名词”构式。\footnote{%
+体验构式语法由 \citet{BC2005a}提出，并且有一些德语的片段（fragmnts）是采用这种形式化方式的\citep{PMAZ2006a-u}。下面，我会用一个构式为例来简单说明这种形式化描写体系。（\mex{1}） 是“限定语-名词”构式。\dotfootnote{%
   与此类似的一个构式，可参见 \citew[\page 162]{BC2005a}。
 }
 %Embodied Construction Grammar was developed by  \citet{BC2005a}  and there are some implementations of fragments of German that use this
@@ -2132,7 +2132,7 @@ evokes & \liste{ \ms[right-triangle]{
 %\subsection{Fluid Construction Grammar}
 \label{sec-fcg}
 
-\Citet{vanTrijp2013a,vanTrijp2014a}说SBCG和HPSG与动变构式语法（FCG）有根本上的不同。他说前两种方法是生成方法而后面这一种是认知-功能方法。我认为对于FCG所做的工作而言，得出这样的结论是不合理的。\footnote{\label{Steels-FCG-System}%
+\Citet{vanTrijp2013a,vanTrijp2014a}说SBCG和HPSG与动变构式语法（FCG）有根本上的不同。他说前两种方法是生成方法而后面这一种是认知-功能方法。我认为对于FCG所做的工作而言，得出这样的结论是不合理的。\dotfootnote{\label{Steels-FCG-System}%
    \citet[\page 153]{Steels2013a}强调FCG是实现构式主义者想法的一个技术工具而不是一种理论框架。但是，在FCG框架内工作的学者有共同的特定的形式背景和语言学假设。所以这一节分析一下FCG重要的假设和机制。} 在这一节，我会在多个地方对此进行评论。我首先介绍FCG中使用的表征方式，然后讨论论元结构构式，以及FCG中使用的组合机制融合以及混合，然后详细对比FCG和SBCG/HPSG。
 %\Citet{vanTrijp2013a,vanTrijp2014a} claims that SBCG and HPSG are fundamentally
 %different from Fluid Construction Grammar (FCG). He claims that the former approaches are generative ones while the latter is a
@@ -2213,7 +2213,7 @@ evokes & \liste{ \ms[right-triangle]{
 \subsubsection{论元结构构式}
 %\subsubsection{Argument Structure Constructions}
 
-动变构式语法为论元结构假设了一个基于短语的处理方法，也就是说，假设词项进入一个能够提供独立意义的短语构造\citep{vanTrijp2011a}。FCG的方法是使用Goldberg插入方法分析论元结构构式的一个版本\citep{Goldberg95a}。Van Trijp认为，每一个词项都能表征潜在的论元角色，如施事、受事、接受者和目标。短语论元结构构式与各自的词项结合并且实现部分论元角色，也就是说它们赋予这些论元角色一些语法功能。下一页中的图~\vref{fig-as-trijp}就展示了这样一个例子：动词sent（寄送）有施事、受事、接受者和目标四个语义角色。基于被选择的论元结构构式，一些论元角色被选择实现。\footnote{%
+动变构式语法为论元结构假设了一个基于短语的处理方法，也就是说，假设词项进入一个能够提供独立意义的短语构造\citep{vanTrijp2011a}。FCG的方法是使用Goldberg插入方法分析论元结构构式的一个版本\citep{Goldberg95a}。Van Trijp认为，每一个词项都能表征潜在的论元角色，如施事、受事、接受者和目标。短语论元结构构式与各自的词项结合并且实现部分论元角色，也就是说它们赋予这些论元角色一些语法功能。下一页中的图~\vref{fig-as-trijp}就展示了这样一个例子：动词sent（寄送）有施事、受事、接受者和目标四个语义角色。基于被选择的论元结构构式，一些论元角色被选择实现。\dotfootnote{%
 这里值得注意的是， \citet[\page 141]{vanTrijp2011a}实际上提供了一个基于词汇的解释，因为每一个词项都通过同用（coapplication）链接来与不同短语构式连接起来。所以，每一个这样的词项和短语构式对儿都对应着词汇化树邻接语法（LTAG）中的一个词项。也参见 \citew[\page 25]{MWArgSt}对于Goldberg的假设的评论，这个假设是每一个词项都有与之关联的短语构式。
 
 注意这种同用关系是必要的，因为没有它们的话，这一方法就无法解释这样的例子，即两个或多个论元角色只能一起实现但是不能单独实现或者与另外列举出的角色组合。
@@ -2342,7 +2342,7 @@ evokes & \liste{ \ms[right-triangle]{
  \citew[\page 42]{Goldberg2006a}。
 }
 \z
-所以， \citet[\page 319--320]{SvT2011a}表明，只有当常规构式不能应用的时候，才允许合并。这一方法的问题在于，人类语言是高度歧义的，并且在这种情况下，这会导致一种状况，在这种状况中，一个话段有一个意思，所以这一修复策略不会有效。参考例（\mex{1}）：\footnote{%
+所以， \citet[\page 319--320]{SvT2011a}表明，只有当常规构式不能应用的时候，才允许合并。这一方法的问题在于，人类语言是高度歧义的，并且在这种情况下，这会导致一种状况，在这种状况中，一个话段有一个意思，所以这一修复策略不会有效。参考例（\mex{1}）：\dotfootnote{%
   我为这些例子感到抱歉……
 }
 %So,  \citet[\page 319--320]{SvT2011a} suggest that only if regular constructions cannot apply, merging is
@@ -2798,7 +2798,7 @@ Van Trijp所描述的分析方案与HPSG分析器十分相似，但是这些方�
 \subsection{不连续性 vs.\ 主语-中心语和中心语-填充语模式}
 %\subsection{Discontinuity vs.\ Subject-Head and Head-Filler Schema}
 
-下面讨论简约性问题：van Trijp使用了一个将主语和主要动词组合在一起的主语-动词锚定构式。因为存在如例（\mex{1}） 的结构，所以必须允许不连续主语-动词构式存在 ：\footnote{%
+下面讨论简约性问题：van Trijp使用了一个将主语和主要动词组合在一起的主语-动词锚定构式。因为存在如例（\mex{1}） 的结构，所以必须允许不连续主语-动词构式存在 ：\dotfootnote{%
 %I now turn to parsimony: van Trijp uses a subject-verb anchor construction that combines the subject
 %and the main verb. Because of examples like (\mex{1}) it must be possible to have discontinuous subject-verb constructions:
 除非情态动词和时态助词也被处理为主要动词（在英语中不应该这样处理），带有情态动词的构式应该是主语和主要动词不邻接的另外一种情况：
@@ -3042,7 +3042,7 @@ how speakers express their conceptualizations of the world through language
 Cognitive-functional grammars therefore implement both a competence and a
 processing model.}
 \end{quotation}
-HPSG和SBCG确实区分了语言能力/语言运用\citep{SW2011a}。HPSG理论是关于话语结构的理论，这种话语由分布证据驱动。这些理论不包括关于脑激活、话语规划、话语处理的假设（花园幽径效应）以及类似的现象。实际上，本书讨论的所有理论都没有一种能解释这些现象的明晰的理论。我认为这种做法完全合理：完全可以研究词语的结构而不关心其语义和语用，完全可以去研究音系而不关心句法，完全可以处理具体的语义问题而不关心音系等，只要有办法能将这些研究的成果汇总成一个整体。相较而言，发展出像最简方案\indexmp 最新版本中那样的模型（叫作生物语言学\isce{生物语言学}{Biolinguistics}）是不对的，这种模型假设话语是在语段中\isce{语段}{phase}派生的（NPs，CPs，依赖于这一理论的变体），然后输送到接口\isce{接口}{interface} （拼写和语义理解）。人类并不是这样说话的（见第\ref{Abschnitt-Diskussion-Performanz}章）\footnote{%
+HPSG和SBCG确实区分了语言能力/语言运用\citep{SW2011a}。HPSG理论是关于话语结构的理论，这种话语由分布证据驱动。这些理论不包括关于脑激活、话语规划、话语处理的假设（花园幽径效应）以及类似的现象。实际上，本书讨论的所有理论都没有一种能解释这些现象的明晰的理论。我认为这种做法完全合理：完全可以研究词语的结构而不关心其语义和语用，完全可以去研究音系而不关心句法，完全可以处理具体的语义问题而不关心音系等，只要有办法能将这些研究的成果汇总成一个整体。相较而言，发展出像最简方案\indexmp 最新版本中那样的模型（叫作生物语言学\isce{生物语言学}{Biolinguistics}）是不对的，这种模型假设话语是在语段中\isce{语段}{phase}派生的（NPs，CPs，依赖于这一理论的变体），然后输送到接口\isce{接口}{interface} （拼写和语义理解）。人类并不是这样说话的（见第\ref{Abschnitt-Diskussion-Performanz}章）\bracketfootnote{%
 将最简方案与心理语言学发现结合起来的努力与最简方案的一些核心原则不兼容，如 \citet{Chomsky2008a}提出的无干扰条件（No Tampering Condition）。\isce{无干扰条件（NTC）}{No Tampering Condition (NTC)} 
 }。但是，如果我们对这些问题保持中立，就很好。实际上，有心理语言学著作将HPSG语法与语言运用模型结合起来\citep{Konieczny96a-u}，对于TAG也有类似的著作\citep{SJ93a,DK2008a-u}。
 %It is true that HPSG and SBCG make a competence/performance distinction \citep{SW2011a}. HPSG
@@ -3094,7 +3094,7 @@ using a (rule-based) phrase structure backbone, but the disadvantage of this app
 他得出结论：
 %He concludes:
 \begin{quotation}
-将所有这些观察运用到SBCG的操作化过程中，我们可以得出如下结论，SBCG语法因其形式上的清晰性可以与计算实现很好地兼容。现在至少有两个计算机平台，第一个几乎用于安装基于HPSG的语法，HPSG语法的基本原则与SBCG的基础兼容，也就是LKB\citep{Copestake2002a}还有TRALE\isce{TRALE}{TRALE}（Richter 2006）。但是，没有一个平台可以直接支持实现作为一个普遍约束系统的SBCG语法，所以除非得到证明，否则SBCG的独立于语言运用的假设就仍然是一种猜测。\footnote{%
+将所有这些观察运用到SBCG的操作化过程中，我们可以得出如下结论，SBCG语法因其形式上的清晰性可以与计算实现很好地兼容。现在至少有两个计算机平台，第一个几乎用于安装基于HPSG的语法，HPSG语法的基本原则与SBCG的基础兼容，也就是LKB\citep{Copestake2002a}还有TRALE\isce{TRALE}{TRALE}（Richter 2006）。但是，没有一个平台可以直接支持实现作为一个普遍约束系统的SBCG语法，所以除非得到证明，否则SBCG的独立于语言运用的假设就仍然是一种猜测。\dotfootnote{%
 Applying all these observations to the operationalization of SBCG, we can
 conclude that an SBCG grammar is certainly amenable for computational implementation because of its formal explicitness. There are at least two computational
 platforms available, mostly used for implementing HPSG-based grammars, whose
@@ -3235,9 +3235,9 @@ dtrs   & \ibox{2}
 %\constructions and hence (\mex{0}) can be used to analyze all phrases that are licensed by the
 %\grammar. In fact, (\mex{0}) is one way to put the meta constraint in (\ref{meta-construction-statemnet}).
 
-所以，这就表示， \citet{Sag2012a} 发展出来的SBCG版本可以直接在TRALE中应用。\footnote{%
+所以，这就表示， \citet{Sag2012a} 发展出来的SBCG版本可以直接在TRALE中应用。\dotfootnote{%
 一个英语的玩具系统运用了\textsc{mother} 特征以及运用了上述赋值的短语结构规则。这一系统可以从以下网址下载\url{https://hpsg.hu-berlin.de/Fragments/SBCG-TRALE/}。%
-}仍然遗留的问题是：事情是不是如van Trijp所认为的那样，除非得到证明，否则“SBCG的独立于语言运用的假设仍然是一种猜测”。问题的答案是：这不是一个猜测，因为任意一个九十年代的老的解决约束的系统都可以用于处理SBCG。至于这种应用是否高效，这是一个工程问题，而与理论语言学完全没有关系。理论语言学关心人类语言以及人类怎样处理语言。所以，一些对人类语言处理无法施加影响的处理系统是否高效完全没有意义。因此，短语结构框架也没有意义，只要它们遵循理论研究中所描述的语法即可。
+} 仍然遗留的问题是：事情是不是如van Trijp所认为的那样，除非得到证明，否则“SBCG的独立于语言运用的假设仍然是一种猜测”。问题的答案是：这不是一个猜测，因为任意一个九十年代的老的解决约束的系统都可以用于处理SBCG。至于这种应用是否高效，这是一个工程问题，而与理论语言学完全没有关系。理论语言学关心人类语言以及人类怎样处理语言。所以，一些对人类语言处理无法施加影响的处理系统是否高效完全没有意义。因此，短语结构框架也没有意义，只要它们遵循理论研究中所描述的语法即可。
 %So, this shows that the version of SBCG that has been developed by  \citet{Sag2012a} has a
 %straightforward implementation in TRALE.\footnote{%
 %A toy fragment of English using a \textsc{mother} feature and phrase structure rules with specifications
@@ -3271,14 +3271,14 @@ dtrs   & \ibox{2}
 %constraints that can be adapted if there is pressure, the inventory of the theory is open-ended, so
 %categories and features can be added if need be.
 
-同样，这也不是HPSG/SBCG与FCG之间的根本差异。针对某一特定语言的HPSG语法片段是语言知识的一种陈述性表示，因此这当然只是展示了一些特定的片段而不包括关于这些约束怎样进化或怎样被说话者习得的信息。为了了解这种信息，我们需要关于语言进化/语言变化/语言习得的具体理论。这类似于我们对于语言能力/语言运用差异的论述，为了解释语言进化我们需要一些HPSG语法并且说明一种语法是怎样从另一种语法发展而来的。这会涉及到带有权重的约束 ，也会涉及到语言项目以及很多其他方面的重新范畴化。\footnote{%
+同样，这也不是HPSG/SBCG与FCG之间的根本差异。针对某一特定语言的HPSG语法片段是语言知识的一种陈述性表示，因此这当然只是展示了一些特定的片段而不包括关于这些约束怎样进化或怎样被说话者习得的信息。为了了解这种信息，我们需要关于语言进化/语言变化/语言习得的具体理论。这类似于我们对于语言能力/语言运用差异的论述，为了解释语言进化我们需要一些HPSG语法并且说明一种语法是怎样从另一种语法发展而来的。这会涉及到带有权重的约束 ，也会涉及到语言项目以及很多其他方面的重新范畴化。\dotfootnote{%
 有些系统运用了加权约束。我们现在已经在德语HPSG语法中有了加权约束的一个简单版本，这一德语HPSG语法是在\verbmobil 项目中开发的\citep{MK2000a}。有关整合加权约束的其他理论方法有 \citew{Brew95a}和更近的 \citew{Guzman-Naranjo2015a}。通常这种加权约束都不是理论论文的一部分，但是也有例外，例如Briscoe和Copestake关于词汇规则的论文\citep{BC99a}。  
 %There are systems that use weighted constraints. We had a simple version of this in the
 %  German HPSG grammar that was developed in \verbmobil project \citep{MK2000a} already. Further
 %  theoretical approaches to integrate weighted constraints are  \citew{Brew95a} and more recently
 %   \citew{Guzman-Naranjo2015a}. Usually such weighted constraints are not part of theoretical papers,
 %  but there are exceptions as for instance the paper by Briscoe and Copestake about lexical rules \citep{BC99a}.
-}所以，基本上HPSG需要扩展，需要与FCG一样有一个与语言进化配对的模型。
+} 所以，基本上HPSG需要扩展，需要与FCG一样有一个与语言进化配对的模型。
 %Again, this is not a fundamental difference between HPSG/SBCG and FCG. An HPSG grammar fragment of a
 %specific language is a declarative representation of linguistic knowledge and as such it of course
 %just represents a certain fragment and does not contain any information how this set of constraints
@@ -3378,9 +3378,9 @@ Van Trijp表明，HPSG/SBCG是一个“生成语法”，因为其目的只是�
 \subsubsubsection{关于工程应该说明的一点}
 %\subsubsubsection{A note on engineering}
 
-我认为FCG最大的问题是把语言学问题与工程问题混在一起了。\footnote{%
+我认为FCG最大的问题是把语言学问题与工程问题混在一起了。\dotfootnote{%
 如果所有研究FCG的论文都被当做记录FCG系统的文章（参见第\pageref{Steels-FCG-System}页的脚注~\ref{Steels-FCG-System}） ，那么如果是那样的话，就需要包含这些技术细节。如果FCG论文要被当做描述某种构式语法理论的语言学论文的话，Lisp表示以及安装细节就会带来阅读障碍。
-}只对工程问题有用的一些特征出现在了语言学的论文中，一些为了使得句法分析器能够运行的技术假设与语言学约束混淆了。用于表征格信息的位向量编码成为了有趣的格系统论文的一部分。位向量编码没有任何错误。它也用于HPSG的实现中（\citealp[\page 55]{Reape91}；\citealp[\page 269]{Babel}），但是这并没有混入到理论论文中。
+} 只对工程问题有用的一些特征出现在了语言学的论文中，一些为了使得句法分析器能够运行的技术假设与语言学约束混淆了。用于表征格信息的位向量编码成为了有趣的格系统论文的一部分。位向量编码没有任何错误。它也用于HPSG的实现中（\citealp[\page 55]{Reape91}；\citealp[\page 269]{Babel}），但是这并没有混入到理论论文中。
 %A problematic property of work done in FCG is that linguistic and engineering aspects are mixed.\footnote{%
 %This is not a problem if all FCG papers are read as papers documenting the FCG-system (see
 %Footnote~\ref{Steels-FCG-System} on page~\pageref{Steels-FCG-System}) since then it

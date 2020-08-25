@@ -39,8 +39,8 @@ all: grammatical-theory.pdf
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label'
 
 
-stable.pdf: grammatical-theory.pdf
-	cp grammatical-theory.pdf stable.pdf
+stable.pdf: main.pdf
+	cp main.pdf stable.pdf
 
 test-zhmakeindex: 
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o grammatical-theory.scd grammatical-theory.scx
