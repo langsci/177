@@ -853,3 +853,10 @@ Grünberger Str. 16\\
 
 \newcommand{\dotfootnote}[1]{\hspace{-.3em}\footnote{#1}}
 \newcommand{\bracketfootnote}[1]{\hspace{-.2em}\footnote{#1}}
+\newcommand{\bracketfootnotequote}[1]{\hspace{-.1em}\footnote{#1}}
+
+
+% https://stackoverflow.com/a/2785740/2660362
+% To be able to have the subtitle in the chapter heading in phrasal.tex but get a different contentsline
+\newcommand{\nocontentsline}[3]{}
+\newcommand{\tocless}[2]{\bgroup\let\addcontentsline=\nocontentsline#1{#2}\egroup}
