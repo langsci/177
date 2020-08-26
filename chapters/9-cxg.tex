@@ -118,7 +118,7 @@ Fillmore、Kay、Jackendoff以及其他学者都指出：在很大程度上，�
 %took place in close collaboration with Ivan Sag. The result was a variant of HPSG known as Sign-Based Construction Grammar (SBCG) \citep{Sag2010b,Sag2012a}.
 %See Section~\ref{sec-SbCxG} for further discussion.
 
-John Bryant\aimention{John Bryant}、Nancy Chang\aimention{Nancy Chang}和Eva Mok\aimention{Eva Mok}已经为体验构式语法\citep{Bryant2003a-u}。的实现开发了一个系统。Luc Steels正在致力于模拟语言演化\isce{语言演化}{language evolution}和语言习得\isce{语言习得}{language acquisition}\citep{Steels2003a}。Steels通过实验为交互人员的虚拟社团进行建模。除此之外，他还使用机器参与语言游戏的互动\citep{Steels2015a-u}。与他沟通时（个人交流 \, 2007），Steels表示让机器人最终学会说话还有很长的路要走，但是现在的状态已经很好了。在模拟语言习得时，Steels可以使用拥有视觉系统（照相机和图像处理）的机器人，也可以使用与音频信息配对的视觉信息。 \citew{SteelsFluid-ed-not-crossreferenced}和 \citew{SteelsComputational-ed-not-crossreferenced}记录了动变构式语法的实现过程。第二本书有跟德语相关的内容，其中，德语陈述句和w疑问句的实现通过空间位置来解释\citep{Micelli2012a}。很多关于FCG系统的文章和个案分析都可以在\url{http://www.fcg-net.org/}上面找到。 \citet{Jurafsky96a}为英语\ilce{英语}{English}开发了一个配有概率统计\isce{统计学}{statistics}组件的构式语法。他指出文献中讨论的很多语言运用\isce{语言运用}{performance}现象（参见第\ref{Abschnitt-Diskussion-Performanz}章关于语言能力/语言运用差异的论述）可以借助于短语构式的概率以及词语的配价属性来解释。 \citet*{BLT2009a}运用概率上下文无关文法\iscesub{上下文无关文法}{context-free grammar}{概率上下文无关文法（PCFG）}{probabilistic (PCFG)}来为两到三岁孩子的语法知识进行建模。
+\name{John}{Bryant}、\name{Nancy}{Chang}和\name{Eva}{Mok}已经为体验构式语法\citep{Bryant2003a-u}。的实现开发了一个系统。Luc Steels正在致力于模拟语言演化\isce{语言演化}{language evolution}和语言习得\isce{语言习得}{language acquisition}\citep{Steels2003a}。Steels通过实验为交互人员的虚拟社团进行建模。除此之外，他还使用机器参与语言游戏的互动\citep{Steels2015a-u}。与他沟通时（个人交流 \, 2007），Steels表示让机器人最终学会说话还有很长的路要走，但是现在的状态已经很好了。在模拟语言习得时，Steels可以使用拥有视觉系统（照相机和图像处理）的机器人，也可以使用与音频信息配对的视觉信息。 \citew{SteelsFluid-ed-not-crossreferenced}和 \citew{SteelsComputational-ed-not-crossreferenced}记录了动变构式语法的实现过程。第二本书有跟德语相关的内容，其中，德语陈述句和w疑问句的实现通过空间位置来解释\citep{Micelli2012a}。很多关于FCG系统的文章和个案分析都可以在\url{http://www.fcg-net.org/}上面找到。 \citet{Jurafsky96a}为英语\ilce{英语}{English}开发了一个配有概率统计\isce{统计学}{statistics}组件的构式语法。他指出文献中讨论的很多语言运用\isce{语言运用}{performance}现象（参见第\ref{Abschnitt-Diskussion-Performanz}章关于语言能力/语言运用差异的论述）可以借助于短语构式的概率以及词语的配价属性来解释。 \citet*{BLT2009a}运用概率上下文无关文法\iscesub{上下文无关文法}{context-free grammar}{概率上下文无关文法（PCFG）}{probabilistic (PCFG)}来为两到三岁孩子的语法知识进行建模。
 %John Bryant\aimention{John Bryant}, Nancy Chang\aimention{Nancy Chang}, Eva Mok\aimention{Eva Mok}
 %have developed a system for the implementation of Embodied Construction Grammar\footnote{%
 %  See \url{http://www.icsi.berkeley.edu/~jbryant/old-analyzer.html} and  \citew{Bryant2003a-u}.
@@ -368,7 +368,7 @@ type hierarchy
 %  188]{CK2003a-u}; \citealp[\page 171--172]{KO2012a}) and HPSG\indexhpsg
 %(\citealp{Koenig99a,DK2000b-u,Kordoni2001b-u}). 
 
- \citet[\page55--57]{MR2001a}提供了以下联接构式：\isce{联接}{linking}\footnote{%
+ \citet[\page55--57]{MR2001a}提供了以下联接构式\isce{联接}{linking}：\dotfootnote{%
 	在（\ref{transitiv-Konstruktion}）的及物构式的原始版本中，有一个特征$\theta$的取值是\textsc{da}$-$，但是\textsc{da}自身就是一个特征而$-$是取值。我已经在（\mex{1}a）中作了相应的修改。
 	
 	在下面的结构中，\textsc{gf}代表语法功能（grammatical function），\textsc{da}代表凸显论元\iscesub{论元}{argument}{指定论元}{designated}。凸显论元经常对应于主动句中的主语。}
@@ -1326,7 +1326,7 @@ non-head-dtrs  \sliste{ [ \textsc{synsem} \ibox{2} ] }
 %X does not necessarily have to be a pronoun that is coreferent with an element in a matrix
 %clause. They provide the following example:
 \ea
-\gll Justin Bieber—Once upon a time ∅ butter wouldn't melt in little Justin's mouth. Now internationally famous for being a weapons-grade petulant brat\\    %\ldots
+\gll Justin Bieber—Once upon a time $\varnothing$ butter wouldn't melt in little Justin's mouth. Now internationally famous for being a weapons-grade petulant brat\\    %\ldots
      Justin Bieber\hspaceThis{—}一次 \textsc{prep} 一 时间 {} 黄油 会.\textsc{neg} 融化 \textsc{prep} 小 Justin.\textsc{poss} 嘴 现在 国际上地 著名 \textsc{prep} \textsc{cop} 一 武器-级别 易怒的 小孩\\
 \mytrans{Justin Bieber曾经非常天真无邪。现在因为他极其易怒而在国际上臭名昭著。}
 %Justin Bieber—Once upon a time ∅ butter wouldn't melt in little Justin's mouth. Now internationally famous for being a weapons-grade petulant brat
@@ -2934,7 +2934,7 @@ Van Trijp表明FCG与他称之为生成方法的不同之处在于，它不仅�
 %In addition to all the points discussed so far, there is a logical flaw in van Trijp's argumentation.
 %He states that:
 \begin{quotation}
-鉴于填充语-空位分析不能解释“为什么”do-支撑不能出现在主语已经被指派疑问焦点的wh问句中，这非常自然地遵循了本文方法中的不同语言学视角互动的观点。\citep[\page 263]{vanTrijp2014a}\footnote{%
+鉴于填充语-空位分析不能解释“为什么”do-支撑不能出现在主语已经被指派疑问焦点的wh问句中，这非常自然地遵循了本文方法中的不同语言学视角互动的观点。\citep[\page 263]{vanTrijp2014a}\bracketfootnotequote{%
 whereas the filler-gap analysis cannot explain \textsc{why} \emph{do}-support does not occur
   in \emph{wh}-questions where the subject is assigned questioning focus, this follows naturally
 from the interaction of different linguistic perspectives in this paper's
@@ -3035,7 +3035,7 @@ approach.}
 %Chapters~\ref{Abschnitt-Generativ-Modelltheoretisch} and~\ref{Abschnitt-Diskussion-Performanz},
 %respectively. Concerning the cognitive-functional approach, van Trijp writes:
 \begin{quotation}
-另一方面，认知-功能语法的目标是解释说话者怎么样通过语言来表达他们对世界的概念化（也就是产生）以及听话者怎么样将话语分析为意义（也就是分析）。因此，认知-功能语法设置了一个语言能力模型和处理模型。 \citep[\page 90]{vanTrijp2013a}\footnote{%
+另一方面，认知-功能语法的目标是解释说话者怎么样通过语言来表达他们对世界的概念化（也就是产生）以及听话者怎么样将话语分析为意义（也就是分析）。因此，认知-功能语法设置了一个语言能力模型和处理模型。 \citep[\page 90]{vanTrijp2013a}\bracketfootnotequote{%
 The goal of a cognitive-functional grammar, on the other hand, is to explain
 how speakers express their conceptualizations of the world through language
 (= \emph{production}) and how listeners analyze utterances into meanings (= \emph{parsing}).
@@ -3086,7 +3086,7 @@ HPSG和SBCG确实区分了语言能力/语言运用\citep{SW2011a}。HPSG理论�
 %to address one issue that van Trijp discusses. He claims that SBCG cannot be directly
 %implemented. On issues of complexity of constraint solving systems he quotes \citep[Section~4.2.2]{LM2006a}:
 \begin{quotation}
-HPSG在实际的实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是该方法的缺点在于“语法的组织和形式化与语言学理论不一致”\citep[\S4.2.2]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\footnote{%
+HPSG在实际的实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是该方法的缺点在于“语法的组织和形式化与语言学理论不一致”\citep[\S4.2.2]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\bracketfootnotequote{%
 Actual implementations of HPSG typically handle the problem by guiding the linguistic processor
 using a (rule-based) phrase structure backbone, but the disadvantage of this approach is that the
 ``organization and formulation of the grammar is different from that of the linguistic theory'' \citep[Section~4.2.2]{LM2006a}.}
@@ -3418,7 +3418,7 @@ Van Trijp表明，HPSG/SBCG是一个“生成语法”，因为其目的只是�
 %rather similar and I would say that these theories are sister theories as well. 
 \end{sloppypar}
 
-由于三种理论的来源不同，各自的分析差异可能很大：HPSG是一个强词汇化理论，在该理论中短语统制模式只是近十年在Ivan Sag \aimention{Ivan A. Sag}的影响下才不断增多。Ivan Sag在他文章中所用的短语统制模式基本上是早期版本HPSG中模式的修正。重要的是，所有与价互动的现象都接受了一种词汇分析\citep*[\S~2.3]{SBK2012a}。另一方面，在CxG中，主要的基于短语的分析都是受到Adele Goldberg\aimention{Adele E.\ Goldberg}的影响才被接受的。
+由于三种理论的来源不同，各自的分析差异可能很大：HPSG是一个强词汇化理论，在该理论中短语统制模式只是近十年在Ivan Sag \aimention{Ivan A. Sag}的影响下才不断增多。Ivan Sag在他文章中所用的短语统制模式基本上是早期版本HPSG中模式的修正。重要的是，所有与价互动的现象都接受了一种词汇分析\citep*[\S~2.3]{SBK2012a}。另一方面，在CxG中，主要的基于短语的分析都是受到Adele Goldberg\aimention{Adele E. Goldberg}的影响才被接受的。
 %Due to the origins of all three theories, respective analyses can differ quite considerably: HPSG is a strongly lexicalized theory, where
 %phrasal dominance schemata have only been increasingly more used in the last ten years under the
 %influence of Ivan Sag\aimention{Ivan A. Sag}. The phrasal dominance schemata that Ivan Sag uses in

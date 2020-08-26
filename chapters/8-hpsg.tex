@@ -125,7 +125,7 @@ ML2009a,ML2013a,FSB2015a-u}
 %} and the network CoGETI\is{CoGETI} (Constraintbasierte Grammatik: Empirie, Theorie und Implementierung)\footnote{%
 %\url{http://wwwuser.gwdg.de/~cogeti/}. 13.11.2015. Supported by the DFG under the grant number HO3279/3-1.%
 %}. 
-上面列出的大部分语法片段由DELPH-IN的成员开发，其中有一些是基于语法矩阵（Grammar Matrix）的\isce{语法矩阵}{Grammar Matrix}。语法矩阵是为LKB开发的一个平台，它为语法编写者提供了一个类型学驱动的初始语法，该语法对应于所开发语言的属性\citep*{BFO2002a-u}。核心语法工程（the CoreGram project）\isce{核心语法工程}{CoreGram}\footnote{\url{https://hpsg.hu-berlin.de/Projects/CoreGram.html}。 \mytodayc。
+上面列出的大部分语法片段由DELPH-IN的成员开发，其中有一些是基于语法矩阵（Grammar Matrix）的\isce{语法矩阵}{Grammar Matrix}。语法矩阵是为LKB开发的一个平台，它为语法编写者提供了一个类型学驱动的初始语法，该语法对应于所开发语言的属性\citep*{BFO2002a-u}。核心语法工程\isce{核心语法工程}{CoreGram}（the CoreGram project）\bracketfootnote{\url{https://hpsg.hu-berlin.de/Projects/CoreGram.html}。 \mytodayc。
 }
 是一个在柏林自由大学开启的类似项目，目前该项目在柏林洪堡大学继续运行。它是针对德语\ilce{德语}{German}、丹麦语\ilce{丹麦语}{Danish}、波斯语\ilce{波斯语}{Persian}、马耳他语\ilce{马耳他语}{Maltese}、现代汉语\ilce{现代汉语}{Mandarin Chinese}、西班牙语\ilce{西班牙语}{Spanish}、法语\ilce{法语}{French}和依地语\ilce{依地语}{Yiddish}的语法开发项目，这些语言的语法都共享一个核心语法。针对所有语言的约束条件集中在一起，并且应用到所有的语法中。而且，还有针对特定语言类型的限制，这些限制统一表示并且根据各自的语法来应用。所以，虽然语法矩阵是供个人语法编写者使用、调试和修正语法的语法开发平台，而核心语法是真正地针对不同语言的语法开发的，这些语法同步地进行开发，并且同步地进行维护。有关核心语法的介绍可以参考 \citew{MuellerCoreGramBrief,MuellerCoreGram}。
 %Many of the grammar fragments that are listed above were developed by members of DELPH-IN and some
@@ -363,7 +363,7 @@ sm edges
 %\subsection{Representation of constituent structure}
 \label{sec-HPSG-constituent-structure}
 
-正如我们已经指出的，HPSG中的特征表示是形态规则、词汇项和句法规则的唯一描写机制。我们目前已看到的树只是成分结构的可视化结果，他们并不具有任何理论地位。在HPSG中也有重写规则。\isce{短语结构语法}{phrase structure grammar}\footnote{%
+正如我们已经指出的，HPSG中的特征表示是形态规则、词汇项和句法规则的唯一描写机制。我们目前已看到的树只是成分结构的可视化结果，他们并不具有任何理论地位。在HPSG中也有重写规则\isce{短语结构语法}{phrase structure grammar}。\dotfootnote{%
 但是，在某些HPSG的计算实现中应用了短语结构规则，这是为了提高处理的效率。
 }
 短语结构规则的工作由特征描写来处理。有关支配的信息通过\textsc{dtr}特征（中心语子结点和非中心语子结点）表示出来，有关优先顺序的信息在\phonc 中表示。（\mex{1}）说明了特征表示中\phonvsc 是如何表示的，该特征表示对应于图\vref{fig-dem-mann-fs}中的树。
@@ -598,7 +598,6 @@ NP[\type{nom}]是复杂特征描写的缩写。模式~\ref{schema-bin-prel}将�
  % 164--165]{Mueller99a} or by introducing a special valence feature for determiners
 %  \citep[Section~9.4]{ps2}. For an approach using such a
 %  feature, see Section~\ref{Abschnitt-Spr}.%  
-%}\LATER{Andrew McIntyre?: Problem goes away, if D is the head.}
 
 \eal
 \ex\label{lp-ini-arg} 
