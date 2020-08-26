@@ -32,7 +32,7 @@ echo $x
 #sed -e 's/;\\defart{}/;\\textsc{da}/g'   $x >$x.neu
 #sed -e 's/：\\footnote/：\\dotfootnote/g'   $x >$x.neu
 #sed -e 's/。\\footnote/。\\dotfootnote/g'   $x >$x.neu
-sed -e 's/）\\footnote/）\\bracketfootnote/g'   $x >$x.neu
+sed -e 's/\\aimention/\\ia/g'   $x >$x.neu
 end
 
 

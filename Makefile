@@ -39,6 +39,8 @@ all: grammatical-theory.pdf
 	xelatex $* | egrep -v 'math|PDFDocEncod|microtype' |egrep 'Warning|label'
 
 
+
+
 stable.pdf: main.pdf
 	cp main.pdf stable.pdf
 
@@ -49,6 +51,18 @@ subject-index:
 	xelatex grammatical-theory.tex
 	makeindex -gs index.format -o grammatical-theory.snd grammatical-theory.sdx
 	$(ZHMAKEINDEX-PATH)zhmakeindex -o grammatical-theory.scd grammatical-theory.scx
+	xelatex grammatical-theory.tex
+
+
+author-index:
+	xelatex grammatical-theory.tex
+	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' grammatical-theory.adx
+	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' grammatical-theory.adx
+	sed -i.backup 's/{\\O }/Oe/' grammatical-theory.adx
+	sed -i.backup 's/\\MakeCapital //g' grammatical-theory.adx
+	python3 fixindex.py grammatical-theory.adx
+	mv grammatical-theorymod.adx grammatical-theory.adx
+	makeindex -gs index.format-plus -o grammatical-theory.and grammatical-theory.adx
 	xelatex grammatical-theory.tex
 
 
@@ -105,10 +119,6 @@ bbl:
 #	xelatex $* | egrep -v 'math|PDFDocEncod' |egrep 'Warning|label|aux'
 
 
-index:
-	xelatex grammatical-theory -no-pdf |egrep -v 'math|PDFDocEncod' |egrep 'Warning|label|aux'
-	makeindex -gs index.format -o grammatical-theory.snd grammatical-theory.sdx
-	xelatex grammatical-theory |egrep -v 'math|PDFDocEncod' |egrep 'Warning|label|aux'
 
 
 
