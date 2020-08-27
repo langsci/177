@@ -839,9 +839,6 @@ type hierarchy
 \caption{\label{fig-type-sign}\type{sign}的类型层级：\type{headed-phrase}的所有子类型都承袭了约束条件}
 %\caption{\label{fig-type-sign}Type hierarchy for \type{sign}: all subtypes of \type{headed-phrase} inherit constraints}
 \end{figure}%
-
-%\vspace{3ex}
-\noindent
 \type{word}和\type{phrase}是语言符号的子类型。短语可以划分为带有中心语的短语（\type{headed-phrase}）和不带中心语的短语（\type{non-headed-phrase}）。还有短语的子类型\type{non-headed-phrase}和\type{headed-phrase}。我们已经讨论了\type{head-argument-phrase}，而\type{headed-phrase}的其他子类型将在后面的章节中详细讨论。与\type{word}和\type{phrase}相似的是，类型\type{root}和\type{stem}也在词汇和形态\isce{形态}{morphology}的结构中起到了重要的作用。由于受到篇幅的限制，我们不可能在这里深入讨论这些类型，但是可以参考第\ref{Abschnitt-UG-mit-Hierarchie}章的内容。
 %\type{word} and \type{phrase} are subclasses of linguistic signs. Phrases can be divided into phrases with heads (\type{headed-phrase})
 %and those without (\type{non-headed-phrase}). There are also subtypes for phrases of type \type{non-headed-phrase} and 
@@ -933,7 +930,7 @@ synsem$|$loc$|$cat \ms{ head & \ms[verb]{vform & fin
 %\subsection{Semantics}
 \label{Abschnitt-HPSG-Semantik}
 
-GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于语言对象的语义内容是按照特征结构来模拟的，这跟所有其他的属性是一样的。正如前面提到的，语义信息在路径\textsc{synsem|""loc|""cont}下。（\mex{1}）给出了Buch（书）的\contvc 的例子。这一表示是基于最小递归语义\indexmrs （MRS）的：\dotfootnote{%
+GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于语言对象的语义内容是按照特征结构来模拟的，这跟所有其他的属性是一样的。正如前面提到的，语义信息在路径\textsc{synsem|""loc|""cont}下。（\mex{1}）给出了Buch（书）的\contvc 的例子。这一表示是基于最小递归语义\indexmrs （MRS）的：\colonfootnote{%
   \citet{ps2}和 \citet{GSag2000a-u}利用了情景语义学\isce{情景语义学}{Situation Semantics}\citep*{BP83a,CMP90,Devlin92}\nocite{BP87a}。另一种已经在HPSG理论中应用的方法是词汇资源语法\isce{词汇资源语法}{Lexical Resource Semantics (LRS)}\citep{RS2004a-u}。有关HPSG理论中早期的未充分分析参见 \citew{Nerbonne93a}。
 }
 %An important difference between theories such as GB, LFG and TAG, on the one hand, and HPSG and CxG on the other is that the semantic %content of a linguistic
@@ -1195,7 +1192,7 @@ sm edges
 \caption{\label{fig-ha-selektion}中心语-附加语结构（选择）}
 %\caption{\label{fig-ha-selektion}Head-adjunct structure (selection)}
 \end{figure}%
-
+% with a new paragraph this looks strange. So I run the two sentences together.
 中心语-附加语结构由模式~\ref{ha-schema-prel}\iscesub{模式}{schema}{中心语-附加语}{Head-Adjunct}所允准。\istype{head-adjunct-phrase}
 %Head-adjunct structures are licensed by the Schema~\ref{ha-schema-prel}\is{schema!head-adjunct}.\istype{head-adjunct-phrase}
 %\begin{figure}
@@ -1478,7 +1475,7 @@ lex-dtr \onems[stem]{
 \subsection{配价信息与格原则}
 %\subsection{Valence information and the Case Principle}
 
-在\iscesub[|(]{原则}{principle}{格}{Case}\ref{Abschnitt-struktureller-Kasus}中，结构格与结构之间是不同的。在HPSG的文献中，一般按照 \citet{Haider86}的观点，认为与格是一个词汇格。对于带有词汇格标记的论元来说，它们的格的值直接在论元的描写中表达。带有结构格的论元也在词汇描写中说明了，它们带有结构格，只不过没有给出格的值。为了不生成不合语法的结构，语法必须要确保结构格根据它们出现的语境而得到一个独一无二的值。这点由格原则来处理：\dotfootnote{%
+在\iscesub[|(]{原则}{principle}{格}{Case}\ref{Abschnitt-struktureller-Kasus}中，结构格与结构之间是不同的。在HPSG的文献中，一般按照 \citet{Haider86}的观点，认为与格是一个词汇格。对于带有词汇格标记的论元来说，它们的格的值直接在论元的描写中表达。带有结构格的论元也在词汇描写中说明了，它们带有结构格，只不过没有给出格的值。为了不生成不合语法的结构，语法必须要确保结构格根据它们出现的语境而得到一个独一无二的值。这点由格原则来处理：\colonfootnote{%
 这里的格原则被简化了。所谓的“升”格\isce{提升}{raising}需要特殊的处理。更多细节可以参考 \citew{Meurers99b}、 \citew{Prze99b}和 \citew[\S~14,
     \S~17]{MuellerLehrbuch1}。这些著作中给出的格原则与 \citet*{YMJ87}提出的理论非常相似，由此该原则也可以解释他们的著作中所讨论的语言的格系统，尤其是爱尔兰语复杂的格系统。\isce{爱尔兰语的}{Icelandic}
 }
@@ -1863,7 +1860,7 @@ synsem$|$loc \ibox{1} \ms{ cat  & \ms{ head & \ms[verb]{ vform & fin\\
 %}%
 \iscesub[|(]{语迹}{trace}{动词}{verb}
 
-对于动词位于首位的具体的词汇项由下面的词汇规则\iscesub[|(]{词汇规则}{lexical rule}{动词首位位置}{verb-initial position}允准：\dotfootnote{%
+对于动词位于首位的具体的词汇项由下面的词汇规则\iscesub[|(]{词汇规则}{lexical rule}{动词首位位置}{verb-initial position}允准：\colonfootnote{%
 %The special lexical item for verb-initial position is licensed by the following lexical rule\is{lexical rule!verb-initial position|\(}:\footnote\{%
 % SvNMP90a
 这个词汇规则分析不能解释（i）这类句子：
@@ -2317,7 +2314,7 @@ Fanselow认为信息结构的影响与中场的重新排序有关。所以通过
 %\mytrans{Everyone knows this man.}
 \z
 
-介绍完基本思想后，我们来看技术上的细节：与\ref{Abschnitt-Verbstellung-HPSG}中讨论的动词移位不同的是，成分移位是非局部的，这就是为什么两个移位类型按照不同的特征（\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}）来模拟的原因。\textsc{dsl}是一个中心语特征，而且跟其他所有中心语特征一样，投射到投射层的最高点（更多有关中心语特征原则的内容，参见第\pageref{prinzip-hfp}页）。另一方面，\slaschc 是一个属于\textsc{synsem|nonloc}下表示的\textsc{nonloc}特征的特征。\nonlocc 特征的值是带有特征\textsc{inherited}（或者简写为\textsc{inher}）和\textsc{to-bind}的结构。\textsc{inher}的值是一个结构，它包含长距离依存所涉及的元素的信息。（\mex{1}）给出了 \citet[\page 163]{ps2}提出的结构：\dotfootnote{%
+介绍完基本思想后，我们来看技术上的细节：与\ref{Abschnitt-Verbstellung-HPSG}中讨论的动词移位不同的是，成分移位是非局部的，这就是为什么两个移位类型按照不同的特征（\textsc{slash}\isfeat{slash} vs.\ \textsc{dsl}\isfeat{dsl}）来模拟的原因。\textsc{dsl}是一个中心语特征，而且跟其他所有中心语特征一样，投射到投射层的最高点（更多有关中心语特征原则的内容，参见第\pageref{prinzip-hfp}页）。另一方面，\slaschc 是一个属于\textsc{synsem|nonloc}下表示的\textsc{nonloc}特征的特征。\nonlocc 特征的值是带有特征\textsc{inherited}（或者简写为\textsc{inher}）和\textsc{to-bind}的结构。\textsc{inher}的值是一个结构，它包含长距离依存所涉及的元素的信息。（\mex{1}）给出了 \citet[\page 163]{ps2}提出的结构：\colonfootnote{%
 Pollard \& Sag认为，\textsc{que}、\textsc{rel}和\slaschc 的值是集合，而不是列表。集合背后的数学原理更为复杂，这就是为什么我在这里假定它是列表。
 }
 %After this rough characterization of the basic idea, we now turn to the technical details: unlike verb

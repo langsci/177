@@ -112,25 +112,23 @@ sn edges
 }
 \caption{\label{Abb-CG-als-Baum}图\ref{abb-cg-transitives-Verb}中推导的树形表示}
 \end{figure}%
-
-\noindent
-对于“/”，我们经常假设左向结合律
-\isce{左向结合律}{left associativity}，即(vp/pp)/np = vp/pp/np。
+对于“/”，我们经常假设左向结合律\isce{左向结合律}{left associativity}，即(vp/pp)/np = vp/pp/np。%
 \isce[|)]{/}{/}
 
+%\largerpage
 观察（\ref{LE-CG}）中的词汇项，我们可以清楚看到范畴v是不存在的。
 词库仅仅决定一个词条与什么样的论元结合以得到什么结果。
 而符号vp也可以删去：一个（英语中的）vp是在其左侧提供一个名词短语便可以形成一个完整句子的语言成分。
 这\isce[|(]{$\backslash$}{$\backslash$}通过s$\backslash$np进行表示。
-使用后向应用规则，可以计算得到如图\vref{abb-the-cat-chased-Mary}所示的推导
-\isce[|)]{价}{valence}。
+使用后向应用规则，可以计算得到如图\vref{abb-the-cat-chased-Mary}所示的推导。\isce[|)]{价}{valence}
+
 \ea
 后向应用
 \isce{后向应用}{backward application}:\\
 Y $*$ X$\backslash$Y = X 
 \z
 
-\begin{figure}
+\begin{figure}[t]
 \centerline{%
 \deriv{4}{
 the  & cat & chased         & Mary\\
@@ -156,7 +154,7 @@ np/n & n   & (s\bs np)/np   & np\\
 这种组合的平行性不仅仅在语言单位的简单组合中如此，在复杂组合中亦然，我们可以精确地定义相应的语义组合过程，接下来我们将展开讨论。
 我们的讨论基于 \citet[\S~2.1.2]{Steedman97a}的分析。
 
-针对动词eats（吃），Steedman给出了下面的词汇项分析：\dotfootnote{%
+针对动词eats（吃），Steedman给出了下面的词汇项分析：\colonfootnote{%
  我适当变换了分析的符号表示以和本书的表示一致。
 }
 \ea
@@ -164,7 +162,7 @@ eats := (s: \relation{eat}(x, y)\bs np\sub{3S}:x)/np:y
 \z
 在（\mex{0}）中，每一个范畴的语义都在分号中表示。因为eat的论元的语义我们尚不清楚，因此用变量$x$和$y$表示。
 当动词组合了一个名词短语，这个名词短语的指谓（denotation）会被带入到相应位置以替换相应的变量。
-（\mex{1}）为一个例子：\dotfootnote{%
+（\mex{1}）为一个例子：\colonfootnote{%
   我们假设apples（苹果）意为\relation{apples}而不是\relation{apples}(z)，这里去掉量词以简化分析。
 }
 \ea
