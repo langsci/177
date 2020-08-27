@@ -349,7 +349,7 @@ LP$^\alpha_2$ = \{ \}
 不考虑结构成分的层次性，即树中含有NP与VP一层，GPSG\indexgpsg 的扁平句子规则所定义的全部语序都可以由上述TAG方法复现。
 因为支配关系包括了更大的局部域，这样的语法也称为LD/LP语法（local dominance/linear precedence），而非ID/LP语法（immediate dominance/linear precedence）\citep*{JSW90a-u}。
 
-\S~\ref{sec-tag-allgemein}所介绍的简单的TAG变体无法处理被杂列的动词论元的语序问题，如（\mex{1}）。
+\ref{sec-tag-allgemein}中所介绍的简单的TAG变体无法处理被杂列的动词论元的语序问题，如（\mex{1}）。
 \ea
 \label{ex-weil-ihm-das-Buch-jemand-zu-lesen-versprochen-hat-drei}
 \gll weil    ihm das Buch jemand   zu lesen versprochen hat\footnotemark\\
@@ -578,7 +578,7 @@ tag
 \isce{提升}{raising}的语言现象。他们的分析假定动词的论元都位列于次范畴化（subcategorization）表中。如果一个动词匹配了某棵树相应的子类框架表，这个动词就可以进入到这棵树中。对应于第\pageref{pass-lr-mlr}页讨论过的HPSG的词汇规则，Kroch和Joshi形式化得到了一条（TAG）词汇规则：该规则的输入端明确地提及一个宾格宾语。Kroch和Joshi针对非人称被动提出了一种复杂的分析，在不及物动词里没有实现出来的宾语，他们将其处理为语义为空的角色（第56页）。
 这样的一种使用抽象的辅助实体的方式事实上是可以避免的：我们可以采纳始于 \citet{Haider86}的HPSG\indexhpsg 分析，我们在\ref{Abschnitt-HPSG-Passiv}中讨论过这种分析。
 
-也有人提议\iscesub[|(]{承继}{inheritance}{多重}{multiple}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citet{Candito96a}及其扩展分析⸺\citet*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[\S~7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
+也有人提议\iscesub[|(]{承继}{inheritance}{多重}{multiple}使用承继关系来处理配价变化，被动仅仅被视为是一种特殊的配价变化现象（参见\citet{Candito96a}及其扩展分析⸺\citet*{KSYJ2006a}）。正如我们在构式语法的相关讨论（见\ref{Abschnitt-Passiv-CxG}）中所看到的，承继关系对于处理配价变化并不是理想的描写工具。这是因为这种处理手段在多个环节都存在句法和语义的交互（\citealp{Mueller2006d,Mueller2007d}；\citeyear[7.5.2]{MuellerLehrbuch1}；\citeyear{MuellerUnifying}；\citeyear{MWArgSt}）。也请参见本书的\ref{relations-sec}了解更多的针对性讨论。 
 \iscesub[|)]{承继}{inheritance}{多重}{multiple}
 \isce[|)]{被动}{passive}
 
@@ -1024,17 +1024,17 @@ V-TAG\iscesub[|(]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量
 其中的两棵带有NP的树支配了versprochen，而另外两棵支配了zu reparieren。
 带有NP的树的次序并没有被限制，因而这些NP间的任意排列都是被允准的。%\pagebreak
 
-这里有意思的是这种方法和 \citet[\S~2.1.3]{Berman96a-u}在LFG\indexlfg 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
+这里有意思的是这种方法和 \citet[2.1.3]{Berman96a-u}在LFG\indexlfg 中的分析很像（参见\ref{Abschnitt-LFG-Umstellung}）：
 在Berman的分析中，动词直接投射（project）并形成VP，然后附加上论元。
 
-有一点跟本书讨论的其他分析不同的是：不管动词位置如何，导出树中总是有一个空成分。%
+有一点跟本书讨论的其他分析不同：不管动词位置如何，导出树中总是有一个空成分。%
 \isce{空成分}{empty element}\iscesub[|)]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}{矢量树邻接语法（V-TAG）}{Vector (V-TAG)}
 
 \subsection{语言能力与语言运用的区分以及树本地化MC-LTAG的生成能力}
 %\subsection{The competence-performance distinction and the generative capacity of tree-local MC-LTAG}
 \label{Abschnitt-Kompetenz-Performanz-TAG}
 
-本书中\isce[|(]{语言能力}{competence}\isce[|(]{语言运用}{performance}讨论的很多理论都区分语言能力（competence）和语言运用（performance）\citep[\S~I.1]{Chomsky65a}。我们假定语言能力理论描写语言知识，而语言运用理论应该解释语言知识如何被使用以及为什么我们在使用和理解语言的过程中会产生错误等问题。参见第\ref{chap-competence-performance}章以了解更多的内容。 
+本书中\isce[|(]{语言能力}{competence}\isce[|(]{语言运用}{performance}讨论的很多理论都区分语言能力（competence）和语言运用（performance）\citep[I.1]{Chomsky65a}。我们假定语言能力理论描写语言知识，而语言运用理论应该解释语言知识如何被使用以及为什么我们在使用和理解语言的过程中会产生错误等问题。参见第\ref{chap-competence-performance}章以了解更多的内容。 
 
 \citet*{JBR2000a}讨论了如（\mex{1}b）所示的关系从句的中心自嵌入问题（center self embedding），他们遵循 \citet[\page 286]{CM63a}的假定：这种嵌入最多只可能有三级的这一事实不应该在语法中进行描写，而应该归属于听者的加工问题，而这与语法的描写能力无关。
 \eal
@@ -1149,7 +1149,7 @@ Hoberg使用的是代词的所有格⸺ihr（她），而不是das（\defart{}�
 
 对于由阴性可数名词组成的名词短语来说，主格和宾格的形式，属格和与格的形式相同。
 对于不可数名词，情况更加糟糕。如果阴性不可数名词不加冠词，它们所有的格形式都是一样的，例如Milch（牛奶）。
-阳性和中性词的属格也有类似之处。在下面 \citet[\page 45]{Wegener85b}的例子中，很难交换与事与宾格宾语的位置，而当名词像（\mex{1}c、d）样配有冠词时则可以做这种交换。
+阳性和中性词的属格也有类似之处。在下面 \citet[\page 45]{Wegener85b}的例子中，很难交换与事与宾格宾语的位置，而当名词像（\mex{1}c，d）样配有冠词时则可以做这种交换。
 
 \eal
 \ex 
@@ -1189,7 +1189,7 @@ Hoberg使用的是代词的所有格⸺ihr（她），而不是das（\defart{}�
 \mytrans{因为他想让那个男人帮助那个男孩记得他的朋友} 
 \z
 另一个策略是控制动词对有生和无生宾语的选择，通过论元的生命度来辅助解释。
-我构造了一个例子，在这个例子中，在深层位置嵌入的谓词是一个形容词而非动词。谓语leer fischen（钓光了）是一个动结构式，这个构式需要和动词性复杂结构进行类比分析\citep[\S~5]{Mueller2002b}。
+我构造了一个例子，在这个例子中，在深层位置嵌入的谓词是一个形容词而非动词。谓语leer fischen（钓光了）是一个动结构式，这个构式需要和动词性复杂结构进行类比分析\citep[第5章]{Mueller2002b}。
 \ea
 \gll weil niemand$_1$ [den Mann]$_2$ [der Frau]$_3$ [diesen Teich]$_4$  leer$_4$ fischen$_3$ helfen$_2$ sah$_1$\\
 %     because nobody.\nom{} \spacebr{}the.\acc{} man \spacebr{}the.\dat{} woman \spacebr{}this.\acc{} pond empty fish help saw\\
@@ -1257,7 +1257,7 @@ Hoberg使用的是代词的所有格⸺ihr（她），而不是das（\defart{}�
 
  \citet{SJ93a}讨论了从心理语言学来说可行的加工模型，并且论证了基于TAG进行增量式句法分析的可行性。他们进一步提出了TAG的一种变体：同步树邻接语法（synchronous TAG\indexstag）。在这种TAG变体中，一棵句法树有一棵语义树与之相对应。当构建句法结构的时候，语义结构也同步构建起来。这个同步构建的结构对应于GB理论中通过转换\isce{转换}{transformation}从表层结构中推导得到的逻辑形式（Logical Form\isce{逻辑形式（LF）}{Logical Form (LF)}）。
 
- \citet[\S~6]{Rambow94a}展示了一个基于自动机的语言运用理论。他将这种理论应用到德语上并表示可以解释在对多个动词的论元进行重列加工时所遇到的困难。 
+ \citet[第6章]{Rambow94a}展示了一个基于自动机的语言运用理论。他将这种理论应用到德语上，并且说明了对多个动词的论元进行重列加工时所遇到的困难可以在该理论中得到解释。 
 \isce[|)]{树邻接语法（TAG）}{Tree Adjoining Grammar (TAG)}
 
  \citet{KR2008a-u}基于FTAG展示了如何通过一棵推导树进行MRS的获取。每一个顶结点都引用了整个结构的语义内容，而每一个底结点都引用了所在结点之下的部分的语义内容。基于这种方式，当把形容词（如mutmaßlichen（被怀疑的））插入到NP树（如alle Mörder（全部凶手））时，可以确保形容词有超过名词性部分（Mörder（凶手））的作用域：当把形容词附加到N结点时，形容词可以获取名词的语义内容。mutmaßlichen的顶结点将成为mutmaßlichen Mörder（嫌疑人）这个组合的顶结点，而这保证了mutmaßlichen Mörder的语义可以正确地嵌入到全称量词中。
