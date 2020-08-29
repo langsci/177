@@ -1047,7 +1047,7 @@ c. \{ NP[\type{acc}] \} $\succeq$ \{ NP[\type{nom}], NP[\type{acc}] \}\\
 %\subsection{Sign-Based Construction Grammar}
 \label{sec-SbCxG}\label{sec-sbcg}\label{sec-SBCG}
 
-在Fillmore、Kay、Michaelis和Sag更近的工作中，Kay \& Fillmore借助Kay \& Fillmore版本的用集合来描述价的形式化体系被抛弃了，转而支持HPSG的形式化体系（\citealp{Kay2005a,Michaelis2006a,Sag2012a}；\citealp*[\page 10--11]{SBK2012a}）。基于符号的构式语法发展自CxG的伯克利变体。基于符号的构式语法是HPSG的一个变体\citep[\page 486]{Sag2010b}，并且因此运用HPSG的形式化手段（类型特征结构）。价和饱和的处理方式与标准HPSG的处理方式完全一致。价变化也像HPSG一样运用词汇规则 \citep*[第2.3节]{SBK2012a}。对于长距离依存\isce{长距离依存}{long-distance dependency}的分析借鉴自HPSG（更确切地说是GPSG\indexgpsg）。运用最小递归语义\indexmrs（\citealp*{CFPS2005a}）描述语义内容。与标准HPSG的唯一差异就是特征结构中特征的安排。基于符号的构式语法引入了一个新的特征框架来排除那些描述子结点的子结点构式，所以与短语结构语法、LFG和GPSG中的规则相比有更大的局部性\isce[|(]{局部性}{locality}。我认为该特征框架不是特别合乎情理，因为它可以很容易地被规避并且会使得理论变得复杂。这会在\ref{sec-mother}中进行讨论。另一个变化是\ref{sec-valence-feature-sbcg}中讨论的价特征省略。
+在Fillmore、Kay、Michaelis和Sag更近的工作中，Kay \& Fillmore借助Kay \& Fillmore版本的用集合来描述价的形式化体系被抛弃了，转而支持HPSG的形式化体系（\citealp{Kay2005a,Michaelis2006a,Sag2012a}；\citealp*[\page 10--11]{SBK2012a}）。基于符号的构式语法发展自CxG的伯克利变体。基于符号的构式语法是HPSG的变体\citep[\page 486]{Sag2010b}，并且因此运用HPSG的形式化手段（类型特征结构）。价和饱和的处理方式与标准HPSG的处理方式完全一致。价变化也像HPSG一样运用词汇规则 \citep*[第2.3节]{SBK2012a}。对于长距离依存\isce{长距离依存}{long-distance dependency}的分析借鉴自HPSG（更确切地说是GPSG\indexgpsg）。运用最小递归语义\indexmrs（\citealp*{CFPS2005a}）描述语义内容。与标准HPSG的唯一差异就是特征结构中特征的安排。基于符号的构式语法引入一个新的特征框架来排除那些描述子结点的子结点构式，所以与短语结构语法、LFG和GPSG中的规则相比有更大的局部性\isce[|(]{局部性}{locality}。我认为该特征框架不是特别合乎情理，因为它可以很容易地被规避并且会使得理论变得复杂。这会在\ref{sec-mother}中进行讨论。另一个变化是\ref{sec-valence-feature-sbcg}中讨论的价特征省略。
 %In more recent work by Fillmore, Kay, Michaelis \biband Sag, the Kay \& Fillmore formalization of the
 %description of valence using the Kay \& Fillmore version of sets was abandoned in favor of the HPSG formalization
 %(\citealp{Kay2005a,Michaelis2006a,Sag2012a}; \citealp*[\page 10--11]{SBK2012a}).
@@ -1682,7 +1682,7 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %     his.\dat{}    daughter a.\acc{}   fairytale tell      will he.\nom\\
 \mytrans{他会给他的女儿讲一个童话故事。}
 \zl
-如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充语的取值可能是\lexc$-$。如果所有信息都像在SBCG中那样共享，这种方法是不可能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，即\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和\textsc{cntxt}（这些特征可参见\citet[\page 98]{Sag2012a}）\bracketfootnote{%
+如果wird（将要）的局部要求能在填充语和空位之间共享，（\mex{0}b）--（\mex{0}d）中的句子就会被排除，因为\vfc 的投射并非词汇元素而是取值为\lexc$-$ 的复杂短语投射。现在，正如上面提到的作者所指出的，如果并非所有的信息都被填充语和空位共享，那么这就不是一个问题。如果\lexc 在\localc 外面，虽然对于提取成分的局部限制需要\lexvc $+$ ，但是填充语的取值可能是\lexc$-$。如果所有信息都像在SBCG中那样共享，这种方法是不可能的。当然，如果坚持SBCG特征框架并且说并非整个\argstc 元素都与\textsc{gap}元素共享，但是那就需要在符号的最外层拥有一个所有特征的结构共享，即\textsc{phon}、\textsc{form}、\textsc{syn}、\textsc{sem}和\textsc{cntxt}（这些特征可参见\citealp[\page 98]{Sag2012a}）\bracketfootnote{%
  注意，这些结构共享是必需的。不能不指定论元结构列表中这些特征的取值。因为我们有一种模型-理论的观点，所以不指定取值会导致相应的结构有无限的歧义，因为这些结构可能有无数种实例。%  
 }，并且将这些特征分组的目的是避免多重单个结构共享，在多重单个结构共享中特征取值之间有系统性的联系。
 %If the local requirement of \emph{wird} would be shared between filler and gap, the sentences in
@@ -3086,7 +3086,7 @@ HPSG和SBCG确实区分了语言能力/语言运用\citep{SW2011a}。HPSG理论�
 %to address one issue that van Trijp discusses. He claims that SBCG cannot be directly
 %implemented. On issues of complexity of constraint solving systems he quotes \citep[Section~4.2.2]{LM2006a}:
 \begin{quotation}
-HPSG在实际的实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是该方法的缺点在于“语法的组织和形式化与语言学理论不一致”\citep[第4.2.2节]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\bracketfootnotequote{%
+HPSG在实际实现中，解决问题的典型办法是引导语言处理器运用一个（基于规则的）短语结构骨架，但是该方法的缺点是“语法的组织和形式化与语言学理论不一致”\citep[第4.2.2节]{LM2006a}。\citep[\page 108]{vanTrijp2013a}\bracketfootnotequote{%
 Actual implementations of HPSG typically handle the problem by guiding the linguistic processor
 using a (rule-based) phrase structure backbone, but the disadvantage of this approach is that the
 ``organization and formulation of the grammar is different from that of the linguistic theory'' \citep[Section~4.2.2]{LM2006a}.}
