@@ -116,6 +116,20 @@
 \setlength{\parindent}{2em}
 % the indented space should be two characters.
 
+% The standard class has the following:
+% This does not work however, since we need indentation relative to the font size of the footnote
+% characters.
+
+%\deffootnote[1.5em]{1.5em}{\normalparindent}{\textsuperscript{\thefootnotemark}} 
+% changed to
+%\deffootnote[1.5em]{1.5em}{\chinesefootnoteparindent}{\textsuperscript{\thefootnotemark}}
+
+\newlength{\chinesefootnoteparindent}
+\setlength{\chinesefootnoteparindent}{1.5em}
+
+
+ 
+
 \newcommand{\fontpath}{./fonts/}
 
 % quotes should be in simkai（楷体）
