@@ -407,7 +407,7 @@
 % well that comma is wrong
 \renewcommand{\AdditionalFontImprint}[1]{
   \edef\fontstemp{\lsAdditionalFontsImprint}
-  \renewcommand{\lsAdditionalFontsImprint}{\fontstemp、#1}
+  \renewcommand{\lsAdditionalFontsImprint}{\fontstemp \ \ #1}
 }
 
 
@@ -528,7 +528,7 @@ Ulrike Harbort \\
 %Open reviewing:
 \@openreviewer \\
 \fi
-字体：Linux Libertine、Arimo、DejaVu Sans Mono\lsAdditionalFontsImprint\\
+字体：Linux Libertine \ \ Arimo \ \ DejaVu Sans Mono\lsAdditionalFontsImprint\\
 %Fonts: Libertinus, Arimo, DejaVu Sans Mono\lsAdditionalFontsImprint\\
 排版软件：\XeLaTeX
 %Typesetting software: \XeLaTeX
