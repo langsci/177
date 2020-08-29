@@ -11,13 +11,6 @@
 
 \ifbool{langsci@tbls@tcolorbox}
   {
-    \AtEndDocument{\PackageWarning{langsci-tbls}
-      {
-        langsci-tbls now expects you to choose a method. It defaults to `tcolorbox`.
-        If you'd like to use `mdframed` instead, please specify `mdframed` as a
-        package option.
-      }
-    }
     \RequirePackage{tcolorbox}
     \tcbuselibrary{breakable, skins, xparse}
     \tcbset

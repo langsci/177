@@ -31,9 +31,10 @@ echo $x
 #sed -e 's/; \\defart{}]/; \\textsc{da}]/g'   $x >$x.neu
 #sed -e 's/;\\defart{}/;\\textsc{da}/g'   $x >$x.neu
 #sed -e 's/：\\footnote/：\\dotfootnote/g'   $x >$x.neu
-sed -e 's/：\\dotfootnote/：\\colonfootnote/g'   $x >$x.neu
+#sed -e 's/：\\dotfootnote/：\\colonfootnote/g'   $x >$x.neu
 #sed -e 's/。\\footnote/。\\dotfootnote/g'   $x >$x.neu
 #sed -e 's/\\aimention/\\ia/g'   $x >$x.neu
+sed -e 's/{Gazdar81}/{Gazdar81a}/g'   $x >$x.neu
 end
 
 
