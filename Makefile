@@ -5,7 +5,8 @@ LSP-STYLES=~/Documents/Dienstlich/Projekte/OALI/Git-HUB/latex/langsci/
 # and move zhmakeindex there
 ZHMAKEINDEX-PATH=~/bin/
 
-SOURCE=gt.bib $(wildcard local*.tex) $(wildcard chapters/*.tex)	grammatical-theory.tex           \
+# I remove gt.bib here since others do not have my bibliography files
+SOURCE= $(wildcard local*.tex) $(wildcard chapters/*.tex)	grammatical-theory.tex           \
 	grammatical-theory-include.tex   \
 	backmatter.tex 
 
@@ -152,7 +153,6 @@ cover: grammatical-theory.pdf
 # fuer Sprachenindex
 #	makeindex -gs index.format -o $*.lnd $*.ldx
 
-
 lsp-styles:
 	rsync -a $(LSP-STYLES) langsci
 
@@ -206,6 +206,8 @@ o-public-lehrbuch: /Users/stefan/public_html/Pub/grammatical-theory.pdf
 
 gt.bib: ../../../Bibliographien/biblio.bib $(SOURCE)
 	xelatex -no-pdf -interaction=nonstopmode -shell-escape bib-creation 
+	biber bib-creation
+	xelatex -no-pdf -interaction=nonstopmode -shell-escape bib-creation
 	biber --output_format=bibtex --output-legacy-date bib-creation.bcf -O gt_tmp.bib
 	biber --tool --configfile=biber-tool.conf --output-field-replace=location:address,journaltitle:journal --output-legacy-date gt_tmp.bib -O gt.bib
 
