@@ -1335,7 +1335,8 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 \fi\fi
 
 \raggedbottom
-\deffootnote[1.5em]{1.5em}{\normalparindent}{\textsuperscript{\thefootnotemark}} % putting a space after footnotemark has undesirable side effects with footnotes that start with an empty line; instead use \xspace in the footnote definition below
+%\deffootnote[1.5em]{1.5em}{\normalparindent}{\textsuperscript{\thefootnotemark}} % putting a space after footnotemark has undesirable side effects with footnotes that start with an empty line; instead use \xspace in the footnote definition below
+\deffootnote[1.5em]{1.5em}{\chinesefootnoteparindent}{\textsuperscript{\thefootnotemark}} % putting a space after footnotemark has undesirable side effects with footnotes that start with an empty line; instead use \xspace in the footnote definition below
 \newlength{\normalparindent}
 \AtBeginDocument{\setlength{\normalparindent}{\parindent}}
 
