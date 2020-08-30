@@ -405,10 +405,11 @@
 }
 
 % well that comma is wrong
-\renewcommand{\AdditionalFontImprint}[1]{
-  \edef\fontstemp{\lsAdditionalFontsImprint}
-  \renewcommand{\lsAdditionalFontsImprint}{\fontstemp \ \ #1}
-}
+% unfortunately this does not help here, since we load localmetadata before localpackages-chinese
+% \renewcommand{\AdditionalFontImprint}[1]{
+%   \edef\fontstemp{\lsAdditionalFontsImprint}
+%   \renewcommand{\lsAdditionalFontsImprint}{\fontstemp \ \ #1}
+% }
 
 
 \renewcommand{\githubtext}{源代码可获取自 \href{https://www.github.com/langsci/\lsID}{www.github.com/langsci/\lsID}}
@@ -554,116 +555,6 @@ Ulrike Harbort \\
 % publication, and does not guarantee that any content on such websites
 % is, or will remain, accurate or appropriate.
 }
-\makeatother
-
-\newcommand{\unusedlsImpressum}{
-\raggedright
-
-\lsImpressumCitationText
-
-\vfill
-
-本书可在以下网址获取： \\
-%This title can be downloaded at:\\
-\url{\lsURL}
-
-© \the\year, \iflsCollection the authors\else\@author\fi
-
-\newcommand{\ccby}{CC-BY} 
-\ifx\lsCopyright\ccby 
-本书的发表采用知识共享署名4.0许可协议（CC BY 4.0）授权：
-%Published under the Creative Commons Attribution 4.0 Licence (CC BY 4.0):
-http://creativecommons.org/licenses/by/4.0/ 
-\else
-本书的发表采用知识共享署名—禁止演绎4.0许可协议（CC BY-ND 4.0）授权：
-%Published under the Creative Commons Attribution-NoDerivatives 4.0 Licence (CC BY-ND 4.0):
-http://creativecommons.org/licenses/by-nd/4.0/ 
-\fi
-
-\noindent 
-\begin{tabular}{@{}llr@{}}
-ISBN: & 完整电子版：& \lsISBNdigital \\
-      &	精装：& \lsISBNhardcover\\
-      &	简装：& \lsISBNsoftcover\\
-      &	美版简装：& \lsISBNsoftcoverus \\
-%ISBN: & \multicolumn{2}{r}{Digital, complete work:} & \lsISBNdigital \\
-%      &	Hardcover: & vol1:        & \lsISBNhardcoverOne & vol. 2 & \lsISBNhardcoverTwo\\
-%      &	Softcover: & vol1:        & \lsISBNsoftcoverOne & vol. 2 & \lsISBNsoftcoverTwo\\
- %     &	Softcover US: & vol1:        & \lsISBNsoftcoverusOne & vol. 2 & \lsISBNsoftcoverusTwo \\
-\end{tabular}
-
-\IfStrEq{\lsISSN}{??}		% \IfStrEq from xstring
-	{}
-	{ISSN: \lsISSN}
-
-\IfStrEq{\lsBookDOI}{??}		% \IfStrEq from xstring
-	{}
-	{\doi{\lsBookDOI}}
-
-
-\bigskip
-
-封面设计： 
-%Cover and concept of design:
-Ulrike Harbort \\
-\if\@translator\empty\else
-译者：
-%Translators:
-\@translator \\
-\fi
-\if\@typesetter\empty\else
-排版：
-%Typesetting:
-\@typesetter \\
-\fi
-\if\@illustrator\empty\else
-插图：
-%Illustration:
-\@illustrator \\
-\fi
-\if\@proofreader\empty\else
-校对：
-%Proofreading:
-\@proofreader \\
-\fi
-\if\@openreviewer\empty\else
-公开评审：
-%Open reviewing:
-\@openreviewer \\
-\fi
-字体：Linux Libertine、Arimo、DejaVu Sans Mono\lsAdditionalFontsImprint\\
-%Fonts: Linux Libertine, Arimo, DejaVu Sans Mono\lsAdditionalFontsImprint\\
-排版软件：\XeLaTeX
-%Typesetting software: \XeLaTeX
-
-
-\bigskip
-
-%语言科学出版社\\
-Language Science Press\\
-Grünberger Str. 16\\
-10243 Berlin, Germany\\
-\href{http://langsci-press.org}{langsci-press.org}
-
-\vfill
-
-本书由柏林自由大学存储和编目 \\[3ex]
-%Storage and cataloguing done by FU Berlin \\[3ex]  
-
-\includestoragelogo\\[3ex]
-
-\vfill
-
-\noindent
-语言科学出版社无法保证本书中URL链接地址的准确性和可访问性，也无法保证这些网站的内容准确与适当。本书中的商品价格、旅行时间表和其他事实性信息，在初次出版的时候是准确的，但无法保证后继准确。
-%\lsp has no responsibility for the persistence or accuracy of URLs for
-%external or third-party Internet websites referred to in this
-%publication, and does not guarantee that any content on such websites
-%is, or will remain, accurate or appropriate. 
-%Information regarding prices, travel timetables and other factual information given in this work are correct at the time of first publication but \lsp does not guarantee the accuracy of such information thereafter. 
-}
-
-
 \makeatother
 
 

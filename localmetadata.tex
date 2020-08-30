@@ -116,6 +116,10 @@ Stefan Müller近期发表的《语法理论》这本导论性教科书，是一
 
 
 %\AdditionalFontImprint{SimSun（宋体）、SimKai（楷体）}
-\AdditionalFontImprint{SourceHanSerifSC（宋体） \ \ FZHTJW（黑体） \ \ FZKTJW（楷体）}
+%\AdditionalFontImprint{SourceHanSerifSC（宋体） \ \ FZHTJW（黑体） \ \ FZKTJW（楷体）}
+
+% otherwise we get wrong commas. This cannot be done in a different way because of some catch 22 in
+% loading order of localmetadata and localpackages-chinese.
+\renewcommand{\lsAdditionalFontsImprint}{ \ \ SourceHanSerifSC（宋体） \ \ FZHTJW（黑体） \ \ FZKTJW（楷体）}
 
 %      <!-- Local IspellDict: en_US-w_accents -->
