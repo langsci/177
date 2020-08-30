@@ -198,6 +198,7 @@
 %such a representation it is possible to make certain claims about a mother or father without having to necessarily
 %search for the respective descriptions in a list.
 
+\largerpage[2]
 如果元素的序列是无关的，那么我们可以用集合\isce{集合}{set}，而不是列表。集合用弧形括号（curly brackets）表示。\dotfootnote{%
 集合的定义需要很多技术指标。本书中，我只用集合来表示语义信息。这点用列表也可以做到，这就是为什么我在这里没有引入集合，而是使用了列表。
 }
@@ -313,6 +314,7 @@
 %%   [\ldots]]
 %% \draw (scanning.south)--(copier.north);
 %% \end{forest}
+\scalebox{.95}{%
 \begin{tabular}{cccc}
 \multicolumn{4}{c}{\mynode{ed}{\type{电子设备}}}\\[6ex]
 \mynode{p}{\type{打印设备}} & & \mynode{sc}{\type{扫描设备}} & \mynode{other}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\[6ex]
@@ -337,6 +339,7 @@
      (scanner.south)--(negscan.north)
      (scanner.south)--(other-sc.north);
 \end{tikzpicture}
+}
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
 %\caption{\label{fig-electric-appliance}Non-linguistic example of multiple inheritance}
 \end{figure}%
@@ -410,6 +413,7 @@
 %Structure sharing\is{structure sharing|(} is an important part of the formalism. It serves to express the notion that certain parts of a structure %are identical. A linguistic
 %example for the identity of values is agreement\is{agreement}. In sentences such as (\mex{1}), the number value of the noun phrase has to be %identical to that of the verb:
 
+%\addlines
 \eal
 \ex[]{
 \gll Der Mann schläft.\\
@@ -872,7 +876,6 @@ Mann（男人）:\\*[2pt]
 %We can, however, decide to omit these details from our descriptions if they do not play a role for
 %stating constraints or formulating searches.
 
-\pagebreak
 语言现象、模型和形式化理论之间的联系如图\vref{abb-modell}所示。
 %The connection between linguistic phenomena, the model and the formal theory is shown in Figure~\vref{abb-modell}.
 模型是用来模拟语言现象的。进而，它必须由我们的理论所允准。理论决定了模型并且对可能的现象进行预测。
