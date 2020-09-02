@@ -1745,9 +1745,9 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
      一 房子\\
 \mytrans{一所房子}
 \zl
-这一差别可以通过为限定语假设一个选择特征来模拟。 \footnote{%
+这一差别可以通过为限定语假设一个选择特征来模拟。\dotfootnote{%
   在标准HPSG中，限定语和名词之间可以互相选择。名词通过\sprc 选择限定语，限定语通过\textsc{specified}\isfeat{specified}来选择名词。这一特征与\modfc 类似，这一特征在\ref{sec-adjuncts-hpsg}中已经解释过。
-}当然另一种方法就是通过在短语层面对音系设置限制来获得所有的音系信息（见\citet{BK94b}和\citet{Walther99a-u}对于HPSG中音系的论述）。
+} 当然另一种方法就是通过在短语层面对音系设置限制来获得所有的音系信息（见\citet{BK94b}和\citet{Walther99a-u}对于HPSG中音系的论述）。
 %The distinction can be modeled by assuming a selection feature for determiners.\footnote{%
 %  In Standard HPSG there is mutual selection between the determiner and the noun. The noun selects
 %  the determiner via \spr and the determiner selects the noun via a feature called
@@ -1797,9 +1797,9 @@ syn    & \ms{ val & \sliste{ \ibox{1} }\\
 %selection of arguments of arguments of arguments), then it is a problem that heads can see the
 %phonology of elements that are far away.
 
-对于SBCG的推崇者来说，有两个可能的结论：或者放弃\motherfc，因为同意不作出错误预测的理论就是受到充分限制的，并且不需要明确说明语言中什么是不能出现的；或者人们必须对音系值非局部选择的问题作出反应，并且因此要假设\synsemc 或者\localfc 值，这两个值可以捆绑对于提升和非局部依存有用的信息，另外还不能包括音系特征。 \footnote{%
+对于SBCG的推崇者来说，有两个可能的结论：或者放弃\motherfc，因为同意不作出错误预测的理论就是受到充分限制的，并且不需要明确说明语言中什么是不能出现的；或者人们必须对音系值非局部选择的问题作出反应，并且因此要假设\synsemc 或者\localfc 值，这两个值可以捆绑对于提升和非局部依存有用的信息，另外还不能包括音系特征。\dotfootnote{%
 如果重新引入\synsemc，价列表中的元素可以是\type{synsem}类型。音系信息可以成为被选择成分描述的一部分。但是这并不能解决部分动词短语前置问题，因为\lexfc 虽然被选择（所以成为\synsemc 中的部分信息）但是并不与填充语共享。所以，除了\synsemc 之外，还需要\localfc。参见\ref{sec-sbcg-local-feature}。
-}这两个结论都支持我在前面章节中对\motherc 和\localc 的评论。
+} 这两个结论都支持我在前面章节中对\motherc 和\localc 的评论。
 %There are two possible conclusions for practitioners of SBCG: either the \motherf could be given up
 %since one agrees that theories that do not make wrong predictions are sufficiently constraint and
 %one does not have to explicitly state what cannot occur in languages or one would have to react to
@@ -1972,9 +1972,9 @@ dtrs   & \liste{ \ms[Determiner]{
 %If we want the construction to require that the determiner and noun be adjacent, then we would simply use \textbf{meets} instead of \textbf{before} in the specification
 %of the construction.
 
-这一讨论说明 （\mex{-1}） 比 （\mex{-2}）的限制性更强。但是，有些上下文中，大家可以想象使用（\mex{0}b）那样的非连续成分\iscesub{成分}{constituent}{非连续}{discontinuous}。例如，为了描写动词复杂形式、动词性小词（particle verb）和一些并列结构，也有学者提出了不连续成分\citep{Wells47a}。在HPSG\indexhpsg 框架中使用非连续成分进行分析的例子有 \citew{Reape94a}、 \citew{Kathol95a}、 \citew{Kathol2000a}、 \citew{Crysmann2003c}和 \citew{BS2004a}。 \footnote{%
-Crysmann、Beaver和Sag分析了并列现象\isce{并列}{coordination}。关于在TAG\indextag 框架内使用不连续成分分析并列现象，可以参见 \citew{SJ96a}和\ref{Abschnitt-Koordination}。%
-	}更加具体的讨论可以参见\ref{sec-discontinuous-constituents-HPSG} ，这些分析与前面所展示的方法的不同之处在于，它们使用\textsc{domain}特征而不用子结点特征，或者除了用子结点特征之外还使用\textsc{domain}特征。\textsc{domain}特征的取值是一个列表，包括中心语以及依赖于中心语的成分。这些元素并不一定非得在话段中邻接，也就是说，允许不连续成分。哪些元素以何种方式进入到这一列表由语言学理论的一部分限制所决定。这种方式与ECG中简单的\textbf{before}声明的不同之处在于，这种方式更加灵活而且可以限定一个特定元素可以排列的区域，因为元素可以自由地在区域内排列。
+这一讨论说明 （\mex{-1}） 比 （\mex{-2}）的限制性更强。但是，有些上下文中，大家可以想象使用（\mex{0}b）那样的非连续成分\iscesub{成分}{constituent}{非连续}{discontinuous}。例如，为了描写动词复杂形式、动词性小词（particle verb）和一些并列结构，也有学者提出了不连续成分\citep{Wells47a}。在HPSG\indexhpsg 框架中使用非连续成分进行分析的例子有 \citew{Reape94a}、 \citew{Kathol95a}、 \citew{Kathol2000a}、 \citew{Crysmann2003c}和 \citew{BS2004a}。\dotfootnote{%
+  Crysmann、Beaver和Sag分析了并列现象\isce{并列}{coordination}。关于在TAG\indextag 框架内使用不连续成分分析并列现象，可以参见 \citew{SJ96a}和\ref{Abschnitt-Koordination}。%
+} 更加具体的讨论可以参见\ref{sec-discontinuous-constituents-HPSG} ，这些分析与前面所展示的方法的不同之处在于，它们使用\textsc{domain}特征而不用子结点特征，或者除了用子结点特征之外还使用\textsc{domain}特征。\textsc{domain}特征的取值是一个列表，包括中心语以及依赖于中心语的成分。这些元素并不一定非得在话段中邻接，也就是说，允许不连续成分。哪些元素以何种方式进入到这一列表由语言学理论的一部分限制所决定。这种方式与ECG中简单的\textbf{before}声明的不同之处在于，这种方式更加灵活而且可以限定一个特定元素可以排列的区域，因为元素可以自由地在区域内排列。
 %This discussion has shown that (\mex{-1}) is more restrictive than (\mex{-2}). There are, however, contexts in which one could imagine using
 %discontinuous constituents\is{constituent!discontinuous} such as the deviant one in (\mex{0}b). For example, discontinuous constituents have been
 %proposed for verbal complexes, particle verbs and certain coordination data \citep{Wells47a}. 
