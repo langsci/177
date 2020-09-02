@@ -525,14 +525,18 @@ Ulrike Harbort \\
 \if\@proofreader\empty\else
 校对：
 %Proofreading:
-\@proofreader \\
+\begin{tabular}[t]{@{}l@{}}\@proofreader \\
+\end{tabular}\\
 \fi
 \if\@openreviewer\empty\else
 公开评审：
 %Open reviewing:
 \@openreviewer \\
 \fi
-字体：Linux Libertine \ \ Arimo \ \ DejaVu Sans Mono\lsAdditionalFontsImprint\\
+字体：
+\begin{tabular}[t]{@{}l@{}}
+Linux Libertine \ \ Arimo \ \ DejaVu Sans Mono\lsAdditionalFontsImprint\\
+\end{tabular}\\
 %Fonts: Libertinus, Arimo, DejaVu Sans Mono\lsAdditionalFontsImprint\\
 排版软件：\XeLaTeX
 %Typesetting software: \XeLaTeX
