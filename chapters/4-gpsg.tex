@@ -1153,6 +1153,7 @@ sm edges
 %This is shown in Figure~\vref{fig-gpsg-udc}. 
 \begin{figure}
 \centerline{%
+%\scalebox{.95}{%
 %http://tex.stackexchange.com/questions/187407/add-a-node-without-content-to-a-tree-in-forest/187433#187433
 \begin{forest}
 sm edges,empty nodes
@@ -1167,6 +1168,7 @@ sm edges,empty nodes
          [{N2[nom]} [ich;我] ]
          [{V[6,$-$\textsc{mc}]} [gesehen habe;看见 \textsc{aux},roof] ] ] ] ] ]
 \end{forest}
+%}
 }
 \caption{\label{fig-gpsg-udc}GPSG中的长距离依存分析}
 %\caption{\label{fig-gpsg-udc}Analysis of long-distance dependencies in GPSG}
@@ -1202,7 +1204,8 @@ Principle}控制，它是指所有子结点的底部特征也在父结点上出�
 %was possible to explain the simultaneous extraction of elements from conjuncts (Across the Board Extraction\is{Across the Board Extraction}, %\citealp{Ross67a}). The following examples from
 % \citet[\page 173]{Gazdar81a} show that gaps in conjuncts must be identical, that is, a filler of a
 % certain category must correspond to a gap in %every conjunct:
-\addlines[2]
+%\addlines[2]
+%\squeezepage
 \eal\settowidth\jamwidth{(= S/NP \& S/NP)}
 \label{ex-atb-gazdar}
 \ex

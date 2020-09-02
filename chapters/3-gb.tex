@@ -690,7 +690,7 @@ $\theta$-角色                & \underline{施事} & 受益者\\[2mm]\hline
 %\subsection{\xbart}
 \label{Abschnitt-X-Bar}
 
-在GB理论\isceat[|(]{X 理论}{\xbar 理论}{X theory}{\xbar theory}中，所有由核心语法\isce{核心语法}{core grammar}\bracketfootnote{%
+在GB理论\isceat[|(]{X 理论}{\xbar 理论}{X theory}{\xbar theory}中，所有由核心语法\isce{核心语法}{core grammar}\footnote{%
 \citet[\page 7--8]{Chomsky81a}将语言区分成常规区域和边缘区域，常规区域是指那些由语法决定的，基于基因自然习得的那部分固定的语言知识，而边缘区域是指语言中不规则的部分，\egc 熟语\emph{to pull the wool over sb.'s eyes}（掩人耳目）。请参阅\ref{Abschnitt-musterbasiert}。
 }
 允准的句法结构都适用于\xbar 范式（参见\ref{sec-xbar}）。\dotfootnote{%
@@ -1824,7 +1824,7 @@ sm edges
     }
 \mytrans{你认为我看见谁了？}
 %\mytrans{Who do you think I saw?}
-\addlines
+%\addlines
 \ex 
 \gll {}[Gegen ihn]$_i$ falle es den Republikanern hingegen schwerer,~~~~~~~~~~~~~~~~~~~~~ [~[~Angriffe~\_$_i$] zu lancieren].\footnotemark\\
 	 {}\spacebr{}反对 他 落下 \textsc{expl} \defart{} 共和党人们 但是 更难 \hspaceThis{[~[~}攻击 \textsc{inf} 发起\\
@@ -2007,10 +2007,10 @@ sm edges
 				[NP,   name=aobject [den Jungen;\textsc{da} 男孩, roof]]
 				[V,name=verb    [zeig-;展示-]]]]]
 	[I, name=Infl [-t;-\textsc{3sg}]]]]
-\draw[->,dotted] (Infl.north) .. controls (3.5,-0.5) and (-1.5,-.1) .. ($(subject.north)+(-.1,.1)$);
-\draw[->]        (verb.north) .. controls (2.9,-3.8) and (-.4,.5) .. ($(subject.north)+(0,.1)$);
-\draw[->,dashed] (verb.north) .. controls (2.8,-3.3) and (0,-3.7) .. ($(dobject.north)+(0,.1)$);
-\draw[->,dashed] (verb.north) .. controls (2.0,-4.5) and (1.6,-5.0) .. ($(aobject.north)+(0,.1)$);
+\draw[->,dotted] (Infl.north) .. controls (3.5,-0.1) and (-1.5,.3) .. ($(subject.north)+(-.1,.1)$);
+\draw[->]        (verb.north) .. controls (2.9,-3.4) and (-.4,.9) .. ($(subject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.8,-2.9) and (0,-3.3) .. ($(dobject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.0,-4.1) and (1.6,-4.6) .. ($(aobject.north)+(0,.1)$);
 %\draw (-4,-7) to[grid with coordinates] (4,0.5);
 \end{forest}\hfill%\hspace{1cm}
 \begin{tabular}[b]{ll@{}}
@@ -2047,11 +2047,11 @@ sm edges
 				[NP,   name=aobject [\_$_i$]]
 				[V,name=verb [gezeigt wir-;展示 \passive, roof]]]]]
 	[I, name=Infl [-\/d;-\textsc{prs.3s}]]]]
-\draw[->,dotted] (Infl.north) .. controls (2.6,-.25)   and (-1.4,-.25) .. ($(subject.north)+(0,.1)$);
-\draw[->,dashed] (verb.north) .. controls (2.2,-3.8) and (0,-3.4) .. ($(dobject.north)+(0,.1)$);
-\draw[->]        (verb.north) .. controls (2.0,-4.8) and (1.2,-4.6) .. ($(aobject.north)+(0,.1)$);
+\draw[->,dotted] (Infl.north) .. controls (2.6,.15)   and (-1.4,.15) .. ($(subject.north)+(0,.1)$);
+\draw[->,dashed] (verb.north) .. controls (2.2,-3.4) and (0,-3.0) .. ($(dobject.north)+(0,.1)$);
+\draw[->]        (verb.north) .. controls (2.0,-4.4) and (1.2,-4.2) .. ($(aobject.north)+(0,.1)$);
 %\draw (-3,-7) to[grid with coordinates] (4,0.5);
-\end{forest}\hspace{1cm}
+\end{forest}\hspace{1.8cm}
 \begin{tabular}[b]{ll@{}}
 \tikz[baseline]\draw[dotted](0,1ex)--(1,1ex);&只有格\\
 \tikz[baseline]\draw(0,1ex)--(1,1ex);&只有$\theta$-角色\\
@@ -2597,9 +2597,9 @@ of ongoing work. }
    \citew[\page 397, 399, 400]{Stabler2010a}。 
 }，以及对基本假设的不断修订\footnote{%
 	参考 \citew[\page 4]{Kolb97a}、 \citew{Fanselow2009a} 和第\pageref{Zitat-Stabler}页引用Stabler的话。
-} 导致他们的研究成果极少能够应用到计算机实现中。有一些实现系统是基于转换语法、GB理论、MP模型或借鉴了主流的生成语法思想的\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,FG2012a}\bracketfootnote{%
+} 导致他们的研究成果极少能够应用到计算机实现中。有一些实现系统是基于转换语法、GB理论、MP模型或借鉴了主流的生成语法思想的\citep*{Petrick65a-u,ZFHW65a,Kay67a,Friedman69a,FBDPM71a-u,Morin73a-u,Marcus80a-u,AC86a,Kuhns86a,Correra87a,Stabler87a,Stabler92a-u,Stabler2001a,KT91a,Fong91a-u,CL92a,Lohnstein93a-u,FC94a,Nordgard94a,Veenstra98a,FG2012a}。\dotfootnote{%
   请参阅 \citew{FC94a}将统计方法整合进GB理论中的研究。
-}。但是，这些实现系统通常不用转换或者很大程度上与提出的理论假设不一致。例如， \citet[\page 102--104]{Marcus80a-u}和
+} 但是，这些实现系统通常不用转换或者很大程度上与提出的理论假设不一致。例如， \citet[\page 102--104]{Marcus80a-u}和
  \citet[\page 5]{Stabler87a}应用特别的规则来描述助动词倒装\isce{助动词倒装}{auxiliary inversion}的问题。\dotfootnote{%
    \citet{NF86a-u,NF87a-u}指出，Marcus的剖析器只能剖析上下文无关的语言。由于自然语言更为复杂（见第\ref{sec-generative-capacity}章），而且相应复杂度的语法可以在目前的转换语法的框架内被允准，Marcus的剖析器既不是对乔姆斯基式理论的充分实现，也不是分析自然语言整体的一个软件。
 }
