@@ -9,6 +9,9 @@
 
 % this avoids a linebreak between dot and footnote: ....。\footnote
 \xeCJKsetup{CheckFullRight=true}
+\xeCJKsetup{NoBreakCS = { \footnote \footnotemark \nobreak \dotfootnote \colonfootnote
+    \commafootnote \bracketfootnotequote \bracketfootnote}}
+
 
 %\xeCJKsetup{PunctStyle=plain}
 %\xeCJKsetup{PunctStyle=kaiming}
@@ -755,8 +758,11 @@ Ulrike Harbort \\
 \newcommand{\idefart}{\textsc{ia}\xspace}
 
 
-
+%。
 \newcommand{\dotfootnote}[1]{\hspace{-.3em}\footnote{#1}}
+%，
+\newcommand{\commafootnote}[1]{\hspace{-.3em}\footnote{#1}}
+%：
 \newcommand{\colonfootnote}[1]{\hspace{-.2em}\footnote{#1}}
 \newcommand{\bracketfootnote}[1]{\hspace{-.2em}\footnote{#1}}
 \newcommand{\bracketfootnotequote}[1]{\hspace{-.1em}\footnote{#1}}
