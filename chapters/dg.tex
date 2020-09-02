@@ -1556,6 +1556,7 @@ dg edges
 %If the second analysis finds ways of specifying the agreement properties
 %of the coordination in the conjunction, the agreement facts can be accounted for without problems.
 
+\addlines
 与图\ref{fig-dg-coordination-with-conjunction-as-head}中描述的中心语方法相比的另一种方法没有中心语。在基于短语结构的框架下分析的几篇文章提出了没有中心语的并列结构的分析。这类分析也在依存语法中被提及\citep{Hudson88a,Kahane97a}。 \citet{Hudson88a}和其他作出了相似假设的学者提出了一个针对并列的短语结构成分：
 两个名词和连词被组合在一起构成一个更大的对象，它具有与任何一个组合的词语不对应的属性。
 %The alternative to a headed approach as depicted in Figure~\ref{fig-dg-coordination-with-conjunction-as-head} is an unheaded one. Several authors
@@ -1659,7 +1660,6 @@ dg edges
 %\caption{\label{fig-dg-adjunct-attachment-right}Analysis of verb coordination involving the connection relation}
 \end{figure}%
 
-\addlines
 \citet[\page 217]{Levine2003a}讨论了这些句子，他们跟 \citet*{BMS2001a}提出的\hpsgc 式的提取\isce{提取}{extraction}分析有关。Bouma, Malouf \& Sag提出了，附加语作为中心语的从属语而从词汇的角度被引入的想法。因为附加语按照词汇的方法来引入，并列结构基本上与泰尼埃式的分析具有相同的结构。有可能会想到正确的语义组成成分的方式，即使句法并不对应于语义依存关系（参见\citet{Chaves2009a}的观点），但是清楚的是，针对语义中的情况，从句法结构得到语义更简单。
 % \citet[\page 217]{Levine2003a} discusses these sentences in connection to the \hpsg analysis of
 %extraction\is{extraction} by  \citet*{BMS2001a}. Bouma, Malouf \& Sag suggest an analysis in which adjuncts are
@@ -1674,12 +1674,12 @@ dg edges
 %\subsubsection{Transfer}
 \label{sec-transfer-dg}
 
+%\addlines
 在\tes 的系统中，转用被用于主要范畴（如名词）中的中心语与次要范畴（如介词）的词相组合的词或短语。另外，转用可以在不需要任何其他词的参与下，变换词或短语的范畴。
 %Transfers\todostefan{Liu Haitao: please refer to  \citew{Werner93a-u}.} are used in \tes's system for the combination of words or phrases with a head of %one of
 %the major categories (for instance nouns) with words in minor categories (for instance
 %prepositions). In addition, transfers can transfer a word or phrase into another category without
 %any other word participating.
-\pagebreak
 
 图\ref{fig-transfer-in-das-traumboot}就是转用的一个例子。
 %Figure~\ref{fig-transfer-in-das-traumboot} shows an example of a transfer.
@@ -1725,7 +1725,6 @@ dg edges
 
 使用转用的另一个方面是形态学。比如说，法语\ilce{法语}{French}frappant（惊人的）的派生通过词根frapp加
 上后缀\suffix{ant}构成，如图\vref{fig-transfer-frappant}所示。
-\largerpage
 %Another area in which transfer is used is morphology. For instance, the derivation of French\il{French}
 %\emph{frappant} `striking' by suffixation of \suffix{ant} to the verb stem \emph{frapp} is shown in
 %Figure~\vref{fig-transfer-frappant}.
@@ -1779,7 +1778,7 @@ dg edges
 %page~\pageref{passiv-lr-mit-dtr} and
 %Section~\ref{Abschnitt-leere-Elemente-LRs-Transformations}). The affixes are integrated into the
 %lexical rules or into realization functions that specify the morphological form of the item that is licensed by the lexical rule.
-\pagebreak
+%\pagebreak
 
 总结一下，这里所说的转用是指
 %Concluding it can be said that transfer corresponds to 
@@ -1824,7 +1823,7 @@ dg edges
   [red,edge label={node[midway,above,font=\small]{B~~~~~}}]
   [that you saw yesterday, no edge]]
 %\draw (-2,-3) to[grid with coordinates] (3,1);
-\draw (-.3,-1) -- (.6,-2)  node[font=\small,midway,above] {~~~A};
+\draw (-.47,-.8) -- (.75,-1.75)  node[font=\small,midway,above] {~~~A};
 \end{forest}
 \hfill
 \begin{forest}
@@ -2511,6 +2510,7 @@ X是中心语的范畴，Y1、Y2和Y3是中心语的从属语，而且“\textas
 V $\to$ N reads N Adv*
 \z 
 
+\largerpage
 这种广义短语结构等同于可投射的依存语法。\dotfootnote{\label{fn-dg-binary-branching}%
 Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来说非常重要，因为主语只有一条规则，宾语只有一条规则，以及其他（比如说\citet{Kahane2009a}，这是在HPSG理论的形式框架下的依存语法的实现）。不过，我没有想到有任何原因需要反对平铺结构。比如说， \citet[\page 364]{GSag2000a-u}在HPSG理论中提出了主语助动词转换的平铺结构。在这类平铺规则中，限定语/主语和其他补足语在同一个目标下与动词组合在一起。这也适用于两个以上配价特征的语法功能范畴，如主语、直接宾语、间接宾语。也参见关于平铺规则的脚注\ref{fn-flat-dg-rules}。
 } 但是，正如我们看到的，有些研究人员对非连续的成分允许了交叉边的存在。接着，我来说明依存语法如何在HPSG理论中被形式化。
@@ -2555,7 +2555,7 @@ Sylvain Kahane（个人交流 \, 2015）指出，二元性对于依存语法来�
   dom  & \ibox{1} $\bigcirc$ \ibox{2} \\
 }
 \z
-\addlines
+%\addlines
 符号“$\bigcirc$”\isce{置乱关系}{$\bigcirc$}\iscesub{关系}{relation}{置乱关系}{$\bigcirc$}\isrel{shuffle}\label{rel-shuffle}表示shuffle（置乱关系）。shuffle（置乱关系）连接了A、B和C三个列表，当且仅当C包括了A和B中的所有成分，而且A中成分的语序和B中成分的语序保存在C中。（\mex{1}）分别显示了带有两个成分的两个集合的组合：
 %The symbol `$\bigcirc$'\is{$\bigcirc$}\is{relation!$\bigcirc$}\isrel{shuffle}\label{rel-shuffle}
 %stands for the \emph{shuffle} relation. \emph{shuffle} relates three lists A, B and C iff C
@@ -2864,6 +2864,7 @@ Dass Peter kommt, klärt nicht, ob Klaus kommt.（Peter来并不能说明Klaus�
 %
 %Similarly, non-projective analyses without any constraints regarding continuity would permit the
 %word salad in (\mex{1}b):
+%\largerpage[2]
 \eal
 \ex[]{
 \gll Deshalb klärt, dass Peter kommt, ob Klaus spielt.\\
@@ -2982,6 +2983,7 @@ dg edges
 %Now, the problem for the Dependency Grammar notation is that there is no NP node that could be
 %associated with the semantics of \emph{a book} (see Figure~\ref{fig-a-book-psg-dg} on page~\pageref{fig-a-book-psg-dg}), the only thing present in the %tree is a node for the
 %lexical N: the node for \emph{book}.\footnote{\citet[\page 391--392]{Hudson2003a}\indexwg is explicit about this: ``In dependency analysis, the %dependents modify the head word's meaning, so the latter carries the meaning of the whole phrase. For example, in  \emph{long books about %linguistics}, the word \emph{books} means `long books about linguistics' thanks to the modifying effect of the dependents.'' For a concrete %implementation of this idea see Figure~\vref{fig-wg-small-children-are-playing-outside}.An alternative is to assume different representational levels as in %\mtt \citep{Melcuk81a}. In fact the \contv in HPSG is also a different representational level. However, this representational level is in sync  with the other %structure that is build.} This is not a big problem, however: the lexical properties can be represented as part of the highest node as the value of a %separate feature. The N node in a dependency graph would then have a \contv that corresponds to the semantic contribution of the complete phrase %and a \textsc{lex-cont} value that corresponds to the contribution of the lexical head of the phrase. So for \emph{a book} we would get the following %representation:
+\largerpage[1.5]
 \ea
 \ms{
 cont & $\lambda Q \exists x (\relation{book}(x) \wedge Q(x))$\\
