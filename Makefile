@@ -6,7 +6,7 @@ LSP-STYLES=~/Documents/Dienstlich/Projekte/OALI/Git-HUB/latex/langsci/
 ZHMAKEINDEX-PATH=~/bin/
 
 # I remove gt.bib here since others do not have my bibliography files
-SOURCE= $(wildcard local*.tex) $(wildcard chapters/*.tex)	grammatical-theory.tex           \
+SOURCE= $(wildcard local*.tex) $(wildcard *.sty) $(wildcard chapters/*.tex)	grammatical-theory.tex           \
 	grammatical-theory-include.tex   \
 	backmatter.tex 
 
@@ -24,11 +24,8 @@ all: grammatical-theory.pdf
 	biber $*
 	xelatex -no-pdf -interaction=nonstopmode $*
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.sdx # ordering of references to footnotes
-	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.adx
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldx
 	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' *.ldxe
-	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' *.adx
-	sed -i.backup 's/{\\O }/Oe/' *.adx
 	sed -i.backup 's/\\MakeCapital //g' *.adx
 	python3 fixindex.py $*.adx
 	mv $*mod.adx $*.adx
@@ -57,9 +54,6 @@ subject-index:
 
 author-index:
 	xelatex grammatical-theory.tex
-	sed -i.backup 's/hyperindexformat{\\\(infn {[0-9]*\)}/\1/' grammatical-theory.adx
-	sed -i.backup 's/\\protect \\active@dq \\dq@prtct {=}/"=/g' grammatical-theory.adx
-	sed -i.backup 's/{\\O }/Oe/' grammatical-theory.adx
 	sed -i.backup 's/\\MakeCapital //g' grammatical-theory.adx
 	python3 fixindex.py grammatical-theory.adx
 	mv grammatical-theorymod.adx grammatical-theory.adx
@@ -170,6 +164,18 @@ memos2:
 	python3 memomanager.py split grammatical-theory.mmz
 	biber grammatical-theory
 	xelatex -shell-escape grammatical-theory
+
+# to eliminate the risk of jumping trees build the complete pdf without
+# memozation (main.tex does load nomemoize) and then latex compile-memos-grammatical-theory.tex
+# (which does load memoize, ignores \addlines and does not have the bibliography compiled) and call the extraction script after this.
+# call with "make -i" to ignore all errors that may be caused to latex runs.
+# If xelatex cannot extract the memos recorded during the firt run, it would otherwise fail,
+# but we need at least two runs to get the jumping trees to stabilaze
+memos: cleanmemo 
+	xelatex -interaction=nonstopmode compile-memos-grammatical-theory
+	rm compile-memos-grammatical-theory.mmz # we do not want to extract yet
+	xelatex -interaction=nonstopmode compile-memos-grammatical-theory
+	python3 memomanager.py split compile-memos-grammatical-theory.mmz
 
 
 public: grammatical-theory.pdf
