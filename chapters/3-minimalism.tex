@@ -172,7 +172,8 @@ Andreas Pankau（私下谈话，2015）跟我指出，这种分段的概念有�
 \begin{figure}
 \centering
 \begin{forest}
-baseline
+% to fix a bug: hack
+for descendants={anchor=north}
 [N 
   [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
@@ -195,7 +196,6 @@ letters的P特征是不可预测的，这点由P前面的小u表示。letters的
 \begin{figure}
 \centering
 \begin{forest}
-baseline
 [N 
   [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [\emph{to} {[P, \textit{u}N]}\\\textsc{prep}\hspaceThis{[P, \textit{u}N]}]]
@@ -224,13 +224,15 @@ baseline
 \mytrans{给他的信}
 }
 \zl
+\addlines
 例（\mex{0}b）的分析如图\vref{fig-letters-to-him-minimalism}所示。
 %The analysis of (\mex{0}b) is shown in Figure~\vref{fig-letters-to-him-minimalism}.
 \begin{figure}
 \centering
 \begin{forest}
-baseline
-[N 
+% to fix a bug: hack
+for descendants={anchor=north}
+[N
   [\emph{letters} {[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
     [\emph{to} {[P, \st{\textit{u}N}, \st{acc}]}\\\textsc{prep}\hspaceThis{[P, \st{\textit{u}N}, \st{acc}]}]
@@ -239,7 +241,7 @@ baseline
 \caption{\label{fig-letters-to-him-minimalism}一致关系的特征核查}
 %\caption{\label{fig-letters-to-him-minimalism}Feature checking via Agree}
 \end{figure}%
-在选择性特征核查与一致关系核查之间有着有趣的差别。一致关系所核查的特征不需要是与中心语相组合的对象的最高结点。这在后面被动和局部重新排序的分析中发挥着一定的作用。
+在选择性特征核查与一致关系核查之间有着有趣的差别。一致关系所核查的特征不需要是与中心语相组合的对象的最高结点。这在后面被动和局部重新排序的分析中发挥着一定的作用。%
 %There is an interesting difference between the checking of selectional features and the checking of
 %features via Agree. The features that are checked via Agree do not have to be at the top node of the
 %object that is combined with a head. This will play a role later in the analysis of the passive and
@@ -521,6 +523,7 @@ baseline
 %a suitable D has to move to the specifier of T and check the D
 %locally. Figure~\vref{fig-Anna-will-read-the-book-minimalism} shows the TP that plays a role in the
 %analysis of (\mex{1}):
+\addlines
 \ea
 \gll Anna will read the book.\\
 Anna 将 读 \defart{} 书\\
@@ -1093,7 +1096,7 @@ G.\,Müller提出了\textit{v}的可选特征和触发局部重新排序的V（�
 \label{Abschnitt-MP-funktionale-Projektionen}\label{sec-functional-projections-minimalism}
 \label{Abschnitt-Kaynesche-Modelle}
 
-\addlines[-1]
+%\addlines[-1]
 %\largerpage[2]
 Johnson、Lappin和Kolb曾质疑过Chomsky系统的计算方面。Chomsky将经济原则引入了理论。在某些条件下，语法系统可以创造出一个任意数量的结构，但是只能是最经济的，也就是说，那些需要最少力气来产生的结构被认为是合乎语法的，也叫做转移派生式经济原则（transderivational economy\iscesub{经济原则}{economy}{转移派生式经济原则}{transderivational}）。这一假设并不需要被过分重视，实际上，它在最简方案框架下的很多研究中没有发挥出重要的作用（尽管如此，可参考 \citet{Richards2015a}对近期的生成方法的经济性所进行的比较工作）。无论如何，Chomsky的理论的其他方面可以在很多近期的研究中有所发现。比如说，Chomsky提出将基本结构的构建允准规则的数量减少到两个：移位\isce{移位}{Move}\footnote{
 移位（Move）专指最简方案中的成分移位操作。⸺ 译者}和合并\isce{合并}{Merge}（即内部\iscesub{合并}{Merge}{内部}{Internal}和外部合并\iscesub{合并}{Merge}{外部}{External}）。移位对应于\moveac 操作，这点已经在第\ref{chap-gb}章有所讨论，合并是将（两个）语言对象进行组合。
@@ -1136,6 +1139,7 @@ Johnson、Lappin和Kolb曾质疑过Chomsky系统的计算方面。Chomsky将经�
 
 在所谓的制图\isce{制图}{cartography}方法中，每个形态句法特征都对应于一个独立的句法中心语 \citep[\page 54, 61]{CR2010a}。对于一个明显形式化的方法来说，在一个组合操作中有一个特征被利用了，参见 \citew[\page 335]{Stabler2001a}。Stabler的最简方案语法（Minimalist Grammars）\indexmg 在\ref{Abschnitt-MG}中有更为详细的讨论。
 }
+\addlines[2]
 \citet[\page 297]{Rizzi97a-u}提出了图\vref{Abbildung-Rizzi}（也可以参考Grewendorf \citeyear[\page 85, 240]{Grewendorf2002a}，\citeyear{Grewendorf2009a}）中的结构。
 %The assumption that movement must be licensed by feature checking has led to an inflation of the number of (silent) functional 
 %heads\is{category!functional}.\footnote{%
@@ -1244,12 +1248,12 @@ AgrN\iscesubsub{范畴}{category}{功能}{functional}{AgrN}{AgrN}、AgrV\iscesub
 % \citet[\page 31]{Poletto2000a-u} suggests both a HearerP\is{category!functional!Hearer} and a SpeakerP\is{category!functional!Speaker} for the 
 %position of clitics in Italian\il{Italian}.
 
-\largerpage
+%\largerpage
 \citet[\page 106]{Cinque99a-u}在他的研究中采用了32个功能中心语，如表\vref{Tabelle-Cinque}所示。\dotfootnote{%
  Mood表示语气，它包括5种次范畴，其中Speech Act是言语行为、Evaluative是评价、Evidential是传信、Epistemic是认识、Irrealis是非现实。T表示时，它包括3种次范畴，其中Past是过去时、Future是将来时、Anterior是先时。Mod表示情态，它包括5种次范畴，其中Necessity是必然性、Possibility是可能性、Volitional是意愿性、Obligation是责任、Ability/permission是能力/许可。Asp表示体，它包括19种次范畴，其中Habitual是惯常体、Repetitive I是重复体 I、Frequentative I是频率体 I、Celerative I是速度体 I、Terminative是终止体、Continuative是延续体、Perfect是完成体、Retrospective是回顾体、Proximative是接近体、Durative是持续体、Generic/progressive是通体/进行体、Prospective是将行体、SgCompletive I是Sg完整体 I、PlCompletive是Pl完整体、Voice是语态体、Celerative II是速度体 II、SgCompletive II是Sg完整体 II、Repetitive II是重复体 II、Frequentative II是频率体 II。⸺译者
 }
 % \citet[\page 106]{Cinque99a-u} adopts the 32 functional heads in Table~\vref{Tabelle-Cinque} in his work.
-\begin{table}[t]
+\begin{table}%[t]
 \begin{tabular}[t]{@{}r@{~~}l@{~~~}r@{~~}l@{~~~}r@{~~}l@{~~~}r@{~~}l@{}}
 \lsptoprule
  1. & Mood\sub{Speech Act}     &  2. & Mood\sub{Evaluative}     &  3. & Mood\sub{Evidential}      &  4. & Mood\sub{Epistemic}\\
@@ -1292,7 +1296,7 @@ AgrN\iscesubsub{范畴}{category}{功能}{functional}{AgrN}{AgrN}、AgrV\iscesub
 %that all syntactic structures have the order specifier head complement cross-linguistically, even if the surface order of the constituents
 %seems to contradict this.%\pagebreak
 
-\largerpage
+%\largerpage
 最后看到的组成成分序列是通过左向移位生成的。\dotfootnote{\label{fn-Kayne-Extraposition}%
 这也适用于外置\isce{外置}{extraposition}，即德语中将成分移到后场。通常这会被分析为右向移位， \citet[第9章]{Kayne94a-u}将它分析为把所有其他成分向左移动。Kayne认为（i.b）是通过移动DP的一部分而从（i.a）中推导而来的：
 \eal
@@ -1340,59 +1344,6 @@ AgrN\iscesubsub{范畴}{category}{功能}{functional}{AgrN}{AgrN}、AgrV\iscesub
 %	with complements to form an XP rather than an X$'$. For more on \xbar theory in the Minimalist Program, 
 %	see Section~\ref{Abschnitt-Spezfikatoren-MP}.
 %}
-%%\begin{figure}
-%\resizebox{\linewidth}{!}
-%%\centerline{
-%\small
-%% \psset{xunit=7.5mm,yunit=6mm}
-%% %
-%% \begin{pspicture}(-0.4,4)(14.2,20.2)
-%% \rput[B](2,20){\rnode{ForceP}{CP}}
-%% \rput[B](0,18){\rnode{C}{\cnull}}
-%% \rput[B](4,18){\rnode{ForceS}{SubjP}}
-%% \rput[B](2,16){\rnode{Force}{DP}}
-%% \rput[B](6,16){\rnode{TopP}{\ldots ObjP}}
-%% \rput[B](4,14){\rnode{SpecTopP}{DP}}
-%% \rput[B](8,14){\rnode{TopS}{\ldots AuxP}}
-%% \rput[B](6,12){\rnode{SpecAuxP}{VP}}
-%% \rput[B](10,12){\rnode{FocP}{Aux+}}
-%% \rput[B](8,10){\rnode{Aux}{Aux}}
-%% \rput[B](12,10){\rnode{FocS}{\ldots VP}}
-%% \rput[B](10,8){\rnode{Foc}{V}}
-%% \rput[B](14,8){\rnode{TopP2}{DP}}
-%% %
-%% \psset{angleA=-90,angleB=90,arm=0pt}
-%% %
-%% \ncdiag{ForceP}{C}\ncdiag{ForceP}{ForceS}
-%% \ncdiag{ForceS}{Force}\ncdiag{ForceS}{TopP}
-%% \ncdiag{TopP}{SpecTopP}\ncdiag{TopP}{TopS}
-%% \ncdiag{TopS}{SpecAuxP}\ncdiag{TopS}{FocP}
-%% \ncdiag{FocP}{Aux}\ncdiag{FocP}{FocS}
-%% \ncdiag{FocS}{Foc}\ncdiag{FocS}{TopP2}
-%% \ncdiag{TopP2}{SpecTopP2}\ncdiag{TopP2}{TopS2}
-%% \ncdiag{TopS2}{Top2}\ncdiag{TopS2}{FinP}
-%% \ncdiag{FinP}{SpecFinP}\ncdiag{FinP}{FinS}
-%% \ncdiag{FinS}{Fin}\ncdiag{FinS}{IP}
-%% %
-%% %\psgrid
-%% %
-%% \rput[B](0,6){\rnode{weil}{weil}}
-%% \rput[B](2,6){\rnode{Mann}{der Mann}}
-%% \rput[B](4,6){\rnode{Buch}{das Buch}}
-%% \rput[B](6,6){\rnode{gelesen}{gelesen}}
-%% \rput[B](8,6){\rnode{hat}{hat}}
-%% %
-%% \ncdiag{C}{weil}
-%% \ncdiag{SpecAuxP}{gelesen}
-%% \ncdiag{Aux}{hat}
-%% \pstriangle(2,6.7)(1.6,9)
-%% \pstriangle(4,6.7)(1.6,7)
-%% \pscircle(12,8.5){1.9}
-%% \psline{->}(12,5.4)(12,5)(6,5)(6,5.6)
-%% \psline{->}(14,7.8)(14,4)(4,4)(4,5.6)
-%% \end{pspicture}}
-%% \caption{\label{Abbildung-Remnant-Movement-Satzstruktur}Analyse der Satzstruktur mit Restbewegung nach links}
-%% \end{figure}%
 \begin{figure}
 \oneline{%
 \begin{forest}
@@ -1673,6 +1624,7 @@ Ken 能够 \textsc{aux} 不 听 \defart{} 新闻\\
 %Section~\ref{sec-locality} of this book) and would be much more complicated than accounts
 %that assume a direct selection of dependents.
 
+\addlines
 与前述我们讨论的局部性问题相关的是附着形式的位置的特殊功能投射的假设：如果使用SpeakerP\iscesubsub{范畴}{category}{功能}{functional}{说话者}{Speaker} ，那么第一人称单数的附着形式就可以移到正确的限定语位置上，而对于HearerP\iscesubsub{范畴}{category}{功能}{functional}{听话者}{Hearer}来说，第二人称附着形式可以移到正确的位置上\citep[\page
 31]{Poletto2000a-u}，然后我们得到了所需要的用来编码所有与小句有关的特征的特殊投射（另外，我们当然可以假定非局部的一致关系表示分配事实）。在这些特征之外，范畴标签具有这样的信息，它允许更高位置上的中心语选择含有附着形式的小句。在其他方法和转换语法早期变体中，选择被认为是严格地受限于局部的\isce{局部性}{locality}，这样更高位置上的中心语只能接触到所嵌套语类的属性，这些范畴直接与选择相关（\citealp[\page 223]{Abraham2005a}；\citealp{Sag2007a}），而不与这样的信息有关，如小句内中心语的论元是说话者还是听话者，或者小句中的一些论元是否被实现为附着形式。局部限制将在\ref{Abschnitt-Diskussion-Lokalitaet}中讨论。
 %Related to the locality issues that were discussed in the previous paragraph is the assumption of
@@ -1859,6 +1811,7 @@ Chomsky在他\citeyear{Chomsky2013a}年这篇论文中给出了两个词汇项�
 %further criticism of Neo-Constructivist approaches see  \citew{Wechsler2008a} and  \citew[Sections~6.1
 %  and~7]{MWArgSt}.
 
+\addlines[2]
 代词与动词投射相组合带来的问题与上面讲的问题有关。在He left的分析中，代词he是一个词汇成分，所以需要为He left的标记负责，因为left是最简方案中的一个内在的复杂动词投射。结果可以是一个名词标记，而不是动词的。为了解决这一问题，\citet[\page 46]{Chomsky2013a}指出he有一个复杂的内部结构：“也许是D-pro”，即he（可能）是在一个可见的限定词和一个名词之外构成的。
 %The combination of a pronoun with a verbal projection poses a problem that is related to what has
 %been said above. In the analysis of \emph{He left}, the pronoun \emph{he} is a lexical element and
@@ -1894,7 +1847,7 @@ Chomsky在他\citeyear{Chomsky2013a}年这篇论文中给出了两个词汇项�
 %% coordinated and in a next step are combined with the verbal projection (TP in Minimalist
 %% terms). This analysis seems to be not available in Chomsky's setting.
 
- \citew{Chomsky2008a}没有讨论两个非词汇项外部合并的情况（如一个名词短语和动词短语）。\citet[\page 43--44]{Chomsky2013a}指出，短语XP与\{ XP, YP \}的标记无关，如果XP进一步被移位的话（或者是在移位拷贝理论中被复制\isce{移位拷贝理论}{Copy Theory of Movement}）。Chomsky认为在\{ XP, YP \}组合中的两个短语中的一个成分要被移位，因为不然的话就无法标记了（第12页）。\dotfootnote{\label{fn-labeling-gleiche-Kategorie}%
+\citew{Chomsky2008a}没有讨论两个非词汇项外部合并的情况（如一个名词短语和动词短语）。\citet[\page 43--44]{Chomsky2013a}指出，短语XP与\{ XP, YP \}的标记无关，如果XP进一步被移位的话（或者是在移位拷贝理论中被复制\isce{移位拷贝理论}{Copy Theory of Movement}）。Chomsky认为在\{ XP, YP \}组合中的两个短语中的一个成分要被移位，因为不然的话就无法标记了（第12页）。\dotfootnote{\label{fn-labeling-gleiche-Kategorie}%
 他的解释是自相矛盾的：在第11页，Chomsky认为两个具有相同范畴的实体的组合的标记就是这个范畴。但是在他对并列的操作中，他认为其中一个并列项需要被移动，否则完整的结构就不能得到标记了。
 }
 我们用下面并列的例子来说明。Chomsky认为，“Z  and W”这个表达式可以这样分析：首先，Z和W合并。这一表达式再与Conj组合\pref{ex-coord-a} ，然后在下一步Z被提升\pref{ex-coord-b}。
@@ -2065,6 +2018,9 @@ Chomsky关于自由关系小句的方法是有趣的，但是它并不能全方�
       }
 \zl
 %
+\addlines[2]
+\squeezepage
+\enlargethispage{3pt}
 由于wessen Schuhe（谁的鞋）并不是一个词汇项，我们就需要应用规则\pref{Label2}，而且对于这种情况没有额外的规则。这就意味着整个自由关系小句wessen Schuhe danach besprenkelt sind被标记为CP。对于标记为CP的\pmex{-1}和\pmex{0}中的自由关系小句并不是期望得到的结果，因为它们作为主谓词的主语或宾语，并由此被标记为DP。但是，因为wessen Schuhe是一个复杂短语，而不是一个词汇项，\pref{Label1}并不适用，所以就没有作为DP的自由关系小句的分析。所以说，看起来我们必须回到 \citet{GR81}提出的GB分析，至少是针对德语的例子。Gross和van Riemsdijk认为自由关系小句包括一个空名词，它像正常名词一样被关系小句修饰。在这个方法中，关系短语的复杂度是无关的。只有空中心语跟整个短语的标记有关。\dotfootnote{%
 假设空中心语是有问题的，因为它只能在那些由状语（即关系小句）修饰的情况下用作论元\citep[\page 97]{Mueller99b}。后期重新发现这一问题的也可以参考 \citew[\page 187]{Ott2011a}。这一问题可以在HPSG理论下得到解决，通过假定一个一元投射，投射到关系小句的合适范畴。我也应用一元投射来分析所谓的非匹配的自由关系小句\citep{Mueller99b}。在非匹配的自由关系小句的结构中，关系小句填充了论元槽的位置，该位置并不对应于关系短语的属性\citep{Bausewein90}。Bausewein讨论了下面的例子，这里关系短语是一个PP，但是自由关系代词填充了kocht（做饭）的宾格槽。
 \begin{exe}\exi{(i)}
@@ -2288,7 +2244,7 @@ Chomsky在他早期的研究中没有严格遵守线性化的思路，但是我�
 %  remarks will be relevant even under current Chomskyan assumptions.
 %}
 
-\addlines
+%\addlines
 \ea
 \label{ex-he-knows-and-loves-this-record-MP}
 \gll He [knows and loves] this record.\\
@@ -2408,6 +2364,7 @@ Chomsky试图去除标准\xbartc 的一元分支结构，该结构用来将代�
 %item. In Chomsky's system an analogous rule cannot be defined, since the coordination of two lexical
 %items is not a lexical item any longer.
 
+%\addlines[-1]
 正如Chomsky最近提出的最简方案，范畴语法\citep{Ajdukiewicz35a-u}和HPSG理论（Pollard \biband Sag \citeyear{ps}；\citeyear[\page 39--40]{ps2}）并不（严格）遵循\xbartc。所有的理论都将符号NP指派给代词（有关CG的内容参见 \citew[p.\,615]{SB2006a-u}，关于如何通过引入词汇类型提升来处理量化现象，请参阅 \citew[第4.4节]{Steedman2000a-u}）。短语likes Mary和词sleeps在范畴语法（s$\backslash$np）中具有相同的范畴。在所有的理论中，没有必要为了将像tree的名词与限定词或状语相组合而从\nnullc 投射到\nbarc。在受限不定式中的限定词和一价动词在许多HPSG理论的分析中没有从\xzeroc 层投射到XP层，因为每个语言对象（一个空的\subcatc 或\compslc）的价的属性足以确定它们的组合潜力以及句法分布（\citealp{Mueller96a}；\citealp{Mueller99a}）。如果最简的属性对于现象的描述是必要的，那么在HPSG理论中就应用了二元特征\textsc{lex}（Pollard \biband Sag \citeyear[\page 172]{ps}；\citeyear[\page 22]{ps2}）。但是，这个特征对于区分限定语和补足语来说不是必要的。这一区分由将论元结构列表（\argstc）的成分匹配到限定语与补足语的特征（分别缩写为\sprc 和\compsc）的配价列表的原则所决定。\dotfootnote{%
 有些作者提出了主语、限定语和补足语的三分法。
 } 严格来说，动词投射中的限定语是英语这类层次结构化语言中动词的最间接论元。由于论元结构列表是由 \citet{KC77a}提出的间接层级所决定的，该列表中的第一个成分是动词的最间接论元，而且该论元匹配到\sprlc 上。\sprlc 中的成分实现为英语等SVO型语言的动词左边的成分。\compslc 中的成分实现为它们的中心语右边的成分。 \citet[\page 34, 364]{GSag2000a-u}提出的方法认为中心语-补足语短语将动词及其论元组合起来，这与\pref{ex-he-knows-and-loves-this-record-MP}这类并列具有相同的问题，因为VP的中心语不是一个词。\dotfootnote{%
@@ -2526,6 +2483,7 @@ baseline
 %1 is the head in (\ref{tree-stabler-mg}), 2 is the complement and 3 the specifier. The pointer points to the part
 %of the structure that contains the head. The daughters in a tree are ordered, that is, 3 is
 %serialized before 1 and 1 before 2. 
+\pagebreak
 
 \citet[\page 402]{Stabler2010a}对外部合并的界定如下所示：
 % \citet[\page 402]{Stabler2010a} defines External Merge as follows:
@@ -3045,7 +3003,7 @@ non-head-dtrs & \liste{ $\beta$ }\\
 %  fronting without remnant movement. The analysis does not have any of the problems that remnant
 %  movement analyses have.
 %}
-\addlines[2]
+%\addlines[2]
 \ea
 \gll Gelesen$_i$ hat$_j$ das Buch keiner \_$_i$ \_$_j$.\\
         读 \textsc{aux} \defart{} 书 没有人\\
@@ -3307,6 +3265,7 @@ N[\spr \sliste{ Det }]
 \subsection{关于语言习得的解释}
 %\subsection{Explaining language acquisition}
 
+\addlines[2]
 \citet[\page 135]{Chomsky2008a}将MP中的理论归纳为原则\&参数分析，并将MP参数确定在词汇中。也可以参考 \citew[\page 396]{Hornstein2013a}。UG被界定为可能包括非具体语言的成分，它们是由基因决定的\citep[\page 7]{Chomsky2007a}。UG包括非绑定的合并，而且由语法生成的表达式的条件必须满足由语音和概念-意向接口规定的限制。另外，特征的具体集合被看作是UG的一部分\citep[\page 6--7]{Chomsky2007a}。这些特征的具体本质没有被详细地解释，而且结果是，UG的力量有时是模糊的。但是，在不同的语言学阵营里有达成一致的地方，就像Chomsky并不认为我们在\ref{Abschnitt-merkmalsgetriebene-Bewegung}中介绍的功能投射\iscesub{范畴}{category}{功能}{functional}的部分也构成UG的一部分（但是，像 \citet{CR2010a}这类作者认为功能投射的层级是UG的一部分）。由于参数的存在，\ref{sec-acquisition-gb}用来反对GB理论关于语言习得的论断与最简方案中语言习得的论断具有相关性。参见第\ref{chap-acquisition}章有关语言习得、原则\&参数模型，以及基于输入的方法的深入讨论。
 % \citet[\page 135]{Chomsky2008a} counts theories in the MP as Principle \& Parameter analyses and
 %identifies MP parameters as being in the lexicon. Also, see  \citew[\page 396]{Hornstein2013a}. UG is
@@ -3482,7 +3441,7 @@ into appropriate structural configurations with other elements (\citealp{Chomsky
 2005). And some recent work adopts the view that features are never deleted
 \citep[\page 11]{Chomsky2007a}. These issues remain unsolved.}
 \end{quotation}
-为了开发全部的语法片段，至少需要三年时间，我们可以算一下Barriers (1986）发表的文章和Stabler的应用（1992）发表的时间间隔。特别是大量的语法需要几个研究者在几年甚至是几十年间开展国际合作。如果基本假设在短期内反复变化，这一过程就会被打断。
+为了开发全部的语法片段，至少需要三年时间，我们可以算一下Barriers (1986）发表的文章和Stabler的应用（1992）发表的时间间隔。特别是大量的语法需要几个研究者在几年甚至是几十年间开展国际合作。如果基本假设在短期内反复变化，这一过程就会被打断。%
 %In order to fully develop a grammar fragment, one needs at least three years (compare the time span between the publication of 
 %\emph{Barriers} (1986)
 %and Stabler's implementation (1992)). Particularly large grammars require the knowledge of several researchers working in international %cooperation
@@ -3493,7 +3452,8 @@ into appropriate structural configurations with other elements (\citealp{Chomsky
 
 %\bigskip
 %\addlines[2.1]\squeezepage
-%\pagebreak
+\largerpage[-2]% There seems to be a bug here that makes this page larger althou it is not full
+\pagebreak
 \furtherreading{
 本章主要参考了 \citet{Adger2003a}。关于最简方案的其他教科书有 \citew{Radford97a-u}、 \citew{Grewendorf2002a}和 \citet*{HNG2005a}。
 %This chapter heavily draws from  \citet{Adger2003a}. Other textbooks on Minimalism are  \citew{Radford97a-u},  \citew{Grewendorf2002a}, and % \citet*{HNG2005a}.
