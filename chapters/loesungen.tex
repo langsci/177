@@ -211,6 +211,7 @@ sm edges
       }
       \zl
       
+\addlines[2]
 \par\setlength\parindent{2em}
 为了排除后面两个句子，文法必须要包括格的信息。下面的文法就可以解决这个问题：
 %In order to rule out the last two sentences, the grammar has to contain information about case. The following grammar will do the job:
@@ -245,16 +246,16 @@ sm edges
 
 \section{转换语法－管辖与约束理论}
 %\section{Transformational Grammar -- Government \& Binding}
-
+%
 % \ex dass die Frau den Mann liebt
 % \ex dass der Mann geliebt wird
 % \ex Der Mann wird geliebt.
 % \ex dass der Mann der Frau hilft
 % \ex Der Mann hilft der Frau.
-
+%
 \begin{figure}[H]
 \centering
-\scalebox{.9}{%
+\scalebox{.8}{%
 \begin{forest}
 sm edges
 [CP
@@ -278,7 +279,7 @@ sm edges
 \hfill
 % dass der Mann geliebt wird
 %\begin{figure}[H]
-\scalebox{.9}{
+\scalebox{.8}{
 \begin{forest}
 sm edges
 [CP
@@ -302,7 +303,7 @@ sm edges
 
 % der Mann wird geliebt
 \begin{figure}[H]
-\scalebox{.9}{%
+\scalebox{.8}{%
 \begin{forest}
 sm edges
 [CP
@@ -327,7 +328,7 @@ sm edges
 % \ex dass der Mann der Frau hilft
 %\begin{figure}[H]
 %\centering
-\scalebox{.9}{%
+\scalebox{.8}{%
 \begin{forest}
 sm edges
 [CP
@@ -352,6 +353,7 @@ sm edges
 % \ex Der Mann hilft der Frau.
 \begin{figure}[H]
 \centering
+\scalebox{.95}{%
 \begin{forest}
 sm edges
 [CP
@@ -369,7 +371,7 @@ sm edges
 %					[NP [der Frau;the woman, roof]]
 					[V[\trace$_j$]]]]
 			[I [\trace$_k$]]]]]]
-\end{forest}
+\end{forest}}
 \end{figure}%
 
 %\clearpage
@@ -514,8 +516,6 @@ Det     & X\\
 V3  $\to$ W, X $\mapsto$\\
 V3/X  $\to$ W
 \z
-
-\pagebreak
 
 \item 词汇项
 %\item Lexical entries

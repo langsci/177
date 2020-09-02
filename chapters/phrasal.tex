@@ -3644,6 +3644,7 @@ sm edges
 %algorithm that determines which nodes are to be shared. The structure may look strange at first, but for TAG purposes, it is not the derived tree but rather the derivation tree that is important, since this is the one that is used to compute the semantic interpretation. The authors show that the derivation trees
 %for the example under discussion and even more complex examples can be constructed correctly.
 
+%\addlines[2]
 在中心语驱动的短语结构语法\indexhpsg 和词汇功能语法\indexlfg 中，跟在范畴语法中一样，结构的构建是由配价驱动的，分析上述例句没有问题；两个动词结合，然后结合之后的成分像简单动词一样。该分析见图\vref{Abbildung-He-knows-and-loves-this-record-HPSG}。这个分析与图\ref{Abb-CG-Koordination-V}所示的范畴语法的分析相似。\dotfootnote{%
 在依存语法\indexdg（Dependency Grammar）中也可以有对应的分析。虽然\tes 最初的分析并不相同。参见\ref{sec-dg-coordination}的讨论。
 }
@@ -3794,6 +3795,7 @@ sm edges
 \mytrans{Bill将卡车装满了砖。} 
 %Bill loaded the truck with bricks.
 \zl
+%\addlines
 词汇歧义造成的错误比使用同一个动词所犯的错误需要更多的处理时间。实验证明，（\mex{-1}）中两个句子的处理时间差异比（\mex{0}）中两个句子的处理时间差异更大。（\mex{0}a）和（\mex{0}b）中句子处理时间差异可以通过使用不同的短语构式来解释。在基于词库的方法中，要解释这种差异，就需要假设其中一个词项更加基础，即储存在心理词典中，而另外一个是从储存的词项派生而来的。使用词汇规则会花费时间，但是因为词项是相互联系的，所以花费的总时间比处理两个没有联系的词项更短\citep[\page 405]{Mueller2002b}。
 %Errors due to lexical ambiguity cause a bigger increase in processing time than errors in the use of
 %the same verb. Experiments showed that there was a bigger difference in processing times for the
@@ -3967,7 +3969,8 @@ b. & load (with): & C$_2$ $\wedge$ load(\ldots)\\
 %\citealp[\page 399]{WP2011a}), the phrasal approaches assuming that
 %light verb constructions are stored items with the object and verb fixed predict that light verb
 %constructions should be retrievable faster than non-light verb constructions like (\mex{1}) \citep[\page
-%  396]{WP2011a}. 
+%  396]{WP2011a}.
+%\addlines 
 \ea
 \gll take a frisbee to the park\\
      带走 一 飞盘 \textsc{prep} \defart{} 公园\\
@@ -4192,6 +4195,7 @@ dom \liste{ \onems{ \phonliste{ wachen }\\
 %out. The analysis is compatible with both results.
 % CSP2010:198 say they have to check less frequent items.
 
+%\largerpage
 注意我的分析可以确保词汇完整性原则。所以我不同意 \citet*[\page 198]{CSP2010a}的观点，他认为他们“提供了证据证明潜在可分解的多词项自己可以像词一样，所以可以反对一个已被广泛接受的语言学原则，即词汇完整性原则。”我同意非透明的小词动词是多词词位，但是多词词位的存在并不能证明句法可以获取词内部的形态结构。 \citew{Mueller2002b,Mueller2002d}曾论及小词动词与明显的短语式熟语具有相似性；并且得出结论，熟语地位与词的地位并不相关。如（\mex{1}）中的例子所示，因为明显短语熟语与派生形态学并不强制语法学家放弃词汇完整性，所以可以得出结论的是小词动词并非是让人放弃词汇完整性原则的有说服力的证据。\dotfootnote{%
   但是，参见 \citew{Booij2009a}针对词汇完整性提出的一些挑战。
 }
@@ -4236,6 +4240,9 @@ wahnsinnig leid tut% -- Den hatte ich so gerne.
 %}
 %\mytrans{I cannot even write ``Heath Ledger'' without being sad again about his biting the dust.}
 \zl
+\addlines[-1]
+%\squeezepage
+%\largerpage
 （\mex{0}b）中的例子涉及到环缀\gee 的非连续派生（\citealp[第3.4.3节]{Luedeling2001a}；\citealp[\page 324--327, 372--377]{Mueller2002b}；\citealp[第2.2.1节, 第5.2.1节]{Mueller2003a}）。ins Gras beiß-（死去）这个熟语的各个部分都存在并且带有熟语义。参见 \citew{Sag2007a}可以解释（\mex{0}）所示例子的词汇方法。
 %The example in (\mex{0}b) involves the discontinuous derivation with the circumfix \gee
 %(\citealp[Section~3.4.3]{Luedeling2001a}; \citealp[\page 324--327, 372--377]{Mueller2002b};
@@ -4298,7 +4305,7 @@ wahnsinnig leid tut% -- Den hatte ich so gerne.
 \subsection{无监督面向数据分析技术}
 \label{Abschnitt-U-Dop-phrasal}
 
-在\isce[|(]{统计学}{statistics}\isce[|(]{无监督的面向数据的句法分析（U-DOP）}{Unsupervised Data-Oriented Parsing (U-DOP)}\ref{Abschnitt-UDOP}中，我们论述了Bod\citeyearpar{Bod2009a}针对自然语言话语的结构化所采用的方法。如果假设语言是由输入习得的，并不借助于天赋的语言知识，那么Bob从词语分布提取出来的结构（还有词类、语义和语境），也是需要儿童学习的。这些结构也需要包含在语言学理论当中。因为Bob没有足够的数据，他的实验基于二叉树假设，并且因为这个原因，就无法从其结论中得出规则是否可以允准平铺或二叉结构。将来，这个问题很有可能有合适的答案。在基于分布的分析中不能确定的是具体在句法树的哪一个结点上引入意义。 \citet[\page 132]{Bod2009b}表明他的方法在Goldberg的意义层面上构建了“一个可验证的构式语法实现”，但是他构建的句法树不能帮助我们决定短语、词汇还是带有空成分\isce{空成分}{empty element}的分析更好。这些分析方法如图\vref{Abbildung-DOP-Resultatives}所示。
+在\isce[|(]{统计学}{statistics}\isce[|(]{无监督的面向数据的句法分析（U-DOP）}{Unsupervised Data-Oriented Parsing (U-DOP)}\ref{Abschnitt-UDOP}中，我们论述了Bod\citeyearpar{Bod2009a}针对自然语言话语的结构化所采用的方法。如果假设语言是由输入习得的，并不借助于天赋的语言知识，那么Bob从词语分布提取出来的结构（还有词类、语义和语境），也是需要儿童学习的。这些结构也需要包含在语言学理论当中。因为Bob没有足够的数据，他的实验基于二叉树假设，并且因为这个原因，就无法从其结论中得出规则是否可以允准平铺或二叉结构。将来，这个问题很有可能有合适的答案。在基于分布的分析中不能确定的是具体在句法树的哪一个结点上引入意义。 \citet[\page 132]{Bod2009b}表明他的方法在Goldberg的意义层面上构建了“一个可验证的构式语法实现”，但是他构建的句法树不能帮助我们决定短语、词汇还是带有空成分\isce{空成分}{empty element}的分析更好。这些分析方法如图\vref{Abbildung-DOP-Resultatives}所示。\dotfootnote{%
 %In\is{statistics|(}\is{Unsupervised Data-Oriented Parsing (U-DOP)|(} Section~\ref{Abschnitt-UDOP},
 %we saw Bod's approach to the structuring of natural language utterances \citeyearpar{Bod2009a}.
 %If one assumes that language is acquired from the input without innate knowledge, the structures
@@ -4314,10 +4321,11 @@ wahnsinnig leid tut% -- Den hatte ich so gerne.
 %construct do not help us to decide between phrasal or lexical analyses or analyses with empty
 %heads\is{empty element}. These alternative analyses are represented in
 %Figure~\vref{Abbildung-DOP-Resultatives}.
-\footnote{%
 如果假设平铺结构的话，讨论起来会更加容易。
-%The discussion is perhaps easier to follow if one assumes flat structures rather than binary-branching ones.\\
+%The discussion is perhaps easier to follow if one assumes flat structures rather than
+%binary-branching ones.\\
 
+\noindent
 \raisebox{2\baselineskip}{\begin{forest}
 [X
        [X [er\\他] ]
@@ -4352,7 +4360,7 @@ wahnsinnig leid tut% -- Den hatte ich so gerne.
 %and the corresponding valence information. In the third analysis, there is an empty head that combines with the verb and has ultimately
 %the same effect as the lexical rule.
 }
-\begin{figure}
+\begin{figure}[t]
 \hfill
 \begin{forest}
 sm edges
