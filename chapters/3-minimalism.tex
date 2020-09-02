@@ -3176,8 +3176,9 @@ MG和HPSG更深一层的区分在于中心语-填充语不是分析长距离依�
 \begin{figure}
 \hfill
 \begin{forest}
-baseline
-[N 
+% to fix a bug: hack
+for descendants={anchor=north}
+[N,baseline 
   [\emph{letters}{[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [P
     [\emph{to}{[P, \st{\textit{u}N}]}\\\textsc{prep}\hspaceThis{[P, \st{\textit{u}N}]}]
@@ -3185,8 +3186,7 @@ baseline
 \end{forest}
 \hfill
 \begin{forest}
-baseline
-[N 
+[N,baseline 
   [\emph{letters}{[N, pl, \st{\textit{u}P}]}\\信\hspaceThis{[N, pl, \st{\textit{u}P}]}]
   [\emph{to}{[P, \textit{u}N]}\\\textsc{prep}\hspaceThis{[P, \textit{u}N]}]]
 \end{forest}
