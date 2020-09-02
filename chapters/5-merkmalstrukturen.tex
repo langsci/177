@@ -299,51 +299,25 @@
 %if one wishes to describe various electric appliances, one can use the hierarchy in Figure~\vref{fig-electric-appliance}.
 \begin{figure}
 \centering
-%% \begin{forest}
-%% typehierarchy
-%% [\type{electric appliance}
-%%   [\type{printing device}
-%%     [\type{printer}
-%%       [\type{laser printer}]
-%%       [\ldots]]
-%%     [\subnode{copier}{\type{photocopier}}] ]
-%%   [\subnode{scanning}{\type{scanning device}}
-%%     [\type{scanner}
-%%       [\type{negative scanner}]
-%%       [\ldots] ] ]
-%%   [\ldots]]
-%% \draw (scanning.south)--(copier.north);
-%% \end{forest}
-\scalebox{.95}{%
-\begin{tabular}{cccc}
-\multicolumn{4}{c}{\mynode{ed}{\type{电子设备}}}\\[6ex]
-\mynode{p}{\type{打印设备}} & & \mynode{sc}{\type{扫描设备}} & \mynode{other}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\[6ex]
-\mynode{printer}{\type{打印机}}   & \mynode{copy}{\type{复印机}}  & \mynode{scanner}{\type{扫描机}}\\[6ex]
-\mynode{l-p}{\type{激光打印机}}  & \mynode{other-p}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}  & \mynode{negscan}{\type{底片扫描机}} & 
-%\multicolumn{4}{c}{\mynode{ed}{\type{electric appliance}}}\\[6ex]
-%\mynode{p}{\type{printing device}} & & \mynode{sc}{\type{scanning device}} & \mynode{other}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\[6ex]
-%\mynode{printer}{\type{printer}}   & \mynode{copy}{\type{photocopier}}  & \mynode{scanner}{\type{scanner}}\\[6ex]
-%\mynode{l-p}{\type{laser printer}}  & \mynode{other-p}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}  & \mynode{negscan}{\type{negative scanner}} & 
-\mynode{other-sc}{\rule[-0.5ex]{0cm}{2.5ex}\ldots}\\
-\end{tabular}
-\begin{tikzpicture}[overlay,remember picture,shorten <=2pt,shorten >=2pt] 
-\draw(ed.south)--(p.north)
-     (ed.south)--(sc.north)
-     (ed.south)--(other.north)
-     (p.south)--(copy.north)
-     (p.south)--(printer.north)
-     (printer.south)--(l-p.north)
-     (printer.south)--(other-p.north)
-     (sc.south)--(copy.north)
-     (sc.south)--(scanner.north)
-     (scanner.south)--(negscan.north)
-     (scanner.south)--(other-sc.north);
-\end{tikzpicture}
-}
+\begin{forest} 
+type hierarchy, for tree={l+=\baselineskip}
+[电子设备, calign=midpoint, calign children={1}{2},
+  [打印设备,calign=first
+    [打印机,calign=first
+      [激光打印机]
+      [\ldots]]
+    [复印机]]
+  [扫描设备,calign=last
+    [,identify=!r12]
+    [扫描机,calign=first
+      [底片扫描机]
+      [\ldots]]]
+  [\ldots]]
+\end{forest}
 \caption{\label{fig-electric-appliance}多重承继的非语言学例子}
 %\caption{\label{fig-electric-appliance}Non-linguistic example of multiple inheritance}
 \end{figure}%
-图中最高点是最为普遍的类型\type{电子设备}（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。\type{电子设备}的所有次类型都“承继”了这一属性。这样，\type{打印设备}和\type{扫描设备}也具有可供特定能量消耗的能量供给。\type{打印设备}可以制造信息，而\type{扫描设备}可以阅读信息。\type{复印机}既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和\type{复印机}之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance）\iscesub{承继}{inheritance}{多重}{multiple}。如果设备可以打印，但是不能扫描，它们就属于类型“打印机”。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说\type{激光打印机}。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用\type{底片扫描机}扫描的材料比它的上位类型\type{扫描机}具有更多的限制，因为底片扫描机只能扫描底片。
+图中最高点是最为普遍的类型\type{电子设备}（electrical device）。电子设备具有一定的属性，比如说带有特定能量消耗的能量供给。\type{电子设备}的所有次类型都“承继”了这一属性。这样，\type{打印设备}和\type{扫描设备}也具有可供特定能量消耗的能量供给。\type{打印设备}可以制造信息，而\type{扫描设备}可以阅读信息。\type{复印机}既可以制造信息也可以阅读信息。复印机具有扫描机和打印机的属性。这在图\ref{fig-electric-appliance}中通过两个上位类型和\type{复印机}之间的联系来表示。如果一个类型同时也是几个上位类型的次类型，那么我们就可以说这是多重承继（multiple inheritance\iscesub{承继}{inheritance}{多重}{multiple}）。如果设备可以打印，但是不能扫描，它们就属于类型“打印机”。该类型有更多特定的次类型，相应地可具有特殊的属性，比如说\type{激光打印机}。新的特征可以被加进次类型中，但是也可以将承继的特征的值做得更具体。比如说，可以用\type{底片扫描机}扫描的材料比它的上位类型\type{扫描机}具有更多的限制，因为底片扫描机只能扫描底片。
 %The most general type \type{electrical device} is the highest in Figure~\ref{fig-electric-appliance}. Electrical devices have certain properties, 
 %\eg 
 %a power supply with a certain power consumption. All subtypes of  \type{electrical device} ``inherit'' this property. In this way, \type{printing %device} and
