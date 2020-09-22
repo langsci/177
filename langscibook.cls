@@ -261,7 +261,6 @@
 %     Class
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \LoadClass[
   fontsize=\lsFontsize, % default is 11pt
   footnotes=multiple,
@@ -273,6 +272,10 @@
   %draft=yes,
   %appendixprefix
   ]{scrbook}
+
+\KOMAoptions{footheight=\baselineskip}
+\AfterCalculatingTypearea{\setlength{\footskip}{3.5\baselineskip}}
+\recalctypearea
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Packages
@@ -1261,9 +1264,9 @@ Storage and cataloguing done by \storageinstitution\\[3ex]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{datetime}
-%\usepackage{scrlayer-scrpage} % this makes the text too close to the page number if the page is
+\usepackage{scrlayer-scrpage} % this makes the text too close to the page number if the page is
 %full (two extra lines)
-\usepackage{scrpage2}
+%\usepackage{scrpage2} % this has side effects on the header if the font is changed in quotes.
 \ohead{\headmark}
 \ihead{}
 \cfoot{}
