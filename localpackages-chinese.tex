@@ -397,7 +397,7 @@
   {\lsImpressionCitationAuthor}\if\lsEditorSuffix\empty\else\ \lsEditorSuffix\fi. %
   {\lsYear}. %
   \@title\if\@subtitle\empty\else: \@subtitle\fi\ %
-  (\lsSeriesTitle~\lsSeriesNumber). %
+  （\lsSeriesTitle~\lsSeriesNumber）. %
   柏林：语言科学出版社.
 %  Berlin: Language Science Press.
 }
@@ -466,13 +466,13 @@ ISBN: &
 \IfStrEq{\lsISBNdigital}{000-0-000000-00-0}{%no digital ISBN, issue warning
   \color{red}no digital ISBN
 }{%digital ISBN present, write ISBN
-  \lsISBNdigital~(完整电子版)
+  \lsISBNdigital~（完整电子版）
 %  \lsISBNdigital~(Digital)
 }
 \\
 \IfStrEq{\lsISBNhardcover}{000-0-000000-00-0}{ %hardcover ISBN not present
 }{%hardcover ISBN present, write ISBN
-  &\lsISBNhardcover~(精装)\\
+  &\lsISBNhardcover~（精装）\\
 %  &\lsISBNhardcover~(Hardcover)\\
 }
 
@@ -482,7 +482,7 @@ ISBN: &
   }{%hardcover present, no warning
   }
 }{%only softcover present, write ISBN
-  &\lsISBNsoftcover~(简装)\\
+  &\lsISBNsoftcover~（简装）\\
 %  &\lsISBNsoftcover~(Softcover)\\
 }
 \end{tabular}
