@@ -363,7 +363,7 @@ sm edges
 %\subsection{Representation of constituent structure}
 \label{sec-HPSG-constituent-structure}
 
-正如我们已经指出的，HPSG中的特征表示是形态规则、词汇项和句法规则的唯一描写机制。我们目前已看到的树只是成分结构的可视化结果，他们并不具有任何理论地位。在HPSG中也有重写规则\isce{短语结构语法}{phrase structure grammar}。\dotfootnote{%
+正如我们已经指出的，HPSG中的特征表示是形态规则、词汇项和句法规则的唯一描写机制。我们目前已看到的树只是成分结构的可视化结果，它们并不具有任何理论地位。在HPSG中也有重写规则\isce{短语结构语法}{phrase structure grammar}。\dotfootnote{%
 但是，在某些HPSG的计算实现中应用了短语结构规则，这是为了提高处理的效率。
 }
 短语结构规则的工作由特征描写来处理。有关支配的信息通过\textsc{dtr}特征（中心语子结点和非中心语子结点）表示出来，有关优先顺序的信息在\phonc 中表示。（\mex{1}）说明了特征表示中\phonvsc 是如何表示的，该特征表示对应于图\vref{fig-dem-mann-fs}中的树。
@@ -437,7 +437,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 }
 \z
 外层有特征\phonc 和\synsemc。正如前面提到的，\phonc 包括语言对象的语音表示。\synsemc 的值是包括可以被其他中心语所选择的句法和语义信息的特征结构。短语符号的子结点在\synsemc 之外表示。这就确保了在选择中具有一定程度的局部性\isce{局部性}{locality}：中心语不能进入它所选择的元素的内部结构（Pollard \& Sag\citeyear[\page 143--145]{ps}，\citeyear[\page 23]{ps2}）。也可以参考\ref{sec-mother}和\ref{sec-locality}关于局部性的讨论。在\synsemc 内部，有与局部上下文相关的信息（\localc，简写为\loc
-），也有长距离依存的信息（\textsc{nonlocal}或简写为\nonlocc）。局部相关的信息包括句法（\textsc{category}或\catc）和语义（\textsc{content}或\contc）信息。句法信息包括决定短语核心属性的信息，即中心语信息。这在\headc 下面有所表示。更多细节将在\ref{Abschnitt-Kopfeigenschaften}中讨论。此外，语言对象的词类属于短语的中心语属性。同样，\headc、\subcatc 属于\catc 内部的信息。符号的语义内容用\contc 来表示。\contc 值的类型是\type{mrs}，即最小递归语义（Minimal Recursion Semantics）\indexmrs
+），也有长距离依存的信息（\textsc{nonlocal}或简写为\nonlocc）。局部相关的信息包括句法（\textsc{category}或\catc）和语义（\textsc{content}或\contc）信息。句法信息包括决定短语核心属性的信息，即中心语信息。这在\headc 下面有所表示。更多细节将在\ref{Abschnitt-Kopfeigenschaften}中讨论。此外，语言对象的词类属于短语的中心语属性。同样，\headc、\subcatc 属于\catc 内部信息。符号的语义内容用\contc 表示。\contc 值的类型是\type{mrs}，即最小递归语义（Minimal Recursion Semantics，简称MRS）\indexmrs
 \citep*{CFPS2005a}。一个MRS结构包括一个索引和限制该索引的关系列表。在\textsc{nonlocal}特征中，这里只给出了\slasch ，还有处理关系小句\isce{关系小句}{relative clause}和疑问小句\isce{疑问小句}{interrogative clause}的特征（\citealp{ps2}；\citealp{Sag97a}；\citealp{GSag2000a-u}；\citealp{Holler2005a-u}），不过不在这里讨论这些特征。
 %In the outer layer, there are the features \phon and \synsem. As previously mentioned, \phon contains the phonological representation of a %linguistic
 %object. The value of \synsem is a feature structure which contains syntactic and semantic information that can be selected by other heads.
@@ -548,7 +548,7 @@ synsem & \ms{ loc & \ms[local]{ cat  & \ms[category]{ head & \ms[noun]{ case & \
 %The list \phonliste{ x, y } can be subdivided into two lists each containing one element, or alternatively into the empty list
 %and \phonliste{ x, y }.
 
-模式\ref{schema-bin-prel}可以这样来解读：如果一个对象属于类型\type{head-argument-phrase}，那么它必须具有蕴含式右手边的属性。在具体的术语中，这意味着这些对象总是具有对应于\iboxt{1}的配价列表，他们具有一个中心语子结点，该子结点具有一个可以划分为两个子列表\ibox{1}和\sliste{ \ibox{2} }的配价列表，而且他们具有一个非中心语子结点，它的句法和语义属性（\synsemvc）与中心语子结点\iboxb{2}的\subcatlc 的最后一个元素是兼容的。（\mex{1}）提供了与（\ref{Bsp-Peter-schlaeft}）中的例子相对应的特征描写。
+模式\ref{schema-bin-prel}可以这样来解读：如果一个对象属于类型\type{head-argument-phrase}，那么它必须具有蕴含式右手边的属性。在具体的术语中，这意味着这些对象总是具有对应于\iboxt{1}的配价列表，它们具有一个中心语子结点，该子结点具有一个可以划分为两个子列表\ibox{1}和\sliste{ \ibox{2} }的配价列表，而且它们具有一个非中心语子结点，它的句法和语义属性（\synsemvc）与中心语子结点\iboxb{2}的\subcatlc 的最后一个元素是兼容的。（\mex{1}）提供了与（\ref{Bsp-Peter-schlaeft}）中的例子相对应的特征描写。
 %Schema~\ref{schema-bin-prel} can be read as follows: if an object is of the type \type{head-argument-phrase} then it must have the %properties
 %on the right-hand side of the implication. In concrete terms, this means that these objects always have a valence list which corresponds to 
 %\iboxt{1}, that they have a head daughter with a valence list that can be divided into two sublists  \ibox{1} and \sliste{ \ibox{2} } and
@@ -576,7 +576,7 @@ NP[\type{nom}]是复杂特征描写的缩写。模式\ref{schema-bin-prel}将中
 %\subsection{Linearization rules}
 \label{Abschnitt-LP-Regeln-HPSG}
 
-支配模式并没有说明任何跟子结点顺序有关的问题\indexgpsg。正如在GPSG中，语序规则在HPSG中被另外处理。语序规则可以参考子结点的属性，或它们在模式中的功能（中心语\isce{中心语}{head}、论元\isce{论元}{argument}、附加语\isce{附加语}{adjunct} ……），或者两者都可参考。
+支配模式并没有说明任何跟子结点顺序有关的问题\indexgpsg。跟在GPSG中一样，语序规则在HPSG中被另外处理。语序规则可以参考子结点的属性，或它们在模式中的功能（中心语\isce{中心语}{head}、论元\isce{论元}{argument}、附加语\isce{附加语}{adjunct} ……），或者两者都可参考。
 %Dominance schemata do not say anything\indexgpsg about the order of the daughters. As in GPSG, linearization rules are specified %separately.
 %Linearization rules can make reference to the properties of daughters, their function in a schema (head\is{head}, argument\is{argument},
 %adjunct\is{adjunct}, \ldots) or both.
@@ -587,7 +587,7 @@ NP[\type{nom}]是复杂特征描写的缩写。模式\ref{schema-bin-prel}将中
 %%   constituency was primary and whether one could dispense with one of these concepts. See
 %%   Section~\ref{sec-dependency-vs-constituency} for further discussion.
 %% } 
-如果我们假定所有的中心语具有特征\initial\isfeat{initial} ，那么位于它们所带论元之前的中心语的\initialvc 为 “$+$”，而位于他们所带论元之后的中心语的值为“--”。（\mex{1}）中的线性顺序规则确保了诸如（\mex{2}b，d）的不合乎语法的顺序被规则排除了。\dotfootnote{%
+如果我们假定所有的中心语具有特征\initial\isfeat{initial} ，那么位于它们所带论元之前的中心语的\initialvc 为 “$+$”，而位于它们所带论元之后的中心语的值为“--”。（\mex{1}）中的线性顺序规则确保了诸如（\mex{2}b，d）的不合乎语法的顺序被规则排除了。\dotfootnote{%
   名词短语会给（\mex{1}）带来问题：截至目前，限定词被看作是论元，并且被囊括进中心语名词的\subcatlc 中。限定词在名词的左边出现，而名词的所有其他论元在右边出现。这个问题可以通过重新界定线性化规则\citep[\page 164--165]{Mueller99a}来解决，或者通过为限定词引入一个特殊的配价属性来解决\citep[第9.4节]{ps2}。有关使用这一特征的方法，参见\ref{Abschnitt-Spr}。
 }
 %If we assume a feature \initial\isfeat{initial} for all heads, then heads which precede their arguments would have the \initialv `$+$' and heads %following their
@@ -722,7 +722,7 @@ tikz={\draw[<->] ($(fin1.south west)+(\offsetup,0)$) to ($(fin2.north west)+(\of
 %\caption{\label{fig-projektion-head-feat}Projection of the head features of the verb}
 \end{figure}%
 
-GPSG\indexgpsg 的中心语特征规约\isce{中心语特征规约（HFC）}{Head Feature Convention (HFC)}确保了子结点的中心语特征与那些中心语子结点上的特征是一致的。HPSG语法有一个类似的规则。但与GPSG不同的是，特征结构中的一组特征里明确地包含了中心语特征。他们被列于路径\textsc{synsem$|$loc$|$cat$|$head}下。（\mex{1}）说明了词汇项gibt（给）的信息：
+GPSG\indexgpsg 的中心语特征规约\isce{中心语特征规约（HFC）}{Head Feature Convention (HFC)}确保了子结点的中心语特征与那些中心语子结点上的特征是一致的。HPSG语法有一个类似的规则。但与GPSG不同的是，特征结构中的一组特征里明确地包含了中心语特征。它们被列于路径\textsc{synsem$|$loc$|$cat$|$head}下。（\mex{1}）说明了词汇项gibt（给）的信息：
 %GPSG\indexgpsg has the Head Feature Convention\is{Head Feature Convention (HFC)} that ensures that head features on the mother node %are identical to those on the node of the head daughter.
 %In HPSG, there is a similar principle. Unlike GPSG, head features are explicitly contained as a group of features in the feature structures.
 %They are listed under the path \textsc{synsem$|$loc$|$cat$|$head}. (\mex{1}) shows the lexical item
@@ -1040,7 +1040,7 @@ GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于�
            }
 }
 \zs
-如果我们使用诸如\textsc{agent}（施事）和\textsc{patient}（受事）这样的术语来表示论元角色，我们就可以说明配价类型的概况和论元角色的实现。比如说，我们将动词分成带有一个施事的动词、带有一个施事和主题的动词，以及带有施事和受事的动词等。这些不同的配价或联接模式可以在类型层级体系\isce{类型层级体系}{type hierarchy}中表示，而且这些类别可以被指派到具体的词汇项上，即我们可以让他们继承\isce{承继}{inheritance}各自类型的约束条件。带有施事、主题和目标的动词类型的约束条件可以按照（\mex{1}）中的形式来表示：
+如果我们使用诸如\textsc{agent}（施事）和\textsc{patient}（受事）这样的术语来表示论元角色，我们就可以说明配价类型的概况和论元角色的实现。比如说，我们将动词分成带有一个施事的动词、带有一个施事和主题的动词，以及带有施事和受事的动词等。这些不同的配价或联接模式可以在类型层级体系\isce{类型层级体系}{type hierarchy}中表示，而且这些类别可以被指派到具体的词汇项上，即我们可以让它们继承\isce{承继}{inheritance}各自类型的约束条件。带有施事、主题和目标的动词类型的约束条件可以按照（\mex{1}）中的形式来表示：
 %Since we use general terms such as \textsc{agent} and \textsc{patient} for argument roles, it is possible to state generalizations about %valence classes and
 %the realization of argument roles. For example, one can divide verbs into verbs taking an agent, verbs with an agent and theme, verbs with %agent and patient etc.
 %These various valence/linking patterns can be represented in type hierarchies\is{type hierarchy} and
@@ -1091,7 +1091,7 @@ GB、LFG和TAG这些理论跟HPSG与CxG这些理论的一个重要差别在于�
 %\subsection{Adjuncts}
 \label{Abschnitt-HPSG-Adjunkte}\label{sec-adjuncts-hpsg}
 
-与中心语通过\subcatc 来选择论元类似的是\isce[|(]{附加语}{adjunct}，附加语也可以通过使用特征（\textsc{modified}）\isfeat{mod}来选择他们的中心语。修饰名词的形容词与修饰关系小句的介词短语选择一个几乎完整的名词性投射，即一个名词只需要与限定词组合便可以构成一个完整的NP。（\mex{1}）显示了每个\type{synsem}对象的描写。\xbarc 理论中为人熟知的（参见\ref{sec-xbar}）符号\nbarc 表示这个特征描写的缩写形式。
+与中心语通过\subcatc 来选择论元类似的是\isce[|(]{附加语}{adjunct}，附加语也可以通过使用特征（\textsc{modified}）\isfeat{mod}来选择它们的中心语。修饰名词的形容词与修饰关系小句的介词短语选择一个几乎完整的名词性投射，即一个名词只需要与限定词组合便可以构成一个完整的NP。（\mex{1}）显示了每个\type{synsem}对象的描写。\xbarc 理论中为人熟知的（参见\ref{sec-xbar}）符号\nbarc 表示这个特征描写的缩写形式。
 %Analogous\is{adjunct|(} to the selection of arguments by heads via \subcat, adjuncts can also select their heads using a feature 
 %(\textsc{modified})\isfeat{mod}.
 %Adjectives, prepositional phrases that modify nouns, and relative clauses select an almost complete nominal projection, that is, a noun that %only still needs to
@@ -2372,7 +2372,7 @@ nonloc & \ms{ inher$|$slash & \sliste{ \ibox{1} } \\
 \zs
 
 \noindent
-由于语迹没有内部结构（没有子结点），他们属于类型\type{word}。语迹跟宾格宾语具有相同的属性。宾格宾语没在语迹占据的位置上出现的事实通过\slaschc 的值来表示。\iscesub[|)]{语迹}{trace}{提取语迹}{extraction trace} 
+由于语迹没有内部结构（没有子结点），它们属于类型\type{word}。语迹跟宾格宾语具有相同的属性。宾格宾语没在语迹占据的位置上出现的事实通过\slaschc 的值来表示。\iscesub[|)]{语迹}{trace}{提取语迹}{extraction trace} 
 %Since traces do not have internal structure (no daughters), they are of type \type{word}.
 %The trace has the same properties as the accusative object. The fact that the accusative object is not present at the position occupied by the %trace
 %is represented by the value of \slasch.\is{trace!extraction trace|)} 
@@ -2751,7 +2751,7 @@ HPSG与范畴语法的不同之处在于\indexcg，它假定了更多的特征�
 %     the man   {}        {}        on who  {}          we  thought have\\
 %\mytrans{the man we thought of}
 \z
-对于关系小句来说，我们要求第一个子结点包括一个关系代词。正如第\pageref{Beispiel-Minister}页的英语例子，这个代词事实上可以嵌套得非常深。关于an den（谁的）包括一个关系代词的信息的事实通过明确\textsc{nonloc$|$""inher$|$""rel}的值在关系代词den的词汇项中表达出来。非局部特征原则将信息向上传递，这样有关关系代词的信息就包括在短语an den的表示中了。当关系小句完成组合的时候（\citealp[第5章]{ps2}；\citealp{Sag97a}），这个信息的使命就完成了。与范畴语法的处理方式不同，我们在分析（\mex{0}）和（\mex{1}）的时候可以为den设置同一个词项，因为关系代词并不需要知道它能出现的上下文。
+对于关系小句来说，我们要求第一个子结点包括一个关系代词。正如第\pageref{Beispiel-Minister}页的英语例子，这个代词事实上可以嵌套得非常深。关于an den包括一个关系代词的信息的事实通过明确\textsc{nonloc$|$""inher$|$""rel}的值在关系代词den的词汇项中表达出来。非局部特征原则将信息向上传递，这样有关关系代词的信息就包括在短语an den的表示中了。当关系小句完成组合的时候（\citealp[第5章]{ps2}；\citealp{Sag97a}），这个信息的使命就完成了。与范畴语法的处理方式不同，我们在分析（\mex{0}）和（\mex{1}）的时候可以为den设置同一个词项，因为关系代词并不需要知道它能出现的上下文。
 %For relative clauses, it is required that the first daughter contains a relative pronoun. This can, as shown in the English examples on page~
 %\pageref{Beispiel-Minister},
 %be in fact very deeply embedded. Information about the fact that \emph{an den} `of whom' contains a relative pronoun is provided in the %lexical entry for the relative
@@ -2860,7 +2860,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %The difference is that the head itself is not included in the argument structure, whereas this is the case with D-structure.
 
 \citet{Bender2008a}\label{Seite-Bender-Wambaya}已经说明了如何借助中心语的论元结构来分析非构型语言（如万巴亚语\ilce{万巴亚语}{Wambaya}）。在万巴亚语中，通常在英语或德语中算作是成分的词语可以非连续地出现，也就是说，一个在语义上属于名词短语并且与名词短语其余成分性\isce{性}{gender}、数\isce{数}{number}、格\isce{格}{case}一致的形容词可能跟名词短语的其余成分不相邻出现。 \citet{Nordlinger98a-u}在LFG\indexlfg 的框架内分析相关语言现象。在她的分析中，成分的不同部分指向句子的f-结构，并且直接保证了名词短语的所有部分都具有相同的格。Bender采用了HPSG的一个变体，在论元与其中心语组合后，其配价信息不仅没有从配价列表中移除，而且还向中心语的最大投射上传递（\citealp{Meurers99b}；\citealp{Prze99}；\citealp[第17.4节]{MuellerLehrbuch1}）。 \citet[\page 560]{Higginbotham85a}和 \citet{Winkler97a}提出了跟GB理论相似的观点。通过对完整配价信息的投射，配价信息在整个句子中都是可获得的，并且非连续的成分可以指向它（如通过\textsc{mod}），而且可以构建出各自的限制。\dotfootnote{%
-也参见 \citew{Mueller2008a}关于德语和英语\ilce{英语}{English}中描述性谓词\isce{描述性谓词}{depictive predicate}的分析，他们分别指向中心语的实现的和未实现的论元列表。这一分析也可以在\ref{sec-locality}中得到解释。
+也参见 \citew{Mueller2008a}关于德语和英语\ilce{英语}{English}中描述性谓词\isce{描述性谓词}{depictive predicate}的分析，它们分别指向中心语的实现的和未实现的论元列表。这一分析也可以在\ref{sec-locality}中得到解释。
 }  
 % \citet{Bender2008a}\label{Seite-Bender-Wambaya} has shown how one can analyze phenomena from non-configurational languages such %as Wambaya\il{Wambaya}
 %by referring to the argument structure of a head. In Wambaya, words that would normally be counted as constituents in English or German %can occur discontinuously, that
@@ -2964,7 +2964,7 @@ HPSG理论不同于\gbtc 及其后续的变体，因为它并没有假定转换�
 %\section*{延伸阅读}
 %\section*{Further reading}
 \furtherreading{
-这里，理论各部分的表示跟其他理论一样都是相对来说比较简短的。对于HPSG理论更为全面的介绍，包括特征构架的动机，参见 \citew{MuellerLehrbuch1}。\nocite{Mueller99a,Mueller2002b}特别是，这里仅简略说明了被动的分析。更为全面的分析包括非宾格动词、形容词分词、情态不及物动词、不同的被动变体以及长被动\iscesub{被动}{passive}{长被动}{long}，参见 \citew[第3章]{Mueller2002b}和 \citew[第17章]{MuellerLehrbuch1}。
+这里，理论各部分的表示跟其他理论一样都是相对来说比较简短的。对于HPSG理论更为全面的介绍，包括特征构架的动机，参见 \citew{MuellerLehrbuch1}。\nocite{Mueller99a,Mueller2002b}特别是，这里仅简略说明了被动的分析。更为全面的分析包括非宾格动词、形容词分词、情态不定式、不同的被动变体以及长被动\iscesub{被动}{passive}{长被动}{long}，参见 \citew[第3章]{Mueller2002b}和 \citew[第17章]{MuellerLehrbuch1}。
 %Here, the presentation of the individual parts of the theory was -- as with other theories -- kept relatively short. For a more comprehensive
 %introduction to HPSG, including motivation of the feature geometry, see  \citew{MuellerLehrbuch1}.\nocite{Mueller99a,Mueller2002b}
 %In particular, the analysis of the passive was sketched in brief here. The entire story including the analysis of unaccusative verbs, adjectival %participles,

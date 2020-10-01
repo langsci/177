@@ -479,7 +479,7 @@ want $+$ to $\to$ wanna
 %\mytrans{Peter is buying a bag. He likes himself.}
 \zl
 % TODO: 这里英文使用也有问题，也许Mueller的德语也不怎么正确
-在第一个例子中，er（他）可以指代Peter、桌子或者上文中提及的其他东西或其他人。ihm（它/他）可以指代Peter或者上下文中的某人。根据常识，这里限于指代桌子。在第二个例子中，er（他）不能指代Tasche（包），因为Tasche是阴性的，而er是阳性的。只有当ihm（他）不指代彼得的时候，er（他）才可以指Peter。而ihm则指称更大范围上下文中的某个人。这与例（\mex{0}c）是不同的。在（\mex{0}c）中，er（他）和sich（他自己）必须指向同一个对象。这是因为像sich这样的反身代词的所指受限于某个特定的局部域之内。管约论主要负责描述这些限制条件。
+在第一个例子中，er（他）可以指代Peter、桌子或者上文中提及的其他东西或其他人。ihm（它/他）可以指代Peter或者上下文中的某人。根据常识，这里限于指代桌子。在第二个例子中，er（他）不能指代Tasche（包），因为Tasche是阴性的，而er是阳性的。只有当ihm（他）不指代Peter的时候，er（他）才可以指Peter。而ihm则指称更大范围上下文中的某个人。这与例（\mex{0}c）是不同的。在（\mex{0}c）中，er（他）和sich（他自己）必须指向同一个对象。这是因为像sich这样的反身代词的所指受限于某个特定的局部域之内。管约论主要负责描述这些限制条件。
 %In the first example, \emph{er} `he' can refer to either Peter, the table or something/someone else that was previously mentioned
 %in the context. \emph{ihm} `him' can refer to Peter or someone in the context. Reference to the table is restricted by world knowledge.
 %In the second example, \emph{er} `he' cannot refer to \emph{Tasche} `bag' since \emph{Tasche} is feminine and \emph{er} is masculine.
@@ -2365,7 +2365,7 @@ Yatsushiro\ia{Yatsushiro, Kazuko}。他们提出的分析是，第一步将宾�
 % \citew{Fanselow93a}.\is{constituent order|)}
 
 
-\section{总结与归类}
+\section{总结与分类}
 %\section{Summary and classification}
 \label{sec-summary-gb}
 
@@ -2424,7 +2424,7 @@ Meinunger2000a%S. 30
 %research interests) and is very much focused on German. There are, of course, a wealth of other articles on other
 %languages and phenomena, which should be recognized without having to be individually listed here.
 
-在本节剩下的部分中，我将重点讨论两点：原则与参数理论下语言习得的模型与乔姆斯基语言学派的形式化的程度（特别是近几十年的研究成果及其影响）。其中有些内容还会在第\ref{part-discussion}部分再次提及。
+在本节剩下的部分中，我将重点讨论两点：原则与参数理论下语言习得的模型与乔姆斯基语言学的形式化的程度（特别是近几十年的研究成果及其影响）。其中有些内容还会在第\ref{part-discussion}部分再次提及。
 %In the remainder of this section, I will critically discuss two points: the model of language acquisition of the Principles
 %\& Parameters framework and the degree of formalization inside Chomskyan linguistics (in particular the last few decades
 %and the consequences this has). Some of these points will be mentioned again in Part~\ref{part-discussion}. 
@@ -2653,7 +2653,7 @@ John \textsc{aux} 安排 \defart{} 会议 \textsc{prep} 星期三\\
                               \end{tabular}
 \zl
 %
-我们将例（\mex{0}a）转换为（\mex{0}b）中的Prolog谓词表达式。s后的表达式[First$|$L0]对应的字符串需要被处理。`$|$'-操作符将列表分为开头和其他剩余部分。First是最先处理的词，L0则包含其他词。在例（\mex{-1}a）的分析中，第一个词是has，L0是John scheduled the meeting for
+我们将例（\mex{0}a）转换为（\mex{0}b）中的Prolog谓词表达式。s后的表达式[First$|$L0]对应的字符串需要被处理。“$|$”-操作符将列表分为开头和其他剩余部分。First是最先处理的词，L0则包含其他词。在例（\mex{-1}a）的分析中，第一个词是has，L0是John scheduled the meeting for
 Wednesday。在Prolog子句中，随后测试了First是否是助动词（aux\_verb(First)），如果是的话，那么就需要证明L0序列由一个名词短语开头。因为John是一个NP，这样处理就是成功的。L1是分析L0后所剩下的L0的子集，也就是scheduled the meeting for Wednesday。这组词随后跟助动词（First）组合，现在就需要检查剩下的这组词has scheduled the meeting for Wednesday是否由VP开头。事实正是如此，而且剩下的列表L是空的。这样，这个句子被成功地处理了。
 %The rule in (\mex{0}a) is translated into the Prolog predicate in (\mex{0}b). The expression [First$|$L0] after the s corresponds to the string, which
 %is to be processed. The `$|$'-operator divides the list into a beginning and a rest. \emph{First} is the first word to be processed

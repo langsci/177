@@ -319,7 +319,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 %The rule in (\mex{0}) simply states that S dominates all other nodes. Due to the abandonment of ordering restrictions for the right-hand side %of the rule, we
 %only need one rule rather than twelve. 
 
-但是，如果不对规则右部施加任何限制的话，那么这一规则就过于自由了。比如说，下面的语序也是被允许的：
+但是，如果不对规则右部施加任何限制的话，那么这条规则就过于自由了。比如说，下面的语序也是被允许的：
 %Nevertheless, without any kind of restrictions on the right-hand side of the rule, there would be far too much freedom. For example, the %following order would be
 %permissible:
 \ea[*]{
@@ -329,7 +329,7 @@ S  & $\to$ V, NP[nom], NP[acc], NP[dat]\\
 %     the woman.\dat{} the.\nom{} man gives the.\acc{} book\\
 }
 \z
-这样的语序被所谓的线性次序规则（Linear Precedence Rules）\isce{线性次序规则}{Linear Precedence Rule} 或LP-规则\isce{LP-规则}{LP-rule}排除了。LP-限制是在局部树上的限制，即深度为一的树。例如，我们有可能应用线性化规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
+这样的语序被所谓的线性次序规则（Linear Precedence Rules）\isce{线性次序规则}{Linear Precedence Rule} 或LP-规则\isce{LP-规则}{LP-rule}排除了。LP-约束是在局部树上的限制，即深度为一的树。例如，我们有可能应用线性化规则来证明图\vref{fig-gpsg-lokaler-Baum}中“V、NP[nom]、NP[acc]和NP[dat]”的语序。
 %Such orders are ruled out by so-called \emph{Linear Precedence Rules}\is{Linear Precedence Rule} or LP-rules\is{LP-rule}. %LP-constraints are restrictions on
 %local trees, that is, trees with a depth of one. It is, for example, possible to state something
 %about the order of V, NP[nom], NP[acc] and NP[dat] in Figure~\vref{fig-gpsg-lokaler-Baum} using linearization
@@ -358,7 +358,7 @@ V[+\textsc{mc}]  & X\\
 X       & V[$-$\textsc{mc}]\\
 \end{tabular}
 \z
-\textsc{mc}\isfeat{mc}表示主句（main clause）。LP-规则确保在主句中（+\textsc{mc}），动词位于所有其他成分之前，并在从句（$-$\textsc{mc}）中位于它们的后面。有一个条件限制是，所有带有\textsc{mc}-值为`+'的动词也必须是（+\textsc{fin}）。这会排除位于首位的不定式形式。
+\textsc{mc}\isfeat{mc}表示主句（main clause）。LP-规则确保在主句中（+\textsc{mc}），动词位于所有其他成分之前，并在从句（$-$\textsc{mc}）中位于它们的后面。有一个条件限制是，所有带有\textsc{mc}-值为“+”的动词也必须是（+\textsc{fin}）。这会排除位于首位的不定式形式。
 %\textsc{mc}\isfeat{mc} stands for \emph{main clause}. The LP-rules ensure that in main clauses (+\textsc{mc}), the verb precedes all other %constituents and follows them in subordinate clauses
 %($-$\textsc{mc}). There is a restriction that says that all verbs with the \textsc{mc}-value `+' also have to be (+\textsc{fin}). This will rule out %infinitive forms in initial position.
 
@@ -516,7 +516,7 @@ V3  & H[8], N2[\textsc{case} dat], N2[\textsc{case} acc], N2[\textsc{case} nom] 
 \mytrans{所有孩子都在笑。}
 \ex $\forall x$ \relation{child}(x) $\to$ \relation{laugh}(x)
 \zl
-符号$\forall$表示全称量词\iscesub{量词}{quantifier}{全称量词}{universal}。该公式可以这样来解读。对于每一个对象而言，它具有孩子这样的属性，而且它也在笑。如果我们考虑NP的贡献，那么我们会看到全称量词对孩子的限制以及从NP而来的逻辑蕴涵：
+符号$\forall$表示全称量词\iscesub{量词}{quantifier}{全称量词}{universal}。该公式可以这样来解读。对于每一个对象而言，它具有孩子这样的属性，而且它也在笑。如果我们考虑NP的贡献，那么会看到全称量词对孩子的限制以及从NP而来的逻辑蕴涵：
 %The symbol $\forall$ stands for the universal quantifier\is{quantifier!universal}. The formula can
 %be read as follows. For every object, for which it is the case that it has the property of being a
 %child, it is also the case that it is laughing. If we consider the contribution made by the NP, then we see that
@@ -868,7 +868,7 @@ VP与主语的组合由额外的规则（S $\to$ NP, VP）允准。
 %lexical rule\is{lexical rule} that licenses the passive participle and manipulates the semantics of
 %the output lexical item in such a way that the \emph{by}-PP is correctly integrated semantically \citep[\page 219]{GKPS85a}.
 
-但是，如果我们试着将这个分析应用到德语上，我们就会遇到问题。因为无人称被动\iscesub[|(]{被动}{passive}{无人称}{impersonal}不能简单地通过抑制宾语而得到。诸如arbeiten（工作）和denken（想）的动词V2-规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
+但是，如果我们试着将这个分析应用到德语上，就会遇到问题。因为无人称被动\iscesub[|(]{被动}{passive}{无人称}{impersonal}不能简单地通过抑制宾语而得到。诸如arbeiten（工作）和denken（想）的动词V2-规则被用在（\ref{beispiel-arbeiten}a）和（\ref{beispiel-denken}a）的分析中：
 %We arrive at a problem, however, if we try to apply this analysis to German since the impersonal passive\is{passive!impersonal} cannot be %derived
 %by simply suppressing an object. The V2-rules for verbs such as \emph{arbeiten} `work' and \emph{denken} `think' as used for the analysis %of
 %(\ref{beispiel-arbeiten}a) and (\ref{beispiel-denken}a) have the following form:
